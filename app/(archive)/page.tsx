@@ -14,8 +14,8 @@ export default function OverviewPage() {
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
                 {/* OPENING STATEMENT */}
-                <div className="mb-4">
-                    In early 2025, I served as an unpaid volunteer at Honeyman State Park in Oregon. What began as a routine volunteer assignment became two months of systematic psychological harassment, coercive tactics, and institutional retaliation &mdash; all documented with audio and video evidence.
+                <div className="mb-4 text-lg">
+                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> &mdash; all documented with audio and video evidence.
                 </div>
 
                 <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
@@ -65,13 +65,13 @@ export default function OverviewPage() {
 
                     {/* Tab Content */}
                     {activeTab === 'archive' && (
-                        <div className="space-y-3">
+                        <div className="space-y-2">
                             <div>
                                 <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 font-semibold hover:underline">
                                     Open Letter to Director Lisa Sumption
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    First public accountability attempt with comprehensive documentation
+                                    First public accountability attempt with comprehensive documentation.
                                 </div>
                             </div>
                             <div>
@@ -79,7 +79,7 @@ export default function OverviewPage() {
                                     Executive Summary
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    Complete overview of systematic abuse, coercive tactics, and institutional retaliation
+                                    Complete overview of systematic abuse, coercive tactics, and institutional retaliation.
                                 </div>
                             </div>
                             <div>
@@ -87,7 +87,7 @@ export default function OverviewPage() {
                                     The Day-Use Meeting (March 5, 2025)
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    60+ minutes of recorded psychological pressure - "chew glass and swallow it"
+                                    60+ minutes of recorded psychological pressure &mdash; &quot;chew glass and swallow it.&quot;
                                 </div>
                             </div>
                             <div>
@@ -95,14 +95,14 @@ export default function OverviewPage() {
                                     Permanent Dismissal Letter
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    Written admission of retaliation for protected speech
+                                    Written admission of retaliation for protected speech.
                                 </div>
                             </div>
                         </div>
                     )}
 
                     {activeTab === 'external' && (
-                        <div className="space-y-3">
+                        <div className="space-y-2">
                             <div>
                                 <Link
                                     href="https://rswfire.com/fieldcraft/01K3QGHKJ9M4FK1TEJ8RS70D6R"
@@ -113,7 +113,7 @@ export default function OverviewPage() {
                                     On the Invisibility of Unpaid Labor Abuse →
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    Why volunteer abuse remains hidden and how documentation changes that
+                                    Why volunteer abuse remains hidden and how documentation changes that.
                                 </div>
                             </div>
                             <div>
@@ -126,7 +126,7 @@ export default function OverviewPage() {
                                     The Weight of Documentation →
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    What it costs to hold institutional memory when institutions choose erasure
+                                    What it costs to hold institutional memory when institutions choose erasure.
                                 </div>
                             </div>
                             <div>
@@ -139,7 +139,7 @@ export default function OverviewPage() {
                                     The Harm That Didn't Have to Happen →
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    Tracing institutional choice through every opportunity for intervention
+                                    Tracing institutional choice through every opportunity for intervention.
                                 </div>
                             </div>
                             <div>
@@ -152,12 +152,9 @@ export default function OverviewPage() {
                                     Oregon State Parks: Volunteer Entry to Systematic Abuse and Dismissal →
                                 </Link>
                                 <div className="text-sm text-gray-600">
-                                    AI synthesis of this period of my life
+                                    AI synthesis from this period of my life.
                                 </div>
                             </div>
-
-
-
                         </div>
                     )}
                 </div>
@@ -230,10 +227,11 @@ export default function OverviewPage() {
                     </div>
 
                     <div className="mt-4">They claimed they had responded on August 29, 2025.</div>
-                    <div>They provided a screenshot of an internal portal system.</div>
-                    <div>I was never informed this system existed.</div>
-                    <div>I had no access to it.</div>
-                    <div>They sent no notification to the contact information I provided.</div>
+                    <div>They provided a screenshot of an internal portal system as proof.</div>
+                    <div>I was never notified this system existed.</div>
+                    <div>I had no access credentials.</div>
+                    <div>No email was sent to the address I provided.</div>
+                    <div>No letter was mailed to the address I provided.</div>
 
                     <div className="mt-4">
                         For 90 days, they remained silent while I waited at the email and mailing address listed in my request.
@@ -256,7 +254,7 @@ export default function OverviewPage() {
                     <div className="mt-4">It documents:</div>
                     <ul className="ml-8 list-disc">
                         <li>Systematic abuse of an unpaid volunteer (February-March 2025).</li>
-                        <li>Explicit retaliation for protected speech, stated in writing (March 26, 2025).</li>
+                        <li>Explicit retaliation for protected speech, stated in writing by agency management (March 26, 2025).</li>
                         <li>Director-level acknowledgment without corrective action (August 25, 2025).</li>
                         <li>90+ days of public records law violation and institutional obstruction (August-November 2025).</li>
                         <li>A complete institutional response pattern when accountability was requested.</li>
@@ -273,7 +271,7 @@ export default function OverviewPage() {
                     <div className="mt-4">One day, something like this will happen again.</div>
                     <div>This archive will be there to meet it.</div>
                     <div>
-                        To prove: they knew, they were told, they were given every opportunity to self-correct —
+                        To prove they knew, they were told, they were given every opportunity to self-correct —
                     </div>
                     <div className="ml-4">
                         and at every level, they chose institutional protection over accountability.
@@ -281,8 +279,8 @@ export default function OverviewPage() {
 
                     <hr className="my-6 border-t border-gray-300" />
 
-                    <div className="mt-4">
-                        <strong>Let me be very plainspoken about this</strong>:
+                    <div className="mt-4 text-lg font-bold">
+                        Let me be very plainspoken about this:
                     </div>
 
                     <div className="mt-4">Humans did this to another human being.</div>
@@ -295,12 +293,12 @@ export default function OverviewPage() {
                         They are responsible — whether they are willing to admit that to themselves or not.
                     </div>
 
-                    <div className="mt-4">Kati Baker orchestrated it.</div>
-                    <div>Ryan Warren executed it.</div>
-                    <div>Logan weaponized friendship to enable it.</div>
-                    <div>Allison Watson formalized the retaliation in writing.</div>
-                    <div>Lisa Sumption acknowledged it and chose to protect them.</div>
-                    <div>The agency violated public records law for 90+ days to avoid transparency about it.</div>
+                    <div className="mt-4">Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline">orchestrated it</Link>.</div>
+                    <div>Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline">executed it</Link>.</div>
+                    <div>Logan, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.</div>
+                    <div>Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.</div>
+                    <div>Lisa Sumption, Director, <Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="underline">acknowledged it and chose to protect them</Link>.</div>
+                    <div>The agency violated public records law for 90+ days <Link href="https://rswfire.com/fieldcraft/01K39AD52EG9K31B48YSTH3E7X" className="underline">to avoid transparency about it</Link>.</div>
 
                     <div className="mt-4">Every person documented in this archive had the power to stop this.</div>
                     <div>Every person chose not to.</div>
@@ -321,8 +319,8 @@ export default function OverviewPage() {
                         <div className="mr-2">—</div>
                         <div>
                             <div>Samuel White</div>
-                            <div>Former Oregon State Parks Volunteer</div>
-                            <div>December 1, 2025</div>
+                            <div className="text-gray-700">Former Oregon State Parks Volunteer</div>
+                            <div className="text-gray-700">December 1, 2025</div>
                         </div>
                     </div>
                 </div>
