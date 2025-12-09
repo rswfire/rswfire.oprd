@@ -118,7 +118,7 @@ export default function OverviewPage() {
                             Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline">executed it</Link>.
                         </li>
                         <li>
-                            Logan, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.
+                            Logan Bliss, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.
                         </li>
                         <li>
                             Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.

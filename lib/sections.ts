@@ -7,7 +7,7 @@ export const archiveSections = [
     { href: "/timeline", label: "Timeline" },
     { href: "/testimonial", label: "The Story of Honeyman" },
     { href: "/how-it-started", label: "How It Started" },
-    { href: "/logan", label: "Logan" },
+    { href: "/logan", label: "Trust Broken" },
     { href: "/day-use-meeting", label: "Day-Use Meeting" },
     { href: "/unidentified-man", label: "The Unidentified Man" },
     { href: "/final-hours", label: "Final Hours" },
