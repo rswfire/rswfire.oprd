@@ -187,7 +187,7 @@ export default function OverviewPage() {
                 {/* OPEN SOURCE NOTICE */}
                 <hr className="my-6 border-t border-gray-300" />
 
-                <div className="text-sm text-gray-700 leading-relaxed">
+                <div className="text-sm text-gray-700 tracking-tight">
                     <div className="font-semibold text-gray-900 mb-2">
                         This archive is open source and permanent.
                     </div>
