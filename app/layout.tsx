@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Icon from "@/components/Icon";
 import Link from "next/link";
+import Script from 'next/script'
 
 export const metadata: Metadata = {
     title: {
@@ -27,6 +28,20 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+        <head>
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-5K6H8GR1Q7"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-5K6H8GR1Q7');
+              `}
+            </Script>
+        </head>
         <body className="{`${inter.className} bg-stone-50 text-stone-900`">
         <div className="min-h-screen flex flex-col">
             {/* Header */}
