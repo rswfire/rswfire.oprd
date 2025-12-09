@@ -1,8 +1,9 @@
-// components/SectionNav.tsx
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import Icon from "@/components/Icon";
 
 type Section = {
     href: string;
@@ -11,34 +12,76 @@ type Section = {
 
 export default function SectionNav({ sections }: { sections: Section[] }) {
     const pathname = usePathname();
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
     return (
-        <div className="sticky top-24 space-y-3">
-            <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
-                <ul className="space-y-1">
-                    {sections.map((s) => {
-                        // Exact match for home, prefix match for others
-                        const active = s.href === "/"
-                            ? pathname === "/"
-                            : pathname.startsWith(s.href);
+        <>
+            {/* Mobile: Collapsible Nav */}
+            <div className="lg:hidden mb-6">
+                <button
+                    onClick={() => setMobileNavOpen(!mobileNavOpen)}
+                    className="w-full flex items-center justify-between rounded-lg border border-slate-200 bg-white p-4 text-left shadow-sm"
+                >
+                    <span className="font-semibold text-sm">Archive Navigation</span>
+                    <Icon name={mobileNavOpen ? "ChevronUp" : "ChevronDown"} size="20" />
+                </button>
 
-                        return (
-                            <li key={s.href}>
-                                <Link
-                                    href={s.href}
-                                    className={`block rounded-md px-3 py-2 transition ${
-                                        active
-                                            ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
-                                            : "text-slate-700 hover:bg-slate-50"
-                                    }`}
-                                >
-                                    {s.label}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </nav>
-        </div>
+                {mobileNavOpen && (
+                    <nav className="mt-2 rounded-lg border border-slate-200 bg-white shadow-sm p-3">
+                        <ul className="space-y-1">
+                            {sections.map((s) => {
+                                const active = s.href === "/"
+                                    ? pathname === "/"
+                                    : pathname.startsWith(s.href);
+
+                                return (
+                                    <li key={s.href}>
+                                        <Link
+                                            href={s.href}
+                                            onClick={() => setMobileNavOpen(false)}
+                                            className={`block rounded-md px-3 py-2 text-sm transition ${
+                                                active
+                                                    ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
+                                                    : "text-slate-700 hover:bg-slate-50"
+                                            }`}
+                                        >
+                                            {s.label}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
+                )}
+            </div>
+
+            {/* Desktop: Sticky Sidebar */}
+            <div className="hidden lg:block sticky top-24 space-y-3">
+                <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
+                    <ul className="space-y-1">
+                        {sections.map((s) => {
+                            const active = s.href === "/"
+                                ? pathname === "/"
+                                : pathname.startsWith(s.href);
+
+                            return (
+                                <li key={s.href}>
+                                    <Link
+                                        href={s.href}
+                                        className={`block rounded-md px-3 py-2 transition ${
+                                            active
+                                                ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
+                                                : "text-slate-700 hover:bg-slate-50"
+                                        }`}
+                                    >
+                                        {s.label}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav>
+            </div>
+        </>
     );
 }

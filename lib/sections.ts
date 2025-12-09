@@ -1,0 +1,19 @@
+// lib/sections.ts
+export const archiveSections = [
+    { href: "/", label: "Overview" },
+    { href: "/key-individuals", label: "Key Individuals" },
+    { href: "/ethics", label: "A Note About Ethics" },
+    { href: "/executive-summary", label: "Executive Summary" },
+    { href: "/timeline", label: "Timeline" },
+    { href: "/testimonial", label: "The Story of Honeyman" },
+    { href: "/how-it-started", label: "How It Started" },
+    { href: "/logan", label: "Logan" },
+    { href: "/day-use-meeting", label: "Day-Use Meeting" },
+    { href: "/unidentified-man", label: "The Unidentified Man" },
+    { href: "/final-hours", label: "Final Hours" },
+    { href: "/permanent-dismissal", label: "Permanent Dismissal" },
+    { href: "/naming-the-harm", label: "Naming the Harm" },
+    { href: "/institutional-pattern", label: "Institutional Pattern" },
+    { href: "/lessons-learned", label: "Lessons Learned" },
+    { href: "/i-held-my-shape", label: "I Held My Shape" },
+];
