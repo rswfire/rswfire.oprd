@@ -119,12 +119,26 @@ export default function OverviewPage() {
                         They are responsible &mdash; whether they are willing to admit that to themselves or not.
                     </div>
 
-                    <div className="mt-4">Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline">orchestrated it</Link>.</div>
-                    <div>Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline">executed it</Link>.</div>
-                    <div>Logan, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.</div>
-                    <div>Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.</div>
-                    <div>Lisa Sumption, Director, <Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="underline">acknowledged it and chose to protect them</Link>.</div>
-                    <div>The agency violated public records law for 90+ days <Link href="https://rswfire.com/fieldcraft/01K39AD52EG9K31B48YSTH3E7X" className="underline">to avoid transparency about it</Link>.</div>
+                    <ul className="mt-4 space-y-2 sm:space-y-0 list-disc ml-6 sm:list-none sm:ml-0">
+                        <li>
+                            Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline">orchestrated it</Link>.
+                        </li>
+                        <li>
+                            Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline">executed it</Link>.
+                        </li>
+                        <li>
+                            Logan, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.
+                        </li>
+                        <li>
+                            Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.
+                        </li>
+                        <li>
+                            Lisa Sumption, Director, <Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="underline">acknowledged it and chose to protect them</Link>.
+                        </li>
+                        <li>
+                            The agency violated public records law for 90+ days <Link href="https://rswfire.com/fieldcraft/01K39AD52EG9K31B48YSTH3E7X" className="underline">to avoid transparency about it</Link>.
+                        </li>
+                    </ul>
 
                     <div className="mt-4">Every person documented in this archive had the power to stop this.</div>
                     <div>Every person chose not to.</div>
