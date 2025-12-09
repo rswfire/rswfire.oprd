@@ -4,16 +4,17 @@ import type { ReactNode } from 'react';
 type EmailProps = {
     from?: string;
     to?: string;
+    cc?: string;
     date?: string;
     subject?: string;
     children: ReactNode;
 };
 
-export default function Email({ from, to, date, subject, children }: EmailProps) {
+export default function Email({ from, to, cc, date, subject, children }: EmailProps) {
     return (
         <div className="mt-4 border border-gray-300 rounded-md shadow-sm bg-white overflow-hidden">
             {/* Email header metadata */}
-            {(from || to || date || subject) && (
+            {(from || to || cc || date || subject) && (
                 <div className="bg-gray-50 border-b border-gray-300 px-4 py-3 text-sm">
                     {from && (
                         <div className="mb-1">
@@ -23,6 +24,11 @@ export default function Email({ from, to, date, subject, children }: EmailProps)
                     {to && (
                         <div className="mb-1">
                             <span className="font-semibold">To:</span> {to}
+                        </div>
+                    )}
+                    {cc && (
+                        <div className="mb-1">
+                            <span className="font-semibold">CC:</span> {cc}
                         </div>
                     )}
                     {date && (
