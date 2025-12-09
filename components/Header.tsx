@@ -17,13 +17,13 @@ export default function Header() {
                             <Icon name="TreeDeciduous" size="30" className="text-emerald-700"/>
                         </div>
                         <div className="leading-tight">
-                            <div className="text-sm font-semibold tracking-widest uppercase">
+                            <div className="text-sm font-semibold tracking-tight sm:tracking-widest uppercase">
                                 OPRD VOLUNTEER ABUSE .ORG
                             </div>
                             <div className="text-xs sm:text-sm tracking-tight">
                                 <span className="font-semibold text-emerald-700">INDEPENDENT DOCUMENTATION</span>
-                                <span className="text-slate-500"> &bull; </span>
-                                <span className="text-slate-600">OREGON PARKS &amp; RECREATION DEPARTMENT</span>
+                                <span className="hidden sm:inline text-slate-500"> &bull; </span>
+                                <span className="hidden sm:inline text-slate-600">OREGON PARKS &amp; RECREATION DEPARTMENT</span>
                             </div>
                         </div>
                     </Link>
