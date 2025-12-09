@@ -14,6 +14,10 @@ export default function OverviewPage() {
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
                 {/* OPENING STATEMENT */}
+                <div className="mb-4">
+                    In early 2025, I served as an unpaid volunteer at Honeyman State Park in Oregon. What began as a routine volunteer assignment became two months of systematic psychological harassment, coercive tactics, and institutional retaliation &mdash; all documented with audio and video evidence.
+                </div>
+
                 <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                     <div className="text-lg font-bold mb-4">
                         THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
