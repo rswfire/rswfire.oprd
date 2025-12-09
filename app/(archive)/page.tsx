@@ -34,13 +34,9 @@ export default function OverviewPage() {
                     <div className="ml-4">and to give freely without ownership.</div>
 
                     <div className="mt-4">That was the offer.</div>
-                    
-                    <div className="mt-4">
-                        What I found instead was systematic abuse by those entrusted to supervise me.
-                    </div>
-                    <div>
-                        This archive documents every decision they made when given the opportunity to stop.
-                    </div>
+
+                    <div className="mt-4">What I found instead was systematic abuse by those entrusted to supervise me.</div>
+                    <div className="mt-4 sm:mt-0">This archive documents every decision they made when given the opportunity to stop.</div>
 
                     <hr className="my-6 border-t border-gray-300" />
 
@@ -74,10 +70,8 @@ export default function OverviewPage() {
                         </Link>
                         .
                     </div>
-                    <div>
-                        I received an automated acknowledgment, then a phone call attempting to narrow its scope.
-                    </div>
-                    <div>I declined and requested all further communication in writing.</div>
+                    <div className="mt-4 sm:mt-0">I received an automated acknowledgment, then a phone call attempting to narrow its scope.</div>
+                    <div className="mt-4 sm:mt-0">I declined and requested all further communication in writing.</div>
 
                     <div className="mt-4">Oregon Parks & Recreation responded 90 days later &mdash;</div>
                     <div className="ml-4">
@@ -86,10 +80,10 @@ export default function OverviewPage() {
 
                     <div className="mt-4">They claimed they had responded on August 29, 2025.</div>
                     <div>They provided a screenshot of an internal portal system as proof.</div>
-                    <div>I was never notified this system existed.</div>
+                    <div>No email was sent to notify me.</div>
+                    <div>No letter was mailed.</div>
+                    <div>I was never told this portal system existed.</div>
                     <div>I had no access credentials.</div>
-                    <div>No email was sent to the address I provided.</div>
-                    <div>No letter was mailed to the address I provided.</div>
 
                     <div className="mt-4">
                         For 90 days, they remained silent while I waited at the email and mailing address listed in my request.
@@ -98,10 +92,7 @@ export default function OverviewPage() {
                         When finally pressed, they provided a cost estimate in the tens of thousands of dollars.
                     </div>
 
-                    <div className="mt-4">I withdrew the request.</div>
-                    <div>
-                        Not because I could not proceed &mdash; but because their response to the request had become the evidence.
-                    </div>
+                    <div className="mt-4">I withdrew the request &mdash; their response had become the evidence.</div>
 
                     <hr className="my-6 border-t border-gray-300" />
 
@@ -109,15 +100,15 @@ export default function OverviewPage() {
                         Let me be very plainspoken about this:
                     </div>
 
-                    <div className="mt-4">Humans did this to another human being.</div>
-                    <div>Not policies. Not procedures. Not "organizational complexity."</div>
-                    <div>Humans with names, with faces, with the capacity to choose differently.</div>
+                    <div className="mt-4 pl-4 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+                        <div>Humans did this to another human being.</div>
+                        <div>Not policies. Not procedures. Humans.</div>
+                        <div>Humans with names, with faces, with the capacity to choose differently.</div>
+                    </div>
 
                     <div className="mt-4">They knew what they were doing while they were doing it.</div>
                     <div>They felt the weight of their choices in real time.</div>
-                    <div>
-                        They are responsible &mdash; whether they are willing to admit that to themselves or not.
-                    </div>
+                    <div>They are responsible &mdash; whether they are willing to admit that to themselves or not.</div>
 
                     <ul className="mt-4 space-y-2 sm:space-y-0 list-disc ml-6 sm:list-none sm:ml-0">
                         <li>
@@ -142,18 +133,15 @@ export default function OverviewPage() {
 
                     <div className="mt-4">Every person documented in this archive had the power to stop this.</div>
                     <div>Every person chose not to.</div>
-                    <div>Every person who abused me remains in their positions.</div>
+                    <div>Every person who abused their position remains in their position.</div>
                     <div>No investigations occurred.</div>
                     <div>No protections were implemented.</div>
+                    <div>No one was held accountable.</div>
 
                     <div className="mt-4">Those choices are now permanent.</div>
                     <div>They don't fade with time.</div>
-                    <div>They don't disappear with career advancement.</div>
+                    <div>They don't disappear because they refuse to act.</div>
                     <div>They don't get absolved by silence.</div>
-
-                    <div className="mt-4">Each person documented here faced a choice.</div>
-                    <div>That choice is now attached to their name.</div>
-                    <div>This archive ensures neither is forgotten.</div>
 
                     <div className="mt-6 flex">
                         <div className="mr-2">&mdash;</div>
