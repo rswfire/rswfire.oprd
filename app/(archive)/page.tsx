@@ -160,14 +160,18 @@ export default function OverviewPage() {
                 </div>
 
                 {/* Main Content */}
-                <div className="pt-6 md:px-6 sm:px-0 text-base">
 
-                    <div className="font-bold text-lg text-center">
-                        This Archive Centers an Open Letter to the Director of Oregon State Parks
-                    </div>
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="text-base">
+
+                    <h2 className="font-bold text-lg text-center">
+                        THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
+                        TO THE DIRECTOR OF OREGON STATE PARKS &mdash; LISA SUMPTION
+                    </h2>
 
                     <div className="mt-4">
-                        I entered the state parks system anticipating alignment —
+                        I entered the state parks system anticipating alignment &mdash;
                     </div>
                     <div className="ml-4">to protect the commons,</div>
                     <div className="ml-4">to hold space with integrity,</div>
@@ -175,13 +179,12 @@ export default function OverviewPage() {
                     <div className="ml-4">and to give freely without ownership.</div>
 
                     <div className="mt-4">That was the offer.</div>
-                    <div>That was the signal I carried into the field.</div>
-
+                    
                     <div className="mt-4">
-                        What I found instead was conflict I did not create — and had no choice but to navigate.
+                        What I found instead was systematic abuse by those entrusted to supervise me.
                     </div>
                     <div>
-                        This archive documents their actions — and what those actions made visible.
+                        This archive documents every decision they made when given the opportunity to stop.
                     </div>
 
                     <hr className="my-6 border-t border-gray-300" />
@@ -221,7 +224,7 @@ export default function OverviewPage() {
                     </div>
                     <div>I declined and requested all further communication in writing.</div>
 
-                    <div className="mt-4">Oregon Parks & Recreation responded 90 days later —</div>
+                    <div className="mt-4">Oregon Parks & Recreation responded 90 days later &mdash;</div>
                     <div className="ml-4">
                         only after I issued a formal demand for compliance and filed a complaint with the Governor's office.
                     </div>
@@ -242,7 +245,7 @@ export default function OverviewPage() {
 
                     <div className="mt-4">I withdrew the request.</div>
                     <div>
-                        Not because I could not proceed — but because their response to the request had become the evidence.
+                        Not because I could not proceed &mdash; but because their response to the request had become the evidence.
                     </div>
 
                     <hr className="my-6 border-t border-gray-300" />
@@ -271,7 +274,7 @@ export default function OverviewPage() {
                     <div className="mt-4">One day, something like this will happen again.</div>
                     <div>This archive will be there to meet it.</div>
                     <div>
-                        To prove they knew, they were told, they were given every opportunity to self-correct —
+                        To prove they knew, they were told, they were given every opportunity to self-correct &mdash;
                     </div>
                     <div className="ml-4">
                         and at every level, they chose institutional protection over accountability.
@@ -290,7 +293,7 @@ export default function OverviewPage() {
                     <div className="mt-4">They knew what they were doing while they were doing it.</div>
                     <div>They felt the weight of their choices in real time.</div>
                     <div>
-                        They are responsible — whether they are willing to admit that to themselves or not.
+                        They are responsible &mdash; whether they are willing to admit that to themselves or not.
                     </div>
 
                     <div className="mt-4">Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline">orchestrated it</Link>.</div>
@@ -316,10 +319,10 @@ export default function OverviewPage() {
                     <div>This archive ensures neither is forgotten.</div>
 
                     <div className="mt-6 flex">
-                        <div className="mr-2">—</div>
+                        <div className="mr-2">&mdash;</div>
                         <div>
-                            <div>Samuel White</div>
-                            <div className="text-gray-700">Former Oregon State Parks Volunteer</div>
+                            <div className="font-bold">Samuel White</div>
+                            <div className="font-semibold text-gray-700">Former Oregon State Parks Volunteer</div>
                             <div className="text-gray-700">December 1, 2025</div>
                         </div>
                     </div>
