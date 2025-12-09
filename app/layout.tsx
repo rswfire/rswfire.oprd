@@ -9,8 +9,8 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
     title: {
-        default: "OPRD Volunteer Abuse Archive",
-        template: "%s | OPRD Volunteer Abuse Archive",
+        default: "Oregon State Parks (OPRD) Volunteer Abuse Archive",
+        template: "%s | Oregon State Parks (OPRD) Volunteer Abuse Archive",
     },
     description:
         "Permanent public record of volunteer abuse and institutional response inside the Oregon Parks & Recreation Department.",
