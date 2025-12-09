@@ -16,12 +16,14 @@ export default function OverviewPage() {
 
                 <hr className="my-6 border-t border-gray-300" />
 
-                <div className="text-base">
+                <h2 className="font-bold text-lg text-center tracking-wide">
+                    THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
+                    TO THE DIRECTOR OF OREGON STATE PARKS &mdash; LISA SUMPTION
+                </h2>
 
-                    <h2 className="font-bold text-lg text-center tracking-wide">
-                        THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
-                        TO THE DIRECTOR OF OREGON STATE PARKS &mdash; LISA SUMPTION
-                    </h2>
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="text-base">
 
                     <div className="mt-4">
                         I entered the state parks system anticipating alignment &mdash;
