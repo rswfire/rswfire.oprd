@@ -31,7 +31,9 @@ export default function OverviewPage() {
 
                 {/* ESSENTIAL READING - TABBED */}
                 <div className="mt-8 p-6 bg-gray-50 border border-gray-300 rounded-lg">
-                    <h2 className="text-xl font-semibold mb-4">📚 Essential Reading</h2>
+                    <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <Icon name="BookOpen" /> Essential Reading
+                    </h2>
 
                     {/* Tab Headers */}
                     <div className="flex gap-2 mb-4 border-b border-gray-300">
@@ -61,7 +63,7 @@ export default function OverviewPage() {
                     {activeTab === 'archive' && (
                         <div className="space-y-3">
                             <div>
-                                <Link href="/open-letter" className="text-emerald-700 font-semibold hover:underline">
+                                <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 font-semibold hover:underline">
                                     Open Letter to Director Lisa Sumption
                                 </Link>
                                 <div className="text-sm text-gray-600">
@@ -136,6 +138,22 @@ export default function OverviewPage() {
                                     Tracing institutional choice through every opportunity for intervention
                                 </div>
                             </div>
+                            <div>
+                                <Link
+                                    href="https://rswfire.com/synthesis/01KBPH3WR31AERARVEVV2K8VTP"
+                                    className="text-emerald-700 font-semibold hover:underline"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Oregon State Parks: Volunteer Entry to Systematic Abuse and Dismissal →
+                                </Link>
+                                <div className="text-sm text-gray-600">
+                                    AI synthesis of this period of my life
+                                </div>
+                            </div>
+
+
+
                         </div>
                     )}
                 </div>
@@ -302,26 +320,6 @@ export default function OverviewPage() {
                             <div>Former Oregon State Parks Volunteer</div>
                             <div>December 1, 2025</div>
                         </div>
-                    </div>
-                </div>
-
-                {/* AI Synthesis Footer */}
-                <div className="mt-6 border-t border-gray-300 pt-6 text-center">
-                    <div className="text-black text-center">
-                        <Icon name="FlaskConical" className="mx-auto w-4 h-4 text-gray-600" />
-                    </div>
-                    <div className="text-gray-600 font-medium">
-                        <Link
-                            href="https://rswfire.com/synthesis/01KBPH3WR31AERARVEVV2K8VTP"
-                            className="text-lg text-emerald-700 hover:underline"
-                        >
-                            Oregon State Parks: Volunteer Entry to Systematic Abuse and Dismissal →
-                        </Link>
-                    </div>
-                    <div className="text-gray-800 text-sm">
-                        <Link href="https://rswfire.com/synthesis/01KBPH3WR31AERARVEVV2K8VTP">
-                            AI SYNTHESIS OF THIS PERIOD OF MY LIFE
-                        </Link>
                     </div>
                 </div>
 

@@ -68,7 +68,7 @@ export default function UnidentifiedManPage() {
                     destabilized, wasn't paranoid, and documented everything in real-time.
                 </div>
                 <Link
-                    href="/unidentified-man/video-documentation"
+                    href="/unidentified-man/supplemental"
                     className="text-emerald-700 font-semibold hover:underline"
                 >
                     Watch the video and read the full analysis →
