@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function LoganSupplementalPage() {
     return (
         <SectionPage
-            title="ON 'THE END OF THE WORLD'"
-            subtitle="FIELDCRAFT RECORD • HONEYMAN"
-            supplemental="August 24, 2025"
+            title="LOGAN"
+            subtitle="SUPPLEMENTAL DOCUMENTATION"
+            supplemental="AUGUST 24, 2025"
         >
 
             <div className="mt-4">

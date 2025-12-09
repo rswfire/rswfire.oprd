@@ -45,7 +45,7 @@ export default function RootLayout({
         <body className="{`${inter.className} bg-stone-50 text-stone-900`">
         <div className="min-h-screen flex flex-col">
             {/* Header */}
-            <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
+            <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 backdrop-blur">
                 <div className="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2">
                         <div className="flex h-8 w-8 items-center justify-center">

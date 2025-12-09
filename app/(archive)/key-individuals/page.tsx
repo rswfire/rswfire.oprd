@@ -27,7 +27,7 @@ export default function KeyIndividualsPage() {
 
             <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
 
-                <li className="bg-gray-50 border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
+                <li className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
                     <h3 className="font-semibold text-lg text-center">KATI BAKER</h3>
                     <div className="text-sm text-gray-700">
                         <div className="font-bold text-center pb-2 border-b-2">
@@ -42,7 +42,7 @@ export default function KeyIndividualsPage() {
                     </div>
                 </li>
 
-                <li className="bg-gray-50 border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
+                <li className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
                     <h3 className="font-semibold text-lg text-center">RYAN WARREN</h3>
                     <div className="text-sm text-gray-700">
                         <div className="font-bold text-center pb-2 border-b-2">
@@ -57,7 +57,7 @@ export default function KeyIndividualsPage() {
                     </div>
                 </li>
 
-                <li className="bg-gray-50 border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
+                <li className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:border-emerald-300">
                     <h3 className="font-semibold text-lg text-center">ALLISON WATSON</h3>
                     <div className="text-sm text-gray-700">
                         <div className="font-bold text-center pb-2 border-b-2">
