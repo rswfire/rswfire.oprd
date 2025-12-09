@@ -323,12 +323,6 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                {/* CLOSING STATEMENT */}
-                <div className="mt-6 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                    <div className="mt-4"><em>I held my shape. Now hold yours</em>.</div>
-                    <div className="mt-4">🙃</div>
-                </div>
-
             </div>
         </section>
     );

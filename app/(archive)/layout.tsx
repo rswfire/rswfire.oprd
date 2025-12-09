@@ -13,8 +13,6 @@ const sections = [
     { href: "/day-use-meeting", label: "Day-Use Meeting" },
     { href: "/unidentified-man", label: "The Unidentified Man" },
     { href: "/final-hours", label: "Final Hours" },
-    { href: "/call-allison-watson", label: "Call: Allison Watson" },
-    { href: "/letter-allison-watson", label: "Letter: Allison Watson" },
     { href: "/permanent-dismissal", label: "Permanent Dismissal" },
     { href: "/naming-the-harm", label: "Naming the Harm" },
     { href: "/institutional-pattern", label: "Institutional Pattern" },
