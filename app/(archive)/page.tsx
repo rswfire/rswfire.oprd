@@ -1,14 +1,8 @@
 // app/(archive)/page.tsx
-"use client";
 
-import { useState } from "react";
-import type { Metadata } from "next";
 import Link from "next/link";
-import Icon from "@/components/Icon";
 
 export default function OverviewPage() {
-    const [activeTab, setActiveTab] = useState<'archive' | 'external'>('archive');
-
     return (
         <section className="w-full mx-auto mb-8">
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
@@ -18,154 +12,13 @@ export default function OverviewPage() {
                     In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> &mdash; all documented with audio and video evidence.
                 </div>
 
-                <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                    <div className="text-lg font-bold mb-4">
-                        THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
-                    </div>
-
-                    <div className="mt-4">This archive is not for revenge.</div>
-                    <div>It is for those who have been told they imagined it.</div>
-                    <div>It is for those about to walk into something similar.</div>
-                    <div>It is for the future, when denial no longer holds.</div>
-
-                    <div className="mt-4">It does not ask for apology.</div>
-                    <div>It does not ask for repair.</div>
-                    <div>It exists so that the next distortion cannot pretend it was the first.</div>
-                </div>
-
-                {/* ESSENTIAL READING - TABBED */}
-                <div className="mt-8 p-6 bg-gray-50 border border-gray-300 rounded-lg">
-                    <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                        <Icon name="BookOpen" /> Essential Reading
-                    </h2>
-
-                    {/* Tab Headers */}
-                    <div className="flex gap-2 mb-4 border-b border-gray-300">
-                        <button
-                            onClick={() => setActiveTab('archive')}
-                            className={`px-4 py-2 font-medium transition-colors ${
-                                activeTab === 'archive'
-                                    ? 'text-emerald-700 border-b-2 border-emerald-700'
-                                    : 'text-gray-600 hover:text-gray-900'
-                            }`}
-                        >
-                            Archive Documents
-                        </button>
-                        <button
-                            onClick={() => setActiveTab('external')}
-                            className={`px-4 py-2 font-medium transition-colors ${
-                                activeTab === 'external'
-                                    ? 'text-emerald-700 border-b-2 border-emerald-700'
-                                    : 'text-gray-600 hover:text-gray-900'
-                            }`}
-                        >
-                            Analysis & Context
-                        </button>
-                    </div>
-
-                    {/* Tab Content */}
-                    {activeTab === 'archive' && (
-                        <div className="space-y-2">
-                            <div>
-                                <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 font-semibold hover:underline">
-                                    Open Letter to Director Lisa Sumption
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    First public accountability attempt with comprehensive documentation.
-                                </div>
-                            </div>
-                            <div>
-                                <Link href="/executive-summary" className="text-emerald-700 font-semibold hover:underline">
-                                    Executive Summary
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    Complete overview of systematic abuse, coercive tactics, and institutional retaliation.
-                                </div>
-                            </div>
-                            <div>
-                                <Link href="/day-use-meeting" className="text-emerald-700 font-semibold hover:underline">
-                                    The Day-Use Meeting (March 5, 2025)
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    60+ minutes of recorded psychological pressure &mdash; &quot;chew glass and swallow it.&quot;
-                                </div>
-                            </div>
-                            <div>
-                                <Link href="/permanent-dismissal" className="text-emerald-700 font-semibold hover:underline">
-                                    Permanent Dismissal Letter
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    Written admission of retaliation for protected speech.
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {activeTab === 'external' && (
-                        <div className="space-y-2">
-                            <div>
-                                <Link
-                                    href="https://rswfire.com/fieldcraft/01K3QGHKJ9M4FK1TEJ8RS70D6R"
-                                    className="text-emerald-700 font-semibold hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    On the Invisibility of Unpaid Labor Abuse →
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    Why volunteer abuse remains hidden and how documentation changes that.
-                                </div>
-                            </div>
-                            <div>
-                                <Link
-                                    href="https://rswfire.com/fieldcraft/01K3RWVK2ZXARFNTEDCNHKMHCM"
-                                    className="text-emerald-700 font-semibold hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    The Weight of Documentation →
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    What it costs to hold institutional memory when institutions choose erasure.
-                                </div>
-                            </div>
-                            <div>
-                                <Link
-                                    href="https://rswfire.com/fieldcraft/01K3SY18HCQFW9J1QB878TZ62J"
-                                    className="text-emerald-700 font-semibold hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    The Harm That Didn't Have to Happen →
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    Tracing institutional choice through every opportunity for intervention.
-                                </div>
-                            </div>
-                            <div>
-                                <Link
-                                    href="https://rswfire.com/synthesis/01KBPH3WR31AERARVEVV2K8VTP"
-                                    className="text-emerald-700 font-semibold hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Oregon State Parks: Volunteer Entry to Systematic Abuse and Dismissal →
-                                </Link>
-                                <div className="text-sm text-gray-600">
-                                    AI synthesis from this period of my life.
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-
                 {/* Main Content */}
 
                 <hr className="my-6 border-t border-gray-300" />
 
                 <div className="text-base">
 
-                    <h2 className="font-bold text-lg text-center">
+                    <h2 className="font-bold text-lg text-center tracking-wide">
                         THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
                         TO THE DIRECTOR OF OREGON STATE PARKS &mdash; LISA SUMPTION
                     </h2>
@@ -250,38 +103,6 @@ export default function OverviewPage() {
 
                     <hr className="my-6 border-t border-gray-300" />
 
-                    <div className="mt-4 font-bold">This archive is now complete.</div>
-                    <div>This is no longer just about what happened to me.</div>
-                    <div>It is about how they responded to what happened to me.</div>
-
-                    <div className="mt-4">It documents:</div>
-                    <ul className="ml-8 list-disc">
-                        <li>Systematic abuse of an unpaid volunteer (February-March 2025).</li>
-                        <li>Explicit retaliation for protected speech, stated in writing by agency management (March 26, 2025).</li>
-                        <li>Director-level acknowledgment without corrective action (August 25, 2025).</li>
-                        <li>90+ days of public records law violation and institutional obstruction (August-November 2025).</li>
-                        <li>A complete institutional response pattern when accountability was requested.</li>
-                    </ul>
-
-                    <div className="mt-4">It stands as:</div>
-                    <ul className="ml-8 list-disc">
-                        <li>A permanent record of institutional choice at every level of oversight.</li>
-                        <li>A warning system for future volunteers.</li>
-                        <li>Evidence for future accountability efforts.</li>
-                        <li>Proof that awareness at the highest level did not produce protection.</li>
-                    </ul>
-
-                    <div className="mt-4">One day, something like this will happen again.</div>
-                    <div>This archive will be there to meet it.</div>
-                    <div>
-                        To prove they knew, they were told, they were given every opportunity to self-correct &mdash;
-                    </div>
-                    <div className="ml-4">
-                        and at every level, they chose institutional protection over accountability.
-                    </div>
-
-                    <hr className="my-6 border-t border-gray-300" />
-
                     <div className="mt-4 text-lg font-bold">
                         Let me be very plainspoken about this:
                     </div>
@@ -326,6 +147,25 @@ export default function OverviewPage() {
                             <div className="text-gray-700">December 1, 2025</div>
                         </div>
                     </div>
+                </div>
+
+                {/* CLOSING STATEMENT */}
+
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+                    <div className="text-lg font-bold mb-4">
+                        THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
+                    </div>
+
+                    <div className="mt-4">This archive is not for revenge.</div>
+                    <div>It is for those who have been told they imagined it.</div>
+                    <div>It is for those about to walk into something similar.</div>
+                    <div>It is for the future, when denial no longer holds.</div>
+
+                    <div className="mt-4">It does not ask for apology.</div>
+                    <div>It does not ask for repair.</div>
+                    <div>It exists so that the next distortion cannot pretend it was the first.</div>
                 </div>
 
             </div>
