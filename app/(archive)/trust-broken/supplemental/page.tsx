@@ -13,7 +13,6 @@ export default function TrustBrokenSupplementalPage() {
         <SectionPage
             title="TRUST BROKEN"
             subtitle="SUPPLEMENTAL DOCUMENTATION"
-            supplemental="AUGUST 24, 2025"
         >
 
             <div className="mt-4">
