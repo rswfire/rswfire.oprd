@@ -316,6 +316,203 @@ export default function NamingTheHarmPage() {
         </div>
     </div>
 
+            {/* LOGAN BLISS LETTER */}
+            <h2 className="mt-8 text-xl font-semibold border-t pt-6">
+                December 9, 2025: Holding Logan Bliss Accountable
+            </h2>
+
+            <div className="mt-4">
+                Four months after naming the harm caused by Allison Watson and Kati Baker, I documented
+                the betrayal of supervisory trust and weaponization of queer vulnerability by Logan Bliss,
+                Volunteer Services Lead.
+            </div>
+
+            <Email
+                from="Sam White"
+                to="Logan Bliss, Volunteer Services Lead"
+                cc="Allison Watson, Ryan Warren, Kati Baker, Lisa Sumption"
+                date="December 9, 2025"
+                subject="For the Record — Supervisory Betrayal"
+            >
+                <div className="mt-4">Logan,</div>
+
+                <div className="mt-4">
+                    This letter names the harm you caused through betrayal of supervisory trust and
+                    weaponization of vulnerability I shared with you in confidence.
+                </div>
+
+                <div className="mt-4">
+                    You held authority over me as Volunteer Services Lead. That role requires integrity,
+                    discretion, and the protection of those under your supervision. You failed at every level.
+                </div>
+
+                <h3 className="mt-6 font-semibold">THE DISCLOSURES</h3>
+
+                <div className="mt-4">
+                    During our walk at Honeyman, I shared why I had moved into an RV and relocated to the
+                    coast—my analysis of systemic instability, my strategic thinking about resilience, and my
+                    concerns as a queer person about authoritarian targeting through institutional actors.
+                </div>
+
+                <div className="mt-4">
+                    Before that conversation, I set a clear boundary: I told you explicitly this was not
+                    romantic for me.
+                </div>
+
+                <div className="mt-4">
+                    You took what I shared in confidence and disclosed it to management. That information was
+                    then weaponized by Allison Watson to pathologize my character during dismissal
+                    proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about
+                    identity-based targeting as evidence of instability.
+                </div>
+
+                <div className="mt-4">
+                    By now you have seen the videos. You know how they used what I told you. You know the harm
+                    that followed.
+                </div>
+
+                <h3 className="mt-6 font-semibold">THE DISTORTION</h3>
+
+                <div className="mt-4">
+                    Allison Watson claimed I told you "I was worried you would kill me." That is a deliberate
+                    distortion.
+                </div>
+
+                <div className="mt-4">
+                    What I actually said was that in authoritarian contexts, people like you—institutional
+                    actors with authority—would be the mechanism through which targeting of queer people would
+                    occur.
+                </div>
+
+                <div className="mt-4">You visibly recoiled when I said this.</div>
+
+                <div className="mt-4">
+                    At the time, I interpreted your reaction as discomfort with the subject matter. Later, I
+                    understood: you were already doing exactly what I had described—using your institutional
+                    position to target my identity.
+                </div>
+
+                <div className="mt-4">
+                    And you did this after I explicitly told you the conversation was not romantic. You
+                    weaponized a boundary I set with you in good faith.
+                </div>
+
+                <h3 className="mt-6 font-semibold">THE PATTERN</h3>
+
+                <div className="mt-4">
+                    You elicited trust through reciprocal vulnerability. You spent 90 minutes talking about
+                    yourself—your background, your concerns, your perspectives. The following day, I
+                    reciprocated. That is how trust-building works.
+                </div>
+
+                <div className="mt-4">
+                    But after I opened up, you distanced yourself. Then you disclosed what I shared to people
+                    who were already working to remove me.
+                </div>
+
+                <div className="mt-4">That is not supervision. That is betrayal.</div>
+
+                <h3 className="mt-6 font-semibold">THE ENABLING</h3>
+
+                <div className="mt-4">
+                    Your disclosures gave Ryan Warren, Kati Baker, and Allison Watson the ammunition they
+                    needed to justify what they had already decided to do.
+                </div>
+
+                <div className="mt-4">
+                    Ryan used it to mock me at the day-use meeting—suggesting I "thought I had a future with
+                    you"—weaponizing my sexuality and distorting ordinary human connection into something
+                    inappropriate.
+                </div>
+
+                <div className="mt-4">I am certain that insinuation entered the narrative with your consent.</div>
+
+                <div className="mt-4">
+                    Kati and Allison used your disclosures to construct a psychological profile justifying my
+                    permanent dismissal—reframing vulnerability as instability, analysis as extremism, and
+                    identity-based fears as concerning behavior.
+                </div>
+
+                <div className="mt-4">
+                    You enabled that. Actively. With full knowledge of what they were doing.
+                </div>
+
+                <h3 className="mt-6 font-semibold">WHAT YOU SHOULD UNDERSTAND</h3>
+
+                <div className="mt-4">I treated you with integrity you never had.</div>
+
+                <div className="mt-4">
+                    Despite your pattern of intimacy followed by distance, I continued to see the best in you.
+                    I made space for the tension between your depth and the institution you serve. I chose to
+                    believe you were capable of better.
+                </div>
+
+                <div className="mt-4">I was wrong.</div>
+
+                <div className="mt-4">
+                    You had every opportunity to protect what I shared with you. Instead, you delivered it to
+                    people who used it to harm me.
+                </div>
+
+                <div className="mt-4">
+                    That choice—to betray supervisory trust and weaponize queer vulnerability after I
+                    explicitly set a boundary with you—is now part of the permanent record.
+                </div>
+
+                <h3 className="mt-6 font-semibold">THE RECORD</h3>
+
+                <div className="mt-4">You are documented by full name in a public archive:</div>
+
+                <div className="ml-8 mt-2">
+                    🔗{" "}
+
+                    <a href="https://oprdvolunteerabuse.org/trust-broken"
+                    className="text-emerald-700 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    https://oprdvolunteerabuse.org/trust-broken
+                </a>
+            </div>
+
+            <div className="ml-8">
+                🔗{" "}
+
+                <a href="https://oprdvolunteerabuse.org/trust-broken/supplemental"
+                className="text-emerald-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                https://oprdvolunteerabuse.org/trust-broken/supplemental
+            </a>
+        </div>
+
+    <div className="mt-4">This archive details:</div>
+    <ul className="list-disc ml-8 mt-2">
+        <li>Your disclosure of confidential personal information</li>
+        <li>Your participation in identity-based targeting</li>
+        <li>Your weaponization of a boundary I set with you</li>
+        <li>Your role in enabling institutional abuse</li>
+    </ul>
+
+    <div className="mt-4">This is not a request for response.</div>
+    <div>This is a statement of record.</div>
+    <div>Your choices as Volunteer Services Lead are now permanently attached to your name.</div>
+
+    <div className="mt-6">—</div>
+    <div>Sam White</div>
+    <div>
+
+        <a href="https://oprdvolunteerabuse.org"
+        className="text-emerald-700 underline"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        https://oprdvolunteerabuse.org
+    </a>
+</div>
+</Email>
+
 </SectionPage>
 );
 }
