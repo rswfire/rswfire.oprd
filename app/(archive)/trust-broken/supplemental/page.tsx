@@ -4,7 +4,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
-    title: "Broken Trust: Supplemental Documentation",
+    title: "Trust Broken: Supplemental Documentation",
     description: "On 'The End of the World' - How personal vulnerability was weaponized as evidence of instability.",
 };
 

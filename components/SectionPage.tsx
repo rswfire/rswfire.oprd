@@ -16,13 +16,13 @@ export default function SectionPage({
                                     }: SectionPageProps) {
     return (
         <div className="w-full p-8 rounded-xl bg-gray-50 border border-gray-300 text-base">
-            <div className="prose prose-slate max-w-none">
-                <header className="mb-8 border-b border-slate-200 pb-6">
+            <div className="prose max-w-none">
+                <header className="pb-4 border-b border-gray-300">
 
-                    <h1 className="text-3xl font-bold mb-2">{title}</h1>
+                    <h1 className="text-3xl font-bold mb-2 text-center tracking-widest">{title}</h1>
 
                     {(subtitle || supplemental) && (
-                        <div className="italic text-gray-600 space-y-0">
+                        <div className="text-gray-700 space-y-0 text-center">
                             {subtitle && <div>{subtitle}</div>}
                             {supplemental && <div>{supplemental}</div>}
                         </div>

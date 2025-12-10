@@ -496,22 +496,23 @@ export default function NamingTheHarmPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="mt-4">
-                    None of these letters received a response. None needed one.
-                </div>
 
-                <div className="mt-4">
-                    These are not attempts at reconciliation. They are permanent documentation of harm caused
-                    by people in positions of authority who chose institutional protection over human
-                    accountability.
-                </div>
+                <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
+                    <div>
+                        None of these letters received a response. None needed one.
+                    </div>
 
-                <div className="mt-4">
-                    The archive ensures these letters outlast silence. The record is permanent. And every
-                    person named here will carry their choice forward &mdash; whether they acknowledge it or not.
+                    <div className="mt-4">
+                        These are not attempts at reconciliation. They are permanent documentation of harm caused
+                        by people in positions of authority who chose institutional protection over human
+                        accountability.
+                    </div>
+
+                    <div className="mt-4">
+                        The archive ensures these letters outlast silence. The record is permanent. And every
+                        person named here will carry their choice forward &mdash; whether they acknowledge it or not.
+                    </div>
                 </div>
-            </div>
 
         </SectionPage>
     );
