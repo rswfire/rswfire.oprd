@@ -42,7 +42,7 @@ export default function OverviewPage() {
 
                     <div className="mt-4">
                         On August 25, 2025, I sent a comprehensive{" "}
-                        <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="underline">
+                        <Link href="/lisa-sumption/open-letter" className="underline">
                             Open Letter to Director Lisa Sumption
                         </Link>
                         .
@@ -65,7 +65,7 @@ export default function OverviewPage() {
 
                     <div className="mt-4">
                         Earlier that week, I filed a{" "}
-                        <Link href="https://rswfire.com/fieldcraft/01K39AD52EG9K31B48YSTH3E7X" className="underline">
+                        <Link href="/lisa-sumption/public-records-request" className="underline">
                             Public Records Request
                         </Link>
                         .
@@ -124,10 +124,10 @@ export default function OverviewPage() {
                             Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.
                         </li>
                         <li>
-                            Lisa Sumption, Director, <Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="underline">acknowledged it and chose to protect them</Link>.
+                            Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline">acknowledged it and chose to protect them</Link>.
                         </li>
                         <li>
-                            The agency violated public records law for 90+ days <Link href="https://rswfire.com/fieldcraft/01K39AD52EG9K31B48YSTH3E7X" className="underline">to avoid transparency about it</Link>.
+                            The agency violated public records law for 90+ days <Link href="/lisa-sumption/public-records-request" className="underline">to avoid transparency about it</Link>.
                         </li>
                     </ul>
 
