@@ -16,18 +16,28 @@ export default function KeyIndividualsPage() {
             supplemental="OREGON PARKS & RECREATION DEPARTMENT (OPRD)"
         >
 
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
 
-                <div>
-                    These are the central figures referenced throughout this archive —
+                <div className="text-sm">
+                    <div>
+                        These are the central figures referenced throughout this archive —
+                    </div>
+                    <div>
+                        each played a distinct role in the systematic abuse, betrayal, and institutional protection
+                    </div>
+                    <div>
+                        that unfolded at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and within <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> as a whole.
+                    </div>
                 </div>
-                <div>
-                    each played a distinct role in the systematic abuse, betrayal, and institutional protection
+                <div className="mt-4 font-bold text-lg mb-3">
+                    EVERY PERSON IN THIS ARCHIVE HAD THE POWER TO STOP THIS.
                 </div>
-                <div>
-                    that unfolded at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and within <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> as a whole.
-                </div>
-
+                <div className="mt-2">Every person chose not to.</div>
+                <div>Every person who abused their position remains in their position.</div>
+                <div className="mt-4">Those choices are now permanent.</div>
+                <div>They don't fade with time.</div>
+                <div>They don't disappear because they refuse to act.</div>
+                <div>They don't get absolved by silence.</div>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -99,23 +109,13 @@ export default function KeyIndividualsPage() {
                 Oregon Parks &amp; Recreation Department
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>August: received comprehensive open letter with audio and video evidence.</li>
-                <li>Responded within twelve hours with procedural language, no specific accountability measures.</li>
+                <li>August: <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 hover:underline">received comprehensive open letter</Link> with audio and video evidence.</li>
+                <li><Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="text-emerald-700 hover:underline">Responded within twelve hours</Link> with procedural language, no specific accountability measures.</li>
                 <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
-                <li>December 2025: reduced documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
+                <li>December: reduced documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
                 <li>Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published.</li>
                 <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
             </ul>
-            <div className="mt-4">
-                <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 hover:underline">
-                    Read the Open Letter →
-                </Link>
-            </div>
-            <div>
-                <Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="text-emerald-700 hover:underline">
-                    Read her response &amp; my analysis →
-                </Link>
-            </div>
 
             <hr className="my-6 border-t border-gray-300" />
 
@@ -128,19 +128,6 @@ export default function KeyIndividualsPage() {
                 Contacted. No acknowledgment.
             </div>
 
-            <hr className="my-6 border-t border-gray-300" />
-
-            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                <div className="font-bold text-lg mb-3">
-                    EVERY PERSON IN THIS ARCHIVE HAD THE POWER TO STOP THIS.
-                </div>
-                <div className="mt-2">Every person chose not to.</div>
-                <div>Every person who abused their position remains in their position.</div>
-                <div className="mt-4">Those choices are now permanent.</div>
-                <div>They don't fade with time.</div>
-                <div>They don't disappear because they refuse to act.</div>
-                <div>They don't get absolved by silence.</div>
-            </div>
         </SectionPage>
     );
 }
