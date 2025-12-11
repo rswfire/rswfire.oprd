@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "The Closure (December 2025)",
@@ -175,6 +176,12 @@ Lisa Sumption
             <div className="mt-4">
                 This page exists because institutional closure does not erase the record. It becomes
                 part of it.
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-gray-300">
+                <Link href="/lisa-sumption" className="text-emerald-700 hover:underline">
+                    ← Back to The Director's Decisions
+                </Link>
             </div>
 
         </SectionPage>
