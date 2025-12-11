@@ -12,6 +12,7 @@ export const archiveSections = [
     { href: "/unidentified-man", label: "The Unidentified Man" },
     { href: "/final-hours", label: "Final Hours" },
     { href: "/permanent-dismissal", label: "Permanent Dismissal" },
+    { href: "/lisa-sumption", label: "The Director's Decisions" },
     { href: "/naming-the-harm", label: "Naming the Harm" },
     { href: "/institutional-pattern", label: "Institutional Pattern" },
     { href: "/lessons-learned", label: "Lessons Learned" },
