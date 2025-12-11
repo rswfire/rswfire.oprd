@@ -15,28 +15,48 @@ export default function NamingTheHarmPage() {
             subtitle="THE LETTERS THEY MUST RECKON WITH"
         >
 
-            <div className="mt-4">
-                After months of institutional silence, I sent letters naming the harm directly to those
-                who caused it. Not as requests for apology or repair &mdash; but as statements of record.
+            <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
+                <h2 className="text-xl font-semibold text-center">
+                    NONE OF THESE LETTERS RECEIVED A RESPONSE.<br/>NONE NEEDED ONE.
+                </h2>
+                <div className="mt-4">
+                    These are not attempts at reconciliation. They are permanent documentation of harm caused
+                    by people in positions of authority who chose institutional protection over human
+                    accountability.
+                </div>
+
+                <div className="mt-4">
+                    The archive ensures these letters outlast silence. The record is permanent. And every
+                    person named here will carry their choice forward &mdash; whether they acknowledge it or not.
+                </div>
             </div>
 
-            <div className="mt-4">
-                These letters document what they did, how they did it, and what it cost. They ensure the
-                harm cannot be minimized, reframed, or disappeared. They are permanent testimony to
-                institutional abuse that leadership refused to acknowledge.
-            </div>
+            <div className="sm:px-8 sm:mt-8">
 
-            <div className="mt-4">
-                Each person had the power to choose differently. Each person chose harm. And now that
-                choice is attached to their name forever.
+                <div className="mt-4">
+                    After months of institutional silence, I sent letters naming the harm directly to those
+                    who caused it. Not as requests for apology or repair &mdash; but as statements of record.
+                </div>
+
+                <div className="mt-4">
+                    These letters document what they did, how they did it, and what it cost. They ensure the
+                    harm cannot be minimized, reframed, or disappeared. They are permanent testimony to
+                    institutional abuse that leadership refused to acknowledge.
+                </div>
+
+                <div className="mt-4">
+                    Each person had the power to choose differently. Each person chose harm. And now that
+                    choice is attached to their name forever.
+                </div>
+
             </div>
 
             {/* ALLISON WATSON LETTER */}
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">
-                May 28, 2025: Holding Allison Watson Accountable
+            <h2 className="text-xl font-semibold text-center">
+                MAY 28, 2025<br/>HOLDING ALLISON WATSON ACCOUNTABLE
             </h2>
 
             <Email
@@ -233,8 +253,8 @@ export default function NamingTheHarmPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">
-                August 13, 2025: Holding Kati Baker Accountable
+            <h2 className="text-xl font-semibold text-center">
+                AUGUST 13, 2025<br/>HOLDING KATI BAKER ACCOUNTABLE
             </h2>
 
             <Email
@@ -298,8 +318,8 @@ export default function NamingTheHarmPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">
-                December 9, 2025: Holding Logan Bliss Accountable
+            <h2 className="text-xl font-semibold text-center">
+                DECEMBER 9, 2025<br/>HOLDING LOGAN BLISS ACCOUNTABLE
             </h2>
 
             <Email
@@ -491,28 +511,6 @@ export default function NamingTheHarmPage() {
                 <div>https://oprdvolunteerabuse.org/naming-the-harm</div>
 
             </Email>
-
-            {/* CLOSING */}
-
-            <hr className="my-6 border-t border-gray-300" />
-
-
-                <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
-                    <div>
-                        None of these letters received a response. None needed one.
-                    </div>
-
-                    <div className="mt-4">
-                        These are not attempts at reconciliation. They are permanent documentation of harm caused
-                        by people in positions of authority who chose institutional protection over human
-                        accountability.
-                    </div>
-
-                    <div className="mt-4">
-                        The archive ensures these letters outlast silence. The record is permanent. And every
-                        person named here will carry their choice forward &mdash; whether they acknowledge it or not.
-                    </div>
-                </div>
 
         </SectionPage>
     );

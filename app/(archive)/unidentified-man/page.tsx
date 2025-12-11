@@ -13,7 +13,8 @@ export default function UnidentifiedManPage() {
     return (
         <SectionPage
             title="THE UNIDENTIFIED MAN"
-            subtitle="MARCH 18, 2025 — THE MOMENT THEY TRIED TO FRAME ME"
+            subtitle="MARCH 18, 2025"
+            supplemental="THE MOMENT THEY TRIED TO FRAME ME"
         >
 
             <div className="mt-4">
@@ -51,8 +52,8 @@ export default function UnidentifiedManPage() {
             </div>
 
             <div className="mt-4">
-                I documented the encounter immediately with Kati, my supervisor. Her response was swift:
-                he was "from I.T." taking photos for site documentation. She praised how I had "handled it."
+                I documented the encounter immediately with Kati Baker. Her response was swift, despite being at the regional event herself:
+                he was &quot;from I.T.&quot; taking photos for site documentation. She praised how I had &quot;handled it.&quot;
             </div>
 
             <div className="mt-4">

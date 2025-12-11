@@ -176,7 +176,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 <div className="text-sm text-gray-700 tracking-tight">
-                    <div className="font-semibold text-gray-900 mb-2">
+                    <div className="font-semibold text-gray-900 mb-2 underline">
                         This archive is open source and permanent.
                     </div>
 

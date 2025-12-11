@@ -17,13 +17,12 @@ export default function PermanentDismissalPage() {
             subtitle="MARCH 25-27, 2025 — CONTAINMENT, VULNERABILITY, ERASURE"
         >
 
-            <div className="mt-4 text-lg">
-                <strong>
+            <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
+                <div>
                     This was my first attempt at institutional belonging. They didn't just harm a volunteer —
                     they corrupted someone's introduction to civic participation. The betrayal I had to
-                    metabolize operates at the level of citizenship itself. That is a stain they will never
-                    be able to wash off.
-                </strong>
+                    metabolize operates at the level of citizenship itself.
+                </div>
             </div>
 
             <div className="mt-4">The sequence matters.</div>
