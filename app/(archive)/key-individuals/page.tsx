@@ -15,14 +15,19 @@ export default function KeyIndividualsPage() {
             subtitle="HONEYMAN STATE PARK"
             supplemental="OREGON PARKS & RECREATION DEPARTMENT (OPRD)"
         >
-            <div className="mt-4">
-                These are the central figures referenced throughout this archive —
-            </div>
-            <div className="ml-4">
-                each played a distinct role in the systematic abuse, betrayal, and institutional protection
-            </div>
-            <div className="ml-4">
-                that unfolded at Honeyman State Park and within Oregon State Parks as a whole.
+
+            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+
+                <div>
+                    These are the central figures referenced throughout this archive —
+                </div>
+                <div>
+                    each played a distinct role in the systematic abuse, betrayal, and institutional protection
+                </div>
+                <div>
+                    that unfolded at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and within <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> as a whole.
+                </div>
+
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -49,7 +54,7 @@ export default function KeyIndividualsPage() {
                 Honeyman State Park
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>February 9: responded dismissively to operational questions about power outage protocols, escalated after receiving feedback.</li>
+                <li>February 9: <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
                 <li>Receiver of confidential disclosures Logan transmitted from me.</li>
                 <li>March 5: present during Ryan Warren's coercive meeting, remained silent, intervened only when Ryan made damaging admissions.</li>
                 <li>March 18: received report of unidentified man interrogating me, explained as photo documentation, no photos produced.</li>
@@ -123,6 +128,8 @@ export default function KeyIndividualsPage() {
             <div className="mt-4">
                 Contacted. No acknowledgment.
             </div>
+
+            <hr className="my-6 border-t border-gray-300" />
 
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                 <div className="font-bold text-lg mb-3">

@@ -16,7 +16,7 @@ export default function TrustBrokenPage() {
             subtitle="MARCH 2, 2025 &mdash; THE MOMENT TRUST WAS BROKEN"
         >
 
-            <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div>
                     I initially considered leaving Logan's full name out of this archive. He is younger,
                     early in his career, and operating within a demonstrably toxic institutional culture.
