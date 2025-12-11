@@ -53,7 +53,7 @@ export default function KeyIndividualsPage() {
                 <li>Transmitted confidential disclosures to Kati Baker, Ryan Warren, Allison Watson.</li>
                 <li>Escalated situation with Kati instead of protecting me.</li>
                 <li>Visibly recoiled when confronted with description of his own institutional role.</li>
-                <li>Betrayed <a href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">supervisory trust</a>.</li>
+                <li>Betrayed <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">supervisory trust</Link>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -66,10 +66,10 @@ export default function KeyIndividualsPage() {
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>February 9: <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
                 <li>Receiver of confidential disclosures Logan transmitted from me.</li>
-                <li>March 5: present during Ryan Warren's coercive meeting, remained silent, intervened only when Ryan made damaging admissions.</li>
-                <li>March 18: received report of unidentified man interrogating me, explained as photo documentation, no photos produced.</li>
+                <li>March 5: present during <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
+                <li>March 18: <Link href="/unidentified-man" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
                 <li>Every institutional action taken against me originated from decisions made under her direct supervision.</li>
-                <li>February 9 exchange weaponized repeatedly as justification in subsequent proceedings.</li>
+                <li>February 9 exchange weaponized repeatedly as justification in subsequent proceedings, in both written and recorded documentation.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -80,10 +80,10 @@ export default function KeyIndividualsPage() {
                 Honeyman State Park
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>February 9: confronted me alone same day as email exchange, catalogued first-week mistakes.</li>
-                <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <a href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</a>.</li>
-                <li>Weaponized Logan's disclosures to mock my sexuality at day-use meeting.</li>
-                <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <a href="/final-hours" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</a> no formal documentation existed.</li>
+                <li>February 9: confronted me alone same day as email exchange, an immediate escalation, catalogued first-week mistakes.</li>
+                <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</Link>.</li>
+                <li><Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">Weaponized Logan's disclosures</Link> to mock my sexuality at day-use meeting.</li>
+                <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <Link href="/final-hours" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</Link> no formal documentation existed.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -94,11 +94,11 @@ export default function KeyIndividualsPage() {
                 Oregon Parks &amp; Recreation Department
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>March 10: first contact &mdash; called about March 5 recording, informed me I was &quot;acting as an agent of the state,&quot; established notification requirements.</li>
+                <li>March 10: first contact &mdash; called about March 5 recording, informed me I was &quot;acting as an agent of the state,&quot; established notification requirements (recorded).</li>
                 <li>Follow-up call: told me to &quot;get through my time,&quot; dismissed documented abuse.</li>
-                <li>Issued permanent removal letter explicitly stating removal was for speaking publicly about my experience.</li>
-                <li>Used Logan's disclosures to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
-                <li>Named retaliation for protected speech in writing on agency letterhead.</li>
+                <li><Link href="/permanent-dismissal" className="underline text-emerald-800 hover:text-emerald-600">Issued permanent removal letter</Link> explicitly stating removal was for speaking publicly about my experience.</li>
+                <li><Link href="/trust-broken/supplemental" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
+                <li><strong>Named retaliation for protected speech in writing on agency letterhead</strong>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -112,9 +112,10 @@ export default function KeyIndividualsPage() {
                 <li>August: <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 hover:underline">received comprehensive open letter</Link> with audio and video evidence.</li>
                 <li><Link href="https://rswfire.com/fieldcraft/01K3J5AW1NGKN285PRRA4RBW6X" className="text-emerald-700 hover:underline">Responded within twelve hours</Link> with procedural language, no specific accountability measures.</li>
                 <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
-                <li>December: reduced documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
+                <li>December: reduced comprehensive documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
                 <li>Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published.</li>
                 <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
+                <li><strong>Failed to protect a queer unpaid volunteer from the targeted abuse of her subordinates</strong>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
