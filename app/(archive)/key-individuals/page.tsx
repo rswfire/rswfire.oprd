@@ -103,9 +103,9 @@ export default function KeyIndividualsPage() {
                 <li>Responded within twelve hours with procedural language, no specific accountability measures.</li>
                 <li>Directed documented misconduct into internal channels.</li>
                 <li>All documented individuals remain employed, no investigations announced, no protections implemented.</li>
-                <li>December 2025: reduced documentation to emotional processing, stated further correspondence would not "lead to the resolution you're seeking".</li>
+                <li>December 2025: reduced documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
                 <li>Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published.</li>
-                <li>Chose institutional protection over volunteer safety.</li>
+                <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
             </ul>
             <div className="mt-4">
                 <Link href="https://rswfire.com/fieldcraft/01K3F8X412D5GEY1CXB4WRRPRK" className="text-emerald-700 hover:underline">
