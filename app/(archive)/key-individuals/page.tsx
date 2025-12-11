@@ -101,8 +101,7 @@ export default function KeyIndividualsPage() {
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>August: received comprehensive open letter with audio and video evidence.</li>
                 <li>Responded within twelve hours with procedural language, no specific accountability measures.</li>
-                <li>Directed documented misconduct into internal channels.</li>
-                <li>All documented individuals remain employed, no investigations announced, no protections implemented.</li>
+                <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
                 <li>December 2025: reduced documentation to emotional processing, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
                 <li>Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published.</li>
                 <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
