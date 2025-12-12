@@ -9,7 +9,7 @@ export default function OverviewPage() {
 
                 {/* OPENING STATEMENT */}
                 <div className="mb-4 text-base sm:text-lg leading-relaxed">
-                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> &mdash; all documented with audio and video evidence.
+                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>. This archive documents those events and the subsequent responses of park leadership, agency executives, and the Governor’s office — with audio, video, and written evidence.
                 </div>
 
                 {/* Main Content */}
