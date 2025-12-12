@@ -18,7 +18,7 @@ export default function CovertEncounterPage() {
         >
 
             <div className="mt-4">
-                Six days before my removal from Honeyman State Park, an unidentified man approached me
+                Six days before my removal from <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>, an unidentified man approached me
                 while I was cleaning the yurts. He was not in uniform. He carried no identification.
                 He claimed he was “with the park service,” taking photos of yurts mid-clean — doors
                 propped open, sanitizer running, trash cans holding doors ajar.
@@ -259,7 +259,8 @@ You never responded to my August 15th letter about the covert operative encounte
 I'm providing supplemental documentation now.
 
 This is the video I recorded immediately after the March 18th encounter - before I understood what it actually was:
-Encounter with Assertive Man Ends in Departure
+Encounter with Assertive Man Ends in Departure 
+https://www.youtube.com/watch?v=EwecWXvc8DE
 
 In it, you'll hear me describe:
   * An assertive man who appeared while I was alone.

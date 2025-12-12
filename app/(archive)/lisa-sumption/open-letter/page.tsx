@@ -19,9 +19,11 @@ export default function OpenLetterPage() {
 
             <div className="mt-4">
                 On August 25, 2025, I sent Director Lisa Sumption a comprehensive public letter
-                documenting the full scope of the misconduct at Honeyman State Park, the structural
-                failures that enabled it, and the institutional silence that followed. The letter
-                acknowledged her accomplishments, named the harm plainly, and outlined concrete
+                documenting the full scope of the misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>, the structural
+                failures that enabled it, and the institutional silence that followed.
+            </div>
+
+            <div className="mt-4">The letter acknowledged her accomplishments, named the harm plainly, and outlined concrete
                 protections that would prevent future volunteers from being subjected to what I
                 endured.
             </div>

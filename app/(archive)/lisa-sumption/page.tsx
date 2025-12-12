@@ -16,10 +16,8 @@ export default function LisaSumptionIndexPage() {
         >
 
             <div className="mt-4">
-                This section documents the actions, decisions, and institutional responses of
-                <span className="font-semibold">Director Lisa Sumption</span> &mdash; the highest-level
-                authority notified of the abuse, retaliation, and systemic failures that occurred at
-                <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.
+                This section documents the actions, decisions, and institutional responses of <span className="font-semibold">Director Lisa Sumption</span> &mdash; the highest-level
+                authority notified of the abuse, retaliation, and systemic failures that occurred at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.
             </div>
 
             <div className="mt-4">
