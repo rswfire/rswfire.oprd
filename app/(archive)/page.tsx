@@ -42,7 +42,7 @@ export default function OverviewPage() {
 
                     <div className="mt-4">
                         On August 25, 2025, I sent a comprehensive{" "}
-                        <Link href="/lisa-sumption/open-letter" className="underline">
+                        <Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">
                             Open Letter to Director Lisa Sumption
                         </Link>
                         .
@@ -65,7 +65,7 @@ export default function OverviewPage() {
 
                     <div className="mt-4">
                         Earlier that week, I filed a{" "}
-                        <Link href="/lisa-sumption/public-records-request" className="underline">
+                        <Link href="/lisa-sumption/public-records-request" className="underline text-emerald-800 hover:text-emerald-600">
                             Public Records Request
                         </Link>
                         .
@@ -112,22 +112,22 @@ export default function OverviewPage() {
 
                     <ul className="mt-4 space-y-2 sm:space-y-0 list-disc ml-6 sm:list-none sm:ml-0">
                         <li>
-                            Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline">orchestrated it</Link>.
+                            Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">orchestrated it</Link>.
                         </li>
                         <li>
-                            Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline">executed it</Link>.
+                            Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">executed it</Link>.
                         </li>
                         <li>
-                            Logan Bliss, Volunteer Services Lead, <Link href="/logan" className="underline">weaponized friendship to enable it</Link>.
+                            Logan Bliss, Volunteer Services Lead, <Link href="/logan" className="underline text-emerald-800 hover:text-emerald-600">weaponized friendship to enable it</Link>.
                         </li>
                         <li>
-                            Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline">formalized the retaliation in writing</Link>.
+                            Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
                         </li>
                         <li>
-                            Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline">acknowledged it and chose to protect them</Link>.
+                            Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">acknowledged it and chose to protect them</Link>.
                         </li>
                         <li>
-                            The agency violated public records law for 90+ days <Link href="/lisa-sumption/public-records-request" className="underline">to avoid transparency about it</Link>.
+                            The agency violated public records law for 90+ days <Link href="/lisa-sumption/public-records-request" className="underline text-emerald-800 hover:text-emerald-600">to avoid transparency about it</Link>.
                         </li>
                     </ul>
 
@@ -181,7 +181,7 @@ export default function OverviewPage() {
                     </div>
 
                     <div className="mb-2">
-                        The complete source code, documentation, and evidence structure are publicly available on <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" rel="noopener noreferrer" className="underline text-emerald-700 hover:text-emerald-600">GitHub</Link>. This ensures the archive cannot be silenced, cannot be altered without detection, and cannot disappear.
+                        The complete source code, documentation, and evidence structure are publicly available on <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" rel="noopener noreferrer" className="underline text-emerald-800 hover:text-emerald-600">GitHub</Link>. This ensures the archive cannot be silenced, cannot be altered without detection, and cannot disappear.
                     </div>
 
                     <div className="mb-2">
@@ -189,7 +189,7 @@ export default function OverviewPage() {
                     </div>
 
                     <div>
-                        Other documentation projects are welcome to fork this codebase for their own institutional accountability archives. <Link href="mailto:rsw@rswfire.com" className="underline text-emerald-700 hover:text-emerald-600">Contact me</Link> if you need assistance.
+                        Other documentation projects are welcome to fork this codebase for their own institutional accountability archives. <Link href="https://rswfire.com/contact" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Contact me</Link> if you need assistance.
                     </div>
                 </div>
 
