@@ -45,7 +45,7 @@ export default function LisaClosurePage() {
             <Email
                 from="Robert Samuel White <rsw@rswfire.com>"
                 to="Director Lisa Sumption"
-                date="December 2025"
+                date="December 7, 2025"
                 subject="There's something you should know."
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
@@ -87,7 +87,7 @@ Samuel
             <Email
                 from="Director Lisa Sumption"
                 to="Samuel White"
-                date="December 2025"
+                date="December 8, 2025"
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`Dear Samuel,
@@ -118,7 +118,7 @@ Lisa
             <Email
                 from="Robert Samuel White"
                 to="Director Lisa Sumption"
-                date="December 2025"
+                date="December 8, 2025"
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`I acknowledge receipt of your message.
@@ -141,12 +141,45 @@ oprdvolunteerabuse.org
             <Email
                 from="Director Lisa Sumption"
                 to="Robert Samuel White"
-                date="December 2025"
+                date="December 8, 2025"
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`And I yours.
 
 Lisa Sumption
+`}
+                </pre>
+            </Email>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            {/* ----------------------------------------------------- */}
+            {/* MY FINAL ACKNOWLEDGMENT                               */}
+            {/* ----------------------------------------------------- */}
+
+            <h2 className="text-xl font-semibold">My Final Word</h2>
+
+            <Email
+                from="Robert Samuel White"
+                to="Director Lisa Sumption"
+                date="December 11, 2025"
+            >
+                <pre className="whitespace-pre-wrap font-mono text-sm">
+{`Lisa,
+
+This message is a courtesy. It is not an attempt to reopen dialogue.
+
+You chose to characterize documented identity-based targeting as emotional processing.
+That choice is now documented.
+
+Your role in these proceedings is detailed here:
+https://oprdvolunteerabuse.org/lisa-sumption 
+
+I will continue my accountability work where it will have the greatest institutional effect.
+
+Take care,
+
+Sam
 `}
                 </pre>
             </Email>
