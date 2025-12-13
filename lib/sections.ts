@@ -8,8 +8,6 @@ export const archiveSections = [
     { href: "/coercion", label: "Coercion" },
     { href: "/dismissal", label: "Dismissal" },
     { href: "/expulsion", label: "Expulsion" },
-    { href: "/lisa-sumption", label: "The Director's Decisions" },
     { href: "/naming-the-harm", label: "Accountability" },
-    { href: "/lessons-learned", label: "Lessons Learned" },
-    { href: "/i-held-my-shape", label: "I Held My Shape" },
+    { href: "/lisa-sumption", label: "The Director's Decisions" },
 ];

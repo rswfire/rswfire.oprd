@@ -43,17 +43,11 @@ export default function Header() {
                             <Link href="/ethics" className="hover:text-black">
                                 ETHICS
                             </Link>
-                            <Link href="/key-individuals" className="hover:text-black">
-                                KEY INDIVIDUALS
-                            </Link>
                             <Link href="/timeline" className="hover:text-black">
                                 TIMELINE
                             </Link>
                             <Link href="/lisa-sumption" className="hover:text-black">
                                 THE DIRECTOR'S DECISIONS
-                            </Link>
-                            <Link href="/lessons-learned" className="hover:text-black">
-                                LESSONS LEARNED
                             </Link>
                         </nav>
                     </div>
