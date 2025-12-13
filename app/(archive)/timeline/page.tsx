@@ -1,216 +1,184 @@
 // app/(archive)/timeline/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
-    title: "Timeline: A System in Panic",
-    description: "Chronological documentation of escalating institutional retaliation from March 5-26, 2025.",
+    title: "Timeline",
+    description: "Chronological documentation of systematic abuse and institutional retaliation, February-March 2025.",
 };
 
 export default function TimelinePage() {
     return (
         <SectionPage
-            title="TIMELINE: A SYSTEM IN PANIC"
-            subtitle="MARCH 5-26, 2025 — THE MONTH OF INCREASING PRESSURE"
+            title="TIMELINE"
+            subtitle="FEBRUARY 9 — MARCH 27, 2025"
         >
-
             <div className="mt-4">
-                I was scheduled to leave Honeyman on March 30 and begin my next assignment at Tugman
-                State Park — somewhere I had already volunteered, somewhere I was welcomed.
+                This timeline documents the sequence of events from initial contact with Park Supervisor Kati Baker in February 2025 through permanent dismissal by Engagement Programs Manager Allison Watson in March 2025, followed by escalation to Director Lisa Sumption and Governor Tina Kotek through December 2025.
             </div>
 
-            <div className="mt-4">I was calm. I was complete. I was prepared to go clean.</div>
-            <div>But Ryan Warren and Kati Baker couldn't let me leave intact.</div>
-            <div>
-                And what followed was a chain reaction that exposed how fragile the system really is —
-                and how catastrophically they misread the field.
-            </div>
+            <hr className="my-6 border-t border-gray-300" />
 
-            <h3 className="text-lg font-semibold py-6">📆 THE SEQUENCE</h3>
+            <h2 className="text-xl font-semibold">FEBRUARY — MARCH 2025: ABUSE AND DISMISSAL</h2>
 
-            <ul className="space-y-6 border-l border-gray-300 ml-6 pl-6 mx-12">
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
-                    <div><strong>March 5, 2025 — The Recorded Meeting</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>• Over an hour of systematic psychological pressure at public picnic table.</div>
-                        <div>
-                            • Ryan tells me to "chew glass and swallow it" and admits I was never given benefit
-                            of the doubt.
-                        </div>
-                        <div>
-                            • I record the entire meeting — creating permanent evidence of institutional abuse
-                            methodology.
-                        </div>
-                        <div>• The recording becomes institutional threat they cannot control or eliminate.</div>
+                    <div className="font-semibold">February 9, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/how-it-started" className="text-emerald-700 underline">
+                            Kati Baker responds dismissively
+                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: Ryan Warren confronts me alone, cataloging first-week mistakes.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>Days Later — Legal Intimidation Attempt</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>
-                            • Engagement Programs Manager Allison Watson calls warning me recording was illegal
-                            in Oregon.
-                        </div>
-                        <div>• Clear attempt to eliminate documented evidence through legal intimidation.</div>
-                        <div>
-                            • Institutional panic about comprehensive abuse documentation they couldn't disappear.
-                        </div>
-                        <div>• Legal intimidation fails — I preserve the evidence while keeping it private.</div>
+                    <div className="font-semibold">February (ongoing)</div>
+                    <div className="mt-2 text-sm">
+                        Systematic undermining of supervisor relationships. Logan Bliss elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/trust-broken" className="text-emerald-700 underline">"Trust" email</Link> on March 2.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>March 18, 2025 — Covert Assessment Deployment</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>
-                            • When legal intimidation failed to eliminate recorded evidence, institutional
-                            escalation to covert tactics.
-                        </div>
-                        <div>• An unidentified man approaches me while I'm cleaning yurts alone.</div>
-                        <div>• No uniform, no ID, no introduction — claims authority without verification.</div>
-                        <div>
-                            • Interrogates me with invasive personal questions about leadership treatment.
-                        </div>
-                        <div>
-                            • Clear institutional probe attempting to elicit complaints or problematic responses.
-                        </div>
-                        <div>• I recognize the assessment tactic, document the encounter immediately.</div>
-                        <div>• Kati provides hasty "IT documentation" explanation within hours.</div>
-                        <div>• No photos are ever produced — the cover story was fabricated.</div>
+                    <div className="font-semibold">March 5, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/coercion" className="text-emerald-700 underline">
+                            Ryan Warren and Kati Baker summon me to public picnic table
+                        </Link> for over an hour of psychological pressure. Ryan tells me to "chew glass and swallow it," admits I was never given benefit of the doubt, repeatedly suggests I leave. Entire meeting recorded.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>March 24, 2025 — The Final Phone Call</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>• Ryan Warren calls requesting a third meeting.</div>
-                        <div>• When I ask why, he becomes agitated: I'm "still" being a problem.</div>
-                        <div>• Still — not for anything I'd done, but because I remained unbroken.</div>
-                        <div>• I tell him calmly: "If you escalate, I escalate".</div>
-                        <div>
-                            • He asks if he needs to call the cops — revealing his brutal misunderstanding of
-                            power.
-                        </div>
-                        <div>
-                            • He dismisses me over the phone without cause, six days before scheduled completion.
-                        </div>
+                    <div className="font-semibold">March 10, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Allison Watson calls about March 5 recording, informs me I was "acting as an agent of the state," establishes notification requirements. Follow-up call: tells me to "get through my time," dismisses documented abuse.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>One hour later — The Key Collection</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>• Ryan arrives at my RV to collect keys and documents.</div>
-                        <div>• I record the entire interaction on video.</div>
-                        <div>• He admits on camera: no paperwork exists for my dismissal.</div>
-                        <div>• No formal process, no documented violations.</div>
-                        <div>• Just arbitrary exercise of institutional power.</div>
+                    <div className="font-semibold">March 18, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/lisa-sumption/covert-encounter" className="text-emerald-700 underline">
+                            Unidentified man approaches me
+                        </Link> while cleaning yurts alone, interrogates me about leadership treatment. I document immediately with Kati. Explained as "IT photo documentation" — no photos ever produced.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>March 25, 2025 — The Institutional Cover-Up</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>• Morning: I speak with state volunteer coordinator Allison Watson.</div>
-                        <div>• She reframes documented abuse as my behavioral problems.</div>
-                        <div>• Uses institutional tone to manage what she refuses to investigate.</div>
-                        <div>• Later that day: I move to Tugman State Park as scheduled.</div>
-                        <div>
-                            • Rangers on-site are visibly uncertain — the institutional disturbance has traveled.
-                        </div>
-                        <div>
-                            • Evening: I send Allison a detailed, vulnerable email documenting the full experience.
-                        </div>
-                        <div>• The email disappears into institutional silence.</div>
+                    <div className="font-semibold">March 24, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/dismissal" className="text-emerald-700 underline">
+                            Ryan Warren dismisses me by phone
+                        </Link>, six days before scheduled completion. Stated reason: homeless man's lost journal. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
                     </div>
                 </li>
 
                 <li>
-                    <div><strong>March 26, 2025 — The Permanent Erasure</strong></div>
-                    <div className="mt-2 text-sm space-y-1">
-                        <div>• I receive permanent dismissal from all Oregon State Parks volunteer programs.</div>
-                        <div>• Less than 24 hours after my sincere follow-up letter.</div>
-                        <div>
-                            • Allison's dismissal letter explicitly cites my public speech about the abuse as
-                            the reason.
-                        </div>
-                        <div>
-                            • Written acknowledgment of retaliatory dismissal — institutional retaliation for
-                            documentation.
-                        </div>
-                        <div>• No acknowledgment of systematic abuse, no investigation of covert tactics.</div>
-                        <div>• Just sterile language and institutional finality.</div>
+                    <div className="font-semibold">March 25, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/expulsion" className="text-emerald-700 underline">
+                            Allison Watson calls to contain the situation
+                        </Link>. Logan's disclosures weaponized as "concerning behavior." Complete refusal to engage with documented abuse. I record the call.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 27, 2025</div>
+                    <div className="mt-2 text-sm">
+                        I send <Link href="/expulsion" className="text-emerald-700 underline">detailed letter to Allison</Link> attempting accountability. Hours later: permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse.
                     </div>
                 </li>
             </ul>
 
-            <h2 className="mt-8 text-xl font-semibold">🎯 WHAT THIS SEQUENCE REVEALS</h2>
+            <hr className="my-6 border-t border-gray-300" />
 
-            <div className="mt-4"><strong>This was never about performance.</strong></div>
-            <div className="ml-4">
-                Every evaluation praised my work quality. A ranger documented my competence with his
-                supervisors. I was dismissed for holding my shape, not for failing standards.
-            </div>
+            <h2 className="text-xl font-semibold">AUGUST — DECEMBER 2025: INSTITUTIONAL SILENCE AND ESCALATION</h2>
 
-            <div className="mt-4"><strong>This was never about policy violations.</strong></div>
-            <div className="ml-4">
-                No paperwork existed. No formal process was followed. No documented infractions were
-                cited. They created procedure on the spot to justify predetermined outcomes.
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">August 16, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/lisa-sumption/covert-encounter" className="text-emerald-700 underline">
+                            Escalate March 18 encounter to Director Lisa Sumption
+                        </Link> with full documentation. No response.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">August 22, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/lisa-sumption/public-records-request" className="text-emerald-700 underline">
+                            Submit comprehensive public records request
+                        </Link>. OPRD remains silent for 90 days.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">August 25, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline">
+                            Send open letter to Director Lisa Sumption
+                        </Link> with comprehensive documentation. She responds within 12 hours with procedural language, no commitments.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">November 15, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/lisa-sumption/public-records-request" className="text-emerald-700 underline">
+                            Issue Notice of Violation
+                        </Link> for OPRD's failure to respond to public records request.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">November 20, 2025</div>
+                    <div className="mt-2 text-sm">
+                        OPRD responds claiming they posted response to inaccessible internal portal on August 29. Cost estimate: tens of thousands of dollars. I withdraw the request.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">December 7, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Send <Link href="/lisa-sumption/closure" className="text-emerald-700 underline">final message to Director Sumption</Link>. She responds December 8, reframing documentation as emotional processing, closes communication.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">December 10, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Send <Link href="/trust-broken" className="text-emerald-700 underline">letter naming Logan's betrayal</Link> to Logan Bliss. CC: Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">December 11, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Build dedicated section documenting <Link href="/lisa-sumption" className="text-emerald-700 underline">Director Lisa Sumption's decisions</Link>. Send final message: "I will continue my accountability work where it will have the greatest institutional effect."
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">December 12, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Forward relevant documentation to Governor Tina Kotek with "FYI" at top.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <div className="mt-4">
+                Every person documented in this timeline had the power to stop this.
             </div>
 
             <div className="mt-4">
-                <strong>This was about institutional panic over documented evidence.</strong>
-            </div>
-            <div className="ml-4">
-                The recorded meeting created permanent evidence of systematic abuse they couldn't control.
-                Each escalation — legal intimidation, covert assessment, accelerated removal — represented
-                institutional desperation to eliminate accountability documentation.
-            </div>
-
-            <div className="mt-4"><strong>This was about misrecognition.</strong></div>
-            <div className="ml-4">
-                They thought they were managing a disposable volunteer. They were actually performing for
-                a strategic observer with documentation skills, platform access, and uncompromising ethical
-                boundaries.
+                Every person chose not to.
             </div>
 
             <div className="mt-4">
-                <strong>This was about institutional coordination above park level.</strong>
-            </div>
-            <div className="ml-4">
-                Covert operative deployment likely required administrative authorization beyond what local
-                managers could implement independently. State-level resources were allocated to eliminate
-                a volunteer who maintained comprehensive documentation capability.
-            </div>
-
-            <div className="mt-4"><strong>This was about power miscalculation.</strong></div>
-            <div className="ml-4">
-                They wielded institutional authority expecting submission. Instead, they created
-                documentation of systematic abuse that would outlast their ability to contain it.
-            </div>
-
-            <h2 className="mt-8 text-xl font-semibold">🔄 THE REVERSAL</h2>
-
-            <div className="mt-4">They wanted to mark me with institutional failure.</div>
-            <div className="ml-4">Instead, they marked themselves with documented abuse.</div>
-
-            <div className="mt-4">They wanted to control the narrative.</div>
-            <div className="ml-4">Instead, they lost control of their own story.</div>
-
-            <div className="mt-4">They wanted to erase me quietly.</div>
-            <div className="ml-4">Instead, they made themselves permanently visible.</div>
-
-            <div className="mt-4">The system didn't collapse because it was weak.</div>
-            <div className="ml-4">
-                It collapsed because it was <strong>wrong</strong> — and someone was watching who couldn't
-                be managed, broken, or disappeared.
-            </div>
-
-            <div className="mt-8 italic text-gray-600 text-center">
-                Every action after the recorded meeting was institutional panic masquerading as procedure.
-                <br />
-                They had already lost — every escalation just added to the existing record.
+                Those choices are now permanent.
             </div>
 
         </SectionPage>
