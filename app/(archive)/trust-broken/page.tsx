@@ -110,14 +110,14 @@ Sam
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">DECEMBER 10, 2025 &mdash; NAMING THE HARM</h2>
+            <h2 className="text-xl font-semibold">DECEMBER 10, 2025 &mdash; REVEALING THE SUPERVISORY BETRAYAL</h2>
 
             <Email
                 from="Robert Samuel White"
                 to="Logan Bliss, Volunteer Services Lead"
                 cc="Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption"
                 date="December 10, 2025"
-                subject="Naming the Harm"
+                subject="For the Record: Supervisory Betrayal"
             >
 <pre className="whitespace-pre-wrap">{`Logan,
 
