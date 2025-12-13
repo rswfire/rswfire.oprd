@@ -15,23 +15,7 @@ export default function NamingTheHarmPage() {
             subtitle="THE LETTERS THEY MUST RECKON WITH"
         >
 
-            <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
-                <h2 className="text-xl font-semibold text-center">
-                    NONE OF THESE LETTERS RECEIVED A RESPONSE.<br/>NONE NEEDED ONE.
-                </h2>
-                <div className="mt-4">
-                    These are not attempts at reconciliation. They are permanent documentation of harm caused
-                    by people in positions of authority who chose institutional protection over human
-                    accountability.
-                </div>
-
-                <div className="mt-4">
-                    The archive ensures these letters outlast silence. The record is permanent. And every
-                    person named here will carry their choice forward &mdash; whether they acknowledge it or not.
-                </div>
-            </div>
-
-            <div className="sm:px-8 sm:mt-8">
+            <div className="sm:px-8">
 
                 <div className="mt-4">
                     After months of institutional silence, I sent letters naming the harm directly to those
@@ -393,6 +377,26 @@ https://oprdvolunteerabuse.org/naming-the-harm
 `}</pre>
 
             </Email>
+
+            {/* CLOSING */}
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <div className="p-4 bg-green-50 border border-l-4 border-emerald-600 text-sm">
+                <h2 className="text-xl font-semibold text-center">
+                    NONE OF THESE LETTERS RECEIVED A RESPONSE.<br/>NONE NEEDED ONE.
+                </h2>
+                <div className="mt-4">
+                    These are not attempts at reconciliation. They are permanent documentation of harm caused
+                    by people in positions of authority who chose institutional protection over human
+                    accountability.
+                </div>
+
+                <div className="mt-4">
+                    The archive ensures these letters outlast silence. The record is permanent. And every
+                    person named here will carry their choice forward &mdash; whether they acknowledge it or not.
+                </div>
+            </div>
 
         </SectionPage>
     );

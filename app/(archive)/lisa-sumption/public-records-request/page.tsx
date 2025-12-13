@@ -150,10 +150,7 @@ The public interest in disclosure substantially outweighs any administrative bur
 CONTACT INFORMATION
 
 Robert Samuel White
-Post Office Box 334
-Reedsport, Oregon 97467
-rsw@rswfire.com
-458-230-1869
+{Contact}
 
 I understand that Oregon law requires a response within a reasonable time, and that fees may apply for extensive copying. Please contact me if you need clarification on any aspect of this request.
 
