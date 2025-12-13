@@ -1,3 +1,5 @@
+// app/(archive)/lisa-sumption/closure/page.tsx
+
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -36,9 +38,7 @@ export default function LisaClosurePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* MY MESSAGE TO DIRECTOR SUMPTION                       */}
-            {/* ----------------------------------------------------- */}
+            {/* MY MESSAGE */}
 
             <h2 className="text-xl font-semibold">My Message to Director Sumption</h2>
 
@@ -78,9 +78,7 @@ Samuel
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* HER RESPONSE                                           */}
-            {/* ----------------------------------------------------- */}
+            {/* HER RESPONSE */}
 
             <h2 className="text-xl font-semibold">Director Sumption’s Response</h2>
 
@@ -109,9 +107,7 @@ Lisa
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* MY ACKNOWLEDGMENT                                     */}
-            {/* ----------------------------------------------------- */}
+            {/* MY ACKNOWLEDGEMENT */}
 
             <h2 className="text-xl font-semibold">My Acknowledgment</h2>
 
@@ -132,9 +128,7 @@ oprdvolunteerabuse.org
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* HER FINAL ACKNOWLEDGMENT                               */}
-            {/* ----------------------------------------------------- */}
+            {/* HER FINAL WORD */}
 
             <h2 className="text-xl font-semibold">Her Final Word</h2>
 
@@ -153,9 +147,7 @@ Lisa Sumption
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* MY FINAL ACKNOWLEDGMENT                               */}
-            {/* ----------------------------------------------------- */}
+            {/* MY FINAL WORD */}
 
             <h2 className="text-xl font-semibold">My Final Word</h2>
 
@@ -186,9 +178,7 @@ Sam
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* ANALYSIS — FACTUAL, NOT THERAPEUTIC                   */}
-            {/* ----------------------------------------------------- */}
+            {/* ANALYSIS */}
 
             <h2 className="text-xl font-semibold">Why This Exchange Matters</h2>
 

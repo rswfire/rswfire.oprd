@@ -1,3 +1,5 @@
+// app/(archive)/lisa-sumption/public-records-request/page.tsx
+
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -32,9 +34,7 @@ export default function PublicRecordsRequestPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* ORIGINAL REQUEST                                      */}
-            {/* ----------------------------------------------------- */}
+            {/* ORIGINAL REQUEST */}
 
             <h2 className="text-xl font-semibold">THE ORIGINAL REQUEST</h2>
 
@@ -172,11 +172,9 @@ Robert Samuel White
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* NOTICE OF VIOLATION                                   */}
-            {/* ----------------------------------------------------- */}
+            {/* NOTICE OF VIOLATION */}
 
-            <h2 className="text-xl font-semibold">NOTICE OF VIOLATION — NOVEMBER 15, 2025</h2>
+            <h2 className="text-xl font-semibold">NOTICE OF VIOLATION &mdash; NOVEMBER 15, 2025</h2>
 
             <Email
                 from="Robert Samuel White"
@@ -303,11 +301,9 @@ https://rswfire.com/honeyman
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* OPRD RESPONSE                                         */}
-            {/* ----------------------------------------------------- */}
+            {/* INSTITUTIONAL RESPONSE */}
 
-            <h2 className="text-xl font-semibold">INSTITUTIONAL RESPONSE — NOVEMBER 20, 2025</h2>
+            <h2 className="text-xl font-semibold">INSTITUTIONAL RESPONSE &mdash; NOVEMBER 20, 2025</h2>
 
             <Email
                 from="Katie Gauthier — OPRD"
@@ -333,17 +329,15 @@ Katie
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* FINAL WITHDRAWAL                                      */}
-            {/* ----------------------------------------------------- */}
+            {/* MY FINAL REPLY */}
 
-            <h2 className="text-xl font-semibold">MY FINAL REPLY — WITHDRAWAL</h2>
+            <h2 className="text-xl font-semibold">MY FINAL REPLY &mdash; WITHDRAWAL</h2>
 
             <Email
                 from="Robert Samuel White"
                 to="Katie Gauthier — OPRD"
                 date="November 20, 2025"
-                subject="Withdrawal of Public Records Request"
+                subject="Re: Notice of Violation - Failure to Respond to Public Records Request (Submitted August 22, 2025)"
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`Dear Ms. Gauthier,

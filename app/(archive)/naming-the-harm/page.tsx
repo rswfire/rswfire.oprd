@@ -264,54 +264,25 @@ export default function NamingTheHarmPage() {
                 date="August 13, 2025, 10:16 PM"
                 subject="For the Record &mdash; You Wounded Me Too"
             >
-                <div className="mt-4">Kati,</div>
+<pre className="whitespace-pre-wrap">{`Kati,
 
-                <div className="mt-4">
-                    During that meeting at the day use area, you framed our early interaction as an emotional
-                    wound inflicted on you. You were performing, of course &mdash; and I knew this even as I
-                    apologized to you a second time for something that didn't warrant an apology, because I
-                    was trying to keep the peace.
-                </div>
+During that meeting at the day use area, you framed our early interaction as an emotional wound inflicted on you. You were performing, of course — and I knew this even as I apologized to you a second time for something that didn’t warrant an apology, because I was trying to keep the peace.
 
-                <div className="mt-4">
-                    But you did emotionally wound me, and now I want you to know how.
-                </div>
+But you did emotionally wound me, and now I want you to know how.
 
-                <div className="mt-4">
-                    You took something deeply sincere and read it through the most cynical lens possible. You
-                    met vulnerability with suspicion, complexity with projection, and instead of asking a
-                    question or seeking to understand, you moved to solidify a narrative that cast me as
-                    dangerous. That move &mdash; conscious or not &mdash; disfigured what might have been possible
-                    between us.
-                </div>
+You took something deeply sincere and read it through the most cynical lens possible. You met vulnerability with suspicion, complexity with projection, and instead of asking a question or seeking to understand, you moved to solidify a narrative that cast me as dangerous. That move — conscious or not — disfigured what might have been possible between us.
 
-                <div className="mt-4">
-                    I wasn't careless with you. I was just myself. And in your role, that should have mattered.
-                    That should have been protected. But instead, you used your authority to make me question
-                    whether there's any space in this institution for someone like me &mdash; someone unwilling to
-                    fragment, to perform, to smile past their truth just to make others feel comfortable.
-                </div>
+I wasn't careless with you. I was just myself. And in your role, that should have mattered. That should have been protected. But instead, you used your authority to make me question whether there’s any space in this institution for someone like me — someone unwilling to fragment, to perform, to smile past their truth just to make others feel comfortable.
 
-                <div className="mt-4">
-                    That experience narrowed my world. It forced me to contract in places I came to serve.
-                    And that harm is real. And I'm still metabolizing it. It is why this letter is necessary
-                    - because healing requires confrontation with the truth. And now I have delivered it.
-                </div>
+That experience narrowed my world. It forced me to contract in places I came to serve. And that harm is real. And I'm still metabolizing it. It is why this letter is necessary - because healing requires confrontation with the truth. And now I have delivered it.
 
-                <div className="mt-4">
-                    You didn't have to understand me. But you could have chosen not to punish what you didn't
-                    understand.
-                </div>
+You didn’t have to understand me. But you could have chosen not to punish what you didn’t understand.
 
-                <div className="mt-4">
-                    In closing: you abused your power. Repeatedly. Covertly. You took a position that should
-                    require integrity, humility, and discernment &mdash; and instead, you acted to protect your own
-                    authority, regardless of the cost to others. That is why I built the archive. Because even
-                    if your institution won't hold you accountable, it will. And it is my sincere hope that it
-                    is enough to prevent you from ever inflicting that harm on another person again.
-                </div>
+In closing: you abused your power. Repeatedly. Covertly. You took a position that should require integrity, humility, and discernment — and instead, you acted to protect your own authority, regardless of the cost to others. That is why I built the archive. Because even if your institution won’t hold you accountable, it will. And it is my sincere hope that it is enough to prevent you from ever inflicting that harm on another person again.
 
-                <div className="mt-4">Sam</div>
+Sam
+`}</pre>
+
             </Email>
 
             {/* LOGAN BLISS LETTER */}
@@ -329,186 +300,97 @@ export default function NamingTheHarmPage() {
                 date="December 9, 2025"
                 subject="For the Record &mdash; Supervisory Betrayal"
             >
-                <div className="mt-4">Logan,</div>
+<pre className="whitespace-pre-wrap">{`Logan,
 
-                <div className="mt-4">
-                    This letter names the harm you caused through betrayal of supervisory trust and
-                    weaponization of vulnerability I shared with you in confidence.
-                </div>
+This letter names the harm you caused through betrayal of supervisory trust and weaponization of vulnerability I shared with you in confidence.
 
-                <div className="mt-4">
-                    You held authority over me as Volunteer Services Lead. That role requires integrity,
-                    discretion, and the protection of those under your supervision. You failed at every level.
-                </div>
+You held authority over me as Volunteer Services Lead. That role requires integrity, discretion, and the protection of those under your supervision. You failed at every level.
 
-                <h3 className="mt-6 font-semibold">THE DISCLOSURES</h3>
+THE DISCLOSURES
 
-                <div className="mt-4">
-                    During our walk at Honeyman, I shared why I had moved into an RV and relocated to the
-                    coast&mdash;my analysis of systemic instability, my strategic thinking about resilience, and my
-                    concerns as a queer person about authoritarian targeting through institutional actors.
-                </div>
+During our walk at Honeyman, I shared why I had moved into an RV and relocated to the coast—my analysis of systemic instability, my strategic thinking about resilience, and my concerns as a queer person about authoritarian targeting through institutional actors.
 
-                <div className="mt-4">
-                    Before that conversation, I set a clear boundary: I told you explicitly this was not
-                    romantic for me.
-                </div>
+Before that conversation, I set a clear boundary: I told you explicitly this was not romantic for me.
 
-                <div className="mt-4">
-                    You took what I shared in confidence and disclosed it to management. That information was
-                    then weaponized by Allison Watson to pathologize my character during dismissal
-                    proceedings&mdash;reframing reasoned analysis as "apocalyptic thinking" and using my fears about
-                    identity-based targeting as evidence of instability.
-                </div>
+You took what I shared in confidence and disclosed it to management. That information was then weaponized by Allison Watson to pathologize my character during dismissal proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about identity-based targeting as evidence of instability.
 
-                <div className="mt-4">
-                    By now you have seen the videos. You know how they used what I told you. You know the harm
-                    that followed.
-                </div>
+By now you have seen the videos. You know how they used what I told you. You know the harm that followed.
 
-                <h3 className="mt-6 font-semibold">THE DISTORTION</h3>
+THE DISTORTION
 
-                <div className="mt-4">
-                    Allison Watson claimed I told you "I was worried you would kill me." That is a deliberate
-                    distortion.
-                </div>
+Allison Watson claimed I told you "I was worried you would kill me." That is a deliberate distortion.
 
-                <div className="mt-4">
-                    What I actually said was that in authoritarian contexts, people like you&mdash;institutional
-                    actors with authority&mdash;would be the mechanism through which targeting of queer people would
-                    occur.
-                </div>
+What I actually said was that in authoritarian contexts, people like you—institutional actors with authority—would be the mechanism through which targeting of queer people would occur.
 
-                <div className="mt-4">You visibly recoiled when I said this.</div>
+You visibly recoiled when I said this.
 
-                <div className="mt-4">
-                    At the time, I interpreted your reaction as discomfort with the subject matter. Later, I
-                    understood: you were already doing exactly what I had described&mdash;using your institutional
-                    position to target my identity.
-                </div>
+At the time, I interpreted your reaction as discomfort with the subject matter. Later, I understood: you were already doing exactly what I had described—using your institutional position to target my identity.
 
-                <div className="mt-4">
-                    And you did this after I explicitly told you the conversation was not romantic. You
-                    weaponized a boundary I set with you in good faith.
-                </div>
+And you did this after I explicitly told you the conversation was not romantic. You weaponized a boundary I set with you in good faith.
 
-                <h3 className="mt-6 font-semibold">THE PATTERN</h3>
+THE PATTERN
 
-                <div className="mt-4">
-                    You elicited trust through reciprocal vulnerability. You spent 90 minutes talking about
-                    yourself&mdash;your background, your concerns, your perspectives. The following day, I
-                    reciprocated. That is how trust-building works.
-                </div>
+You elicited trust through reciprocal vulnerability. You spent 90 minutes talking about yourself—your background, your concerns, your perspectives. The following day, I reciprocated. That is how trust-building works.
 
-                <div className="mt-4">
-                    But after I opened up, you distanced yourself. Then you disclosed what I shared to people
-                    who were already working to remove me.
-                </div>
+But after I opened up, you distanced yourself. Then you disclosed what I shared to people who were already working to remove me.
 
-                <div className="mt-4">That is not supervision. That is betrayal.</div>
+That is not supervision. That is betrayal.
 
-                <h3 className="mt-6 font-semibold">THE ENABLING</h3>
+THE ENABLING
 
-                <div className="mt-4">
-                    Your disclosures gave Ryan Warren, Kati Baker, and Allison Watson the ammunition they
-                    needed to justify what they had already decided to do.
-                </div>
+Your disclosures gave Ryan Warren, Kati Baker, and Allison Watson the ammunition they needed to justify what they had already decided to do.
 
-                <div className="mt-4">
-                    Ryan used it to mock me at the day-use meeting&mdash;suggesting I "thought I had a future with
-                    you"&mdash;weaponizing my sexuality and distorting ordinary human connection into something
-                    inappropriate.
-                </div>
+Ryan used it to mock me at the day-use meeting—suggesting I "thought I had a future with you"—weaponizing my sexuality and distorting ordinary human connection into something inappropriate.
 
-                <div className="mt-4">I am certain that insinuation entered the narrative with your consent.</div>
+I am certain that insinuation entered the narrative with your consent.
 
-                <div className="mt-4">
-                    Kati and Allison used your disclosures to construct a psychological profile justifying my
-                    permanent dismissal&mdash;reframing vulnerability as instability, analysis as extremism, and
-                    identity-based fears as concerning behavior.
-                </div>
+Kati and Allison used your disclosures to construct a psychological profile justifying my permanent dismissal—reframing vulnerability as instability, analysis as extremism, and identity-based fears as concerning behavior.
 
-                <div className="mt-4">
-                    You enabled that. Actively. With full knowledge of what they were doing.
-                </div>
+You enabled that. Actively. With full knowledge of what they were doing.
 
-                <h3 className="mt-6 font-semibold">WHAT YOU SHOULD UNDERSTAND</h3>
+WHAT YOU SHOULD UNDERSTAND
 
-                <div className="mt-4">I treated you with integrity you never had.</div>
+I treated you with integrity you never had.
 
-                <div className="mt-4">
-                    Despite your pattern of intimacy followed by distance, I continued to see the best in you.
-                    I made space for the tension between your depth and the institution you serve. I chose to
-                    believe you were capable of better.
-                </div>
+Despite your pattern of intimacy followed by distance, I continued to see the best in you. I made space for the tension between your depth and the institution you serve. I chose to believe you were capable of better.
 
-                <div className="mt-4">I was wrong.</div>
+I was wrong.
 
-                <div className="mt-4">
-                    You had every opportunity to protect what I shared with you. Instead, you delivered it to
-                    people who used it to harm me.
-                </div>
+You had every opportunity to protect what I shared with you. Instead, you delivered it to people who used it to harm me.
 
-                <div className="mt-4">
-                    That choice&mdash;to betray supervisory trust and weaponize queer vulnerability after I
-                    explicitly set a boundary with you&mdash;is now part of the permanent record.
-                </div>
+That choice—to betray supervisory trust and weaponize queer vulnerability after I explicitly set a boundary with you—is now part of the permanent record.
 
-                <h3 className="mt-6 font-semibold">THE RECORD</h3>
+THE RECORD
 
-                <div className="mt-4">You are documented by full name in a public archive:</div>
+You are documented by full name in a public archive:
 
-                <div className="ml-8 mt-2">
-                    🔗{" "}
+https://oprdvolunteerabuse.org/trust-broken
 
-                    <a href="https://oprdvolunteerabuse.org/trust-broken"
-                       className="text-emerald-700 underline"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                    >
-                        https://oprdvolunteerabuse.org/trust-broken
-                    </a>
-                </div>
+https://oprdvolunteerabuse.org/trust-broken/supplemental
 
-                <div className="ml-8">
-                    🔗{" "}
+This archive details:
 
-                    <a href="https://oprdvolunteerabuse.org/trust-broken/supplemental"
-                       className="text-emerald-700 underline"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                    >
-                        https://oprdvolunteerabuse.org/trust-broken/supplemental
-                    </a>
-                </div>
+Your disclosure of confidential personal information
 
-                <div className="mt-4">This archive details:</div>
-                <ul className="list-disc ml-8 mt-2">
-                    <li>Your disclosure of confidential personal information</li>
-                    <li>Your participation in identity-based targeting</li>
-                    <li>Your weaponization of a boundary I set with you</li>
-                    <li>Your role in enabling institutional abuse</li>
-                </ul>
+Your participation in identity-based targeting
 
-                <div className="mt-4">This is not a request for response.</div>
-                <div>This is a statement of record.</div>
-                <div>Your choices as Volunteer Services Lead are now permanently attached to your name.</div>
+Your weaponization of a boundary I set with you
 
-                <div className="mt-6">&mdash;</div>
-                <div>Sam White</div>
-                <div>
+Your role in enabling institutional abuse
 
-                    <a href="https://oprdvolunteerabuse.org"
-                       className="text-emerald-700 underline"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                    >
-                        https://oprdvolunteerabuse.org
-                    </a>
-                </div>
+This is not a request for response.
 
-                <div className="mt-4">A copy of this letter is here:</div>
-                <div>https://oprdvolunteerabuse.org/naming-the-harm</div>
+This is a statement of record.
+
+Your choices as Volunteer Services Lead are now permanently attached to your name.
+
+—Sam White
+
+https://oprdvolunteerabuse.org/
+
+A copy of this letter is here:
+https://oprdvolunteerabuse.org/naming-the-harm
+`}</pre>
 
             </Email>
 

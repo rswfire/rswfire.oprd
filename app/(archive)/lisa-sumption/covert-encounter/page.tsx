@@ -1,3 +1,5 @@
+// app/(archive)/lisa-sumption/covert-encounter/page.tsx
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -42,9 +44,7 @@ export default function CovertEncounterPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* INITIAL LETTER TO DIRECTOR LISA SUMPTION (8/16/2025)  */}
-            {/* ----------------------------------------------------- */}
+            {/* INITIAL LETTER */}
 
             <h2 className="text-xl font-semibold">ESCALATION TO DIRECTOR LISA SUMPTION</h2>
 
@@ -238,11 +238,9 @@ Sam
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* SUPPLEMENTAL EMAIL TO LISA (NO RESPONSE)              */}
-            {/* ----------------------------------------------------- */}
+            {/* SUPPLEMENTAL */}
 
-            <h2 className="text-xl font-semibold">SUPPLEMENTAL EVIDENCE SENT — NO RESPONSE</h2>
+            <h2 className="text-xl font-semibold">SUPPLEMENTAL EVIDENCE SENT &mdash; NO RESPONSE</h2>
 
             <Email
                 from="Robert Samuel White <rsw@rswfire.com>"
@@ -305,9 +303,7 @@ https://rswfire.com/honeyman
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* CLOSING ANALYSIS                                      */}
-            {/* ----------------------------------------------------- */}
+            {/* CLOSING STATEMENT */}
 
             <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                 <div className="text-lg font-bold mb-2">WHAT THIS ESTABLISHES</div>

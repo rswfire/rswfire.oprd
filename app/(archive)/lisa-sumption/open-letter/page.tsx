@@ -1,3 +1,5 @@
+// app/(archive)/lisa-sumption/open-letter/page.tsx
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -36,11 +38,9 @@ export default function OpenLetterPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* THE OPEN LETTER                                       */}
-            {/* ----------------------------------------------------- */}
+            {/* OPEN LETTER */}
 
-            <h2 className="text-xl font-semibold">THE LETTER I SENT</h2>
+            <h2 className="text-xl font-semibold">THE OPEN LETTER I SENT</h2>
 
             <Email
                 from="Sam White <rsw@rswfire.com>"
@@ -139,11 +139,9 @@ rswfire.com/honeyman
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ----------------------------------------------------- */}
-            {/* LISA'S RESPONSE                                       */}
-            {/* ----------------------------------------------------- */}
+            {/* DIRECTOR'S RESPONSE */}
 
-            <h2 className="text-xl font-semibold">HER RESPONSE</h2>
+            <h2 className="text-xl font-semibold">THE DIRECTOR'S RESPONSE</h2>
 
             <Email
                 from="Lisa Sumption"
