@@ -83,7 +83,7 @@ export default function KeyIndividualsPage() {
                 <li>February 9: confronted me alone same day as email exchange, an immediate escalation, catalogued first-week mistakes.</li>
                 <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</Link>.</li>
                 <li><Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">Weaponized Logan's disclosures</Link> to mock my sexuality at day-use meeting.</li>
-                <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <Link href="/final-hours" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</Link> no formal documentation existed.</li>
+                <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <Link href="/dismissal" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</Link> no formal documentation existed.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -96,7 +96,7 @@ export default function KeyIndividualsPage() {
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>March 10: first contact &mdash; called about March 5 recording, informed me I was &quot;acting as an agent of the state,&quot; established notification requirements (recorded).</li>
                 <li>Follow-up call: told me to &quot;get through my time,&quot; dismissed documented abuse.</li>
-                <li><Link href="/permanent-dismissal" className="underline text-emerald-800 hover:text-emerald-600">Issued permanent removal letter</Link> explicitly stating removal was for speaking publicly about my experience.</li>
+                <li><Link href="/expulsion" className="underline text-emerald-800 hover:text-emerald-600">Issued permanent removal letter</Link> explicitly stating removal was for speaking publicly about my experience.</li>
                 <li><Link href="/trust-broken/supplemental" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
                 <li><strong>Named retaliation for protected speech in writing on agency letterhead</strong>.</li>
             </ul>

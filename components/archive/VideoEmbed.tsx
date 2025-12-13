@@ -17,7 +17,7 @@ export default function VideoEmbed({
         : `https://player.vimeo.com/video/${vimeoId}`;
 
     return (
-        <div className="my-8">
+        <div className="m-2">
             <div className="aspect-video bg-slate-900 rounded-lg overflow-hidden shadow-lg">
                 <iframe
                     src={embedUrl}

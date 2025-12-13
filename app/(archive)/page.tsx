@@ -121,7 +121,7 @@ export default function OverviewPage() {
                             Logan Bliss, Volunteer Services Lead, <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">weaponized friendship to enable it</Link>.
                         </li>
                         <li>
-                            Allison Watson, Engagement Programs Manager, <Link href="/permanent-dismissal" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
+                            Allison Watson, Engagement Programs Manager, <Link href="/expulsion" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
                         </li>
                         <li>
                             Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">acknowledged it and chose to protect them</Link>.
