@@ -40,6 +40,9 @@ export default function Header() {
                             <Link href="/" className="hover:text-black">
                                 OVERVIEW
                             </Link>
+                            <Link href="/ethics" className="hover:text-black">
+                                ETHICS
+                            </Link>
                             <Link href="/key-individuals" className="hover:text-black">
                                 KEY INDIVIDUALS
                             </Link>

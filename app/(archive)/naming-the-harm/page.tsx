@@ -12,7 +12,7 @@ export default function NamingTheHarmPage() {
     return (
         <SectionPage
             title="NAMING THE HARM"
-            subtitle="THE LETTERS THEY MUST RECKON WITH"
+            subtitle="ACCOUNTABILITY"
         >
 
             <div className="sm:px-8">
