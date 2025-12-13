@@ -66,7 +66,7 @@ export default function KeyIndividualsPage() {
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>February 9: <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
                 <li>Receiver of confidential disclosures Logan transmitted from me.</li>
-                <li>March 5: present during <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
+                <li>March 5: present during <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
                 <li>March 18: <Link href="/unidentified-man" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
                 <li>Every institutional action taken against me originated from decisions made under her direct supervision.</li>
                 <li>February 9 exchange weaponized repeatedly as justification in subsequent proceedings, in both written and recorded documentation.</li>
@@ -81,7 +81,7 @@ export default function KeyIndividualsPage() {
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>February 9: confronted me alone same day as email exchange, an immediate escalation, catalogued first-week mistakes.</li>
-                <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</Link>.</li>
+                <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</Link>.</li>
                 <li><Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">Weaponized Logan's disclosures</Link> to mock my sexuality at day-use meeting.</li>
                 <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <Link href="/final-hours" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</Link> no formal documentation existed.</li>
             </ul>

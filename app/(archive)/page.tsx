@@ -115,7 +115,7 @@ export default function OverviewPage() {
                             Kati Baker, Park Supervisor, <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">orchestrated it</Link>.
                         </li>
                         <li>
-                            Ryan Warren, Park Manager, <Link href="/day-use-meeting" className="underline text-emerald-800 hover:text-emerald-600">executed it</Link>.
+                            Ryan Warren, Park Manager, <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">executed it</Link>.
                         </li>
                         <li>
                             Logan Bliss, Volunteer Services Lead, <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">weaponized friendship to enable it</Link>.

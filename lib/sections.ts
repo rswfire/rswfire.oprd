@@ -7,7 +7,7 @@ export const archiveSections = [
     { href: "/timeline", label: "Timeline" },
     { href: "/how-it-started", label: "How It Started" },
     { href: "/trust-broken", label: "Trust Broken" },
-    { href: "/day-use-meeting", label: "Day-Use Meeting" },
+    { href: "/coercion", label: "Coercion" },
     { href: "/final-hours", label: "Final Hours" },
     { href: "/permanent-dismissal", label: "Permanent Dismissal" },
     { href: "/lisa-sumption", label: "The Director's Decisions" },
