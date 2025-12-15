@@ -8,6 +8,14 @@ export default function OverviewPage() {
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
                 {/* OPENING STATEMENT */}
+
+                <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
+                    <div className="text-lg sm:text-xl font-semibold leading-snug">
+                        When evidence of queer targeting by state employees was presented,
+                        Oregon’s leadership chose institutional protection over accountability.
+                    </div>
+                </div>
+
                 <div className="mb-4 text-base sm:text-lg leading-relaxed">
                     In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>. This archive documents those events and the subsequent responses of park leadership, agency executives, and the Governor’s office — with audio, video, and written evidence.
                 </div>
