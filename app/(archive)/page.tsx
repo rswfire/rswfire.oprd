@@ -81,13 +81,13 @@ export default function OverviewPage() {
                     <div className="mt-4 sm:mt-0">I received an automated acknowledgment, then a phone call attempting to narrow its scope.</div>
                     <div className="mt-4 sm:mt-0">I declined and requested all further communication in writing.</div>
 
-                    <div className="mt-4">Oregon Parks & Recreation responded 90 days later &mdash;</div>
+                    <div className="mt-4">Oregon Parks & Recreation Department responded 90 days later &mdash;</div>
                     <div className="ml-4">
-                        only after I issued a formal demand for compliance and filed a complaint with the Governor's office.
+                        only after I issued a formal demand for compliance.
                     </div>
 
                     <div className="mt-4">They claimed they had responded on August 29, 2025.</div>
-                    <div>They provided a screenshot of an internal portal system as proof.</div>
+                    <div>They provided <em>a screenshot</em> of an internal portal system as proof.</div>
                     <div>No email was sent to notify me.</div>
                     <div>No letter was mailed.</div>
                     <div>I was never told this portal system existed.</div>
@@ -114,7 +114,7 @@ export default function OverviewPage() {
                         <div>Humans with names, with faces, with the capacity to choose differently.</div>
                     </div>
 
-                    <div className="mt-4">They knew what they were doing while they were doing it.</div>
+                    <div className="mt-4">They made these decisions with the evidence in front of them.</div>
                     <div>They felt the weight of their choices in real time.</div>
                     <div>They are responsible &mdash; whether they are willing to admit that to themselves or not.</div>
 
@@ -171,7 +171,8 @@ export default function OverviewPage() {
                     </div>
 
                     <div className="mt-4">This archive is not for revenge.</div>
-                    <div>It is for those who have been told they imagined it.</div>
+
+                    <div className="mt-4">It is for those who have been told they imagined it.</div>
                     <div>It is for those about to walk into something similar.</div>
                     <div>It is for the future, when denial no longer holds.</div>
 
@@ -183,21 +184,18 @@ export default function OverviewPage() {
                 {/* OPEN SOURCE NOTICE */}
                 <hr className="my-6 border-t border-gray-300" />
 
-                <div className="text-sm text-gray-700 tracking-tight">
-                    <div className="font-semibold text-gray-900 mb-2 underline">
+                <div className="text-base text-gray-700 tracking-tight">
+                    <div className="text-md font-semibold text-gray-900 mb-2 underline">
                         This archive is open source and permanent.
                     </div>
 
                     <div className="mb-2">
                         The complete source code, documentation, and evidence structure are publicly available on <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" rel="noopener noreferrer" className="underline text-emerald-800 hover:text-emerald-600">GitHub</Link>. This ensures the archive cannot be silenced, cannot be altered without detection, and cannot disappear.
-                    </div>
-
-                    <div className="mb-2">
                         If this domain is ever taken down, the repository can be forked, rebuilt, and redeployed by anyone. The evidence is distributed. The accountability is permanent.
                     </div>
 
                     <div>
-                        Other documentation projects are welcome to fork this codebase for their own institutional accountability archives. <Link href="https://rswfire.com/contact" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Contact me</Link> if you need assistance.
+                        Other documentation projects are welcome to fork this codebase for their own institutional accountability archives under the Creative Commons Attribution-NoDerivatives 4.0 International license. <Link href="https://rswfire.com/contact" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Contact me</Link> if you need my assistance and I will try to help you.
                     </div>
                 </div>
 
