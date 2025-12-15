@@ -13,46 +13,47 @@ export default function EthicsPage() {
 
             <div className="mt-4">I thought ethics were the rulebook.</div>
 
-            <div className="mt-4">
-                I approached Oregon State Parks believing that basic human decency, professional
-                accountability, and institutional integrity were shared values — the foundation we all
-                operated from. I assumed that documenting misconduct would lead to correction, that
-                truth-telling would be welcomed, that maintaining ethical boundaries was not just
-                acceptable but expected.
-            </div>
-
-            <div className="mt-4">I was wrong.</div>
+            <div className="mt-4">They're not.</div>
 
             <div className="mt-4">
-                What I discovered instead was an institution where ethical consistency is viewed as
-                inflexibility, where accountability requests are treated as attacks, where documentation
-                of misconduct becomes more problematic than the misconduct itself. A system so dependent
-                on people's willingness to absorb harm quietly, to fragment under pressure, to prioritize
-                institutional comfort over ethical clarity, that basic integrity becomes revolutionary.
+                Ethics are what you maintain when the institution abandons its own standards.
+                When documentation of harm becomes more threatening than the harm itself.
+                When accountability requests are reframed as attacks.
+                When maintaining boundaries makes you the problem.
             </div>
 
             <div className="mt-4">
-                This archive exists because I maintained what should have been unremarkable standards:
-                I documented interactions, I communicated clearly, I held boundaries, I expected good
-                faith responses to legitimate concerns. These simple practices — which should be
-                institutional norms — made me what they considered an impossible adversary.
+                I documented interactions. I communicated clearly. I held boundaries.
+                I expected good faith responses to legitimate concerns.
             </div>
 
-            <div className="mt-4">Not because I was unreasonable. Not because I was vindictive. Not because I operated outside ethical guidelines.</div>
+            <div className="mt-4">
+                These should be unremarkable standards. Instead, they made me what the
+                institution considered an impossible adversary.
+            </div>
 
-            <div className="mt-4">But because I refused to abandon them.</div>
+            <div className="mt-4">Not because I was unreasonable.</div>
+            <div className="mt-4">Not because I was vindictive.</div>
+            <div className="mt-4">Not because I operated outside ethical guidelines.</div>
+
+            <div className="mt-4">But because I refused to abandon them when doing so became inconvenient for people with power.</div>
 
             <div className="mt-4">
-                This archive documents what happens when someone approaches institutional dysfunction
-                with uncompromising ethical clarity. It reveals how systems protect themselves by
-                targeting those who witness their failures. It shows what institutional retaliation
+                This archive documents what happens when someone approaches institutional
+                dysfunction with uncompromising ethical clarity. It shows what retaliation
                 looks like when deployed against someone whose only "weapon" is documented truth.
             </div>
 
             <div className="mt-4">
-                This is not a story about one problematic park or a few bad employees. This is a story
-                about what modern institutions have become when basic human decency is perceived as an
-                existential threat to their operations.
+                Every person in this archive had the opportunity to maintain the standards
+                they claimed to uphold.
+            </div>
+
+            <div className="mt-4">Every person chose institutional protection instead.</div>
+
+            <div className="mt-4">
+                That choice—to abandon ethics when ethics became costly—is what this
+                archive makes permanent.
             </div>
 
             <div className="mt-4">I thought ethics were the rulebook.</div>
@@ -60,8 +61,8 @@ export default function EthicsPage() {
             <div className="mt-4">They should be.</div>
 
             <div className="mt-4">
-                The archive that follows is proof that they're not — and testimony to what happens
-                when someone refuses to accept that corruption as normal.
+                What follows is proof that they're not—and what happens when someone
+                refuses to accept that corruption as normal.
             </div>
 
         </SectionPage>
