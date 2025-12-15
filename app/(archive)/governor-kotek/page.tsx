@@ -93,7 +93,7 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <div className="mb-4">
-                    In August 2025, I sent comprehensive documentation to your Director, Lisa Sumption..
+                    In August 2025, I sent comprehensive documentation to your Director, Lisa Sumption.
                 </div>
 
                 <div className="mb-4">
