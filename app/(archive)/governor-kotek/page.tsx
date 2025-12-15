@@ -21,7 +21,7 @@ export default function GovernorKotekPage() {
         >
             <div className="mt-4 text-base leading-relaxed">
                 <div className="font-semibold text-lg mb-4">
-                    February 15, 2025
+                    February 15, 2026
                 </div>
 
                 <div className="mb-4">
@@ -71,7 +71,7 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <div className="mb-4">
-                    When I reported this abuse, citing my right to speak about my experience, your Engagement Programs Manager issued a permanent ban from all Oregon State Parks volunteer programs — explicitly stating in writing that my removal was for speaking publicly about what happened to me.
+                    When I reported this abuse, your Engagement Programs Manager issued a permanent ban from all Oregon State Parks volunteer programs — explicitly stating in writing that my removal was for speaking publicly about what happened to me.
                 </div>
 
                 <div className="mb-4">
@@ -93,7 +93,7 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <div className="mb-4">
-                    In August 2025, I sent comprehensive documentation to Director Lisa Sumption — the woman you appointed to lead Oregon Parks & Recreation Department.
+                    In August 2025, I sent comprehensive documentation to your Director, Lisa Sumption..
                 </div>
 
                 <div className="mb-4">
@@ -101,11 +101,11 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <ul className="list-disc ml-8 mb-4 space-y-2">
-                    <li>Audio recordings of coercive meetings</li>
-                    <li>Video documentation of dismissal without paperwork</li>
-                    <li>Email chains establishing the timeline</li>
-                    <li>Written evidence of First Amendment retaliation</li>
-                    <li>A clear path forward requiring accountability</li>
+                    <li>Audio recordings of coercive meetings.</li>
+                    <li>Video documentation of dismissal without paperwork.</li>
+                    <li>Email chains establishing the timeline.</li>
+                    <li>Written evidence of First Amendment retaliation.</li>
+                    <li>A clear path forward requiring accountability.</li>
                 </ul>
 
                 <div className="mb-4">
@@ -134,6 +134,10 @@ export default function GovernorKotekPage() {
 
                 <div className="mb-4">
                     Your Director chose to protect them.
+                </div>
+
+                <div className="mb-4">
+                    These are facts. Every single one of them verifiable.
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -244,7 +248,7 @@ export default function GovernorKotekPage() {
                         Opposition research teams are professional, well-funded, and actively searching for exactly this kind of material.
                     </div>
                     <div>
-                        You have eleven months until election day.
+                        You have nine months until election day.
                     </div>
                 </div>
 
@@ -315,52 +319,7 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <div className="mb-4">
-                    And I stop escalating because you've done what I've been asking for since August: held people accountable.
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="mb-4 font-semibold text-lg">
-                    What Silence Will Cost You
-                </div>
-
-                <div className="mb-4">
-                    If you continue the path your Director chose — institutional protection over human accountability — here's what happens:
-                </div>
-
-                <div className="mb-4">
-                    On February 15, 2026, I will contact media outlets, LGBTQ+ advocacy organizations, legislative oversight committees, and other external parties. This is not a threat. This is a timeline I've stated publicly and will follow through on.
-                </div>
-
-                <div className="mb-4">
-                    Those contacts will generate coverage, organizational pressure, and institutional scrutiny you cannot control.
-                </div>
-
-                <div className="mb-4">
-                    Opposition research — if they haven't found the archive already — will discover it during the resulting media attention or through their own systematic vetting. They will develop attack messaging and wait for maximum electoral impact.
-                </div>
-
-                <div className="mb-4">
-                    When it surfaces publicly, every response option damages you:
-                </div>
-
-                <ul className="list-disc ml-8 mb-4 space-y-2">
-                    <li><span className="font-semibold">"I wasn't aware"</span> — The archive proves you were notified</li>
-                    <li><span className="font-semibold">"It's being investigated"</span> — Why did you wait until it became public?</li>
-                    <li><span className="font-semibold">"I can't comment on personnel matters"</span> — This is constitutional violation and identity targeting</li>
-                    <li><span className="font-semibold">Silence</span> — Validates every criticism in the archive</li>
-                </ul>
-
-                <div className="mb-4">
-                    And while you're trying to manage the political fallout, your base — the LGBTQ+ Oregonians and allies who elected you — will be asking one simple question:
-                </div>
-
-                <div className="mb-4 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg font-semibold text-lg">
-                    "If she won't protect a gay volunteer with documented evidence, will she protect me?"
-                </div>
-
-                <div className="mb-4 mt-6">
-                    The answer they arrive at determines whether they show up in November.
+                    And I stop escalating because you've done what I asked for at every stage of this — from the moment the abuse started through every institutional failure since: held people accountable.
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -441,10 +400,6 @@ export default function GovernorKotekPage() {
                 </div>
 
                 <div className="mb-4">
-                    February 15, 2026 is when I move beyond giving you the opportunity to act and begin ensuring others know you were given that opportunity and refused.
-                </div>
-
-                <div className="mb-4">
                     November 4, 2026 is when Oregon voters decide whether your leadership matches your rhetoric.
                 </div>
 
@@ -496,7 +451,7 @@ export default function GovernorKotekPage() {
                         <div className="font-bold">Samuel White</div>
                         <div className="font-semibold text-gray-700">Former Oregon State Parks Volunteer</div>
                         <div className="text-gray-700">Gay Oregonian</div>
-                        <div className="text-gray-700">December 14, 2025</div>
+                        <div className="text-gray-700">February 15, 2026</div>
                     </div>
                 </div>
 

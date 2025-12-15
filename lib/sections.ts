@@ -10,4 +10,5 @@ export const archiveSections = [
     { href: "/expulsion", label: "Expulsion" },
     { href: "/naming-the-harm", label: "Accountability" },
     { href: "/lisa-sumption", label: "The Director's Decisions" },
+    { href: "/governor-kotek", label: "Governor Kotek" },
 ];
