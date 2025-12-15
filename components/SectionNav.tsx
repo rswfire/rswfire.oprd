@@ -1,3 +1,4 @@
+// components/SectionNav.tsx
 "use client";
 
 import Link from "next/link";
@@ -8,6 +9,7 @@ import Icon from "@/components/Icon";
 type Section = {
     href: string;
     label: string;
+    separator?: boolean;
 };
 
 export default function SectionNav({ sections }: { sections: Section[] }) {
@@ -30,6 +32,14 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                     <nav className="mt-2 rounded-lg border border-slate-200 bg-white shadow-sm p-3">
                         <ul className="space-y-1">
                             {sections.map((s) => {
+                                if (s.separator) {
+                                    return (
+                                        <li key={s.href} className="my-2">
+                                            <div className="border-t border-slate-200" />
+                                        </li>
+                                    );
+                                }
+
                                 const active = s.href === "/"
                                     ? pathname === "/"
                                     : pathname.startsWith(s.href);
@@ -60,6 +70,14 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                     <ul className="space-y-1">
                         {sections.map((s) => {
+                            if (s.separator) {
+                                return (
+                                    <li key={s.href} className="my-2">
+                                        <div className="border-t border-slate-200" />
+                                    </li>
+                                );
+                            }
+
                             const active = s.href === "/"
                                 ? pathname === "/"
                                 : pathname.startsWith(s.href);

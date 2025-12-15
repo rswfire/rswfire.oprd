@@ -38,10 +38,10 @@ export default function Header() {
                         </div>
                         <nav className="flex gap-4 text-xs font-medium text-slate-600">
                             <Link href="/" className="hover:text-black">
-                                OVERVIEW
+                                HOME
                             </Link>
                             <Link href="/ethics" className="hover:text-black">
-                                ETHICS
+                                A NOTE ABOUT ETHICS
                             </Link>
                             <Link href="/timeline" className="hover:text-black">
                                 TIMELINE
