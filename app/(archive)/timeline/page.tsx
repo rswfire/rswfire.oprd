@@ -14,11 +14,6 @@ export default function TimelinePage() {
             title="TIMELINE"
             subtitle="FEBRUARY 9 — DECEMBER 13, 2025"
         >
-            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                This timeline documents the sequence of events from initial contact with Park Supervisor Kati Baker in February 2025 through permanent dismissal by Engagement Programs Manager Allison Watson in March 2025, followed by escalation to Director Lisa Sumption and Governor Tina Kotek through December 2025.
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2025</strong>: ABUSE AND DISMISSAL</h2>
 
