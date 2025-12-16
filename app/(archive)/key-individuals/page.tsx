@@ -18,7 +18,7 @@ export default function KeyIndividualsPage() {
 
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
 
-                <div className="text-sm">
+                <div className="text-base">
                     <div>
                         These are the central figures referenced throughout this archive —
                     </div>
@@ -29,15 +29,6 @@ export default function KeyIndividualsPage() {
                         that unfolded at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and within <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> as a whole.
                     </div>
                 </div>
-                <div className="mt-4 font-bold text-lg mb-3">
-                    EVERY PERSON IN THIS ARCHIVE HAD THE POWER TO STOP THIS.
-                </div>
-                <div className="mt-2">Every person chose not to.</div>
-                <div>Every person who abused their position remains in their position.</div>
-                <div className="mt-4">Those choices are now permanent.</div>
-                <div>They don't fade with time.</div>
-                <div>They don't disappear because they refuse to act.</div>
-                <div>They don't get absolved by silence.</div>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
