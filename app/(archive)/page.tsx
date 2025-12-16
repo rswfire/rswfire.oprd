@@ -11,8 +11,7 @@ export default function OverviewPage() {
 
                 <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
                     <div className="text-lg sm:text-xl font-semibold leading-snug">
-                        When evidence of queer targeting by state employees was presented,
-                        Oregon’s leadership chose institutional protection over accountability.
+                        A gay man documented identity-based targeting and retaliation by state employees under Oregon’s first openly LGBTQ+ governor — and was ignored.
                     </div>
                 </div>
 
