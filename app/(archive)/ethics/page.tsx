@@ -9,9 +9,13 @@ export const metadata: Metadata = {
 
 export default function EthicsPage() {
     return (
-        <SectionPage title="A NOTE ABOUT ETHICS">
+        <SectionPage title="">
 
-            <div className="mt-4">I thought ethics were the rulebook.</div>
+                <div className="mb-6 p-6 border-l-4 border-black rounded-r-lg">
+                        <div className="text-lg sm:text-xl font-semibold leading-snug">
+                                I thought ethics were the rulebook.
+                        </div>
+                </div>
 
             <div className="mt-4">They're not.</div>
 
