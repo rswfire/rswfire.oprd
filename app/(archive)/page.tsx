@@ -184,10 +184,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 <div className="text-base text-gray-700 tracking-tight">
-                    <div className="text-lg font-semibold text-gray-900 mb-2 underline tracking-tighter">
-                        This archive is open source and permanent.
-                    </div>
-
+                    <div className="text-lg font-semibold text-gray-900 mb-2 underline tracking-tighter">This archive is open source and permanent.</div>
                     <div className="mt-4">The complete source code, documentation, and evidence structure are publicly available on <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" rel="noopener noreferrer" className="underline text-emerald-800 hover:text-emerald-600">GitHub</Link>.</div>
                     <div className="mt-4">Other documentation projects are welcome to fork this codebase for their own institutional accountability archives under the <strong>Creative Commons Attribution-NoDerivatives 4.0 International</strong> license.</div>
                     <div className="mt-4"><Link href="https://rswfire.com/contact" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Contact me</Link> if you need my assistance.</div>
