@@ -8,7 +8,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
     title: {
-        default: "Oregon State Parks (OPRD) Volunteer Abuse Archive",
+        default: "Oregon State Parks Volunteer Abuse Archive | oprdvolunteerabuse.org",
         template: "%s | Oregon State Parks Volunteer Abuse Archive | oprdvolunteerabuse.org",
     },
     description:
