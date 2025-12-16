@@ -31,7 +31,7 @@ export default function EthicsPage() {
             <div>Instead, they made me what the institution considered an impossible adversary.</div>
 
             <div className="mt-4">Not because I was unreasonable.</div>
-            <div>Not because I was vindictive.</div>
+            <div>Not because I wanted conflict.</div>
             <div>Not because I operated outside ethical guidelines.</div>
             <div>But because &mdash;</div>
             <div className="ml-4">I refused to abandon them when doing so became inconvenient for people with power.</div>
