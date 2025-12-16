@@ -5,22 +5,22 @@ import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
     title: "Timeline",
-    description: "Chronological documentation of systematic abuse and institutional retaliation, February-March 2025.",
+    description: "Chronological documentation of systematic abuse and institutional retaliation, February-December 2025.",
 };
 
 export default function TimelinePage() {
     return (
         <SectionPage
             title="TIMELINE"
-            subtitle="FEBRUARY 9 — MARCH 27, 2025"
+            subtitle="FEBRUARY 9 — DECEMBER 13, 2025"
         >
-            <div className="mt-4">
+            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                 This timeline documents the sequence of events from initial contact with Park Supervisor Kati Baker in February 2025 through permanent dismissal by Engagement Programs Manager Allison Watson in March 2025, followed by escalation to Director Lisa Sumption and Governor Tina Kotek through December 2025.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">FEBRUARY — MARCH 2025: ABUSE AND DISMISSAL</h2>
+            <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2025</strong>: ABUSE AND DISMISSAL</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
@@ -92,7 +92,7 @@ export default function TimelinePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">AUGUST — DECEMBER 2025: INSTITUTIONAL SILENCE AND ESCALATION</h2>
+            <h2 className="text-xl font-semibold"><strong>AUGUST — DECEMBER 2025</strong>: SILENCE AND ESCALATION</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
@@ -160,26 +160,12 @@ export default function TimelinePage() {
                 </li>
 
                 <li>
-                    <div className="font-semibold">December 12, 2025</div>
+                    <div className="font-semibold">December 13, 2025</div>
                     <div className="mt-2 text-sm">
-                        Forward relevant documentation to Governor Tina Kotek with "FYI" at top.
+                        Governor Tina Kotek's campaign contacted.
                     </div>
                 </li>
             </ul>
-
-            <hr className="my-6 border-t border-gray-300" />
-
-            <div className="mt-4">
-                Every person documented in this timeline had the power to stop this.
-            </div>
-
-            <div className="mt-4">
-                Every person chose not to.
-            </div>
-
-            <div className="mt-4">
-                Those choices are now permanent.
-            </div>
 
         </SectionPage>
     );
