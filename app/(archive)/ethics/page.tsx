@@ -27,7 +27,8 @@ export default function EthicsPage() {
             <div className="mt-4">I documented interactions. I communicated clearly. I held boundaries.</div>
             <div>I expected good faith responses to legitimate concerns.</div>
 
-            <div className="mt-4">These should be unremarkable standards. Instead, they made me what the institution considered an impossible adversary.</div>
+            <div className="mt-4">These should be unremarkable standards.</div>
+            <div>Instead, they made me what the institution considered an impossible adversary.</div>
 
             <div className="mt-4">Not because I was unreasonable.</div>
             <div>Not because I was vindictive.</div>
@@ -36,7 +37,8 @@ export default function EthicsPage() {
             <div className="ml-4">I refused to abandon them when doing so became inconvenient for people with power.</div>
 
             <div className="mt-4">This archive documents what happens when someone approaches institutional dysfunction with uncompromising ethical clarity.</div>
-            <div>It shows what retaliation looks like when deployed against someone whose only &quot;weapon&quot; is documented truth.</div>
+
+            <div className="mt-4">It shows what retaliation looks like when deployed against someone whose only &quot;weapon&quot; is documented truth.</div>
 
             <div className="mt-4">Every person in this archive had the opportunity to maintain the standards they claimed to uphold.</div>
 
