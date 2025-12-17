@@ -4,7 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-yellow)](https://www.typescriptlang.org)
 [![Documentation](https://img.shields.io/badge/Status-Active-green)](https://oprdvolunteerabuse.org)
 [![License](https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey)](https://creativecommons.org/licenses/by-nd/4.0/)
-[![Developer](https://img.shields.io/badge/Creator-@rswfire-red)](https://rswfire.com/build)
+[![Developer](https://img.shields.io/badge/Creator-@rswfire-red)](https://rswfire.com/handshake)
 
 Permanent public documentation of systematic volunteer abuse at **Oregon Parks & Recreation Department**.
 
