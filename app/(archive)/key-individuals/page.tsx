@@ -100,11 +100,11 @@ export default function KeyIndividualsPage() {
                 Oregon Parks &amp; Recreation Department
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>August: <Link href="/lisa-sumption/open-letter" className="text-emerald-700 hover:underline">received comprehensive open letter</Link> with audio and video evidence.</li>
-                <li><Link href="/lisa-sumption/open-letter" className="text-emerald-700 hover:underline">Responded within twelve hours</Link> with procedural language, no specific accountability measures.</li>
+                <li>August: <Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">received comprehensive open letter</Link> with audio and video evidence.</li>
+                <li><Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">Responded within twelve hours</Link> with procedural language, no specific accountability measures.</li>
                 <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
-                <li>December: <Link href="/lisa-sumption/closure" className="text-emerald-700 hover:underline">reduced comprehensive documentation to emotional processing</Link>, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
-                <li><Link href="/lisa-sumption/closure" className="text-emerald-700 hover:underline">Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published</Link>.</li>
+                <li>December: <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">reduced comprehensive documentation to emotional processing</Link>, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
+                <li><Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published</Link>.</li>
                 <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
                 <li><strong>Failed to protect a queer unpaid volunteer from the targeted abuse of her subordinates</strong>.</li>
             </ul>
