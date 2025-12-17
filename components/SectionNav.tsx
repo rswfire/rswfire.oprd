@@ -10,6 +10,7 @@ type Section = {
     href: string;
     label: string;
     separator?: boolean;
+    subsections?: { href: string; label: string }[];
 };
 
 export default function SectionNav({ sections }: { sections: Section[] }) {
@@ -57,6 +58,29 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                         >
                                             {s.label}
                                         </Link>
+
+                                        {s.subsections && (
+                                            <ul className="ml-4 mt-1 space-y-1">
+                                                {s.subsections.map((sub) => {
+                                                    const subActive = pathname === sub.href;
+                                                    return (
+                                                        <li key={sub.href}>
+                                                            <Link
+                                                                href={sub.href}
+                                                                onClick={() => setMobileNavOpen(false)}
+                                                                className={`block rounded-md px-3 py-1.5 text-xs transition ${
+                                                                    subActive
+                                                                        ? "bg-emerald-50 text-emerald-800 font-medium"
+                                                                        : "text-slate-600 hover:bg-slate-50"
+                                                                }`}
+                                                            >
+                                                                {sub.label}
+                                                            </Link>
+                                                        </li>
+                                                    );
+                                                })}
+                                            </ul>
+                                        )}
                                     </li>
                                 );
                             })}
@@ -94,6 +118,28 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                     >
                                         {s.label}
                                     </Link>
+
+                                    {s.subsections && (
+                                        <ul className="ml-4 mt-1 space-y-1">
+                                            {s.subsections.map((sub) => {
+                                                const subActive = pathname === sub.href;
+                                                return (
+                                                    <li key={sub.href}>
+                                                        <Link
+                                                            href={sub.href}
+                                                            className={`block rounded-md px-2 py-1.5 text-xs transition ${
+                                                                subActive
+                                                                    ? "bg-emerald-50 text-emerald-800 font-medium border border-emerald-100"
+                                                                    : "text-slate-600 hover:bg-slate-50"
+                                                            }`}
+                                                        >
+                                                            {sub.label}
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    )}
                                 </li>
                             );
                         })}

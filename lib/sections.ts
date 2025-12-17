@@ -11,5 +11,14 @@ export const archiveSections = [
     { href: "/dismissal", label: "Dismissal" },
     { href: "/expulsion", label: "Expulsion" },
     { href: "separator-2", label: "", separator: true },
-    { href: "/lisa-sumption", label: "The Director's Decisions" },
+    {
+        href: "/lisa-sumption",
+        label: "The Director's Decisions",
+        subsections: [
+            { href: "/lisa-sumption/covert-encounter", label: "The Covert Encounter" },
+            { href: "/lisa-sumption/open-letter", label: "The Open Letter" },
+            { href: "/lisa-sumption/public-records-request", label: "The Public Records Request" },
+            { href: "/lisa-sumption/closure", label: "The Closure" }
+        ]
+    },
 ];
