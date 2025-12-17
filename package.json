@@ -1,7 +1,25 @@
 {
-  "name": "rswfire.oprd",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@rswfire/rswfire.oprd",
+  "version": "1.0.0",
+  "description": "Oregon State Parks Volunteer Abuse Archive & Accountability Infrastructure",
+  "private": false,
+  "license": "CC-BY-ND-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rswfire/rswfire.oprd"
+  },
+  "homepage": "https://oprdvolunteerabuse.org",
+  "keywords": [
+    "volunteer-abuse",
+    "institutional-retaliation",
+    "lgbtq-discrimination",
+    "first-amendment",
+    "oregon-state-parks",
+    "accountability-documentation",
+    "whistleblower-protection",
+    "public-records"
+  ],
+  "author": "Robert Samuel White <rsw@rswfire.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
