@@ -48,7 +48,7 @@ The architecture is designed to be:
 
 **You shouldn't have to rebuild this infrastructure from scratch. Use it.**
 
-**If you need assistance, reach out to me at [rsw@rswfire.com](mailto:rsw@rswfire.com).**
+**If you need assistance, reach out to me at [rswfire.com/contact](https://rswfire.com/contact).**
 
 ## License
 
