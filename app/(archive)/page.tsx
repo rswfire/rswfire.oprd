@@ -1,11 +1,14 @@
 // app/(archive)/page.tsx
 
 import Link from "next/link";
+import VideoEmbed from "@/components/archive/VideoEmbed";
 
 export default function OverviewPage() {
     return (
         <section className="w-full mx-auto mb-8">
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
+
+
 
                 {/* OPENING STATEMENT */}
 
@@ -14,6 +17,12 @@ export default function OverviewPage() {
                         A gay man documented identity-based targeting and retaliation by state employees under Oregon’s first openly LGBTQ+ governor — and was ignored.
                     </div>
                 </div>
+
+                {/* VIDEO EMBED */}
+                <VideoEmbed
+                    title="I was targeted as a gay volunteer at Oregon State Parks"
+                    youtubeId="DVQPctdkTFY"
+                />
 
                 <div className="mb-4 text-base sm:text-lg leading-relaxed">
                     In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>. This archive documents those events and the subsequent responses of park leadership, agency executives, and the Governor’s office — with audio, video, and written evidence.
