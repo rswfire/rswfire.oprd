@@ -155,6 +155,27 @@ export default function FAQPage() {
                     </p>
                 </div>
 
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 10 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
+                        Why is your tone so direct?
+                    </h2>
+                    <p className="text-gray-700 mb-3">
+                        Because I'm not performing grief or asking for sympathy. I'm documenting institutional failure with precision.
+                    </p>
+                    <p className="text-gray-700 mb-3">
+                        I was targeted by people in positions of authority. I documented what they did. I reported it through every available channel. They chose silence and protection over accountability. Those are facts.
+                    </p>
+                    <p className="text-gray-700 mb-3">
+                        Softening the language doesn't change what happened. It just makes it easier for people to dismiss. Direct language forces clarity: either the evidence supports the claims or it doesn't. Either institutions act on documented harm or they don't.
+                    </p>
+                    <p className="text-gray-700">
+                        I'm not asking anyone to feel sorry for me. I'm asking them to look at the evidence and decide whether this is acceptable institutional behavior.
+                    </p>
+                </div>
+
             </div>
         </SectionPage>
     );
