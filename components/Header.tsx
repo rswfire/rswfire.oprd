@@ -39,23 +39,28 @@ export default function Header() {
                         <div className="text-emerald-700 text-sm whitespace-nowrap">
                             NOT DISPUTED. NOT INVESTIGATED. NOT ADDRESSED.
                         </div>
-                        <nav className="flex gap-4 text-xs font-medium text-slate-600">
-                            <Link href="/" className="hover:text-black">
+                        <nav className="flex gap-2 text-xs font-medium text-slate-600">
+                            <Link href="/" className="text-black hover:underline hover:text-emerald-600">
                                 HOME
                             </Link>
-                            <Link href="/ethics" className="hover:text-black">
-                                A NOTE ABOUT ETHICS
+                            |
+                            <Link href="/ethics" className="text-black hover:underline hover:text-emerald-600">
+                                ETHICS
                             </Link>
-                            <Link href="/timeline" className="hover:text-black">
+                            |
+                            <Link href="/timeline" className="text-black hover:underline hover:text-emerald-600">
                                 TIMELINE
                             </Link>
-                            <Link href="/correspondence" className="hover:text-black">
+                            |
+                            <Link href="/correspondence" className="text-black hover:underline hover:text-emerald-600">
                                 CORRESPONDENCE
                             </Link>
-                            <Link href="/lisa-sumption" className="hover:text-black">
+                            |
+                            <Link href="/lisa-sumption" className="text-black hover:underline hover:text-emerald-600">
                                 THE DIRECTOR'S DECISIONS
                             </Link>
-                            <Link href="/governor-kotek" className="hover:text-black">
+                            |
+                            <Link href="/governor-kotek" className="text-black hover:underline hover:text-emerald-600">
                                 THE GOVERNOR'S SILENCE
                             </Link>
                         </nav>
