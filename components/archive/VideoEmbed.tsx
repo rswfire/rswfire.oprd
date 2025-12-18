@@ -13,7 +13,7 @@ export default function VideoEmbed({
                                        vimeoId
                                    }: VideoEmbedProps) {
     const embedUrl = youtubeId
-        ? `https://www.youtube.com/embed/${youtubeId}`
+        ? `https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&showinfo=0`
         : `https://player.vimeo.com/video/${vimeoId}`;
 
     return (
