@@ -11,7 +11,15 @@ export const archiveSections = [
     { href: "/dismissal", label: "Dismissal" },
     { href: "/expulsion", label: "Expulsion" },
     { href: "#separator-2", label: "", separator: true },
-    { href: "/correspondence", label: "Correspondence" },
+    {
+        href: "/correspondence", label: "Correspondence",
+        subsections: [
+            {href: "/correspondence/complaints", label: "Formal Complaints"},
+            {href: "/correspondence/institution", label: "Institutional Dialogue"},
+            {href: "/correspondence/press", label: "Press Communications"},
+            {href: "/correspondence/general", label: "General Correspondence"}
+        ]
+    },
     { href: "#separator-3", label: "", separator: true },
     {
         href: "/lisa-sumption",
