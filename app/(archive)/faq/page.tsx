@@ -118,6 +118,22 @@ export default function FAQPage() {
                     </p>
                 </div>
 
+                {/* Question 8 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
+                        What does their silence mean?
+                    </h2>
+                    <p className="text-gray-700 mb-3">
+                        Their silence is a choice. Director Lisa Sumption received comprehensive evidence in August 2025—audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action. Governor Kotek's office has been notified repeatedly. No response.
+                    </p>
+                    <p className="text-gray-700 mb-3">
+                        Silence means they believe institutional protection is more important than volunteer safety. It means they've decided the political cost of accountability is higher than the risk of doing nothing. It means every person involved in targeting me remains in their position, free to do this again.
+                    </p>
+                    <p className="text-gray-700">
+                        Their silence is not neutrality. It's a decision. And it's documented.
+                    </p>
+                </div>
+
             </div>
         </SectionPage>
     );
