@@ -11,6 +11,20 @@ type Props = {
     params: Promise<{ category: string; id: string }>;
 };
 
+type EmailAddress = {
+    address: string;
+    name?: string;
+};
+
+type ParsedEmail = {
+    from?: EmailAddress;
+    to?: EmailAddress | EmailAddress[];
+    subject?: string;
+    date?: string;
+    html?: string;
+    text?: string;
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { category, id } = await params;
 
@@ -28,11 +42,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default async function CorrespondenceDetailPage({ params }: Props) {
+export default async function Page({ params }: Props) {
     const { category, id } = await params;
 
     // Validate category
-    if (!["complaints", "institution", "press", "opposition"].includes(category)) {
+    if (!["complaints", "institution", "press", "general"].includes(category)) {
         notFound();
     }
 
@@ -47,11 +61,11 @@ export default async function CorrespondenceDetailPage({ params }: Props) {
     // Read and parse .eml file
     const emlPath = path.join(process.cwd(), "public", "correspondence", category, `${id}.eml`);
 
-    let emailData;
+    let emailData: ParsedEmail;
     try {
         const emlContent = await fs.readFile(emlPath, "utf-8");
         const parser = new PostalMime();
-        emailData = await parser.parse(emlContent);
+        emailData = await parser.parse(emlContent) as ParsedEmail;
     } catch (error) {
         console.error("Error parsing email:", error);
         notFound();
@@ -74,16 +88,23 @@ export default async function CorrespondenceDetailPage({ params }: Props) {
                     <div>{from?.address || "Unknown"}</div>
 
                     <div className="font-semibold">To:</div>
-                    <div>
+                    <div suppressHydrationWarning>
                         {Array.isArray(to)
-                            ? to.map((t: any) => t.address).join(", ")
+                            ? to.map((t: EmailAddress) => t.address).join(", ")
                             : to?.address || "Unknown"}
                     </div>
 
                     <div className="font-semibold">Date:</div>
-                    <div>
+                    <div suppressHydrationWarning>
                         {date
-                            ? new Date(date).toISOString().split('T')[0] // YYYY-MM-DD
+                            ? new Date(date).toLocaleString("en-US", {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                                hour: "numeric",
+                                minute: "2-digit",
+                                timeZoneName: "short",
+                            })
                             : item.date}
                     </div>
                 </div>
