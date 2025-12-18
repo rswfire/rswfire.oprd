@@ -36,6 +36,9 @@ export default function Header() {
                         <div className="font-bold text-emerald-700 text-sm whitespace-nowrap">
                             INDEPENDENT DOCUMENTATION
                         </div>
+                        <div className="text-emerald-700 text-sm whitespace-nowrap">
+                            NOT DISPUTED. NOT INVESTIGATED. NOT ADDRESSED.
+                        </div>
                         <nav className="flex gap-4 text-xs font-medium text-slate-600">
                             <Link href="/" className="hover:text-black">
                                 HOME
