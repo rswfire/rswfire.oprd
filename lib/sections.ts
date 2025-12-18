@@ -21,4 +21,6 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
+    { href: "#separator-3", label: "", separator: true },
+    { href: "/governor-kotek", label: "The Governor's Silence" },
 ];

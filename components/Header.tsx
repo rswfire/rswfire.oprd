@@ -52,6 +52,9 @@ export default function Header() {
                             <Link href="/lisa-sumption" className="hover:text-black">
                                 THE DIRECTOR'S DECISIONS
                             </Link>
+                            <Link href="/governor-kotek" className="hover:text-black">
+                                THE GOVERNOR'S SILENCE
+                            </Link>
                         </nav>
                     </div>
 
