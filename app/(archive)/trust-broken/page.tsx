@@ -26,7 +26,7 @@ export default function TrustBrokenPage() {
             <h2 className="text-xl font-semibold">THE DISCLOSURES</h2>
 
             <div className="mt-4">
-                Logan Bliss was my direct supervisor at Honeyman State Park.
+                Logan Bliss was my direct supervisor at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.
             </div>
 
             <div className="mt-4">

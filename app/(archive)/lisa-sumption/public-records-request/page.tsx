@@ -20,10 +20,9 @@ export default function PublicRecordsRequestPage() {
         >
 
             <div className="mt-4">
-                On August 22, 2025, I submitted a comprehensive public records request to Oregon
-                Parks and Recreation Department seeking documentation related to volunteer
+                On August 22, 2025, I submitted a comprehensive public records request to <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon Parks &amp; Recreation Department</Link> seeking documentation related to volunteer
                 management, administrative conduct, and decisions made by leadership following
-                my removal from Honeyman State Park.
+                my removal from <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.
             </div>
 
             <div className="mt-4">

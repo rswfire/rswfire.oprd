@@ -27,7 +27,7 @@ export default function ExpulsionPage() {
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>
 
             <div className="mt-4">
-                March 24: Ryan Warren dismissed me from Honeyman without paperwork or cause.
+                March 24: Ryan Warren dismissed me from <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> without paperwork or cause.
             </div>
 
             <div className="mt-4">
@@ -140,7 +140,7 @@ Sam White`}</pre>
             <h2 className="text-xl font-semibold">MARCH 27 — THE PERMANENT DISMISSAL</h2>
 
             <div className="mt-4">
-                Hours after I sent that letter, Allison Watson responded with permanent dismissal from all Oregon State Parks volunteer programs.
+                Hours after I sent that letter, Allison Watson responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> volunteer programs.
             </div>
 
             <div className="mt-4">

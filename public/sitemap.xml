@@ -19,40 +19,16 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://oprdvolunteerabuse.org/executive-summary</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://oprdvolunteerabuse.org/final-hours</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://oprdvolunteerabuse.org/how-it-started</loc>
         <lastmod>2025-12-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://oprdvolunteerabuse.org/i-held-my-shape</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://oprdvolunteerabuse.org/key-individuals</loc>
         <lastmod>2025-12-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://oprdvolunteerabuse.org/lessons-learned</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oprdvolunteerabuse.org/lisa-sumption</loc>
@@ -85,12 +61,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://oprdvolunteerabuse.org/naming-the-harm</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
         <loc>https://oprdvolunteerabuse.org/expulsion</loc>
         <lastmod>2025-12-11</lastmod>
         <changefreq>monthly</changefreq>
@@ -107,11 +77,5 @@
         <lastmod>2025-12-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://oprdvolunteerabuse.org/trust-broken/supplemental</loc>
-        <lastmod>2025-12-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
 </urlset>

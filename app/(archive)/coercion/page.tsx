@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import VideoEmbed from "@/components/archive/VideoEmbed";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Coercion",
@@ -25,12 +26,7 @@ export default function CoercionPage() {
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>
 
             <div className="mt-4">
-                Ryan Warren and Kati Baker called me to a meeting at a public picnic table in Honeyman's day-use area.
-            </div>
-
-            <div className="mt-4">
-                The entire meeting was recorded.
-            </div>
+                Ryan Warren and Kati Baker called me to a meeting at a public picnic table in <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>'s day-use area. <strong>The entire meeting was recorded</strong>.</div>
 
             <div className="mt-6 border border-gray-200 shadow-sm rounded-md overflow-hidden">
                 <div className="bg-gray-100 px-4 py-2 font-semibold">

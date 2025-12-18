@@ -8,8 +8,6 @@ export default function OverviewPage() {
         <section className="w-full mx-auto mb-8">
             <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
-
-
                 {/* OPENING STATEMENT */}
 
                 <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
