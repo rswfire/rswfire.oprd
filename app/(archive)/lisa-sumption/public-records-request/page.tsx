@@ -17,6 +17,8 @@ export default function PublicRecordsRequestPage() {
             title="THE PUBLIC RECORDS REQUEST"
             subtitle="AUGUST 22, 2025 — FORMAL REQUEST FOR TRANSPARENCY"
             supplemental="THE NOTICE OF VIOLATION, THE RESPONSE, AND THE WITHDRAWAL"
+            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
         >
 
             <div className="mt-4">
@@ -358,12 +360,6 @@ Robert Samuel White
 `}
                 </pre>
             </Email>
-
-            <div className="mt-8 pt-6 border-t border-gray-300">
-                <Link href="/lisa-sumption" className="text-emerald-700 hover:underline">
-                    ← Back to The Director's Decisions
-                </Link>
-            </div>
 
         </SectionPage>
     );

@@ -17,6 +17,8 @@ export default function LisaClosurePage() {
             title="THE CLOSURE"
             subtitle="DECEMBER 2025"
             supplemental="DIRECTOR LISA SUMPTION ENDS COMMUNICATION"
+            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
         >
 
             <div className="mt-4">
@@ -199,12 +201,6 @@ Sam
             <div className="mt-4">
                 This page exists because institutional closure does not erase the record. It becomes
                 part of it.
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-gray-300">
-                <Link href="/lisa-sumption" className="text-emerald-700 hover:underline">
-                    ← Back to The Director's Decisions
-                </Link>
             </div>
 
         </SectionPage>

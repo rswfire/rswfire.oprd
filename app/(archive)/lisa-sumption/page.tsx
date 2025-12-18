@@ -15,6 +15,7 @@ export default function LisaSumptionIndexPage() {
             title="LISA SUMPTION"
             subtitle="THE DIRECTOR'S DECISIONS"
             supplemental="OREGON PARKS &amp; RECREATION DEPARTMENT"
+            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
         >
 
             <div className="mt-4">

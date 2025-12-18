@@ -9,7 +9,11 @@ export const metadata: Metadata = {
 
 export default function EthicsPage() {
     return (
-        <SectionPage title="">
+        <SectionPage
+            title="A NOTE ABOUT ETHICS"
+            previousPage={{ href: "/", label: "Home" }}
+            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
+        >
 
                 <div className="mb-6 p-6 border-l-4 border-black rounded-r-lg">
                         <div className="text-lg sm:text-xl font-semibold leading-snug">

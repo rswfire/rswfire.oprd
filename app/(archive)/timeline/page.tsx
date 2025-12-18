@@ -13,6 +13,8 @@ export default function TimelinePage() {
         <SectionPage
             title="TIMELINE"
             subtitle="FEBRUARY 9 — DECEMBER 13, 2025"
+            previousPage={{ href: "/key-individuals", label: "Key Individuals" }}
+            nextPage={{ href: "/confrontation", label: "Confrontation" }}
         >
 
             <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2025</strong>: ABUSE AND DISMISSAL</h2>
@@ -21,7 +23,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">February 9, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/confrontation" className="underline text-emerald-800 hover:text-emerald-600">
                             Kati Baker responds dismissively
                         </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: Ryan Warren confronts me alone, cataloging first-week mistakes.
                     </div>
@@ -30,7 +32,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">February (ongoing)</div>
                     <div className="mt-2 text-sm">
-                        Systematic undermining of supervisor relationships. Logan Bliss elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
+                        Systematic undermining of supervisor relationships. Logan Bliss elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
                     </div>
                 </li>
 
@@ -143,7 +145,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">letter naming Logan's betrayal</Link> to Logan Bliss. CC: Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption.
+                        Send <Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">letter naming Logan's betrayal</Link> to Logan Bliss. CC: Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption.
                     </div>
                 </li>
 

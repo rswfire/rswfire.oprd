@@ -1,19 +1,21 @@
-// app/(archive)/trust-broken/page.tsx
+// app/(archive)/betrayal/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 
 export const metadata: Metadata = {
-    title: "Trust Broken",
+    title: "Betrayal",
     description: "Documentation of supervisory betrayal and weaponization of vulnerability by Volunteer Services Lead Logan Bliss.",
 };
 
-export default function TrustBrokenPage() {
+export default function BetrayalPage() {
     return (
         <SectionPage
-            title="TRUST BROKEN"
+            title="BETRAYAL"
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
+            previousPage={{ href: "/confrontation", label: "Confrontation" }}
+            nextPage={{ href: "/coercion", label: "Coercion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

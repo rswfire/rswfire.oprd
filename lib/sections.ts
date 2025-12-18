@@ -6,12 +6,13 @@ export const archiveSections = [
     { href: "#separator-1", label: "", separator: true },
     { href: "/key-individuals", label: "Key Individuals" },
     { href: "/timeline", label: "Timeline" },
-    { href: "/how-it-started", label: "How It Started" },
-    { href: "/trust-broken", label: "Trust Broken" },
+    { href: "#separator-2", label: "", separator: true },
+    { href: "/confrontation", label: "Confrontation" },
+    { href: "/betrayal", label: "Betrayal" },
     { href: "/coercion", label: "Coercion" },
     { href: "/dismissal", label: "Dismissal" },
     { href: "/expulsion", label: "Expulsion" },
-    { href: "#separator-2", label: "", separator: true },
+    { href: "#separator-3", label: "", separator: true },
     {
         href: "/correspondence", label: "Correspondence",
         subsections: [
@@ -21,7 +22,7 @@ export const archiveSections = [
             {href: "/correspondence/general", label: "General Correspondence"}
         ]
     },
-    { href: "#separator-3", label: "", separator: true },
+    { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",
         label: "The Director's Decisions",
@@ -32,6 +33,6 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-4", label: "", separator: true },
+    { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
 ];

@@ -14,6 +14,8 @@ export default function KeyIndividualsPage() {
             title="KEY INDIVIDUALS"
             subtitle="HONEYMAN STATE PARK"
             supplemental="OREGON PARKS & RECREATION DEPARTMENT (OPRD)"
+            previousPage={{ href: "/faq", label: "Frequently Asked Questions" }}
+            nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
@@ -44,7 +46,7 @@ export default function KeyIndividualsPage() {
                 <li>Transmitted confidential disclosures to Kati Baker, Ryan Warren, Allison Watson.</li>
                 <li>Escalated situation with Kati instead of protecting me.</li>
                 <li>Visibly recoiled when confronted with description of his own institutional role.</li>
-                <li>Betrayed <Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">supervisory trust</Link>.</li>
+                <li>Betrayed <Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">supervisory trust</Link>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -55,7 +57,7 @@ export default function KeyIndividualsPage() {
                 Honeyman State Park
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>February 9: <Link href="/how-it-started" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
+                <li>February 9: <Link href="/confrontation" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
                 <li>Receiver of confidential disclosures Logan transmitted from me.</li>
                 <li>March 5: present during <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
                 <li>March 18: <Link href="/lisa-sumption/covert-encounter" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
@@ -73,7 +75,7 @@ export default function KeyIndividualsPage() {
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>February 9: confronted me alone same day as email exchange, an immediate escalation, catalogued first-week mistakes.</li>
                 <li>March 5: told me to &quot;chew glass and swallow it,&quot; admitted I was never given the benefit of the doubt, repeatedly suggested I leave &mdash; <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">entire meeting recorded</Link>.</li>
-                <li><Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">Weaponized Logan's disclosures</Link> to mock my sexuality at day-use meeting.</li>
+                <li><Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">Weaponized Logan's disclosures</Link> to mock my sexuality at day-use meeting.</li>
                 <li>March 24: dismissed me by phone six days before completion using fabricated pretext, arrived one hour later to collect keys, <Link href="/dismissal" className="underline text-emerald-800 hover:text-emerald-600">admitted on camera</Link> no formal documentation existed.</li>
             </ul>
 
@@ -88,7 +90,7 @@ export default function KeyIndividualsPage() {
                 <li>March 10: first contact &mdash; called about March 5 recording, informed me I was &quot;acting as an agent of the state,&quot; established notification requirements (recorded).</li>
                 <li>Follow-up call: told me to &quot;get through my time,&quot; dismissed documented abuse.</li>
                 <li><Link href="/expulsion" className="underline text-emerald-800 hover:text-emerald-600">Issued permanent removal letter</Link> explicitly stating removal was for speaking publicly about my experience.</li>
-                <li><Link href="/trust-broken/supplemental" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
+                <li><Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
                 <li><strong>Named retaliation for protected speech in writing on agency letterhead</strong>.</li>
             </ul>
 

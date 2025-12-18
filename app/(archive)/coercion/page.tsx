@@ -14,6 +14,8 @@ export default function CoercionPage() {
         <SectionPage
             title="COERCION"
             subtitle="RYAN WARREN, PARK MANAGER &amp; KATI BAKER, PARK SUPERVISOR"
+            previousPage={{ href: "/betrayal", label: "Betrayal" }}
+            nextPage={{ href: "/dismissal", label: "Dismissal" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

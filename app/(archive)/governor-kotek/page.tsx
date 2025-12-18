@@ -307,7 +307,7 @@ export default function GovernorKotekPage() {
                         <li><Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">March 5 Coercive Meeting (Audio Recording)</Link></li>
                         <li><Link href="/dismissal" className="underline text-emerald-800 hover:text-emerald-600">March 24 Dismissal (Video Documentation)</Link></li>
                         <li><Link href="/expulsion" className="underline text-emerald-800 hover:text-emerald-600">First Amendment Retaliation Letter</Link></li>
-                        <li><Link href="/trust-broken" className="underline text-emerald-800 hover:text-emerald-600">Weaponization of Queer Vulnerability</Link></li>
+                        <li><Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">Weaponization of Queer Vulnerability</Link></li>
                     </ul>
                 </div>
             </div>

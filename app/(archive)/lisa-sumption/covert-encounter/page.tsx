@@ -17,6 +17,8 @@ export default function CovertEncounterPage() {
             title="THE COVERT ENCOUNTER"
             subtitle="MARCH 18, 2025 — ESCALATED TO THE DIRECTOR"
             supplemental="NO RESPONSE RECEIVED"
+            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
         >
 
             <div className="mt-4">
@@ -328,12 +330,6 @@ https://rswfire.com/honeyman
                     It is a decision — one that now lives inside the archive as part of the
                     institutional pattern she chose to uphold.
                 </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-gray-300">
-                <Link href="/lisa-sumption" className="text-emerald-700 hover:underline">
-                    ← Back to The Director's Decisions
-                </Link>
             </div>
 
         </SectionPage>

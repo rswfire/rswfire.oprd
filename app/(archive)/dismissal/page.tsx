@@ -13,6 +13,8 @@ export default function DismissalPage() {
         <SectionPage
             title="DISMISSAL"
             subtitle="RYAN WARREN, PARK MANAGER"
+            previousPage={{ href: "/coercion", label: "Coercion" }}
+            nextPage={{ href: "/expulsion", label: "Expulsion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">
