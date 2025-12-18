@@ -118,7 +118,28 @@ export default function FAQPage() {
                     </p>
                 </div>
 
+                <hr className="border-t border-gray-300" />
+
                 {/* Question 8 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
+                        Why make this public instead of going through proper channels?
+                    </h2>
+                    <p className="text-gray-700 mb-3">
+                        Because there are no such thing as proper channels.</p>
+                    <p className="text-gray-700 mb-3">Allison Watson had the opportunity to protect me when I reported what was happening—that was supposedly her job. She didn't. Instead, when I documented the abuse publicly (something I only did after I'd <em>already</em> been dismissed by Ryan Warren), she <Link href="/expulsion" className="text-emerald-700 underline hover:text-emerald-600">retaliated in writing</Link>, explicitly citing my protected speech as the reason for expulsion.
+                    </p>
+                    <p className="text-gray-700 mb-3">
+                        "Proper channels" only exist when institutions want accountability. When they don't, those channels become mechanisms to exhaust, isolate, and dismiss the person reporting harm.
+                    </p>
+                    <p className="text-gray-700">
+                        But here's the better question: why shouldn't I document in public? Who are we protecting by keeping institutional abuse private? The answer is the institution—not the people it harms.
+                    </p>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 9 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         What does their silence mean?
