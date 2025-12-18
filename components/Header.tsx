@@ -49,6 +49,9 @@ export default function Header() {
                             <Link href="/timeline" className="hover:text-black">
                                 TIMELINE
                             </Link>
+                            <Link href="/correspondence" className="hover:text-black">
+                                CORRESPONDENCE
+                            </Link>
                             <Link href="/lisa-sumption" className="hover:text-black">
                                 THE DIRECTOR'S DECISIONS
                             </Link>

@@ -11,6 +11,8 @@ export const archiveSections = [
     { href: "/dismissal", label: "Dismissal" },
     { href: "/expulsion", label: "Expulsion" },
     { href: "#separator-2", label: "", separator: true },
+    { href: "/correspondence", label: "Correspondence" },
+    { href: "#separator-3", label: "", separator: true },
     {
         href: "/lisa-sumption",
         label: "The Director's Decisions",
@@ -21,6 +23,6 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-3", label: "", separator: true },
+    { href: "#separator-4", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
 ];
