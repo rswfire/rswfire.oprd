@@ -18,10 +18,10 @@ export default function SectionPage({
 
     return (
         <div className="w-full p-8 rounded-xl bg-gray-50 border border-gray-300 text-base">
-            <div className="prose max-w-none">
+            <div className="prose max-w-none pt-6">
 
                 {hasHeader && (
-                    <header className="pb-4 border-b border-gray-300">
+                    <header className="pb-6 border-b border-gray-300">
                         {title?.trim() && (
                             <h1 className="text-3xl font-bold mb-2 text-center tracking-widest">
                                 {title}
