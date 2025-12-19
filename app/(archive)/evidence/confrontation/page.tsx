@@ -13,7 +13,7 @@ export default function ConfrontationPage() {
         <SectionPage
             title="CONFRONTATION"
             subtitle="KATI BAKER, PARK SUPERVISOR"
-            previousPage={{ href: "/timeline", label: "Timeline" }}
+            previousPage={{ href: "/evidence", label: "Evidence" }}
             nextPage={{ href: "/evidence/response", label: "Response" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
