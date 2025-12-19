@@ -212,6 +212,37 @@ export default function FAQPage() {
                     <div>That decision now belongs to the reader.</div>
                 </div>
 
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 11 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
+                        What happens next?
+                    </h2>
+                    <div className="text-gray-700 mb-3">
+                        That depends on them.
+                    </div>
+                    <div className="text-gray-700 mb-3">
+                        They could order an independent investigation tomorrow. They could hold people accountable. They could implement the protections volunteers deserve. They could demonstrate that institutional failure gets corrected, not protected.
+                    </div>
+                    <div className="text-gray-700 mb-3">
+                        Or they can continue choosing silence.
+                    </div>
+                    <div className="text-gray-700">
+                        If they do, the <Link href="/correspondence" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will keep growing. External scrutiny might increase. Independent actors may engage. Oversight mechanisms may activate. Federal oversight may intervene.
+                    </div>
+                    <div>Or not. Because I cannot predict the future, and I cannot predict this institution.</div>
+                    <div className="mt-4">
+                        But I can say this much: the archive is permanent. The evidence is independently verifiable. The institutional failure is documented.
+                    </div>
+                    <div className="mt-4 text-gray-700">
+                        What happens next is their choice.
+                    </div>
+                    <div>
+                        I've already made mine.
+                    </div>
+                </div>
+
             </div>
         </SectionPage>
     );
