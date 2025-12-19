@@ -25,7 +25,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         <Link href="/confrontation" className="underline text-emerald-800 hover:text-emerald-600">
                             Kati Baker responds dismissively
-                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: <Link href="/correspondence/institution/ryan-warren-2025-02-12" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren confronts me alone</Link>, cataloging first-week mistakes.
+                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: <Link href="/response" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren confronts me alone</Link>, cataloging first-week mistakes. I try to reset.
                     </div>
                 </li>
 
