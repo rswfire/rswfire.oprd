@@ -12,9 +12,10 @@ export default function OverviewPage() {
 
                 <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
                     <div className="text-lg sm:text-xl font-semibold leading-snug">
-                        A gay man documented identity-based targeting and retaliation by state employees under Oregon’s first openly LGBTQ+ governor — and was ignored.
-                    </div>
+                        A gay man documented identity-based targeting and retaliation by state employees under Oregon’s first openly LGBTQ+ governor &mdash; and was ignored at every level of accountability.</div>
                 </div>
+
+                <hr className="my-6 border-t border-gray-300" />
 
                 {/* VIDEO EMBED */}
                 <VideoEmbed
@@ -22,8 +23,11 @@ export default function OverviewPage() {
                     youtubeId="DVQPctdkTFY"
                 />
 
+                <hr className="my-6 border-t border-gray-300" />
+
                 <div className="mt-8 mb-4 mx-8 text-base sm:text-lg leading-relaxed">
-                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>. This archive documents those events and the subsequent responses of park leadership, agency executives, and the Governor’s office — with audio, video, and written evidence.
+                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                <div className="mt-4 mb-4 mx-8 text-base sm:text-lg leading-relaxed">This archive documents those events &mdash; with audio, video, and written evidence &mdash; and the decisions made by park leadership, agency executives, and the Governor’s office after they were notified.
                 </div>
 
                 {/* Main Content */}
