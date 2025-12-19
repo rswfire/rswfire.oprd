@@ -1,4 +1,4 @@
-// app/(archive)/confrontation/page.tsx
+// app/(archive)/evidence/confrontation/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -14,7 +14,7 @@ export default function ConfrontationPage() {
             title="CONFRONTATION"
             subtitle="KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/timeline", label: "Timeline" }}
-            nextPage={{ href: "/response", label: "Response" }}
+            nextPage={{ href: "/evidence/response", label: "Response" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

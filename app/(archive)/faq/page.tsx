@@ -129,7 +129,7 @@ export default function FAQPage() {
 
                     <div className="space-y-4">
                         <div>They already retaliated.</div>
-                        <div>That's documented in <Link href="/expulsion" className="text-emerald-700 underline hover:text-emerald-600">Allison Watson's removal letter</Link>, which explicitly states I was banned for speaking publicly about what happened.</div>
+                        <div>That's documented in <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">Allison Watson's removal letter</Link>, which explicitly states I was banned for speaking publicly about what happened.</div>
                         <div>I am banned &mdash; permanently &mdash; from ever volunteering for <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> again.</div>
                         <div>Ask yourself: what could I possibly have done to justify that outcome?</div>
                         <div>This took away any soft leverage they might have held over me.</div>
@@ -152,7 +152,7 @@ export default function FAQPage() {
                         <div>Because there are no such thing as proper channels in an institution like this one.</div>
                         <div>Allison Watson had the opportunity to protect me when I <Link href="/timeline" className="text-emerald-700 underline hover:text-emerald-600">reported what was happening</Link> &mdash; on March 10, the day she called to intimidate me about recording the day-use area meeting.</div>
                         <div>That was her job. There was <em>no one else</em> to escalate to if you experienced a problem. I was isolated. That is a design choice.</div>
-                        <div>Instead, when I <Link href="/dismissal" className="text-emerald-700 underline hover:text-emerald-600">documented the abuse</Link> publicly (something I only did after I'd <em>already</em> been dismissed by Ryan Warren and told to &quot;get through my time&quot; by Allison Watson), she <Link href="/expulsion" className="text-emerald-700 underline hover:text-emerald-600">retaliated in writing</Link>, explicitly citing my protected speech as the reason for expulsion.</div>
+                        <div>Instead, when I <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">documented the abuse</Link> publicly (something I only did after I'd <em>already</em> been dismissed by Ryan Warren and told to &quot;get through my time&quot; by Allison Watson), she <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">retaliated in writing</Link>, explicitly citing my protected speech as the reason for expulsion.</div>
                         <div>&quot;Proper channels&quot; only exist when institutions want accountability. When they don't, those channels become mechanisms to exhaust, isolate, and dismiss the person reporting harm.</div>
                         <div>But here's the better question: why shouldn't I document in public?</div>
                         <div>Who are we protecting by keeping institutional abuse private? The answer is the institution &mdash; not the people it harms.</div>

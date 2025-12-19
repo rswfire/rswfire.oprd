@@ -1,4 +1,4 @@
-// app/(archive)/betrayal/page.tsx
+// app/(archive)/evidence/betrayal/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -14,8 +14,8 @@ export default function BetrayalPage() {
         <SectionPage
             title="BETRAYAL"
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
-            previousPage={{ href: "/response", label: "Response" }}
-            nextPage={{ href: "/coercion", label: "Coercion" }}
+            previousPage={{ href: "/evidence/response", label: "Response" }}
+            nextPage={{ href: "/evidence/coercion", label: "Coercion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

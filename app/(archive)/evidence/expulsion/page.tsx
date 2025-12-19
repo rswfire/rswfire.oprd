@@ -1,4 +1,4 @@
-// app/(archive)/expulsion/page.tsx
+// app/(archive)/evidence/expulsion/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -15,7 +15,7 @@ export default function ExpulsionPage() {
         <SectionPage
             title="EXPULSION"
             subtitle="ALLISON WATSON, ENGAGEMENT PROGRAMS MANAGER"
-            previousPage={{ href: "/dismissal", label: "Dismissal" }}
+            previousPage={{ href: "/evidence/dismissal", label: "Dismissal" }}
             nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">

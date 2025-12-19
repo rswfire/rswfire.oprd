@@ -1,4 +1,4 @@
-// app/(archive)/response/page.tsx
+// app/(archive)/evidence/response/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -13,8 +13,8 @@ export default function ResponsePage() {
         <SectionPage
             title="RESPONSE"
             subtitle="ATTEMPTING RESET"
-            previousPage={{ href: "/confrontation", label: "Confrontation" }}
-            nextPage={{ href: "/betrayal", label: "Betrayal" }}
+            previousPage={{ href: "/evidence/confrontation", label: "Confrontation" }}
+            nextPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

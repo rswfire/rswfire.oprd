@@ -1,4 +1,4 @@
-// app/(archive)/dismissal/page.tsx
+// app/(archive)/evidence/dismissal/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import VideoEmbed from "@/components/archive/VideoEmbed";
@@ -13,8 +13,8 @@ export default function DismissalPage() {
         <SectionPage
             title="DISMISSAL"
             subtitle="RYAN WARREN, PARK MANAGER"
-            previousPage={{ href: "/coercion", label: "Coercion" }}
-            nextPage={{ href: "/expulsion", label: "Expulsion" }}
+            previousPage={{ href: "/evidence/coercion", label: "Coercion" }}
+            nextPage={{ href: "/evidence/expulsion", label: "Expulsion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

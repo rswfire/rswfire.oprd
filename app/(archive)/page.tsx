@@ -130,16 +130,16 @@ export default function OverviewPage() {
 
                     <ul className="mt-4 space-y-2 sm:space-y-0 list-disc ml-6 sm:list-none sm:ml-0">
                         <li>
-                            Kati Baker, Park Supervisor, <Link href="/confrontation" className="underline text-emerald-800 hover:text-emerald-600">orchestrated it</Link>.
+                            Kati Baker, Park Supervisor, <Link href="/evidence/confrontation" className="underline text-emerald-800 hover:text-emerald-600">orchestrated it</Link>.
                         </li>
                         <li>
-                            Ryan Warren, Park Manager, <Link href="/coercion" className="underline text-emerald-800 hover:text-emerald-600">executed it</Link>.
+                            Ryan Warren, Park Manager, <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">executed it</Link>.
                         </li>
                         <li>
-                            Logan Bliss, Volunteer Services Lead, <Link href="/betrayal" className="underline text-emerald-800 hover:text-emerald-600">weaponized friendship to enable it</Link>.
+                            Logan Bliss, Volunteer Services Lead, <Link href="/evidence/betrayal" className="underline text-emerald-800 hover:text-emerald-600">weaponized friendship to enable it</Link>.
                         </li>
                         <li>
-                            Allison Watson, Engagement Programs Manager, <Link href="/expulsion" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
+                            Allison Watson, Engagement Programs Manager, <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
                         </li>
                         <li>
                             Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">acknowledged it and chose to protect them</Link>.

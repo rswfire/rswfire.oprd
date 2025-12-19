@@ -7,12 +7,19 @@ export const archiveSections = [
     { href: "/key-individuals", label: "Key Individuals" },
     { href: "/timeline", label: "Timeline" },
     { href: "#separator-2", label: "", separator: true },
-    { href: "/confrontation", label: "Confrontation" },
-    { href: "/response", label: "Response" },
-    { href: "/betrayal", label: "Betrayal" },
-    { href: "/coercion", label: "Coercion" },
-    { href: "/dismissal", label: "Dismissal" },
-    { href: "/expulsion", label: "Expulsion" },
+    {
+
+        href: "/evidence",
+        label: "Evidence",
+        subsections: [
+            { href: "/evidence/confrontation", label: "Confrontation" },
+            { href: "/evidence/response", label: "Response" },
+            { href: "/evidence/betrayal", label: "Betrayal" },
+            { href: "/evidence/coercion", label: "Coercion" },
+            { href: "/evidence/dismissal", label: "Dismissal" },
+            { href: "/evidence/expulsion", label: "Expulsion" }
+        ]
+    },
     { href: "#separator-3", label: "", separator: true },
     {
         href: "/lisa-sumption",
