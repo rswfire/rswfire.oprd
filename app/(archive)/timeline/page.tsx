@@ -25,7 +25,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         <Link href="/confrontation" className="underline text-emerald-800 hover:text-emerald-600">
                             Kati Baker responds dismissively
-                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: Ryan Warren confronts me alone, cataloging first-week mistakes.
+                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: <Link href="/correspondence/institution/ryan-warren-2025-02-12" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren confronts me alone</Link>, cataloging first-week mistakes.
                     </div>
                 </li>
 
@@ -131,7 +131,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">November 18, 2025</div>
                     <div className="mt-2 text-sm">
-                        Governor Tina Kotek's <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">office sent formal complaint</Link>.
+                        Governor Tina Kotek's office <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">sent formal complaint</Link>.
                     </div>
                 </li>
 
