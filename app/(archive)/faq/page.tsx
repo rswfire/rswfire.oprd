@@ -69,17 +69,34 @@ export default function FAQPage() {
                     <h2 className="text-xl font-semibold mb-3">
                         Have they responded to any of this?
                     </h2>
+
                     <div className="text-gray-700 mb-3">
-                        Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">responded in August 2025</Link> with procedural language and no commitments. She <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">closed communication in December 2025</Link>, reframing comprehensive documentation as &quot;emotional processing.&quot;
+                        Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">responded in August 2025</Link> with procedural language and no commitments. She <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">closed communication in December 2025</Link>, reframing comprehensive documentation of misconduct and retaliation as &quot;emotional processing.&quot;
                     </div>
-                    <div>Is that how responsible adults respond to legitimate requests with indisputable documentation?</div>
+
                     <div className="text-gray-700 mb-3">
-                        Governor Kotek's office and campaign have been contacted multiple times now. No response. Not even an acknowledgement of receipt.
+                        This is a common institutional response to documented harm: evidence is reduced to emotion, documentation is treated as distress, and continued reporting is framed as the problem rather than the conduct being reported.
                     </div>
+
+                    <div className="text-gray-700 mb-3">
+                        The effect of this response is predictable and harmful. It delegitimizes documented abuse, discourages others from reporting, and protects the people who caused the harm by recasting accountability requests as instability.
+                    </div>
+
+                    <div className="text-gray-700 mb-3">
+                        No investigation was ordered. No findings were issued. No corrective action was taken.
+                    </div>
+
+                    <div className="text-gray-700 mb-3">
+                        Governor Kotek’s office and campaign have been contacted multiple times. No response. Not even an acknowledgement of receipt.
+                    </div>
+
                     <div className="text-gray-700">
                         They have been silent.
                     </div>
                 </div>
+
+
+
 
                 <hr className="border-t border-gray-300" />
 
