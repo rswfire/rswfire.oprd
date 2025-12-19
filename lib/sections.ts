@@ -14,16 +14,6 @@ export const archiveSections = [
     { href: "/expulsion", label: "Expulsion" },
     { href: "#separator-3", label: "", separator: true },
     {
-        href: "/correspondence", label: "Correspondence",
-        subsections: [
-            {href: "/correspondence/complaints", label: "Formal Complaints"},
-            {href: "/correspondence/institution", label: "Institutional Dialogue"},
-            {href: "/correspondence/press", label: "Press Communications"},
-            {href: "/correspondence/general", label: "General Correspondence"}
-        ]
-    },
-    { href: "#separator-4", label: "", separator: true },
-    {
         href: "/lisa-sumption",
         label: "The Director's Decisions",
         subsections: [
@@ -33,6 +23,6 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-5", label: "", separator: true },
+    { href: "#separator-4", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
 ];
