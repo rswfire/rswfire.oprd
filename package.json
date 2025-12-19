@@ -22,7 +22,7 @@
   "author": "Robert Samuel White <rsw@rswfire.com>",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap --config ./next-sitemap.config.ts",
+    "build": "next build && next-sitemap --config ./next-sitemap.mjs",
     "start": "next start"
   },
   "dependencies": {
