@@ -122,14 +122,6 @@ export default function KeyIndividualsPage() {
                 Contacted. No acknowledgment.
             </div>
 
-            <hr className="my-6 border-t border-gray-300" />
-
-            <div className="mb-6 p-6 border-l-4 border-black rounded-r-lg">
-                <div className="text-lg sm:text-xl font-semibold leading-snug">
-                    The next escalation path is federal.
-                </div>
-            </div>
-
         </SectionPage>
     );
 }
