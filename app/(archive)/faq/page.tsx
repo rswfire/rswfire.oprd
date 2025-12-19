@@ -210,7 +210,8 @@ export default function FAQPage() {
                         <div>Or not. Time will tell.</div>
                         <div>But I can say this much: the archive is permanent. The evidence is independently verifiable. The institutional failure is documented.</div>
                         <div>What happens next is their choice.</div>
-                        <div>Ask <em>them</em> this question.</div>
+                        <div>They either act or they don't. Both choices have consequences. Only one of them protects the next volunteer.</div>
+                        <div>If that matters to you, ask <em>them</em> this question.</div>
                     </div>
                 </div>
 
