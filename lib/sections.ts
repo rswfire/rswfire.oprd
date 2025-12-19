@@ -16,6 +16,7 @@ export const archiveSections = [
             { href: "/evidence/response", label: "Response" },
             { href: "/evidence/betrayal", label: "Betrayal" },
             { href: "/evidence/coercion", label: "Coercion" },
+            { href: "/evidence/surveillance", label: "Surveillance" },
             { href: "/evidence/dismissal", label: "Dismissal" },
             { href: "/evidence/expulsion", label: "Expulsion" }
         ]
@@ -25,7 +26,6 @@ export const archiveSections = [
         href: "/lisa-sumption",
         label: "The Director's Decisions",
         subsections: [
-            { href: "/lisa-sumption/covert-encounter", label: "The Covert Encounter" },
             { href: "/lisa-sumption/open-letter", label: "The Open Letter" },
             { href: "/lisa-sumption/public-records-request", label: "The Public Records Request" },
             { href: "/lisa-sumption/closure", label: "The Closure" }

@@ -13,7 +13,7 @@ export default function DismissalPage() {
         <SectionPage
             title="DISMISSAL"
             subtitle="RYAN WARREN, PARK MANAGER"
-            previousPage={{ href: "/evidence/coercion", label: "Coercion" }}
+            previousPage={{ href: "/evidence/surveillance", label: "Surveillance" }}
             nextPage={{ href: "/evidence/expulsion", label: "Expulsion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">

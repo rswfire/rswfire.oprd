@@ -55,7 +55,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">March 18, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/lisa-sumption/covert-encounter" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Unidentified man approaches me
                         </Link> while cleaning yurts alone, interrogates me about leadership treatment. I document immediately with Kati. Explained as "IT photo documentation" — no photos ever produced.
                     </div>
@@ -95,7 +95,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">August 16, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/lisa-sumption/covert-encounter" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Escalate March 18 encounter to Director Lisa Sumption
                         </Link> with full documentation. No response.
                     </div>

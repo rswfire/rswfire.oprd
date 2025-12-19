@@ -60,7 +60,7 @@ export default function KeyIndividualsPage() {
                 <li>February 9: <Link href="/evidence/confrontation" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
                 <li>Receiver of confidential disclosures Logan transmitted from me.</li>
                 <li>March 5: present during <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
-                <li>March 18: <Link href="/lisa-sumption/covert-encounter" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
+                <li>March 18: <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
                 <li>Every institutional action taken against me originated from decisions made under her direct supervision.</li>
                 <li>February 9 exchange weaponized repeatedly as justification in subsequent proceedings, in both written and recorded documentation.</li>
             </ul>

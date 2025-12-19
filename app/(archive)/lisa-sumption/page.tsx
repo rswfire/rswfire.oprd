@@ -35,18 +35,6 @@ export default function LisaSumptionIndexPage() {
 
             <ul className="list-disc list-outside ml-8 mt-4 space-y-3">
                 <li>
-                    <Link
-                        href="/lisa-sumption/covert-encounter"
-                        className="underline text-emerald-800 hover:text-emerald-600"
-                    >
-                        The Covert Encounter (March 18, 2025)
-                    </Link>
-                    &mdash; documented an unannounced identity-targeted probe by an unidentified man; escalated to the
-                    Director with evidence and operational questions; received no response, even after supplemental
-                    video documentation.
-                </li>
-
-                <li>
                     <Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">
                         The Open Letter (August 25, 2025)
                     </Link>

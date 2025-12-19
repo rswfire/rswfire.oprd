@@ -32,7 +32,7 @@ export default function EvidencePage() {
             <h2 className="text-xl font-semibold">THE EVIDENCE SEQUENCE</h2>
 
             <div className="mt-4">
-                These six documents establish the complete pattern of abuse, betrayal, and retaliation:
+                These seven documents establish the complete pattern of abuse, betrayal, and retaliation:
             </div>
 
             <div className="mt-6 space-y-6">
@@ -85,8 +85,20 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
+                    <Link href="/evidence/surveillance" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        5. SURVEILLANCE
+                    </Link>
+                    <div className="mt-2 text-sm text-gray-700">
+                        March 18, 2025 — Unidentified operative approaches me while cleaning yurts alone, takes photos of dirty sites mid-clean, presses me with direct personal questions about leadership treatment. Occurs during regional event when all rangers were away.
+                    </div>
+                    <div className="mt-2 text-sm font-semibold">
+                        Format: Email correspondence, video documentation
+                    </div>
+                </div>
+
+                <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/dismissal" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        5. DISMISSAL
+                        6. DISMISSAL
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 24, 2025 — Ryan Warren dismisses me by phone using fabricated pretext. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
@@ -98,7 +110,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/expulsion" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        6. EXPULSION
+                        7. EXPULSION
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 25-27, 2025 — Allison Watson weaponizes Logan's disclosures, issues permanent ban explicitly citing public speech about abuse. First Amendment retaliation in writing on agency letterhead.
@@ -122,6 +134,9 @@ export default function EvidencePage() {
                 </div>
                 <div>
                     <strong>Betrayal of supervisory trust:</strong> Logan Bliss disclosed confidential personal information to management who weaponized it during dismissal proceedings.
+                </div>
+                <div>
+                    <strong>Covert institutional tactics:</strong> Unidentified operative deployed to interrogate isolated volunteer about leadership treatment, disguised as routine photo documentation.
                 </div>
                 <div>
                     <strong>Identity-based targeting:</strong> Ryan Warren mocked my sexuality. Allison Watson pathologized my identity-based concerns.
