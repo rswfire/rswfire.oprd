@@ -79,9 +79,6 @@ export default function FAQPage() {
                     </div>
                 </div>
 
-
-
-
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 5 */}
