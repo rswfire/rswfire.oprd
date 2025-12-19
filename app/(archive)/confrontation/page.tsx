@@ -14,7 +14,7 @@ export default function ConfrontationPage() {
             title="CONFRONTATION"
             subtitle="KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/timeline", label: "Timeline" }}
-            nextPage={{ href: "/betrayal", label: "Betrayal" }}
+            nextPage={{ href: "/response", label: "Response" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                 <div className="font-semibold">

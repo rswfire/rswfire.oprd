@@ -14,7 +14,7 @@ export default function BetrayalPage() {
         <SectionPage
             title="BETRAYAL"
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
-            previousPage={{ href: "/confrontation", label: "Confrontation" }}
+            previousPage={{ href: "/response", label: "Response" }}
             nextPage={{ href: "/coercion", label: "Coercion" }}
         >
             <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
