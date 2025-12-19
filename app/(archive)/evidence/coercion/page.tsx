@@ -16,14 +16,8 @@ export default function CoercionPage() {
             subtitle="RYAN WARREN, PARK MANAGER &amp; KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
             nextPage={{ href: "/evidence/surveillance", label: "Surveillance" }}
+            summary="Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>
 

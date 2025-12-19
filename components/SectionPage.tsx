@@ -6,6 +6,7 @@ type SectionPageProps = {
     title?: string;
     subtitle?: string;
     supplemental?: string;
+    summary?: string;
     children: ReactNode;
     previousPage?: {
         href: string;
@@ -21,6 +22,7 @@ export default function SectionPage({
                                         title,
                                         subtitle,
                                         supplemental,
+                                        summary,
                                         children,
                                         previousPage,
                                         nextPage
@@ -58,7 +60,7 @@ export default function SectionPage({
             <div className="prose max-w-none pt-6">
 
                 {hasHeader && (
-                    <header className="pb-6 border-b border-gray-300">
+                    <header className="pb-6">
                         {title?.trim() && (
                             <h1 className="text-3xl font-bold mb-2 text-center tracking-widest">
                                 {title}
@@ -74,8 +76,20 @@ export default function SectionPage({
                     </header>
                 )}
 
+                {summary && (
+                    <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                        <div className="font-semibold">
+                            {summary}
+                        </div>
+                    </div>
+                )}
+
+                {(hasHeader || summary) && (
+                    <hr className="my-6 border-t border-gray-300" />
+                )}
+
                 {hasNavigation && (
-                    <div className="mt-4 mb-6">
+                    <div className="mb-6">
                         <NavigationLinks />
                     </div>
                 )}

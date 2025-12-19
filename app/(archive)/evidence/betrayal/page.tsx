@@ -16,14 +16,9 @@ export default function BetrayalPage() {
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
             previousPage={{ href: "/evidence/response", label: "Response" }}
             nextPage={{ href: "/evidence/coercion", label: "Coercion" }}
+            summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting.
-                </div>
-            </div>
 
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">THE DISCLOSURES</h2>
 

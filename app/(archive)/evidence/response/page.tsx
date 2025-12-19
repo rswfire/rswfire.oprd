@@ -15,14 +15,8 @@ export default function ResponsePage() {
             subtitle="ATTEMPTING RESET"
             previousPage={{ href: "/evidence/confrontation", label: "Confrontation" }}
             nextPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
+            summary="Three days after the February 9 confrontation with Ryan Warren, I attempted reconciliation with good faith vulnerability and explicit commitment to conform."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Three days after the February 9 confrontation with Ryan Warren, I attempted reconciliation with good faith vulnerability and explicit commitment to conform.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 

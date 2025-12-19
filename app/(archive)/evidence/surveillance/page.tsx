@@ -16,14 +16,8 @@ export default function SurveillancePage() {
             subtitle="UNIDENTIFIED OPERATIVE"
             previousPage={{ href: "/evidence/coercion", label: "Coercion" }}
             nextPage={{ href: "/evidence/dismissal", label: "Dismissal" }}
+            summary="Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">MARCH 18, 2025</h2>
 

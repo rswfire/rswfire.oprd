@@ -15,14 +15,8 @@ export default function DismissalPage() {
             subtitle="RYAN WARREN, PARK MANAGER"
             previousPage={{ href: "/evidence/surveillance", label: "Surveillance" }}
             nextPage={{ href: "/evidence/expulsion", label: "Expulsion" }}
+            summary="Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">MARCH 24, 2025</h2>
 

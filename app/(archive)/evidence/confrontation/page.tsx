@@ -15,14 +15,8 @@ export default function ConfrontationPage() {
             subtitle="KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/evidence", label: "Evidence" }}
             nextPage={{ href: "/evidence/response", label: "Response" }}
+            summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
         >
-            <div className="mt-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                <div className="font-semibold">
-                    Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">FEBRUARY 9, 2025</h2>
 
