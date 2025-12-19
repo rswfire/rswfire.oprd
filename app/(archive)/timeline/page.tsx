@@ -129,6 +129,13 @@ export default function TimelinePage() {
                 </li>
 
                 <li>
+                    <div className="font-semibold">November 18, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Governor Tina Kotek's <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">office sent formal complaint</Link>.
+                    </div>
+                </li>
+
+                <li>
                     <div className="font-semibold">November 20, 2025</div>
                     <div className="mt-2 text-sm">
                         OPRD responds claiming they posted response to inaccessible internal portal on August 29. Cost estimate: tens of thousands of dollars. I withdraw the request.
