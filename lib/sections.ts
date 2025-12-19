@@ -8,6 +8,7 @@ export const archiveSections = [
     { href: "/timeline", label: "Timeline" },
     { href: "#separator-2", label: "", separator: true },
     { href: "/confrontation", label: "Confrontation" },
+    { href: "/response", label: "Response" },
     { href: "/betrayal", label: "Betrayal" },
     { href: "/coercion", label: "Coercion" },
     { href: "/dismissal", label: "Dismissal" },
