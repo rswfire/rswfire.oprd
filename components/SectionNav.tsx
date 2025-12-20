@@ -90,7 +90,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
             </div>
 
             {/* Desktop: Sticky Sidebar */}
-            <div className="hidden lg:block sticky top-24 space-y-3">
+            <div className="hidden md:block sticky top-33 space-y-3">
                 <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                     <ul className="space-y-1">
                         {sections.map((s) => {
