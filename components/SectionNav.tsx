@@ -153,6 +153,43 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 </nav>
 
                 <SilenceTracker />
+
+                {/* CORRESPONDENCE SECTION */}
+                <div className="rounded-lg border border-slate-200 bg-white shadow-sm p-4">
+                    <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wide mb-3 pb-2 border-b border-slate-200">
+                        Correspondence
+                    </h3>
+                    <ul className="space-y-2 list-disc list-inside">
+                        <Link
+                            href="/correspondence/general"
+                            className="block text-xs text-slate-700 hover:text-emerald-700 hover:underline"
+                        >
+                            <li>General Correspondence</li>
+                        </Link>
+                        <Link
+                            href="/correspondence/institution"
+                            className="block text-xs text-slate-700 hover:text-emerald-700 hover:underline"
+                        >
+                            <li>State Officials</li>
+                        </Link>
+                        <Link
+                            href="/correspondence/press"
+                            className="block text-xs text-slate-700 hover:text-emerald-700 hover:underline"
+                        >
+                            <li>Press Communications</li>
+                        </Link>
+                        <Link
+                            href="/correspondence/complaints"
+                            className="block text-xs text-slate-700 hover:text-emerald-700 hover:underline"
+                        >
+                            <li>Formal Complaints</li>
+                        </Link>
+
+
+
+                    </ul>
+                </div>
+
             </div>
         </>
     );

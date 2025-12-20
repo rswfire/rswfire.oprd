@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function InstitutionPage() {
     return (
         <SectionPage
-            title="INSTITUTIONAL DIALOGUE"
+            title="STATE OFFICIALS"
             subtitle="DIRECT COMMUNICATION WITH STATE OFFICIALS"
         >
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
