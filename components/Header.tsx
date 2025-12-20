@@ -37,14 +37,14 @@ export default function Header() {
                             </p>
 
                             {/* Mobile tagline */}
-                            <p className="mt-1 text-xs font-semibold text-emerald-700 sm:hidden">
+                            <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
                                 Independent Documentation
                             </p>
                         </div>
                     </Link>
 
                     {/* Desktop Right Callout */}
-                    <div className="hidden sm:flex flex-col items-end text-right">
+                    <div className="hidden lg:flex flex-col items-end text-right">
                         <span className="text-sm font-bold text-emerald-700">
                             Independent Documentation
                         </span>
@@ -53,10 +53,10 @@ export default function Header() {
                         </span>
                     </div>
 
-                    {/* Mobile Menu Toggle */}
+                    {/* Mobile Menu Toggle - Shows when sidebar is hidden */}
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="sm:hidden rounded-md p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                        className="lg:hidden rounded-md p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                         aria-label="Toggle menu"
                     >
                         <Icon name={mobileMenuOpen ? "X" : "Menu"} size="22" />
@@ -65,7 +65,7 @@ export default function Header() {
 
                 {/* Mobile Nav */}
                 {mobileMenuOpen && (
-                    <nav className="sm:hidden mt-4 border-t border-slate-200 pt-3">
+                    <nav className="lg:hidden mt-4 border-t border-slate-200 pt-3">
                         <ul className="space-y-1">
                             {archiveSections.map((section) => (
                                 <li key={section.href}>
