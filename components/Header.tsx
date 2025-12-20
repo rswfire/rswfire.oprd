@@ -53,14 +53,14 @@ export default function Header() {
                             </p>
 
                             <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
-                                Independent Documentation
+                                Independent Documentation.
                             </p>
                         </div>
                     </Link>
 
                     <div className="hidden lg:flex flex-col items-end text-right">
                         <span className="text-sm font-bold text-emerald-700">
-                            Independent Documentation
+                            Independent Documentation.
                         </span>
                         <span className="text-xs tracking-wide text-slate-600">
                             Not disputed. Not investigated. Not addressed.
