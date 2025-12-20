@@ -22,7 +22,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
         label: "Permanently Banned from Oregon State Parks",
         date: "2025-03-27",
         context: "No investigation conducted.",
-        link: "/expulsion"
+        link: "/evidence/expulsion"
     },
     {
         label: "Director Sumption",
