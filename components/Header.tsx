@@ -59,11 +59,11 @@ export default function Header() {
                     </Link>
 
                     <div className="hidden lg:flex flex-col items-end text-right">
-                        <span className="text-sm font-bold text-emerald-700">
+                        <span className="text-lg font-bold text-emerald-700 mb-1">
                             Independent Evidentiary Record.
                         </span>
                         <span className="text-xs tracking-wide text-slate-600">
-                            Not disputed. Not investigated. Not addressed.
+                            Not disputed. Not investigated. Not going away.
                         </span>
                     </div>
 
