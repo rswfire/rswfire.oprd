@@ -153,9 +153,9 @@ export default function FAQPage() {
                             <ul className="list-disc list-outside ml-8">
                                 <li>Independent investigation into documented misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">Honeyman State Park</Link>.</li>
                                 <li>Accountability for supervisors who betrayed trust and weaponized identity.</li>
-                                <li>Removal of Director Lisa Sumption for protecting abusers after receiving evidence.</li>
                                 <li>Systemic protections preventing retaliation against volunteers who report abuse.</li>
                                 <li>Public commitment to volunteer program integrity and LGBTQ+ safety backed by action, not rhetoric.</li>
+                                <li>Appropriate consequences for Director Lisa Sumption's choice to protect documented abusers rather than the volunteer they targeted.</li>
                             </ul>
                         </div>
                     </div>
@@ -172,10 +172,9 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>They already retaliated.</div>
                         <div>That's documented in <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">Allison Watson's removal letter</Link>, which explicitly states I was banned for speaking publicly about what happened.</div>
-                        <div>I am banned &mdash; permanently &mdash; from ever volunteering for <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> again.</div>
-                        <div>Ask yourself: what could I possibly have done to justify that outcome?</div>
                         <div>This took away any soft leverage they might have held over me.</div>
                         <div>Could they retaliate further? Yes. They could attempt to damage my reputation through back channels. They could use their institutional positions to interfere with future opportunities. They could continue the unethical patterns I've documented across months.</div>
+                        <div>And they may try to paint me as unstable to the general public if they feel truly backed into a wall.</div>
                         <div>All of this is possible. But I will not be silent. That is what they are counting on. Silence serves their interests, and their interests are not aligned with the truth.</div>
                         <div>If they retaliate, it will simply add to this record. More documentation of an institution that protects abusers and punishes those who document abuse.</div>
                         <div>But every action they take now happens in public view. This protects me to an extent.</div>
@@ -198,6 +197,7 @@ export default function FAQPage() {
                         <div>&quot;Proper channels&quot; only exist when institutions want accountability. When they don't, those channels become mechanisms to exhaust, isolate, and dismiss the person reporting harm.</div>
                         <div>But here's the better question: why shouldn't I document in public?</div>
                         <div>Who are we protecting by keeping institutional abuse private? The answer is the institution &mdash; not the people it harms.</div>
+                        <div>And I know this is shocking, but institutions don't have to harm people.</div>
                     </div>
                 </div>
 
@@ -209,11 +209,11 @@ export default function FAQPage() {
                         What does their silence mean?
                     </h2>
                     <div className="space-y-4">
-                        <div>Their silence is a choice.</div>
+                        <div>Their silence is a choice. In some cases, it is evidence.</div>
                         <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">received comprehensive evidence</Link> in August 2025 &mdash; audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action.</div>
-                        <div>Governor Kotek's office has been notified multiple times over months. No response. Not even an acknowledgement, the most basic form of professional communication we have.</div>
-                        <div>Silence means they believe institutional protection is more important than the safety of the people who support the institution with free time and labor.</div>
-                        <div>It means they've decided the political cost of accountability is higher than the risk of doing nothing. It means every person involved in targeting me remains in their position, free to do this again to someone else &mdash; only next time, with increased liability because they knew better.</div>
+                        <div>Governor Kotek's office has been notified multiple times over months. No response. Not even acknowledgment &mdash; the minimum standard of professional communication.</div>
+                        <div>Silence means they believe institutional protection is more important than the safety of volunteers who offer their labor freely to support public institutions.</div>
+                        <div>It means they've decided the political cost of accountability is higher than the risk of doing nothing. It means every person involved in targeting me remains in their position, free to do this again to someone else &mdash; only next time, with increased liability because I made the pattern visible.</div>
                         <div>Their silence is not neutrality. It's a decision. And it's documented.</div>
                     </div>
                 </div>
@@ -232,8 +232,6 @@ export default function FAQPage() {
                         <div>Those are facts.</div>
                         <div>Softening my language doesn't change what happened. It just makes it easier for people to dismiss it. Direct language forces clarity: either the evidence supports the claims or it does not. Either institutions act on documented harm or they don't.</div>
                         <div>I'm not asking anyone to feel sorry for me. The abuse happened. I processed it. Now I'm seeking accountability.</div>
-                        <div>And now I'm asking you to look at the evidence and decide whether this is acceptable institutional behavior.</div>
-                        <div>That decision now belongs to the reader.</div>
                     </div>
                 </div>
 
