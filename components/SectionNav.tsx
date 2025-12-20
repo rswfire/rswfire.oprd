@@ -155,7 +155,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 <SilenceTracker />
 
                 {/* CORRESPONDENCE SECTION */}
-                <div className="rounded-lg border border-slate-200 bg-white shadow-sm p-4">
+                <div className="mt-6 rounded-2xl border border-slate-200 bg-white shadow-sm p-4">
                     <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wide mb-3 pb-2 border-b border-slate-200">
                         Correspondence
                     </h3>
