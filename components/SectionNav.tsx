@@ -20,7 +20,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
 
     return (
         <>
-            {/* MOBILE NAV */}
             <div className="lg:hidden mb-6">
                 <button
                     onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -95,7 +94,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 )}
             </div>
 
-            <div className="hidden md:block sticky top-33 space-y-3">
+            <div className="hidden md:block space-y-3">
             <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                     <ul className="space-y-1">
                         {sections.map((s) => {
