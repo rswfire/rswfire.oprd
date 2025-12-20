@@ -1,12 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import { archiveSections } from "@/lib/sections";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     return (
         <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
@@ -24,7 +29,7 @@ export default function Header() {
                         </div>
 
                         <div className="leading-tight">
-                            <h1 className="text-base sm:text-lg font-bold tracking-wide uppercase text-slate-900">
+                            <h1 className="text-sm sm:text-lg font-bold tracking-wide uppercase text-slate-900">
                                 OPRD Volunteer Abuse
                             </h1>
 
@@ -36,7 +41,6 @@ export default function Header() {
                                 Under Director Lisa Sumption
                             </p>
 
-                            {/* Mobile tagline */}
                             <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
                                 Independent Documentation
                             </p>
@@ -53,18 +57,20 @@ export default function Header() {
                         </span>
                     </div>
 
-                    {/* Mobile Menu Toggle - Shows when sidebar is hidden */}
-                    <button
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="lg:hidden rounded-md p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                        aria-label="Toggle menu"
-                    >
-                        <Icon name={mobileMenuOpen ? "X" : "Menu"} size="22" />
-                    </button>
+                    {/* Mobile Menu Toggle - Only render after mount */}
+                    {mounted && (
+                        <button
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="lg:hidden rounded-md p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                            aria-label="Toggle menu"
+                        >
+                            <Icon name={mobileMenuOpen ? "X" : "Menu"} size="22" />
+                        </button>
+                    )}
                 </div>
 
-                {/* Mobile Nav */}
-                {mobileMenuOpen && (
+                {/* Mobile Nav - Only render after mount */}
+                {mounted && mobileMenuOpen && (
                     <nav className="lg:hidden mt-4 border-t border-slate-200 pt-3">
                         <ul className="space-y-1">
                             {archiveSections.map((section) => (
