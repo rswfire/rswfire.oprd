@@ -18,7 +18,6 @@ export default function Header() {
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
-                    {/* Brand */}
                     <Link href="/" className="flex items-start gap-3">
                         <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-md bg-emerald-50">
                             <Icon
@@ -29,12 +28,12 @@ export default function Header() {
                         </div>
 
                         <div className="leading-tight">
-                            <h1 className="text-sm sm:text-lg font-bold tracking-wide uppercase text-slate-900">
+                            <h1 className="text-base sm:text-lg font-bold tracking-wide uppercase text-slate-900">
                                 OPRD Volunteer Abuse
                             </h1>
 
                             <h2 className="text-xs sm:text-sm font-semibold tracking-tight text-slate-600">
-                                Oregon Parks &amp; Recreation Department
+                                Oregon Parks &amp; Recreation <span className="hidden sm:inline">Department</span><span className="sm:hidden">Dept.</span>
                             </h2>
 
                             <p className="hidden sm:block text-xs tracking-tight text-slate-500">
@@ -47,7 +46,6 @@ export default function Header() {
                         </div>
                     </Link>
 
-                    {/* Desktop Right Callout */}
                     <div className="hidden lg:flex flex-col items-end text-right">
                         <span className="text-sm font-bold text-emerald-700">
                             Independent Documentation
@@ -57,7 +55,6 @@ export default function Header() {
                         </span>
                     </div>
 
-                    {/* Mobile Menu Toggle - Only render after mount */}
                     {mounted && (
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -69,21 +66,47 @@ export default function Header() {
                     )}
                 </div>
 
-                {/* Mobile Nav - Only render after mount */}
                 {mounted && mobileMenuOpen && (
-                    <nav className="lg:hidden mt-4 border-t border-slate-200 pt-3">
-                        <ul className="space-y-1">
-                            {archiveSections.map((section) => (
-                                <li key={section.href}>
-                                    <Link
-                                        href={section.href}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900"
-                                    >
-                                        {section.label}
-                                    </Link>
-                                </li>
-                            ))}
+                    <nav className="lg:hidden mt-3 border-t border-slate-200 pt-2">
+                        <ul className="space-y-0">
+                            {archiveSections.map((section, index) => {
+                                // Handle separators
+                                if (section.separator) {
+                                    return (
+                                        <li key={section.href} className="my-2">
+                                            <hr className="border-slate-300" />
+                                        </li>
+                                    );
+                                }
+
+                                return (
+                                    <li key={section.href}>
+                                        <Link
+                                            href={section.href}
+                                            onClick={() => setMobileMenuOpen(false)}
+                                            className="block px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                                        >
+                                            {section.label}
+                                        </Link>
+
+                                        {section.subsections && (
+                                            <ul className="ml-4 border-l-2 border-slate-200">
+                                                {section.subsections.map((subsection) => (
+                                                    <li key={subsection.href}>
+                                                        <Link
+                                                            href={subsection.href}
+                                                            onClick={() => setMobileMenuOpen(false)}
+                                                            className="block px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-b border-slate-100 last:border-b-0"
+                                                        >
+                                                            {subsection.label}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </nav>
                 )}
