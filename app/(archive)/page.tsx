@@ -12,20 +12,22 @@ export default function OverviewPage() {
 
                 <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
                     <div className="text-lg sm:text-xl font-semibold leading-snug">
-                        A gay man documented identity-based targeting and retaliation by state employees under Oregon’s first openly LGBTQ+ governor &mdash; and was ignored at every level of accountability.</div>
+                        Why didn't they prevent the abuse?<br/>
+                        When they learned about it, why didn't they stop it?<br/>
+                        Now, why won't they acknowledge it?
+                    </div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
 
                 {/* VIDEO EMBED */}
                 <VideoEmbed
-                    title="I was targeted as a gay volunteer at Oregon State Parks"
-                    youtubeId="DVQPctdkTFY"
+                    title="What really happened to me at Oregon State Parks."
+                    youtubeId="M82aVVW4mNI"
                 />
 
                 <div className="mt-4 ml-8 text-sm text-gray-600">
                     <div><strong>December 2025</strong>. This is the only personal content in this archive.</div>
-                    <div>Brief profanity. Not for affect. It stays because there is a human being behind this <Link href="/evidence" className="text-emerald-700 underline hover:text-emerald-600">evidentiary record</Link>.</div>
                     <div>This is who they tried to erase. <Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
