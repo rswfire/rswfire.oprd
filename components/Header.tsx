@@ -26,12 +26,12 @@ export default function Header() {
     }, [mobileMenuOpen]);
 
     return (
-        <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
+        <header className="sticky top-0 z-20 border-b border-stone-200 bg-white backdrop-blur">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
                     <Link href="/" className="flex items-start gap-3">
-                        <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-md bg-emerald-50">
+                        <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-md">
                             <Icon
                                 name="TreeDeciduous"
                                 size="26"

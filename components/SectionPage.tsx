@@ -54,7 +54,7 @@ export default function SectionPage({
 
 
     return (
-        <div className="w-full p-8 rounded-xl bg-gray-50 border border-gray-300 text-base">
+        <div className="w-full p-8 rounded-xl bg-white/90 border border-gray-300 text-base">
             <div className="prose max-w-none pt-6">
 
                 {hasHeader && (
