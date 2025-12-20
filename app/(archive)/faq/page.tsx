@@ -44,7 +44,7 @@ export default function FAQPage() {
                     </h2>
                     <div className="space-y-4">
                         <div>Because suing them would have allowed them to disappear the evidence.</div>
-                        <div>It would have potentially required my silence during the litigation and it often ends in settlements with NDAs &mdash; and I would never have agreed to one.</div>
+                        <div>It would have potentially required my silence during the litigation and it often ends in settlements with NDAs &mdash; and I will <em>never</em> agree to sign one.</div>
                         <div>Litigation favors institutions with resources and time. Public documentation favors truth that can't be sealed or settled away.</div>
                         <div>This doesn't mean I won't. I'm tracking statutes of limitations. I'm considering every option. And I'm giving them every opportunity to prevent it.</div>
                     </div>
