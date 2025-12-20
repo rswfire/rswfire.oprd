@@ -26,8 +26,7 @@ export default function OverviewPage() {
                 <div className="mt-4 ml-8 text-sm text-gray-600">
                     <div><strong>December 2025</strong>. This is the only personal content in this archive.</div>
                     <div>Brief profanity. Not for affect. It stays because there is a human behind this <Link href="/evidence" className="text-emerald-700 underline hover:text-emerald-600">documentation</Link>.</div>
-                    <div>This is who they tried to erase.</div>
-                    <div className="mt-2"><Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    <div>This is who they tried to erase. <Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
