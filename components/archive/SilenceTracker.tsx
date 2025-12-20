@@ -91,6 +91,9 @@ export default function SilenceTracker() {
             <div className="p-4 space-y-4">
 
                 <div>
+                    <h3 className="text-xs font-semibold text-slate-700 mb-2 uppercase tracking-wide">
+                        Days Since
+                    </h3>
                     <div className="space-y-2">
                         {SILENCE_EVENTS.map((event, index) => {
                             const days = calculateDaysSince(event.date);
