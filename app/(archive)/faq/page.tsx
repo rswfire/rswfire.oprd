@@ -32,7 +32,6 @@ export default function FAQPage() {
                         <li><a href="#silence" className="text-emerald-700 underline hover:text-emerald-600">What does their silence mean?</a></li>
                         <li><a href="#tone" className="text-emerald-700 underline hover:text-emerald-600">Why is your tone so direct?</a></li>
                         <li><a href="#next" className="text-emerald-700 underline hover:text-emerald-600">What happens next?</a></li>
-                        <li><a href="#contact" className="text-emerald-700 underline hover:text-emerald-600">How do I contact you?</a></li>
                     </ul>
                 </div>
 
@@ -254,16 +253,6 @@ export default function FAQPage() {
                         <div>What happens next is their choice.</div>
                         <div>They either act or they don't. Both choices have consequences. Only one of them protects the next volunteer.</div>
                         <div>If that matters to you, ask <em>them</em> this question.</div>
-                    </div>
-                </div>
-
-                {/* Question 13 */}
-                <div id="contact" className="scroll-mt-48">
-                    <h2 className="text-xl font-semibold mb-3">
-                        How do I contact you?
-                    </h2>
-                    <div className="space-y-4">
-                        <div className="ml-4">&mdash; <Link href="https://rswfire.com/contact" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">rswfire.com/contact</Link></div>
                     </div>
                 </div>
 
