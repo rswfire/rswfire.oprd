@@ -19,23 +19,23 @@ interface LegalDeadline {
 
 const SILENCE_EVENTS: TrackedEvent[] = [
     {
-        label: "Governor Kotek",
-        date: "2025-11-17",
-        context: "First Contact with Governor's Office",
-        link: "/governor-kotek"
-    },
-    {
         label: "Director Sumption",
         date: "2025-12-08",
         context: "Communication Closed, Documentation Reframed as Emotional Processing",
         link: "/lisa-sumption"
+    },
+    {
+        label: "Governor Kotek",
+        date: "2025-11-17",
+        context: "First Contact with Governor's Office",
+        link: "/governor-kotek"
     }
 ];
 
 const LEGAL_DEADLINE: LegalDeadline = {
     label: "First Amendment Filing Deadline",
     date: "2027-03-27",
-    statute: "2-Year Statute of Limitations from Expulsion"
+    statute: "2-Year Statute of Limitations from Expulsion (42 U.S.C. § 1983)"
 };
 
 
