@@ -35,7 +35,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
 const LEGAL_DEADLINE: LegalDeadline = {
     label: "First Amendment Filing Deadline",
     date: "2027-03-27",
-    statute: "2-Year Statute of Limitations from Expulsion (42 U.S.C. § 1983)"
+    statute: "Statute of Limitations (42 U.S.C. § 1983)"
 };
 
 
