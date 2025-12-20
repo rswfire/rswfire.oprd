@@ -86,7 +86,7 @@ export default function SilenceTracker() {
     return (
         <div className="mt-6 w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
 
-            <div className="bg-slate-50 px-4 py-2.5 border-b border-slate-200">
+            <div className="bg-emerald-50 px-4 py-2.5 border-b border-slate-200">
                 <div className="text-sm font-bold text-slate-900 uppercase tracking-wide">
                     Accountability Tracker
                 </div>
