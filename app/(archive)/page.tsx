@@ -23,7 +23,7 @@ export default function OverviewPage() {
                     youtubeId="DVQPctdkTFY"
                 />
 
-                <div className="mt-4 text-sm text-gray-600 max-w-3xl mx-auto">
+                <div className="mt-4 ml-8 text-sm text-gray-600 max-w-3xl mx-auto">
                     <div>
                         December 2025. This is the only personal content in this archive.
                     </div>
