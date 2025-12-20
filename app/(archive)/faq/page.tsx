@@ -82,7 +82,7 @@ export default function FAQPage() {
                         <div>I should be able to do that without being subjected to psychological abuse, identity-based targeting, and supervisory betrayal.</div>
                         <div>And if that standard fails &mdash; if someone reports documented harm &mdash; there should be corrective pathways that protect the person reporting, not the people who caused the harm.</div>
                         <div>The question isn't why I didn't leave.</div>
-                        <div>The question is: why should anyone have to leave a volunteer position because park supervisors targeted them and the institution protected the supervisors instead?</div>
+                        <div>The question is: why should anyone have to leave a volunteer position because park supervisors targeted them and the institution shielded the supervisors instead?</div>
                         <div>That's the institutional failure this archive documents.</div>
                         <div>Not my decision to stay. Their decision to make staying untenable through systematic abuse &mdash; then punish me for documenting it.</div>
                     </div>
@@ -115,7 +115,7 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">responded in August 2025</Link> with procedural language and no commitments. She <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">closed communication in December 2025</Link>, reframing comprehensive documentation of misconduct and retaliation as &quot;emotional processing.&quot;</div>
                         <div>This is a common institutional response to documented harm: evidence is reduced to emotion, documentation is treated as distress, and continued reporting is framed as the problem rather than the conduct being reported.</div>
-                        <div>The effects of this response are predictable and harmful. It delegitimizes documented abuse, discourages others from reporting, and protects the people who caused the harm by recasting accountability requests as instability.</div>
+                        <div>The effects of this response are predictable and harmful. It delegitimizes documented abuse, discourages others from reporting, and shields the people who caused the harm by recasting accountability requests as instability.</div>
                         <div>No investigation was ordered. No findings were issued. No corrective action was taken.</div>
                         <div>Governor Kotek’s office and campaign have been contacted multiple times. No response. Not even an acknowledgement of receipt.</div>
                         <div><Link href="/governor-kotek" className="text-emerald-700 underline hover:text-emerald-600">They have been silent</Link>.</div>
@@ -213,7 +213,7 @@ export default function FAQPage() {
                         <div>Their silence is a choice. It is also evidence.</div>
                         <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">received comprehensive evidence</Link> in August 2025 &mdash; audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action.</div>
                         <div>Governor Kotek's office has been notified multiple times over months. No response. Not even acknowledgment &mdash; the minimum standard of professional communication.</div>
-                        <div>Silence means they believe institutional protection is more important than the safety of volunteers who offer their labor freely to support public institutions.</div>
+                        <div>Silence means they believe shielding abusers from accountability is more important than the safety of volunteers who offer their labor freely to support public institutions.</div>
                         <div>It means they've decided the political cost of accountability is higher than the risk of doing nothing. It means every person involved in targeting me remains in their position, free to do this again to someone else &mdash; only next time, with increased liability because I made the pattern visible.</div>
                         <div>Their silence is not neutrality. It's a decision. And it's documented.</div>
                     </div>
@@ -229,7 +229,7 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>Because I'm not performing the role they've assigned to me.</div>
                         <div>Because I'm not performing grief or asking for sympathy. I'm documenting institutional failure with precision. And that requires precise language.</div>
-                        <div>I was targeted by people in positions of authority. I documented what they did. I reported it through every available channel. They chose silence and protection over accountability.</div>
+                        <div>I was targeted by people in positions of authority. I documented what they did. I reported it through every available channel. They chose silence over accountability.</div>
                         <div>Those are facts.</div>
                         <div>Softening my language doesn't change what happened. It just makes it easier for people to dismiss it. Direct language forces clarity: either the evidence supports the claims or it does not. Either institutions act on documented harm or they don't.</div>
                         <div>I'm not asking anyone to feel sorry for me. The abuse happened. I processed it. Now I'm seeking accountability.</div>

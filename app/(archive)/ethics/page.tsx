@@ -46,7 +46,7 @@ export default function EthicsPage() {
 
             <div className="mt-4">Every person in this archive had the opportunity to maintain the standards they claimed to uphold.</div>
 
-            <div className="mt-4">Every person chose institutional protection instead.</div>
+            <div className="mt-4">Every person chose the preservation of institutional impunity instead.</div>
 
             <div className="mt-4">That choice &mdash; to abandon ethics when ethics became costly &mdash; is what this archive makes permanent.</div>
 

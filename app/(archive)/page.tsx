@@ -84,7 +84,7 @@ export default function OverviewPage() {
                         <li>Formally acknowledged receipt.</li>
                         <li>Offered no specific commitments.</li>
                         <li>Deferred responsibility to "appropriate channels."</li>
-                        <li>Upheld institutional protection over volunteer accountability.</li>
+                        <li>Chose institutional reputation over volunteer safety.</li>
                     </ul>
 
                     <div className="mt-4">
@@ -148,7 +148,7 @@ export default function OverviewPage() {
                             Allison Watson, Engagement Programs Manager, <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">formalized the retaliation in writing</Link>.
                         </li>
                         <li>
-                            Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">acknowledged it and chose to protect them</Link>.
+                            Lisa Sumption, Director, <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">acknowledged it and chose to shield them</Link>.
                         </li>
                         <li>
                             The agency violated public records law for 90+ days <Link href="/lisa-sumption/public-records-request" className="underline text-emerald-800 hover:text-emerald-600">to avoid transparency about it</Link>.

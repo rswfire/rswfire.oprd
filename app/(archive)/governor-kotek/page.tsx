@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: "Oregon's first openly LGBTQ+ governor's response to documented targeting of gay volunteer by state employees under her administration.",
     openGraph: {
         title: "The Governor's Silence",
-        description: "A gay volunteer documented abuse. Her Director protected the abusers. She was notified. She chose silence.",
+        description: "A gay volunteer documented abuse. Her director shielded the abusers. She was notified. She chose silence.",
     }
 };
 
@@ -67,7 +67,7 @@ export default function GovernorKotekPage() {
                     <div>No protections were implemented.</div>
                     <div>In December, she closed communication entirely, reframing my comprehensive documentation as &quot;emotional processing&quot; and stating that further correspondence would not &quot;lead to the resolution you're seeking.&quot;</div>
                     <div>Every person who abused their authority remains in their position.</div>
-                    <div>Her director chose to protect them.</div>
+                    <div>Her director chose to shield them from consequences.</div>
                     <div>These are facts. Every single one of them verifiable.</div>
                 </div>
 
@@ -94,7 +94,7 @@ export default function GovernorKotekPage() {
                         <div><strong>He was targeted by state employees who weaponized his sexuality after he set clear boundaries.</strong></div>
                         <div><strong>He documented everything &mdash; not with accusations, but with recordings, video, and written evidence.</strong></div>
                         <div><strong>He reported it to the director the governor appointed.</strong></div>
-                        <div><strong>She protected the people who targeted him.</strong></div>
+                        <div><strong>She shielded the people who targeted him.</strong></div>
                         <div><strong>He notified the governor's office and the governor's campaign.</strong></div>
                         <div><strong>They have remained silent.</strong></div>
                     </div>
@@ -133,7 +133,7 @@ export default function GovernorKotekPage() {
                 <div className="space-y-4">
                     <div>She has the power to resolve this right now.</div>
                     <div>Order an independent investigation into documented misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
-                    <div>Hold her director accountable for protecting employees who targeted a gay volunteer.</div>
+                    <div>Hold her director accountable for shielding employees who targeted a gay volunteer.</div>
                     <div>Implement systemic protections for volunteers across <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
                     <div>Make a public commitment to LGBTQ+ volunteer safety that's backed by action, not just words.</div>
                     <div>If she does these things now &mdash; before external discovery forces her hand &mdash; this becomes a story about authentic accountability. It becomes evidence that her commitment to queer protection is real even when it's politically uncomfortable.</div>
@@ -168,7 +168,7 @@ export default function GovernorKotekPage() {
                     <div>I have spent nine months building permanent accountability infrastructure because every internal channel failed.</div>
                     <div>I have given every person in the chain of authority &mdash; from park supervisors to her director to her campaign &mdash; the opportunity to do the right thing.</div>
                     <div>I have been patient far beyond what anyone who experienced what I experienced should be expected to be.</div>
-                    <div>And I have documented every choice, every non-response, every moment when institutional protection was chosen over human accountability.</div>
+                    <div>And I have documented every choice, every non-response, every moment when institutional comfort was chosen over human accountability.</div>
                     <div>She is the final institutional authority before external escalation becomes necessary.</div>
                     <div>She has the power to end this with accountability instead of exposure.</div>
                     <div>But that power comes with a timeline.</div>

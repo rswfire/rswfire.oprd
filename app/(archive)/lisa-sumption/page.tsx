@@ -75,7 +75,7 @@ export default function LisaSumptionIndexPage() {
                 <div className="mt-4 font-semibold">
                     Lisa Sumption was given every opportunity to intervene.
                 </div>
-                <div>She chose institutional protection over volunteer safety.</div>
+                <div>She chose institutional erasure over volunteer safety.</div>
             </div>
 
         </SectionPage>

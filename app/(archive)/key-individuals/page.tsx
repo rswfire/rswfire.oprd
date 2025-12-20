@@ -18,23 +18,6 @@ export default function KeyIndividualsPage() {
             nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
-            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-
-                <div className="text-base">
-                    <div>
-                        These are the central figures referenced throughout this archive —
-                    </div>
-                    <div>
-                        each played a distinct role in the systematic abuse, betrayal, and institutional protection
-                    </div>
-                    <div>
-                        that unfolded at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and within <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> as a whole.
-                    </div>
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
-
             <h2 className="mt-8 text-xl font-semibold">LOGAN BLISS</h2>
             <div className="mt-2 italic">
                 Volunteer Services Lead<br />
@@ -107,7 +90,7 @@ export default function KeyIndividualsPage() {
                 <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
                 <li>December: <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">reduced comprehensive documentation to emotional processing</Link>, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
                 <li><Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published</Link>.</li>
-                <li><strong>Chose institutional protection over volunteer safety</strong>.</li>
+                <li><strong>Chose institutional shielding over volunteer safety</strong>.</li>
                 <li><strong>Failed to protect a queer unpaid volunteer from the targeted abuse of her subordinates</strong>.</li>
             </ul>
 
