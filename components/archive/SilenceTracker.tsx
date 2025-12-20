@@ -21,19 +21,25 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Permanently Banned from Oregon State Parks",
         date: "2025-03-27",
-        context: "No investigation conducted.",
+        context: "No investigation initiated.",
         link: "/evidence/expulsion"
     },
     {
-        label: "Director Sumption",
+        label: "Open Letter to Director",
+        date: "2025-08-25",
+        context: "Acknowledged without action.",
+        link: "/lisa-sumption/open-letter"
+    },
+    {
+        label: "Director Closes Communication",
         date: "2025-12-08",
-        context: "Communication closed. Documentation laundered into pathology.",
+        context: "Documentation laundered into pathology.",
         link: "/lisa-sumption/closure"
     },
     {
-        label: "Governor Kotek",
-        date: "2025-11-17",
-        context: "First contact with Governor's Office. No acknowledgement.",
+        label: "Governor Kotek's Campaign Notified",
+        date: "2025-12-13",
+        context: "No acknowledgment.",
         link: "/governor-kotek"
     }
 ];
