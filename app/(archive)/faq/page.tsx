@@ -17,8 +17,28 @@ export default function FAQPage() {
         >
             <div className="mt-8 space-y-8">
 
+                <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+                    <div className="text-base font-semibold mb-4">QUESTIONS:</div>
+                    <ul className="space-y-2">
+                        <li><a href="#sue" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you sue them?</a></li>
+                        <li><a href="#target" className="text-emerald-700 underline hover:text-emerald-600">Why would they target you?</a></li>
+                        <li><a href="#leave" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you just leave?</a></li>
+                        <li><a href="#move-on" className="text-emerald-700 underline hover:text-emerald-600">Why not just move on?</a></li>
+                        <li><a href="#response" className="text-emerald-700 underline hover:text-emerald-600">Have they responded to any of this?</a></li>
+                        <li><a href="#verify" className="text-emerald-700 underline hover:text-emerald-600">How can people verify this documentation?</a></li>
+                        <li><a href="#accountability" className="text-emerald-700 underline hover:text-emerald-600">What do you want to happen?</a></li>
+                        <li><a href="#retaliation" className="text-emerald-700 underline hover:text-emerald-600">Aren't you worried about retaliation?</a></li>
+                        <li><a href="#proper-channels" className="text-emerald-700 underline hover:text-emerald-600">Why make this public instead of going through proper channels?</a></li>
+                        <li><a href="#silence" className="text-emerald-700 underline hover:text-emerald-600">What does their silence mean?</a></li>
+                        <li><a href="#tone" className="text-emerald-700 underline hover:text-emerald-600">Why is your tone so direct?</a></li>
+                        <li><a href="#next" className="text-emerald-700 underline hover:text-emerald-600">What happens next?</a></li>
+                    </ul>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
                 {/* Question 1 */}
-                <div>
+                <div id="sue" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why didn't you sue them?
                     </h2>
@@ -32,7 +52,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 2 */}
-                <div>
+                <div id="target" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why would they target you?
                     </h2>
@@ -48,7 +68,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 3 */}
-                <div>
+                <div id="leave" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why didn't you just leave?
                     </h2>
@@ -70,7 +90,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 4 */}
-                <div>
+                <div id="move-on" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why not just move on?
                     </h2>
@@ -86,7 +106,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 5 */}
-                <div>
+                <div id="response" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Have they responded to any of this?
                     </h2>
@@ -104,7 +124,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 6 */}
-                <div>
+                <div id="verify" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         How can people verify this documentation?
                     </h2>
@@ -122,7 +142,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 7 */}
-                <div>
+                <div id="accountability" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         What do you want to happen?
                     </h2>
@@ -144,7 +164,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 8 */}
-                <div>
+                <div id="retaliation" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Aren't you worried about retaliation?
                     </h2>
@@ -166,7 +186,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 9 */}
-                <div>
+                <div id="proper-channels" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why make this public instead of going through proper channels?
                     </h2>
@@ -184,7 +204,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 10 */}
-                <div>
+                <div id="silence" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         What does their silence mean?
                     </h2>
@@ -201,7 +221,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 11 */}
-                <div>
+                <div id="tone" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why is your tone so direct?
                     </h2>
@@ -220,7 +240,7 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 12 */}
-                <div>
+                <div id="next" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         What happens next?
                     </h2>
