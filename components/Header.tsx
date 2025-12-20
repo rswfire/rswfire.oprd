@@ -40,7 +40,7 @@ export default function Header() {
                         </div>
 
                         <div className="leading-tight">
-                            <h1 className="text-base sm:text-lg font-bold tracking-wide uppercase text-slate-900">
+                            <h1 className="text-sm sm:text-lg font-bold tracking-wide uppercase text-slate-900">
                                 OPRD Volunteer Abuse
                             </h1>
 
