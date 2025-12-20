@@ -14,7 +14,7 @@ export default function ConfrontationPage() {
             title="CONFRONTATION"
             subtitle="KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/evidence", label: "Evidence" }}
-            nextPage={{ href: "/evidence/response", label: "Response" }}
+            nextPage={{ href: "/evidence/compliance", label: "Compliance" }}
             summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
         >
 

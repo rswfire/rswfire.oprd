@@ -14,7 +14,7 @@ export default function BetrayalPage() {
         <SectionPage
             title="BETRAYAL"
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
-            previousPage={{ href: "/evidence/response", label: "Response" }}
+            previousPage={{ href: "/evidence/compliance", label: "Compliance" }}
             nextPage={{ href: "/evidence/coercion", label: "Coercion" }}
             summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
         >

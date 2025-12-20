@@ -1,39 +1,27 @@
-// app/(archive)/evidence/response/page.tsx
+// app/(archive)/evidence/compliance/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 
 export const metadata: Metadata = {
-    title: "Response",
-    description: "The February 12, 2025 attempt at reconciliation that demonstrated institutional bad faith.",
+    title: "Compliance",
+    description: "The February 12, 2025 demonstration of institutional conformity that proved their targeting was never about legitimate supervision.",
 };
 
-export default function ResponsePage() {
+export default function CompliancePage() {
     return (
         <SectionPage
-            title="RESPONSE"
-            subtitle="ATTEMPTING RESET"
+            title="COMPLIANCE"
+            subtitle="ATTEMPTING INSTITUTIONAL CONFORMITY"
             previousPage={{ href: "/evidence/confrontation", label: "Confrontation" }}
             nextPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
-            summary="Three days after the February 9 confrontation with Ryan Warren, I attempted reconciliation with good faith vulnerability and explicit commitment to conform."
+            summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
         >
 
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 
             <div className="mt-4">
-                After Ryan Warren confronted me alone on February 9—cataloging first-week mistakes in response to my email to Kati Baker—I spent days worried about my standing at Honeyman.
-            </div>
-
-            <div className="mt-4">
-                Logan Bliss had disappeared. I hadn't seen him since the confrontation, and that felt purposeful.
-            </div>
-
-            <div className="mt-4">
-                I sent this email attempting reset. I named what had happened as a confluence of unfortunate events. I offered to recalibrate. I asked them to get to know me. I committed to conforming to their expectations.
-            </div>
-
-            <div className="mt-4">
-                I gave them everything they could have wanted from someone who had just been subjected to managerial intimidation: deference, flexibility, explicit commitment to institutional standards.
+                Three days after Ryan Warren confronted me alone &mdash; cataloging first-week mistakes in response to my email to Kati Baker &mdash; I sent this email.
             </div>
 
             <Email
@@ -60,8 +48,7 @@ And my time here is so limited. If you don't want me back here next year, I will
 
 I have volunteer assignments lined up all year as I explore this wonderful coast. I don't want to jeopardize that. I will conform. I will recalibrate. I will be a model volunteer. I hope that you will give me that opportunity.
 
-Sam
-`}</pre>
+Sam`}</pre>
             </Email>
 
             <hr className="my-6 border-t border-gray-300" />

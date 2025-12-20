@@ -13,7 +13,7 @@ export const archiveSections = [
         label: "Evidence",
         subsections: [
             { href: "/evidence/confrontation", label: "Confrontation" },
-            { href: "/evidence/response", label: "Response" },
+            { href: "/evidence/compliance", label: "Compliance" },
             { href: "/evidence/betrayal", label: "Betrayal" },
             { href: "/evidence/coercion", label: "Coercion" },
             { href: "/evidence/surveillance", label: "Surveillance" },

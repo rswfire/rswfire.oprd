@@ -49,11 +49,11 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/response" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        2. RESPONSE
+                    <Link href="/evidence/compliance" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        2. COMPLIANCE
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        February 12, 2025 — I attempt reconciliation with explicit commitment to conform. This proves institutional bad faith when targeting escalates anyway.
+                        February 12, 2025 — Explicit commitment to institutional conformity. Abuse escalated anyway.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Email correspondence
