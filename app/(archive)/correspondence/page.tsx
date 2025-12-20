@@ -13,14 +13,9 @@ export default function CorrespondencePage() {
         <SectionPage
             title="CORRESPONDENCE"
             subtitle="COMPLETE RECORD OF EXTERNAL CONTACT"
+            summary="This section contains every external communication made following the institutional failures documented in this archive."
+            previousPage={{ href: "/", label: "Home" }}
         >
-            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                <div className="text-base">
-                    This section contains every external communication made following the institutional failures documented in this archive.
-                </div>
-            </div>
-
-            <hr className="my-6 border-t border-gray-300" />
 
             <div className="space-y-8">
                 <div>

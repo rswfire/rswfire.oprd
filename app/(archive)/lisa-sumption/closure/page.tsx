@@ -17,7 +17,7 @@ export default function LisaClosurePage() {
             title="THE CLOSURE"
             subtitle="DECEMBER 2025"
             supplemental="DIRECTOR LISA SUMPTION ENDS COMMUNICATION"
-            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            previousPage={{ href: "/lisa-sumption/public-records-request", label: "The Public Records Request" }}
             nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
         >
 

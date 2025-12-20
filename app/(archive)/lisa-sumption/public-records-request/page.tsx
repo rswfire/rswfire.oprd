@@ -17,8 +17,8 @@ export default function PublicRecordsRequestPage() {
             title="THE PUBLIC RECORDS REQUEST"
             subtitle="AUGUST 22, 2025 — FORMAL REQUEST FOR TRANSPARENCY"
             supplemental="THE NOTICE OF VIOLATION, THE RESPONSE, AND THE WITHDRAWAL"
-            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
-            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
+            previousPage={{ href: "/lisa-sumption/open-letter", label: "The Open Letter" }}
+            nextPage={{ href: "/lisa-sumption/closure", label: "The Closure" }}
         >
 
             <div className="mt-4">

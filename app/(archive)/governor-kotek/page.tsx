@@ -18,6 +18,8 @@ export default function GovernorKotekPage() {
             title="THE GOVERNOR'S SILENCE"
             subtitle="WHEN IT WAS TIME TO PROTECT ONE OF HER OWN"
             supplemental="WHAT DID SHE CHOOSE TO DO?"
+            previousPage={{ href: "/", label: "Home" }}
+            nextPage={{ href: "/correspondence", label: "Correspondence" }}
         >
             <div className="mt-4 text-base leading-relaxed">
 

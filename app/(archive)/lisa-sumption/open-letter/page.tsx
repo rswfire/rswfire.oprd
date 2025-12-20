@@ -17,8 +17,8 @@ export default function OpenLetterPage() {
             title="THE OPEN LETTER"
             subtitle="AUGUST 25, 2025 — SENT TO DIRECTOR LISA SUMPTION"
             supplemental="HER RESPONSE, AND THE RECORD IT CREATED"
-            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
-            nextPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
+            previousPage={{ href: "/lisa-sumption", label: "The Director's Choices" }}
+            nextPage={{ href: "/lisa-sumption/public-records-request", label: "The Public Records Request" }}
         >
 
             <div className="mt-4">
