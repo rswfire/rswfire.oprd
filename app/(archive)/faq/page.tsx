@@ -50,6 +50,28 @@ export default function FAQPage() {
                 {/* Question 3 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
+                        Why didn't you just leave?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>I had a year of volunteer assignments lined up across Oregon's coast. I had restructured my entire life around this trajectory.</div>
+                        <div>I had economic constraints that made the volunteer housing model workable when other options weren't.</div>
+                        <div>I quietly looked for alternatives during the weeks of escalating pressure. Nothing materialized in time.</div>
+                        <div>But none of these reasons matter.</div>
+                        <div>I was volunteering for a state park. A public institution. Offering unpaid labor to support Oregon's natural spaces.</div>
+                        <div>I should be able to do that without being subjected to psychological abuse, identity-based targeting, and supervisory betrayal.</div>
+                        <div>And if that standard fails &mdash; if someone reports documented harm &mdash; there should be corrective pathways that protect the person reporting, not the people who caused the harm.</div>
+                        <div>The question isn't why I didn't leave.</div>
+                        <div>The question is: why should anyone have to leave a volunteer position because park supervisors targeted them and the institution protected the supervisors instead?</div>
+                        <div>That's the institutional failure this archive documents.</div>
+                        <div>Not my decision to stay. Their decision to make staying untenable through systematic abuse &mdash; then punish me for documenting it.</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 4 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-3">
                         Why not just move on?
                     </h2>
                     <div className="space-y-4">
@@ -63,7 +85,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 4 */}
+                {/* Question 5 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         Have they responded to any of this?
@@ -81,7 +103,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 5 */}
+                {/* Question 6 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         How can people verify this documentation?
@@ -99,7 +121,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 6 */}
+                {/* Question 7 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         What do you want to happen?
@@ -121,7 +143,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 7 */}
+                {/* Question 8 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         Aren't you worried about retaliation?
@@ -143,7 +165,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 8 */}
+                {/* Question 9 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         Why make this public instead of going through proper channels?
@@ -161,7 +183,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 9 */}
+                {/* Question 10 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         What does their silence mean?
@@ -178,7 +200,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 10 */}
+                {/* Question 11 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         Why is your tone so direct?
@@ -197,7 +219,7 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 11 */}
+                {/* Question 12 */}
                 <div>
                     <h2 className="text-xl font-semibold mb-3">
                         What happens next?
