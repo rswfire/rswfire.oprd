@@ -60,7 +60,7 @@ export default function Header() {
 
                     <div className="hidden lg:flex flex-col items-end text-right">
                         <span className="text-sm font-bold text-emerald-700">
-                            Independent Documentation.
+                            Independent Evidentiary Record.
                         </span>
                         <span className="text-xs tracking-wide text-slate-600">
                             Not disputed. Not investigated. Not addressed.
