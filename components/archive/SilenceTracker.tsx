@@ -27,13 +27,13 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Director Sumption",
         date: "2025-12-08",
-        context: "Communication Closed, Documentation Reframed as Emotional Processing",
+        context: "Communication closed. Documentation laundered into pathology.",
         link: "/lisa-sumption"
     },
     {
         label: "Governor Kotek",
         date: "2025-11-17",
-        context: "First Contact with Governor's Office, No Acknowledgement",
+        context: "First contact with Governor's Office. No acknowledgement.",
         link: "/governor-kotek"
     }
 ];
