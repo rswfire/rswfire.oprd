@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Icon from "@/components/Icon";
+import SilenceTracker from "@/components/archive/SilenceTracker";
 
 type Section = {
     href: string;
@@ -19,6 +20,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
 
     return (
         <>
+            {/* MOBILE NAV */}
             <div className="lg:hidden mb-6">
                 <button
                     onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -29,69 +31,72 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 </button>
 
                 {mobileNavOpen && (
-                    <nav className="mt-2 rounded-lg border border-slate-200 bg-white shadow-sm p-3">
-                        <ul className="space-y-1">
-                            {sections.map((s) => {
-                                if (s.separator) {
+                    <div className="mt-2 space-y-3">
+                        <nav className="rounded-lg border border-slate-200 bg-white shadow-sm p-3">
+                            <ul className="space-y-1">
+                                {sections.map((s) => {
+                                    if (s.separator) {
+                                        return (
+                                            <li key={s.href} className="my-2">
+                                                <div className="border-t border-slate-200" />
+                                            </li>
+                                        );
+                                    }
+
+                                    const hasActiveSubsection = s.subsections?.some(sub => pathname === sub.href);
+                                    const active = s.href === "/"
+                                        ? pathname === "/"
+                                        : pathname === s.href || pathname.startsWith(s.href + "/") || hasActiveSubsection;
+
                                     return (
-                                        <li key={s.href} className="my-2">
-                                            <div className="border-t border-slate-200" />
+                                        <li key={s.href}>
+                                            <Link
+                                                href={s.href}
+                                                onClick={() => setMobileNavOpen(false)}
+                                                className={`block rounded-md px-3 py-2 text-sm transition ${
+                                                    active
+                                                        ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
+                                                        : "text-slate-700 hover:bg-slate-50"
+                                                }`}
+                                            >
+                                                {s.label}
+                                            </Link>
+
+                                            {s.subsections && (
+                                                <ul className="ml-4 mt-1 space-y-1">
+                                                    {s.subsections.map((sub) => {
+                                                        const subActive = pathname === sub.href || pathname === sub.href + '/';
+                                                        return (
+                                                            <li key={sub.href}>
+                                                                <Link
+                                                                    href={sub.href}
+                                                                    onClick={() => setMobileNavOpen(false)}
+                                                                    className={`block rounded-md px-3 py-1.5 text-xs transition ${
+                                                                        subActive
+                                                                            ? "bg-emerald-100 text-emerald-900 font-semibold border border-emerald-200"
+                                                                            : "text-slate-600 hover:bg-slate-50"
+                                                                    }`}
+                                                                >
+                                                                    {sub.label}
+                                                                </Link>
+                                                            </li>
+                                                        );
+                                                    })}
+                                                </ul>
+                                            )}
                                         </li>
                                     );
-                                }
+                                })}
+                            </ul>
+                        </nav>
 
-                                const hasActiveSubsection = s.subsections?.some(sub => pathname === sub.href);
-
-                                const active = s.href === "/"
-                                    ? pathname === "/"
-                                    : pathname === s.href || pathname.startsWith(s.href + "/") || hasActiveSubsection;
-
-                                return (
-                                    <li key={s.href}>
-                                        <Link
-                                            href={s.href}
-                                            onClick={() => setMobileNavOpen(false)}
-                                            className={`block rounded-md px-3 py-2 text-sm transition ${
-                                                active
-                                                    ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
-                                                    : "text-slate-700 hover:bg-slate-50"
-                                            }`}
-                                        >
-                                            {s.label}
-                                        </Link>
-
-                                        {s.subsections && (
-                                            <ul className="ml-4 mt-1 space-y-1">
-                                                {s.subsections.map((sub) => {
-                                                    const subActive = pathname === sub.href || pathname === sub.href + '/';
-                                                    return (
-                                                        <li key={sub.href}>
-                                                            <Link
-                                                                href={sub.href}
-                                                                onClick={() => setMobileNavOpen(false)}
-                                                                className={`block rounded-md px-3 py-1.5 text-xs transition ${
-                                                                    subActive
-                                                                        ? "bg-emerald-100 text-emerald-900 font-semibold border border-emerald-200"
-                                                                        : "text-slate-600 hover:bg-slate-50"
-                                                                }`}
-                                                            >
-                                                                {sub.label}
-                                                            </Link>
-                                                        </li>
-                                                    );
-                                                })}
-                                            </ul>
-                                        )}
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </nav>
+                        <SilenceTracker />
+                    </div>
                 )}
             </div>
 
             <div className="hidden md:block sticky top-33 space-y-3">
-                <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
+            <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                     <ul className="space-y-1">
                         {sections.map((s) => {
                             if (s.separator) {
@@ -103,7 +108,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                             }
 
                             const hasActiveSubsection = s.subsections?.some(sub => pathname === sub.href);
-
                             const active = s.href === "/"
                                 ? pathname === "/"
                                 : pathname === s.href || pathname.startsWith(s.href + "/") || hasActiveSubsection;
@@ -147,6 +151,8 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                         })}
                     </ul>
                 </nav>
+
+                <SilenceTracker />
             </div>
         </>
     );
