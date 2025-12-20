@@ -47,7 +47,9 @@ const LEGAL_DEADLINE: LegalDeadline = {
 
 function calculateDaysSince(dateString: string): number {
     const targetDate = new Date(dateString);
+    targetDate.setHours(0, 0, 0, 0);
     const today = new Date();
+    today.setHours(0, 0, 0, 0);
     const diffTime = Math.abs(today.getTime() - targetDate.getTime());
     return Math.floor(diffTime / (1000 * 60 * 60 * 24));
 }
