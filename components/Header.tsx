@@ -49,11 +49,11 @@ export default function Header() {
                             </h2>
 
                             <p className="hidden sm:block text-xs tracking-tight text-slate-500">
-                                Under Director Lisa Sumption
+                                Under Director Lisa Sumption.
                             </p>
 
                             <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
-                                Independent Documentation.
+                                Independent Evidentiary Record.
                             </p>
                         </div>
                     </Link>
@@ -82,7 +82,6 @@ export default function Header() {
                     <nav className="lg:hidden mt-3 border-t border-slate-200 pt-2">
                         <ul className="space-y-0">
                             {archiveSections.map((section, index) => {
-                                // Handle separators
                                 if (section.separator) {
                                     return (
                                         <li key={section.href} className="my-2">

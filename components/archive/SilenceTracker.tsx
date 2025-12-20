@@ -27,7 +27,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Governor Kotek",
         date: "2025-11-17",
-        context: "First Contact with Governor's Office",
+        context: "First Contact with Governor's Office, No Acknowledgement",
         link: "/governor-kotek"
     }
 ];
@@ -62,7 +62,7 @@ export default function SilenceTracker() {
 
     if (!mounted) {
         return (
-            <div className="w-full p-4 rounded-lg bg-slate-50 border border-slate-200">
+            <div className="mt-6 w-full p-4 rounded-2xl bg-slate-50 border border-slate-200">
                 <div className="text-center text-sm text-slate-500">Loading...</div>
             </div>
         );
@@ -76,9 +76,8 @@ export default function SilenceTracker() {
     });
 
     return (
-        <div className="w-full rounded-lg bg-white border border-slate-200 shadow-sm overflow-hidden">
+        <div className="mt-6 w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
 
-            {/* HEADER */}
             <div className="bg-slate-50 px-4 py-2.5 border-b border-slate-200">
                 <div className="text-sm font-bold text-slate-900 uppercase tracking-wide">
                     Accountability Tracker
