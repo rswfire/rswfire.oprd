@@ -31,29 +31,27 @@ export default function SectionPage({
     const hasNavigation = Boolean(previousPage || nextPage);
 
     const NavigationLinks = () => (
-        <div className="flex justify-between items-center text-sm">
-            <div className="flex-1">
-                {previousPage && (
-                    <Link
-                        href={previousPage.href}
-                        className="text-emerald-700 hover:underline"
-                    >
-                        ← {previousPage.label}
-                    </Link>
-                )}
-            </div>
-            <div className="flex-1 text-right">
-                {nextPage && (
-                    <Link
-                        href={nextPage.href}
-                        className="text-emerald-700 hover:underline"
-                    >
-                        {nextPage.label} →
-                    </Link>
-                )}
-            </div>
+        <div className="flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center text-sm">
+            {previousPage && (
+                <Link
+                    href={previousPage.href}
+                    className="text-emerald-700 hover:underline"
+                >
+                    ← {previousPage.label}
+                </Link>
+            )}
+
+            {nextPage && (
+                <Link
+                    href={nextPage.href}
+                    className="text-emerald-700 hover:underline sm:text-right"
+                >
+                    {nextPage.label} →
+                </Link>
+            )}
         </div>
     );
+
 
     return (
         <div className="w-full p-8 rounded-xl bg-gray-50 border border-gray-300 text-base">
