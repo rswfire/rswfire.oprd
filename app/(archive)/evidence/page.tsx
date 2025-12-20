@@ -68,7 +68,7 @@ export default function EvidencePage() {
                         February-March 2025 — Logan Bliss elicits trust through reciprocal vulnerability, then transmits confidential disclosures to management who weaponize them against me.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
-                        Format: Email correspondence, supplemental documentation
+                        Format: Email correspondence, pattern evidence
                     </div>
                 </div>
 
