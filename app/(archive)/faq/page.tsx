@@ -175,7 +175,7 @@ export default function FAQPage() {
                         <div>That's documented in <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">Allison Watson's removal letter</Link>, which explicitly states I was banned for speaking publicly about what happened.</div>
                         <div>This took away any soft leverage they might have held over me.</div>
                         <div>Could they retaliate further? Yes. They could attempt to damage my reputation through back channels. They could use their institutional positions to interfere with future opportunities. They could continue the unethical patterns I've documented across months.</div>
-                        <div>And they may try to paint me as unstable to the general public if they feel truly backed into a wall.</div>
+                        <div>They may attempt to pathologize me publicly if institutional pressure increases.</div>
                         <div>All of this is possible. But I will not be silent. That is what they are counting on. Silence serves their interests, and their interests are not aligned with the truth.</div>
                         <div>If they retaliate, it will simply add to this record. More documentation of an institution that protects abusers and punishes those who document abuse.</div>
                         <div>But every action they take now happens in public view. This protects me to an extent.</div>
@@ -210,7 +210,7 @@ export default function FAQPage() {
                         What does their silence mean?
                     </h2>
                     <div className="space-y-4">
-                        <div>Their silence is a choice. In some cases, it is evidence.</div>
+                        <div>Their silence is a choice. It is also evidence.</div>
                         <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">received comprehensive evidence</Link> in August 2025 &mdash; audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action.</div>
                         <div>Governor Kotek's office has been notified multiple times over months. No response. Not even acknowledgment &mdash; the minimum standard of professional communication.</div>
                         <div>Silence means they believe institutional protection is more important than the safety of volunteers who offer their labor freely to support public institutions.</div>
@@ -233,6 +233,7 @@ export default function FAQPage() {
                         <div>Those are facts.</div>
                         <div>Softening my language doesn't change what happened. It just makes it easier for people to dismiss it. Direct language forces clarity: either the evidence supports the claims or it does not. Either institutions act on documented harm or they don't.</div>
                         <div>I'm not asking anyone to feel sorry for me. The abuse happened. I processed it. Now I'm seeking accountability.</div>
+                        <div>This is what accountability sounds like.</div>
                     </div>
                 </div>
 
