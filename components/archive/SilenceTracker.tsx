@@ -19,9 +19,9 @@ interface LegalDeadline {
 
 const SILENCE_EVENTS: TrackedEvent[] = [
     {
-        label: "Expulsion",
+        label: "Permanently Banned from Oregon State Parks",
         date: "2025-03-27",
-        context: "Permanently Banned from Oregon State Parks",
+        context: "No investigation conducted.",
         link: "/expulsion"
     },
     {
