@@ -19,6 +19,12 @@ interface LegalDeadline {
 
 const SILENCE_EVENTS: TrackedEvent[] = [
     {
+        label: "Expulsion",
+        date: "2025-03-27",
+        context: "Permanently Banned from Oregon State Parks",
+        link: "/expulsion"
+    },
+    {
         label: "Director Sumption",
         date: "2025-12-08",
         context: "Communication Closed, Documentation Reframed as Emotional Processing",
@@ -122,7 +128,7 @@ export default function SilenceTracker() {
                                     )}
                                     <div className="text-xs text-slate-500 mt-1">
                                         {new Date(event.date).toLocaleDateString('en-US', {
-                                            month: 'short',
+                                            month: 'long',
                                             day: 'numeric',
                                             year: 'numeric'
                                         })}
@@ -151,6 +157,13 @@ export default function SilenceTracker() {
                                 {LEGAL_DEADLINE.statute}
                             </div>
                         )}
+                        <div className="text-xs text-slate-500 mt-1">
+                            {new Date(LEGAL_DEADLINE.date).toLocaleDateString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric'
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>
