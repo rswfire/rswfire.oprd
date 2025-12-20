@@ -19,7 +19,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
 
     return (
         <>
-            {/* Mobile: Collapsible Nav */}
             <div className="lg:hidden mb-6">
                 <button
                     onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -41,9 +40,11 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                     );
                                 }
 
+                                const hasActiveSubsection = s.subsections?.some(sub => pathname === sub.href);
+
                                 const active = s.href === "/"
                                     ? pathname === "/"
-                                    : pathname.startsWith(s.href);
+                                    : pathname === s.href || pathname.startsWith(s.href + "/") || hasActiveSubsection;
 
                                 return (
                                     <li key={s.href}>
@@ -62,7 +63,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                         {s.subsections && (
                                             <ul className="ml-4 mt-1 space-y-1">
                                                 {s.subsections.map((sub) => {
-                                                    const subActive = pathname === sub.href;
+                                                    const subActive = pathname === sub.href || pathname === sub.href + '/';
                                                     return (
                                                         <li key={sub.href}>
                                                             <Link
@@ -70,7 +71,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                                                 onClick={() => setMobileNavOpen(false)}
                                                                 className={`block rounded-md px-3 py-1.5 text-xs transition ${
                                                                     subActive
-                                                                        ? "bg-emerald-50 text-emerald-800 font-medium"
+                                                                        ? "bg-emerald-100 text-emerald-900 font-semibold border border-emerald-200"
                                                                         : "text-slate-600 hover:bg-slate-50"
                                                                 }`}
                                                             >
@@ -89,7 +90,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 )}
             </div>
 
-            {/* Desktop: Sticky Sidebar */}
             <div className="hidden md:block sticky top-33 space-y-3">
                 <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                     <ul className="space-y-1">
@@ -102,9 +102,11 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                 );
                             }
 
+                            const hasActiveSubsection = s.subsections?.some(sub => pathname === sub.href);
+
                             const active = s.href === "/"
                                 ? pathname === "/"
-                                : pathname.startsWith(s.href);
+                                : pathname === s.href || pathname.startsWith(s.href + "/") || hasActiveSubsection;
 
                             return (
                                 <li key={s.href}>
@@ -122,14 +124,14 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                     {s.subsections && (
                                         <ul className="ml-4 mt-1 space-y-1">
                                             {s.subsections.map((sub) => {
-                                                const subActive = pathname === sub.href;
+                                                const subActive = pathname === sub.href || pathname === sub.href + '/';
                                                 return (
                                                     <li key={sub.href}>
                                                         <Link
                                                             href={sub.href}
                                                             className={`block rounded-md px-2 py-1.5 text-xs transition ${
                                                                 subActive
-                                                                    ? "bg-emerald-50 text-emerald-800 font-medium border border-emerald-100"
+                                                                    ? "bg-emerald-50 text-emerald-900 font-semibold border border-emerald-200"
                                                                     : "text-slate-600 hover:bg-slate-50"
                                                             }`}
                                                         >
