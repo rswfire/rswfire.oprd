@@ -28,7 +28,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
         label: "Director Sumption",
         date: "2025-12-08",
         context: "Communication closed. Documentation laundered into pathology.",
-        link: "/lisa-sumption"
+        link: "/lisa-sumption/closure"
     },
     {
         label: "Governor Kotek",
