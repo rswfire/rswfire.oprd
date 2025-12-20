@@ -76,7 +76,7 @@ export default function SilenceTracker() {
 
     const today = new Date();
     const formattedDate = today.toLocaleDateString('en-US', {
-        month: 'short',
+        month: 'long',
         day: 'numeric',
         year: 'numeric'
     });
@@ -89,7 +89,7 @@ export default function SilenceTracker() {
                     Accountability Tracker
                 </div>
                 <div className="text-xs text-slate-600 mt-0.5">
-                    Last Updated: {formattedDate}
+                    Last Updated:<br/>{formattedDate}
                 </div>
             </div>
 
