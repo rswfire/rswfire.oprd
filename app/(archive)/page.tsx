@@ -13,8 +13,8 @@ export default function OverviewPage() {
                 <div className="mb-6 p-6 bg-emerald-50 border-l-4 border-emerald-700 rounded-r-lg">
                     <div className="text-lg sm:text-xl font-semibold leading-snug">
                         Why didn't they prevent the abuse?<br/>
-                        When they learned about it, why didn't they stop it?<br/>
-                        Now, why won't they acknowledge it?
+                        When I reported it, why didn't they stop it?<br/>
+                        Now that it's documented, why won't they acknowledge it?
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@ export default function OverviewPage() {
                 />
 
                 <div className="mt-4 ml-8 text-sm text-gray-600">
-                    <div><strong>December 2025</strong>. The whole story — told in one take, no edits.</div>
+                    <div><strong>December 2025</strong>. The whole story &mdash; told in one take, no edits &mdash; while walking a forest trail.</div>
                     <div><Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
