@@ -27,8 +27,9 @@ export default function OverviewPage() {
                 />
 
                 <div className="mt-4 ml-8 text-sm text-gray-600">
-                    <div><strong>December 2025</strong>. This is the only personal content in this archive.</div>
-                    <div>This is who they tried to erase. <Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    <div><strong>December 2025</strong>. The whole story — told in one take, no edits.</div>
+                    <div>This is the only personal content in this archive.</div>
+                    <div><Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
