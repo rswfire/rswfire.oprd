@@ -19,7 +19,7 @@ interface LegalDeadline {
 
 const SILENCE_EVENTS: TrackedEvent[] = [
     {
-        label: "Permanently Banned from Oregon State Parks",
+        label: "Permanent Statewide Ban from Oregon State Parks",
         date: "2025-03-27",
         context: "No investigation initiated.",
         link: "/evidence/expulsion"
@@ -37,7 +37,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
         link: "/lisa-sumption/closure"
     },
     {
-        label: "Governor Kotek's Campaign Notified",
+        label: "Governor's Office and Campaign Both Notified",
         date: "2025-12-13",
         context: "No acknowledgment.",
         link: "/governor-kotek"
