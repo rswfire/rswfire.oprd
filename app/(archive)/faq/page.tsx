@@ -271,11 +271,11 @@ export default function FAQPage() {
                     </h2>
                     <div className="space-y-4">
                         <div>They tried to dismiss and expel me with a story I could not correct.</div>
-                        <div>Ryan Warren dismissed me by phone with a fabricated pretext. No documentation. No formal process. Just his word against mine.</div>
-                        <div>Allison Watson formalized my expulsion in writing, citing my protected speech &mdash; but framing it through Logan's betrayed disclosures and their own institutional interpretation of my motives, my psychology, my reality.</div>
-                        <div>If I had not recorded the March 5th meeting, Ryan Warren's abuse would have been my word against his and Kati Baker's institutional authority.</div>
-                        <div>If I had not recorded my dismissal, there would be no evidence that Ryan admitted he had no documentation for what he was doing.</div>
-                        <div>If I had not recorded Allison Watson's calls and preserved her written correspondence, the retaliation would exist only in my memory &mdash; which she was already working to discredit.</div>
+                        <div>Ryan Warren <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">dismissed me by phone with a fabricated pretext</Link>. No documentation. No formal process. Just his word against mine.</div>
+                        <div>Allison Watson <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">formalized my expulsion in writing</Link>, citing my protected speech &mdash; but <Link href="/evidence/betrayal" className="text-emerald-700 underline hover:text-emerald-600">framing it through Logan's betrayed disclosures</Link> and their own institutional interpretation of my motives, my psychology, my reality.</div>
+                        <div>If I had not <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">recorded the March 5th meeting</Link>, Ryan Warren's abuse would have been my word against his and Kati Baker's institutional authority.</div>
+                        <div>If I had not <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">recorded my dismissal</Link>, there would be no evidence that Ryan admitted he had no documentation for what he was doing.</div>
+                        <div>If I had not <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">recorded Allison Watson's calls</Link> and preserved her written correspondence, the retaliation would exist only in my memory &mdash; which she was already working to discredit.</div>
                         <div>They were constructing a reality where <em>they</em> held all the evidence, <em>they</em> controlled the narrative, and <em>I</em> had no proof of what actually happened.</div>
                         <div>That is the deepest form of epistemic violation: the systematic erasure of someone's capacity to prove their own experience.</div>
                         <div>It's not just asserting a false narrative. It's ensuring the target has no way to demonstrate the truth.</div>
