@@ -32,7 +32,7 @@ export default function OverviewPage() {
                         <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 rounded-r-lg space-y-1">
                             <div><strong>Why I built this archive</strong>: to prevent an <em>epistemic violation</em>.</div>
                             <div>It does not need to go viral. It just needs to exist.</div>
-                            <div>They wanted to overwrite my reality with theirs.</div>
+                            <div>They wanted to impose their narrative over what actually happened.</div>
                             <div>They wanted me to live inside their fiction.</div>
                             <div>This was my refusal.</div>
                         </div>
