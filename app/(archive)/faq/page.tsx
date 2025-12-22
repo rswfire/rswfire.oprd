@@ -258,7 +258,7 @@ export default function FAQPage() {
                         <div>This archive is my refusal.</div>
                         <div>Because once you let an institution overwrite reality with their preferred story, you've given them permission to do it again. To you. To others. Without limit.</div>
                         <div>An epistemic violation isn't just about one person's experience. It's about who gets to say what's real &mdash; and what happens when documentation proves the institution wrong.</div>
-                        <div className="mt-6 font-semibold">But here's what makes this violation particularly severe:</div>
+                        <div>But here's what makes this violation particularly severe:</div>
                         <div>They tried to dismiss and expel me with a story I could not correct.</div>
                         <div>Ryan Warren dismissed me by phone with a fabricated pretext. No documentation. No formal process. Just his word against mine.</div>
                         <div>Allison Watson formalized my expulsion in writing, citing my protected speech &mdash; but framing it through Logan's betrayed disclosures and their own institutional interpretation of my motives, my psychology, my reality.</div>
