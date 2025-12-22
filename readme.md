@@ -8,6 +8,13 @@
 
 Permanent public documentation of systematic volunteer abuse at **Oregon Parks & Recreation Department**.
 
+> **Why I built this archive**: to prevent an epistemic violation.
+> They wanted to overwrite my reality with theirs.
+> They wanted me to live inside their fiction.
+> This was my refusal.
+
+---
+
 ## Installation
 ```bash
 git clone https://github.com/rswfire/rswfire.oprd.git
