@@ -31,6 +31,7 @@ export default function FAQPage() {
                         <li><a href="#proper-channels" className="text-emerald-700 underline hover:text-emerald-600">Why make this public instead of going through proper channels?</a></li>
                         <li><a href="#silence" className="text-emerald-700 underline hover:text-emerald-600">What does their silence mean?</a></li>
                         <li><a href="#tone" className="text-emerald-700 underline hover:text-emerald-600">Why is your tone so direct?</a></li>
+                        <li><a href="#epistemic" className="text-emerald-700 underline hover:text-emerald-600">What is an epistemic violation?</a></li>
                         <li><a href="#next" className="text-emerald-700 underline hover:text-emerald-600">What happens next?</a></li>
                     </ul>
                 </div>
@@ -240,6 +241,46 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 12 */}
+                <div id="epistemic" className="scroll-mt-48">
+                    <h2 className="text-xl font-semibold mb-3">
+                        What is an epistemic violation?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>The thing institutions really try to enforce: their "right" to assert what is real, even when it conflicts with reality.</div>
+                        <div>An epistemic violation is when someone with institutional power attempts to overwrite your direct experience with their preferred narrative &mdash; and demands you accept their version as truth.</div>
+                        <div>It's not just lying. It's the insistence that <em>their</em> account has more authority than what actually happened to you.</div>
+                        <div>When Director Lisa Sumption reframed comprehensive documentation as &quot;emotional processing,&quot; <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. She was asserting institutional authority to define what my evidence means &mdash; over what the evidence actually shows.</div>
+                        <div>When Ryan Warren told me I was &quot;never given the benefit of the doubt&quot; while simultaneously claiming <em>I</em> was the problem, <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. The contradiction doesn't matter to them. What matters is that their version becomes the official record.</div>
+                        <div>When Logan Bliss spent 90 minutes eliciting vulnerability through reciprocal disclosure, then transmitted everything I shared to Kati Baker and Ryan Warren, who weaponized it against me &mdash; and then Allison Watson used those same disclosures to construct a psychological profile framing my analysis as &quot;apocalyptic thinking&quot; &mdash; <Link href="/evidence/betrayal" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. They extracted my interior reality under false pretenses, then rewrote it as pathology.</div>
+                        <div>When Allison Watson stated in writing that I was removed for speaking publicly about what happened &mdash; then the institution acts as if retaliation didn't occur &mdash; <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">that's an epistemic violation at scale</Link>.</div>
+                        <div>This is why documentation matters. Not just to prove what happened, but to refuse the institutional demand that I live inside their fiction.</div>
+                        <div>They wanted me to accept their narrative: that I was unstable, that I misunderstood, that they acted appropriately, that my removal was justified.</div>
+                        <div>This archive is my refusal.</div>
+                        <div>Because once you let an institution overwrite reality with their preferred story, you've given them permission to do it again. To you. To others. Without limit.</div>
+                        <div>An epistemic violation isn't just about one person's experience. It's about who gets to say what's real &mdash; and what happens when documentation proves the institution wrong.</div>
+                        <div className="mt-6 font-semibold">But here's what makes this violation particularly severe:</div>
+                        <div>They tried to dismiss and expel me with a story I could not correct.</div>
+                        <div>Ryan Warren dismissed me by phone with a fabricated pretext. No documentation. No formal process. Just his word against mine.</div>
+                        <div>Allison Watson formalized my expulsion in writing, citing my protected speech &mdash; but framing it through Logan's betrayed disclosures and their own institutional interpretation of my motives, my psychology, my reality.</div>
+                        <div>If I had not recorded the March 5th meeting, Ryan Warren's abuse would have been my word against his and Kati Baker's institutional authority.</div>
+                        <div>If I had not recorded my dismissal, there would be no evidence that Ryan admitted he had no documentation for what he was doing.</div>
+                        <div>If I had not recorded Allison Watson's calls and preserved her written correspondence, the retaliation would exist only in my memory &mdash; which she was already working to discredit.</div>
+                        <div>They were constructing a reality where <em>they</em> held all the evidence, <em>they</em> controlled the narrative, and <em>I</em> had no proof of what actually happened.</div>
+                        <div>That is the deepest form of epistemic violation: the systematic erasure of someone's capacity to prove their own experience.</div>
+                        <div>It's not just asserting a false narrative. It's ensuring the target has no way to demonstrate the truth.</div>
+                        <div>This archive exists because I refused that erasure.</div>
+                        <div>I documented in real time. I preserved everything. I made the record they didn't want to exist.</div>
+                        <div>And now their preferred story &mdash; the one where I'm the problem and they acted appropriately &mdash; cannot stand unchallenged.</div>
+                        <div>Because the evidence proves otherwise.</div>
+                        <div>That's what makes an epistemic violation intolerable: it's an attempt to strip someone of their ability to be believed about their own life.</div>
+                        <div>And in institutional contexts, where power is already asymmetric, it's an abuse of that power to ensure the abuse itself cannot be proven.</div>
+                        <div>I will not accept that. I will not live in their fiction. And I will not allow them to do this to someone else without a documented pattern they cannot deny.</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 13 */}
                 <div id="next" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         What happens next?
