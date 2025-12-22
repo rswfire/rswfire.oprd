@@ -259,23 +259,6 @@ export default function FAQPage() {
                         <div>This archive is my refusal.</div>
                         <div>Because once you let an institution overwrite reality with their preferred story, you've given them permission to do it again. To you. To others. Without limit.</div>
                         <div>An epistemic violation isn't just about one person's experience. It's about who gets to say what's real &mdash; and what happens when documentation proves the institution wrong.</div>
-                        <div>But here's what makes this violation particularly severe:</div>
-                        <div>They tried to dismiss and expel me with a story I could not correct.</div>
-                        <div>Ryan Warren dismissed me by phone with a fabricated pretext. No documentation. No formal process. Just his word against mine.</div>
-                        <div>Allison Watson formalized my expulsion in writing, citing my protected speech &mdash; but framing it through Logan's betrayed disclosures and their own institutional interpretation of my motives, my psychology, my reality.</div>
-                        <div>If I had not recorded the March 5th meeting, Ryan Warren's abuse would have been my word against his and Kati Baker's institutional authority.</div>
-                        <div>If I had not recorded my dismissal, there would be no evidence that Ryan admitted he had no documentation for what he was doing.</div>
-                        <div>If I had not recorded Allison Watson's calls and preserved her written correspondence, the retaliation would exist only in my memory &mdash; which she was already working to discredit.</div>
-                        <div>They were constructing a reality where <em>they</em> held all the evidence, <em>they</em> controlled the narrative, and <em>I</em> had no proof of what actually happened.</div>
-                        <div>That is the deepest form of epistemic violation: the systematic erasure of someone's capacity to prove their own experience.</div>
-                        <div>It's not just asserting a false narrative. It's ensuring the target has no way to demonstrate the truth.</div>
-                        <div>This archive exists because I refused that erasure.</div>
-                        <div>I documented in real time. I preserved everything. I made the record they didn't want to exist.</div>
-                        <div>And now their preferred story &mdash; the one where I'm the problem and they acted appropriately &mdash; cannot stand unchallenged.</div>
-                        <div>Because the evidence proves otherwise.</div>
-                        <div>That's what makes an epistemic violation intolerable: it's an attempt to strip someone of their ability to be believed about their own life.</div>
-                        <div>And in institutional contexts, where power is already asymmetric, it's an abuse of that power to ensure the abuse itself cannot be proven.</div>
-                        <div>I will not accept that. I will not live in their fiction. And I will not allow them to do this to someone else without a documented pattern they cannot deny.</div>
                     </div>
                 </div>
 
