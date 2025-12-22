@@ -27,8 +27,15 @@ export default function OverviewPage() {
                 />
 
                 <div className="mt-4 ml-8 text-sm text-gray-600">
-                    <div><strong>December 2025</strong>. The whole story &mdash; told in one take, no edits &mdash; while walking a forest trail.</div>
+                    <div><strong>Five days before Christmas, 2025</strong>. The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
                     <div><Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 rounded-r-lg">
+                        <div><strong>Why I recorded this</strong>: to prevent an epistemic violation.</div>
+                        <div>It does not need to go viral. It just needs to exist.</div>
+                        <div>They wanted to overwrite my reality with theirs.</div>
+                        <div>They wanted me to live inside their fiction.</div>
+                        <div>This was my refusal.</div>
+                    </div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
