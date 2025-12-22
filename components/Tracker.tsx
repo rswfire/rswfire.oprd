@@ -1,4 +1,4 @@
-// components/archive/SilenceTracker.tsx
+// components/Tracker.tsx
 "use client";
 
 import { useEffect, useState } from 'react';
@@ -29,18 +29,6 @@ const SILENCE_EVENTS: TrackedEvent[] = [
         date: "2025-08-25",
         context: "Acknowledged without action.",
         link: "/lisa-sumption/open-letter"
-    },
-    {
-        label: "Director Closes Communication",
-        date: "2025-12-08",
-        context: "Documentation laundered into pathology.",
-        link: "/lisa-sumption/closure"
-    },
-    {
-        label: "Governor's Office and Campaign Both Notified",
-        date: "2025-12-13",
-        context: "No acknowledgment.",
-        link: "/governor-kotek"
     }
 ];
 
@@ -67,7 +55,7 @@ function calculateDaysUntil(dateString: string): number {
     return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
-export default function SilenceTracker() {
+export default function Tracker() {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {

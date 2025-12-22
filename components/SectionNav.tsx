@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Icon from "@/components/Icon";
-import SilenceTracker from "@/components/archive/SilenceTracker";
+import Tracker from "@/components/Tracker";
 
 type Section = {
     href: string;
@@ -89,7 +89,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                             </ul>
                         </nav>
 
-                        <SilenceTracker />
+                        <Tracker />
                     </div>
                 )}
             </div>
@@ -151,7 +151,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                     </ul>
                 </nav>
 
-                <SilenceTracker />
+                <Tracker />
 
                 {/* CORRESPONDENCE SECTION */}
                 <div className="mt-6 rounded-2xl border border-slate-200 bg-white shadow-sm p-4">
