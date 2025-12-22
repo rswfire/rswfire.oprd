@@ -21,13 +21,13 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Permanent Statewide Ban from Oregon State Parks",
         date: "2025-03-27",
-        context: "No investigation initiated.",
+        context: "Status: No investigation initiated.",
         link: "/evidence/expulsion"
     },
     {
         label: "Open Letter to Director",
         date: "2025-08-25",
-        context: "Acknowledged without action.",
+        context: "Status: Acknowledged without action.",
         link: "/lisa-sumption/open-letter"
     }
 ];
