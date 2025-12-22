@@ -140,25 +140,17 @@ export default function OverviewPage() {
             </div>
 
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
-                <div className="text-xl font-bold tracking-wide mb-6 text-black text-center">
-                    THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
-                </div>
+                <div className="text-xl text-black font-bold mb-4">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</div>
 
-                <div className="space-y-4 text-base leading-relaxed">
-                    <p>This archive is not for revenge.</p>
+                <div className="mt-4">This archive is not for revenge.</div>
 
-                    <p>
-                        It is for those who have been told they imagined it.<br/>
-                        It is for those about to walk into something similar.<br/>
-                        It is for the future, when denial no longer holds.
-                    </p>
+                <div className="mt-4">It is for those who have been told they imagined it.</div>
+                <div>It is for those about to walk into something similar.</div>
+                <div>It is for the future, when denial no longer holds.</div>
 
-                    <p>
-                        It does not ask for apology.<br/>
-                        It does not ask for repair.<br/>
-                        It exists so that the next distortion cannot pretend it was the first.
-                    </p>
-                </div>
+                <div className="mt-4">It does not ask for apology.</div>
+                <div>It does not ask for repair.</div>
+                <div>It exists so that the next distortion cannot pretend it was the first.</div>
             </div>
         </section>
     );
