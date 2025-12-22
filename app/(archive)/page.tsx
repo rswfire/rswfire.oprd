@@ -27,7 +27,8 @@ export default function OverviewPage() {
                 />
 
                 <div className="mt-4 ml-8 text-sm text-gray-600">
-                    <div><strong>Five days before Christmas, 2025</strong>. <span className="tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</span></div>
+                    <div className="text-base"><strong>Five days before Christmas, 2025</strong>.</div>
+                    <div>The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
                     <div><Link href="/faq" className="text-emerald-700 underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                     <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 rounded-r-lg">
                         <div><strong>Why I built this archive</strong>: to prevent an epistemic violation.</div>
