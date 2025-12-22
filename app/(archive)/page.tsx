@@ -14,15 +14,19 @@ export default function OverviewPage() {
                         In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.
                     </div>
 
+                    <hr className="my-6 border-t border-gray-300" />
+
                     <VideoEmbed
                         title="What really happened to me at Oregon State Parks."
                         youtubeId="M82aVVW4mNI"
                     />
 
+                    <hr className="my-6 border-t border-gray-300" />
+
                     <div className="mt-4 ml-8 text-sm text-gray-600">
                         <div className="text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
                         <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
-                        <div className="text-base tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+
                         <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 rounded-r-lg space-y-1">
                             <div><strong>Why I built this archive</strong>: to prevent an <em>epistemic violation</em>.</div>
                             <div>It does not need to go viral. It just needs to exist.</div>
@@ -30,13 +34,13 @@ export default function OverviewPage() {
                             <div>They wanted me to live inside their fiction.</div>
                             <div>This was my refusal.</div>
                         </div>
+
+                        <div className="mt-4 text-sm tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                     </div>
 
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
-
-                <h2 className="font-bold text-lg text-center tracking-wide">
+                <h2 className="mt-12 font-bold text-lg text-center tracking-wide">
                     THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
                     TO THE DIRECTOR OF OREGON STATE PARKS &mdash; LISA SUMPTION
                 </h2>
