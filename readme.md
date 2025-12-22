@@ -8,9 +8,12 @@
 
 Permanent public documentation of systematic volunteer abuse at **Oregon Parks & Recreation Department**.
 
-> **Why I built this archive**: to prevent an epistemic violation.
+> **Why I built this archive**: to correct an epistemic violation.
+>
 > They wanted to impose their narrative over what actually happened.
+>
 > They wanted me to live inside their fiction.
+>
 > This was my refusal.
 
 ---
