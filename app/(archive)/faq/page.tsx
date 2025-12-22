@@ -22,8 +22,8 @@ export default function FAQPage() {
                     <ul className="space-y-2">
                         <li><a href="#sue" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you sue them?</a></li>
                         <li><a href="#target" className="text-emerald-700 underline hover:text-emerald-600">Why would they target you?</a></li>
-                        <li><a href="#leave" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you just leave?</a></li>
-                        <li><a href="#move-on" className="text-emerald-700 underline hover:text-emerald-600">Why not just move on?</a></li>
+                        <li><a href="#leave" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you leave?</a></li>
+                        <li><a href="#move-on" className="text-emerald-700 underline hover:text-emerald-600">Why not move on?</a></li>
                         <li><a href="#response" className="text-emerald-700 underline hover:text-emerald-600">Have they responded to any of this?</a></li>
                         <li><a href="#verify" className="text-emerald-700 underline hover:text-emerald-600">How can people verify this documentation?</a></li>
                         <li><a href="#accountability" className="text-emerald-700 underline hover:text-emerald-600">What do you want to happen?</a></li>
@@ -72,7 +72,7 @@ export default function FAQPage() {
                 {/* Question 3 */}
                 <div id="leave" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
-                        Why didn't you just leave?
+                        Why didn't you leave?
                     </h2>
                     <div className="space-y-4">
                         <div>I had a year of volunteer assignments lined up across Oregon's coast. I had restructured my entire life around this trajectory.</div>
@@ -94,7 +94,7 @@ export default function FAQPage() {
                 {/* Question 4 */}
                 <div id="move-on" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
-                        Why not just move on?
+                        Why not move on?
                     </h2>
                     <div className="space-y-4">
                         <div>Because moving on means accepting that institutions can target volunteers, weaponize their identities, retaliate for protected speech, and face no consequences.</div>
