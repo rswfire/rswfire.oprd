@@ -150,7 +150,7 @@ export default function OverviewPage() {
 
                 <div className="mt-4">It does not ask for apology.</div>
                 <div>It does not ask for repair.</div>
-                <div>It exists so that the next distortion cannot pretend it was the first.</div>
+                <div>It exists so that <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">the next distortion cannot pretend it was the first</Link>.</div>
             </div>
         </section>
     );
