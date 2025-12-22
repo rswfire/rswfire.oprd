@@ -247,7 +247,7 @@ export default function FAQPage() {
                         What is an epistemic violation?
                     </h2>
                     <div className="space-y-4">
-                        <div>The thing institutions really try to enforce: their "right" to assert what is real, even when it conflicts with reality.</div>
+                        <div>The institutional assertion of authority over what is considered real, even when it conflicts with lived experience.</div>
                         <div>An epistemic violation is when someone with institutional power attempts to overwrite your direct experience with their preferred narrative &mdash; and demands you accept their version as truth.</div>
                         <div>It's not just lying. It's the insistence that <em>their</em> account has more authority than what actually happened to you.</div>
                         <div>When Director Lisa Sumption reframed comprehensive documentation as &quot;emotional processing,&quot; <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. She was asserting institutional authority to define what my evidence means &mdash; over what the evidence actually shows.</div>
@@ -270,6 +270,7 @@ export default function FAQPage() {
                         What made this case particularly egregious?
                     </h2>
                     <div className="space-y-4">
+                        <div className="italic">Their actions were designed to deliberately distort the public record, committed by a public agency, against one of its own people. This lives at the <span className="not-italic">heart of identity-based targeting</span>.</div>
                         <div>They tried to dismiss and expel me with a story I could not correct.</div>
                         <div>Ryan Warren <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">dismissed me by phone with a fabricated pretext</Link>. No documentation. No formal process. Just his word against mine.</div>
                         <div>Allison Watson <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">formalized my expulsion in writing</Link>, citing my protected speech &mdash; but <Link href="/evidence/betrayal" className="text-emerald-700 underline hover:text-emerald-600">framing it through Logan's betrayed disclosures</Link> and their own institutional interpretation of my motives, my psychology, my reality.</div>
@@ -285,7 +286,7 @@ export default function FAQPage() {
                         <div>Because the evidence proves otherwise.</div>
                         <div>That's what makes an epistemic violation intolerable: it's an attempt to strip someone of their ability to be believed about their own life.</div>
                         <div>And in institutional contexts, where power is already asymmetric, it's an abuse of that power to ensure the abuse itself cannot be proven.</div>
-                        <div>I will not accept that. I will not live in their fiction. And I will not allow them to do this to someone else without a documented pattern they cannot deny.</div>
+                        <div>I will not accept that. I will not live in their fiction. And this documented pattern now exists so the next person doesn't have to be the first to prove it.</div>
                     </div>
                 </div>
 
