@@ -31,7 +31,7 @@ export default function SectionPage({
     const hasNavigation = Boolean(previousPage || nextPage);
 
     const NavigationLinks = () => (
-        <div className="flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center text-sm">
+        <div className="flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center text-base">
             {previousPage && (
                 <Link
                     href={previousPage.href}
