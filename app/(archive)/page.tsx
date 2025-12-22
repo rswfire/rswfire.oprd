@@ -29,9 +29,6 @@ export default function OverviewPage() {
                     <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
                         <div>It does not need to go viral. It just needs to exist.</div>
-                        <div>They wanted to impose their narrative over what actually happened.</div>
-                        <div>They wanted me to live inside their fiction.</div>
-                        <div>This was my refusal.</div>
                     </div>
 
                     <div className="mt-4 text-sm tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
