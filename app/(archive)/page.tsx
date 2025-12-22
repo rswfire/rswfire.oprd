@@ -6,41 +6,40 @@ import VideoEmbed from "@/components/archive/VideoEmbed";
 export default function OverviewPage() {
     return (
         <section className="w-full mx-auto mb-8">
-            <div className="w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
-                <div className="p-4 bg-white border border-emerald-300 rounded-2xl">
+            <div className="p-4 bg-white border border-emerald-300 rounded-2xl">
 
-                    <div className="mt-4 mb-8 mx-8 text-base sm:text-lg tracking-tight">
-                        In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.
-                    </div>
-
-                    <hr className="my-6 border-t border-gray-300" />
-
-                    <VideoEmbed
-                        title="What really happened to me at Oregon State Parks."
-                        youtubeId="M82aVVW4mNI"
-                    />
-
-                    <hr className="my-6 border-t border-gray-300" />
-
-                    <div className="mt-4 ml-8 text-sm text-gray-600">
-                        <div className="text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
-                        <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
-
-                        <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 space-y-1">
-                            <div><strong>Why I built this archive</strong>: to prevent an <em>epistemic violation</em>.</div>
-                            <div>It does not need to go viral. It just needs to exist.</div>
-                            <div>They wanted to impose their narrative over what actually happened.</div>
-                            <div>They wanted me to live inside their fiction.</div>
-                            <div>This was my refusal.</div>
-                        </div>
-
-                        <div className="mt-4 text-sm tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
-                    </div>
-
+                <div className="mt-4 mb-8 mx-8 text-base sm:text-lg tracking-tight">
+                    In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment became two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.
                 </div>
 
-                <hr className="my-12 border-t border-gray-300" />
+                <hr className="my-6 border-t border-gray-300" />
+
+                <VideoEmbed
+                    title="What really happened to me at Oregon State Parks."
+                    youtubeId="M82aVVW4mNI"
+                />
+
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="mt-4 ml-8 text-sm text-gray-600">
+                    <div className="text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
+                    <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
+
+                    <div className="mt-2 ml-8 pl-4 border-l-4 border-emerald-700 space-y-1">
+                        <div><strong>Why I built this archive</strong>: to prevent an <em>epistemic violation</em>.</div>
+                        <div>It does not need to go viral. It just needs to exist.</div>
+                        <div>They wanted to impose their narrative over what actually happened.</div>
+                        <div>They wanted me to live inside their fiction.</div>
+                        <div>This was my refusal.</div>
+                    </div>
+
+                    <div className="mt-4 text-sm tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                </div>
+
+            </div>
+
+            <div className="mt-8 w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
 
                 <h2 className="font-bold text-lg text-center tracking-wide">
                     THIS ARCHIVE CENTERS AN OPEN LETTER<br/>
@@ -138,22 +137,28 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
+            </div>
 
-                <div className="p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                    <div className="text-lg font-bold mb-4">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</div>
-
-                    <div className="mt-4">This archive is not for revenge.</div>
-
-                    <div className="mt-4">It is for those who have been told they imagined it.</div>
-                    <div>It is for those about to walk into something similar.</div>
-                    <div>It is for the future, when denial no longer holds.</div>
-
-                    <div className="mt-4">It does not ask for apology.</div>
-                    <div>It does not ask for repair.</div>
-                    <div>It exists so that the next distortion cannot pretend it was the first.</div>
+            <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <div className="text-xl font-bold tracking-wide mb-6 text-black text-center">
+                    THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
                 </div>
 
+                <div className="space-y-4 text-base leading-relaxed">
+                    <p>This archive is not for revenge.</p>
+
+                    <p>
+                        It is for those who have been told they imagined it.<br/>
+                        It is for those about to walk into something similar.<br/>
+                        It is for the future, when denial no longer holds.
+                    </p>
+
+                    <p>
+                        It does not ask for apology.<br/>
+                        It does not ask for repair.<br/>
+                        It exists so that the next distortion cannot pretend it was the first.
+                    </p>
+                </div>
             </div>
         </section>
     );
