@@ -3,12 +3,11 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "The Closure (December 2025)",
     description:
-        "Director Lisa Sumption’s decision to end communication following documented evidence of retaliation, misconduct, and systemic failure within OPRD.",
+        "Director Lisa Sumption's decision to end communication following documented evidence of retaliation, misconduct, and systemic failure within OPRD.",
 };
 
 export default function LisaClosurePage() {
@@ -29,18 +28,10 @@ export default function LisaClosurePage() {
 
             <div className="mt-4">
                 Her response did not address the evidence. Instead, she reframed documentation as
-                emotional processing and terminated the line of communication entirely. One day later,
-                the full record of Logan’s disclosures and the weaponization of queer vulnerability
-                was published.
-            </div>
-
-            <div className="mt-4">
-                What follows is the complete exchange.
+                emotional processing and terminated the line of communication entirely.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
-
-            {/* MY MESSAGE */}
 
             <h2 className="text-xl font-semibold">My Message to Director Sumption</h2>
 
@@ -73,16 +64,13 @@ That's the part that still stings for me. The abuse at Honeyman was survivable. 
 
 I'm still waiting for you to be the ethical leader I needed you to be. I will not reach out to you again. You will either choose to fix this or you won't, and the future will unfold in the light of that choice. And you know I'm right.
 
-Samuel
-`}
+Samuel`}
                 </pre>
             </Email>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* HER RESPONSE */}
-
-            <h2 className="text-xl font-semibold">Director Sumption’s Response</h2>
+            <h2 className="text-xl font-semibold">Director Sumption's Response</h2>
 
             <Email
                 from="Director Lisa Sumption"
@@ -92,7 +80,7 @@ Samuel
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`Dear Samuel,
 
-Thank you for taking the time to share your experiences and concerns so thoroughly. I can see that this has been deeply painful for you, and I want to acknowledge the seriousness with which you’ve approached this situation. It’s clear that your time at Honeyman left a lasting impact, and I hear the frustration and hurt in your words. 
+Thank you for taking the time to share your experiences and concerns so thoroughly. I can see that this has been deeply painful for you, and I want to acknowledge the seriousness with which you’ve approached this situation. It’s clear that your time at Honeyman left a lasting impact, and I hear the frustration and hurt in your words.
 
 I also recognize the effort you’ve put into documenting your experience and advocating for what you believe is right. Your voice matters, and I don’t take lightly the trust it takes to continue reaching out.
 
@@ -109,98 +97,75 @@ Lisa
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* MY ACKNOWLEDGEMENT */}
+            <h2 className="text-xl font-semibold">Close of Record</h2>
 
-            <h2 className="text-xl font-semibold">My Acknowledgment</h2>
-
-            <Email
-                from="Robert Samuel White"
-                to="Director Lisa Sumption"
-                date="December 8, 2025"
-            >
-                <pre className="whitespace-pre-wrap font-mono text-sm">
-{`I acknowledge receipt of your message.
-
-Robert Samuel White
-
-oprdvolunteerabuse.org
-`}
-                </pre>
-            </Email>
-
-            <hr className="my-6 border-t border-gray-300" />
-
-            {/* HER FINAL WORD */}
-
-            <h2 className="text-xl font-semibold">Her Final Word</h2>
-
-            <Email
-                from="Director Lisa Sumption"
-                to="Robert Samuel White"
-                date="December 8, 2025"
-            >
-                <pre className="whitespace-pre-wrap font-mono text-sm">
-{`And I yours.
-
-Lisa Sumption
-`}
-                </pre>
-            </Email>
-
-            <hr className="my-6 border-t border-gray-300" />
-
-            {/* MY FINAL WORD */}
-
-            <h2 className="text-xl font-semibold">My Final Word</h2>
+            <div className="mt-4 mb-6 text-gray-600">
+                After Lisa Sumption closed communication, I closed documentation. What follows is the formal termination of institutional engagement.
+            </div>
 
             <Email
                 from="Robert Samuel White"
                 to="Director Lisa Sumption"
-                date="December 11, 2025"
+                date="December 22, 2025"
+                subject="Close of Record"
             >
                 <pre className="whitespace-pre-wrap font-mono text-sm">
 {`Lisa,
+This is not a request. It is not a plea. It is not an opening for dialogue.
 
-This message is a courtesy. It is not an attempt to reopen dialogue.
+This is the close of record.
 
-You chose to characterize documented identity-based targeting as emotional processing.
-That choice is now documented.
+You closed communication in December.
+I close documentation now.
 
-Your role in these proceedings is detailed here:
-https://oprdvolunteerabuse.org/lisa-sumption 
+What began as local abuse by two supervisors reached your desk with comprehensive evidence.
+You had the authority to interrupt the pattern.
+You refused.
 
-I will continue my accountability work where it will have the greatest institutional effect.
+That refusal transformed a containable failure into permanent institutional exposure.
 
-Take care,
+Not because I made it so.
+Because you chose to shield abuse over accountability.
 
-Sam
+You absorbed evidence into bureaucratic deflection.
+You reframed documentation as "emotional processing."
+You met truth with silence.
+
+And in doing so, you demonstrated exactly what this institution does when confronted with documented abuse:
+It protects the abusers. It dismisses the evidence. It erases the target.
+
+I mapped that system.
+I made it legible.
+I made it permanent.
+
+The archive exists now — not to change your mind, but to ensure the next person knows this pattern has institutional authorization at the director level.
+
+Your silence isn't neutrality.
+It's complicity made structural.
+
+Every day you refuse accountability, the evidence speaks louder.
+
+This is reputational collapse in slow motion.
+
+What you refused to name has already named you.
+
+— Robert Samuel White
+Former Oregon State Parks Volunteer
 `}
                 </pre>
             </Email>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            {/* ANALYSIS */}
-
             <h2 className="text-xl font-semibold">Why This Exchange Matters</h2>
 
-            <div className="mt-4">
-                Director Sumption’s response reframed documented institutional misconduct —
-                supported by recordings, emails, and written evidence — as emotional impact and
-                personal perspective. This is not acknowledgment. It is minimization through
-                reframing and a strategic ending of communication at the moment when institutional
-                accountability was required.
-            </div>
-
-            <div className="mt-4">
-                Her decision to close communication occurred one day before the publication of the
-                full record documenting Logan’s disclosures, the breach of supervisory trust, and
-                the weaponization of queer vulnerability.
-            </div>
-
-            <div className="mt-4">
-                This page exists because institutional closure does not erase the record. It becomes
-                part of it.
+            <div className="space-y-4">
+                <div>Director Sumption's response reframed documented institutional misconduct &mdash; supported by recordings, emails, and written evidence &mdash; as emotional impact and personal perspective.</div>
+                <div>This is not acknowledgment. It is <a href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">epistemic violation</a>: the laundering of evidence into therapeutic framing to strip it of institutional weight.</div>
+                <div>Her decision to close communication was a strategic ending at the moment when institutional accountability was required.</div>
+                <div>The &quot;Close of Record&quot; letter is not a continuation of correspondence. It is the formal termination of my institutional engagement and the completion of documentation.</div>
+                <div>Institutional closure does not erase the record.</div>
+                <div>It becomes part of it.</div>
             </div>
 
         </SectionPage>
