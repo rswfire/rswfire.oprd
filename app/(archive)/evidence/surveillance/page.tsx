@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import VideoEmbed from "@/components/archive/VideoEmbed";
 
 export const metadata: Metadata = {
     title: "Surveillance",
@@ -26,7 +27,7 @@ export default function SurveillancePage() {
             </div>
 
             <div className="mt-4">
-                He said he was "with the park service" and was taking photos of the yurts — while they were still dirty, mid-clean, with doors propped open, sanitizer running, trash cans holding doors ajar.
+                He said he was "with the park service" and was taking photos of the yurts &mdash; while they were still dirty, mid-clean, with doors propped open, sanitizer running, trash cans holding doors ajar.
             </div>
 
             <div className="mt-4">
@@ -40,7 +41,7 @@ export default function SurveillancePage() {
             </ul>
 
             <div className="mt-4">
-                When I didn't engage, he asked again — reframed the questions, stepped closer. It was intimate. It was forced.
+                When I didn't engage, he asked again &mdash; reframed the questions, stepped closer. It was intimate. It was forced.
             </div>
 
             <div className="mt-4">
@@ -69,11 +70,11 @@ export default function SurveillancePage() {
 
 I wanted to check in about something from today.
 
-While I was working, a man showed up, said he was with the park service, and started taking photos of the yurts while they were still dirty, since I was in the process of cleaning them. I engaged him briefly—asked if he had any questions—but the interaction felt a little off.
+While I was working, a man showed up, said he was with the park service, and started taking photos of the yurts while they were still dirty, since I was in the process of cleaning them. I engaged him briefly&mdash;asked if he had any questions&mdash;but the interaction felt a little off.
 
-He didn't introduce himself by name, wasn't in uniform, and had no visible identification. He only said he was with the park service and that they "needed photos of some of them still." Then he started asking me questions—how I like the park, how I'm being treated here. It stood out, especially with the timing, since all the rangers were away for meetings.
+He didn't introduce himself by name, wasn't in uniform, and had no visible identification. He only said he was with the park service and that they "needed photos of some of them still." Then he started asking me questions&mdash;how I like the park, how I'm being treated here. It stood out, especially with the timing, since all the rangers were away for meetings.
 
-Was this an official visit that you're aware of? If so, no problem—just seemed a bit odd, and I wasn't sure if I should have handled it differently. If not, I wanted to flag it in case it's something to be aware of. Let me know if you have any insight.
+Was this an official visit that you're aware of? If so, no problem&mdash;just seemed a bit odd, and I wasn't sure if I should have handled it differently. If not, I wanted to flag it in case it's something to be aware of. Let me know if you have any insight.
 
 Thanks,
 Sam
@@ -121,7 +122,7 @@ Have a great afternoon!
             <h2 className="text-xl font-semibold">VIDEO DOCUMENTATION</h2>
 
             <div className="mt-4">
-                I recorded a video immediately after the encounter — before I understood what it actually was.
+                I recorded a video immediately after the encounter &mdash; before I understood what it actually was.
             </div>
 
             <div className="mt-4">
@@ -129,9 +130,9 @@ Have a great afternoon!
             </div>
 
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
-                <li>An assertive man who appeared while I was alone</li>
-                <li>Someone who kept asking questions I wouldn't answer</li>
-                <li>My interpretation at the time: a failed romantic encounter</li>
+                <li>An assertive man who appeared while I was alone.</li>
+                <li>Someone who kept asking questions I wouldn't answer.</li>
+                <li>My interpretation at the time: a failed romantic encounter.</li>
             </ul>
 
             <div className="mt-4">
@@ -142,19 +143,10 @@ Have a great afternoon!
                 Six days later, I was removed from my position.
             </div>
 
-            <div className="mt-4 p-4 bg-gray-100 border-l-2 border-gray-400">
-                <div className="font-semibold mb-2">Video Evidence:</div>
-                <Link
-                    href="https://www.youtube.com/watch?v=EwecWXvc8DE"
-                    target="_blank"
-                    className="text-emerald-700 underline hover:text-emerald-600"
-                >
-                    Encounter with Assertive Man Ends in Departure
-                </Link>
-                <div className="mt-2 text-sm text-gray-600">
-                    Recorded March 18, 2025 — Same day as encounter
-                </div>
-            </div>
+            <VideoEmbed
+                title="Encounter with Assertive Man Ends in Departure"
+                youtubeId="EwecWXvc8DE"
+            />
 
             <hr className="my-6 border-t border-gray-300" />
 
@@ -162,19 +154,19 @@ Have a great afternoon!
 
             <div className="mt-4 space-y-4">
                 <div>
-                    <strong>I documented the encounter immediately</strong> — same day email to Kati, same day video documentation.
+                    <strong>I documented the encounter immediately</strong> &mdash; same day email to Kati, same day video documentation.
                 </div>
                 <div>
-                    <strong>I had no paranoia about institutional targeting in the moment</strong> — the video shows I interpreted it as a failed romantic encounter, not covert assessment.
+                    <strong>I had no paranoia about institutional targeting in the moment</strong> &mdash; the video shows I interpreted it as a failed romantic encounter, not covert assessment.
                 </div>
                 <div>
-                    <strong>My later recognition of this as surveillance came from pattern analysis</strong> — not conspiracy thinking, but documented institutional behavior.
+                    <strong>My later recognition of this as surveillance came from pattern analysis</strong> &mdash; not conspiracy thinking, but documented institutional behavior.
                 </div>
                 <div>
-                    <strong>The encounter was designed as bait</strong> — personal questions about leadership treatment, delivered while I was isolated, during regional event when rangers were away.
+                    <strong>The encounter was designed as bait</strong> &mdash; personal questions about leadership treatment, delivered while I was isolated, during regional event when rangers were away.
                 </div>
                 <div>
-                    <strong>I didn't take the bait</strong> — I documented professionally, didn't engage the questions, maintained boundaries.
+                    <strong>I didn't take the bait</strong> &mdash; I documented professionally, didn't engage the questions, maintained boundaries.
                 </div>
             </div>
 
@@ -215,11 +207,11 @@ Have a great afternoon!
                     TIMELINE
                 </div>
                 <div className="space-y-2 text-sm">
-                    <div><strong>March 5, 2025:</strong> <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">Coercive meeting</Link> with Ryan Warren and Kati Baker</div>
-                    <div><strong>March 18, 2025:</strong> Unidentified operative interrogates me while alone</div>
-                    <div><strong>March 24, 2025:</strong> <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">Dismissed</Link> six days before scheduled completion</div>
-                    <div><strong>August 16, 2025:</strong> Escalated to Director Lisa Sumption — no response</div>
-                    <div><strong>December 7, 2025:</strong> Supplemental evidence sent — no response</div>
+                    <div><strong>March 5, 2025:</strong> <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">Coercive meeting</Link> with Ryan Warren and Kati Baker.</div>
+                    <div><strong>March 18, 2025:</strong> Unidentified operative interrogates me while alone.</div>
+                    <div><strong>March 24, 2025:</strong> <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">Dismissed</Link> six days before scheduled completion.</div>
+                    <div><strong>August 16, 2025:</strong> Escalated to Director Lisa Sumption &mdash; no response.</div>
+                    <div><strong>December 7, 2025:</strong> Supplemental evidence sent &mdash; no response.</div>
                 </div>
             </div>
 
@@ -228,7 +220,7 @@ Have a great afternoon!
             </div>
 
             <div className="mt-4">
-                And when I documented it, the institution responded with silence.
+                And when I documented it, the institution responded with dismissal.
             </div>
 
         </SectionPage>
