@@ -18,6 +18,21 @@ Permanent public documentation of systematic volunteer abuse at **Oregon Parks &
 
 ---
 
+# Archive Videos
+
+All videos are available as direct downloads from this repository's releases:
+
+- [2025-03-05 Coercion Meeting](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-03-05_coercion-meeting.mkv) (78.5 MB)
+- [2025-03-18 Surveillance Encounter](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-03-18_surveillance-encounter.mkv) (53 MB)
+- [2025-03-24 Dismissal Recording](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-03-24_dismissal-recording.mkv) (189 MB)
+- [2025-03-25 Expulsion Recording](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-03-25_expulsion-recording.mkv) (92.7 MB)
+- [2025-03-27 Public Record](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-03-27_public-record.mkv) (140 MB)
+- [2025-12-20 What Happened](https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability/2025-12-20_what-happened.mkv) (633 MB)
+
+These videos are also hosted on YouTube [embedded throughout the archive].
+
+---
+
 ## Installation
 ```bash
 git clone https://github.com/rswfire/rswfire.oprd.git
