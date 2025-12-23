@@ -8,7 +8,6 @@ type VideoEmbedProps = {
 
 const RELEASE_BASE_URL = "https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability";
 
-// Map YouTube IDs to archive downloads
 const ARCHIVE_VIDEOS: Record<string, { filename: string; size: string }> = {
     "M82aVVW4mNI": {
         filename: "2025-12-20_what-happened.mkv",
