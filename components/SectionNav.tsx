@@ -184,8 +184,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                             <li>Formal Complaints</li>
                         </Link>
 
-
-
                     </ul>
                 </div>
 

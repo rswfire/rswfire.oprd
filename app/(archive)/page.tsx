@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import VideoEmbed from "@/components/archive/VideoEmbed";
+import ArchiveVideos from "@/components/ArchiveVideos";
 
 export default function OverviewPage() {
     return (
@@ -149,6 +150,10 @@ export default function OverviewPage() {
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
             </div>
+
+            {/* ARCHIVE VIDEOS */}
+            <ArchiveVideos/>
+
         </section>
     );
 }
