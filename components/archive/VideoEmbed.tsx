@@ -63,15 +63,15 @@ export default function VideoEmbed({
                 <p className="mt-3 text-sm text-slate-600 italic">{description}</p>
             )}
             {archiveVideo && (
-                <div className="mt-3 flex items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-lg">
-                    <div className="text-sm text-slate-700">
-                        <span className="font-medium">Archive Download:</span> High-quality source recording
+                <div className="mt-2 px-4 flex items-center justify-between p-2 bg-slate-50 border border-slate-200 rounded-sm">
+                    <div className="text-xs text-slate-700">
+                        <span className="font-medium">Archive Download:</span> Source Recording
                         <span className="text-slate-500 ml-2">({archiveVideo.size})</span>
                     </div>
                     <a
                         href={`${RELEASE_BASE_URL}/${archiveVideo.filename}`}
                         download
-                        className="ml-4 px-4 py-2 bg-emerald-700 hover:bg-emerald-600 text-white text-sm font-medium rounded-md transition-colors"
+                        className="ml-4 px-4 py-1 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium rounded-md transition-colors"
                     >
                         Download
                     </a>
