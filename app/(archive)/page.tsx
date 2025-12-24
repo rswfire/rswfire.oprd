@@ -19,7 +19,7 @@ export default function OverviewPage() {
 
                 <hr className="my-6 border-t border-gray-300" />
 
-                <VideoEmbed  className="mt-4"
+                <VideoEmbed
                     title="What really happened to me at Oregon State Parks."
                     youtubeId="M82aVVW4mNI"
                 />
