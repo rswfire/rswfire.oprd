@@ -36,7 +36,7 @@ export default function OverviewPage() {
                     <div>In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
                     <div>This archive is not a story about me.</div>
                     <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves</div>
-                    <div className="italic">A system that won't protect unpaid laborers does not deserve them.</div>
+                    <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
                 </div>
 
             </div>
