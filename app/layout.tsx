@@ -29,18 +29,13 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-5K6H8GR1Q7"
-                strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-5K6H8GR1Q7');
-              `}
-            </Script>
+            {process.env.NODE_ENV === "production" && (
+                <Script
+                    src="https://analytics.rswfire.online/script.js"
+                    data-website-id="927ceff2-deef-49ad-8e3d-b33b999c2b92"
+                    strategy="afterInteractive"
+                />
+            )}
         </head>
         <body className={roboto.className}>
         <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900">
