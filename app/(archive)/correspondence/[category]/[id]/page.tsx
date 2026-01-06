@@ -2,7 +2,7 @@
 import { notFound } from "next/navigation";
 import fs from "fs/promises";
 import path from "path";
-import PostalMime from "postal-mime";
+import { simpleParser } from "mailparser";
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import correspondenceData from "@/public/correspondence/index.json";
@@ -21,20 +21,15 @@ type ParsedEmail = {
     to?: EmailAddress | EmailAddress[];
     subject?: string;
     date?: string;
-    html?: string;
     text?: string;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { category, id } = await params;
-
-    // Find the correspondence item
     const categoryData = correspondenceData[category as keyof typeof correspondenceData];
     const item = categoryData?.find((i: any) => i.id === id);
 
-    if (!item) {
-        return { title: "Not Found" };
-    }
+    if (!item) return { title: "Not Found" };
 
     return {
         title: `${item.recipient} - ${item.date}`,
@@ -45,33 +40,52 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
     const { category, id } = await params;
 
-    // Validate category
     if (!["complaints", "institution", "press", "general"].includes(category)) {
         notFound();
     }
 
-    // Find the correspondence item
     const categoryData = correspondenceData[category as keyof typeof correspondenceData];
     const item = categoryData?.find((i: any) => i.id === id);
 
-    if (!item) {
-        notFound();
-    }
+    if (!item) notFound();
 
-    // Read and parse .eml file
     const emlPath = path.join(process.cwd(), "public", "correspondence", category, `${id}.eml`);
 
     let emailData: ParsedEmail;
     try {
-        const emlContent = await fs.readFile(emlPath, "utf-8");
-        const parser = new PostalMime();
-        emailData = await parser.parse(emlContent) as ParsedEmail;
+        const emlContent = await fs.readFile(emlPath);
+        const parsed = await simpleParser(emlContent);
+
+        const fromValue = parsed.from && 'value' in parsed.from ? parsed.from.value : null;
+        const toValue = parsed.to && 'value' in parsed.to ? parsed.to.value : null;
+
+        const fromAddress = Array.isArray(fromValue) ? fromValue[0] : fromValue;
+        const toAddress = Array.isArray(toValue) ? toValue[0] : toValue;
+
+        emailData = {
+            from: fromAddress ? {
+                address: fromAddress.address || '',
+                name: fromAddress.name
+            } : undefined,
+            to: toAddress ? {
+                address: toAddress.address || '',
+                name: toAddress.name
+            } : undefined,
+            subject: parsed.subject,
+            date: parsed.date?.toISOString(),
+            text: parsed.text
+                ?.replace(/\[cid:[^\]]+\]/g, '')
+                .split('\n')
+                .filter(line => !line.trim().startsWith('_____'))
+                .join('\n')
+                .trim()
+        };
     } catch (error) {
         console.error("Error parsing email:", error);
         notFound();
     }
 
-    const { from, to, subject, date, html, text } = emailData;
+    const { from, to, subject, date, text } = emailData;
 
     return (
         <SectionPage
@@ -113,11 +127,7 @@ export default async function Page({ params }: Props) {
             <hr className="my-6 border-t border-gray-300" />
 
             <div className="prose max-w-none">
-                {html ? (
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
-                ) : (
-                    <pre className="whitespace-pre-wrap font-sans">{text}</pre>
-                )}
+                <pre className="whitespace-pre-wrap font-sans">{text}</pre>
             </div>
         </SectionPage>
     );
