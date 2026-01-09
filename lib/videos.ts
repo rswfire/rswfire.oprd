@@ -53,12 +53,12 @@ export const videos: Video[] = [
         url: "j7awLxjn4_4"
     },
     {
-        title: "What Happened to Me at Oregon State Parks",
+        title: "My Testimony",
         filename: "2025-12-20_what-happened.mkv",
         size: "633 MB",
         date: "December 20, 2025",
         time: "21m 22s",
-        url: "M82aVVW4mNI"
+        url: "OcxojMyfH5Y"
     }
 ];
 
