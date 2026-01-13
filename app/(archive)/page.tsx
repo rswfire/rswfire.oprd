@@ -10,12 +10,7 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <VideoEmbed
-                    title="What really happened to me at Oregon State Parks."
-                    youtubeId="OcxojMyfH5Y"
-                />
-
-                <div className="mt-2 mr-8 text-right">
+                <div className="mb-2 mr-8 text-right">
                     <a
                         href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0/"
                         className="text-emerald-700 hover:underline hover:text-emerald-600 text-sm"
@@ -25,6 +20,11 @@ export default function OverviewPage() {
                         This transmission is preserved on Autonomy Realms. →
                     </a>
                 </div>
+
+                <VideoEmbed
+                    title="What really happened to me at Oregon State Parks."
+                    youtubeId="OcxojMyfH5Y"
+                />
 
                 <hr className="my-4 border-t border-gray-300" />
 
