@@ -15,7 +15,18 @@ export default function OverviewPage() {
                     youtubeId="OcxojMyfH5Y"
                 />
 
-                <hr className="my-6 border-t border-gray-300" />
+                <div className="mt-2 mr-8 text-right">
+                    <a
+                        href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0/"
+                        className="text-emerald-700 hover:underline hover:text-emerald-600 text-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        This transmission is preserved on Autonomy Realms. →
+                    </a>
+                </div>
+
+                <hr className="my-4 border-t border-gray-300" />
 
                 <div className="mt-4 ml-0 sm:ml-8 text-sm text-gray-600">
                     <div className="text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
