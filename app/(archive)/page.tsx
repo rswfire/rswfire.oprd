@@ -16,17 +16,6 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <div className="mt-4 mb-2 mr-8 text-right">
-                    <a
-                        href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0/"
-                        className="text-emerald-700 hover:underline hover:text-emerald-600 text-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        This transmission is preserved on Autonomy Realms. →
-                    </a>
-                </div>
-
                 <VideoEmbed
                     title="What really happened to me at Oregon State Parks."
                     youtubeId="OcxojMyfH5Y"

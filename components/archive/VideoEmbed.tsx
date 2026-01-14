@@ -41,14 +41,25 @@ export default function VideoEmbed({
                         <span className="text-slate-500 ml-2">({archiveVideo.time + " - " + archiveVideo.size})</span>
                     </div>
 
-                    <a href={`${RELEASE_BASE_URL}/${archiveVideo.filename}`}
-                        download
-                        className="ml-4 px-4 py-1 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium rounded-md transition-colors"
-                    >
-                        Download
-                    </a>
+                    <div className="flex gap-2 ml-4">
+                        {archiveVideo.analysisUrl && (
+                            <a href={archiveVideo.analysisUrl}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               className="px-4 py-1 bg-slate-700 hover:bg-slate-600 text-white text-xs font-medium rounded-md transition-colors"
+                            >
+                                Analysis
+                            </a>
+                        )}
+                        <a href={`${RELEASE_BASE_URL}/${archiveVideo.filename}`}
+                           download
+                           className="px-4 py-1 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium rounded-md transition-colors"
+                        >
+                            Download
+                        </a>
+                    </div>
                 </div>
-                )}
-</div>
-);
+            )}
+        </div>
+    );
 }

@@ -25,7 +25,16 @@ export default function ArchiveVideos() {
                             </div>
                             <div className="text-xs text-slate-600 mt-1">{video.date} &bull; {video.time} &bull; {video.size}</div>
                         </div>
-                        <div className="flex justify-start sm:justify-end">
+                        <div className="flex gap-2 justify-start sm:justify-end">
+                            {video.analysisUrl && (
+                                <a href={video.analysisUrl}
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm font-medium rounded-md transition-colors text-center whitespace-nowrap"
+                                >
+                                    Analysis
+                                </a>
+                            )}
                             <a href={`${RELEASE_BASE_URL}/${video.filename}`}
                                download
                                className="px-4 py-2 bg-emerald-700 hover:bg-emerald-600 text-white text-sm font-medium rounded-md transition-colors text-center whitespace-nowrap"

@@ -7,6 +7,7 @@ export interface Video {
     date: string;
     time: string;
     url: string;
+    analysisUrl?: string; // Optional Autonomy Realms URL
 }
 
 export const RELEASE_BASE_URL = "https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability";
@@ -58,7 +59,8 @@ export const videos: Video[] = [
         size: "633 MB",
         date: "December 20, 2025",
         time: "21m 22s",
-        url: "OcxojMyfH5Y"
+        url: "OcxojMyfH5Y",
+        analysisUrl: "https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0"
     }
 ];
 
