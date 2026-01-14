@@ -35,7 +35,7 @@ export default function OverviewPage() {
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
                         <div>It is not designed to <em>win attention</em>.</div>
-                        <div>It is designed to <em>outlast denial</em>.</div>
+                        <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                     </div>
 
                     <div className="mt-4 text-sm tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
