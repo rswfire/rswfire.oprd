@@ -10,7 +10,13 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="mb-2 mr-8 text-right">
+                <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                    <div className="font-semibold">
+                        <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
+                    </div>
+                </div>
+
+                <div className="mt-4 mb-2 mr-8 text-right">
                     <a
                         href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0/"
                         className="text-emerald-700 hover:underline hover:text-emerald-600 text-sm"
@@ -29,7 +35,8 @@ export default function OverviewPage() {
                 <hr className="my-4 border-t border-gray-300" />
 
                 <div className="mt-4 ml-0 sm:ml-8 text-sm text-gray-600">
-                    <div className="text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
+
+                    <div className="mt-4 text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
                     <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
 
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
@@ -48,7 +55,6 @@ export default function OverviewPage() {
                     <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
                     <div>This archive is not a story about me.</div>
                     <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
-                    <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
                 </div>
 
             </div>
