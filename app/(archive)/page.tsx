@@ -164,8 +164,7 @@ export default function OverviewPage() {
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
 
-                <div className="mt-6 pt-4 border-t border-gray-300 font-semibold">Oregon Parks &amp; Recreation Department can no longer abuse a volunteer this way without documented precedent. Their institutional silence does not erase the pattern. It confirms it.</div>
-
+                <div className="mt-6 pt-4 border-t border-gray-300 font-semibold">Oregon state government can no longer abuse a volunteer this way without documented precedent. When the Governor's office was directly notified and chose silence, this stopped being one agency's failure. It became pattern evidence for every volunteer program across Oregon's executive branch. Their institutional silence does not erase the pattern. It confirms it.</div>
             </div>
 
         </section>
