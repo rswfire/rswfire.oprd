@@ -17,8 +17,7 @@ export default function OverviewPage() {
                 </div>
 
                 <VideoEmbed
-                    title="What really happened to me at Oregon State Parks."
-                    youtubeId="OcxojMyfH5Y"
+                    s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
                 />
 
                 <hr className="my-4 border-t border-gray-300" />

@@ -1,4 +1,4 @@
-// lib/archive-videos.ts
+// lib/videos.ts
 
 export interface Video {
     title: string;
@@ -6,8 +6,7 @@ export interface Video {
     size: string;
     date: string;
     time: string;
-    url: string;
-    analysisUrl?: string; // Optional Autonomy Realms URL
+    s3Url: string;
 }
 
 export const RELEASE_BASE_URL = "https://github.com/rswfire/rswfire.oprd/releases/download/permanent-accountability";
@@ -19,7 +18,7 @@ export const videos: Video[] = [
         size: "78.5 MB",
         date: "March 5, 2025",
         time: "1h 2m 12s",
-        url: "iOuaufCH_I8"
+        s3Url: "YOUR_SIGNAL_ID_HERE"
     },
     {
         title: "Surveillance Encounter",
@@ -27,7 +26,7 @@ export const videos: Video[] = [
         size: "53 MB",
         date: "March 18, 2025",
         time: "9m 22s",
-        url: "EwecWXvc8DE"
+        s3Url: "YOUR_SIGNAL_ID_HERE"
     },
     {
         title: "Dismissal Recording",
@@ -35,7 +34,7 @@ export const videos: Video[] = [
         size: "189 MB",
         date: "March 24, 2025",
         time: "16m 46s",
-        url: "B1oe-qvjmMI"
+        s3Url: "YOUR_SIGNAL_ID_HERE"
     },
     {
         title: "Expulsion Recording",
@@ -43,7 +42,7 @@ export const videos: Video[] = [
         size: "92.7 MB",
         date: "March 25, 2025",
         time: "30m 55s",
-        url: "Px_pCUo78w4"
+        s3Url: "YOUR_SIGNAL_ID_HERE"
     },
     {
         title: "Public Record",
@@ -51,7 +50,7 @@ export const videos: Video[] = [
         size: "140 MB",
         date: "March 27, 2025",
         time: "6m 20s",
-        url: "j7awLxjn4_4"
+        s3Url: "YOUR_SIGNAL_ID_HERE"
     },
     {
         title: "My Testimony",
@@ -59,11 +58,10 @@ export const videos: Video[] = [
         size: "633 MB",
         date: "December 20, 2025",
         time: "21m 22s",
-        url: "OcxojMyfH5Y",
-        analysisUrl: "https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0"
+        s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
     }
 ];
 
-export function getVideoByYouTubeId(youtubeId: string): Video | undefined {
-    return videos.find(v => v.url === youtubeId);
+export function getVideoBySignalId(signalId: string): Video | undefined {
+    return videos.find(v => v.realmSignalId === signalId);
 }
