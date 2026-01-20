@@ -60,8 +60,7 @@ export default function ExpulsionPage() {
                 </div>
                 <div className="p-4">
                     <VideoEmbed
-                        youtubeId="Px_pCUo78w4"
-                        title="March 25, 2025 Call with Allison Watson"
+                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JWA36CJ8RRQF3N9E34EE349C/video.mp4"
                     />
                 </div>
             </div>
@@ -82,8 +81,7 @@ export default function ExpulsionPage() {
                 <div className="bg-gray-100 px-4 py-2 font-semibold">Full Letter — March 27, 2025</div>
                 <div className="p-4">
                     <VideoEmbed
-                        youtubeId="j7awLxjn4_4"
-                        title="Reading of Letter to Allison Watson - March 27, 2025"
+                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQD4DCE88XVM3S4AEGRY84R2/video.mp4"
                     />
                 </div>
             </div>

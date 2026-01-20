@@ -144,8 +144,7 @@ Have a great afternoon!
             </div>
 
             <VideoEmbed
-                title="Encounter with Assertive Man Ends in Departure"
-                youtubeId="EwecWXvc8DE"
+                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JPP5GY2GPEZ5F08Q2PF6ZAHG/video.mp4"
             />
 
             <hr className="my-6 border-t border-gray-300" />

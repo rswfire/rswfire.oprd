@@ -42,8 +42,7 @@ export default function DismissalPage() {
                 </div>
                 <div>
                     <VideoEmbed
-                        youtubeId="B1oe-qvjmMI"
-                        title="Dismissal from Honeyman State Park - March 24, 2025"
+                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQ51HAK8QR862VWGK0RKTFXN/video.mp4"
                     />
                 </div>
                 <div className="text-sm italic text-gray-500 m-0 p-2 ml-4 mb-4">

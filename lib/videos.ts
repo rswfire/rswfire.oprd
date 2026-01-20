@@ -61,7 +61,3 @@ export const videos: Video[] = [
         s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
     }
 ];
-
-export function getVideoBySignalId(signalId: string): Video | undefined {
-    return videos.find(v => v.realmSignalId === signalId);
-}

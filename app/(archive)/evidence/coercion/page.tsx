@@ -30,8 +30,7 @@ export default function CoercionPage() {
                 </div>
                 <div>
                     <VideoEmbed
-                        youtubeId="iOuaufCH_I8"
-                        title="March 5, 2025 Meeting with Ryan Warren and Kati Baker"
+                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JW9VC5QG9FHNN587PTEKHK4K/video.mp4"
                     />
                 </div>
             </div>
