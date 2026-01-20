@@ -26,7 +26,7 @@ export default function VideoEmbed({
 
     useEffect(() => {
         const encodedUrl = encodeURIComponent(s3Url);
-        fetch(`https://rswfire.autonomyrealms.com/api/video-url?url=${encodedUrl}`)
+        fetch(`https://rswfire.autonomyrealms.com/api/video-url/?url=${encodedUrl}`)
             .then(res => res.json())
             .then(data => {
                 if (data.url) {
