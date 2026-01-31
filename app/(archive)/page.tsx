@@ -33,7 +33,6 @@ export default function OverviewPage() {
 
                     <div className="mt-4 text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
                     <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
-                    <div className="text-base tracking-tight">The sniffles were unavoidable; that time of year, and this isn't a story you tell every day.</div>
 
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
