@@ -77,7 +77,7 @@ export default function OverviewPage() {
                     <div>I maintained trails. I cleaned facilities. I engaged with visitors.</div>
                     <div>I participated in government &mdash; not as observer, not as taxpayer funding distant bureaucracy, but as citizen directly stewarding public land.</div>
 
-                    <div className="mt-4">On March 27, 2025, Allison Watson permanently expelled me from all Oregon State Parks volunteer programs.</div>
+                    <div className="mt-4">On March 26, 2025, Allison Watson permanently expelled me from all Oregon State Parks volunteer programs.</div>
 
                     <div className="mt-4">She put the reason in writing:</div>
                     <div className="ml-4 italic">"the public comments made about staff regarding your volunteer service, were not in line with expectations."</div>
