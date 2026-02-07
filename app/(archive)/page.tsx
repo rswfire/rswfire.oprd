@@ -32,7 +32,7 @@ export default function OverviewPage() {
                 <div className="mt-4 ml-0 sm:ml-8 text-sm text-gray-600">
 
                     <div className="mt-4 text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
-                    <div className="text-base tracking-tight">My full testimony &mdash; in one take, no edits, with the sniffles &mdash; while walking a forest trail.</div>
+                    <div className="text-base tracking-tight">My full testimony &mdash; in one take, no edits, enduring the sniffles &mdash; while walking a forest trail.</div>
 
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
@@ -111,6 +111,8 @@ export default function OverviewPage() {
 
                     <hr className="my-6 border-t border-gray-300" />
 
+                    <div className="mt-4 text-lg font-bold">This is what institutional collapse looks like:</div>
+
                     <div className="mt-4">This archive exists because institutional accountability failed at every level.</div>
 
                     <div className="mt-4">When government denies citizens the right to participate because they spoke about abuse &mdash;</div>
@@ -124,14 +126,14 @@ export default function OverviewPage() {
 
                     <div className="mt-4 font-bold">That is what this archive documents.</div>
                     <div className="font-bold">That is what continues right now.</div>
-                    <div className="font-bold">That will not be absolved by silence or time.</div>
+                    <div className="font-bold">That will not be absolved by silence, or by time.</div>
 
                     <div className="mt-6 flex">
                         <div className="mr-2">&mdash;</div>
                         <div>
                             <div className="font-bold">Robert Samuel White</div>
                             <div className="font-semibold text-gray-700">Former Oregon State Parks Volunteer</div>
-                            <div className="text-gray-700">January 30, 2026</div>
+                            <div className="text-gray-700">February 6, 2026</div>
                         </div>
                     </div>
                 </div>
@@ -154,7 +156,12 @@ export default function OverviewPage() {
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
 
-                <div className="mt-6 pt-4 border-t border-gray-300 font-semibold">Oregon state government can no longer abuse a volunteer this way without documented precedent. When the Governor's office was directly notified and chose silence, this stopped being one agency's failure. It became pattern evidence for every volunteer program across Oregon's executive branch. Their institutional silence does not erase the pattern. It confirms it.</div>
+                <div className="mt-6 pt-4 border-t border-gray-300 font-semibold">
+                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent &mdash; or what they would euphemistically call liability.</div>
+                    <div className="mt-4">When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
+                    <div className="mt-4">It became pattern evidence for every volunteer program across Oregon's executive branch.</div>
+                    <div className="mt-4">Their institutional silence does not erase the pattern. It confirms it.</div>
+                </div>
             </div>
 
         </section>
