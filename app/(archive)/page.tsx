@@ -146,6 +146,13 @@ export default function OverviewPage() {
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
                 <div className="text-xl text-black font-bold mb-4">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</div>
 
+                <div className="mb-6 pb-4 border-b border-gray-300 font-semibold">
+                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent &mdash; or what they would euphemistically call liability.</div>
+                    <div className="mt-4">When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
+                    <div className="mt-4">It became pattern evidence for every volunteer program across Oregon's executive branch.</div>
+                    <div className="mt-4">Their institutional silence does not erase the pattern. It confirms it.</div>
+                </div>
+
                 <div className="mt-4">This archive is not for revenge.</div>
 
                 <div className="mt-4">It is for those who have been told they imagined it.</div>
@@ -156,12 +163,6 @@ export default function OverviewPage() {
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
 
-                <div className="mt-6 pt-4 border-t border-gray-300 font-semibold">
-                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent &mdash; or what they would euphemistically call liability.</div>
-                    <div className="mt-4">When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
-                    <div className="mt-4">It became pattern evidence for every volunteer program across Oregon's executive branch.</div>
-                    <div className="mt-4">Their institutional silence does not erase the pattern. It confirms it.</div>
-                </div>
             </div>
 
         </section>
