@@ -10,12 +10,6 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                    <div className="font-semibold">
-                        <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
-                    </div>
-                </div>
-
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
                     <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
                     <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
@@ -28,6 +22,8 @@ export default function OverviewPage() {
                 <VideoEmbed
                     s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
                 />
+
+                <div className="text-right text-xs"><Link href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0" className="mr-4 hover:underline">AUTONOMY REALMS: 01KCYZ8E1GTHBZCDNYA57AM2Q0</Link></div>
 
                 <div className="mt-4 ml-0 sm:ml-8 text-sm text-gray-600">
 
@@ -132,8 +128,7 @@ export default function OverviewPage() {
                         <div className="mr-2">&mdash;</div>
                         <div>
                             <div className="font-bold">Robert Samuel White</div>
-                            <div className="font-semibold text-gray-700">Former Oregon State Parks Volunteer</div>
-                            <div className="text-gray-700">February 6, 2026</div>
+                            <div className="text-gray-700">Former Oregon State Parks Volunteer</div>
                         </div>
                     </div>
                 </div>

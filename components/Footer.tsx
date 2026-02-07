@@ -1,6 +1,9 @@
 export default function Footer() {
     return (
         <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-600 bg-white/90">
+
+
+
             <div className="max-w-6xl mx-auto px-4 space-y-2">
 
                 <div className="text-center space-y-1">
@@ -45,6 +48,12 @@ export default function Footer() {
                     >
                         Contact
                     </a>
+                </div>
+
+                <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                    <div className="font-semibold">
+                        <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
+                    </div>
                 </div>
 
             </div>
