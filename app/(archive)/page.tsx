@@ -32,7 +32,7 @@ export default function OverviewPage() {
                 <div className="mt-4 ml-0 sm:ml-8 text-sm text-gray-600">
 
                     <div className="mt-4 text-base tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
-                    <div className="text-base tracking-tight">The whole story &mdash; in one take, no edits &mdash; while walking a forest trail.</div>
+                    <div className="text-base tracking-tight">My full testimony &mdash; in one take, no edits, with the sniffles &mdash; while walking a forest trail.</div>
 
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
@@ -87,36 +87,6 @@ export default function OverviewPage() {
 
                     <div className="mt-4 font-bold">That violation continues right now. Today.</div>
                     <div className="font-bold">Every single day they refuse to restore what they took.</div>
-
-                    <hr className="my-6 border-t border-gray-300" />
-
-                    <div className="mt-4">Every day of exclusion is another day of constitutional violation.</div>
-                    <div>Every day of silence is a choice to continue the retaliation.</div>
-                    <div>Every day I am denied participation in government work.</div>
-
-                    <div className="mt-4">I escalated through every institutional layer:</div>
-                    <ul className="ml-8 list-disc">
-                        <li>Park supervisor &mdash; orchestrated the abuse</li>
-                        <li>Park manager &mdash; executed the abuse</li>
-                        <li>Regional coordinator &mdash; retaliated in writing</li>
-                        <li>Director &mdash; chose institutional protection</li>
-                        <li>Governor's office &mdash; silence</li>
-                    </ul>
-
-                    <div className="mt-4">At every level: protection of abusers over correction of harm.</div>
-
-                    <div className="mt-4">The facts are documented:</div>
-                    <ul className="ml-8 list-disc">
-                        <li>Allison Watson put the retaliation in writing</li>
-                        <li>I recorded the hour-long coercion meeting</li>
-                        <li>I recorded the dismissal and expulsion</li>
-                        <li>Every escalation is preserved</li>
-                        <li>Every institutional failure is on record</li>
-                    </ul>
-
-                    <div className="mt-4">No one disputed the facts.</div>
-                    <div>No one took ownership.</div>
-                    <div>No one restored my rights.</div>
 
                     <hr className="my-6 border-t border-gray-300" />
 
