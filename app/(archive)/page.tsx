@@ -23,7 +23,7 @@ export default function OverviewPage() {
                     s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
                 />
 
-                <div className="text-right text-xs"><Link href="https://rswfire.autonomyrealms.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0" className="mr-4 hover:underline">AUTONOMY REALMS: 01KCYZ8E1GTHBZCDNYA57AM2Q0</Link></div>
+                <div className="text-right text-xs"><Link href="https://rswfire.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0" className="mr-4 hover:underline">AUTONOMY REALMS: 01KCYZ8E1GTHBZCDNYA57AM2Q0</Link></div>
 
                 <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
 
