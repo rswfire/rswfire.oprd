@@ -10,12 +10,19 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="mt-3 mx-8 text-center">
-                    <div className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-800 italic">
+                <div className="mt-6 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div className="flex-1 flex justify-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-800 italic">
                         &ldquo;Chew glass and swallow it.&rdquo;
                     </div>
-                    <div className="mt-3 text-sm text-gray-500">
-                        &mdash; <Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-700 hover:text-emerald-600">Ryan Warren</Link>, Park Manager, Honeyman State Park
+                    <div className="text-sm text-gray-500 flex gap-2 sm:ml-8 justify-end sm:justify-start">
+                        <div className="mt-4">&mdash;</div>
+                        <div className="text-left mt-4">
+                            <div><Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-700 hover:text-emerald-600">Ryan Warren</Link></div>
+                            <div className="font-bold">Park Manager</div>
+                            <div className="font-bold">Honeyman State Park</div>
+                            <div>Oregon Parks &amp; Recreation Department</div>
+                            <div className="italic">Said: February 9 and March 5, 2025</div>
+                        </div>
                     </div>
                 </div>
 
