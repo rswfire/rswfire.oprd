@@ -27,7 +27,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Open Letter to Director",
         date: "2025-08-25",
-        context: "Status: Acknowledged without action.",
+        context: "Status: Communication closed by director.",
         link: "/lisa-sumption/open-letter"
     }
 ];
