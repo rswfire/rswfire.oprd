@@ -32,7 +32,7 @@ export default function EvidencePage() {
             <h2 className="text-xl font-semibold">THE EVIDENCE SEQUENCE</h2>
 
             <div className="mt-4">
-                These seven documents establish the complete pattern of abuse, betrayal, and retaliation:
+                These eight documents establish the complete pattern of abuse, betrayal, and retaliation:
             </div>
 
             <div className="mt-6 space-y-6">
@@ -119,6 +119,19 @@ export default function EvidencePage() {
                         Format: Audio recording, email correspondence, official removal letter
                     </div>
                 </div>
+
+                <div className="p-4 border-l-4 border-gray-400">
+                    <Link href="/evidence/containment" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        8. CONTAINMENT
+                    </Link>
+                    <div className="mt-2 text-sm text-gray-700">
+                        August 2025–February 2026 — Every institutional response to accountability — the Director's procedural deflection, the public records obstruction, the reframing of documentation as emotional processing, the Deputy Director's attempt to restrict communication — follows the same logic. Not correction. Containment.
+                    </div>
+                    <div className="mt-2 text-sm font-semibold">
+                        Format: Email correspondence, official agency communications
+                    </div>
+                </div>
+
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
