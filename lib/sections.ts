@@ -18,7 +18,8 @@ export const archiveSections = [
             { href: "/evidence/coercion", label: "4. Coercion" },
             { href: "/evidence/surveillance", label: "5. Surveillance" },
             { href: "/evidence/dismissal", label: "6. Dismissal" },
-            { href: "/evidence/expulsion", label: "7. Expulsion" }
+            { href: "/evidence/expulsion", label: "7. Expulsion" },
+            { href: "/evidence/containment", label: "8. Containment" }
         ]
     },
     { href: "#separator-3", label: "", separator: true },

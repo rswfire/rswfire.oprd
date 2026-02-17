@@ -16,7 +16,7 @@ export default function ExpulsionPage() {
             title="EXPULSION"
             subtitle="ALLISON WATSON, ENGAGEMENT PROGRAMS MANAGER"
             previousPage={{ href: "/evidence/dismissal", label: "Dismissal" }}
-            nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/evidence/containment", label: "Containment" }}
             summary="Allison Watson issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
         >
 
