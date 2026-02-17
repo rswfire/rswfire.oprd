@@ -151,7 +151,7 @@ JR Collier`}</pre>
             </div>
 
             <div className="mt-4">
-                On February 17, <Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-800 hover:text-emerald-600">an open declaration defining abuse</Link> was sent to all named individuals, Commissioners, and Governor Kotek. 327 days of constitutional violation. Deadline: March 26, 2026.
+                On February 17, <Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-800 hover:text-emerald-600">an open declaration defining abuse</Link> was sent to all named individuals, Commissioners, and Governor Kotek. 327 days of constitutional violation.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
