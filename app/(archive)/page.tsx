@@ -15,13 +15,12 @@ export default function OverviewPage() {
                         &ldquo;Chew glass and swallow it.&rdquo;
                     </div>
                     <div className="text-sm text-gray-500 flex gap-2 sm:ml-8 justify-end sm:justify-start">
-                        <div className="mt-4">&mdash;</div>
+                        <div className="mt-4 text-lg">&mdash;</div>
                         <div className="text-left mt-4">
-                            <div className="font-bold">Ryan Warren</div>
-                            <div className="font-bold">Park Manager</div>
-                            <div className="font-bold">Honeyman State Park</div>
-                            <div className="font-bold italic">Oregon Parks &amp; Recreation Department</div>
-                            <div className="italic">Said: <Link href="/evidence/compliance/" className="underline text-emerald-700 hover:text-emerald-600">February 9</Link> and <Link href="/evidence/coercion/" className="underline text-emerald-700 hover:text-emerald-600">March 5, 2025</Link></div>
+                            <div className="font-bold text-lg">Ryan Warren</div>
+                            <div className="text-lg">Park Manager</div>
+                            <div className="italic text-lg">Oregon State Parks</div>
+                            <div className="text-lg italic">Said: <Link href="/evidence/compliance/" className="underline text-emerald-700 hover:text-emerald-600">February 9</Link> and <Link href="/evidence/coercion/" className="underline text-emerald-700 hover:text-emerald-600">March 5, 2025</Link></div>
                         </div>
                     </div>
                 </div>
