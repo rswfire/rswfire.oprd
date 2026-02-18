@@ -17,11 +17,11 @@ export default function OverviewPage() {
                     <div className="text-sm text-gray-500 flex gap-2 sm:ml-8 justify-end sm:justify-start">
                         <div className="mt-4">&mdash;</div>
                         <div className="text-left mt-4">
-                            <div><Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-700 hover:text-emerald-600">Ryan Warren</Link></div>
+                            <div className="font-bold">Ryan Warren</div>
                             <div className="font-bold">Park Manager</div>
                             <div className="font-bold">Honeyman State Park</div>
-                            <div>Oregon Parks &amp; Recreation Department</div>
-                            <div className="italic">Said: February 9 and March 5, 2025</div>
+                            <div className="font-bold italic">Oregon Parks &amp; Recreation Department</div>
+                            <div className="italic">Said: <Link href="/evidence/compliance/" className="underline text-emerald-700 hover:text-emerald-600">February 9</Link> and <Link href="/evidence/coercion/" className="underline text-emerald-700 hover:text-emerald-600">March 5, 2025</Link></div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,6 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/lisa-sumption" className="underline hover:text-emerald-600">Documentation: Lisa Sumption</Link></li>
                             <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">The Open Letter</Link></li>
                             <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">The Public Records Request</Link></li>
                             <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">The Closure</Link></li>
