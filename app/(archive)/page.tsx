@@ -140,7 +140,7 @@ export default function OverviewPage() {
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
-                        <div>March 18. All rangers were away for a regional event. I was cleaning yurts alone in A Loop.</div>
+                        <div>And that is how they justified March 18 internally. While all the rangers were away for a regional event. And I was cleaning yurts alone in A Loop.</div>
                         <div>A man appeared. No uniform. No identification. No name. He said he was &ldquo;with the park service&rdquo; and began photographing the yurts while they were still dirty &mdash; doors propped open, trash cans holding doors ajar. Then, without transition, he pressed me with direct personal questions: how do you like the park, how are you being treated, is leadership treating you well. When I didn't engage, he reframed the questions and stepped closer.</div>
                         <div>I documented the encounter with Kati Baker the same day. She explained it as IT photo documentation. No photos have ever been produced. The questions about leadership treatment were never addressed.</div>
                         <div>Six days later, I was removed.</div>
