@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { RELEASE_BASE_URL } from "@/lib/videos";
+import Link from "next/link";
 
 type VideoEmbedProps = {
     title?: string;
@@ -11,6 +12,7 @@ type VideoEmbedProps = {
     filename?: string;
     time?: string;
     size?: string;
+    signalUrl?: string;
 };
 
 export default function VideoEmbed({
@@ -19,7 +21,8 @@ export default function VideoEmbed({
                                        s3Url,
                                        filename,
                                        time,
-                                       size
+                                       size,
+                                       signalUrl,
                                    }: VideoEmbedProps) {
     const [videoUrl, setVideoUrl] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
@@ -37,9 +40,44 @@ export default function VideoEmbed({
             .finally(() => setLoading(false));
     }, [s3Url]);
 
+    // Extract ULID from s3Url for display
+    const ulid = s3Url.match(/\/transmissions\/([A-Z0-9]+)\//)?.[1] ?? null;
+
     return (
-        <div className="m-2">
-            <div className="aspect-video bg-slate-900 rounded-lg overflow-hidden shadow-lg">
+        <div className="my-2" style={{ border: '1px solid rgba(26,58,74,0.2)', overflow: 'hidden' }}>
+
+            {/* Top bar */}
+            <div className="flex items-center justify-between px-3 py-1.5"
+                 style={{ backgroundColor: 'rgba(26,58,74,0.06)' }}>
+                <Link
+                    href="https://autonomyrealms.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        fontFamily: 'var(--font-dm-serif), serif',
+                        fontSize: '18px',
+                        letterSpacing: '0.05em',
+                        color: '#c4622d',
+                        textDecoration: 'underline',
+                    }}
+                    className="hover:opacity-70 transition-opacity flex items-center gap-1.5"
+                >
+                    <img src="https://autonomyrealms.com/favicon.ico" alt="" width={14} height={14} className="inline-block" />
+                    Autonomy Realms
+                </Link>
+                <span style={{
+                    fontFamily: 'var(--font-dm-mono), monospace',
+                    fontSize: '10px',
+                    letterSpacing: '0.15em',
+                    color: '#8a9ba8',
+                    textTransform: 'uppercase',
+                }}>
+                    Signal Archive
+                </span>
+            </div>
+
+            {/* Video */}
+            <div className="aspect-video bg-slate-900">
                 {loading ? (
                     <div className="w-full h-full flex items-center justify-center text-white">
                         Loading video...
@@ -60,26 +98,60 @@ export default function VideoEmbed({
                 )}
             </div>
 
+            {/* Bottom bar */}
+            <div className="flex items-center justify-between px-3 py-1.5"
+                 style={{ backgroundColor: 'rgba(26,58,74,0.06)' }}>
+                <span style={{
+                    fontFamily: 'var(--font-dm-mono), monospace',
+                    fontSize: '10px',
+                    letterSpacing: '0.1em',
+                    color: '#8a9ba8',
+                }}>
+                    {''}
+                </span>
+                {signalUrl && (
+                    <Link
+                        href={signalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontFamily: 'var(--font-dm-mono), monospace',
+                            fontSize: '10px',
+                            letterSpacing: '0.15em',
+                            color: '#c4622d',
+                            textTransform: 'uppercase',
+                            textDecoration: 'none',
+                        }}
+                        className="hover:opacity-70 transition-opacity"
+                    >
+                        {'Signal: ' + ulid ?? 'View Signal'} →
+                    </Link>
+                )}
+            </div>
+
+            {/* Description */}
             {description && (
-                <p className="mt-3 text-sm text-slate-600 italic">{description}</p>
+                <p className="px-3 py-2 text-sm text-slate-600 italic">{description}</p>
             )}
 
+            {/* Download row */}
             {filename && time && size && (
-                <div className="mt-2 flex items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-md">
+                <div className="flex items-center justify-between px-3 py-2"
+                     style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
                     <div className="text-xs text-slate-700">
                         <span className="font-medium">Source Recording</span>
                         <span className="text-slate-500 ml-2">({time} • {size})</span>
                     </div>
 
-
                     <a href={`${RELEASE_BASE_URL}/${filename}`}
                     download
-                    className="px-4 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium rounded-md transition-colors"
+                    className="px-4 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium transition-colors"
                     >
                     Download
                 </a>
                 </div>
                 )}
+
 </div>
 );
 }

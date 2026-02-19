@@ -1,15 +1,22 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Open_Sans } from 'next/font/google'
+import { Open_Sans, DM_Mono } from 'next/font/google'
 
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Script from 'next/script'
 
-const roboto = Open_Sans({
+const openSans = Open_Sans({
     weight: '400',
     subsets: ['latin'],
+    variable: '--font-open-sans',
+})
+
+const dmMono = DM_Mono({
+    weight: ['400', '500'],
+    subsets: ['latin'],
+    variable: '--font-dm-mono',
 })
 
 export const metadata: Metadata = {
@@ -27,7 +34,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={`${openSans.variable} ${dmMono.variable}`}>
         <head>
             {process.env.NODE_ENV === "production" && (
                 <Script
@@ -37,7 +44,7 @@ export default function RootLayout({
                 />
             )}
         </head>
-        <body className={roboto.className}>
+        <body className={openSans.className}>
         <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900">
             <Header />
             <main className="flex-1">{children}</main>

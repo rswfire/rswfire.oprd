@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+    --font-dm-mono: var(--font-dm-mono);
 }
 
 @theme inline {

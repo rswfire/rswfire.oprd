@@ -28,7 +28,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
-                    <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
+                    <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
                     <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
                     <div>This archive is not a story about me.</div>
                     <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
@@ -36,11 +36,11 @@ export default function OverviewPage() {
 
                 <hr className="my-6 border-t border-gray-300" />
 
+                {/* Video */}
                 <VideoEmbed
                     s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
+                    signalUrl="https://rswfire.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0"
                 />
-
-                <div className="text-right text-xs"><Link href="https://rswfire.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0" className="mr-4 hover:underline">AUTONOMY REALMS: 01KCYZ8E1GTHBZCDNYA57AM2Q0</Link></div>
 
                 <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
                     <div className="mt-4 text-md tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
