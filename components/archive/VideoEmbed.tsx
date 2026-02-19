@@ -124,7 +124,7 @@ export default function VideoEmbed({
                         }}
                         className="hover:opacity-70 transition-opacity"
                     >
-                        {'Signal: ' + ulid ?? 'View Signal'} →
+                        {(ulid ? 'Signal: ' + ulid : 'View Signal')} →
                     </Link>
                 )}
             </div>
