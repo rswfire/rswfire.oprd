@@ -36,20 +36,12 @@ export default function DismissalPage() {
                 I recorded the interaction.
             </div>
 
-            <div className="mt-6 border border-gray-200 shadow-sm rounded-md overflow-hidden">
-                <div className="bg-gray-100 px-4 py-2 font-semibold">
-                    Full Documentation — March 24, 2025
-                </div>
-                <div>
-                    <VideoEmbed
-                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQ51HAK8QR862VWGK0RKTFXN/video.mp4"
-                    />
-                </div>
-                <div className="text-sm italic text-gray-500 m-0 p-2 ml-4 mb-4">
-                    <div>This video documents the full timeline of events leading to dismissal,</div>
-                    <div>including the recorded interaction where Ryan admitted no formal documentation existed.</div>
-                </div>
-            </div>
+            <hr className="my-6 border-t border-gray-300" />
+
+            <VideoEmbed
+                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQ51HAK8QR862VWGK0RKTFXN/video.mp4"
+                signalUrl="https://rswfire.com/signal/01JQ51HAK8QR862VWGK0RKTFXN"
+            />
 
             <hr className="my-6 border-t border-gray-300" />
 

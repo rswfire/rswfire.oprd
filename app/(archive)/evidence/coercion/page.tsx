@@ -24,16 +24,12 @@ export default function CoercionPage() {
             <div className="mt-4">
                 Ryan Warren and Kati Baker called me to a meeting at a public picnic table in <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>'s day-use area. <strong>The entire meeting was recorded</strong>.</div>
 
-            <div className="mt-6 border border-gray-200 shadow-sm rounded-md overflow-hidden">
-                <div className="bg-gray-100 px-4 py-2 font-semibold">
-                    Full Recording — March 5, 2025
-                </div>
-                <div>
-                    <VideoEmbed
-                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JW9VC5QG9FHNN587PTEKHK4K/video.mp4"
-                    />
-                </div>
-            </div>
+            <hr className="my-6 border-t border-gray-300" />
+
+            <VideoEmbed
+                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JW9VC5QG9FHNN587PTEKHK4K/video.mp4"
+                signalUrl="https://rswfire.com/signal/01JW9VC5QG9FHNN587PTEKHK4K"
+            />
 
             <hr className="my-6 border-t border-gray-300" />
 

@@ -143,8 +143,11 @@ Have a great afternoon!
                 Six days later, I was removed from my position.
             </div>
 
+            <hr className="my-6 border-t border-gray-300" />
+
             <VideoEmbed
                 s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JPP5GY2GPEZ5F08Q2PF6ZAHG/video.mp4"
+                signalUrl="https://rswfire.com/signal/01JPP5GY2GPEZ5F08Q2PF6ZAHG"
             />
 
             <hr className="my-6 border-t border-gray-300" />

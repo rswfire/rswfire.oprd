@@ -54,16 +54,12 @@ export default function ExpulsionPage() {
                 <li>Empathy used to contain, not to connect</li>
             </ul>
 
-            <div className="mt-6 border border-gray-200 shadow-sm rounded-md overflow-hidden">
-                <div className="bg-gray-100 px-4 py-2 font-semibold">
-                    Full Recording — March 25, 2025
-                </div>
-                <div className="p-4">
-                    <VideoEmbed
-                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JWA36CJ8RRQF3N9E34EE349C/video.mp4"
-                    />
-                </div>
-            </div>
+            <hr className="my-6 border-t border-gray-300" />
+
+            <VideoEmbed
+                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JWA36CJ8RRQF3N9E34EE349C/video.mp4"
+                signalUrl="https://rswfire.com/signal/01JWA36CJ8RRQF3N9E34EE349C"
+            />
 
             <hr className="my-6 border-t border-gray-300" />
 
@@ -77,14 +73,12 @@ export default function ExpulsionPage() {
                 It was never acknowledged. It was not referenced in the dismissal. To this day, it has never been answered.
             </div>
 
-            <div className="mt-8 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                <div className="bg-gray-100 px-4 py-2 font-semibold">Full Letter — March 27, 2025</div>
-                <div className="p-4">
-                    <VideoEmbed
-                        s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQD4DCE88XVM3S4AEGRY84R2/video.mp4"
-                    />
-                </div>
-            </div>
+
+            <VideoEmbed
+                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JQD4DCE88XVM3S4AEGRY84R2/video.mp4"
+                signalUrl="https://rswfire.com/signal/01JQD4DCE88XVM3S4AEGRY84R2"
+            />
+
 
             <Email
                 from="Sam White"

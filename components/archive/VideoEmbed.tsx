@@ -99,35 +99,29 @@ export default function VideoEmbed({
             </div>
 
             {/* Bottom bar */}
-            <div className="flex items-center justify-between px-3 py-1.5"
+            <div className="text-right px-3 py-1.5"
                  style={{ backgroundColor: 'rgba(26,58,74,0.06)' }}>
-                <span style={{
-                    fontFamily: 'var(--font-dm-mono), monospace',
-                    fontSize: '10px',
-                    letterSpacing: '0.1em',
-                    color: '#8a9ba8',
-                }}>
-                    {''}
-                </span>
-                {signalUrl && (
-                    <Link
-                        href={signalUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                            fontFamily: 'var(--font-dm-mono), monospace',
-                            fontSize: '10px',
-                            letterSpacing: '0.15em',
-                            color: '#c4622d',
-                            textTransform: 'uppercase',
-                            textDecoration: 'none',
-                        }}
-                        className="hover:opacity-70 transition-opacity"
-                    >
-                        {(ulid ? 'Signal: ' + ulid : 'View Signal')} →
-                    </Link>
-                )}
-            </div>
+
+
+            {signalUrl && (
+                <Link
+                    href={signalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        fontFamily: 'var(--font-dm-mono), monospace',
+                        fontSize: '10px',
+                        letterSpacing: '0.15em',
+                        color: '#c4622d',
+                        textTransform: 'uppercase',
+                        textDecoration: 'none',
+                    }}
+                    className="hover:opacity-70 transition-opacity"
+                >
+                    {(ulid ? 'Signal: ' + ulid : 'View Signal')} →
+                </Link>
+            )}
+        </div>
 
             {/* Description */}
             {description && (
