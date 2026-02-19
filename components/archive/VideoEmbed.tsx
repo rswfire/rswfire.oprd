@@ -54,11 +54,10 @@ export default function VideoEmbed({
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                        fontFamily: 'var(--font-dm-serif), serif',
-                        fontSize: '18px',
-                        letterSpacing: '0.05em',
+                        fontFamily: 'DM Serif Display, serif',
+                        fontSize: '20px',
                         color: '#c4622d',
-                        textDecoration: 'underline',
+                        textDecoration: 'none',
                     }}
                     className="hover:opacity-70 transition-opacity flex items-center gap-1.5"
                 >

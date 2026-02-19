@@ -1,6 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Open_Sans, DM_Mono } from 'next/font/google'
+import {Open_Sans, DM_Mono, DM_Serif_Display} from 'next/font/google'
 
 import "./globals.css";
 import Footer from "@/components/Footer";
@@ -17,6 +17,12 @@ const dmMono = DM_Mono({
     weight: ['400', '500'],
     subsets: ['latin'],
     variable: '--font-dm-mono',
+})
+
+const dmSerif = DM_Serif_Display({
+    weight: ['400'],
+    subsets: ['latin'],
+    variable: '--font-dm-serif-display',
 })
 
 export const metadata: Metadata = {
