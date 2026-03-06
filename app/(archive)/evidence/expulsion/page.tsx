@@ -7,7 +7,7 @@ import Email from "@/components/archive/Email";
 
 export const metadata: Metadata = {
     title: "Expulsion",
-    description: "March 25-27, 2025 - Permanent dismissal from all Oregon State Parks volunteer programs for speaking publicly about documented abuse.",
+    description: "March 25-26, 2025 - Permanent dismissal from all Oregon State Parks volunteer programs for speaking publicly about documented abuse.",
 };
 
 export default function ExpulsionPage() {
@@ -31,7 +31,7 @@ export default function ExpulsionPage() {
             </div>
 
             <div className="mt-4">
-                March 27: I sent Allison a detailed letter attempting accountability. Hours later, she dismissed me permanently — explicitly citing my public comments about the abuse.
+                March 26: I sent Allison a detailed letter attempting accountability. Hours later, she dismissed me permanently — explicitly citing my public comments about the abuse.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
