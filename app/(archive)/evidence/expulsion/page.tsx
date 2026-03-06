@@ -83,7 +83,7 @@ export default function ExpulsionPage() {
             <Email
                 from="Sam White"
                 to="Allison Watson, Volunteer Engagement Coordinator"
-                date="March 27, 2025"
+                date="March 26, 2025"
             >
 <pre className="whitespace-pre-wrap">{`Hi Allison,
 
