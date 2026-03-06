@@ -63,7 +63,7 @@ export default function ExpulsionPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">MARCH 27 — THE LETTER THEY IGNORED</h2>
+            <h2 className="text-xl font-semibold">MARCH 26 — THE LETTER THEY IGNORED</h2>
 
             <div className="mt-4">
                 After the containment call, I sent Allison a detailed letter that evening. It documented the pattern of misconduct, named specific incidents, and requested fair assessment.
@@ -125,7 +125,7 @@ Sam White`}</pre>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">MARCH 27 — THE PERMANENT DISMISSAL</h2>
+            <h2 className="text-xl font-semibold">MARCH 26 — THE PERMANENT DISMISSAL</h2>
 
             <div className="mt-4">
                 Hours after I sent that letter, Allison Watson responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> volunteer programs.
@@ -146,7 +146,7 @@ Sam White`}</pre>
             <Email
                 from="Allison Watson, Volunteer Engagement Coordinator"
                 to="Sam White"
-                date="March 27, 2025"
+                date="March 26, 2025"
             >
 <pre className="whitespace-pre-wrap">{`Hello Sam,
 
