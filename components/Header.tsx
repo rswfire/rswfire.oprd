@@ -53,7 +53,7 @@ export default function Header() {
                             </p>
 
                             <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
-                                Independent Evidentiary Record.
+                                Independently verifiable. Never legally challenged. Not going away.
                             </p>
                         </div>
                     </Link>
@@ -63,7 +63,7 @@ export default function Header() {
                             Independent Evidentiary Record.
                         </span>
                         <span className="text-xs tracking-wide text-slate-600">
-                            Not disputed. Not investigated. Not going away.
+                            Independently verifiable. Never legally challenged. Not going away.
                         </span>
                     </div>
 
