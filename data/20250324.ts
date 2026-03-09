@@ -10,7 +10,7 @@ export const DISMISSAL_TRANSMISSION: TransmissionData = {
     fieldState: "institutional rupture navigation",
     orientation: "toward public accountability",
     label: "Transmission — March 24, 2025",
-    preview: "Before this video began he had already been dismissed. Ryan Warren had come to the RV. Collected the keys. Taken the golf cart. Given him 24 hours to vacate the site where he had lived and worked for nearly two months. No paperwork. Just the conversation we had. He turned on the camera.",
+    preview: "Before this video began, Samuel White had already been dismissed. Ryan Warren had come to the RV. Collected the keys. Taken the golf cart. Given him 24 hours to vacate the site where he had lived and worked for nearly two months. No paperwork. Just the conversation we had. He turned on the camera.",
     entries: [
         {
             timestamp: "[0:01 — 0:37]",
