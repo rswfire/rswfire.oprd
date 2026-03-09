@@ -3,6 +3,9 @@
 import Link from "next/link";
 import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
+import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+
+import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
 
 export default function OverviewPage() {
     return (
@@ -37,10 +40,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 {/* Video */}
-                <VideoEmbed
-                    s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KCYZ8E1GTHBZCDNYA57AM2Q0/video.mp4"
-                    signalUrl="https://rswfire.com/signal/01KCYZ8E1GTHBZCDNYA57AM2Q0"
-                />
+                <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} />
 
                 <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
                     <div className="mt-4 text-md tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
