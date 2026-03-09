@@ -13,23 +13,6 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="mt-6 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
-                    <div className="flex-1 flex justify-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-800 italic">
-                        &ldquo;Chew glass and swallow it.&rdquo;
-                    </div>
-                    <div className="text-sm text-gray-500 flex gap-2 sm:ml-8 justify-end sm:justify-start">
-                        <div className="mt-4 text-lg">&mdash;</div>
-                        <div className="text-left mt-4">
-                            <div className="font-bold text-lg">Ryan Warren</div>
-                            <div className="text-lg">Park Manager</div>
-                            <div className="italic text-lg">Oregon State Parks</div>
-                            <div className="text-lg italic">Said: <Link href="/evidence/compliance/" className="underline text-emerald-700 hover:text-emerald-600">February 9</Link> and <Link href="/evidence/coercion/" className="underline text-emerald-700 hover:text-emerald-600">March 5, 2025</Link></div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
                     <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
                     <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
@@ -37,14 +20,7 @@ export default function OverviewPage() {
                     <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
-
-                {/* Video */}
-                <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} />
-
                 <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
-                    <div className="mt-4 text-md tracking-tight"><strong>Five days before Christmas, 2025</strong>.</div>
-                    <div className="text-md tracking-tight">My full testimony &mdash; in one take, no edits, enduring the sniffles &mdash; while walking a forest trail.</div>
 
                     <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
                         <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
@@ -54,6 +30,12 @@ export default function OverviewPage() {
 
                     <div className="mt-4 text-base tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
+
+                <hr className="my-6 border-t border-gray-300" />
+
+                {/* Video */}
+                <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} />
+
             </div>
 
             {/* THE VERDICT */}
