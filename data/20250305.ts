@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/archive/TransmissionDisclosure";
+import { TransmissionData } from "@/components/TransmissionDisclosure";
 
 export const COERCION_TRANSMISSION: TransmissionData = {
     ulid: "01JW9VC5QG9FHNN587PTEKHK4K",
