@@ -4,7 +4,7 @@ import SectionPage from "@/components/SectionPage";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "The System",
+    title: "Mapping the System",
     description: "How institutional abuse of volunteers actually works. The architecture underneath the individual choices. A map for anyone about to walk into something similar.",
 };
 
