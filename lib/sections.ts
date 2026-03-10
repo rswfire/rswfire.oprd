@@ -6,6 +6,8 @@ export const archiveSections = [
     { href: "/key-individuals", label: "Key Individuals" },
     { href: "/timeline", label: "Timeline" },
     { href: "#separator-2", label: "", separator: true },
+    { href: "/system-map", label: "Mapping the System" },
+    { href: "#separator-3", label: "", separator: true },
     {
 
         href: "/evidence",
@@ -21,7 +23,7 @@ export const archiveSections = [
             { href: "/evidence/containment", label: "8. Institutional Containment" }
         ]
     },
-    { href: "#separator-3", label: "", separator: true },
+    { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",
         label: "The Director's Decisions",
@@ -31,10 +33,10 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-4", label: "", separator: true },
-    { href: "/governor-kotek", label: "The Governor's Silence" },
     { href: "#separator-5", label: "", separator: true },
+    { href: "/governor-kotek", label: "The Governor's Silence" },
+    { href: "#separator-6", label: "", separator: true },
     { href: "/correspondence", label: "Correspondence" },
     { href: "/faq", label: "Frequently Asked Questions" },
-    { href: "/system-map", label: "Mapping the System" },
+    { href: "/attorney", label: "Seeking Representation" },
 ];
