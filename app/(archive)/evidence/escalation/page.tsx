@@ -1,4 +1,4 @@
-// app/(archive)/evidence/compliance/page.tsx
+// app/(archive)/evidence/escalation/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function CompliancePage() {
     return (
         <SectionPage
-            title="COMPLIANCE"
-            subtitle="ATTEMPTING INSTITUTIONAL CONFORMITY"
-            previousPage={{ href: "/evidence/confrontation", label: "Confrontation" }}
-            nextPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
+            title="THE ESCALATION RESPONSE"
+            subtitle="DEMONSTRATING INSTITUTIONAL CONFORMITY"
+            previousPage={{ href: "/evidence/origin", label: "The Origin Event" }}
+            nextPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
             summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
         >
 

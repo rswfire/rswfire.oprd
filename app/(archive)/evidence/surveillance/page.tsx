@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function SurveillancePage() {
     return (
         <SectionPage
-            title="SURVEILLANCE"
+            title="ASSESSMENT & SURVEILLANCE"
             subtitle="UNIDENTIFIED OPERATIVE"
-            previousPage={{ href: "/evidence/coercion", label: "Coercion" }}
-            nextPage={{ href: "/evidence/dismissal", label: "Dismissal" }}
+            previousPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
+            nextPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}
             summary="Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment."
         >
 

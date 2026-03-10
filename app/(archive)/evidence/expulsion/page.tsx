@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function ExpulsionPage() {
     return (
         <SectionPage
-            title="EXPULSION"
+            title="EXPULSION & RETALIATION"
             subtitle="ALLISON WATSON, ENGAGEMENT PROGRAMS MANAGER"
-            previousPage={{ href: "/evidence/dismissal", label: "Dismissal" }}
-            nextPage={{ href: "/evidence/containment", label: "Containment" }}
+            previousPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}
+            nextPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             summary="Allison Watson issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
         >
 

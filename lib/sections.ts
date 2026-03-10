@@ -11,14 +11,14 @@ export const archiveSections = [
         href: "/evidence",
         label: "Evidence",
         subsections: [
-            { href: "/evidence/confrontation", label: "1. Confrontation" },
-            { href: "/evidence/compliance", label: "2. Compliance" },
-            { href: "/evidence/betrayal", label: "3. Betrayal" },
-            { href: "/evidence/coercion", label: "4. Coercion" },
-            { href: "/evidence/surveillance", label: "5. Surveillance" },
-            { href: "/evidence/dismissal", label: "6. Dismissal" },
-            { href: "/evidence/expulsion", label: "7. Expulsion" },
-            { href: "/evidence/containment", label: "8. Containment" }
+            { href: "/evidence/origin", label: "1. The Origin Event" },
+            { href: "/evidence/escalation", label: "2. The Escalation Response" },
+            { href: "/evidence/trust", label: "3. Trust Recruitment" },
+            { href: "/evidence/coercion", label: "4. The Coercion Meeting" },
+            { href: "/evidence/surveillance", label: "5. Assessment & Surveillance" },
+            { href: "/evidence/dismissal", label: "6. Dismissal Without Process" },
+            { href: "/evidence/expulsion", label: "7. Expulsion & Retaliation" },
+            { href: "/evidence/containment", label: "8. Institutional Containment" }
         ]
     },
     { href: "#separator-3", label: "", separator: true },

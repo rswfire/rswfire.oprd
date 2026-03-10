@@ -14,7 +14,7 @@ export default function EvidencePage() {
             title="EVIDENCE"
             subtitle="DOCUMENTED PROOF"
             previousPage={{ href: "/timeline", label: "Timeline" }}
-            nextPage={{ href: "/evidence/confrontation", label: "Confrontation" }}
+            nextPage={{ href: "/evidence/origin", label: "Origin" }}
         >
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                 <div className="text-base">
@@ -37,8 +37,8 @@ export default function EvidencePage() {
 
             <div className="mt-6 space-y-6">
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/confrontation" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        1. CONFRONTATION
+                    <Link href="/evidence/origin" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        1. THE ORIGIN EVENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         February 9, 2025 — Kati Baker responds dismissively to operational questions. I name her tone. Same day: Ryan Warren confronts me alone, cataloging first-week mistakes.
@@ -49,8 +49,8 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/compliance" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        2. COMPLIANCE
+                    <Link href="/evidence/escalation" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        2. THE ESCALATION RESPONSE
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         February 12, 2025 — Explicit commitment to institutional conformity. Abuse escalated anyway.
@@ -61,8 +61,8 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/betrayal" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        3. BETRAYAL
+                    <Link href="/evidence/trust" className="text-lg font-semibold text-emerald-700 hover:underline">
+                        3. TRUST RECRUITMENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         February-March 2025 — Logan Bliss elicits trust through reciprocal vulnerability, then transmits confidential disclosures to management who weaponize them against me.
@@ -74,7 +74,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/coercion" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        4. COERCION
+                        4. THE COERCION MEETING
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 5, 2025 — Ryan Warren and Kati Baker summon me to public picnic table for over an hour of psychological pressure. Ryan tells me to "chew glass and swallow it," admits I was never given benefit of the doubt.
@@ -86,7 +86,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/surveillance" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        5. SURVEILLANCE
+                        5. ASSESSMENT &amp; SURVEILLANCE
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 18, 2025 — Unidentified operative approaches me while cleaning yurts alone, takes photos of dirty sites mid-clean, presses me with direct personal questions about leadership treatment. Occurs during regional event when all rangers were away.
@@ -98,7 +98,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/dismissal" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        6. DISMISSAL
+                        6. DISMISSAL WITHOUT PROCESS
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 24, 2025 — Ryan Warren dismisses me by phone using fabricated pretext. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
@@ -110,7 +110,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/expulsion" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        7. EXPULSION
+                        7. EXPULSION &amp; RETALIATION
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 25-27, 2025 — Allison Watson weaponizes Logan's disclosures, issues permanent ban explicitly citing public speech about abuse. First Amendment retaliation in writing on agency letterhead.
@@ -122,7 +122,7 @@ export default function EvidencePage() {
 
                 <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/containment" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        8. CONTAINMENT
+                        8. INSTITUTIONAL CONTAINMENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         August 2025–February 2026 — Every institutional response to accountability — the Director's procedural deflection, the public records obstruction, the reframing of documentation as emotional processing, the Deputy Director's attempt to restrict communication — follows the same logic. Not correction. Containment.

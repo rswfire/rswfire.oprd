@@ -60,7 +60,7 @@ export default function SystemMapPage() {
             </div>
 
             <div className="mt-4">
-                In this case: a 6AM text asking for operational clarity during a power outage. A follow-up email naming a supervisor's dismissive tone. <Link href="/evidence/confrontation" className="underline text-emerald-800 hover:text-emerald-600">That email became the origin of everything.</Link>
+                In this case: a 6AM text asking for operational clarity during a power outage. A follow-up email naming a supervisor's dismissive tone. <Link href="/evidence/origin" className="underline text-emerald-800 hover:text-emerald-600">That email became the origin of everything.</Link>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -124,7 +124,7 @@ export default function SystemMapPage() {
             </div>
 
             <div className="mt-4">
-                In this case: 90 minutes of reciprocal conversation in the Welcome Center. A walk the following day. A clear boundary set before any disclosure. A cautious hour of genuine context shared in good faith. <Link href="/evidence/betrayal" className="underline text-emerald-800 hover:text-emerald-600">Delivered to management.</Link>
+                In this case: 90 minutes of reciprocal conversation in the Welcome Center. A walk the following day. A clear boundary set before any disclosure. A cautious hour of genuine context shared in good faith. <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">Delivered to management.</Link>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function DismissalPage() {
     return (
         <SectionPage
-            title="DISMISSAL"
+            title="DISMISSAL WITHOUT PROCESS"
             subtitle="RYAN WARREN, PARK MANAGER"
-            previousPage={{ href: "/evidence/surveillance", label: "Surveillance" }}
-            nextPage={{ href: "/evidence/expulsion", label: "Expulsion" }}
+            previousPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
+            nextPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
             summary="Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
         >
             <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} defaultExpanded />

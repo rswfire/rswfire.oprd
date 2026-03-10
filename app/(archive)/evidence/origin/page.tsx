@@ -1,4 +1,4 @@
-// app/(archive)/evidence/confrontation/page.tsx
+// app/(archive)/evidence/origin/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function ConfrontationPage() {
     return (
         <SectionPage
-            title="CONFRONTATION"
+            title="THE ORIGIN EVENT"
             subtitle="KATI BAKER, PARK SUPERVISOR"
             previousPage={{ href: "/evidence", label: "Evidence" }}
-            nextPage={{ href: "/evidence/compliance", label: "Compliance" }}
+            nextPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
             summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
         >
 
@@ -60,7 +60,7 @@ I choose to be here because I care about making these parks work well for everyo
 
 Additionally, I see an opportunity to improve how real-time updates are shared across teams. If there’s interest, I’d be happy to discuss a simple system for tracking and communicating outages, reducing redundant contacts while keeping everyone better informed.
 
-Best, 
+Best,
 Sam
 `}</pre>
             </Email>

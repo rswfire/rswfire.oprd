@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function ContainmentPage() {
     return (
         <SectionPage
-            title="CONTAINMENT"
+            title="INSTITUTIONAL CONTAINMENT"
             subtitle="LISA SUMPTION, DIRECTOR &amp; J.R. COLLIER, DEPUTY DIRECTOR"
-            previousPage={{ href: "/evidence/expulsion", label: "Expulsion" }}
+            previousPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
             nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
             summary="Every institutional response to documented abuse has followed the same logic: not correction, not accountability, not investigation — containment."
         >

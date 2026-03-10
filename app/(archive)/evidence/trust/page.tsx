@@ -1,4 +1,4 @@
-// app/(archive)/evidence/betrayal/page.tsx
+// app/(archive)/evidence/trust/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     description: "Documentation of supervisory betrayal and weaponization of vulnerability by Volunteer Services Lead Logan Bliss.",
 };
 
-export default function BetrayalPage() {
+export default function TrustRecruitmentPage() {
     return (
         <SectionPage
-            title="BETRAYAL"
+            title="TRUST RECRUITMENT"
             subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
-            previousPage={{ href: "/evidence/compliance", label: "Compliance" }}
-            nextPage={{ href: "/evidence/coercion", label: "Coercion" }}
+            previousPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
+            nextPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
             summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
         >
 

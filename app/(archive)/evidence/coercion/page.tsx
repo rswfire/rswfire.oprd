@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function CoercionPage() {
     return (
         <SectionPage
-            title="COERCION"
+            title="THE COERCION MEETING"
             subtitle="RYAN WARREN, PARK MANAGER &amp; KATI BAKER, PARK SUPERVISOR"
-            previousPage={{ href: "/evidence/betrayal", label: "Betrayal" }}
-            nextPage={{ href: "/evidence/surveillance", label: "Surveillance" }}
+            previousPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
+            nextPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
             summary="Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation."
         >
 

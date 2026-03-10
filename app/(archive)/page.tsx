@@ -64,7 +64,7 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Kati Baker</Link>, Park Supervisor</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/confrontation" className="underline hover:text-emerald-600">Evidence: Confrontation</Link></li>
+                            <li><Link href="/evidence/origin" className="underline hover:text-emerald-600">Evidence: Origin</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Surveillance</Link></li>
                         </ul>
@@ -105,7 +105,7 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Logan Bliss</Link>, Volunteer Services Lead</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/betrayal" className="underline hover:text-emerald-600">Evidence: Betrayal</Link></li>
+                            <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
                             <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion</Link></li>
                         </ul>
