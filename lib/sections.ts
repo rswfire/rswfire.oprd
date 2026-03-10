@@ -34,4 +34,7 @@ export const archiveSections = [
     },
     { href: "#separator-4", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
+    { href: "#separator-5", label: "", separator: true },
+    { href: "/correspondence", label: "Correspondence" },
+    { href: "/system-map", label: "System Map" },
 ];

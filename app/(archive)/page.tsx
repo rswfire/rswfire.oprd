@@ -259,7 +259,7 @@ export default function OverviewPage() {
             <ArchiveVideos/>
 
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
-                <div className="text-xl text-black font-bold mb-4">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</div>
+                <div className="text-xl text-black font-bold mb-4"><Link href="/system-map" className="hover:underline">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</Link></div>
 
                 <div className="mb-6 pb-4 border-b border-gray-300">
                     <div>Oregon state government can never again abuse a volunteer this way without documented precedent &mdash; or what they would euphemistically call liability.</div>
