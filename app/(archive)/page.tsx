@@ -13,6 +13,14 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
+                <div className="pt-4 mx-4 mb-6">
+                    <Link href="/attorney" className="block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
+                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Seeking Representation</div>
+                        <div className="text-base font-semibold text-emerald-900">First Amendment retaliation. Clean claim. Documented on agency letterhead.</div>
+                        <div className="text-sm text-emerald-800 mt-1">No settlement. No NDA. United States Supreme Court if necessary. →</div>
+                    </Link>
+                </div>
+
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
                     <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
                     <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
