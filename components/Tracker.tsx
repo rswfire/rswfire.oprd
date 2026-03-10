@@ -46,27 +46,6 @@ const LEGAL_DEADLINE: LegalDeadline = {
     statute: "Statute of Limitations (42 U.S.C. § 1983)"
 };
 
-const PENDING_CLAIMS: PendingClaim[] = [
-    {
-        label: "First Amendment Retaliation",
-        statute: "42 U.S.C. § 1983",
-        context: "Violation ongoing.",
-        link: "/evidence/expulsion"
-    },
-    {
-        label: "Public Records Violation",
-        statute: "ORS 192.324",
-        context: "90+ days of silence. Portal obstruction documented.",
-        link: "/lisa-sumption/public-records-request"
-    },
-    {
-        label: "Identity-Based Targeting",
-        statute: "42 U.S.C. § 1983 / ORS 659A",
-        context: "Sexuality mocked on recording. Disclosures weaponized.",
-        link: "/evidence/betrayal"
-    }
-];
-
 function calculateDaysSince(dateString: string): number {
     const targetDate = new Date(dateString);
     targetDate.setHours(0, 0, 0, 0);
@@ -161,40 +140,6 @@ export default function Tracker() {
                                 </div>
                             );
                         })}
-                    </div>
-                </div>
-
-                {/* PENDING CLAIMS */}
-                <div className="pt-2 border-t border-slate-200">
-                    <h3 className="text-xs font-semibold text-slate-700 mb-2 uppercase tracking-wide">
-                        Pending Claims
-                    </h3>
-                    <div className="text-xs text-slate-500 mb-2 italic">
-                        Violation ongoing. Days at filing: 0.
-                    </div>
-                    <div className="space-y-2">
-                        {PENDING_CLAIMS.map((claim, index) => (
-                            <div key={index} className="bg-slate-50 p-2.5 rounded">
-                                <div className="flex justify-between items-center mb-1">
-                                    <div className="text-sm font-medium text-slate-900">
-                                        {claim.link ? (
-                                            <Link href={claim.link} className="underline hover:text-emerald-700">
-                                                {claim.label}
-                                            </Link>
-                                        ) : claim.label}
-                                    </div>
-                                    <div className="text-2xl font-bold text-slate-300 tabular-nums">
-                                        0
-                                    </div>
-                                </div>
-                                <div className="text-xs text-slate-500 leading-snug">
-                                    {claim.statute}
-                                </div>
-                                <div className="text-xs text-slate-600 leading-snug mt-1">
-                                    {claim.context}
-                                </div>
-                            </div>
-                        ))}
                     </div>
                 </div>
 

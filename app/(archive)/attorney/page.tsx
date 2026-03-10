@@ -92,7 +92,7 @@ export default function AttorneyPage() {
             </div>
 
             <div className="mt-4">
-                They will attempt to introduce complexity. The full pattern of conduct. The archive. The correspondence. The prior placements. Everything except the letter.
+                They will attempt to introduce complexity. Everything I documented. Every email I sent. Every letter I wrote. Every record I kept. Everything except the letter they signed.
             </div>
 
             <div className="mt-4">
