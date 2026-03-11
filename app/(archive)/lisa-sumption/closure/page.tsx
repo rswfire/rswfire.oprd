@@ -28,7 +28,7 @@ export default function LisaClosurePage() {
 
             <div className="mt-4">
                 Her response did not address the evidence. Instead, she reframed documentation as
-                emotional processing and terminated the line of communication entirely.
+                pathology and terminated the line of communication entirely.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -97,73 +97,12 @@ Lisa
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">Close of Record</h2>
-
-            <div className="mt-4 mb-6 text-gray-600">
-                After Lisa Sumption closed communication, I closed documentation. What follows is the formal termination of institutional engagement.
-            </div>
-
-            <Email
-                from="Robert Samuel White"
-                to="Director Lisa Sumption"
-                date="December 22, 2025"
-                subject="Close of Record"
-            >
-                <pre className="whitespace-pre-wrap font-mono text-sm">
-{`Lisa,
-This is not a request. It is not a plea. It is not an opening for dialogue.
-
-This is the close of record.
-
-You closed communication in December.
-I close documentation now.
-
-What began as local abuse by two supervisors reached your desk with comprehensive evidence.
-You had the authority to interrupt the pattern.
-You refused.
-
-That refusal transformed a containable failure into permanent institutional exposure.
-
-Not because I made it so.
-Because you chose to shield abuse over accountability.
-
-You absorbed evidence into bureaucratic deflection.
-You reframed documentation as "emotional processing."
-You met truth with silence.
-
-And in doing so, you demonstrated exactly what this institution does when confronted with documented abuse:
-It protects the abusers. It dismisses the evidence. It erases the target.
-
-I mapped that system.
-I made it legible.
-I made it permanent.
-
-The archive exists now — not to change your mind, but to ensure the next person knows this pattern has institutional authorization at the director level.
-
-Your silence isn't neutrality.
-It's complicity made structural.
-
-Every day you refuse accountability, the evidence speaks louder.
-
-This is reputational collapse in slow motion.
-
-What you refused to name has already named you.
-
-— Robert Samuel White
-Former Oregon State Parks Volunteer
-`}
-                </pre>
-            </Email>
-
-            <hr className="my-6 border-t border-gray-300" />
-
             <h2 className="text-xl font-semibold">Why This Exchange Matters</h2>
 
             <div className="space-y-4">
                 <div>Director Sumption's response reframed documented institutional misconduct &mdash; supported by recordings, emails, and written evidence &mdash; as emotional impact and personal perspective.</div>
                 <div>This is not acknowledgment. It is <a href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">epistemic violation</a>: the laundering of evidence into therapeutic framing to strip it of institutional weight.</div>
                 <div>Her decision to close communication was a strategic ending at the moment when institutional accountability was required.</div>
-                <div>The &quot;Close of Record&quot; letter is not a continuation of correspondence. It is the formal termination of my institutional engagement and the completion of documentation.</div>
                 <div>Institutional closure does not erase the record.</div>
                 <div>It becomes part of it.</div>
             </div>
