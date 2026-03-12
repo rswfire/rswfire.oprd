@@ -16,10 +16,12 @@ export default function OverviewPage() {
                 <div className="pt-4 mx-4 mb-6">
                     <Link href="/attorney" className="block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
                         <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Seeking Representation</div>
-                        <div className="text-base font-semibold text-emerald-900">First Amendment retaliation. Clean claim. Documented on agency letterhead.</div>
-                        <div className="text-sm text-emerald-800 mt-1">No settlement. No NDA. United States Supreme Court if necessary. →</div>
+                        <div className="text-base font-semibold text-emerald-900">First Amendment retaliation. Documented on agency letterhead.</div>
+                        <div className="text-sm text-emerald-800 mt-1">No settlement. No NDA. United States Supreme Court. →</div>
                     </Link>
                 </div>
+
+                <hr className="my-6 border-t border-gray-300" />
 
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
                     <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
@@ -36,7 +38,7 @@ export default function OverviewPage() {
                         <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                     </div>
 
-                    <div className="mt-4 text-base tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -54,7 +56,7 @@ export default function OverviewPage() {
                 </h2>
 
                 <div className="mt-2 text-center text-sm text-gray-600">
-                    A documented record.<br/>Not disputed. Not investigated. Not going away.
+                    Independently verifiable. Never legally challenged. Not going away.
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -64,9 +66,9 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Kati Baker</Link>, Park Supervisor</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/origin" className="underline hover:text-emerald-600">Evidence: Origin</Link></li>
-                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
-                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Surveillance</Link></li>
+                            <li><Link href="/evidence/origin" className="underline hover:text-emerald-600">Evidence: The Origin Event</Link></li>
+                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
+                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -85,8 +87,8 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren</Link>, Park Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
-                            <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal</Link></li>
+                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
+                            <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal Without Process</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -106,8 +108,8 @@ export default function OverviewPage() {
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
-                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
-                            <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion</Link></li>
+                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
+                            <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion &amp; Retaliation</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -126,7 +128,7 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg">Unidentified Operative</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Surveillance</Link></li>
+                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -144,8 +146,8 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: Coercion</Link></li>
-                            <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion</Link></li>
+                            <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
+                            <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion &amp; Retaliation</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -167,7 +169,7 @@ export default function OverviewPage() {
                             <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">The Open Letter</Link></li>
                             <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">The Public Records Request</Link></li>
                             <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">The Closure</Link></li>
-                            <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Containment</Link></li>
+                            <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -185,7 +187,7 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/evidence/containment" className="underline text-emerald-800 hover:text-emerald-600">J.R. Collier</Link>, Deputy Director</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Containment</Link></li>
+                            <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -259,14 +261,13 @@ export default function OverviewPage() {
             <ArchiveVideos/>
 
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
-                <div className="text-xl text-black font-bold mb-4"><Link href="/system-map" className="hover:underline">THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.</Link></div>
 
-                <div className="mb-6 pb-4 border-b border-gray-300">
-                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent &mdash; or what they would euphemistically call liability.</div>
-                    <div className="mt-4">When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
-                    <div className="mt-4">It became pattern evidence for every volunteer program across Oregon's executive branch.</div>
-                    <div className="mt-4">Their institutional silence does not erase the pattern. It confirms it.</div>
+                <div className="mb-6 text-sm">
+                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent. When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
+                    <div className="mt-2">Their institutional silence does not erase the pattern. It confirms it.</div>
                 </div>
+
+                <hr className="my-6 border-t border-gray-300" />
 
                 <div className="mt-4 font-bold">This archive is not for revenge.</div>
 
@@ -276,7 +277,15 @@ export default function OverviewPage() {
 
                 <div className="mt-4">It does not ask for apology.</div>
                 <div>It does not ask for repair.</div>
-                <div><Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
+                <div><Link href="/faq#epistemic" className="text-emerald-700 hover:underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
+
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="pt-4 mx-4 mt-6 text-center font-bold">
+                    <Link href="/system-map" className="block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
+                        THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
+                    </Link>
+                </div>
 
             </div>
 
