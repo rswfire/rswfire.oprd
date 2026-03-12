@@ -49,17 +49,17 @@ export default function OverviewPage() {
             </div>
 
             {/* THE VERDICT */}
-            <div className="mt-8 w-full p-8 rounded-xl bg-green-50 border border-green-300 text-base">
+            <div className="mt-8 w-full p-8 rounded-xl bg-green-50 border border-emerald-300 text-base">
 
                 <h2 className="font-bold text-lg text-center tracking-wide">
                     THIS IS WHAT THEY DID
                 </h2>
 
-                <div className="mt-2 text-center text-sm text-gray-600">
+                <div className="mt-2 text-center text-sm font-bold">
                     Independently verifiable. Never legally challenged. Not going away.
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
+                <hr className="my-6 border-t border-emerald-600" />
 
                 {/* KATI BAKER */}
                 <div className="mt-6">
@@ -67,8 +67,11 @@ export default function OverviewPage() {
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/origin" className="underline hover:text-emerald-600">Evidence: The Origin Event</Link></li>
+                            <li><Link href="/evidence/escalation" className="underline hover:text-emerald-600">Evidence: The Escalation Response</Link></li>
+                            <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
+                            <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal Without Process</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -80,13 +83,14 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* RYAN WARREN */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren</Link>, Park Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
+                            <li><Link href="/evidence/escalation" className="underline hover:text-emerald-600">Evidence: The Escalation Response</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal Without Process</Link></li>
                         </ul>
@@ -100,7 +104,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* LOGAN BLISS */}
                 <div className="mt-4">
@@ -121,7 +125,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* UNIDENTIFIED OPERATIVE */}
                 <div className="mt-4">
@@ -139,13 +143,14 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* ALLISON WATSON */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
+                            <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion &amp; Retaliation</Link></li>
                         </ul>
@@ -159,16 +164,16 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* LISA SUMPTION */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">The Open Letter</Link></li>
-                            <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">The Public Records Request</Link></li>
-                            <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">The Closure</Link></li>
+                            <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">Lisa Sumption: The Open Letter</Link></li>
+                            <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">Lisa Sumption: The Public Records Request</Link></li>
+                            <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">Lisa Sumption: The Closure</Link></li>
                             <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
                         </ul>
                     </div>
@@ -180,7 +185,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* JR COLLIER */}
                 <div className="mt-4">
@@ -197,18 +202,23 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-gray-200" />
+                <hr className="my-4 border-t border-emerald-600" />
 
                 {/* GOVERNOR KOTEK */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link></div>
+                    <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
+                        <ul className="text-sm text-emerald-700 space-y-1 list-none">
+                            <li><Link href="/governor-kotek" className="underline hover:text-emerald-600">The Governor's Silence</Link></li>
+                        </ul>
+                    </div>
                     <div className="mt-3 space-y-2 text-base">
                         <div>Oregon's first openly LGBTQ+ governor. A gay volunteer documented identity-based targeting by her state employees. Her appointed director shielded the abusers. Her office received a formal complaint on November 18, 2025. Her campaign received comprehensive documentation on December 13, 2025.</div>
                         <div>Silence.</div>
                     </div>
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
+                <hr className="my-6 border-t border-emerald-600" />
 
                 <div className="mt-4 text-lg font-bold">What they took:</div>
 
@@ -228,7 +238,7 @@ export default function OverviewPage() {
                 <div className="mt-4">That is retaliation for protected speech.</div>
                 <div>That is denial of civic participation as punishment for exercising constitutional rights.</div>
 
-                <hr className="my-6 border-t border-gray-300" />
+                <hr className="my-6 border-t border-emerald-600" />
 
                 <div className="mt-4 text-lg font-bold">Why it matters:</div>
 
