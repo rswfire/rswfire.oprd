@@ -12,7 +12,6 @@ export default function SelectedReadingPage() {
     return (
         <SectionPage
             title="SELECTED READING"
-            subtitle="FROM THE INTERIOR RECORD"
         >
 
             <div className="mt-4">
