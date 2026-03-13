@@ -35,9 +35,29 @@ export default function SystemMapPage() {
                 If you recognize what follows, you are not imagining it.
             </div>
 
+            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+                <div className="text-base font-semibold mb-4">THE STAGES:</div>
+                <ul className="space-y-2">
+                    <li><a href="#stage-one" className="text-emerald-700 underline hover:text-emerald-600">Stage One — The Origin Event</a></li>
+                    <li><a href="#stage-two" className="text-emerald-700 underline hover:text-emerald-600">Stage Two — The Escalation Response</a></li>
+                    <li><a href="#stage-three" className="text-emerald-700 underline hover:text-emerald-600">Stage Three — Trust Recruitment</a></li>
+                    <li><a href="#stage-four" className="text-emerald-700 underline hover:text-emerald-600">Stage Four — The Coercion Meeting</a></li>
+                    <li><a href="#stage-five" className="text-emerald-700 underline hover:text-emerald-600">Stage Five — Assessment and Surveillance</a></li>
+                    <li><a href="#stage-six" className="text-emerald-700 underline hover:text-emerald-600">Stage Six — Dismissal Without Process</a></li>
+                    <li><a href="#stage-seven" className="text-emerald-700 underline hover:text-emerald-600">Stage Seven — The Containment Call</a></li>
+                    <li><a href="#stage-eight" className="text-emerald-700 underline hover:text-emerald-600">Stage Eight — Retaliation in Writing</a></li>
+                    <li><a href="#stage-nine" className="text-emerald-700 underline hover:text-emerald-600">Stage Nine — Institutional Containment</a></li>
+                    <li><a href="#stage-ten" className="text-emerald-700 underline hover:text-emerald-600">Stage Ten — The Silence Strategy</a></li>
+                    <li><a href="#requires" className="text-emerald-700 underline hover:text-emerald-600">What the System Requires of You</a></li>
+                    <li><a href="#breaks" className="text-emerald-700 underline hover:text-emerald-600">What Breaks the System</a></li>
+                </ul>
+            </div>
+
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE ONE — THE ORIGIN EVENT</h2>
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 id="stage-one" className="text-xl font-semibold scroll-mt-48">STAGE ONE — THE ORIGIN EVENT</h2>
 
             <div className="mt-4">
                 It begins with something small.
@@ -65,7 +85,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE TWO — THE ESCALATION RESPONSE</h2>
+            <h2 id="stage-two" className="text-xl font-semibold scroll-mt-48">STAGE TWO — THE ESCALATION RESPONSE</h2>
 
             <div className="mt-4">
                 The institution does not respond to the record by addressing what the record documents.
@@ -105,7 +125,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE THREE — TRUST RECRUITMENT</h2>
+            <h2 id="stage-three" className="text-xl font-semibold scroll-mt-48">STAGE THREE — TRUST RECRUITMENT</h2>
 
             <div className="mt-4">
                 The system needs material.
@@ -129,7 +149,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE FOUR — THE COERCION MEETING</h2>
+            <h2 id="stage-four" className="text-xl font-semibold scroll-mt-48">STAGE FOUR — THE COERCION MEETING</h2>
 
             <div className="mt-4">
                 Now the system has what it needs.
@@ -157,7 +177,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE FIVE — ASSESSMENT AND SURVEILLANCE</h2>
+            <h2 id="stage-five" className="text-xl font-semibold scroll-mt-48">STAGE FIVE — ASSESSMENT AND SURVEILLANCE</h2>
 
             <div className="mt-4">
                 The system needs to understand what it's dealing with.
@@ -181,7 +201,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE SIX — DISMISSAL WITHOUT PROCESS</h2>
+            <h2 id="stage-six" className="text-xl font-semibold scroll-mt-48">STAGE SIX — DISMISSAL WITHOUT PROCESS</h2>
 
             <div className="mt-4">
                 When the volunteer cannot be pressured into resigning and the assessment has failed, the system removes them.
@@ -205,7 +225,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE SEVEN — THE CONTAINMENT CALL</h2>
+            <h2 id="stage-seven" className="text-xl font-semibold scroll-mt-48">STAGE SEVEN — THE CONTAINMENT CALL</h2>
 
             <div className="mt-4">
                 When the volunteer goes public — when they document the dismissal before the institution has finished constructing its narrative — the system deploys its most sophisticated instrument.
@@ -229,7 +249,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE EIGHT — RETALIATION IN WRITING</h2>
+            <h2 id="stage-eight" className="text-xl font-semibold scroll-mt-48">STAGE EIGHT — RETALIATION IN WRITING</h2>
 
             <div className="mt-4">
                 This is where this system makes its most catastrophic error.
@@ -257,7 +277,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE NINE — INSTITUTIONAL CONTAINMENT</h2>
+            <h2 id="stage-nine" className="text-xl font-semibold scroll-mt-48">STAGE NINE — INSTITUTIONAL CONTAINMENT</h2>
 
             <div className="mt-4">
                 When the volunteer continues to document and escalate, the institution builds walls.
@@ -281,7 +301,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">STAGE TEN — THE SILENCE STRATEGY</h2>
+            <h2 id="stage-ten" className="text-xl font-semibold scroll-mt-48">STAGE TEN — THE SILENCE STRATEGY</h2>
 
             <div className="mt-4">
                 The final stage is silence.
@@ -309,7 +329,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">WHAT THE SYSTEM REQUIRES OF YOU</h2>
+            <h2 id="requires" className="text-xl font-semibold scroll-mt-48">WHAT THE SYSTEM REQUIRES OF YOU</h2>
 
             <div className="mt-4">
                 If you are reading this because you recognize what you just read — here is what the system needs from you to work.
@@ -353,7 +373,7 @@ export default function SystemMapPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">WHAT BREAKS THE SYSTEM</h2>
+            <h2 id="breaks" className="text-xl font-semibold scroll-mt-48">WHAT BREAKS THE SYSTEM</h2>
 
             <div className="mt-4">
                 Documentation that begins before the system knows it needs to worry about documentation.

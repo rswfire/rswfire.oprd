@@ -26,7 +26,7 @@ export default function Header() {
     }, [mobileMenuOpen]);
 
     return (
-        <header className="sticky top-0 z-20 border-b border-stone-200 bg-white backdrop-blur">
+        <header className="border-b border-stone-200 bg-white backdrop-blur">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
