@@ -12,7 +12,7 @@ export default function SystemMapPage() {
     return (
         <SectionPage
             title="MAPPING THE SYSTEM"
-            subtitle="HOW IT ACTUALLY WORKS"
+            subtitle="THE CULTURE PRODUCED UNDER LISA SUMPTION"
         >
 
             <div className="mt-4">
