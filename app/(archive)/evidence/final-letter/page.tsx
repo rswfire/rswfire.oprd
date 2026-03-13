@@ -103,7 +103,7 @@ export default function FinalLetterPage() {
 
                     .final-letter-signature-titles {
                         font-family: monospace;
-                        font-size: 0.75rem;
+                        font-size: 0.85rem;
                         letter-spacing: 0.05em;
                         line-height: 1.8;
                         opacity: 0.8;
@@ -159,13 +159,13 @@ But tell your man he is welcome on our trails. I would never want him to live wi
                     <div className="final-letter-signature">
                         <div className="final-letter-signature-name">Robert Samuel White</div>
                         <div className="final-letter-signature-titles">
-                            <span>U. S. Forest Service Caretaker</span>
-                            <span>Oregon Dunes National Recreation Area</span>
-                            <span>Siltcoos Corridor</span>
-                            <span>Founder of Autonomy Realms</span>
-                            <span>Owner of eNetwizard, Inc. Since 1998</span>
-                            <span>Former Oregon State Parks Volunteer</span>
-                            <span>Steward of oprdvolunteerabuse.org</span>
+                            <div>U. S. Forest Service Caretaker</div>
+                            <div>Oregon Dunes National Recreation Area</div>
+                            <div>Siltcoos Corridor</div>
+                            <div>Founder of Autonomy Realms</div>
+                            <div>Owner of eNetwizard, Inc. Since 1998</div>
+                            <div>Former Oregon State Parks Volunteer</div>
+                            <div>Steward of oprdvolunteerabuse.org</div>
                         </div>
                     </div>
 
