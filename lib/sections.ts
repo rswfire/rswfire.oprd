@@ -39,4 +39,5 @@ export const archiveSections = [
     { href: "/correspondence", label: "Correspondence" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/attorney", label: "Seeking Representation" },
+    { href: "/reading", label: "Selected Reading" },
 ];
