@@ -172,11 +172,11 @@ export default function OverviewPage() {
                     <div className="font-bold text-lg"><Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">Lisa Sumption: The Open Letter</Link></li>
-                            <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">Lisa Sumption: The Public Records Request</Link></li>
-                            <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">Lisa Sumption: The Closure</Link></li>
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                             <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
+                            <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">The Open Letter</Link></li>
+                            <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">The Public Records Request</Link></li>
+                            <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">The Closure</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
