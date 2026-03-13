@@ -5,7 +5,7 @@ import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
     title: "Timeline",
-    description: "Chronological documentation of systematic abuse and institutional retaliation, February-December 2025.",
+    description: "Chronological documentation of systematic abuse and institutional retaliation, February 2025 — ongoing.",
 };
 
 export default function TimelinePage() {
@@ -48,7 +48,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">March 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        Allison Watson calls about March 5 recording, informs me I was "acting as an agent of the state," establishes notification requirements. Follow-up call: tells me to "get through my time," dismisses documented abuse.
+                        Allison Watson calls about the March 5 recording. Informs me I was "acting as an agent of the state" — reframing my self-protection as a violation. Follow-up call the same day: tells me to "get through my time," dismisses documented abuse.
                     </div>
                 </li>
 
@@ -57,7 +57,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Unidentified man approaches me
-                        </Link> while cleaning yurts alone, interrogates me about leadership treatment. I document immediately with Kati. Explained as "IT photo documentation" — no photos ever produced.
+                        </Link> while cleaning yurts alone during a regional event when all rangers are away. Interrogates me about leadership treatment. I document immediately with Kati. Explained as "IT photo documentation" — no photos ever produced. Kati was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification.
                     </div>
                 </li>
 
@@ -89,15 +89,24 @@ export default function TimelinePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold"><strong>AUGUST — DECEMBER 2025</strong>: SILENCE AND ESCALATION</h2>
+            <h2 className="text-xl font-semibold"><strong>MAY — DECEMBER 2025</strong>: SILENCE AND ESCALATION</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
-                    <div className="font-semibold">August 16, 2025</div>
+                    <div className="font-semibold">May 26, 2025</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
+                            Name the March 18 surveillance encounter directly to Allison Watson
+                        </Link>. Document what the email thread proves. Name the cover story as cover. No response.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">August 15, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Escalate March 18 encounter to Director Lisa Sumption
-                        </Link> with full documentation. No response.
+                        </Link> with full documentation. Ask three direct questions: do those photos exist, were they published, was the encounter logged. No response.
                     </div>
                 </li>
 
@@ -145,7 +154,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 7, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>. She responds December 8, reframing documentation as emotional processing, closes communication.
+                        Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8, reframing documentation as emotional processing, closes communication.
                     </div>
                 </li>
 
@@ -173,7 +182,7 @@ export default function TimelinePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold"><strong>JANUARY — FEBRUARY 2026</strong>: LEGAL NOTICE AND INSTITUTIONAL RESPONSE</h2>
+            <h2 className="text-xl font-semibold"><strong>JANUARY — MARCH 2026</strong>: LEGAL NOTICE AND INSTITUTIONAL RESPONSE</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
@@ -215,6 +224,33 @@ export default function TimelinePage() {
                     <div className="font-semibold">February 16, 2026</div>
                     <div className="mt-2 text-sm">
                         <Link href="/correspondence/institution/defining-abuse-2026-02-16/" className="underline text-emerald-800 hover:text-emerald-600">Send "Defining Abuse" email</Link> to all named individuals, OPRD Commissioners, and Governor Kotek. Document the full pattern: abuse, retaliation, intimidation, and now institutional mobilization in response to named legal exposure. Constitutional violation at 327 days ongoing.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">February 2026</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
+                            Second encounter with the operative
+                        </Link> on a Forest Service trail that was part of my regular route. He had been visiting it regularly. He was surprised. He did not know I worked there. He has not returned. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. Kati's cover story collapsed without argument.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 2, 2026</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
+                            Second encounter documented in correspondence
+                        </Link> to all named individuals. Name what his presence on that trail proves: he is local, not IT, driving an unmarked state vehicle. This required authorization above the park level. The institution has never explained it. It cannot.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 11, 2026</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/correspondence" className="underline text-emerald-800 hover:text-emerald-600">
+                            Final correspondence sent
+                        </Link> to all named individuals. Day 352. The operative addressed directly. The door closed. Communication ended.
                     </div>
                 </li>
             </ul>
