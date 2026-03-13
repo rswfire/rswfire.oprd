@@ -151,10 +151,24 @@ export default function TimelinePage() {
                     </div>
                 </li>
 
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>DECEMBER 2025</strong>: THE ARCHIVE LAUNCHES</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
                     <div className="font-semibold">December 7, 2025</div>
                     <div className="mt-2 text-sm">
                         Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8, reframing documentation as emotional processing, closes communication.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">December 8, 2025</div>
+                    <div className="mt-2 text-sm">
+                        Director Sumption calls comprehensive documented evidence "emotional processing" and closes communication. I register <Link href="/" className="underline text-emerald-800 hover:text-emerald-600">oprdvolunteerabuse.org</Link> with my last $7 and begin building the public evidentiary archive.
                     </div>
                 </li>
 
@@ -168,7 +182,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 11, 2025</div>
                     <div className="mt-2 text-sm">
-                        Build dedicated section documenting <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption's decisions</Link>. Send final message: "I will continue my accountability work where it will have the greatest institutional effect."
+                        Build dedicated section documenting <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption's decisions</Link>. Send message: "I will continue my accountability work where it will have the greatest institutional effect."
                     </div>
                 </li>
 
@@ -182,7 +196,7 @@ export default function TimelinePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold"><strong>JANUARY — MARCH 2026</strong>: LEGAL NOTICE AND INSTITUTIONAL RESPONSE</h2>
+            <h2 className="text-xl font-semibold"><strong>JANUARY — FEBRUARY 2026</strong>: LEGAL NOTICE AND INSTITUTIONAL RESPONSE</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
@@ -227,8 +241,15 @@ export default function TimelinePage() {
                     </div>
                 </li>
 
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2026</strong>: SECOND ENCOUNTER</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
-                    <div className="font-semibold">February 2026</div>
+                    <div className="font-semibold">Late February 2026</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Second encounter with the operative
@@ -244,13 +265,19 @@ export default function TimelinePage() {
                         </Link> to all named individuals. Name what his presence on that trail proves: he is local, not IT, driving an unmarked state vehicle. This required authorization above the park level. The institution has never explained it. It cannot.
                     </div>
                 </li>
+            </ul>
 
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>MARCH 11, 2026</strong>: CORRESPONDENCE CLOSED</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
-                    <div className="font-semibold">March 11, 2026</div>
+                    <div className="font-semibold">Day 352</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/correspondence" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Final correspondence sent
-                        </Link> to all named individuals. Day 352. The operative addressed directly. The door closed. Communication ended.
+                        </Link> to all named individuals. The operative addressed directly. The door closed. Communication ended.
                     </div>
                 </li>
             </ul>
