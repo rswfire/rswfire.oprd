@@ -180,6 +180,7 @@ export default function OverviewPage() {
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
+                        <div>On August 15, I notified the director directly of the covert surveillance encounter &mdash; an unidentified man sent to interrogate me while I was alone, during a regional event when all rangers were away. I asked three direct questions. She never responded. On December 7, I sent supplemental evidence including video documentation. She never responded.</div>
                         <div>On August 25, I sent Lisa Sumption a comprehensive open letter with audio recordings, video documentation, email chains, and written evidence of First Amendment retaliation. She responded within 12 hours with procedural language and no commitments. No investigation was ordered. No employees were held accountable. No protections were implemented.</div>
                         <div>On August 22, I submitted a comprehensive public records request. OPRD went silent for 90 days &mdash; a violation of Oregon public records law. After a formal Notice of Violation, they claimed to have responded through an internal portal I had no access to. Cost estimate for fulfillment: tens of thousands of dollars.</div>
                         <div>On December 8, she responded by reframing my comprehensive documented record as &ldquo;emotional processing&rdquo; and closed communication. Every person who abused their authority remains in their position. She shielded all of them.</div>
