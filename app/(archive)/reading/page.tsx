@@ -69,26 +69,11 @@ export default function SelectedReadingPage() {
                     </div>
                 </Link>
 
-                {/* STORMCHASER'S SOLILOQUY I — PLACEHOLDER */}
-                <div className="border border-gray-100 rounded-lg p-6 bg-white opacity-50">
-                    <div className="flex items-start justify-between">
-                        <div>
-                            <div className="text-xs uppercase tracking-widest text-gray-300 font-semibold">2025</div>
-                            <h2 className="text-xl font-bold mt-1 text-gray-400">Stormchaser&apos;s Soliloquy I</h2>
-                        </div>
-                        <span className="text-sm text-gray-300 whitespace-nowrap ml-4 mt-1">
-                            Coming →
-                        </span>
-                    </div>
-                    <div className="mt-3 text-sm text-gray-400 leading-relaxed">
-                        The poem that became evidence. Written before Honeyman. Sent to a volunteer coordinator as an explanation of why the coast mattered — why it was worth moving into an RV and driving across the country for. Used at the coercion meeting as an attempt to establish inappropriate boundaries. It was a poem about the ocean.
-                    </div>
-                </div>
-
                 {/* THE STORY OF HONEYMAN */}
                 <Link
                     href="https://rswfire.com/signal/01JQ7VZB00NEQK4NYZMW5WYW04"
                     className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
+                    target="_blank"
                 >
                     <div className="flex items-start justify-between">
                         <div>
@@ -106,6 +91,22 @@ export default function SelectedReadingPage() {
                         "I had already built the archive."
                     </div>
                 </Link>
+
+                {/* STORMCHASER'S SOLILOQUY I — PLACEHOLDER */}
+                <div className="border border-gray-100 rounded-lg p-6 bg-white opacity-50">
+                    <div className="flex items-start justify-between">
+                        <div>
+                            <div className="text-xs uppercase tracking-widest text-gray-300 font-semibold">2025</div>
+                            <h2 className="text-xl font-bold mt-1 text-gray-400">Stormchaser&apos;s Soliloquy I</h2>
+                        </div>
+                        <span className="text-sm text-gray-300 whitespace-nowrap ml-4 mt-1">
+                            Coming →
+                        </span>
+                    </div>
+                    <div className="mt-3 text-sm text-gray-400 leading-relaxed">
+                        The poem that became evidence. Written before Honeyman. Sent to a volunteer coordinator as an explanation of why the coast mattered — why it was worth moving into an RV and driving across the country for. Used at the coercion meeting as an attempt to establish inappropriate boundaries. It was a poem about the ocean.
+                    </div>
+                </div>
 
             </div>
 
