@@ -49,6 +49,10 @@ export default function FinalLetterPage() {
                 Nearly a year later, I encountered him on a Forest Service trail — part of my regular route as caretaker. He stopped coming after that.
             </div>
 
+            <div className="mt-4 italic">
+                He didn't choose what he was asked to do. He lost something real because of it. If he ever finds this page — he is welcome on those trails. That has always been true.
+            </div>
+
             <div className="mt-4">
                 This letter was addressed to the people who sent him.
             </div>
