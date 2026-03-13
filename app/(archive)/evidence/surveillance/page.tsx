@@ -132,7 +132,7 @@ Have a great afternoon!
             </Email>
 
             <div className="mt-4">
-                I replied the same day. The cover story had not landed. I noted the detail that made it implausible:
+                I replied five minutes later. The cover story had not landed. I noted the detail that made it implausible:
             </div>
 
             <Email
