@@ -127,9 +127,9 @@ export default function OverviewPage() {
 
                 <hr className="my-4 border-t border-emerald-600" />
 
-                {/* UNIDENTIFIED OPERATIVE */}
+                {/* UNIDENTIFIED MAN */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg">Unidentified Operative</div>
+                    <div className="font-bold text-lg">Unidentified Man</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
@@ -152,6 +152,7 @@ export default function OverviewPage() {
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
+                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                             <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion &amp; Retaliation</Link></li>
                         </ul>
                     </div>
