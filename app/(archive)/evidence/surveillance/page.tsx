@@ -405,7 +405,7 @@ But now I know who he is.
             <h2 className="text-xl font-semibold">FINAL CORRESPONDENCE — MARCH 11, 2026</h2>
 
             <div className="mt-4">
-                On March 11, 2026 — Day 352 — the unidentified man was addressed directly in the final message of this correspondence.
+                On March 11, 2026 — Day 350 — the unidentified man was addressed directly in the final message of this correspondence.
             </div>
 
             <Email

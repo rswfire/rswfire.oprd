@@ -58,13 +58,10 @@ export default function Header() {
                         </div>
                     </Link>
 
-                    <div className="hidden lg:flex flex-col items-end text-right">
-                        <span className="text-lg font-bold text-emerald-700 mb-1">
-                            Independent Evidentiary Record.
-                        </span>
-                        <span className="text-xs tracking-wide text-slate-600">
-                            Independently verifiable. Never legally challenged. Not going away.
-                        </span>
+                    <div className="hidden lg:flex flex-col items-end text-right gap-0.5">
+                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Independently verifiable.</span>
+                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Never legally challenged.</span>
+                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
                     </div>
 
                     {mounted && (
