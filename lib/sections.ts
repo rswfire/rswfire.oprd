@@ -20,7 +20,8 @@ export const archiveSections = [
             { href: "/evidence/surveillance", label: "5. Assessment & Surveillance" },
             { href: "/evidence/dismissal", label: "6. Dismissal Without Process" },
             { href: "/evidence/expulsion", label: "7. Expulsion & Retaliation" },
-            { href: "/evidence/containment", label: "8. Institutional Containment" }
+            { href: "/evidence/containment", label: "8. Institutional Containment" },
+            { href: "/evidence/final-letter", label: "9. The Final Letter" }
         ]
     },
     { href: "#separator-4", label: "", separator: true },
