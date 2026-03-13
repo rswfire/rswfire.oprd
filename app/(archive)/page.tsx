@@ -175,6 +175,7 @@ export default function OverviewPage() {
                             <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">Lisa Sumption: The Open Letter</Link></li>
                             <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">Lisa Sumption: The Public Records Request</Link></li>
                             <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">Lisa Sumption: The Closure</Link></li>
+                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                             <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
                         </ul>
                     </div>
