@@ -50,7 +50,7 @@ export default function FinalLetterPage() {
             </div>
 
             <div className="mt-4 italic">
-                He didn't choose what he was asked to do. He lost something real because of it. If he ever finds this page — he is welcome on those trails. That has always been true.
+                He lost something real he doesn't deserve to lose. If he ever finds this page — he is welcome on those trails.
             </div>
 
             <div className="mt-4">
@@ -171,38 +171,6 @@ But tell your man he is welcome on our trails. I would never want him to live wi
 
                     <span className="final-letter-closer">No further correspondence.</span>
                 </div>
-            </div>
-
-            <hr className="my-10 border-t border-gray-300" />
-
-            <h2 className="text-xl font-semibold">WHAT COMES NEXT</h2>
-
-            <div className="mt-4">
-                The door referenced in this letter is closed.
-            </div>
-
-            <div className="mt-4">
-                What remains open is the case.
-            </div>
-
-            <div className="mt-4">
-                The pre-litigation record is complete. The §1983 notices are served. The individual defendants are named. The constitutional violation is documented on agency letterhead in the institution's own handwriting.
-            </div>
-
-            <div className="mt-4">
-                The statute of limitations runs to <strong>March 26, 2027</strong>.
-            </div>
-
-            <div className="mt-4">
-                This institution had every opportunity to choose accountability. At every level of escalation. From every mechanism available to it. It chose silence and institutional protection instead.
-            </div>
-
-            <div className="mt-4">
-                That choice has a cost.
-            </div>
-
-            <div className="mt-4 font-semibold">
-                The day it comes due is already on the calendar.
             </div>
 
         </SectionPage>
