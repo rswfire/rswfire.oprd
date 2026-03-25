@@ -5,7 +5,7 @@ export const POLICE_INTIMIDATION_TRANSMISSION: TransmissionData = {
     signalUrl: "https://rswfire.com/signal/01KMFMJW809QNR8PVTXT8HAAG7",
     date: "March 24, 2026",
     duration: "0:55",
-    s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01KMFMJW809QNR8PVTXT8HAAG7/video.mp4",
+    s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/signals/01KMFMJW809QNR8PVTXT8HAAG7/video.mp4",
     energeticSignature: "resolute under pressure",
     fieldState: "sovereign under direct institutional contact",
     orientation: "toward documentation and public record against institutional intimidation",

@@ -63,47 +63,114 @@ function MetadataTag({ label, value }: { label: string; value: string }) {
     );
 }
 
+const MAX_RETRIES = 3;
+
+async function fetchVideoUrl(s3Url: string): Promise<string | null> {
+    try {
+        const res = await fetch(`https://rswfire.autonomyrealms.com/api/video-url/?url=${encodeURIComponent(s3Url)}`);
+        const data = await res.json();
+        return data.url ?? null;
+    } catch {
+        return null;
+    }
+}
+
 function TransmissionVideo({ s3Url }: { s3Url: string }) {
+    const videoRef = useRef<HTMLVideoElement>(null);
     const [videoUrl, setVideoUrl] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+    const [retries, setRetries] = useState(0);
 
     useEffect(() => {
-        const encodedUrl = encodeURIComponent(s3Url);
-        fetch(`https://rswfire.autonomyrealms.com/api/video-url/?url=${encodedUrl}`)
-            .then(res => res.json())
-            .then(data => {
-                if (data.url) setVideoUrl(data.url);
+        fetchVideoUrl(s3Url)
+            .then(url => {
+                if (url) setVideoUrl(url);
+                else setError(true);
             })
-            .catch(err => console.error('Failed to load video URL:', err))
             .finally(() => setLoading(false));
     }, [s3Url]);
+
+    const onVideoError = useCallback(async (event: React.SyntheticEvent<HTMLVideoElement>) => {
+        const code = (event.target as HTMLVideoElement)?.error?.code;
+        // Code 3 = MEDIA_ERR_DECODE, Code 4 = MEDIA_ERR_SRC_NOT_SUPPORTED — permanent errors
+        if (code === 3 || code === 4) { setError(true); return; }
+        if (retries >= MAX_RETRIES) { setError(true); return; }
+
+        const nextRetry = retries + 1;
+        setRetries(nextRetry);
+        await new Promise(r => setTimeout(r, nextRetry * 500));
+
+        const fresh = await fetchVideoUrl(s3Url);
+        if (fresh && videoRef.current) {
+            setError(false);
+            setVideoUrl(fresh);
+            videoRef.current.src = fresh;
+            videoRef.current.load();
+        } else {
+            setError(true);
+        }
+    }, [s3Url, retries]);
+
+    const manualRetry = useCallback(async () => {
+        setError(false);
+        setLoading(true);
+        setRetries(0);
+        const fresh = await fetchVideoUrl(s3Url);
+        if (fresh) {
+            setVideoUrl(fresh);
+            if (videoRef.current) {
+                videoRef.current.src = fresh;
+                videoRef.current.load();
+            }
+        } else {
+            setError(true);
+        }
+        setLoading(false);
+    }, [s3Url]);
+
+    const monoStyle = {
+        fontFamily: 'var(--font-dm-mono), monospace',
+        fontSize: '11px',
+        letterSpacing: '0.15em',
+        color: '#8a9ba8',
+        textTransform: 'uppercase' as const,
+    };
 
     return (
         <div className="aspect-video bg-slate-900">
             {loading ? (
-                <div className="w-full h-full flex items-center justify-center" style={{
-                    fontFamily: 'var(--font-dm-mono), monospace',
-                    fontSize: '11px',
-                    letterSpacing: '0.15em',
-                    color: '#8a9ba8',
-                    textTransform: 'uppercase',
-                }}>
+                <div className="w-full h-full flex items-center justify-center" style={monoStyle}>
                     Loading transmission...
                 </div>
-            ) : videoUrl ? (
-                <video src={videoUrl} controls preload="metadata" className="w-full h-full">
+            ) : error || !videoUrl ? (
+                <div className="w-full h-full flex flex-col items-center justify-center gap-3">
+                    <span style={monoStyle}>Failed to load transmission</span>
+                    <button
+                        onClick={manualRetry}
+                        className="px-4 py-1.5 transition-opacity hover:opacity-70"
+                        style={{
+                            ...monoStyle,
+                            color: '#c4622d',
+                            border: '1px solid rgba(196,98,45,0.4)',
+                            cursor: 'pointer',
+                            background: 'transparent',
+                        }}
+                    >
+                        Retry
+                    </button>
+                </div>
+            ) : (
+                <video
+                    ref={videoRef}
+                    src={videoUrl}
+                    controls
+                    preload="metadata"
+                    className="w-full h-full"
+                    onError={onVideoError}
+                >
                     Your browser does not support the video tag.
                 </video>
-            ) : (
-                <div className="w-full h-full flex items-center justify-center" style={{
-                    fontFamily: 'var(--font-dm-mono), monospace',
-                    fontSize: '11px',
-                    letterSpacing: '0.15em',
-                    color: '#8a9ba8',
-                    textTransform: 'uppercase',
-                }}>
-                    Transmission unavailable
-                </div>
             )}
         </div>
     );
