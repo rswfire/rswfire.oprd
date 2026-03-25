@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Link from "next/link";
+import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
 
 export const metadata: Metadata = {
     title: "Seeking Representation",
@@ -14,6 +16,10 @@ export default function AttorneyPage() {
             title="SEEKING REPRESENTATION"
             subtitle="FIRST AMENDMENT RETALIATION — OREGON STATE PARKS"
         >
+
+            <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
+
+            <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">THE CASE IN ONE SENTENCE</h2>
 
