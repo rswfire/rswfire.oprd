@@ -21,7 +21,8 @@ export const archiveSections = [
             { href: "/evidence/dismissal", label: "6. Dismissal Without Process" },
             { href: "/evidence/expulsion", label: "7. Expulsion & Retaliation" },
             { href: "/evidence/containment", label: "8. Institutional Containment" },
-            { href: "/evidence/final-letter", label: "9. The Final Letter" }
+            { href: "/evidence/final-letter", label: "9. The Final Letter" },
+            { href: "/evidence/police-intimidation", label: "10. Police Intimidation" }
         ]
     },
     { href: "#separator-4", label: "", separator: true },

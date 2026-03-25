@@ -13,7 +13,7 @@ export default function FinalLetterPage() {
             title="THE FINAL LETTER"
             subtitle="MARCH 11, 2026 — DAY 350"
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
-            nextPage={{ href: "/attorney", label: "Seeking Representation" }}
+            nextPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
             summary="The origin event was a professional email from a volunteer who expected to be treated like a human being. Eight evidence pages document what this institution chose to do about that expectation. This is what it produced."
         >
 
