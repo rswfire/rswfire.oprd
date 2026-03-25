@@ -265,19 +265,40 @@ export default function TimelinePage() {
                         </Link> to all named individuals. Name what his presence on that trail proves: he is local, not IT, driving an unmarked state vehicle. This required authorization above the park level. The institution has never explained it. It cannot.
                     </div>
                 </li>
-            </ul>
 
-            <hr className="my-6 border-t border-gray-300" />
-
-            <h2 className="text-xl font-semibold"><strong>MARCH 11, 2026</strong>: CORRESPONDENCE CLOSED</h2>
-
-            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
-                    <div className="font-semibold">Day 352</div>
+                    <div className="font-semibold">March 11, 2026</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Final correspondence sent
                         </Link> to all named individuals. The operative addressed directly. The door closed. Communication ended.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>MARCH 2026</strong>: ONE YEAR ANNIVERSARY</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">March 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        The eve of the anniversary of the dismissal.&nbsp;
+                        <Link href="https://autonomyrealms.com" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">
+                            Launch of Autonomy Realms
+                        </Link> &mdash; a sovereign platform with Atlas mode, geotagged signals, and traces mapped to <Link href="https://rswfire.com/?mode=atlas&center=43.93035%2C-124.10868&zoom=15" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">the exact ground where events occured</Link>.
+                        Anniversary email sent with map screenshot showing signals linked to their park. Video recorded seeking legal representation. ACLU of Oregon intake submitted.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 24, 2026</div>
+                    <div className="mt-2 text-sm">
+                        One year after the dismissal.&nbsp;
+                        <Link href="/evidence/police-intimidation/" className="underline text-emerald-800 hover:text-emerald-600">
+                            Three police officers arrive at a locked federal gate.
+                        </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving.
                     </div>
                 </li>
             </ul>
