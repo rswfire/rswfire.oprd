@@ -72,7 +72,6 @@ export default function OverviewPage() {
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                             <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal Without Process</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -94,7 +93,6 @@ export default function OverviewPage() {
                             <li><Link href="/evidence/escalation" className="underline hover:text-emerald-600">Evidence: The Escalation Response</Link></li>
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/dismissal" className="underline hover:text-emerald-600">Evidence: Dismissal Without Process</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -135,7 +133,6 @@ export default function OverviewPage() {
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -157,7 +154,6 @@ export default function OverviewPage() {
                             <li><Link href="/evidence/coercion" className="underline hover:text-emerald-600">Evidence: The Coercion Meeting</Link></li>
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
                             <li><Link href="/evidence/expulsion" className="underline hover:text-emerald-600">Evidence: Expulsion &amp; Retaliation</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -181,7 +177,6 @@ export default function OverviewPage() {
                             <li><Link href="/lisa-sumption/open-letter" className="underline hover:text-emerald-600">The Open Letter</Link></li>
                             <li><Link href="/lisa-sumption/public-records-request" className="underline hover:text-emerald-600">The Public Records Request</Link></li>
                             <li><Link href="/lisa-sumption/closure" className="underline hover:text-emerald-600">The Closure</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
@@ -201,7 +196,6 @@ export default function OverviewPage() {
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
-                            <li><Link href="/evidence/final-letter" className="underline hover:text-emerald-600">Evidence: The Final Letter</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">
