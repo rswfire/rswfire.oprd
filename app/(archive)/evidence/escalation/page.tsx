@@ -16,6 +16,7 @@ export default function CompliancePage() {
             previousPage={{ href: "/evidence/origin", label: "The Origin Event" }}
             nextPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
             summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
+            systemMap={{ href: "/system-map#stage-two", label: "Stage Two — The Escalation Response", blurb: "The escalation that follows a documented good faith attempt doesn't just prove bad faith. It proves the issue was never the behavior the institution claimed to be addressing." }}
         >
 
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>

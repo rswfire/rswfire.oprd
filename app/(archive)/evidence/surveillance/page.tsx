@@ -18,6 +18,7 @@ export default function SurveillancePage() {
             previousPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
             nextPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}
             summary="Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment."
+            systemMap={{ href: "/system-map#stage-five", label: "Stage Five — Assessment and Surveillance", blurb: "The system needs to understand what it's dealing with. It sends someone to assess. Not officially. Not in uniform. Not with identification." }}
         >
 
             <h2 className="text-xl font-semibold">MARCH 18, 2025</h2>

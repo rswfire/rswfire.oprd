@@ -18,6 +18,7 @@ export default function CoercionPage() {
             previousPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
             nextPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
             summary="Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation."
+            systemMap={{ href: "/system-map#stage-four", label: "Stage Four — The Coercion Meeting", blurb: "The meeting is not designed to resolve conflict. It is designed to apply pressure until the volunteer resigns voluntarily." }}
         >
 
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>

@@ -16,6 +16,7 @@ export default function DismissalPage() {
             previousPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
             nextPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
             summary="Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
+            systemMap={{ href: "/system-map#stage-six", label: "Stage Six — Dismissal Without Process", blurb: "The real reason — that the volunteer documented abuse and refused to stop — is never stated. Because stating it creates liability." }}
         >
             <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} defaultExpanded />
         </SectionPage>

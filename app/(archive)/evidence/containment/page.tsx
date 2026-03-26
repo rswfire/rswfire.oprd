@@ -17,6 +17,10 @@ export default function ContainmentPage() {
             previousPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
             nextPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
             summary="Every institutional response to documented abuse has followed the same logic: not correction, not accountability, not investigation — containment."
+            systemMap={[
+                { href: "/system-map#stage-nine", label: "Stage Nine — Institutional Containment", blurb: "Every mechanism of accountability is redirected to shield the people accountability was built to reach." },
+                { href: "/system-map#stage-ten", label: "Stage Ten — The Silence Strategy", blurb: "Silence is not the end of the system. It is the system's final gift to the record." }
+            ]}
         >
 
             <h2 className="text-xl font-semibold">THE PATTERN</h2>

@@ -18,6 +18,10 @@ export default function ExpulsionPage() {
             previousPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}
             nextPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             summary="Allison Watson issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
+            systemMap={[
+                { href: "/system-map#stage-seven", label: "Stage Seven — The Containment Call", blurb: "Someone with a professional background in human engagement calls. Not to investigate. Not to offer help. To contain." },
+                { href: "/system-map#stage-eight", label: "Stage Eight — Retaliation in Writing", blurb: "The institution puts the real reason in writing." }
+            ]}
         >
 
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>

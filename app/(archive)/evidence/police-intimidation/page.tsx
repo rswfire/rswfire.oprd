@@ -16,6 +16,7 @@ export default function PoliceIntimidationPage() {
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             nextPage={{ href: "/attorney", label: "Seeking Representation" }}
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
+            systemMap={{ href: "/system-map#stage-eleven", label: "Stage Eleven — Police Intimidation", blurb: "When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls." }}
         >
 
             <h2 className="text-xl font-semibold">MARCH 24, 2026 — DAY 365</h2>

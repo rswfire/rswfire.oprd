@@ -17,6 +17,7 @@ export default function TrustRecruitmentPage() {
             previousPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
             nextPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
             summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
+            systemMap={{ href: "/system-map#stage-three", label: "Stage Three — Trust Recruitment", blurb: "They elicit trust through reciprocal vulnerability. They create the conditions for disclosure. They receive what the volunteer shares — and they deliver it to management." }}
         >
 
 

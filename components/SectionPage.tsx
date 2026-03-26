@@ -2,11 +2,18 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 
+type SystemMapLink = {
+    href: string;
+    label: string;
+    blurb?: string;
+};
+
 type SectionPageProps = {
     title?: string;
     subtitle?: string;
     supplemental?: string;
     summary?: string;
+    systemMap?: SystemMapLink | SystemMapLink[];
     children: ReactNode;
     previousPage?: {
         href: string;
@@ -23,10 +30,12 @@ export default function SectionPage({
                                         subtitle,
                                         supplemental,
                                         summary,
+                                        systemMap,
                                         children,
                                         previousPage,
                                         nextPage
                                     }: SectionPageProps) {
+    const systemMapLinks = systemMap ? (Array.isArray(systemMap) ? systemMap : [systemMap]) : [];
     const hasHeader = Boolean(title?.trim() || subtitle || supplemental);
     const hasNavigation = Boolean(previousPage || nextPage);
 
@@ -79,6 +88,26 @@ export default function SectionPage({
                         <div className="font-semibold">
                             {summary}
                         </div>
+                    </div>
+                )}
+
+                {systemMapLinks.length > 0 && (
+                    <div className="mt-6 pt-6 border-t border-gray-300 text-sm tracking-wide opacity-60 hover:opacity-100 transition-opacity text-center">
+                        <span className="uppercase text-xs font-semibold tracking-widest">See the pattern</span>
+                        <span className="mx-2">—</span>
+                        {systemMapLinks.map((link, i) => (
+                            <span key={link.href}>
+                                {i > 0 && <span className="mx-1">&</span>}
+                                <Link href={link.href} className="underline hover:text-emerald-700">
+                                    {link.label}
+                                </Link>
+                            </span>
+                        ))}
+                        {systemMapLinks.some(l => l.blurb) && (
+                            <div className="mt-2 italic text-xs">
+                                {systemMapLinks.filter(l => l.blurb).map(l => l.blurb).join(' ')}
+                            </div>
+                        )}
                     </div>
                 )}
 

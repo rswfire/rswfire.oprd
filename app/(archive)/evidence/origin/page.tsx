@@ -16,6 +16,7 @@ export default function ConfrontationPage() {
             previousPage={{ href: "/evidence", label: "Evidence" }}
             nextPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
             summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
+            systemMap={{ href: "/system-map#stage-one", label: "Stage One — The Origin Event", blurb: "The record is the threat. Not the behavior it documented. The record itself." }}
         >
 
             <h2 className="text-xl font-semibold">FEBRUARY 9, 2025</h2>
