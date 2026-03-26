@@ -32,7 +32,7 @@ export default function EvidencePage() {
             <h2 className="text-xl font-semibold">THE EVIDENCE SEQUENCE</h2>
 
             <div className="mt-4">
-                These ten documents establish the complete pattern of abuse, betrayal, and retaliation:
+                These nine documents establish the complete pattern of abuse, betrayal, and retaliation:
             </div>
 
             <div className="mt-6 space-y-6">
@@ -133,20 +133,8 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/final-letter" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        9. THE FINAL LETTER
-                    </Link>
-                    <div className="mt-2 text-sm text-gray-700">
-                        March 11, 2026 — Day 350. The origin event was an expectation of basic human dignity. Nine evidence pages document what this institution chose to do about that expectation. This is what it produced.
-                    </div>
-                    <div className="mt-2 text-sm font-semibold">
-                        Format: Written correspondence
-                    </div>
-                </div>
-
-                <div className="p-4 border-l-4 border-gray-400">
                     <Link href="/evidence/police-intimidation" className="text-lg font-semibold text-emerald-700 hover:underline">
-                        10. POLICE INTIMIDATION
+                        9. POLICE INTIMIDATION
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
                         March 24, 2026 — Day 365. One year to the day after dismissal, police arrived behind a locked federal gate to intimidate the archive author at his Forest Service residence.

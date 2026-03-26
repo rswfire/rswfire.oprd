@@ -13,7 +13,7 @@ export default function PoliceIntimidationPage() {
         <SectionPage
             title="POLICE INTIMIDATION"
             subtitle="BEHIND A LOCKED FEDERAL GATE"
-            previousPage={{ href: "/evidence/final-letter", label: "The Final Letter" }}
+            previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             nextPage={{ href: "/attorney", label: "Seeking Representation" }}
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
         >

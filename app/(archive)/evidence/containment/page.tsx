@@ -15,7 +15,7 @@ export default function ContainmentPage() {
             title="INSTITUTIONAL CONTAINMENT"
             subtitle="LISA SUMPTION, DIRECTOR &amp; J.R. COLLIER, DEPUTY DIRECTOR"
             previousPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
-            nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
             summary="Every institutional response to documented abuse has followed the same logic: not correction, not accountability, not investigation — containment."
         >
 

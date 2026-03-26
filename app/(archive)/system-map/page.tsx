@@ -48,6 +48,7 @@ export default function SystemMapPage() {
                     <li><a href="#stage-eight" className="text-emerald-700 underline hover:text-emerald-600">Stage Eight — Retaliation in Writing</a></li>
                     <li><a href="#stage-nine" className="text-emerald-700 underline hover:text-emerald-600">Stage Nine — Institutional Containment</a></li>
                     <li><a href="#stage-ten" className="text-emerald-700 underline hover:text-emerald-600">Stage Ten — The Silence Strategy</a></li>
+                    <li><a href="#stage-eleven" className="text-emerald-700 underline hover:text-emerald-600">Stage Eleven — Police Intimidation</a></li>
                     <li><a href="#requires" className="text-emerald-700 underline hover:text-emerald-600">What the System Requires of You</a></li>
                     <li><a href="#breaks" className="text-emerald-700 underline hover:text-emerald-600">What Breaks the System</a></li>
                 </ul>
@@ -325,6 +326,42 @@ export default function SystemMapPage() {
 
             <div className="mt-4">
                 It is the system's final gift to the record.
+            </div>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 id="stage-eleven" className="text-xl font-semibold scroll-mt-48">STAGE ELEVEN — POLICE INTIMIDATION</h2>
+
+            <div className="mt-4">
+                When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls.
+            </div>
+
+            <div className="mt-4">
+                It does not reach toward accountability. It reaches toward force.
+            </div>
+
+            <div className="mt-4">
+                Law enforcement arrives. Not with a warrant. Not with a complaint. Not with any legal instrument that would create a record the institution would have to answer for. Just officers at the door, citing concern about what someone is posting online.
+            </div>
+
+            <div className="mt-4">
+                The location matters. Not a public sidewalk. Not a shared space. A locked federal gate on federal land — a place that requires authorization to access. The timing matters. Not a random Tuesday. The anniversary of the dismissal. One year to the day.
+            </div>
+
+            <div className="mt-4">
+                The message is not in what the officers say. The message is in the fact that they are there at all. That the system can send people with badges and weapons to the place where you live, behind a gate that is supposed to protect you, on the day that means the most — and call it concern.
+            </div>
+
+            <div className="mt-4">
+                This is what the system does when documentation cannot be contained, silence cannot be enforced, and the archive will not disappear.
+            </div>
+
+            <div className="mt-4">
+                It sends police.
+            </div>
+
+            <div className="mt-4">
+                In this case: <Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">three officers behind a locked federal gate, on the one-year anniversary of dismissal, citing online posts.</Link> Recorded on camera.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
