@@ -5,7 +5,7 @@ import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 
-import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
+import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
 
 export default function OverviewPage() {
     return (
@@ -44,7 +44,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 {/* Video */}
-                <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} />
+                <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
 
             </div>
 
