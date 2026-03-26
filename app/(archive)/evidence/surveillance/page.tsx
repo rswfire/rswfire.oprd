@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import VideoEmbed from "@/components/archive/VideoEmbed";
+import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
 export const metadata: Metadata = {
     title: "Surveillance",
@@ -174,10 +175,7 @@ Have a great afternoon!
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <VideoEmbed
-                s3Url="https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JPP5GY2GPEZ5F08Q2PF6ZAHG/video.mp4"
-                signalUrl="https://rswfire.com/signal/01JPP5GY2GPEZ5F08Q2PF6ZAHG"
-            />
+            <TransmissionDisclosure transmission={SURVEILLANCE_TRANSMISSION} />
 
             <hr className="my-6 border-t border-gray-300" />
 
