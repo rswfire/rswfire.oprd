@@ -19,7 +19,7 @@ export default function PoliceIntimidationPage() {
             systemMap={{ href: "/system-map#stage-eleven", label: "Stage Eleven — Police Intimidation", blurb: "When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls." }}
         >
 
-            <h2 className="text-xl font-semibold">MARCH 24, 2026 — DAY 365</h2>
+            <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 
             <div className="mt-4">
                 One year ago today, Ryan Warren called to dismiss me from Honeyman State Park. One hour later he arrived at my RV, collected the keys, and told me to vacate within 24 hours. No paperwork. No documentation. Just the conversation we had.
