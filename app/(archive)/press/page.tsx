@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
 
 export const metadata: Metadata = {
     title: "For Journalists",
@@ -31,6 +33,8 @@ export default function PressPage() {
                 </p>
 
             </div>
+
+            <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
 
             <hr className="my-8 border-t border-gray-300" />
 
