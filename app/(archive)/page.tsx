@@ -255,7 +255,7 @@ export default function OverviewPage() {
                         <div>On March 24, 2026 &mdash; the one year anniversary of my dismissal from Honeyman State Park &mdash; three officers arrived at a locked federal gate on restricted federal land where I serve as U.S. Forest Service caretaker. They did not identify their agency. They said they were concerned about what I was posting online.</div>
                         <div>I declined to speak without an attorney and closed the door. I recorded them leaving. One license plate is clearly visible on camera.</div>
                         <div>Twenty minutes later, an officer identifying himself as Forest Service called me. He was hostile. He told me this wasn&apos;t going away. He acknowledged the visit could have been handled differently. When I called back two days later to request the names of all three officers, he refused and hung up.</div>
-                        <div>He gave his name as Matt Oliver, badge number 555, stationed in Springfield &mdash; a wholly separate Forest Service district. He was operating entirely outside his jurisdiction.</div>
+                        <div>He gave his name as Matt Oliver. The Forest Service has since confirmed he is Special Agent Matthew Oliver, Law Enforcement &amp; Investigations &mdash; part of their investigative branch, assigned to the Willamette and Siuslaw National Forests. Not a patrol officer. An investigator.</div>
                         <div>A year of institutional silence. And then police behind a locked gate on the anniversary.</div>
                         <div>And still the governor is silent.</div>
                     </div>

@@ -155,7 +155,7 @@ export default function PressPage() {
                 </p>
 
                 <p>
-                    When I called back two days later to request the names and contact information of all three officers, he refused. He gave me his name as Matt Oliver, badge number 555, stationed in Springfield. He claimed the restricted federal land was not restricted. I corrected him and cited the federal statute. He hung up.
+                    When I called back two days later to request the names and contact information of all three officers, he refused. He gave me his name as Matt Oliver, badge number 555. He claimed the restricted federal land was not restricted. I corrected him and cited the federal statute. He hung up.
                 </p>
 
                 <p>
@@ -163,7 +163,7 @@ export default function PressPage() {
                 </p>
 
                 <p>
-                    The Forest Service responded immediately with First Amendment auditor guidance. And I now know Matt Oliver is stationed in a wholly separate Forest Service district. He was operating entirely outside his jurisdiction. And I am actively pulling on that thread.
+                    The Forest Service has since confirmed that Matt Oliver is Special Agent Matthew Oliver, Law Enforcement &amp; Investigations &mdash; part of their investigative branch, assigned to the Willamette and Siuslaw National Forests. Not a patrol officer conducting a welfare check. An investigator sent to the door of a volunteer caretaker behind a locked federal gate on the anniversary of his retaliatory dismissal.
                 </p>
 
             </div>
