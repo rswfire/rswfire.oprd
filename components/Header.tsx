@@ -76,7 +76,7 @@ export default function Header() {
                 </div>
 
                 {mounted && mobileMenuOpen && (
-                    <nav className="lg:hidden mt-3 border-t border-slate-200 pt-2">
+                    <nav className="lg:hidden mt-3 border-t border-slate-200 pt-2 max-h-[calc(100vh-120px)] overflow-y-auto">
                         <ul className="space-y-0">
                             {archiveSections.map((section, index) => {
                                 if (section.separator) {
