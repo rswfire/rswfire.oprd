@@ -216,10 +216,6 @@ export default function PressPage() {
                 <div>Owner, eNetwizard Inc. Since 1998</div>
                 <div>Former Oregon State Parks Volunteer</div>
                 <div>Steward, oprdvolunteerabuse.org</div>
-                <div className="mt-2">
-                    <a href="mailto:rsw@rswfire.com" className="underline text-emerald-800 hover:text-emerald-600">rsw@rswfire.com</a>
-                </div>
-                <div>458-230-1869</div>
             </div>
 
         </SectionPage>
