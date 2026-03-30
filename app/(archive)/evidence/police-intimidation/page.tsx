@@ -51,18 +51,6 @@ export default function PoliceIntimidationPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">THE FOREST SERVICE RESPONSE</h2>
-
-            <div className="mt-4 space-y-4 text-base leading-relaxed">
-                <p>On March 30, 2026, Patrol Captain Felicia Sloan &mdash; the supervisory law enforcement officer for the Willamette and Siuslaw National Forests &mdash; responded to my inquiry.</p>
-
-                <p>She confirmed that Special Agent Matthew Oliver is employed by the United States Forest Service, Law Enforcement &amp; Investigations. He is assigned to the Willamette and Siuslaw National Forests as part of their investigative branch.</p>
-
-                <p>She confirmed that Agent Oliver does not have an obligation to coordinate with local Forest Service law enforcement prior to conducting investigative work in the area.</p>
-
-                <p>She provided a link to file a formal complaint with the Office of Professional Responsibility.</p>
-            </div>
-
             <h2 className="text-xl font-semibold">THE INCIDENT REPORT</h2>
 
             <div className="mt-4 space-y-4 text-base leading-relaxed">
@@ -76,6 +64,16 @@ export default function PoliceIntimidationPage() {
             <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">THE FOREST SERVICE RESPONSE</h2>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>On March 30, 2026, Patrol Captain Felicia Sloan &mdash; the supervisory law enforcement officer for the Willamette and Siuslaw National Forests &mdash; responded to my inquiry.</p>
+
+                <p>She confirmed that Special Agent Matthew Oliver is employed by the United States Forest Service, Law Enforcement &amp; Investigations. He is assigned to the Willamette and Siuslaw National Forests as part of their investigative branch.</p>
+
+                <p>She confirmed that Agent Oliver does not have an obligation to coordinate with local Forest Service law enforcement prior to conducting investigative work in the area.</p>
+
+                <p>She provided a link to file a formal complaint with the Office of Professional Responsibility.</p>
+            </div>
 
             <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
                 <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-3">Correspondence &mdash; March 30, 2026</div>
