@@ -241,6 +241,26 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
+                <hr className="my-4 border-t border-emerald-600" />
+
+                {/* POLICE INTIMIDATION */}
+                <div className="mt-4">
+                    <div className="font-bold text-lg"><Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">Police Intimidation</Link></div>
+                    <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
+                        <ul className="text-sm text-emerald-700 space-y-1 list-none">
+                            <li><Link href="/evidence/police-intimidation" className="underline hover:text-emerald-600">Evidence: Police Intimidation</Link></li>
+                        </ul>
+                    </div>
+                    <div className="mt-3 space-y-2 text-base">
+                        <div>On March 24, 2026 &mdash; the one year anniversary of my dismissal from Honeyman State Park &mdash; three officers arrived at a locked federal gate on restricted federal land where I serve as U.S. Forest Service caretaker. They did not identify their agency. They said they were concerned about what I was posting online.</div>
+                        <div>I declined to speak without an attorney and closed the door. I recorded them leaving. One license plate is clearly visible on camera.</div>
+                        <div>Twenty minutes later, an officer identifying himself as Forest Service called me. He was hostile. He told me this wasn&apos;t going away. He acknowledged the visit could have been handled differently. When I called back two days later to request the names of all three officers, he refused and hung up.</div>
+                        <div>He gave his name as Matt Oliver, badge number 555, stationed in Springfield &mdash; a wholly separate Forest Service district. He was operating entirely outside his jurisdiction.</div>
+                        <div>A year of institutional silence. And then police behind a locked gate on the anniversary.</div>
+                        <div>And still the governor is silent.</div>
+                    </div>
+                </div>
+
                 <hr className="my-6 border-t border-emerald-600" />
 
                 <div className="mt-4 text-lg font-bold">What they took:</div>
