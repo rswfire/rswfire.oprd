@@ -18,8 +18,8 @@ export default function GovernorKotekPage() {
             title="THE GOVERNOR'S SILENCE"
             subtitle="WHEN IT WAS TIME TO PROTECT ONE OF HER OWN"
             supplemental="WHAT DID SHE CHOOSE TO DO?"
-            previousPage={{ href: "/lisa-sumption/closure", label: "The Closure" }}
-            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
+            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/press", label: "For Journalists" }}
         >
             <div className="mt-4 text-base leading-relaxed">
 

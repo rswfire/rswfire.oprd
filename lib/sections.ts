@@ -8,10 +8,6 @@ export const archiveSections = [
     { href: "#separator-2", label: "", separator: true },
     { href: "/system-map", label: "Mapping the System" },
     { href: "#separator-3", label: "", separator: true },
-    { href: "/press", label: "For Journalists" },
-    { href: "/legislators", label: "For Legislators" },
-    { href: "/attorney", label: "For Lawyers" },
-    { href: "#separator-4", label: "", separator: true },
     {
 
         href: "/evidence",
@@ -28,7 +24,7 @@ export const archiveSections = [
             { href: "/evidence/police-intimidation", label: "9. Police Intimidation" }
         ]
     },
-    { href: "#separator-5", label: "", separator: true },
+    { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",
         label: "The Director's Decisions",
@@ -38,8 +34,12 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-6", label: "", separator: true },
+    { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
+    { href: "#separator-6", label: "", separator: true },
+    { href: "/press", label: "For Journalists" },
+    { href: "/legislators", label: "For Legislators" },
+    { href: "/attorney", label: "For Lawyers" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },

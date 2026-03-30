@@ -14,13 +14,9 @@ export default function LegislatorsPage() {
     return (
         <SectionPage
             title="FOR LEGISLATORS"
-            previousPage={{ href: "/press", label: "For Journalists" }}
-            nextPage={{ href: "/attorney", label: "For Lawyers" }}
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
+            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
-
-            <div className="mt-6 text-sm text-gray-500 uppercase tracking-widest font-semibold">
-                March 2026
-            </div>
 
             <div className="mt-6 space-y-4 text-base leading-relaxed">
 

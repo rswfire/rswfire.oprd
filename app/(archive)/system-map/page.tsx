@@ -13,6 +13,8 @@ export default function SystemMapPage() {
         <SectionPage
             title="MAPPING THE SYSTEM"
             subtitle="THE CULTURE PRODUCED UNDER LISA SUMPTION'S LEADERSHIP"
+            previousPage={{ href: "/timeline", label: "Timeline" }}
+            nextPage={{ href: "/evidence", label: "Evidence" }}
         >
 
             <div className="mt-4">

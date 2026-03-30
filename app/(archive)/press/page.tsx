@@ -14,13 +14,9 @@ export default function PressPage() {
     return (
         <SectionPage
             title="FOR JOURNALISTS"
-            previousPage={{ href: "/system-map", label: "Mapping the System" }}
-            nextPage={{ href: "/legislators", label: "For Legislators" }}
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
+            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
-
-            <div className="mt-6 text-sm text-gray-500 uppercase tracking-widest font-semibold">
-                Sent March 29, 2026
-            </div>
 
             <div className="mt-6 space-y-4 text-base leading-relaxed">
 

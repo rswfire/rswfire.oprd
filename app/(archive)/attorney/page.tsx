@@ -15,6 +15,8 @@ export default function AttorneyPage() {
         <SectionPage
             title="SEEKING REPRESENTATION"
             subtitle="FIRST AMENDMENT RETALIATION — OREGON STATE PARKS"
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
+            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
             <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />

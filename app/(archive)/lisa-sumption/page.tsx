@@ -15,7 +15,7 @@ export default function LisaSumptionIndexPage() {
             title="LISA SUMPTION"
             subtitle="THE DIRECTOR'S DECISIONS"
             supplemental="OREGON PARKS &amp; RECREATION DEPARTMENT"
-            previousPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
+            previousPage={{ href: "/evidence", label: "Evidence" }}
             nextPage={{ href: "/lisa-sumption/open-letter", label: "The Open Letter" }}
         >
 
