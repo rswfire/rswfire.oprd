@@ -12,8 +12,8 @@ export default function PressPage() {
     return (
         <SectionPage
             title="FOR JOURNALISTS"
-            previousPage={{ href: "/attorney", label: "Seeking Representation" }}
-            nextPage={{ href: "/reading", label: "Selected Reading" }}
+            previousPage={{ href: "/system-map", label: "Mapping the System" }}
+            nextPage={{ href: "/legislators", label: "For Legislators" }}
         >
 
             <div className="mt-6 text-sm text-gray-500 uppercase tracking-widest font-semibold">
@@ -23,7 +23,7 @@ export default function PressPage() {
             <div className="mt-6 space-y-4 text-base leading-relaxed">
 
                 <p>
-                    My name is Robert Samuel White. I am a U.S. Forest Service volunteer caretaker on the Oregon Coast, and I am writing to you because what Oregon State Parks did to me &mdash; and what they did when I wouldn&apos;t stop talking about it &mdash; is a story that needs to be told.
+                    <strong>My name is Robert Samuel White.</strong> I am a U.S. Forest Service volunteer caretaker on the Oregon Coast, and I am writing to you because what Oregon State Parks did to me &mdash; and what they did when I wouldn&apos;t stop talking about it &mdash; is a story that needs to be told.
                 </p>
 
                 <p className="italic">

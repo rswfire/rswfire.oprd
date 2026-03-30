@@ -14,7 +14,7 @@ export default function TimelinePage() {
             title="TIMELINE"
             subtitle="FEBRUARY 9, 2025 — ONGOING"
             previousPage={{ href: "/key-individuals", label: "Key Individuals" }}
-            nextPage={{ href: "/evidence", label: "Evidence" }}
+            nextPage={{ href: "/system-map", label: "Mapping the System" }}
         >
 
             <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2025</strong>: ABUSE AND DISMISSAL</h2>

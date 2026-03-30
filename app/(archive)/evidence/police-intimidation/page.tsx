@@ -14,7 +14,7 @@ export default function PoliceIntimidationPage() {
             title="POLICE INTIMIDATION"
             subtitle="BEHIND A LOCKED FEDERAL GATE"
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
-            nextPage={{ href: "/attorney", label: "Seeking Representation" }}
+            nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
             systemMap={{ href: "/system-map#stage-eleven", label: "Stage Eleven — Police Intimidation", blurb: "When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls." }}
         >

@@ -13,7 +13,7 @@ export default function EvidencePage() {
         <SectionPage
             title="EVIDENCE"
             subtitle="DOCUMENTED PROOF"
-            previousPage={{ href: "/timeline", label: "Timeline" }}
+            previousPage={{ href: "/attorney", label: "For Lawyers" }}
             nextPage={{ href: "/evidence/origin", label: "Origin" }}
         >
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">

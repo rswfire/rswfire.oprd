@@ -14,7 +14,7 @@ export default function KeyIndividualsPage() {
             title="KEY INDIVIDUALS"
             subtitle="HONEYMAN STATE PARK"
             supplemental="OREGON PARKS & RECREATION DEPARTMENT (OPRD)"
-            previousPage={{ href: "/faq", label: "Frequently Asked Questions" }}
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
             nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
