@@ -39,5 +39,6 @@ export const archiveSections = [
     { href: "#separator-6", label: "", separator: true },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/attorney", label: "Seeking Representation" },
+    { href: "/press", label: "For Journalists" },
     { href: "/reading", label: "Selected Reading" },
 ];
