@@ -75,6 +75,21 @@ export default function PoliceIntimidationPage() {
                 </div>
             </div>
 
+            <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-3">Reply &mdash; March 30, 2026</div>
+                <div className="text-sm space-y-3 leading-relaxed">
+                    <p>Captain Sloan,</p>
+                    <p>Thank you for the prompt response and for confirming Agent Oliver&apos;s employment and role.</p>
+                    <p>I want to be direct about what your response clarifies and what it does not.</p>
+                    <p>You have confirmed that a Special Agent from the investigative branch visited my federal work center on March 24, 2026. That is a significant clarification. Investigators do not conduct welfare checks. If this was an investigative action, there is a record of it &mdash; who authorized it, what its purpose was, and why it occurred on the one-year anniversary of my dismissal from Oregon State Parks.</p>
+                    <p>Agent Oliver refused to identify the two state law enforcement officers who accompanied him. In a legitimate investigation, identifying participating officers is routine. His refusal to do so &mdash; and his subsequent hang-up &mdash; raises questions your response does not address.</p>
+                    <p>I am asking directly: who authorized Agent Oliver&apos;s visit to my work center on March 24, 2026, and what was the stated purpose of that visit?</p>
+                    <p>I am also requesting the names and contact information of the two state officers who accompanied him.</p>
+                    <p>I will note that this correspondence, along with the official Siuslaw Host/Caretaker Incident Report filed on March 27, 2026, is part of a documented public record.</p>
+                    <p className="font-semibold">Robert Samuel White</p>
+                </div>
+            </div>
+
             <div className="mt-6 space-y-4 text-base leading-relaxed">
                 <p>This letter establishes that the Forest Service sent a <em>Special Agent</em> from their <em>investigative branch</em> to the door of a volunteer caretaker behind a locked federal gate on the anniversary of his retaliatory dismissal from Oregon State Parks.</p>
                 <p>Not a patrol officer conducting a welfare check. An investigator.</p>
