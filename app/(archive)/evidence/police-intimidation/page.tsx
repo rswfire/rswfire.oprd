@@ -102,9 +102,35 @@ export default function PoliceIntimidationPage() {
                 </div>
             </div>
 
+            <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-3">Reply &mdash; March 30, 2026</div>
+                <div className="text-sm space-y-3 leading-relaxed">
+                    <p>Mr. White,</p>
+                    <p>Any request for federal records must be obtained through FOIA. The link for to submit a FOIA request is here: https://www.fs.usda.gov/about-agency/foia</p>
+                    <p>Respectfully,</p>
+                    <p className="font-semibold">Patrol Captain Felicia Sloan</p>
+                </div>
+            </div>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>I asked who authorized the visit and what its purpose was. She redirected me to FOIA.</p>
+                <p>A direct question to the supervisory officer about why a Special Agent from the investigative branch was sent to a volunteer caretaker&apos;s door &mdash; and the answer is: file a federal records request.</p>
+                <p>Then she attempted to recall the email.</p>
+            </div>
+
+            <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-3">Reply &mdash; March 30, 2026</div>
+                <div className="text-sm space-y-3 leading-relaxed">
+                    <p>Captain Sloan,</p>
+                    <p>Thank you for your time today. I will follow through on each link you provided.</p>
+                    <p>Kind Regards,</p>
+                    <p className="font-semibold">Robert Samuel White</p>
+                </div>
+            </div>
+
             <div className="mt-6 space-y-4 text-base leading-relaxed">
-                <p>This letter establishes that the Forest Service sent a <em>Special Agent</em> from their <em>investigative branch</em> to the door of a volunteer caretaker behind a locked federal gate on the anniversary of his retaliatory dismissal from Oregon State Parks.</p>
-                <p>Not a patrol officer conducting a welfare check. An investigator.</p>
+                <p>This is the Forest Service&apos;s version of institutional silence. Not no comment. Not we can&apos;t discuss an ongoing investigation. A form link and a recall attempt.</p>
+                <p>The visit happened. The investigative branch sent him. And the question of why requires a FOIA request to answer.</p>
             </div>
 
         </SectionPage>
