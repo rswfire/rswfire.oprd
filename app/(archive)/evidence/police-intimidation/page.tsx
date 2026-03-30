@@ -63,6 +63,20 @@ export default function PoliceIntimidationPage() {
                 <p>She provided a link to file a formal complaint with the Office of Professional Responsibility.</p>
             </div>
 
+            <h2 className="text-xl font-semibold">THE INCIDENT REPORT</h2>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>On March 27, 2026, I filed an official Siuslaw National Forest Host/Caretaker Incident Report documenting the visit as intimidation. The report includes the date, time, location, a narrative description of the encounter, and the license plate number of one of the vehicles: 731 QRV.</p>
+            </div>
+
+            <div className="mt-4">
+                <a href="/usfs-incident-report.jpg" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download Incident Report (JPG) &darr;</a>
+            </div>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">THE FOREST SERVICE RESPONSE</h2>
+
             <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
                 <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-3">Correspondence &mdash; March 30, 2026</div>
                 <div className="text-sm space-y-3 leading-relaxed">
