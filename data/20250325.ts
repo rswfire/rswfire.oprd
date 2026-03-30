@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/archive/TransmissionDisclosure";
+import { TransmissionData } from "@/components/TransmissionDisclosure";
 
 export const EXPULSION_TRANSMISSION: TransmissionData = {
     ulid: "01JWA36CJ8RRQF3N9E34EE349C",
