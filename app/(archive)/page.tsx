@@ -14,21 +14,21 @@ export default function OverviewPage() {
 
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="pt-4 mx-4 mb-6">
-                    <div className="flex items-stretch rounded-xl overflow-hidden border border-emerald-700">
+                <div className="pt-4 mx-2 sm:mx-4 mb-6">
+                    <div className="flex flex-col sm:flex-row sm:items-stretch rounded-xl overflow-hidden border border-emerald-700">
                         <a
                             href="/oprd-dismissal.pdf"
                             download
                             title="Download dismissal letter PDF"
-                            className="flex items-center justify-center px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
+                            className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
                         >
                             <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
                         </a>
                         <div className="flex-1 p-4 bg-emerald-50">
                             <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
-                            <div className="text-base font-semibold text-emerald-900">The Dismissal Letter</div>
+                            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
                             <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
-                            <div className="flex gap-4 mt-2 text-sm">
+                            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
                                 <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
                                 <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
                             </div>
