@@ -15,7 +15,7 @@ export default function OverviewPage() {
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
                 <div className="pt-4 mx-2 sm:mx-4 mb-6">
-                    <div className="mb-4 pb-4 flex flex-wrap justify-center gap-3 border-b border-gray-300">
+                    <div className="mb-4 pb-4 flex flex-col items-start sm:flex-row sm:justify-center sm:items-center gap-3 border-b border-gray-300">
                         <Link href="/press" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Journalists →</Link>
                         <Link href="/legislators" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Legislators →</Link>
                         <Link href="/attorney" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Lawyers →</Link>
