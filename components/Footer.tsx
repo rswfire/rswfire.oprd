@@ -52,7 +52,7 @@ export default function Footer() {
 
                 <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                     <div className="font-semibold">
-                        <div>A system that won't protect unpaid laborers <em>does not deserve them</em>.</div>
+                        <div>An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
                     </div>
                 </div>
 

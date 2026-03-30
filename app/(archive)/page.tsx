@@ -1,6 +1,7 @@
 // app/(archive)/page.tsx
 
 import Link from "next/link";
+import Icon from "@/components/Icon";
 import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
@@ -14,11 +15,25 @@ export default function OverviewPage() {
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
                 <div className="pt-4 mx-4 mb-6">
-                    <Link href="/attorney" className="block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
-                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Seeking Representation</div>
-                        <div className="text-base font-semibold text-emerald-900">First Amendment retaliation. Documented on agency letterhead.</div>
-                        <div className="text-sm text-emerald-800 mt-1">No settlement. No NDA. United States Supreme Court. →</div>
-                    </Link>
+                    <div className="flex items-stretch rounded-xl overflow-hidden border border-emerald-700">
+                        <a
+                            href="/oprd-dismissal.pdf"
+                            download
+                            title="Download dismissal letter PDF"
+                            className="flex items-center justify-center px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
+                        >
+                            <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
+                        </a>
+                        <div className="flex-1 p-4 bg-emerald-50">
+                            <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
+                            <div className="text-base font-semibold text-emerald-900">The Dismissal Letter</div>
+                            <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
+                            <div className="flex gap-4 mt-2 text-sm">
+                                <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                                <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
