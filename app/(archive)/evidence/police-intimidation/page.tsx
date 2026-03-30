@@ -115,7 +115,6 @@ export default function PoliceIntimidationPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed">
                 <p>I asked who authorized the visit and what its purpose was. She redirected me to FOIA.</p>
                 <p>A direct question to the supervisory officer about why a Special Agent from the investigative branch was sent to a volunteer caretaker&apos;s door &mdash; and the answer is: file a federal records request.</p>
-                <p>Then she attempted to recall the email.</p>
             </div>
 
             <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
@@ -129,7 +128,7 @@ export default function PoliceIntimidationPage() {
             </div>
 
             <div className="mt-6 space-y-4 text-base leading-relaxed">
-                <p>This is the Forest Service&apos;s version of institutional silence. Not no comment. Not we can&apos;t discuss an ongoing investigation. A form link and a recall attempt.</p>
+                <p>This is the Forest Service&apos;s version of institutional silence. Not no comment. Not we can&apos;t discuss an ongoing investigation. A form link.</p>
                 <p>The visit happened. The investigative branch sent him. And the question of why requires a FOIA request to answer.</p>
             </div>
 
