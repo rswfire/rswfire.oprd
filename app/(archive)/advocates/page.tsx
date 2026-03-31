@@ -169,11 +169,19 @@ export default function AdvocatesPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed">
 
                 <p>
-                    I am not asking you to take the case.
+                    I am not asking you to take on the case.
                 </p>
 
                 <p>
-                    I am writing because this situation belongs in your awareness &mdash; and I hope you will consider sharing it with your network. I have reached out to <Link href="/press" className="underline text-emerald-800 hover:text-emerald-600">journalists</Link>. I have reached out to <Link href="/legislators" className="underline text-emerald-800 hover:text-emerald-600">legislators</Link>. I have spent an entire year trying to get accountability within the institution itself. And I have been met with silence everywhere I have turned.
+                    I am writing because this situation belongs in your awareness &mdash; and I hope you will consider sharing it with your network.
+                </p>
+
+                <p>
+                    I have reached out to <Link href="/press" className="underline text-emerald-800 hover:text-emerald-600">journalists</Link>. I have reached out to <Link href="/legislators" className="underline text-emerald-800 hover:text-emerald-600">legislators</Link>. I have spent an entire year trying to get accountability within the institution itself.
+                </p>
+
+                <p>
+                    And my efforts have revealed this structural gap is so pervasive in our society that it is met with deafening silence far too often.
                 </p>
 
             </div>
