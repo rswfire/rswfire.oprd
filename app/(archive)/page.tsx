@@ -13,42 +13,53 @@ export default function OverviewPage() {
         <section className="w-full mx-auto">
 
             {/* PRIMARY DOCUMENTS */}
-            <div className="rounded-xl overflow-hidden border border-emerald-700">
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
                 {/* Dismissal Letter */}
-                <div className="flex flex-col sm:flex-row sm:items-stretch">
-                    <a
-                        href="/oprd-dismissal.pdf"
-                        download
-                        title="Download dismissal letter PDF"
-                        className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
-                    >
-                        <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
-                    </a>
-                    <div className="flex-1 p-4 bg-white">
-                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
-                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
-                        <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
-                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
-                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
-                            <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
+                <div className="p-4">
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
+                            <Icon name="FileText" className="text-white" size={20} strokeWidth={1.5} />
                         </div>
+                        <div>
+                            <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Document</div>
+                            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
+                        </div>
+                    </div>
+                    <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 pt-3 border-t border-gray-200 text-sm">
+                        <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
+                        <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
                     </div>
                 </div>
                 {/* Recordings */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-emerald-700">
-                    <div className="p-4 bg-white sm:border-r border-emerald-700">
-                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Recording</div>
-                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Coercion Meeting</div>
-                        <div className="text-sm text-gray-700 mt-2"><strong>62 minutes at a public picnic table.</strong> The park manager told me to <em>chew glass and swallow it</em>. He admitted I was never given the benefit of the doubt from day one. I recorded every word.</div>
-                        <div className="mt-3 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-2 border-t-2 border-slate-300">
+                    <div className="p-4 sm:border-r border-slate-200">
+                        <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
+                                <Icon name="Mic" className="text-white" size={20} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Recording</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Coercion Meeting</div>
+                            </div>
+                        </div>
+                        <div className="text-sm text-gray-700 mt-3 pt-3 border-t border-gray-200"><strong>62 minutes at a public picnic table.</strong> The park manager told me to <em>chew glass and swallow it</em>. He admitted I was never given the benefit of the doubt from day one. I recorded every word.</div>
+                        <div className="mt-3 pt-3 border-t border-gray-200 text-sm">
                             <Link href="/evidence/coercion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                         </div>
                     </div>
-                    <div className="p-4 bg-white border-t sm:border-t-0 border-emerald-700">
-                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Recording</div>
-                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Containment Call</div>
-                        <div className="text-sm text-gray-700 mt-2"><strong>30 minutes and 56 seconds.</strong> The regional coordinator weaponized personal disclosures to frame me as paranoid and delusional. She ignored every declaration of inappropriate treatment.</div>
-                        <div className="mt-3 text-sm">
+                    <div className="p-4 border-t sm:border-t-0 border-slate-200">
+                        <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
+                                <Icon name="Mic" className="text-white" size={20} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Recording</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Containment Call</div>
+                            </div>
+                        </div>
+                        <div className="text-sm text-gray-700 mt-3 pt-3 border-t border-gray-200"><strong>30 minutes and 56 seconds.</strong> The regional coordinator weaponized personal disclosures to frame me as paranoid and delusional. She ignored every declaration of inappropriate treatment.</div>
+                        <div className="mt-3 pt-3 border-t border-gray-200 text-sm">
                             <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                         </div>
                     </div>
