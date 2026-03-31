@@ -15,11 +15,11 @@ export default function OverviewPage() {
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
                 <div className="pt-4 mx-2 sm:mx-4 mb-6">
-                    <div className="mb-4 pb-4 flex flex-col items-start sm:flex-row sm:justify-center sm:items-center gap-3 border-b border-gray-300">
-                        <Link href="/press" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Journalists →</Link>
-                        <Link href="/legislators" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Legislators →</Link>
-                        <Link href="/attorney" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Lawyers →</Link>
-                        <Link href="/advocates" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Advocates →</Link>
+                    <div className="mb-4 pb-4 grid grid-cols-2 sm:grid-cols-4 gap-2 border-b border-gray-300">
+                        <Link href="/press" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Journalists</Link>
+                        <Link href="/legislators" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Legislators</Link>
+                        <Link href="/attorney" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Lawyers</Link>
+                        <Link href="/advocates" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Advocates</Link>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-stretch rounded-xl overflow-hidden border border-emerald-700">
                         <a
