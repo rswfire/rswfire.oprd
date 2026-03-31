@@ -12,8 +12,9 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
-            {/* DISMISSAL LETTER */}
+            {/* PRIMARY DOCUMENTS */}
             <div className="rounded-xl overflow-hidden border border-emerald-700">
+                {/* Dismissal Letter */}
                 <div className="flex flex-col sm:flex-row sm:items-stretch">
                     <a
                         href="/oprd-dismissal.pdf"
@@ -33,6 +34,26 @@ export default function OverviewPage() {
                         </div>
                     </div>
                 </div>
+                {/* Recordings */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-emerald-700">
+                    <div className="p-4 bg-white sm:border-r border-emerald-700">
+                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Recording</div>
+                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Coercion Meeting</div>
+                        <div className="text-sm text-gray-700 mt-2"><strong>62 minutes at a public picnic table.</strong> The park manager told me to <em>chew glass and swallow it</em>. He admitted I was never given the benefit of the doubt from day one. I recorded every word.</div>
+                        <div className="mt-3 text-sm">
+                            <Link href="/evidence/coercion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                        </div>
+                    </div>
+                    <div className="p-4 bg-white border-t sm:border-t-0 border-emerald-700">
+                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Recording</div>
+                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Containment Call</div>
+                        <div className="text-sm text-gray-700 mt-2"><strong>30 minutes and 56 seconds.</strong> The regional coordinator weaponized personal disclosures to frame me as paranoid and delusional. She ignored every declaration of inappropriate treatment.</div>
+                        <div className="mt-3 text-sm">
+                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                        </div>
+                    </div>
+                </div>
+                {/* Audience Links */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-emerald-700">
                     <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-emerald-300">Advocates</Link>
                     <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-emerald-300">Journalists</Link>
