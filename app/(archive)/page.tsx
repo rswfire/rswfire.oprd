@@ -15,29 +15,31 @@ export default function OverviewPage() {
             <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
                 <div className="pt-4 mx-2 sm:mx-4 mb-6">
-                    <div className="mb-4 pb-4 grid grid-cols-2 sm:grid-cols-4 gap-2 border-b border-gray-300">
-                        <Link href="/advocates" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Advocates</Link>
-                        <Link href="/press" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Journalists</Link>
-                        <Link href="/attorney" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Lawyers</Link>
-                        <Link href="/legislators" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Legislators</Link>
-                    </div>
-                    <div className="flex flex-col sm:flex-row sm:items-stretch rounded-xl overflow-hidden border border-emerald-700">
-                        <a
-                            href="/oprd-dismissal.pdf"
-                            download
-                            title="Download dismissal letter PDF"
-                            className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
-                        >
-                            <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
-                        </a>
-                        <div className="flex-1 p-4 bg-emerald-50">
-                            <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
-                            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
-                            <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
-                            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
-                                <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
-                                <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
+                    <div className="rounded-xl overflow-hidden border border-emerald-700">
+                        <div className="flex flex-col sm:flex-row sm:items-stretch">
+                            <a
+                                href="/oprd-dismissal.pdf"
+                                download
+                                title="Download dismissal letter PDF"
+                                className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
+                            >
+                                <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
+                            </a>
+                            <div className="flex-1 p-4 bg-emerald-50">
+                                <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
+                                <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
+                                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
+                                    <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                                    <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
+                                </div>
                             </div>
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-emerald-700">
+                            <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-r border-emerald-300">Advocates</Link>
+                            <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors sm:border-r sm:border-emerald-300">Journalists</Link>
+                            <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-t border-r border-emerald-300 sm:border-t-0">Lawyers</Link>
+                            <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-t border-emerald-300 sm:border-t-0">Legislators</Link>
                         </div>
                     </div>
                 </div>
