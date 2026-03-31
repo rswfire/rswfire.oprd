@@ -209,12 +209,10 @@ export default function PressPage() {
 
             <div className="mt-4 space-y-1 text-sm text-gray-600">
                 <div className="font-semibold text-gray-900">Robert Samuel White</div>
-                <div>U.S. Forest Service Caretaker</div>
-                <div>Oregon Dunes National Recreation Area</div>
-                <div>Siltcoos Corridor</div>
-                <div className="mt-2">Founder, Autonomy Realms</div>
-                <div>Owner, eNetwizard Inc. Since 1998</div>
+                <div>Founder, Autonomy Realms</div>
+                <div>Owner, eNetwizard, Inc.</div>
                 <div>Former Oregon State Parks Volunteer</div>
+                <div>Current U.S. Forest Service Caretaker</div>
                 <div>Steward, oprdvolunteerabuse.org</div>
             </div>
 
