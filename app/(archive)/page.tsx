@@ -53,36 +53,37 @@ export default function OverviewPage() {
                         </div>
                     </div>
                 </div>
-                {/* Audience Links */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-emerald-700">
-                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-emerald-300">Advocates</Link>
-                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-emerald-300">Journalists</Link>
-                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-emerald-300 sm:border-t-0">Lawyers</Link>
-                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-emerald-300 sm:border-t-0">Legislators</Link>
-                </div>
             </div>
 
             {/* NARRATIVE INTRO */}
-            <div className="mt-4 p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
-
-                <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
-                    <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
-                    <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
-                    <div>This archive is not a story about me.</div>
-                    <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
+            <div className="mt-4 rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <div className="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200">
+                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
+                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
+                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
+                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
                 </div>
+                <div className="p-4 bg-white">
 
-                <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
-
-                    <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
-                        <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
-                        <div>It is not designed to <em>win attention</em>.</div>
-                        <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                    <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
+                        <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
+                        <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                        <div>This archive is not a story about me.</div>
+                        <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
                     </div>
 
-                    <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
-                </div>
+                    <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
 
+                        <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
+                            <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
+                            <div>It is not designed to <em>win attention</em>.</div>
+                            <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                        </div>
+
+                        <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    </div>
+
+                </div>
             </div>
 
             {/* MAPPING THE SYSTEM */}
