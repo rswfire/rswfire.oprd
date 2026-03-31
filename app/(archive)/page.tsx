@@ -12,39 +12,37 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
-            <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
-
-                <div className="pt-4 mx-2 sm:mx-4 mb-6">
-                    <div className="rounded-xl overflow-hidden border border-emerald-700">
-                        <div className="flex flex-col sm:flex-row sm:items-stretch">
-                            <a
-                                href="/oprd-dismissal.pdf"
-                                download
-                                title="Download dismissal letter PDF"
-                                className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
-                            >
-                                <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
-                            </a>
-                            <div className="flex-1 p-4 bg-emerald-50">
-                                <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
-                                <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
-                                <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
-                                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
-                                    <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
-                                    <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-emerald-700">
-                            <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-r border-emerald-300">Advocates</Link>
-                            <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors sm:border-r sm:border-emerald-300">Journalists</Link>
-                            <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-t border-r border-emerald-300 sm:border-t-0">Lawyers</Link>
-                            <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-colors border-t border-emerald-300 sm:border-t-0">Legislators</Link>
+            {/* DISMISSAL LETTER */}
+            <div className="rounded-xl overflow-hidden border border-emerald-700">
+                <div className="flex flex-col sm:flex-row sm:items-stretch">
+                    <a
+                        href="/oprd-dismissal.pdf"
+                        download
+                        title="Download dismissal letter PDF"
+                        className="flex items-center justify-center py-3 sm:py-0 px-5 bg-emerald-700 hover:bg-emerald-800 transition-colors"
+                    >
+                        <Icon name="FileText" className="text-white" size={32} strokeWidth={1.5} />
+                    </a>
+                    <div className="flex-1 p-4 bg-white">
+                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-1">Primary Document</div>
+                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
+                        <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
+                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                            <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
                         </div>
                     </div>
                 </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-emerald-700">
+                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-emerald-300">Advocates</Link>
+                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-emerald-300">Journalists</Link>
+                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-emerald-300 sm:border-t-0">Lawyers</Link>
+                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-emerald-300 sm:border-t-0">Legislators</Link>
+                </div>
+            </div>
 
-                <hr className="my-6 border-t border-gray-300" />
+            {/* NARRATIVE INTRO */}
+            <div className="mt-4 p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
                 <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
                     <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
@@ -64,15 +62,51 @@ export default function OverviewPage() {
                     <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                 </div>
 
-                <hr className="my-6 border-t border-gray-300" />
+            </div>
 
-                {/* Video */}
-                <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
+            {/* MAPPING THE SYSTEM */}
+            <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-300">
+
+                <h2 className="font-bold text-lg tracking-wide">
+                    <Link href="/system-map" className="hover:text-emerald-700 transition-colors">MAPPING THE SYSTEM</Link>
+                </h2>
+
+                <div className="mt-4 text-base leading-relaxed">
+                    <strong>This is not a story about one park.</strong> It is about the architecture that made it possible. The structure underneath the individual choices. The mechanism that runs on volunteers at state parks and libraries and hospitals and schools &mdash; anywhere unpaid labor meets institutional authority and there is no one whose job it is to protect the person giving the labor freely.
+                </div>
+
+                <div className="mt-6 flex flex-col sm:flex-row gap-6 text-sm">
+                    <div className="flex-1 space-y-2">
+                        <Link href="/system-map#stage-one" className="block text-emerald-700 underline hover:text-emerald-600">1. The Origin Event</Link>
+                        <Link href="/system-map#stage-two" className="block text-emerald-700 underline hover:text-emerald-600">2. The Escalation Response</Link>
+                        <Link href="/system-map#stage-three" className="block text-emerald-700 underline hover:text-emerald-600">3. Trust Recruitment</Link>
+                        <Link href="/system-map#stage-four" className="block text-emerald-700 underline hover:text-emerald-600">4. The Coercion Meeting</Link>
+                        <Link href="/system-map#stage-five" className="block text-emerald-700 underline hover:text-emerald-600">5. Assessment &amp; Surveillance</Link>
+                        <Link href="/system-map#stage-six" className="block text-emerald-700 underline hover:text-emerald-600">6. Dismissal Without Process</Link>
+                    </div>
+                    <div className="flex-1 space-y-2">
+                        <Link href="/system-map#stage-seven" className="block text-emerald-700 underline hover:text-emerald-600">7. The Containment Call</Link>
+                        <Link href="/system-map#stage-eight" className="block text-emerald-700 underline hover:text-emerald-600">8. Retaliation in Writing</Link>
+                        <Link href="/system-map#stage-nine" className="block text-emerald-700 underline hover:text-emerald-600">9. Institutional Containment</Link>
+                        <Link href="/system-map#stage-ten" className="block text-emerald-700 underline hover:text-emerald-600">10. The Silence Strategy</Link>
+                        <Link href="/system-map#stage-eleven" className="block text-emerald-700 underline hover:text-emerald-600">11. Police Intimidation</Link>
+                    </div>
+                </div>
+
+                <div className="mt-4 grid grid-cols-2 rounded-lg overflow-hidden border border-emerald-300">
+                    <Link href="/system-map#requires" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors border-r border-emerald-300">What It Requires</Link>
+                    <Link href="/system-map#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors">What Breaks It</Link>
+                </div>
 
             </div>
 
+            {/* Video */}
+            <div className="mt-4">
+                <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
+            </div>
+
             {/* THE VERDICT */}
-            <div className="mt-8 w-full p-8 rounded-xl bg-green-50 border border-emerald-300 text-base">
+            <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">
 
                 <h2 className="font-bold text-lg text-center tracking-wide">
                     THIS IS WHAT THEY DID
@@ -82,7 +116,7 @@ export default function OverviewPage() {
                     Independently verifiable. Never legally challenged. Not going away.
                 </div>
 
-                <hr className="my-6 border-t border-emerald-600" />
+                <hr className="my-6 border-t border-gray-300" />
 
                 {/* KATI BAKER */}
                 <div className="mt-6">
@@ -106,7 +140,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* RYAN WARREN */}
                 <div className="mt-4">
@@ -127,7 +161,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* LOGAN BLISS */}
                 <div className="mt-4">
@@ -148,7 +182,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* UNIDENTIFIED MAN */}
                 <div className="mt-4">
@@ -166,7 +200,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* ALLISON WATSON */}
                 <div className="mt-4">
@@ -188,7 +222,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* LISA SUMPTION */}
                 <div className="mt-4">
@@ -211,7 +245,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* JR COLLIER */}
                 <div className="mt-4">
@@ -228,7 +262,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* GOVERNOR KOTEK */}
                 <div className="mt-4">
@@ -244,7 +278,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-4 border-t border-emerald-600" />
+                <hr className="my-4 border-t border-gray-300" />
 
                 {/* POLICE INTIMIDATION */}
                 <div className="mt-4">
@@ -264,7 +298,7 @@ export default function OverviewPage() {
                     </div>
                 </div>
 
-                <hr className="my-6 border-t border-emerald-600" />
+                <hr className="my-6 border-t border-gray-300" />
 
                 <div className="mt-4 text-lg font-bold">What they took:</div>
 
@@ -284,7 +318,7 @@ export default function OverviewPage() {
                 <div className="mt-4">That is retaliation for protected speech.</div>
                 <div>That is denial of civic participation as punishment for exercising constitutional rights.</div>
 
-                <hr className="my-6 border-t border-emerald-600" />
+                <hr className="my-6 border-t border-gray-300" />
 
                 <div className="mt-4 text-lg font-bold">Why it matters:</div>
 
