@@ -40,6 +40,7 @@ export const archiveSections = [
     { href: "/press", label: "For Journalists" },
     { href: "/legislators", label: "For Legislators" },
     { href: "/attorney", label: "For Lawyers" },
+    { href: "/advocates", label: "For Advocates" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },

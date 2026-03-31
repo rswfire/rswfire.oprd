@@ -19,6 +19,7 @@ export default function OverviewPage() {
                         <Link href="/press" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Journalists →</Link>
                         <Link href="/legislators" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Legislators →</Link>
                         <Link href="/attorney" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Lawyers →</Link>
+                        <Link href="/advocates" className="inline-block px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 border border-emerald-700 rounded-full hover:bg-emerald-700 hover:text-white transition-colors">For Advocates →</Link>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-stretch rounded-xl overflow-hidden border border-emerald-700">
                         <a
