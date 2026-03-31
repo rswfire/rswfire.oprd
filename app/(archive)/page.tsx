@@ -29,7 +29,7 @@ export default function OverviewPage() {
                         <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
                         <div className="text-sm text-emerald-800 mt-1">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
                         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 text-sm">
-                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
                             <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function OverviewPage() {
                         <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Coercion Meeting</div>
                         <div className="text-sm text-gray-700 mt-2"><strong>62 minutes at a public picnic table.</strong> The park manager told me to <em>chew glass and swallow it</em>. He admitted I was never given the benefit of the doubt from day one. I recorded every word.</div>
                         <div className="mt-3 text-sm">
-                            <Link href="/evidence/coercion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                            <Link href="/evidence/coercion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                         </div>
                     </div>
                     <div className="p-4 bg-white border-t sm:border-t-0 border-emerald-700">
@@ -49,7 +49,7 @@ export default function OverviewPage() {
                         <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Containment Call</div>
                         <div className="text-sm text-gray-700 mt-2"><strong>30 minutes and 56 seconds.</strong> The regional coordinator weaponized personal disclosures to frame me as paranoid and delusional. She ignored every declaration of inappropriate treatment.</div>
                         <div className="mt-3 text-sm">
-                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read Full Context →</Link>
+                            <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                         </div>
                     </div>
                 </div>
