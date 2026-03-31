@@ -16,10 +16,10 @@ export default function OverviewPage() {
 
                 <div className="pt-4 mx-2 sm:mx-4 mb-6">
                     <div className="mb-4 pb-4 grid grid-cols-2 sm:grid-cols-4 gap-2 border-b border-gray-300">
-                        <Link href="/press" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Journalists</Link>
-                        <Link href="/legislators" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Legislators</Link>
-                        <Link href="/attorney" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Lawyers</Link>
                         <Link href="/advocates" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Advocates</Link>
+                        <Link href="/press" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Journalists</Link>
+                        <Link href="/attorney" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Lawyers</Link>
+                        <Link href="/legislators" className="block p-3 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">Legislators</Link>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-stretch rounded-xl overflow-hidden border border-emerald-700">
                         <a
