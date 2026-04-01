@@ -87,7 +87,7 @@ export default function GovernorKotekPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 <h2 className="mb-4 text-xl font-semibold">THE SILENCE</h2>
-                
+
                 <div className="mb-4 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                     <div className="space-y-2">
                         <div><strong>A gay man came to serve Oregon without asking for anything in return.</strong></div>
@@ -96,13 +96,22 @@ export default function GovernorKotekPage() {
                         <div><strong>He reported it to the director the governor appointed.</strong></div>
                         <div><strong>She shielded the people who targeted him.</strong></div>
                         <div><strong>He notified the governor's office and the governor's campaign.</strong></div>
-                        <div><strong>They have remained silent.</strong></div>
+                        <div><strong>They have been silent.</strong></div>
                     </div>
                 </div>
 
+                <hr className="my-6 border-t border-gray-300" />
+
+                <h2 className="mb-4 text-xl font-semibold">WHAT CAME AFTER THE SILENCE</h2>
+
                 <div className="space-y-4">
-                    <div>When it was time to protect one of her own &mdash; when a gay volunteer needed Oregon's first openly LGBTQ+ governor to demonstrate that her commitment to queer protection was real and not just rhetorical &mdash; she chose institutional loyalty over human accountability.</div>
-                    <div>Or at least, that's what the silence means right now.</div>
+                    <div>On March 24, 2026 &mdash; the one-year anniversary of my dismissal from Honeyman State Park &mdash; three armed officers arrived at a locked federal gate on restricted federal land where I live and work as a U.S. Forest Service caretaker.</div>
+                    <div>One was a U.S. Forest Service Special Agent from the investigative branch. The other two were unidentified state officers. They told me they were concerned about what I was posting online about Oregon State Parks &mdash; while simultaneously telling me I was not in trouble.</div>
+                    <div>I declined to speak without an attorney and closed the door.</div>
+                    <div>The Forest Service has since confirmed the Special Agent &mdash; Matthew Oliver, badge 555 &mdash; but will not disclose who authorized the visit, what its stated purpose was, or who the two state officers were. When I asked, they redirected me to FOIA.</div>
+                    <div>Armed officers. Behind a locked gate. On the anniversary. Because of what I was posting online.</div>
+                    <div>And still the governor is silent.</div>
+                    <div>The visit is <Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.</div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -145,7 +154,7 @@ export default function GovernorKotekPage() {
                 <hr className="my-6 border-t border-gray-300" />
 
                 <h2 className="mb-4 text-xl font-semibold">THE QUESTION</h2>
-                
+
                 <div className="mb-4 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                     <div className="font-semibold text-lg mb-2">
                         Does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation?
@@ -162,30 +171,11 @@ export default function GovernorKotekPage() {
 
                 <hr className="my-6 border-t border-gray-300" />
 
-                <h2 className="mb-4 text-xl font-semibold">THE CHOICE</h2>
-
-                <div className="space-y-4">
-                    <div>I have spent nine months building permanent accountability infrastructure because every internal channel failed.</div>
-                    <div>I have given every person in the chain of authority &mdash; from park supervisors to her director to her campaign &mdash; the opportunity to do the right thing.</div>
-                    <div>I have been patient far beyond what anyone who experienced what I experienced should be expected to be.</div>
-                    <div>And I have documented every choice, every non-response, every moment when institutional comfort was chosen over human accountability.</div>
-                    <div>She is the final institutional authority before external escalation becomes necessary.</div>
-                    <div>She has the power to end this with accountability instead of exposure.</div>
-                    <div>But that power comes with a timeline.</div>
-                    <div>And the choice she makes now will be part of her legacy &mdash; whether she wins or loses, whether she serves four years or eight, whether history remembers her as barrier-breaker or institution-protector.</div>
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
                 <div className="space-y-4">
                     <div>I was harmed by people she supervises.</div>
                     <div>Her director failed to protect me.</div>
                     <div>She has failed to hold her director accountable.</div>
-                    <div>When it was time to protect one of her own, she chose silence.</div>
-                </div>
-
-                <div className="mt-8 mb-4 font-semibold text-lg">
-                    Why?
+                    <div><strong>When it was time to protect one of her own, Governor Tina Kotek chose silence</strong>.</div>
                 </div>
 
             </div>
