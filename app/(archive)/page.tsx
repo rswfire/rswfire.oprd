@@ -12,8 +12,39 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
+            {/* NARRATIVE INTRO */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <div className="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200">
+                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
+                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
+                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
+                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
+                </div>
+                <div className="p-4 bg-white">
+
+                    <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
+                        <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
+                        <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                        <div>This archive is not a story about me.</div>
+                        <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
+                    </div>
+
+                    <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
+
+                        <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
+                            <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
+                            <div>It is not designed to <em>win attention</em>.</div>
+                            <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                        </div>
+
+                        <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    </div>
+
+                </div>
+            </div>
+
             {/* PRIMARY DOCUMENTS */}
-            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+            <div className="mt-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
                 {/* Dismissal Letter */}
                 <div className="p-4">
                     <div className="flex items-center gap-3">
@@ -25,7 +56,7 @@ export default function OverviewPage() {
                             <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
                         </div>
                     </div>
-                    <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200">Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse.</div>
+                    <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200"><strong>March 26, 2025.</strong> Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse. That is First Amendment retaliation. On agency letterhead. With a signature.</div>
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 pt-3 border-t border-gray-200 text-sm">
                         <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
                         <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
@@ -64,36 +95,21 @@ export default function OverviewPage() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* NARRATIVE INTRO */}
-            <div className="mt-4 rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <div className="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200">
-                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
-                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
-                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
-                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
-                </div>
-                <div className="p-4 bg-white">
-
-                    <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
-                        <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
-                        <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
-                        <div>This archive is not a story about me.</div>
-                        <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
-                    </div>
-
-                    <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
-
-                        <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
-                            <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
-                            <div>It is not designed to <em>win attention</em>.</div>
-                            <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                {/* Police Intimidation */}
+                <div className="p-4 border-t-2 border-slate-300">
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
+                            <Icon name="Video" className="text-white" size={20} strokeWidth={1.5} />
                         </div>
-
-                        <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                        <div>
+                            <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Recording</div>
+                            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">Police Intimidation</div>
+                        </div>
                     </div>
-
+                    <div className="text-sm text-gray-700 mt-3 pt-3 border-t border-gray-200"><strong>March 24, 2026 &mdash; the one-year anniversary of my dismissal.</strong> A U.S. Forest Service Special Agent and two unidentified state officers arrived at a locked federal gate on restricted federal land where I serve as caretaker. They stated concern about what I was posting online about Oregon State Parks. I declined to speak without an attorney and recorded them leaving.</div>
+                    <div className="mt-3 pt-3 border-t border-gray-200 text-sm">
+                        <Link href="/evidence/police-intimidation" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
+                    </div>
                 </div>
             </div>
 
