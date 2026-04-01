@@ -49,7 +49,7 @@ export default function PrimaryDocuments() {
                         <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Expulsion Letter</div>
                     </div>
                 </div>
-                <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200"><strong>March 24, 2025.</strong> Dismissed by Ryan Warren, then two days later expelled by Allison Watson from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse. That is First Amendment retaliation. On state agency letterhead. With a signature.</div>
+                <div className="text-sm text-gray-700 mt-3 pt-3 border-t border-gray-200"><strong>March 24, 2025.</strong> Dismissed by Ryan Warren, then two days later expelled by Allison Watson from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse. That is First Amendment retaliation. On state agency letterhead. With a signature.</div>
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 pt-3 border-t border-gray-200 text-sm">
                     <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
                     <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
