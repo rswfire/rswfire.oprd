@@ -5,25 +5,8 @@ import Icon from "@/components/Icon";
 export default function PrimaryDocuments() {
     return (
         <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
-            {/* Dismissal Letter */}
-            <div className="p-4">
-                <div className="flex items-center gap-3">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
-                        <Icon name="FileText" className="text-white" size={20} strokeWidth={1.5} />
-                    </div>
-                    <div>
-                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Document</div>
-                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
-                    </div>
-                </div>
-                <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200"><strong>March 26, 2025.</strong> Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse. That is First Amendment retaliation. On agency letterhead. With a signature.</div>
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 pt-3 border-t border-gray-200 text-sm">
-                    <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
-                    <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
-                </div>
-            </div>
             {/* Recordings */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 border-t-2 border-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2">
                 <div className="p-4 sm:border-r border-slate-200">
                     <div className="flex items-center gap-3">
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
@@ -53,6 +36,23 @@ export default function PrimaryDocuments() {
                     <div className="mt-3 pt-3 border-t border-gray-200 text-sm">
                         <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                     </div>
+                </div>
+            </div>
+            {/* Dismissal Letter */}
+            <div className="p-4 border-t-2 border-slate-300">
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
+                        <Icon name="FileText" className="text-white" size={20} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">Primary Document</div>
+                        <div className="text-sm font-semibold uppercase tracking-widest text-emerald-900">The Dismissal Letter</div>
+                    </div>
+                </div>
+                <div className="text-sm text-emerald-800 mt-3 pt-3 border-t border-gray-200"><strong>March 26, 2025.</strong> Allison Watson permanently expelled a volunteer from all Oregon State Parks &mdash; in writing &mdash; for speaking publicly about abuse. That is First Amendment retaliation. On agency letterhead. With a signature.</div>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-3 pt-3 border-t border-gray-200 text-sm">
+                    <Link href="/evidence/expulsion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Read the Letter →</Link>
+                    <a href="/oprd-dismissal.pdf" download className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Download PDF ↓</a>
                 </div>
             </div>
             {/* Police Intimidation */}
