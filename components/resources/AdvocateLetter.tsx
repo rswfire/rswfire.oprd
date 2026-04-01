@@ -19,8 +19,6 @@ export default function AdvocateLetter() {
                     They told me they were concerned about what I was posting online. I maintain a professional archive of my experience &mdash; <Link href="/" className="underline text-emerald-800 hover:text-emerald-600">oprdvolunteerabuse.org</Link> &mdash; which is publicly accessible and has never been legally challenged. The supervisory officer has confirmed the investigative branch contact but will not disclose who authorized the visit, what its purpose was, or who the state officers were.
                 </p>
 
-                <p className="font-semibold">I do not feel safe.</p>
-
                 <p>
                     And there is no mechanism &mdash; legal, institutional, or constitutional &mdash; that has protected me. Not from Oregon State Parks. And now not from the United States Forest Service.
                 </p>
