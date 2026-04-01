@@ -353,17 +353,6 @@ export default function OverviewPage() {
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 hover:underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
 
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="pt-4 md:mx-4 mt-6 text-left font-bold">
-                    <Link href="/system-map" className="relative block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
-                        <span className="absolute top-3 sm:top-1/2 sm:-translate-y-1/2 right-3 text-emerald-700">→</span>
-                        <span className="block"><Icon name="Map" className="inline-block mr-1.5 -mt-0.5 text-emerald-700" size={16} strokeWidth={2} />THIS IS THE MAP.</span>
-                        <span className="block"><Icon name="Repeat" className="inline-block mr-1.5 -mt-0.5 text-emerald-700" size={16} strokeWidth={2} />THIS IS THE PATTERN.</span>
-                        <span className="block"><Icon name="Eye" className="inline-block mr-1.5 -mt-0.5 text-emerald-700" size={16} strokeWidth={2} />THIS IS THE MIRROR.</span>
-                    </Link>
-                </div>
-
             </div>
 
         </section>
