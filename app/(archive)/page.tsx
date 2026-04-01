@@ -5,6 +5,7 @@ import Icon from "@/components/Icon";
 import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
+import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 
 import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
@@ -13,27 +14,24 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
-            {/* NARRATIVE INTRO */}
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <div className="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200">
-                    <Link href="/advocates" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
-                    <Link href="/press" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
-                    <Link href="/attorney" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
-                    <Link href="/legislators" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
-                </div>
-                <div className="p-4 bg-white">
+            {/* INTRODUCTION */}
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
 
-                    <div className="md:mx-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                <div className="bg-white p-4">
+
+                    <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                         <div className="font-semibold">
-                            <div>An institution that won't protect the people who serve it for free <em>does not deserve them</em>.</div>
+                            <div>Any institution that doesn't protect the people who serve it for free <em>do not deserve them</em>.</div>
                         </div>
                     </div>
 
-                    <div className="md:mx-8 text-base sm:text-lg tracking-tight space-y-4">
-                        <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
-                        <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
-                        <div>This archive is not a story about me.</div>
-                        <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
+                    <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
+                        <div className="md:mx-8 md:p-4 space-y-4">
+                            <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
+                            <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                            <div>This archive is not a story about me.</div>
+                            <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
+                        </div>
                     </div>
 
                     <div className="mt-4 ml-0 sm:ml-8 text-base text-gray-600">
@@ -44,10 +42,15 @@ export default function OverviewPage() {
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
 
-                        <div className="mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                        <div className="p-4 mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                     </div>
 
                 </div>
+            </div>
+
+            {/* RESOURCES */}
+            <div className="mt-4">
+                <ResourcesOverview />
             </div>
 
             {/* PRIMARY DOCUMENTS */}

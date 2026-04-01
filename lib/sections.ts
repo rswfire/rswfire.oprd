@@ -3,10 +3,20 @@ export const archiveSections = [
     { href: "/", label: "Home" },
     { href: "/ethics", label: "A Note About Ethics" },
     { href: "#separator-1", label: "", separator: true },
+    { href: "/system-map", label: "Mapping the System" },
     { href: "/key-individuals", label: "Key Individuals" },
     { href: "/timeline", label: "Timeline" },
     { href: "#separator-2", label: "", separator: true },
-    { href: "/system-map", label: "Mapping the System" },
+    {
+        href: "/resources",
+        label: "Resources",
+        subsections: [
+            { href: "/resources/advocates", label: "For Advocates" },
+            { href: "/resources/press", label: "For Press" },
+            { href: "/resources/lawyers", label: "For Lawyers" },
+            { href: "/resources/legislators", label: "For Legislators" }
+        ]
+    },
     { href: "#separator-3", label: "", separator: true },
     {
 
@@ -24,6 +34,7 @@ export const archiveSections = [
             { href: "/evidence/police-intimidation", label: "9. Police Intimidation" }
         ]
     },
+    { href: "/faq", label: "Frequently Asked Questions" },
     { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",
@@ -34,14 +45,8 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
-    { href: "#separator-6", label: "", separator: true },
-    { href: "/advocates", label: "For Advocates" },
-    { href: "/press", label: "For Journalists" },
-    { href: "/attorney", label: "For Lawyers" },
-    { href: "/legislators", label: "For Legislators" },
-    { href: "#separator-7", label: "", separator: true },
-    { href: "/faq", label: "Frequently Asked Questions" },
+
+    { href: "#separator-5", label: "", separator: true },
     { href: "/reading", label: "Selected Reading" },
 ];
