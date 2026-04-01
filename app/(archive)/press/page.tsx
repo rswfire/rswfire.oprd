@@ -1,6 +1,7 @@
 // app/(archive)/press/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import PrimaryDocuments from "@/components/PrimaryDocuments";
 import SectionPage from "@/components/SectionPage";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
@@ -215,6 +216,10 @@ export default function PressPage() {
                 <div>Current U.S. Forest Service Caretaker</div>
                 <div>Steward, oprdvolunteerabuse.org</div>
             </div>
+
+            <hr className="my-8 border-t border-gray-300" />
+
+            <PrimaryDocuments />
 
         </SectionPage>
     );

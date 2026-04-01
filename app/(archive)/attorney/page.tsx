@@ -1,5 +1,6 @@
 // app/(archive)/attorney/page.tsx
 import type { Metadata } from "next";
+import PrimaryDocuments from "@/components/PrimaryDocuments";
 import SectionPage from "@/components/SectionPage";
 import Link from "next/link";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
@@ -183,6 +184,10 @@ export default function AttorneyPage() {
             <div className="mt-4">
                 <a href="mailto:rsw@rswfire.com" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Contact Robert Samuel White</a>
             </div>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <PrimaryDocuments />
 
         </SectionPage>
     );
