@@ -1,8 +1,21 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-600 bg-white/90">
 
+            <div className="max-w-6xl mx-auto px-4 mb-8">
+                <div className="flex flex-col sm:flex-row gap-6 items-start">
+                    <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
+                    <div className="space-y-3">
+                        <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
+                        <div className="text-sm italic text-gray-500">Their institutional silence does not erase the pattern. It confirms it.</div>
+                        <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
+                    </div>
+                </div>
+            </div>
 
+            <hr className="max-w-6xl mx-auto border-t border-gray-200 mb-8" />
 
             <div className="max-w-6xl mx-auto px-4 space-y-2">
 
@@ -15,9 +28,9 @@ export default function Footer() {
                 </div>
 
                 <div className="text-center text-sm text-gray-500 leading-relaxed">
-                    <div>This website is an independent public-interest documentation project.</div>
-                    <div>It is not affiliated with, endorsed by, or operated by the Oregon Parks &amp; Recreation Department (OPRD) or any government entity.</div>
-                    <div className="text-xs pt-2">All information presented reflects the creator’s firsthand experience, contemporaneous records, and evidence-based documentation.</div>
+                    <div><strong>This website is an independent public-interest documentation project</strong>.</div>
+                    <div>It is not affiliated with, endorsed by, or operated by the State of Oregon, Oregon Parks &amp; Recreation Department (OPRD), or any other government entity.</div>
+                    <div>All information presented reflects the creator’s firsthand experience, contemporaneous records, and evidence-based documentation.</div>
 
                 </div>
 

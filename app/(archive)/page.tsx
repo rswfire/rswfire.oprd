@@ -343,18 +343,7 @@ export default function OverviewPage() {
 
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="mb-6 flex flex-col sm:flex-row gap-6 items-start">
-                    <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
-                    <div className="space-y-3">
-                        <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
-                        <div className="text-sm italic text-gray-600">Their institutional silence does not erase the pattern. It confirms it.</div>
-                        <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
-                    </div>
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="mt-4 font-bold">This archive is not for revenge.</div>
+                <div className="font-bold">This archive is not for revenge.</div>
 
                 <div className="mt-4">It is for those who have been told they imagined it.</div>
                 <div>It is for those about to walk into something similar.</div>
