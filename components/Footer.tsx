@@ -10,7 +10,7 @@ export default function Footer() {
                     <div>
                         &copy;&nbsp;
                           <a href="https://rswfire.com/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">Robert Samuel White</a>
-                        , 2025+.
+                        , 2025-2026.
                     </div>
                 </div>
 
@@ -48,12 +48,6 @@ export default function Footer() {
                     >
                         Contact
                     </a>
-                </div>
-
-                <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                    <div className="font-semibold">
-                        <div>An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
-                    </div>
                 </div>
 
             </div>

@@ -23,7 +23,13 @@ export default function OverviewPage() {
                 </div>
                 <div className="p-4 bg-white">
 
-                    <div className="mx-8 text-base sm:text-lg tracking-tight space-y-4">
+                    <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                        <div className="font-semibold">
+                            <div>An institution that won't protect the people who serve it for free <em>does not deserve them</em>.</div>
+                        </div>
+                    </div>
+
+                    <div className="md:mx-8 text-base sm:text-lg tracking-tight space-y-4">
                         <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
                         <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
                         <div>This archive is not a story about me.</div>
