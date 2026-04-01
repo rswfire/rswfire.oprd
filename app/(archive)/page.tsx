@@ -16,14 +16,14 @@ export default function OverviewPage() {
             {/* NARRATIVE INTRO */}
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
                 <div className="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200">
-                    <Link href="/advocates" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
-                    <Link href="/press" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
-                    <Link href="/attorney" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
-                    <Link href="/legislators" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
+                    <Link href="/advocates" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-r border-slate-200">Advocates</Link>
+                    <Link href="/press" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors sm:border-r sm:border-slate-200">Journalists</Link>
+                    <Link href="/attorney" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-r border-slate-200 sm:border-t-0">Lawyers</Link>
+                    <Link href="/legislators" className="block py-3.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-50 transition-colors border-t border-slate-200 sm:border-t-0">Legislators</Link>
                 </div>
                 <div className="p-4 bg-white">
 
-                    <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
+                    <div className="md:mx-4 p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                         <div className="font-semibold">
                             <div>An institution that won't protect the people who serve it for free <em>does not deserve them</em>.</div>
                         </div>
@@ -343,9 +343,13 @@ export default function OverviewPage() {
 
             <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
 
-                <div className="mb-6 text-sm">
-                    <div>Oregon state government can never again abuse a volunteer this way without documented precedent. When the Governor's office was directly notified and chose silence, this stopped being one agency's failure and became shared across the state structure.</div>
-                    <div className="mt-2">Their institutional silence does not erase the pattern. It confirms it.</div>
+                <div className="mb-6 flex flex-col sm:flex-row gap-6 items-start">
+                    <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
+                    <div className="space-y-3">
+                        <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
+                        <div className="text-sm italic text-gray-600">Their institutional silence does not erase the pattern. It confirms it.</div>
+                        <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
+                    </div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />
@@ -362,9 +366,12 @@ export default function OverviewPage() {
 
                 <hr className="my-6 border-t border-gray-300" />
 
-                <div className="pt-4 mx-4 mt-6 text-center font-bold">
-                    <Link href="/system-map" className="block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
-                        THIS IS THE MAP. THIS IS THE PATTERN. THIS IS THE MIRROR.
+                <div className="pt-4 md:mx-4 mt-6 text-left sm:text-center font-bold">
+                    <Link href="/system-map" className="relative block p-4 bg-emerald-50 border border-emerald-700 rounded-xl hover:bg-emerald-100 transition-colors">
+                        <span className="absolute top-3 sm:top-1/2 sm:-translate-y-1/2 right-3 text-emerald-700">→</span>
+                        <span className="block sm:inline">THIS IS THE MAP.</span>
+                        <span className="block sm:inline"> THIS IS THE PATTERN.</span>
+                        <span className="block sm:inline"> THIS IS THE MIRROR.</span>
                     </Link>
                 </div>
 
