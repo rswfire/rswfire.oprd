@@ -4,22 +4,9 @@ export default function Footer() {
     return (
         <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-600 bg-white/90">
 
-            <div className="max-w-6xl mx-auto px-4 mb-8">
-                <div className="flex flex-col sm:flex-row gap-6 items-start">
-                    <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
-                    <div className="space-y-3">
-                        <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
-                        <div className="text-sm italic text-gray-500">Their institutional silence does not erase the pattern. It confirms it.</div>
-                        <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
-                    </div>
-                </div>
-            </div>
-
-            <hr className="max-w-6xl mx-auto border-t border-gray-200 mb-8" />
-
             <div className="max-w-6xl mx-auto px-4 space-y-2">
 
-                <div className="text-center space-y-1">
+                <div className="text-center space-y-1 text-lg">
                     <div>
                         &copy;&nbsp;
                           <a href="https://rswfire.com/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">Robert Samuel White</a>
@@ -33,6 +20,21 @@ export default function Footer() {
                     <div>All information presented reflects the creator’s firsthand experience, contemporaneous records, and evidence-based documentation.</div>
 
                 </div>
+
+                <hr className="max-w-6xl mx-auto border-t border-gray-200 my-8" />
+
+                <div className="max-w-6xl mx-auto px-4 mb-8">
+                    <div className="flex flex-col sm:flex-row gap-6 items-start">
+                        <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
+                        <div className="space-y-3">
+                            <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
+                            <div className="text-sm italic text-gray-500">Their institutional silence does not erase the pattern. It confirms it.</div>
+                            <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr className="max-w-6xl mx-auto border-t border-gray-200 my-8" />
 
                 <div className="flex justify-center gap-4 text-sm">
                     <a
@@ -54,7 +56,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="https://rswfire.com/contact"
+                        href="mailto:rsw@rswfire.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline"
