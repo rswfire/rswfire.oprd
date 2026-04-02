@@ -78,18 +78,24 @@ async function fetchVideoUrl(s3Url: string): Promise<string | null> {
 function TransmissionVideo({ s3Url }: { s3Url: string }) {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [videoUrl, setVideoUrl] = useState<string | null>(null);
+    const [posterUrl, setPosterUrl] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [retries, setRetries] = useState(0);
 
+    const thumbnailS3Url = s3Url.replace(/video\.mp4$/, "thumbnail.jpg");
+
     useEffect(() => {
-        fetchVideoUrl(s3Url)
-            .then(url => {
-                if (url) setVideoUrl(url);
+        Promise.all([
+            fetchVideoUrl(s3Url),
+            fetchVideoUrl(thumbnailS3Url),
+        ]).then(([vidUrl, thumbUrl]) => {
+                if (vidUrl) setVideoUrl(vidUrl);
                 else setError(true);
+                if (thumbUrl) setPosterUrl(thumbUrl);
             })
             .finally(() => setLoading(false));
-    }, [s3Url]);
+    }, [s3Url, thumbnailS3Url]);
 
     const onVideoError = useCallback(async (event: React.SyntheticEvent<HTMLVideoElement>) => {
         const code = (event.target as HTMLVideoElement)?.error?.code;
@@ -168,6 +174,7 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
                     preload="metadata"
                     className="w-full h-full"
                     onError={onVideoError}
+                    {...(posterUrl ? { poster: posterUrl } : {})}
                 >
                     Your browser does not support the video tag.
                 </video>
