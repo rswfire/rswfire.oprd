@@ -14,11 +14,6 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
-            {/* RESOURCES */}
-            <div className="mb-4">
-                <ResourcesOverview />
-            </div>
-
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
 
@@ -26,8 +21,13 @@ export default function OverviewPage() {
 
                     <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                         <div className="font-semibold">
-                            <div>Any institution that doesn't protect the people who serve it for free <em>do not deserve them</em>.</div>
+                            <div>An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
                         </div>
+                    </div>
+
+                    {/* RESOURCES */}
+                    <div className="mt-4">
+                        <ResourcesOverview />
                     </div>
 
                     <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
