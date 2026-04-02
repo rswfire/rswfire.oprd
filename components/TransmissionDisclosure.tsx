@@ -20,6 +20,7 @@ export interface TransmissionData {
 
     // Video (optional — omit for audio-only or text transmissions)
     s3Url?: string;
+    youtubeUrl?: string;
 
     // Realm metadata
     energeticSignature: string;
@@ -184,6 +185,36 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
     );
 }
 
+function TransmissionYouTube({ youtubeUrl }: { youtubeUrl: string }) {
+    // Extract video ID from various YouTube URL formats
+    let videoId = "";
+    try {
+        const url = new URL(youtubeUrl);
+        if (url.hostname === "youtu.be") {
+            videoId = url.pathname.slice(1);
+        } else if (url.hostname.includes("youtube.com")) {
+            videoId = url.searchParams.get("v") || "";
+        }
+    } catch {
+        videoId = "";
+    }
+
+    if (!videoId) return null;
+
+    return (
+        <div className="aspect-video bg-slate-900">
+            <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ border: 0 }}
+            />
+        </div>
+    );
+}
+
 function Entry({ entry }: { entry: TransmissionEntry }) {
     return (
         <div className="pl-5 py-1 space-y-2">
@@ -221,7 +252,7 @@ function Entry({ entry }: { entry: TransmissionEntry }) {
 export default function TransmissionDisclosure({ transmission, defaultExpanded = false }: TransmissionDisclosureProps) {
     const [expanded, setExpanded] = useState(defaultExpanded);
     const {
-        ulid, signalUrl, date, duration, s3Url,
+        ulid, signalUrl, date, duration, s3Url, youtubeUrl,
         energeticSignature, fieldState, orientation,
         label, preview, entries, closing,
     } = transmission;
@@ -260,7 +291,7 @@ export default function TransmissionDisclosure({ transmission, defaultExpanded =
             </div>
 
             {/* ── Video (if present) ── */}
-            {s3Url && <TransmissionVideo s3Url={s3Url} />}
+            {youtubeUrl ? <TransmissionYouTube youtubeUrl={youtubeUrl} /> : s3Url ? <TransmissionVideo s3Url={s3Url} /> : null}
 
             {/* ── Label + signal link ── */}
             <div className="flex items-start justify-between gap-4 px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
