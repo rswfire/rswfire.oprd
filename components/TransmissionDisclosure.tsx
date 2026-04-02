@@ -83,18 +83,25 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
     const [error, setError] = useState(false);
     const [retries, setRetries] = useState(0);
 
-    const thumbnailS3Url = s3Url.replace(/video\.mp4$/, "thumbnail.jpg");
+    const thumbnailS3Url = s3Url.replace(/video\.mp4$/, "thumbnail");
 
     useEffect(() => {
-        Promise.all([
-            fetchVideoUrl(s3Url),
-            fetchVideoUrl(thumbnailS3Url),
-        ]).then(([vidUrl, thumbUrl]) => {
-                if (vidUrl) setVideoUrl(vidUrl);
-                else setError(true);
-                if (thumbUrl) setPosterUrl(thumbUrl);
-            })
-            .finally(() => setLoading(false));
+        async function load() {
+            const [vidUrl, pngUrl] = await Promise.all([
+                fetchVideoUrl(s3Url),
+                fetchVideoUrl(thumbnailS3Url + ".png"),
+            ]);
+            if (vidUrl) setVideoUrl(vidUrl);
+            else setError(true);
+            if (pngUrl) {
+                setPosterUrl(pngUrl);
+            } else {
+                const jpgUrl = await fetchVideoUrl(thumbnailS3Url + ".jpg");
+                if (jpgUrl) setPosterUrl(jpgUrl);
+            }
+            setLoading(false);
+        }
+        load();
     }, [s3Url, thumbnailS3Url]);
 
     const onVideoError = useCallback(async (event: React.SyntheticEvent<HTMLVideoElement>) => {
