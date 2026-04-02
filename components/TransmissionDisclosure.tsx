@@ -175,6 +175,7 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
                     className="w-full h-full"
                     onError={onVideoError}
                     {...(posterUrl ? { poster: posterUrl } : {})}
+                    style={{ objectFit: "cover" }}
                 >
                     Your browser does not support the video tag.
                 </video>
