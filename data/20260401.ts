@@ -6,7 +6,6 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
     date: "April 1, 2026",
     duration: "13:06",
     s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/signals/01KN4EMBG0BWXBDM6679T1Q06P/video.mp4",
-    youtubeUrl: "https://youtu.be/jKXSerKpohA",
     energeticSignature: "direct address",
     fieldState: "clear-eyed",
     orientation: "toward structural accountability — recorded on the trail in a storm because the work doesn't stop",
