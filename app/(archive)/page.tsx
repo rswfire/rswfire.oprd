@@ -8,7 +8,7 @@ import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 
-import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
+import { STRUCTURAL_GAP_TRANSMISSION } from "@/data/20260401";
 
 export default function OverviewPage() {
     return (
@@ -53,6 +53,11 @@ export default function OverviewPage() {
                 </div>
             </div>
 
+            {/* Video */}
+            <div className="mt-4">
+                <TransmissionDisclosure transmission={STRUCTURAL_GAP_TRANSMISSION} />
+            </div>
+
             {/* PRIMARY DOCUMENTS */}
             <div className="mt-4">
                 <PrimaryDocuments />
@@ -92,11 +97,6 @@ export default function OverviewPage() {
                     <Link href="/system-map#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors">What Breaks It</Link>
                 </div>
 
-            </div>
-
-            {/* Video */}
-            <div className="mt-4">
-                <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
             </div>
 
             {/* THE VERDICT */}
