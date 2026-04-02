@@ -14,6 +14,11 @@ export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
 
+            {/* RESOURCES */}
+            <div className="mb-4">
+                <ResourcesOverview />
+            </div>
+
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
 
@@ -46,11 +51,6 @@ export default function OverviewPage() {
                     </div>
 
                 </div>
-            </div>
-
-            {/* RESOURCES */}
-            <div className="mt-4">
-                <ResourcesOverview />
             </div>
 
             {/* PRIMARY DOCUMENTS */}
