@@ -1,11 +1,11 @@
 import { TransmissionData } from "@/components/TransmissionDisclosure";
 
 export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
-    ulid: "01KN4EMBG05VN0HQ5GVA2FFR75",
-    signalUrl: "https://rswfire.com/signal/01KN4EMBG05VN0HQ5GVA2FFR75",
+    ulid: "01KN5QTQ004PTC41HT67Q26NTE",
+    signalUrl: "https://rswfire.com/signal/01KN5QTQ004PTC41HT67Q26NTE",
     date: "April 1, 2026",
     duration: "13:06",
-    s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/signals/01KN4EMBG05VN0HQ5GVA2FFR75/video.mp4",
+    s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/signals/01KN5QTQ004PTC41HT67Q26NTE/video.mp4",
     energeticSignature: "direct address",
     fieldState: "clear-eyed",
     orientation: "toward structural accountability — recorded on the trail in a storm because the work doesn't stop",
