@@ -21,7 +21,7 @@ export default function OverviewPage() {
 
                     <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
                         <div className="font-semibold">
-                            <div>An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
+                            <div>This case is not complicated. The abuse and retaliation are visible the moment anyone decides to look. An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
                         </div>
                     </div>
 
