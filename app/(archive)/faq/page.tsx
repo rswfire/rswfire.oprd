@@ -12,8 +12,8 @@ export default function FAQPage() {
     return (
         <SectionPage
             title="FREQUENTLY ASKED QUESTIONS"
-            previousPage={{ href: "/governor-kotek", label: "The Governor's Silence" }}
-            nextPage={{ href: "/reading", label: "Selected Reading" }}
+            previousPage={{ href: "/displacement", label: "The Displacement Framework" }}
+            nextPage={{ href: "/resources", label: "Resources" }}
         >
             <div className="mt-8 space-y-8">
 

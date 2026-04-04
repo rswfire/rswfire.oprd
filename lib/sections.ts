@@ -2,11 +2,9 @@
 export const archiveSections = [
     { href: "/", label: "Home" },
     { href: "/ethics", label: "A Note About Ethics" },
-    { href: "/displacement", label: "The Displacement Framework" },
+    { href: "/displacement", label: "Displacement Framework" },
+    { href: "/faq", label: "Frequently Asked Questions" },
     { href: "#separator-1", label: "", separator: true },
-    { href: "/key-individuals", label: "Key Individuals" },
-    { href: "/timeline", label: "Timeline" },
-    { href: "#separator-2", label: "", separator: true },
     {
         href: "/resources",
         label: "Resources",
@@ -18,6 +16,9 @@ export const archiveSections = [
             { href: "/resources/volunteers", label: "For Volunteers" }
         ]
     },
+    { href: "#separator-2", label: "", separator: true },
+    { href: "/key-individuals", label: "Key Individuals" },
+    { href: "/timeline", label: "Timeline" },
     { href: "#separator-3", label: "", separator: true },
     {
 
@@ -35,7 +36,6 @@ export const archiveSections = [
             { href: "/evidence/police", label: "9. Police Intimidation" }
         ]
     },
-    { href: "/faq", label: "Frequently Asked Questions" },
     { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",

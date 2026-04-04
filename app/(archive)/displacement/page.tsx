@@ -24,8 +24,8 @@ export default function DisplacementPage() {
     return (
         <SectionPage
             title="THE DISPLACEMENT FRAMEWORK"
-            previousPage={{ href: "/timeline", label: "Timeline" }}
-            nextPage={{ href: "/evidence", label: "Evidence" }}
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
+            nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
             <blockquote className="border-l-4 border-red-700 pl-6 py-4 mb-12">

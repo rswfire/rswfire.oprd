@@ -14,7 +14,7 @@ export default function TimelinePage() {
             title="TIMELINE"
             subtitle="FEBRUARY 9, 2025 — ONGOING"
             previousPage={{ href: "/key-individuals", label: "Key Individuals" }}
-            nextPage={{ href: "/displacement", label: "The Displacement Framework" }}
+            nextPage={{ href: "/evidence", label: "Evidence" }}
         >
 
             <h2 className="text-xl font-semibold"><strong>FEBRUARY — MARCH 2025</strong>: ABUSE AND DISMISSAL</h2>
@@ -299,6 +299,22 @@ export default function TimelinePage() {
                         <Link href="/evidence/police/" className="underline text-emerald-800 hover:text-emerald-600">
                             Three police officers arrive at a locked federal gate.
                         </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>APRIL 2026</strong>: THE DISPLACEMENT FRAMEWORK</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">April 3, 2026</div>
+                    <div className="mt-2 text-sm">
+                        While walking the Waxmyrtle Trail in the Oregon Dunes,&nbsp;
+                        <Link href="/displacement" className="underline text-emerald-800 hover:text-emerald-600">
+                            the displacement framework is named
+                        </Link>. One year after the first displacement was executed, and one week after the second when they brought police to his door. The weapon that connects all nine stages of documented institutional conduct — from the origin event through police intimidation — is identified, named, and <Link href="https://rswfire.com/signal/01KN9KDSG0H3W0WZ9GBCJDJMG5" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">recorded on the trail</Link>. The archive is restructured around it. A <Link href="/resources/volunteers" className="underline text-emerald-800 hover:text-emerald-600">resource page for volunteers</Link> is created to give the pattern a name for those still inside it.
                     </div>
                 </li>
             </ul>

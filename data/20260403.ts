@@ -10,11 +10,11 @@ export const NAMING_DISPLACEMENT_TRANSMISSION: TransmissionData = {
     fieldState: "integrating",
     orientation: "toward structural legibility and volunteer protection infrastructure",
     label: "Transmission — April 3, 2026",
-    preview: "Recorded while walking the Wax Myrtle Trail in the Oregon Dunes. One year and ten days after the first displacement was executed. He names the weapon for the first time — not as theory, but as something he finally has the language to describe after living inside it for a year. This is the moment displacement stopped being a pattern and became a framework.",
+    preview: "Recorded while walking the Waxmyrtle Trail in the Oregon Dunes. One year after the first displacement was executed, and one week after the second when they brought police to his door. He names the weapon for the first time — not as theory, but as something he finally has the language to describe after living inside it for a year. This is the moment displacement stopped being a pattern and became a framework.",
     entries: [
         {
             timestamp: "[0:00 — 0:24]",
-            quote: "Hi there, I'm Sam. I am walking the Wax Myrtle Trail in the Oregon Dunes, one of the coolest places I've ever been. I've lived here for a year now. I've hiked this trail so many times, all the trails around here. It's one of the most interesting, it's been the best experience of my life.",
+            quote: "Hi there, I'm Sam. I am walking the Waxmyrtle Trail in the Oregon Dunes, one of the coolest places I've ever been. I've lived here for a year now. I've hiked this trail so many times, all the trails around here. It's one of the most interesting, it's been the best experience of my life.",
             commentary: "He starts where he always starts — in the place. The trail, the dunes, the coast he has made home. A year of living here. A year of documenting what was done to him. Both things are true at the same time.",
         },
         {
@@ -73,5 +73,5 @@ export const NAMING_DISPLACEMENT_TRANSMISSION: TransmissionData = {
             commentary: "Making it legible. That is what the displacement framework does. It takes a pattern that was always there — that he always saw — and gives it language that others can use. The framework was named on this trail. It will not be unnamed.",
         },
     ],
-    closing: "This transmission was recorded on the Wax Myrtle Trail in the Oregon Dunes on April 3, 2026 — one year and ten days after the first displacement was executed. It is the moment the framework was named.\n\nEverything that follows in the archive — the displacement page, the volunteer resources, the stage-by-stage analysis on every evidence page — began here, on this trail, with this realization.",
+    closing: "This transmission was recorded on the Waxmyrtle Trail in the Oregon Dunes on April 3, 2026 — one year after the first displacement was executed, and one week after the second when they brought police to my door. It is the moment the framework was named.\n\nEverything that follows in the archive — the displacement page, the volunteer resources, the stage-by-stage analysis on every evidence page — began here, on this trail, with this realization.",
 };
