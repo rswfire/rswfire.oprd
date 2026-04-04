@@ -15,9 +15,20 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                 >
                     Displacement Framework — {entry.stage}
                 </Link>
-                <p className="text-base text-gray-800 leading-relaxed">
+                <p className="text-base text-gray-800 leading-relaxed mb-4">
                     {entry.connection}
                 </p>
+                <div className="flex flex-wrap gap-2">
+                    <Link href="/displacement" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
+                        The Displacement Framework
+                    </Link>
+                    <Link href="/displacement#requires" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
+                        What It Requires
+                    </Link>
+                    <Link href="/displacement#breaks" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
+                        What Breaks It
+                    </Link>
+                </div>
             </div>
             <div className="px-6 py-5 bg-white">
                 <p className="text-xs font-mono uppercase tracking-widest text-red-700 mb-3">
@@ -33,14 +44,11 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     {entry.volunteer.body}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                    <Link href="/displacement" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
-                        The Displacement Framework
+                    <Link href="/resources/volunteers" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                        For Volunteers
                     </Link>
-                    <Link href="/displacement#requires" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
-                        What It Requires
-                    </Link>
-                    <Link href="/displacement#breaks" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
-                        What Breaks It
+                    <Link href={`/resources/volunteers#stage-${entry.stage.split('.')[0]}`} className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                        This Stage
                     </Link>
                 </div>
             </div>
