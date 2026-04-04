@@ -24,7 +24,7 @@ export default function DisplacementPage() {
     return (
         <SectionPage
             title="THE DISPLACEMENT FRAMEWORK"
-            subtitle="THE WEAPON AND THE GOAL"
+            subtitle="THE MACHINE AND THE WEAPON"
             previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
@@ -46,11 +46,7 @@ export default function DisplacementPage() {
                 This page names both the machine and the weapon. The machine is the architecture that makes it possible — the structure underneath the individual choices, the mechanism that runs on volunteers at state parks and libraries and hospitals and schools, anywhere unpaid labor meets institutional authority and there is no one whose job it is to protect the person giving the labor freely. The weapon is displacement — the specific sequence the machine uses to remove the person who created a record.
             </p>
 
-            <p className="text-base text-gray-700 leading-relaxed mb-4">
-                This system does not require cruel people. It requires ordinary people making ordinary institutional choices inside a structure that rewards silence and punishes documentation.
-            </p>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-12 italic text-gray-600">
+<p className="text-base text-gray-700 leading-relaxed mb-12 italic text-gray-600">
                 If you recognize what follows, you are not imagining it.
             </p>
 
