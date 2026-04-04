@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementBanner from "@/components/DisplacementBanner";
-import ForVolunteersCallout from "@/components/ForVolunteersCallout";
+import DisplacementStage from "@/components/DisplacementStage";
 
 export const metadata: Metadata = {
     title: "Betrayal",
@@ -19,11 +18,10 @@ export default function TrustRecruitmentPage() {
             previousPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
             nextPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
             summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
-            systemMap={{ href: "/system-map#stage-three", label: "Stage Three — Trust Recruitment", blurb: "They elicit trust through reciprocal vulnerability. They create the conditions for disclosure. They receive what the volunteer shares — and they deliver it to management." }}
+
         >
 
-            <DisplacementBanner stage="trust" />
-            <ForVolunteersCallout stage={3} summary="A supervisor. A coordinator. Someone who asked questions, listened, drew you out. What you shared in confidence was delivered to people who were already building a case against you. That is not a coincidence. That is a tactic." />
+            <DisplacementStage stage="trust" />
 
             <h2 className="text-xl font-semibold">THE DISCLOSURES</h2>
 

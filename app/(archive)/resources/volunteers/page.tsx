@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import { NAMING_DISPLACEMENT_TRANSMISSION } from "@/data/20260403";
 
 export const metadata: Metadata = {
     title: "For Volunteers",
@@ -86,6 +88,10 @@ export default function ForVolunteersPage() {
                 </footer>
             </blockquote>
 
+            <div className="mb-12">
+                <TransmissionDisclosure transmission={NAMING_DISPLACEMENT_TRANSMISSION} />
+            </div>
+
             <p className="text-base text-gray-700 leading-relaxed mb-6">
                 If you found this page, something probably happened to you.
             </p>
@@ -110,7 +116,7 @@ export default function ForVolunteersPage() {
 
             <div className="space-y-8 mb-16">
                 {stages.map((item) => (
-                    <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-8">
+                    <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-48">
                         <p className="text-xs font-mono text-red-700 uppercase tracking-widest mb-1">
                             Stage {item.stage}
                         </p>

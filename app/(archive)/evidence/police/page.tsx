@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
-import DisplacementBanner from "@/components/DisplacementBanner";
-import ForVolunteersCallout from "@/components/ForVolunteersCallout";
+import DisplacementStage from "@/components/DisplacementStage";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
 export const metadata: Metadata = {
@@ -18,11 +17,10 @@ export default function PoliceIntimidationPage() {
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
-            systemMap={{ href: "/system-map#stage-eleven", label: "Stage Eleven — Police Intimidation", blurb: "When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls." }}
+
         >
 
-            <DisplacementBanner stage="police" />
-            <ForVolunteersCallout stage={9} summary="Not everyone gets here. But if the record you built was strong enough to threaten them — they may have. A visit. A call. A warning. The goal is to make the cost of continuing feel unsurvivable. It isn't. But they need you to believe it is." />
+            <DisplacementStage stage="police" />
 
             <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 

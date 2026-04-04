@@ -2,8 +2,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
-import DisplacementBanner from "@/components/DisplacementBanner";
-import ForVolunteersCallout from "@/components/ForVolunteersCallout";
+import DisplacementStage from "@/components/DisplacementStage";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
 
@@ -20,11 +19,10 @@ export default function CoercionPage() {
             previousPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
             nextPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
             summary="Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation."
-            systemMap={{ href: "/system-map#stage-four", label: "Stage Four — The Coercion Meeting", blurb: "The meeting is not designed to resolve conflict. It is designed to apply pressure until the volunteer resigns voluntarily." }}
+
         >
 
-            <DisplacementBanner stage="coercion" />
-            <ForVolunteersCallout stage={4} summary="It was framed as support. As expectations. As a chance to reset. It was sustained pressure designed to make you resign voluntarily. Voluntary departure is the cleanest outcome for the institution — no paperwork, no process, no record." />
+            <DisplacementStage stage="coercion" />
 
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>
 

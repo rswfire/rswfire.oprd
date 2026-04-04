@@ -20,19 +20,14 @@ export default function OverviewPage() {
 
                 <div className="bg-white p-4">
 
-                    <blockquote className="border-l-4 border-red-700 pl-6 py-4 mb-12">
+                    <blockquote className="border-l-4 border-red-700 pl-6 py-4 shadow-md">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
                             &ldquo;The threat of displacement is the institution&rsquo;s ultimate weapon. It is why volunteers stay silent. It is why abuse goes undocumented. It is why this problem persists.&rdquo;
                         </p>
-                        <footer className="mt-3 text-sm text-gray-500 not-italic">
-                            — Robert Samuel White, oprdvolunteerabuse.org
+                        <footer className="mt-3 text-sm text-gray-500 not-italic text-right mr-8">
+                            — Robert Samuel White
                         </footer>
                     </blockquote>
-
-                    {/* RESOURCES */}
-                    <div className="mt-4">
-                        <ResourcesOverview />
-                    </div>
 
                     {/* FOR VOLUNTEERS */}
                     <Link
@@ -49,6 +44,13 @@ export default function OverviewPage() {
                             </div>
                         </div>
                     </Link>
+
+                    {/* RESOURCES */}
+                    <div className="mt-4">
+                        <ResourcesOverview />
+                    </div>
+
+
 
                     <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
                         <div className="md:mx-8 md:p-4 space-y-4">
@@ -83,11 +85,11 @@ export default function OverviewPage() {
                 <PrimaryDocuments />
             </div>
 
-            {/* MAPPING THE SYSTEM */}
+            {/* THE DISPLACEMENT FRAMEWORK */}
             <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-300">
 
                 <h2 className="font-bold text-lg tracking-wide">
-                    <Link href="/system-map" className="hover:text-emerald-700 transition-colors">MAPPING THE SYSTEM</Link>
+                    <Link href="/displacement" className="hover:text-emerald-700 transition-colors">THE DISPLACEMENT FRAMEWORK</Link>
                 </h2>
 
                 <div className="mt-4 text-base leading-relaxed">
@@ -96,25 +98,23 @@ export default function OverviewPage() {
 
                 <div className="mt-6 flex flex-col sm:flex-row gap-6 text-sm">
                     <div className="flex-1 space-y-2">
-                        <Link href="/system-map#stage-one" className="block text-emerald-700 underline hover:text-emerald-600">1. The Origin Event</Link>
-                        <Link href="/system-map#stage-two" className="block text-emerald-700 underline hover:text-emerald-600">2. The Escalation Response</Link>
-                        <Link href="/system-map#stage-three" className="block text-emerald-700 underline hover:text-emerald-600">3. Trust Recruitment</Link>
-                        <Link href="/system-map#stage-four" className="block text-emerald-700 underline hover:text-emerald-600">4. The Coercion Meeting</Link>
-                        <Link href="/system-map#stage-five" className="block text-emerald-700 underline hover:text-emerald-600">5. Assessment &amp; Surveillance</Link>
-                        <Link href="/system-map#stage-six" className="block text-emerald-700 underline hover:text-emerald-600">6. Dismissal Without Process</Link>
+                        <Link href="/displacement#origin" className="block text-emerald-700 underline hover:text-emerald-600">1. The Origin Event</Link>
+                        <Link href="/displacement#escalation" className="block text-emerald-700 underline hover:text-emerald-600">2. The Escalation Response</Link>
+                        <Link href="/displacement#trust" className="block text-emerald-700 underline hover:text-emerald-600">3. Trust Recruitment</Link>
+                        <Link href="/displacement#coercion" className="block text-emerald-700 underline hover:text-emerald-600">4. The Coercion Meeting</Link>
+                        <Link href="/displacement#surveillance" className="block text-emerald-700 underline hover:text-emerald-600">5. Assessment &amp; Surveillance</Link>
                     </div>
                     <div className="flex-1 space-y-2">
-                        <Link href="/system-map#stage-seven" className="block text-emerald-700 underline hover:text-emerald-600">7. The Containment Call</Link>
-                        <Link href="/system-map#stage-eight" className="block text-emerald-700 underline hover:text-emerald-600">8. Retaliation in Writing</Link>
-                        <Link href="/system-map#stage-nine" className="block text-emerald-700 underline hover:text-emerald-600">9. Institutional Containment</Link>
-                        <Link href="/system-map#stage-ten" className="block text-emerald-700 underline hover:text-emerald-600">10. The Silence Strategy</Link>
-                        <Link href="/system-map#stage-eleven" className="block text-emerald-700 underline hover:text-emerald-600">11. Police Intimidation</Link>
+                        <Link href="/displacement#dismissal" className="block text-emerald-700 underline hover:text-emerald-600">6. Dismissal Without Process</Link>
+                        <Link href="/displacement#expulsion" className="block text-emerald-700 underline hover:text-emerald-600">7. Expulsion &amp; Retaliation</Link>
+                        <Link href="/displacement#containment" className="block text-emerald-700 underline hover:text-emerald-600">8. Institutional Containment</Link>
+                        <Link href="/displacement#police" className="block text-emerald-700 underline hover:text-emerald-600">9. Police Intimidation</Link>
                     </div>
                 </div>
 
                 <div className="mt-4 grid grid-cols-2 rounded-lg overflow-hidden border border-emerald-300">
-                    <Link href="/system-map#requires" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors border-r border-emerald-300">What It Requires</Link>
-                    <Link href="/system-map#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors">What Breaks It</Link>
+                    <Link href="/displacement#requires" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors border-r border-emerald-300">What It Requires</Link>
+                    <Link href="/displacement#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-emerald-700 bg-white hover:bg-emerald-100 transition-colors">What Breaks It</Link>
                 </div>
 
             </div>
@@ -198,24 +198,6 @@ export default function OverviewPage() {
 
                 <hr className="my-4 border-t border-gray-300" />
 
-                {/* UNIDENTIFIED MAN */}
-                <div className="mt-4">
-                    <div className="font-bold text-lg">Unidentified Man</div>
-                    <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
-                        <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
-                        </ul>
-                    </div>
-                    <div className="mt-3 space-y-2 text-base">
-                        <div>And that is how they justified March 18 internally. While all the rangers were away for a regional event. And I was cleaning yurts alone in A Loop.</div>
-                        <div>A man appeared. No uniform. No identification. No name. He said he was &ldquo;with the park service&rdquo; and began photographing the yurts while they were still dirty &mdash; doors propped open, trash cans holding doors ajar. Then, without transition, he pressed me with direct personal questions: how do you like the park, how are you being treated, is leadership treating you well. When I didn't engage, he reframed the questions and stepped closer.</div>
-                        <div>I documented the encounter with Kati Baker the same day. She explained it as IT photo documentation. No photos have ever been produced. The questions about leadership treatment were never addressed.</div>
-                        <div>Six days later, I was removed.</div>
-                    </div>
-                </div>
-
-                <hr className="my-4 border-t border-gray-300" />
-
                 {/* ALLISON WATSON */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
@@ -261,23 +243,6 @@ export default function OverviewPage() {
 
                 <hr className="my-4 border-t border-gray-300" />
 
-                {/* JR COLLIER */}
-                <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/evidence/containment" className="underline text-emerald-800 hover:text-emerald-600">J.R. Collier</Link>, Deputy Director</div>
-                    <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
-                        <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/containment" className="underline hover:text-emerald-600">Evidence: Institutional Containment</Link></li>
-                        </ul>
-                    </div>
-                    <div className="mt-3 space-y-2 text-base">
-                        <div>On January 16, 2026, I sent Allison Watson formal notice of personal liability under 42 U.S.C. § 1983 for First Amendment retaliation. Her own expulsion letter is the evidence. Qualified immunity does not apply.</div>
-                        <div>On February 13, Deputy Director J.R. Collier wrote to redirect all correspondence away from Watson and other named staff. His letter described documented constitutional retaliation as dissatisfaction with &ldquo;the decision to end volunteer service.&rdquo; He made no substantive response to the 1983 notice. He instructed that any legal filing would be forwarded to Department of Justice counsel.</div>
-                        <div>A senior official mobilized to insulate the person whose own written words document the constitutional violation. Not to investigate. Not to correct. To contain.</div>
-                    </div>
-                </div>
-
-                <hr className="my-4 border-t border-gray-300" />
-
                 {/* GOVERNOR KOTEK */}
                 <div className="mt-4">
                     <div className="font-bold text-lg"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link></div>
@@ -289,26 +254,6 @@ export default function OverviewPage() {
                     <div className="mt-3 space-y-2 text-base">
                         <div>Oregon's first openly LGBTQ+ governor. A gay volunteer documented identity-based targeting by her state employees. Her appointed director shielded the abusers. Her office received a formal complaint on November 18, 2025. Her campaign received comprehensive documentation on December 13, 2025.</div>
                         <div>Silence.</div>
-                    </div>
-                </div>
-
-                <hr className="my-4 border-t border-gray-300" />
-
-                {/* POLICE INTIMIDATION */}
-                <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">Police Intimidation</Link></div>
-                    <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
-                        <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/police" className="underline hover:text-emerald-600">Evidence: Police Intimidation</Link></li>
-                        </ul>
-                    </div>
-                    <div className="mt-3 space-y-2 text-base">
-                        <div>On March 24, 2026 &mdash; the one year anniversary of my dismissal from Honeyman State Park &mdash; three officers arrived at a locked federal gate on restricted federal land where I serve as U.S. Forest Service caretaker. They did not identify their agency. They said they were concerned about what I was posting online.</div>
-                        <div>I declined to speak without an attorney and closed the door. I recorded them leaving. One license plate is clearly visible on camera.</div>
-                        <div>Twenty minutes later, an officer identifying himself as Forest Service called me. He was hostile. He told me this wasn&apos;t going away. He acknowledged the visit could have been handled differently. When I called back two days later to request the names of all three officers, he refused and hung up.</div>
-                        <div>He gave his name as Matt Oliver. The Forest Service has since confirmed he is Special Agent Matthew Oliver, Law Enforcement &amp; Investigations &mdash; part of their investigative branch, assigned to the Willamette and Siuslaw National Forests. Not a patrol officer. An investigator.</div>
-                        <div>A year of institutional silence. And then police behind a locked gate on the anniversary.</div>
-                        <div>And still the governor is silent.</div>
                     </div>
                 </div>
 

@@ -1,4 +1,5 @@
 // components/DisplacementBanner.tsx
+import Link from 'next/link'
 import { displacementFraming } from '@/lib/displacementFraming'
 
 export default function DisplacementBanner({ stage }: { stage: string }) {
@@ -7,9 +8,9 @@ export default function DisplacementBanner({ stage }: { stage: string }) {
 
     return (
         <div className="border-l-4 border-red-700 bg-red-50 px-6 py-5 my-8">
-            <p className="text-xs font-mono uppercase tracking-widest text-red-700 mb-2">
+            <Link href={`/displacement#${stage}`} className="text-xs font-mono uppercase tracking-widest text-red-700 hover:underline mb-2 block">
                 Displacement Framework — {entry.stage}
-            </p>
+            </Link>
             <p className="text-base text-gray-800 leading-relaxed">
                 {entry.connection}
             </p>
