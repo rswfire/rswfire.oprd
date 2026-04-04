@@ -92,9 +92,11 @@ export default function ForVolunteersPage() {
                 <TransmissionDisclosure transmission={NAMING_DISPLACEMENT_TRANSMISSION} />
             </div>
 
-            <p className="text-base text-gray-700 leading-relaxed mb-6">
+            <hr className="border-gray-200 mb-12" />
+
+            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">
                 If you found this page, something probably happened to you.
-            </p>
+            </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-6">
                 Maybe you were removed without explanation. Maybe you were told it was a personality conflict, a misunderstanding, a mutual decision. Maybe you were pressured to leave before your term ended. Maybe you were told nothing at all — just locked out, keys collected, gone.
