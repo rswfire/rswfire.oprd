@@ -24,6 +24,12 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     For Volunteers
                 </p>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
+                    <Link
+                        href={`/resources/volunteers#stage-${entry.stage.split('.')[0]}`}
+                        className="text-sm font-mono text-red-700 hover:underline mr-4"
+                    >
+                        Stage {entry.stage.split('.')[0]} →
+                    </Link>
                     {entry.volunteer.body}
                 </p>
                 <div className="flex flex-wrap gap-2">
