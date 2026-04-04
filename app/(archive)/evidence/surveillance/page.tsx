@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
@@ -21,6 +23,9 @@ export default function SurveillancePage() {
             summary="Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment."
             systemMap={{ href: "/system-map#stage-five", label: "Stage Five — Assessment and Surveillance", blurb: "The system needs to understand what it's dealing with. It sends someone to assess. Not officially. Not in uniform. Not with identification." }}
         >
+
+            <DisplacementBanner stage="surveillance" />
+            <ForVolunteersCallout stage={5} summary="You may not have recognized it at the time. An unfamiliar face. Questions that felt personal. The institution needed to know whether the case it was building would hold. This is not standard practice. It requires authorization." />
 
             <h2 className="text-xl font-semibold">MARCH 18, 2025</h2>
 
@@ -484,6 +489,7 @@ Steward of oprdvolunteerabuse.org
                     <strong>This required authorization above the park level</strong> &mdash; an unmarked state vehicle means someone above Kati approved this. The silence from every level of the institution confirms they know it.
                 </div>
             </div>
+
 
         </SectionPage>
     );

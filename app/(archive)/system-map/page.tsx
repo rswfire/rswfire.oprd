@@ -363,7 +363,7 @@ export default function SystemMapPage() {
             </div>
 
             <div className="mt-4">
-                In this case: <Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">three officers behind a locked federal gate, on the one-year anniversary of dismissal, citing online posts.</Link> Recorded on camera.
+                In this case: <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">three officers behind a locked federal gate, on the one-year anniversary of dismissal, citing online posts.</Link> Recorded on camera.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />

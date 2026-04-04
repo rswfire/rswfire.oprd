@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
 export const metadata: Metadata = {
@@ -18,6 +20,9 @@ export default function PoliceIntimidationPage() {
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
             systemMap={{ href: "/system-map#stage-eleven", label: "Stage Eleven — Police Intimidation", blurb: "When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls." }}
         >
+
+            <DisplacementBanner stage="police" />
+            <ForVolunteersCallout stage={9} summary="Not everyone gets here. But if the record you built was strong enough to threaten them — they may have. A visit. A call. A warning. The goal is to make the cost of continuing feel unsurvivable. It isn't. But they need you to believe it is." />
 
             <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 
@@ -131,6 +136,7 @@ export default function PoliceIntimidationPage() {
                 <p>This is the Forest Service&apos;s version of institutional silence. Not no comment. Not we can&apos;t discuss an ongoing investigation. A form link.</p>
                 <p>The visit happened. The investigative branch sent him. And the question of why requires a FOIA request to answer.</p>
             </div>
+
 
         </SectionPage>
     );

@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 
 export const metadata: Metadata = {
     title: "Compliance",
@@ -18,6 +20,9 @@ export default function CompliancePage() {
             summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
             systemMap={{ href: "/system-map#stage-two", label: "Stage Two — The Escalation Response", blurb: "The escalation that follows a documented good faith attempt doesn't just prove bad faith. It proves the issue was never the behavior the institution claimed to be addressing." }}
         >
+
+            <DisplacementBanner stage="escalation" />
+            <ForVolunteersCallout stage={2} summary="You apologized. You complied. You offered to reset. You did everything a reasonable person does when they want to stay. The institution escalated anyway. That escalation was not a response to your behavior. The decision had already been made." />
 
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 
@@ -90,6 +95,7 @@ Sam`}</pre>
             <div className="mt-4">
                 They had the opportunity to reset. They chose escalation instead.
             </div>
+
 
         </SectionPage>
     );

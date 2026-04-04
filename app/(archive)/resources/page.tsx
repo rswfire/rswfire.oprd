@@ -40,7 +40,7 @@ export default function ResourcesPage() {
     return (
         <SectionPage
             title="RESOURCES"
-            previousPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
+            previousPage={{ href: "/evidence/police", label: "Police Intimidation" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 

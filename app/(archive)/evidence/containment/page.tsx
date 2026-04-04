@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 
 export const metadata: Metadata = {
     title: "Containment",
@@ -15,13 +17,16 @@ export default function ContainmentPage() {
             title="INSTITUTIONAL CONTAINMENT"
             subtitle="LISA SUMPTION, DIRECTOR &amp; J.R. COLLIER, DEPUTY DIRECTOR"
             previousPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
-            nextPage={{ href: "/evidence/police-intimidation", label: "Police Intimidation" }}
+            nextPage={{ href: "/evidence/police", label: "Police Intimidation" }}
             summary="Every institutional response to documented abuse has followed the same logic: not correction, not accountability, not investigation — containment."
             systemMap={[
                 { href: "/system-map#stage-nine", label: "Stage Nine — Institutional Containment", blurb: "Every mechanism of accountability is redirected to shield the people accountability was built to reach." },
                 { href: "/system-map#stage-ten", label: "Stage Ten — The Silence Strategy", blurb: "Silence is not the end of the system. It is the system's final gift to the record." }
             ]}
         >
+
+            <DisplacementBanner stage="containment" />
+            <ForVolunteersCallout stage={8} summary="You escalated. You contacted leadership. You filed complaints. Each layer protected the one below it. The mechanism that was supposed to correct abuse was used to contain it instead. That is not a malfunction. That is the system working as designed." />
 
             <h2 className="text-xl font-semibold">THE PATTERN</h2>
 
@@ -176,6 +181,7 @@ JR Collier`}</pre>
                     <strong>Containment has a limit.</strong> It ends when the documentation does — which is to say, it doesn't.
                 </div>
             </div>
+
 
         </SectionPage>
     );

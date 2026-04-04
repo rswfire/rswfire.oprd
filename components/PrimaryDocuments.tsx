@@ -68,7 +68,7 @@ export default function PrimaryDocuments() {
                 </div>
                 <div className="text-sm text-gray-700 mt-3 pt-3 border-t border-gray-200"><strong>March 24, 2026 &mdash; the one-year anniversary of my dismissal.</strong> A U.S. Forest Service Special Agent and two unidentified state officers arrived at a locked federal gate on restricted federal land where I live and work. Their stated purpose: concern about what I was posting online about Oregon State Parks &mdash; while simultaneously telling me I was not in trouble. I declined to speak without an attorney and recorded them leaving.</div>
                 <div className="mt-3 pt-3 border-t border-gray-200 text-sm">
-                    <Link href="/evidence/police-intimidation" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
+                    <Link href="/evidence/police" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                 </div>
             </div>
         </div>

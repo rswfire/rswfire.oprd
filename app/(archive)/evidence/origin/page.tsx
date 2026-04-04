@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 
 export const metadata: Metadata = {
     title: "Confrontation",
@@ -18,6 +20,9 @@ export default function ConfrontationPage() {
             summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
             systemMap={{ href: "/system-map#stage-one", label: "Stage One — The Origin Event", blurb: "The record is the threat. Not the behavior it documented. The record itself." }}
         >
+
+            <DisplacementBanner stage="origin" />
+            <ForVolunteersCallout stage={1} summary="A complaint. A concern. A tone in an email. The moment you created a written record, you became a problem to be managed — not because of what you did, but because of what the record could do." />
 
             <h2 className="text-xl font-semibold">FEBRUARY 9, 2025</h2>
 
@@ -83,6 +88,7 @@ Sam
             <div className="mt-4">
                 Every institutional action taken against me traced back to this exchange &mdash; not because I did anything wrong, but because I named her tone and insisted on the operational support I needed to serve effectively.
             </div>
+
 
         </SectionPage>
     );

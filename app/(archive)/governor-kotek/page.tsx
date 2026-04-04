@@ -111,7 +111,7 @@ export default function GovernorKotekPage() {
                     <div>The Forest Service has since confirmed the Special Agent &mdash; Matthew Oliver, badge 555 &mdash; but will not disclose who authorized the visit, what its stated purpose was, or who the two state officers were. When I asked, they redirected me to FOIA.</div>
                     <div>Armed officers. Behind a locked gate. On the anniversary. Because of what I was posting online.</div>
                     <div>And still the governor is silent.</div>
-                    <div>The visit is <Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.</div>
+                    <div>The visit is <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.</div>
                 </div>
 
                 <hr className="my-6 border-t border-gray-300" />

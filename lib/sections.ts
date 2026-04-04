@@ -3,6 +3,7 @@ export const archiveSections = [
     { href: "/", label: "Home" },
     { href: "/ethics", label: "A Note About Ethics" },
     { href: "#separator-1", label: "", separator: true },
+    { href: "/displacement", label: "The Displacement Framework" },
     { href: "/system-map", label: "Mapping the System" },
     { href: "/key-individuals", label: "Key Individuals" },
     { href: "/timeline", label: "Timeline" },
@@ -14,7 +15,8 @@ export const archiveSections = [
             { href: "/resources/advocates", label: "For Advocates" },
             { href: "/resources/press", label: "For Press" },
             { href: "/resources/lawyers", label: "For Lawyers" },
-            { href: "/resources/legislators", label: "For Legislators" }
+            { href: "/resources/legislators", label: "For Legislators" },
+            { href: "/resources/volunteers", label: "For Volunteers" }
         ]
     },
     { href: "#separator-3", label: "", separator: true },
@@ -31,7 +33,7 @@ export const archiveSections = [
             { href: "/evidence/dismissal", label: "6. Dismissal Without Process" },
             { href: "/evidence/expulsion", label: "7. Expulsion & Retaliation" },
             { href: "/evidence/containment", label: "8. Institutional Containment" },
-            { href: "/evidence/police-intimidation", label: "9. Police Intimidation" }
+            { href: "/evidence/police", label: "9. Police Intimidation" }
         ]
     },
     { href: "/faq", label: "Frequently Asked Questions" },

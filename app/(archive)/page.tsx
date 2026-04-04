@@ -7,6 +7,7 @@ import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import DisplacementQuote from "@/components/DisplacementQuote";
 
 import { STRUCTURAL_GAP_TRANSMISSION } from "@/data/20260401";
 
@@ -19,16 +20,35 @@ export default function OverviewPage() {
 
                 <div className="bg-white p-4">
 
-                    <div className="p-4 bg-gray-50 border-l-4 border-emerald-600 text-sm">
-                        <div className="font-semibold">
-                            <div>This case is not complicated. The abuse and retaliation are visible the moment anyone decides to look. An institution that won't protect unpaid laborers <em>does not deserve them</em>.</div>
-                        </div>
-                    </div>
+                    <blockquote className="border-l-4 border-red-700 pl-6 py-4 mb-12">
+                        <p className="text-lg italic text-gray-800 leading-relaxed">
+                            &ldquo;The threat of displacement is the institution&rsquo;s ultimate weapon. It is why volunteers stay silent. It is why abuse goes undocumented. It is why this problem persists.&rdquo;
+                        </p>
+                        <footer className="mt-3 text-sm text-gray-500 not-italic">
+                            — Robert Samuel White, oprdvolunteerabuse.org
+                        </footer>
+                    </blockquote>
 
                     {/* RESOURCES */}
                     <div className="mt-4">
                         <ResourcesOverview />
                     </div>
+
+                    {/* FOR VOLUNTEERS */}
+                    <Link
+                        href="/resources/volunteers"
+                        className="mt-4 block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
+                                <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <div className="text-sm font-semibold text-red-900">For Volunteers</div>
+                                <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
+                            </div>
+                        </div>
+                    </Link>
 
                     <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
                         <div className="md:mx-8 md:p-4 space-y-4">
@@ -276,10 +296,10 @@ export default function OverviewPage() {
 
                 {/* POLICE INTIMIDATION */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">Police Intimidation</Link></div>
+                    <div className="font-bold text-lg"><Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">Police Intimidation</Link></div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
-                            <li><Link href="/evidence/police-intimidation" className="underline hover:text-emerald-600">Evidence: Police Intimidation</Link></li>
+                            <li><Link href="/evidence/police" className="underline hover:text-emerald-600">Evidence: Police Intimidation</Link></li>
                         </ul>
                     </div>
                     <div className="mt-3 space-y-2 text-base">

@@ -3,6 +3,8 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 import Email from "@/components/archive/Email";
+import DisplacementBanner from "@/components/DisplacementBanner";
+import ForVolunteersCallout from "@/components/ForVolunteersCallout";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
 
 export const metadata: Metadata = {
@@ -23,6 +25,9 @@ export default function ExpulsionPage() {
                 { href: "/system-map#stage-eight", label: "Stage Eight — Retaliation in Writing", blurb: "The institution puts the real reason in writing." }
             ]}
         >
+
+            <DisplacementBanner stage="expulsion" />
+            <ForVolunteersCallout stage={7} summary="They may have buried it in other language. Or they may have written it plainly, as they did here, believing you had no recourse. If you were removed because of what you said — publicly, in writing, on record — that is First Amendment retaliation. That has a legal name." />
 
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>
 
@@ -116,6 +121,7 @@ Allison Watson`}</pre>
             <div className="mt-4">
                 Every piece is documented. Every step is permanent. The pattern is undeniable.
             </div>
+
 
         </SectionPage>
     );

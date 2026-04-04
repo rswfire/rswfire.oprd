@@ -22,6 +22,7 @@ import {
     Video,
     Wrench,
     X,
+    Shield,
 } from 'lucide-react';
 
 const iconMap = {
@@ -40,6 +41,7 @@ const iconMap = {
     Newspaper,
     Repeat,
     Scale,
+    Shield,
     Share2,
     TreeDeciduous,
     Users,

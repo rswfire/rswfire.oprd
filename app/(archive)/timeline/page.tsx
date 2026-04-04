@@ -296,7 +296,7 @@ export default function TimelinePage() {
                     <div className="font-semibold">March 24, 2026</div>
                     <div className="mt-2 text-sm">
                         One year after the dismissal.&nbsp;
-                        <Link href="/evidence/police-intimidation/" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/evidence/police/" className="underline text-emerald-800 hover:text-emerald-600">
                             Three police officers arrive at a locked federal gate.
                         </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving.
                     </div>

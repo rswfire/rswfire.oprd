@@ -133,7 +133,7 @@ export default function EvidencePage() {
                 </div>
 
                 <div className="p-4 border-l-4 border-gray-400">
-                    <Link href="/evidence/police-intimidation" className="text-lg font-semibold text-emerald-700 hover:underline">
+                    <Link href="/evidence/police" className="text-lg font-semibold text-emerald-700 hover:underline">
                         9. POLICE INTIMIDATION
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">

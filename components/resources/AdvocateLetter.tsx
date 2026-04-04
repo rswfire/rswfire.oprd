@@ -119,7 +119,7 @@ export default function AdvocateLetter() {
                         </p>
 
                         <p>
-                            And I still do not have confirmation this was sanctioned activity by any of them. The visit is <Link href="/evidence/police-intimidation" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.
+                            And I still do not have confirmation this was sanctioned activity by any of them. The visit is <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.
                         </p>
 
                         <hr className="my-6 border-t" style={{ borderColor: 'rgba(26,58,74,0.1)' }} />
