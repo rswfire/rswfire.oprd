@@ -74,7 +74,7 @@ export default function ForVolunteersPage() {
     return (
         <SectionPage
             title="FOR VOLUNTEERS"
-            subtitle="RESOURCES"
+            subtitle="YOU'RE NOT ALONE"
             previousPage={{ href: "/displacement", label: "The Displacement Framework" }}
             nextPage={{ href: "/evidence", label: "Evidence" }}
         >

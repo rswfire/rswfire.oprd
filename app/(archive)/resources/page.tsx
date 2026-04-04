@@ -40,7 +40,7 @@ export default function ResourcesPage() {
     return (
         <SectionPage
             title="RESOURCES"
-            previousPage={{ href: "/evidence/police", label: "Police Intimidation" }}
+            previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
@@ -49,12 +49,25 @@ export default function ResourcesPage() {
                 <p>These pages are for the people who can help.</p>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link
+                href="/resources/volunteers"
+                className="mt-8 block p-6 border border-red-200 rounded-lg bg-white shadow-sm hover:bg-red-50 transition-colors"
+            >
+                <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-red-700">
+                        <Icon name="Shield" className="text-white" size={20} strokeWidth={1.5} />
+                    </div>
+                    <div className="text-sm font-semibold uppercase tracking-widest text-red-900">For Volunteers</div>
+                </div>
+                <div className="text-sm text-gray-700">If this happened to you, it has a name.</div>
+            </Link>
+
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {resources.map((r) => (
                     <Link
                         key={r.href}
                         href={r.href}
-                        className="block p-6 border border-slate-200 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow"
+                        className="block p-6 border border-slate-200 rounded-lg bg-white shadow-sm hover:bg-emerald-50 transition-colors"
                     >
                         <div className="flex items-center gap-3 mb-3">
                             <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
