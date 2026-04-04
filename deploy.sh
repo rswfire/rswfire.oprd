@@ -33,6 +33,7 @@ echo ""
 
 echo "📦 Installing dependencies..."
 npm ci
+npm i baseline-browser-mapping@latest -D
 echo ""
 
 echo "🔨 Building application..."
