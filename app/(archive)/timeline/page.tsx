@@ -296,9 +296,23 @@ export default function TimelinePage() {
                     <div className="font-semibold">March 24, 2026</div>
                     <div className="mt-2 text-sm">
                         One year after the dismissal.&nbsp;
-                        <Link href="/evidence/police/" className="underline text-emerald-800 hover:text-emerald-600">
-                            Three police officers arrive at a locked federal gate.
-                        </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving.
+                        <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">
+                            Three police officers arrive at a locked federal gate
+                        </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving. Twenty minutes later, a man identifying himself as Forest Service calls — hostile, tells me this isn&rsquo;t going away. He is later confirmed as Special Agent Matthew Oliver, Law Enforcement &amp; Investigations.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 27, 2026</div>
+                    <div className="mt-2 text-sm">
+                        File official Siuslaw National Forest Host/Caretaker Incident Report documenting the <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">March 24 visit as intimidation</Link>. Report includes date, time, location, narrative description, and license plate number of one vehicle: 731 QRV.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 30, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Patrol Captain Felicia Sloan confirms Special Agent Matthew Oliver is employed by USFS Law Enforcement &amp; Investigations, assigned to Willamette and Siuslaw National Forests. Confirms he does not need to coordinate with local law enforcement. When asked who authorized the visit and its purpose, she redirects to FOIA.
                     </div>
                 </li>
             </ul>
@@ -308,6 +322,20 @@ export default function TimelinePage() {
             <h2 className="text-xl font-semibold"><strong>APRIL 2026</strong>: THE DISPLACEMENT FRAMEWORK</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">April 2, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Issue formal litigation preservation notice to Oregon State Police.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">April 3, 2026</div>
+                    <div className="mt-2 text-sm">
+                        File <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">public records request with Oregon State Police</Link> requesting all records related to the March 24 visit &mdash; names, badge numbers, unit assignments, dispatch logs, communications, incident reports, and all coordination between OSP and USFS Special Agent Matthew Oliver or any OPRD employee. OSP responds same day: &ldquo;no records responsive to your request.&rdquo;
+                    </div>
+                </li>
+
                 <li>
                     <div className="font-semibold">April 3, 2026</div>
                     <div className="mt-2 text-sm">
