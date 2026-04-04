@@ -86,18 +86,30 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
     const thumbnailS3Url = s3Url.replace(/video\.mp4$/, "thumbnail");
 
     useEffect(() => {
+        function probeImage(url: string): Promise<string | null> {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve(url);
+                img.onerror = () => resolve(null);
+                img.src = url;
+            });
+        }
+
         async function load() {
-            const [vidUrl, pngUrl] = await Promise.all([
+            const [vidUrl, pngUrl, jpgUrl] = await Promise.all([
                 fetchVideoUrl(s3Url),
                 fetchVideoUrl(thumbnailS3Url + ".png"),
+                fetchVideoUrl(thumbnailS3Url + ".jpg"),
             ]);
             if (vidUrl) setVideoUrl(vidUrl);
             else setError(true);
-            if (pngUrl) {
-                setPosterUrl(pngUrl);
+
+            const validPoster = pngUrl ? await probeImage(pngUrl) : null;
+            if (validPoster) {
+                setPosterUrl(validPoster);
             } else {
-                const jpgUrl = await fetchVideoUrl(thumbnailS3Url + ".jpg");
-                if (jpgUrl) setPosterUrl(jpgUrl);
+                const validJpg = jpgUrl ? await probeImage(jpgUrl) : null;
+                if (validJpg) setPosterUrl(validJpg);
             }
             setLoading(false);
         }

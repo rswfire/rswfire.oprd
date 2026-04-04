@@ -20,7 +20,7 @@ export default function OverviewPage() {
 
                 <div className="bg-white p-4">
 
-                    <blockquote className="border-l-4 border-red-700 pl-6 py-4 shadow-md">
+                    <blockquote className="md:p-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
                             &ldquo;The threat of displacement is the institution&rsquo;s ultimate weapon. It is why volunteers stay silent. It is why abuse goes undocumented. It is why this problem persists.&rdquo;
                         </p>
