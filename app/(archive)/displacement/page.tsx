@@ -24,6 +24,7 @@ export default function DisplacementPage() {
     return (
         <SectionPage
             title="THE DISPLACEMENT FRAMEWORK"
+            subtitle="THE WEAPON AND THE GOAL"
             previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
@@ -53,26 +54,16 @@ export default function DisplacementPage() {
                 If you recognize what follows, you are not imagining it.
             </p>
 
-            <nav className="mb-16">
-                <p className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-4">Jump to stage</p>
-                <div className="flex flex-wrap gap-2">
+            <div className="p-6 bg-red-50 border-l-4 border-red-700 rounded-r-lg mb-16">
+                <div className="text-base font-semibold mb-4">THE STAGES:</div>
+                <ul className="space-y-2">
                     {stages.map((stage) => (
-                        <Link
-                            key={stage.id}
-                            href={`#${stage.id}`}
-                            className="text-sm border border-gray-300 px-3 py-1 text-gray-600 hover:border-red-700 hover:text-red-700 transition-colors"
-                        >
-                            {stage.number}. {stage.title}
-                        </Link>
+                        <li key={stage.id}><a href={`#${stage.id}`} className="text-red-700 underline hover:text-red-600">{stage.number}. {stage.title}</a></li>
                     ))}
-                    <Link href="#requires" className="text-sm border border-gray-300 px-3 py-1 text-gray-600 hover:border-red-700 hover:text-red-700 transition-colors">
-                        What It Requires
-                    </Link>
-                    <Link href="#breaks" className="text-sm border border-gray-300 px-3 py-1 text-gray-600 hover:border-red-700 hover:text-red-700 transition-colors">
-                        What Breaks It
-                    </Link>
-                </div>
-            </nav>
+                    <li><a href="#requires" className="text-red-700 underline hover:text-red-600">What the System Requires of You</a></li>
+                    <li><a href="#breaks" className="text-red-700 underline hover:text-red-600">What Breaks the System</a></li>
+                </ul>
+            </div>
 
             {/* STAGE 1 — ORIGIN */}
             <section id="origin" className="scroll-mt-48 mb-16">
