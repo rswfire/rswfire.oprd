@@ -9,7 +9,7 @@ const MAX_RETRIES = 3;
 
 async function fetchVideoUrl(s3Url: string): Promise<string | null> {
     try {
-        const res = await fetch(`https://rswfire.autonomyrealms.com/api/video-url/?url=${encodeURIComponent(s3Url)}`);
+        const res = await fetch(`https://rswfire.com/api/video-url/?url=${encodeURIComponent(s3Url)}`);
         const data = await res.json();
         return data.url ?? null;
     } catch {
