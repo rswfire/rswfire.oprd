@@ -6,10 +6,7 @@ import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
 import DisplacementQuote from "@/components/DisplacementQuote";
-
-import { STRUCTURAL_GAP_TRANSMISSION } from "@/data/20260401";
 
 export default function OverviewPage() {
     return (
@@ -75,16 +72,6 @@ export default function OverviewPage() {
                 </div>
             </div>
 
-            {/* Video */}
-            <div className="mt-4">
-                <TransmissionDisclosure transmission={STRUCTURAL_GAP_TRANSMISSION} />
-            </div>
-
-            {/* PRIMARY DOCUMENTS */}
-            <div className="mt-4">
-                <PrimaryDocuments />
-            </div>
-
             {/* THE DISPLACEMENT FRAMEWORK */}
             <div className="mt-4 p-6 rounded-xl bg-red-50 border border-red-200">
 
@@ -113,6 +100,11 @@ export default function OverviewPage() {
                     <Link href="/displacement#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-red-700 bg-white hover:bg-red-100 transition-colors">What Breaks It</Link>
                 </div>
 
+            </div>
+
+            {/* PRIMARY DOCUMENTS */}
+            <div className="mt-4">
+                <PrimaryDocuments />
             </div>
 
             {/* THE VERDICT */}
