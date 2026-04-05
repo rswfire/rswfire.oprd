@@ -2,7 +2,7 @@
 export const archiveSections = [
     { href: "/", label: "Home" },
     { href: "/ethics", label: "A Note About Ethics" },
-    { href: "/displacement", label: "Displacement Framework" },
+    { href: "/displacement", label: "The Displacement Framework" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "#separator-1", label: "", separator: true },
     {
