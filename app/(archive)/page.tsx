@@ -95,9 +95,13 @@ export default function OverviewPage() {
                     <Link href="/displacement#police" className="block text-red-700 underline hover:text-red-600">9. Police Intimidation</Link>
                 </div>
 
-                <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 rounded-lg overflow-hidden border border-red-200">
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 rounded-lg overflow-hidden border border-red-200">
                     <Link href="/displacement#requires" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-red-700 bg-white hover:bg-red-100 transition-colors sm:border-r border-b sm:border-b-0 border-red-200">What It Requires</Link>
                     <Link href="/displacement#breaks" className="block py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-red-700 bg-white hover:bg-red-100 transition-colors">What Breaks It</Link>
+                </div>
+
+                <div className="mt-4">
+                    <Link href="/resources/volunteers" className="block text-sm text-red-700 hover:text-red-600 font-semibold text-center">If this happened to you, it has a name.</Link>
                 </div>
 
             </div>
