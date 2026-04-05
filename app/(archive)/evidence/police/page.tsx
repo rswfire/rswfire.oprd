@@ -51,7 +51,7 @@ export default function PoliceIntimidationPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <TransmissionDisclosure transmission={POLICE_INTIMIDATION_TRANSMISSION} defaultExpanded />
+            <TransmissionDisclosure transmission={POLICE_INTIMIDATION_TRANSMISSION} />
 
             <hr className="my-6 border-t border-gray-300" />
 

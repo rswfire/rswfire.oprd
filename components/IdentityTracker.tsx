@@ -39,8 +39,8 @@ const statusLabels = {
 export default function IdentityTracker() {
   return (
     <div className="my-10">
-      <h2 className="text-lg font-serif font-semibold text-gray-900 mb-2">
-        Who Was at the Gate
+      <h2 className="text-xl font-semibold text-gray-900 mb-2">
+        WHO WAS AT THE GATE
       </h2>
       <p className="text-sm text-gray-500 mb-6">
         March 24, 2026 — Siltcoos Work Center, 82900 Highway 101, Florence, Oregon 97439

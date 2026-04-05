@@ -66,7 +66,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 1</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">The Origin Event</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">The Origin Event</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Documentation itself became the threat. The record — not the behavior it documented — was what they needed to eliminate. Displacement begins the moment a volunteer creates a paper trail.
@@ -90,7 +90,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 2</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">The Escalation Response</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">The Escalation Response</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Good faith compliance was met with escalation. This is how displacement works: the target&rsquo;s behavior is irrelevant. The decision to remove has already been made. The institution is building justification, not responding to conduct.
@@ -118,7 +118,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 3</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Trust Recruitment</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Trust Recruitment</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Personal disclosures were extracted through manufactured intimacy and weaponized to construct a psychological profile. Pathologizing the volunteer is the mechanism that makes displacement look like protection.
@@ -141,7 +141,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 4</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">The Coercion Meeting</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">The Coercion Meeting</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Sixty-two minutes of sustained pressure designed to produce a resignation. Voluntary displacement — the target removes themselves — is the cleanest outcome for the institution. No paperwork. No process. No record.
@@ -165,7 +165,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 5</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Assessment &amp; Surveillance</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Assessment &amp; Surveillance</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         A covert assessment was conducted to determine whether displacement could be justified. An unidentified man was sent while all rangers were away. The institution needed to know if the case it was building would hold.
@@ -188,7 +188,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 6</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Dismissal Without Process</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Dismissal Without Process</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Physical displacement executed without documentation, without cause, with 24 hours to vacate. No paperwork. No process. The absence of process is intentional — it leaves the volunteer with nothing to appeal.
@@ -211,7 +211,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 7</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Expulsion &amp; Retaliation</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Expulsion &amp; Retaliation</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         Permanent displacement from all Oregon State Parks — not just Honeyman. The scope of expulsion was designed to eliminate future footholds. And the reason was put in writing: protected speech. That is the mistake that made this case.
@@ -239,7 +239,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 8</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Institutional Containment</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Institutional Containment</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         When displacement failed to silence the record, every escalation channel was used to contain it. The director, the deputy director, the governor&rsquo;s office — each chose institutional protection over accountability. Silence is displacement by another name.
@@ -266,7 +266,7 @@ export default function DisplacementPage() {
                 <div className="flex items-baseline gap-3 mb-3">
                     <span className="text-xs font-mono text-red-700 uppercase tracking-widest">Stage 9</span>
                 </div>
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">Police Intimidation</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Police Intimidation</h2>
                 <div className="border-l-4 border-red-700 pl-6 mb-6">
                     <p className="text-base text-gray-700 leading-relaxed">
                         The final displacement attempt. Three officers at a locked federal gate on the anniversary of dismissal — designed to make the cost of continuing feel unsurvivable. It failed. And in failing, it became the loudest evidence of everything that came before it.
@@ -289,7 +289,7 @@ export default function DisplacementPage() {
 
             {/* WHAT IT REQUIRES */}
             <section id="requires" className="scroll-mt-48 mb-16">
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">What the System Requires of You</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">WHAT THE SYSTEM REQUIRES OF YOU</h2>
 
                 <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                     <p>If you are reading this because you recognize what you just read — here is what the system needs from you to work.</p>
@@ -309,7 +309,7 @@ export default function DisplacementPage() {
 
             {/* WHAT BREAKS IT */}
             <section id="breaks" className="scroll-mt-48 mb-16">
-                <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">What Breaks the System</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">WHAT BREAKS THE SYSTEM</h2>
 
                 <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                     <p>Documentation that begins before the system knows it needs to worry about documentation.</p>

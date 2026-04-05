@@ -94,8 +94,8 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">
-                If you found this page, something probably happened to you.
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                IF YOU FOUND THIS PAGE, SOMETHING PROBABLY HAPPENED TO YOU.
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-6">
@@ -108,8 +108,8 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">
-                The Displacement Framework
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                THE DISPLACEMENT FRAMEWORK
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-8">
@@ -134,8 +134,8 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">
-                What You Should Know
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                WHAT YOU SHOULD KNOW
             </h2>
 
             <div className="space-y-6 mb-16">
@@ -173,8 +173,8 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-6">
-                The Full Record
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                THE FULL RECORD
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-8">
@@ -195,8 +195,8 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-serif font-semibold text-gray-900 mb-4">
-                Contact
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                CONTACT
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-4">
