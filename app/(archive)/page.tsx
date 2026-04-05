@@ -301,7 +301,7 @@ export default function OverviewPage() {
             {/* ARCHIVE VIDEOS */}
             <ArchiveVideos/>
 
-            <div className="mt-8 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
+            <div className="mt-8 p-8 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm">
 
                 <div className="font-bold">This archive is not for revenge.</div>
 

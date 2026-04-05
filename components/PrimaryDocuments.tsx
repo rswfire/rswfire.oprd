@@ -4,10 +4,10 @@ import Icon from "@/components/Icon";
 
 export default function PrimaryDocuments() {
     return (
-        <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+        <div className="space-y-4">
             {/* Recordings */}
-            <div className="grid grid-cols-1 sm:grid-cols-2">
-                <div className="p-4 sm:border-r border-slate-200">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-xl border border-slate-200 shadow-sm bg-white p-4">
                     <div className="flex items-center gap-3">
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
                             <Icon name="Mic" className="text-white" size={20} strokeWidth={1.5} />
@@ -22,7 +22,7 @@ export default function PrimaryDocuments() {
                         <Link href="/evidence/coercion" className="text-emerald-700 font-semibold hover:text-emerald-900 transition-colors">Watch the Recording →</Link>
                     </div>
                 </div>
-                <div className="p-4 border-t sm:border-t-0 border-slate-200">
+                <div className="rounded-xl border border-slate-200 shadow-sm bg-white p-4">
                     <div className="flex items-center gap-3">
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
                             <Icon name="Mic" className="text-white" size={20} strokeWidth={1.5} />
@@ -39,7 +39,7 @@ export default function PrimaryDocuments() {
                 </div>
             </div>
             {/* Dismissal Letter */}
-            <div className="p-4 border-t-2 border-slate-300">
+            <div className="rounded-xl border border-slate-200 shadow-sm bg-white p-4">
                 <div className="flex items-center gap-3">
                     <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
                         <Icon name="FileText" className="text-white" size={20} strokeWidth={1.5} />
@@ -56,7 +56,7 @@ export default function PrimaryDocuments() {
                 </div>
             </div>
             {/* Police Intimidation */}
-            <div className="p-4 border-t-2 border-slate-300">
+            <div className="rounded-xl border border-slate-200 shadow-sm bg-white p-4">
                 <div className="flex items-center gap-3">
                     <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-700">
                         <Icon name="Video" className="text-white" size={20} strokeWidth={1.5} />
