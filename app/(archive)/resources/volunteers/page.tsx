@@ -134,7 +134,7 @@ export default function ForVolunteersPage() {
 
             <hr className="border-gray-200 mb-12" />
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+            <h2 id="you-should-know" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
                 WHAT YOU SHOULD KNOW
             </h2>
 

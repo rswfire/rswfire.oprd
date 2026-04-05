@@ -47,8 +47,11 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     <Link href="/resources/volunteers" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         For Volunteers
                     </Link>
+                    <Link href="/resources/volunteers#you-should-know" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                        You Should Know
+                    </Link>
                     <Link href={`/resources/volunteers#stage-${entry.stage.split('.')[0]}`} className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
-                        This Stage
+                        Stage {entry.stage.split('.')[0]}
                     </Link>
                 </div>
             </div>
