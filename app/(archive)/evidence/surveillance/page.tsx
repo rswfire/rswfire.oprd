@@ -4,7 +4,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
 export const metadata: Metadata = {
@@ -178,7 +178,7 @@ Have a great afternoon!
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <TransmissionDisclosure transmission={SURVEILLANCE_TRANSMISSION} />
+            <PrimaryTransmission transmission={SURVEILLANCE_TRANSMISSION} />
 
             <hr className="my-6 border-t border-gray-300" />
 

@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const COERCION_TRANSMISSION: TransmissionData = {
     ulid: "01JW9VC5QG9FHNN587PTEKHK4K",
@@ -9,7 +9,7 @@ export const COERCION_TRANSMISSION: TransmissionData = {
     energeticSignature: "n/a",
     fieldState: "n/a",
     orientation: "n/a",
-    label: "Transmission — March 5, 2025",
+    label: "Primary Document — March 5, 2025",
     preview: `On March 5, 2025, Ryan Warren and Kati Baker sat across from a gay volunteer at a public picnic table for 62 minutes.
 
 He was unpaid.

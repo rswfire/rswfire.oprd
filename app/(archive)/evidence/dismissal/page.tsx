@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
 import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
 
@@ -22,7 +22,7 @@ export default function DismissalPage() {
 
             <DisplacementStage stage="dismissal" />
 
-            <TransmissionDisclosure transmission={DISMISSAL_TRANSMISSION} defaultExpanded />
+            <PrimaryTransmission transmission={DISMISSAL_TRANSMISSION} defaultExpanded />
 
 
         </SectionPage>

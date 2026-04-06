@@ -5,7 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import AdvocateLetter from "@/components/resources/AdvocateLetter";
 import ResourceCardGrid from "@/components/resources/ResourceCardGrid";
 import ResourceCard from "@/components/resources/ResourceCard";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import { SEEKING_ATTORNEY_TRANSMISSION } from "@/data/20260323";
 
@@ -23,7 +23,7 @@ export default function LawyersPage() {
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
-            <TransmissionDisclosure transmission={SEEKING_ATTORNEY_TRANSMISSION} />
+            <PrimaryTransmission transmission={SEEKING_ATTORNEY_TRANSMISSION} />
 
             <AdvocateLetter />
 

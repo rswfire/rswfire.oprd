@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const NAMING_DISPLACEMENT_TRANSMISSION: TransmissionData = {
     ulid: "01KN9KDSG0H3W0WZ9GBCJDJMG5",
@@ -9,7 +9,7 @@ export const NAMING_DISPLACEMENT_TRANSMISSION: TransmissionData = {
     energeticSignature: "resolute clarity",
     fieldState: "integrating",
     orientation: "toward structural legibility and volunteer protection infrastructure",
-    label: "Transmission — April 3, 2026",
+    label: "Primary Document — April 3, 2026",
     preview: "Recorded while walking the Waxmyrtle Trail in the Oregon Dunes. One year after the first displacement was executed, and one week after the second when they brought police to his door. He names the weapon for the first time — not as theory, but as something he finally has the language to describe after living inside it for a year. This is the moment displacement stopped being a pattern and became a framework.",
     entries: [
         {

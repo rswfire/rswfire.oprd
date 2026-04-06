@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
@@ -42,7 +42,7 @@ export default function ExpulsionPage() {
 
             <h2 className="text-xl font-semibold">MARCH 25 — THE CONTAINMENT CALL</h2>
 
-            <TransmissionDisclosure transmission={EXPULSION_TRANSMISSION} defaultExpanded />
+            <PrimaryTransmission transmission={EXPULSION_TRANSMISSION} defaultExpanded />
 
             <hr className="my-6 border-t border-gray-300" />
 

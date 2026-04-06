@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
 import IdentityTracker from "@/components/IdentityTracker";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
@@ -51,7 +51,7 @@ export default function PoliceIntimidationPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <TransmissionDisclosure transmission={POLICE_INTIMIDATION_TRANSMISSION} />
+            <PrimaryTransmission transmission={POLICE_INTIMIDATION_TRANSMISSION} />
 
             <hr className="my-6 border-t border-gray-300" />
 

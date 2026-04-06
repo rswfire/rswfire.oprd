@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const POLICE_INTIMIDATION_TRANSMISSION: TransmissionData = {
     ulid: "01KMFMJW809QNR8PVTXT8HAAG7",
@@ -9,7 +9,7 @@ export const POLICE_INTIMIDATION_TRANSMISSION: TransmissionData = {
     energeticSignature: "resolute under pressure",
     fieldState: "sovereign under direct institutional contact",
     orientation: "toward documentation and public record against institutional intimidation",
-    label: "Transmission — March 24, 2026",
+    label: "Primary Document — March 24, 2026",
     preview: "Federal work center behind a federal gate, physical workplace. Police officers physically present with vehicles. Real-time capture during law enforcement contact. Public-facing documentation mode.",
     entries: [
         {

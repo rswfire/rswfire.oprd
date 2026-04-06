@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const EXPULSION_TRANSMISSION: TransmissionData = {
     ulid: "01JWA36CJ8RRQF3N9E34EE349C",
@@ -9,7 +9,7 @@ export const EXPULSION_TRANSMISSION: TransmissionData = {
     energeticSignature: "controlled tension",
     fieldState: "crisis navigation",
     orientation: "maintaining coherence under institutional pressure",
-    label: "Transmission — March 25, 2025",
+    label: "Primary Document — March 25, 2025",
     preview: "Before the call began, Samuel White recorded himself in his RV on the Oregon coast. He was nervous. He said so directly, on camera, to no one. He hoped Allison Watson might be on his side. He knew she was part of the system. He took a breath and told himself to be ready.\nHe was already recording.",
     entries: [
         {

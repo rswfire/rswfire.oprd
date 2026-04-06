@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const SEEKING_ATTORNEY_TRANSMISSION: TransmissionData = {
     ulid: "01KME4GSG02JSTJ45Z1QYH90JD",
@@ -9,7 +9,7 @@ export const SEEKING_ATTORNEY_TRANSMISSION: TransmissionData = {
     energeticSignature: "controlled burn",
     fieldState: "consolidated",
     orientation: "toward institutional accountability and structural protection for volunteers",
-    label: "Transmission — March 23, 2026",
+    label: "Primary Document — March 23, 2026",
     preview: "Audio capture from Oregon Coast home, recorded on the eve of the one-year anniversary of dismissal from Oregon State Parks volunteer program at Honeyman State Park.",
     entries: [
         {

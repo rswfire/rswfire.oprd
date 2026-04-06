@@ -7,6 +7,8 @@ import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import DisplacementQuote from "@/components/DisplacementQuote";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
+import { FAILURE_TRANSMISSION } from "@/data/20260405";
 
 export default function OverviewPage() {
     return (
@@ -101,9 +103,14 @@ export default function OverviewPage() {
                 </div>
 
                 <div className="mt-4">
-                    <Link href="/resources/volunteers" className="block text-sm text-red-700 hover:text-red-600 font-semibold text-center">If this happened to you, it has a name.</Link>
+                    <Link href="/resources/volunteers" className="block text-lg text-red-700 hover:text-red-600 font-semibold text-center">If this happened to you, it has a name.</Link>
                 </div>
 
+            </div>
+
+            {/* PRIMARY TRANSMISSION */}
+            <div className="mt-4">
+                <PrimaryTransmission transmission={FAILURE_TRANSMISSION} />
             </div>
 
             {/* PRIMARY DOCUMENTS */}

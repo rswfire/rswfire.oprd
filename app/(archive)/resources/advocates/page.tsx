@@ -5,7 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import AdvocateLetter from "@/components/resources/AdvocateLetter";
 import ResourceCardGrid from "@/components/resources/ResourceCardGrid";
 import ResourceCard from "@/components/resources/ResourceCard";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import { STRUCTURAL_GAP_TRANSMISSION } from "@/data/20260401";
 
@@ -23,7 +23,7 @@ export default function AdvocatesPage() {
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
-            <TransmissionDisclosure transmission={STRUCTURAL_GAP_TRANSMISSION} />
+            <PrimaryTransmission transmission={STRUCTURAL_GAP_TRANSMISSION} />
 
             <AdvocateLetter />
 

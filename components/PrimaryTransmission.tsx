@@ -33,7 +33,7 @@ export interface TransmissionData {
     closing?: string;       // optional closing, double-newline separated paragraphs
 }
 
-export interface TransmissionDisclosureProps {
+export interface PrimaryTransmissionProps {
     transmission: TransmissionData;
     defaultExpanded?: boolean;
 }
@@ -238,7 +238,7 @@ function Entry({ entry }: { entry: TransmissionEntry }) {
 
 // ─── Main Component ──────────────────────────────────────────────────────────
 
-export default function TransmissionDisclosure({ transmission, defaultExpanded = false }: TransmissionDisclosureProps) {
+export default function PrimaryTransmission({ transmission, defaultExpanded = false }: PrimaryTransmissionProps) {
     const [expanded, setExpanded] = useState(defaultExpanded);
     const {
         ulid, signalUrl, date, duration, s3Url,
@@ -268,7 +268,7 @@ export default function TransmissionDisclosure({ transmission, defaultExpanded =
                     color: '#8a9ba8',
                     textTransform: 'uppercase',
                 }}>
-          Transmission Record
+          Primary Transmission Record
         </span>
             </div>
 

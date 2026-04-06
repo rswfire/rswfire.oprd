@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import { NAMING_DISPLACEMENT_TRANSMISSION } from "@/data/20260403";
 
 export const metadata: Metadata = {
@@ -89,7 +89,7 @@ export default function ForVolunteersPage() {
             </blockquote>
 
             <div className="mb-12">
-                <TransmissionDisclosure transmission={NAMING_DISPLACEMENT_TRANSMISSION} />
+                <PrimaryTransmission transmission={NAMING_DISPLACEMENT_TRANSMISSION} />
             </div>
 
             <hr className="border-gray-200 mb-12" />

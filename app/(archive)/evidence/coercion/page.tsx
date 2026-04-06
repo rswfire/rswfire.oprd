@@ -1,7 +1,7 @@
 // app/(archive)/evidence/coercion/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
-import TransmissionDisclosure from "@/components/TransmissionDisclosure";
+import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
@@ -32,7 +32,7 @@ export default function CoercionPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <TransmissionDisclosure transmission={COERCION_TRANSMISSION} defaultExpanded />
+            <PrimaryTransmission transmission={COERCION_TRANSMISSION} defaultExpanded />
 
 
         </SectionPage>

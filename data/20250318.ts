@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const SURVEILLANCE_TRANSMISSION: TransmissionData = {
     ulid: "01JPP5GY2GPEZ5F08Q2PF6ZAHG",
@@ -9,7 +9,7 @@ export const SURVEILLANCE_TRANSMISSION: TransmissionData = {
     energeticSignature: "resolute",
     fieldState: "stabilization",
     orientation: "toward authentic connection",
-    label: "Transmission — March 19, 2025",
+    label: "Primary Document — March 19, 2025",
     preview: "Recorded the evening after the encounter. At the time, the most plausible interpretation was a failed romantic encounter — an amusing one. He is relaxed, confident, and entertained by what happened. The video captures who he actually was in that moment: someone completely at ease with himself, unbothered, processing the interaction with humor. It would take nearly a year for the cover story to collapse entirely.",
     entries: [
         {

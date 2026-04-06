@@ -1,4 +1,4 @@
-import { TransmissionData } from "@/components/TransmissionDisclosure";
+import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
     ulid: "01KN4EMBG0BWXBDM6679T1Q06P",
@@ -9,7 +9,7 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
     energeticSignature: "direct address",
     fieldState: "clear-eyed",
     orientation: "toward structural accountability — recorded on the trail in a storm because the work doesn't stop",
-    label: "Transmission — April 1, 2026",
+    label: "Primary Document — April 1, 2026",
     preview: "Recorded while hiking near the Siltcoos Corridor during the first real storm in months. One week after three armed officers arrived at a locked federal gate on restricted federal land because of what he was posting online. He lays out the full picture — what they did, what he built, what comes next — and asks for help because that is what capable people do when the system is designed to isolate them.",
     entries: [
         {
