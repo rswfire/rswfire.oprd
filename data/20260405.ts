@@ -10,22 +10,22 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
     fieldState: "coherent",
     orientation: "toward permanent record against institutional corruption",
     label: "Primary Document — April 5, 2026",
-    preview: "Recorded on April 5, 2026. He addresses the institution directly — not with anger, but with the clarity of someone who documented every stage as it happened. Nine stages of displacement. Every one of them failed. The framework exists now because they would not stop.",
+    preview: "One year after his retaliatory dismissal from Honeyman State Park, Oregon State Parks sent police to his door — behind a locked federal gate, on the anniversary of his dismissal over protected speech. This is his response.",
     entries: [
         {
             timestamp: "[0:00 — 0:18]",
             quote: "I don't know which one of you did it. It doesn't matter cuz you're all responsible for it happening. You all played a part that led to that happening. And I want you to know something. You failed at every stage. You failed.",
-            commentary: "He speaks directly to the institution. Not to a person — to the structure. Every actor, every escalation, every decision. He does not need to identify who gave the order. The system is the actor. And it failed.",
+            commentary: "One year after they dismissed him. One week after they sent police to a locked federal gate. He looks into the camera and addresses every person in the hierarchy who participated. It does not matter which one gave the order. They are all responsible. And they all failed.",
         },
         {
             timestamp: "[0:18 — 0:39]",
             quote: "Every single time you escalated, I documented what you were doing, hoping that you would stop, giving you the benefit of the doubt, extending goodwill. All the things you were claiming I wasn't giving you.",
-            commentary: "The inversion laid bare. They accused him of withholding good faith while he was extending it at every stage. He documented not to attack — he documented hoping they would stop. That distinction matters. It is the difference between retaliation and record-keeping.",
+            commentary: "Every escalation was documented. Not to build a case — because he hoped they would stop. He extended goodwill. He gave the benefit of the doubt. He did every single thing they later accused him of not doing. The record shows it. In a 60-minute coercive meeting he recorded, they told him to chew glass and swallow it. He documented that too.",
         },
         {
             timestamp: "[0:39 — 0:50]",
             quote: "Cuz that's what you do. You take what's true and you invert it. You weaponize it in some way. That is deeply pathological behavior, by the way.",
-            commentary: "He names the mechanism: inversion. Take what is true and reverse it. Take the person documenting abuse and call them the threat. Take the person extending goodwill and accuse them of withholding it. He calls it what it is — pathological.",
+            commentary: "Inversion. Take what is true and reverse it. The person documenting abuse becomes the threat. The person extending goodwill is accused of withholding it. This is what they did at every stage. He calls it what it is — deeply pathological.",
         },
         {
             timestamp: "[0:50 — 1:05]",
@@ -35,12 +35,12 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[1:05 — 1:22]",
             quote: "But I knew what you were doing and I documented it in real time and you failed. Whatever happens next, whether I stay where I am right now, whether I get moved to a place I was planning to go in October, so I'll just be up there a little sooner for the summer.",
-            commentary: "He knew. He documented in real time. And they failed. Whatever comes next — staying, moving, losing everything — the documentation holds. The record is intact. That is what they could not break.",
+            commentary: "He knew what they were doing while they were doing it. He documented it in real time. And they failed. Whatever comes next — staying, moving early, losing everything — none of it changes what the record already contains.",
         },
         {
             timestamp: "[1:22 — 1:35]",
             quote: "If I become homeless, if I lose my jeep, whatever happens, you could not break me.",
-            commentary: "He names the worst-case outcomes plainly — homelessness, loss — and holds them without flinching. Not because they don't matter, but because they are not the point. The point is that they could not break him. The framework survives regardless of what happens to the person who built it.",
+            commentary: "Homelessness. Losing his vehicle. He names the worst outcomes plainly and holds them without flinching. Whatever they take from him, whatever happens next — they could not break him. That is the conviction in his voice. Not defiance for its own sake. The settled knowledge of someone who has already survived the thing they tried to do to him.",
         },
         {
             timestamp: "[1:35 — 1:52]",
@@ -55,7 +55,7 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[2:16 — 2:25]",
             quote: "You have no ethics. That is the very definition of corruption.",
-            commentary: "Not an insult. A structural diagnosis. When an institution mobilizes its full hierarchy to protect one supervisor's personal grievance and silence the person who documented the abuse — that is corruption. He names it plainly because it is plain.",
+            commentary: "He stops walking. He looks directly into the camera. You have no ethics. That is the very definition of corruption. An institution that mobilized its full hierarchy to protect one supervisor's personal grievance and silence the person who documented the abuse. This is not analysis. It is an indictment.",
         },
         {
             timestamp: "[2:25 — 3:05]",
@@ -65,13 +65,13 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[3:05 — 3:25]",
             quote: "Whatever happens because that's something you can't make go away. That's a pattern that other people are going to see. They're going to see it in their own circumstances.",
-            commentary: "The framework is no longer his. It belongs to everyone who will recognize their own experience in it. Other volunteers, other workers, other people displaced by institutions that cannot tolerate documentation. The pattern is named. It cannot be unnamed.",
+            commentary: "The pattern is loose now. It does not belong to one park or one volunteer. Other people will see it — in their own workplaces, their own institutions, their own circumstances. That is what the framework does. It gives language to something that was always happening but had no name.",
         },
         {
             timestamp: "[3:25 — 3:48]",
             quote: "Doesn't matter how long it takes. It exists now. It's named. And you named it by sending police to my door.",
-            commentary: "The final line is the sharpest. They named it. Not him — them. By sending police to his door, they completed the pattern. They gave the framework its final stage and its reason to exist. Displacement was named by the institution that wielded it, in the act of wielding it.",
+            commentary: "It exists now. It is named. And they named it — by sending police to his door. That is the line he delivers with the most conviction. The displacement framework was not named by the person who survived it. It was named by the institution that completed it.",
         },
     ],
-    closing: "This transmission was recorded on April 5, 2026. He speaks directly to the institution — every actor, every level of the hierarchy that participated in nine stages of displacement. The message is not anger. It is verdict. They failed. The framework exists. It will not be unnamed.",
+    closing: "Recorded on April 5, 2026 — one year after his retaliatory dismissal from Honeyman State Park, and days after Oregon State Parks sent police behind a locked federal gate on restricted federal land to try to intimidate him over an archive. This is his response. Nine stages. Every one of them documented. Every one of them failed. The displacement framework exists now, and they are the ones who named it.",
 };
