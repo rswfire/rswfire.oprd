@@ -15,12 +15,12 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[0:00 — 0:18]",
             quote: "I don't know which one of you did it. It doesn't matter cuz you're all responsible for it happening. You all played a part that led to that happening. And I want you to know something. You failed at every stage. You failed.",
-            commentary: "He opens by dissolving the defense before they can use it. Diffusion of responsibility is how institutions survive accountability — spread it thin enough and no individual holds enough to be culpable. He names that mechanism in the first sentence and removes it. It does not matter who gave the order. Every person in the hierarchy who participated owns the outcome. Then the verdict, stated twice: you failed. The first time names it. The second time drives it in.",
+            commentary: "He opens by dissolving the defense before they can use it. Diffusion of responsibility is how institutions survive accountability — spread it thin enough and no individual holds enough to be culpable. He names that mechanism in the first sentence and removes it. It does not matter who gave the order. Every person in the hierarchy who participated owns the outcome. Then the verdict: you failed. Said twice — the first time to name it, the second time because it is true and he knows it.",
         },
         {
             timestamp: "[0:18 — 0:39]",
             quote: "Every single time you escalated, I documented what you were doing,\nhoping that you would stop, giving you the benefit of the doubt, extending goodwill. All the things you were claiming I wasn't giving you.",
-            commentary: "He is still walking. The thought arrives in pieces — each clause landing before the next one follows. He documented every escalation not to build a case but because he hoped they would stop. He extended goodwill. He gave the benefit of the doubt. He did every single thing they later accused him of not doing. The pause before 'hoping' is not hesitation. It is emphasis. He is letting that land before he continues.",
+            commentary: "He names exactly what he was doing at every stage of their escalation: documenting, hoping they would stop, extending goodwill, giving the benefit of the doubt. Then he names that those were the exact qualities they accused him of withholding. The accusation was the inversion of what was actually happening. He had been doing it the whole time.",
         },
         {
             timestamp: "[0:39 — 0:50]",
