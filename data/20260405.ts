@@ -25,7 +25,7 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[0:39 — 0:50]",
             quote: "Cuz\nthat's what you do. You take what's true and you invert it.\nYou weaponize it in some way.\n\nThat is deeply pathological behavior, by the way.",
-            commentary: "The inversion arrives from what he just said — not as a new subject but as the explanation for it. He names the mechanism: take what is true, reverse it, weaponize it. Then he stops. 'That is deeply pathological behavior, by the way.' That line is not part of the same breath. It arrives after. It is a clinical observation delivered with the detachment of someone who has already made peace with what he is describing. The 'by the way' is not casual. It is precise.",
+            commentary: "He names the mechanism directly: take what is true, invert it, weaponize it. Then: 'That is deeply pathological behavior, by the way.' The 'by the way' is not an aside. It means this is obvious — now that he has named it, you cannot unsee it. He is not analyzing them from a distance. He is stating something plain.",
         },
         {
             timestamp: "[0:50 — 1:05]",
