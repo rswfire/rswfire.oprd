@@ -25,9 +25,7 @@ export const archiveSections = [
             { href: "/key-individuals/kati-baker", label: "Kati Baker" },
             { href: "/key-individuals/ryan-warren", label: "Ryan Warren" },
             { href: "/key-individuals/allison-watson", label: "Allison Watson" },
-            { href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" },
-            { href: "/key-individuals/tina-kotek", label: "Tina Kotek" },
-            { href: "/key-individuals/matthew-oliver", label: "Matthew Oliver" },
+            { href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" }
         ]
     },
     { href: "/timeline", label: "Timeline" },
