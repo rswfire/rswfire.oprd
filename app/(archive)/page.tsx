@@ -133,7 +133,7 @@ export default function OverviewPage() {
 
                 {/* KATI BAKER */}
                 <div className="mt-6">
-                    <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Kati Baker</Link>, Park Supervisor</div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/kati-baker" className="underline text-emerald-800 hover:text-emerald-600">Kati Baker</Link>, Park Supervisor</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/origin" className="underline hover:text-emerald-600">Evidence: The Origin Event</Link></li>
@@ -157,7 +157,7 @@ export default function OverviewPage() {
 
                 {/* RYAN WARREN */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren</Link>, Park Manager</div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/ryan-warren" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren</Link>, Park Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/escalation" className="underline hover:text-emerald-600">Evidence: The Escalation Response</Link></li>
@@ -178,7 +178,7 @@ export default function OverviewPage() {
 
                 {/* LOGAN BLISS */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Logan Bliss</Link>, Volunteer Services Lead</div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/logan-bliss" className="underline text-emerald-800 hover:text-emerald-600">Logan Bliss</Link>, Volunteer Services Lead</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
@@ -190,7 +190,7 @@ export default function OverviewPage() {
                         <div>My direct supervisor approached me alone at night in the Welcome Center, where I was working my volunteer shift. He spent 90 minutes drawing me out &mdash; his background, his concerns, his perspectives &mdash; creating the conditions for reciprocal disclosure.</div>
                         <div>The following day, at the start of a walk with him, I set a clear boundary: I told him explicitly this was not romantic. Then I shared why I had moved into an RV and relocated to the coast. My analysis of systemic instability. My concerns as a queer person about identity-based targeting through institutional actors.</div>
                         <div>He disclosed all of it to Kati Baker, Ryan Warren, and Allison Watson.</div>
-                        <div>Ryan Warren used it to mock my sexuality at the March 5 meeting. Allison Watson used it to construct a psychological profile during dismissal proceedings &mdash; reframing my analysis of systemic instability as &ldquo;apocalyptic thinking,&rdquo; distorting what I said about institutional targeting of queer people into a claim that I feared Logan would kill me, pathologizing every disclosure I had shared in confidence as evidence of instability. She did this using information a supervisor had a professional obligation to protect.</div>
+                        <div>Ryan Warren used it to mock my sexuality at the March 5 meeting. Allison Watson used it to construct a psychological profile during dismissal proceedings &mdash; weaponizing my disclosures to frame me as paranoid and delusional, claiming on a recorded call that I had shared &ldquo;a staff member would be used to kill you when the end of the world occurs&rdquo; &mdash; a fabrication. I have never believed the world was ending. I have never said anything resembling this to anyone. She pathologized every disclosure I had shared in confidence as evidence of instability. She did this using information a supervisor had a professional obligation to protect.</div>
                         <div>He elicited trust. He extracted disclosures. He delivered them to people who were already working to remove me.</div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@ export default function OverviewPage() {
 
                 {/* ALLISON WATSON */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/key-individuals" className="underline text-emerald-800 hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/allison-watson" className="underline text-emerald-800 hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/trust" className="underline hover:text-emerald-600">Evidence: Trust Recruitment</Link></li>
@@ -210,10 +210,10 @@ export default function OverviewPage() {
                     </div>
                     <div className="mt-3 space-y-2 text-base">
                         <div>On March 10, Allison Watson called to tell me I had been &ldquo;acting as an agent of the state&rdquo; when I recorded the March 5 meeting &mdash; reframing my self-protection as a violation. She told me to &ldquo;get through my time.&rdquo; She dismissed documented abuse.</div>
-                        <div>On March 25, she called to contain the situation after my dismissal. She used Logan's disclosures to pathologize my character. She questioned me about &ldquo;the end of the world&rdquo; in a mocking tone. She claimed I had said I was worried Logan would kill me &mdash; a deliberate distortion of what I actually said about institutional targeting of queer people. She used these disclosures to construct a narrative justifying permanent removal. I recorded the call.</div>
+                        <div>On March 25, she called to contain the situation after my dismissal. I recorded the call. I told her I was still processing. She said okay and proceeded with her agenda. She weaponized Logan's disclosures to frame me as paranoid and delusional. She claimed I had shared that &ldquo;a staff member would be used to kill you when the end of the world occurs&rdquo; &mdash; a fabrication. I have never believed the world was ending. I have never said anything resembling this to anyone. I told her about the glass, the benefit of the doubt admission, the coercive exit attempts. She responded to each with &ldquo;okay&rdquo; and moved on. She promised a review process. She confirmed I could go to Tugman &mdash; as a citizen. She knew the volunteer placement was the entire point. The next day she cancelled everything.</div>
                         <div>I sent her a detailed letter documenting the full pattern of misconduct. Hours later, she permanently expelled me from all Oregon State Parks volunteer programs. She put the reason in writing: <em>&ldquo;the public comments made about staff regarding your volunteer service, were not in line with expectations.&rdquo;</em></div>
                         <div>That is First Amendment retaliation. On agency letterhead. In her own words.</div>
-                        <div>Her professional background is in Diversity, Equity, and Inclusion. She held an institutional position specifically meant to protect vulnerable people from exactly what she did. She knew better. That makes it worse.</div>
+                        <div>Her professional background is in Diversity, Equity, and Inclusion &mdash; she held that role at a university before joining OPRD. She built a career on protecting vulnerable people from exactly what she did to me. She knew better. That makes it worse.</div>
                     </div>
                 </div>
 
@@ -221,7 +221,7 @@ export default function OverviewPage() {
 
                 {/* LISA SUMPTION */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/evidence/surveillance" className="underline hover:text-emerald-600">Evidence: Assessment &amp; Surveillance</Link></li>
@@ -235,7 +235,7 @@ export default function OverviewPage() {
                         <div>On August 15, I notified the director directly of the covert surveillance encounter &mdash; an unidentified man sent to interrogate me while I was alone, during a regional event when all rangers were away. I asked three direct questions. She never responded. On December 7, I sent supplemental evidence including video documentation. She never responded.</div>
                         <div>On August 25, I sent Lisa Sumption a comprehensive open letter with audio recordings, video documentation, email chains, and written evidence of First Amendment retaliation. She responded within 12 hours with procedural language and no commitments. No investigation was ordered. No employees were held accountable. No protections were implemented.</div>
                         <div>On August 22, I submitted a comprehensive public records request. OPRD went silent for 90 days &mdash; a violation of Oregon public records law. After a formal Notice of Violation, they claimed to have responded through an internal portal I had no access to. Cost estimate for fulfillment: tens of thousands of dollars.</div>
-                        <div>On December 8, she responded by reframing my comprehensive documented record as &ldquo;emotional processing&rdquo; and closed communication. Every person who abused their authority remains in their position. She shielded all of them.</div>
+                        <div>On December 8, she closed communication. Her letter deployed therapeutic language to neutralize a factual record &mdash; &ldquo;deeply painful for you,&rdquo; &ldquo;frustration and hurt in your words,&rdquo; &ldquo;healing&rdquo; &mdash; without addressing a single piece of evidence. She converted documented institutional abuse into a narrative about a person who needs to heal. Every person who abused their authority remains in their position. She shielded all of them.</div>
                         <div>She had the evidence. She had the authority. She made a choice.</div>
                     </div>
                 </div>
@@ -244,7 +244,7 @@ export default function OverviewPage() {
 
                 {/* GOVERNOR KOTEK */}
                 <div className="mt-4">
-                    <div className="font-bold text-lg"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link></div>
+                    <div className="font-bold text-lg"><Link href="/key-individuals/tina-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link></div>
                     <div className="mt-3 ml-3 pl-3 border-l-2 border-emerald-600">
                         <ul className="text-sm text-emerald-700 space-y-1 list-none">
                             <li><Link href="/governor-kotek" className="underline hover:text-emerald-600">The Governor's Silence</Link></li>

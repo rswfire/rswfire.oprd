@@ -17,7 +17,19 @@ export const archiveSections = [
         ]
     },
     { href: "#separator-2", label: "", separator: true },
-    { href: "/key-individuals", label: "Key Individuals" },
+    {
+        href: "/key-individuals",
+        label: "Key Individuals",
+        subsections: [
+            { href: "/key-individuals/logan-bliss", label: "Logan Bliss" },
+            { href: "/key-individuals/kati-baker", label: "Kati Baker" },
+            { href: "/key-individuals/ryan-warren", label: "Ryan Warren" },
+            { href: "/key-individuals/allison-watson", label: "Allison Watson" },
+            { href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" },
+            { href: "/key-individuals/tina-kotek", label: "Tina Kotek" },
+            { href: "/key-individuals/matthew-oliver", label: "Matthew Oliver" },
+        ]
+    },
     { href: "/timeline", label: "Timeline" },
     { href: "#separator-3", label: "", separator: true },
     {

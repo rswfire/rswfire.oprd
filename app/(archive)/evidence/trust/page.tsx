@@ -66,8 +66,8 @@ export default function TrustRecruitmentPage() {
             </div>
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
                 <li>Questioned me about &quot;the end of the world&quot; using mocking tone.</li>
-                <li>Reframed my analysis of systemic instability as &quot;apocalyptic thinking.&quot;</li>
-                <li>Claimed I told Logan &quot;I was worried he would kill me&quot; &mdash; a distortion of what I actually said about institutional actors being the mechanism of authoritarian targeting.</li>
+                <li>Weaponized my disclosures to frame me as paranoid and delusional.</li>
+                <li>Claimed on the recorded call that I had shared &ldquo;a staff member would be used to kill you when the end of the world occurs&rdquo; &mdash; a fabrication. I have never believed the world was ending. I have never said anything resembling this to anyone.</li>
                 <li>Used these disclosures to construct a psychological profile justifying permanent dismissal.</li>
             </ul>
 

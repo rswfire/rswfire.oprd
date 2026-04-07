@@ -18,7 +18,7 @@ export default function KeyIndividualsPage() {
             nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
-            <h2 className="mt-8 text-xl font-semibold">LOGAN BLISS</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/logan-bliss" className="underline text-emerald-800 hover:text-emerald-600">LOGAN BLISS</Link></h2>
             <div className="mt-2 italic">
                 Volunteer Services Lead<br />
                 Honeyman State Park
@@ -34,7 +34,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold">KATI BAKER</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/kati-baker" className="underline text-emerald-800 hover:text-emerald-600">KATI BAKER</Link></h2>
             <div className="mt-2 italic">
                 Park Supervisor<br />
                 Honeyman State Park
@@ -50,7 +50,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold">RYAN WARREN</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/ryan-warren" className="underline text-emerald-800 hover:text-emerald-600">RYAN WARREN</Link></h2>
             <div className="mt-2 italic">
                 Park Manager<br />
                 Honeyman State Park
@@ -64,7 +64,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold">ALLISON WATSON</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/allison-watson" className="underline text-emerald-800 hover:text-emerald-600">ALLISON WATSON</Link></h2>
             <div className="mt-2 italic">
                 Engagement Programs Manager<br />
                 Oregon Parks &amp; Recreation Department
@@ -73,13 +73,13 @@ export default function KeyIndividualsPage() {
                 <li>March 10: first contact &mdash; called about March 5 recording, informed me I was &quot;acting as an agent of the state,&quot; established notification requirements (recorded).</li>
                 <li>Follow-up call: told me to &quot;get through my time,&quot; dismissed documented abuse.</li>
                 <li><Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">Issued permanent removal letter</Link> explicitly stating removal was for speaking publicly about my experience.</li>
-                <li><Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, reframed analysis as &quot;apocalyptic thinking.&quot;</li>
+                <li><Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">Used Logan's disclosures</Link> to construct psychological profile, weaponized disclosures to frame me as paranoid and delusional.</li>
                 <li><strong>Named retaliation for protected speech in writing on agency letterhead</strong>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold">LISA SUMPTION</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">LISA SUMPTION</Link></h2>
             <div className="mt-2 italic">
                 Director<br />
                 Oregon Parks &amp; Recreation Department
@@ -88,7 +88,7 @@ export default function KeyIndividualsPage() {
                 <li>August: <Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">received comprehensive open letter</Link> with audio and video evidence.</li>
                 <li><Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">Responded within twelve hours</Link> with procedural language, no specific accountability measures.</li>
                 <li>Directed documented misconduct into internal channels. No investigations announced, no protections implemented.</li>
-                <li>December: <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">reduced comprehensive documentation to emotional processing</Link>, stated further correspondence would not &quot;lead to the resolution you're seeking.&quot;</li>
+                <li>December: <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">closed communication</Link> using therapeutic language to neutralize a factual record &mdash; &ldquo;deeply painful for you,&rdquo; &ldquo;healing&rdquo; &mdash; without addressing a single piece of evidence. Stated further correspondence would not &ldquo;lead to the resolution you&rsquo;re seeking.&rdquo;</li>
                 <li><Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">Closed communication one day before full scope of Logan's betrayal and weaponization of queer identity was published</Link>.</li>
                 <li><strong>Chose institutional shielding over volunteer safety</strong>.</li>
                 <li><strong>Failed to protect a queer unpaid volunteer from the targeted abuse of her subordinates</strong>.</li>
@@ -96,7 +96,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold">TINA KOTEK</h2>
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/tina-kotek" className="underline text-emerald-800 hover:text-emerald-600">TINA KOTEK</Link></h2>
             <div className="mt-2 italic">
                 Governor<br />
                 State of Oregon
@@ -104,6 +104,24 @@ export default function KeyIndividualsPage() {
             <div className="mt-4">
                 Contacted. No acknowledgment.
             </div>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/matthew-oliver" className="underline text-emerald-800 hover:text-emerald-600">MATTHEW OLIVER</Link></h2>
+            <div className="mt-2 italic">
+                Special Agent<br />
+                U.S. Forest Service Law Enforcement &amp; Investigations<br />
+                Willamette and Siuslaw National Forests
+            </div>
+            <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
+                <li>March 24, 2026: arrived at Siltcoos Work Center behind a locked federal gate with two unidentified Oregon State Police officers &mdash; on the one-year anniversary of the dismissal from Honeyman.</li>
+                <li>Stated purpose was concern about &ldquo;posts online.&rdquo; Did not identify his agency.</li>
+                <li>Called twenty minutes after leaving &mdash; stated &ldquo;this matter isn&rsquo;t going away.&rdquo; Attempted to deescalate after hearing legal vocabulary.</li>
+                <li>Acknowledged he &ldquo;could have handled it better&rdquo; &mdash; meaning without the state police.</li>
+                <li>Claimed the federal land was not restricted. Hung up when corrected.</li>
+                <li>Replied &ldquo;who is this&rdquo; to a text sent minutes after he hung up &mdash; on the same number he had just been speaking on.</li>
+                <li><strong>Cross-agency coordination to apply terminal pressure to a First Amendment retaliation case</strong>.</li>
+            </ul>
 
         </SectionPage>
     );

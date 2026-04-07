@@ -65,7 +65,7 @@ export default function GovernorKotekPage() {
                     <div>No investigation was ordered.</div>
                     <div>No employees were held accountable.</div>
                     <div>No protections were implemented.</div>
-                    <div>In December, she closed communication entirely, reframing my comprehensive documentation as &quot;emotional processing&quot; and stating that further correspondence would not &quot;lead to the resolution you're seeking.&quot;</div>
+                    <div>In December, she closed communication entirely. Her letter deployed therapeutic language &mdash; &ldquo;deeply painful for you,&rdquo; &ldquo;frustration and hurt,&rdquo; &ldquo;healing&rdquo; &mdash; to convert a documented record of constitutional violations into a narrative about a person who needs to heal. She stated further correspondence would not &ldquo;lead to the resolution you&rsquo;re seeking.&rdquo; She did not address a single piece of evidence.</div>
                     <div>Every person who abused their authority remains in their position.</div>
                     <div>Her director chose to shield them from consequences.</div>
                     <div>These are facts. Every single one of them verifiable.</div>

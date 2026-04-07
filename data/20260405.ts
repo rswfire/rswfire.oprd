@@ -55,7 +55,7 @@ export const FAILURE_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[2:16 — 2:25]",
             quote: "You have no ethics.\n\nThat is the very definition of corruption.",
-            commentary: "Two statements. Not one. The first arrives from everything that preceded it — the proportionality, the hierarchy, the cross-agency reach, the personal grievance at the root of all of it. 'You have no ethics.' He lets that land. Then the second statement follows because the first one made it possible: 'That is the very definition of corruption.' That is not elaboration. That is the verdict the first statement required.",
+            commentary: "Two statements. Not one. The first arrives from everything that preceded it — the proportionality, the hierarchy, the cross-agency reach, one supervisor's intolerance of documentation at the root of all of it. 'You have no ethics.' He lets that land. Then the second statement follows because the first one made it possible: 'That is the very definition of corruption.' That is not elaboration. That is the verdict the first statement required.",
         },
         {
             timestamp: "[2:25 — 3:05]",
