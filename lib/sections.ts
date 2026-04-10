@@ -3,19 +3,8 @@ export const archiveSections = [
     { href: "/", label: "Home" },
     { href: "/ethics", label: "A Note About Ethics" },
     { href: "/displacement", label: "The Displacement Framework" },
-    { href: "/faq", label: "Frequently Asked Questions" },
     { href: "#separator-1", label: "", separator: true },
-    {
-        href: "/resources",
-        label: "Resources",
-        subsections: [
-            { href: "/resources/advocates", label: "For Advocates" },
-            { href: "/resources/press", label: "For Press" },
-            { href: "/resources/lawyers", label: "For Lawyers" },
-            { href: "/resources/legislators", label: "For Legislators" },
-            { href: "/resources/volunteers", label: "For Volunteers" }
-        ]
-    },
+    { href: "/timeline", label: "Timeline" },
     { href: "#separator-2", label: "", separator: true },
     {
         href: "/key-individuals",
@@ -28,7 +17,6 @@ export const archiveSections = [
             { href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" }
         ]
     },
-    { href: "/timeline", label: "Timeline" },
     { href: "#separator-3", label: "", separator: true },
     {
 
@@ -56,8 +44,21 @@ export const archiveSections = [
             { href: "/lisa-sumption/closure", label: "The Closure" }
         ]
     },
-    { href: "/governor-kotek", label: "The Governor's Silence" },
-
     { href: "#separator-5", label: "", separator: true },
+    { href: "/governor-kotek", label: "The Governor's Silence" },
+    { href: "#separator-6", label: "", separator: true },
+    {
+        href: "/resources",
+        label: "Resources",
+        subsections: [
+            { href: "/resources/advocates", label: "For Advocates" },
+            { href: "/resources/lawyers", label: "For Lawyers" },
+            { href: "/resources/legislators", label: "For Legislators" },
+            { href: "/resources/press", label: "For Press" },
+            { href: "/resources/volunteers", label: "For Volunteers" }
+        ]
+    },
+    { href: "#separator-7", label: "", separator: true },
+    { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];
