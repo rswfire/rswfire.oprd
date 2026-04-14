@@ -21,7 +21,7 @@ export default function OverviewPage() {
 
                     <blockquote className="md:p-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
-                            &ldquo;Ask them why I was dismissed with less than a week to go. Ask them why I was expelled from the entire volunteer program. They cannot give you a coherent answer to either act. Ask them and see for yourself.&rdquo;
+                            &ldquo;Ask them why I was dismissed with less than a week to go. Ask them why I was expelled from the entire volunteer program. Ask them why silence has been their only answer.&rdquo;
                         </p>
                         <footer className="mt-3 text-sm text-gray-500 not-italic text-right mr-8">
                             — Robert Samuel White
