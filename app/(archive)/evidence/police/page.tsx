@@ -3,6 +3,7 @@ import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
 import IdentityTracker from "@/components/IdentityTracker";
+import PersonLink from "@/components/PersonLink";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function PoliceIntimidationPage() {
             <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 
             <div className="mt-4">
-                One year ago today, Ryan Warren called to dismiss me from Honeyman State Park. One hour later he arrived at my RV, collected the keys, and told me to vacate within 24 hours. No paperwork. No documentation. Just the conversation we had.
+                One year ago today, <PersonLink name="Ryan Warren" /> called to dismiss me from Honeyman State Park. One hour later he arrived at my RV, collected the keys, and told me to vacate within 24 hours. No paperwork. No documentation. Just the conversation we had.
             </div>
 
             <div className="mt-4">
@@ -74,7 +75,7 @@ export default function PoliceIntimidationPage() {
             <h2 className="text-xl font-semibold">OREGON STATE POLICE: NO RECORDS</h2>
 
             <div className="mt-4 space-y-4 text-base leading-relaxed">
-                <p>On April 3, 2026, I filed a public records request with Oregon State Police requesting all records related to the March 24 visit — names, badge numbers, unit assignments, all communications related to planning, authorization, or coordination, all communications referencing my name, the archive, or the domain oprdvolunteerabuse.org, any incident reports, case files, or after-action documentation, and all communications between any OSP officer and U.S. Forest Service Special Agent Matthew Oliver or any Oregon Parks and Recreation Department employee in connection with the visit.</p>
+                <p>On April 3, 2026, I filed a public records request with Oregon State Police requesting all records related to the March 24 visit — names, badge numbers, unit assignments, all communications related to planning, authorization, or coordination, all communications referencing my name, the archive, or the domain oprdvolunteerabuse.org, any incident reports, case files, or after-action documentation, and all communications between any OSP officer and U.S. Forest Service <PersonLink name="Matthew Oliver" label="Special Agent Matthew Oliver" /> or any Oregon Parks and Recreation Department employee in connection with the visit.</p>
                 <p>Oregon State Police responded the same day with a blanket denial: no records responsive to the request.</p>
                 <p>The full response from Oregon State Police is available below.</p>
             </div>

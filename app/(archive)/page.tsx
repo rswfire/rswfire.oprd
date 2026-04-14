@@ -8,6 +8,7 @@ import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import DisplacementQuote from "@/components/DisplacementQuote";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
+import PersonLink from "@/components/PersonLink";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 
 export default function OverviewPage() {
@@ -164,12 +165,12 @@ export default function OverviewPage() {
                 <div className="mt-6 ml-0 sm:ml-4 pl-4 border-l-2 border-emerald-600">
                     <div className="text-sm font-semibold text-emerald-800 mb-2">The people responsible are documented individually:</div>
                     <div className="text-sm space-y-1">
-                        <div><Link href="/key-individuals/kati-baker" className="text-emerald-700 underline hover:text-emerald-600">Kati Baker</Link>, Park Supervisor</div>
-                        <div><Link href="/key-individuals/ryan-warren" className="text-emerald-700 underline hover:text-emerald-600">Ryan Warren</Link>, Park Manager</div>
-                        <div><Link href="/key-individuals/logan-bliss" className="text-emerald-700 underline hover:text-emerald-600">Logan Bliss</Link>, Volunteer Services Lead</div>
-                        <div><Link href="/key-individuals/allison-watson" className="text-emerald-700 underline hover:text-emerald-600">Allison Watson</Link>, Engagement Programs Manager</div>
-                        <div><Link href="/key-individuals/lisa-sumption" className="text-emerald-700 underline hover:text-emerald-600">Lisa Sumption</Link>, Director</div>
-                        <div><Link href="/key-individuals/tina-kotek" className="text-emerald-700 underline hover:text-emerald-600">Governor Tina Kotek</Link></div>
+                        <div><PersonLink name="Kati Baker" />, Park Supervisor</div>
+                        <div><PersonLink name="Ryan Warren" />, Park Manager</div>
+                        <div><PersonLink name="Logan Bliss" />, Volunteer Services Lead</div>
+                        <div><PersonLink name="Allison Watson" />, Engagement Programs Manager</div>
+                        <div><PersonLink name="Lisa Sumption" />, Director</div>
+                        <div><PersonLink name="Tina Kotek" label="Governor Tina Kotek" /></div>
                     </div>
                 </div>
 
@@ -185,7 +186,7 @@ export default function OverviewPage() {
                 <div>I maintained trails. I cleaned facilities. I engaged with visitors.</div>
                 <div>I participated in government as a citizen directly stewarding public land &mdash; until they took that away from me.</div>
 
-                <div className="mt-4">On March 26, 2025, Allison Watson permanently expelled me from all Oregon State Parks volunteer programs.</div>
+                <div className="mt-4">On March 26, 2025, <PersonLink name="Allison Watson" /> permanently expelled me from all Oregon State Parks volunteer programs.</div>
 
                 <div className="mt-4">She put the reason in writing:</div>
                 <div className="ml-4 italic">&ldquo;the public comments made about staff regarding your volunteer service, were not in line with expectations.&rdquo;</div>

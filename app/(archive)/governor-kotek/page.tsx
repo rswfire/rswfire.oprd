@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Governor Tina Kotek",
@@ -50,7 +51,7 @@ export default function GovernorKotekPage() {
                 <h2 className="mb-4 text-xl font-semibold">WHAT HER DIRECTOR DID</h2>
 
                 <div className="space-y-4">
-                    <div>In August 2025, I sent comprehensive documentation to Director Lisa Sumption.</div>
+                    <div>In August 2025, I sent comprehensive documentation to <PersonLink name="Lisa Sumption" label="Director Lisa Sumption" />.</div>
                     <div>I gave her:</div>
                         <div className="space-y-2">
                             <ul className="list-disc ml-8">
@@ -108,7 +109,7 @@ export default function GovernorKotekPage() {
                     <div>On March 24, 2026 &mdash; the one-year anniversary of my dismissal from Honeyman State Park &mdash; three armed officers arrived at a locked federal gate on restricted federal land where I live and work as a U.S. Forest Service caretaker.</div>
                     <div>One was a U.S. Forest Service Special Agent from the investigative branch. The other two were unidentified state officers. They told me they were concerned about what I was posting online about Oregon State Parks &mdash; while simultaneously telling me I was not in trouble.</div>
                     <div>I declined to speak without an attorney and closed the door.</div>
-                    <div>The Forest Service has since confirmed the Special Agent &mdash; Matthew Oliver, badge 555 &mdash; but will not disclose who authorized the visit, what its stated purpose was, or who the two state officers were. When I asked, they redirected me to FOIA.</div>
+                    <div>The Forest Service has since confirmed the Special Agent &mdash; <PersonLink name="Matthew Oliver" />, badge 555 &mdash; but will not disclose who authorized the visit, what its stated purpose was, or who the two state officers were. When I asked, they redirected me to FOIA.</div>
                     <div>Armed officers. Behind a locked gate. On the anniversary. Because of what I was posting online.</div>
                     <div>And still the governor is silent.</div>
                     <div>The visit is <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">documented</Link>.</div>

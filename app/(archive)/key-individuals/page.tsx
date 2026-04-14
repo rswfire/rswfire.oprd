@@ -1,6 +1,7 @@
 // app/(archive)/key-individuals/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import PersonLink from "@/components/PersonLink";
 import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
@@ -18,31 +19,31 @@ export default function KeyIndividualsPage() {
             nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/logan-bliss" className="underline text-emerald-800 hover:text-emerald-600">LOGAN BLISS</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Logan Bliss" label="LOGAN BLISS" /></h2>
             <div className="mt-2 italic">
                 Volunteer Services Lead<br />
                 Honeyman State Park
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>My direct supervisor, reported to Kati Baker and Ryan Warren.</li>
+                <li>My direct supervisor, reported to <PersonLink name="Kati Baker" /> and <PersonLink name="Ryan Warren" />.</li>
                 <li>Spent 90 minutes eliciting trust through reciprocal vulnerability.</li>
-                <li>Transmitted confidential disclosures to Kati Baker, Ryan Warren, Allison Watson.</li>
-                <li>Escalated situation with Kati instead of protecting me.</li>
+                <li>Transmitted confidential disclosures to <PersonLink name="Kati Baker" />, <PersonLink name="Ryan Warren" />, <PersonLink name="Allison Watson" />.</li>
+                <li>Escalated situation with <PersonLink name="Kati Baker" label="Kati" /> instead of protecting me.</li>
                 <li>Visibly recoiled when confronted with description of his own institutional role.</li>
                 <li>Betrayed <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">supervisory trust</Link>.</li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/kati-baker" className="underline text-emerald-800 hover:text-emerald-600">KATI BAKER</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Kati Baker" label="KATI BAKER" /></h2>
             <div className="mt-2 italic">
                 Park Supervisor<br />
                 Honeyman State Park
             </div>
             <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
                 <li>February 9: <Link href="/evidence/origin" className="underline text-emerald-800 hover:text-emerald-600">responded dismissively to operational questions</Link> about power outage protocols, escalated after receiving feedback about her tone.</li>
-                <li>Receiver of confidential disclosures Logan transmitted from me.</li>
-                <li>March 5: present during <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren's coercive meeting</Link>, remained silent, intervened only when Ryan made damaging admissions.</li>
+                <li>Receiver of confidential disclosures <PersonLink name="Logan Bliss" label="Logan" /> transmitted from me.</li>
+                <li>March 5: present during <PersonLink name="Ryan Warren" label="Ryan Warren's coercive meeting" />, remained silent, intervened only when <PersonLink name="Ryan Warren" label="Ryan" /> made damaging admissions.</li>
                 <li>March 18: <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">received report of unidentified man interrogating me</Link>, explained as photo documentation, no photos produced.</li>
                 <li>Every institutional action taken against me originated from decisions made under her direct supervision.</li>
                 <li>February 9 exchange weaponized repeatedly as justification in subsequent proceedings, in both written and recorded documentation.</li>
@@ -50,7 +51,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/ryan-warren" className="underline text-emerald-800 hover:text-emerald-600">RYAN WARREN</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Ryan Warren" label="RYAN WARREN" /></h2>
             <div className="mt-2 italic">
                 Park Manager<br />
                 Honeyman State Park
@@ -64,7 +65,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/allison-watson" className="underline text-emerald-800 hover:text-emerald-600">ALLISON WATSON</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Allison Watson" label="ALLISON WATSON" /></h2>
             <div className="mt-2 italic">
                 Engagement Programs Manager<br />
                 Oregon Parks &amp; Recreation Department
@@ -79,7 +80,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">LISA SUMPTION</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Lisa Sumption" label="LISA SUMPTION" /></h2>
             <div className="mt-2 italic">
                 Director<br />
                 Oregon Parks &amp; Recreation Department
@@ -96,7 +97,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/tina-kotek" className="underline text-emerald-800 hover:text-emerald-600">TINA KOTEK</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Tina Kotek" label="TINA KOTEK" /></h2>
             <div className="mt-2 italic">
                 Governor<br />
                 State of Oregon
@@ -107,7 +108,7 @@ export default function KeyIndividualsPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="mt-8 text-xl font-semibold"><Link href="/key-individuals/matthew-oliver" className="underline text-emerald-800 hover:text-emerald-600">MATTHEW OLIVER</Link></h2>
+            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Matthew Oliver" label="MATTHEW OLIVER" /></h2>
             <div className="mt-2 italic">
                 Special Agent<br />
                 U.S. Forest Service Law Enforcement &amp; Investigations<br />

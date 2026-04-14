@@ -4,6 +4,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Containment",
@@ -94,7 +95,7 @@ export default function ContainmentPage() {
             <h2 className="text-xl font-semibold">JANUARY 16, 2026 — 42 U.S.C. § 1983</h2>
 
             <div className="mt-4">
-                <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to Allison Watson</Link> citing personal liability under 42 U.S.C. § 1983 for First Amendment retaliation. The expulsion letter — written by Watson, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation. Qualified immunity does not apply.
+                <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to Allison Watson</Link> citing personal liability under 42 U.S.C. § 1983 for First Amendment retaliation. The expulsion letter — written by <PersonLink name="Allison Watson" label="Watson" />, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation. Qualified immunity does not apply.
             </div>
 
             <div className="mt-4">

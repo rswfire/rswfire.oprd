@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Allison Watson",
@@ -45,7 +46,7 @@ export default function AllisonWatsonPage() {
                         She weaponized <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">Logan&rsquo;s disclosures</Link> to frame me as paranoid and delusional. She claimed I had shared that &ldquo;a staff member would be used to kill you when the end of the world occurs&rdquo; &mdash; a fabrication. I have never believed the world was ending. I have never said anything resembling this to anyone. I told her I had no idea what she was talking about. She proceeded anyway.
                     </div>
                     <div className="mt-2">
-                        I told her about the glass. About the benefit of the doubt admission. About the coercive exit attempts. About Logan&rsquo;s boundary violations. She responded to each with &ldquo;okay&rdquo; and moved to the next item on her agenda. At minute 26, I built her a door &mdash; I acknowledged learning, offered to adjust, named my positive intent. She said &ldquo;thank you for sharing that&rdquo; and proceeded to what was always going to happen next.
+                        I told her about the glass. About the benefit of the doubt admission. About the coercive exit attempts. About <PersonLink name="Logan Bliss" label="Logan" />&rsquo;s boundary violations. She responded to each with &ldquo;okay&rdquo; and moved to the next item on her agenda. At minute 26, I built her a door &mdash; I acknowledged learning, offered to adjust, named my positive intent. She said &ldquo;thank you for sharing that&rdquo; and proceeded to what was always going to happen next.
                     </div>
                     <div className="mt-2">
                         She promised a review process. Steps. A timeline. Friday at the latest. When I told her I was planning to book a site at Tugman before my next volunteer assignment there, she confirmed I could &mdash; as a citizen, no concerns. She knew exactly why I was going to Tugman. She knew the volunteer placement was the entire point. She knew what she was about to do to it.
@@ -97,7 +98,7 @@ export default function AllisonWatsonPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Allison Watson is present across four stages of the displacement framework. She received Logan&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link> and weaponized them to frame me as paranoid and delusional. She participated in the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion</Link> &mdash; her March 10 call reframing my self-protection as a violation. She authorized the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">surveillance</Link> cover story at the institutional level. She executed the <Link href="/displacement#expulsion" className="underline text-emerald-800 hover:text-emerald-600">expulsion</Link> &mdash; permanently removing me from all Oregon State Parks volunteer programs and putting the reason in writing: protected speech.
+                    Allison Watson is present across four stages of the displacement framework. She received <PersonLink name="Logan Bliss" label="Logan" />&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link> and weaponized them to frame me as paranoid and delusional. She participated in the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion</Link> &mdash; her March 10 call reframing my self-protection as a violation. She authorized the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">surveillance</Link> cover story at the institutional level. She executed the <Link href="/displacement#expulsion" className="underline text-emerald-800 hover:text-emerald-600">expulsion</Link> &mdash; permanently removing me from all Oregon State Parks volunteer programs and putting the reason in writing: protected speech.
                 </div>
                 <div>
                     She is the person who wrote the retaliation into the permanent record. Not by accident. Not in ambiguous language. She stated explicitly that my removal was for speaking publicly about my experience. That is the definition of First Amendment retaliation.

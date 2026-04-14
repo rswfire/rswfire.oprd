@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Kati Baker",
@@ -49,16 +50,16 @@ export default function KatiBakerPage() {
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">February &ndash; March 2025</div>
                     <div>
-                        Receiver of confidential disclosures Logan Bliss transmitted from me. Information shared in supervisory confidence was delivered to Baker and used to build the case for removal.
+                        Receiver of confidential disclosures <PersonLink name="Logan Bliss" /> transmitted from me. Information shared in supervisory confidence was delivered to Baker and used to build the case for removal.
                     </div>
                 </div>
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">March 5, 2025</div>
                     <div>
-                        Present during the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">62-minute coercive meeting</Link> at the picnic table. Silent for the first 19 minutes while Ryan Warren built his case. Her first word was &ldquo;tone&rdquo; &mdash; spoken once, precisely timed, reframing every email I had ever written as threatening. She said nothing while Warren told me to chew glass and swallow it. She said nothing while he mocked my sexuality. She said nothing while he admitted he had never given me the benefit of the doubt.
+                        Present during the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">62-minute coercive meeting</Link> at the picnic table. Silent for the first 19 minutes while <PersonLink name="Ryan Warren" /> built his case. Her first word was &ldquo;tone&rdquo; &mdash; spoken once, precisely timed, reframing every email I had ever written as threatening. She said nothing while <PersonLink name="Ryan Warren" label="Warren" /> told me to chew glass and swallow it. She said nothing while he mocked my sexuality. She said nothing while he admitted he had never given me the benefit of the doubt.
                     </div>
                     <div className="mt-2">
-                        When Warren&rsquo;s admission destabilized his own argument, she attacked. Fifty minutes in, she returned to the only thing they ever had: a text message from the first week of February that we had already resolved. She confirmed on tape that she had invented an interpretation of my job application withdrawal email &mdash; attaching meaning that was never there, that I had never stated, that existed in no correspondence &mdash; and brought it to that table as evidence against me.
+                        When <PersonLink name="Ryan Warren" label="Warren" />&rsquo;s admission destabilized his own argument, she attacked. Fifty minutes in, she returned to the only thing they ever had: a text message from the first week of February that we had already resolved. She confirmed on tape that she had invented an interpretation of my job application withdrawal email &mdash; attaching meaning that was never there, that I had never stated, that existed in no correspondence &mdash; and brought it to that table as evidence against me.
                     </div>
                     <div className="mt-2">
                         I told her I liked her. She said &ldquo;okay.&rdquo; That is on the tape.
@@ -78,7 +79,7 @@ export default function KatiBakerPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Kati Baker is present across five stages of the displacement framework. She is the <Link href="/displacement#origin" className="underline text-emerald-800 hover:text-emerald-600">origin event</Link> &mdash; the moment a written record was created, she became the decision-maker who set the entire sequence in motion. She received Logan&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link>. She participated in the <Link href="/displacement#escalation" className="underline text-emerald-800 hover:text-emerald-600">escalation</Link>. She sat at the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion meeting</Link> and intervened only to attack. She provided the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">cover story for the surveillance encounter</Link> and reinforced it unprompted two days later.
+                    Kati Baker is present across five stages of the displacement framework. She is the <Link href="/displacement#origin" className="underline text-emerald-800 hover:text-emerald-600">origin event</Link> &mdash; the moment a written record was created, she became the decision-maker who set the entire sequence in motion. She received <PersonLink name="Logan Bliss" label="Logan" />&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link>. She participated in the <Link href="/displacement#escalation" className="underline text-emerald-800 hover:text-emerald-600">escalation</Link>. She sat at the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion meeting</Link> and intervened only to attack. She provided the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">cover story for the surveillance encounter</Link> and reinforced it unprompted two days later.
                 </div>
                 <div>
                     Every level of the institution shielded her &mdash; from the park manager to the engagement programs manager to the director to the governor&rsquo;s office, and across agency lines to federal law enforcement. Nine stages of displacement because one park supervisor could not tolerate a volunteer who created a written record.

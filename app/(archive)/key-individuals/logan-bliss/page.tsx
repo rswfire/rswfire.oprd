@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Logan Bliss",
@@ -28,7 +29,7 @@ export default function LoganBlissPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Logan Bliss was my direct supervisor at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. He reported to Kati Baker and Ryan Warren. He was the person I saw most. He was the person I trusted first.
+                    Logan Bliss was my direct supervisor at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. He reported to <PersonLink name="Kati Baker" /> and <PersonLink name="Ryan Warren" />. He was the person I saw most. He was the person I trusted first.
                 </div>
             </div>
 
@@ -52,7 +53,7 @@ export default function LoganBlissPage() {
                     <li>My concerns as a queer person about authoritarian targeting through institutional actors.</li>
                 </ul>
                 <div>
-                    He disclosed all of it to Kati Baker, Ryan Warren, and Allison Watson.
+                    He disclosed all of it to <PersonLink name="Kati Baker" />, <PersonLink name="Ryan Warren" />, and <PersonLink name="Allison Watson" />.
                 </div>
             </div>
 
@@ -62,15 +63,15 @@ export default function LoganBlissPage() {
 
             <div className="space-y-6 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">Ryan Warren &mdash; March 5, 2025</div>
+                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="Ryan Warren" /> &mdash; March 5, 2025</div>
                     <div>
-                        During the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">recorded coercion meeting</Link>, Ryan Warren stated I &ldquo;thought I had a future with Logan&rdquo; &mdash; weaponizing my sexuality and distorting the boundary I had set. I am certain that insinuation entered the narrative with Logan&rsquo;s consent.
+                        During the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">recorded coercion meeting</Link>, <PersonLink name="Ryan Warren" /> stated I &ldquo;thought I had a future with Logan&rdquo; &mdash; weaponizing my sexuality and distorting the boundary I had set. I am certain that insinuation entered the narrative with Logan&rsquo;s consent.
                     </div>
                 </div>
                 <div>
-                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">Allison Watson &mdash; March 25, 2025</div>
+                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="Allison Watson" /> &mdash; March 25, 2025</div>
                     <div>
-                        During <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">dismissal proceedings</Link>, Allison Watson:
+                        During <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">dismissal proceedings</Link>, <PersonLink name="Allison Watson" />:
                     </div>
                     <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
                         <li>Questioned me about &ldquo;the end of the world&rdquo; using a mocking tone.</li>
@@ -93,7 +94,7 @@ export default function LoganBlissPage() {
                     Intimacy followed by distance. Every time.
                 </div>
                 <div>
-                    When I confided in him about the situation with Kati, he escalated it instead of protecting me. Then he disappeared. When I applied for a job at the park, he distanced himself. The moment I withdrew my application, he reappeared &mdash; spending 90 minutes talking about himself. When I finally opened up about why I was there, what I had sacrificed, why it mattered &mdash; he responded by trying to manage my perception instead of listening. Then he distanced himself again.
+                    When I confided in him about the situation with <PersonLink name="Kati Baker" label="Kati" />, he escalated it instead of protecting me. Then he disappeared. When I applied for a job at the park, he distanced himself. The moment I withdrew my application, he reappeared &mdash; spending 90 minutes talking about himself. When I finally opened up about why I was there, what I had sacrificed, why it mattered &mdash; he responded by trying to manage my perception instead of listening. Then he distanced himself again.
                 </div>
                 <div>
                     At every critical moment, he failed to act with integrity. At every opportunity to lead, he chose avoidance.
@@ -128,7 +129,7 @@ export default function LoganBlissPage() {
                     This is <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">Stage 3 of the displacement framework</Link>: Trust Recruitment. Someone gets close. Someone listens. What you share in confidence is delivered to people who weaponize it.
                 </div>
                 <div>
-                    Logan&rsquo;s disclosures gave Ryan Warren, Kati Baker, and Allison Watson the ammunition they needed to justify what they had already decided to do. He enabled it. Actively. With full knowledge of what they were doing.
+                    Logan&rsquo;s disclosures gave <PersonLink name="Ryan Warren" />, <PersonLink name="Kati Baker" />, and <PersonLink name="Allison Watson" /> the ammunition they needed to justify what they had already decided to do. He enabled it. Actively. With full knowledge of what they were doing.
                 </div>
                 <div>
                     His choices as Volunteer Services Lead are now permanently attached to his name.

@@ -1,6 +1,7 @@
 // app/(archive)/timeline/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import PersonLink from "@/components/PersonLink";
 import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">February (ongoing)</div>
                     <div className="mt-2 text-sm">
-                        Systematic undermining of supervisor relationships. Logan Bliss elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
+                        Systematic undermining of supervisor relationships. <PersonLink name="Logan Bliss" /> elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
                     </div>
                 </li>
 
@@ -48,7 +49,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">March 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        Allison Watson calls about the March 5 recording. Informs me I was "acting as an agent of the state" — reframing my self-protection as a violation. Follow-up call the same day: tells me to "get through my time," dismisses documented abuse.
+                        <PersonLink name="Allison Watson" /> calls about the March 5 recording. Informs me I was "acting as an agent of the state" — reframing my self-protection as a violation. Follow-up call the same day: tells me to "get through my time," dismisses documented abuse.
                     </div>
                 </li>
 
@@ -140,7 +141,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">November 18, 2025</div>
                     <div className="mt-2 text-sm">
-                        Governor Tina Kotek's office <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">sent formal complaint</Link>.
+                        <PersonLink name="Tina Kotek" label="Governor Tina Kotek" />'s office <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">sent formal complaint</Link>.
                     </div>
                 </li>
 
@@ -175,7 +176,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">letter naming Logan's betrayal</Link> to Logan Bliss. CC: Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption.
+                        Send <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">letter naming Logan's betrayal</Link> to <PersonLink name="Logan Bliss" />. CC: <PersonLink name="Kati Baker" />, <PersonLink name="Ryan Warren" />, <PersonLink name="Allison Watson" />, <PersonLink name="Lisa Sumption" />.
                     </div>
                 </li>
 
@@ -189,7 +190,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 13, 2025</div>
                     <div className="mt-2 text-sm">
-                        Governor Tina Kotek's campaign contacted.
+                        <PersonLink name="Tina Kotek" label="Governor Tina Kotek" />'s campaign contacted.
                     </div>
                 </li>
             </ul>
@@ -202,21 +203,21 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">January 16, 2026</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Send formal notice</Link> to Allison Watson citing 42 U.S.C. § 1983, documenting personal liability for First Amendment retaliation. Demand written reversal of expulsion, independent investigation, and acknowledgment of constitutional violation. Deadline: March 26, 2026 — one year from expulsion date.
+                        <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Send formal notice</Link> to <PersonLink name="Allison Watson" /> citing 42 U.S.C. § 1983, documenting personal liability for First Amendment retaliation. Demand written reversal of expulsion, independent investigation, and acknowledgment of constitutional violation. Deadline: March 26, 2026 — one year from expulsion date.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">February 9, 2026</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/correspondence/institution/allison-watson-2026-02-09/" className="underline text-emerald-800 hover:text-emerald-600">Send additional letter</Link> to Allison Watson, subject "Harm." Name the full pattern of abuse and retaliation directly. Establish that institutional silence and reframing are themselves ongoing harm.
+                        <Link href="/correspondence/institution/allison-watson-2026-02-09/" className="underline text-emerald-800 hover:text-emerald-600">Send additional letter</Link> to <PersonLink name="Allison Watson" />, subject "Harm." Name the full pattern of abuse and retaliation directly. Establish that institutional silence and reframing are themselves ongoing harm.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">February 13, 2026</div>
                     <div className="mt-2 text-sm">
-                        Deputy Director J.R. Collier writes to <Link href="/correspondence/institution/jr-collier-2026-02-14/" className="underline text-emerald-800 hover:text-emerald-600">redirect all correspondence</Link> away from Allison Watson and other named staff. Letter characterizes documented First Amendment retaliation as dissatisfaction with "the decision to end volunteer service." Makes no substantive response to 1983 notice. Instructs that any legal filing will be forwarded to Department of Justice counsel. A senior official mobilized to insulate the person whose own written words document the constitutional violation.
+                        Deputy Director J.R. Collier writes to <Link href="/correspondence/institution/jr-collier-2026-02-14/" className="underline text-emerald-800 hover:text-emerald-600">redirect all correspondence</Link> away from <PersonLink name="Allison Watson" /> and other named staff. Letter characterizes documented First Amendment retaliation as dissatisfaction with "the decision to end volunteer service." Makes no substantive response to 1983 notice. Instructs that any legal filing will be forwarded to Department of Justice counsel. A senior official mobilized to insulate the person whose own written words document the constitutional violation.
                     </div>
                 </li>
 
@@ -298,7 +299,7 @@ export default function TimelinePage() {
                         One year after the dismissal.&nbsp;
                         <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">
                             Three police officers arrive at a locked federal gate
-                        </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving. Twenty minutes later, a man identifying himself as Forest Service calls — hostile, tells me this isn&rsquo;t going away. He is later confirmed as Special Agent Matthew Oliver, Law Enforcement &amp; Investigations.
+                        </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving. Twenty minutes later, a man identifying himself as Forest Service calls — hostile, tells me this isn&rsquo;t going away. He is later confirmed as <PersonLink name="Matthew Oliver" label="Special Agent Matthew Oliver" />, Law Enforcement &amp; Investigations.
                     </div>
                 </li>
 
@@ -312,7 +313,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">March 30, 2026</div>
                     <div className="mt-2 text-sm">
-                        Patrol Captain Felicia Sloan confirms Special Agent Matthew Oliver is employed by USFS Law Enforcement &amp; Investigations, assigned to Willamette and Siuslaw National Forests. Confirms he does not need to coordinate with local law enforcement. When asked who authorized the visit and its purpose, she redirects to FOIA.
+                        Patrol Captain Felicia Sloan confirms <PersonLink name="Matthew Oliver" label="Special Agent Matthew Oliver" /> is employed by USFS Law Enforcement &amp; Investigations, assigned to Willamette and Siuslaw National Forests. Confirms he does not need to coordinate with local law enforcement. When asked who authorized the visit and its purpose, she redirects to FOIA.
                     </div>
                 </li>
             </ul>

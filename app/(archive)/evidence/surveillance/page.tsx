@@ -5,6 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
+import PersonLink from "@/components/PersonLink";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function SurveillancePage() {
             <h2 className="text-xl font-semibold">IMMEDIATE DOCUMENTATION</h2>
 
             <div className="mt-4">
-                I documented the encounter with Kati Baker the same day. I wanted it on record.
+                I documented the encounter with <PersonLink name="Kati Baker" /> the same day. I wanted it on record.
             </div>
 
             <Email
@@ -87,7 +88,7 @@ Sam
             </Email>
 
             <div className="mt-4">
-                Kati was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification:
+                <PersonLink name="Kati Baker" label="Kati" /> was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification:
             </div>
 
             <Email
@@ -185,7 +186,7 @@ Have a great afternoon!
             <h2 className="text-xl font-semibold">NAMED TO ALLISON — MAY 26, 2025</h2>
 
             <div className="mt-4">
-                Two months after the expulsion, I named this encounter directly to Allison Watson. I told her what it was. I told her what the email thread documented.
+                Two months after the expulsion, I named this encounter directly to <PersonLink name="Allison Watson" />. I told her what it was. I told her what the email thread documented.
             </div>
 
             <div className="mt-4">
@@ -245,7 +246,7 @@ rswfire.com
             <h2 className="text-xl font-semibold">ESCALATED TO LISA — AUGUST 15, 2025</h2>
 
             <div className="mt-4">
-                I escalated this incident to Director Lisa Sumption with comprehensive documentation. I asked three direct questions. She never responded.
+                I escalated this incident to <PersonLink name="Lisa Sumption" label="Director Lisa Sumption" /> with comprehensive documentation. I asked three direct questions. She never responded.
             </div>
 
             <Email
@@ -345,7 +346,7 @@ https://rswfire.com/honeyman
             </div>
 
             <div className="mt-4">
-                His presence there collapsed Kati's cover story entirely. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. He is precisely what I said he was from day one.
+                His presence there collapsed <PersonLink name="Kati Baker" label="Kati's" /> cover story entirely. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. He is precisely what I said he was from day one.
             </div>
 
             <div className="mt-4">
@@ -484,7 +485,7 @@ Steward of oprdvolunteerabuse.org
                     <strong>The cover story collapsed on its own</strong> &mdash; not through argument, but through a second encounter nearly a year later that confirmed he is local, not IT, and drives an unmarked state vehicle.
                 </div>
                 <div>
-                    <strong>This required authorization above the park level</strong> &mdash; an unmarked state vehicle means someone above Kati approved this. The silence from every level of the institution confirms they know it.
+                    <strong>This required authorization above the park level</strong> &mdash; an unmarked state vehicle means someone above <PersonLink name="Kati Baker" label="Kati" /> approved this. The silence from every level of the institution confirms they know it.
                 </div>
             </div>
 

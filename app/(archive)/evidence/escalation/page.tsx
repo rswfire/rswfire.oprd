@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
+import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
     title: "Compliance",
@@ -25,7 +26,7 @@ export default function CompliancePage() {
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 
             <div className="mt-4">
-                Three days after Ryan Warren confronted me alone &mdash; cataloging first-week mistakes in response to my email to Kati Baker &mdash; I sent this email.
+                Three days after <PersonLink name="Ryan Warren" /> confronted me alone &mdash; cataloging first-week mistakes in response to my email to <PersonLink name="Kati Baker" /> &mdash; I sent this email.
             </div>
 
             <Email
@@ -68,7 +69,7 @@ Sam`}</pre>
             </div>
 
             <div className="mt-4">
-                If the February 9 exchange had actually been about operational clarity or tone—if Ryan Warren's confrontation had been legitimate supervision rather than intimidation—this email should have resolved everything.
+                If the February 9 exchange had actually been about operational clarity or tone—if <PersonLink name="Ryan Warren" label="Ryan Warren's" /> confrontation had been legitimate supervision rather than intimidation—this email should have resolved everything.
             </div>
 
             <div className="mt-4">
@@ -76,10 +77,10 @@ Sam`}</pre>
             </div>
 
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
-                <li>Logan Bliss elicited trust through reciprocal vulnerability, then disclosed what I shared to management.</li>
-                <li>Ryan Warren mocked my sexuality at the March 5 day-use meeting.</li>
-                <li>Kati Baker remained silent while psychological pressure escalated.</li>
-                <li>Allison Watson weaponized Logan's disclosures during dismissal proceedings.</li>
+                <li><PersonLink name="Logan Bliss" /> elicited trust through reciprocal vulnerability, then disclosed what I shared to management.</li>
+                <li><PersonLink name="Ryan Warren" /> mocked my sexuality at the March 5 day-use meeting.</li>
+                <li><PersonLink name="Kati Baker" /> remained silent while psychological pressure escalated.</li>
+                <li><PersonLink name="Allison Watson" /> weaponized Logan's disclosures during dismissal proceedings.</li>
             </ul>
 
             <div className="mt-4">
