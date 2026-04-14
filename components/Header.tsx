@@ -45,14 +45,14 @@ export default function Header() {
                             </h1>
 
                             <h2 className="text-xs sm:text-sm font-semibold tracking-tight text-slate-600">
-                                Oregon Parks &amp; Recreation <span className="hidden sm:inline">Department</span><span className="sm:hidden">Dept.</span>
+                                Oregon Parks &amp; Recreation Department
                             </h2>
 
-                            <p className="hidden sm:block text-xs tracking-tight text-slate-500">
-                                Under Director Lisa Sumption.
+                            <p className="text-xs tracking-tight text-slate-500">
+                                <span className="hidden sm:inline">Under </span>Director Lisa Sumption's Stewardship
                             </p>
 
-                            <p className="mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
+                            <p className="hidden sm:block mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
                                 Independently verifiable. Never legally challenged. Not going away.
                             </p>
                         </div>
