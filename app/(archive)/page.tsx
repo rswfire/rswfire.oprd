@@ -21,7 +21,7 @@ export default function OverviewPage() {
 
                     <blockquote className="md:p-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
-                            &ldquo;The threat of displacement is the institution&rsquo;s ultimate weapon. It is why volunteers stay silent. It is why abuse goes undocumented. It is why this problem persists.&rdquo;
+                            &ldquo;Ask them why I was dismissed. Ask them why I was expelled. They cannot give you a coherent answer. Ask them and see for yourself.&rdquo;
                         </p>
                         <footer className="mt-3 text-sm text-gray-500 not-italic text-right mr-8">
                             — Robert Samuel White
