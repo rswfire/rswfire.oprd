@@ -3,8 +3,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { EXPULSION_EXPLOITATION } from "@/data/exploitation";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
 
@@ -24,9 +23,7 @@ export default function ExpulsionPage() {
 
         >
 
-            <ExploitationSection content={EXPULSION_EXPLOITATION} />
-
-            <DisplacementStage stage="expulsion" />
+            <EvidenceTabs exploitation={EXPULSION_EXPLOITATION} stage="expulsion" />
 
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>
 

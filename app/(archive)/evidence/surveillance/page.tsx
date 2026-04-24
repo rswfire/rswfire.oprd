@@ -3,10 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { SURVEILLANCE_EXPLOITATION } from "@/data/exploitation";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
@@ -26,9 +25,7 @@ export default function SurveillancePage() {
 
         >
 
-            <ExploitationSection content={SURVEILLANCE_EXPLOITATION} />
-
-            <DisplacementStage stage="surveillance" />
+            <EvidenceTabs exploitation={SURVEILLANCE_EXPLOITATION} stage="surveillance" />
 
             <h2 className="text-xl font-semibold">MARCH 18, 2025</h2>
 

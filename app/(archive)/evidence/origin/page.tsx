@@ -2,8 +2,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { ORIGIN_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -22,9 +21,7 @@ export default function ConfrontationPage() {
 
         >
 
-            <ExploitationSection content={ORIGIN_EXPLOITATION} />
-
-            <DisplacementStage stage="origin" />
+            <EvidenceTabs exploitation={ORIGIN_EXPLOITATION} stage="origin" />
 
             <h2 className="text-xl font-semibold">FEBRUARY 9, 2025</h2>
 

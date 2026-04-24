@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
-import DisplacementStage from "@/components/DisplacementStage";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { DISMISSAL_EXPLOITATION } from "@/data/exploitation";
 import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
 
@@ -22,9 +21,7 @@ export default function DismissalPage() {
 
         >
 
-            <ExploitationSection content={DISMISSAL_EXPLOITATION} />
-
-            <DisplacementStage stage="dismissal" />
+            <EvidenceTabs exploitation={DISMISSAL_EXPLOITATION} stage="dismissal" />
 
             <PrimaryTransmission transmission={DISMISSAL_TRANSMISSION} defaultExpanded />
 

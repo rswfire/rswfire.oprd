@@ -2,9 +2,8 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
 import PersonLink from "@/components/PersonLink";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { ESCALATION_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -23,9 +22,7 @@ export default function CompliancePage() {
 
         >
 
-            <ExploitationSection content={ESCALATION_EXPLOITATION} />
-
-            <DisplacementStage stage="escalation" />
+            <EvidenceTabs exploitation={ESCALATION_EXPLOITATION} stage="escalation" />
 
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 

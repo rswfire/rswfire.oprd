@@ -2,8 +2,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
-import DisplacementStage from "@/components/DisplacementStage";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { COERCION_EXPLOITATION } from "@/data/exploitation";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
@@ -24,9 +23,7 @@ export default function CoercionPage() {
 
         >
 
-            <ExploitationSection content={COERCION_EXPLOITATION} />
-
-            <DisplacementStage stage="coercion" />
+            <EvidenceTabs exploitation={COERCION_EXPLOITATION} stage="coercion" />
 
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>
 

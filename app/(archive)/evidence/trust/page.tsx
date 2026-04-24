@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { TRUST_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -23,9 +22,7 @@ export default function TrustRecruitmentPage() {
 
         >
 
-            <ExploitationSection content={TRUST_EXPLOITATION} />
-
-            <DisplacementStage stage="trust" />
+            <EvidenceTabs exploitation={TRUST_EXPLOITATION} stage="trust" />
 
             <h2 className="text-xl font-semibold">THE DISCLOSURES</h2>
 

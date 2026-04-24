@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
-import DisplacementStage from "@/components/DisplacementStage";
 import IdentityTracker from "@/components/IdentityTracker";
 import PersonLink from "@/components/PersonLink";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { POLICE_EXPLOITATION } from "@/data/exploitation";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
@@ -24,9 +23,7 @@ export default function PoliceIntimidationPage() {
 
         >
 
-            <ExploitationSection content={POLICE_EXPLOITATION} />
-
-            <DisplacementStage stage="police" />
+            <EvidenceTabs exploitation={POLICE_EXPLOITATION} stage="police" />
 
             <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 

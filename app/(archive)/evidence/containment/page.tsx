@@ -3,9 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
-import DisplacementStage from "@/components/DisplacementStage";
 import PersonLink from "@/components/PersonLink";
-import ExploitationSection from "@/components/ExploitationSection";
+import EvidenceTabs from "@/components/EvidenceTabs";
 import { CONTAINMENT_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -24,9 +23,7 @@ export default function ContainmentPage() {
 
         >
 
-            <ExploitationSection content={CONTAINMENT_EXPLOITATION} />
-
-            <DisplacementStage stage="containment" />
+            <EvidenceTabs exploitation={CONTAINMENT_EXPLOITATION} stage="containment" />
 
             <h2 className="text-xl font-semibold">THE PATTERN</h2>
 
