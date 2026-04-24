@@ -28,6 +28,7 @@ export default function EvidenceTabs({ exploitation, stage }: Props) {
     };
 
     return (
+        <>
         <div className="my-8">
             <div role="tablist" className="flex border-b border-gray-300">
                 <button
@@ -71,5 +72,7 @@ export default function EvidenceTabs({ exploitation, stage }: Props) {
                 )}
             </div>
         </div>
+        <hr className="my-6 border-t border-gray-300" />
+        </>
     );
 }
