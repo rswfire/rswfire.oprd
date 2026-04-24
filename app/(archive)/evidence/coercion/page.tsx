@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
+import ExploitationSection from "@/components/ExploitationSection";
+import { COERCION_EXPLOITATION } from "@/data/exploitation";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
 
@@ -21,6 +23,8 @@ export default function CoercionPage() {
             summary="Ryan Warren and Kati Baker summoned me to a public picnic table for over an hour of psychological pressure designed to force my resignation."
 
         >
+
+            <ExploitationSection content={COERCION_EXPLOITATION} />
 
             <DisplacementStage stage="coercion" />
 

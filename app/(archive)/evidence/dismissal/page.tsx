@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
+import ExploitationSection from "@/components/ExploitationSection";
+import { DISMISSAL_EXPLOITATION } from "@/data/exploitation";
 import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
 
 export const metadata: Metadata = {
@@ -19,6 +21,8 @@ export default function DismissalPage() {
             summary="Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
 
         >
+
+            <ExploitationSection content={DISMISSAL_EXPLOITATION} />
 
             <DisplacementStage stage="dismissal" />
 

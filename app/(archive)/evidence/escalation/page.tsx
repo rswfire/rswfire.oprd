@@ -4,6 +4,8 @@ import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
 import PersonLink from "@/components/PersonLink";
+import ExploitationSection from "@/components/ExploitationSection";
+import { ESCALATION_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Compliance",
@@ -20,6 +22,8 @@ export default function CompliancePage() {
             summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
 
         >
+
+            <ExploitationSection content={ESCALATION_EXPLOITATION} />
 
             <DisplacementStage stage="escalation" />
 

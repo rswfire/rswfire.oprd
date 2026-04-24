@@ -4,6 +4,8 @@ import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
+import ExploitationSection from "@/components/ExploitationSection";
+import { EXPULSION_EXPLOITATION } from "@/data/exploitation";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
 
 export const metadata: Metadata = {
@@ -21,6 +23,8 @@ export default function ExpulsionPage() {
             summary="Allison Watson issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
 
         >
+
+            <ExploitationSection content={EXPULSION_EXPLOITATION} />
 
             <DisplacementStage stage="expulsion" />
 

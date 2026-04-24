@@ -20,7 +20,12 @@ export default function OverviewPage() {
 
                 <div className="bg-white p-4">
 
-                    <blockquote className="md:p-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
+                    {/* OPENING STATEMENT */}
+                    <div className="pt-4 sm:pt-6 px-2 text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-snug ">
+                        Oregon State Parks exploits free labor.<br/>This archive is the proof.
+                    </div>
+
+                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
                             &ldquo;Ask them why I was dismissed with less than a week to go.<br/>Ask them why I was expelled from the entire volunteer program.<br/>Ask them what I did that could justify either decision.<br/>Then ask them why silence has been their only answer.&rdquo;
                         </p>

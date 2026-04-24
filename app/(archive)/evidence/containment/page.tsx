@@ -5,6 +5,8 @@ import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
 import PersonLink from "@/components/PersonLink";
+import ExploitationSection from "@/components/ExploitationSection";
+import { CONTAINMENT_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Containment",
@@ -21,6 +23,8 @@ export default function ContainmentPage() {
             summary="Every institutional response to documented abuse has followed the same logic: not correction, not accountability, not investigation — containment."
 
         >
+
+            <ExploitationSection content={CONTAINMENT_EXPLOITATION} />
 
             <DisplacementStage stage="containment" />
 

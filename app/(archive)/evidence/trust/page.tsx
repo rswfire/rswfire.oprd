@@ -4,6 +4,8 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
+import ExploitationSection from "@/components/ExploitationSection";
+import { TRUST_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Betrayal",
@@ -20,6 +22,8 @@ export default function TrustRecruitmentPage() {
             summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
 
         >
+
+            <ExploitationSection content={TRUST_EXPLOITATION} />
 
             <DisplacementStage stage="trust" />
 

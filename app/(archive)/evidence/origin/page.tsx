@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
+import ExploitationSection from "@/components/ExploitationSection";
+import { ORIGIN_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Confrontation",
@@ -19,6 +21,8 @@ export default function ConfrontationPage() {
             summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
 
         >
+
+            <ExploitationSection content={ORIGIN_EXPLOITATION} />
 
             <DisplacementStage stage="origin" />
 

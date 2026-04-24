@@ -6,6 +6,8 @@ import Email from "@/components/archive/Email";
 import DisplacementStage from "@/components/DisplacementStage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
+import ExploitationSection from "@/components/ExploitationSection";
+import { SURVEILLANCE_EXPLOITATION } from "@/data/exploitation";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
 export const metadata: Metadata = {
@@ -23,6 +25,8 @@ export default function SurveillancePage() {
             summary="Six days before removal, an unidentified man approached me while I was cleaning yurts alone. He claimed to be with the park service, took photos of dirty yurts mid-clean, then pressed me with direct personal questions about leadership treatment."
 
         >
+
+            <ExploitationSection content={SURVEILLANCE_EXPLOITATION} />
 
             <DisplacementStage stage="surveillance" />
 

@@ -4,6 +4,8 @@ import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DisplacementStage from "@/components/DisplacementStage";
 import IdentityTracker from "@/components/IdentityTracker";
 import PersonLink from "@/components/PersonLink";
+import ExploitationSection from "@/components/ExploitationSection";
+import { POLICE_EXPLOITATION } from "@/data/exploitation";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
 export const metadata: Metadata = {
@@ -21,6 +23,8 @@ export default function PoliceIntimidationPage() {
             summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
 
         >
+
+            <ExploitationSection content={POLICE_EXPLOITATION} />
 
             <DisplacementStage stage="police" />
 
