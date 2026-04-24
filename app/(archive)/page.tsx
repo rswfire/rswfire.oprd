@@ -25,7 +25,7 @@ export default function OverviewPage() {
                         Oregon State Parks exploits free labor.<br/>This archive is my response.
                     </div>
 
-                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-4 shadow-md">
+                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-4">
                         <p className="text-lg italic text-gray-800 leading-relaxed">
                             Ask them why I was dismissed with days to go.<br/>Ask them why I was banned from every state park.<br/>Ask them what I did that could justify either decision.<br/>Then ask them why silence has been their only answer<br/>&mdash; and their only defense.
                         </p>
@@ -34,24 +34,24 @@ export default function OverviewPage() {
                         </footer>
                     </blockquote>
 
-                    {/* FOR VOLUNTEERS */}
-                    <Link
-                        href="/resources/volunteers"
-                        className="mt-4 block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
-                    >
-                        <div className="flex items-center gap-3">
-                            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
-                                <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
+                    {/* RESOURCES SECTION */}
+                    <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
+                        {/* FOR VOLUNTEERS */}
+                        <Link
+                            href="/resources/volunteers"
+                            className="block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
+                        >
+                            <div className="flex items-center gap-3">
+                                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
+                                    <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
+                                </div>
+                                <div>
+                                    <div className="text-sm font-semibold text-red-900">For Volunteers</div>
+                                    <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
+                                </div>
                             </div>
-                            <div>
-                                <div className="text-sm font-semibold text-red-900">For Volunteers</div>
-                                <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
-                            </div>
-                        </div>
-                    </Link>
+                        </Link>
 
-                    {/* RESOURCES */}
-                    <div className="mt-4">
                         <ResourcesOverview />
                     </div>
 
