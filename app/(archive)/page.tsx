@@ -25,13 +25,14 @@ export default function OverviewPage() {
                         Oregon State Parks exploits free labor.<br/>This archive is my response.
                     </div>
 
-                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-4">
-                        <p className="text-lg italic text-gray-800 leading-relaxed">
-                            Ask them why I was dismissed with days to go.<br/>Ask them why I was banned from every state park.<br/>Ask them what I did that could justify either decision.<br/>Then ask them why silence has been their only answer<br/>&mdash; and their only defense.
+                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-2">
+                        <p className="text-lg text-gray-800 leading-relaxed">
+                            <span className="block">Ask them why I was dismissed with days to go.</span>
+                            <span className="block mt-2 md:ml-2">Ask them why I was banned from every state park.</span>
+                            <span className="block mt-2 md:ml-4">Ask them what I did that could justify either decision.</span>
+                            <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash; </span>
+                            <span className="block mt-2 md:ml-8">and their only defense.</span>
                         </p>
-                        <footer className="mt-3 text-sm text-gray-500 not-italic text-right mr-8">
-                            — Robert Samuel White
-                        </footer>
                     </blockquote>
 
                     {/* RESOURCES SECTION */}
