@@ -1,12 +1,11 @@
 // app/(archive)/page.tsx
 
+import {Landmark, Map} from "lucide-react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
-import VideoEmbed from "@/components/archive/VideoEmbed";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
-import DisplacementQuote from "@/components/DisplacementQuote";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
@@ -56,12 +55,10 @@ export default function OverviewPage() {
                         <ResourcesOverview />
                     </div>
 
-
-
                     <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
                         <div className="md:mx-8 md:p-4 space-y-4">
-                            <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
-                            <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                            <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
+                            <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
                             <div>This archive is not a story about me.</div>
                             <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability &mdash; instead used to shield themselves.</div>
                         </div>
