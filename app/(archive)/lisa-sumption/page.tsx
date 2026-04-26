@@ -1,6 +1,7 @@
 // app/(archive)/lisa-sumption/page.tsx
 
 import type { Metadata } from "next";
+import { Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
@@ -21,7 +22,7 @@ export default function LisaSumptionIndexPage() {
 
             <div className="mt-4">
                 This section documents the actions, decisions, and institutional responses of <span className="font-semibold">Director Lisa Sumption</span> &mdash; the highest-level
-                authority notified of the abuse, retaliation, and systemic failures that occurred at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.
+                authority notified of the abuse, retaliation, and systemic failures that occurred at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.
             </div>
 
             <div className="mt-4">

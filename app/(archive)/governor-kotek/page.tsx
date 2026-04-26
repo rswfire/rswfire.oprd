@@ -1,5 +1,6 @@
 // app/(archive)/governor-kotek/page.tsx
 import type { Metadata } from "next";
+import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
@@ -35,13 +36,13 @@ export default function GovernorKotekPage() {
                 <h2 className="mb-4 text-xl font-semibold">WHAT HAPPENED</h2>
 
                 <div className="space-y-4">
-                    <div>In early 2025, I volunteered at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. I'm a gay man. I came to serve Oregon's natural spaces without compensation, offering my time and labor freely because I believed in the mission.</div>
+                    <div>In early 2025, I volunteered at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>. I'm a gay man. I came to serve Oregon's natural spaces without compensation, offering my time and labor freely because I believed in the mission.</div>
                     <div>What I experienced instead was two months of systematic psychological abuse by the people entrusted to supervise me.</div>
                     <div>My direct supervisor elicited trust through reciprocal vulnerability. I set an explicit boundary with him &mdash; I told him our conversation was not romantic. He transmitted what I shared in confidence to park management, who weaponized it against me.</div>
                     <div>The Park Manager mocked my sexuality in front of other staff, suggesting I &quot;thought I had a future&quot; with my male supervisor &mdash; a deliberate distortion of ordinary human connection into something inappropriate, something shameful.</div>
                     <div>That same manager told me to &quot;chew glass and swallow it.&quot; He admitted he never gave me the benefit of the doubt. He suggested repeatedly that I should leave. When I wouldn't quit, they removed me six days before my scheduled completion, using a fabricated pretext, with no formal documentation.</div>
                     <div>I have recordings. I have video. I have emails. I have documents. Every claim I'm making is independently verifiable.</div>
-                    <div>When I reported this abuse, the Engagement Programs Manager issued a permanent ban from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> volunteer programs &mdash; explicitly stating in writing that my removal was for speaking publicly about what happened to me.</div>
+                    <div>When I reported this abuse, the Engagement Programs Manager issued a permanent ban from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> volunteer programs &mdash; explicitly stating in writing that my removal was for speaking publicly about what happened to me.</div>
                     <div>First Amendment retaliation. On state letterhead. In black and white.</div>
                     <div>This is not a complaint. This is a documented pattern of institutional abuse, identity-based targeting, and constitutional violation.</div>
                 </div>
@@ -142,9 +143,9 @@ export default function GovernorKotekPage() {
 
                 <div className="space-y-4">
                     <div>She has the power to resolve this right now.</div>
-                    <div>Order an independent investigation into documented misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>.</div>
+                    <div>Order an independent investigation into documented misconduct at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
                     <div>Hold her director accountable for shielding employees who targeted a gay volunteer.</div>
-                    <div>Implement systemic protections for volunteers across <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link>.</div>
+                    <div>Implement systemic protections for volunteers across <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
                     <div>Make a public commitment to LGBTQ+ volunteer safety that's backed by action, not just words.</div>
                     <div>If she does these things now &mdash; before external discovery forces her hand &mdash; this becomes a story about authentic accountability. It becomes evidence that her commitment to queer protection is real even when it's politically uncomfortable.</div>
                     <div>Her opposition loses the weapon before they can acquire it.</div>

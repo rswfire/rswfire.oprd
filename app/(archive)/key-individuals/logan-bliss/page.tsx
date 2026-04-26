@@ -1,5 +1,6 @@
 // app/(archive)/key-individuals/logan-bliss/page.tsx
 import type { Metadata } from "next";
+import { Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
@@ -29,7 +30,7 @@ export default function LoganBlissPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Logan Bliss was my direct supervisor at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>. He reported to <PersonLink name="Kati Baker" /> and <PersonLink name="Ryan Warren" />. He was the person I saw most. He was the person I trusted first.
+                    Logan Bliss was my direct supervisor at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>. He reported to <PersonLink name="Kati Baker" /> and <PersonLink name="Ryan Warren" />. He was the person I saw most. He was the person I trusted first.
                 </div>
             </div>
 

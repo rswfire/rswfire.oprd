@@ -1,5 +1,6 @@
 // app/(archive)/evidence/page.tsx
 import type { Metadata } from "next";
+import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
@@ -19,7 +20,7 @@ export default function EvidencePage() {
             <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                 <div className="text-base">
                     <div>
-                        This section contains primary source documentation of systematic abuse at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> and institutional retaliation by <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon Parks & Recreation Department</Link>.
+                        This section contains primary source documentation of systematic abuse at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> and institutional retaliation by <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon Parks & Recreation Department</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.
                     </div>
                     <div className="mt-2">
                         Every claim made in this archive is supported by audio recordings, video documentation, email correspondence, or written evidence.

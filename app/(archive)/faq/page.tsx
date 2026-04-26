@@ -1,5 +1,6 @@
 // app/(archive)/faq/page.tsx
 import type { Metadata } from "next";
+import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
@@ -136,7 +137,7 @@ export default function FAQPage() {
                         <div>Audio recordings, video documentation, and email correspondence are embedded throughout this archive.</div>
                         <div>The <Link href="/correspondence" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> stores all external communications in unmodified .eml format in my <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">public repository</Link>.</div>
                         <div>Everything claimed here is independently verifiable. Names, dates, specific statements &mdash; all documented.</div>
-                        <div>I invite you to request further information from <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> directly. I will note I tried the <Link href="/lisa-sumption/public-records-request" className="text-emerald-700 underline hover:text-emerald-600">public records</Link> route myself but that route resulted in no records being produced despite statutory timelines.</div>
+                        <div>I invite you to request further information from <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> directly. I will note I tried the <Link href="/lisa-sumption/public-records-request" className="text-emerald-700 underline hover:text-emerald-600">public records</Link> route myself but that route resulted in no records being produced despite statutory timelines.</div>
                         <div>But as far as the record is concerned: everything you need is already here.</div>
                         <div>This isn't a narrative. It's a record, and I have always treated it as such.</div>
                     </div>
@@ -154,7 +155,7 @@ export default function FAQPage() {
                         <div>More precisely:</div>
                         <div className="space-y-2">
                             <ul className="list-disc list-outside ml-8">
-                                <li>Independent investigation into documented misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">Honeyman State Park</Link>.</li>
+                                <li>Independent investigation into documented misconduct at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</li>
                                 <li>Accountability for supervisors who betrayed trust and weaponized identity.</li>
                                 <li>Systemic protections preventing retaliation against volunteers who report abuse.</li>
                                 <li>Public commitment to volunteer program integrity and LGBTQ+ safety backed by action, not rhetoric.</li>

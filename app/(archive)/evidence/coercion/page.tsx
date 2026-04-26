@@ -1,5 +1,6 @@
 // app/(archive)/evidence/coercion/page.tsx
 import type { Metadata } from "next";
+import { Map } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import EvidenceTabs from "@/components/EvidenceTabs";
@@ -28,7 +29,7 @@ export default function CoercionPage() {
             <h2 className="text-xl font-semibold">MARCH 5, 2025</h2>
 
             <div className="mt-4">
-                Ryan Warren and Kati Baker called me to a meeting at a public picnic table in <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>&rsquo;s day-use area. <strong>The entire meeting was recorded</strong>.
+                Ryan Warren and Kati Baker called me to a meeting at a public picnic table in <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>&rsquo;s day-use area. <strong>The entire meeting was recorded</strong>.
             </div>
 
             <div className="mt-4 space-y-4 text-base text-gray-700 leading-relaxed">

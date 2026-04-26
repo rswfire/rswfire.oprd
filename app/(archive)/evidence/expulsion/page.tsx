@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
@@ -28,7 +29,7 @@ export default function ExpulsionPage() {
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>
 
             <div className="mt-4">
-                March 24: Ryan Warren dismissed me from <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> without paperwork or cause.
+                March 24: Ryan Warren dismissed me from <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> without paperwork or cause.
             </div>
 
             <div className="mt-4">
@@ -54,7 +55,7 @@ export default function ExpulsionPage() {
             </div>
 
             <div className="mt-4">
-                Hours after I sent that letter, Allison Watson responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Oregon State Parks</Link> volunteer programs.
+                Hours after I sent that letter, Allison Watson responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> volunteer programs.
             </div>
 
             <div className="mt-4">

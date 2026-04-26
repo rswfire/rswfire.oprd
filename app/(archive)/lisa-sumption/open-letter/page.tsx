@@ -1,6 +1,7 @@
 // app/(archive)/lisa-sumption/open-letter/page.tsx
 
 import type { Metadata } from "next";
+import { Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -23,7 +24,7 @@ export default function OpenLetterPage() {
 
             <div className="mt-4">
                 On August 25, 2025, I sent Director Lisa Sumption a comprehensive public letter
-                documenting the full scope of the misconduct at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link>, the structural
+                documenting the full scope of the misconduct at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>, the structural
                 failures that enabled it, and the institutional silence that followed.
             </div>
 

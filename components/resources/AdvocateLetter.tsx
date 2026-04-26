@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { Map } from "lucide-react";
 import Link from "next/link";
 
 export default function AdvocateLetter() {
@@ -45,7 +46,7 @@ export default function AdvocateLetter() {
                         <h3 style={{ fontFamily: 'var(--font-dm-mono), monospace', fontSize: '11px', letterSpacing: '0.2em', color: '#4a6475', textTransform: 'uppercase' }}>What They Did</h3>
 
                         <p>
-                            In February 2025, I was a volunteer at <Link href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Honeyman State Park</Link> on the Oregon Coast. I sent an email at 6AM asking for operational clarity during a power outage. My supervisor responded dismissively. I named her tone in a follow-up email.
+                            In February 2025, I was a volunteer at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> on the Oregon Coast. I sent an email at 6AM asking for operational clarity during a power outage. My supervisor responded dismissively. I named her tone in a follow-up email.
                         </p>
 
                         <p>That email became the origin of everything that followed.</p>
