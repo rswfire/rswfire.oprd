@@ -350,7 +350,7 @@ export default function TimelinePage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold"><strong>MAY 2026</strong>: CLOSING THE CHAPTER</h2>
+            <h2 className="text-xl font-semibold"><strong>MAY 2026</strong>: FINAL STATEMENT</h2>
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
