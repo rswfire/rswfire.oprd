@@ -1,6 +1,7 @@
 // app/(archive)/final-statement/page.tsx
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "A Final Statement to the Oregon Parks and Recreation Department",
@@ -31,7 +32,7 @@ export default function FinalStatementPage() {
 
                     <p>I am writing this letter to close a chapter that your institution opened and that I have spent over a year documenting.</p>
 
-                    <p>I recently received your Volunteer Dismissal Guidance in response to my public records request. I did not need it to know what you did. But it confirmed, in your own words and your own policy framework, what I have known since March 2025: that you did not follow your own procedures. That the dismissal of a volunteer for speaking publicly about his treatment has no category in your guidance because you invented one. That what was done to me fell outside every ethical and professional boundary your own institution had established for how volunteers are to be treated.</p>
+                    <p>I recently received your <Link href="/oprd-volunteer-dismissal-guidance.pdf" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300">Volunteer Dismissal Guidance</Link> in response to my public records request. I did not need it to know what you did. But it confirmed, in your own words and your own policy framework, what I have known since March 2025: that you did not follow your own procedures. That the dismissal of a volunteer for speaking publicly about his treatment has no category in your guidance because you invented one. That what was done to me fell outside every ethical and professional boundary your own institution had established for how volunteers are to be treated.</p>
 
                     <p><em>Put plainly: when you couldn&rsquo;t manufacture a reason to dismiss me, you just did it anyway and then went silent. I had no idea a public institution could operate with such clear disregard for truth and honor. You educated me.</em></p>
 
