@@ -47,6 +47,8 @@ export const archiveSections = [
     { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
     { href: "#separator-6", label: "", separator: true },
+    { href: "/final-statement", label: "A Final Statement" },
+    { href: "#separator-7", label: "", separator: true },
     {
         href: "/resources",
         label: "Resources",
@@ -58,7 +60,7 @@ export const archiveSections = [
             { href: "/resources/volunteers", label: "For Volunteers" }
         ]
     },
-    { href: "#separator-7", label: "", separator: true },
+    { href: "#separator-8", label: "", separator: true },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];

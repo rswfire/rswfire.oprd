@@ -348,6 +348,26 @@ export default function TimelinePage() {
                 </li>
             </ul>
 
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>MAY 2026</strong>: CLOSING THE CHAPTER</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">May 3, 2026</div>
+                    <div className="mt-2 text-sm">
+                        A box of urine-soaked shotgun shells is left at the gate of my federal residence. The escalation arrives roughly six weeks after the police visit on the anniversary of my dismissal. The distance between an institutional silence and an anonymous threat at the gate is the record.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">May 4, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Send <Link href="/final-statement" className="underline text-emerald-800 hover:text-emerald-600">A Final Statement to the Oregon Parks and Recreation Department</Link>. Name every actor in sequence. Name what each did. Close the chapter on my own terms. Abandon all future contact with the institution. The archive remains. It is complete. It is factual. It has never been legally challenged.
+                    </div>
+                </li>
+            </ul>
+
         </SectionPage>
     );
 }

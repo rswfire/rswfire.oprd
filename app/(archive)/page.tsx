@@ -34,6 +34,19 @@ export default function OverviewPage() {
                         </p>
                     </blockquote>
 
+                    {/* FINAL STATEMENT */}
+                    <div className="mt-6 pt-6 pb-2 text-center border-t border-gray-200">
+                        <Link
+                            href="/final-statement"
+                            className="inline-block text-base sm:text-lg text-gray-900 hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
+                        >
+                            A Final Statement to the Oregon Parks and Recreation Department
+                        </Link>
+                        <div className="mt-1 text-xs text-gray-500 uppercase tracking-[0.2em]">
+                            Sent May 4, 2026
+                        </div>
+                    </div>
+
                     {/* RESOURCES SECTION */}
                     <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
                         {/* FOR VOLUNTEERS */}
