@@ -15,7 +15,7 @@ export default function TinaKotekKeyIndividualPage() {
             subtitle="GOVERNOR"
             supplemental="STATE OF OREGON"
             previousPage={{ href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" }}
-            nextPage={{ href: "/key-individuals/matthew-oliver", label: "Matthew Oliver" }}
+            nextPage={{ href: "/timeline", label: "Timeline" }}
         >
 
             <blockquote className="border-l-4 border-gray-900 pl-6 py-2 mb-12 text-lg leading-relaxed">

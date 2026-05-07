@@ -106,24 +106,6 @@ export default function KeyIndividualsPage() {
                 Contacted. No acknowledgment.
             </div>
 
-            <hr className="my-6 border-t border-gray-300" />
-
-            <h2 className="mt-8 text-xl font-semibold"><PersonLink name="Matthew Oliver" label="MATTHEW OLIVER" /></h2>
-            <div className="mt-2 italic">
-                Special Agent<br />
-                U.S. Forest Service Law Enforcement &amp; Investigations<br />
-                Willamette and Siuslaw National Forests
-            </div>
-            <ul className="mt-4 list-disc list-outside ml-8 space-y-2">
-                <li>March 24, 2026: arrived at Siltcoos Work Center behind a locked federal gate with two unidentified Oregon State Police officers &mdash; on the one-year anniversary of the dismissal from Honeyman.</li>
-                <li>Stated purpose was concern about &ldquo;posts online.&rdquo; Did not identify his agency.</li>
-                <li>Called twenty minutes after leaving &mdash; stated &ldquo;this matter isn&rsquo;t going away.&rdquo; Attempted to deescalate after hearing legal vocabulary.</li>
-                <li>Acknowledged he &ldquo;could have handled it better&rdquo; &mdash; meaning without the state police.</li>
-                <li>Claimed the federal land was not restricted. Hung up when corrected.</li>
-                <li>Replied &ldquo;who is this&rdquo; to a text sent minutes after he hung up &mdash; on the same number he had just been speaking on.</li>
-                <li><strong>Cross-agency coordination to apply terminal pressure to a First Amendment retaliation case</strong>.</li>
-            </ul>
-
         </SectionPage>
     );
 }

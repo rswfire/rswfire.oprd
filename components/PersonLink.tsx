@@ -9,7 +9,6 @@ const people: Record<string, string> = {
     "Allison Watson": "/key-individuals/allison-watson",
     "Lisa Sumption": "/key-individuals/lisa-sumption",
     "Tina Kotek": "/key-individuals/tina-kotek",
-    "Matthew Oliver": "/key-individuals/matthew-oliver",
 };
 
 type PersonName = keyof typeof people;
