@@ -24,31 +24,31 @@ export default function OverviewPage() {
                         Oregon State Parks dismisses volunteers for putting things in writing.<br/>This archive is my response.
                     </div>
 
-                    <blockquote className="mt-4 mx-4 sm:mx-6 md:mx-auto md:w-fit md:px-8 border-l-4 border-red-700 pl-6 py-2">
-                        <p className="text-lg text-gray-800 leading-relaxed">
-                            <span className="block">Ask them why I was dismissed with six days left.</span>
-                            <span className="block mt-2 md:ml-2">Ask them why I was permanently banned from every state park.</span>
-                            <span className="block mt-2 md:ml-4">Ask them what I did that could justify either decision.</span>
-                            <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash;</span>
-                            <span className="block mt-2 md:ml-10">and their only defense.</span>
-                        </p>
-                    </blockquote>
+                    <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
+                        <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
+                            <p className="text-lg md:text-base text-gray-800 leading-relaxed">
+                                <span className="block">Ask them why I was dismissed with six days left.</span>
+                                <span className="block mt-2 md:ml-2">Ask them why I was permanently banned from every state park.</span>
+                                <span className="block mt-2 md:ml-4">Ask them what I did that could justify either decision.</span>
+                                <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash;</span>
+                                <span className="block mt-2 md:ml-10">and their only defense.</span>
+                            </p>
+                        </blockquote>
 
-                    {/* FOR VOLUNTEERS */}
-                    <Link
-                        href="/resources/volunteers"
-                        className="mt-4 block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
-                    >
-                        <div className="flex items-center gap-3">
-                            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
-                                <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
+                        {/* FOR VOLUNTEERS */}
+                        <Link
+                            href="/resources/volunteers"
+                            className="group mx-auto md:mx-0 md:order-1 shrink-0 flex flex-col w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+                        >
+                            <div className="flex h-1/2 w-full items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors">
+                                <Icon name="Shield" className="text-white" size={56} strokeWidth={1.5} />
                             </div>
-                            <div>
-                                <div className="text-sm font-semibold text-red-900">For Volunteers</div>
-                                <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
+                            <div className="flex h-1/2 w-full flex-col items-center justify-center bg-white px-4 text-center">
+                                <div className="text-sm sm:text-base font-bold uppercase tracking-widest text-red-900">For Volunteers</div>
+                                <div className="mt-1.5 text-xs leading-snug text-gray-600">If this happened to you, it has a name.</div>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
                     {/* FINAL STATEMENT */}
                     <div className="mt-6 pt-6 pb-2 text-center border-t border-gray-200">
@@ -63,15 +63,6 @@ export default function OverviewPage() {
                         </div>
                     </div>
 
-
-
-
-                    {/* RESOURCES SECTION */}
-                    <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
-
-
-                        <ResourcesOverview />
-                    </div>
 
                     <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
                         <div className="md:mx-8 md:p-4 space-y-4">
@@ -91,6 +82,11 @@ export default function OverviewPage() {
                         </div>
 
                         <div className="p-4 mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
+                    </div>
+
+                    {/* RESOURCES SECTION */}
+                    <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
+                        <ResourcesOverview />
                     </div>
 
                 </div>
