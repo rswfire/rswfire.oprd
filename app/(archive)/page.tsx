@@ -38,14 +38,14 @@ export default function OverviewPage() {
                         {/* FOR VOLUNTEERS */}
                         <Link
                             href="/resources/volunteers"
-                            className="group mx-auto md:mx-0 md:order-1 shrink-0 flex flex-col w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+                            className="group md:order-1 shrink-0 flex flex-col w-full h-48 md:w-56 md:h-56 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
                         >
                             <div className="flex h-1/2 w-full items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors">
                                 <Icon name="Shield" className="text-white" size={56} strokeWidth={1.5} />
                             </div>
                             <div className="flex h-1/2 w-full flex-col items-center justify-center bg-white px-4 text-center">
                                 <div className="text-sm sm:text-base font-bold uppercase tracking-widest text-red-900">For Volunteers</div>
-                                <div className="mt-1.5 text-xs leading-snug text-gray-600">If this happened to you, it has a name.</div>
+                                <div className="mt-1.5 text-xs leading-snug text-gray-600">If this happened to you,<br/>it has a name.</div>
                             </div>
                         </Link>
                     </div>
