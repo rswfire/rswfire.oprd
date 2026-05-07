@@ -20,19 +20,35 @@ export default function OverviewPage() {
                 <div className="bg-white p-4">
 
                     {/* OPENING STATEMENT */}
-                    <div className="pt-4 sm:pt-6 px-2 text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        Oregon State Parks exploits free labor.<br/>This archive is my response.
+                    <div className="pt-4 sm:pt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
+                        Oregon State Parks dismisses volunteers for putting things in writing.<br/>This archive is my response.
                     </div>
 
-                    <blockquote className="mt-4 mx-4 sm:mx-6 md:px-8 border-l-4 border-red-700 pl-6 py-2">
+                    <blockquote className="mt-4 mx-4 sm:mx-6 md:mx-auto md:w-fit md:px-8 border-l-4 border-red-700 pl-6 py-2">
                         <p className="text-lg text-gray-800 leading-relaxed">
-                            <span className="block">Ask them why I was dismissed with days to go.</span>
-                            <span className="block mt-2 md:ml-2">Ask them why I was banned from every state park.</span>
+                            <span className="block">Ask them why I was dismissed with six days left.</span>
+                            <span className="block mt-2 md:ml-2">Ask them why I was permanently banned from every state park.</span>
                             <span className="block mt-2 md:ml-4">Ask them what I did that could justify either decision.</span>
-                            <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash; </span>
-                            <span className="block mt-2 md:ml-8">and their only defense.</span>
+                            <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash;</span>
+                            <span className="block mt-2 md:ml-10">and their only defense.</span>
                         </p>
                     </blockquote>
+
+                    {/* FOR VOLUNTEERS */}
+                    <Link
+                        href="/resources/volunteers"
+                        className="mt-4 block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
+                    >
+                        <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
+                                <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <div className="text-sm font-semibold text-red-900">For Volunteers</div>
+                                <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
+                            </div>
+                        </div>
+                    </Link>
 
                     {/* FINAL STATEMENT */}
                     <div className="mt-6 pt-6 pb-2 text-center border-t border-gray-200">
@@ -47,23 +63,12 @@ export default function OverviewPage() {
                         </div>
                     </div>
 
+
+
+
                     {/* RESOURCES SECTION */}
                     <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
-                        {/* FOR VOLUNTEERS */}
-                        <Link
-                            href="/resources/volunteers"
-                            className="block rounded-xl overflow-hidden border border-red-200 shadow-sm bg-white hover:bg-red-50 transition-colors p-4"
-                        >
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-red-700 shrink-0">
-                                    <Icon name="Shield" className="text-white" size={18} strokeWidth={1.5} />
-                                </div>
-                                <div>
-                                    <div className="text-sm font-semibold text-red-900">For Volunteers</div>
-                                    <div className="text-xs text-gray-500 mt-0.5">If this happened to you, it has a name.</div>
-                                </div>
-                            </div>
-                        </Link>
+
 
                         <ResourcesOverview />
                     </div>
