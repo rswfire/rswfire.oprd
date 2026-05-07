@@ -24,19 +24,6 @@ export default function OverviewPage() {
                         Oregon State Parks dismisses volunteers for putting things in writing.<br/>This archive is my response.
                     </div>
 
-                    {/* FINAL STATEMENT */}
-                    <div className="mt-4 pb-2 text-center">
-                        <Link
-                            href="/tombstone"
-                            className="inline-block text-base sm:text-lg text-gray-900 hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
-                        >
-                            A Final Statement to the Oregon Parks and Recreation Department
-                        </Link>
-                        <div className="mt-1 text-xs text-gray-500 uppercase tracking-[0.2em]">
-                            Sent May 4, 2026
-                        </div>
-                    </div>
-
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
@@ -60,6 +47,16 @@ export default function OverviewPage() {
                                 <div className="text-sm sm:text-base font-bold uppercase tracking-widest text-red-900">For Volunteers</div>
                                 <div className="mt-1.5 text-xs leading-snug text-gray-600">If this happened to you, it has a name.</div>
                             </div>
+                        </Link>
+                    </div>
+
+                    {/* FINAL STATEMENT */}
+                    <div className="mt-4 pb-2 text-center">
+                        <Link
+                            href="/tombstone"
+                            className="inline-block text-base sm:text-lg text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
+                        >
+                            A Final Statement to the Oregon Parks and Recreation Department
                         </Link>
                     </div>
 
