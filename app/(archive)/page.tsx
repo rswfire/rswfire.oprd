@@ -37,7 +37,7 @@ export default function OverviewPage() {
                     {/* FINAL STATEMENT */}
                     <div className="mt-6 pt-6 pb-2 text-center border-t border-gray-200">
                         <Link
-                            href="/final-statement"
+                            href="/tombstone"
                             className="inline-block text-base sm:text-lg text-gray-900 hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
                         >
                             A Final Statement to the Oregon Parks and Recreation Department

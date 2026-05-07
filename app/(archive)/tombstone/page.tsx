@@ -1,4 +1,4 @@
-// app/(archive)/final-statement/page.tsx
+// app/(archive)/tombstone/page.tsx
 
 import type { Metadata } from "next";
 import Link from "next/link";

@@ -356,7 +356,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">May 4, 2026</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/final-statement" className="underline text-emerald-800 hover:text-emerald-600">A Final Statement to the Oregon Parks and Recreation Department</Link>. Name every actor in sequence. Name what each did. Close the chapter on my own terms. Abandon all future contact with the institution. The archive remains. It is complete. It is factual. It has never been legally challenged.
+                        Send <Link href="/tombstone" className="underline text-emerald-800 hover:text-emerald-600">A Final Statement to the Oregon Parks and Recreation Department</Link>. Name every actor in sequence. Name what each did. Close the chapter on my own terms. Abandon all future contact with the institution. The archive remains. It is complete. It is factual. It has never been legally challenged.
                     </div>
                 </li>
             </ul>
