@@ -91,20 +91,6 @@ export default function ForVolunteersPage() {
             <hr className="border-gray-200 mb-12" />
 
             <h2 className="text-xl font-semibold text-gray-900 mb-6">
-                IF YOU FOUND THIS PAGE, SOMETHING PROBABLY HAPPENED TO YOU.
-            </h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-6">
-                Maybe you were removed without explanation. Maybe you were told it was a personality conflict, a misunderstanding, a mutual decision. Maybe you were pressured to leave before your term ended. Maybe you were told nothing at all — just locked out, keys collected, gone.
-            </p>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-12">
-                What happened to you has a name. This page is here to give it to you.
-            </p>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">
                 THE DISPLACEMENT FRAMEWORK
             </h2>
 

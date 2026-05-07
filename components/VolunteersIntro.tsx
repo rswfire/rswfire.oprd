@@ -59,8 +59,8 @@ export default function VolunteersIntro() {
           }}
         >
           This page exists because what happened to you has a name —
-          and because you deserve to find it before you lose the thread
-          of what you know was real.
+          and because you deserve to find it before you internalize the
+          shame they are shaping you to feel.
         </p>
       </div>
 
