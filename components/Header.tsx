@@ -48,7 +48,7 @@ export default function Header() {
                                 Oregon Parks &amp; Recreation Department
                             </h2>
 
-                            <p className="text-xs tracking-tight text-slate-500">
+                            <p className="text-xs sm:text-sm tracking-tight text-slate-500">
                                 <span className="hidden sm:inline">Under </span>Director Lisa Sumption's Stewardship
                             </p>
 
