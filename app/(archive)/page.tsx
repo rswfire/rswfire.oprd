@@ -20,8 +20,21 @@ export default function OverviewPage() {
                 <div className="bg-white p-4">
 
                     {/* OPENING STATEMENT */}
-                    <div className="pt-4 sm:pt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
+                    <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
                         Oregon State Parks dismisses volunteers for putting things in writing.<br/>This archive is my response.
+                    </div>
+
+                    {/* FINAL STATEMENT */}
+                    <div className="mt-4 pb-2 text-center">
+                        <Link
+                            href="/tombstone"
+                            className="inline-block text-base sm:text-lg text-gray-900 hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
+                        >
+                            A Final Statement to the Oregon Parks and Recreation Department
+                        </Link>
+                        <div className="mt-1 text-xs text-gray-500 uppercase tracking-[0.2em]">
+                            Sent May 4, 2026
+                        </div>
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
@@ -50,21 +63,7 @@ export default function OverviewPage() {
                         </Link>
                     </div>
 
-                    {/* FINAL STATEMENT */}
-                    <div className="mt-6 pt-6 pb-2 text-center border-t border-gray-200">
-                        <Link
-                            href="/tombstone"
-                            className="inline-block text-base sm:text-lg text-gray-900 hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
-                        >
-                            A Final Statement to the Oregon Parks and Recreation Department
-                        </Link>
-                        <div className="mt-1 text-xs text-gray-500 uppercase tracking-[0.2em]">
-                            Sent May 4, 2026
-                        </div>
-                    </div>
-
-
-                    <div className=" text-base sm:text-lg tracking-tight border-slate-200 border-t">
+                    <div className="mt-6 text-base sm:text-lg tracking-tight border-slate-200 border-t">
                         <div className="md:mx-8 md:p-4 space-y-4">
                             <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
                             <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
