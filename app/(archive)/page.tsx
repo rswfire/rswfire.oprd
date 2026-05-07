@@ -85,7 +85,7 @@ export default function OverviewPage() {
                     </div>
 
                     {/* RESOURCES SECTION */}
-                    <div className="mt-4 py-4 border-t border-b border-gray-300 space-y-4">
+                    <div className="mt-4 p-4 pt-8 space-y-4 border-slate-200 border-t">
                         <ResourcesOverview />
                     </div>
 
