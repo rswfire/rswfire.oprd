@@ -21,7 +21,7 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        Oregon State Parks dismisses volunteers for putting things in writing.<br/>This archive is my response.
+                        The inevitable condition of a state park system targeting a lifelong systems architect.
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
