@@ -18,7 +18,13 @@ export interface TransmissionData {
     date: string;           // e.g. "March 24, 2025"
     duration: string;       // e.g. "16:47"
 
-    // Video (optional — omit for audio-only or text transmissions)
+    // Video (optional — omit for audio-only or text transmissions).
+    // The video streams through the Autonomy media proxy at
+    // /media/{signalId}/video (302 → lazily-signed URL). signalId
+    // defaults to `ulid` (they're the same value); set it explicitly
+    // only if they ever diverge. s3Url is legacy and no longer used
+    // for playback — the old /api/video-url endpoint was removed.
+    signalId?: string;
     s3Url?: string;
 
     // Realm metadata
@@ -36,6 +42,10 @@ export interface TransmissionData {
 export interface PrimaryTransmissionProps {
     transmission: TransmissionData;
     defaultExpanded?: boolean;
+    // Message shown if the video can't load. The archive uses the default;
+    // the deadman reveal passes "Video unreleased" (pre-fire the signal is
+    // intentionally private and the proxy 404s).
+    videoErrorLabel?: string;
 }
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
@@ -63,96 +73,56 @@ function MetadataTag({ label, value }: { label: string; value: string }) {
     );
 }
 
-const MAX_RETRIES = 3;
+// Autonomy origin that hosts the media proxy. The proxy route is
+// /media/{signalId}/{item}; it enforces the signal's visibility floor
+// and 302s video/audio to a freshly-signed S3 URL on each load.
+// Configurable so dev can point at the local host (signals there live on
+// the dev box, not prod); defaults to the production realm origin.
+const MEDIA_ORIGIN = process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "https://rswfire.com";
 
-async function fetchVideoUrl(s3Url: string): Promise<string | null> {
-    try {
-        const res = await fetch(`https://rswfire.com/api/video-url/?url=${encodeURIComponent(s3Url)}`);
-        const data = await res.json();
-        return data.url ?? null;
-    } catch {
-        return null;
+const mediaUrl = (signalId: string, item: "video" | "thumbnail") =>
+    `${MEDIA_ORIGIN}/media/${signalId}/${item}`;
+
+// Resolve the signal id used for video playback. Returns undefined for
+// transmissions with no video (so the player isn't rendered). Prefers an
+// explicit signalId; falls back to extracting the ULID from a legacy
+// s3Url path (which doubles as the "has a video" flag for old entries).
+function resolveVideoSignalId(t: TransmissionData): string | undefined {
+    if (t.signalId) return t.signalId;
+    if (t.s3Url) {
+        const m = t.s3Url.match(/\/(?:transmissions|signals)\/([A-Z0-9]{26})\//);
+        if (m) return m[1];
     }
+    return undefined;
 }
 
-function TransmissionVideo({ s3Url }: { s3Url: string }) {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const [videoUrl, setVideoUrl] = useState<string | null>(null);
-    const [posterUrl, setPosterUrl] = useState<string | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
-    const [retries, setRetries] = useState(0);
+// Modern realm browse URL. The old /signal/{ulid} links are retired;
+// signals are browsed at /library/signal/{ulid}. Normalizes a stored
+// signalUrl (which may still be the legacy form) to the library path.
+function libraryUrl(signalUrl: string): string {
+    return signalUrl.replace(/\/signal\//, "/library/signal/");
+}
 
-    const thumbnailS3Url = s3Url.replace(/video\.mp4$/, "thumbnail");
+function TransmissionVideo({ signalId, errorLabel = "Failed to load transmission" }: { signalId: string; errorLabel?: string }) {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [error, setError] = useState(false);
+    // Cache-buster bumped on manual retry to force the proxy to re-sign.
+    const [nonce, setNonce] = useState(0);
+
+    const src = `${mediaUrl(signalId, "video")}${nonce ? `?r=${nonce}` : ""}`;
+    const poster = mediaUrl(signalId, "thumbnail");
+
+    const manualRetry = useCallback(() => {
+        setError(false);
+        setNonce((n) => n + 1);
+        // src changes via nonce → effect below reloads the element.
+    }, []);
 
     useEffect(() => {
-        function probeImage(url: string): Promise<string | null> {
-            return new Promise((resolve) => {
-                const img = new Image();
-                img.onload = () => resolve(url);
-                img.onerror = () => resolve(null);
-                img.src = url;
-            });
-        }
-
-        async function load() {
-            const [vidUrl, pngUrl, jpgUrl] = await Promise.all([
-                fetchVideoUrl(s3Url),
-                fetchVideoUrl(thumbnailS3Url + ".png"),
-                fetchVideoUrl(thumbnailS3Url + ".jpg"),
-            ]);
-            if (vidUrl) setVideoUrl(vidUrl);
-            else setError(true);
-
-            const validPoster = pngUrl ? await probeImage(pngUrl) : null;
-            if (validPoster) {
-                setPosterUrl(validPoster);
-            } else {
-                const validJpg = jpgUrl ? await probeImage(jpgUrl) : null;
-                if (validJpg) setPosterUrl(validJpg);
-            }
-            setLoading(false);
-        }
-        load();
-    }, [s3Url, thumbnailS3Url]);
-
-    const onVideoError = useCallback(async (event: React.SyntheticEvent<HTMLVideoElement>) => {
-        const code = (event.target as HTMLVideoElement)?.error?.code;
-        // Code 3 = MEDIA_ERR_DECODE, Code 4 = MEDIA_ERR_SRC_NOT_SUPPORTED — permanent errors
-        if (code === 3 || code === 4) { setError(true); return; }
-        if (retries >= MAX_RETRIES) { setError(true); return; }
-
-        const nextRetry = retries + 1;
-        setRetries(nextRetry);
-        await new Promise(r => setTimeout(r, nextRetry * 500));
-
-        const fresh = await fetchVideoUrl(s3Url);
-        if (fresh && videoRef.current) {
-            setError(false);
-            setVideoUrl(fresh);
-            videoRef.current.src = fresh;
+        if (videoRef.current) {
             videoRef.current.load();
-        } else {
-            setError(true);
         }
-    }, [s3Url, retries]);
-
-    const manualRetry = useCallback(async () => {
-        setError(false);
-        setLoading(true);
-        setRetries(0);
-        const fresh = await fetchVideoUrl(s3Url);
-        if (fresh) {
-            setVideoUrl(fresh);
-            if (videoRef.current) {
-                videoRef.current.src = fresh;
-                videoRef.current.load();
-            }
-        } else {
-            setError(true);
-        }
-        setLoading(false);
-    }, [s3Url]);
+    }, [src]);
 
     const monoStyle = {
         fontFamily: 'var(--font-dm-mono), monospace',
@@ -163,14 +133,11 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
     };
 
     return (
-        <div className="aspect-video bg-slate-900">
-            {loading ? (
-                <div className="w-full h-full flex items-center justify-center" style={monoStyle}>
-                    Loading transmission...
-                </div>
-            ) : error || !videoUrl ? (
-                <div className="w-full h-full flex flex-col items-center justify-center gap-3">
-                    <span style={monoStyle}>Failed to load transmission</span>
+        <div className="bg-slate-900 flex items-center justify-center w-full">
+            {error ? (
+                // Error/loading keeps a 16:9 stage so the panel doesn't collapse.
+                <div className="aspect-video w-full flex flex-col items-center justify-center gap-3 px-4 text-center">
+                    <span style={monoStyle}>{errorLabel}</span>
                     <button
                         onClick={manualRetry}
                         className="px-4 py-1.5 transition-opacity hover:opacity-70"
@@ -186,15 +153,18 @@ function TransmissionVideo({ s3Url }: { s3Url: string }) {
                     </button>
                 </div>
             ) : (
+                // No forced aspect ratio — object-contain shows the whole frame.
+                // Landscape fills the width; portrait is capped to 80vh and
+                // centered, with the black stage as letterbox/pillarbox.
                 <video
                     ref={videoRef}
-                    src={videoUrl}
+                    src={src}
+                    poster={poster}
                     controls
                     preload="metadata"
-                    className="w-full h-full"
-                    onError={onVideoError}
-                    {...(posterUrl ? { poster: posterUrl } : {})}
-                    style={{ objectFit: "cover" }}
+                    className="w-auto max-w-full max-h-[80vh]"
+                    onError={() => setError(true)}
+                    style={{ objectFit: "contain" }}
                 >
                     Your browser does not support the video tag.
                 </video>
@@ -238,10 +208,10 @@ function Entry({ entry }: { entry: TransmissionEntry }) {
 
 // ─── Main Component ──────────────────────────────────────────────────────────
 
-export default function PrimaryTransmission({ transmission, defaultExpanded = false }: PrimaryTransmissionProps) {
+export default function PrimaryTransmission({ transmission, defaultExpanded = false, videoErrorLabel }: PrimaryTransmissionProps) {
     const [expanded, setExpanded] = useState(defaultExpanded);
     const {
-        ulid, signalUrl, date, duration, s3Url,
+        ulid, signalUrl, date, duration,
         energeticSignature, fieldState, orientation,
         label, preview, entries, closing,
     } = transmission;
@@ -280,7 +250,10 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
             </div>
 
             {/* ── Video (if present) ── */}
-            {s3Url ? <TransmissionVideo s3Url={s3Url} /> : null}
+            {(() => {
+                const videoSignalId = resolveVideoSignalId(transmission);
+                return videoSignalId ? <TransmissionVideo signalId={videoSignalId} errorLabel={videoErrorLabel} /> : null;
+            })()}
 
             {/* ── Label + signal link ── */}
             <div className="flex items-start justify-between gap-4 px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
@@ -296,7 +269,7 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
                     {label}
                 </h3>
                 <Link
-                    href={signalUrl}
+                    href={libraryUrl(signalUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -366,13 +339,13 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
               Source
             </span>
                         <Link
-                            href={signalUrl}
+                            href={libraryUrl(signalUrl)}
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{ fontFamily: 'var(--font-dm-mono), monospace', fontSize: '10px', letterSpacing: '0.1em', color: '#c4622d', textDecoration: 'none' }}
                             className="hover:opacity-70 transition-opacity"
                         >
-                            {signalUrl} →
+                            {libraryUrl(signalUrl)} →
                         </Link>
                     </div>
                 </div>

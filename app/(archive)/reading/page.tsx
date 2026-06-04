@@ -24,7 +24,7 @@ export default function SelectedReadingPage() {
 
                 {/* THE COMPASS */}
                 <Link
-                    href="https://rswfire.com/signal/01KKD32X00FHMNP5MDZQ1N1HP2"
+                    href="https://rswfire.com/library/signal/01KKD32X00FHMNP5MDZQ1N1HP2"
                     className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
                     target="_blank"
                 >
@@ -47,7 +47,7 @@ export default function SelectedReadingPage() {
 
                 {/* STORMCHASER'S SOLILOQUY II */}
                 <Link
-                    href="https://rswfire.com/signal/01KK1G9NG0DN009HPGW9N4E2VB"
+                    href="https://rswfire.com/library/signal/01KK1G9NG0DN009HPGW9N4E2VB"
                     className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
                     target="_blank"
                 >
@@ -70,7 +70,7 @@ export default function SelectedReadingPage() {
 
                 {/* THE STORY OF HONEYMAN */}
                 <Link
-                    href="https://rswfire.com/signal/01JQ7VZB00NEQK4NYZMW5WYW04"
+                    href="https://rswfire.com/library/signal/01JQ7VZB00NEQK4NYZMW5WYW04"
                     className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
                     target="_blank"
                 >

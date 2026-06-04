@@ -331,7 +331,7 @@ export default function DisplacementPage() {
             <hr className="my-6 border-t border-gray-300" />
 
             <div className="text-md text-gray-500 leading-relaxed">
-                <Link href="https://rswfire.com/signal/01KN9KDSG0H3W0WZ9GBCJDJMG5" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">This framework was identified on April 3, 2026</Link> — one year after the first displacement was executed, and one week after the second when they brought police to my door. <Link href="https://rswfire.com/?mode=atlas&center=43.87501%2C-124.15273&zoom=17&url=https%3A%2F%2Frswfire.com%2Fsignal%2F01KN9KDSG0H3W0WZ9GBCJDJMG5%3F_overlay%3D1" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">It was named on a beach</Link> on the Oregon coast. It will not be unnamed.
+                <Link href="https://rswfire.com/library/signal/01KN9KDSG0H3W0WZ9GBCJDJMG5" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">This framework was identified on April 3, 2026</Link> — one year after the first displacement was executed, and one week after the second when they brought police to my door. <Link href="https://rswfire.com/?mode=atlas&center=43.87501%2C-124.15273&zoom=17&url=https%3A%2F%2Frswfire.com%2Fsignal%2F01KN9KDSG0H3W0WZ9GBCJDJMG5%3F_overlay%3D1" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">It was named on a beach</Link> on the Oregon coast. It will not be unnamed.
             </div>
 
         </SectionPage>

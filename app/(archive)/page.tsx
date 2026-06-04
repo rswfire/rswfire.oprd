@@ -8,11 +8,15 @@ import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
+import DeadmanReveal from "@/components/DeadmanReveal";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 
 export default function OverviewPage() {
     return (
         <section className="w-full mx-auto">
+
+            {/* DEADMAN RELEASE — renders nothing until the switch fires */}
+            <DeadmanReveal />
 
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
@@ -21,7 +25,7 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        The inevitable condition of a state park system targeting a lifelong systems architect.
+                        The inevitable condition of a state park system<br/>targeting a lifelong systems architect.
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
@@ -88,6 +92,11 @@ export default function OverviewPage() {
                 </div>
             </div>
 
+            {/* PRIMARY DOCUMENTS */}
+            <div className="mt-4">
+                <PrimaryDocuments />
+            </div>
+
             {/* THE DISPLACEMENT FRAMEWORK */}
             <div className="mt-4 p-6 rounded-xl bg-red-50 border border-red-200">
 
@@ -120,16 +129,6 @@ export default function OverviewPage() {
                     <Link href="/resources/volunteers" className="block text-lg text-red-700 hover:text-red-600 font-semibold text-center">If this happened to you, it has a name.</Link>
                 </div>
 
-            </div>
-
-            {/* PRIMARY TRANSMISSION */}
-            <div className="mt-4">
-                <PrimaryTransmission transmission={FAILURE_TRANSMISSION} />
-            </div>
-
-            {/* PRIMARY DOCUMENTS */}
-            <div className="mt-4">
-                <PrimaryDocuments />
             </div>
 
             {/* THE VERDICT */}
@@ -225,14 +224,6 @@ export default function OverviewPage() {
                 <div className="mt-4 font-bold">That is what this archive documents.</div>
                 <div className="font-bold">That is what continues right now.</div>
                 <div className="font-bold">That will not be absolved by silence, or by time.</div>
-
-                <div className="mt-6 flex">
-                    <div className="mr-2">&mdash;</div>
-                    <div>
-                        <div className="font-bold">Robert Samuel White</div>
-                        <div className="text-gray-700">Former Oregon State Parks Volunteer</div>
-                    </div>
-                </div>
 
             </div>
 

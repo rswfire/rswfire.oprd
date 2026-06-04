@@ -48,17 +48,7 @@ export default function VolunteersIntro() {
             fontWeight: "400",
           }}
         >
-          Something happened to you. You are trying to find the words for it.
-        </p>
-        <p
-          style={{
-            fontSize: "1rem",
-            lineHeight: "1.7",
-            margin: 0,
-            color: "#444",
-          }}
-        >
-          This page exists because what happened to you has a name —
+          Something happened to you. You are trying to find the words for it. This page exists because what happened to you has a name —
           and because you deserve to find it before you internalize the
           shame they are shaping you to feel.
         </p>
