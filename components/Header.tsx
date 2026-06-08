@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import Tracker from "@/components/Tracker";
+import Permanence from "@/components/Permanence";
 import { archiveSections } from "@/lib/sections";
 
 export default function Header() {
@@ -116,6 +118,20 @@ export default function Header() {
                                 );
                             })}
                         </ul>
+
+                        {/* Sidebar content the desktop aside can't show on mobile.
+                            Closes the menu when a link inside is tapped. */}
+                        <div
+                            className="mt-2 border-t border-slate-200 pt-2"
+                            onClick={(e) => {
+                                if ((e.target as HTMLElement).closest("a")) {
+                                    setMobileMenuOpen(false);
+                                }
+                            }}
+                        >
+                            <Tracker />
+                            <Permanence />
+                        </div>
                     </nav>
                 )}
             </div>
