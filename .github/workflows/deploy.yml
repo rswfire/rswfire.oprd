@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# Builds the Next.js static export and publishes out/ to GitHub Pages.
+# Static content is served by Pages; the dead man's switch and media are
+# client-side calls into Autonomy and are unaffected by this build.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Required for the artifact-based Pages deployment.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deploys at once; let an in-flight one finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Matches deploy.sh: refresh browserslist baseline data so the
+      # Next 16 build doesn't warn/fail on stale browser targets.
+      - name: Refresh browser baseline data
+        run: npm i baseline-browser-mapping@latest -D
+
+      - name: Build static export
+        env:
+          NEXT_PUBLIC_DEADMAN_STATUS_URL: ${{ vars.NEXT_PUBLIC_DEADMAN_STATUS_URL }}
+          NEXT_PUBLIC_MEDIA_ORIGIN: ${{ vars.NEXT_PUBLIC_MEDIA_ORIGIN }}
+        run: npm run build
+
+      # Belt-and-suspenders: ensure Pages never runs Jekyll over _next/.
+      - name: Disable Jekyll
+        run: touch out/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
