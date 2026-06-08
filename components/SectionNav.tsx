@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Icon from "@/components/Icon";
 import Tracker from "@/components/Tracker";
+import Permanence from "@/components/Permanence";
 
 type Section = {
     href: string;
@@ -90,6 +91,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                         </nav>
 
                         <Tracker />
+                        <Permanence />
                     </div>
                 )}
             </div>
@@ -152,6 +154,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 </nav>
 
                 <Tracker />
+                <Permanence />
 
             </div>
         </>
