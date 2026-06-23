@@ -32,7 +32,7 @@ export default function OverviewPage() {
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">Ask them why I was dismissed with only six days remaining.</span>
-                                <span className="block mt-2">Ask them why I was banned from statewide volunteering.</span>
+                                <span className="block mt-2">Ask them why I was permanently banned from statewide volunteering.</span>
                                 <span className="block mt-2">Ask them what I did that could justify either decision.</span>
                                 <span className="block mt-2">Then ask them why silence has been their only answer &mdash;</span>
                                 <span className="block mt-2">and their only defense.</span>
@@ -55,7 +55,7 @@ export default function OverviewPage() {
                     </div>
 
                     {/* FINAL STATEMENT */}
-                    <div className="mt-4 pb-2 text-center">
+                    <div className="mt-8 pb-2 text-center">
                         <Link
                             href="/tombstone"
                             className="inline-block text-xl text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
