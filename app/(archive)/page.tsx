@@ -31,8 +31,8 @@ export default function OverviewPage() {
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
-                                <span className="block">Ask them why I was dismissed with six days left.</span>
-                                <span className="block mt-2">Ask them why I was permanently banned from every state park.</span>
+                                <span className="block">Ask them why I was dismissed with only six days remaining.</span>
+                                <span className="block mt-2">Ask them why I was banned from statewide volunteering.</span>
                                 <span className="block mt-2">Ask them what I did that could justify either decision.</span>
                                 <span className="block mt-2">Then ask them why silence has been their only answer &mdash;</span>
                                 <span className="block mt-2">and their only defense.</span>
