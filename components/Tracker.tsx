@@ -143,35 +143,6 @@ export default function Tracker() {
                     </div>
                 </div>
 
-                {/* STATUTORY TIMEFRAME */}
-                <div className="pt-2 border-t border-slate-200">
-                    <h3 className="text-xs font-semibold text-slate-600 mb-2 uppercase tracking-wide">
-                        Statutory Timeframe
-                    </h3>
-                    <div className="bg-slate-50 p-2.5 rounded">
-                        <div className="flex justify-between items-baseline mb-1">
-                            <div className="text-xs font-medium text-slate-700 leading-snug pr-2">
-                                {LEGAL_DEADLINE.label}
-                            </div>
-                            <div className="text-xl font-semibold text-slate-700 tabular-nums">
-                                {calculateDaysUntil(LEGAL_DEADLINE.date)}
-                            </div>
-                        </div>
-                        {LEGAL_DEADLINE.statute && (
-                            <div className="text-xs text-slate-500 leading-snug mt-1">
-                                {LEGAL_DEADLINE.statute}
-                            </div>
-                        )}
-                        <div className="text-xs text-slate-500 mt-1">
-                            {new Date(LEGAL_DEADLINE.date).toLocaleDateString('en-US', {
-                                month: 'long',
-                                day: 'numeric',
-                                year: 'numeric'
-                            })}
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <div className="bg-slate-50 px-4 py-3 border-t border-slate-200">

@@ -25,17 +25,17 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        The inevitable condition of a state park system<br/>targeting a lifelong systems architect.
+                        A system targeted a systems architect.
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">Ask them why I was dismissed with six days left.</span>
-                                <span className="block mt-2 md:ml-2">Ask them why I was permanently banned from every state park.</span>
-                                <span className="block mt-2 md:ml-4">Ask them what I did that could justify either decision.</span>
-                                <span className="block mt-2 md:ml-6">Then ask them why silence has been their only answer &mdash;</span>
-                                <span className="block mt-2 md:ml-10">and their only defense.</span>
+                                <span className="block mt-2">Ask them why I was permanently banned from every state park.</span>
+                                <span className="block mt-2">Ask them what I did that could justify either decision.</span>
+                                <span className="block mt-2">Then ask them why silence has been their only answer &mdash;</span>
+                                <span className="block mt-2">and their only defense.</span>
                             </p>
                         </blockquote>
 
@@ -58,7 +58,7 @@ export default function OverviewPage() {
                     <div className="mt-4 pb-2 text-center">
                         <Link
                             href="/tombstone"
-                            className="inline-block text-base sm:text-lg text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
+                            className="inline-block text-xl text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
                         >
                             A Final Statement to the Oregon Parks and Recreation Department
                         </Link>
@@ -82,11 +82,6 @@ export default function OverviewPage() {
                         </div>
 
                         <div className="p-4 mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
-                    </div>
-
-                    {/* RESOURCES SECTION */}
-                    <div className="mt-4 p-4 pt-8 space-y-4 border-slate-200 border-t">
-                        <ResourcesOverview />
                     </div>
 
                 </div>
