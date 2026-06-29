@@ -71,7 +71,7 @@ export default function GovernorKotekPage() {
                     <div>Every act above is the same act.</div>
                     <div>When I documented how I was treated, I was told I had been "acting as an agent of the state." When I spoke about it, I was permanently banned in writing for my "public comments." When I kept the record, the evidence was reframed as paranoia, then as emotional distress. When the record remained, armed officers were sent to where I live and work.</div>
                     <div>At every stage, the institution has treated my documentation of its conduct as the offense. But documenting the conduct of a public agency is not an offense. It is a right. It is the First Amendment.</div>
-                    <div>It is the right that every other right depends on.</div>
+                    <div>It is the right that every other right depends on. And it is a right you claim to champion.</div>
                     <div>Each attempt to punish me for exercising it has produced one more documented instance of the institution punishing protected speech — one more entry in the very record they are trying to suppress.</div>
                     <div>I will not stop documenting a public agency failing its most basic function. Every act of suppression becomes part of the record of suppression. That is the contradiction they cannot resolve, and it is the reason this record continues to grow — and reaches your office now.</div>
                     <div>This archive is that record. I am its steward. It documents what was done, who did it, and who, having been notified, chose silence. It is permanent and independently hosted. It does not come down.</div>
