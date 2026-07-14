@@ -346,6 +346,13 @@ export default function TimelinePage() {
                         </Link>. One year after the first displacement was executed, and one week after the second when they brought police to his door. The weapon that connects all nine stages of documented institutional conduct — from the origin event through police intimidation — is identified, named, and <Link href="https://rswfire.com/library/signal/01KN9KDSG0H3W0WZ9GBCJDJMG5" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">recorded on the trail</Link>. The archive is restructured around it. A <Link href="/resources/volunteers" className="underline text-emerald-800 hover:text-emerald-600">resource page for volunteers</Link> is created to give the pattern a name for those still inside it.
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">April 13, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Ten days after the &ldquo;no records&rdquo; denial, and after I ask how the search was conducted, a <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD dispatch record for the March 24 visit</Link> is printed inside OSP&rsquo;s Central Records Section. It is then withheld for three more months behind a fee I could not pay.
+                    </div>
+                </li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -357,6 +364,19 @@ export default function TimelinePage() {
                     <div className="font-semibold">May 4, 2026</div>
                     <div className="mt-2 text-sm">
                         Send <Link href="/tombstone" className="underline text-emerald-800 hover:text-emerald-600">A Final Statement to the Oregon Parks and Recreation Department</Link>. Name every actor in sequence. Name what each did. Close the chapter on my own terms. Abandon all future contact with the institution. The archive remains. It is complete. It is factual. It has never been legally challenged.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>JULY 2026</strong>: THE RECORD SURFACES</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">July 14, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Oregon State Police release <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD record SP26097765</Link> &mdash; the record they said did not exist &mdash; accompanied by their own counsel&rsquo;s certification that it contains no exempt material. The record shows: no call type, priority low, officer initiated, no action taken. A criminal-designated unit dispatched to a man logged under &ldquo;Role: Other.&rdquo; Stated purpose: &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.&rdquo; The primary unit is named: Trooper Jake Hyde, badge 56397 &mdash; the name the Forest Service refused to provide.
                     </div>
                 </li>
             </ul>

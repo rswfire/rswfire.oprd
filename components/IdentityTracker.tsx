@@ -9,20 +9,21 @@ const officers = [
     notes: "Confirmed by his own supervisory captain in writing. Investigative branch, not patrol. Investigators do not conduct welfare checks."
   },
   {
-    id: "officer-2",
-    name: "Unidentified Officer",
-    agency: "Unknown — Oregon State Police denied any records",
-    status: "unidentified" as const,
-    plate: "731 QRV",
-    confirmedBy: "License plate captured on camera, March 24, 2026",
-    notes: "Oregon State Police issued same-day blanket denial of any responsive records."
+    id: "hyde",
+    name: "Trooper Jake Hyde — Badge 56397",
+    agency: "Oregon State Police",
+    status: "confirmed" as const,
+    confirmedBy: "OSP CAD record SP26097765, released July 14, 2026",
+    notes: "Named as the primary unit — unit 9452, unit type Criminal — in the state's own dispatch record. The same agency denied any records existed on April 3, 2026. The Forest Service refused to provide this name; OSP's own records section handed it over fifteen weeks later."
   },
   {
     id: "officer-3",
     name: "Unidentified Officer",
     agency: "Unknown",
     status: "unidentified" as const,
-    notes: "Third officer present. No identification provided. Identity actively withheld."
+    plate: "731 QRV",
+    confirmedBy: "License plate captured on camera, March 24, 2026 — one of the vehicles present, not attributed to a specific officer",
+    notes: "Third officer present. No identification provided. The released CAD record names only one unit."
   }
 ]
 
@@ -95,7 +96,8 @@ export default function IdentityTracker() {
       <div className="mt-6 border-t border-gray-200 pt-4">
         <p className="text-xs text-gray-500 leading-relaxed">
           You have an absolute right to know who the police are who come to your door.
-          Two agencies have declined to provide that information. That refusal is itself part of the record.
+          Two agencies declined to provide that information. That refusal is itself part of the record —
+          and the record that finally surfaced contradicts it.
         </p>
         <div className="mt-3 space-y-1">
           <p className="text-xs text-gray-500">
@@ -106,6 +108,12 @@ export default function IdentityTracker() {
           </p>
           <p className="text-xs text-gray-500">
             Follow-up filed: April 4, 2026 — requesting scope and method of search.
+          </p>
+          <p className="text-xs text-gray-500">
+            April 13, 2026: CAD record SP26097765 printed inside OSP Central Records. Withheld three more months.
+          </p>
+          <p className="text-xs text-gray-500">
+            July 14, 2026: Record released with OSP counsel&rsquo;s certification that no exempt material exists. The primary unit is named.
           </p>
         </div>
       </div>
