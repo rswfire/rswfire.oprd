@@ -123,6 +123,41 @@ export default function PoliceIntimidationPage() {
                 <p>&mdash; Robert Samuel White</p>
             </div>
 
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">FOLLOW-UP TO OREGON STATE POLICE</h2>
+
+            <div className="mt-2 text-sm text-gray-500">July 14, 2026 &mdash; Sent to OSP Central Records, requesting response from the responding unit&rsquo;s supervisor</div>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>Ms. Hubbard,</p>
+                <p>Thank you again for the production under PR27478. I have reviewed the CAD record for event SP26097765 and I have questions the record itself raises. I am requesting that these be answered by the supervisor of the responding unit, or by whichever OSP official is in a position to speak to the origin and conduct of the event, rather than by the records section &mdash; these are questions about the event, not about the records process, and I do not want to put you in the position of answering for conduct that isn&rsquo;t yours.</p>
+                <p>My questions are as follows.</p>
+                <p className="font-semibold">1. Source of my date of birth.</p>
+                <p>The record lists my date of birth, 04/11/1977. I did not provide it to Oregon State Police. The event is logged as &ldquo;Officer Initiated,&rdquo; with &ldquo;No Call Type Selected,&rdquo; and closed with a disposition of &ldquo;No Action Taken.&rdquo;</p>
+                <p>What was the source of my date of birth? Was it provided to the responding unit by another agency or individual, and if so, by whom? Alternatively, was a records or database check performed on me? If a check was performed, under what authorized purpose was it conducted, given that the event carries no call type, no crime, and a disposition of no action taken?</p>
+                <p className="font-semibold">2. Source of the location.</p>
+                <p>The dispatch address is listed solely as &ldquo;SILTCOOS WORK CENTER.&rdquo; The record contains no street address, no cross street, no county, no beat, no region, and no coordinates. Every geographic field except the facility name is blank.</p>
+                <p>Siltcoos Work Center is an internal United States Forest Service facility designation. My residence has no street address. How did the responding unit obtain that location, and from whom? A facility name of that kind is not publicly indexed, and I would like to understand how it came to be the sole locator on an officer-initiated event.</p>
+                <p className="font-semibold">3. My name in the &ldquo;Caller&rdquo; field.</p>
+                <p>The record lists &ldquo;Caller: WHITE, ROBERT,&rdquo; while simultaneously listing the source of the event as &ldquo;Officer Initiated.&rdquo; I did not call Oregon State Police. I did not request contact. I was separately listed in the record as &ldquo;Person: WHITE, ROBERT &mdash; Role: Other.&rdquo;</p>
+                <p>What does the &ldquo;Caller&rdquo; field denote in an officer-initiated event, and why does my name appear in it? If this is a system convention rather than a factual entry, I would like that stated, so that the record is not read by any future party as indicating that I summoned police to my own residence.</p>
+                <p className="font-semibold">4. The stated purpose.</p>
+                <p>The event comment reads: &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.&rdquo;</p>
+                <p>I am the U.S. Forest Service volunteer caretaker at that location. The Forest Service has my phone number, my email address, and direct access to me, and has had throughout. I am asking OSP to state what request or communication from the Forest Service that comment refers to, who at the Forest Service made it, and in what form it was received.</p>
+                <p>I would also ask what &ldquo;followup&rdquo; refers to. I had no prior interview with Oregon State Police.</p>
+                <p className="font-semibold">5. Origin and travel.</p>
+                <p>The record shows dispatch at 08:41:32 and arrival at 09:50:02, with the event closed at 10:18:42. That is approximately sixty-nine minutes of travel each direction for an event logged as low priority with no action taken. What was the origin point of the responding unit, and can OSP provide the total travel time associated with this event?</p>
+                <p className="font-semibold">6. Other personnel.</p>
+                <p>The record names one unit: Hyde, Jake (56397), unit 9452. Three officers were present at my residence, one of whom has been identified as U.S. Forest Service Special Agent Matthew Oliver. Can OSP identify any other Oregon State Police personnel present at or associated with this event, and identify which officer was associated with the vehicle bearing Oregon license plate 731 QRV, which is visible in my recording of the officers departing?</p>
+                <p>To be clear about why I am asking. The record establishes that a criminal-designated unit was dispatched to a private citizen at a location with no street address, on an event with no call type, no crime, and no action taken, with that citizen&rsquo;s date of birth already in hand. Information of that kind &mdash; my identity and my location &mdash; was not available to a responding trooper independently. Someone provided it. The record does not say who, and &ldquo;Officer Initiated&rdquo; does not account for it.</p>
+                <p>I am not asking OSP to characterize anything. I am asking OSP to explain the origin of specific information contained in its own record.</p>
+                <p>I understand some of this may need to be processed as a new records request rather than as correspondence, and I am content for it to be handled either way. If any portion is withheld, I ask that the specific statutory exemption be cited for each withheld item.</p>
+                <p>I would appreciate a response from the responding unit&rsquo;s supervisor or the appropriate OSP official.</p>
+                <p>Thank you.</p>
+                <p>Robert Samuel White</p>
+            </div>
+
         </SectionPage>
     );
 }
