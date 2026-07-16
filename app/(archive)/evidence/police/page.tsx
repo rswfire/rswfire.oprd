@@ -95,8 +95,9 @@ export default function PoliceIntimidationPage() {
                 <p>The record, SP26097765, states in the state&rsquo;s own system: event type &ldquo;No Call Type Selected.&rdquo; Priority &ldquo;Low.&rdquo; Source &ldquo;Officer Initiated.&rdquo; Final disposition &ldquo;No Action Taken.&rdquo; The unit dispatched was type &ldquo;Criminal.&rdquo; My role in their system: &ldquo;Other&rdquo; &mdash; not a suspect, not a witness, not a party to any crime. The officer&rsquo;s comment states the purpose: &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.&rdquo; The primary unit is identified by name and badge number: Jake Hyde, 56397.</p>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-4 flex flex-wrap gap-3">
                 <a href="/osp-cad-record-sp26097765.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download OSP CAD Record SP26097765 (PDF) &darr;</a>
+                <a href="/osp-foia-response-2.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download OSP Release Letter &mdash; PR27478 (PDF) &darr;</a>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
