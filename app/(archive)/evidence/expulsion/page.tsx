@@ -17,10 +17,10 @@ export default function ExpulsionPage() {
     return (
         <SectionPage
             title="EXPULSION & RETALIATION"
-            subtitle="ALLISON WATSON, ENGAGEMENT PROGRAMS MANAGER"
+            subtitle="PROGRAM MANAGER"
             previousPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}
             nextPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
-            summary="Allison Watson issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
+            summary="The program manager issued permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse as the reason."
 
         >
 
@@ -29,15 +29,15 @@ export default function ExpulsionPage() {
             <h2 className="text-xl font-semibold">THE SEQUENCE</h2>
 
             <div className="mt-4">
-                March 24: Ryan Warren dismissed me from <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> without paperwork or cause.
+                March 24: The park manager dismissed me from <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> without paperwork or cause.
             </div>
 
             <div className="mt-4">
-                March 25: Allison Watson called to contain the situation. I recorded the call.
+                March 25: The program manager called to contain the situation. I recorded the call.
             </div>
 
             <div className="mt-4">
-                March 26: I sent Allison a detailed letter attempting accountability. Hours later, she dismissed me permanently — explicitly citing my public comments about the abuse.
+                March 26: I sent the program manager a detailed letter attempting accountability. Hours later, she dismissed me permanently — explicitly citing my public comments about the abuse.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -55,7 +55,7 @@ export default function ExpulsionPage() {
             </div>
 
             <div className="mt-4">
-                Hours after I sent that letter, Allison Watson responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> volunteer programs.
+                Hours after I sent that letter, the program manager responded with permanent dismissal from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> volunteer programs.
             </div>
 
             <div className="mt-4">
@@ -71,7 +71,7 @@ export default function ExpulsionPage() {
             </div>
 
             <Email
-                from="Allison Watson, Volunteer Engagement Coordinator"
+                from="[Program Manager]"
                 to="Sam White"
                 date="March 26, 2025"
             >
@@ -86,7 +86,7 @@ As part of your dismissal, any future assignments you had scheduled will be canc
 Thank you for the time you did dedicate to support our state park system and state park properties. I wish you the best in any other volunteer opportunities you may pursue with other organizations. Please find an official letter of dismissal and your volunteer agreement attached to this email.
 
 Respectfully,
-Allison Watson`}</pre>
+[Program Manager]`}</pre>
             </Email>
 
             <div className="mt-4">
@@ -104,7 +104,7 @@ Allison Watson`}</pre>
             <h2 className="text-xl font-semibold">WHAT THIS ESTABLISHES</h2>
 
             <div className="mt-4">
-                Allison Watson's letter is written acknowledgment of retaliatory dismissal based on protected speech.
+                The program manager's letter is written acknowledgment of retaliatory dismissal based on protected speech.
             </div>
 
             <div className="mt-4">

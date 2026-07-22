@@ -14,10 +14,10 @@ export default function DismissalPage() {
     return (
         <SectionPage
             title="DISMISSAL WITHOUT PROCESS"
-            subtitle="RYAN WARREN, PARK MANAGER"
+            subtitle="PARK MANAGER"
             previousPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}
             nextPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}
-            summary="Ryan Warren dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
+            summary="The park manager dismissed me by phone six days before my scheduled completion, using fabricated pretenses with no formal documentation."
 
         >
 

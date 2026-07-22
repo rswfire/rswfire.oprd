@@ -14,7 +14,7 @@ export default function LisaSumptionKeyIndividualPage() {
             title="LISA SUMPTION"
             subtitle="DIRECTOR"
             supplemental="OREGON PARKS & RECREATION DEPARTMENT"
-            previousPage={{ href: "/key-individuals/allison-watson", label: "Allison Watson" }}
+            previousPage={{ href: "/key-individuals/program-manager", label: "Program Manager" }}
             nextPage={{ href: "/key-individuals/tina-kotek", label: "Tina Kotek" }}
         >
 

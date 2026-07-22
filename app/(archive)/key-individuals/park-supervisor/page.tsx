@@ -1,22 +1,21 @@
-// app/(archive)/key-individuals/kati-baker/page.tsx
+// app/(archive)/key-individuals/park-supervisor/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
-    title: "Kati Baker",
+    title: "Park Supervisor",
     description: "Park Supervisor, Honeyman State Park — every institutional action taken against me originated from decisions made under her direct supervision.",
 };
 
-export default function KatiBakerPage() {
+export default function ParkSupervisorPage() {
     return (
         <SectionPage
-            title="KATI BAKER"
-            subtitle="PARK SUPERVISOR"
-            supplemental="HONEYMAN STATE PARK"
-            previousPage={{ href: "/key-individuals/logan-bliss", label: "Logan Bliss" }}
-            nextPage={{ href: "/key-individuals/ryan-warren", label: "Ryan Warren" }}
+            title="PARK SUPERVISOR"
+            subtitle="HONEYMAN STATE PARK"
+            previousPage={{ href: "/key-individuals/volunteer-services-lead", label: "Volunteer Services Lead" }}
+            nextPage={{ href: "/key-individuals/park-manager", label: "Park Manager" }}
         >
 
             <blockquote className="border-l-4 border-gray-900 pl-6 py-2 mb-12 text-lg leading-relaxed">
@@ -50,16 +49,16 @@ export default function KatiBakerPage() {
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">February &ndash; March 2025</div>
                     <div>
-                        Receiver of confidential disclosures <PersonLink name="Logan Bliss" /> transmitted from me. Information shared in supervisory confidence was delivered to Baker and used to build the case for removal.
+                        Receiver of confidential disclosures the <PersonLink name="volunteer services lead" /> transmitted from me. Information shared in supervisory confidence was delivered to the park supervisor and used to build the case for removal.
                     </div>
                 </div>
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">March 5, 2025</div>
                     <div>
-                        Present during the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">62-minute coercive meeting</Link> at the picnic table. Silent for the first 19 minutes while <PersonLink name="Ryan Warren" /> built his case. Her first word was &ldquo;tone&rdquo; &mdash; spoken once, precisely timed, reframing every email I had ever written as threatening. She said nothing while <PersonLink name="Ryan Warren" label="Warren" /> told me to chew glass and swallow it. She said nothing while he mocked my sexuality. She said nothing while he admitted he had never given me the benefit of the doubt.
+                        Present during the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">62-minute coercive meeting</Link> at the picnic table. Silent for the first 19 minutes while the <PersonLink name="park manager" /> built his case. Her first word was &ldquo;tone&rdquo; &mdash; spoken once, precisely timed, reframing every email I had ever written as threatening. She said nothing while the <PersonLink name="park manager" /> told me to chew glass and swallow it. She said nothing while he mocked my sexuality. She said nothing while he admitted he had never given me the benefit of the doubt.
                     </div>
                     <div className="mt-2">
-                        When <PersonLink name="Ryan Warren" label="Warren" />&rsquo;s admission destabilized his own argument, she attacked. Fifty minutes in, she returned to the only thing they ever had: a text message from the first week of February that we had already resolved. She confirmed on tape that she had invented an interpretation of my job application withdrawal email &mdash; attaching meaning that was never there, that I had never stated, that existed in no correspondence &mdash; and brought it to that table as evidence against me.
+                        When the <PersonLink name="park manager" />&rsquo;s admission destabilized his own argument, she attacked. Fifty minutes in, she returned to the only thing they ever had: a text message from the first week of February that we had already resolved. She confirmed on tape that she had invented an interpretation of my job application withdrawal email &mdash; attaching meaning that was never there, that I had never stated, that existed in no correspondence &mdash; and brought it to that table as evidence against me.
                     </div>
                     <div className="mt-2">
                         I told her I liked her. She said &ldquo;okay.&rdquo; That is on the tape.
@@ -68,7 +67,7 @@ export default function KatiBakerPage() {
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">March 18, 2025</div>
                     <div>
-                        An unidentified man approached me while I was cleaning yurts alone. No uniform. No name. No identification. He said he was &ldquo;with the park service&rdquo; and was taking photos of dirty yurts mid-clean with doors propped open. Then he pressed me with direct personal questions about leadership treatment. All rangers were away at a regional event. I <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">documented the encounter with Kati the same day</Link>. She responded within the hour with a fully-formed justification: he was from IT, taking site photos. Two days later she followed up unprompted to confirm the story a second time. The cover story collapsed nearly a year later when I encountered the same man on a Forest Service trail &mdash; he is local, not IT, drives an unmarked state vehicle, and stopped coming immediately after recognizing me in uniform.
+                        An unidentified man approached me while I was cleaning yurts alone. No uniform. No name. No identification. He said he was &ldquo;with the park service&rdquo; and was taking photos of dirty yurts mid-clean with doors propped open. Then he pressed me with direct personal questions about leadership treatment. All rangers were away at a regional event. I <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">documented the encounter with the park supervisor the same day</Link>. She responded within the hour with a fully-formed justification: he was from IT, taking site photos. Two days later she followed up unprompted to confirm the story a second time. The cover story collapsed nearly a year later when I encountered the same man on a Forest Service trail &mdash; he is local, not IT, drives an unmarked state vehicle, and stopped coming immediately after recognizing me in uniform.
                     </div>
                 </div>
             </div>
@@ -79,10 +78,10 @@ export default function KatiBakerPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Kati Baker is present across five stages of the displacement framework. She is the <Link href="/displacement#origin" className="underline text-emerald-800 hover:text-emerald-600">origin event</Link> &mdash; the moment a written record was created, she became the decision-maker who set the entire sequence in motion. She received <PersonLink name="Logan Bliss" label="Logan" />&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link>. She participated in the <Link href="/displacement#escalation" className="underline text-emerald-800 hover:text-emerald-600">escalation</Link>. She sat at the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion meeting</Link> and intervened only to attack. She provided the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">cover story for the surveillance encounter</Link> and reinforced it unprompted two days later.
+                    The park supervisor is present across five stages of the displacement framework. She is the <Link href="/displacement#origin" className="underline text-emerald-800 hover:text-emerald-600">origin event</Link> &mdash; the moment a written record was created, she became the decision-maker who set the entire sequence in motion. She received the <PersonLink name="volunteer services lead" />&rsquo;s <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">transmitted disclosures</Link>. She participated in the <Link href="/displacement#escalation" className="underline text-emerald-800 hover:text-emerald-600">escalation</Link>. She sat at the <Link href="/displacement#coercion" className="underline text-emerald-800 hover:text-emerald-600">coercion meeting</Link> and intervened only to attack. She provided the <Link href="/displacement#surveillance" className="underline text-emerald-800 hover:text-emerald-600">cover story for the surveillance encounter</Link> and reinforced it unprompted two days later.
                 </div>
                 <div>
-                    Every level of the institution shielded her &mdash; from the park manager to the engagement programs manager to the director to the governor&rsquo;s office, and across agency lines to federal law enforcement. Nine stages of displacement because one park supervisor could not tolerate a volunteer who created a written record.
+                    Every level of the institution shielded her &mdash; from the park manager to the program manager to the director to the governor&rsquo;s office, and across agency lines to federal law enforcement. Nine stages of displacement because one park supervisor could not tolerate a volunteer who created a written record.
                 </div>
             </div>
 

@@ -64,7 +64,7 @@ export default function AdvocateLetter() {
                         </p>
 
                         <p>
-                            The following day, Allison Watson called to contain the situation. She weaponized personal disclosures I had made in trust to paint me as unstable. She ignored every declaration I made about the inappropriate treatment I had received and instead framed me as paranoid and delusional. And this from someone with explicit DEI training and employment background. I recorded <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">30 minutes and 56 seconds</Link> of that call.
+                            The following day, the program manager called to contain the situation. She weaponized personal disclosures I had made in trust to paint me as unstable. She ignored every declaration I made about the inappropriate treatment I had received and instead framed me as paranoid and delusional. And this from someone with explicit DEI training and employment background. I recorded <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">30 minutes and 56 seconds</Link> of that call.
                         </p>
 
                         <p>

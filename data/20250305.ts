@@ -10,7 +10,7 @@ export const COERCION_TRANSMISSION: TransmissionData = {
     fieldState: "n/a",
     orientation: "n/a",
     label: "Primary Document — March 5, 2025",
-    preview: `On March 5, 2025, Ryan Warren and Kati Baker sat across from a gay volunteer at a public picnic table for 62 minutes.
+    preview: `On March 5, 2025, the park manager and the park supervisor sat across from a gay volunteer at a public picnic table for 62 minutes.
 
 He was unpaid.
 
@@ -26,7 +26,7 @@ So he recorded it.`,
     entries: [
         {
             timestamp: "[0:00]",
-            commentary: `Ryan Warren opened with praise. "You've been doing a great job at the Welcome Center." A lost and found drum. Procedures followed correctly. He listed what I had done right before the coercion began.
+            commentary: `The park manager opened with praise. "You've been doing a great job at the Welcome Center." A lost and found drum. Procedures followed correctly. He listed what I had done right before the coercion began.
 
 He did not mention the double shift. I did. I brought up working the hours alone, staying past my shift to help a woman find a campsite. He confirmed it and moved on.
 
@@ -41,27 +41,27 @@ A volunteer who cared about the park. That is who they sat across from at that t
         },
         {
             timestamp: "[1:24]",
-            commentary: `Ryan asked if there was anything I wanted to discuss before he began. I told him I'd like to hear what he had to say.
+            commentary: `The park manager asked if there was anything I wanted to discuss before he began. I told him I'd like to hear what he had to say.
 
 I said nothing. I let him talk. I was already on guard.
 
 That is what it looks like when someone walks into an ambush and knows it.
 
-Note: Three weeks later, Allison Watson opens her call the same way. This is a pattern. It will be documented.`,
+Note: Three weeks later, the program manager opens her call the same way. This is a pattern. It will be documented.`,
         },
         {
             timestamp: "[1:49]",
-            commentary: `Ryan frames the meeting as a support structure. His role as park manager, he said, was to set people up for success. To provide expectations. To help volunteers navigate.
+            commentary: `The park manager frames the meeting as a support structure. His role as park manager, he said, was to set people up for success. To provide expectations. To help volunteers navigate.
 
 This is the frame they will use later to justify what they did. Not a coercive meeting. Not retaliation for documentation. A routine expectations conversation with a volunteer who couldn't meet them.
 
 That framing is on tape. So is everything that follows it.
 
-Note: Allison Watson will directly reference this meeting as when expectations were set.`,
+Note: The program manager will directly reference this meeting as when expectations were set.`,
         },
         {
             timestamp: "[2:53]",
-            commentary: `Ryan told me he had seen correspondence from me that led him to believe I felt unsupported. And then — in the same breath — that he had seen things from me that were not supportive of the crew.
+            commentary: `The park manager told me he had seen correspondence from me that led him to believe I felt unsupported. And then — in the same breath — that he had seen things from me that were not supportive of the crew.
 
 He had a list. Talking points. A single piece of paper in front of him. He looked at it often.
 
@@ -74,7 +74,7 @@ This is the moment I knew with certainty. This was not a support meeting. This w
         },
         {
             timestamp: "[3:52]",
-            commentary: `His first observation: that I had expressed dissatisfaction with multiple members of the crew. Himself. Kati. Logan. Leaf. Patrick.
+            commentary: `His first observation: that I had expressed dissatisfaction with multiple members of the crew. Himself. The park supervisor. The volunteer services lead. Leaf. Patrick.
 
 I told him directly: I don't agree with that.
 
@@ -94,7 +94,7 @@ That is on tape.`,
         },
         {
             timestamp: "[5:11]",
-            commentary: `Ryan described his first confrontation with me directly after the original incident with Kati as a normal conversation. The kind he would have with anybody. He said it didn't sit well with me. He said they rectified it through email.
+            commentary: `The park manager described his first confrontation with me directly after the original incident with the park supervisor as a normal conversation. The kind he would have with anybody. He said it didn't sit well with me. He said they rectified it through email.
 
 This is where he begins building his cover. He is not describing what happened. He is constructing a narrative in which I am someone who cannot handle normal management conversations. Someone who has issues with staff. Someone who keeps needing to be corrected.
 
@@ -104,19 +104,19 @@ That first confrontation is already documented. What it actually was is already 
         },
         {
             timestamp: "[5:33]",
-            commentary: `Ryan stated his second observation: that there was a trend. That when someone gave me guidance or feedback, I interpreted it as them not trusting me or thinking me incapable.
+            commentary: `The park manager stated his second observation: that there was a trend. That when someone gave me guidance or feedback, I interpreted it as them not trusting me or thinking me incapable.
 
 He stated this as fact. It was a fabrication. It is on tape.
 
 He then said I had requested a certain ranger not lead my orientation.
 
-That is not what happened. I spoke to Logan. I told him Patrick was condescending toward me in every interaction. Logan told me Leaf would train me. I took him at his word.
+That is not what happened. I spoke to the volunteer services lead. I told him Patrick was condescending toward me in every interaction. The volunteer services lead told me Leaf would train me. I took him at his word.
 
-I reported what Logan told me. Ryan reframed that as me making demands.`,
+I reported what the volunteer services lead told me. The park manager reframed that as me making demands.`,
         },
         {
             timestamp: "[6:18]",
-            quote: "My understanding with that is that Logan was saying that he would look into it — it wasn't like a guarantee.",
+            quote: "My understanding with that is that [Volunteer Services Lead] was saying that he would look into it — it wasn't like a guarantee.",
             commentary: `I told him that was not what happened. He pushed back. I told him again. That is not what happened.
 
 I had to say it multiple times before he acknowledged it.
@@ -144,27 +144,27 @@ And then immediately pivoted to use my documentation of Patrick's condescension 
         },
         {
             timestamp: "[6:59]",
-            commentary: `Ryan's evidence that I had a problem with Patrick: that Patrick had said "I'm here to support you" and repeated it multiple times over the course of an hour.
+            commentary: `The park manager's evidence that I had a problem with Patrick: that Patrick had said "I'm here to support you" and repeated it multiple times over the course of an hour.
 
 I told him directly — that wasn't the main point. I navigated Patrick. I didn't have an issue with Patrick. Patrick was easy to navigate.
 
-The problem was that Logan lied to me. That is a fact.
+The problem was that the volunteer services lead lied to me. That is a fact.
 
 They came to that table with Patrick's name on a list. What they had was a ranger who over-explains. What they tried to build from it was evidence of a pattern. That is what they were doing. Making something out of nothing to fill a case that wasn't there.`,
         },
         {
             timestamp: "[7:33]",
-            commentary: `Ryan's own account confirms it. Leaf was out sick. Logan came to Ryan. Ryan told Logan — regardless — Patrick was doing the orientation.
+            commentary: `The park manager's own account confirms it. Leaf was out sick. The volunteer services lead came to the park manager. The park manager told the volunteer services lead — regardless — Patrick was doing the orientation.
 
-Logan knew. Logan told me Leaf would train me.
+The volunteer services lead knew. The volunteer services lead told me Leaf would train me.
 
-Ryan is on tape confirming that Logan made a commitment he had no authority to make and no intention of keeping. And then both of them used my response to that lie as evidence against me.
+The park manager is on tape confirming that the volunteer services lead made a commitment he had no authority to make and no intention of keeping. And then both of them used my response to that lie as evidence against me.
 
-It is on tape. Ryan put it there himself.`,
+It is on tape. The park manager put it there himself.`,
         },
         {
             timestamp: "[8:13]",
-            commentary: `Ryan said he heard nothing from Patrick that suggested he was unsupportive. That Patrick was just offering help.
+            commentary: `The park manager said he heard nothing from Patrick that suggested he was unsupportive. That Patrick was just offering help.
 
 I said he was very polite. Because he was. I had no problem with Patrick.
 
@@ -173,7 +173,7 @@ That is on tape. The person they were using as evidence against me was someone I
         {
             timestamp: "[8:36]",
             quote: "Look, I don't know what you want me to say. I have already said — I navigate him. Like I do everybody.",
-            commentary: `There was nothing left to argue. I had described Patrick as polite. I had said I navigated him easily. I had explained exactly what I reported to Logan and why. I had confirmed Logan made the commitment. I had attended the training without complaint.
+            commentary: `There was nothing left to argue. I had described Patrick as polite. I had said I navigated him easily. I had explained exactly what I reported to the volunteer services lead and why. I had confirmed the volunteer services lead made the commitment. I had attended the training without complaint.
 
 There was no problem with Patrick. There never was. They brought him to that table anyway.`,
         },
@@ -183,7 +183,7 @@ There was no problem with Patrick. There never was. They brought him to that tab
 
 I had called him polite. I had said I navigate him like I do everybody. I had said I don't know what you want me to say. I had confirmed I attended the training without issue.
 
-And Ryan Warren looked at all of that and said: "So I understand you have a conflict with Patrick."
+And the park manager looked at all of that and said: "So I understand you have a conflict with Patrick."
 
 He was not listening. He was not there to find out what was true. He had a narrative and he was going to deliver it regardless of what I said.
 
@@ -206,17 +206,17 @@ Then kept going.`,
 
 That is what condescending looks like. Not a conflict. Not a trigger. That.
 
-Ryan's response: that's just Patrick. Patrick loves communication. Patrick likes to overcommunicate.
+The park manager's response: that's just Patrick. Patrick loves communication. Patrick likes to overcommunicate.
 
 Ten minutes of my time at that table to arrive at: Patrick is being Patrick.
 
 I already knew that. I said that. I navigated it. That was never the point.
 
-The point — the only point — was that Logan lied to me. That is what I came to that table having documented. That is what never got addressed. Not once. Not ever.`,
+The point — the only point — was that the volunteer services lead lied to me. That is what I came to that table having documented. That is what never got addressed. Not once. Not ever.`,
         },
         {
             timestamp: "[12:12]",
-            commentary: `Ryan told me I needed to handle Patrick differently. Have a conversation with him. Be more direct.
+            commentary: `The park manager told me I needed to handle Patrick differently. Have a conversation with him. Be more direct.
 
 I told him: I say "we're good, Patrick." That is direct. That is appropriate. That is exactly what you do when someone is overcommunicating and you need to close the loop.
 
@@ -232,7 +232,7 @@ They put the responsibility for Patrick's behavior on me. On tape.`,
         },
         {
             timestamp: "[12:52]",
-            commentary: `To illustrate his point about tone, Ryan Warren — a park manager, in a meeting with a volunteer — used the phrase "shut the fuck up."
+            commentary: `To illustrate his point about tone, the park manager — a park manager, in a meeting with a volunteer — used the phrase "shut the fuck up."
 
 His example for how I should communicate with Patrick: the difference between telling a camper to shut the fuck up and introducing yourself politely.
 
@@ -248,7 +248,7 @@ That is who they were sitting across from at that table. Someone already doing t
         },
         {
             timestamp: "[13:51]",
-            commentary: `Ryan spent two minutes explaining paraphrasing.
+            commentary: `The park manager spent two minutes explaining paraphrasing.
 
 To a volunteer he had just called quick. Someone he said got it immediately.
 
@@ -266,9 +266,9 @@ There wasn't one. Fourteen minutes. Still Patrick.`,
         },
         {
             timestamp: "[15:11]",
-            commentary: `Ryan pivoted to my emails. That was the real issue.
+            commentary: `The park manager pivoted to my emails. That was the real issue.
 
-I explained it directly. I have been a freelancer my entire life. Email is how I communicate. I document. I put things in writing. I knew this was different in a state agency context and I was actively trying to adapt. I had even been trying to talk to Logan instead of emailing.
+I explained it directly. I have been a freelancer my entire life. Email is how I communicate. I document. I put things in writing. I knew this was different in a state agency context and I was actively trying to adapt. I had even been trying to talk to the volunteer services lead instead of emailing.
 
 I was telling them I was adjusting. I was meeting them where they were.
 
@@ -278,7 +278,7 @@ And those emails — the ones they hated — are the reason this archive exists.
         },
         {
             timestamp: "[15:20]",
-            commentary: `Ryan told me the emails weren't the issue. That communication was good. That communication was healthy.
+            commentary: `The park manager told me the emails weren't the issue. That communication was good. That communication was healthy.
 
 I stopped him. "Do you really mean this?"
 
@@ -292,13 +292,13 @@ That is what this meeting was. On tape.`,
         },
         {
             timestamp: "[15:45]",
-            commentary: `Ryan claimed the emails showed I distrusted Logan because Logan had shared information with management.
+            commentary: `The park manager claimed the emails showed I distrusted the volunteer services lead because the volunteer services lead had shared information with management.
 
 I told him I had no idea what he was talking about. I told him that wasn't in the emails. He insisted it was. I told him again — it's not in there.
 
 He had no emails in front of him. He had a handwritten piece of paper.
 
-He kept going. "I believe that word was used in regards to Logan and being able to trust him."
+He kept going. "I believe that word was used in regards to the volunteer services lead and being able to trust him."
 
 I told him again. It's not in there.
 
@@ -310,13 +310,13 @@ That is on tape.`,
         },
         {
             timestamp: "[16:29]",
-            commentary: `When I pushed back and he couldn't produce what he was claiming, it destabilized him. He pivoted — grasping — to the CC on the email to Logan.
+            commentary: `When I pushed back and he couldn't produce what he was claiming, it destabilized him. He pivoted — grasping — to the CC on the email to the volunteer services lead.
 
-I explained it immediately. I had learned from another volunteer coordinator that anything even slightly negative automatically goes to the supervisor. I knew Kati would receive a copy. I CCed her directly so she wouldn't think I was hiding something.
+I explained it immediately. I had learned from another volunteer coordinator that anything even slightly negative automatically goes to the supervisor. I knew the park supervisor would receive a copy. I CCed her directly so she wouldn't think I was hiding something.
 
 That is transparency. That is professionalism.
 
-His interpretation: "I know I can't trust you with information Logan, so I'm going to give it to the people who are going to see it anyway."
+His interpretation: "I know I can't trust you with information the volunteer services lead, so I'm going to give it to the people who are going to see it anyway."
 
 That is a characterization. Not a fact. Not what I said. Not what I meant.
 
@@ -326,13 +326,13 @@ That apology is on tape. So is everything that produced it.`,
         },
         {
             timestamp: "[17:34]",
-            commentary: `Ryan said as a manager he was thinking — this is an issue. Sam doesn't feel he can trust Logan.
+            commentary: `The park manager said as a manager he was thinking — this is an issue. Sam doesn't feel he can trust the volunteer services lead.
 
 I corrected him. I'm not escalating. I'm informing. I was trying to prevent something.
 
 And then I laughed.
 
-Because I knew. I had watched them reframe everything I did from the moment I arrived. I knew exactly what he was doing with that email. I had known when I sent it. I CCed Kati because I knew she would see it anyway and I refused to let it become something I was hiding.
+Because I knew. I had watched them reframe everything I did from the moment I arrived. I knew exactly what he was doing with that email. I had known when I sent it. I CCed the park supervisor because I knew she would see it anyway and I refused to let it become something I was hiding.
 
 And here he was, doing exactly what I had tried to prevent, with the very email I had sent to prevent it.
 
@@ -346,9 +346,9 @@ He started to agree but then a lightbulb went off in his head and he used it to 
         },
         {
             timestamp: "[18:59]",
-            commentary: `Ryan took what I had just said and turned it into his next point. Words have inflection. Bolded text has tone. Could be perceived as negative. Could be perceived as threatening. Twenty-five exclamation points.
+            commentary: `The park manager took what I had just said and turned it into his next point. Words have inflection. Bolded text has tone. Could be perceived as negative. Could be perceived as threatening. Twenty-five exclamation points.
 
-Kati Baker spoke for the first time.
+The park supervisor spoke for the first time.
 
 One word.
 
@@ -360,15 +360,15 @@ She knew exactly what she was doing.`,
         },
         {
             timestamp: "[19:17]",
-            commentary: `Ryan ran with it. Tone. Threatening tone. Twenty-five exclamation points.
+            commentary: `The park manager ran with it. Tone. Threatening tone. Twenty-five exclamation points.
 
 I stopped him.
 
 "Let's get to the real issue here."
 
-I don't trust Logan. He has not given me any reason to trust him. I have laid out why. And because of that I had to do something to make sure he could not ruin my future.
+I don't trust the volunteer services lead. He has not given me any reason to trust him. I have laid out why. And because of that I had to do something to make sure he could not ruin my future.
 
-That is why I sent the email. That is why I CCed Kati. That is why I documented everything. Not because I was difficult. Not because I had triggers. Not because I couldn't navigate Patrick. Because Logan had lied to me, betrayed my confidence, and I had to protect myself.
+That is why I sent the email. That is why I CCed the park supervisor. That is why I documented everything. Not because I was difficult. Not because I had triggers. Not because I couldn't navigate Patrick. Because the volunteer services lead had lied to me, betrayed my confidence, and I had to protect myself.
 
 I named it. Out loud. To their faces. Nineteen minutes in.
 
@@ -378,31 +378,31 @@ That is on tape.`,
         },
         {
             timestamp: "[19:49]",
-            commentary: `I told Ryan there were a lot of reasons — meaning he didn't have the full story. He had what Kati had given him. He had what Logan had reported back. He had a handwritten piece of paper.
+            commentary: `I told the park manager there were a lot of reasons — meaning he didn't have the full story. He had what the park supervisor had given him. He had what the volunteer services lead had reported back. He had a handwritten piece of paper.
 
 He barely had anything.
 
-He responded by implying I thought I had a future with Logan.
+He responded by implying I thought I had a future with the volunteer services lead.
 
 I said no. Then I said no again. With a short laugh. Because the implication registered.`,
         },
         {
             timestamp: "[20:07]",
-            commentary: `Ryan told me I held the highest responsibility for ensuring the disruption to my future didn't happen. That is why we were there.
+            commentary: `The park manager told me I held the highest responsibility for ensuring the disruption to my future didn't happen. That is why we were there.
 
-Then he said: it's not about Logan at all.
+Then he said: it's not about the volunteer services lead at all.
 
-I had just named the real issue. Logan. The lie. The betrayal. The reason I had to protect myself. I had handed him the substance of everything that had happened.
+I had just named the real issue. The volunteer services lead. The lie. The betrayal. The reason I had to protect myself. I had handed him the substance of everything that had happened.
 
 He pivoted to bolding text.
 
-That was the moment I knew. They were never going to engage with what actually happened. They couldn't. Because the moment they engaged with it, the meeting fell apart. The narrative fell apart. Everything Kati had built fell apart.
+That was the moment I knew. They were never going to engage with what actually happened. They couldn't. Because the moment they engaged with it, the meeting fell apart. The narrative fell apart. Everything the park supervisor had built fell apart.
 
 So they went back to bolding. On tape.`,
         },
         {
             timestamp: "[20:30]",
-            commentary: `Ryan tried to get me to admit that bolding words was evidence of threatening tone. That I understood words had inflection. That I had used that inflection deliberately.
+            commentary: `The park manager tried to get me to admit that bolding words was evidence of threatening tone. That I understood words had inflection. That I had used that inflection deliberately.
 
 I told him: I absolutely wanted to make a point.
 
@@ -414,7 +414,7 @@ He took a plain act of written communication and tried to turn it into a confess
         },
         {
             timestamp: "[21:15]",
-            commentary: `And there it is. Twenty-one minutes in. After agreeing that words can be misinterpreted by anyone, in any direction — Ryan delivered his demand.
+            commentary: `And there it is. Twenty-one minutes in. After agreeing that words can be misinterpreted by anyone, in any direction — the park manager delivered his demand.
 
 Only have conversations with park staff that don't result in threats or demands.
 
@@ -426,7 +426,7 @@ That accusation is on tape. So is the fact that he could not produce a single ex
         },
         {
             timestamp: "[21:31]",
-            commentary: `Ryan listed his examples. Requesting help getting a job somewhere else. "I am prepared to fight this." "I will not let you stand in my way."
+            commentary: `The park manager listed his examples. Requesting help getting a job somewhere else. "I am prepared to fight this." "I will not let you stand in my way."
 
 Those are not my words.
 
@@ -444,7 +444,7 @@ That is what it looks like to survive a coercive meeting while recording it.`,
         },
         {
             timestamp: "[22:40]",
-            commentary: `Ryan reminded me he was the park manager. Fifteen years in the agency. Half of that in management. He had seen everything. He knew the disciplinary processes. He knew HR.
+            commentary: `The park manager reminded me he was the park manager. Fifteen years in the agency. Half of that in management. He had seen everything. He knew the disciplinary processes. He knew HR.
 
 He was not sharing his résumé. He was making sure I understood the power differential before saying what came next.
 
@@ -462,7 +462,7 @@ But the message was not about growth. The message was: endure what is being done
 
 He said this to an unpaid volunteer. With no union. No HR access. No recourse. After twenty-three minutes of unsubstantiated accusations.
 
-Kati Baker sat beside him and said nothing.
+The park supervisor sat beside him and said nothing.
 
 It is on tape.`,
         },
@@ -480,11 +480,11 @@ On tape.`,
         },
         {
             timestamp: "[26:30]",
-            commentary: `Then another story. If Kati has something stuck in her eye and makes a face — assume positive intent. If Kati cusses under her breath — assume positive intent. She's just having a bad day.
+            commentary: `Then another story. If the park supervisor has something stuck in her eye and makes a face — assume positive intent. If the park supervisor cusses under her breath — assume positive intent. She's just having a bad day.
 
-He used Kati as his example.
+He used the park supervisor as his example.
 
-The same Kati who was sitting at that table in silence. The same Kati whose dismissive text message in the first week of February had started all of this. The same Kati who he was now asking me to extend unlimited benefit of the doubt to.`,
+The same the park supervisor who was sitting at that table in silence. The same the park supervisor whose dismissive text message in the first week of February had started all of this. The same the park supervisor who he was now asking me to extend unlimited benefit of the doubt to.`,
         },
         {
             timestamp: "[27:06]",
@@ -504,23 +504,23 @@ I had been demonstrating it the entire time.`,
         },
         {
             timestamp: "[27:54]",
-            commentary: `Ryan asked me to take them at their word. I told him I take everyone at their word. I also hold them to their word.
+            commentary: `The park manager asked me to take them at their word. I told him I take everyone at their word. I also hold them to their word.
 
-That landed. He felt it. Because the only reason we were at that table was that I had held Logan to his word and Logan hadn't kept it.
+That landed. He felt it. Because the only reason we were at that table was that I had held the volunteer services lead to his word and the volunteer services lead hadn't kept it.
 
-So he scrambled. Suddenly I was fixating. Holding onto something. The Logan-Patrick-Leaf training thing. Maybe that's what I was referring back to. Maybe I should be frustrated with Ryan instead of Logan. He would take responsibility. It was fine.
+So he scrambled. Suddenly I was fixating. Holding onto something. The the volunteer services lead-Patrick-Leaf training thing. Maybe that's what I was referring back to. Maybe I should be frustrated with the park manager instead of the volunteer services lead. He would take responsibility. It was fine.
 
-He was protecting Logan. He was also trying to reframe accountability as fixation. As if holding someone to a commitment they made was a character flaw that needed to be managed.
+He was protecting the volunteer services lead. He was also trying to reframe accountability as fixation. As if holding someone to a commitment they made was a character flaw that needed to be managed.
 
 I had just demonstrated in four sentences exactly why I was at that table. He spent the next thirty seconds trying to make that my problem.`,
         },
         {
             timestamp: "[28:49]",
-            commentary: `Ryan confirmed it himself. He told Logan absolutely not — Patrick was doing the training.
+            commentary: `The park manager confirmed it himself. He told the volunteer services lead absolutely not — Patrick was doing the training.
 
-Ryan made that call. Ryan overrode it. And nobody told me.
+The park manager made that call. The park manager overrode it. And nobody told me.
 
-I showed up to that orientation not knowing. Because Ryan had made a decision that affected me directly and it was never communicated to me. He just acknowledged that on tape.
+I showed up to that orientation not knowing. Because the park manager had made a decision that affected me directly and it was never communicated to me. He just acknowledged that on tape.
 
 And then spent twenty-eight minutes using my response to that decision as evidence against me.`,
         },
@@ -532,7 +532,7 @@ He said: that's great. That's perfect.`,
         },
         {
             timestamp: "[29:16]",
-            commentary: `Ryan asked me to stop sending follow-up emails. Keep communications professional. Work related only. Employee issues come directly to him.
+            commentary: `The park manager asked me to stop sending follow-up emails. Keep communications professional. Work related only. Employee issues come directly to him.
 
 He had just confirmed he made a decision that was never communicated to me. And his response to that was to tell me to stop documenting it.
 
@@ -542,15 +542,15 @@ He was not setting expectations. He was telling me to stop creating a paper trai
         },
         {
             timestamp: "[29:52]",
-            commentary: `Thirty minutes in, Ryan told me for the first time that Logan had no supervisory authority whatsoever. That Kati and Ryan were the ones who gave performance evaluations. The ones who could dismiss me.
+            commentary: `Thirty minutes in, the park manager told me for the first time that the volunteer services lead had no supervisory authority whatsoever. That the park supervisor and the park manager were the ones who gave performance evaluations. The ones who could dismiss me.
 
 I told him: this is something I didn't know. I'm sorry. I truly treated him like my direct supervisor because that is what I was told he was.
 
-I had been reporting to Logan. Communicating with Logan. Taking Logan at his word. Because every structure I had been given pointed to Logan as my direct supervisor.
+I had been reporting to the volunteer services lead. Communicating with the volunteer services lead. Taking the volunteer services lead at his word. Because every structure I had been given pointed to the volunteer services lead as my direct supervisor.
 
 Apparently none of that was true. And nobody told me until thirty minutes into a coercive meeting.
 
-"If we do dismissal — it's not Logan doing a dismissal. It's Kati or myself."
+"If we do dismissal — it's not the volunteer services lead doing a dismissal. It's the park supervisor or myself."
 
 He said that casually. As a statement of fact. As information.
 
@@ -558,9 +558,9 @@ It was a threat. And it is on tape.`,
         },
         {
             timestamp: "[30:28]",
-            commentary: `Ryan confirmed it. That made sense. Could be a misunderstanding. Logan was just day-to-day operations. Scheduling. Putting people in slots. Not actually supervising anyone.
+            commentary: `The park manager confirmed it. That made sense. Could be a misunderstanding. The volunteer services lead was just day-to-day operations. Scheduling. Putting people in slots. Not actually supervising anyone.
 
-I told him: I treated you two as fairly off limits. I didn't go to Ryan or Kati because Logan was presented to me as my direct supervisor. I operated within the structure I was given.
+I told him: I treated you two as fairly off limits. I didn't go to the park manager or the park supervisor because the volunteer services lead was presented to me as my direct supervisor. I operated within the structure I was given.
 
 I was not wrong. I was never told otherwise. Not until this moment. Thirty minutes into a coercive meeting designed to punish me for exactly that.`,
         },
@@ -568,17 +568,17 @@ I was not wrong. I was never told otherwise. Not until this moment. Thirty minut
             timestamp: "[32:36]",
             commentary: `Back to taking them at their word. Back to assuming positive intent. Back to letting it go.
 
-Ryan acknowledged I had reasons to distrust Logan. He said it himself. And then asked me to let it go.
+The park manager acknowledged I had reasons to distrust the volunteer services lead. He said it himself. And then asked me to let it go.
 
-I told him I had seen Logan the day before. It was cordial. Professional.
+I told him I had seen the volunteer services lead the day before. It was cordial. Professional.
 
 He said: good.
 
-I had already let it go. I was already doing the thing he was asking me to do. I had been doing it. While sitting at a table where two people were using everything Logan had taken from me to build a case against me.`,
+I had already let it go. I was already doing the thing he was asking me to do. I had been doing it. While sitting at a table where two people were using everything the volunteer services lead had taken from me to build a case against me.`,
         },
         {
             timestamp: "[33:48]",
-            commentary: `Ryan told me the expectation was professional interactions with all staff. Cordial. Respectful. Wave goodbye. Say good to see you.
+            commentary: `The park manager told me the expectation was professional interactions with all staff. Cordial. Respectful. Wave goodbye. Say good to see you.
 
 I told him: I have been professional to everybody. Every single time.
 
@@ -590,7 +590,7 @@ He spent thirty-three minutes telling me to be who I already was. While accusing
         },
         {
             timestamp: "[34:32]",
-            commentary: `Ryan looked at his paper. There was something on it he wasn't ready to say yet. He chose instead to talk about the red book.
+            commentary: `The park manager looked at his paper. There was something on it he wasn't ready to say yet. He chose instead to talk about the red book.
 
 The logbook at the Welcome Center. Notes and poems and drawings. Keep it work related. Tissue paper requests. Change fund problems.`,
         },
@@ -606,11 +606,11 @@ I took pictures of every page of that book. There are no poems. There are no doo
 
 That is who they were building a case against.
 
-Note: Allison Watson would make this accusation also, after I had already confirmed to Ryan it was false.`,
+Note: The program manager would make this accusation also, after I had already confirmed to the park manager it was false.`,
         },
         {
             timestamp: "[36:20]",
-            commentary: `Ryan told me he had become aware of non-work related emails and texts to park staff. He said I had sent a poem to Logan.
+            commentary: `The park manager told me he had become aware of non-work related emails and texts to park staff. He said I had sent a poem to the volunteer services lead.
 
 I told him: it's a poem about my love for the ocean.
 
@@ -618,7 +618,7 @@ He said he didn't need an explanation.
 
 I offered one anyway. Because the poem had context. Because it was sent to a volunteer coordinator I was asking for help finding future placements. Because it was an explanation of why the coast mattered to me and why I was asking for his support.
 
-Ryan didn't want the explanation. He had already decided what the poem meant. He had already used it to build a picture of someone with inappropriate boundaries, unprofessional relationships, unstable communications.
+The park manager didn't want the explanation. He had already decided what the poem meant. He had already used it to build a picture of someone with inappropriate boundaries, unprofessional relationships, unstable communications.
 
 It was a poem about the ocean. Sent to someone I was asking for help.
 
@@ -626,21 +626,21 @@ He didn't need the explanation because the explanation didn't fit the narrative.
         },
         {
             timestamp: "[37:46]",
-            commentary: `I explained it. I love my time at the Welcome Center. I want to find other placements where I can do that work. I'm trying to get into parks with welcome centers. I asked Logan to contact other volunteer coordinators on my behalf. I sent the poem so he would understand how much it meant to me to be on the coast. What brought me here.
+            commentary: `I explained it. I love my time at the Welcome Center. I want to find other placements where I can do that work. I'm trying to get into parks with welcome centers. I asked the volunteer services lead to contact other volunteer coordinators on my behalf. I sent the poem so he would understand how much it meant to me to be on the coast. What brought me here.
 
-Ryan said: that's good.
+The park manager said: that's good.
 
 I told him directly: it wasn't a demand. It was a request. I wanted him to understand what I was trying to do. That's all.
 
-He acknowledged it. Then told me Logan didn't actually do that kind of thing anyway.
+He acknowledged it. Then told me the volunteer services lead didn't actually do that kind of thing anyway.
 
 A volunteer coordinator who doesn't help volunteers find placements. A poem about the ocean reframed as an inappropriate communication. A request for help reframed as a boundary violation.
 
-Note: Allison Watson would weaponize this poem also.`,
+Note: The program manager would weaponize this poem also.`,
         },
         {
             timestamp: "[39:13]",
-            commentary: `Ryan told me the best way to get future placements was to do a kickass job where I currently was.
+            commentary: `The park manager told me the best way to get future placements was to do a kickass job where I currently was.
 
 I was doing a kickass job. He had said so himself at 0:00. Great job at the Welcome Center. Procedures followed correctly. Double shift. Stayed an hour past to help a woman find a campsite.
 
@@ -652,7 +652,7 @@ He couldn't call it inappropriate. Because it wasn't. So he buried it in advice 
         },
         {
             timestamp: "[39:58]",
-            commentary: `Ryan circled back to my word choices. That I write differently. That I'm more direct. That "requesting" reads differently than "asking." That maybe it was interpreted differently than I intended.
+            commentary: `The park manager circled back to my word choices. That I write differently. That I'm more direct. That "requesting" reads differently than "asking." That maybe it was interpreted differently than I intended.
 
 He had spent forty minutes telling me my communications were the problem. Now he was applying that framework to a poem about the ocean and a request for a referral.
 
@@ -662,7 +662,7 @@ I had already explained what the poem meant. I had already explained what the re
         },
         {
             timestamp: "[40:39]",
-            commentary: `Ryan described how my emails could be received. Mixed in with non-work related content. Followed up with documentation. He was struggling to articulate it.
+            commentary: `The park manager described how my emails could be received. Mixed in with non-work related content. Followed up with documentation. He was struggling to articulate it.
 
 I told him: I'm trying to follow you here.
 
@@ -687,11 +687,11 @@ He backed down again. Retreated to the poem. Context. How things can make people
 
 He had something on that paper he couldn't say to my face when I challenged him to say it.
 
-This might be the only time Ryan did something smart in that meeting.`,
+This might be the only time the park manager did something smart in that meeting.`,
         },
         {
             timestamp: "[43:04]",
-            commentary: `But it only lasted a beat. Ryan retreated to the poem. That without context, a poem sent to a supervisor could be interpreted differently from a professional workplace lens. That a follow-up email expressing dissatisfaction could make it look like something else entirely.
+            commentary: `But it only lasted a beat. The park manager retreated to the poem. That without context, a poem sent to a supervisor could be interpreted differently from a professional workplace lens. That a follow-up email expressing dissatisfaction could make it look like something else entirely.
 
 He was building a picture. A gay volunteer who sent a poem to his male supervisor. Who then documented his dissatisfaction. Who set a boundary. Who created a paper trail.
 
@@ -701,13 +701,13 @@ Note: I have shared that poem with many people. It's just a poem. Written by AI.
         },
         {
             timestamp: "[44:02]",
-            commentary: `Ryan listed his evidence. Kati's text in the first week. His own visit to get to know me. Every other week an instance. Consistent throughout the month. Issues with everyone.
+            commentary: `The park manager listed his evidence. The park supervisor's text in the first week. His own visit to get to know me. Every other week an instance. Consistent throughout the month. Issues with everyone.
 
 I stopped him. Why are we going back to this?
 
-Because that is what he had. That is the entire case. A text message with Kati that we had already resolved. A visit from Ryan that I had already documented. A poem about the ocean. Bolded words. A CC on an email.
+Because that is what he had. That is the entire case. A text message with the park supervisor that we had already resolved. A visit from the park manager that I had already documented. A poem about the ocean. Bolded words. A CC on an email.
 
-And underneath all of it — unspoken, sitting on that piece of paper — the insinuation about the poem and Logan that he had already backed down from when I challenged him to say it to my face.
+And underneath all of it — unspoken, sitting on that piece of paper — the insinuation about the poem and the volunteer services lead that he had already backed down from when I challenged him to say it to my face.
 
 That is the case they built against a gay volunteer on public land.
 
@@ -715,13 +715,13 @@ That is what forty-four minutes of this meeting had produced.`,
         },
         {
             timestamp: "[44:22]",
-            commentary: `Ryan said every other week there was an instance. A pattern. Consistent throughout the month.
+            commentary: `The park manager said every other week there was an instance. A pattern. Consistent throughout the month.
 
-I told him: you said all the rangers. You're bringing up what happened with Kati in the very beginning. I'm just not tracking what you're saying.
+I told him: you said all the rangers. You're bringing up what happened with the park supervisor in the very beginning. I'm just not tracking what you're saying.
 
-He offered specific examples. The first was Kati. The second was his own visit.
+He offered specific examples. The first was the park supervisor. The second was his own visit.
 
-His own visit happened the same day as the Kati confrontation. It was not a separate incident. It was an escalation of the same incident. And we were supposed to have reset.
+His own visit happened the same day as the park supervisor confrontation. It was not a separate incident. It was an escalation of the same incident. And we were supposed to have reset.
 
 He took one day. Split it into two data points. Spread them across a month. Called it a pattern.
 
@@ -729,7 +729,7 @@ That is the full case. On tape. With a handwritten piece of paper and no emails.
         },
         {
             timestamp: "[44:42]",
-            commentary: `His two examples. Kati. Then himself — he came down just to talk, to get to know me, to understand me.
+            commentary: `His two examples. The park supervisor. Then himself — he came down just to talk, to get to know me, to understand me.
 
 "Why are we going back to this?"
 
@@ -747,15 +747,15 @@ That application went in after the reset. After the day that was supposed to be 
 
 That is not the behavior of someone causing disruption. That is the behavior of someone who believed the reset was real.
 
-Ryan said: that's good.
+The park manager said: that's good.
 
 Then went back to his paper.`,
         },
         {
             timestamp: "[45:30]",
-            commentary: `Ryan described Kati asking about my plans at the welcome center. I told him: just a miscommunication. Nothing bad happened.
+            commentary: `The park manager described the park supervisor asking about my plans at the welcome center. I told him: just a miscommunication. Nothing bad happened.
 
-He said there had been a consistent miscommunication since I got there. Then he constructed a narrative — that my understanding was that Kati had purposely asked about my plans because she knew I had applied for the job — and landed on it with real heat:
+He said there had been a consistent miscommunication since I got there. Then he constructed a narrative — that my understanding was that the park supervisor had purposely asked about my plans because she knew I had applied for the job — and landed on it with real heat:
 
 "That is absolutely false. That is the most false thing I've ever heard."
 
@@ -763,7 +763,7 @@ I said: well, I never said that.
 
 He said it was in my emails and texts.
 
-I told him — dismissively, because the claim was absurd: "No. I never said anything like that. It's not in any email or text, Ryan. It's not."
+I told him — dismissively, because the claim was absurd: "No. I never said anything like that. It's not in any email or text, the park manager. It's not."
 
 He said: that's how it was received.
 
@@ -773,15 +773,15 @@ He had no emails. He had no texts. He claimed they existed. I told him they did 
 
 He did this earlier in the meeting. Claimed words existed in my correspondence that did not exist. When I pushed back he said fair enough and moved on.
 
-This time he had real heat behind it. This time it was about Kati.
+This time he had real heat behind it. This time it was about the park supervisor.
 
-Kati Baker sat beside him and said nothing.`,
+The park supervisor sat beside him and said nothing.`,
         },
         {
             timestamp: "[46:29]",
-            commentary: `Ryan said Kati could talk about it probably.
+            commentary: `The park manager said the park supervisor could talk about it probably.
 
-And Kati spoke. For only the second time in forty-six minutes.
+And the park supervisor spoke. For only the second time in forty-six minutes.
 
 She said she had interpreted my email withdrawing the job application as a response to her asking about my plans. That I had withdrawn because of something she said.
 
@@ -795,11 +795,11 @@ She had just confirmed she invented the interpretation. I had never said it. It 
         },
         {
             timestamp: "[47:27]",
-            commentary: `I told Ryan: this is news to me.
+            commentary: `I told the park manager: this is news to me.
 
-Because it was. I had never said what they were describing. I had never made it an issue with Kati. And now I was sitting at a table being told that my silence — a withdrawal email with no reason given — had been interpreted as an accusation.
+Because it was. I had never said what they were describing. I had never made it an issue with the park supervisor. And now I was sitting at a table being told that my silence — a withdrawal email with no reason given — had been interpreted as an accusation.
 
-Ryan jumped back in. Words have meaning. We established that. They get interpreted.
+The park manager jumped back in. Words have meaning. We established that. They get interpreted.
 
 I named it: "That's meaning that other people are assigning to things that are not there. You're making me responsible for other people's thoughts."
 
@@ -809,17 +809,17 @@ I told him: that is so vague I don't know how to respond to that.`,
         },
         {
             timestamp: "[48:34]",
-            commentary: `I turned to Kati directly. I told her I completely let it go. I told her I liked her.
+            commentary: `I turned to the park supervisor directly. I told her I completely let it go. I told her I liked her.
 
 She said: okay.
 
-One word. The same person who had just confirmed she had been carrying an interpretation of a withdrawal email for weeks. Who had never said anything to me directly. Who had let it sit and fester — to use Ryan's word — and brought it to this table instead.
+One word. The same person who had just confirmed she had been carrying an interpretation of a withdrawal email for weeks. Who had never said anything to me directly. Who had let it sit and fester — to use the park manager's word — and brought it to this table instead.
 
 I told her I liked her. She said okay. That is on the tape.`,
         },
         {
             timestamp: "[48:48]",
-            commentary: `Ryan kept going. This wasn't a bullet point. This was feedback. Communication is hard. If Sam doesn't know he can't change. A sliver under the skin. If you don't squeeze it out it festers.
+            commentary: `The park manager kept going. This wasn't a bullet point. This was feedback. Communication is hard. If Sam doesn't know he can't change. A sliver under the skin. If you don't squeeze it out it festers.
 
 I told him: I never said what you're saying. You're making me responsible for something I did not do.
 
@@ -835,7 +835,7 @@ He agreed. This is how absurd the meeting had become.`,
             timestamp: "[50:10]",
             commentary: `I turned it around on him.
 
-I told him: what you just said to me is that somebody didn't take what I did as positive. We can flip this around, Ryan.
+I told him: what you just said to me is that somebody didn't take what I did as positive. We can flip this around, the park manager.
 
 He said: positive intent until proven otherwise.
 
@@ -843,7 +843,7 @@ I told him: I'm not getting that benefit of the doubt.
 
 Silence. Then: I see where you're coming from. I may not be able to help you with that.
 
-That is the admission. Fifty minutes in. He had spent the entire meeting demanding I extend grace I was never given. Demanding I assume positive intent from people who had demonstrated the opposite. Demanding I take them at their word after Logan had proven his word meant nothing.
+That is the admission. Fifty minutes in. He had spent the entire meeting demanding I extend grace I was never given. Demanding I assume positive intent from people who had demonstrated the opposite. Demanding I take them at their word after the volunteer services lead had proven his word meant nothing.
 
 And when I named it — when I held the mirror up — he told me he may not be able to help me with that.
 
@@ -851,11 +851,11 @@ He confirmed it. On tape.`,
         },
         {
             timestamp: "[50:35]",
-            commentary: `Ryan stumbled. "I may not be able to help you with that. All I can do is provide feedback of how it's feeling from our perspective."
+            commentary: `The park manager stumbled. "I may not be able to help you with that. All I can do is provide feedback of how it's feeling from our perspective."
 
 He was losing his footing. The admission was right there — that he had never given me the benefit of the doubt. His words were falling apart.
 
-Kati stepped in and attacked. You could hear it in her voice. Anger.
+The park supervisor stepped in and attacked. You could hear it in her voice. Anger.
 
 She went back to the first of the month. The text message. She had been blindsided.
 
@@ -877,19 +877,19 @@ On tape.`,
         },
         {
             timestamp: "[52:01]",
-            commentary: `I apologized to Kati again. I truly had put it to rest.
+            commentary: `I apologized to the park supervisor again. I truly had put it to rest.
 
-Ryan stepped back in.
+The park manager stepped back in.
 
 I told him: it was 6 in the morning. I had already apologized. Twice. I had already told them it was behind me. I had applied for a job there. And I was still having to account for a text message from the first week of February.
 
-Ryan took it and turned it into his conclusion: positive intent until proven otherwise. The first of the month — proven otherwise. So when someone says it's over he puts a stick in it. But it's really hard to believe it's over.
+The park manager took it and turned it into his conclusion: positive intent until proven otherwise. The first of the month — proven otherwise. So when someone says it's over he puts a stick in it. But it's really hard to believe it's over.
 
 They would not drop it. No apology was enough. No reset was real. Fifty-two minutes in and we were still here.`,
         },
         {
             timestamp: "[52:42]",
-            commentary: `Ryan said similar things were happening every other week. The same pattern. Over and over.
+            commentary: `The park manager said similar things were happening every other week. The same pattern. Over and over.
 
 I told him: I'm going to need examples.
 
@@ -901,7 +901,7 @@ That was it. That was every other week. That was the pattern.`,
         },
         {
             timestamp: "[53:12]",
-            commentary: `Ryan said the "until proven otherwise" thing started with the very first interaction with Kati. That you can't just say it's all over.
+            commentary: `The park manager said the "until proven otherwise" thing started with the very first interaction with the park supervisor. That you can't just say it's all over.
 
 I told him: I learned from it.
 
@@ -909,7 +909,7 @@ What I meant was not what he heard. I had learned exactly what kind of place thi
 
 That is what I learned.
 
-Ryan heard compliance. He said: maybe.`,
+The park manager heard compliance. He said: maybe.`,
         },
         {
             timestamp: "[53:27]",
@@ -917,11 +917,11 @@ Ryan heard compliance. He said: maybe.`,
 
 He said they were trying. But once you're proven otherwise — it's hard to say it's always sunny.
 
-I told him: I liked Kati so much I applied for a job here.
+I told him: I liked the park supervisor so much I applied for a job here.
 
 Someone who had decided these people were the enemy does not apply to work alongside them permanently. I applied because I believed in the reset. I believed in the park. I believed in the work.
 
-Kati said: I thought it was great that you applied.
+The park supervisor said: I thought it was great that you applied.
 
 Everything that happened before this meeting, during it, and after it tells you exactly what that sentence was worth.`,
         },
@@ -947,15 +947,15 @@ He claimed a pattern. Couldn't name it. Wouldn't revisit it. And called that fee
             timestamp: "[54:56]",
             commentary: `I told him: you won't have to worry about emails from me. I understand that's the big issue here.
 
-Ryan confirmed it. Non-work related emails and texts — that's one of them. Working with all staff.
+The park manager confirmed it. Non-work related emails and texts — that's one of them. Working with all staff.
 
-Then I went through it myself. Never had a poor interaction with any ranger. The guests liked me. The volunteers liked me. Every interaction with every ranger had been positive. Minus the text message with Kati at the very beginning. I cannot think of a single other situation.
+Then I went through it myself. Never had a poor interaction with any ranger. The guests liked me. The volunteers liked me. Every interaction with every ranger had been positive. Minus the text message with the park supervisor at the very beginning. I cannot think of a single other situation.
 
 I laid out his entire case for him. Because I already knew what it was. And I knew how thin it was.`,
         },
         {
             timestamp: "[56:05]",
-            commentary: `Ryan said he appreciated me talking with them. That these conversations suck. But unless he talked about it I had no way of knowing.
+            commentary: `The park manager said he appreciated me talking with them. That these conversations suck. But unless he talked about it I had no way of knowing.
 
 I told him: I just want to be treated fairly.
 
@@ -969,7 +969,7 @@ I had just asked to be treated fairly. He ignored it and told me that's good.`,
         },
         {
             timestamp: "[57:57]",
-            commentary: `Ryan was telling me about his role helping people be successful. Rangers becoming directors. Park hosts becoming ranger assistants.
+            commentary: `The park manager was telling me about his role helping people be successful. Rangers becoming directors. Park hosts becoming ranger assistants.
 
 He was doing his "offering to be a mentor" routine I'd seen before. After an hour of abuse.
 
@@ -977,13 +977,13 @@ I told him: I genuinely wanted to have a future here at Honeyman. But I don't th
 
 I said: I wish that was a future that we had.
 
-Note: Allison Watson would falsely claim I had no intention of leaving Honeyman. They all knew otherwise.`,
+Note: The program manager would falsely claim I had no intention of leaving Honeyman. They all knew otherwise.`,
         },
         {
             timestamp: "[59:31]",
             commentary: `Then came the exit pressure.
 
-Ryan told me — four times in the final two minutes — that I didn't have to feel obligated to stay. That if it didn't feel right he would never expect me to stay. That life is too short. That he'd had jobs that didn't work out. That I shouldn't feel required or obligated in any way.
+The park manager told me — four times in the final two minutes — that I didn't have to feel obligated to stay. That if it didn't feel right he would never expect me to stay. That life is too short. That he'd had jobs that didn't work out. That I shouldn't feel required or obligated in any way.
 
 I told him: I don't feel obligated. I'm here by choice.
 

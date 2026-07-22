@@ -9,17 +9,17 @@ import { TRUST_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Betrayal",
-    description: "Documentation of supervisory betrayal and weaponization of vulnerability by Volunteer Services Lead Logan Bliss.",
+    description: "Documentation of supervisory betrayal and weaponization of vulnerability by the volunteer services lead.",
 };
 
 export default function TrustRecruitmentPage() {
     return (
         <SectionPage
             title="TRUST RECRUITMENT"
-            subtitle="LOGAN BLISS, VOLUNTEER SERVICES LEAD"
+            subtitle="VOLUNTEER SERVICES LEAD"
             previousPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
             nextPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}
-            summary="Logan Bliss, Volunteer Services Lead, betrayed supervisory trust and participated in identity-based targeting."
+            summary="The volunteer services lead betrayed supervisory trust and participated in identity-based targeting."
 
         >
 
@@ -28,7 +28,7 @@ export default function TrustRecruitmentPage() {
             <h2 className="text-xl font-semibold">THE DISCLOSURES</h2>
 
             <div className="mt-4">
-                Logan Bliss was my direct supervisor at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.
+                The volunteer services lead was my direct supervisor at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.
             </div>
 
             <div className="mt-4">
@@ -50,21 +50,21 @@ export default function TrustRecruitmentPage() {
             </ul>
 
             <div className="mt-4">
-                Logan disclosed this information to Kati Baker, Ryan Warren, and Allison Watson.
+                The volunteer services lead disclosed this information to the park supervisor, the park manager, and the program manager.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />
 
             <h2 className="text-xl font-semibold">THE WEAPONIZATION</h2>
 
-            <h3 className="mt-6 text-lg font-semibold">Ryan Warren (March 5, 2025)</h3>
+            <h3 className="mt-6 text-lg font-semibold">The Park Manager (March 5, 2025)</h3>
             <div className="mt-2">
-                During the recorded day-use meeting, Ryan Warren stated I &quot;thought I had a future with Logan&quot; &mdash; weaponizing my sexuality and distorting the boundary I had set.
+                During the recorded day-use meeting, the park manager stated I &quot;thought I had a future with [Volunteer Services Lead]&quot; &mdash; weaponizing my sexuality and distorting the boundary I had set.
             </div>
 
-            <h3 className="mt-6 text-lg font-semibold">Allison Watson (March 25, 2025)</h3>
+            <h3 className="mt-6 text-lg font-semibold">The Program Manager (March 25, 2025)</h3>
             <div className="mt-2">
-                During dismissal proceedings, Allison Watson:
+                During dismissal proceedings, the program manager:
             </div>
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
                 <li>Questioned me about &quot;the end of the world&quot; using mocking tone.</li>
@@ -79,15 +79,15 @@ export default function TrustRecruitmentPage() {
 
             <Email
                 from="Samuel White"
-                to="Logan Bliss, Volunteer Services Lead"
+                to="[Volunteer Services Lead]"
                 date="March 2, 2025"
                 subject="Trust."
             >
-<pre className="whitespace-pre-wrap">{`Logan,
+<pre className="whitespace-pre-wrap">{`[Volunteer Services Lead],
 
 I don’t trust you, and that’s because your actions have given me no reason to.
 
-When I confided in you about the situation with Kati, you escalated it instead of protecting me. Then you disappeared.
+When I confided in you about the situation with [Park Supervisor], you escalated it instead of protecting me. Then you disappeared.
 
 When I applied for a job here, you distanced yourself again. The moment I withdrew my application, you reappeared—spending ninety minutes talking about yourself.
 
@@ -95,7 +95,7 @@ When I finally opened up to you about why I’m here, what I sacrificed to be he
 
 And then? You distanced yourself again.
 
-When I warned you—privately—to prevent a repeat of the Kati situation, you assured me Leaf would train me. That didn’t happen.
+When I warned you—privately—to prevent a repeat of the [Park Supervisor] situation, you assured me Leaf would train me. That didn’t happen.
 
 At every critical moment, you have failed to act with integrity.
 At every opportunity to lead, you have instead chosen avoidance.
@@ -116,16 +116,16 @@ Sam
 
             <Email
                 from="Robert Samuel White"
-                to="Logan Bliss, Volunteer Services Lead"
-                cc="Kati Baker, Ryan Warren, Allison Watson, Lisa Sumption"
+                to="[Volunteer Services Lead]"
+                cc="[Park Supervisor], [Park Manager], [Program Manager], Lisa Sumption"
                 date="December 10, 2025"
                 subject="For the Record: Supervisory Betrayal"
             >
-<pre className="whitespace-pre-wrap">{`Logan,
+<pre className="whitespace-pre-wrap">{`[Volunteer Services Lead],
 
 This letter names the harm you caused through betrayal of supervisory trust and weaponization of vulnerability I shared with you in confidence.
 
-You held authority over me as Volunteer Services Lead. That role requires integrity, discretion, and the protection of those under your supervision. You failed at every level.
+You held authority over me as [Volunteer Services Lead]. That role requires integrity, discretion, and the protection of those under your supervision. You failed at every level.
 
 THE DISCLOSURES
 
@@ -133,13 +133,13 @@ During our walk at Honeyman, I shared why I had moved into an RV and relocated t
 
 Before that conversation, I set a clear boundary: I told you explicitly this was not romantic for me.
 
-You took what I shared in confidence and disclosed it to management. That information was then weaponized by Allison Watson to pathologize my character during dismissal proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about identity-based targeting as evidence of instability.
+You took what I shared in confidence and disclosed it to management. That information was then weaponized by [Program Manager] to pathologize my character during dismissal proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about identity-based targeting as evidence of instability.
 
 By now you have seen the videos. You know how they used what I told you. You know the harm that followed.
 
 THE DISTORTION
 
-Allison Watson claimed I told you "I was worried you would kill me." That is a deliberate distortion.
+[Program Manager] claimed I told you "I was worried you would kill me." That is a deliberate distortion.
 
 What I actually said was that in authoritarian contexts, people like you—institutional actors with authority—would be the mechanism through which targeting of queer people would occur.
 
@@ -159,13 +159,13 @@ That is not supervision. That is betrayal.
 
 THE ENABLING
 
-Your disclosures gave Ryan Warren, Kati Baker, and Allison Watson the ammunition they needed to justify what they had already decided to do.
+Your disclosures gave [Park Manager], [Park Supervisor], and [Program Manager] the ammunition they needed to justify what they had already decided to do.
 
-Ryan used it to mock me at the day-use meeting—suggesting I "thought I had a future with you"—weaponizing my sexuality and distorting ordinary human connection into something inappropriate.
+[Park Manager] used it to mock me at the day-use meeting—suggesting I "thought I had a future with you"—weaponizing my sexuality and distorting ordinary human connection into something inappropriate.
 
 I am certain that insinuation entered the narrative with your consent.
 
-Kati and Allison used your disclosures to construct a psychological profile justifying my permanent dismissal—reframing vulnerability as instability, analysis as extremism, and identity-based fears as concerning behavior.
+[Park Supervisor] and [Program Manager] used your disclosures to construct a psychological profile justifying my permanent dismissal—reframing vulnerability as instability, analysis as extremism, and identity-based fears as concerning behavior.
 
 You enabled that. Actively. With full knowledge of what they were doing.
 
@@ -199,7 +199,7 @@ This is not a request for response.
 
 This is a statement of record.
 
-Your choices as Volunteer Services Lead are now permanently attached to your name.
+Your choices as [Volunteer Services Lead] are now permanently attached to your name.
 
 —Sam White
 https://oprdvolunteerabuse.org/

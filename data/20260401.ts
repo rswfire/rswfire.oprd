@@ -54,13 +54,13 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
         },
         {
             timestamp: "[4:25 — 5:35]",
-            quote: "The regional coordinator, her name is Allison Watson, she signed a letter stating the reason that I was expelled from all of Oregon State Parks is because of protected speech. It's in writing. She gave no other reasons... she tried to characterize me as paranoid and delusional for 30 minutes, but she couldn't use any of it cuz I'm obviously not. So, she didn't put it in the letter. She put the real reason.",
-            commentary: "He walks through the logic of his own case on a trail in the rain. Watson tried to build a narrative of instability. She couldn't sustain it. So the letter says what it says. That is the case. He knows it cold.",
+            quote: "The regional coordinator, her name is [Program Manager], she signed a letter stating the reason that I was expelled from all of Oregon State Parks is because of protected speech. It's in writing. She gave no other reasons... she tried to characterize me as paranoid and delusional for 30 minutes, but she couldn't use any of it cuz I'm obviously not. So, she didn't put it in the letter. She put the real reason.",
+            commentary: "He walks through the logic of his own case on a trail in the rain. The program manager tried to build a narrative of instability. She couldn't sustain it. So the letter says what it says. That is the case. He knows it cold.",
         },
         {
             timestamp: "[5:35 — 6:08]",
-            quote: "I'm also going to sue the director Lisa Sumption for supervisory responsibility that she has completely abdicated in this case... She characterized my correspondence, my evidence such as recorded meetings as emotional processing. She tried to pathologize just like Watson did in order to avoid accountability and shield the people who abused me for two months.",
-            commentary: "Watson. Sumption. The institution. He has the sequence mapped. He has the strategy built. He is laying it out in public because the evidence speaks for itself and an institution that cannot withstand transparency was never operating in good faith.",
+            quote: "I'm also going to sue the director Lisa Sumption for supervisory responsibility that she has completely abdicated in this case... She characterized my correspondence, my evidence such as recorded meetings as emotional processing. She tried to pathologize just like the program manager did in order to avoid accountability and shield the people who abused me for two months.",
+            commentary: "The program manager. Sumption. The institution. He has the sequence mapped. He has the strategy built. He is laying it out in public because the evidence speaks for itself and an institution that cannot withstand transparency was never operating in good faith.",
         },
         {
             timestamp: "[6:16 — 7:05]",

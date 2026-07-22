@@ -42,7 +42,7 @@ export default function EvidencePage() {
                         1. THE ORIGIN EVENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        February 9, 2025 — Kati Baker responds dismissively to operational questions. I name her tone. Same day: Ryan Warren confronts me alone, cataloging first-week mistakes.
+                        February 9, 2025 — The park supervisor responds dismissively to operational questions. I name her tone. Same day: the park manager confronts me alone, cataloging first-week mistakes.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Email correspondence
@@ -66,7 +66,7 @@ export default function EvidencePage() {
                         3. TRUST RECRUITMENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        February-March 2025 — Logan Bliss elicits trust through reciprocal vulnerability, then transmits confidential disclosures to management who weaponize them against me.
+                        February-March 2025 — The volunteer services lead elicits trust through reciprocal vulnerability, then transmits confidential disclosures to management who weaponize them against me.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Email correspondence, pattern evidence
@@ -78,7 +78,7 @@ export default function EvidencePage() {
                         4. THE COERCION MEETING
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        March 5, 2025 — Ryan Warren and Kati Baker summon me to public picnic table for over an hour of psychological pressure. Ryan tells me to "chew glass and swallow it," admits I was never given benefit of the doubt.
+                        March 5, 2025 — The park manager and the park supervisor summon me to public picnic table for over an hour of psychological pressure. The park manager tells me to "chew glass and swallow it," admits I was never given benefit of the doubt.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Audio recording (complete transcript)
@@ -102,7 +102,7 @@ export default function EvidencePage() {
                         6. DISMISSAL WITHOUT PROCESS
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        March 24, 2025 — Ryan Warren dismisses me by phone using fabricated pretext. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
+                        March 24, 2025 — The park manager dismisses me by phone using fabricated pretext. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Video documentation
@@ -114,7 +114,7 @@ export default function EvidencePage() {
                         7. EXPULSION &amp; RETALIATION
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        March 25-27, 2025 — Allison Watson weaponizes Logan's disclosures, issues permanent ban explicitly citing public speech about abuse. First Amendment retaliation in writing on agency letterhead.
+                        March 25-27, 2025 — The program manager weaponizes the volunteer services lead's disclosures, issues permanent ban explicitly citing public speech about abuse. First Amendment retaliation in writing on agency letterhead.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Audio recording, email correspondence, official removal letter
@@ -159,19 +159,19 @@ export default function EvidencePage() {
                     <strong>Institutional bad faith:</strong> Targeting continued after explicit commitment to conform, proving it was never about legitimate supervision.
                 </div>
                 <div>
-                    <strong>Betrayal of supervisory trust:</strong> Logan Bliss disclosed confidential personal information to management who weaponized it during dismissal proceedings.
+                    <strong>Betrayal of supervisory trust:</strong> The volunteer services lead disclosed confidential personal information to management who weaponized it during dismissal proceedings.
                 </div>
                 <div>
                     <strong>Covert institutional tactics:</strong> Unidentified operative deployed to interrogate isolated volunteer about leadership treatment, disguised as routine photo documentation.
                 </div>
                 <div>
-                    <strong>Identity-based targeting:</strong> Ryan Warren mocked my sexuality. Allison Watson pathologized my identity-based concerns.
+                    <strong>Identity-based targeting:</strong> The park manager mocked my sexuality. The program manager pathologized my identity-based concerns.
                 </div>
                 <div>
-                    <strong>Dismissal without cause:</strong> Ryan Warren admitted on camera no formal documentation existed justifying removal.
+                    <strong>Dismissal without cause:</strong> The park manager admitted on camera no formal documentation existed justifying removal.
                 </div>
                 <div>
-                    <strong>First Amendment retaliation:</strong> Allison Watson explicitly stated permanent ban was for speaking publicly about abuse.
+                    <strong>First Amendment retaliation:</strong> The program manager explicitly stated permanent ban was for speaking publicly about abuse.
                 </div>
             </div>
 

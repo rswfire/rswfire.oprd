@@ -64,16 +64,16 @@ export default function SurveillancePage() {
             <h2 className="text-xl font-semibold">IMMEDIATE DOCUMENTATION</h2>
 
             <div className="mt-4">
-                I documented the encounter with <PersonLink name="Kati Baker" /> the same day. I wanted it on record.
+                I documented the encounter with the <PersonLink name="park supervisor" /> the same day. I wanted it on record.
             </div>
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Park Supervisor"
+                to="[Park Supervisor]"
                 date="March 18, 2025 4:35 PM"
                 subject="Question About Unidentified Visitor"
             >
-<pre className="whitespace-pre-wrap">{`Hi Kati,
+<pre className="whitespace-pre-wrap">{`Hi [Park Supervisor],
 
 I wanted to check in about something from today.
 
@@ -89,11 +89,11 @@ Sam
             </Email>
 
             <div className="mt-4">
-                <PersonLink name="Kati Baker" label="Kati" /> was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification:
+                The <PersonLink name="park supervisor" /> was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification:
             </div>
 
             <Email
-                from="Kati Baker, Park Supervisor"
+                from="[Park Supervisor]"
                 to="Robert Samuel White"
                 date="March 18, 2025 5:31 PM"
                 subject="Re: Question About Unidentified Visitor"
@@ -102,7 +102,7 @@ Sam
 
 We have had some staff from I.T. working on getting updated photos of sites all over the state. I think you handled it wonderfully asking if they had any other questions. It's not unusual for folks to want to take a look inside especially if they haven't seen a yurt before. I can follow up with folks in I.T. to see if anyone was out today :)
 
--Kati
+-[Park Supervisor]
 `}</pre>
             </Email>
 
@@ -112,7 +112,7 @@ We have had some staff from I.T. working on getting updated photos of sites all 
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Park Supervisor"
+                to="[Park Supervisor]"
                 date="March 18, 2025 5:35 PM"
                 subject="Re: Question About Unidentified Visitor"
             >
@@ -125,7 +125,7 @@ We have had some staff from I.T. working on getting updated photos of sites all 
             </div>
 
             <Email
-                from="Kati Baker, Park Supervisor"
+                from="[Park Supervisor]"
                 to="Robert Samuel White"
                 date="March 20, 2025 3:43 PM"
                 subject="RE: Question About Unidentified Visitor"
@@ -144,11 +144,11 @@ Have a great afternoon!
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Park Supervisor"
+                to="[Park Supervisor]"
                 date="March 20, 2025 3:48 PM"
                 subject="Re: Question About Unidentified Visitor"
             >
-<pre className="whitespace-pre-wrap">{`Thanks, Kati. Hope it's not a problem he took the photos before I'd cleaned them. All three of my sites were in the little alcove so I had all three open at the same time while I moved around all three doing my different tasks. Like, I had the sanitizer going in all three while I blowed the sites, etc. The trash cans were propping all the doors open. I'd want the photos to look nice of course!
+<pre className="whitespace-pre-wrap">{`Thanks, [Park Supervisor]. Hope it's not a problem he took the photos before I'd cleaned them. All three of my sites were in the little alcove so I had all three open at the same time while I moved around all three doing my different tasks. Like, I had the sanitizer going in all three while I blowed the sites, etc. The trash cans were propping all the doors open. I'd want the photos to look nice of course!
 `}</pre>
             </Email>
 
@@ -184,10 +184,10 @@ Have a great afternoon!
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">NAMED TO ALLISON — MAY 26, 2025</h2>
+            <h2 className="text-xl font-semibold">NAMED TO THE PROGRAM MANAGER — MAY 26, 2025</h2>
 
             <div className="mt-4">
-                Two months after the expulsion, I named this encounter directly to <PersonLink name="Allison Watson" />. I told her what it was. I told her what the email thread documented.
+                Two months after the expulsion, I named this encounter directly to the <PersonLink name="program manager" />. I told her what it was. I told her what the email thread documented.
             </div>
 
             <div className="mt-4">
@@ -196,16 +196,16 @@ Have a great afternoon!
 
             <Email
                 from="Robert Samuel White"
-                to="Allison Watson, Oregon State Parks"
+                to="[Program Manager]"
                 date="May 26, 2025 7:08 PM"
                 subject="For the Record - March 20 Field Encounter"
             >
-<pre className="whitespace-pre-wrap">{`Allison,
+<pre className="whitespace-pre-wrap">{`[Program Manager],
 
 This email chain may appear mundane on the surface.
 It is not.
 
-What it documents is the outer shell of an orchestrated event — a baited encounter that I now know, without doubt, was sent by Kati.
+What it documents is the outer shell of an orchestrated event — a baited encounter that I now know, without doubt, was sent by [Park Supervisor].
 
 A man appeared while I was cleaning. No identification. No uniform.
 He claimed to be taking photos of the yurts — which were still dirty, mid-clean, doors propped open. No one does that. That was the first tell.
@@ -213,7 +213,7 @@ He claimed to be taking photos of the yurts — which were still dirty, mid-clea
 He confronted me immediately with invasive, personal questions — not park-related, not procedural.
 When I didn't engage, he turned and left quickly.
 
-Later, Kati confirmed he was "with IT" and praised how I "handled it."
+Later, [Park Supervisor] confirmed he was "with IT" and praised how I "handled it."
 That wasn't a compliment. It was a data point. A probe that failed.
 
 This wasn't routine.
@@ -275,7 +275,7 @@ It was a calculated psychological pressure test, delivered by a stranger while I
 
 I recognized it in real time. It was disorienting — because it was meant to be. It didn't read like routine oversight. It read like a probe. It read like aggression. When I didn't answer, he asked again — reframed the question, stepped in closer. It was intimate. And it was forced.
 
-I asked Kati about it because I wanted it documented (see attached thread). I understood what this was. She had an immediate justification: he was "from I.T." taking photos for site documentation. She praised how I "handled it."
+I asked [Park Supervisor] about it because I wanted it documented (see attached thread). I understood what this was. She had an immediate justification: he was "from I.T." taking photos for site documentation. She praised how I "handled it."
 
 That wasn't a reassurance. That was a confirmation that I'd been observed and evaluated — and that the probe had failed to elicit the intended response.
 
@@ -287,7 +287,7 @@ There is no traceable operational need for unannounced photo capture during an a
 
 There was no follow-up, no supervisor debrief, no procedural accountability.
 
-Just Kati — tying off the thread as quickly as possible.
+Just [Park Supervisor] — tying off the thread as quickly as possible.
 
 It was a setup. It failed.
 And within DAYS, I was removed from my role — using a homeless man's journal as pretext.
@@ -304,12 +304,12 @@ Was this encounter logged anywhere in your internal systems?
 Because if not, you now have something far worse than negligence.
 You have a covert institutional tactic used against a volunteer — followed by a pattern of containment and silence.
 
-Something I endured for two months. I just wanted to get through my time there so I could move onto the other parks in my trajectory. Kati knew that. Ryan knew that. And that's why they were trying so hard to frame me as a problem. It's why they removed me when I only had ONE SHIFT LEFT.
+Something I endured for two months. I just wanted to get through my time there so I could move onto the other parks in my trajectory. [Park Supervisor] knew that. [Park Manager] knew that. And that's why they were trying so hard to frame me as a problem. It's why they removed me when I only had ONE SHIFT LEFT.
 
-This is what Kati did to someone who was doing his job.
+This is what [Park Supervisor] did to someone who was doing his job.
 Unpaid. Alone. Professional.
 
-And this is what Allison did in response: nothing.
+And this is what [Program Manager] did in response: nothing.
 No inquiry. No accountability. Just silence.
 
 That silence is now part of the record.
@@ -347,7 +347,7 @@ https://rswfire.com/honeyman
             </div>
 
             <div className="mt-4">
-                His presence there collapsed <PersonLink name="Kati Baker" label="Kati's" /> cover story entirely. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. He is precisely what I said he was from day one.
+                His presence there collapsed the <PersonLink name="park supervisor" />&rsquo;s cover story entirely. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. He is precisely what I said he was from day one.
             </div>
 
             <div className="mt-4">
@@ -356,7 +356,7 @@ https://rswfire.com/honeyman
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Ryan Warren, Allison Watson, Logan Bliss"
+                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 2, 2026 10:18 AM"
                 subject="Fw: The Setup You Now Own"
@@ -367,7 +367,7 @@ On a Forest Service trail he had been visiting regularly like it was part of his
 
 He hasn't been back since. He knows I recognized him. I now know he's local. I now know he drives a state truck with no identifying agency on it.
 
-This required authorization above the park level. Someone above Kati signed off on this. Which means this isn't one rogue supervisor protecting her position. This is institutional corruption. Coordinated. Deliberate. Directed at a volunteer for doing nothing more than documenting how he was treated.
+This required authorization above the park level. Someone above [Park Supervisor] signed off on this. Which means this isn't one rogue supervisor protecting her position. This is institutional corruption. Coordinated. Deliberate. Directed at a volunteer for doing nothing more than documenting how he was treated.
 
 That's what you most want covered up. That you sent a man after me, alone. And I documented it.
 
@@ -383,7 +383,7 @@ I assume he's told you about the encounter. If he hasn't, you might want to ask 
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Ryan Warren, Allison Watson, Logan Bliss"
+                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 2, 2026 12:29 PM"
                 subject="Re: The Setup You Now Own"
@@ -392,7 +392,7 @@ I assume he's told you about the encounter. If he hasn't, you might want to ask 
 
 He was clearly surprised to see me there. He did not know he jogged a forest trail that was part of my route. He stopped coming immediately after because I was in uniform, in a forest service truck of my own, and he recognized what that meant.
 
-The point is this - I collapsed Kati's cover story simply by encountering him there.
+The point is this - I collapsed [Park Supervisor]'s cover story simply by encountering him there.
 
 He is local. He is not IT. He is not in a vehicle that explains his presence a year ago. He is precisely what I have said he was from day one.
 
@@ -414,14 +414,14 @@ But now I know who he is.
 
             <Email
                 from="Robert Samuel White"
-                to="Kati Baker, Ryan Warren, Allison Watson, Logan Bliss"
+                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 11, 2026"
                 subject="Re: The Setup You Now Own"
             >
 <pre className="whitespace-pre-wrap">{`Your man lost something sacred by participating in what you asked of him. He lost access to something he loved.
 
-Because just like Ryan, just like Allison, just like Lisa, just like JR, just like Stefanie, they walked into something they didn't understand.
+Because just like [Park Manager], just like [Program Manager], just like Lisa, just like JR, just like Stefanie, they walked into something they didn't understand.
 
 Because they took one lying supervisor's word over actual evidence that proved it was a lie.
 
@@ -468,7 +468,7 @@ Steward of oprdvolunteerabuse.org
 
             <div className="mt-4 space-y-4">
                 <div>
-                    <strong>I documented the encounter immediately</strong> &mdash; same day email to Kati, same day video documentation.
+                    <strong>I documented the encounter immediately</strong> &mdash; same day email to the park supervisor, same day video documentation.
                 </div>
                 <div>
                     <strong>I held the possibility of what it was in real time</strong> &mdash; and documented it anyway. It felt too extreme to believe a state park would do this to a volunteer. I filed it. I told myself it was more likely he was flirting. The video shows both interpretations were present from the beginning.
@@ -486,7 +486,7 @@ Steward of oprdvolunteerabuse.org
                     <strong>The cover story collapsed on its own</strong> &mdash; not through argument, but through a second encounter nearly a year later that confirmed he is local, not IT, and drives an unmarked state vehicle.
                 </div>
                 <div>
-                    <strong>This required authorization above the park level</strong> &mdash; an unmarked state vehicle means someone above <PersonLink name="Kati Baker" label="Kati" /> approved this. The silence from every level of the institution confirms they know it.
+                    <strong>This required authorization above the park level</strong> &mdash; an unmarked state vehicle means someone above the <PersonLink name="park supervisor" /> approved this. The silence from every level of the institution confirms they know it.
                 </div>
             </div>
 

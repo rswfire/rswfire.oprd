@@ -26,7 +26,7 @@ const resources = [
         href: "/resources/lawyers",
         icon: "Scale" as const,
         title: "For Lawyers",
-        description: "The case prepared in public. White v Watson. White v Oregon State Parks.",
+        description: "The case prepared in public. White v Oregon State Parks.",
     },
     {
         href: "/resources/legislators",

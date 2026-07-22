@@ -7,17 +7,17 @@ import { ORIGIN_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
     title: "Confrontation",
-    description: "The February 9, 2025 email exchange with Park Supervisor Kati Baker that triggered systematic retaliation.",
+    description: "The February 9, 2025 email exchange with the park supervisor that triggered systematic retaliation.",
 };
 
 export default function ConfrontationPage() {
     return (
         <SectionPage
             title="THE ORIGIN EVENT"
-            subtitle="KATI BAKER, PARK SUPERVISOR"
+            subtitle="PARK SUPERVISOR"
             previousPage={{ href: "/evidence", label: "Evidence" }}
             nextPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}
-            summary="Kati Baker, Park Supervisor, responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
+            summary="The park supervisor responded dismissively to operational questions about power outage protocols and escalated after receiving feedback about her tone."
 
         >
 
@@ -26,7 +26,7 @@ export default function ConfrontationPage() {
             <h2 className="text-xl font-semibold">FEBRUARY 9, 2025</h2>
 
             <div className="mt-4">
-                During a power outage in H Loop, I contacted Park Supervisor Kati Baker at 6:00 AM after interacting with concerned guests since 3:00 AM. I asked for clarity on:
+                During a power outage in H Loop, I contacted the park supervisor at 6:00 AM after interacting with concerned guests since 3:00 AM. I asked for clarity on:
             </div>
 
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
@@ -41,11 +41,11 @@ export default function ConfrontationPage() {
 
             <Email
                 from="Samuel White"
-                to="Kati Baker, Park Supervisor"
+                to="[Park Supervisor]"
                 date="February 9, 2025"
                 subject="Following Up on the Power Outage"
             >
-<pre className="whitespace-pre-wrap">{`Hi Kati,
+<pre className="whitespace-pre-wrap">{`Hi [Park Supervisor],
 
 I wanted to follow up on our exchange about the H Loop power outage. When I choose my sites as a volunteer host, I'm always conscious of what each position means for guest interaction. Being across from the gate means being a natural point of contact, especially during overnight issues.
 
@@ -79,9 +79,9 @@ Sam
             </div>
 
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
-                <li><strong>Same day</strong>: Ryan Warren confronted me alone, cataloging first-week mistakes.</li>
+                <li><strong>Same day</strong>: The park manager confronted me alone, cataloging first-week mistakes.</li>
                 <li><strong>March 5</strong>: Referenced at the day-use meeting as evidence of problematic behavior.</li>
-                <li><strong>March 25</strong>: Cited by Allison Watson during dismissal proceedings.</li>
+                <li><strong>March 25</strong>: Cited by the program manager during dismissal proceedings.</li>
             </ul>
 
             <div className="mt-4">

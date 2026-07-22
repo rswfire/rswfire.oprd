@@ -1,4 +1,4 @@
-// app/(archive)/key-individuals/logan-bliss/page.tsx
+// app/(archive)/key-individuals/volunteer-services-lead/page.tsx
 import type { Metadata } from "next";
 import { Map } from "lucide-react";
 import Link from "next/link";
@@ -6,18 +6,17 @@ import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
 
 export const metadata: Metadata = {
-    title: "Logan Bliss",
+    title: "Volunteer Services Lead",
     description: "Volunteer Services Lead, Honeyman State Park — elicited trust, extracted disclosures, delivered them to people who were already working to remove me.",
 };
 
-export default function LoganBlissPage() {
+export default function VolunteerServicesLeadPage() {
     return (
         <SectionPage
-            title="LOGAN BLISS"
-            subtitle="VOLUNTEER SERVICES LEAD"
-            supplemental="HONEYMAN STATE PARK"
+            title="VOLUNTEER SERVICES LEAD"
+            subtitle="HONEYMAN STATE PARK"
             previousPage={{ href: "/key-individuals", label: "Key Individuals" }}
-            nextPage={{ href: "/key-individuals/kati-baker", label: "Kati Baker" }}
+            nextPage={{ href: "/key-individuals/park-supervisor", label: "Park Supervisor" }}
         >
 
             <blockquote className="border-l-4 border-gray-900 pl-6 py-2 mb-12 text-lg leading-relaxed">
@@ -30,7 +29,7 @@ export default function LoganBlissPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    Logan Bliss was my direct supervisor at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>. He reported to <PersonLink name="Kati Baker" /> and <PersonLink name="Ryan Warren" />. He was the person I saw most. He was the person I trusted first.
+                    The volunteer services lead was my direct supervisor at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>. He reported to the <PersonLink name="park supervisor" /> and the <PersonLink name="park manager" />. He was the person I saw most. He was the person I trusted first.
                 </div>
             </div>
 
@@ -54,7 +53,7 @@ export default function LoganBlissPage() {
                     <li>My concerns as a queer person about authoritarian targeting through institutional actors.</li>
                 </ul>
                 <div>
-                    He disclosed all of it to <PersonLink name="Kati Baker" />, <PersonLink name="Ryan Warren" />, and <PersonLink name="Allison Watson" />.
+                    He disclosed all of it to the <PersonLink name="park supervisor" />, the <PersonLink name="park manager" />, and the <PersonLink name="program manager" />.
                 </div>
             </div>
 
@@ -64,15 +63,15 @@ export default function LoganBlissPage() {
 
             <div className="space-y-6 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="Ryan Warren" /> &mdash; March 5, 2025</div>
+                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="park manager" /> &mdash; March 5, 2025</div>
                     <div>
-                        During the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">recorded coercion meeting</Link>, <PersonLink name="Ryan Warren" /> stated I &ldquo;thought I had a future with Logan&rdquo; &mdash; weaponizing my sexuality and distorting the boundary I had set. I am certain that insinuation entered the narrative with Logan&rsquo;s consent.
+                        During the <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">recorded coercion meeting</Link>, the <PersonLink name="park manager" /> stated I &ldquo;thought I had a future with [Volunteer Services Lead]&rdquo; &mdash; weaponizing my sexuality and distorting the boundary I had set. I am certain that insinuation entered the narrative with the volunteer services lead&rsquo;s consent.
                     </div>
                 </div>
                 <div>
-                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="Allison Watson" /> &mdash; March 25, 2025</div>
+                    <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1"><PersonLink name="program manager" /> &mdash; March 25, 2025</div>
                     <div>
-                        During <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">dismissal proceedings</Link>, <PersonLink name="Allison Watson" />:
+                        During <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">dismissal proceedings</Link>, the <PersonLink name="program manager" />:
                     </div>
                     <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
                         <li>Questioned me about &ldquo;the end of the world&rdquo; using a mocking tone.</li>
@@ -95,7 +94,7 @@ export default function LoganBlissPage() {
                     Intimacy followed by distance. Every time.
                 </div>
                 <div>
-                    When I confided in him about the situation with <PersonLink name="Kati Baker" label="Kati" />, he escalated it instead of protecting me. Then he disappeared. When I applied for a job at the park, he distanced himself. The moment I withdrew my application, he reappeared &mdash; spending 90 minutes talking about himself. When I finally opened up about why I was there, what I had sacrificed, why it mattered &mdash; he responded by trying to manage my perception instead of listening. Then he distanced himself again.
+                    When I confided in him about the situation with the <PersonLink name="park supervisor" />, he escalated it instead of protecting me. Then he disappeared. When I applied for a job at the park, he distanced himself. The moment I withdrew my application, he reappeared &mdash; spending 90 minutes talking about himself. When I finally opened up about why I was there, what I had sacrificed, why it mattered &mdash; he responded by trying to manage my perception instead of listening. Then he distanced himself again.
                 </div>
                 <div>
                     At every critical moment, he failed to act with integrity. At every opportunity to lead, he chose avoidance.
@@ -108,7 +107,7 @@ export default function LoganBlissPage() {
 
             <div className="space-y-4 text-base text-gray-700 leading-relaxed mb-8">
                 <div>
-                    What I actually said to Logan about authoritarian targeting was that in those contexts, people like him &mdash; institutional actors with authority &mdash; would be the mechanism through which targeting of queer people would occur.
+                    What I actually said to the volunteer services lead about authoritarian targeting was that in those contexts, people like him &mdash; institutional actors with authority &mdash; would be the mechanism through which targeting of queer people would occur.
                 </div>
                 <div>
                     He visibly recoiled when I said this.
@@ -130,10 +129,10 @@ export default function LoganBlissPage() {
                     This is <Link href="/displacement#trust" className="underline text-emerald-800 hover:text-emerald-600">Stage 3 of the displacement framework</Link>: Trust Recruitment. Someone gets close. Someone listens. What you share in confidence is delivered to people who weaponize it.
                 </div>
                 <div>
-                    Logan&rsquo;s disclosures gave <PersonLink name="Ryan Warren" />, <PersonLink name="Kati Baker" />, and <PersonLink name="Allison Watson" /> the ammunition they needed to justify what they had already decided to do. He enabled it. Actively. With full knowledge of what they were doing.
+                    The volunteer services lead&rsquo;s disclosures gave the <PersonLink name="park manager" />, the <PersonLink name="park supervisor" />, and the <PersonLink name="program manager" /> the ammunition they needed to justify what they had already decided to do. He enabled it. Actively. With full knowledge of what they were doing.
                 </div>
                 <div>
-                    His choices as Volunteer Services Lead are now permanently attached to his name.
+                    His choices as volunteer services lead are now part of the permanent public record.
                 </div>
             </div>
 

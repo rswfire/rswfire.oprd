@@ -25,15 +25,15 @@ export default function TimelinePage() {
                     <div className="font-semibold">February 9, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/origin" className="underline text-emerald-800 hover:text-emerald-600">
-                            Kati Baker responds dismissively
-                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: <Link href="/evidence/escalation" className="underline text-emerald-800 hover:text-emerald-600">Ryan Warren confronts me alone</Link>, cataloging first-week mistakes. I try to reset.
+                            The park supervisor responds dismissively
+                        </Link> to operational questions about power outage protocols. I send follow-up email naming her tone. Same day: <Link href="/evidence/escalation" className="underline text-emerald-800 hover:text-emerald-600">the park manager confronts me alone</Link>, cataloging first-week mistakes. I try to reset.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">February (ongoing)</div>
                     <div className="mt-2 text-sm">
-                        Systematic undermining of supervisor relationships. <PersonLink name="Logan Bliss" /> elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
+                        Systematic undermining of supervisor relationships. The <PersonLink name="volunteer services lead" /> elicits trust through reciprocal vulnerability, then distances himself. I document the pattern with the <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">"Trust" email</Link> on March 2.
                     </div>
                 </li>
 
@@ -41,15 +41,15 @@ export default function TimelinePage() {
                     <div className="font-semibold">March 5, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/coercion" className="underline text-emerald-800 hover:text-emerald-600">
-                            Ryan Warren and Kati Baker summon me to public picnic table
-                        </Link> for over an hour of psychological pressure. Ryan tells me to "chew glass and swallow it," admits I was never given benefit of the doubt, repeatedly suggests I leave. Entire meeting recorded.
+                            The park manager and the park supervisor summon me to public picnic table
+                        </Link> for over an hour of psychological pressure. The park manager tells me to "chew glass and swallow it," admits I was never given benefit of the doubt, repeatedly suggests I leave. Entire meeting recorded.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">March 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        <PersonLink name="Allison Watson" /> calls about the March 5 recording. Informs me I was "acting as an agent of the state" — reframing my self-protection as a violation. Follow-up call the same day: tells me to "get through my time," dismisses documented abuse.
+                        The <PersonLink name="program manager" /> calls about the March 5 recording. Informs me I was "acting as an agent of the state" — reframing my self-protection as a violation. Follow-up call the same day: tells me to "get through my time," dismisses documented abuse.
                     </div>
                 </li>
 
@@ -58,7 +58,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Unidentified man approaches me
-                        </Link> while cleaning yurts alone during a regional event when all rangers are away. Interrogates me about leadership treatment. I document immediately with Kati. Explained as "IT photo documentation" — no photos ever produced. Kati was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification.
+                        </Link> while cleaning yurts alone during a regional event when all rangers are away. Interrogates me about leadership treatment. I document immediately with the park supervisor. Explained as "IT photo documentation" — no photos ever produced. The park supervisor was at the regional event. She had told me earlier that week she would be. She responded within the hour with a fully-formed justification.
                     </div>
                 </li>
 
@@ -66,7 +66,7 @@ export default function TimelinePage() {
                     <div className="font-semibold">March 24, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/dismissal" className="underline text-emerald-800 hover:text-emerald-600">
-                            Ryan Warren dismisses me by phone
+                            The park manager dismisses me by phone
                         </Link>, six days before scheduled completion. Stated reason: homeless man's lost journal. One hour later: arrives at my RV to collect keys, admits on camera no formal documentation exists.
                     </div>
                 </li>
@@ -75,15 +75,15 @@ export default function TimelinePage() {
                     <div className="font-semibold">March 25, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">
-                            Allison Watson calls to contain the situation
-                        </Link>. Logan's disclosures weaponized as "concerning behavior." Complete refusal to engage with documented abuse. I record the call.
+                            The program manager calls to contain the situation
+                        </Link>. The volunteer services lead's disclosures weaponized as "concerning behavior." Complete refusal to engage with documented abuse. I record the call.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">March 26, 2025</div>
                     <div className="mt-2 text-sm">
-                        I send <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">detailed letter to Allison</Link> attempting accountability. Hours later: permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse.
+                        I send <Link href="/evidence/expulsion" className="underline text-emerald-800 hover:text-emerald-600">detailed letter to the program manager</Link> attempting accountability. Hours later: permanent dismissal from all Oregon State Parks volunteer programs, explicitly citing my public speech about the abuse.
                     </div>
                 </li>
             </ul>
@@ -97,7 +97,7 @@ export default function TimelinePage() {
                     <div className="font-semibold">May 26, 2025</div>
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
-                            Name the March 18 surveillance encounter directly to Allison Watson
+                            Name the March 18 surveillance encounter directly to the program manager
                         </Link>. Document what the email thread proves. Name the cover story as cover. No response.
                     </div>
                 </li>
@@ -176,7 +176,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 10, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">letter naming Logan's betrayal</Link> to <PersonLink name="Logan Bliss" />. CC: <PersonLink name="Kati Baker" />, <PersonLink name="Ryan Warren" />, <PersonLink name="Allison Watson" />, <PersonLink name="Lisa Sumption" />.
+                        Send <Link href="/evidence/trust" className="underline text-emerald-800 hover:text-emerald-600">letter naming the volunteer services lead's betrayal</Link> to the <PersonLink name="volunteer services lead" />. CC: the <PersonLink name="park supervisor" />, the <PersonLink name="park manager" />, the <PersonLink name="program manager" />, and <PersonLink name="Lisa Sumption" />.
                     </div>
                 </li>
 
@@ -203,21 +203,21 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">January 16, 2026</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Send formal notice</Link> to <PersonLink name="Allison Watson" /> citing 42 U.S.C. § 1983, documenting personal liability for First Amendment retaliation. Demand written reversal of expulsion, independent investigation, and acknowledgment of constitutional violation. Deadline: March 26, 2026 — one year from expulsion date.
+                        <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Send formal notice</Link> to the <PersonLink name="program manager" /> documenting First Amendment retaliation. Demand written reversal of the expulsion, an independent investigation, and acknowledgment of the constitutional violation. Deadline: March 26, 2026 — one year from expulsion date.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">February 9, 2026</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/correspondence/institution/allison-watson-2026-02-09/" className="underline text-emerald-800 hover:text-emerald-600">Send additional letter</Link> to <PersonLink name="Allison Watson" />, subject "Harm." Name the full pattern of abuse and retaliation directly. Establish that institutional silence and reframing are themselves ongoing harm.
+                        <Link href="/correspondence/institution/allison-watson-2026-02-09/" className="underline text-emerald-800 hover:text-emerald-600">Send additional letter</Link> to the <PersonLink name="program manager" />, subject "Harm." Name the full pattern of abuse and retaliation directly. Establish that institutional silence and reframing are themselves ongoing harm.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">February 13, 2026</div>
                     <div className="mt-2 text-sm">
-                        Deputy Director J.R. Collier writes to <Link href="/correspondence/institution/jr-collier-2026-02-14/" className="underline text-emerald-800 hover:text-emerald-600">redirect all correspondence</Link> away from <PersonLink name="Allison Watson" /> and other named staff. Letter characterizes documented First Amendment retaliation as dissatisfaction with "the decision to end volunteer service." Makes no substantive response to 1983 notice. Instructs that any legal filing will be forwarded to Department of Justice counsel. A senior official mobilized to insulate the person whose own written words document the constitutional violation.
+                        Deputy Director J.R. Collier writes to <Link href="/correspondence/institution/jr-collier-2026-02-14/" className="underline text-emerald-800 hover:text-emerald-600">redirect all correspondence</Link> away from the <PersonLink name="program manager" /> and other named staff. Letter characterizes documented First Amendment retaliation as dissatisfaction with "the decision to end volunteer service." Makes no substantive response to the notice. Instructs that any legal filing will be forwarded to Department of Justice counsel. A senior official mobilized to insulate the official whose own written words document the constitutional violation.
                     </div>
                 </li>
 
@@ -254,7 +254,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         <Link href="/evidence/surveillance" className="underline text-emerald-800 hover:text-emerald-600">
                             Second encounter with the operative
-                        </Link> on a Forest Service trail that was part of my regular route. He had been visiting it regularly. He was surprised. He did not know I worked there. He has not returned. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. Kati's cover story collapsed without argument.
+                        </Link> on a Forest Service trail that was part of my regular route. He had been visiting it regularly. He was surprised. He did not know I worked there. He has not returned. He is local. He is not IT. He drives a state vehicle with no identifying agency markings. The park supervisor's cover story collapsed without argument.
                     </div>
                 </li>
 

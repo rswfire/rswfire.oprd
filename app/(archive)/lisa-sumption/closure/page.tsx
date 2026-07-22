@@ -52,15 +52,15 @@ As a result, I looked for opportunities nearby and I ended up directly next door
 
 I was never the problem - your leadership is.
 
-Kati and Ryan were abusive for two months. In ways that defy rationality. Your staff acted in ways that made no operational or ethical sense whatsoever. This is why I don't understand why you protect them - they are very clearly liabilities.
+[Park Supervisor] and [Park Manager] were abusive for two months. In ways that defy rationality. Your staff acted in ways that made no operational or ethical sense whatsoever. This is why I don't understand why you protect them - they are very clearly liabilities.
 
-Allison covered it up for them. And you protected all of them. Your response to my open letter doesn't make you sound like a responsible leader. It makes you sound avoidant. The number of damning headlines that are inevitable if you don't act? I can't understand it. It's like you're paralyzed.
+[Program Manager] covered it up for them. And you protected all of them. Your response to my open letter doesn't make you sound like a responsible leader. It makes you sound avoidant. The number of damning headlines that are inevitable if you don't act? I can't understand it. It's like you're paralyzed.
 
 This doesn't go away until you solve it. One day this story will come out and it has the potential to destroy your reputation completely, something you built over decades, something I have no desire to see happen. You cannot possibly broaden your visibility while this lingers over an institution you stewarded for decades. Surely you recognize that?
 
 You can still fix this, internally, right now, because I'm not threatening you with legal action or media attention or any other kind of action other than documentation that wouldn't even need to exist if you actually protected the people who came to serve you in good faith.
 
-That's the part that still stings for me. The abuse at Honeyman was survivable. Allison's permanent dismissal was retaliatory and the driver behind every action you've seen since. Because I was removed from something I came to serve and I was punished for that. Doesn't that bother you?
+That's the part that still stings for me. The abuse at Honeyman was survivable. [Program Manager]'s permanent dismissal was retaliatory and the driver behind every action you've seen since. Because I was removed from something I came to serve and I was punished for that. Doesn't that bother you?
 
 I'm still waiting for you to be the ethical leader I needed you to be. I will not reach out to you again. You will either choose to fix this or you won't, and the future will unfold in the light of that choice. And you know I'm right.
 

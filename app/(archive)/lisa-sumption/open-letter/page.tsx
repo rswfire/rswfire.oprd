@@ -68,7 +68,7 @@ Earlier this year, I served as an unpaid volunteer at Honeyman State Park. What 
 
 The evidence shows:
 
-  * Park Manager Ryan Warren telling me to "chew glass and swallow it" as leadership advice
+  * [Park Manager] telling me to "chew glass and swallow it" as leadership advice
   * Admission that I was never given the benefit of the doubt from day one
   * Two months of psychological pressure designed to force my resignation
   * Weaponization of my identity and normal human communication as "problematic behavior"

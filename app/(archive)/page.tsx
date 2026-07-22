@@ -172,10 +172,10 @@ export default function OverviewPage() {
                 <div className="mt-6 ml-0 sm:ml-4 pl-4 border-l-2 border-emerald-600">
                     <div className="text-sm font-semibold text-emerald-800 mb-2">The people responsible are documented individually:</div>
                     <div className="text-sm space-y-1">
-                        <div><PersonLink name="Kati Baker" />, Park Supervisor</div>
-                        <div><PersonLink name="Ryan Warren" />, Park Manager</div>
-                        <div><PersonLink name="Logan Bliss" />, Volunteer Services Lead</div>
-                        <div><PersonLink name="Allison Watson" />, Engagement Programs Manager</div>
+                        <div><PersonLink name="park supervisor" /></div>
+                        <div><PersonLink name="park manager" /></div>
+                        <div><PersonLink name="volunteer services lead" /></div>
+                        <div><PersonLink name="program manager" /></div>
                         <div><PersonLink name="Lisa Sumption" />, Director</div>
                         <div><PersonLink name="Tina Kotek" label="Governor Tina Kotek" /></div>
                     </div>
@@ -193,7 +193,7 @@ export default function OverviewPage() {
                 <div>I maintained trails. I cleaned facilities. I engaged with visitors.</div>
                 <div>I participated in government as a citizen directly stewarding public land &mdash; until they took that away from me.</div>
 
-                <div className="mt-4">On March 26, 2025, <PersonLink name="Allison Watson" /> permanently expelled me from all Oregon State Parks volunteer programs.</div>
+                <div className="mt-4">On March 26, 2025, the <PersonLink name="program manager" /> permanently expelled me from all Oregon State Parks volunteer programs.</div>
 
                 <div className="mt-4">She put the reason in writing:</div>
                 <div className="ml-4 italic">&ldquo;the public comments made about staff regarding your volunteer service, were not in line with expectations.&rdquo;</div>

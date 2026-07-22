@@ -19,7 +19,7 @@ export default function PoliceIntimidationPage() {
             subtitle="BEHIND A LOCKED FEDERAL GATE"
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
             nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
-            summary="On March 24, 2026 — exactly one year after Ryan Warren dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
+            summary="On March 24, 2026 — exactly one year after the park manager dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
 
         >
 
@@ -28,7 +28,7 @@ export default function PoliceIntimidationPage() {
             <h2 className="text-xl font-semibold">MARCH 24, 2026</h2>
 
             <div className="mt-4">
-                One year ago today, <PersonLink name="Ryan Warren" /> called to dismiss me from Honeyman State Park. One hour later he arrived at my RV, collected the keys, and told me to vacate within 24 hours. No paperwork. No documentation. Just the conversation we had.
+                One year ago today, the <PersonLink name="park manager" /> called to dismiss me from Honeyman State Park. One hour later he arrived at my RV, collected the keys, and told me to vacate within 24 hours. No paperwork. No documentation. Just the conversation we had.
             </div>
 
             <div className="mt-4">

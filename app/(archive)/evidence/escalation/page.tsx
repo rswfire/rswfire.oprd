@@ -18,7 +18,7 @@ export default function CompliancePage() {
             subtitle="DEMONSTRATING INSTITUTIONAL CONFORMITY"
             previousPage={{ href: "/evidence/origin", label: "The Origin Event" }}
             nextPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}
-            summary="Three days after Ryan Warren's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
+            summary="Three days after the park manager's February 9 confrontation, I demonstrated complete institutional compliance &mdash; offering deference, flexibility, and explicit commitment to conform to their expectations."
 
         >
 
@@ -27,16 +27,16 @@ export default function CompliancePage() {
             <h2 className="text-xl font-semibold">FEBRUARY 12, 2025</h2>
 
             <div className="mt-4">
-                Three days after <PersonLink name="Ryan Warren" /> confronted me alone &mdash; cataloging first-week mistakes in response to my email to <PersonLink name="Kati Baker" /> &mdash; I sent this email.
+                Three days after the <PersonLink name="park manager" /> confronted me alone &mdash; cataloging first-week mistakes in response to my email to the <PersonLink name="park supervisor" /> &mdash; I sent this email.
             </div>
 
             <Email
                 from="Robert Samuel White"
-                to="Logan Bliss, Kati Baker, Ryan Warren"
+                to="[Volunteer Services Lead], [Park Supervisor], [Park Manager]"
                 date="February 12, 2025"
                 subject="Re: Jessie M. Honeyman State Park Hosting for March 2025"
             >
-<pre className="whitespace-pre-wrap">{`Dear Ryan, Kati, and Logan:
+<pre className="whitespace-pre-wrap">{`Dear [Park Manager], [Park Supervisor], and [Volunteer Services Lead]:
 
 I would like to start by saying what an honor it has been to be at Honeyman and to experience this place firsthand, and I deeply respect the energy and commitment it takes to manage a place like this.
 
@@ -48,7 +48,7 @@ Next, the volunteer asserted a boundary as softly as he could and he felt it was
 
 This volunteer is new to this life, to volunteering at the state parks, and just trying to navigate it with as much care as he can possibly muster. He's not here trying to stand out or create waves of any kind. He just wants to be supported as he learns to integrate into this rhythm.
 
-I have been worried all week. I have not seen Logan, and that feels purposeful. Because he could have put my mind at ease instantly. I would like to ask we reset. Please take the time to get to know me. I sincerely believe I can be a valuable resource to you. And I want that so much.
+I have been worried all week. I have not seen [Volunteer Services Lead], and that feels purposeful. Because he could have put my mind at ease instantly. I would like to ask we reset. Please take the time to get to know me. I sincerely believe I can be a valuable resource to you. And I want that so much.
 
 And my time here is so limited. If you don't want me back here next year, I will understand this. I will regret it, because I care about this place and I really thought I was building something meaningful here. But I will understand.
 
@@ -70,7 +70,7 @@ Sam`}</pre>
             </div>
 
             <div className="mt-4">
-                If the February 9 exchange had actually been about operational clarity or tone—if <PersonLink name="Ryan Warren" label="Ryan Warren's" /> confrontation had been legitimate supervision rather than intimidation—this email should have resolved everything.
+                If the February 9 exchange had actually been about operational clarity or tone—if the <PersonLink name="park manager" />&rsquo;s confrontation had been legitimate supervision rather than intimidation—this email should have resolved everything.
             </div>
 
             <div className="mt-4">
@@ -78,10 +78,10 @@ Sam`}</pre>
             </div>
 
             <ul className="list-disc list-outside ml-8 mt-2 space-y-1">
-                <li><PersonLink name="Logan Bliss" /> elicited trust through reciprocal vulnerability, then disclosed what I shared to management.</li>
-                <li><PersonLink name="Ryan Warren" /> mocked my sexuality at the March 5 day-use meeting.</li>
-                <li><PersonLink name="Kati Baker" /> remained silent while psychological pressure escalated.</li>
-                <li><PersonLink name="Allison Watson" /> weaponized Logan's disclosures during dismissal proceedings.</li>
+                <li>The <PersonLink name="volunteer services lead" /> elicited trust through reciprocal vulnerability, then disclosed what I shared to management.</li>
+                <li>The <PersonLink name="park manager" /> mocked my sexuality at the March 5 day-use meeting.</li>
+                <li>The <PersonLink name="park supervisor" /> remained silent while psychological pressure escalated.</li>
+                <li>The <PersonLink name="program manager" /> weaponized the volunteer services lead&rsquo;s disclosures during dismissal proceedings.</li>
             </ul>
 
             <div className="mt-4">

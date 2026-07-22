@@ -38,32 +38,12 @@ export default function LawyersPage() {
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
                 <div className="flex-[2] space-y-4">
-                    <ResourceCard icon="Scale" title="White v Watson">
-                        <div className="text-sm text-gray-700 space-y-2">
-                            <p className="font-semibold">Proving the retaliation.</p>
-                            <p>The case begins with Allison Watson individually. One defendant. One letter. One clearly established constitutional violation documented on her own letterhead.</p>
-                            <p>The expulsion letter explicitly cites protected public speech as the basis for permanent dismissal. That is the entire case.</p>
-                            <p>Their response to every complexity they introduce is the same question: <em>if that was the reason, why isn&apos;t it in the letter?</em></p>
-                            <p>A finding against Watson establishes that the retaliation occurred. That finding becomes the foundation for everything that follows.</p>
-                            <p className="font-semibold pt-2">If that was the reason, why isn&apos;t it in the letter?</p>
-                        </div>
-                    </ResourceCard>
-
-                    <ResourceCard icon="Scale" title="White v Sumption">
-                        <div className="text-sm text-gray-700 space-y-2">
-                            <p className="font-semibold">Supervisory duty.</p>
-                            <p>Directors have a responsibility to protect the free labor under them. Lisa Sumption received comprehensive documented evidence of First Amendment retaliation by her employees. She had the authority to investigate. She had the authority to correct. She chose to shield.</p>
-                            <p>She closed communication by characterizing documented constitutional violations as <em>emotional processing</em>. She never responded to direct questions about the surveillance. She never ordered an investigation. Every person who abused their authority remains in their position.</p>
-                            <p>When a director receives evidence that a subordinate retaliated against a volunteer for protected speech &mdash; and does nothing &mdash; that is not a management decision. That is ratification of the constitutional violation.</p>
-                            <p className="font-semibold pt-2">She had the evidence. She had the authority. She made a choice.</p>
-                        </div>
-                    </ResourceCard>
-
                     <ResourceCard icon="Landmark" title="White v Oregon State Parks">
                         <div className="text-sm text-gray-700 space-y-2">
                             <p className="font-semibold">The constitutional argument.</p>
                             <p>The question of whether civic participants in government volunteer programs retain First Amendment protections is worth arguing at the highest level.</p>
-                            <p>After Watson, the case expands: Lisa Sumption individually, Oregon State Parks as an institution, and every actor whose coordination is documented in this archive.</p>
+                            <p>The case is against Oregon State Parks as an institution. The expulsion letter explicitly cites protected public speech as the basis for permanent dismissal &mdash; retaliation documented on agency letterhead. That is the foundation of the case.</p>
+                            <p>Their response to every complexity they introduce is the same question: <em>if that was the reason, why isn&apos;t it in the letter?</em></p>
                             <p>The surveillance. The cover story. The containment wall. The institutional silence. All of it enters discovery once the retaliation finding is established.</p>
                             <p className="font-semibold pt-2">Prepared to go to the United States Supreme Court.</p>
                         </div>

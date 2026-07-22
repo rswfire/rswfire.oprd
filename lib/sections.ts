@@ -9,13 +9,6 @@ export const archiveSections = [
     {
         href: "/key-individuals",
         label: "Key Individuals",
-        subsections: [
-            { href: "/key-individuals/logan-bliss", label: "Logan Bliss" },
-            { href: "/key-individuals/kati-baker", label: "Kati Baker" },
-            { href: "/key-individuals/ryan-warren", label: "Ryan Warren" },
-            { href: "/key-individuals/allison-watson", label: "Allison Watson" },
-            { href: "/key-individuals/lisa-sumption", label: "Lisa Sumption" }
-        ]
     },
     { href: "#separator-3", label: "", separator: true },
     {

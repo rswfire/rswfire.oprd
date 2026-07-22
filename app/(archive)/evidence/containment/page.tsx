@@ -93,10 +93,10 @@ export default function ContainmentPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">JANUARY 16, 2026 — 42 U.S.C. § 1983</h2>
+            <h2 className="text-xl font-semibold">JANUARY 16, 2026 — THE FORMAL NOTICE</h2>
 
             <div className="mt-4">
-                <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to Allison Watson</Link> citing personal liability under 42 U.S.C. § 1983 for First Amendment retaliation. The expulsion letter — written by <PersonLink name="Allison Watson" label="Watson" />, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation. Qualified immunity does not apply.
+                <Link href="/correspondence/institution/allison-watson-2026-01-16/" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to the program manager</Link> documenting First Amendment retaliation. The expulsion letter — written by the <PersonLink name="program manager" />, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation.
             </div>
 
             <div className="mt-4">
@@ -112,7 +112,7 @@ export default function ContainmentPage() {
             <h2 className="text-xl font-semibold">FEBRUARY 13, 2026 — THE COLLIER LETTER</h2>
 
             <div className="mt-4">
-                Three weeks after the 1983 notice, Deputy Director J.R. Collier wrote — not to address the substance of the constitutional claim, but to restrict access to the person whose own written words are the primary evidence against her.
+                Three weeks after the notice, Deputy Director J.R. Collier wrote — not to address the substance of the constitutional claim, but to restrict access to the person whose own written words are the primary evidence against her.
             </div>
 
             <div className="mt-4">
@@ -126,9 +126,9 @@ export default function ContainmentPage() {
             >
 <pre className="whitespace-pre-wrap">{`Dear Mr. White (rsw@rswfire.com),
 
-The messages you have recently sent to OPRD Statewide Programs Coordinator Allison Watson have been forwarded to me.  We understand you are not satisfied with the decision to end your volunteer service with OPRD.  The agency also recognizes that you may be filing a legal action.
+The messages you have recently sent to [Program Manager] have been forwarded to me.  We understand you are not satisfied with the decision to end your volunteer service with OPRD.  The agency also recognizes that you may be filing a legal action.
 
-In light of this, OPRD is implementing a structured process for correspondence related to this matter. Effective immediately, please direct any inquiries or additional information exclusively to me,  @ jr.collier@oprd.oregon.gov .  Please do not communicate further with Ms. Watson or other OPRD staff, and please do not expect any responses from them.
+In light of this, OPRD is implementing a structured process for correspondence related to this matter. Effective immediately, please direct any inquiries or additional information exclusively to me,  @ jr.collier@oprd.oregon.gov .  Please do not communicate further with [Program Manager] or other OPRD staff, and please do not expect any responses from them.
 When and if you decide to file any legal action, your correspondence will be forwarded to our Department of Justice counsel.
 
 Sincerely,
@@ -169,7 +169,7 @@ JR Collier`}</pre>
                     <strong>Containment is not correction.</strong> Every response has been designed to limit exposure, not address harm.
                 </div>
                 <div>
-                    <strong>Escalation confirms pattern.</strong> Deploying a deputy director in response to a 1983 notice is not routine. It is an institution recognizing legal exposure and choosing protection over accountability.
+                    <strong>Escalation confirms pattern.</strong> Deploying a deputy director in response to the notice is not routine. It is an institution recognizing legal exposure and choosing protection over accountability.
                 </div>
                 <div>
                     <strong>The constitutional violation is ongoing.</strong> Every day the expulsion stands unreversed, the violation continues. The clock has not stopped.

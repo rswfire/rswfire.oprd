@@ -3,10 +3,10 @@ import Link from "next/link";
 import { User } from "lucide-react";
 
 const people: Record<string, string> = {
-    "Logan Bliss": "/key-individuals/logan-bliss",
-    "Kati Baker": "/key-individuals/kati-baker",
-    "Ryan Warren": "/key-individuals/ryan-warren",
-    "Allison Watson": "/key-individuals/allison-watson",
+    "volunteer services lead": "/key-individuals/volunteer-services-lead",
+    "park supervisor": "/key-individuals/park-supervisor",
+    "park manager": "/key-individuals/park-manager",
+    "program manager": "/key-individuals/program-manager",
     "Lisa Sumption": "/key-individuals/lisa-sumption",
     "Tina Kotek": "/key-individuals/tina-kotek",
 };
