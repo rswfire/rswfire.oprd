@@ -379,6 +379,13 @@ export default function TimelinePage() {
                         Oregon State Police release <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD record SP26097765</Link> &mdash; the record they said did not exist &mdash; accompanied by their own counsel&rsquo;s certification that it contains no exempt material. The record shows: no call type, priority low, officer initiated, no action taken. A criminal-designated unit dispatched to a man logged under &ldquo;Role: Other.&rdquo; Stated purpose: &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.&rdquo; The primary unit is named: Trooper Jake Hyde, badge 56397 &mdash; the name the Forest Service refused to provide. Same day, I send <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">six questions back to OSP</Link> &mdash; the source of my date of birth, the source of an unindexed federal facility location, my name in the &ldquo;Caller&rdquo; field of an event I did not call in, the Forest Service request the comment refers to, the unit&rsquo;s origin point, and the identity of the other officers present &mdash; directed to the responding unit&rsquo;s supervisor.
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">July 21, 2026</div>
+                    <div className="mt-2 text-sm">
+                        The four local actors &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are updated throughout the archive to be identified by role rather than by name. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">The reasoning is stated publicly</Link>. The documented conduct is unchanged; the record now attaches it to the positions they held.
+                    </div>
+                </li>
             </ul>
 
         </SectionPage>
