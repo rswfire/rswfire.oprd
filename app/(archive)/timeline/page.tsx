@@ -386,6 +386,13 @@ export default function TimelinePage() {
                         The four local actors &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are updated throughout the archive to be identified by role rather than by name. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">The reasoning is stated publicly</Link>. The documented conduct is unchanged; the record now attaches it to the positions they held.
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">July 22, 2026</div>
+                    <div className="mt-2 text-sm">
+                        <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">Petition for Public Records Order filed with the Oregon Attorney General</Link> under ORS 192.411, concerning PR27478 and CAD event SP26097765. Oregon State Police produced a single record and left five requested categories, the search, the recorded dispatch communications, the fee waiver, and the April 2 preservation notice unresolved &mdash; 110 days after the request. The petition and its twenty-five exhibits are published in full.
+                    </div>
+                </li>
             </ul>
 
         </SectionPage>

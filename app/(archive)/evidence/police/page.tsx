@@ -159,6 +159,21 @@ export default function PoliceIntimidationPage() {
                 <p>Robert Samuel White</p>
             </div>
 
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">JULY 22, 2026 &mdash; PETITION TO THE ATTORNEY GENERAL</h2>
+
+            <div className="mt-4 space-y-4 text-base text-gray-700 leading-relaxed">
+                <p>On July 22, 2026, I filed a Petition for Public Records Order with the Oregon Attorney General under ORS 192.411, ORS 192.324(6), and ORS 192.407, asking the Attorney General to order Oregon State Police to complete its response to PR27478.</p>
+                <p>The petition sets out the record. Oregon State Police stated on April 3, 2026 that no responsive records existed. On April 13, a CAD record for the March 24 visit was printed inside the Central Records Section &mdash; the released document carries the Department&rsquo;s own stamp, &ldquo;Printed: 04/13/2026 13:07&rdquo; &mdash; and on July 14 it was released in full, with no exemption claimed and no fee charged, after three months of conditioning production on a $12.50 payment and a mailed paper form.</p>
+                <p>One hundred and ten days after the request, five of the requested categories remain without any disposition; no exemption has been cited for anything; the search has never been described; the recorded dispatch communications the CAD necessarily indexes have never been produced or accounted for; the fee waiver has never been ruled on; and the litigation preservation notice served April 2, 2026 has never been acknowledged. The record establishes that Oregon State Police held my date of birth &mdash; entered in the dispatcher&rsquo;s own comment on March 24 &mdash; ten days before I ever provided it to them.</p>
+                <p>The petition asks the Attorney General to require Oregon State Police to state, for each category, whether it holds responsive records; to produce them or cite the specific exemption for each withholding; to describe the search; to state whether the March 24 dispatch communications still exist; to rule on the fee waiver; and to impose the penalty available under ORS 192.407 for undue delay. The full petition and its twenty-five exhibits are below.</p>
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                    <a href="/osp-ag-petition-pr27478.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download AG Petition &mdash; PR27478 (PDF) &darr;</a>
+                    <a href="/osp-ag-petition-exhibits-pr27478.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download Petition Exhibits 1&ndash;25 (PDF) &darr;</a>
+                </div>
+            </div>
+
         </SectionPage>
     );
 }
