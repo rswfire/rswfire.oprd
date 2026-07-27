@@ -376,21 +376,35 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">July 14, 2026</div>
                     <div className="mt-2 text-sm">
-                        Oregon State Police release <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD record SP26097765</Link> &mdash; the record they said did not exist &mdash; accompanied by their own counsel&rsquo;s certification that it contains no exempt material. The record shows: no call type, priority low, officer initiated, no action taken. A criminal-designated unit dispatched to a man logged under &ldquo;Role: Other.&rdquo; Stated purpose: &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.&rdquo; The primary unit is named: Trooper Jake Hyde, badge 56397 &mdash; the name the Forest Service refused to provide. Same day, I send <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">six questions back to OSP</Link> &mdash; the source of my date of birth, the source of an unindexed federal facility location, my name in the &ldquo;Caller&rdquo; field of an event I did not call in, the Forest Service request the comment refers to, the unit&rsquo;s origin point, and the identity of the other officers present &mdash; directed to the responding unit&rsquo;s supervisor.
+Oregon State Police release <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD record SP26097765</Link> with counsel&rsquo;s certification of no exempt material. Record: no call type, priority low, officer initiated, no action taken; criminal unit; role &ldquo;Other&rdquo;; comment &ldquo;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE&rdquo;; primary unit Trooper Jake Hyde, badge 56397. Same day, send <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">six questions</Link> to the responding unit&rsquo;s supervisor.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">July 21, 2026</div>
                     <div className="mt-2 text-sm">
-                        The four local actors &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are updated throughout the archive to be identified by role rather than by name. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">The reasoning is stated publicly</Link>. The documented conduct is unchanged; the record now attaches it to the positions they held.
+The four local actors &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are identified by role rather than by name throughout the archive. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Reasoning stated publicly</Link>.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">July 22, 2026</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">Petition for Public Records Order filed with the Oregon Attorney General</Link> under ORS 192.411, concerning PR27478 and CAD event SP26097765. Oregon State Police produced a single record and left five requested categories, the search, the recorded dispatch communications, the fee waiver, and the April 2 preservation notice unresolved &mdash; 110 days after the request. The petition and its twenty-five exhibits are published in full.
+<Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">Petition for Public Records Order filed with the Oregon Attorney General</Link> under ORS 192.411, concerning PR27478 and CAD event SP26097765 &mdash; 110 days after the request. Petition and twenty-five exhibits published in full.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">July 24, 2026</div>
+                    <div className="mt-2 text-sm">
+<Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">The District Ranger</Link>, U.S. Forest Service, writes that the Forest Service did not initiate the March 24 interview and only unlocked the gate for OSP, which &ldquo;does not have keys to Forest Service gates.&rdquo; Same day, filed with the Attorney General as a supplemental exhibit.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">July 27, 2026</div>
+                    <div className="mt-2 text-sm">
+Oregon State Police <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">reopens PR27478</Link>, citing a &ldquo;thorough review&rdquo; that found &ldquo;additional records, not in our system at the time of the original request,&rdquo; with production estimated at three weeks. Second supplemental filed with the Attorney General.
                     </div>
                 </li>
             </ul>
