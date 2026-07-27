@@ -174,6 +174,53 @@ export default function PoliceIntimidationPage() {
                 </div>
             </div>
 
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">JULY 24, 2026 &mdash; FOREST SERVICE STATEMENT</h2>
+
+            <div className="mt-2 text-sm text-gray-500">Letter from the District Ranger, U.S. Forest Service, Central Coast Ranger District</div>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>On July 24, 2026, Michele Holman &mdash; District Ranger for the Central Coast Ranger District of the Siuslaw National Forest, which includes the Oregon Dunes National Recreation Area where I serve as caretaker &mdash; responded to me in writing about the Oregon State Police record. She is the federal line officer who commands the land the state police entered on March 24. Her account of the Forest Service&rsquo;s role is this:</p>
+            </div>
+
+            <div className="mt-4 ml-4 p-4 bg-gray-50 border-l-4 border-emerald-600 italic space-y-3">
+                <p>Mr. White&mdash;</p>
+                <p>I am glad that you were able to get the documents you request from the Oregon State Patrol. Regarding the CAD entry stating, &ldquo;FOR THE FOREST SERVICE,&rdquo; I am unsure why that wording appears, as the Forest Service did not initiate the interview. The agency&rsquo;s involvement was limited to assisting OSP by providing access and guiding them to the Siltcoos Work Center. This is standard practice, as OSP does not have keys to Forest Service gates, work centers, or other secured facilities. Our law enforcement officer accompanied them solely to facilitate entry and ensure they reached the correct location.</p>
+                <p>I hope this clarifies any confusion about the Forest Service&rsquo;s role.</p>
+                <p>Employees in the Reedsport Office have shared positive feedback regarding your work as a volunteer, and I am pleased to hear that. I trust your experience with District staff has been positive, and I look forward to continuing a strong and productive working relationship.</p>
+                <p>Michele Holman<br />District Ranger<br />Forest Service &mdash; Siuslaw National Forest<br />Central Coast Ranger District / Oregon Dunes NRA</p>
+            </div>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>On July 24, 2026, I filed this letter with the Attorney General as Exhibit 26, supplementing the petition. Section III of the petition addresses the &ldquo;FOR THE FOREST SERVICE&rdquo; comment in the dispatch record and asks Oregon State Police to produce the communication by which that information reached the dispatcher who created the event. The federal agency named in the state&rsquo;s own record has now stated, in writing, that it did not initiate the event.</p>
+            </div>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">JULY 27, 2026 &mdash; OREGON STATE POLICE REOPENS PR27478</h2>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>On July 27, 2026 &mdash; 115 days after the request, and five days after I filed the petition with the Attorney General &mdash; Oregon State Police reopened PR27478. The Department&rsquo;s records unit wrote, in full:</p>
+            </div>
+
+            <div className="mt-4 ml-4 p-4 bg-gray-50 border-l-4 border-emerald-600 italic">
+                <p>&ldquo;A thorough review of your request has resulted in the finding of additional records, not in our system at the time of the original request. We are reopening your request for records, and will provide the records, once collected, and reviewed. We estimate this process to take 3 weeks.&rdquo;</p>
+            </div>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>The request concerns a single event &mdash; CAD event SP26097765 &mdash; created, dispatched, and closed on March 24, 2026, eleven days before I filed on April 3. Every record responsive to it &mdash; dispatch communications, unit assignments, vehicle records, duty logs, and the communication by which the event was conveyed to the dispatcher &mdash; came into existence on or before March 24, 2026. None could have been generated afterward. &ldquo;Additional records &hellip; not in our system at the time&rdquo; is therefore a statement about the search conducted on April 3, not about the contents of the Department&rsquo;s systems.</p>
+                <p>This is the third position Oregon State Police has taken on the same request. On April 3 there were no records. On July 14 one record was released with a certification that it had been reviewed for exempt material, &ldquo;with none being identified.&rdquo; On July 27, after the petition was filed, there are additional records after all.</p>
+                <p>I replied the same day and recorded four things. That the petition stands: the Department&rsquo;s message addresses none of what the petition raises &mdash; no description of the April 3 search, no exemption cited for any record, no ruling on the fee waiver requested April 3 and April 13, and no statement whether the recorded dispatch communications for March 24 still exist. A promise to produce records in three weeks disposes of none of it, and I would provide the message to the Attorney General as a supplemental exhibit. That the litigation preservation notice served April 2 applies to every newly identified record, and I asked the Department to confirm it had been distributed to the custodians of the recorded dispatch communications and the CAD audit-trail data.</p>
+                <p>And, most urgently, that the recorded dispatch communications for March 24, 2026 are subject to a retention schedule and are now more than four months old. I asked the Department to state, in writing and without waiting the three weeks, whether those recordings still exist, what retention schedule applies to them, and whether any responsive record has been destroyed, purged, overwritten, or allowed to age off a schedule since April 2, 2026 &mdash; a question that can be answered in a sentence and does not depend on the collection now underway.</p>
+                <p>The same day, I filed a second supplemental filing with the Attorney General. It places the Department&rsquo;s admission in the record, identifies the one assertion in it that cannot be correct as written &mdash; that records of a March 24 event were &ldquo;not in our system&rdquo; on April 3 &mdash; and renews the single time-sensitive request in the matter: whether the March 24 dispatch recordings still exist, and whether any responsive record has been destroyed or allowed to age off a retention schedule since April 2. The filing and its exhibits &mdash; the Department&rsquo;s reopening notice and my response &mdash; are below.</p>
+            </div>
+
+            <div className="mt-4 flex flex-col sm:flex-row gap-3">
+                <a href="/osp-ag-supplement-2-pr27478.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download Second Supplemental Filing &mdash; PR27478 (PDF) &darr;</a>
+                <a href="/osp-ag-supplement-2-exhibits-pr27478.pdf" download className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Download Supplemental Exhibits 26&ndash;28 (PDF) &darr;</a>
+            </div>
+
         </SectionPage>
     );
 }
