@@ -1,0 +1,88 @@
+DKIM PUBLIC KEY RECORD - oprdvolunteerabuse.org
+Retrieved: 2026-07-28 19:41 UTC
+
+The .eml originals stored under /records carry DKIM and ARC signatures
+applied by the sending domains. A signature verifies against the public
+key the domain published in DNS at the time of signing. Domains rotate
+keys, and once a key is rotated or removed, live DNS can no longer
+verify older signatures. This file preserves the published keys as
+retrieved, so the signatures on the stored originals remain verifiable
+against the keys that produced them.
+
+DNS does not publish when a key became effective. For each key, IN USE
+gives the dates of the earliest and latest stored messages signed with
+that selector and domain; RETRIEVED is when the DNS record was read.
+The git history of this file, in the archive's public repository,
+records every retrieval and any change in the published keys.
+
+------------------------------------------------------------------------------
+DOMAIN:    das.oregon.gov
+SELECTOR:  selector1
+IN USE:    2026-07-17 to 2026-07-17  (2 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector1._domainkey.das.oregon.gov
+           selector1._domainkey.das.oregon.gov CNAME selector1-das-oregon-gov._domainkey.stateoforegon.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq1HLAWwAo9kIPhT5awHXaooXsHLFuueNnas7XrniS3lX3/BvZ1bMawazLjncCUHwgt5V6tezU1SV29jCgE6pUu+bimq8VScvELzQ6MNvQcP0aASURb/L/8KZ+3S5YxYYVUG3WBOOtNi5sdngwQQvQxeyOzQeVxqC7LHC9PDQ8oSc9J1HYusq1WKT4fwv9hbnfvohnJ5yi02cTAVon7f8p5x65uyWOl/a4jYpZ2zD2Ec/iLmD07wfj9m5wYXfrjtJKlbRXdnGkyASBIGjyyRaPwXfnjk7BjsO/wkwQhkZTyLZjd6dx3cyCbZWXgZHRBuJIOv5KcwvFmx/NmuLANFKVQIDAQAB;
+
+------------------------------------------------------------------------------
+DOMAIN:    doj.oregon.gov
+SELECTOR:  selector1
+IN USE:    2026-07-28 to 2026-07-28  (4 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector1._domainkey.doj.oregon.gov
+           selector1._domainkey.doj.oregon.gov CNAME selector1-doj-oregon-gov._domainkey.odoj.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGU5YXQ7VnaE4akjcXOmcS1jC/Eh9814Q+0UgjqilY3m6i4aoK4V8dWfGzfGgyiMoRqXDdPbGnCu6Gw1TlvrBnkGh5Kjg+4L/dCM7cDbyX0js5vSv+gHZK/TW/9whtHktBfis3BCuQ3juuu3ELt2NuBdtuZX1xIn/8BDGsKDjHbQIDAQAB;
+
+------------------------------------------------------------------------------
+DOMAIN:    govqa.us
+SELECTOR:  s1
+IN USE:    2026-07-01 to 2026-07-27  (8 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  s1._domainkey.govqa.us
+           s1._domainkey.govqa.us CNAME s1.domainkey.u4037834.wl085.sendgrid.net
+KEY:       k=rsa; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7gsZjqQJyqddmvgfzVEQcGmL/TZ8N6TJVsVb8WA67uqO5WYopxA4ysTXJ9v5lDmJ/DM3SW06KGcU32zYTmZHYCFigtvXD+S6RzlqX4E7+2WNZLiecUSHYQhyw6bHKUsgsXRDp7UaG/QevdyFpsGyjrcAknqT1pJRJmZ3QaI8P0lvV2pi8AcGPDHC1jyyAEAsFLfxG0Wu2Mu5aaO6SQLL2KXDPT/FcATF6kUlrfuRL3dvhVf5w8mG8sUgMkvvc40SK/DOkeVeIfBeO7PLGnRqRQuKXVka5zbf+mo0az/HbByQObpKu8cbXmwMvaI8orR/vHkCO2SiaPgJSu2hvyymHwIDAQAB
+
+------------------------------------------------------------------------------
+DOMAIN:    microsoft.com
+SELECTOR:  arcselector10001
+IN USE:    2025-02-12 to 2026-07-28  (26 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  arcselector10001._domainkey.microsoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzXBaxYIoWlL1E1RK3QPh2KHH+Mi5XsdFAW7Wz6HDJVXhFTlYqL939p1S9e/VfG3cu210r+O2YR2n1Q3Zp9rTUBCVI8qEfpDaCANKwGTjQdKcJsGw9QlIS/j+lK6qzF00qVQLVkrqWFewBy4TU6IDj3WtySBJL6AMg1FfOMooK55J8/GoglNJNoCDyL47q+57nNmAQ26o7AyPLSm0aAzzebkEGvialcdrT48sfZcAo1+fkTYRb5+iTWf0EHSmR0ZeMd0zn5leBSPW2lfi+3JBcAwoc7+dqdI6lPhnpvdymw1GdN0RHcU4NBPoGRl2KTnlQaYW78ZDP+0l5ov/RqrAaQIDAQAB
+
+------------------------------------------------------------------------------
+DOMAIN:    oprd.oregon.gov
+SELECTOR:  selector1
+IN USE:    2025-02-12 to 2025-03-26  (2 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector1._domainkey.oprd.oregon.gov
+           selector1._domainkey.oprd.oregon.gov CNAME selector1-oprd-oregon-gov._domainkey.stateoforegon.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuXFo3v4vQSGsCKWSXnYyMDpzbe5qyW4AdWpzF9MfurJcLuQixP8h1MsaCb2RNY0XkdOwyyzJ7+L/V8uEJ76UyPF7zNrPktoCYvcP/o/JF/dAOkXAH+rCmQzTPN3FKDnnZKLdxU2/CwMVUahudYkutGsepCGJzjlswYPjVjTVaHCXUUwIz5sLx2e8SCUqNUe9Q1k+Eh3/LjQO7w4LeERqHAsjJC5A5pxN1/dXy2n+yNbGtHn/wYhWxjnrqDmKM8YpYCG1JbEKtpKiPU+ywE4EFDHzeWOY0nMgWoOY2A0FBw+XOVPEuyVWmpvRxkuUBHILKyJdj8pfszFGXEJAH0hYmQIDAQAB;
+
+------------------------------------------------------------------------------
+DOMAIN:    oregon.gov
+SELECTOR:  selector1
+IN USE:    2026-07-06 to 2026-07-06  (1 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector1._domainkey.oregon.gov
+           selector1._domainkey.oregon.gov CNAME selector1-oregon-gov._domainkey.stateoforegon.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw6m0OcnANSR0QgAvK0ILA3dEyVl7t9ya43acBFRm9kqR6O7Gw5yQypO0PglQwIfkjcDzwyot5CGocCCFpuIgEki5JfFiHoEe1mutJYjqZXDQfsYTd8ivlgk9i5sfQc1DXy85BmSprMWlJb7fqnSubjnBixAq7jVwnftxxRUwX3ToSZzAoQImGXqQWcIfp6qANQeCm5+q6Gi3KGWSOy6N493eBrHreLW0v/wlvVeP4eyBZk5fzrS3ZFSYyldEWI5V/T7MIRiRNQXCO+Zm1A9nQ6gFTRJEdqhlz9DtUlXp8GtFRWOeZ4ccCncgIFvQ10gYav+BPWj3iwWHw3qPbIm8KQIDAQAB;
+
+------------------------------------------------------------------------------
+DOMAIN:    osp.oregon.gov
+SELECTOR:  selector1
+IN USE:    2026-04-02 to 2026-07-27  (9 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector1._domainkey.osp.oregon.gov
+           selector1._domainkey.osp.oregon.gov CNAME selector1-osp-oregon-gov._domainkey.OregonStatePolice.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsVZfrhX0ROJTa08AEw2++YXc8YCVRyLaiQzXmM8CQhycFnaRdlhm4CEn/2AbtcZe84YWZevwQROBgWvJJxDuhFyrFzKYL/nHFCocjJr3hAPXld3MdBzmvcq0ufCSI9hSrQeM4rfUSh6tvm8s13ovbBw+3xvyXJyfbbV/PTu1ZChnepTD6Z9IvmqtcJ1qVRMH3UHElEXM4RE6mIH7s1m5BdWPoBnMgdCisVm3JSOBlK5iyYBXkuqhpUqMWR6nYiT4KyhOEpcgj6TgJp8ea5leyTIi4ZKrNfdUZIQSlJNifcejE+mHelvxJLMzYPbAn4ONOcKytlNOlHisYyYNm8lyAQIDAQAB;
+
+------------------------------------------------------------------------------
+DOMAIN:    usda.gov
+SELECTOR:  selector2
+IN USE:    2026-03-30 to 2026-07-27  (8 signed messages in this record)
+RETRIEVED: 2026-07-28 19:41 UTC
+DNS NAME:  selector2._domainkey.usda.gov
+           selector2._domainkey.usda.gov CNAME selector2-usda-gov._domainkey.usdagcc.onmicrosoft.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1GokLdpGYs1P28cnT6nSuvhbeSbwckvDSj/QvJjeKWpflBAV6ytHwAM89tgUwPw4ixLILThKlmPp5LldRqRx/fvameznwDpL1Vvhpgk0zejBLSkh4W6fhjG1a2YGQOPhJW6VVHSI6BkErp8ELgBvcGRaW6pTtp6QN7BDFPHQFAqlP51F6tFUl4IYOdzsj8qbv61Zn5TqsRzoSnPXBd+XDuzaAveQkKh4gq3pjBMcOe8t6StziPFlkhVm9CQClhfGmR8sz+dNl8AyIPCVIuNTfBvc9s5cP+0RxUGcM44k9SAYlWxcL2qydiuUZ1XgTBwFvDNV37eU0oHEbdCViCtvvQIDAQAB;
+
