@@ -11,10 +11,10 @@ export const OPRD_THREAD: RecordsThreadData = {
     slug: "oprd",
     title: "Oregon Parks & Recreation Department",
     agency: "Oregon Parks & Recreation Department",
-    matter: "The March 24, 2026 visit",
-    status: "No response in the record.",
+    matter: "The originating agency",
+    status: "Wholly unaccountable.",
     summary: [
-        "Letters to the Oregon Parks and Recreation Department concerning the March 24, 2026 police visit to my residence on restricted federal land.",
+        "Correspondence with the Oregon Parks and Recreation Department, the agency where this matter began.",
     ],
     filings: [
         {
@@ -62,6 +62,34 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-03-28_0847_You-Sent-Police-to-My-Door,-Behind-a-Locked-Gate,-on-Restricted-Federal.eml",
         },
         {
+            id: "withdrawal",
+            date: "July 8, 2026",
+            kind: "notice",
+            title: "Withdrawal of individual capacity claim",
+            to: "The Program Manager",
+            summary: "Letter to the Program Manager withdrawing the claim against her in her individual capacity under 42 U.S.C. \u00a7 1983, unconditionally and in writing.",
+            docs: [{ label: "Withdrawal Letter", href: "/records/oprd/2026-07-08-withdrawal-of-individual-capacity-claim.pdf" }],
+            eml: "/records/oprd/eml/2026-07-08_1837_withdrawal-of-individual-capacity-claim.eml",
+        },
+        {
+            id: "cad-transmittal",
+            date: "July 14, 2026",
+            kind: "notice",
+            title: "The released record, provided to the agency",
+            summary: "The CAD record released under PR27478 and the statement on it, provided directly to OPRD leadership and the Governor.",
+            docs: [{ label: "Transmittal with Statement", href: "/records/oprd/2026-07-14-cad-record-transmittal.pdf" }],
+            eml: "/records/oprd/eml/2026-07-14_1227_cad-record-transmittal.eml",
+        },
+        {
+            id: "request-for-accountability",
+            date: "July 21, 2026",
+            kind: "notice",
+            title: "A request for accountability",
+            summary: "Letter addressed to OPRD and the officials of every agency involved, state and federal, together for the first time.",
+            docs: [{ label: "A Request for Accountability", href: "/records/oprd/2026-07-21-request-for-accountability.pdf" }],
+            eml: "/records/oprd/eml/2026-07-21_1333_request-for-accountability.eml",
+        },
+        {
             id: "supplemental-forwarded",
             date: "July 24, 2026",
             kind: "notice",
@@ -71,6 +99,26 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "Forwarded Supplemental Filing", href: "/records/oprd/2026-07-24-supplemental-forwarded-to-oprd.pdf" }],
             eml: "/records/oprd/eml/2026-07-24_1222_supplemental-forwarded-to-oprd.eml",
         },
+        {
+            id: "what-integrity-looks-like",
+            date: "July 26, 2026",
+            kind: "notice",
+            title: "What Integrity Looks Like",
+            to: "The four local staff",
+            summary: "The District Ranger's statement, forwarded to the four local staff without comment.",
+            docs: [{ label: "What Integrity Looks Like", href: "/records/oprd/2026-07-26-what-integrity-looks-like.pdf" }],
+            eml: "/records/oprd/eml/2026-07-26_0725_what-integrity-looks-like.eml",
+        },
+        {
+            id: "otca-notice",
+            date: "July 26, 2026",
+            kind: "notice",
+            title: "Notice of intent to file under the Oregon Tort Claims Act",
+            to: "The Deputy Director",
+            summary: "Courtesy notice of intent to file a claim under ORS 30.275 concerning the March 24, 2026 visit, stating the claims released and the one question that remains.",
+            docs: [{ label: "Notice of Intent", href: "/records/oprd/2026-07-26-otca-notice-of-intent.pdf" }],
+            eml: "/records/oprd/eml/2026-07-26_0754_otca-notice-of-intent.eml",
+        },
     ],
 };
 
@@ -79,7 +127,7 @@ export const USFS_THREAD: RecordsThreadData = {
     title: "U.S. Forest Service",
     agency: "U.S. Forest Service",
     matter: "The March 24, 2026 visit",
-    status: "The District Ranger's statement of July 24, 2026 is the most recent document.",
+    status: "Fully accountable.",
     summary: [
         "Correspondence with the U.S. Forest Service concerning the identity and role of the officers present on March 24, 2026.",
     ],
@@ -214,6 +262,7 @@ export const USFS_THREAD: RecordsThreadData = {
             summary:
                 "Courtesy letter transmitting the Attorney General petition, asking how the \"for the Forest Service\" characterization can stand, who provided my date of birth and location, and where the Patrol Captain stands.",
             docs: [{ label: "Letter to the Patrol Captain", href: "/records/usfs/2026-07-23-letter-to-patrol-captain.pdf" }],
+            eml: "/records/usfs/eml/2026-07-23_1555_letter-to-patrol-captain.eml",
         },
         {
             id: "district-ranger-statement",
@@ -225,6 +274,25 @@ export const USFS_THREAD: RecordsThreadData = {
                 "The District Ranger states in writing that the Forest Service did not initiate the interview, and that its involvement was limited to unlocking the gate and guiding Oregon State Police to the work center. Filed with the Attorney General as Exhibit 26.",
             docs: [{ label: "Forest Service Statement", href: "/records/usfs/2026-07-24-district-ranger-statement.pdf" }],
             eml: "/records/usfs/eml/2026-07-24_0942_district-ranger-statement.eml",
+        },
+        {
+            id: "reply-to-district-ranger",
+            date: "July 24, 2026",
+            kind: "notice",
+            title: "Reply to the District Ranger",
+            summary: "Reply to the District Ranger's statement.",
+            docs: [{ label: "Reply", href: "/records/usfs/2026-07-24-reply-to-district-ranger.pdf" }],
+            eml: "/records/usfs/eml/2026-07-24_1403_reply-to-district-ranger.eml",
+        },
+        {
+            id: "opr-referral",
+            date: "July 27, 2026",
+            kind: "response",
+            title: "Referred to the Office of Professional Responsibility",
+            from: "Patrol Captain Felicia Sloan, USFS Law Enforcement & Investigations",
+            summary: "The Patrol Captain states the complaint has been referred to Law Enforcement and Investigations' Office of Professional Responsibility for an administrative investigation, and that recent correspondence has been forwarded to that office.",
+            docs: [{ label: "OPR Referral", href: "/records/usfs/2026-07-27-opr-referral.pdf" }],
+            eml: "/records/usfs/eml/2026-07-27_1649_opr-referral.eml",
         },
     ],
 };
@@ -494,6 +562,19 @@ export const OSP_THREAD: RecordsThreadData = {
             ],
             eml: "/records/osp/eml/2026-07-27_1435_second-supplemental-filing.eml",
         },
+        {
+            id: "ag-acknowledgment",
+            date: "July 28, 2026",
+            kind: "response",
+            title: "Acknowledgment from the Attorney General's Office",
+            from: "Chief Counsel's Office, Oregon Department of Justice",
+            summary: "The Attorney General's Office acknowledges receipt of a petition and states that orders granting or denying a petition are generally issued within seven days. Which of the two pending petitions it refers to is unconfirmed; a same day reply asked for confirmation and file numbers.",
+            docs: [
+                { label: "Acknowledgment", href: "/records/osp/2026-07-28-ag-acknowledgment.pdf" },
+                { label: "Reply Requesting Confirmation", href: "/records/osp/2026-07-28-ag-acknowledgment-reply.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-07-28_0953_ag-acknowledgment.eml",
+        },
     ],
 };
 
@@ -651,6 +732,15 @@ export const DAS_THREAD: RecordsThreadData = {
             eml: "/records/das/eml/2026-07-17_2106_R000879-070126-and-R000885-070726-outstanding-determinations,-and-notice.eml",
         },
         {
+            id: "reply-to-comms",
+            date: "July 17, 2026",
+            kind: "followup",
+            title: "Reply to the Communications Director",
+            summary: "Reply restating the four outstanding items and the statutory basis for each.",
+            docs: [{ label: "Reply", href: "/records/das/2026-07-17-reply-to-communications-director.pdf" }],
+            eml: "/records/das/eml/2026-07-17_1434_reply-to-communications-director.eml",
+        },
+        {
             id: "r879-closed",
             date: "July 27, 2026",
             kind: "response",
@@ -679,6 +769,19 @@ export const DAS_THREAD: RecordsThreadData = {
                 { label: "Petition Exhibits 1–18", href: "/records/das/das-ag-petition-exhibits.pdf" },
             ],
             eml: "/records/das/eml/2026-07-27_1435_petition-to-the-attorney-general.eml",
+        },
+        {
+            id: "ag-acknowledgment",
+            date: "July 28, 2026",
+            kind: "response",
+            title: "Acknowledgment from the Attorney General's Office",
+            from: "Chief Counsel's Office, Oregon Department of Justice",
+            summary: "The Attorney General's Office acknowledges receipt of a petition and states that orders granting or denying a petition are generally issued within seven days. Which of the two pending petitions it refers to is unconfirmed; a same day reply asked for confirmation and file numbers.",
+            docs: [
+                { label: "Acknowledgment", href: "/records/das/2026-07-28-ag-acknowledgment.pdf" },
+                { label: "Reply Requesting Confirmation", href: "/records/das/2026-07-28-ag-acknowledgment-reply.pdf" },
+            ],
+            eml: "/records/das/eml/2026-07-28_0953_ag-acknowledgment.eml",
         },
     ],
 };
