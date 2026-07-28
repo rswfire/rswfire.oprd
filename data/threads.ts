@@ -20,6 +20,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "armed-officers",
             date: "March 26, 2026",
+            d: "2026-03-26",
             kind: "notice",
             title: "Armed Officers",
             to: "The OPRD Director; copied to agency leadership, the Governor, and the Parks Commission public comment address",
@@ -30,7 +31,9 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "armed-officers-all-parties",
+            flagged: true,
             date: "March 26, 2026",
+            d: "2026-03-26",
             kind: "notice",
             title: "Armed Officers, All Parties",
             summary:
@@ -41,6 +44,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "incident-report-transmittal",
             date: "March 27, 2026",
+            d: "2026-03-27",
             kind: "notice",
             title: "Incident report transmittal",
             summary:
@@ -54,6 +58,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "you-sent-police",
             date: "March 28, 2026",
+            d: "2026-03-28",
             kind: "notice",
             title: "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land",
             summary:
@@ -64,6 +69,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "withdrawal",
             date: "July 8, 2026",
+            d: "2026-07-08",
             kind: "notice",
             title: "Withdrawal of individual capacity claim",
             to: "The Program Manager",
@@ -74,6 +80,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "cad-transmittal",
             date: "July 14, 2026",
+            d: "2026-07-14",
             kind: "notice",
             title: "The released record, provided to the agency",
             summary: "The CAD record released under PR27478 and the statement on it, provided directly to OPRD leadership and the Governor.",
@@ -82,7 +89,9 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "request-for-accountability",
+            flagged: true,
             date: "July 21, 2026",
+            d: "2026-07-21",
             kind: "notice",
             title: "A request for accountability",
             summary: "Letter addressed to OPRD and the officials of every agency involved, state and federal, together for the first time.",
@@ -92,6 +101,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "supplemental-forwarded",
             date: "July 24, 2026",
+            d: "2026-07-24",
             kind: "notice",
             title: "Supplemental filing forwarded to OPRD leadership",
             summary:
@@ -101,7 +111,9 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "what-integrity-looks-like",
+            flagged: true,
             date: "July 26, 2026",
+            d: "2026-07-26",
             kind: "notice",
             title: "What Integrity Looks Like",
             to: "The four local staff",
@@ -111,7 +123,9 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "otca-notice",
+            flagged: true,
             date: "July 26, 2026",
+            d: "2026-07-26",
             kind: "notice",
             title: "Notice of intent to file under the Oregon Tort Claims Act",
             to: "The Deputy Director",
@@ -122,6 +136,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "notice-of-publication",
             date: "July 28, 2026",
+            d: "2026-07-28",
             kind: "notice",
             title: "Notice of publication",
             to: "OPRD leadership, OSP Central Records, DAS, and the Governor",
@@ -145,6 +160,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "incident-report",
             date: "March 27, 2026",
+            d: "2026-03-27",
             kind: "record",
             title: "Host/Caretaker Incident Report",
             summary:
@@ -155,6 +171,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "inquiry",
             date: "March 29, 2026",
+            d: "2026-03-29",
             kind: "notice",
             title: "Inquiry to the Willamette National Forest",
             summary:
@@ -164,7 +181,9 @@ export const USFS_THREAD: RecordsThreadData = {
         },
         {
             id: "confirmation",
+            flagged: true,
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "response",
             title: "Patrol Captain confirms Special Agent Oliver",
             from: "Patrol Captain Felicia Sloan, USFS Law Enforcement & Investigations",
@@ -176,6 +195,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "reply",
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "notice",
             title: "Reply to the Patrol Captain",
             summary:
@@ -186,6 +206,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "foia-referral",
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "response",
             title: "FOIA referral",
             summary:
@@ -196,6 +217,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "identities-note",
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "notice",
             title: "Note on the officers' identities",
             summary:
@@ -206,6 +228,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "my-safety",
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "notice",
             title: "My Safety Is Your Responsibility",
             summary:
@@ -216,6 +239,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "letter-to-district-ranger",
             date: "March 30, 2026",
+            d: "2026-03-30",
             kind: "notice",
             title: "Letter to the District Ranger",
             summary:
@@ -226,6 +250,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "on-the-record",
             date: "April 2, 2026",
+            d: "2026-04-02",
             kind: "notice",
             title: "Statement to the District Ranger",
             summary:
@@ -236,6 +261,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "records-requests-note",
             date: "April 2, 2026",
+            d: "2026-04-02",
             kind: "notice",
             title: "Note on records requests filed",
             summary:
@@ -246,6 +272,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "district-ranger-response",
             date: "April 2, 2026",
+            d: "2026-04-02",
             kind: "response",
             title: "District Ranger response",
             from: "Michele Holman, District Ranger, Central Coast Ranger District",
@@ -257,6 +284,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "coordination-inquiry",
             date: "July 14, 2026",
+            d: "2026-07-14",
             kind: "notice",
             title: "Coordination inquiry to USFS Law Enforcement",
             summary:
@@ -267,6 +295,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "letter-to-patrol-captain",
             date: "July 23, 2026",
+            d: "2026-07-23",
             kind: "notice",
             title: "Letter to the Patrol Captain",
             summary:
@@ -276,7 +305,9 @@ export const USFS_THREAD: RecordsThreadData = {
         },
         {
             id: "district-ranger-statement",
+            flagged: true,
             date: "July 24, 2026",
+            d: "2026-07-24",
             kind: "letter",
             title: "Forest Service Statement",
             from: "Michele Holman, District Ranger, Central Coast Ranger District",
@@ -288,6 +319,7 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "reply-to-district-ranger",
             date: "July 24, 2026",
+            d: "2026-07-24",
             kind: "notice",
             title: "Reply to the District Ranger",
             summary: "Reply to the District Ranger's statement.",
@@ -296,7 +328,9 @@ export const USFS_THREAD: RecordsThreadData = {
         },
         {
             id: "opr-referral",
+            flagged: true,
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "response",
             title: "Referred to the Office of Professional Responsibility",
             from: "Patrol Captain Felicia Sloan, USFS Law Enforcement & Investigations",
@@ -320,6 +354,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "request",
             date: "April 2, 2026",
+            d: "2026-04-02",
             kind: "request",
             title: "Public records request with preservation notice",
             summary:
@@ -330,6 +365,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "form-redirect",
             date: "April 2, 2026",
+            d: "2026-04-02",
             kind: "response",
             title: "Referral to the Department's request form",
             summary: "Central Records directs me to submit the request through the Department's records request form.",
@@ -339,6 +375,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "preservation-ack-request",
             date: "April 3, 2026",
+            d: "2026-04-03",
             kind: "followup",
             title: "Request for acknowledgment of the preservation notice",
             summary: "Reply confirming the form will be completed and asking the Department to acknowledge receipt of the preservation notice. No acknowledgment has ever been received.",
@@ -348,6 +385,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "completed-form",
             date: "April 3, 2026",
+            d: "2026-04-03",
             kind: "request",
             title: "Completed records request form",
             summary: "The request as re-filed on the Department's own form, with the date, time, location, county, license plate, and my date of birth in its required fields.",
@@ -356,6 +394,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "acknowledgment",
             date: "April 3, 2026",
+            d: "2026-04-03",
             kind: "response",
             title: "Acknowledgment: REF# PR27478",
             summary: "The Department acknowledges the request, assigns reference PR27478, and states a search will be conducted.",
@@ -364,7 +403,9 @@ export const OSP_THREAD: RecordsThreadData = {
         },
         {
             id: "no-records",
+            flagged: true,
             date: "April 3, 2026",
+            d: "2026-04-03",
             kind: "response",
             title: "No-records response",
             summary: "The same day, the Department responds that a search was conducted and identified no records responsive to the request.",
@@ -374,6 +415,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "five-questions",
             date: "April 3, 2026",
+            d: "2026-04-03",
             kind: "followup",
             title: "Five questions regarding the search",
             summary: "Follow-up asking what systems were searched, whether dispatch logs for March 24 were searched, whether vehicle and duty records were searched, and whether any records were located and withheld.",
@@ -383,6 +425,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "record-exists",
             date: "April 13, 2026",
+            d: "2026-04-13",
             kind: "response",
             title: "A record exists; $12.50 by check or money order",
             summary: "Ten days after the no-records response, the Department states a responsive CAD record exists and conditions production on a $12.50 fee payable by check or money order. The released record later shows it was printed inside Central Records on April 13.",
@@ -392,6 +435,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "fee-waiver",
             date: "April 13, 2026",
+            d: "2026-04-13",
             kind: "followup",
             title: "Fee waiver request",
             summary: "Request for waiver of the $12.50 fee on public-interest grounds.",
@@ -401,6 +445,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "fee-waiver-supplemental",
             date: "April 13, 2026",
+            d: "2026-04-13",
             kind: "followup",
             title: "Supplemental fee waiver request",
             summary: "Supplemental grounds for the waiver, including indigence.",
@@ -410,6 +455,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "paper-form",
             date: "April 14, 2026",
+            d: "2026-04-14",
             kind: "response",
             title: "A form to print and mail",
             summary: "The Department's response to the waiver request: a scanned fee waiver form to be printed and mailed. The waiver was never granted and never denied.",
@@ -419,6 +465,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "july-9",
             date: "July 9, 2026",
+            d: "2026-07-09",
             kind: "followup",
             title: "Letter on the sequence to date; waiver renewed",
             summary: "Letter setting out the sequence from April 3 forward and renewing the waiver request, copied to the Governor.",
@@ -427,7 +474,9 @@ export const OSP_THREAD: RecordsThreadData = {
         },
         {
             id: "release",
+            flagged: true,
             date: "July 14, 2026",
+            d: "2026-07-14",
             kind: "record",
             title: "The record released",
             summary: "The Department releases CAD record SP26097765 in full, at no charge, with a cover letter stating the document was reviewed for exempt material \"with none being identified.\" The record shows: no call type, priority low, officer initiated, no action taken, unit type Criminal, my role \"Other,\" and the comment \"FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.\" The primary unit is named: Jake Hyde, badge 56397.",
@@ -440,7 +489,9 @@ export const OSP_THREAD: RecordsThreadData = {
         },
         {
             id: "statement",
+            flagged: true,
             date: "July 14, 2026",
+            d: "2026-07-14",
             kind: "statement",
             title: "Statement on Oregon State Police record PR27478",
             summary: "Public statement issued on the release of CAD record SP26097765.",
@@ -449,6 +500,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "six-questions",
             date: "July 14, 2026",
+            d: "2026-07-14",
             kind: "followup",
             title: "Six questions to the responding unit's supervisor",
             summary: "Questions the record itself raises: the source of my date of birth, the source of the location, my name in the \"Caller\" field of an officer-initiated event, the stated purpose, the unit's origin and travel, and the identity of the other officers present.",
@@ -458,6 +510,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "dpsst-48454",
             date: "July 15, 2026",
+            d: "2026-07-15",
             kind: "followup",
             title: "Request for the identity of DPSST 48454",
             summary: "The record lists a second DPSST number, 48454, as having created the event. Request for that person's identity and role.",
@@ -467,6 +520,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "dispatch-communications",
             date: "July 15, 2026",
+            d: "2026-07-15",
             kind: "followup",
             title: "Unproduced dispatch communications and CAD audit trail",
             summary: "Letter stating that the recorded dispatch communications and the CAD audit trail the record necessarily indexes have not been produced, and restating the preservation notice.",
@@ -476,6 +530,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "categories",
             date: "July 15, 2026",
+            d: "2026-07-15",
             kind: "followup",
             title: "Categories requested April 3 and not produced",
             summary: "Letter setting out each category of the April 3 request that remains without any disposition, and restating the preservation notice.",
@@ -485,6 +540,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "facility-naming",
             date: "July 16, 2026",
+            d: "2026-07-16",
             kind: "followup",
             title: "Correction regarding facility naming",
             summary: "Correction noting the facility has no physical address and is referenced internally as the Siltcoos Work Center, the sole locator on the released record.",
@@ -494,6 +550,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "preservation-status",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Preservation status of the records",
             summary: "Request that the Department state whether the records subject to the April 2 preservation notice still exist, what retention schedules apply, and whether anything has been destroyed.",
@@ -503,6 +560,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "ors-correction",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Correction of statutory citation",
             summary: "Self-correction on the record: petitions in this matter lie with the Attorney General under ORS 192.411, not ORS 192.415.",
@@ -512,6 +570,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "final-correspondence",
             date: "July 19, 2026",
+            d: "2026-07-19",
             kind: "followup",
             title: "Final correspondence before the petition",
             summary: "Final letter before filing: the March 24 recorded communications, plate 731 QRV, and notice that a petition would be filed with the Attorney General.",
@@ -520,7 +579,9 @@ export const OSP_THREAD: RecordsThreadData = {
         },
         {
             id: "petition",
+            flagged: true,
             date: "July 22, 2026",
+            d: "2026-07-22",
             kind: "petition",
             title: "Petition to the Attorney General",
             summary: "Petition for Public Records Order under ORS 192.411, ORS 192.324(6), and ORS 192.407, asking the Attorney General to order Oregon State Police to complete its response to PR27478. Filed with twenty-five exhibits.",
@@ -533,6 +594,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "supplemental",
             date: "July 24, 2026",
+            d: "2026-07-24",
             kind: "supplement",
             title: "Supplemental filing: the Forest Service statement",
             summary: "Supplemental filing placing the District Ranger's letter in the record as Exhibit 26. The federal agency named in the dispatch record states in writing that it did not initiate the event.",
@@ -544,7 +606,9 @@ export const OSP_THREAD: RecordsThreadData = {
         },
         {
             id: "reopening",
+            flagged: true,
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "response",
             title: "Oregon State Police reopens PR27478",
             summary: "Five days after the petition was filed, the Department states that a thorough review has found additional records \"not in our system at the time of the original request,\" reopens the request, and estimates production at three weeks.",
@@ -554,6 +618,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "reopening-response",
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "followup",
             title: "Response to the reopening notice",
             summary: "Same-day response recording four things: the petition stands; the characterization \"not in our system\" cannot be correct as written for records of a March 24 event; the preservation notice applies to every newly identified record; and the March 24 dispatch recordings require an immediate answer on whether they still exist.",
@@ -563,6 +628,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "second-supplemental",
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "supplement",
             title: "Second supplemental filing",
             summary: "Second supplemental filing to the Attorney General with the reopening notice and my response as Exhibits 27 and 28.",
@@ -575,6 +641,7 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "ag-acknowledgment",
             date: "July 28, 2026",
+            d: "2026-07-28",
             kind: "response",
             title: "Acknowledgment from the Attorney General's Office",
             from: "Chief Counsel's Office, Oregon Department of Justice",
@@ -601,6 +668,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "r879-request",
             date: "July 1, 2026",
+            d: "2026-07-01",
             kind: "request",
             title: "R000879 submitted",
             summary: "Request for the Department's own records concerning me: its communications with OPRD, the Office of the Governor, or any other state entity referencing me, and any record in which I am named or identifiably described in personnel, human resources, legal, risk, or accountability matters.",
@@ -609,7 +677,9 @@ export const DAS_THREAD: RecordsThreadData = {
         },
         {
             id: "custodial-closure",
+            flagged: true,
             date: "July 6, 2026",
+            d: "2026-07-06",
             kind: "response",
             title: "R000879 closed on a custodial basis",
             summary: "The Department closes the request, stating it \"is not the custodian of the requested records,\" and refers me to OPRD.",
@@ -618,6 +688,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "reopen-request",
             date: "July 6, 2026",
+            d: "2026-07-06",
             kind: "followup",
             title: "Request to reopen",
             summary: "Request to reopen: the closure addresses only one category, and OPRD cannot be the custodian of the Department's own correspondence.",
@@ -627,6 +698,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "reopened",
             date: "July 7, 2026",
+            d: "2026-07-07",
             kind: "response",
             title: "R000879 reopened",
             summary: "The Department reopens the request: \"I've reopened your request while we look into this further.\"",
@@ -636,6 +708,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "preservation",
             date: "July 7, 2026",
+            d: "2026-07-07",
             kind: "followup",
             title: "Correspondence channel and preservation notice",
             summary: "Note on the correspondence channel, and service of a litigation preservation notice covering all records potentially responsive to both requests. The notice has never been acknowledged.",
@@ -645,6 +718,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "r885-request",
             date: "July 7, 2026",
+            d: "2026-07-07",
             kind: "request",
             title: "R000885 submitted",
             summary: "Request for the number of requests the Department has closed on a not-the-custodian basis since 2022, by year, and for any written policy or standard governing how that determination is made and distinguished from a no-records determination. A fee waiver is requested under ORS 192.324(5).",
@@ -654,6 +728,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "custodial-analysis",
             date: "July 8, 2026",
+            d: "2026-07-08",
             kind: "followup",
             title: "Custodial determination analysis",
             summary: "Statutory analysis under ORS 192.311(2)(b): the Department is the custodian of its own correspondence, and the agent exception does not apply. Request that the Department identify the public body for which it claims to have acted as agent, or withdraw the determination.",
@@ -663,6 +738,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "r885-ack",
             date: "July 8, 2026",
+            d: "2026-07-08",
             kind: "response",
             title: "R000885 acknowledged",
             summary: "The Department acknowledges R000885 and states it is reviewing the request. No completion estimate is provided then or after.",
@@ -672,6 +748,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "partial-response",
             date: "July 10, 2026",
+            d: "2026-07-10",
             kind: "response",
             title: "Partial response to R000879",
             summary: "The Department states it located no records in the named-or-described category and closes that portion, and states it is still reviewing as to its communications referencing me.",
@@ -681,6 +758,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "document-search",
             date: "July 10, 2026",
+            d: "2026-07-10",
             kind: "followup",
             title: "Request to document the search",
             summary: "Request that the Department describe the search behind the no-records determination: custodians and offices, systems, date range, terms, and whether it reached records that describe me without naming me. Never answered.",
@@ -690,6 +768,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "difficult-to-credit",
             date: "July 12, 2026",
+            d: "2026-07-12",
             kind: "followup",
             title: "On the no-records determination",
             summary: "Letter setting out why a no-records determination is difficult to credit on this record, and asking the Department to reconcile it with the documented facts or describe the search. Never answered.",
@@ -699,6 +778,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "outstanding",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Outstanding determinations; notice of intent to petition",
             summary: "Letter setting out the four unanswered questions and giving notice of intent to petition.",
@@ -708,6 +788,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "portal-constraint",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Portal date-field constraint",
             summary: "Letter documenting that the Department's portal does not permit a request without a fixed end date, and that the end dates entered are placeholders to be read as through the date of the search.",
@@ -717,6 +798,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "ors-correction",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Correction of statutory citation",
             summary: "Self-correction on the record: petitions in this matter lie with the Attorney General under ORS 192.411, not ORS 192.415.",
@@ -726,6 +808,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "comms-inquiry",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Inquiry to the Communications Director",
             summary: "Question for the record: does the Communications Director hold any role in the Department's public records function.",
@@ -735,6 +818,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "comms-response",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "response",
             title: "Communications Director response",
             summary: "The Communications Director states the Department is continuing to process the requests in the order received and that \"periods without communication do not indicate inactivity.\"",
@@ -744,6 +828,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "reply-to-comms",
             date: "July 17, 2026",
+            d: "2026-07-17",
             kind: "followup",
             title: "Reply to the Communications Director",
             summary: "Reply restating the four outstanding items and the statutory basis for each.",
@@ -752,7 +837,9 @@ export const DAS_THREAD: RecordsThreadData = {
         },
         {
             id: "r879-closed",
+            flagged: true,
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "response",
             title: "R000879 closed: no responsive records",
             summary: "The Department closes R000879 a second time, determining there are no responsive records as to its communications referencing me, and again refers me to OPRD. The closure is signed from the Department's Strategic Initiatives and Enterprise Accountability office.",
@@ -761,7 +848,9 @@ export const DAS_THREAD: RecordsThreadData = {
         },
         {
             id: "r885-response",
+            flagged: true,
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "response",
             title: "R000885 answered: 31 custodial closures, no internal standard",
             summary: "The Department answers R000885: thirty-one requests closed on a not-the-custodian basis since 2024, six in 2026, nineteen in 2025, six in 2024, with no internal standard beyond the Department of Justice's general public records manual.",
@@ -770,7 +859,9 @@ export const DAS_THREAD: RecordsThreadData = {
         },
         {
             id: "petition",
+            flagged: true,
             date: "July 27, 2026",
+            d: "2026-07-27",
             kind: "petition",
             title: "Petition to the Attorney General",
             summary: "Petition for review under ORS 192.411 concerning R000879, filed with eighteen exhibits. It asks the Attorney General to order the Department to produce, cite a specific exemption, or state expressly that no responsive record exists; to describe the search; to substantiate or withdraw the custodial referral; and to answer the preservation questions.",
@@ -783,6 +874,7 @@ export const DAS_THREAD: RecordsThreadData = {
         {
             id: "ag-acknowledgment",
             date: "July 28, 2026",
+            d: "2026-07-28",
             kind: "response",
             title: "Acknowledgment from the Attorney General's Office",
             from: "Chief Counsel's Office, Oregon Department of Justice",
