@@ -10,6 +10,7 @@ import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
+import { THREADS } from "@/data/threads";
 
 export default function OverviewPage() {
     return (
@@ -25,17 +26,15 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        A system targeted a systems architect.
+                        One thing has been asked of every agency: be accountable to your own behavior.
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
-                                <span className="block">Ask them why I was dismissed with only six days remaining.</span>
-                                <span className="block mt-2">Ask them why I was permanently banned from statewide volunteering.</span>
-                                <span className="block mt-2">Ask them what I did that could justify either decision.</span>
-                                <span className="block mt-2">Then ask them why silence has been their only answer &mdash;</span>
-                                <span className="block mt-2">and their only defense.</span>
+                                <span className="block">Not accountable to a volunteer.</span>
+                                <span className="block mt-2">To themselves.</span>
+                                <span className="block mt-2">This archive is the record of how each one answered.</span>
                             </p>
                         </blockquote>
 
@@ -87,9 +86,33 @@ export default function OverviewPage() {
                 </div>
             </div>
 
-            {/* PRIMARY DOCUMENTS */}
-            <div className="mt-4">
-                <PrimaryDocuments />
+            {/* ACCOUNTABILITY */}
+            <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-200">
+
+                <h2 className="font-bold text-lg tracking-wide">
+                    <Link href="/accountability" className="text-emerald-900 hover:text-emerald-700 transition-colors">ACCOUNTABILITY</Link>
+                </h2>
+
+                <div className="mt-4 text-base leading-relaxed">
+                    The record of holding each agency to account: every request, every response, every filing, with the documents and the unmodified email originals.
+                </div>
+
+                <div className="mt-6 rounded-lg overflow-hidden border border-emerald-200 divide-y divide-emerald-100 bg-white">
+                    {THREADS.map((t) => (
+                        <Link
+                            key={t.slug}
+                            href={`/accountability/${t.slug}`}
+                            className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 px-4 py-3 hover:bg-emerald-50 transition-colors"
+                        >
+                            <span className="text-sm font-semibold text-emerald-900">{t.title}</span>
+                            <span className="text-sm text-gray-600 sm:text-right">
+                                {t.status}
+                                <span className="ml-2 text-xs text-gray-400">{t.filings.length} documents</span>
+                            </span>
+                        </Link>
+                    ))}
+                </div>
+
             </div>
 
             {/* THE DISPLACEMENT FRAMEWORK */}
@@ -224,6 +247,11 @@ export default function OverviewPage() {
 
             {/* ARCHIVE VIDEOS */}
             <ArchiveVideos/>
+
+            {/* PRIMARY DOCUMENTS */}
+            <div className="mt-8">
+                <PrimaryDocuments />
+            </div>
 
             <div className="mt-8 p-8 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm">
 
