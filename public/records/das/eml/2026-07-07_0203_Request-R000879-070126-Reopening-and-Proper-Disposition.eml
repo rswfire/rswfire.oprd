@@ -1,0 +1,244 @@
+Received: from DM6PR14MB3888.namprd14.prod.outlook.com (2603:10b6:5:1b7::21)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 7 Jul 2026
+ 02:03:48 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=s8l7CWk9I31RkBsN1dVu4nGYK/771HvAmtyctThvBNoEkwb2vwZoekN8sBMrk2ZRzQOhp3BipcTTXbYgFJUAKuxFXk4QDKZE5D2rf6/4jCdX7X08ZkzvFlgRef/+Pq/1TJsh2vL5TsXW3PR7etDgkPikOAHJeJZEDsGGiGj9yE6H7za8UnL7h0FHj8VvMhIgK7Lv2+Rt9GN1aK75o6RHfx53svnZOOXmTMqcid1vtW7dNoV+G7HvDOLtDG7uIcR4kICylKVjo1XB1EWOStmVlUpClCsdwX71tkZw2GjHAGkAND2IPB3KrYVnUKb4JJCmof/ay0fkSq6+mkLW9Gg+1A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=SDCWV0IauytEnkcmgQ65XJMmmOn+Y4jy1V+8IkGp2Qg=;
+ b=wSwL8Jar+/zI5lGpaZbfKgvkhQAtIfdp4L6l18itNp2+Wcj2sgLr4bpjOBh25UNxLcCnph4WWsCIOZr1fz2NY9cji0E3viZSZzu3lRuQTjDAGiOZXfMOAxLeZ7/Bc2Nk/RB92s7IPKZSotZmgbZkB6zJbAcGZVcR/Qn9us1sZbCSyqGpDVx6ycPzqp2pllmLN2BMspbLRFG+XS6gL83AAAUbQh80UcqG3Hq7SlvSWHrqu9llBqFVn8Sx4H+av6KqU9SrUpHCf3VfeWYofNX1E2STZ2zdZBC7Sm8YjCDysmmMOfzNbfMdx5GZozyyFVzlxr4GE5HO70A1SXo1aAkTLg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=none (sender ip is
+ 2a01:111:f403:d918::1) smtp.rcpttodomain=rswfire.com
+ smtp.helo=ch1pr09cu001.outbound.protection.outlook.com; dmarc=pass
+ (p=quarantine sp=none pct=100) action=none header.from=oregon.gov; dkim=pass
+ (signature was verified) header.d=oregon.gov; arc=pass (0 oda=1 ltdi=1
+ dkim=[1,1,header.d=oregon.gov] dmarc=[1,1,header.from=oregon.gov])
+Received: from BN9PR03CA0958.namprd03.prod.outlook.com (2603:10b6:408:108::33)
+ by DM6PR14MB3888.namprd14.prod.outlook.com (2603:10b6:5:1b7::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.113.14; Tue, 7 Jul
+ 2026 02:03:44 +0000
+Received: from BN3PEPF0000B075.namprd04.prod.outlook.com
+ (2603:10b6:408:108:cafe::7f) by BN9PR03CA0958.outlook.office365.com
+ (2603:10b6:408:108::33) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.159.19 via Frontend Transport; Tue, 7
+ Jul 2026 02:03:44 +0000
+Authentication-Results: spf=none (sender IP is 2a01:111:f403:d918::1)
+ smtp.helo=CH1PR09CU001.outbound.protection.outlook.com; dkim=pass (signature
+ was verified) header.d=oregon.gov;dmarc=pass action=none
+ header.from=oregon.gov;compauth=pass reason=100
+Received-SPF: None (protection.outlook.com:
+ CH1PR09CU001.outbound.protection.outlook.com does not designate permitted
+ sender hosts)
+Received: from CH1PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:d918::1) by BN3PEPF0000B075.mail.protection.outlook.com
+ (2603:10b6:40f:fc02::138) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.181.6 via Frontend Transport; Tue, 7
+ Jul 2026 02:03:43 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=n1C+oIyFy7k4hUILxyjK/tj88H4Fmbf9TYSig/YBdNBOrvmiXlqcyOuyH4l5ZNnuFj70j0IaNOP+C9gVfTsS7YZpT0Tu8u8SaTVQMREZGSVSXO8V5+drGzUjoZKsCz9Eojke07m295AxbYEgvpKBmtDW9YwHbAwfSy5+/l21XU2ChFSYScP+GXIPkadR/z0tvEKH8F4YsPnext6WWxsH5zA18hvHwaDQ6qxlXS5sQrNPvygxICQTfwHufDFLruXbeZuhPLclGCe+bIDKh3MY8a9jQeCvvjmUl88Dd5iLebUsFLf3vQGXDkEjTK1NJNqyhBgxozivsVlvQPO7/LQQmA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=SDCWV0IauytEnkcmgQ65XJMmmOn+Y4jy1V+8IkGp2Qg=;
+ b=IFVf0qWcgTdIf6yjT2IWKW0kjeG6xGY0oz+LIdiPI5INoyyO8sd9Nr1jiRWkLlLI6ybvzPDwbD82aUhi4dXOjH0f/I5DSKndIcT373vOrF8Y2br/bdvBA18n4LrKiSlfGnRzbieAwtVxylipj39qIDa00sRbeqcexBQ5Fk73Q+fcqpqeFOQb25Joi9ERNn5x6L4vnnZSGa+YCZqW2hdj5TdjoypY3u7uUB0TOqH9bRa96lBnsnc3d7Xf81xvCPDm/1RrYSiYOl0enddKSX+7b1gQfyUBLL0BbS5bMZIg4tc0Bh7ubghm/Ac/CBbf7qketDJQSrcRHII/lTzq7VSDnA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=oregon.gov; dkim=pass header.d=oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=SDCWV0IauytEnkcmgQ65XJMmmOn+Y4jy1V+8IkGp2Qg=;
+ b=IneBiXYe+ntxx/f9SpldVp3gJmDnSKDy6tCVqq1mHA9OCwjSDBthXaPayRHogBwhorA3thLGmikg2gdVQoOdPGzWIzNsbKDWCEHAnDJUfH3q+uJ8mRDmesS79r0jp1RZifTijdxD7gaevdsvo2AnNbVDrbE6+iQQcgCIdcZABqirNvEZarhjKTO9ohPe3lkTPBvChi48q8kIW0pRho/G/zxUXES1sMalAdgERcnYnaD+mfij1I4nnF/DoItJ2vcLIhyF5tmMVrErYN3Td6OakdhlyQOd1ex5vUwaP9GsrZ6++HDtPETsS+tY1+nRqRnGM/18y7DRN7h2Ec8chxeNjA==
+Received: from BLAPR09MB6051.namprd09.prod.outlook.com (2603:10b6:208:2ad::9)
+ by DM2PR09MB12237.namprd09.prod.outlook.com (2603:10b6:8:2ce::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.181.10; Tue, 7 Jul
+ 2026 02:03:42 +0000
+Received: from BLAPR09MB6051.namprd09.prod.outlook.com ([::1]) by
+ BLAPR09MB6051.namprd09.prod.outlook.com ([fe80::5f31:3584:6020:2782%5]) with
+ Microsoft SMTP Server id 15.21.0181.012; Tue, 7 Jul 2026 02:03:42 +0000
+From: Governor Kotek * GOV <governor.kotek@oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: =?Windows-1252?Q?Automatic_reply:_Request_R000879-070126_=97_Reopening_an?=
+ =?Windows-1252?Q?d_Proper_Disposition?=
+Thread-Topic: =?Windows-1252?Q?Request_R000879-070126_=97_Reopening_and_Proper_Disposit?=
+ =?Windows-1252?Q?ion?=
+Thread-Index: Ad0Ns43Gl3cBxfkXSByyiCeqXDjilAAAUfXw
+Date: Tue, 7 Jul 2026 02:03:42 +0000
+Message-ID: <1172661e1762470ca69c0e3e7124d751@BLAPR09MB6051.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181A2DF98712EBDE8997208ADF02@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB4181A2DF98712EBDE8997208ADF02@CH2PR14MB4181.namprd14.prod.outlook.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: governor.kotek@oregon.gov
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oregon.gov;
+x-ms-exchange-parent-message-id: <CH2PR14MB4181A2DF98712EBDE8997208ADF02@CH2PR14MB4181.namprd14.prod.outlook.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-traffictypediagnostic: BLAPR09MB6051:EE_|DM2PR09MB12237:EE_|BN3PEPF0000B075:EE_|DM6PR14MB3888:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 2f274018-55ef-4489-5b94-08dedbcbf958
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|50650200027|10070799003|1800799024|366016|5133699003|56012099006|22082099003|18002099003|8096899003|12063799003|80100003;
+X-Microsoft-Antispam-Message-Info-Original: tddmrl2L6MVOMqZ01Ae1IH6Ih7R+8UL0MmNZmKOkblv40N/pK0qX7m7YeOxBNJO2FLjJGBPz+hZESqntPoja1CBkMivLkFNK8p3RVNCyi0AopPLRp/3L6qmgiPjKgtOVzv5qsAq8Dkb+csMB3pcxzrWgAQWXU5DqX5ttgRpx8kLigZYlvh7tPfiJN9rmCRIFK3TTzoLMe/6g6jrjdiBelNBrtrgAbkHQ846Y8Nnt7J4RULeCbTbvPGl30GMZ0Mk57Vzrlgw/H1/V21X9/JK0TJG03ZLtNkS13nN/daziF2IzfOmBlVvCtVc51YJEvylrU0He/DcVXd7XC8E3gBbv9ow3JWoLNzPBwPLNoFwEBhAfB+3fLMTI+HtF2fYhAxJKhJwB3T5UhVCLhA2xhYorowDiutqGzZOHBZ3u93HErgv4aa0qiwfzLemKpAtJm54vGy0WpFmsbSdv4843s44kp1FTzQN7xMJaFc8ClSEex9fB/UV5si1GXD6c8C27r2OzsWe2F7YyvFIHFcTcBzEXzqq1UZNntzpKmykL/Cp+1TzDoCmt22CnOhbqeKX7+EdUpqq+RRQVzgvP+OoMBsx2S3qv5d4KPPKPWbglRlgK4ghJDgEMbeI84SXe0p/HO5LZbcvMzYgELELRMXisaNSY8hqyzimRvYxi/IC+FFrGLXeYRkfIqfujsxxKTdUldrRxJbJnwgF23RQmLgeDR2uOoQ==
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BLAPR09MB6051.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(10070799003)(1800799024)(366016)(5133699003)(56012099006)(22082099003)(18002099003)(8096899003)(12063799003)(80100003);DIR:OUT;SFP:1501;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: lj7qikumGzbGGtot98p9FDtEgjOKwzhmvoE1WYQB703eStR+bkBiFsjgiULH0ic0EGHT5NmyNo6QxBD+80ZeyrwIXcL4BaYbGBjxE0Ti/Fqjb7MIMbjnw6DBm8mdXSHme4VKU1CvgPemGi+JrL7QGefol5+I0IQ/Y//PkMh2pYKWTDs7xXOUZ3OnTztxOOH4aXMbD8JHIexN+Nff7DdspmYp5N9YnQgHuLpszppovkgF/hrnEo+CyVAc1wKj+a1br+TFHhjqV3ZctwnAlRPcKpV/tq3hiOTDJ7S900EiiKUtwdyXoB/7FV+uOPhMo7kT6aYbEHEXV02mx+htPXGW7ez05suIUT/ufdPOOAp+1EBEaAdai5Ok7Vj4UXY0DtVzTQVpjq46MP4xx8FXUSdQfBvg5pLiF516MbbYqTWYyTQ9KcUA4U98ZMxy3BAhF/e7
+Content-Type: multipart/alternative;
+	boundary="_000_1172661e1762470ca69c0e3e7124d751BLAPR09MB6051namprd09pr_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM2PR09MB12237
+Return-Path: <>
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Jul 2026 02:03:44.1350
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 2f274018-55ef-4489-5b94-08dedbcbf958
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BN3PEPF0000B075.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BN3PEPF0000B075.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BN3PEPF0000B075.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 956639df-a21d-49bb-c139-08dedbcbf817
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704161611799003|6073799003|12022799006|35042699022|5009299003|6113799003|5063699009|12063799003|19002099009|5133699003|55112099003|8096899003|57112099003|13003099007|16102099003|18002099003|22082099003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:d918::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH1PR09CU001.outbound.protection.outlook.com;PTR:mail-northcentralusazhn150110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704161611799003)(6073799003)(12022799006)(35042699022)(5009299003)(6113799003)(5063699009)(12063799003)(19002099009)(5133699003)(55112099003)(8096899003)(57112099003)(13003099007)(16102099003)(18002099003)(22082099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Jul 2026 02:03:43.8789
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2f274018-55ef-4489-5b94-08dedbcbf958
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BN3PEPF0000B075.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR14MB3888
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.5691186
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0181.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?oxQjgcq2ONc7vqQJQ9ChbDIqJ8vn1GeD7XS2DMVlgzq892UJDBHj+7VF?=
+ =?Windows-1252?Q?wqQ/rj8+137u1vzIQwRgXn01iY0JqAzrUpHuxH1ERsijYw4PhZluM3or?=
+ =?Windows-1252?Q?ZVLk0ChdyEWpMG0ZDnYtgjC7VDB/fgY90X66uYscKnG3buogHJ8hySnP?=
+ =?Windows-1252?Q?nUGMw/mRC10BwUTMx72BS7d9Rpd8jqvb1T3k6Bn9jbQBSWKvU6aEHR5p?=
+ =?Windows-1252?Q?AbwsCZoLftFOWgT3mZ+o4xHtHhBIvbNiNIwsHgLH41XvpwNAP2yT/+VZ?=
+ =?Windows-1252?Q?p+6USrBBnxWfOdeDgvTnaSm3XRIl3ksK6EiYOiYvNhlvLHGSgZ5sIFny?=
+ =?Windows-1252?Q?5b6vb+mmdako7/7JTuobPEu/12hO7L/sGFye43Nz3AR0ZFQFSGCCdPe5?=
+ =?Windows-1252?Q?wBKw3ZjbZ1nKlMbCSnF/Hhynqv9w6FvkCUnmbgSMWUd7Gfl4IDJ4//2q?=
+ =?Windows-1252?Q?ckX1aN8wdwFb+tFtFrNa05zdsND7COe2Pb4os0siRb5EnVG1QzIC6M/z?=
+ =?Windows-1252?Q?8J+/k4qXGVHB1cOb+O3lcC31s/fnhL9hXH7zpqUKU9QMXIOIzGyc54W5?=
+ =?Windows-1252?Q?O1mJGK2Ml2uXMKpeD/K4tl+8UllY3+afZ8QtmXx8K1B2gAdyJWG39/rN?=
+ =?Windows-1252?Q?qs5UH/l+YV5MwdmNXBFMhx1yV+GOXLlDFrWXtFfw4rIHpMpeNk2PZQJZ?=
+ =?Windows-1252?Q?K0t/y7Nikcs8Aj8aE3a+Ta8qh0S1D2Vpde+HEmE2TLE2x82nn0XJVYO1?=
+ =?Windows-1252?Q?H4ubVJ06tXRnPqsolf7LB+IaLIs6+Du8Xm+2OnCdgAVoNAWhT2VsysW/?=
+ =?Windows-1252?Q?At//TD2UR0W0kZiEAag8IQJWHvoz2QplOheqrIQV5amf5Hy/GcaADGqF?=
+ =?Windows-1252?Q?UufrXUutsIRpC/Z1TwNYSHk6KEnYzpPbdSky0uoKgM+/dZLLBndC8f9n?=
+ =?Windows-1252?Q?ItZ6gXYOhxMVVeQOA3qoMPLnuZjkAy8Aoaa59EISXDqk6ptSmugQi5a8?=
+ =?Windows-1252?Q?qwaZd3/ogASMvYeHQdyo1CcZl/GPZO1Vvz22EvtkFFpICYqOvx3lsena?=
+ =?Windows-1252?Q?/jWEd70mxZFGLhPQysNBr5rzUcQY9MAnd8/ZntkJ5EAZUWTwvTuHAxxb?=
+ =?Windows-1252?Q?d4HjEudlBJdrkoIpyIede9RLlplRd65KXhbrf/2gngtDeg7kmA/aLWoh?=
+ =?Windows-1252?Q?F0eVjaPHY8tEYNK2+qA/5gmoUdtImINmdPosoxDIDLUR9Z7s09BpR5n7?=
+ =?Windows-1252?Q?hOTL079WmohtWQbHmEz+XMgBcuP8SQvmN/l3XzYrBebNBvUjMO5Ysq4Q?=
+ =?Windows-1252?Q?gxZWIoQNQt6xLv6E4oudNzmjpOzAGqvW+INerF6DoFKnQ8NWrb7BJiKG?=
+ =?Windows-1252?Q?7CvLWcd5d62wYcnx6bWyfHNvByDCpF1WdYrfhNtamc4SSe4kBogt3Pza?=
+ =?Windows-1252?Q?Ir9dj6XSHXpLbaF5UDCtiyQVSE5ZUpLAXxlRiM+SF/MyQL6HKzDufVL0?=
+ =?Windows-1252?Q?81Fz7J9LPmOL1IxlCNt7J9a8rsCVlNIl/MpT5gZvqZ1h5lNv3WTep+SO?=
+ =?Windows-1252?Q?5dijJU87fu7FoAhoicDi7BoscrGOHma0TsGqfNkyM2V9CzJRldN3JDzV?=
+ =?Windows-1252?Q?vKhXnOs+TP7b8Hrpvnuz0iE4tAmWO246qH7+hiIOTdb/pF3A83Bjjy4H?=
+ =?Windows-1252?Q?QTDoTdidDM03t/dT6Xt+HIv3qd/DDPEfPqyOY1XaUgXBetdKeN9hqrTT?=
+ =?Windows-1252?Q?q69rNq0NnTWkYMrp8+KGUUCH9gaNZ42jBtrvPhBaw0yViPDyPOGzC2qO?=
+ =?Windows-1252?Q?omOgebUiWTWgzxVMQb7h4IWTNsdb7QYRAuQ56Z623A4QTj21rYGPiVG+?=
+ =?Windows-1252?Q?ISjpBpB4p/bk31bjMA7ua+dPJBkjX/7vYuNdyTOtcqLFTXs3ZCTGQPO2?=
+ =?Windows-1252?Q?xr9asI1zfFCQHP2gRW3yEJwwPrKUOgolw8r/tIPgfPcDtF12CqVF7llq?=
+ =?Windows-1252?Q?OevratsatLs1UF81ZoH+BLPWZRpjvYpd3NfpG0cpisitTuxqrxMztgQ7?=
+ =?Windows-1252?Q?V6yTEJIZToYutnD+DcHoD6mD3UTzirvEMztUhpnx+Mx1TgPd+0QENoUQ?=
+ =?Windows-1252?Q?0Gln5SFIk2wFwKn5vmtfkbQkI8FLhvSqsn1YVF+ViM4J68a8FybcIf74?=
+ =?Windows-1252?Q?kmU5p6s8shnLmLL3SHqTdQXtsoRYe40BGkbxb0Eyl6rmjp0j3ZQWG9DK?=
+ =?Windows-1252?Q?cM9k82bDAk0DupMWtXXQJNLaSOsWWoIqva9nirk1qGYnOMi+LmG5qCtD?=
+ =?Windows-1252?Q?4QhQzypLjDPYY0rHP0FZxxNbld7tU3BhDoer74iN45lucfTeAOhGGfZd?=
+ =?Windows-1252?Q?Zod/cMmPppRXNorOaY3u8muXoq0+UJIIOPXkRWPGrxob+YnzBkNkL2Gb?=
+ =?Windows-1252?Q?5F61dNlUyVeH7QXUFkEtww=3D=3D?=
+MIME-Version: 1.0
+
+--_000_1172661e1762470ca69c0e3e7124d751BLAPR09MB6051namprd09pr_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+
+
+Thank you for your email. If you would like to contact the Governor and rec=
+eive a response, please use this link: Governor of Oregon : Share Your Opin=
+ion : State of Oregon<https://www.oregon.gov/gov/Pages/share-your-opinion.a=
+spx>. If you are requesting assistance, please use this link: Governor of O=
+regon : Request Assistance : State of Oregon<https://www.oregon.gov/gov/Pag=
+es/request-assistance.aspx>.
+
+
+
+As the leader of Oregon, Governor Kotek is committed to serving and represe=
+nting the people of this great state. We look forward to hearing from you a=
+t the link above.
+
+
+
+Thank you.
+
+--_000_1172661e1762470ca69c0e3e7124d751BLAPR09MB6051namprd09pr_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<p id=3D"isPasted" style=3D"text-align:left; text-indent:0px; background-co=
+lor:rgb(255,255,255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New=
+ Roman&quot;; font-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">Hello,</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">&nbsp;</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">Thank you for your email. If you would like =
+to contact the Governor and receive a response, please use this link:
+<a href=3D"https://www.oregon.gov/gov/Pages/share-your-opinion.aspx" style=
+=3D"margin-top:0px; margin-bottom:0px">
+Governor of Oregon : Share Your Opinion : State of Oregon</a>. If you are r=
+equesting assistance, please use this link:
+<a href=3D"https://www.oregon.gov/gov/Pages/request-assistance.aspx" style=
+=3D"margin-top:0px; margin-bottom:0px">
+Governor of Oregon : Request Assistance : State of Oregon</a>.</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">&nbsp;</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">As the leader of Oregon, Governor Kotek is c=
+ommitted to serving and representing the people of this great state. We loo=
+k forward to hearing from you at the link above.</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">&nbsp;</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0px 0px 0px 0.5in; font-family:&quot;Times New Roman&quot;; fo=
+nt-size:12px; color:rgb(68,68,68)">
+<span style=3D"font-size:12pt">Thank you.</span></p>
+</body>
+</html>
+
+--_000_1172661e1762470ca69c0e3e7124d751BLAPR09MB6051namprd09pr_--

@@ -1,0 +1,1028 @@
+Received: from MW5PR14MB5457.namprd14.prod.outlook.com (2603:10b6:303:1a1::5)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 14 Jul 2026
+ 18:25:01 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=ftmtJSbNdpmaFeqI6YnoCspZ+mu3I2OAwpMEQaSgUiORo0AkRTvPr+Xq5GCQ8LzvtvgyC/c9ihhpdAhrF26GQ5flV3J0RvarIHuruadOmiYYCWu8RMsiE6I/VU32CF9jyXNvFJE/IGSfsCIYurNzs4lx2IGaTrQSXUWmF4BZE7PyD4rnWvgY4QvfPtq25RH8YGAYMZSScV7hP9h+jvkYKjONjDCyv5BNXsCDcl0XpkAsiUBo3VlTKJddHy8KlXLJUPPBY3R+FUDNzxO6cruZlRK1/Vq1GC4KYfT/YKUkciITcmsFLyYH4G2NsCo/LGPVeeKDxfTjtPAD9ir9lcvcjQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=4Ir3GfvKhkpFbroZTd8NK/r87zr8IfpWrAhljvUOMlE=;
+ b=JP0CiNMEIW1ieDujZ6A4NAIpsBm6fWUUywr2YduzkBYqyffHq4mt/r5tKvYvcny2IGCQlMJSPI1gE11OZvBHiI8TMi7ZjvXsT89CJHyixQ5s28rFKPRSz/iZYQnQQlFnpwV0R6TQeww+n4KxJH8yYIWHfMEm4OohPxMIRNskIp2Czpc2B+87j7X4dc3RTceJFOQUn3qJNA/GXxB2NJHxUnc90VxJasihpfbhp6J3nFU+iE6tHyLl9tJ572uJ8xJ31O5nzO7M41DdOe08RtNGx5QA4bS91MwJByZrZ8Ghb3t0ThfoPhKmfh7TjQRyf7kWA2PQvFUctFf+T1e2vqH6lg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c001::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=osp.oregon.gov; dmarc=pass (p=none sp=none pct=100) action=none
+ header.from=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov; arc=pass (0 oda=0 ltdi=1)
+Received: from CH2PR14CA0005.namprd14.prod.outlook.com (2603:10b6:610:60::15)
+ by MW5PR14MB5457.namprd14.prod.outlook.com (2603:10b6:303:1a1::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.223.10; Tue, 14 Jul
+ 2026 18:24:57 +0000
+Received: from CH2PEPF00000099.namprd02.prod.outlook.com
+ (2603:10b6:610:60:cafe::39) by CH2PR14CA0005.outlook.office365.com
+ (2603:10b6:610:60::15) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.223.10 via Frontend Transport; Tue,
+ 14 Jul 2026 18:24:56 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c001::1)
+ smtp.mailfrom=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov;dmarc=pass action=none
+ header.from=osp.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of osp.oregon.gov
+ designates 2a01:111:f403:c001::1 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c001::1;
+ helo=BY5PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c001::1) by CH2PEPF00000099.mail.protection.outlook.com
+ (2603:10b6:61f:fc00::314) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.223.9 via Frontend Transport; Tue, 14
+ Jul 2026 18:24:55 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=gH0ZzrpFQyyBYa0KaZb4JhCvt9eCGiNH+5JleTb5jK4MS4XQEHyV2jFJhrp7VxWBQegsAqV60pISXzhbW22ei3sWIEy8CMazdQj6+4ffCqKYmwp68/8kg7XaE7wCR60VstAVSHitwZhvrvcmuJVFrG+3ZbLtrYtn1uZv3DcDxnRTFIO8owjCp6NK/S7GnbVlBN2aVbXGHdX55WJHoPaBo0TwdgQGUWjOFXhWODtEs3YoWZYfdYoh6p5Gw1xPJD9pbCtF1v15kcgXYNAC4xivHJhsSZ73bf5UNRD3I8fc7dyfQ307KhkDWCPAIH0IfGW1Txpl1CUmT6H2eTN8F5P8SA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=4Ir3GfvKhkpFbroZTd8NK/r87zr8IfpWrAhljvUOMlE=;
+ b=a0TuXsP48RymQ5Xv/9ZzY5ue40yqdnF3WzAGG6QW1mWyIu7GRgcenJyYBinXkT+fDNONQmUUOMIheBZyOHyV1B7nanA5as6H4y7AQ9VsvF3azV6gPClC+uYGV/ki468u7huopR82uPHQOokMC6daRfkP9HuX66CjKnOoD8QyHSJrl13BhLbkikGEdiVAXwWOg90LqhUgLkL/GG8U5Cw7gPRJgWLocROO5WqhaqPbafvwBeb5ELfo5cCL9/r9DCHXkw4ujRPP6/+jJ7byFxBALPcVV9EsHrb/MPpW67noiToqHS1CC7CIZk5tSLjPYmZnxLZNrZQiyQMRHm792VyRMg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 159.121.202.140) smtp.rcpttodomain=rswfire.com smtp.mailfrom=osp.oregon.gov;
+ dmarc=fail (p=none sp=none pct=100) action=none header.from=osp.oregon.gov;
+ dkim=none (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=osp.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=4Ir3GfvKhkpFbroZTd8NK/r87zr8IfpWrAhljvUOMlE=;
+ b=JklIDKYzGNrQS3YHazcWFGLzc/eHbkCA6ZBMzv7WWx3aNDSCX8+8wV0G8+aF3eFA/MV0pyAfF/Nn1IDEwjMc6rwt/jBmNDEGwVy5SVk2xhfH40FCCG87OKoTrBj4fC81hTXHy1Zw2KgoLYW0MK04E10miaj5VN73c7bMasF2FNtwCYrahdtAaH4E7rQg9AlfaVtrjMoIneCFNinqDBKOdSZunEv1OiwP8D6xBzOTtCK0YpZqIyJvethLP2YdkVnLpBpFAVp6odU6j2G0zISBnXCp+4B4dXPjgI8Mm9iEYQVSjFgzWXg+YfCtF+jnXXzLeuLJ+/+6gAmVr5NIuVrnsw==
+Received: from BL0PR0901CA0005.namprd09.prod.outlook.com
+ (2603:10b6:208:1c0::15) by PH7PR09MB12290.namprd09.prod.outlook.com
+ (2603:10b6:510:366::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.223.10; Tue, 14 Jul
+ 2026 18:24:49 +0000
+Received: from BL02EPF0001B418.namprd09.prod.outlook.com
+ (2603:10b6:208:1c0:cafe::61) by BL0PR0901CA0005.outlook.office365.com
+ (2603:10b6:208:1c0::15) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.202.20 via Frontend Transport; Tue,
+ 14 Jul 2026 18:24:49 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 159.121.202.140)
+ smtp.mailfrom=osp.oregon.gov; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=osp.oregon.gov;
+Received-SPF: Fail (protection.outlook.com: domain of osp.oregon.gov does not
+ designate 159.121.202.140 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.202.140;
+ helo=mailhub.osp.state.or.us;
+Received: from mailhub.osp.state.or.us (159.121.202.140) by
+ BL02EPF0001B418.mail.protection.outlook.com (10.167.242.199) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.21.223.9 via Frontend Transport; Tue, 14 Jul 2026 18:24:49 +0000
+Received: from WPOSPEXCL04.osp.pvt (10.45.7.25) by WPOSPEXCL04.osp.pvt
+ (10.45.7.25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2507.44; Tue, 14 Jul
+ 2026 11:24:47 -0700
+Received: from lf.localdomain (159.121.101.204) by WPOSPEXCL04.osp.pvt
+ (10.45.7.25) with Microsoft SMTP Server id 15.1.2507.44 via Frontend
+ Transport; Tue, 14 Jul 2026 11:24:47 -0700
+Received: by lf.localdomain (Postfix, from userid 900)
+	id A516028005FE; Tue, 14 Jul 2026 11:24:47 -0700 (PDT)
+Date: Tue, 14 Jul 2026 11:24:47 -0700
+From: "Hubbard, Micah" <support@osp.oregon.gov>
+Reply-To: <Micah.Hubbard@osp.oregon.gov>
+To: <rsw@rswfire.com>
+Message-ID: <E7Mf90NoRag5viLpuHxmKD@lf>
+Subject: PR27478 - Public Records Request re: White
+Content-Type: multipart/alternative;
+	boundary="--==_mimepart_6a567eef866b2_298c00233fc56bd"; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Mailer: LiquidFiles Virtual Appliance
+Return-Path: support@osp.oregon.gov
+X-EOPAttributedMessage: 1
+X-MS-TrafficTypeDiagnostic: BL02EPF0001B418:EE_|PH7PR09MB12290:EE_|CH2PEPF00000099:EE_|MW5PR14MB5457:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 73f3190b-a2dc-434b-a8df-08dee1d53498
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|61400799027|7149299003|23010399003|36860700016|82310400026|1032899013|7049299003|3109299003|69100299015|13003099007|6133799003|11063799006|56012099006|16102099003|18002099003|2066899003|8096899003|4076899003;
+X-Microsoft-Antispam-Message-Info-Original: OM6mSR0x2e0PjOShCAmwrDWOpDj4uglqI6sBqOw5SDGbAGYXuNLB1fynXWZNq1un43ygP421BTnJljsuGytGxaq+I3ltwxmbbxzuafx6VMKB8PIJNmyOQwyaOwnX/igxkcOnLKz0GkRAOg3r1lvu/BhdEv3cxLuzHFXmisbpu0LID02mwcApUPpUWBmFCi3KukD7gZgGpcTsfOtZxcbA+ahrlxixzNSjTCE3/fCsQB6y4427SzPWUCzqHla7C7ztg4zwQt+ybRL7A7m0I8rp+sUYkbUBJuj0xWKhahbrQL+BZA8J55xPbC6PUNU13MDe1cRrJr72eLLSxTf32dOuYvwG6JlJ/uphgcLRXWLTYPlhFliRJEBh0ddhBcykNdCfpOg+Z901OSPeuX8WXUYO2Ortmb6t5YnN0/JqomfNw/+VeJJJNCBb+oR08Rjt6/t5lDWXFUCk8PtuUU8Z300EfoqQaJRkwkqT/bfpUHTaZO3cLYSwwRkBSf1GvpxCdCuTyGNse638oGhXvyHEzEGnBkuAEnDlOeQLaeDARNUR9Vr3sHgSx5sXmlTrwgI7qIyLC5t9HLpBlqpl6SA0XBmJGHF76sMTBYBiJViZjN0XHaLOEysWTJoibBpgVUVFWYUH3ZCUlWC7FY1Xt73VCHCzSw==
+X-Forefront-Antispam-Report-Untrusted: CIP:159.121.202.140;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mailhub.osp.state.or.us;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(61400799027)(7149299003)(23010399003)(36860700016)(82310400026)(1032899013)(7049299003)(3109299003)(69100299015)(13003099007)(6133799003)(11063799006)(56012099006)(16102099003)(18002099003)(2066899003)(8096899003)(4076899003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: Hc3/M/jMQsMjG6fBCumjNw6dujwsYM9EbjTdTmxc/dhWmQ/Xi2G9po2ZPsiGW7MpdXE84aNT4T2S0ZE6bDYLnA+Ok/8zwm9caFxngCl7lpBl42H+n9TlN0W2AT/nZXdMO7fLzszdNPFSXbSBJjnLz5BVzIb+YjSXsPxiS7sXtUehSJAUb/YEy5dH5rEAsGWQ9Ducv2kvF/4L2iRE1t320aoqGw1z/lxUlR5jJYESrmLK78RQdbe4x1IZowsgAygUIOy3evWPWcmHr1IkAIqFDUMUnPJZgFBRwRPHjFV2ssfVNah/CEOtq9/0QlYvTqY9eD/rnBUvTqFaNTpD/sYILXjBmpPdq1fxuAIWAaK4CPWa6CG02uVTQ/yuwRt54HKBOiXXdsHettX9vVTIpMEO1F9T4DCsDWFYRV9BIja0XttNfGxhtQbB3TUCemIxixTM
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR09MB12290
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Jul 2026 18:24:55.9892
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 73f3190b-a2dc-434b-a8df-08dee1d53498
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: CH2PEPF00000099.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: CH2PEPF00000099.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: CH2PEPF00000099.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 25ef3fe8-1659-4d72-4dbc-08dee1d530cf
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704160111799003|69100299015|6073799003|12012899012|47022699003|7049299003|3109299003|7149299003|5073199012|4123199012|5063199012|1032899013|35042699022|6133799003|19002099009|55112099003|18002099003|16102099003|2066899003|4076899003|8096899003|5063699009|56012099006|13003099007;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c001::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09CU001.outbound.protection.outlook.com;PTR:mail-westusazlp170110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704160111799003)(69100299015)(6073799003)(12012899012)(47022699003)(7049299003)(3109299003)(7149299003)(5073199012)(4123199012)(5063199012)(1032899013)(35042699022)(6133799003)(19002099009)(55112099003)(18002099003)(16102099003)(2066899003)(4076899003)(8096899003)(5063699009)(56012099006)(13003099007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Jul 2026 18:24:55.6360
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 73f3190b-a2dc-434b-a8df-08dee1d53498
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=776738eb-4f9b-444f-bc33-4dd4e8e1a9b5;Ip=[159.121.202.140];Helo=[mailhub.osp.state.or.us]
+X-MS-Exchange-CrossTenant-AuthSource: CH2PEPF00000099.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW5PR14MB5457
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.3634464
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0202.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710204)(4712164)(4999285)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?YmZNZDZEMEttcDVCNXc4UFo1eUlDSGpLN0NHcVZ5T09ROTJnWldMWHZaUlZi?=
+ =?utf-8?B?SVNFQ2JpbktBRnhwenhlYlhpN3R2Y2xrVURmczZqNkxFbUpPaXhVQW81UGVp?=
+ =?utf-8?B?MGV6ZktIYjhKQ1R0Y3pzcUcwalVGMUFLZHdsbG51dURIRFUzSDhMWWlFUldG?=
+ =?utf-8?B?d291QjE4NkpwY1FjcHF4b2FtYjFLR0pkTitFODY0SzViVUtjRUo4eWdQcEtG?=
+ =?utf-8?B?TGdWeGN6MStsaHI0NHMzUlh1RG0rK0V5bXp6eU5pVnFyY2ZCaVc1TnZSSndQ?=
+ =?utf-8?B?Ui9mck1SM0pkT2J4WUtia2RaaUJNMlNZemF4VSt2K1ljUWt5ZzR5ZnNvSnFZ?=
+ =?utf-8?B?djVGOFlsYjZXUjRWUnBrZXdaTndBaGRUU1RZZGFLaTN3Q3ZUODlXckhPRitV?=
+ =?utf-8?B?aFNYMG9GOTlSS1M2NjBWMlQzQnRwRjdWbmxYRkhxcEpITlozUzkzckV6ZTl2?=
+ =?utf-8?B?bHhwZ2FTU0FhRkl2YndZbjNuN2VXZnErRGl0RXdiNUo4Y29sVkdwRTU3V1VO?=
+ =?utf-8?B?ODNoQ1piMDdONEttSnV3eXN2KzhRQXJTdjl2TjBnL1VSRUh4QUE3NGR2TFNI?=
+ =?utf-8?B?OWFYYnUreXFjQnRHYmJBckY0WXQxMk9DMHNUdHp4NVpIcVBYNEV6a3NaQVBJ?=
+ =?utf-8?B?YWswZ1dwZS9UNVhtdWdVelIzOExNMit0dTlDOGdzMjQ4M3JJaUwrbmhIWno2?=
+ =?utf-8?B?bzc4TnJ4ZmlPTmpiZjN6bzhpWld2TXpubXg1WlQ3dlk0UDhkTW1mVmNtVTV6?=
+ =?utf-8?B?REpXcVplNUVNcEM5bU9TWDhSN2ZPLzVZTEwvL0J3bVJZOXBVMVpmT1FTTGJC?=
+ =?utf-8?B?YmowUkVpNEFiajVnVjRZQXF0UmhxdVBPUS9iRkhwSTdJMW4rbUEvVTVvd09j?=
+ =?utf-8?B?WUdpVldpRGNSTUUyNGl2dXBPTUlkdXJYYWpicnpsRkZxb0RLZ1h5NTNyOTdo?=
+ =?utf-8?B?c1ZibVFwSGUzTzlqZDZxVG9OMnQ5cUJBYmVKelF4b0FNZ3JGRWtCODBJRmVH?=
+ =?utf-8?B?ek1tbHcwZHJkcnhqWHdlK0dleWo0QjUzL0JmeVRDTEhqTWJtblcwZUgyTkcy?=
+ =?utf-8?B?eTBlaFZVVjk5dC9WbU56NWJJOC9yeDc2SlBYQmc5TVMxcVZKY1VFYSswVTU3?=
+ =?utf-8?B?ZHhGbHdDYW16S0RDVGtmU0dpRXlHa3lGamk0VzdNNGl3YWlKaFhyOGtHRVhE?=
+ =?utf-8?B?U21BekFEMTJnTjBmUkNaTXhISFBwakgzaXV6NnJiR2V1MzRrdWhlL05hWW5v?=
+ =?utf-8?B?OEpTNTRzY1JOangzKytJMnlxUUZJQXNWSUpDQlM4WnJYRjdTcUwzNHBvQW8z?=
+ =?utf-8?B?dXdsYXpxTisyck8xNHZ3cUtCWUQyNnF2ZEppdW1PYnl3aE1DWm81RWhkdDk0?=
+ =?utf-8?B?RXJjSk9LUE4xelV0SUdmVG15M0hkLzJqakVteGVxK2xCK2M5NnRhTmxjVzQ2?=
+ =?utf-8?B?eDBjNkptSTZ2dmdSSnFPSGtmaTRBL21QRTBhWFVnenZWeERCSmV3Ry9YZjNa?=
+ =?utf-8?B?ZmhOSVhQTmI4cFRXbEJQVVJQL1R6NW5kTmpNTVU5L29MRFA2THlUNnBYdThj?=
+ =?utf-8?B?MlFEdEZJNjEvSi9RUUZHcXFubjdrWFd4WWQvU0g2YW9hKzlXV0NaczdRMVNO?=
+ =?utf-8?B?Y2pLVWpNRG44TGtsSG12RHkvaitXMFBuanNYdFFWRHlhd21HdWYxVnBOZllC?=
+ =?utf-8?B?ZVM4UEcwS0RXdk9oTjFkWTNwdlNLcHFVcUwyaUNQZWFnSUg3YlRNRHdkTHlF?=
+ =?utf-8?B?VTNka2lPanRacGN3K3JDNDcvTXZWVUc3VW1PenNkMFU3VzlKaVhCVjF2bm9C?=
+ =?utf-8?B?YmN5RDF2SGdscW5kNXdlNmRLRWpQVFFxeEV2QTMxZEEycTVyR25xK1J4YU1h?=
+ =?utf-8?B?c21XbGJkRmtObkxEeC9PTmdDYldLeXR3V1pDZXB5VlRuYUZxZ0cwTm1vR0VU?=
+ =?utf-8?B?cDNWZjFsdmVkdXRuMmJrK0JpMUNxeUtzaU1xZDU0SlFTM0hXR3hnTUsrV3dn?=
+ =?utf-8?B?dUhBNmNMM1dZSjhmTThZbDJiR291eVBjVDlUY2liTjF6NCsrTnhLM1FoMHFX?=
+ =?utf-8?B?NUlkQ3FmWWowWU5FRExjL2QxVVEya2tqM2RlSEIyUU5zWTNaaXM4UVNoUUxa?=
+ =?utf-8?B?OXNDSUxEdlU3dHF4MHBUWlVUNURaWS9BRVp2TUxGb2tjZlFtaGFuUndNWmFD?=
+ =?utf-8?B?TG9IdGlnWkFYMnMzaFhMNlV4a0VvNVd6VHZLYUlEN2RRemdTUHM0ODcxYUYr?=
+ =?utf-8?B?V2Q2MkdWYlhIZ0xlenBKdjlFc3JjZ0VZaFNkc2xWY2RJVDVzcjB2T3FlNGtI?=
+ =?utf-8?B?bnpEQXpzeDY2aytHaGxjR0pyQytUY1YwNGlZcGRReVNrTkZXSVE2M1hmZFc3?=
+ =?utf-8?B?empRZEdrakpGYVdlZGhWMUFFckJERXo4eVpQQ1BLZjEyUVN0YTZpRC9uUk43?=
+ =?utf-8?B?cW9GTTRMa2dDUFdOTmlZN3ZQdTVQa21JWHBwOG91TnZPNVVkaG91eE5rYks1?=
+ =?utf-8?B?d3ViU20zdDkxRUhXQkN2OGNDTFhFMG5NTCtrWklCeUtKSWhKOTEwSjVGNVVI?=
+ =?utf-8?B?UVU4N1FMekJibHpZaGVjdXBzeExUWWYweW9iMjhYS3FRNE5KMXZ2b2FVQlh6?=
+ =?utf-8?B?VUZXb0NHbFdUQVZ0bXA5a2p2RW5zWWxWV3RvYnZEVHJiYkVjNWF4aGFPUE85?=
+ =?utf-8?B?U0czVGlyN3VsM1ZYTVpjdnVaUlYrTFJoQTd5b1VEUFhhNmlzUDZFNmJ2SmF0?=
+ =?utf-8?B?ZWY3UVY1KzMvUTdvYWtFRnNGMll6bTFqSFE0QmNGWFhrRFVoVUlldXBISWRN?=
+ =?utf-8?B?MHl2eVc1K0UzYWVObGxCTDM2cEtLYVluTXZvTzN4ZkN3UklybDRCN0lEdWxC?=
+ =?utf-8?B?bkJOc09sQXFtNmFSNTYrZ0tOMlRNMDJwMkkvYlBQRzNWYXFBTVBocDlUUlFq?=
+ =?utf-8?B?eVE4Sk1nZ29EZDhrYVZuVWIyRTIyanZXVEZ6MWRVcHhXNkNWUm9iVUdjRCtY?=
+ =?utf-8?B?akRBa3FFZnloTkRMQmdZY3BNY3A0OTB1b1lQWmZtV3dZaFh2cDJNdi8waEd3?=
+ =?utf-8?B?UkVOM1dVMTBlMit3WGdVNzRkdVVUQjBnUjB0cElseDVzZ1Zta1llM014NEJy?=
+ =?utf-8?B?NXRCS0ZWd2EvRmRadnlqR2RiVFpaTEh0SzJLTCtyOHM1ZEZhUDFFbkVQc3k0?=
+ =?utf-8?B?bjZtbDRYY3NIYVF2ZjhJMWhaMXRxNW5oSnJCdmFyMFBFdjBGc3AwT3M5bVQ5?=
+ =?utf-8?B?bENGRnRROU9nVjhDYlRJZlpHVzhzbXpGWkZCZnk3dm9DNDdzM2w4eDN3cWpG?=
+ =?utf-8?B?TXRYT1NKWk0vRG5tN3lPVzFGZmhBMXZlWm56b3hHY2tCTUh6cEJ0TytweE5n?=
+ =?utf-8?B?MTBzckk4aHFYY2loamdjUUw5LzNna0FZVHJMZTRXMUc3WnluVnZCRExDQT09?=
+MIME-Version: 1.0
+
+----==_mimepart_6a567eef866b2_298c00233fc56bd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Robert Samuel White,
+
+Please see attached requested records.
+
+Thank you,
+
+Micah Hubbard (she/her)
+Records Request Unit Senior Admin, Legal Compliance Specialist
+Central Records Section
+Oregon State Police
+3565 Trelstad Ave SE
+Salem, OR 97317-9614
+Email: Micah.Hubbard@osp.oregon.gov
+( Micah.Hubbard@osp.oregon.gov ) Cell Phone: (503) 930-7680
+
+*****CONFIDENTIALITY NOTICE*****
+
+This e-mail may contain information that is privileged,
+confidential, or otherwise exempt from disclosure under
+applicable law. If you are not the addressee or it appears from
+the context or otherwise that you have received this e-mail in
+error, please advise me immediately by reply e-mail, keep the
+contents confidential, and immediately delete the message and any
+attachments from your system.
+
+The following files are attached to this message:
+
+
+  - PR27478.pdf (1.31 MB)
+
+  - SP26097765 CAD.pdf (48.7 KB)
+
+
+Please click on the following link to download the attachments:
+https://lf.osp.oregon.gov/message/E7Mf90NoRag5viLpuHxmKD
+
+
+If you forward this email with the secure random download link, whomever you forward
+this to can download the files attached to this message.
+
+
+The attachments are available until: Sunday, 13 September
+
+Message ID: E7Mf90NoRag5viLpuHxmKD
+
+
+
+
+--
+
+If you need assistance accessing or using this system, please contact support at:
+support@osp.oregon.gov
+
+----==_mimepart_6a567eef866b2_298c00233fc56bd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" lang=3D"en" style=3D"color: inherit;" xml:lang=3D"en"><head><!-- Compil=
+ed with Bootstrap Email version: 1.4.1 -->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <meta http-equiv=3D"x-ua-compatible" content=3D"ie=3Dedge">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno, date=3Dno, a=
+ddress=3Dno, email=3Dno">
+   =20
+  <style>body {
+font-family: Helvetica,Arial,sans-serif !important;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 150%;
+}
+img {
+-ms-interpolation-mode: bicubic;
+}
+@media screen and (max-width: 600px) {
+  .w-full {
+    width: 100% !important;
+  }
+  .w-full&gt;tbody&gt;tr&gt;td {
+    width: 100% !important;
+  }
+  *[class*=3Ds-lg-]&gt;tbody&gt;tr&gt;td {
+    font-size: 0 !important; line-height: 0 !important; height: 0 !importan=
+t;
+  }
+  .s-0&gt;tbody&gt;tr&gt;td {
+    font-size: 0 !important; line-height: 0 !important; height: 0 !importan=
+t;
+  }
+  .s-1&gt;tbody&gt;tr&gt;td {
+    font-size: 4px !important; line-height: 4px !important; height: 4px !im=
+portant;
+  }
+  .s-3&gt;tbody&gt;tr&gt;td {
+    font-size: 12px !important; line-height: 12px !important; height: 12px =
+!important;
+  }
+  .s-5&gt;tbody&gt;tr&gt;td {
+    font-size: 20px !important; line-height: 20px !important; height: 20px =
+!important;
+  }
+  .s-6&gt;tbody&gt;tr&gt;td {
+    font-size: 24px !important; line-height: 24px !important; height: 24px =
+!important;
+  }
+  .s-7&gt;tbody&gt;tr&gt;td {
+    font-size: 28px !important; line-height: 28px !important; height: 28px =
+!important;
+  }
+}
+</style></head>
+  <body class=3D"bg-light" style=3D"outline: 0; width: 100%; min-width: 100=
+%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; font-family: Helvetica,Arial,sans-serif !important; line-height: 24px; fo=
+nt-weight: normal; font-size: 16px; -moz-box-sizing: border-box; -webkit-bo=
+x-sizing: border-box; box-sizing: border-box; color: #000000; margin: 0; pa=
+dding: 0; border-width: 0;" bgcolor=3D"#f7fafc">
+    <table class=3D"bg-light body" valign=3D"top" role=3D"presentation" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"outline: 0; width: 1=
+00%; min-width: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; font-family: Helvetica,Arial,sans-serif !important; li=
+ne-height: 24px; font-weight: normal; font-size: 16px; -moz-box-sizing: bor=
+der-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #00=
+0000; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; bo=
+rder-collapse: collapse; margin: 0; padding: 0; border-width: 0;" bgcolor=
+=3D"#f7fafc">
+      <tbody style=3D"color: inherit;">
+        <tr style=3D"color: inherit;">
+          <td valign=3D"top" style=3D"line-height: 24px; font-size: 16px; f=
+ont-family: Helvetica,Arial,sans-serif !important; color: inherit; border-s=
+pacing: 0px; border-collapse: collapse; margin: 0; padding: 0 0.5rem;" alig=
+n=3D"left" bgcolor=3D"#f7fafc">
+            <table class=3D"container-fluid" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; font-famil=
+y: Helvetica,Arial,sans-serif !important; color: inherit; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse=
+;">
+              <tbody style=3D"color: inherit;">
+                <tr style=3D"color: inherit;">
+                  <td style=3D"line-height: 24px; font-size: 16px; width: 1=
+00%; font-family: Helvetica,Arial,sans-serif !important; color: inherit; bo=
+rder-spacing: 0px; border-collapse: collapse; margin: 0; padding: 0 16px;" =
+align=3D"left" valign=3D"middle">
+                    <table class=3D"s-5 w-full" role=3D"presentation" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; font-fami=
+ly: Helvetica,Arial,sans-serif !important; color: inherit;" width=3D"100%">
+                      <tbody style=3D"color: inherit;">
+                        <tr style=3D"color: inherit;">
+                          <td style=3D"line-height: 20px; font-size: 20px; =
+width: 100%; height: 20px; font-family: Helvetica,Arial,sans-serif !importa=
+nt; color: inherit; border-spacing: 0px; border-collapse: collapse; margin:=
+ 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"100%" hei=
+ght=3D"20">
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class=3D"card" role=3D"presentation" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-radius: 6px; border-c=
+ollapse: separate !important; width: 100%; overflow: hidden; font-family: H=
+elvetica,Arial,sans-serif !important; color: inherit; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; border-spacing: 0px; border: 1px solid #e2e8f0;" b=
+gcolor=3D"#ffffff">
+                      <tbody style=3D"color: inherit;">
+                        <tr style=3D"color: inherit;">
+                          <td style=3D"line-height: 24px; font-size: 16px; =
+width: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inh=
+erit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding: 0=
+ 0.5rem;" align=3D"left" bgcolor=3D"#ffffff" valign=3D"middle">
+                            <table class=3D"card-body" role=3D"presentation=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; fo=
+nt-family: Helvetica,Arial,sans-serif !important; color: inherit; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: =
+collapse;">
+                              <tbody style=3D"color: inherit;">
+                                <tr style=3D"color: inherit;">
+                                  <td style=3D"line-height: 24px; font-size=
+: 16px; width: 100%; font-family: Helvetica,Arial,sans-serif !important; co=
+lor: inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; pa=
+dding: 20px;" align=3D"left" valign=3D"middle">
+                                    <div class=3D"space-y-3" style=3D"color=
+: inherit;">
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">  </=
+p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">Hell=
+o Robert Samuel White,</p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">Plea=
+se see attached requested records.</p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">Than=
+k you,<br style=3D"color: inherit;">
+ </p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">Mica=
+h Hubbard (she/her)<br style=3D"color: inherit;">
+                                          Records Request Unit Senior Admin=
+, Legal Compliance Specialist<br style=3D"color: inherit;">
+                                         Central Records Section<br style=
+=3D"color: inherit;">
+                                         Oregon State Police<br style=3D"co=
+lor: inherit;">
+                                         3565 Trelstad Ave SE<br style=3D"c=
+olor: inherit;">
+                                         Salem, OR 97317-9614<br style=3D"c=
+olor: inherit;">
+                                         Email: <a href=3D"mailto:Micah.Hub=
+bard@osp.oregon.gov" rel=3D"nofollow" target=3D"_blank" style=3D"color: #0d=
+6efd; text-decoration: none;"> Micah.Hubbard@osp.oregon.gov<br style=3D"col=
+or: inherit;">
+ </a> Cell Phone: (503) 930-7680 </p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">  <i=
+mg style=3D"height: auto; line-height: 100%; outline: none; text-decoration=
+: none; display: block; color: inherit; -ms-interpolation-mode: bicubic; bo=
+rder-style: none; border-width: 0;"> </p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">  **=
+***CONFIDENTIALITY NOTICE***** </p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class=3D"" style=3D"line-height: 2=
+4px; font-size: 16px; width: 100%; font-family: system-ui, -apple-system, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&qu=
+ot;, &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoj=
+i&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Not=
+o Color Emoji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">  Th=
+is e-mail may contain information that is privileged, confidential, or othe=
+rwise exempt from disclosure under applicable law.&nbsp; If you are not the=
+ addressee or it appears from the context or otherwise that you have receiv=
+ed this e-mail in error, please advise me immediately by reply e-mail, keep=
+ the contents confidential, and immediately delete the message and any atta=
+chments from your system.&nbsp; </p>
+                                      <table class=3D"s-3 w-full" role=3D"p=
+resentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"widt=
+h: 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit=
+;" width=3D"100%">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 12px;=
+ font-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,s=
+ans-serif !important; color: inherit; border-spacing: 0px; border-collapse:=
+ collapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" =
+width=3D"100%" height=3D"12">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p style=3D"line-height: 24px; font-s=
+ize: 16px; width: 100%; font-family: system-ui, -apple-system, &quot;Segoe =
+UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, &quot;=
+Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &q=
+uot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emo=
+ji&quot;; color: inherit; margin: 0 0 1rem;" align=3D"left">  <br style=3D"=
+color: inherit;">
+                                      </p>
+                                    </div>
+                                    <table class=3D"s-5 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 20px; f=
+ont-size: 20px; width: 100%; height: 20px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"20">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"hr" role=3D"presentatio=
+n" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; f=
+ont-family: Helvetica,Arial,sans-serif !important; color: inherit; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse:=
+ collapse;">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-to=
+p-style: solid; height: 1px; width: 100%; font-family: Helvetica,Arial,sans=
+-serif !important; color: inherit; border-spacing: 0px; border-collapse: co=
+llapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"s-5 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 20px; f=
+ont-size: 20px; width: 100%; height: 20px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"20">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <h4 class=3D"" style=3D"padding-top: 0;=
+ padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: =
+1.5rem; line-height: 28.8px; font-family: system-ui, -apple-system, &quot;S=
+egoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, &=
+quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot=
+;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Colo=
+r Emoji&quot;; color: inherit; margin: 0 0 0.5rem;" align=3D"left"><strong =
+style=3D"color: inherit;">Secure Message Info</strong></h4>
+                                    <table class=3D"s-0 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 0; font=
+-size: 0; width: 100%; height: 0; font-family: Helvetica,Arial,sans-serif !=
+important; color: inherit; border-spacing: 0px; border-collapse: collapse; =
+margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"10=
+0%" height=3D"0">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"table table-bordered ta=
+ble-sm" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 10=
+0%; max-width: 100%; font-family: Helvetica,Arial,sans-serif !important; co=
+lor: inherit; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing:=
+ 0px; border-collapse: collapse; border: 1px solid #e2e8f0;">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">Messa=
+ge ID</td>
+                                          <td class=3D"font-monospace" styl=
+e=3D"line-height: 24px; font-size: 90%; font-family: Helvetica,Arial,sans-s=
+erif !important; color: inherit; border-spacing: 0px; border-collapse: coll=
+apse; margin: 0; padding: 4.8px; border: 1px solid #e2e8f0;" align=3D"left"=
+ valign=3D"middle">E7Mf90NoRag5viLpuHxmKD</td>
+                                        </tr>
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">Messa=
+ge Expires</td>
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">Sunda=
+y, 13 September</td>
+                                        </tr>
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">Messa=
+ge URL</td>
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle"><a hr=
+ef=3D"https://lf.osp.oregon.gov/message/E7Mf90NoRag5viLpuHxmKD" style=3D"co=
+lor: #0d6efd; text-decoration: none;">https://lf.osp.oregon.gov/message/E7M=
+f90NoRag5viLpuHxmKD</a></td>
+                                        </tr>
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">Permi=
+ssion</td>
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">
+                                            If you forward this email with =
+the secure random download link, whomever you forward
+                                            this to can download the files =
+attached to this message.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"s-7 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 28px; f=
+ont-size: 28px; width: 100%; height: 28px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"28">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <h4 class=3D"" style=3D"padding-top: 0;=
+ padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: =
+1.5rem; line-height: 28.8px; font-family: system-ui, -apple-system, &quot;S=
+egoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, &=
+quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot=
+;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Colo=
+r Emoji&quot;; color: inherit; margin: 0 0 0.5rem;" align=3D"left"><strong =
+style=3D"color: inherit;">Files attached to this message</strong></h4>
+                                    <table class=3D"s-0 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 0; font=
+-size: 0; width: 100%; height: 0; font-family: Helvetica,Arial,sans-serif !=
+important; color: inherit; border-spacing: 0px; border-collapse: collapse; =
+margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"10=
+0%" height=3D"0">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"table table-bordered ta=
+ble-sm" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 10=
+0%; max-width: 100%; font-family: Helvetica,Arial,sans-serif !important; co=
+lor: inherit; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing:=
+ 0px; border-collapse: collapse; border: 1px solid #e2e8f0;">
+                                      <thead style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <th style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: system-ui, -apple-system, &quot;Segoe UI&quot;=
+, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, &quot;Liberati=
+on Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Sego=
+e UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;=
+; color: inherit; margin: 0; padding: 4.8px; border-color: #e2e8f0; border-=
+style: solid; border-width: 1px 1px 2px;" align=3D"left" valign=3D"top">Fil=
+ename</th>
+                                          <th class=3D"size" style=3D"line-=
+height: 24px; font-size: 16px; font-family: system-ui, -apple-system, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;,=
+ &quot;Liberation Sans&quot;, Arial, sans-serif, &quot;Apple Color Emoji&qu=
+ot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Co=
+lor Emoji&quot;; color: inherit; margin: 0; padding: 4.8px; border-color: #=
+e2e8f0; border-style: solid; border-width: 1px 1px 2px;" align=3D"left" val=
+ign=3D"top">Size</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">PR274=
+78.pdf</td>
+                                          <td class=3D"size nowrap" style=
+=3D"line-height: 24px; font-size: 16px; font-family: Helvetica,Arial,sans-s=
+erif !important; color: inherit; border-spacing: 0px; border-collapse: coll=
+apse; margin: 0; padding: 4.8px; border: 1px solid #e2e8f0;" align=3D"left"=
+ valign=3D"middle">1.31 MB</td>
+                                        </tr>
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; font-family: Helvetica,Arial,sans-serif !important; color: =
+inherit; border-spacing: 0px; border-collapse: collapse; margin: 0; padding=
+: 4.8px; border: 1px solid #e2e8f0;" align=3D"left" valign=3D"middle">SP260=
+97765 CAD.pdf</td>
+                                          <td class=3D"size nowrap" style=
+=3D"line-height: 24px; font-size: 16px; font-family: Helvetica,Arial,sans-s=
+erif !important; color: inherit; border-spacing: 0px; border-collapse: coll=
+apse; margin: 0; padding: 4.8px; border: 1px solid #e2e8f0;" align=3D"left"=
+ valign=3D"middle">48.7 KB</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"s-7 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 28px; f=
+ont-size: 28px; width: 100%; height: 28px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"28">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <div class=3D"" style=3D"color: inherit=
+;">
+                                      <table class=3D"btn btn-primary" role=
+=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"border-radius: 6px; border-collapse: separate !important; font-family: Hel=
+vetica,Arial,sans-serif !important; color: inherit; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; border-spacing: 0px;">
+                                        <tbody style=3D"color: inherit;">
+                                          <tr style=3D"color: inherit;">
+                                            <td style=3D"line-height: 24px;=
+ font-size: 16px; border-radius: 6px; font-family: Helvetica,Arial,sans-ser=
+if !important; color: inherit; border-spacing: 0px; border-collapse: collap=
+se; margin: 0; padding: 0 0.5rem;" align=3D"center" bgcolor=3D"#0d6efd" val=
+ign=3D"middle">
+                                              <a href=3D"https://lf.osp.ore=
+gon.gov/message/E7Mf90NoRag5viLpuHxmKD" style=3D"color: #ffffff; font-size:=
+ 16px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; bo=
+rder-radius: 6px; line-height: 20px; display: block; font-weight: normal; w=
+hite-space: nowrap; background-color: #0d6efd; padding: 8px 12px; border: 1=
+px solid #0d6efd;">Download Files</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <table class=3D"s-3 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 12px; f=
+ont-size: 12px; width: 100%; height: 12px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"12">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"s-6 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 24px; width: 100%; height: 24px; font-family: Helvetica,Arial,san=
+s-serif !important; color: inherit; border-spacing: 0px; border-collapse: c=
+ollapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" wi=
+dth=3D"100%" height=3D"24">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"hr" role=3D"presentatio=
+n" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; f=
+ont-family: Helvetica,Arial,sans-serif !important; color: inherit; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse:=
+ collapse;">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 24px; f=
+ont-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-to=
+p-style: solid; height: 1px; width: 100%; font-family: Helvetica,Arial,sans=
+-serif !important; color: inherit; border-spacing: 0px; border-collapse: co=
+llapse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class=3D"s-1 w-full" role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+ 100%; font-family: Helvetica,Arial,sans-serif !important; color: inherit;"=
+ width=3D"100%">
+                                      <tbody style=3D"color: inherit;">
+                                        <tr style=3D"color: inherit;">
+                                          <td style=3D"line-height: 4px; fo=
+nt-size: 4px; width: 100%; height: 4px; font-family: Helvetica,Arial,sans-s=
+erif !important; color: inherit; border-spacing: 0px; border-collapse: coll=
+apse; margin: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=
+=3D"100%" height=3D"4">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <div class=3D"text-center text-muted" s=
+tyle=3D"color: #718096;" align=3D"center"><small style=3D"color: inherit;">=
+If you need assistance accessing or using this system, please contact suppo=
+rt at <a href=3D"mailto:support@osp.oregon.gov?subject=3DPlease%20help%20me=
+%20with%20https://lf.osp.oregon.gov/&amp;body=3DPlease%20describe%20the%20i=
+ssues%20you're%20having%20in%20as%20much%20detail%20as%20you%20can.%20Thank=
+%20you." style=3D"color: #587BB1; text-decoration: none;">support@osp.orego=
+n.gov</a>.</small></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class=3D"s-5 w-full" role=3D"presentation" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; font-fami=
+ly: Helvetica,Arial,sans-serif !important; color: inherit;" width=3D"100%">
+                      <tbody style=3D"color: inherit;">
+                        <tr style=3D"color: inherit;">
+                          <td style=3D"line-height: 20px; font-size: 20px; =
+width: 100%; height: 20px; font-family: Helvetica,Arial,sans-serif !importa=
+nt; color: inherit; border-spacing: 0px; border-collapse: collapse; margin:=
+ 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"100%" hei=
+ght=3D"20">
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class=3D"text-center" style=3D"color: inherit;" al=
+ign=3D"center">
+                      <div class=3D"" style=3D"color: inherit;">
+                        <a href=3D"https://lf.osp.oregon.gov" style=3D"colo=
+r: #0d6efd; text-decoration: none;">
+                          <img src=3D"https://lf.osp.oregon.gov/img/email_l=
+ogo.png" alt=3D" Oregon State Police =E2=80=94 Secure File Transfer System"=
+ style=3D"height: auto; line-height: 100%; outline: none; text-decoration: =
+none; display: block; color: inherit; -ms-interpolation-mode: bicubic; bord=
+er-style: none; border-width: 0;">
+                        </a>
+                      </div>
+                      <table class=3D"s-3 w-full" role=3D"presentation" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; font-fa=
+mily: Helvetica,Arial,sans-serif !important; color: inherit;" width=3D"100%=
+">
+                        <tbody style=3D"color: inherit;">
+                          <tr style=3D"color: inherit;">
+                            <td style=3D"line-height: 12px; font-size: 12px=
+; width: 100%; height: 12px; font-family: Helvetica,Arial,sans-serif !impor=
+tant; color: inherit; border-spacing: 0px; border-collapse: collapse; margi=
+n: 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"100%" h=
+eight=3D"12">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div style=3D"color: inherit;"><strong style=3D"color=
+: inherit;"> Oregon State Police =E2=80=94 Secure File Transfer System: <a =
+href=3D"https://lf.osp.oregon.gov" style=3D"color: #587BB1; text-decoration=
+: none;">https://lf.osp.oregon.gov</a></strong></div>
+                    </div>
+                    <table class=3D"s-5 w-full" role=3D"presentation" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; font-fami=
+ly: Helvetica,Arial,sans-serif !important; color: inherit;" width=3D"100%">
+                      <tbody style=3D"color: inherit;">
+                        <tr style=3D"color: inherit;">
+                          <td style=3D"line-height: 20px; font-size: 20px; =
+width: 100%; height: 20px; font-family: Helvetica,Arial,sans-serif !importa=
+nt; color: inherit; border-spacing: 0px; border-collapse: collapse; margin:=
+ 0; padding: 0 0.5rem;" align=3D"left" valign=3D"middle" width=3D"100%" hei=
+ght=3D"20">
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+----==_mimepart_6a567eef866b2_298c00233fc56bd--

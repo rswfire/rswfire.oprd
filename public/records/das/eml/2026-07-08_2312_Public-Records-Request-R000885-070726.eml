@@ -1,0 +1,218 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CY8PR14MB6315.namprd14.prod.outlook.com (2603:10b6:930:9f::22)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Wed, 8 Jul 2026
+ 23:12:37 +0000
+Received: from PH8P221CA0060.NAMP221.PROD.OUTLOOK.COM (2603:10b6:510:349::9)
+ by CY8PR14MB6315.namprd14.prod.outlook.com (2603:10b6:930:9f::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.181.11; Wed, 8 Jul
+ 2026 23:12:31 +0000
+Received: from SJ1PEPF000023D3.namprd21.prod.outlook.com
+ (2603:10b6:510:349:cafe::86) by PH8P221CA0060.outlook.office365.com
+ (2603:10b6:510:349::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.202.10 via Frontend Transport; Wed, 8
+ Jul 2026 23:12:30 +0000
+Authentication-Results: spf=pass (sender IP is 168.245.107.68)
+ smtp.mailfrom=em9851.govqa.us; dkim=pass (signature was verified)
+ header.d=govqa.us;dmarc=pass action=none header.from=govqa.us;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em9851.govqa.us
+ designates 168.245.107.68 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.245.107.68;
+ helo=o2.sgmail.govqa.us; pr=C
+Received: from o2.sgmail.govqa.us (168.245.107.68) by
+ SJ1PEPF000023D3.mail.protection.outlook.com (10.167.244.68) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.223.0
+ via Frontend Transport; Wed, 8 Jul 2026 23:12:29 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1783552348;
+	bh=1tS+8FEkOe7UNc/Zhqa0z2xo/SdPA76B/PMHBIX7M6Y=;
+	b=3FR5jiFkC+TpntURJAwJQt3/Zti+EUFLHR9a4XBGk06EtveTikZ5Ho1/mnJdztpbC/eP
+	UOD7xCvWNJG3mbarI1YXTcigT9s2OaQIy94f+D8l4wrRTC8tbPxQNGG3793V/DHBZUTDsg
+	AXcC3Z1OEEuUM62Y65lksq5grXLmYbBF9zkQqLTz9PJwiN9ZyMUooqbx9nhvl5Kp4PKyij
+	jEHyxTkGh4lfhaVOKJ7Lqo5a/ZhqqcTpzm5jGLAmi63JMHQdlZEWz48B+EKAHpPob38aWs
+	GLChnAaO3y1Dwn/IH7dlsd9DXtNu5VqauhVE8fvByU7SBFlAXW30D5ohdZIZLGuQ==
+Received: by recvd-5b57fb98b9-zngbf with SMTP id recvd-5b57fb98b9-zngbf-1-6A4ED95C-1B
+	2026-07-08 23:12:28.260534796 +0000 UTC m=+184369.705258502
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-74 (SG) with HTTP
+	id hEPCqxuYTXGLPWRDG52RUQ
+	Wed, 08 Jul 2026 23:12:28.217 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Wed, 08 Jul 2026 23:12:28 +0000 (UTC)
+From: OREGONDAS Support <oregondas@govqa.us>
+Message-ID: <hEPCqxuYTXGLPWRDG52RUQ@geopod-ismtpd-74>
+Subject: [Records Center] Public Records Request :: R000885-070726
+X-SG-EID: =?us-ascii?Q?u001=2EBEOnyYN91QnqAv3BY9pmP=2FQ60Ob+GwA7Wb0qxYI4r8B+ZksGxTJ7tr0uV?=
+ =?us-ascii?Q?qNtEVt1D5UX9+mFUO2ur4ulNCLQobsvXLbxq79R?=
+ =?us-ascii?Q?ulW+UsK11tq33qwP+KWfz44LIf4E3s7YBbq7rQe?=
+ =?us-ascii?Q?xfQhZfSnChoXyIaEmoZdCG+2jDfvwSYpaExkyHT?=
+ =?us-ascii?Q?KzaZbxu0ufGa+QJ3NNgyglIitUoFkbO9J+MYhlL?=
+ =?us-ascii?Q?XUsaBdHBMsC1HtpTQ8a8l6XIKNhnAPvr259laoC?= =?us-ascii?Q?SxS8?=
+X-SG-ID: =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdcPTLVO+f5SYHVlQdH+wHNv=2F5EnTTS+F8?=
+ =?us-ascii?Q?4af9j9dZgPzKUnzLdAa2KjsQ7CMVXCmauIlrWOU?=
+ =?us-ascii?Q?r+OYrfUqlTLbosHLufeIA=2FtXVit4T9TVUobIl2n?=
+ =?us-ascii?Q?XUItMR9Zf=2FH=2FVeRkCq?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+Return-Path: bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Jul 2026 23:12:30.3433
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: c1a9b3bf-7a02-4098-a646-08dedd466283
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ1PEPF000023D3:EE_|CY8PR14MB6315:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: SJ1PEPF000023D3.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: c1a9b3bf-7a02-4098-a646-08dedd466283
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-Wildcard-Rule: Yes
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|29132699027|7149299003|7049299003|3109299003|69100299015|80162021|5063699009|16102099003|3023799007|56012099006|18003699003|19002099009|8096899003|55112099003;
+X-Forefront-Antispam-Report: CIP:168.245.107.68;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.sgmail.govqa.us;PTR:o2.sgmail.govqa.us;CAT:NONE;SFS:(13230040)(29132699027)(7149299003)(7049299003)(3109299003)(69100299015)(80162021)(5063699009)(16102099003)(3023799007)(56012099006)(18003699003)(19002099009)(8096899003)(55112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Jul 2026 23:12:29.7384
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c1a9b3bf-7a02-4098-a646-08dedd466283
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SJ1PEPF000023D3.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY8PR14MB6315
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.6347418
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0181.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bzNodFM0RHEycHBGWENwQVRmUHprZVNvZ1h4bGNzNEpKNkZDR1gvaDlIc0s3?=
+ =?utf-8?B?M1dqU0lxWExRWUxoOFVaaHcxYW9XSzBPWjhHOXRKUTNqcHBGbm9CcHEwV0dj?=
+ =?utf-8?B?ZVJwTnBtM1ZycG5EU0h5RXpPLzUrS013QTh6ZkdPNi9JRFUxN0VNbld6eEVG?=
+ =?utf-8?B?K0h4cEdNUkE4TjY5VFk1cVpWT1VpbWxZVTB2QzV4UFU0VURiTEVPUjFBc2ZV?=
+ =?utf-8?B?MmNocHhubVg0aFpYb3ZxZ2V1bkNxemNsQWh4L01JMm96eHcxQzU2MzJLSWgr?=
+ =?utf-8?B?R1pJRG1ma1dDd2J4SHV1TGFQRkdSc0NrMjg4Vk1pbW5GY0k0QnMwNjNMM3Nr?=
+ =?utf-8?B?MjQvS3JETlE0RjhaQ1I4Q3FpYWxTRmNxVnAyRjBiSFR1UjJjbmtHN3pkYzdN?=
+ =?utf-8?B?akJuNHBubDZtc0sxUXBINVJFYmV2L3h5bTZQU1g2QXhwSThGcFFua1FYOEVR?=
+ =?utf-8?B?WHBhcjVJRjhVRTI4TU1kamZZbjI0TEFiMEgrYkRFL3R1NFdEWWVIQ3VpREcv?=
+ =?utf-8?B?QWF5R2I5QnVHY2tNRHQ2L054Sno4UE1kLzJqNk1nTGtJV0JCUm5kZ09BTS9a?=
+ =?utf-8?B?MHdoNEc5cGJBSVUzakVUSllxZHFvbjVyUlBBeFlNcTZ0Z0FmbmZuMENVUWh2?=
+ =?utf-8?B?cCt5enRsWEtTTTlZN2xEWWNydWR3UmczMkJpTkpmUFoxaVBXNWJzSFluN1ls?=
+ =?utf-8?B?U1pYemtUb3lYanhYSmVCelI5cnh1WFp1M1IyTmNMRVV5ODFBdVByRXcvei93?=
+ =?utf-8?B?U0w2TEMybDNsOEVkT2JuQjhoR2F0dTV0c1crdzhZQytmcEFuUDhZNCtwdHVB?=
+ =?utf-8?B?VCtsVnNPL21TT2gyVTFkL01HS2hwTG83Wi9pOGxTZi8wYWxleWtoc05WS2t1?=
+ =?utf-8?B?aVB3SFBXZDBpQkZkMmVpdHJ3SzlSVVh4NU9kSzhhNkhrN0JBVjVBb0Z1UWFx?=
+ =?utf-8?B?OHd3bFpsZGUzbW9MWXJMK2tmL3Z0dUN1TUt5bWR0K29tdHdSUEc5eVM0cVRv?=
+ =?utf-8?B?SHgwSkhndzYrbTFYN2J1RjdvMHM5a0VHcUN0UUk5bTUvcmRYbUJTd2puYTlU?=
+ =?utf-8?B?TFFGR2hIUlYybytMS0hGbktkN3ErY0xVSFliVzRjd2taeTlmVmM4WWlwS3ph?=
+ =?utf-8?B?L3JyOTdmektKUUNDKzNsRFNVWWpLTlRjZ1ZaV2VxMHBmSU8zaHZOYkZTS2hk?=
+ =?utf-8?B?TGpIaEJEVUo0bm1ZSWt4L0tFUmlYK3NGRHFzZkhtTTc2TnhYeGRYY3o0L0hT?=
+ =?utf-8?B?Mmt4eWhrbXF5ZVRiK1BuSFNBYm9SU05LSUNiY1dDZ05MVklrMDh6K3c3alcx?=
+ =?utf-8?B?Mld4Nnp2QWl2MVRYZ2pTd1A1SjdqRVFneXc0NW56WGJWUlNXTHQ3Rk5KWjlh?=
+ =?utf-8?B?TTVMckJyS0IxaEtDS2NLbDhMVVJxOXpYU3cwdUh1QmRuSXlZRVZCWVdlcW1D?=
+ =?utf-8?B?MDQvaWZFRWVIb0JZcTUxTGpFbndWaTVjUFVrQSszTnBpZFMyUTRCVyszR1NL?=
+ =?utf-8?B?N2JZQjVzZzlNUHBjeGxhcUVyZzNVRi93eWI1c1FOMi9qZFMvY1Y2UEJNcW9l?=
+ =?utf-8?B?ejZLMlhzWXBOWCthK2pVZm14VnRTbXdhNVdGWWVnVndRTnVWcVVWK2NLdmxY?=
+ =?utf-8?B?OXJEUFJrSFVDQW92UUxZODNCb0d2WkJRckREeVNXWUNkTldIRHMrSWkwR0l1?=
+ =?utf-8?B?eWdtc1dVK3ROY25HSk02OWNxNEdaRmg0ZGI0M05aUm1EN29HZ1pSQS9qRUpW?=
+ =?utf-8?B?OHd1MlJsL3A5ajZOVm9ONEl3akNaMEdzTmtlZHlNdjBVOVV6Mmt0UGttZlg1?=
+ =?utf-8?B?MjkwUDFNTlg0eTgxRFd2SmJYU1BKcndoeGMyY2k1YWEvS3NVRFBYWHRza0Jq?=
+ =?utf-8?B?RDY4cXVwbXdmSHJxZjVoM1RQZFVXL092VzlQak9YaXhmeXBLOCtHSjUrcGZ2?=
+ =?utf-8?B?YVZpWDRGdm1FWllDdVdsSTBkU25LbDB6ZW02QnFQOS85ejlCQVBuQ3FIMWJk?=
+ =?utf-8?B?SHNNelhEYStmTStoV2tzSExYYytLMlNLNkVlWUJBT1dRaFFDcnBUU1FEZXZz?=
+ =?utf-8?B?a210UWdpekp3enVlOThDUTF6WGJ6RllzeVQ5aXVUWXB4dnMreXJpSTRNMElG?=
+ =?utf-8?B?VWU3VW9UbUpwWVg4dmVkMVVSazlEZUNzQmNiZjc0NTd2b0RpRWlGdXpGYmZl?=
+ =?utf-8?B?TDhkR0NFdi9CRDM0VlloblA0dFlXaWxzc1IzTzBNWlJQdFZQRVc5OUd3bklj?=
+ =?utf-8?B?NVUva09wd2NsU2RZNmVyQ0RCekJyTTQwcjdtdVp3YTJZcUlCd2dtTDZmcjAr?=
+ =?utf-8?B?WDdXb1F0Zm9DbVo0ZGFHdTZNLzNpK1ZGUERCM20wZmZrYWdqUGJsMFVVbEJV?=
+ =?utf-8?B?c2NkVEE3bjRHL1BXVHhlMFBPWkhtSlRuUGxTa2VvWFZwSWhZUktPR2NEZk4r?=
+ =?utf-8?B?dGFuZTBBbkJuUmxiVXhhV3NET2txczE0Y3ZGT2Q1cExHYjFNZmhneEQxRnRO?=
+ =?utf-8?B?MXpvWVJyZHZUNmtOeHBvZzRrdGkrejQ4RXNzTmJFeElUbUFnVjUvaExhWTBj?=
+ =?utf-8?B?S3R5d3p0NS85R2xBZTEwQ2xoUXZEeHprSGJrTFEwcGdmcU1DeTgwM3htakww?=
+ =?utf-8?B?eGtSbTU0TVdzUDhCcTFQNHJ0cDlHaFV1dEZ2aVFBZ21GdENmaEhsSVdEYTBP?=
+ =?utf-8?B?TnloT3VEb0NNUXVwNVNnWmVNRXc0VWRGVWJNTVU3cjlmYTd1UWI3SjQrR1hW?=
+ =?utf-8?B?dURoZWtYV2hxNzU0Nnd2dVN0WEJDUXovNG1YLy9TWVlnV2VQUWVZdVhvandV?=
+ =?utf-8?B?U0VTRkhiYzZpeC9JOW5RMEE4SUI1cml5a0RVUytKQlJXMWpyZG1PNCtLbndx?=
+ =?utf-8?B?RC9zUkN5QjRGWTQ3VVF5c1hTZmJyc0svZkhXd1FHalJPbDJDQzNzR3h5dUVu?=
+ =?utf-8?B?eWVxYlhSMW9HQmFmY3RvWHlJbVdPWldhTkM5cXgrNy9OWDlrRStQdkhQNSsr?=
+ =?utf-8?B?Z1gwbldTMm9CZkNjOU5vMHRPZUR5cTRMN2VKMnY5ejJzNXlxNUNaMEo3d1dm?=
+ =?utf-8?B?MEY4aHpaZ3NhbWlCeVc5VVNtcTBYK2Q5QVFpZnhZWUxNSEdjZzhtMWRlNjND?=
+ =?utf-8?B?b1ZRQ3NzcmlkRGZuaXpJaDlUS3BhdTNWMHo3UlB5R0NCblBiMW0wMlpybmxz?=
+ =?utf-8?B?akRJZEdTS1ZONFZvT1hKOTVDYURROFRseHhURHpBVFJrUWFQUWhjZ2JLNEhn?=
+ =?utf-8?B?ZzRiZUxDd1MwaDRhSXNzNCszYWFzUXJFdGxabzFrdjlPV2NHeG1XcmNLUm1R?=
+ =?utf-8?B?U0dYQUhDRlpqcUlrTkJoTXhhWHJGNW1tWnJuWlJtenJ5c2g0NTVoNjJXNDFO?=
+ =?utf-8?B?UllTTW9TVFlkSi9wQXZwTHM2VVNVZzVNZHRKZll1UlRCNnh3eDQwS2Zsai9a?=
+ =?utf-8?B?QWZKdHh2ZkNHWGVZd2VsRmVkamx5V1ZwKy9idi9kSkVkamlaOFF4ZWhKUnhx?=
+ =?utf-8?B?YUhjVm1zSDNnVWJlSzh5YUljZ3FLc3lrYkRZZkZDbXlHLzIyQkQwYi9iOVdl?=
+ =?utf-8?Q?WN2o2LbXRqPLla?=
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><br><br>--- Please respond above this line ---<br><br><div style=3D"a=
+lign: center; padding: 10px; border: 3px solid #808080; border-radius: 5px;=
+">
+<img alt=3D"" src=3D"https://uploads.govqa.us/OREGONDAS/OregonDAS_NEW.png" =
+style=3D"width: 768.333px; height: 109px;">
+<div><hr>
+<strong><span style=3D"color: #000000;"><br>
+</span></strong></div>
+<div><p>RE: Public Records Request of July 07, 2026, Reference # R000885-07=
+0726</p><p>Dear Robert Samuel White,</p><p>In accordance with ORS 192.324(2=
+), this acknowledges our receipt of your July 07, 2026 public records reque=
+st for:</p><p><strong>&quot;The period January 1, 2022 to the present:<br><=
+br>1. The number of public records requests the Department has closed, deni=
+ed, or otherwise disposed of on the basis that DAS is not the custodian of =
+the requested records (including dispositions referring the requester to an=
+other agency as custodian), broken down by year.<br><br>2. Any written poli=
+cy, procedure, guidance, standard, or training material governing how and w=
+hen the Department determines that it is not the custodian of requested rec=
+ords, and how such a determination is distinguished from a &quot;no respons=
+ive records&quot; determination.<br><br>3. Any record reflecting the standa=
+rd applied in making custodial-basis dispositions =E2=80=94 for example, ch=
+ecklists, decision templates, internal instructions, or correspondence esta=
+blishing the criteria used.&quot;</strong></p><p>I am able to inform you th=
+at the Oregon Department of Administrative Services is reviewing the reques=
+t to determine if there are responsive records.<br><br>For=E2=80=AFquestion=
+s or additional information, please reply to this email.<br><br>Thank you,&=
+nbsp;<strong><br></strong></p><p>Bryanna Duke<br>Oregon Department of Admin=
+istrative Services</p></div>
+<img title=3D"DAS logo" src=3D"https://uploads.govqa.us/OREGONDAS/OR-DAS-Lo=
+go-Small.JPG" alt=3D"DAS logo"></div>
+<div>&nbsp;</div>
+<hr>
+<span style=3D"font-size: 10pt;"></span>
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a href=3D"https://u8387778.ct.sendgrid.net/l=
+s/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2B8l1b7S-2BQf6AVAAD4hy6Wdx7KCjG-2=
+FuKfw4vv1GMo7IpKwltyXAjfjKeT2mM0oAfw-3D-3DfRlu_0GMYb285Q7ANw-2BFhpRsBxTcZL2=
+NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BKAQ8LU3DxYbKC2uQPiF7NPlRnIuv0iSgym-=
+2BWirtkenlSTEQYBl-2BwGtFiabXFX8Bf5T8avkjljyMHcFYtjWH6MopQmxoFKS-2BYjoWb4dzy=
+HErcToqV4t-2B1Cntb5x4nikqdCOTqk2RlBAWTI-2FQnB36kUTHykBJrcleNXJ9OMW4MjiMywBl=
+RHjaW9-2F2hiToMYxXEhADWBl1b534GHWBkIg5pIsxf9jI4YbiEmowtidrkPcI-2BNADKIBq4CJ=
+RP6qQEikepE20PLmuKoSoVbwVi4lLy-2BGe-2FQMlohrIVAbJJPoLZoZo-3D" target=3D"_bl=
+ank" title=3D"Public Records Center">Public Records Center</a></div>
+<div><center><br>
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo"></center></div><img src=3D"htt=
+ps://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J7JFRtrSZDjZbS0Fz8qZ0N=
+QbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV84nBiHT0Xs9R71IuEK7ZXUPkUF5di1Hk6O6bAe=
+jI4lYC5qsl9Iz6c9GF3STtAB0WA5x3VH4eYbjJNCPRdD0Q7g6-2FQpZR-2BCL-2Fm1gwkWosN4x=
+OJe0Df849xYPMKab1aVT6IMYZ87xjCiLTluCIXgBFFVZIKxT7-2B-2Fw7V9wolZ3izSx1vQWKgZ=
+TkYnm8vn0o9jeiw0mVyL4FehO0pmK56KDE5O5g-2BdVMBVZFbZ1o1DTYmGqsPf7le7GnW1j-2Ff=
+2y2JpTNAfuOuZ4geQHLNE20sN5oIStVW1yG0MOVX6SrzUq2D6idWXHEy3Ypsbxp6PouOmVQT" a=
+lt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !importan=
+t;width:1px !important;border-width:0 !important;margin-top:0 !important;ma=
+rgin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important=
+;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !impo=
+rtant;padding-left:0 !important;"></body></html>

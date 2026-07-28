@@ -1,4 +1,5 @@
 // components/RecordsThread.tsx
+import FilingDocs from "@/components/FilingDocs";
 //
 // Renders one records-accountability thread from a single data object: a
 // factual header, a Contents table jumping to each filing, and each filing as
@@ -12,6 +13,7 @@ export type FilingKind =
     | "response"
     | "record"
     | "statement"
+    | "notice"
     | "letter"
     | "petition"
     | "supplement";
@@ -36,6 +38,7 @@ export interface Filing {
     summary?: string;
     body?: Para[];
     docs?: FilingDoc[];
+    eml?: string; // unmodified email original
 }
 
 export interface RecordsThreadData {
@@ -55,6 +58,7 @@ const KIND_LABEL: Record<FilingKind, string> = {
     response: "Agency Response",
     record: "Record Released",
     statement: "Public Statement",
+    notice: "Letter Sent",
     letter: "Letter Received",
     petition: "Petition to the Attorney General",
     supplement: "Supplemental Filing",
@@ -78,23 +82,6 @@ function Body({ body }: { body: Para[] }) {
                     </blockquote>
                 );
             })}
-        </div>
-    );
-}
-
-function DocButtons({ docs }: { docs: FilingDoc[] }) {
-    return (
-        <div className="mt-5 flex flex-col sm:flex-row flex-wrap gap-3">
-            {docs.map((d) => (
-                <a
-                    key={d.href}
-                    href={d.href}
-                    download
-                    className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors"
-                >
-                    {d.label} &darr;
-                </a>
-            ))}
         </div>
     );
 }
@@ -156,7 +143,7 @@ export default function RecordsThread({ thread }: { thread: RecordsThreadData })
                                 <p className="mt-4 text-base leading-relaxed text-gray-800">{f.summary}</p>
                             )}
                             {f.body && <Body body={f.body} />}
-                            {f.docs && <DocButtons docs={f.docs} />}
+                            {(f.docs || f.eml) && <FilingDocs docs={f.docs ?? []} eml={f.eml} />}
                         </section>
                     </div>
                 ))}

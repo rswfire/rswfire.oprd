@@ -1,0 +1,742 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CH3PR14MB6554.namprd14.prod.outlook.com (2603:10b6:610:12b::10)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Fri, 24 Jul 2026
+ 16:42:43 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=zP2TXwsNQQIziHaUxuew1++8TZK54bUmwva8BOqSB3JOrr2kH/z6w5Tk0BA6NIlBWMa/FLL4GMHFapLNsbdnm9p18QeZza3YfbrWkXsyDRRp0RGCaS49v3B9MsX/6SYIQI4HKYD09YrDFWaNU7N2UihHbipwNzv1+X0jJ5BU7itL46XFNvwS2XyPPkAJPXMywKYzaq8/sPsJSMPbIiNDaCF6XAbiiOLUeEqClv8irXNLh7pMiZlzRYXcvWHDaJERCqwysg/nlzVJ5ku+V3qD5BJBgnhVh2OnG82UcHrkLQpke/FTxunQlypBbCOozoQEqkhMUU0YqPG+oQFO2nXqIw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Svlvt50i3HZFtq7vmsYEd4OBPJRxJdkfwaBb4w3WP8g=;
+ b=gi6XoddtdqbuUFewemKNES5bl83Mbieh15zga2Hwq9qGo4Mp05qgt5e4BOYZ2xQwTwF1bpBvEbgqNEl+1W3szC9sxXH7fhy8uNDPJEaIajsi9/gt56rB47agvuJXvoRhLgMUnE7bqplBD9oAPU0Uzmhqm696xJPjWpOUfSdosZlrPIN0bknOQK2JSE+w5z1Og+cwBHwnV+O30IKYsi95BqotWdg029a9qLQEOTOexIb2y0gH+IckFFZx3UEvyGKAsPUawDl99WddIDVQ3j/iolxuHF8BuozFgdjtC3qEDRCmr183gwFmzOLpstTiR57V7mRn1Ou3d5KoCVMN0TFzqg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c10e::1) smtp.rcpttodomain=rswfire.com smtp.mailfrom=usda.gov;
+ dmarc=pass (p=reject sp=reject pct=100) action=none header.from=usda.gov;
+ dkim=pass (signature was verified) header.d=usda.gov; arc=pass (0 oda=1
+ ltdi=1 spf=[1,1,smtp.mailfrom=usda.gov] dkim=[1,1,header.d=usda.gov]
+ dmarc=[1,1,header.from=usda.gov])
+Received: from SN7PR04CA0078.namprd04.prod.outlook.com (2603:10b6:806:121::23)
+ by CH3PR14MB6554.namprd14.prod.outlook.com (2603:10b6:610:12b::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.245.12; Fri, 24 Jul
+ 2026 16:42:38 +0000
+Received: from SN1PEPF0002636A.namprd02.prod.outlook.com
+ (2603:10b6:806:121:cafe::a7) by SN7PR04CA0078.outlook.office365.com
+ (2603:10b6:806:121::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.245.12 via Frontend Transport; Fri,
+ 24 Jul 2026 16:42:38 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c10e::1)
+ smtp.mailfrom=usda.gov; dkim=pass (signature was verified)
+ header.d=usda.gov;dmarc=pass action=none header.from=usda.gov;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of usda.gov designates
+ 2a01:111:f403:c10e::1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=2a01:111:f403:c10e::1;
+ helo=SA9PR09CU002.outbound.protection.outlook.com; pr=C
+Received: from SA9PR09CU002.outbound.protection.outlook.com
+ (2a01:111:f403:c10e::1) by SN1PEPF0002636A.mail.protection.outlook.com
+ (2603:10b6:82c:400:0:1002:0:7) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.270.5 via Frontend Transport; Fri, 24
+ Jul 2026 16:42:37 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=BXANsqnR7ZfBIKDXQhX+68jGT9ylv0tosUjTv4w6EsPmJDRuK4DUV1cHf/gUwaJ6LmFYbHC1ZW40nDzZX4zUHnXCBCWPdSyjsGjG5ZMRMBX4cJrtA7/8hv81oXDPyoiHvIxnYE8oJCSDaHJx5/gQpDOFsM20i2Apq4OuasDZMjFfwM7Jwx33cB6YMU6BssqHOQpiTK2132cluyQH9vWMto1a+5xLxdUyxC+Z5c12empahScCRMIUSiQXwDoHIoKxI2bgN6M7wZfbDnbYLCnX/5rNPxxAZ/ygADbgVWDDt41C2fv/Rx4XQ1/ZsqKCJCGNL8udgnJ0nJ0zp3uXmzUwhQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Svlvt50i3HZFtq7vmsYEd4OBPJRxJdkfwaBb4w3WP8g=;
+ b=rc1YlbX8T+mM8ms+yU63aw6QY+R9/EwEWEdryQ3qWMcM/o7vs2DXshEvNa0XmzzR07WznYpHhtPAwwsBU6QJZkIKZDjsIZalAQplP6Jr5IV6q2VBiMx7ZcjRqjqBTqGqoM5Or1rZdh3nqZ2EKJe/8lgDuomHBDI22N5C69ksneoKK2MlsfN3mMocGHy9SGUoWtlaZz65l2+pHgGVeVjmcm1k8fpYEh/CIqOaqO76tK6BFnTGuGSbb1zRPZsdTbw6xOJqNqA8V6VL9gzVAM27ocrQVjZ9w9s3xoT3M5BUkRII2Ll9g7XVXlVNj+LzuZruAtBYsR47V6kFrqj/gRtAjw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=usda.gov; dmarc=pass action=none header.from=usda.gov;
+ dkim=pass header.d=usda.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=usda.gov; s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Svlvt50i3HZFtq7vmsYEd4OBPJRxJdkfwaBb4w3WP8g=;
+ b=M/QKJ238Cclmm2K1cXvNWDaL4tF4tmlkg84pGOfnpmbjEGET9nezhHEtPhjjRWF1Wn/V7vWLzq6y8ud+j01quQfpQi6bMrbYikmaqQNNDqOFLUU8K3yGViXRRf+DdvMDSN5xCU4nG0CjrQK8T+9rh9BwJ3rkyYgpu4+sX46pOQNMwClhcuZJwJRaQJigHnhP1xnlMx9LCJyijDCCqtLN3IfIv+jDdTDnPcJWTadJgBZ2P+pzqSC9ynWUTraIu7a6oPGO6Jpuyaf980lr0mRVEwTMD0p4ZFb6OTwnvW5o/feRHnGUXvE9xx8h08BZxkRW41mlPmuPfhQGwJ7covnDWA==
+Received: from DM6PR09MB5477.namprd09.prod.outlook.com (2603:10b6:5:267::22)
+ by AT6PR09MB12491.namprd09.prod.outlook.com (2603:10b6:170:103::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.223.18; Fri, 24 Jul
+ 2026 16:42:30 +0000
+Received: from DM6PR09MB5477.namprd09.prod.outlook.com
+ ([fe80::16f7:18a9:8f8:a105]) by DM6PR09MB5477.namprd09.prod.outlook.com
+ ([fe80::16f7:18a9:8f8:a105%4]) with mapi id 15.21.0245.012; Fri, 24 Jul 2026
+ 16:42:30 +0000
+From: "Holman, Michele - FS, OR" <Michele.Holman@usda.gov>
+To: Robert Samuel White <rsw@rswfire.com>, "Sloan, Felicia - FS, OR"
+	<felicia.sloan@usda.gov>
+Subject: =?Windows-1252?Q?Re:_[External_Email]Fw:_Petition_for_Public_Records_Orde?=
+ =?Windows-1252?Q?r_=97_Robert_Samuel_White_/_Oregon_State_Police_(PR27478?=
+ =?Windows-1252?Q?;_CAD_SP26097765)?=
+Thread-Topic: =?Windows-1252?Q?[External_Email]Fw:_Petition_for_Public_Records_Order_?=
+ =?Windows-1252?Q?=97_Robert_Samuel_White_/_Oregon_State_Police_(PR27478;_?=
+ =?Windows-1252?Q?CAD_SP26097765)?=
+Thread-Index: AQHdGit4pPTKy9rhdkWYcYRm2ZkyPrZ7tCyWgAEllpA=
+Date: Fri, 24 Jul 2026 16:42:30 +0000
+Message-ID: <DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2@DM6PR09MB5477.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181A62EC0A8E37A0252B9FEADC12@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CH2PR14MB41817C0C9280B1E0F6BADF85ADC02@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB41817C0C9280B1E0F6BADF85ADC02@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=usda.gov;
+x-ms-traffictypediagnostic: DM6PR09MB5477:EE_|AT6PR09MB12491:EE_|SN1PEPF0002636A:EE_|CH3PR14MB6554:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: f6253b45-94b6-47a9-4381-08dee9a29233
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|23010399003|3109299003|1800799024|366016|69100299015|8096899003|4143699003|56012099006|5023799004|10067099003|18002099003|22082099003|38070700021;
+X-Microsoft-Antispam-Message-Info-Original: BHV0kPywaWPzMQQUeTXmwVukoJ4hY9ryjFXAAg/HiZYwJSMuOyacM2HhCHqeQMJN3Y9xckr+MXhCm4jBWfbLhAIRETVt7xjga1hdNyen6wFS8nu0zsM4qct/mTiqf1wxCiuh0uQcKvmkFAijP0z7zIxxuiQccGVeDFDVxIb6aouNCnsWBD47aYg595TL7cWO/emVkoP4Qtw+IzDgign2Lg0T15mBmpENApQfg0CffswaOCVPxgV036+FGbdLLbQ1sg/ujLF2IR2BscLmMKWZNv9Hd+QDmy1J8EATyGT5WJI4/8jeKnKJ292P8xPe4xgRCKdWdJkFU3OmivTXd7tBw0oDl20vBEqH9u8FNUbPLsnRVXuxXYe6ZeSAudD8Kfr+ewje3R6cC02KA6Oua/rfeqr+dP0ErJZ/BTD2NiMx6AqO9ZjpdJnZoshTr/7dufDbmbaUDa/AIb1I64MrXx4g7uI103XQa/RgDFS1GDQPV3OSNibCymlTnI3bvMv6UmacMteuyhpLStCagW+pIV3EDGeEpJkE3bjUntQxCIs66jvFrWInTRXN2NqKd2GI+HLQ0N9n9m/5VdS1jR749uyfZZlpPcfzNKLWOhzo1Cnnh4tRLweIQzxfUSLs8WbMqQsTjEqeeeaEIZdb1chz4ZeIQ/UIE8xum9B2ST6Fk97gaFXtv286HM6EULUi6thFKqgg4s76mcOqDxIzxmv0QqYZ3ZeH1u7/1V6XcXZxwbLZqk4gthn16unmSXqnOip3/rCm6pBisv5+ECzR2DYBz12Y5A==
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR09MB5477.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(23010399003)(3109299003)(1800799024)(366016)(69100299015)(8096899003)(4143699003)(56012099006)(5023799004)(10067099003)(18002099003)(22082099003)(38070700021);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?Windows-1252?Q?RVT51ceMlKm1W0t36gt97Ga27PqS2TNtrjHR+WaLdD+OCj10CCVPoQbU?=
+ =?Windows-1252?Q?5Pnsdjjp66Xsy6ldX04DfiTZnTwJ7QFA0SvYdd+vRoULv+sain6HKR/D?=
+ =?Windows-1252?Q?fn2FLLDk5ZOEEXkU9UATqcGghBy7k6tu1eHG3m3yOvrcF9Huu4fra49A?=
+ =?Windows-1252?Q?4aMhlUSqjjeyl4C02xPjckKL7rAl7COn/mOLSdFAJo9IOrMSxZpGdZPr?=
+ =?Windows-1252?Q?67I8f83AUrTlYVnxYZuhcEuoiLsACGSzzIERq+uBEXPTaq7UAq+vDMxr?=
+ =?Windows-1252?Q?xOtBy8p5YRITgoNMgx0J/4SND71Zw9H7/H6ZrN0SZxf50Da7TbEvHbkI?=
+ =?Windows-1252?Q?GV89hah8rqmmisBpKVY8/omN1GVBsD1MoVTqk8UqM+AMQa7lsi0s43ux?=
+ =?Windows-1252?Q?KJeO8TsqhxViGZpZ4wBf7G4rZIKcegYZM+dG1fjHdZTEggEPdLCFwjxg?=
+ =?Windows-1252?Q?EkRwt+rrYMUpaZyzKtMXKW/KYssPzyj/bAzJR8gdh5doyeCx2PDI2sDh?=
+ =?Windows-1252?Q?ZY6jFVNFHSZSMOYkCA8S1zI2/zCDvbPtYYM0okuYQJJXrCUObGn5YRDn?=
+ =?Windows-1252?Q?YInPuS8qxEHIfjcYoKfXhRuTQd1IJxvcEh6ovvvIk8wZ4l9n9nSfSJCv?=
+ =?Windows-1252?Q?OAboiGYAcwtlxtpRDY9HK19t5PXBotKl3P48lNCF21su29j0bD1PbIIF?=
+ =?Windows-1252?Q?A5MsR7aUBjxglBsNi6KGVYfP2Rtm0o5q8epL+h2R8RKC6SKlzYhaoRTf?=
+ =?Windows-1252?Q?LjcfmVfRObOkeAGCkyEARXYJ9o++6s/0iyUa9szqO/iKNn5gUZRIfqTq?=
+ =?Windows-1252?Q?DaGhSMo945soJKRWz46mXl5jkBp89PgEHTyEXN+kQqbWPY2S2RvfSlE5?=
+ =?Windows-1252?Q?BTFyPFOh6Kp8X7fpglSUyLa18jixu5XjcLOjYqMgt3N2dCZbyiguWWxP?=
+ =?Windows-1252?Q?t97FJuOFGct/VRgKrkXqmHwCyHNRC+Kr6EgM8C0MB8INFxxOCs/A9ava?=
+ =?Windows-1252?Q?w2rH2oDiBNDPakP6+06taeVbPoVTISSENEa9cxtikPvgN92ofT0bjdUD?=
+ =?Windows-1252?Q?ETLYIBtro9ZcCdY3hQi1MfX/Fs8J1pca0M8xv9JyyyF6BiJFCqs8depb?=
+ =?Windows-1252?Q?d29pJEZth5HZu616JUG5fIJaocsk0MiR3AcwtNKfPNoAn5eJXhXFv5PW?=
+ =?Windows-1252?Q?s1ssRN/3w3bOic/ap02kNou4rx+Zoers3gcy1QZXIC+jdQSnJT732b7j?=
+ =?Windows-1252?Q?8XiiPZLjaxrV5i1E1RWzvJaKXFzTNoirvxoc6JuIPRG3Zthx+OIhEFyk?=
+ =?Windows-1252?Q?IEAqhOxovvpzrBQebCCDHejgnV83HXLLiuDGuEqdAjBXRwBrxhf46PAb?=
+ =?Windows-1252?Q?FxEQ1CP5+83kpxOO3oJnjoClvry4AqUb1/7MXswZT9po8/tvy5GWpd5x?=
+ =?Windows-1252?Q?mfxYDtOF6wS0FYmLmYWJov/rVf+/hNjBIjSnsgaXF+ObOlPX8LPb1sGg?=
+ =?Windows-1252?Q?SIICBfqvsG97BevCAfBBGRMZFdZbPuTIqHvVJxuwbKEjA/tOYk2N6EO7?=
+ =?Windows-1252?Q?F1t2wJsxM02nN4gfpvVIUFSErDm5PMisQp/CiI4dPYe4b8zthMaPSXON?=
+ =?Windows-1252?Q?x+i7cuchlL6iEf4qLaU/WKQ/FEheL2/NRX7fC7mZgUAC8EKGzFiulkYi?=
+ =?Windows-1252?Q?Sa7hDSa/s7Co+S4CgxT0E7n+sitZGRVKXOQhUToLJT1H2O8fcbXK6Rdb?=
+ =?Windows-1252?Q?sfUl685iwPybskCxZVdvB644N7ocjkdsXO8Zpvw3ae4BjWqYCNgmId/O?=
+ =?Windows-1252?Q?g0KR0G0DiQkTVHrm36qQ33QVgrGzLlaAYYCA9LTbmVX+qy+ESIyt3FsG?=
+ =?Windows-1252?Q?x0klYMrWygmvnA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2DM6PR09MB5477namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AT6PR09MB12491
+Return-Path: Michele.Holman@usda.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Jul 2026 16:42:37.9995
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: f6253b45-94b6-47a9-4381-08dee9a29233
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: SN1PEPF0002636A.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: SN1PEPF0002636A.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: SN1PEPF0002636A.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 84ac9900-871b-41bb-3493-08dee9a28dd0
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|3109299003|39142699007|31052699007|7149299003|6113799003|6073799003|35042699022|69100299015|5023799004|5063699009|10067099003|4076899003|8096899003|4143699003|19002099009|55112099003|16102099003|22082099003|18002099003|57112099003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c10e::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA9PR09CU002.outbound.protection.outlook.com;PTR:mail-southcentralusazlp170100001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(3109299003)(39142699007)(31052699007)(7149299003)(6113799003)(6073799003)(35042699022)(69100299015)(5023799004)(5063699009)(10067099003)(4076899003)(8096899003)(4143699003)(19002099009)(55112099003)(16102099003)(22082099003)(18002099003)(57112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Jul 2026 16:42:37.8989
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f6253b45-94b6-47a9-4381-08dee9a29233
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SN1PEPF0002636A.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH3PR14MB6554
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.7236886
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0245.008
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?1ZQY3hE2QLdBHLrcNOpX7j2oX9oIYhbZZRzWaXXpxXpcA3EgXuS3tQjR?=
+ =?Windows-1252?Q?AaL/zhbKbm3Arcep2W2LOB/SIBPsQn9Aaa71rPQ5EpdF41bkoaPDrydq?=
+ =?Windows-1252?Q?vrxHfL5LN9b8wHJcGlzWpYOQzWZ8cPXvbTHHBnA44BOp3D5qCMgVRnA4?=
+ =?Windows-1252?Q?mGARSd8WhxaeyYRq99fUvhbCgukGJJOYyay1806EaFBaCQFQqfzXftHD?=
+ =?Windows-1252?Q?2zuQI+Wg3ArYDSZakmctaQ0Xv7RrqZjhS93DdzBgYOQ4JJ1MjoGXh7OP?=
+ =?Windows-1252?Q?ErQACr+i1Rhj6mwL87Qo+xjbUOJtalgI8ek3qIpaZLsK/sgo+lbWFSok?=
+ =?Windows-1252?Q?6etwOHdeVf9+JdKvn5ldOHN/whbIbobMb5bMmh0UQqLCZS4c9GbrbHwe?=
+ =?Windows-1252?Q?67gszq2+/9odPT87d5WDi+u9gmQsKq9JOjPuGcmTvxZ0YPkSVJg786z6?=
+ =?Windows-1252?Q?D3LhQi+wTQhhYc3cMNikNcf0JoJ1b/XCntADvHnk9TBIdonmf6hKDGNR?=
+ =?Windows-1252?Q?Qwv6bhkab4CqLJX12bUKvJw2XJlBZWONbBuoEDzBvxniVUJX3NPHWDpx?=
+ =?Windows-1252?Q?nAjd9VzJDSU7I2RgRqy0Jwu75omIFdMUMeJlIZJdXfjijQL7hU9PDPii?=
+ =?Windows-1252?Q?aUqC9SEN/Oa3JADV3xgr/CezvAd6a9g2bMlLRaqAnvMO23xlmY6QVrOK?=
+ =?Windows-1252?Q?LDnAv47/5YGfnPYvtCQFeUGNICVHj9CzfyXhSR7s9NZDhaGRKMzSvUjk?=
+ =?Windows-1252?Q?jq3CZHbh+PYdPqJzbzogzWVuSzo/hw9Dl6redo1AKjqXzRrLxo0M1whk?=
+ =?Windows-1252?Q?B2lGGVOp49gXJT/BuIHM9n2gieZHZS5dkxwjirW55NwsmfZhczYY7btk?=
+ =?Windows-1252?Q?x3guE3HiIkwr2BkXXBLs4+NI9aG0xr3Fyd+tVUZFKBLxnKuIhxjjka+S?=
+ =?Windows-1252?Q?yxlUDoQt8ovUIvwhFIrTgMFpIa6QsTyKC5qP4NVpglH0wCgo11ONQj6v?=
+ =?Windows-1252?Q?i5aV4QMf+C4BGhVP59v9aCMjdbtCg9JN3U9aJrqRWTHKUILP2E+IGZQx?=
+ =?Windows-1252?Q?u7KIE6LN/mZlASZTeKZSFoLBlL+TmDMTDfBSMVJks/eFkUpOfpH/wYWU?=
+ =?Windows-1252?Q?t3yNynhEBU7iMik/oGiZfrTbnqxtCpJtVFVCSQcS206vURJkpQz/4IfW?=
+ =?Windows-1252?Q?tKyifrF/VwW5m1MOFOqTZ4lEF5IJRsjDOCp2dm7cXMiE46rgKBK0Umom?=
+ =?Windows-1252?Q?0CJjZC6u1uZWFyOtuhPDcvjsgnbJEp2FiFwEg2VKgJhzJ6plyOVKkmOV?=
+ =?Windows-1252?Q?30sp5iRJkraR8BTl4TukEzwyu4O4JUP+7zuRuxkxhB2lJzN95Lkss8Vk?=
+ =?Windows-1252?Q?/UOAv9SE4sg2Mr7aMa/HZaN6J6t/G5kLWzLgv+ydP8ETPPzohYBcft90?=
+ =?Windows-1252?Q?2sqXeZ9tdFf6Dia86x8Jv/XpSCVe2aDQ1Qpo4+N4DF5zkqxBgkATkb4t?=
+ =?Windows-1252?Q?u+mKbeioBOY8+spav1iCWif+TKaveYfjl4gpS8X403PM63GdLRyH7/rZ?=
+ =?Windows-1252?Q?GSHFYNRrYYu7EyHrUDjia6ttsSfLfeKy+azkhb5b+KAQgUEJmYIHaU1/?=
+ =?Windows-1252?Q?bzRcr55wLuBUBCr4idkbGpzg+gYOiVhB6lEi2e7ogxUU/hvE41Bx29BB?=
+ =?Windows-1252?Q?j29uyFSEn91KQUilZWyTTqRz053PN4JcLBp2vOzqE5QfJCu3PyMjhCIU?=
+ =?Windows-1252?Q?YlnqVPwd4SegzeTgcgqImKfAS2tgNZIANuRo3OtyaoMRswYUmFyf1nxk?=
+ =?Windows-1252?Q?3KiO8OmKDXutj3SZkl18kJfo37TlSfYQiw7ZrfjnlMM+Jn8E9t0uXO2k?=
+ =?Windows-1252?Q?uJjJbih6vYryaZvxkhTI6P37GVREGiLddCIbI7WKh0RJanM8hJaejgTA?=
+ =?Windows-1252?Q?QjNKCTSwvGppE9qEmShPmEt2Xa8vVi8fa69hOsGjHxllCLnYZSaXeSaX?=
+ =?Windows-1252?Q?u9icMW625J+OMApmOZ5C3Uy7xvmPG5ILsPTl+DhFJqwW/oZ7BNlRlhdp?=
+ =?Windows-1252?Q?mbf9ZkY15XF/NAoVZDlsKlKqAVnKVy47ouuU8EZk8szfAdj5lg8EBFcS?=
+ =?Windows-1252?Q?VLeoHOmoXoeRlAswj3MtgXZquuMZglX6mmJST81CxXvAfiEdzu9BNHVJ?=
+ =?Windows-1252?Q?9JSZQTyv6/OEwnQzvF/1A6UljnlgshYlvFEj6LsS0OVK8Z4hx6aTGR0L?=
+ =?Windows-1252?Q?XwJgv0e/IhCXkxNH7kt5TGcMDFQbVjq4E+h+TrMe5X2FbhxqzApFBzjd?=
+ =?Windows-1252?Q?CPkLMBrjWR71x3ve6TOc0y7r1UHf/IcHjQInvW4Y9IaLefP1JKpNhIET?=
+ =?Windows-1252?Q?o8+fzt30uYnbGfEwfNVrZLRcRtcW4GSfTZ5XcLNTQrJeCKbyMjd+WxDB?=
+ =?Windows-1252?Q?6VuWjK3uxuMoQ619nSVrKyPg8+bH6qTk6IG95Z4gSfnDMRLLoMySApxH?=
+ =?Windows-1252?Q?5tHK6RnRQkVM5I/ZX5wDWQDk4w9uONS2qv53qRbUYwcI3ssLDTfImK1J?=
+ =?Windows-1252?Q?BHug6u5c9HsWnuGB+vaw+LfFUeTlg4h3fE3JQRLz6RYRWIYOBWOikEnU?=
+ =?Windows-1252?Q?kFCP0glaCIuRIWsCuUQBa5BnV0aoUIfIzgT7e7oN+S3z7rNMsxQWyZ4k?=
+ =?Windows-1252?Q?fH05PZE5RVI=3D?=
+MIME-Version: 1.0
+
+--_000_DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2DM6PR09MB5477namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Mr. White-
+
+I am glad that you were able to get the documents you request from the Oreg=
+on State Patrol.  Regarding the CAD entry stating, =93FOR THE FOREST SERVIC=
+E,=94 I am unsure why that wording appears, as the Forest Service did not i=
+nitiate the interview. The agency=92s involvement was limited to assisting =
+OSP by providing access and guiding them to the Siltcoos Work Center. This =
+is standard practice, as OSP does not have keys to Forest Service gates, wo=
+rk centers, or other secured facilities. Our law enforcement officer accomp=
+anied them solely to facilitate entry and ensure they reached the correct l=
+ocation.
+I hope this clarifies any confusion about the Forest Service=92s role.
+Employees in the Reedsport Office have shared positive feedback regarding y=
+our work as a volunteer, and I am pleased to hear that. I trust your experi=
+ence with District staff has been positive, and I look forward to continuin=
+g a strong and productive working relationship.
+
+[Forest Service Shield]
+Michele Holman
+District Ranger
+Forest Service
+Siuslaw National Forest
+Central Coast Ranger District-
+Oregon Dunes NRA
+p: 541-563-8445
+c: 541-819-9156
+michele.holman@usda.gov<mailto:michele.holman@usda.gov>
+1130 SW Forestry Lane
+Waldport, OR 97394
+
+________________________________
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Thursday, July 23, 2026 3:55 PM
+To: Sloan, Felicia - FS, OR <felicia.sloan@usda.gov>
+Cc: Holman, Michele - FS, OR <Michele.Holman@usda.gov>
+Subject: [External Email]Fw: Petition for Public Records Order =97 Robert S=
+amuel White / Oregon State Police (PR27478; CAD SP26097765)
+
+[External Email]
+If this message comes from an unexpected sender or references a vague/unexp=
+ected topic;
+Use caution before clicking links or opening attachments.
+Please send any concerns or suspicious messages to: Spam.Abuse@usda.gov
+Captain Sloan,
+
+I'm sending this to you as a courtesy.
+
+You redirected me to FOIA and I pursued it. I choose not to file with the F=
+orestry out of respect for our District Ranger and for the Forest Service w=
+e both serve.
+
+My focus, as it has always been, is on accountability at the state level. T=
+hey expelled me for protected speech and put it in writing. They did that b=
+ecause I documented abuse I experienced as a volunteer with them. What your=
+ officer opened at that gate was retaliation delivered on the one year anni=
+versary of that experience. Did you know that?
+
+I don't know how to reconcile that anymore than you probably do. It happene=
+d. It's part of the record. And I'm doing my best to focus on the ones who =
+truly harmed me. And I do understand your silence around my questions, but =
+you are letting an impossible characterization stand: that Oregon State Pol=
+ice were here because you wanted them here. How can that possibly be true? =
+Who gave them my birthdate and the location where I live? What does "for th=
+e Forest Service" mean?
+
+I cannot separate this from the accountability I am seeking from the State =
+of Oregon -- who it was that deliberately used police to intimidate me, how=
+ they can justify a letter that cites only my protected speech as cause for=
+ anything -- because your officer participated, and to protect him, you can=
+'t protect me, even though duty compels it.
+
+I am willing to indemnify your entire institution for this act, in writing,=
+ if you acknowledge it honestly. I only care that the record is accurate, a=
+nd the record shows you were used as much as anyone. They tried to drive a =
+wedge into a relationship that was not theirs to influence. Where do you st=
+and in this?
+
+Robert Samuel White
+
+
+________________________________
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Wednesday, July 22, 2026 3:47:22 PM
+To: PublicRecordsOrder@doj.oregon.gov <PublicRecordsOrder@doj.oregon.gov>
+Cc: governor.kotek@oregon.gov <governor.kotek@oregon.gov>; Records, Central=
+ <central.records@osp.oregon.gov>
+Subject: Petition for Public Records Order =97 Robert Samuel White / Oregon=
+ State Police (PR27478; CAD SP26097765)
+
+To the Public Records Advocate / Attorney General's Office:
+
+I petition the Attorney General for a Public Records Order under ORS 192.41=
+1, ORS 192.324(6), and ORS 192.407. The public body is the Oregon State Pol=
+ice, Central Records Section. The request is PR27478, submitted April 3, 20=
+26, concerning OSP CAD event SP26097765.
+
+In brief: OSP issued a "no records" determination on April 3, 2026. Ten day=
+s later a responsive CAD record was printed inside its Central Records Sect=
+ion; it was produced to me on July 14, 2026 =97 in full, with no exemption =
+claimed and no fee charged =97 after being conditioned for three months on =
+a $12.50 payment and a mailed paper form. One hundred and ten days after th=
+e request, five of the requested categories remain without any disposition,=
+ no exemption has been cited for anything, the search has never been descri=
+bed, the fee waiver has never been ruled on, and the litigation preservatio=
+n notice I served on April 2, 2026 has never been acknowledged.
+
+The attached petition sets out the record in full and states the relief req=
+uested. The exhibits (1=9625) are the complete correspondence and the produ=
+ced record, in a single indexed and page-labeled PDF; the exhibit index app=
+ears in Section VII of the petition. I am not asking the Attorney General t=
+o make any finding about the underlying event =97 only to require Oregon St=
+ate Police to respond to a public records request as the statute requires.
+
+I can provide any exhibit as a separate file on request.
+
+Respectfully,
+
+Robert Samuel White
+P.O. Box 334, Reedsport, Oregon 97467
+rsw@rswfire.com =97 458-230-1869
+
+
+
+
+
+
+This electronic message contains information generated by the USDA solely f=
+or the intended recipients. Any unauthorized interception of this message o=
+r the use or disclosure of the information it contains may violate the law =
+and subject the violator to civil or criminal penalties. If you believe you=
+ have received this message in error, please notify the sender and delete t=
+he email immediately.
+
+--_000_DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2DM6PR09MB5477namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Mr. White-&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"line-height: 20px; margin-top: 1em; =
+margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);=
+">
+I am glad that you were able to get the documents you request from the Oreg=
+on State Patrol.&nbsp; Regarding the CAD entry stating, =93FOR THE FOREST S=
+ERVICE,=94 I am unsure why that wording appears, as the Forest Service did =
+not initiate the interview. The agency=92s
+ involvement was limited to assisting OSP by providing access and guiding t=
+hem to the Siltcoos Work Center. This is standard practice, as OSP does not=
+ have keys to Forest Service gates, work centers, or other secured faciliti=
+es. Our law enforcement officer
+ accompanied them solely to facilitate entry and ensure they reached the co=
+rrect location.</div>
+<div class=3D"elementToProof" style=3D"line-height: 20px; margin-top: 1em; =
+margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);=
+">
+I hope this clarifies any confusion about the Forest Service=92s role.</div=
+>
+<div class=3D"elementToProof" style=3D"line-height: 20px; margin-top: 1em; =
+margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSer=
+vice, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);=
+">
+Employees in the Reedsport Office have shared positive feedback regarding y=
+our work as a volunteer, and I am pleased to hear that. I trust your experi=
+ence with District staff has been positive, and I look forward to continuin=
+g a strong and productive working
+ relationship.</div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<table style=3D"background-color: rgb(255, 255, 255); width: auto; height: =
+auto;">
+<tbody>
+<tr>
+<td style=3D"text-align: left; background-color: rgba(0, 0, 0, 0); padding:=
+ 2px; vertical-align: top; width: auto; height: auto;">
+<table style=3D"text-align: left; width: 271.781px;">
+<tbody>
+<tr>
+<td style=3D"text-align: left; background-color: rgba(0, 0, 0, 0); padding:=
+ 2px; vertical-align: top; width: auto; height: auto;">
+<table style=3D"text-align: left; width: 267.781px;">
+<tbody>
+<tr>
+<td align=3D"left" style=3D"background-color: rgba(0, 0, 0, 0); padding: 2p=
+x; vertical-align: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 9.9px; color: rgb(0, 0, 0);">
+<img alt=3D"Forest Service Shield" width=3D"69" height=3D"65" style=3D"widt=
+h: 69px; height: 65px;" src=3D"https://wwwstatic.fs.usda.gov/images/email/u=
+sfslogo.png"></div>
+</td>
+<td align=3D"left" style=3D"background-color: rgba(0, 0, 0, 0); padding: 2p=
+x; vertical-align: top; width: auto; height: auto;">
+<table style=3D"width: 184.781px;">
+<tbody>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 12px; color: rgb(0, 0, 0);">
+<b>Michele Holman<br>
+District Ranger</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 12px; color: rgb(0, 0, 0);">
+<b>Forest Service </b></div>
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 12px; color: rgb(40, 116, 46);">
+<b>Siuslaw National Forest</b></div>
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 12px; color: rgb(40, 116, 46);">
+<b>Central Coast Ranger District-&nbsp;</b></div>
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 12px; color: rgb(40, 116, 46);">
+<b>Oregon Dunes NRA</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 11px;">
+<span style=3D"color: rgb(0, 0, 0);"><b>p: 541-563-8445<br>
+c: 541-819-9156<br>
+</b></span><span style=3D"color: rgb(51, 102, 51);"><a href=3D"mailto:miche=
+le.holman@usda.gov" style=3D"color: rgb(51, 102, 51); text-decoration: none=
+;"><b>michele.holman@usda.gov</b></a></span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 11px; color: rgb(0, 0, 0);">
+1130 SW Forestry Lane<br>
+Waldport, OR 97394</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Robert Samuel White &=
+lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Thursday, July 23, 2026 3:55 PM<br>
+<b>To:</b> Sloan, Felicia - FS, OR &lt;felicia.sloan@usda.gov&gt;<br>
+<b>Cc:</b> Holman, Michele - FS, OR &lt;Michele.Holman@usda.gov&gt;<br>
+<b>Subject:</b> [External Email]Fw: Petition for Public Records Order =97 R=
+obert Samuel White / Oregon State Police (PR27478; CAD SP26097765)</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div style=3D"background:ghostwhite; font-size:80%; padding:1px; border:2px=
+ solid greenyellow; margin:2px">
+<span style=3D"background-color:#ADFF2F">[External Email]</span> <br>
+If this message comes from an <b>unexpected sender</b> or references a <b>v=
+ague/unexpected topic;</b>
+<br>
+Use caution before clicking links or opening attachments.<br>
+Please send any concerns or suspicious messages to: Spam.Abuse@usda.gov </d=
+iv>
+<div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Captain Sloan,</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I'm sending this to you as a courtesy.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+You redirected me to FOIA and I pursued it. I choose not to file with the F=
+orestry out of respect for our District Ranger and for the Forest Service w=
+e both serve.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+My focus, as it has always been, is on accountability at the state level. T=
+hey expelled me for protected speech and put it in writing. They did that b=
+ecause I documented abuse I experienced as a volunteer with them. What your=
+ officer opened at that gate was
+ retaliation delivered on the one year anniversary of that experience. Did =
+you know that?</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I don't know how to reconcile that anymore than you probably do. It happene=
+d. It's part of the record. And I'm doing my best to focus on the ones who =
+truly harmed me. And I do understand your silence around my questions, but =
+you are letting an impossible characterization
+ stand: that Oregon State Police were here because you wanted them here. Ho=
+w can that possibly be true? Who gave them my birthdate and the location wh=
+ere I live? What does &quot;for the Forest Service&quot; mean?</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I cannot separate this from the accountability I am seeking from the State =
+of Oregon -- who it was that deliberately used police to intimidate me, how=
+ they can justify a letter that cites only my protected speech as cause for=
+ anything -- because your officer
+ participated, and to protect him, you can't protect me, even though duty c=
+ompels it.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I am willing to indemnify your entire institution for this act, in writing,=
+ if you acknowledge it honestly. I only care that the record is accurate, a=
+nd the record shows you were used as much as anyone. They tried to drive a =
+wedge into a relationship that was
+ not theirs to influence. Where do you stand in this?</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Robert Samuel White</div>
+<div id=3D"x_ms-outlook-mobile-body-separator-line" data-applydefaultfontst=
+yles=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-=
+apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<br>
+</div>
+</div>
+<div dir=3D"auto" id=3D"x_mail-editor-reference-message-container">
+<div dir=3D"auto"><br>
+</div>
+<hr style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"auto" style=3D"font-size:11pt"><b>From:<=
+/b> Robert Samuel White &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Wednesday, July 22, 2026 3:47:22 PM<br>
+<b>To:</b> PublicRecordsOrder@doj.oregon.gov &lt;PublicRecordsOrder@doj.ore=
+gon.gov&gt;<br>
+<b>Cc:</b> governor.kotek@oregon.gov &lt;governor.kotek@oregon.gov&gt;; Rec=
+ords, Central &lt;central.records@osp.oregon.gov&gt;<br>
+<b>Subject:</b> Petition for Public Records Order =97 Robert Samuel White /=
+ Oregon State Police (PR27478; CAD SP26097765)<br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+To the Public Records Advocate / Attorney General's Office:</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I petition the Attorney General for a Public Records Order under ORS 192.41=
+1, ORS 192.324(6), and ORS 192.407. The public body is the Oregon State Pol=
+ice, Central Records Section. The request is PR27478, submitted April 3, 20=
+26, concerning OSP CAD event SP26097765.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+In brief: OSP issued a &quot;no records&quot; determination on April 3, 202=
+6. Ten days later a responsive CAD record was printed inside its Central Re=
+cords Section; it was produced to me on July 14, 2026 =97 in full, with no =
+exemption claimed and no fee charged =97 after
+ being conditioned for three months on a $12.50 payment and a mailed paper =
+form. One hundred and ten days after the request, five of the requested cat=
+egories remain without any disposition, no exemption has been cited for any=
+thing, the search has never been
+ described, the fee waiver has never been ruled on, and the litigation pres=
+ervation notice I served on April 2, 2026 has never been acknowledged.</div=
+>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+The attached petition sets out the record in full and states the relief req=
+uested. The exhibits (1=9625) are the complete correspondence and the produ=
+ced record, in a single indexed and page-labeled PDF; the exhibit index app=
+ears in Section VII of the petition.
+ I am not asking the Attorney General to make any finding about the underly=
+ing event =97 only to require Oregon State Police to respond to a public re=
+cords request as the statute requires.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+I can provide any exhibit as a separate file on request.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Respectfully,</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Robert Samuel White</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+P.O. Box 334, Reedsport, Oregon 97467</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+rsw@rswfire.com =97 458-230-1869</div>
+<div id=3D"x_ms-outlook-mobile-body-separator-line" data-applydefaultfontst=
+yles=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-=
+apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<br>
+</div>
+</div>
+<div dir=3D"auto"><br>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+This electronic message contains information generated by the USDA solely f=
+or the intended recipients. Any unauthorized interception of this message o=
+r the use or disclosure of the information it contains may violate the law =
+and subject the violator to civil
+ or criminal penalties. If you believe you have received this message in er=
+ror, please notify the sender and delete the email immediately.
+</body>
+</html>
+
+--_000_DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2DM6PR09MB5477namp_--

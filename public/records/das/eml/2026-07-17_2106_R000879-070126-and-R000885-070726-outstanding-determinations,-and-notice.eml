@@ -1,0 +1,1057 @@
+Received: from DM4PR14MB7227.namprd14.prod.outlook.com (2603:10b6:8:18b::15)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Fri, 17 Jul 2026
+ 21:06:55 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=i9dbtn6qmWa8kEJHgGS85aP20wzGa3nE+Ky07vvJp/bdO56t7kpZdIJESiQz+KqfOatyd1/4Vs7Y1ZKXWPrcbH1NfLnkbeVUHYaKLJFr39Lg+U54z19xZvWUG83tACYxUe5//17yU/JXza/Jrk477uu5SRXpDm5l0NHK36g/T45vTwGFA+Ke0SxRzBVTp+ZPrY+0zQLx39UHGX7Z6ZsMJUmoMULXgxbSP33NHYTSU+MXMFjkjkJkvMs3+L2GHqtVDJechxgoHgOh0QOYzOL44czWtTRITQhorp/DqvjLuatfDYiOH8gf2H24he8JgNNDhCTgGZRxKBJQ2flt4Zjd9Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=DSLSvfsTwNTnljHsHqaXkYujPYyvQmleOY4pHUEOzIA=;
+ b=bggDJmsChCfrNfr0U7vNu0A18YMosgdrp5l1x5vpiUOneqJxudjlD4epqE8j4rpStrLFVnH6kUYF47ID0yhy4E9PWgiaX5fkN772Bv6vayTI/TtMP0wwszxAUBp6Y9Ckyuq7SL+dwCqVlllxmSaT7alvPbMc6MMxvlOIuMMXvyC4PletrAXwruJqHHnpHhgo9awy7jmGVTKVIUVbAMyCiYv7Da8rg5SRDRnLm774vT8coo/lskOv3cNhwGj2YfBw95xvjIJn86VcQNUDEG159egm4wYy+43zhHo6Lhgf/1qJdXWKjJCKi6T4bs1oSFd90Y4gugBl1DuH9B+GsdiLTQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c001::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=das.oregon.gov; dmarc=pass (p=none sp=none pct=100) action=none
+ header.from=das.oregon.gov; dkim=pass (signature was verified)
+ header.d=das.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=das.oregon.gov] dkim=[1,1,header.d=das.oregon.gov]
+ dmarc=[1,1,header.from=das.oregon.gov])
+Received: from SJ0PR05CA0188.namprd05.prod.outlook.com (2603:10b6:a03:330::13)
+ by DM4PR14MB7227.namprd14.prod.outlook.com (2603:10b6:8:18b::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.223.12; Fri, 17 Jul
+ 2026 21:06:49 +0000
+Received: from MWH0EPF000C618B.namprd02.prod.outlook.com
+ (2603:10b6:a03:330:cafe::14) by SJ0PR05CA0188.outlook.office365.com
+ (2603:10b6:a03:330::13) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.223.6 via Frontend Transport; Fri, 17
+ Jul 2026 21:06:49 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c001::1)
+ smtp.mailfrom=DAS.oregon.gov; dkim=pass (signature was verified)
+ header.d=das.oregon.gov;dmarc=pass action=none
+ header.from=DAS.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of DAS.oregon.gov
+ designates 2a01:111:f403:c001::1 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c001::1;
+ helo=BY5PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c001::1) by MWH0EPF000C618B.mail.protection.outlook.com
+ (2603:10b6:30f:fff5::46b) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.245.5 via Frontend Transport; Fri, 17
+ Jul 2026 21:06:48 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=e6kvfzf4GhnU9iomoMGFqyL8UlgUj0pE3BH5yu4bx72SG5ia0DwW/+9MH+m0mssMVCqtvR/XNmJno1gJKBQitbprz8GF5HUsV/+vhufNZ2V+WzWuF/6NaiSDsSmwEk4iKmgTk7lSq6m3jCuzT0uR0CMv+MSao3tI+IuHq3vsIZ9oUGZqC+uo9XumZbeUri0D162OtFh/zJ7GVQBWCtF/q9DPTAxWP7BoQh0KILR1t4qBViWKpWGJjuOHGHmu/kEfOL0200zm4dVzEqfi86JhWUC5TYNgqNRiTTti7mvoyKbVC57O7fpusohaJyHYVaqjBgkqcQEKgqf1o/nu1busDg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=DSLSvfsTwNTnljHsHqaXkYujPYyvQmleOY4pHUEOzIA=;
+ b=WquI5J6yQep0RS4vdfckC6nAq3ky1/11kcQkfytBznFyiaCTJKQ2HFfWHGOqv9iLxQFlGqPsiBOkW7PfQ5Ordk1Uiyrppb77xW6I7iQNncqkW3P7YsxNbLHV6DCsUZrPHecV6QpSOPEHhGSY1J5P9xIbroTUDJKdhpn06Dxg3AzzNmWgcxj1WqNSFKhEzOjzO8UTMPcKXPOI3owXrByJIxVCnnueJ5hmJxM7P/sriLS2CjSTefICXJJG1wMA5TsT1iWH/5NINL+/MDnEg4cyRB9kGB7WTli4RfEqNKroInH+yjDU4jcsGVBg4qgatw2a7Nmu7pAB9yidwAibyNiVjg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=das.oregon.gov; dmarc=pass action=none
+ header.from=das.oregon.gov; dkim=pass header.d=das.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=das.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=DSLSvfsTwNTnljHsHqaXkYujPYyvQmleOY4pHUEOzIA=;
+ b=Itdue5hvfsm6Y1lnkY0MDuCSeYKfZuBmPkAcY/U8te5H12/9adbJY5o4JGEa1A7f4MYvd6hZbQx7J+aNPQfNUUcCBRIR1Hd8GTj9yT7Eh3ovULwq2n9jHGWcEGbJc/9GMeOIr9X/Us5EoP0Z3iHJNMIzBpXn4UrQRb+8wXb3mvr/LWCFEHMwS2qtuGr52FqkNe3jOEOksPSPSWmL+GF4djKpFgtdxysKJpCcQfeE1vqjf9R7qf+nX3xM1eQGZPK+6Y8ZyMvAFwM5FbwlRCj3TacNdoRqcmjerasr1MtN526BDwix10oZ3u8ww8vNSfdR+8UwgThdhdZKyw4+WrMX3w==
+Received: from SJ0PR09MB6495.namprd09.prod.outlook.com (2603:10b6:a03:269::22)
+ by PH8PR09MB9918.namprd09.prod.outlook.com (2603:10b6:510:181::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.223.12; Fri, 17 Jul
+ 2026 21:06:43 +0000
+Received: from SJ0PR09MB6495.namprd09.prod.outlook.com
+ ([fe80::5454:2cb4:1928:fe07]) by SJ0PR09MB6495.namprd09.prod.outlook.com
+ ([fe80::5454:2cb4:1928:fe07%6]) with mapi id 15.21.0223.011; Fri, 17 Jul 2026
+ 21:06:43 +0000
+From: MEDIARELATIONS * DAS <DAS.MediaRelations@DAS.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>, DUKE Bryanna * DAS
+	<Bryanna.DUKE@das.oregon.gov>, MEDIARELATIONS * DAS
+	<DAS.MediaRelations@DAS.oregon.gov>
+CC: Governor Kotek * GOV <Governor.Kotek@oregon.gov>
+Subject: =?Windows-1252?Q?RE:_R000879-070126_and_R000885-070726_=97_outstanding_de?=
+ =?Windows-1252?Q?terminations,_and_notice_of_intent_to_petition_under_ORS?=
+ =?Windows-1252?Q?_192.415?=
+Thread-Topic: =?Windows-1252?Q?R000879-070126_and_R000885-070726_=97_outstanding_determ?=
+ =?Windows-1252?Q?inations,_and_notice_of_intent_to_petition_under_ORS_192?=
+ =?Windows-1252?Q?.415?=
+Thread-Index: AQHdFirj5/+fQVYIwEi00kiMlcE53bZyKiNegAADnSA=
+Date: Fri, 17 Jul 2026 21:06:43 +0000
+Message-ID: <SJ0PR09MB64956306FC2CCF9F88225B8CACC62@SJ0PR09MB6495.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181D57A6F55F2506F96C921ADC62@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CH2PR14MB41810BC603CD4A662554E47BADC62@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB41810BC603CD4A662554E47BADC62@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=DAS.oregon.gov;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-traffictypediagnostic: SJ0PR09MB6495:EE_|PH8PR09MB9918:EE_|MWH0EPF000C618B:EE_|DM4PR14MB7227:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: a794dfc6-4c8d-4fee-4ce8-08dee447513f
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|1800799024|23010399003|10070799003|366016|6049299003|4053099003|18002099003|22082099003|4013099003|38070700021|5023799004|4143699003|10067099003|56012099006|8096899003;
+X-Microsoft-Antispam-Message-Info-Original: UonWH5TCVHlawkcOwc6YdRoyaLT4d6SLsrJy7m+Lb4TFEDRZ5wKbycrY0LMqdrdCB3hw1svWVCzHVWx8Agl2fd1J3pltmYmu0bMd+qwuHUD0oxbHl8QH2XQVK1M4eoze1oBKgfWbmjpMY0bVomWTLQqi9BWErgL/FYMJX9fr3hnIUd3bkcgi8963Tk3zHZLmEyPw3rmc+saQAOYlbmpOZwwj+8zaBOfpl0BUJuX48XmB7wWXoY9wvgofctdrobofYXUmfpQgchAL5cZ43Zru1Zn4z99Q2+DwgF1qufSadJ9eKu3Tr54qOU9tFXQQ8bhDdn2lmRNkscVSboGrn2eg9zvoZUrL5AcDtIvJv4cI4CHxjz9Bxh0qDOIIesQ/crXeGV0j8DdN5PLFurKqgA8zjexrSnCTKpzXmXUk10Eusp8ARU6v5m2Ch5KkORjCMZdRpiuyqO/dx8P97foNR1JhwKOJJYN03uQ5eirfUc4R9aAQEF89dJkDOqRSnucV23CDLMeVPk7ug3mqT1c34cBB8uaZdaU6Z0Y2k+dbnACFrgvd/sdfZ2zS7HaBf/bnYzoJek2x4cMXRyV54L2zy69+ZSePc7uceO+k2f2/KfrPzuabAC9vadTLwp1zT8ftgWC6ZQv/T/23tzskeC+91DJwjDsYrfTXlmLlcjL6yXheTwmDuLPstowgtEOE6XHwtEhn4ahoQ1uBTa0L+iSx3Fl0hw5qIHQuRrKFwMEv0ea7sHc=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR09MB6495.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(23010399003)(10070799003)(366016)(6049299003)(4053099003)(18002099003)(22082099003)(4013099003)(38070700021)(5023799004)(4143699003)(10067099003)(56012099006)(8096899003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 2
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?Windows-1252?Q?5J0pBdoJ+QWAzG3gHv0gB8zzZvqM0q/1bKFv7C0iyo5sK2FVUFbVefhc?=
+ =?Windows-1252?Q?2AHj7RiKbIAtWiiJKaLT+p9J/GUnszEorzltdPojCOa4z8wAML4Hy62Q?=
+ =?Windows-1252?Q?Gtmw7bSbSmfka+8kPm63WMKVRhekUG75XooWeNuxXKZG7bUYN68wE1n7?=
+ =?Windows-1252?Q?0r/OHnOaGVM0mEupcoJCP9TvTN9PixeAtPIuL4uOuEN2dlRFqQITaDYe?=
+ =?Windows-1252?Q?hBa3jQ8DA9Nnl/KAPUzc5RDCym6SvSK5EK9+0MOGLgeaNkEpX3OZmv5+?=
+ =?Windows-1252?Q?m4AY+HnWOyAir4nZWkJ53bQAaAZpcr6O/ySMCUIfuARzM+Fk/RjXvbnL?=
+ =?Windows-1252?Q?pwIVyKo1/oT3W/sLVNLQoo9YzI3/OsNmO2JG7JffpIIHXgfX/dcELZNY?=
+ =?Windows-1252?Q?obEorrlZCL2XzQbq9kprw7cmjkpPTBvvhYU/wdPDWmRVwXpuOlN2YsGZ?=
+ =?Windows-1252?Q?MT2smY0h7Apv+RfXDl6F1RjKVAuuGjxIrBs4N9Ynv6OhGPCCehYRfr/6?=
+ =?Windows-1252?Q?XE5F6psQMKJP0gQLeojA39Yab8eFE2HkzItA0RamAvBUzWB8jeneaxaR?=
+ =?Windows-1252?Q?yvFZ0YFAka82+W+BRGbFutsYLkEICg+/4WheMIKt3xSFJvPQpgiXaOI7?=
+ =?Windows-1252?Q?TNYKx8UeLutDhEQvk5vNCB6VkmuAN0vWwFVgAOFz3LxBo/+FfgGvPiwh?=
+ =?Windows-1252?Q?bV998g0TAJ/PNvWTF+70skzTHstR4EbfRjTrLhre8sosKWcxO/gNXkR9?=
+ =?Windows-1252?Q?37YUVkDIrX+5ZwNs+6sfA07RU1aepDJLLxPHovdDm3kRJ2BtSX9gnI/Y?=
+ =?Windows-1252?Q?Hfg2TnijdJ3DHF0y3g54IcKExL7ORnI5xjHX9QalTtKjuez/JiqXwP/f?=
+ =?Windows-1252?Q?Myt9dKaKTLSB1UX21h7ieNrHHMYVABk+d7R6nZ96BBOVJQU2JjKDDS3m?=
+ =?Windows-1252?Q?5c5bPISkdZI+IIYTYq0dCwSwTRY/PiSByBjf9djJSfzy/l+M1/KKVWOA?=
+ =?Windows-1252?Q?sT0JtcsmquDA682Vl1PjxavM3BtVdnSt4pE2SsaNbbiYp2KEOODUpOSr?=
+ =?Windows-1252?Q?V6OGHnfLIlXSjle7Ee6dAP+ohqwGPdp07afo7hNepLmJF0EWdyhFGFlU?=
+ =?Windows-1252?Q?LidPe9xYzxpNoDMwRjv4cznxafOUzfLp6vGEexGSEuJ3+UsuAHsk5QDt?=
+ =?Windows-1252?Q?/SPN8UXQsM2omk/t0tyn1edZY2UePJeOfcOIDLUqQnAejs1noRwHzDDi?=
+ =?Windows-1252?Q?qSpp6I4ZSy1hJJyzVuWTiE1L3OfBpa+Rji+4aKcX78n5TjAwJeRdm/u7?=
+ =?Windows-1252?Q?t5Ha2WzykKEqys6dW6bXR2HQzLhxxJXjHVfizDKK0d4hCikgTktYTQwW?=
+ =?Windows-1252?Q?V8fwa/B/3fEspDDH2g4ixoxgtJXEPF3K32dqLUdjg2vHUR/ZzGO2og24?=
+ =?Windows-1252?Q?/lsea0YYtoYm8XiN13UpzuijJBgxnr5g8IeGtInUzVdcK8NHfsvnD1fN?=
+ =?Windows-1252?Q?j0y8GFXbNMePME5KRBJwlbz8KP/8N6likUMc9qtJx5vemNOeUhQ4pR0a?=
+ =?Windows-1252?Q?foa/b2dw+x4Ccc4M1EvW34LFWJxuSt1ZAwnSSL7BFn0onPx4mmuyslu0?=
+ =?Windows-1252?Q?ZTpqR1S9+QVLnZtnmOWkhckOy8rmeMMVYV2+TyBxTiUCZoFQn8LQGcdF?=
+ =?Windows-1252?Q?xlYPwClrHEUikV4O70ImgtAt8XmIh5fp0PdoUwjut+FWxJGiBm9pwdHG?=
+ =?Windows-1252?Q?PJx+UAihq46mTUQg/YrVqJFhHUwbwrDyIAhncldKp6TAShFZDvvhSgsu?=
+ =?Windows-1252?Q?TldBuVtm41qitMgIh3d+2wXCDsJEARLIXGe5ha4tmt86E/FpCbXQFAme?=
+ =?Windows-1252?Q?cOKHHBFZu1CruUKach8h6OJEpIom4C8h/VXk5RZ9o0N9I0ZTLPQL7cPb?=
+ =?Windows-1252?Q?vfXeVlOK?=
+X-MS-Exchange-AntiSpam-MessageData-Original-1: zRUptwMJyl/sZ5bnvhzfq2KsYZp0boPwXVk=
+Content-Type: multipart/related;
+	boundary="_004_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR09MB9918
+Return-Path: DAS.MediaRelations@DAS.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Jul 2026 21:06:49.0102
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: a794dfc6-4c8d-4fee-4ce8-08dee447513f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: MWH0EPF000C618B.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: MWH0EPF000C618B.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: MWH0EPF000C618B.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 5b4433fa-6439-48cd-d4b0-08dee4474e10
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: f481fd4c-971f-40e1-9d48-08dee447542e
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: DAS.MediaRelations@DAS.oregon.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|6049299003|35042699022|6113799003|6073799003|7149299003|4013099003|4053099003|13003099007|6133799003|19002099009|56012099006|4143699003|5023799004|5063699009|8123199003|10067099003|55112099003|18002099003|22082099003|16102099003|4076899003|8096899003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c001::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09CU001.outbound.protection.outlook.com;PTR:mail-westusazlp170110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(6049299003)(35042699022)(6113799003)(6073799003)(7149299003)(4013099003)(4053099003)(13003099007)(6133799003)(19002099009)(56012099006)(4143699003)(5023799004)(5063699009)(8123199003)(10067099003)(55112099003)(18002099003)(22082099003)(16102099003)(4076899003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Jul 2026 21:06:48.7798
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a794dfc6-4c8d-4fee-4ce8-08dee447513f
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: MWH0EPF000C618B.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM4PR14MB7227
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.0607706
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0223.005
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?GxV7LZhA2VK41W3ZVIFns9YFOG4GjMfACIXnAK6ZBdhHCnC78RvSw5yK?=
+ =?Windows-1252?Q?2r94YRUIv8Ob+bwc0gealDEvtnxWc4PJiFDDFUXd9u7QdZoyMYZF40at?=
+ =?Windows-1252?Q?BzuVmI4JHtKDOU/ZhUesvv0MsMDkyn5rPHYKGKjLd2swJ6AC0QD+fyRo?=
+ =?Windows-1252?Q?PVbRhZmR2qN4KdAJgD30JjRyiK5tnOe5kdpg8tHeYt4Fuj2FIxmQJLVv?=
+ =?Windows-1252?Q?WuDtlsxRkLEWOm2UdHsQl5KeKSe12Ev7bDsQZyolr4vRDaZaNs9rzgli?=
+ =?Windows-1252?Q?0ddXIZjFFGCugrqvnSq5qCYFBz1fssyo3EJL6vunfdQ2YJHFOxMNz0Jd?=
+ =?Windows-1252?Q?BE8NJJSdoz7BiyRAcNOEQEOAondlFlQBOmsiW3j8KjN9T40VF5qQB+N1?=
+ =?Windows-1252?Q?qu5mVl2kSn6ALrjYGJ8PJg6BpY+VW66NeNCTrKF336L8qwJpvqUmZCFF?=
+ =?Windows-1252?Q?GLaebjEhx+refigyQxBTW5Wlq398yxBBa9oiu+29dx52SLQgRZI+vsDM?=
+ =?Windows-1252?Q?tm7S6T0hPJEjWQTFhX70zO09ijf6/vkYv3oZwPfed3URmtjs0uuyvSjZ?=
+ =?Windows-1252?Q?K5J6laGJF4WyRw/AyrFoacmGC4Adad3zcE7kc70bAjeh1sdzMB2Laxs1?=
+ =?Windows-1252?Q?+qLNc4BcF2xCKI97LKs1UtSwcVQwGVlnNBYaoVLEf7cw1KUHv95N0SuZ?=
+ =?Windows-1252?Q?tHsPKJamlxMg/Rkfy+n+KxQBX5vemfdNm88pWEJzqQnriW/6REduSvvz?=
+ =?Windows-1252?Q?41cguEN29rIpNymg8oDm8gfKn5uSEncpTFYXTy4QiR7dBC/BFMZsaStI?=
+ =?Windows-1252?Q?ItyX08Wp1OcHKEV0gYtOv82cWlNXma8Mmipx8Ccr4RWxuKwXsQfUYM7+?=
+ =?Windows-1252?Q?doVae7j/1VTwU7cbWJLkUeKzl6JDo2V0yf6yopaTUCYcVdnT7p9TKE8W?=
+ =?Windows-1252?Q?rAuQFIVn3wMMItb9FIAi1phEGd15A8g1hoxjmOPlvW95JZiZgeq5Vf1R?=
+ =?Windows-1252?Q?F8Yj865s16alzIGgEu6LqFk7Pj9+qsmiXx0akyZz3RwBP0ujEHkz0kL+?=
+ =?Windows-1252?Q?Yi6xRcEkOb6ygvXxcFTEuctX7jv0hXKV86nTdf1HUgMrqzp7PGgRUZYc?=
+ =?Windows-1252?Q?MPsTTq4BIR99YStAOWuDRsDikazs8BleoWsL6BSg+GGY5wefrtvKgUgt?=
+ =?Windows-1252?Q?f9JKwRI7lJrqObIRZ1ueEn8/bv1xLo1LOCP9b3saLFfMbREBUXmhAPIq?=
+ =?Windows-1252?Q?6ml+Po2OjAtACTRNE2sI3PDKnGsWsFEYzqMv3/aJRpHUO0WbISOttUr1?=
+ =?Windows-1252?Q?3Wpv4R9mJWfP+K9gy/HsgCe1u+YqAGVbhP7TB/C6dcOWv7MCnUL7K0Nd?=
+ =?Windows-1252?Q?47v6LKw0m/XSSxgPp4LOIXimpai/GF96kMetu9SHSLKQVMT+VKNWk2NQ?=
+ =?Windows-1252?Q?4DsWY8absRDlwrtHI7puchSMCtEUJtrdyAL/8oJo58g36ialcN4LUSNb?=
+ =?Windows-1252?Q?Pfpp4C4/UqjPqGKYFs5tg3fvpMGaHi0txXKF0Bv26Pc/nZGqiWvBNDyA?=
+ =?Windows-1252?Q?vpXoLabLmKe/Vm6GYbckKCr319+WLHBjS0lBHaTLt52kypZQKOOJommn?=
+ =?Windows-1252?Q?3yNDJSw6R+QyhSIPujuT6+0I/vp0gvoW/lVEgVTIT7VL6JRNuTRsuwOE?=
+ =?Windows-1252?Q?53HBqC1lG5fjEXf3NDQv1PhUJwOKcr2+EQaYohCLvf1LbPmGyi8WqsSV?=
+ =?Windows-1252?Q?SWR7CGwG9zSW/uRcQaHU3JrDT2floPbKIa8AIPrNt7Up4uCaB8yGqC+Q?=
+ =?Windows-1252?Q?ZLZPrR5o58GU4avPNtMKKBBwXjSMVSLZgNjjorpG6Zms+G40TixNkJOP?=
+ =?Windows-1252?Q?wb0N9Nit8qeAOuWLljtFQQrMApWEZUx3eMAb6Y1EEOImGp2J3cvbnYa0?=
+ =?Windows-1252?Q?SZYI5wFDh/HpaCvxkl8FIgZ9PLEyoPi2Qrtt2Rl7Imbh2Wq0kHA4LfgH?=
+ =?Windows-1252?Q?JIAPNjlQT2PAwct34mnJcfyPcghKUgShsHMF5lCz8tS2URCaSvetkeJb?=
+ =?Windows-1252?Q?0v710iM1NpZj+pihWf9oe5idGTeNQ98TG6A8EBy7V72Ed74ilf6vl8/V?=
+ =?Windows-1252?Q?miFCVIJOli4dH9mOjpYSSZ/0XKXb/lgG0hdkPBcFZvE74KGFy4PoL4fn?=
+ =?Windows-1252?Q?fvBntD3b63jc7QSfBWhr5US7SFShT8HzAuTtx6kKiEkts6K62fW0r8aP?=
+ =?Windows-1252?Q?3dpWQ2h48/wjmXmVuD8shjlJSOs1mckVIkCKKmpe2aC3kahly7dFHYjS?=
+ =?Windows-1252?Q?WcSZCbNORk3WKW2biIIdHR3312GsfeAE6dFw8zZQ5yZy764VhI9VMV9a?=
+ =?Windows-1252?Q?obyiVjM/wos1HUNEcFttM3N0oxFGV7ym1AGCsmpjPiONTBDUkeRupAMP?=
+ =?Windows-1252?Q?vHp53xgmN11MgwUMV7GaljhfZDd2yFnGH6F9/+1tP+SJPUla8MTzRWxi?=
+ =?Windows-1252?Q?6Lp8p0XoS8CtoWi9cNXY9eoPT/quRBQmqmdp2PFxyVMvIrbYXLAflIDz?=
+ =?Windows-1252?Q?pKnW5o48HUMpPT0Q6JxybwGfkT1eUv1JVtIyyOJ89HHzjeJYjwnV9pRF?=
+ =?Windows-1252?Q?xozXaFV+duDnuwBwGsFPOlOnfhcw33bR+iLOW2+vKzb4Ow=3D=3D?=
+MIME-Version: 1.0
+
+--_004_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_"
+
+--_000_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Robert,
+
+I=92m not able to address the specific requests in your email at this momen=
+t, but I want to reassure you that we are continuing to process your public=
+ records requests in the order they are received.
+
+We are currently experiencing a high volume of complex requests, many of wh=
+ich require multiple steps to complete.
+
+Thank you for your patience, and please note that periods without communica=
+tion do not indicate inactivity on our end.
+
+Thanks for understanding,
+Chris
+
+[DAS logo]
+Chris Liedle (he, him)
+Communications Director
+Oregon Department of Administrative Services<https://www.oregon.gov/das/Pag=
+es/index.aspx>
+
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Friday, July 17, 2026 1:32 PM
+To: DUKE Bryanna * DAS <bryanna.duke@das.oregon.gov>; MEDIARELATIONS * DAS =
+<DAS.MediaRelations@DAS.oregon.gov>
+Cc: Governor Kotek * GOV <governor.kotek@oregon.gov>
+Subject: Re: R000879-070126 and R000885-070726 =97 outstanding determinatio=
+ns, and notice of intent to petition under ORS 192.415
+
+Forwarded to DAS.MediaRelations@DAS.oregon.gov<mailto:DAS.MediaRelations@DA=
+S.oregon.gov> per Ms. Duke's auto reply.
+
+________________________________
+From: Robert Samuel White
+Sent: Friday, 17 July 2026 13:30:42
+To: bryanna.duke@das.oregon.gov<mailto:bryanna.duke@das.oregon.gov> <bryann=
+a.duke@das.oregon.gov<mailto:bryanna.duke@das.oregon.gov>>
+Cc: Governor Kotek * GOV <governor.kotek@oregon.gov<mailto:governor.kotek@o=
+regon.gov>>
+Subject: RE: R000879-070126 and R000885-070726 =97 outstanding determinatio=
+ns, and notice of intent to petition under ORS 192.415
+
+Dear Ms. Duke,
+
+I am writing regarding R000879-070126 and R000885-070726.
+
+Over the past ten days I have asked the Department four direct questions. E=
+ach has a form the statute supplies. None has been answered.
+
+On July 8, I set out the analysis under ORS 192.311(2)(b) showing that the =
+agent exception is unavailable as to the Department's own correspondence =
+=97 DAS creates, sends, receives, and maintains its own email as a principa=
+l, not as an agent holding another body's records =97 and unavailable as to=
+ DAS=96Governor's office communications on the exception's own "not otherwi=
+se available" proviso, since OPRD is not a party to them and cannot produce=
+ them. I asked the Department to identify the public body for which it clai=
+ms to have been acting as agent, and the basis for that agency relationship=
+, or to withdraw the determination. Nine days. Neither.
+
+On July 10 and again on July 12, I asked the Department to document the sea=
+rch that produced its "no records" determination: custodians and offices se=
+arched, systems and repositories queried, date range, terms and identifiers=
+, and whether the search accounted for identifiable description and not onl=
+y my name. Seven days. Nothing.
+
+On July 10, I asked for the completion date ORS 192.324 requires for the po=
+rtion of R000879 still under review. Seven days. No date.
+
+On July 8, the Department acknowledged R000885-070726 without the estimated=
+ completion date that ORS 192.324(2)(b) requires when a response will excee=
+d ten business days of acknowledgment. That period expires July 22.
+
+On July 7, I served notice of the duty to preserve as to both requests. Ten=
+ days. No acknowledgment that it was received or distributed.
+
+Here is what that pattern is. "Not the custodian" is not an administrative =
+convenience. Under ORS 192.329(2)(d) it is a formal written representation,=
+ and it is the only representation available to a body in possession of rec=
+ords that wishes to disclaim them. When that representation is challenged o=
+n the statute and the Department neither defends it nor withdraws it, the d=
+etermination is not being maintained. It is being left standing without sup=
+port, in a posture where it continues to operate against me while no one ha=
+s to own it. The same is true of the "no records" finding: a determination =
+about a search that the Department will not describe is a conclusion with n=
+othing under it.
+
+I am not asking the Department to characterize anything. I am asking it to =
+answer for its own representations, in its own name, under a statute that r=
+equires exactly that.
+
+So I am asking, plainly, for the following.
+
+1. Identify the public body for which DAS claims to have acted as agent und=
+er ORS 192.311(2)(b), and the basis for that agency relationship =97 or wit=
+hdraw the custodial determination and dispose of the request in one of the =
+three lawful forms: production, production with itemized exemptions cited r=
+ecord by record, or an express written statement that no responsive records=
+ exist.
+
+2. Document the search underlying the "no records" determination: custodian=
+s and offices, systems and repositories, date range, terms and identifiers,=
+ and whether identifiable description was accounted for.
+
+3. Provide the estimated completion date for the portion of R000879 still u=
+nder review, and for R000885-070726.
+
+4. Confirm receipt and distribution of the July 7 preservation notice, and =
+state whether any potentially responsive record has been destroyed, purged,=
+ overwritten, or aged off a retention schedule since July 7, and if so, wha=
+t and when.
+
+I would prefer to resolve this with you. That preference is real and I have=
+ acted on it for three weeks. But it is not unlimited, and I want the path =
+stated rather than implied.
+
+If the Department does not respond substantively, I intend to petition the =
+Attorney General under ORS 192.415 for an order requiring disclosure, and t=
+o raise both the custodial determination and the adequacy of the search in =
+that petition. R000885 asks how the Department makes custodial-basis determ=
+inations and what standard governs them. A petition that reaches that quest=
+ion reaches it for every requester the determination has been used against,=
+ not only me. I would rather the Department answer it here.
+
+I renew my request for a fee waiver on public interest grounds under ORS 19=
+2.324(5) as to both requests. I am not seeking these records for any commer=
+cial purpose.
+
+Sincerely,
+
+Robert Samuel White
+Founder, Autonomy Realms
+Owner, eNetwizard Inc.
+Former Oregon State Parks Volunteer
+Current U.S. Forest Service Caretaker
+Steward, oprdvolunteerabuse.org
+
+
+--_000_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hi Robert,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I=92m not able to address the specific requests in y=
+our email at this moment, but I want to reassure you that we are continuing=
+ to process your public records requests in the order they are received.<o:=
+p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We are currently experiencing a high volume of compl=
+ex requests, many of which require multiple steps to complete.<o:p></o:p></=
+p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for your patience, and please note that pe=
+riods without communication do not indicate inactivity on our end.<o:p></o:=
+p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks for understanding,<br>
+Chris<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"638" style=3D"width:478.5pt">
+<tbody>
+<tr>
+<td width=3D"106" valign=3D"top" style=3D"width:79.25pt;padding:0in 0in 0in=
+ 0in">
+<p class=3D"MsoNormal" style=3D"line-height:120%"><span style=3D"color:blac=
+k"><img width=3D"96" height=3D"96" style=3D"width:1.0in;height:1.0in" id=3D=
+"Picture_x0020_1" src=3D"cid:image001.png@01DD15F2.D914C970" alt=3D"DAS log=
+o"></span><o:p></o:p></p>
+</td>
+<td width=3D"532" valign=3D"top" style=3D"width:399.25pt;padding:0in 0in 0i=
+n 0in">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Chris Liedle</span></=
+b><span style=3D"color:black">&nbsp;<i>(he, him)</i></span><o:p></o:p></p>
+<p class=3D"MsoNormal">Communications Director<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#00579B"><a href=3D"https://www=
+.oregon.gov/das/Pages/index.aspx"><span style=3D"color:#00579B">Oregon Depa=
+rtment of Administrative Services</span></a><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual"><o:=
+p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Friday, July 17, 2026 1:32 PM<br>
+<b>To:</b> DUKE Bryanna * DAS &lt;bryanna.duke@das.oregon.gov&gt;; MEDIAREL=
+ATIONS * DAS &lt;DAS.MediaRelations@DAS.oregon.gov&gt;<br>
+<b>Cc:</b> Governor Kotek * GOV &lt;governor.kotek@oregon.gov&gt;<br>
+<b>Subject:</b> Re: R000879-070126 and R000885-070726 =97 outstanding deter=
+minations, and notice of intent to petition under ORS 192.415<o:p></o:p></s=
+pan></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Forwarded to </span><s=
+pan style=3D"color:black"><a href=3D"mailto:DAS.MediaRelations@DAS.oregon.g=
+ov">DAS.MediaRelations@DAS.oregon.gov</a> per Ms. Duke's auto reply.</span>=
+<o:p></o:p></p>
+<div id=3D"ms-outlook-mobile-body-separator-line">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> Robert=
+ Samuel White<br>
+<b>Sent:</b> Friday, 17 July 2026 13:30:42<br>
+<b>To:</b> <a href=3D"mailto:bryanna.duke@das.oregon.gov">bryanna.duke@das.=
+oregon.gov</a> &lt;<a href=3D"mailto:bryanna.duke@das.oregon.gov">bryanna.d=
+uke@das.oregon.gov</a>&gt;<br>
+<b>Cc:</b> Governor Kotek * GOV &lt;<a href=3D"mailto:governor.kotek@oregon=
+.gov">governor.kotek@oregon.gov</a>&gt;<br>
+<b>Subject:</b> RE: R000879-070126 and R000885-070726 =97 outstanding deter=
+minations, and notice of intent to petition under ORS 192.415</span>
+<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">Dear Ms. Duke,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">I am writing regarding R=
+000879-070126 and R000885-070726.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Over the past ten days I=
+ have asked the Department four direct questions. Each has a form the statu=
+te supplies. None has been answered.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">On July 8, I set out the=
+ analysis under ORS 192.311(2)(b) showing that the agent exception is unava=
+ilable as to the Department's own correspondence =97 DAS creates, sends, re=
+ceives, and maintains its own email as
+ a principal, not as an agent holding another body's records =97 and unavai=
+lable as to DAS=96Governor's office communications on the exception's own &=
+quot;not otherwise available&quot; proviso, since OPRD is not a party to th=
+em and cannot produce them. I asked the Department
+ to identify the public body for which it claims to have been acting as age=
+nt, and the basis for that agency relationship, or to withdraw the determin=
+ation. Nine days. Neither.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">On July 10 and again on =
+July 12, I asked the Department to document the search that produced its &q=
+uot;no records&quot; determination: custodians and offices searched, system=
+s and repositories queried, date range, terms
+ and identifiers, and whether the search accounted for identifiable descrip=
+tion and not only my name. Seven days. Nothing.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">On July 10, I asked for =
+the completion date ORS 192.324 requires for the portion of R000879 still u=
+nder review. Seven days. No date.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">On July 8, the Departmen=
+t acknowledged R000885-070726 without the estimated completion date that OR=
+S 192.324(2)(b) requires when a response will exceed ten business days of a=
+cknowledgment. That period expires July
+ 22.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">On July 7, I served noti=
+ce of the duty to preserve as to both requests. Ten days. No acknowledgment=
+ that it was received or distributed.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Here is what that patter=
+n is. &quot;Not the custodian&quot; is not an administrative convenience. U=
+nder ORS 192.329(2)(d) it is a formal written representation, and it is the=
+ only representation available to a body in possession
+ of records that wishes to disclaim them. When that representation is chall=
+enged on the statute and the Department neither defends it nor withdraws it=
+, the determination is not being maintained. It is being left standing with=
+out support, in a posture where
+ it continues to operate against me while no one has to own it. The same is=
+ true of the &quot;no records&quot; finding: a determination about a search=
+ that the Department will not describe is a conclusion with nothing under i=
+t.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">I am not asking the Depa=
+rtment to characterize anything. I am asking it to answer for its own repre=
+sentations, in its own name, under a statute that requires exactly that.<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">So I am asking, plainly,=
+ for the following.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">1. Identify the public b=
+ody for which DAS claims to have acted as agent under ORS 192.311(2)(b), an=
+d the basis for that agency relationship =97 or withdraw the custodial dete=
+rmination and dispose of the request in
+ one of the three lawful forms: production, production with itemized exempt=
+ions cited record by record, or an express written statement that no respon=
+sive records exist.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">2. Document the search u=
+nderlying the &quot;no records&quot; determination: custodians and offices,=
+ systems and repositories, date range, terms and identifiers, and whether i=
+dentifiable description was accounted for.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">3. Provide the estimated=
+ completion date for the portion of R000879 still under review, and for R00=
+0885-070726.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">4. Confirm receipt and d=
+istribution of the July 7 preservation notice, and state whether any potent=
+ially responsive record has been destroyed, purged, overwritten, or aged of=
+f a retention schedule since July 7,
+ and if so, what and when.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">I would prefer to resolv=
+e this with you. That preference is real and I have acted on it for three w=
+eeks. But it is not unlimited, and I want the path stated rather than impli=
+ed.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">If the Department does n=
+ot respond substantively, I intend to petition the Attorney General under O=
+RS 192.415 for an order requiring disclosure, and to raise both the custodi=
+al determination and the adequacy of
+ the search in that petition. R000885 asks how the Department makes custodi=
+al-basis determinations and what standard governs them. A petition that rea=
+ches that question reaches it for every requester the determination has bee=
+n used against, not only me. I would
+ rather the Department answer it here.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">I renew my request for a=
+ fee waiver on public interest grounds under ORS 192.324(5) as to both requ=
+ests. I am not seeking these records for any commercial purpose.<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Sincerely,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Robert Samuel White<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Founder, Autonomy Realms=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Owner, eNetwizard Inc.<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Former Oregon State Park=
+s Volunteer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Current U.S. Forest Serv=
+ice Caretaker<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Steward, oprdvolunteerab=
+use.org<o:p></o:p></span></p>
+<div id=3D"x_ms-outlook-mobile-body-separator-line">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_--
+
+--_004_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=18861;
+	creation-date="Fri, 17 Jul 2026 21:06:43 GMT";
+	modification-date="Fri, 17 Jul 2026 21:06:43 GMT"
+Content-ID: <image001.png@01DD15F2.D914C970>
+Content-Transfer-Encoding: base64
+
+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
+AAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA
+//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8a
+xaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNg
+FIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyC
+oQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEY
+GBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgA
+AAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA
+//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8a
+xaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNg
+FIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8axaNgFIyC
+oQEYGBgAAAAA//8axaNgFIyCoQEYGBgAAAAA//8DANKGP3wYg4VxAAAAAElFTkSuQmCC
+
+--_004_SJ0PR09MB64956306FC2CCF9F88225B8CACC62SJ0PR09MB6495namp_--

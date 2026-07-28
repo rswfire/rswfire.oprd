@@ -1,0 +1,188 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from DM4PR14MB7250.namprd14.prod.outlook.com (2603:10b6:8:188::9) by
+ CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Mon, 30 Mar 2026 18:12:25
+ +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=c+zdCm9ztUMzjtSvuM39dViSIFktyz9ZlM4XIsimW1UznNNWBy1kelaElJC12A1JZk6ZFluA0i2nUZqv0SKaJD+8MzMtOGE8tp1Y/P8IWyW4JWdB65zK7Xig3yPTMZNm49QOagVfdSd3dp9WqLJM/fCscvj2zwSX+SZVngkmzs5Vfd7644iASC0UD3Mi3iKSHQ4q+BW2q5KB010IU8w/1T7WEANs6g586dKfFmO6QWXi9Kk1UQE7i3earY1zdVoghoLADHogBnQ5sn9EuShtDOVaXhRSAWphlSsZPUReFWVTE7sneiLrxMFfe3PJDUA7nGA2DohBdhKF4ewzuNT/YA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=7iC0ofHue+xhW641pEmIDDoCFrVHml+vjiIVgEL4VlE=;
+ b=l4FUlJvViy1/SYpPSpsWXghuo/rQ9435O3NykiyBdDngkButSWsf6330kxR+GtV865oPTpe5g3R/820hk7oFgPE7DVAuW4mFLMhvvRdD85Xw0kfRFnvweRmnI7gsRAtgtAy0Z9CkKZ/PfSY+wnENW/ZUMGCI2yDk+KxAQujBA8xUlEyVdpD0a3F1UltCj8vpnfxTynRhV3z2bIjb4v8Nc1gOEeHmMXQ2vcPwnb/0qA0ir9AzNO0aR1yOo0toMrtdU01AHH2bGxwT1Mt+1zJBMbxYtK9DBwoLj8gxTEcGl+T/xciloU5jG6Mm1LiEcuOa97oDX2znvoge7VDZswiXpA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c001::1) smtp.rcpttodomain=rswfire.com smtp.mailfrom=usda.gov;
+ dmarc=pass (p=reject sp=reject pct=100) action=none header.from=usda.gov;
+ dkim=pass (signature was verified) header.d=usda.gov; arc=pass (0 oda=0
+ ltdi=1)
+Received: from CH0P221CA0044.NAMP221.PROD.OUTLOOK.COM (2603:10b6:610:11d::27)
+ by DM4PR14MB7250.namprd14.prod.outlook.com (2603:10b6:8:188::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9745.28; Mon, 30 Mar
+ 2026 18:12:22 +0000
+Received: from DS2PEPF000061C7.namprd02.prod.outlook.com
+ (2603:10b6:610:11d:cafe::10) by CH0P221CA0044.outlook.office365.com
+ (2603:10b6:610:11d::27) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.28 via Frontend Transport; Mon,
+ 30 Mar 2026 18:12:15 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c001::1)
+ smtp.mailfrom=usda.gov; dkim=pass (signature was verified)
+ header.d=usda.gov;dmarc=pass action=none header.from=usda.gov;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of usda.gov designates
+ 2a01:111:f403:c001::1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=2a01:111:f403:c001::1;
+ helo=BY5PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c001::1) by DS2PEPF000061C7.mail.protection.outlook.com
+ (2603:10b6:f:fc00::21a) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.21 via Frontend Transport; Mon,
+ 30 Mar 2026 18:12:19 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=US/pYgAEKN0Y8aOuK0PFC7NBV8pO35uKAsyNYre9L7oLL+ezFPiBew8JJdLiu+Hog16lUXAHhVCDtuTtv1ZjD+ELZgjHHPmWTz3A+5JYuSjDalkLACLoqgpQcHQdKV7tD7Rm9tIcbkSZh8rg6e20pQloZ3g6oWIQZzDWEWYTtIC0t4BJqBjpHx56E/itC6+k4ZOsLkjy8f109eYWizxXpINY/H2kxFj6Fy0ANp7nm0f3GjKKhsKUVEP01BckfsG7nDmkKx2xTqG4JyNeCH6IGcYEFLZbYIheQOWX7j/qHigtdWY9YwsXPjGdVWPExo3CFQI7q+UJ96jK07mxqy3neg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=7iC0ofHue+xhW641pEmIDDoCFrVHml+vjiIVgEL4VlE=;
+ b=BgNqQaka6zuH6PHwpAuYSeStwA5Oyp3v5KJPZWjp+/P5HZb11sFCW/SMJOtY1VrDftA8QnMteOYHhNT42Mines5e4JNrwJf+b8qdkF84lRedAt1xlcMUgdrM6U/Ph87IppBSYvFytICop/N2qwS5pvBQ+77ytiNoo3QyXhmhcjDF11T6sNyIom/vCTwIvE21lLB3yv1KxVVZCKEArpVhAakVertSfZ60GiklHF9X1MGLX0+ewFuxkyKMzoQf4vliDxUlv282SAu1yeGCtVJZe4pO7fz/wQA9hq3D3mtg19YEHduc0uK7B2PYbU/VsLsMBW3/5z/K7D0R0lKV5wT+0A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=usda.gov; s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=7iC0ofHue+xhW641pEmIDDoCFrVHml+vjiIVgEL4VlE=;
+ b=d3Lru3sMMwU0jCtUa3a+L15Cth/objRyNvrF9E5SFou+L8JgGca+wQv8jEW65IK0loNPbkH3XFGM+085iPbJa3PpMz6m5Di+8+F18UvIGA/WUC6s3O+zt4GHf1dHUu2E/XYq3AynBT4adgnT6nYF8WC+xUI3Q4otvXiFGzNbi2rklk5drh463lG5sEF0rZApzb7Z52KcqTBrmSKMmAV96Eqmc/LyVWuMuIi2XtJ+VIBIwwYFjERNMOxznHqiPzinc6ieIjtwqiWbQIw4OYaxT/qmiLZGjEjwtvWPSkAeYTnYDP25MWi6USU6PYYObzJZNQm41w4e2Ltri8jWq3DA8g==
+Received: from substrate-int.office.com (2603:10b6:a03:50a::19) by
+ SJ0PR09MB11559.namprd09.prod.outlook.com with HTTP via
+ PH7PR13CA0016.NAMPRD13.PROD.OUTLOOK.COM; Mon, 30 Mar 2026 18:12:17 +0000
+From: "Sloan, Felicia - FS, OR" <felicia.sloan@usda.gov>
+Date: Mon, 30 Mar 2026 18:12:16 +0000
+Subject: Recall: Re: Inquiry Regarding Forest Service Officer =?utf-8?b?4oCU?=
+ March 24, 2026 Visit to Oregon Dunes National Recreation Area
+Message-Id: <BOVUT27SVSU4.BPG671SNFYWI2@ph0pr09mb7787>
+To: <rsw@rswfire.com>
+Content-Type: text/plain; charset=utf-8
+client-request-id: ce980f4c-d671-f7a5-90f8-d3acfada288f
+request-id: ce980f4c-d671-f7a5-90f8-d3acfada288f
+Return-Path: felicia.sloan@usda.gov
+X-MS-TrafficTypeDiagnostic: SJ0PR09MB11559:EE_MessageRecallEmail|DS2PEPF000061C7:EE_|DM4PR14MB7250:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-RecallReportGenerated: true
+X-MS-Exchange-RecallReportCfmGenerated: true
+Content-Transfer-Encoding: quoted-printable
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|1800799024|3613699012|56012099003|18002099003;
+X-Microsoft-Antispam-Message-Info-Original: I5WXXkRTe5ZVepLzcYslUwrDSOhY49iID2j27rlgX5zrfN2A5/dMESr8Kcz//nK20i6+knfFsfgVUeOWt0s7tS3N+uI1gw08BY0+naYA0AW4J1wDEkNT7blVtWfBDXjKjZw0uoQQrJ2CUoOG0DnAN46XfeAh7yLyKCake8Cah8DuHj+IGr5+W53jc7rpOt5CnJe+0GBzZkeTZRkShiOe7T7k9+VOMGjT4rLWQHXhmthl+jGJqYF1iHoQDYh/qLf4Zsmig73kH+sQjHQs+1d5kNMjEdh7qQartFrgxVjgJfgquP5QqCOHxWmGbVsjUwquAfxupGym7tT37yqaSBs8xwwAmbqfZZCpItXdxZjFJQVSFhMYod1aOVN+kYgyJeAI/gFpNgivjib7lOvZKjJANLLVOBTDAjLvDuqG0orGW1Zzu3K/5qwCZlVeeEDa48Pm7UmZPxVHNULrMohp8e+244VXyNDKPn5irOAzvY4IeMdopRtXdnLlDqN3NwfCn7ta9pDEJy8kgBPCqMByqRn/aUZcMNMcSIkI8KZkYkJ9cAY9DjqLIuFmAHdMtEkgaNcZvlZHIVz6SVoj+b3lRdNR3qeSFKvLXUZEpVnO0pGvh6IRXgPhM3+qwsffTwo2qzQ3/G/oOKnGHwRz2323biDz6aoQqXAJHLgj3+CcO5BhsXvPXn7/hE/ID5UDarDrWe+9UhSD0hnH99M359c6Dvm/PfIBfgSurAFPSpsWMZkOuWJIj32exIhhM1a6VT4/IqaPEkVHCybgrjuAzEAPRW8s9iOAq3buMRJyiFtdeRos1Sk=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(3613699012)(56012099003)(18002099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: T+Tprhius8HN1xnARThfc5UIN6cN0BlYmp9x646bRF1nbWy8KQYwmETRP0omc8MPBq5eHm1dosrJj/Sn7NB7SgQJls4Cs5zXiRUHGqrSdLbcm/DJpIAZJFXiXCG18xWfpPblaOOb/qyevkh9ExHfr1n/ZjI/YJZsxkFzUKe/AjXisX2HzQbVQr9MXzsgpIJZjcOw5xzjxcl6X22J8jWdm+gSg/fDkYtdmU6rxZKp61WGjN2h/rZ2BK72qDbGfxlPQUo+0mhNlwd0q1Lf/xxmowXerm3ovt6pEe2AthptdOKE460EyKFF0l9CM8InnuF/fwx0avnJhYxs00QnSADONby2g3Jeq8Qwk2qRH+IrvuxfmjCbckFLjb27sLPO58l/YRe7jGsvCzTMZwygKhTJiwooDvr1KFoimB2a5h5Dh9buootQXwx3cbdJ8MpUXJThdTmCYEpqbKxfOEy6sxzZPCLaAUXyAQWKYGw5c+j4LZIqYqCJd9Ttaf5+y3j4xMPZdKoYnG/6Ph74EvEo0aJLEqhTJGRZhKyG9Rb09WRHsLql04dtFsP/1wd8AvF52aJ+
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB11559
+X-MS-Exchange-Organization-ExpirationStartTime: 30 Mar 2026 18:12:20.1361
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: beed125d-9f20-4e23-1f7d-08de8e87e249
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: beed125d-9f20-4e23-1f7d-08de8e87e249
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704161611799003|704160611799003|18002099003|19002099003|16102099003|56012099003|3613699012;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c001::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09CU001.outbound.protection.outlook.com;PTR:mail-westusazlp170110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704161611799003)(704160611799003)(18002099003)(19002099003)(16102099003)(56012099003)(3613699012);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Mar 2026 18:12:19.9662
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: beed125d-9f20-4e23-1f7d-08de8e87e249
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM4PR14MB7250
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.4978353
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4713098)(4999163)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RjJ2cDczOFVaVTBKcUFwM1ROdEpBb0xNRmtpcXBnOGtlUmkzTk0xSlpYSUlT?=
+ =?utf-8?B?SHNJaDgxWk5aTWVIcTFNUkxIV3A4QjhNM0ltN3REcDFPNW81M3ppUTJlN08r?=
+ =?utf-8?B?MUx3V3BpbmlrQ013VUJ0aWl2L01JM2xXaTlRSE9wUUhpeVpRT3EvL0xDc3FC?=
+ =?utf-8?B?UmcwOXRlakFibHJXdHAvRElTaTRKbWMyUGRLQnh1U1lwMU9WU0ZsKzdZSUdM?=
+ =?utf-8?B?SGk3eFoxU1pDL2ZsSk5BYVFob0gvSm14MWR0L1pEdUhhbGtzL1BqaTFHaTNH?=
+ =?utf-8?B?R3lwVVpVbUNBMnlUeEJYVEFjcTdYZE55b1hCSEpEdUhJS2p0UG9JWTlCNit0?=
+ =?utf-8?B?Z3BYMnJBSDAxTi9IVlIyTnhOODJCSTVGVEFQNXNSRk9LVU1OSlppTEV4SFpJ?=
+ =?utf-8?B?YzcrdFJEbWJESHhLZmR1aXQzcGNUNlZyNGZEWCtiNm95NG9wbzVIWG9TVUZs?=
+ =?utf-8?B?TDlqSkxKSHRRSVNxVXNUTkdQbGxNRjV0bGJDWC9rbVNISUNQWEM1bHVFSE0y?=
+ =?utf-8?B?ZmpjdWx0SGlHYlB1RTI2N0JTZW45eWc5SldPMU1lVlBzVk9ka1YvRlBsZlFw?=
+ =?utf-8?B?bEFHQnJpYittUHJsQjZneXlDOHVoN0djQXo3bW1PdnR5MHJldWhFeTZYbG9v?=
+ =?utf-8?B?algzOXdnUmFiaVZWeVFwdGF1dE9DZFJaUGFBbk5vaXd6cjVUYVdKVkVWYjE5?=
+ =?utf-8?B?R1VvQWV6T0RjTGV4QmJmOWpSbFpNZzBKY0xjdzNyaWMvQng1UWhsQTZmS1pm?=
+ =?utf-8?B?NzJOME1ad0ltUytVRXk3emVucTRIa2NtNTZRTXRFczdsTFhjbGtlQUFTSHps?=
+ =?utf-8?B?MUc1bU5Cd01VU05RTEVMVXBzckNVWUNHQWIySnVFWm1UdlJ3OXdXalFNKzJk?=
+ =?utf-8?B?bW5LVENDV0c4UFB6M01LSkJraEp5bWtibHRHZDZ4SWV1eVZNNm5OQ09VN21s?=
+ =?utf-8?B?cnpzbndtKzgvWlFIaTRWMXhZL2hIbkZtV3ZwTm9ob0RLZjhjT0RHMFZabllM?=
+ =?utf-8?B?RktIcXlFdUFFN1pENlpRc2EvSVZKMTlqbTZwbUZDdmNsQWVNMVdwbGYvcVc3?=
+ =?utf-8?B?bHFNMWxuVmRScFVuamJKaWdhanBHZDFucHJLZERjdXg3YWZ3RDNyakJ5T1h3?=
+ =?utf-8?B?ZkJHTWpieXRnODhFb0hDRFN6aW1ZRStpUC9nYU9lUnNXWVd1c0RrdmEzNGMx?=
+ =?utf-8?B?a2dnSjB2YlA4SDRyRHhKZ0Q4cFFmQTd4MlgyV0ppVUdMNHczUm43NkJ5VUNv?=
+ =?utf-8?B?Q3pmdjFHYStiOWdCQTJSVUFCVFEwQ291OTlwYzc2alNOKy9JSG9BazMxYStm?=
+ =?utf-8?B?OEsxU3RPU1oxejJ4cGZHODl4OE1uUS9LcFBpRDNxZ0NyVmdpc3B2YVp0MDNV?=
+ =?utf-8?B?UHZRcDZYVjNaN1cvNXNEZHR6Zmt2eWZuMnJHbkltOUJjalFMcHJ6TWhmenhl?=
+ =?utf-8?B?WVFPVTRHdDNRTjFXcUg1RFhRWHV6NzFPNHRyWjZ2bnNGV1ZvOXF2TEFjbUVs?=
+ =?utf-8?B?YTVBUEtHQTJXQk5Tazg2cWZMbXlFT1U2bU5KOWd5S2hPVGZ3T0FVdDNKeG00?=
+ =?utf-8?B?Lzc0dmVlY29IZ1prUEwyem85V3dxZnc0MHUwazVDWU13UFN1UWM3NkhSMFh0?=
+ =?utf-8?B?OEp4dXg5SVc4WG5FbnpNQ2J4QW1Vcmc2WlB6UEpybCt4MnpFNHl5UEpuN3lU?=
+ =?utf-8?B?MnlUc2xrWDJrM3U2L09yVlYrbGFNS2FYajdIVUtLdTR2UUNHWEJ2aXdJR05Z?=
+ =?utf-8?B?QlAyYUdiaU9kZlpLbUNzakIxYnd0Vk1TTW5vdjZQRkswendPK3pqcDFZS0h0?=
+ =?utf-8?B?L2Z0YTlES2F0TUMvdEpOZG9SS2owTHdSVmlWUzk5ZTJiV1lsOVdSS1ZQUGk2?=
+ =?utf-8?B?VDZqdFZmT1J1SWNUem15M09MU1lKTytDTzh0ZVZmMUhWdU1LMlE4WS9FdTVx?=
+ =?utf-8?B?QjF2TWpCRkNNdzE4MXc5ZmRSQ3hMLzRrYmRmNVpDbHNpcDRBNXM0TWRxV3hZ?=
+ =?utf-8?B?bGZMeUcxVHBtalpPN2l2MTlOWHJ3Y1ZKRTVOaWFkNXJvdWdudkE4Yk5FZk1Q?=
+ =?utf-8?B?aEk5S1hycE9zSEZBY2lqYU1iSlBLSVBqT1RsUzE1dFV0RUkxakxpYWhxazRB?=
+ =?utf-8?B?Y0FSSFZjdVJSMTJPZ0laODBxU0ZuN2xHRmxrbkZOZFJnUzUxUW95OTIrTERE?=
+ =?utf-8?B?Mm5mYTZBdmpXOEZtcVdTTkJpSnBScXJCRnIwRWEvenphTXJWemlmd1d4MUFU?=
+ =?utf-8?B?emV2eE5jSDhTckx4eVNDdW9yRHFhUlBpcXkxdURTdXExdzNVdXZ4UjJxbk5l?=
+ =?utf-8?B?R3lHN1puZmFjbkhHMTlTZGd5VXM1dTdRNXhCdkJUclN6VmlXemJOSFE5dmNt?=
+ =?utf-8?B?VWRwVG42cmVqc2ZqZnd2REpDaUp2TG1XeTFMbWJZTlBBOVNLRkZrNHhxK1hQ?=
+ =?utf-8?B?OGlmcmtTOTVyazZQcmFmb0J6L0laZHY3bWlCenNZSzE1MVU2YzJLdmtRaUcx?=
+ =?utf-8?B?UytOU281dW01L0dOUTNVbGZKQTBCTnNRSUhaZHI3RDBRSzJrY0ZSN2k2TzVH?=
+ =?utf-8?B?cmtqNzQySUpsekZrcE9BTTV2ZzhYanlnbXorazhGc213LzR4S0hzTVlDbm5X?=
+ =?utf-8?B?MnNYZll0N0dwQXZMSnFjdFZjOE0zdjdUTXNYRlNCcElLb1A0dHJveFJuVzFV?=
+ =?utf-8?B?N1FDVmdlNlFmeG02K21XRStqRDRqOHVNQmV2NVhqZTZUZXhsNGVWZFFmZnRW?=
+ =?utf-8?B?a3hZUzczQms0N1FuWEhHVEpGbElhSkppQlBabVBmOHpDWVRvWTJLd3ZJVEtw?=
+ =?utf-8?B?bnBBMlB0em5aaFk0QmpxWlhwamJ4RzAxdWVTUjMwbnNqQ1pPbE5SY0dzR2dl?=
+ =?utf-8?B?TUIrbmlUTGJIdFdOSFk4VnlYWDEyaWs2UUtBalNGRDhnYVNNMVd1dDUxOURD?=
+ =?utf-8?B?WFFneUlsQmlVUzh6cyt2K2pCd0FlbnJCMEpaRVNDbkJ4SnZHQmJkWHpCV0dl?=
+ =?utf-8?B?S1R5cW1TVmhOSEhkZDczeFpWaFBRS2pvaENWYXhLYkpVZmRnaVdkZ1dTQ0h1?=
+ =?utf-8?B?YjVWK3ZCNUJ6dlpsWWhRM3RTWFQrRUZMYU9reXRKL3piOG1oWG5ZTE5EQnUx?=
+ =?utf-8?B?MzY2a2JpODJuZG9OMGRIdkdJRy91VThEWDFBSnRud3VlL0tvaWFnL1NuZU1X?=
+ =?utf-8?B?MFZ0OEJXVkhSTGJNTUV6eGQxV1krRXBmZytZU2dQVTczM1RZKytuZ0tJZkMr?=
+ =?utf-8?B?TzdiR1hwKzJadWxLMk9MQWpEcC9UUDNlOVBab1hyWU90UWw5Rk0zYno1NnFs?=
+ =?utf-8?B?UHZHSDdSMUtoNWVXdHF2MEhGY1htMmkzbFdVMStpVkp5TzI4dXhqNFlZaEVG?=
+ =?utf-8?B?WkdHSVF2aGljTnZzY1Z1bG1vVlR4eFZLU1ArMnc0RHo3QStZeEg1emtnOEIw?=
+ =?utf-8?B?SWRKOGg2VXVGL3d1V2RJYi9rdkg5MHo5am1YRDFmY0pPZmNFS3hhbTJwckJQ?=
+ =?utf-8?B?OVdxZ0JKcHFLSDd1dGVWbEdoSXZWTlJ5b2NUSzIya0VHbXQ0U21GcHlMSXVW?=
+ =?utf-8?B?dmRsZkhrT2ROWVRBMllRQXp5enQxVXRua0ptTEZ4M2tPZ0tIRG5yN3p4MERv?=
+ =?utf-8?B?b2I1amlsOGswd1JqZ2pyTXI1MklEc25NSThjUjZXT2s5RWlTRVgxZ3BrdkZy?=
+ =?utf-8?B?Wm5EdkZ4MEx0dGx6cjFJQkg5SVdVbGdhYjFmYVlDVksxckZJZUNNVmpJUlha?=
+ =?utf-8?B?dlZ6MUJ2QWFMSnowSDRIVERQMXFVS1IvbVVLZVBwYTNmaDF3ZUtnbEdINzI4?=
+ =?utf-8?B?Ui92VXdqUjNMV2JtZ2tLdVprQVBValZhMlB0TmZSVHZteGZSbXRUc3JpMDgx?=
+ =?utf-8?Q?Nujz4yFMwiLZQccOUqWmyuVo=3D?=
+MIME-Version: 1.0
+
+felicia.sloan@usda.gov would like to recall the message, "Re: Inquiry Regar=
+ding Forest Service Officer =E2=80=94 March 24, 2026 Visit to Oregon Dunes =
+National Recreation Area".
+
+
+
+
+This electronic message contains information generated by the USDA solely f=
+or the intended recipients. Any unauthorized interception of this message o=
+r the use or disclosure of the information it contains may violate the law =
+and subject the violator to civil or criminal penalties. If you believe you=
+ have received this message in error, please notify the sender and delete t=
+he email immediately.

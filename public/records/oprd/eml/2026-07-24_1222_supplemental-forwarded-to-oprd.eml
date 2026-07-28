@@ -1,0 +1,658 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CH3PR14MB6796.namprd14.prod.outlook.com (2603:10b6:610:120::14)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Fri, 24 Jul 2026
+ 19:22:39 +0000
+Received: from CH2PR14MB4181.namprd14.prod.outlook.com (2603:10b6:610:a9::17)
+ by CH3PR14MB6796.namprd14.prod.outlook.com (2603:10b6:610:120::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.245.10; Fri, 24 Jul
+ 2026 19:22:35 +0000
+Received: from CH2PR14MB4181.namprd14.prod.outlook.com
+ ([fe80::9c24:cfd0:1b97:ec7b]) by CH2PR14MB4181.namprd14.prod.outlook.com
+ ([fe80::9c24:cfd0:1b97:ec7b%4]) with mapi id 15.21.0245.010; Fri, 24 Jul 2026
+ 19:22:35 +0000
+From: Robert Samuel White <rsw@rswfire.com>
+To: COLLIER JR * OPRD <jr.collier@oprd.oregon.gov>, SUMPTION Lisa * OPRD
+	<lisa.sumption@oprd.oregon.gov>
+CC: "oprc.publiccomment@oprd.oregon.gov" <oprc.publiccomment@oprd.oregon.gov>,
+	Governor Kotek * GOV <governor.kotek@oregon.gov>
+Subject:
+	=?Windows-1252?Q?Fw:_Supplemental_Filing_=97_Petition_for_Public_Records_?=
+ =?Windows-1252?Q?Order,_Robert_Samuel_White_/_Oregon_State_Police_(PR2747?=
+ =?Windows-1252?Q?8;_CAD_SP26097765)?=
+Thread-Topic:
+	=?Windows-1252?Q?Supplemental_Filing_=97_Petition_for_Public_Records_Orde?=
+ =?Windows-1252?Q?r,_Robert_Samuel_White_/_Oregon_State_Police_(PR27478;_C?=
+ =?Windows-1252?Q?AD_SP26097765)?=
+Thread-Index: AQHdG5rfuW7h+q/Mh06vzxO5kGroG7Z9C/gD
+Date: Fri, 24 Jul 2026 12:22:35 -0700
+Message-ID:
+	<CH2PR14MB4181F038FD1ECEA4401FD0FDADCF2@CH2PR14MB4181.namprd14.prod.outlook.com>
+References:
+	<CH2PR14MB4181A62EC0A8E37A0252B9FEADC12@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CH2PR14MB41817C0C9280B1E0F6BADF85ADC02@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <DM6PR09MB5477F1A0F6100C2B9EB64AFEEDCF2@DM6PR09MB5477.namprd09.prod.outlook.com>
+ <CH2PR14MB418161BAE769A5D259167435ADCF2@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To:
+	<CH2PR14MB418161BAE769A5D259167435ADCF2@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CH2PR14MB4181.namprd14.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	2c81e398-0d96-4ca9-21cc-08dee9b8ea80
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=rswfire.com;
+x-ms-office365-filtering-correlation-id: 2c81e398-0d96-4ca9-21cc-08dee9b8ea80
+x-ms-traffictypediagnostic:
+	CH2PR14MB4181:EE_|CH3PR14MB6796:EE_|CH2PR14MB4181:EE_
+x-ms-exchange-transport-crosstenantheadersstamped: CH3PR14MB6796
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR14MB4181.namprd14.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(376014)(23010399003)(69100299015)(3109299003)(366016)(22082099003)(18002099003)(56012099006)(4143699003)(5023799004)(8096899003)(10067099003)(41050700001);DIR:INT;
+x-microsoft-antispam:
+	BCL:0;ARA:13230040|376014|23010399003|69100299015|3109299003|366016|22082099003|18002099003|56012099006|4143699003|5023799004|8096899003|10067099003|41050700001;
+x-ms-exchange-crosstenant-originalarrivaltime: 24 Jul 2026 19:22:35.0519 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	2c81e398-0d96-4ca9-21cc-08dee9b8ea80
+x-ms-exchange-crosstenant-id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+x-ms-exchange-crosstenant-authsource: CH2PR14MB4181.namprd14.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-reactions: allow
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	d8vQM8G3MiNzJN1v2SETjqaPvmqw8PIv1omuUEHC9BDtKIjfzvP8q809jXz+XXXgJwlwFjrDuPG8Fm8qAAwhsp40TWbMV6q7pGITOinPetkC/HQ1e6EtlET89F6D2NWiKBCLv5ML7XFRpm9YcPagEwKGk/edrYmtVc0l3ELf3Xof0Vq/2ZxDhlgp2/XZvDZLSbSi0PDHSCrLU/FCq5ocKfSbHLWNh8bqLhgkEfkcabn5VfvisxjZTvFZyVLmuk/9GrxLZykuMVwZMhg6F9m8ZLnEmVdj5oA8lNmTiUUH0OeIPONG7ra0rqg2IEJ/njKMqiNjFhirhAxIEn61UFjuUv5lmN5+MCnhIfr2Qn7h0E2OgnVhCIU0xpl6cEMN+iCzAV6khufNVJnHmzHiizHWPmJi+BS7fQSmt1j7iuSHInNTYxp487S6uX8aQUrSuqeaIb1r/sVrNNnmYP6tbcFMOAHXBuf+U3iQUapa687SNeHg1RaLxpzna5bIp2J8/st23l2vXIPBypbJ4FlNuIp7yj/VcQYFf6sYQfIXD8/90usxQXFeiUHgaiKdNowDv2TV4zFR3pKla0BN/J8hVPvKkUoOSXUqwRC/+sTBjWkL0TZ8aq0+tDI5OShRYzcxZsLN+ZfKKPEIfyo01P3N/obrR8RikyAfJQiUZbqV7WaLXZADrh+r/kKYXSGdp/hjNziGr5pzjNHsjYWpuwfD6OeUP1p7UFk0c54y1EyaC2l+hCffqEbp+qdP9mEOB/Cal9+hfOQxN8hbDhG2Q4cdjct8Xeq2C8BhuIJciDkJ0zk1dulRpR8xrn/prbKYsK5xv25OTA6jqDqmzSoqFDXCDH5LjQYlR224iTNin2tNqmQ4OYE=
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+Director Sumption, Deputy Director Collier,</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+I filed a supplemental exhibit with the Attorney General today in my public=
+ records petition against Oregon State Police, PR27478. It is attached, alo=
+ng with the underlying document.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+On July 23, 2026, the District Ranger for the Central Coast Ranger District=
+, Siuslaw National Forest, wrote to me regarding the entry in the Oregon St=
+ate Police dispatch record for March 24, 2026 reading &quot;FOR THE FOREST =
+SERVICE.&quot; Her email states that the Forest
+ Service did not initiate the interview, and that its involvement was limit=
+ed to providing access to a secured facility.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+I am providing it to you because it is now part of the record in a proceedi=
+ng before the Attorney General concerning an event that followed from your =
+agency's actions.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0=
+, 0, 0);">
+Robert Samuel White</div>
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" dir=
+=3D"auto">
+<br>
+</div>
+<div dir=3D"auto" id=3D"mail-editor-reference-message-container" class=3D""=
+>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg" style=3D"font-size: 11pt;" dir=3D"auto"><b>From:<=
+/b> Robert Samuel White &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Friday, July 24, 2026 11:33:10 AM<br>
+<b>To:</b> PublicRecordsOrder@doj.oregon.gov &lt;PublicRecordsOrder@doj.ore=
+gon.gov&gt;<br>
+<b>Cc:</b> Records, Central &lt;central.records@osp.oregon.gov&gt;; Governo=
+r Kotek * GOV &lt;governor.kotek@oregon.gov&gt;<br>
+<b>Subject:</b> Supplemental Filing =97 Petition for Public Records Order, =
+Robert Samuel White / Oregon State Police (PR27478; CAD SP26097765)<br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+To the Public Records Advocate / Attorney General's Office:</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I filed a Petition for Public Records Order in this matter on July 22, 2026=
+. I write to supplement the record with one document received today.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Section III of the petition addresses the comment entered in OSP CAD event =
+SP26097765 at 08:41:32 on March 24, 2026, before the responding unit depart=
+ed: &quot;FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE 04-1=
+1-1977.&quot; Relief item 6 asks the Department
+ to produce the communication by which the information in that event was co=
+nveyed to the dispatcher who created it.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+On July 23, 2026, Michele Holman, District Ranger for the Central Coast Ran=
+ger District, Siuslaw National Forest, U.S. Forest Service, wrote to me reg=
+arding that comment. Her email states, in relevant part:</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+&quot;Regarding the CAD entry stating, 'FOR THE FOREST SERVICE,' I am unsur=
+e why that wording appears, as the Forest Service did not initiate the inte=
+rview. The agency's involvement was limited to assisting OSP by providing a=
+ccess and guiding them to the Siltcoos
+ Work Center. This is standard practice, as OSP does not have keys to Fores=
+t Service gates, work centers, or other secured facilities. Our law enforce=
+ment officer accompanied them solely to facilitate entry and ensure they re=
+ached the correct location.&quot;</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+The full email is attached as Exhibit 26 (attached below).</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I offer this without argument and ask nothing further of the Attorney Gener=
+al beyond the relief already requested. The relevance is limited and factua=
+l: the federal agency named in the Department's own record has stated in wr=
+iting that it did not initiate the
+ event, and has described the extent of its involvement as providing access=
+. The question of how that characterization came to be entered in the Depar=
+tment's dispatch record, and by whom, remains among the categories the peti=
+tion asks the Department to address.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Respectfully,</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Robert Samuel White</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+P.O. Box 334, Reedsport, Oregon 97467</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+rsw@rswfire.com =97 458-230-1869</div>
+<div id=3D"ms-outlook-mobile-body-separator-line" data-applydefaultfontstyl=
+es=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-ap=
+ple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+<br>
+</div>
+</div>
+<div dir=3D"auto" id=3D"mail-editor-reference-message-container" class=3D""=
+>
+<div dir=3D"auto"><br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg" style=3D"font-size:11pt" dir=3D"auto"><b>From:</b=
+> Holman, Michele - FS, OR &lt;Michele.Holman@usda.gov&gt;<br>
+<b>Sent:</b> Friday, July 24, 2026 9:42:44 AM<br>
+<b>To:</b> Robert Samuel White &lt;rsw@rswfire.com&gt;; Sloan, Felicia - FS=
+, OR &lt;felicia.sloan@usda.gov&gt;<br>
+<b>Subject:</b> Re: [External Email]Fw: Petition for Public Records Order =
+=97 Robert Samuel White / Oregon State Police (PR27478; CAD SP26097765)<br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Aptos, Apt=
+os_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);">
+Mr. White-&nbsp;</div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Aptos, Apt=
+os_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"line-height: 20px; marg=
+in-top: 1em; margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: =
+rgb(0, 0, 0);">
+I am glad that you were able to get the documents you request from the Oreg=
+on State Patrol.&nbsp; Regarding the CAD entry stating, =93FOR THE FOREST S=
+ERVICE,=94 I am unsure why that wording appears, as the Forest Service did =
+not initiate the interview. The agency=92s
+ involvement was limited to assisting OSP by providing access and guiding t=
+hem to the Siltcoos Work Center. This is standard practice, as OSP does not=
+ have keys to Forest Service gates, work centers, or other secured faciliti=
+es. Our law enforcement officer
+ accompanied them solely to facilitate entry and ensure they reached the co=
+rrect location.</div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"line-height: 20px; marg=
+in-top: 1em; margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: =
+rgb(0, 0, 0);">
+I hope this clarifies any confusion about the Forest Service=92s role.</div=
+>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"line-height: 20px; marg=
+in-top: 1em; margin-bottom: 1em; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: =
+rgb(0, 0, 0);">
+Employees in the Reedsport Office have shared positive feedback regarding y=
+our work as a volunteer, and I am pleased to hear that. I trust your experi=
+ence with District staff has been positive, and I look forward to continuin=
+g a strong and productive working
+ relationship.</div>
+<div id=3D"Signature" class=3D"elementToProof" dir=3D"auto">
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Aptos, Apt=
+os_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<table style=3D"background-color:rgb(255,255,255); width:auto; height:auto"=
+>
+<tbody>
+<tr>
+<td style=3D"text-align:left; background-color:rgba(0,0,0,0); padding:2px; =
+vertical-align:top; width:auto; height:auto">
+<table style=3D"text-align:left; width:271.781px">
+<tbody>
+<tr>
+<td style=3D"text-align:left; background-color:rgba(0,0,0,0); padding:2px; =
+vertical-align:top; width:auto; height:auto">
+<table style=3D"text-align:left; width:267.781px">
+<tbody>
+<tr>
+<td align=3D"left" style=3D"background-color: rgba(0, 0, 0, 0); padding: 2p=
+x; vertical-align: top; width: auto; height: auto;">
+<div class=3D"elementToProof" style=3D"font-family: Arial, sans-serif; font=
+-size: 9.9px; color: rgb(0, 0, 0);">
+<img src=3D"https://wwwstatic.fs.usda.gov/images/email/usfslogo.png" alt=3D=
+"Forest Service Shield" width=3D"69" height=3D"65" style=3D"width: 69px; he=
+ight: 65px;"></div>
+</td>
+<td align=3D"left" style=3D"background-color:rgba(0,0,0,0); padding:2px; ve=
+rtical-align:top; width:auto; height:auto">
+<table style=3D"width:184.781px">
+<tbody>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 12px; color: rgb(0, 0, 0);">
+<b>Michele Holman<br>
+District Ranger</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 12px; color: rgb(0, 0, 0);">
+<b>Forest Service</b></div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 12px; color: rgb(40, 116, 46);">
+<b>Siuslaw National Forest</b></div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 12px; color: rgb(40, 116, 46);">
+<b>Central Coast Ranger District-&nbsp;</b></div>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 12px; color: rgb(40, 116, 46);">
+<b>Oregon Dunes NRA</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 11px;">
+<span style=3D"color: rgb(0, 0, 0);"><b>p: 541-563-8445<br>
+c: 541-819-9156<br>
+</b></span><span style=3D"color: rgb(51, 102, 51);"><a href=3D"mailto:miche=
+le.holman@usda.gov" style=3D"color: rgb(51, 102, 51); text-decoration: none=
+;"><b>michele.holman@usda.gov</b></a></span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: rgba(0, 0, 0, 0); padding: 2px; vertical-ali=
+gn: top; width: auto; height: auto;">
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Arial, san=
+s-serif; font-size: 11px; color: rgb(0, 0, 0);">
+1130 SW Forestry Lane<br>
+Waldport, OR 97394</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div dir=3D"auto" class=3D"elementToProof" style=3D"font-family: Aptos, Apt=
+os_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg" dir=3D"auto"><span style=3D"font-family: Calibri,=
+ sans-serif; font-size: 11pt; color: rgb(0, 0, 0);"><b>From:</b> Robert Sam=
+uel White &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Thursday, July 23, 2026 3:55 PM<br>
+<b>To:</b> Sloan, Felicia - FS, OR &lt;felicia.sloan@usda.gov&gt;<br>
+<b>Cc:</b> Holman, Michele - FS, OR &lt;Michele.Holman@usda.gov&gt;<br>
+<b>Subject:</b> [External Email]Fw: Petition for Public Records Order =97 R=
+obert Samuel White / Oregon State Police (PR27478; CAD SP26097765)</span>
+<div dir=3D"auto">&nbsp;</div>
+</div>
+<div dir=3D"auto" style=3D"background-color: ghostwhite; margin: 2px; paddi=
+ng: 1px; border-width: 2px; border-style: solid; border-color: greenyellow;=
+">
+<span style=3D"background-color: rgb(173, 255, 47);">[External Email]</span=
+><br>
+If this message comes from an <b>unexpected sender</b> or references a <b>v=
+ague/unexpected topic;</b><br>
+Use caution before clicking links or opening attachments.<br>
+Please send any concerns or suspicious messages to: Spam.Abuse@usda.gov</di=
+v>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Captain Sloan,</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I'm sending this to you as a courtesy.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+You redirected me to FOIA and I pursued it. I choose not to file with the F=
+orestry out of respect for our District Ranger and for the Forest Service w=
+e both serve.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+My focus, as it has always been, is on accountability at the state level. T=
+hey expelled me for protected speech and put it in writing. They did that b=
+ecause I documented abuse I experienced as a volunteer with them. What your=
+ officer opened at that gate was
+ retaliation delivered on the one year anniversary of that experience. Did =
+you know that?</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I don't know how to reconcile that anymore than you probably do. It happene=
+d. It's part of the record. And I'm doing my best to focus on the ones who =
+truly harmed me. And I do understand your silence around my questions, but =
+you are letting an impossible characterization
+ stand: that Oregon State Police were here because you wanted them here. Ho=
+w can that possibly be true? Who gave them my birthdate and the location wh=
+ere I live? What does &quot;for the Forest Service&quot; mean?</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I cannot separate this from the accountability I am seeking from the State =
+of Oregon -- who it was that deliberately used police to intimidate me, how=
+ they can justify a letter that cites only my protected speech as cause for=
+ anything -- because your officer
+ participated, and to protect him, you can't protect me, even though duty c=
+ompels it.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I am willing to indemnify your entire institution for this act, in writing,=
+ if you acknowledge it honestly. I only care that the record is accurate, a=
+nd the record shows you were used as much as anyone. They tried to drive a =
+wedge into a relationship that was
+ not theirs to influence. Where do you stand in this?</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Robert Samuel White</div>
+<div id=3D"x_ms-outlook-mobile-body-separator-line" data-applydefaultfontst=
+yles=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-=
+apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+<br>
+</div>
+</div>
+<div dir=3D"auto" id=3D"x_mail-editor-reference-message-container">
+<div dir=3D"auto"><br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"x_divRplyFwdMsg" dir=3D"auto" style=3D"font-size:11pt"><b>From:<=
+/b> Robert Samuel White &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Wednesday, July 22, 2026 3:47:22 PM<br>
+<b>To:</b> PublicRecordsOrder@doj.oregon.gov &lt;PublicRecordsOrder@doj.ore=
+gon.gov&gt;<br>
+<b>Cc:</b> governor.kotek@oregon.gov &lt;governor.kotek@oregon.gov&gt;; Rec=
+ords, Central &lt;central.records@osp.oregon.gov&gt;<br>
+<b>Subject:</b> Petition for Public Records Order =97 Robert Samuel White /=
+ Oregon State Police (PR27478; CAD SP26097765)<br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+To the Public Records Advocate / Attorney General's Office:</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I petition the Attorney General for a Public Records Order under ORS 192.41=
+1, ORS 192.324(6), and ORS 192.407. The public body is the Oregon State Pol=
+ice, Central Records Section. The request is PR27478, submitted April 3, 20=
+26, concerning OSP CAD event SP26097765.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+In brief: OSP issued a &quot;no records&quot; determination on April 3, 202=
+6. Ten days later a responsive CAD record was printed inside its Central Re=
+cords Section; it was produced to me on July 14, 2026 =97 in full, with no =
+exemption claimed and no fee charged =97 after
+ being conditioned for three months on a $12.50 payment and a mailed paper =
+form. One hundred and ten days after the request, five of the requested cat=
+egories remain without any disposition, no exemption has been cited for any=
+thing, the search has never been
+ described, the fee waiver has never been ruled on, and the litigation pres=
+ervation notice I served on April 2, 2026 has never been acknowledged.</div=
+>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+The attached petition sets out the record in full and states the relief req=
+uested. The exhibits (1=9625) are the complete correspondence and the produ=
+ced record, in a single indexed and page-labeled PDF; the exhibit index app=
+ears in Section VII of the petition.
+ I am not asking the Attorney General to make any finding about the underly=
+ing event =97 only to require Oregon State Police to respond to a public re=
+cords request as the statute requires.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+I can provide any exhibit as a separate file on request.</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Respectfully,</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+<br>
+</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+Robert Samuel White</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+P.O. Box 334, Reedsport, Oregon 97467</div>
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(3=
+3, 33, 33);">
+rsw@rswfire.com =97 458-230-1869</div>
+<div id=3D"x_ms-outlook-mobile-body-separator-line" data-applydefaultfontst=
+yles=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-=
+apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div dir=3D"auto" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-=
+system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+<br>
+</div>
+</div>
+<div dir=3D"auto"><br>
+</div>
+</div>
+<div dir=3D"auto"><br>
+<br>
+<br>
+<br>
+This electronic message contains information generated by the USDA solely f=
+or the intended recipients. Any unauthorized interception of this message o=
+r the use or disclosure of the information it contains may violate the law =
+and subject the violator to civil
+ or criminal penalties. If you believe you have received this message in er=
+ror, please notify the sender and delete the email immediately.</div>
+</div>
+<div dir=3D"auto"><br>
+</div>
+</div>
+</body>
+</html>

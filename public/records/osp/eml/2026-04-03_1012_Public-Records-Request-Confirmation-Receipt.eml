@@ -1,0 +1,231 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH8PR14MB6086.namprd14.prod.outlook.com (2603:10b6:510:224::21)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Fri, 3 Apr 2026
+ 17:13:00 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=agI+3ZxBv4Y2r8gd2sW3ebQ9ykTg3mg55+8NG5DZXYaGHwypnt0qrHRNSJJ47ONOuY9aNWwHRU8AOiH6NH/BogtSSjnb7bAI2/Oprip7uWMjTCFwhZF8ZNxoJKhM1ET/q/3GLwDa5/ipBcnzwyCmRxUSKsxfOZz+S7y98HLdL0kQs9lvSwMKOUSPbagxyITloxP+cbjVxVE2/abeXToddgtWg53dZKw61eM7H1Ci6yjBJou5B+utQnPKhORLKk/+mbOQtHag+dhHGBF1MldmT+S9YeuFZc4z4eiC1/zFwRNCiJjtRm1oFUqOXtG3k6qLcsz4fM0Fz9T/wLE38XEGbw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Dxe9aW6q0w8+UM5Xg7bq0PzKdvBSjFZVWy1yvIVoLU0=;
+ b=TiFLTBG1lUWF8ovDpcb8/AhgRxOrfoLGEYmiG3VQjmsv6+9H9VVT0kbDzxCh1A3O9M6pUMXRKpobArNnysbhAyETHy8A3RauvC0o1CdvMS3r5WAuqA8RVwexAvfynpw6yOIrscMUlaNycS/4R1PNtyE78hsaC2vvf6cP5yt+nYC8TjxzMeUv2ucJ8gAzHhFaGzLw+EOpFxP4nkiqCJ0UVmvcYuuqLhDe+6thgzv/JkHMUHgx/31hDlGKjdylua8LdoYVdq3bOMXuHoya/+uj+ssieh+RoY29V4VFwLu3rheC6wEA0oU+s2UtfLUptexu8lwqdO5nBvV2bn2zt850Ig==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c110::5) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=osp.oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov; arc=pass (0 oda=0 ltdi=1)
+Received: from BL1PR13CA0367.namprd13.prod.outlook.com (2603:10b6:208:2c0::12)
+ by PH8PR14MB6086.namprd14.prod.outlook.com (2603:10b6:510:224::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.18; Fri, 3 Apr
+ 2026 17:12:57 +0000
+Received: from BL02EPF00029929.namprd02.prod.outlook.com
+ (2603:10b6:208:2c0:cafe::ca) by BL1PR13CA0367.outlook.office365.com
+ (2603:10b6:208:2c0::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.20 via Frontend Transport; Fri,
+ 3 Apr 2026 17:12:57 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c110::5)
+ smtp.mailfrom=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov;dmarc=pass action=none
+ header.from=osp.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of osp.oregon.gov
+ designates 2a01:111:f403:c110::5 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c110::5;
+ helo=BN8PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BN8PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c110::5) by BL02EPF00029929.mail.protection.outlook.com
+ (2603:10b6:20f:fc04::136) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.17 via Frontend Transport; Fri,
+ 3 Apr 2026 17:12:55 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=As40fFjCFMgNwXx9GJroBV8twvbfA/vla58aJuNrHxgBYI/Vl2xwOV8HzNsLm+AKdmWfAtoThpiZGCumSv6z4HHqOmrE/G5RzJCEl4DSAvZHt0nJf6vaVgS7T+YabkvoCQocpNzdhaFOuM/UJ/Velm7naU3uIXXQIfdnYojzNTbIIULJ5aj7gcIcctJSoagv3FdTQK2AB8ue5l5IcE90l7Q+/uZ+k9lDxTuD0kSvndSoDZOb95e75xFPbviRkon8+d0HgO6R7Ih36o05tiJfbhb5njS9YbBk8hyFJsRHpkiEQAKdENzi5a7Bzudpx8LVd/Hzu7bNsT5a7qoG/rq04A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Dxe9aW6q0w8+UM5Xg7bq0PzKdvBSjFZVWy1yvIVoLU0=;
+ b=oLfr3CN2By4Jq9kTmPgxMLYgGWRyFbUbbuw0gtGzn5sjvmPt641flvpjuJKE4Xf0000GC5sZPTtX41TFrrq37CKhx7WstuJjnXiNpUqnfctRpj+/hKz8dyqoaIFApxpaS/45UGLT+/CXwtkjh5ZNliFGb4+EstpGcACIFKgFyvvviNAgIsMK9Gy+ckpPCyNYkCQS9JRP65rWUGSqEfA3+lfRuoXrK0LKHvuJQW/VSPNrSfOgaG5+ddMCthhQAD163xyI//nquwsDmoowOcG0giS48CIEWdyttemeJDSvvjkyDhDsJmOkxTl+4OJxg3DASA1off3WyeJE+pxmoWSKoQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 159.121.202.140) smtp.rcpttodomain=rswfire.com smtp.mailfrom=osp.oregon.gov;
+ dmarc=fail (p=quarantine sp=none pct=100) action=none
+ header.from=osp.oregon.gov; dkim=none (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=osp.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Dxe9aW6q0w8+UM5Xg7bq0PzKdvBSjFZVWy1yvIVoLU0=;
+ b=oSDoV0OZBN+c2QgDnBcy9bnfR2yISHSnXt0P83wfk2ad4rAKH0dyT+z2SQxmsOlOrbHkLc2GvzSKpMtbav19MpWFa/txsVja0dMowZ1G2Cyeawc/52NAttNc2x5XLBduSVq2Y8lGMYKcPGpus96VI0lZrFzVdCjcQVV7Ao0nakWqYcL5NTZi34ZxXdKd76BG1kIqxBdMgcyRcz0/1g2jCnX5sqLDJpEgcGRn+vLqSZJK8+nB6VcTGbUYkvcCIzONSccLduRhoWsLyu3bbq72zN5KTidavOMX8H3vfvLrf+oIdYwDo/8gw36wkTwpJYjAcR3e6ZFyB1OaigUm3imosQ==
+Received: from CY5PR09CA0022.namprd09.prod.outlook.com (2603:10b6:930:1::6) by
+ EA3PR09MB12185.namprd09.prod.outlook.com (2603:10b6:303:2b9::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.15; Fri, 3 Apr
+ 2026 17:12:53 +0000
+Received: from SA2PEPF00002250.namprd09.prod.outlook.com
+ (2603:10b6:930:1:cafe::b8) by CY5PR09CA0022.outlook.office365.com
+ (2603:10b6:930:1::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.20 via Frontend Transport; Fri,
+ 3 Apr 2026 17:12:52 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 159.121.202.140)
+ smtp.mailfrom=osp.oregon.gov; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=osp.oregon.gov;
+Received-SPF: Fail (protection.outlook.com: domain of osp.oregon.gov does not
+ designate 159.121.202.140 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.202.140;
+ helo=mailhub.osp.state.or.us;
+Received: from mailhub.osp.state.or.us (159.121.202.140) by
+ SA2PEPF00002250.mail.protection.outlook.com (10.167.242.132) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.20.9769.17 via Frontend Transport; Fri, 3 Apr 2026 17:12:52 +0000
+Received: from WPOSPEXCL04.osp.pvt (10.45.7.25) by WPOSPEXCL04.osp.pvt
+ (10.45.7.25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2507.44; Fri, 3 Apr
+ 2026 10:12:51 -0700
+Received: from WPOSPAPPL27 (10.45.7.111) by WPOSPEXCL04.osp.pvt (10.45.7.25)
+ with Microsoft SMTP Server id 15.1.2507.44 via Frontend Transport; Fri, 3 Apr
+ 2026 10:12:51 -0700
+From: <central.records@osp.oregon.gov>
+To: <rsw@rswfire.com>
+Date: Fri, 3 Apr 2026 10:12:51 -0700
+Subject: Public Records Request Confirmation Receipt
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+Message-ID: <814f6ae3-8ed8-4936-8499-7308f0e0cf64@WPOSPEXCL04.osp.pvt>
+Return-Path: Central.Records@osp.oregon.gov
+X-EOPAttributedMessage: 1
+X-MS-TrafficTypeDiagnostic: SA2PEPF00002250:EE_|EA3PR09MB12185:EE_|BL02EPF00029929:EE_|PH8PR14MB6086:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 74c2a5d6-68b4-4f8a-4ac0-08de91a43fac
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|82310400026|1800799024|36860700016|56012099003|18002099003|8096899003|3613699012;
+X-Microsoft-Antispam-Message-Info-Original: keFy6icm8zXECOfDd5d/01sUAxRqqAvgD7ekZKnULWDbY2m9XmTaSRJmRccGMCnaZ+awhgQzii+ri6v3ZAne/6Gr8Ve4T1opuMQhXk3qJ1TiQwipeFubqNhiOcNuh3WyIPuI+nqE9djYjWKyflyNmJJxeggU7USwyHpmNvA0mHiUm9/OzctYK7HQR27bVZ9alUJkv1wgefUPoiWNMjVAJmj60JayB537ygOaNlomZ8QQBcBBB+MoY/4lh05HR6ZpcHXCWrleT8pBqra9Yzd+EbKmcH/Enzjl0QRwoWN2r6H0NaznQo7L6VDN9qF5uZpM5jwTJprMdrVdcpE3jQ5v1YPuS0xHIoFuaYW72Pwqb6/VclfFBtGrBw13qvTFRQTQz+/AkSvkUSmjaUXI7jLpjmuDKqruGa0NBjD0pvRjMVNE447poPiorltabcUWQTUxmcpcugwp7eLbZWlEhA2rvNwyn6iLK5giI0jw+xYyEdc3zLetFUnFODvcQSq0QMFRiDBoZbL8LTjrrYOhfuvFFFvJoWgA4dcYzsMV5Yv+rKCxxildXBhrZmlq6+2oUPw3y8yhk7EtoMN/N3duTt1g3+1eUx75Cnd+ZqaAPG4GxZHrp3+slVl8i3A3tOATb/w+9RZTslHALKS74hKO1Rkgi5yRJ/lYqLhFWoqOxGMB5DdmRrRcxxCw/6MMPQjW1I7eG/eScWhAH93TWFlsTdEL4gyt7MmAWCEczwiqRuos/HFpACinVs4tWvKDG1c/sl1UXQCK1NLyOMDlM5ZBzQfRfMjoP0mXPkZSPJkaNv3svlEGpGOk7D9XQPpCa0Kl9ERUoE2TzeFFAM4+MOz8/UlJIw==
+X-Forefront-Antispam-Report-Untrusted: CIP:159.121.202.140;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mailhub.osp.state.or.us;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(82310400026)(1800799024)(36860700016)(56012099003)(18002099003)(8096899003)(3613699012);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: Z7/VOMgl0lZtTNEJAP6BUsKwmuk9WnUde5H1rsEwujeg2hZ8W2PJCZP/q33EpnpU0nJ5VyZMeB7GOei+lzvnqOM0wnofU+ZwlmE5qkUN+WZ6XMH83F354u9JuyV5TzkZSbQYjNJfu4RdvQpjsaem++/5k0FDElMSQRbFIMHPj6D72KwPklPVV2BAiRGAPnCcLp9I1w7K22Y3GSHJuHgXmV+Yr0dbM+0q3nAD7nB9Ho2VGACkiOY7on2mfwV5hNDSeDu5TJQ0no6x1jXFT6yEjmD6fQz9ZkLKFpDnxHUwygriWSiy7XinFJgUVfmYqMSrE7txrPm58VirdS/+/v6Yu2ubIFJXxVPc6FqH+M8CkS10TgWIHMQ7TX2JWUpRmB+DV0fDFMnHAQj92Yf23O282gNZnJ/neFL+FgOSZLjVdgzjWFVQTJ/rSkECoRijOys2
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA3PR09MB12185
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Apr 2026 17:12:56.2109
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 74c2a5d6-68b4-4f8a-4ac0-08de91a43fac
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BL02EPF00029929.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BL02EPF00029929.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BL02EPF00029929.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 34339313-7566-49e1-1060-08de91a43d8d
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704162311799003|12012899012|35042699022|16102099003|8096899003|3613699012|18002099003|19002099003|56012099003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c110::5;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN8PR09CU001.outbound.protection.outlook.com;PTR:mail-eastus2azlp170120005.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704162311799003)(12012899012)(35042699022)(16102099003)(8096899003)(3613699012)(18002099003)(19002099003)(56012099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Apr 2026 17:12:55.9538
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 74c2a5d6-68b4-4f8a-4ac0-08de91a43fac
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=776738eb-4f9b-444f-bc33-4dd4e8e1a9b5;Ip=[159.121.202.140];Helo=[mailhub.osp.state.or.us]
+X-MS-Exchange-CrossTenant-AuthSource: BL02EPF00029929.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR14MB6086
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.9946845
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.009
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bENDTHRHUjAxYVdPcEFBSWFBeGZyQmNiN1dNRGdzVFVDVzZCS2JoVlhvaFB4?=
+ =?utf-8?B?Um1zOUJ0LzhUZmNDZXBDVDBMd0d5ZDcxZXlQRDFWRC9qOVJOQzhKR09RWlQ5?=
+ =?utf-8?B?NzNGb2FmaDQzclV5azVZQXowejNDMXFTV1FYQTNLSVNadGVQQzl5SHZNcVVh?=
+ =?utf-8?B?WHNxa0QyYVhtdUNraVR5S0QvUjE4ZTBZNFdFM2lvclBoS1o1K2pZMVVYSkl3?=
+ =?utf-8?B?Q1FIaThpdS9IRmQyWXVqbmJMVU14ekZPeUdkUTY3YkhqMkFUMCtEK0RUaDA3?=
+ =?utf-8?B?ZVRPcVpNbVNQelQrN3Z4S0xCaWhzVTRETHdBR1VwcEY3Y0hOQ0ttSFpwSE93?=
+ =?utf-8?B?YnJoTHRCTlpsbk8ySEZWSk9JRFl6NUhKWHF3K1NSY1V6M210NTlKeU40bCtK?=
+ =?utf-8?B?UG5DeVFGTzBJZzB5cVNmaStXY2I2MzFPdmlOQUZpWVNTb2t1b3JXZjJTakx6?=
+ =?utf-8?B?aXAwN2hQMEpudnlHVTlUcUU1Z0ROZFpJRkMreXhyZnhFcURGZzBoZ1g5end1?=
+ =?utf-8?B?b3NSK2Rlblg2Q2FCaTlwdEFzdlNqK0JMRHdTMVlmWjFuSHhHSmRhZVpvUHVM?=
+ =?utf-8?B?ZTlhSFV6RzhsWTNvd2RnTHk2aWdCdWpvbXIvNWtJRTExTWFOVE9ESUgzNSs3?=
+ =?utf-8?B?Wm45U2ZNUUhIekZabFVBVTNpay9KdnVWMkN3SlNXSlR6V0JESmVxN3libFZ2?=
+ =?utf-8?B?N2hrMjJCL1h3UDAzNFhSa3ovR2xUV2s5RHlGWUEwSFAzVzd2SzYyTGpLeUsx?=
+ =?utf-8?B?NWxyQVE1OTFIY2FOUVBYTGRrMWZSTW9jMWg2bE9hL0w5NnlWRllFSW90emhG?=
+ =?utf-8?B?SjZFNG9mUGZhOUhwbC8rNGdCbXFhZGFRQTNSa0NIc0lJdGZ5UlZTQm81NGNt?=
+ =?utf-8?B?bEhzWUtyYXVJZVVwSCtsdWZnRjFkcUpxWHIvbkxPc245QnVVL1RkaWtiSGp0?=
+ =?utf-8?B?VVJ2TEVvYnQrTk9tQ2hkUkpGZktIbThIMW16dm5IOWNMenJkNmVkcUNQeDZS?=
+ =?utf-8?B?UGpRL1Y2RFh4YWZ5MDJ0Vys5R2FzVm5ZRXBMQjUzaUpJVE1XZEFtam9jRVV1?=
+ =?utf-8?B?cFpHWkdYMzZOQThJUkpndWQ4WHJsOThCRENtMjJNQmdGalZOT1JCV3BieWdu?=
+ =?utf-8?B?UnJCUTE1QURHYUZjdGRGR1hKOWtsS21ZdndXZitVcHF4Q3VUbThtZzNOV2Jk?=
+ =?utf-8?B?TWNMc3BvamZ6OVF4RFl1VzdOTGJ6ejNiTWgrZWtaYUI5aGFCZUhZaUozR1di?=
+ =?utf-8?B?R01SaUFRSm1PbFlzSmtmd05nY0FHODVNTnRKZkZiQk9qNXdLWkJBaVpIK3N3?=
+ =?utf-8?B?MldpSUtqQXdKM2IrUjQ5WWNTQW1UMXNoMXQ1aHNWTFpFVFEzOTZtQlJmdnRX?=
+ =?utf-8?B?bU1TMENwdnBVU0tiNkI2eWxtOFJvV2h0VjIxbGVmeTE3Wm9UdnUyQWV0dk9y?=
+ =?utf-8?B?NDNXeFdvOC9vRHJRSHp6Q0RvS2RNWWx2emZONVRFSGJia2tQVzJYcXc5aUZ5?=
+ =?utf-8?B?MkZiaGk0Q214bml4UEVwWDdqdlNqQWlvYjdHL0pZa2FDZTNwdWQzdFJub216?=
+ =?utf-8?B?cjhSdTl0ZmRvdTRxa21Pd1ZaOFhzSWlWcFI2cnF0dlZ1amdzMDNUVyttSldz?=
+ =?utf-8?B?WllXWmEwVVBJQnRrLzRBVVVTVGU5UThhSURPT0dKemtVR3htajFLWG51NGIw?=
+ =?utf-8?B?eHYyOFpSWnpDT1hCTUpHMFh4TkhGVEpRQ0FTak1kc1RSMDdOSnNUR3JKTVg0?=
+ =?utf-8?B?Y2huR0c1L2tuQ0V0cHhqcGlFYk42aXo5MVkxaks2b2tMREdsSnRRY3pjZUJC?=
+ =?utf-8?B?OHRoNHhaaTVkTng4V3B6UFFWSmtDNkFYalBVR3N2REo4d1dkcXpERHhoWTN0?=
+ =?utf-8?B?aXNZNmtsZ2JBVyt1VC9xR0UyNThtNW9lZW5pTGszcmJ2dVM1M2xYR1ExQW1D?=
+ =?utf-8?B?TXhldXpLNFBZWFVZcVY2azFza1ZjYXRoNXlldW1xVHVRYytWcklRR1MwUXli?=
+ =?utf-8?B?UHRGMmJaVTlGWm5ZejdRSWhaZ3dtWS81YTgrT0EwMjd3UWFueWtXY294c25u?=
+ =?utf-8?B?N2xCNmRlUzhDOEd3WVpmbWt6N1Q1ZUJGTGZ5cHNNV21UdUw0RHhNc3lEVW5l?=
+ =?utf-8?B?Y3Q1aWhBVzV3N0t1RVlGTk1KaWVUR3dqVFQ4YkEvZnY0VzRkVTZLOGxOenRD?=
+ =?utf-8?B?c1pHb1pXNzRhKy9leVlESXRYdWZlTnVJUUJzb1h6SURkakIwUHljRE4rL0Jw?=
+ =?utf-8?B?bEJ0OEZhMTdHVDRrcUtQbGU0QllRZXVqWXlHNEtCVWkxc2VibkJFanN1UlRB?=
+ =?utf-8?B?SDVQQTdQVjNLR1VQeWIzUVVXNjJFWmpvV2NnMzlBZEpMUjVDb0MrQ0xqeHF1?=
+ =?utf-8?B?L3ByYW5hbnBYNy8zT1k2R1hsU3dlcGNkUWtvUFNTd0Zqb3I2QXpIYTRkZG91?=
+ =?utf-8?B?K2haMDBMUlRLaU43VlFhWG95SXp5Vm50ZGpYV3hxcDljTGNoUm9PRWtZNjJG?=
+ =?utf-8?B?MXhGWndmalZxSHA5ejFrQU9Kc1V4SXVlZ3RpU2cxaUtxZkVMeW10b24zazBJ?=
+ =?utf-8?B?bW1vbFpzempUamMrbnF4cXN3YnVMSXNHSUpyWEhwUk4wM2RDWWJ2RGVqekZM?=
+ =?utf-8?B?bWR5c3JLSnArVW9HbnJrcllMdDlOWXh3M1lvNTRyMEpCMWIrRkt1WE9wczhG?=
+ =?utf-8?B?MktMSWUzcmN1T3dxRjhmYXI2S0Z6Q2NsdnNsemF0UUR5S0YrQndUa1drckhN?=
+ =?utf-8?B?dTd4N3U2T2NBVEcwYVBlN3NpbkZ0bmYybUk1NTZqMFhEeUU0RHZzZjJkVG5P?=
+ =?utf-8?B?NkJnY05mc2NjYThPVG5KRVNZbGVLbDRTQjhJOGNqTG9ORjUyY3lVM1o2SldW?=
+ =?utf-8?B?dUlRUmxjRmxsdkRlZ1NHMFVTK0N4dXZhWEhNUkR0V2M4SzdUdlNsREhXOG9y?=
+ =?utf-8?B?WUVPOHhEVEFBRVpSMVFQMzlXOHU2UjRScXljYmR1Qmsyc2hlTTN3Q3B6YXV4?=
+ =?utf-8?B?YTNGTUhOMkJvZUJ1Vy9xaFJOTWFLbE9aK3FiZHdoQitPamU2QVJ0SzNFYnhY?=
+ =?utf-8?B?dW1UZ2RjN0hHeEt2cXBSNzVub1lWY1FRSU16WGc4b2tjcDg4MmpCc2JzUmFB?=
+ =?utf-8?B?dVNlZk5zY3VyM0FSczlSdTNxTm9ON3RncDFuY1VxRTVJNXpUa0ZzTUFWSG1s?=
+ =?utf-8?B?RGMraWw1VXRLWXZxSFV4TVV6a0Z4RE1NRkFTbzFLcE5XS0tMbzdmQVJXd25F?=
+ =?utf-8?B?ZnE2ZWM1UGpaeUhtTzlDVngrNEtFTlRZRC94OTk4N1VoSkZJR0pYR0ZKdGhH?=
+ =?utf-8?B?OExCbG42NVV4VVBFc2RiQ05VMjRUcGl3Z3REeUVxNS9YQUZ5bWdkTnY0dnBF?=
+ =?utf-8?B?aVluUUVMOVlLUXk5V0RnQ0lXL2cwaDJBV0M5a08zVGpSTzFPYUc2cVdKVzYr?=
+ =?utf-8?B?dUs5eTRETjEvRHhYTG1lQVkveEtSbjFxV1ZkcmoyTzNzdEUzbml3UHlPUmsz?=
+ =?utf-8?B?SisyaGd3WEJ2LzdRNkFOekNnTlAzdUU4MzNkQ0V5czRKWWwyUTJLeWtsK0RD?=
+ =?utf-8?B?TS9VbCtIZXVpMFVSUGNEbE03Zzd2dkQwdnlONEJ6UmJqYmlSelQxbHpZSGFC?=
+ =?utf-8?B?MUUrdFZVclV3SnVHNXlyZnhQQmNaYU5jNzRnL3VZaFgzK3ZRUFJSdXByNWZR?=
+ =?utf-8?B?UFpMd1NyTmt0dlY5eEFLMXdBMmxReE5mUFBnZUZMK2gwb0ovekdmRUR1TGEz?=
+ =?utf-8?B?VTFRMXRxTndVdldOS2w4SlZXUmNyWmZkWGZPQVEyQ3NOWldFbDljSHFEQVZx?=
+ =?utf-8?B?N1VMQy9CVWkwVmN4K1lqVnpCVWx3cEE3amZCVGwyWXp1ekZMclRTNUVUYjBP?=
+ =?utf-8?Q?+tTolLnW8HjFYR9jE1ifeSJU=3D?=
+MIME-Version: 1.0
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJz
+ZXQ9dXRmLTgiPjxkaXY+PGZvbnQgc2l6ZT0iMyI+RGVwYXJ0bWVudCBvZiBTdGF0ZSBQb2xpY2U8
+L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5DZW50cmFsIFJlY29yZHMgU2VjdGlvbjwv
+Zm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPjM1NjUgVHJlbHN0YWQgQXZlIFNFPC9mb250
+PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+U2FsZW0sIE9SIDk3MzE3PC9mb250PjwvZGl2Pjxk
+aXY+PGZvbnQgc2l6ZT0iMyI+KDUwMykgMzc4LTM3MjUgeDQ0NDQ0PC9mb250PjwvZGl2PjxkaXY+
+PGZvbnQgc2l6ZT0iMyI+RkFYICg1MDMpIDM3OC02MzAwPC9mb250PjwvZGl2PjxkaXY+PGZvbnQg
+c2l6ZT0iMyI+PGJyPjwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPjxicj48L2ZvbnQ+
+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj40LzMvMjAyNjwvZm9udD48L2Rpdj48ZGl2Pjxmb250
+IHNpemU9IjMiPjxicj48L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5ST0JFUlQgU0FN
+VUVMIFdISVRFPC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+PC9mb250PjwvZGl2Pjxk
+aXY+PGZvbnQgc2l6ZT0iMyI+UE9TVCBPRkZJQ0UgQk9YIDMzNDwvZm9udD48L2Rpdj48ZGl2Pjxm
+b250IHNpemU9IjMiPlJFRURTUE9SVCBPUkVHT04gOTc0Njc8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9u
+dCBzaXplPSIzIj48YnI+PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+UkVGIzogUFIy
+NzQ3ODwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPjxicj48L2ZvbnQ+PC9kaXY+PGRp
+dj48Zm9udCBzaXplPSIzIj5Zb3VyIHJlY29yZHMgcmVxdWVzdCB3YXMgcmVjZWl2ZWQgb24gNC8z
+LzIwMjYuJm5ic3A7IEEgc2VhcmNoIHdpbGwgYmUgY29uZHVjdGVkIHRvIGRldGVybWluZSBpZiBP
+U1AgaXMgdGhlIGN1c3RvZGlhbiBvZiB0aGUgcmVxdWVzdGVkIHJlY29yZChzKS4mbmJzcDsgWW91
+IHdpbGwgcmVjZWl2ZSBhbiBhcHByb3ByaWF0ZSByZXNwb25zZSBvciBhbiBlc3RpbWF0ZSBvZiBm
+ZWVzIGFzIHNvb24gYXMgcHJhY3RpY2FibGUuJm5ic3A7PC9mb250PjwvZGl2PjxkaXY+PGZvbnQg
+c2l6ZT0iMyI+PGJyPjwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPlRoZSBhdmVyYWdl
+IHByb2Nlc3NpbmcgdGltZSBpcyB0d28gdG8gdGhyZWUgd2Vla3MuIFBsZWFzZSBETyBOT1Qgc3Vi
+bWl0IGEgc2Vjb25kIHJlcXVlc3QgZm9yIHRoZSBzYW1lIHJlY29yZChzKS4mbmJzcDsgSWYgeW91
+IGhhdmUgcXVlc3Rpb25zIHJlZ2FyZGluZyB5b3VyIHJlcXVlc3QsIHlvdSBtYXkgZW1haWwgdXMg
+YXQgY2VudHJhbC5yZWNvcmRzQG9zcC5vcmVnb24uZ292LjwvZm9udD48L2Rpdj48ZGl2Pjxmb250
+IHNpemU9IjMiPjxicj48L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5QbGVhc2UgaW5j
+bHVkZSB0aGUgUkVGICMgbGlzdGVkIGFib3ZlIGluIGFsbCBjb21tdW5pY2F0aW9ucyByZWdhcmRp
+bmcgeW91ciByZXF1ZXN0LiZuYnNwOzwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPjxi
+cj48L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5TaW5jZXJlbHksPC9mb250PjwvZGl2
+PjxkaXY+PGZvbnQgc2l6ZT0iMyI+PGJyPjwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMi
+PkNlbnRyYWwgUmVjb3JkcyBTZWN0aW9uPC9mb250PjwvZGl2Pg==
