@@ -119,6 +119,16 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "Notice of Intent", href: "/records/oprd/2026-07-26-otca-notice-of-intent.pdf" }],
             eml: "/records/oprd/eml/2026-07-26_0754_otca-notice-of-intent.eml",
         },
+        {
+            id: "notice-of-publication",
+            date: "July 28, 2026",
+            kind: "notice",
+            title: "Notice of publication",
+            to: "OPRD leadership, OSP Central Records, DAS, and the Governor",
+            summary: "Notice to the agencies that the correspondence record for this matter is published at oprdvolunteerabuse.org/accountability, organized by agency, with each entry posted as a PDF rendering and as the unmodified original email, whose DKIM signatures allow independent verification.",
+            docs: [{ label: "Notice of Publication", href: "/records/oprd/2026-07-28-notice-of-publication.pdf" }],
+            eml: "/records/oprd/eml/2026-07-28_1142_notice-of-publication.eml",
+        },
     ],
 };
 
@@ -299,10 +309,10 @@ export const USFS_THREAD: RecordsThreadData = {
 
 export const OSP_THREAD: RecordsThreadData = {
     slug: "osp",
-    title: "Oregon State Police — PR27478",
+    title: "Oregon State Police",
     agency: "Oregon State Police",
     matter: "Public Records Request PR27478 · CAD event SP26097765",
-    status: "Petition before the Oregon Attorney General under ORS 192.411.",
+    status: "Petition before the Oregon Attorney General.",
     summary: [
         "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it.",
     ],
@@ -583,7 +593,7 @@ export const DAS_THREAD: RecordsThreadData = {
     title: "Department of Administrative Services",
     agency: "Oregon Department of Administrative Services",
     matter: "Public Records Requests R000879-070126 and R000885-070726",
-    status: "Petition before the Oregon Attorney General under ORS 192.411.",
+    status: "Petition before the Oregon Attorney General.",
     summary: [
         "Public records requests R000879 and R000885 to the Department of Administrative Services, and the Department's responses to them.",
     ],
@@ -786,4 +796,4 @@ export const DAS_THREAD: RecordsThreadData = {
     ],
 };
 
-export const THREADS: RecordsThreadData[] = [OPRD_THREAD, USFS_THREAD, OSP_THREAD, DAS_THREAD];
+export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, DAS_THREAD, USFS_THREAD];

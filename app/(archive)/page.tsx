@@ -94,7 +94,7 @@ export default function OverviewPage() {
                 </h2>
 
                 <div className="mt-4 text-base leading-relaxed">
-                    The record of holding each agency to account: every request, every response, every filing, with the documents and the unmodified email originals.
+                    The correspondence record for this matter, organized by agency: every request, every response, every filing, posted with the documents and the unmodified email originals.
                 </div>
 
                 <div className="mt-6 rounded-lg overflow-hidden border border-emerald-200 divide-y divide-emerald-100 bg-white">
@@ -102,12 +102,15 @@ export default function OverviewPage() {
                         <Link
                             key={t.slug}
                             href={`/accountability/${t.slug}`}
-                            className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 px-4 py-3 hover:bg-emerald-50 transition-colors"
+                            className="group flex flex-col min-[400px]:flex-row min-[400px]:items-center min-[400px]:justify-between gap-1.5 min-[400px]:gap-6 px-4 py-3.5 hover:bg-emerald-50 transition-colors"
                         >
-                            <span className="text-sm font-semibold text-emerald-900">{t.title}</span>
-                            <span className="text-sm text-gray-600 sm:text-right">
+                            <span className="min-w-0">
+                                <span className="block text-sm font-semibold text-emerald-900 group-hover:text-emerald-700 transition-colors">{t.title}</span>
+                                <span className="mt-0.5 block text-xs uppercase tracking-wider text-gray-400">{t.filings.length} documents</span>
+                            </span>
+                            <span className="shrink-0 text-sm text-gray-800 min-[400px]:text-right min-[400px]:max-w-[50%]">
                                 {t.status}
-                                <span className="ml-2 text-xs text-gray-400">{t.filings.length} documents</span>
+                                <span className="ml-1.5 text-emerald-700 group-hover:translate-x-0.5 inline-block transition-transform">&rarr;</span>
                             </span>
                         </Link>
                     ))}
