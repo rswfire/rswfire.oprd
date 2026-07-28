@@ -67,12 +67,23 @@ export default function FilingDocs({ docs, eml }: { docs: FilingDoc[]; eml?: str
                             <p>
                                 This is a raw email file, exactly as sent or received. Its full
                                 headers, addresses, and authentication signatures can be examined
-                                with standard tools. Nothing in it has been altered.
+                                with{" "}
+                                <a
+                                    href="https://toolbox.googleapps.com/apps/messageheader/"
+                                    target="_blank"
+                                    className="underline text-emerald-700 hover:text-emerald-600"
+                                >
+                                    standard tools
+                                </a>
+                                . Nothing in it has been altered.
                             </p>
                             <p>
                                 This archive refers to the local staff by role. That is a choice
-                                about emphasis, not concealment. In an unmodified record, identity
-                                is not protected, because it cannot be.{" "}
+                                about emphasis, not concealment.
+                            </p>
+                            <p>
+                                In an unmodified record, identity is not protected, because it
+                                cannot be.{" "}
                                 <a
                                     href="https://github.com/rswfire/rswfire.oprd"
                                     target="_blank"

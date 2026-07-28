@@ -26,7 +26,8 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        One thing has been asked of every agency: be accountable to your own behavior.
+                        <span className="block">One thing has been asked of every agency:</span>
+                        <span className="block">be accountable to your own behavior.</span>
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
@@ -108,7 +109,7 @@ export default function OverviewPage() {
                                 <span className="block text-sm font-semibold text-emerald-900 group-hover:text-emerald-700 transition-colors">{t.title}</span>
                                 <span className="mt-0.5 block text-xs uppercase tracking-wider text-gray-400">{t.filings.length} documents</span>
                             </span>
-                            <span className="shrink-0 text-sm text-gray-800 min-[400px]:text-right min-[400px]:max-w-[50%]">
+                            <span className="text-sm text-gray-800 min-[400px]:text-right">
                                 {t.status}
                                 <span className="ml-1.5 text-emerald-700 group-hover:translate-x-0.5 inline-block transition-transform">&rarr;</span>
                             </span>
