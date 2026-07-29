@@ -4237,6 +4237,20 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "A Final Statement to the Oregon Parks and Recreation Department", href: "/records/oprd/2026-05-04_2045-a-final-statement-to-the-oregon-parks-and-re.pdf" }],
             eml: "/records/oprd/eml/2026-05-04_2045_a-final-statement-to-the-oregon-parks-and-re.eml",
         },
+        {
+            id: "2026-07-28_2135_notice-of-publication-oprd-record-complete",
+            ulid: "01KYP2GM2RTDHWNH9NQ07AKJ0G",
+            date: "July 28, 2026",
+            time: "9:35 PM",
+            d: "2026-07-28",
+            from: "Robert White",
+            to: "[Park Supervisor] +7",
+            kind: "notice",
+            title: "Re: Notice of publication — OPRD record complete",
+            summary: "Correction to the completion notice after the mailbox sweep: the record now begins with the first volunteer application, and the final count is 315 documents.",
+            docs: [{ label: "Re: Notice of publication — OPRD record complete", href: "/records/oprd/2026-07-28_2135-notice-of-publication-oprd-record-complete.pdf" }],
+            eml: "/records/oprd/eml/2026-07-28_2135_notice-of-publication-oprd-record-complete.eml",
+        },
     ],
 };
 

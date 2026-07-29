@@ -42,6 +42,7 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|march 5, 2025": "/records/oprd/threads/march-5-2025.pdf",
     "oprd|need your help.": "/records/oprd/threads/need-your-help.pdf",
     "oprd|notice of ongoing constitutional violation": "/records/oprd/threads/notice-of-ongoing-constitutional-violation.pdf",
+    "oprd|notice of publication \u2014 oprd record complete": "/records/oprd/threads/notice-of-publication-oprd-record-complete.pdf",
     "oprd|notice of violation - failure to respond to public records request (submitted august 22, 2025)": "/records/oprd/threads/notice-of-violation-failure-to-respond-to-public-records-req.pdf",
     "oprd|oprd park host special access pass": "/records/oprd/threads/oprd-park-host-special-access-pass.pdf",
     "oprd|oregon parks and recreation contact information": "/records/oprd/threads/oregon-parks-and-recreation-contact-information.pdf",
