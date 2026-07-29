@@ -4078,6 +4078,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "2026-03-24_1010_honeyman-i-just-found-my-voice",
             ulid: "01KMGD6CE83C2D9CFEYK9DER69",
+            flagged: true,
             date: "March 24, 2026",
             time: "10:10 AM",
             d: "2026-03-24",
@@ -4085,6 +4086,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "[Volunteer Services Lead] +9",
             kind: "notice",
             title: "Re: Honeyman, I Just Found My Voice",
+            summary: "The first notification to the agency after the police left on March 24, 2026.",
             docs: [{ label: "Re: Honeyman, I Just Found My Voice", href: "/records/oprd/2026-03-24_1010-honeyman-i-just-found-my-voice.pdf" }],
             eml: "/records/oprd/eml/2026-03-24_1010_honeyman-i-just-found-my-voice.eml",
         },
