@@ -1,0 +1,1098 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from SA5PPF59A4CD9A6.namprd14.prod.outlook.com
+ (2603:10b6:80f:fc04::94f) by CH2PR14MB4181.namprd14.prod.outlook.com with
+ HTTPS; Fri, 22 Aug 2025 16:29:59 +0000
+Received: from BY5PR03CA0003.namprd03.prod.outlook.com (2603:10b6:a03:1e0::13)
+ by SA5PPF59A4CD9A6.namprd14.prod.outlook.com (2603:10b6:80f:fc04::94f) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9052.14; Fri, 22 Aug
+ 2025 16:29:57 +0000
+Received: from SJ5PEPF000001CF.namprd05.prod.outlook.com
+ (2603:10b6:a03:1e0:cafe::1c) by BY5PR03CA0003.outlook.office365.com
+ (2603:10b6:a03:1e0::13) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9052.15 via Frontend Transport; Fri,
+ 22 Aug 2025 16:29:55 +0000
+Authentication-Results: spf=pass (sender IP is 44.192.35.80)
+ smtp.mailfrom=fwdkim1.oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of fwdkim1.oprd.oregon.gov
+ designates 44.192.35.80 as permitted sender) receiver=protection.outlook.com;
+ client-ip=44.192.35.80; helo=mail-usn81.freshemail.io; pr=C
+Received: from mail-usn81.freshemail.io (44.192.35.80) by
+ SJ5PEPF000001CF.mail.protection.outlook.com (10.167.242.43) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9052.8
+ via Frontend Transport; Fri, 22 Aug 2025 16:29:54 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1755880195;
+	s=to66a; d=oprd.oregon.gov;
+	h=MIME-Version:Date:From:Reply-To:To:Message-ID:In-Reply-To:References:Subject:Content-Type:Content-Transfer-Encoding;
+	bh=O8qHYqj01wK9bmrzGsftQ6QkHNj9Ut1L0x+IWczZ+4k=;
+	b=C8L5ofiLy2roqmpD//Vmz227axDd0tr2tcJwMF+v5OPTMXD+MoofzRXfMQzOErao
+	LyFVtBsyvrTCDeNbuy2RJAjGqzvmV1glDutucc2dn5w+orcdpF1KsPCYRL2ntpWY+5V
+	7yz+CL9jI0GO7snbsDdfIUzd3KP3NI8Hfl/aPYVOWhewnKGDnMAdtzAgGSHuI2/Dmbf
+	fH3ReWQdoXEpI/79V5SRM3Tt0QIKebAkiprL7X//G3rgS9NyIxHICcMAFQsjoM33foD
+	Xg21iEnVzc524lspfiEWwOzrLPNP5Nvrybg33qv90ZKwy3PBjxboW/LvlD3iAbHbpv2
+	xVUzrs4+1w==
+Return-Path: bounces+us.1.1155212.298775-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov
+X-Received: from ip-172-16-163-124.ec2.internal (EHLO freshdesk.com) ([172.16.163.124])
+          by smtpout.freshdesk.com (Freshworks SMTP Server) with ESMTPA ID 4a715f4b.
+          for <rsw@rswfire.com>;
+          Fri, 22 Aug 2025 16:29:53 +0000 (UTC)
+Date: Fri, 22 Aug 2025 16:29:53 +0000
+From: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+Reply-To: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+To: rsw@rswfire.com
+Message-ID: <68a89b01370e7_1f63fe39eb80cd8237372.sidekiq-realtime-fd-poduseast1-main3-blue-55d86999c7-rdzbc@automation.freshdesk.com>
+In-Reply-To: <CH2PR14MB418186BAF77FAB4FDF701B94AD3DA@CH2PR14MB4181.namprd14.prod.outlook.com>
+References: <CH2PR14MB418186BAF77FAB4FDF701B94AD3DA@CH2PR14MB4181.namprd14.prod.outlook.com>,
+ <68a89b01370e7_1f63fe39eb80cd8237372.sidekiq-realtime-fd-poduseast1-main3-blue-55d86999c7-rdzbc@automation.freshdesk.com>
+Subject: Re: Public Records Request - Volunteer Program Operations and
+ Management
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_68a89b0146b55_1f63fe39eb80cd823741e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+sent-on: 2025-08-22 09:29:53 -0700
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: DR, RN, OOF, AutoReply
+X-FUP-PRIORITY: 5
+X-SDS-INFO: 0cuUhLnIUKFbWO0tvHaEt-IEfK0ZpS-IpFnwtT31QNL5QrOQ9dw2T9xhIxHMqAMW3zR_1UpgKxWeaxit4u-XbkDwNVmADa-XV-Fe6cbhZ3aQOVxi-NPtQifMJQrdOiuXYIvB1OIcT7RAC2oJQSxFqjd2C6-RjLL0kFLwtvbieOoQRZjoYd8Dmi2hNzOQdhTV
+X-MESSAGEID: LZM9anrQQzpntlLdFy8yEzQQn3CROOeElTMrfhH3Ozm9aHNsReJaHgqWxFZPGK6Z/KPsY0nehDX+WkHKFwXtFy50Oa+opwdNJ32nbKMLlRiLYETUJTBhraCJqLE/TDvi6/oU4W8L0JdNX3iu6psacvh7DQCLgkba1UcH9WeH7OM=
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Aug 2025 16:29:55.2633
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 9b4f1a5c-f131-48d4-f292-08dde19920c6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ5PEPF000001CF:EE_|SA5PPF59A4CD9A6:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: SJ5PEPF000001CF.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 9b4f1a5c-f131-48d4-f292-08dde19920c6
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|8096899003|7053199007;
+X-Forefront-Antispam-Report: CIP:44.192.35.80;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-usn81.freshemail.io;PTR:mail-usn81.freshemail.io;CAT:NONE;SFS:(13230040)(8096899003)(7053199007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Aug 2025 16:29:54.8761
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9b4f1a5c-f131-48d4-f292-08dde19920c6
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SJ5PEPF000001CF.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA5PPF59A4CD9A6
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3484142
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9052.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bFlBckEzYnJsbmRvTE5FcjRORmxXaTVDUnNOcExNRmlqQTg4ZkFmU0txWUNk?=
+ =?utf-8?B?YWduRjRSbmdrU2tJZEpzVjVDUzlIQ05TU3E4a2J3TTJzZERpZDJxb0R4Y3hy?=
+ =?utf-8?B?MmVCRmd3clJpMUIzT0p4a3BqQTlwZjJTV0RZOUpGaGxhUDkvOEFUY1NhakRS?=
+ =?utf-8?B?Q3pZaTZPOHhKeXJqZFpuQVdEUXJLQTNIbThMNXhUZEZmeno3cHl4V24yMmJU?=
+ =?utf-8?B?TkRjK0FJRDRVL04xY2VhdmhxZ0NadUMxVFZKcVJBMkVCRkxTYzFYbk5TSyt5?=
+ =?utf-8?B?SHA0dlAxMmxUVVhJa2h3M2J2KzdmTDU5dHF2Tlp5YUV4aExXODVCRlg0YjR6?=
+ =?utf-8?B?MXdBM3U3Q3pPV29mRWczNEdPeXRsZzRmQURISTJWbFUwaFE3NDFESUZrYzRB?=
+ =?utf-8?B?WjhIbHRxNVAySXJuRXVETTRweTB3VFloNTZBcmwyZXlRcVFkaHFNQk5VUkIy?=
+ =?utf-8?B?OGErSVgzRzR2a2kzMUl2SlJlbzYrdHkzOGw1S1Nab2FRLzBIazRsUm5iNndG?=
+ =?utf-8?B?Z0ZaOUI4MFBaODhhOTM3WkJvYkZ3QTR5WDF1eVVBbEVSMXJoaEFXRTFaNlM3?=
+ =?utf-8?B?b1BCZHZEWWZhQkdoZEJQbXVsNHM3ai9pN0cvZmxuVmpNRGdXL05mRHRNWXQr?=
+ =?utf-8?B?aWZKcmgvc0ZKUnBBQWNHOXBCRkNXUm9hR2dsaHg4VU0zak5ySjBXRU43Ri9H?=
+ =?utf-8?B?ekNuUFpkaVl1MTNOc0tzWFNKRjVQWWJ6NldHTnJBY2N4czJtQUhqV244aEky?=
+ =?utf-8?B?azU3cDE4WkNVQlJDTGpoUDFCdTVvV0NLaVVkTWp6aW9IUldwZnp3c1FNR0Fr?=
+ =?utf-8?B?dlZLdno4ZC9zaytIYU1IRjZjb3lRVEt2MDM5MjI1aEc0Q2NKZWJ6cDRZQTdQ?=
+ =?utf-8?B?WTN1dFZsVWZOOWVmQzZJTGpGOEZQM1d1Znd2YThkcEgyUzF4RnU0QkhVelB1?=
+ =?utf-8?B?anRmK2N5OU5OczI4VFczY0ZMNm1jT0hXb29KMXlmSFE4MEZUMWNNelkwZW1i?=
+ =?utf-8?B?TzFSdngzcWVWeDBBak1XNVArQzVCVnpmYWxXTmFESUFNdEtvY0FDTTE2UjNB?=
+ =?utf-8?B?bWRsMlBLVEZPVmd6Zzg4Lyt2cEI2L2ZSdW9KRDBuSnB4Z2tnQUg2T2Z1VzZU?=
+ =?utf-8?B?N1l3aldFYUwvbkxxQlVRcEhtS2VKOGhiYlBGS1BTNHlXS0hNWHhHYkp0NGY2?=
+ =?utf-8?B?b0lBbVU1SkVwYWFubW1CN2JuU3JTd1JoVVM2WW8xdEc0N1JEYWE3U3llbU9q?=
+ =?utf-8?B?blBWc0dPLzJtVTQ1bkpXT3hPTlV6aVprenlacjZBbFZVZzZrM2U4S0ljQXVH?=
+ =?utf-8?B?RllEQnlTRjRKaXFaM1h4QnRad21ob01yM1RXb3pQZjVZV0lzSDRiRkdsWGIy?=
+ =?utf-8?B?UWtVeHJzMG16anNwLy84Q3BCWWJUYys3dTRGeXk4UWRRb2JXOVJvenMyWlhv?=
+ =?utf-8?B?TmRVSG1RL3RIZnFWaXlhRE9UMUdKSEtzSlppWFFuQitIbHdFY3FiQUFCanZ1?=
+ =?utf-8?B?VjZ3anBPdmVxRG1BMExrYnZlNEhXSlRvVjZaZFNBSXRBbXo1akQvZHRCQit6?=
+ =?utf-8?B?SUdrelltMWhjY2s2UVZwZTBlbzhaTE9haERSQjFtS3RncURMSGF6WEpZeFJl?=
+ =?utf-8?B?YnZ4dEFnaHdkVXNybjhVQVE1RDVyRUo1T2NscFZKV1IxSEU3V3l0NGxZSk04?=
+ =?utf-8?B?aENHdDlNN1RvbDRRbFFPeXJmcXJhRDl6dWJFT3NlU0Vscjd2em9RNC9UWjZS?=
+ =?utf-8?B?YkVqMEhOMFpBUDhqeHlwQ3Rpb0pLaGZmdmVxT0RXME9acVZyeWhYVHFBTTdP?=
+ =?utf-8?B?N08rUWNqWS93OVQwcGgwNlA3OGkrRUpRWktsWjBsaEY0SEN4Mm82SmplbWZu?=
+ =?utf-8?B?SkhtdzRPOGlIb3Z4M3hsVk1tNVNzekNWdzNEVG1xK2szc21DTUFEQlhCYVhD?=
+ =?utf-8?B?WjlHV3hGSCtDNVhLQXRKTDNZMDhHc0JhUiszVk1FNkZxNmZxQWMzNWhPZmdB?=
+ =?utf-8?B?QTRaZDQyVzBSREplRUVMSHBxY0NBMGs2QVMrMlhOdW5pa0ZxSGxoM2g3RklS?=
+ =?utf-8?B?UDhyK0tLVUM5R0MvNnNDdTZLalNTNkxiMDlJc003b2hPQ2hEaHR5R05GYWJj?=
+ =?utf-8?B?SW1oR05sbWdLdGluMUtIUTZQeWE4ZUxOSExsVU0wczhWK0d3Nnc3V3lNT1pZ?=
+ =?utf-8?B?OWpnN0ZzeTZrdVZtai9UMUVIamV6dlJCYk5nSE5aNEdqM0pnN0lvdENPVGp3?=
+ =?utf-8?B?b21xK0hIc3FLMFhaOUh0T25aSmJkcEVoZ3hMNGdlT2VIZDB6aW5DY3ZwQmZa?=
+ =?utf-8?B?RmlFSHduRDcwY2JtZVdpOGtrc0VEcFFuQWlZT3pDWVVKdDBra1ZQN0FzTitB?=
+ =?utf-8?B?eGNwZ25JY2RoZ1llQ2d0SjcrZm9rby9sRkRSWEJLYXFXZzRGbUo0eFk4V1R1?=
+ =?utf-8?B?QWEwc1VTMHMzQXpETzFiRk52bHVBRG9yc0RrR0NYWS9ha2lTekdZc3NDRnBV?=
+ =?utf-8?B?MDZ0NWM3Wjg4dkhZYlEvYUkxQzdJTjdrVUU5S2laZDR3VFRDaGdKZ2QvVmhZ?=
+ =?utf-8?B?WXE4L25GbCswTG9UUm5mLzBtYVJheThJOW5laEoyL1FFaUF6aDc4OHR4TWxZ?=
+ =?utf-8?Q?Wp8miBYQJDGbPHel9yR56HW/53aM=3D?=
+MIME-Version: 1.0
+
+----==_mimepart_68a89b0146b55_1f63fe39eb80cd823741e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD).  =C2=A0  Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.  =C2=A0  Thank you,  Oregon Parks and Recreation Department =
+=C2=A0     =
+
+                           =
+
+                            On
+                            Fri, 22 Aug at  9:29 AM
+                            ,  Robert Samuel White <rsw@rswfire.com>  wro=
+te:
+                             =
+
+PUBLIC RECORDS REQUEST =
+
+ =
+
+TO: Oregon Parks and Recreation Department Public Records Officer =
+
+ =
+
+CC: Director Lisa Sumption =
+
+ =
+
+FROM: Robert Samuel White =
+
+ =
+
+DATE: August 22, 2025 =
+
+ =
+
+RE: Public Records Request - Volunteer Program Operations and Management =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Dear Public Records Officer, =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Pursuant to Oregon Revised Statutes Chapter 192 (Oregon Public Records La=
+w), I hereby request access to and copies of the following public records=
+: =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 1: VOLUNTEER PROGRAM DOCUMENTATION =
+
+ =
+
+ =
+
+ =
+
+ =
+
+1. All policies, procedures, manuals, and guidelines related to volunteer=
+ management, discipline, and termination (2020-present) =
+
+ =
+
+2. All training materials provided to staff regarding volunteer supervisi=
+on and communication =
+
+ =
+
+3. All documents related to volunteer program reviews, assessments, or ev=
+aluations =
+
+ =
+
+4. All communications regarding changes to volunteer program policies or =
+procedures since January 2025 =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 2: HONEYMAN STATE PARK OPERATIONS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+5. All incident reports, complaint logs, or documentation of volunteer is=
+sues at Honeyman State Park (2020-present) =
+
+ =
+
+6. All communications between Honeyman State Park staff and OPRD administ=
+ration regarding volunteer management =
+
+ =
+
+7. All documents related to staffing changes, transfers, reassignments, o=
+r personnel actions at Honeyman State Park since January 2025 =
+
+ =
+
+8. All training records, policy updates, or procedural changes implemente=
+d at Honeyman State Park since January 2025 =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 3: ADMINISTRATIVE COMMUNICATIONS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+9. All communications, emails, memos, and documents involving Director Li=
+sa Sumption regarding volunteer relations, Honeyman State Park operations=
+, or volunteer program issues (January 2025-present) =
+
+ =
+
+10. All communications between OPRD and other state agencies regarding vo=
+lunteer program operations or specific volunteer incidents =
+
+ =
+
+11. All briefings, reports, or analyses provided to executive leadership =
+regarding volunteer program performance or issues =
+
+ =
+
+12. All documents related to budget planning or resource allocation for v=
+olunteer program management =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 4: EXTERNAL COMMUNICATIONS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+13. All communications with legal counsel regarding volunteer program ope=
+rations, policies, or specific incidents =
+
+ =
+
+14. All communications with insurance providers regarding volunteer progr=
+am liability or risk management =
+
+ =
+
+15. All media monitoring reports, public relations assessments, or reputa=
+tion management documents =
+
+ =
+
+16. All communications with Governor's office or other external agencies =
+regarding OPRD volunteer programs =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 5: INVESTIGATIVE AND COMPLIANCE RECORDS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+17. All investigation files, complaint responses, or disciplinary actions=
+ related to volunteer program management =
+
+ =
+
+18. All documents related to workplace conduct investigations at any OPRD=
+ facility =
+
+ =
+
+19. All ethics complaints, HR investigations, or compliance reviews invol=
+ving volunteer supervision =
+
+ =
+
+20. All documentation of corrective actions, policy changes, or training =
+implemented following volunteer-related incidents =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 6: OPERATIONAL RECORDS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+21. All meeting minutes, notes, or agendas from staff meetings discussing=
+ volunteer program operations or systemic volunteer issues =
+
+ =
+
+22. All documentation related to volunteer recruitment, retention, or sat=
+isfaction assessments =
+
+ =
+
+23. All contracts, agreements, or memoranda of understanding related to v=
+olunteer services =
+
+ =
+
+24. All budget documents or financial records related to volunteer progra=
+m operations =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 7: DIGITAL COMMUNICATIONS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+25. All work-related text messages, instant messages, or other digital co=
+mmunications between OPRD staff regarding volunteer program operations =
+
+ =
+
+26. All electronic calendars, scheduling records, or meeting documentatio=
+n related to volunteer program management =
+
+ =
+
+27. All digital files, databases, or electronic records related to volunt=
+eer tracking or management =
+
+ =
+
+ =
+
+ =
+
+ =
+
+SECTION 8: EMPLOYMENT AND APPLICATION RECORDS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+28. All employment applications, job postings, and hiring documentation f=
+or positions at Honeyman State Park (January 2025-present) =
+
+ =
+
+29. All communications, evaluations, or documentation related to employme=
+nt applications submitted by Robert Samuel White =
+
+ =
+
+30. All hiring committee records, interview notes, or selection documenta=
+tion for Honeyman State Park positions during 2025 =
+
+ =
+
+31. All communications between Honeyman State Park staff and OPRD HR rega=
+rding employment applications or hiring decisions =
+
+ =
+
+32. All policies and procedures related to volunteer-to-employee transiti=
+ons or internal hiring processes =
+
+ =
+
+33. All documentation of hiring decisions, rejection notifications, or ap=
+plication status communications for Honeyman State Park positions =
+
+ =
+
+ =
+
+ =
+
+ =
+
+REQUEST SPECIFICATIONS =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Time Period: January 1, 2020 to present, unless otherwise specified =
+
+ =
+
+Format: Electronic copies preferred (PDF), physical copies acceptable =
+
+ =
+
+Fee Limitation: Please provide fee estimate if costs exceed $25 =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Clarifications: =
+
+ =
+
+ =
+
+ =
+
+ =
+
+"Volunteer program" includes all unpaid service positions across OPRD fac=
+ilities =
+
+ =
+
+"Communications" includes emails, letters, memos, text messages, and verb=
+al communication summaries =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Please include documents where responsive information appears as part of =
+larger communications =
+
+ =
+
+ =
+
+ =
+
+ =
+
+If any requested records are claimed to be exempt, please provide a detai=
+led explanation citing specific statutory authority =
+
+ =
+
+ =
+
+ =
+
+ =
+
+PUBLIC INTEREST FEE WAIVER REQUEST =
+
+ =
+
+ =
+
+ =
+
+ =
+
+I hereby request a waiver of all fees associated with this public records=
+ request pursuant to ORS 192.440(4) and the public interest in disclosure=
+. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Grounds for Fee Waiver: =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Public Interest: This request seeks information regarding the management =
+and treatment of unpaid volunteers who provide essential services to Oreg=
+on's state park system. During OPRD's current budget crisis and public ap=
+peals for community support, transparency
+ regarding volunteer program operations serves significant public interes=
+t. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Government Accountability: The requested records will contribute to publi=
+c understanding of how a state agency manages volunteer relations, implem=
+ents policies, and ensures appropriate oversight of public employees supe=
+rvising unpaid community members. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Educational Purpose: The information will be used to inform public discou=
+rse about institutional accountability, volunteer program best practices,=
+ and the effective use of public resources during budgetary constraints. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+No Commercial Interest: This request is not made for commercial purposes.=
+ The information sought relates to government operations and public emplo=
+yee conduct in their official capacity. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Public Benefit: Given OPRD's stated need for increased volunteer particip=
+ation and community partnerships to address funding shortfalls, transpare=
+ncy regarding current volunteer management practices serves the public in=
+terest in ensuring effective and ethical
+ program operations. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+The public interest in disclosure substantially outweighs any administrat=
+ive burden or cost to the agency, particularly given the agency's public =
+appeals for volunteer support during its financial crisis. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+CONTACT INFORMATION =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Robert Samuel White =
+
+ =
+
+Post Office Box 334 =
+
+ =
+
+Reedsport, Oregon 97467 =
+
+ =
+
+rsw@rswfire.com =
+
+ =
+
+458-230-1869 =
+
+ =
+
+ =
+
+ =
+
+ =
+
+I understand that Oregon law requires a response within a reasonable time=
+, and that fees may apply for extensive copying. Please contact me if you=
+ need clarification on any aspect of this request. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Please ensure all responsive records are preserved and not deleted, alter=
+ed, or destroyed pending completion of this request, pursuant to Oregon p=
+ublic records retention requirements. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Given the documented history of communication breakdowns and institutiona=
+l opacity surrounding volunteer dismissal procedures, this request also s=
+erves as an accountability mechanism to restore public trust. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Thank you for your attention to this matter. =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Sincerely, =
+
+ =
+
+ =
+
+ =
+
+ =
+
+Robert Samuel White =
+
+
+
+
+                           =
+
+                         =
+
+----==_mimepart_68a89b0146b55_1f63fe39eb80cd823741e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><div style="font-family:verdana, arial, sans-serif; font-size:15px;">
+	<div><span data-teams="true"><div>Thank you for submitting your public records request to the Oregon Parks and Recreation Department (<span class="caps">OPRD</span>).</div><div>&nbsp;</div><div>Expect to hear back from us in about 10 business days with any records that match your request or, for larger requests, with an estimate for staff time and costs to gather the documents.</div><div>&nbsp;</div><div>Thank you,</div><div>Oregon Parks and Recreation Department &nbsp;</div><p></span></div></p><div class="freshdesk_quote">
+                          <blockquote class="freshdesk_quote">
+                            On
+                            Fri, 22 Aug at  9:29 AM
+                            <span class="separator">,  Robert Samuel White &lt;rsw@rswfire.com&gt;  wrote:
+                            <div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+PUBLIC RECORDS REQUEST</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+TO: Oregon Parks and Recreation Department Public Records Officer</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+CC: Director Lisa Sumption</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+FROM: Robert Samuel White</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+DATE: August 22, 2025</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+RE: Public Records Request - Volunteer Program Operations and Management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Dear Public Records Officer,</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Pursuant to Oregon Revised Statutes Chapter 192 (Oregon Public Records Law), I hereby request access to and copies of the following public records:</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 1: VOLUNTEER PROGRAM DOCUMENTATION</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+1. All policies, procedures, manuals, and guidelines related to volunteer management, discipline, and termination (2020-present)</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+2. All training materials provided to staff regarding volunteer supervision and communication</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+3. All documents related to volunteer program reviews, assessments, or evaluations</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+4. All communications regarding changes to volunteer program policies or procedures since January 2025</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 2: HONEYMAN STATE PARK OPERATIONS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+5. All incident reports, complaint logs, or documentation of volunteer issues at Honeyman State Park (2020-present)</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+6. All communications between Honeyman State Park staff and OPRD administration regarding volunteer management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+7. All documents related to staffing changes, transfers, reassignments, or personnel actions at Honeyman State Park since January 2025</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+8. All training records, policy updates, or procedural changes implemented at Honeyman State Park since January 2025</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 3: ADMINISTRATIVE COMMUNICATIONS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+9. All communications, emails, memos, and documents involving Director Lisa Sumption regarding volunteer relations, Honeyman State Park operations, or volunteer program issues (January 2025-present)</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+10. All communications between OPRD and other state agencies regarding volunteer program operations or specific volunteer incidents</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+11. All briefings, reports, or analyses provided to executive leadership regarding volunteer program performance or issues</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+12. All documents related to budget planning or resource allocation for volunteer program management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 4: EXTERNAL COMMUNICATIONS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+13. All communications with legal counsel regarding volunteer program operations, policies, or specific incidents</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+14. All communications with insurance providers regarding volunteer program liability or risk management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+15. All media monitoring reports, public relations assessments, or reputation management documents</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+16. All communications with Governor's office or other external agencies regarding OPRD volunteer programs</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 5: INVESTIGATIVE AND COMPLIANCE RECORDS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+17. All investigation files, complaint responses, or disciplinary actions related to volunteer program management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+18. All documents related to workplace conduct investigations at any OPRD facility</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+19. All ethics complaints, HR investigations, or compliance reviews involving volunteer supervision</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+20. All documentation of corrective actions, policy changes, or training implemented following volunteer-related incidents</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 6: OPERATIONAL RECORDS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+21. All meeting minutes, notes, or agendas from staff meetings discussing volunteer program operations or systemic volunteer issues</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+22. All documentation related to volunteer recruitment, retention, or satisfaction assessments</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+23. All contracts, agreements, or memoranda of understanding related to volunteer services</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+24. All budget documents or financial records related to volunteer program operations</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 7: DIGITAL COMMUNICATIONS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+25. All work-related text messages, instant messages, or other digital communications between OPRD staff regarding volunteer program operations</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+26. All electronic calendars, scheduling records, or meeting documentation related to volunteer program management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+27. All digital files, databases, or electronic records related to volunteer tracking or management</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+SECTION 8: EMPLOYMENT AND APPLICATION RECORDS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+28. All employment applications, job postings, and hiring documentation for positions at Honeyman State Park (January 2025-present)</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+29. All communications, evaluations, or documentation related to employment applications submitted by Robert Samuel White</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+30. All hiring committee records, interview notes, or selection documentation for Honeyman State Park positions during 2025</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+31. All communications between Honeyman State Park staff and OPRD HR regarding employment applications or hiring decisions</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+32. All policies and procedures related to volunteer-to-employee transitions or internal hiring processes</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+33. All documentation of hiring decisions, rejection notifications, or application status communications for Honeyman State Park positions</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+REQUEST SPECIFICATIONS</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Time Period: January 1, 2020 to present, unless otherwise specified</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Format: Electronic copies preferred (PDF), physical copies acceptable</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Fee Limitation: Please provide fee estimate if costs exceed $25</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Clarifications:</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+&quot;Volunteer program&quot; includes all unpaid service positions across OPRD facilities</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+&quot;Communications&quot; includes emails, letters, memos, text messages, and verbal communication summaries</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Please include documents where responsive information appears as part of larger communications</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+If any requested records are claimed to be exempt, please provide a detailed explanation citing specific statutory authority</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+PUBLIC INTEREST FEE WAIVER REQUEST</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+I hereby request a waiver of all fees associated with this public records request pursuant to ORS 192.440(4) and the public interest in disclosure.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Grounds for Fee Waiver:</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Public Interest: This request seeks information regarding the management and treatment of unpaid volunteers who provide essential services to Oregon's state park system. During OPRD's current budget crisis and public appeals for community support, transparency
+ regarding volunteer program operations serves significant public interest.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Government Accountability: The requested records will contribute to public understanding of how a state agency manages volunteer relations, implements policies, and ensures appropriate oversight of public employees supervising unpaid community members.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Educational Purpose: The information will be used to inform public discourse about institutional accountability, volunteer program best practices, and the effective use of public resources during budgetary constraints.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+No Commercial Interest: This request is not made for commercial purposes. The information sought relates to government operations and public employee conduct in their official capacity.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Public Benefit: Given OPRD's stated need for increased volunteer participation and community partnerships to address funding shortfalls, transparency regarding current volunteer management practices serves the public interest in ensuring effective and ethical
+ program operations.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+The public interest in disclosure substantially outweighs any administrative burden or cost to the agency, particularly given the agency's public appeals for volunteer support during its financial crisis.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+CONTACT INFORMATION</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Robert Samuel White</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Post Office Box 334</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Reedsport, Oregon 97467</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+rsw@rswfire.com</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+458-230-1869</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+I understand that Oregon law requires a response within a reasonable time, and that fees may apply for extensive copying. Please contact me if you need clarification on any aspect of this request.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Please ensure all responsive records are preserved and not deleted, altered, or destroyed pending completion of this request, pursuant to Oregon public records retention requirements.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Given the documented history of communication breakdowns and institutional opacity surrounding volunteer dismissal procedures, this request also serves as an accountability mechanism to restore public trust.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Thank you for your attention to this matter.</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Sincerely,</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+<br>
+</div>
+<div style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">
+Robert Samuel White</div>
+
+
+
+                          </blockquote>
+                        </div>
+<br>
+
+
+
+
+<span title="fd_tkt_identifier" style="font-size:0px; font-family:&quot;fdtktid&quot;; min-height:0px; height:0px; opacity:0; max-height:0px; line-height:0px; color:#ffffff">298775:1155212</span>
+
+</div>
+----==_mimepart_68a89b0146b55_1f63fe39eb80cd823741e--

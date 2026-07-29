@@ -24,16 +24,24 @@ export interface FilingDoc {
 
 export interface Filing {
     id: string; // anchor slug, unique within the thread
+    ulid: string; // document identifier, timestamp-derived
     date: string; // display date
+    time?: string; // display time, from the original
     d: string; // ISO date for sorting/filtering
     kind: FilingKind;
     title: string;
     flagged?: boolean; // important: stands out in the table, note shown
+    chain?: string; // explicit chain key; overrides subject-based grouping
     from?: string;
     to?: string;
     summary?: string;
     docs?: FilingDoc[];
     eml?: string; // unmodified email original
+}
+
+export interface ChainMeta {
+    flagged?: boolean;
+    note?: string;
 }
 
 export interface RecordsThreadData {
@@ -44,6 +52,7 @@ export interface RecordsThreadData {
     status: string;
     summary: string[];
     filings: Filing[];
+    chains?: Record<string, ChainMeta>; // keyed by chain key (normalized subject or explicit chain field)
     note?: string[];
 }
 
@@ -75,7 +84,7 @@ export default function RecordsThread({ thread }: { thread: RecordsThreadData })
             </div>
 
             <div className="mt-8">
-                <RecordsTable filings={thread.filings} />
+                <RecordsTable filings={thread.filings} threadSlug={thread.slug} chains={thread.chains} />
             </div>
 
             {thread.note && (

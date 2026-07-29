@@ -1,0 +1,972 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CY8PR14MB6922.namprd14.prod.outlook.com (2603:10b6:930:7e::18)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Thu, 23 Jan 2025
+ 19:31:03 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=AgFAX4KOTvem9h+fwwvio/n+Bd/u4YalnzwHFIsaeLff1gzmF/Dzo7P1tuyQ63m5jcZs+p34jPnhK7v6NdKZYdAaJCIjhSscsWuHvnPH6DbrRo5cV41uP51xUkL/nhf7QDmMqooMZiQEAtiDLkOlplmRXvjPD5RVVIlq3+EllHU4EHb7LdKh/9hsdhlaHJIMVYK4WDWyrFqFZ45lSqxDnnyI6w6qOBCx293RnxXjZAoFfX6Iy15vRT35ZW0Y0Cohuf2ekK3xg/Tzy2W/9D8Wd3kskklogYdo5zLom81Ah4KsFOrSRyCCmHG2uYETqiwfU/4Fd7NcQYNek17Ytoq/Bw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zxQTe3TdffD1yWI3Wquu0etZjI0e+IwAetA6KIpSOiE=;
+ b=a00hWXyZ8rBLB9371fc9ZOqs3hL+5Np74Qk24uC23sCAOyGu34aaRoKq2a8wx7s42Rvwf2BG0dQczFspqqP0es0kuzKrgFOmU9jdOn/QpVTu2zU4ao0fn3q3JB+QLB6NvTsab9R1U8FgdnA+GkaxG6IKtXaiQQ2Fr7pyLCB3yic0QkHnxPrAHbHupeCJKE7n3maw6qFnGEC+ImqCOp6gqD0YY1ujA+NxOZdKW1YLOUeR2Zhmf6KI6CZi29hkor8EyAulAW25v/lkg/9DIwsEuY24IuQhLBcUe3OSeH3Fk35hRFU4UzifY1R8vAodLD8o2ii/1Fm2+hsj8RtsEn8D7Q==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c110::5) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from SA0PR11CA0154.namprd11.prod.outlook.com (2603:10b6:806:1bb::9)
+ by CY8PR14MB6922.namprd14.prod.outlook.com (2603:10b6:930:7e::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8377.16; Thu, 23 Jan
+ 2025 19:30:59 +0000
+Received: from SA2PEPF00003F66.namprd04.prod.outlook.com
+ (2603:10b6:806:1bb:cafe::13) by SA0PR11CA0154.outlook.office365.com
+ (2603:10b6:806:1bb::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8356.21 via Frontend Transport; Thu,
+ 23 Jan 2025 19:30:59 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c110::5)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 2a01:111:f403:c110::5 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c110::5;
+ helo=BN8PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BN8PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c110::5) by SA2PEPF00003F66.mail.protection.outlook.com
+ (2603:10b6:80f:fc04::29) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8377.8 via Frontend Transport; Thu,
+ 23 Jan 2025 19:30:58 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=Gxa0h4QhjGSnRbINCHW+kZmh3Zqx3TluDvaHc+L1um++riTUnrHYfVM7F9e9t/LnKFi7QqqbPpywD5h9gfJNXz/ddpRO2DqNC7upRl3KnrjPvwJZsC5PONcNRa8s3elMuw+sjFO17g/92phlO9udrxfxMRmwpd+XWfvUq0wiFEBNPAKpQd/UIo2nO5FFO9P/xqXqGxrM1BY9w11opcnFly7NCjuIf9UINYySN9a+QNNaqtmolWGbEPj24S6DjJ8IiM+zkzze11DsQd9elbNskcaS1sHe5K8tl+3zkslL39epdPAqBSuQsiZXkXmCqeMscse1kcmwCxQR8YLoBI8k5A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zxQTe3TdffD1yWI3Wquu0etZjI0e+IwAetA6KIpSOiE=;
+ b=FDvIobYVG6tSG6MURuyR25dC+RiG0t+8fc+rRUVnjNZtuUYcwh2Lbcz7auTv6YsLRBkMGzd7CYNaAvwi38sz/mPbHTCjLjVd3Nq5LwYUNufJys30dS/r2lpvoocLbmzEaYQg0STTNwxymezJUzECSHXKJG/czvUzy2M5Bs+Ro2cN2Lbp1Z+vgkjOAqlYyoL1+aqFLwBcAQvt9mzNitTIZ+Wei5Dg+CCbyR49MK6ALUclHSx15Sfv0OP1rcwGNN9hvSq3pfuCZF9NVt1jhXTPisI7H/3ze9zXvZXXp12IKQlPQOXDethJsS9HmLdcQorLhV0OOkkXr2yT09xmZ/P4Uw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=zxQTe3TdffD1yWI3Wquu0etZjI0e+IwAetA6KIpSOiE=;
+ b=CXINqgWONA8QCBNqQpa+8Lpp4QxY0TQBu6aUK0j561e4ixMQrzCsjG+avGAyno70wnW6oefvVE/mApPtKLuUW7xpF8tQfwCID7sUEOK7aa82uDQm3lxV/ELoUbonYaFHbfCH19N8lFdwzXxXzxoxkJBGVj3k7Yn9XePljifYwk6DyZVvgTWaA0hxeOWpG2d+7xxvBTm4BpDJoEbFXHZ2M+GzGqQUF2xDaoJr+FEcmenblyHBuaVOTWDKgGxpWdk/jwPrNBauWOh7jZASAEKXpZj96FK4KMdGbtM4L2l/bm8Gp1YoM8M0JO/D8l/jBUTLwS4RZV4Xy23ldACrqvysFA==
+Received: from CO6PR09MB8294.namprd09.prod.outlook.com (2603:10b6:303:ce::20)
+ by MW4PR09MB9473.namprd09.prod.outlook.com (2603:10b6:303:1f4::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8377.16; Thu, 23 Jan
+ 2025 19:30:56 +0000
+Received: from CO6PR09MB8294.namprd09.prod.outlook.com
+ ([fe80::2328:a362:17a7:99e7]) by CO6PR09MB8294.namprd09.prod.outlook.com
+ ([fe80::2328:a362:17a7:99e7%6]) with mapi id 15.20.8377.009; Thu, 23 Jan 2025
+ 19:30:55 +0000
+From: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: Hosting at Honeyman State Park 
+Thread-Topic: Hosting at Honeyman State Park 
+Thread-Index: AdtiB+ypeLPSA0RZQlyl3bz7Odv75gAIf/ytAiN+r/UAMdXOEAAAIJM7AGtiezYAJ3tjwA==
+Date: Thu, 23 Jan 2025 19:30:55 +0000
+Message-ID: <CO6PR09MB8294C11953B65FD1BE23148AB1E02@CO6PR09MB8294.namprd09.prod.outlook.com>
+References: <CO6PR09MB8294706541A20E48A207538CB1122@CO6PR09MB8294.namprd09.prod.outlook.com>
+ <CH2PR14MB41815EAEB0B865694BA97544AD132@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CH2PR14MB4181625820B034D35B1458C5ADE42@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CO6PR09MB82943E5B46B27132E272A97DB1E72@CO6PR09MB8294.namprd09.prod.outlook.com>
+ <BY5PR14MB4178F67D770896EEA25E26D4ADE72@BY5PR14MB4178.namprd14.prod.outlook.com>
+ <BY5PR14MB417869B5A6AE783169487E87ADE02@BY5PR14MB4178.namprd14.prod.outlook.com>
+In-Reply-To: <BY5PR14MB417869B5A6AE783169487E87ADE02@BY5PR14MB4178.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: CO6PR09MB8294:EE_|MW4PR09MB9473:EE_|SA2PEPF00003F66:EE_|CY8PR14MB6922:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: db19ff0e-08c5-408c-4549-08dd3be476ef
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|366016|1800799024|8096899003|13003099007|38070700018;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?ql7rMhAZeYSsZg7CvzoQR6p5V0ZL+iBBRloDdMCsjSCNg/gZ69ERgA5Vh1UU?=
+ =?us-ascii?Q?LhQoA84zoD/iILoT/JamUKdr0q+b7dH+4l4wyvXnTtkGwQ5ymI542wuCuXjD?=
+ =?us-ascii?Q?VvszS3Edhbkoos5q+bx2hHcqLfceOT3EADdcYLRW/fsRJc8l7THOITWXG3rd?=
+ =?us-ascii?Q?VJvh/lTwKgpgchFQQmkXLvgeG3yfExeVub2xQAu/+6yrks3QtHdzZV+7Ls3F?=
+ =?us-ascii?Q?PtNLTSfArcCBSjR16Ibzkufy8E68aSa3z1PqDsMUoPwaGLvG5dw5Y3k0QmEF?=
+ =?us-ascii?Q?Wyc3sb9a1w1gXb0f95pKwr6ip7Vcys+6m05k5XMq32ESeOiCLCov2CwonDd5?=
+ =?us-ascii?Q?UcixQO88MLi31RGy/bA4iYUmZIHRpnHkLTOcHz6fXoahrZWemryY1ZYOff6Q?=
+ =?us-ascii?Q?ogcg3RefeeXwZZLSDIouwigxSvFtu1E9ovqcWHqSZua3DY/gfv3Q5O+BiCZ0?=
+ =?us-ascii?Q?xgtnD2TOCRAWjn59CGL9JV7M2hTXxWiK3YtKioDHit2XBJXTRavO7U/Ggcss?=
+ =?us-ascii?Q?E9PCIxenEW0MwgsAqGD+8mOMtMXuMuTWF0KSYi7fOTAR02h0Tmn02dcBb+sS?=
+ =?us-ascii?Q?dOkbaP82fJvmXiRT5ZmBXV6RS4KzrXlykH4jAmA5Z49/muF1Y+WyEzkcDYCP?=
+ =?us-ascii?Q?3Onj8UCpacrlTPL4dxxnpHdE0MGHR5aVHjL/9v2ifuZQxcR+5btuQDylicKf?=
+ =?us-ascii?Q?PDAg0WiXEQKtGIL/UKiZ7ocd8cEVeKPC51emsy0GrlxHfgwneYDJjJInruFl?=
+ =?us-ascii?Q?UiSuhIwYsq3Zj3V3dHt2/gny99cF3ZzsSIkqvVH5SIUXCwPEKM+tyt17WZBI?=
+ =?us-ascii?Q?KgvFDtjP1lGTRSu1IaQUgXsrF6ipwtjqlEA8nCa84yCT8bGljtEeH8ftqA67?=
+ =?us-ascii?Q?kMTW1qLpZKYSHK3CSqbJLSr0dzRxcyTxFo+iirZkoDn01q6tg8t6YFvgNr+U?=
+ =?us-ascii?Q?oeeT7cdfmpERKMTBzO/izov0gfek8h2lWUqy45PdwTxwFUa2e9btyIfRAqVR?=
+ =?us-ascii?Q?ZVrzCDtdeb/w/iIDeFIe4DfR7u1jJ75s0iZz63n9+SeUGZj3CcrTT2X7u2yQ?=
+ =?us-ascii?Q?oT91zawLLAWzpWlfzZNUbnQvZ+cNKUQXlThkoXsuSdTmAffUP4lL18x1R//H?=
+ =?us-ascii?Q?yeCH/5pQOsJI84vOWUhQPpMNHpehwtAR1iGejoSgFa/U/ELdaQiLOzAGLif+?=
+ =?us-ascii?Q?smSXeOcI1N3eUClO/mPL59bpAVrb8WrzxQURhBFUELvQX2YD/0SgVk13oLkT?=
+ =?us-ascii?Q?WnPmTY8tWhIMZz52bXM1pZbyBsaXjC7kllVayqSRSpjhvwYC+qJ333wo0Gxq?=
+ =?us-ascii?Q?YWo7HIstt4AG3qawc4s92rmJuRom5wA6bAq+lLN/VV9gNpsMXzyvKzsoZQ4S?=
+ =?us-ascii?Q?GMpALg9mtr1nNKSwKdfIYWBV8d6bXj8tz9jh62EjLTY2i9tK6ClWavwrLHHk?=
+ =?us-ascii?Q?7HL9aiaYKls=3D?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB8294.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(8096899003)(13003099007)(38070700018);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?1Z897U8c+viHQj/n5GFgGJ8ExN2S4cbeb01AGlQ7g6xytR33NvuX5EtvdsgI?=
+ =?us-ascii?Q?jNwatmv+p9otCknfVGNgur4dR9QUTP3P/LCEmkdzjzRjOeEzNZOsUHsX3bRP?=
+ =?us-ascii?Q?pBJ3c6uRfZNusmSG+18YmaSLZee/tyk8vRZzMlvW0IUCJWCeHT95SQs149CS?=
+ =?us-ascii?Q?S0pC6zqwRwAoEpi5vsfPL8ghtVoRiG3ptUazkewBt59r3idfw+t7bKpcMKcp?=
+ =?us-ascii?Q?9mdTABDqNHL3uL+Va9WdcpnmSA0LpO1V6kP+PEtjt1xhsehpFoEsxNWuRIpt?=
+ =?us-ascii?Q?we2x9fAy0uEd3BC6Za7sYpxlGlQqbtotrr9eBQVLnddmS9hbW63d7ZlA7DZQ?=
+ =?us-ascii?Q?PDhglH2Wswwy2CYHX7R9l3EzPqfVktGCQu1ss267DwAA6hoUs+eF6vHk07i+?=
+ =?us-ascii?Q?eKbJRCtz3NHDcgr+6L+Ak112cm7KmHMtOWcR0xx6xHREpNeRkuH3jqOK6ptV?=
+ =?us-ascii?Q?HMZNDxFcuGyCGjqFD/S8pCMmsriZsBqQ2oZSzHfi7Gm1i6mSFybIKMBUuo2Q?=
+ =?us-ascii?Q?Mp2+8jp64pT2QjagBeiyUZaF141ZKWrxFtgSzoC8VDysVuaZOSN5RhhEiNbR?=
+ =?us-ascii?Q?snsB7aDwo/sUyuCpABE4Vqfcs78UczitVrVO6TljEWQJhMhxPgEHGqq5K5Z0?=
+ =?us-ascii?Q?dE3zO7RMhg0kA4HWr8Hq0CyJ+ZRkMB5bWOUQXdzaWm5ZmGyjjwYCsIdUovdi?=
+ =?us-ascii?Q?hdApizpYopnWXLp/TCAjtKmyKGJV3licevCC+SzrR3TiUuLtQZyDTItMuon3?=
+ =?us-ascii?Q?ZiumzPKgojXDKx3TmwM9CaJlLBXm+8nXGvpsdg6sc5/aAXUB1qThoTZKiKKq?=
+ =?us-ascii?Q?DAQiGAIZL5KgdBds7vLk1u4oYGyT6kBMtpvW9PYCwMKBLAoURdLn9jlrcKgK?=
+ =?us-ascii?Q?GE9e6JI8Ijhbx/36WX0xANJ7wybiXHjwEDIqvAvXlwtp8iB2lrFKJ1gfi/GS?=
+ =?us-ascii?Q?3m0eVNGUuAZ8bfAsz5ZK3si7NAUolqKIhmaSUqd29MNLD0LHywI9cyI29lMV?=
+ =?us-ascii?Q?72hP8GpfE8VgCwTTP+PfSNgBVAG5jJV5qssYgGt6yHWGxbFiHx3/b5+1eiAm?=
+ =?us-ascii?Q?cImOLbbcmAmlim8NCXctWMABWZAoOYLL2klhawRa8ASChChmidXcgaQ075Ck?=
+ =?us-ascii?Q?IG72hY5llI4vPEtI76c9gtLPCKvEbCdovg0J6Tvzh4BLyYlJhKH7QRU/9IYr?=
+ =?us-ascii?Q?ePv6xcea0w3+wNRpeigh340aeZCkKzsMiJX+v2b+y3rhMKPfTaiwbg2yYznx?=
+ =?us-ascii?Q?rg+g28q8nP0sM+z29/toj11D8dz5I5miHh9GuPywsgyT4SP8TttB4yjiGq3y?=
+ =?us-ascii?Q?rm3rxndvnNy+gipxNsZPTX0mI9Z/lFYwro14Hn5J4PDYUKoGJEYu6M9vgRjT?=
+ =?us-ascii?Q?6cUVI8tYbNtqF29LD3T+uWiFX3UOvtgCbKeCob02rjtOXxJFZ6ZMsRHI/OKJ?=
+ =?us-ascii?Q?ckvH31GHZfkaPose3Ej/MMc0moUWMElpVBXD28eelGPAWk9VPqGMn7np9ixY?=
+ =?us-ascii?Q?/GbJdoLA9nEuTKeg1g5w6v4MX+GQo1t8XK2q2ttZ5UCMS3WaOM1ZkhSQULWl?=
+ =?us-ascii?Q?0RP9AuRIVDPKeMBN9T0Xr4XGwgynZyCKt6rRXT/OFj8vYZJUf9WfVivncIz8?=
+ =?us-ascii?Q?fw=3D=3D?=
+Content-Type: multipart/related;
+	boundary="_004_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR09MB9473
+Return-Path: Logan.BLISS@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Jan 2025 19:30:59.0453
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: db19ff0e-08c5-408c-4549-08dd3be476ef
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: SA2PEPF00003F66.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: SA2PEPF00003F66.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: SA2PEPF00003F66.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: c8e689ef-2a47-4005-0cdd-08dd3be474a1
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: 99dc1900-d918-4805-6c38-08dd3be47891
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: Logan.BLISS@oprd.oregon.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|35042699022|13003099007|4076899003|8096899003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c110::5;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN8PR09CU001.outbound.protection.outlook.com;PTR:mail-eastus2azlp170120005.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(35042699022)(13003099007)(4076899003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Jan 2025 19:30:58.7484
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: db19ff0e-08c5-408c-4549-08dd3be476ef
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SA2PEPF00003F66.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY8PR14MB6922
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3493257
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8377.009
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?m3rOpQ/r+KhcNVFKT23782NdF4eMd0WZjWDYzb8mjam8h3WOr3v3LYB/?=
+ =?Windows-1252?Q?DEq/1ZnaupuCdhMv27DTJAIHQHoHcRqqXvsU4RfwM5lrzOjX/TgD2hi7?=
+ =?Windows-1252?Q?G+0PYRg8zFy8SfDE/jSHTtWMTaxuY7IOJogbEI84kL+0nQXgyY6ToffD?=
+ =?Windows-1252?Q?H57XMYIysMgM9L1JRdukhph1soU3UktU4FWc8toabDBdyTwer0r93enI?=
+ =?Windows-1252?Q?qV9zUAxfDUkgGzp766dqh2xnnwBQ9qQBeDXqL69AD71qNguf4bifzxjk?=
+ =?Windows-1252?Q?ckjnKCSu3t50QTyWh9yPCur0Tl/V8PKSgM+qcG3T6lJNUFJ24G4Z/KCl?=
+ =?Windows-1252?Q?uF8SY2CKSQ41ss3VGClDn/CwZUOxZR+PQwOu66Idd40CBG8/tKPzN3Qu?=
+ =?Windows-1252?Q?WSpZrc5zH/eStB2Pzv3UYl5S/vOQEUyp+l4/CVgbBmMd+QXGefPPRb/9?=
+ =?Windows-1252?Q?ExawJdDY2PNSQPaCicpMa7e/D6461NYsb7oCc1lT5sF1wjUg6V1/Bf4S?=
+ =?Windows-1252?Q?LGEeBNBcWG4+HKyoW9YhG5T9EmOFpsr0dEdAwqes+DnAVkpz35RMEzJ0?=
+ =?Windows-1252?Q?0Vpmoud+EquuWY4LqnQujJXuJwimuc58y91lQ0S5i7NfCmNY3ZvSUxNd?=
+ =?Windows-1252?Q?sjEF/CDr6CCVSOu4wMPwrGI8nrsrxyg7pzFMDh2gqJgFEuumKFHmxVY5?=
+ =?Windows-1252?Q?C8ZuhWIRhQYoPSgJa0eYuzMw0aP2O8WxDlURt+8PwOT99Y/Fl+j4f1y5?=
+ =?Windows-1252?Q?LDdRRQGOi4yzeIQtra+8RHZ6ItRM+tZ5ag133ZaRguS6MTa0IilbrWA3?=
+ =?Windows-1252?Q?2iER73fDiXTSMZhDQxvp38R5NxxU/lKvLE+biV+Iw3eMxPqRlCw2lZQq?=
+ =?Windows-1252?Q?d2cvmRG4h3JYKgrsSsYvuvABuor8iXrvb42eJPIRtI4oNsNxjiPRnL3X?=
+ =?Windows-1252?Q?GPFAZthqdRK3o9MjP51hZ63Z/HCFw1ro9gJ1RMQASJV/3R+EfqnwKVkL?=
+ =?Windows-1252?Q?Zj00gOyT5z3uC9yxbcpXR+7dlh9A71lxOUNolGiex7DqepqvKtDboCWP?=
+ =?Windows-1252?Q?Gd3AExFl0wCYD63xRrxaHXRmAIA0twA0c0doz3JucU8oVyS681iUkILC?=
+ =?Windows-1252?Q?w8CxWUffnaF1We4za3V0M+whIxXyIzYWE4Mxap+I2EIcFlwe1yfVt7dB?=
+ =?Windows-1252?Q?W4lMJ0G8Pxb/h/gfyTc3wTX9tbrHoxytLc+8xa1ETmrcKqpFFnzq83Gi?=
+ =?Windows-1252?Q?REix0p6DIR/LmCgSl0/iFVJmH6GpABS401J2HidNavPI86tmIj1MTBCr?=
+ =?Windows-1252?Q?iMLT/2DdjOcLipdgzgjR80+oV0zER3KXpnz/lhV91wU0GLcWkAMcuPBw?=
+ =?Windows-1252?Q?XDUiOMhnPJqoe/pBTkqn+BUWmZGnUcQXx4Ixl9Ir+JZo+zGHMm7N/woh?=
+ =?Windows-1252?Q?T3Iv/f6ihxmrSXUQMlYbyBwwH8XtTXnKyUpVBuYk1WdFNOBMg3YrPiZ3?=
+ =?Windows-1252?Q?05SjQZeEUlxE9SPqCk9k9p1LlIfVMRlD8mGd+VET0z/WBAW3l5COEMw1?=
+ =?Windows-1252?Q?ZbGxP/NNjdfmMjQOKNvthqclsBGTzW4fM0XDhn7qtvPxg0nMchQssYpw?=
+ =?Windows-1252?Q?RKQrosY4IL5kGT5l3GXgmCn2dXWdgl7k2jAB1E8LkurBjuXfx11cwGMb?=
+ =?Windows-1252?Q?aVPTrW+9+9bEQACFF0ZP8j0OxXyXGHkjGmpYBuBoX7qhx8vgJLrdqn60?=
+ =?Windows-1252?Q?Ovlz7qKLn77wTJpGmbVdlG22q+Yw3b9JLog6d3XFRc1kqps2tsdWKAal?=
+ =?Windows-1252?Q?DgEzDXvYme2C78Ms2psgT0U1WqdQLopde/hfz5bbQRTGfOm4VtGzlkJX?=
+ =?Windows-1252?Q?NZv+XKwsWF2CE51Avk44/XE3ZaELY4CIvQ1raNqlA0S8AmcdYWKToLTC?=
+ =?Windows-1252?Q?UkHgASiM8HKKHz0vhasVYiUmb1yKYicUK8wa+kSMt5ZNa9rCh8bHkvLW?=
+ =?Windows-1252?Q?wZwLs5RPK0e5papXp7oQHZdFOMo6QC9Nl/FXo1v7zNVBGfOXW1g=3D?=
+MIME-Version: 1.0
+
+--_004_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_"
+
+--_000_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sam,
+
+So I have filled the May Welcome Center position just this morning, but I d=
+o still have a Site Maintenance position available for May if you are inter=
+ested in that.
+
+As for the open Ranger positions, what will be posted is going to be the en=
+try level Seasonal Ranger Assistant positions, which will not have the same=
+ level of requirements as the full time Ranger positions, so generally most=
+ of the Rangers, myself included, start off as Ranger Assistants that are h=
+ired seasonally for the busy summer months.  It helps you to get a grasp on=
+ how operations work from the park staff's side of things and helps to buil=
+d those skills that are essential for getting the full time Ranger Jobs.  A=
+ job that is also posted as a "Seasonal Ranger" would mean it is still on t=
+he same level as a Full time Park Ranger, but they have a few months off du=
+ring the calendar year, so it is still a higher-level position than a Seaso=
+nal Ranger Assistant.
+
+The Seasonal Ranger Assistant positions should be getting posted on the Wor=
+kday website in the next week or so, so definitely keep an eye out for them=
+.  It would be under the Parks & Recreation category, which will then list =
+the Park that has posted the Seasonal Assistant Positions.
+
+If you were to get a Ranger Assistant position it does complicate being a P=
+ark Host, as you cannot do both at the same time, and would then have to fi=
+nd a different place to reside as Park Staff are not given campsites to liv=
+e in like the Park Hosts.  The Host site is part of the package of being a =
+volunteer as it is an unpaid position, but if you were to become a paid emp=
+loyee, such as a Ranger Assistant, then you will have to find your own plac=
+e to reside outside of the campground.  You are still allowed to camp at th=
+e campground as a paid employee, but you would be just a regular visitor at=
+ that point and subject to all of the stay limits that we have for our regu=
+lar guests (State Parks have a 14 day stay limit for our campers which does=
+ not apply to Park Hosts).
+
+Hopefully that adds some clarity.
+
+[cid:image001.jpg@01DB6D89.38C31DE0]Logan Bliss | Volunteer Services Lead/R=
+anger 1
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+________________________
+Oregon Parks and Recreation Department
+84505 Highway 101
+Florence, OR 97439
+(541) 997-3851 Office
+(541) 999-5711 Cell
+(541) 997-4425 Fax
+https://stateparks.oregon.gov<https://stateparks.oregon.gov/>
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Wednesday, January 22, 2025 4:33 PM
+To: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov>
+Subject: Re: Hosting at Honeyman State Park
+
+Hi, Ranger Logan.
+
+Would it be possible to come back in May to work the welcome center again? =
+Assuming the position is still open (just perusing the job board). I'll be =
+at Umpqua in April (Franki found a spot for me) so I'll still be in the are=
+a.
+
+The only caveat I would make to this is I'm going to try really hard to bec=
+ome a seasonal park ranger (as long as it's on the coast), if they'll have =
+me. I am unclear on when those jobs are posted and filled so I just want to=
+ note this in case it causes a conflict if I am fortunately hired. Because =
+of the two year park service prerequisite, I'm unsure if I would get hired =
+(it is the main reason I'm volunteering).
+
+I am open to any positions. I think I'm a very personable person so I like =
+interesting with guests whether at the welcome center or as campground host=
+ but I'm just as willing to clean yurts and do maintenance (I've been enjoy=
+ing contributing to the infrastructure here at Tugman).
+
+Sam
+
+________________________________
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Monday, January 20, 2025 1:10:46 PM
+To: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov<mailto:Logan.BLISS@oprd=
+.oregon.gov>>
+Subject: Re: Hosting at Honeyman State Park
+
+Ah, perfect! Thank you so much!
+
+________________________________
+From: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov<mailto:Logan.BLISS@op=
+rd.oregon.gov>>
+Sent: Monday, January 20, 2025 1:08:49 PM
+To: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Subject: RE: Hosting at Honeyman State Park
+
+
+Hi Sam,
+
+
+
+Yes I have you on the schedule for March as well currently.  I've got you s=
+tarting in the Welcome center for February and then transferring over to yu=
+rt maintenance in March.
+
+
+
+Sorry I hadn't got that email with the orientations out yet, I got swept in=
+to other things going on last week and didn't get a chance to finish puttin=
+g the email together with orientation times and the schedule.
+
+
+
+[cid:image001.jpg@01DB6D89.38C31DE0]Logan Bliss | Volunteer Services Lead/R=
+anger 1
+
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+________________________
+
+Oregon Parks and Recreation Department
+
+84505 Highway 101
+
+Florence, OR 97439
+
+(541) 997-3851 Office
+
+(541) 999-5711 Cell
+
+(541) 997-4425 Fax
+
+https://stateparks.oregon.gov<https://stateparks.oregon.gov/>
+
+
+
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Sunday, January 19, 2025 1:21 PM
+To: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov<mailto:Logan.BLISS@oprd=
+.oregon.gov>>
+Subject: Re: Hosting at Honeyman State Park
+
+
+
+Hey Logan,
+
+
+
+So I'll be at Molalla River for April and May, which means I still have Mar=
+ch open - do you need me then?
+
+
+
+Thanks
+
+Sam
+
+
+
+________________________________
+
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Wednesday, January 8, 2025 4:04:46 PM
+To: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov<mailto:Logan.BLISS@oprd=
+.oregon.gov>>
+Subject: Re: Hosting at Honeyman State Park
+
+
+
+Thanks, Ranger Logan!
+
+Very excited for this posting. Really can't wait!
+
+Hope you have an awesome month - see you in February!
+
+
+
+________________________________
+
+From: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov<mailto:Logan.BLISS@op=
+rd.oregon.gov>>
+Sent: Wednesday, January 8, 2025 12:01:27 PM
+To: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Subject: Hosting at Honeyman State Park
+
+
+
+Hi Sam,
+
+
+
+I wanted to send you your confirmation email that I have you coming to Hone=
+yman State Park for February 2025 working at our Welcome Center.  I current=
+ly have you set to arrive at site 383 in our H loop area.
+
+
+
+[cid:image001.jpg@01DB6D89.38C31DE0]Logan Bliss | Volunteer Services Lead/R=
+anger 1
+
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+________________________
+
+Oregon Parks and Recreation Department
+
+84505 Highway 101
+
+Florence, OR 97439
+
+(541) 997-3851 Office
+
+(541) 999-5711 Cell
+
+(541) 997-4425 Fax
+
+https://stateparks.oregon.gov<https://stateparks.oregon.gov/>
+
+
+
+--_000_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+p.xxmsonormal, li.xxmsonormal, div.xxmsonormal
+	{mso-style-name:x_x_msonormal;
+	margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.xxxxmsonormal, li.xxxxmsonormal, div.xxxxmsonormal
+	{mso-style-name:x_x_xxmsonormal;
+	margin:0in;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle24
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Sam,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">So I have filled th=
+e May Welcome Center position just this morning, but I do still have a Site=
+ Maintenance position available for May if you are interested in that.&nbsp=
+;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">As for the open Ran=
+ger positions, what will be posted is going to be the entry level Seasonal =
+Ranger Assistant positions, which will not have the same level of requireme=
+nts as the full time Ranger positions,
+ so generally most of the Rangers, myself included, start off as Ranger Ass=
+istants that are hired seasonally for the busy summer months.&nbsp; It help=
+s you to get a grasp on how operations work from the park staff&#8217;s sid=
+e of things and helps to build those skills
+ that are essential for getting the full time Ranger Jobs.&nbsp; A job that=
+ is also posted as a &#8220;Seasonal Ranger&#8221; would mean it is still o=
+n the same level as a Full time Park Ranger, but they have a few months off=
+ during the calendar year, so it is still a higher-level
+ position than a Seasonal Ranger Assistant. <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">The Seasonal Ranger=
+ Assistant positions should be getting posted on the Workday website in the=
+ next week or so, so definitely keep an eye out for them.&nbsp; It would be=
+ under the Parks &amp; Recreation category, which
+ will then list the Park that has posted the Seasonal Assistant Positions.&=
+nbsp; <o:p>
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">If you were to get =
+a Ranger Assistant position it does complicate being a Park Host, as you ca=
+nnot do both at the same time, and would then have to find a different plac=
+e to reside as Park Staff are not given
+ campsites to live in like the Park Hosts.&nbsp; The Host site is part of t=
+he package of being a volunteer as it is an unpaid position, but if you wer=
+e to become a paid employee, such as a Ranger Assistant, then you will have=
+ to find your own place to reside outside
+ of the campground.&nbsp; You are still allowed to camp at the campground a=
+s a paid employee, but you would be just a regular visitor at that point an=
+d subject to all of the stay limits that we have for our regular guests (St=
+ate Parks have a 14 day stay limit for
+ our campers which does not apply to Park Hosts).<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hopefully that adds=
+ some clarity.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img width=3D"82" h=
+eight=3D"91" style=3D"width:.8541in;height:.9479in" id=3D"Picture_x0020_1" =
+src=3D"cid:image001.jpg@01DB6D89.38C31DE0"></span><b><i><span style=3D"font=
+-family:&quot;Cambria&quot;,serif;color:#007A37;letter-spacing:2.0pt">Logan
+ Bliss</span></i></b><b><span style=3D"font-size:10.0pt;color:#4F6228"> </s=
+pan></b><span style=3D"font-size:10.0pt;color:gray">|&nbsp;Volunteer Servic=
+es Lead/Ranger 1<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6">___=
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_____________________<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#348AA2;let=
+ter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><span s=
+tyle=3D"font-size:10.0pt;color:#348AA2;letter-spacing:1.0pt"><o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">84505 Hi=
+ghway 101<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">Florence=
+, OR 97439<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+7-3851 Office<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+9-5711 Cell<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+7-4425 Fax<u><o:p></o:p></u></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#0070C0"><a hr=
+ef=3D"https://stateparks.oregon.gov/"><span style=3D"color:#0070C0">https:/=
+/stateparks.oregon.gov</span></a><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Wednesday, January 22, 2025 4:33 PM<br>
+<b>To:</b> BLISS Logan * OPRD &lt;Logan.BLISS@oprd.oregon.gov&gt;<br>
+<b>Subject:</b> Re: Hosting at Honeyman State Park <o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal">Hi, Ranger Logan.<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Would it be possible to come back in May to work the=
+ welcome center again? Assuming the position is still open (just perusing t=
+he job board). I'll be at Umpqua in April (Franki found a spot for me) so I=
+'ll still be in the area.<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">The only caveat I would make to this is I'm going to=
+ try really hard to become a seasonal park ranger (as long as it's on the c=
+oast), if they'll have me. I am unclear on when those jobs are posted and f=
+illed so I just want to note this
+ in case it causes a conflict if I am fortunately hired. Because of the two=
+ year park service prerequisite, I'm unsure if I would get hired (it is the=
+ main reason I'm volunteering).<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">I am open to any positions. I think I'm a very perso=
+nable person so I like interesting with guests whether at the welcome cente=
+r or as campground host but I'm just as willing to clean yurts and do maint=
+enance (I've been enjoying contributing
+ to the infrastructure here at Tugman).<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Sam<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> Robert=
+ Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&gt=
+;<br>
+<b>Sent:</b> Monday, January 20, 2025 1:10:46 PM<br>
+<b>To:</b> BLISS Logan * OPRD &lt;<a href=3D"mailto:Logan.BLISS@oprd.oregon=
+.gov">Logan.BLISS@oprd.oregon.gov</a>&gt;<br>
+<b>Subject:</b> Re: Hosting at Honeyman State Park </span><o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"MsoNormal">Ah, perfect! Thank you so much!&nbsp;<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"x_divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> BLISS =
+Logan * OPRD &lt;<a href=3D"mailto:Logan.BLISS@oprd.oregon.gov">Logan.BLISS=
+@oprd.oregon.gov</a>&gt;<br>
+<b>Sent:</b> Monday, January 20, 2025 1:08:49 PM<br>
+<b>To:</b> Robert Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@r=
+swfire.com</a>&gt;<br>
+<b>Subject:</b> RE: Hosting at Honeyman State Park </span><o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">Hi Sam, </span><o=
+:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p=
+></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">Yes I have you on=
+ the schedule for March as well currently.&nbsp; I&#8217;ve got you startin=
+g in the Welcome center for February and then transferring over to yurt mai=
+ntenance in March.
+</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p=
+></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">Sorry I hadn&#821=
+7;t got that email with the orientations out yet, I got swept into other th=
+ings going on last week and didn&#8217;t get a chance to finish putting the=
+ email together with orientation times and the schedule.
+</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p=
+></o:p></p>
+<div>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt"><img border=3D"0"=
+ width=3D"82" height=3D"91" style=3D"width:.8541in;height:.9479in" id=3D"x_=
+x_Picture_x0020_1" src=3D"cid:image001.jpg@01DB6D89.38C31DE0"></span><b><i>=
+<span style=3D"font-family:&quot;Cambria&quot;,serif;color:#007A37;letter-s=
+pacing:2.0pt">Logan
+ Bliss</span></i></b><b><span style=3D"font-size:10.0pt;color:#4F6228"> </s=
+pan></b><span style=3D"font-size:10.0pt;color:gray">|&nbsp;Volunteer Servic=
+es Lead/Ranger 1</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6">_=
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_______________________</span></b><o:p></o:p></p>
+<p class=3D"xxmsonormal"><b><span style=3D"font-size:10.0pt;color:#348AA2;l=
+etter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><o:p>=
+</o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:gray">84505 =
+Highway 101</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:gray">Floren=
+ce, OR 97439</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541) =
+997-3851 Office</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541) =
+999-5711 Cell</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541) =
+997-4425 Fax</span><o:p></o:p></p>
+<p class=3D"xxmsonormal"><span style=3D"font-size:10.0pt;color:#0070C0"><a =
+href=3D"https://stateparks.oregon.gov/"><span style=3D"color:#0070C0">https=
+://stateparks.oregon.gov</span></a></span><o:p></o:p></p>
+</div>
+<p class=3D"xxmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p=
+></o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"xxmsonormal"><b><span style=3D"font-size:11.0pt;font-family:&qu=
+ot;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0p=
+t;font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;<a h=
+ref=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&gt;
+<br>
+<b>Sent:</b> Sunday, January 19, 2025 1:21 PM<br>
+<b>To:</b> BLISS Logan * OPRD &lt;<a href=3D"mailto:Logan.BLISS@oprd.oregon=
+.gov">Logan.BLISS@oprd.oregon.gov</a>&gt;<br>
+<b>Subject:</b> Re: Hosting at Honeyman State Park </span><o:p></o:p></p>
+</div>
+</div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+<div>
+<p class=3D"xxmsonormal">Hey Logan,&nbsp;<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">So I'll be at Molalla River for April and May, whi=
+ch means I still have March open - do you need me then?<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">Thanks<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">Sam<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"x_x_divRplyFwdMsg">
+<p class=3D"xxmsonormal"><b><span style=3D"font-size:11.0pt;font-family:&qu=
+ot;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"fon=
+t-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> Robe=
+rt Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&=
+gt;<br>
+<b>Sent:</b> Wednesday, January 8, 2025 4:04:46 PM<br>
+<b>To:</b> BLISS Logan * OPRD &lt;<a href=3D"mailto:Logan.BLISS@oprd.oregon=
+.gov">Logan.BLISS@oprd.oregon.gov</a>&gt;<br>
+<b>Subject:</b> Re: Hosting at Honeyman State Park </span><o:p></o:p></p>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"xxmsonormal">Thanks, Ranger Logan!<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">Very excited for this posting. Really can't wait!<=
+o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">Hope you have an awesome month - see you in Februa=
+ry!<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"x_x_x_divRplyFwdMsg">
+<p class=3D"xxmsonormal"><b><span style=3D"font-size:11.0pt;font-family:&qu=
+ot;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"fon=
+t-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> BLIS=
+S Logan * OPRD &lt;<a href=3D"mailto:Logan.BLISS@oprd.oregon.gov">Logan.BLI=
+SS@oprd.oregon.gov</a>&gt;<br>
+<b>Sent:</b> Wednesday, January 8, 2025 12:01:27 PM<br>
+<b>To:</b> Robert Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@r=
+swfire.com</a>&gt;<br>
+<b>Subject:</b> Hosting at Honeyman State Park </span><o:p></o:p></p>
+<div>
+<p class=3D"xxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"xxxxmsonormal">Hi Sam,<o:p></o:p></p>
+<p class=3D"xxxxmsonormal">&nbsp;<o:p></o:p></p>
+<p class=3D"xxxxmsonormal">I wanted to send you your confirmation email tha=
+t I have you coming to Honeyman State Park for February 2025 working at our=
+ Welcome Center.&nbsp; I currently have you set to arrive at site 383 in ou=
+r H loop area.
+<o:p></o:p></p>
+<p class=3D"xxxxmsonormal">&nbsp;<o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><img border=3D"0" width=3D"82" height=3D"91" sty=
+le=3D"width:.8541in;height:.9479in" id=3D"x_x_x_x_Picture_x0020_1" src=3D"c=
+id:image001.jpg@01DB6D89.38C31DE0"><b><i><span style=3D"font-size:12.0pt;fo=
+nt-family:&quot;Cambria&quot;,serif;color:#007A37;letter-spacing:2.0pt">Log=
+an
+ Bliss</span></i></b><b><span style=3D"font-size:10.0pt;color:#4F6228"> </s=
+pan></b><span style=3D"font-size:10.0pt;color:gray">|&nbsp;Volunteer Servic=
+es Lead/Ranger 1</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6"=
+>__________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_________________________</span></b><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><b><span style=3D"font-size:10.0pt;color:#348AA2=
+;letter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><o:=
+p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:gray">8450=
+5 Highway 101</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:gray">Flor=
+ence, OR 97439</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541=
+) 997-3851 Office</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541=
+) 999-5711 Cell</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:gray">(541=
+) 997-4425 Fax</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-size:10.0pt;color:#0070C0"><=
+a href=3D"https://stateparks.oregon.gov/"><span style=3D"color:#0070C0">htt=
+ps://stateparks.oregon.gov</span></a></span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_--
+
+--_004_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=3230;
+	creation-date="Thu, 23 Jan 2025 19:30:55 GMT";
+	modification-date="Thu, 23 Jan 2025 19:30:55 GMT"
+Content-ID: <image001.jpg@01DB6D89.38C31DE0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABbAFIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2UkKC
+WIAHJJ7Vn3esQW1u05ZFgXrPM4jiH/Aj1/AGm65fwWFjJNdHFvBG1xN/uIM4/E4H515jDZRalYxe
+IPFnn311ctvgtHJdIt5+SNI+hOMdfxqoxciZS5TpLn4k2EsjRaab7VZRxt022+QH3kfj8RVVvEPi
+e7ObXw7a26+uoX7SH8VWopNWlis7m1gsXsL1LZ5raKVVKSbRnjacZHGR15qlp2sGTU9LMeqXF3Dd
+krL5tsI4gSmVCsFHzZ4xk55rTkitzNzl0LzHxfNlmbw5CPRbN3x+JpAni5PmW48PSY7NYMP5VQ8O
+2sk4gnk024mdJ5Fa7kvSQNrsNwTd2x0xSiBb/TLnUrqK9uLnz5lH2efY1oqMwG0FgBgKCfXNPkjb
+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
+
+--_004_CO6PR09MB8294C11953B65FD1BE23148AB1E02CO6PR09MB8294namp_--

@@ -1,0 +1,507 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from MW4PR14MB5974.namprd14.prod.outlook.com (2603:10b6:303:220::13)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Thu, 2 Apr 2026
+ 20:23:45 +0000
+Received: from BN0PR04CA0132.namprd04.prod.outlook.com (2603:10b6:408:ed::17)
+ by MW4PR14MB5974.namprd14.prod.outlook.com (2603:10b6:303:220::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.19; Thu, 2 Apr
+ 2026 20:23:42 +0000
+Received: from BN1PEPF0000467F.namprd03.prod.outlook.com
+ (2603:10b6:408:ed:cafe::8e) by BN0PR04CA0132.outlook.office365.com
+ (2603:10b6:408:ed::17) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.18 via Frontend Transport; Thu,
+ 2 Apr 2026 20:23:42 +0000
+Authentication-Results: spf=pass (sender IP is 44.192.35.80)
+ smtp.mailfrom=fwdkim1.oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of fwdkim1.oprd.oregon.gov
+ designates 44.192.35.80 as permitted sender) receiver=protection.outlook.com;
+ client-ip=44.192.35.80; helo=mail-usn81.freshemail.io; pr=C
+Received: from mail-usn81.freshemail.io (44.192.35.80) by
+ BN1PEPF0000467F.mail.protection.outlook.com (10.167.243.84) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.17
+ via Frontend Transport; Thu, 2 Apr 2026 20:23:41 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1775161421;
+	s=to66a; d=oprd.oregon.gov;
+	h=MIME-Version:Date:From:Reply-To:To:Message-ID:In-Reply-To:References:Subject:Content-Type:Content-Transfer-Encoding;
+	bh=2C4D7SZAa0cENPNhxb1+JwoBm09aYz+lMPmhBpIkHVQ=;
+	b=bcb4rus1tqzfX+Jd9ugqjWzwVw75O9tGiaWUaIC7PL0/9PhPzLKPNwuGnGCiXaFr
+	809tbHSqJSjsdeYo0Ej8qRm9d9GCrEXjfCnzEw1X1yoYc81ywLi/FCnb2S7LOx9hOe1
+	0VgJBDEo+SKcLJfGm7+9UIMHSw7SHWSoBoh+kgmxmkiunJkvR7KOi/5eXMThRei5enp
+	MTW7fW+cNMY5GgwTGweiFtuqH6XctmFGojJMW/NqG5Q9Ij5cUbIhdXrS4yLvPSbmuOm
+	YyLDVeIMhVR9akqCkKudERKeQ8TpMVx/U1LTpSPb6lhfHLpD4Jy4vDg30cobPgY3dES
+	G7KoqOPl1w==
+Return-Path: bounces+us.1.1155212.334501-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov
+X-Received: from ip-172-16-117-21.ec2.internal (EHLO freshdesk.com) ([172.16.117.21])
+          by smtpout.freshdesk.com (Freshworks SMTP Server) with ESMTPA ID 7bf98466.
+          for <rsw@rswfire.com>;
+          Thu, 02 Apr 2026 20:23:40 +0000 (UTC)
+Date: Thu, 02 Apr 2026 20:23:40 +0000
+From: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+Reply-To: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+To: rsw@rswfire.com
+Message-ID: <69ced04c81123_1f2618f03731c.sidekiq-realtime-fd-poduseast1-main3-green-d5759dc85-df5b6@automation.freshdesk.com>
+In-Reply-To: <CH2PR14MB4181BDC03E009111C5D04450AD51A@CH2PR14MB4181.namprd14.prod.outlook.com>
+References: <CH2PR14MB4181BDC03E009111C5D04450AD51A@CH2PR14MB4181.namprd14.prod.outlook.com>,
+ <69ced04c81123_1f2618f03731c.sidekiq-realtime-fd-poduseast1-main3-green-d5759dc85-df5b6@automation.freshdesk.com>
+Subject: =?UTF-8?Q?Re:_Public_Records_Request_=E2=80=94_Law_Enforcement?=
+ =?UTF-8?Q?_Visit,_March_24,_2026,_82900_Highway_101,_Florence,_Oregon?=
+ =?UTF-8?Q?_=E2=80=94_Robert_Samuel_White?=
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_69ced04ca20d9_1f2618f03743c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+sent-on: 2026-04-02 13:23:40 -0700
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: DR, RN, OOF, AutoReply
+X-FUP-PRIORITY: 5
+X-SDS-INFO: 0cuUhLnIUKFbWO0tvHaEtwzj40MlNKSokTRYj20T6nNiTiEOuvzHAu4KzX8MiTiUK4sQmr-0MZ-uNM_-i5WKbo2IyszaJrYdS3aypQl7l9Sp2ahPg1pDq94PAzlnWxqim_oOzy_p09iCGBZhXDthUeDsxcXnVmBDrvvt9z2vsPQFDmaCeb4M2oZh-WsyalFz
+X-MESSAGEID: LZM9anrQQzpntlLdFy8yE6QJKDNI8131MCvI8aYF4gL4A+1aY+btx/5f1s7dghZYfQRnmgI/6UqoE8tUfkbagZfOat5KJqyQr4QuEyeKH9dO+MmZ8MzcB8fHvxTHipCr5eiG/V45EAuVfSX4qQvZ/p7g5eL4UTpB30J/EGmxs3k=
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Apr 2026 20:23:41.8933
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 86844eea-ab8a-4e41-135a-08de90f5bb6b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN1PEPF0000467F:EE_|MW4PR14MB5974:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: BN1PEPF0000467F.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 86844eea-ab8a-4e41-135a-08de90f5bb6b
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|22082099003|56012099003|19002099003|16102099003|8096899003;
+X-Forefront-Antispam-Report: CIP:44.192.35.80;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-usn81.freshemail.io;PTR:mail-usn81.freshemail.io;CAT:NONE;SFS:(13230040)(22082099003)(56012099003)(19002099003)(16102099003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Apr 2026 20:23:41.7293
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 86844eea-ab8a-4e41-135a-08de90f5bb6b
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BN1PEPF0000467F.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR14MB5974
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.5357977
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.009
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Zk9pNkk2RjNWZGp2R0VwVnpHZ1l0RGhNWjlOK1gxSjdLNE9JeEhCVThOc2NQ?=
+ =?utf-8?B?WU5WSzByWEFxejErTU9BUFJnZ3FZM2EvREVFMG1jSHhrUWlSQUlTc3NMNU5F?=
+ =?utf-8?B?SS9vZEFlakowdVBFRk5hZHg0dVpya0QzbVBuZnJSSlNpVEFsRnNjK3FPN09s?=
+ =?utf-8?B?VlN2cmZhQkVQUTZOOCtaSHlzc2JWUm1lN2VveC8xdUlUOUNOM1Zrb3NjOUwx?=
+ =?utf-8?B?MC9ISndYby9QWGZkb1NRb3FyZ05GbzI2bS9DZHZDa0hRb0NwQlM5UnNmSk9a?=
+ =?utf-8?B?QUZWclB1TE4ybG14S1ZZMlRoWERLMG5UUVdVbEQvNEVpSnY0ZGJ3dUJUQ251?=
+ =?utf-8?B?a1djOEVHNUEvYkMrQU5TelZNeWhWR2labXV1QkQ4L09tYjRVc0pHc3F1b3lH?=
+ =?utf-8?B?Njl3S05VN3BKWGpiZWQrTXl4Q3hEYlBFN1FmUG45UnZRSmZuQURlNU5DdG9N?=
+ =?utf-8?B?RlVpNENpLzg5YVpVMFN2SnRKL1ZhQlBYVFByQTJDWkRYQlZNSS80ajcrSlA0?=
+ =?utf-8?B?c05zb3JDTTFPaEJjM3BZdWxpaDJJWXo0V3Q1L0hjN2JsVnJaRHJPYVFxaldk?=
+ =?utf-8?B?ekpzUi9Yc0NtdEswZG5kK2hRZWtoNVd5cExOa0Y3OVl0blVzOTJBRlAwLzcz?=
+ =?utf-8?B?ek9sWDN4L0d5ZVhZamlTSkQ3OGNDWVlDSUN1cit5TXNtcGR2RDllS2VhYm5u?=
+ =?utf-8?B?Tm80ZStaMTU4M0tPdmhRYnVkMktibUtyNUVZci94UVlWUmNHZGpkMUtsaWI4?=
+ =?utf-8?B?ckQ2UGZqUWg5M041K042Ny9ucEdBR1l4ZVR6L1ExRGVLa3NSZmxTVFNVK3dl?=
+ =?utf-8?B?MnZHNVVJMkNqbWtjSFpZN3I2TU5rNkZ5a3ZZTmNHZWp3R093c0pRZjM0RjhB?=
+ =?utf-8?B?dHA2SEVrUmtQaGNYTlJJK1lMY3NQRzlDMXJoSnExbWoramlkdEJDck54czdG?=
+ =?utf-8?B?TXdQWWs0WSs5WTZpRUZ3bnh5UC9OaWg4a0ovRjlMWnhoYi9keU9sSkR3VjBO?=
+ =?utf-8?B?VHVxalpOdzBUeUVFL0xUR1JlbmxJZVZvMmhacGVDbFRVUjBXMWVKS1lXM1cw?=
+ =?utf-8?B?cjNwa081a09oa2p2SjVPaEtaSUlvUHM0N1pHeFJqYVZSUjl2M1I4ek5PTElz?=
+ =?utf-8?B?RU5yTlh1UjVqMStZdDQrOTVheC9ZbVNDVUhVRFFxVDY4SG9HRUxiVmROeWFK?=
+ =?utf-8?B?QlZTbmRRdzV5ekpHWGUxWlg3MktZM3B2d0x6SkxhTWpqbHFFeGwxN2l1NzVx?=
+ =?utf-8?B?c2R6b3hra3J4ZndjYk5vamNQQUN4Q0R1WEFOSy9Xek12ZDFMNlVVZVF3RWVm?=
+ =?utf-8?B?Y2U5eUhBdWdQNWVtVkdzL3RIUEROWCtmeEI0cm1JbVZtN08vUHFVQ1djVXJp?=
+ =?utf-8?B?VWZHSFB2K2ZLcGFQQjczNjdsTkt3YXNFMUEvT1lXQjBMK3l4N3pWL1RIMFVU?=
+ =?utf-8?B?NUhDamFGWTdQNzNEaXc1ZE5yWXN1VnZFWWMxRE9ZTjFyS1BvRzdJQlZ3dEZ0?=
+ =?utf-8?B?VHBaOWs3R2lMYTM2eWkwNVhJNkJxVGk4WG5NUzVmZTNVVEhwNjFmRUQrUHAy?=
+ =?utf-8?B?cXc4a1JIN2Evc2dNVGJoR0RTL2l4akJUQWNkWTVCcGF1OEZDTDJwN0lMc1l5?=
+ =?utf-8?B?c3M4dnhaYzdYc3pKMnVyL3pLYmdSbGtXUlFCSlA0WC9KVURiRTR2SVFlaitM?=
+ =?utf-8?B?alJEbzM0bXpnaVhTVUF6QTRFMEM0a08ySjRyVUNDbDQxbVk1UEhIMkRIcyth?=
+ =?utf-8?B?MnhnODV2TTBoUU5HOUZSZGhkRnFFU2RNNVB1eS9pd2FSOEFnTlRvcmdNUGJQ?=
+ =?utf-8?B?MWc0bUVmZXBDYjNvQlkxMnJreFBLdnFEc1RRQTJDdE1TbEFKYWxPaVl2dlcw?=
+ =?utf-8?B?WFhUL00xYW1nZUdyK08wZUpYZDlRaTk0YnRSNGp6Y1pPd3RtdlV0a0Q0Tlp5?=
+ =?utf-8?B?ZkFPQzR0VXVROXpzb3ZLTTRhNW5JTm9kQ2NibCtoOUZNaHRWNE1na1piaWRz?=
+ =?utf-8?B?TjNjNFJkWVlyeHRyaVI4UkN5aWVvMGxvbWZlcmhlcUdGaUxxQzE1NjFkWFVz?=
+ =?utf-8?B?VHp5ZlJaSnhQUXpQRWM4K3hpbFZDcnJCa0tFSWtQSWhwVnA4eWQ1UUtuSGJL?=
+ =?utf-8?B?N1ZRL2FVdENScGtmRjB3SGt6TE1FdFY5cFNkeUp5cDd1Z1V1MXdaWWpDOEow?=
+ =?utf-8?B?b0p3RHhVOWE1MjFYWnZsamFUK01Mcnp5ajYvcDFmY05objlzUWpxVkNscE45?=
+ =?utf-8?B?SmZqelEvTnRyZ0FodGFsNFhZK2hhWkFGUGFVV1p6VUZVMDgrNFJhTmZyZFFm?=
+ =?utf-8?B?eEUyQkh2NnZnOThrTWZnYkl6cmxhUTZXb2tielZWYzBCaUVBckYvbFpmVmNH?=
+ =?utf-8?B?K1ZlRmsveVZOTEsrNkJJbGhGTmphREUra0UyVXRubW5qWSt1N0JkMGlVNXZW?=
+ =?utf-8?B?MjU4MmN6SmJNbTFjV2RnckR5OEpCQ1pSS3J5RStkemFvUWwveUQxUWlucVI3?=
+ =?utf-8?B?NGxqRnVUVmFxZUlDdmVIQlpORCtQZVVFK1ZIenFFWlphRms1bERVYi9VK29B?=
+ =?utf-8?B?WFRNQzRlbWk0UzJjRWtJcldVa3A3WDRoVkFPeW1ObU1KRHlMUnB2UUtrdWl6?=
+ =?utf-8?B?NFViOFlMWjZkM0kxYXpqQWE4cm1FK2Y1ekVqWWNkbmVjTVk5YnZZQXcxYVZU?=
+ =?utf-8?B?cGZTMTZRTlhLb1h2ZXZzTmJhUFl0UkhHQ0diUldCOFJOWEwvK3BYK3JEOFMw?=
+ =?utf-8?B?S0cwUnJEem9kTHFMSTZxc0o0ajRsSjZlVUpxRWJHeHB5S0ROWnJDTVAyMFhD?=
+ =?utf-8?B?MHU3eW5lSjhNdi9kelFsR2s0UzRQTkc1cytuN3gyMDU1a1FrRTRCTFdMTjlV?=
+ =?utf-8?B?R3RHV05yNE0xTHhIdE5FR2VrWkFYb0dwMWJSYmR3UVRUa0RxOXcyRUJWR09Q?=
+ =?utf-8?B?T0pkcThLRzZvaDlTU3g5RmFDQU5QcXQzTFNoamZEWGFtdC80UzlYcTcxLzkz?=
+ =?utf-8?B?SkIwUWpDTFBzVWpub1MxRThlWEF1TmtiaFdwMUxLZUtxOUw2Tk90S0NoUzdP?=
+ =?utf-8?B?U3ZmK1IvT09LcHJOK1d4N2NYQkZHdWMwb0YrWThDZU4zM0NGYWFLUjVVMmJ0?=
+ =?utf-8?B?ZEx0UWdMUG92ODN3QzRaSmhybWF1Q2ZZb1FPcXNGb0xWcGdJZ3dwVWIzdGVy?=
+ =?utf-8?B?SnphOG5FRkM0V1pjR0Y3K2t1eGhFaDFBbWU5RkpDUnc2Z1ZzQkVuZFdEaFda?=
+ =?utf-8?B?NTdQc2JmdThXM0V5aVAxNURBK0NxV0VocUhTOEp3eDYvNC9iTW41MUpiQ1Mz?=
+ =?utf-8?B?TEJiQ2ZIcEpUemFXZEVET29FekRpbXBpaFRvQjFsQy9KVXJXVmZrd1pwY09l?=
+ =?utf-8?B?MFIvWDhvWlVXbVpKNG9vRmw3REVDRmxHUzJ1anMxN0lEUFd2YjdLS0RuakI4?=
+ =?utf-8?B?MXlVU0huWE1JeU82Q3hORWhLOTRoeGRIWHYvSVNrcVovNi9KWDExcFBuSGI1?=
+ =?utf-8?B?NlNwK3hROGxiOUE0ekF5Q3c9PQ==?=
+MIME-Version: 1.0
+
+----==_mimepart_69ced04ca20d9_1f2618f03743c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD).  =C2=A0  Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.  =C2=A0  Thank you,  Oregon Parks and Recreation Department =
+=C2=A0     =0D
+                           =0D
+                            On=0D
+                            Thu, 2 Apr at  1:23 PM=0D
+                            ,  Robert Samuel White <rsw@rswfire.com>  wro=
+te:=0D
+                           =0D
+                           =0D
+                             =0D
+OREGON PARKS AND RECREATION DEPARTMENT =0D
+ =0D
+Public Records Request =0D
+ =0D
+Pursuant to ORS 192.311 et seq. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+To Whom It May Concern, =0D
+ =0D
+ =0D
+ =0D
+ =0D
+I am submitting this public records request as a supplement to my previou=
+s public records request submitted on August 22, 2025. I am requesting al=
+l records generated from August 22, 2025 to present that were not produce=
+d in response to that request, as well=0D
+ as the following specific records related to a new incident. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+On March 24, 2026 =E2=80=94 the one-year anniversary of my dismissal from=
+ Honeyman State Park =E2=80=94 three law enforcement officers arrived at =
+my residence at the Siltcoos Work Center, U.S. Forest Service, located at=
+ 82900 Highway 101, Florence, Oregon 97439. One of those=0D
+ officers was U.S. Forest Service Special Agent Matthew Oliver. The state=
+d reason for the visit was concern about content I had posted online. Tha=
+t content is the public archive at oprdvolunteerabuse.org, which document=
+s my treatment as a volunteer at Honeyman=0D
+ State Park and the subsequent institutional response. Oregon plate 731 Q=
+RV was recorded on camera at the scene. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+I am requesting the following records: =0D
+ =0D
+ =0D
+ =0D
+ =0D
+All communications between any OPRD employee or official and U.S. Forest =
+Service Special Agent Matthew Oliver or any other Forest Service employee=
+, from January 1, 2025 to present. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+All communications between any OPRD employee or official and any Oregon S=
+tate Police officer or official referencing my name, my volunteer service=
+, or my online archive, from January 1, 2025 to present. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+All communications between any OPRD employee or official and any Lane Cou=
+nty Sheriff's Office employee referencing my name, my volunteer service, =
+or my online archive, from January 1, 2025 to present. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+All internal communications referencing my name (Robert Samuel White), my=
+ online archive, or the domain oprdvolunteerabuse.org from August 22, 202=
+5 to present. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+All records related to any coordination, consultation, or communication b=
+etween OPRD and any law enforcement agency in connection with my online a=
+rchive or public statements. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+Oregon public records law requires a response within five business days. =
+My previous request was met with a 90-day silence that constituted a viol=
+ation of ORS 192.324. I expect full compliance with the statutory timelin=
+e. If any records are withheld, please=0D
+ provide a written explanation citing the specific statutory exemption cl=
+aimed for each withheld record. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+I am requesting a fee waiver on the grounds that this request serves the =
+public interest and will contribute to public understanding of how a stat=
+e agency coordinates with law enforcement in response to a citizen's prot=
+ected speech. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+Robert Samuel White =0D
+ =0D
+P.O. Box 334 =0D
+ =0D
+Reedsport, Oregon 97467 =0D
+ =0D
+Phone: 458-230-1869 =0D
+ =0D
+rsw@rswfire.com =0D
+ =0D
+ =0D
+ =0D
+ =0D
+ =0D
+ =0D
+ =0D
+=0D
+=0D
+=0D
+                           =0D
+                         =
+
+----==_mimepart_69ced04ca20d9_1f2618f03743c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv style=3D"font-family:verdana, arial, sans-serif; font-size:15px;">=0D
+	<div><span data-teams=3D"true"><div>Thank you for submitting your public r=
+ecords request to the Oregon Parks and Recreation Department (<span class=
+=3D"caps">OPRD</span>).</div><div>&nbsp;</div><div>Expect to hear back from=
+ us in about 10 business days with any records that match your request or, =
+for larger requests, with an estimate for staff time and costs to gather th=
+e documents.</div><div>&nbsp;</div><div>Thank you,</div><div>Oregon Parks a=
+nd Recreation Department &nbsp;</div><p></span></div></p><div class=3D"fres=
+hdesk_quote">=0D
+                          <div class=3D"freshdesk_attr">=0D
+                            On=0D
+                            Thu, 2 Apr at  1:23 PM=0D
+                            <span class=3D"separator">,  Robert Samuel Whit=
+e &lt;rsw@rswfire.com&gt;  wrote:=0D
+                          </div>=0D
+                          <blockquote class=3D"freshdesk_quote" style=3D"ma=
+rgin:0 0 0 .8ex;border-left:1px solid #ccc;padding-left:1ex">=0D
+                            <div style=3D"font-family: Aptos, Aptos_MSFontS=
+ervice, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12p=
+t; color: rgb(0, 0, 0)" dir=3D"auto">=0D
+OREGON PARKS AND RECREATION DEPARTMENT</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Public Records Request</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Pursuant to ORS 192.311 et seq.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+To Whom It May Concern,</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+I am submitting this public records request as a supplement to my previous =
+public records request submitted on August 22, 2025. I am requesting all re=
+cords generated from August 22, 2025 to present that were not produced in r=
+esponse to that request, as well=0D
+ as the following specific records related to a new incident.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+On March 24, 2026 =E2=80=94 the one-year anniversary of my dismissal from H=
+oneyman State Park =E2=80=94 three law enforcement officers arrived at my r=
+esidence at the Siltcoos Work Center, U.S. Forest Service, located at 82900=
+ Highway 101, Florence, Oregon 97439. One of those=0D
+ officers was U.S. Forest Service Special Agent Matthew Oliver. The stated =
+reason for the visit was concern about content I had posted online. That co=
+ntent is the public archive at oprdvolunteerabuse.org, which documents my t=
+reatment as a volunteer at Honeyman=0D
+ State Park and the subsequent institutional response. Oregon plate 731 QRV=
+ was recorded on camera at the scene.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+I am requesting the following records:</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+All communications between any OPRD employee or official and U.S. Forest Se=
+rvice Special Agent Matthew Oliver or any other Forest Service employee, fr=
+om January 1, 2025 to present.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+All communications between any OPRD employee or official and any Oregon Sta=
+te Police officer or official referencing my name, my volunteer service, or=
+ my online archive, from January 1, 2025 to present.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+All communications between any OPRD employee or official and any Lane Count=
+y Sheriff's Office employee referencing my name, my volunteer service, or m=
+y online archive, from January 1, 2025 to present.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+All internal communications referencing my name (Robert Samuel White), my o=
+nline archive, or the domain oprdvolunteerabuse.org from August 22, 2025 to=
+ present.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+All records related to any coordination, consultation, or communication bet=
+ween OPRD and any law enforcement agency in connection with my online archi=
+ve or public statements.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Oregon public records law requires a response within five business days. My=
+ previous request was met with a 90-day silence that constituted a violatio=
+n of ORS 192.324. I expect full compliance with the statutory timeline. If =
+any records are withheld, please=0D
+ provide a written explanation citing the specific statutory exemption clai=
+med for each withheld record.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+I am requesting a fee waiver on the grounds that this request serves the pu=
+blic interest and will contribute to public understanding of how a state ag=
+ency coordinates with law enforcement in response to a citizen's protected =
+speech.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Robert Samuel White</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+P.O. Box 334</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Reedsport, Oregon 97467</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+Phone: 458-230-1869</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" dir=
+=3D"auto">=0D
+rsw@rswfire.com</div>=0D
+<div id=3D"ms-outlook-mobile-body-separator-line" style=3D"font-family: Apt=
+os, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-seri=
+f; font-size: 12pt">=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt">=0D
+<br>=0D
+</div>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt" id=3D"ms-outlook-mobile-s=
+ignature">=0D
+</div>=0D
+=0D
+=0D
+=0D
+                          </blockquote>=0D
+                        </div>=0D
+<br>=0D
+=0D
+=0D
+=0D
+=0D
+<span title=3D"fd_tkt_identifier" style=3D"font-size:0px; font-family:&quot=
+;fdtktid&quot;; min-height:0px; height:0px; opacity:0; max-height:0px; line=
+-height:0px; color:#ffffff">334501:1155212</span>=0D
+=0D
+</div>=
+
+----==_mimepart_69ced04ca20d9_1f2618f03743c--

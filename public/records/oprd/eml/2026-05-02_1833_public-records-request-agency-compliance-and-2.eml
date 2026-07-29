@@ -1,0 +1,364 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BN8PR14MB3505.namprd14.prod.outlook.com (2603:10b6:408:7c::7)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Sun, 3 May 2026
+ 01:33:49 +0000
+Received: from BN0PR03CA0014.namprd03.prod.outlook.com (2603:10b6:408:e6::19)
+ by BN8PR14MB3505.namprd14.prod.outlook.com (2603:10b6:408:7c::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.24; Sun, 3 May
+ 2026 01:33:48 +0000
+Received: from BN3PEPF0000B071.namprd04.prod.outlook.com
+ (2603:10b6:408:e6:cafe::30) by BN0PR03CA0014.outlook.office365.com
+ (2603:10b6:408:e6::19) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9870.24 via Frontend Transport; Sun,
+ 3 May 2026 01:33:48 +0000
+Authentication-Results: spf=pass (sender IP is 44.192.35.81)
+ smtp.mailfrom=fwdkim1.oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of fwdkim1.oprd.oregon.gov
+ designates 44.192.35.81 as permitted sender) receiver=protection.outlook.com;
+ client-ip=44.192.35.81; helo=mail-usn82.freshemail.io; pr=C
+Received: from mail-usn82.freshemail.io (44.192.35.81) by
+ BN3PEPF0000B071.mail.protection.outlook.com (10.167.243.116) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.9
+ via Frontend Transport; Sun, 3 May 2026 01:33:47 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1777772027;
+	s=to66a; d=oprd.oregon.gov;
+	h=MIME-Version:Date:From:Reply-To:To:Message-ID:In-Reply-To:References:Subject:Content-Type:Content-Transfer-Encoding;
+	bh=mhM5Uj0LQhbe4RS2K2XuXYa4OLxLNvvwma9cbsHrB+A=;
+	b=ROzrYvE85k57rWH9nAWAlfY01HgpDRAsWb4O6yaFykLRzW4wWnFSoAxcE59ZskxX
+	BRM9meHyBYx/Lo+S0X6lfq0jRAqWYRZSwBTczlllFUYnK9T0hcXWR9ghCTNmERMjlgb
+	PryfUYFlR8ur3UuVy9ani3F4+MwoTvFQJ+b0rBraq8UNiTgzeiRJ7ApBFonkTGolvZy
+	KGxI3n+4uVYjaiQPSm/8LIVXEfdw5EdeRK9G5ToTMT6TFf59YTKecctmt0bxvP9/9Pk
+	pMk+UouI2i15c4VuwKw/apGg5WwrptrwfdWdOoZwaMrKZadKzgDUOnZ25aOslk5xMnw
+	gJo0VSvI7A==
+Return-Path: bounces+us.1.1155212.340083-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov
+X-Received: from ip-172-16-29-159.ec2.internal (EHLO freshdesk.com) ([172.16.29.159])
+          by smtpout.freshdesk.com (Freshworks SMTP Server) with ESMTPA ID 8ab637c7.
+          for <rsw@rswfire.com>;
+          Sun, 03 May 2026 01:33:45 +0000 (UTC)
+Date: Sun, 03 May 2026 01:33:45 +0000
+From: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+Reply-To: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+To: rsw@rswfire.com
+Message-ID: <69f6a5f98fd7f_1ce6306093598d.sidekiq-realtime-fd-poduseast1-main3-blue-5d75cf98b-gdqwh@automation.freshdesk.com>
+In-Reply-To: <CH2PR14MB41814FE181E68882351CCC16AD302@CH2PR14MB4181.namprd14.prod.outlook.com>
+References: <CH2PR14MB41814FE181E68882351CCC16AD302@CH2PR14MB4181.namprd14.prod.outlook.com>,
+ <69f6a5f98fd7f_1ce6306093598d.sidekiq-realtime-fd-poduseast1-main3-blue-5d75cf98b-gdqwh@automation.freshdesk.com>
+Subject: =?UTF-8?Q?Re:_Public_Records_Request_=E2=80=94_Agency_Compliance?=
+ =?UTF-8?Q?_and_Executive_Involvement_in_PRR_Processing,_January_1,_2023_to?=
+ =?UTF-8?Q?_Present?=
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_69f6a5f9ad03b_1ce63060936091";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+sent-on: 2026-05-02 18:33:45 -0700
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: DR, RN, OOF, AutoReply
+X-FUP-PRIORITY: 5
+X-SDS-INFO: 0cuUhLnIUKFbWO0tvHaEtzAau8vVnr0FlNmp1mFAp_Gj-46gMZfXp_RtLfWNhjYJKSTiq-L1rZwVvqBVXZ54Dr_u3WoBNniTlhAjPn-hjqxxWMwMXTu74Hlhc6x3F5ByroLvZaR3X06Na6HfI6ps0ODsxcXnVmBDrvvt9z2vsPQFDmaCeb4M2oZh-WsyalFz
+X-MESSAGEID: LZM9anrQQzpntlLdFy8yE6fA8SItS2gw3XsJxeZfYAxV9KTWb3GF4/yfxpROAwtkjXzdFBKMKzCBEmwVPtIuKHrPz+eZav1ZKi4yRSPFVLG8Dv54GnOaaVMuiYr63K/9W+2a5UGZJ/0k7z3VLnczNVXg9KHTpEvCmPLMaKiQxHs=
+X-MS-Exchange-Organization-ExpirationStartTime: 03 May 2026 01:33:47.2836
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: b9c3887b-e3f3-47b8-d6f8-08dea8b4057c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN3PEPF0000B071:EE_|BN8PR14MB3505:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: BN3PEPF0000B071.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b9c3887b-e3f3-47b8-d6f8-08dea8b4057c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704160611799003|8096899003|22082099003|19002099003|16102099003|56012099003;
+X-Forefront-Antispam-Report: CIP:44.192.35.81;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-usn82.freshemail.io;PTR:mail-usn82.freshemail.io;CAT:NONE;SFS:(13230040)(704160611799003)(8096899003)(22082099003)(19002099003)(16102099003)(56012099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 May 2026 01:33:47.1028
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b9c3887b-e3f3-47b8-d6f8-08dea8b4057c
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BN3PEPF0000B071.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR14MB3505
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5805583
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9870.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?blRxbGV3VXo5RDhyZk9JZHBxMENSK2hROGhBbUlJNXNXOHBpQ0VXcVp6WE8y?=
+ =?utf-8?B?ZnVNQkhSc0QyWnFNejY4ZGUxTEg2cEMyZzhsOFljY3piV3kzMHA4RUhTNURy?=
+ =?utf-8?B?TlY5S2NMYmF1K0dKZncrcEF5YzFDeXk3Q1hIdDY3SER2N1dRNWQ4VFBKUk9z?=
+ =?utf-8?B?bGVFK2htVzBsN2RvcXpYU29KcXBBNTY4MVp0bWdqWDUzZkpxOURTN3hmZCs5?=
+ =?utf-8?B?L1pucDJCNVF1dndHb0N2NDkxUGJ2R2k0WU9ISU9aelVzRGUxT3Z4eDJzcXU0?=
+ =?utf-8?B?WlhpSkhBNHh4aGpzV1RJb2kyS2xVb3N4Mk5wUVY3N3BaektxL2U2Zk1oVG02?=
+ =?utf-8?B?cEdOdmNqUGNDR3BxSjhZbDdsQ21TWit3QzY1NlJ1YnlRUFk2Rk14U1JBMXpu?=
+ =?utf-8?B?LzNKUHVud09FYTRqUDFXUlJNYittcitjd2FRNkxVTE8yZld2NWl3cVlxdGdF?=
+ =?utf-8?B?UzFrYktuVjdhZjFDTXlPYmo4N1c3cG9TZXppY0NnRWRHbGxGQ0FLZXk2dHZV?=
+ =?utf-8?B?VzNVc1NmaDV5TGZJZjRyR3ZESXBRZXVSeHFUVFR2cGJPdnlrMWtBUFI0emV1?=
+ =?utf-8?B?WkVJUTc2ZGV4MUVibjJuQ3V2VGpXMG5wZm9WL1FkRURLZUExOXpXTlV0Mk5S?=
+ =?utf-8?B?WCtmZ2pFQ0VhbUhtQm9Fb29pV3BhWVFsTTIxTElVT1U3Y1dJV0QzS3I1UUtK?=
+ =?utf-8?B?L1V2MXI2cm84MzVMQWlZSTlZSUhLSXNNRHRMc3Zkc21HT3ovcUJ1ZUg3NFY2?=
+ =?utf-8?B?Qlh4QnJ4ajUwVTJBK3N2bjFqQVYzY0U1TTRrY0dQRUZRSnpaWGk3ak1IMkxD?=
+ =?utf-8?B?MkR3WDNsQmpuMk95ZW9xZTZSYXZ0Q3J4ckR4UWhmQlhnU0c5NEU2dk5tdGtE?=
+ =?utf-8?B?YytHU0xlVnQ5dkdtM3RaVVEvWHFZTjRXTlk0QzhodmRkWjh3SE5HWnAvOEhu?=
+ =?utf-8?B?Nmp2aDFVODhUdWg5YW9CUGVKSzcraGU1Q2VJRVhHK0hnQjArRkhCZkQ2Rzha?=
+ =?utf-8?B?VmVNUVVpQ01mQU5lemF5T011UVpqVGtXSExaZGsraVZwQTdVTzZ0eXhCVU9F?=
+ =?utf-8?B?K0NwSnBQWUdhWnRhaXVFLzBPdjloOGF5YlhMVXdMU1hpSWdrMG9HNlRsendO?=
+ =?utf-8?B?R01rUEpqMXZWNE8vb1BTbi9MM0hSR0NOaEtKT3ZxQkJ1VkJPNG9IeWwzSFVB?=
+ =?utf-8?B?SXFldXVXcy9GL0JXcm1jSnNKQVhrVGhUQjlQcG1ZRGFlbDRkREFXekdjRHRx?=
+ =?utf-8?B?NXhwcFZwaVMweHJPM081K0lGMkMyQ0czMTBiOEhJWUpDazRlalQyY2lGdUdK?=
+ =?utf-8?B?RWFTNVg0djZWQVd2Y2lNTEwrbHNDdDJVL3lmZUpSQkdDNVlqVGhCbXozOCs5?=
+ =?utf-8?B?Ym03T0NBZ2dRM1M1bC9vMXlGSThXS3hLalJvOURnWUI5QnVacm9sc2Jhb3Vw?=
+ =?utf-8?B?MUFTSlBHbkJHSC9CaTRQY2VkK1ZzbWRTZU1paDZCT3VpN1VncjluQU1BbWFS?=
+ =?utf-8?B?c1BvekhXQXhaVFVRTW9uOXBVUVlkSU5wNlo3OXlzZ0JwRzVSejRlSlhndk94?=
+ =?utf-8?B?WXptTmhtN255YVJBODZzT1dIYTFtZUR6cEJjbTZVekVwbzBIUEE3T2hieGd6?=
+ =?utf-8?B?Qjd4MkZud1g0enJBd0VXQmd5MVJKcWJ1WGkvd1JhcURNWHVMOHNZekZnNElS?=
+ =?utf-8?B?ZnQxRzNuUGUxaG9wL3NzTzBOTTc5amtEVWx4dlJBbFM1OFhYZFM2cHk3dGZa?=
+ =?utf-8?B?a2JBNnZvdW92ZWh0WjM1NTIxYk5HUllLalRSZGluZGV5WlR2d0dCbU5iWTFY?=
+ =?utf-8?B?NWdiR1huTFNYcnZlV3NJbUExZHBtL01CdnFYRkp5RWtoY2c2eHE3VGZBNUZT?=
+ =?utf-8?B?STQ1Wk9WQ21iemlITHFrbEZUb2hFai9pd3FTTUhOQ2xVMU0yRmdFbjllUGgw?=
+ =?utf-8?B?aXdaSE11UFlaUGpvRnZENCs4TVErSFMvMGc5UU5tVWg5VVliMFhSTGw2bEdz?=
+ =?utf-8?B?QjEvQS92MytXWHNqK2djVXRiMkdoZmZGcXlPR3BqYUdLMy9xNE54TnNoVkJz?=
+ =?utf-8?B?aHYrTXNGZEtOQWZvcmtBWjRYTmFsdEtXLzJ6UGQ1c0diWFEyNFFkaXZlNVpx?=
+ =?utf-8?B?dHpXUS9HbnROZkZwMUs0UGN6SEIrdHZyb2o1VDc3cDJSUmpZNEFlSFp6VXFZ?=
+ =?utf-8?B?SDZEUjFqeEZYR2U0WlAyZ0w4V2dCSjBYcmJZaGFyWVBVOVp0ZllMRGlEd0lr?=
+ =?utf-8?B?YS9SdDBmclJNNVhuQVJJY3VYRE5Rd2QxcXVQc2xJRFFzOUJOcWNwbUhIV21m?=
+ =?utf-8?B?OWEwR3AxQzF2bGtFVmhtZ0tnK1ZIUzNiSTl6UVNWV0FidmV2R1RsRGFiQ2Zy?=
+ =?utf-8?B?WHowNlBRbndtWHNBMm5qRk4wU1hJRWVSa0pKY2QwK0ZLYjNBY0c1Wjkra2pi?=
+ =?utf-8?B?a1pvUmtMZ3dJa1VvM1ZPaXFFanpPNGZuK2tGaGhQMFlqUll1S0J4cmczL3Zo?=
+ =?utf-8?B?OHptMUVpNm1KZVIzNjNwdTU4ZUN5SEZxM0EzUmJZRlo0QjZoWHZnNTdSMURY?=
+ =?utf-8?B?V2EvdmxURTFjWHN2Y1E2cVI1MGdRR0k5RmJMNHN2Y1ErbzZPYnN2WGphb1pG?=
+ =?utf-8?B?ZVA1OXVNTkdkZk1aUnZKV29UTFkySTBWOUw4dGpWbHRYT3IxdnlzNFZUeDhy?=
+ =?utf-8?B?YlMwOUtIWXQwVGxJZG4xSWo2UXJMSitHQVFEZlF4VzEvRkp1aUxtWW5BcmNu?=
+ =?utf-8?B?czFIRjd6OFc3NFJNRmQ2MDNTKy91b25iRGNFeEFnaHlXOUVsY3lxb29Vd0Iy?=
+ =?utf-8?B?djZTcHNESWFHYnIrcHAxQitNdEJ2clRNM0F6VnFEa05wTXNDK2lDWUVuKzdr?=
+ =?utf-8?B?S3R1dTRZd3ZNc0pEcFlCYmFqM1JEZ0pRRlp0MlR0WWxPN1dHNnRqcVhtdVpZ?=
+ =?utf-8?B?aFlreVF3YmxyZURjaVVwVWlpRDdhZDhGcmdHdkhaK2x4NXN2bTRuMHFGL291?=
+ =?utf-8?B?SWtoempJS3NXYXkxbXU4MlhQWFM3U2dBSVdGanZHVHk4TXBEY1orakRHK25P?=
+ =?utf-8?B?KzdUUW9DS1BwOG11Z0g3cm1vSnd0M0p6cWtZeDF0K0prQmZyblQxckFPdGUr?=
+ =?utf-8?B?Y0tMdW95L1p1TmNrVU5ucS9wTTBTRWVUWjcwVElib1B1ZWZhZ3ZCWnIxVlo1?=
+ =?utf-8?B?VHlJNkZrWjN3a2o1bzFzT3YvZXVjbDBnZ1A5RjBxVGJ0OVBYNDhnZzlyazNJ?=
+ =?utf-8?B?ODArSXgyMjJYengrSzZLOE1rcFhDT3pEQTdwZFIxckEweEFaRFQ0emVWc1lH?=
+ =?utf-8?B?VzJKZnBtS0Q4dlFyNFQ1SWx2Q2h2MkEzR3pZUVBQMC92SWxocHNWUkExcGpJ?=
+ =?utf-8?B?L0ZpdDBCbzJMNVNuanZOanUxa0dvSmFodmNPeW9abVlEcWlwYm55Z0h1VG5X?=
+ =?utf-8?Q?LPJBZlXx42083O7tFtHX0iMxADAvbqwzxCs5c6TF?=
+MIME-Version: 1.0
+
+----==_mimepart_69f6a5f9ad03b_1ce63060936091
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD).  =C2=A0  Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.  =C2=A0  Thank you,  Oregon Parks and Recreation Department =
+=C2=A0     =0D
+                           =0D
+                            On=0D
+                            Sat, 2 May at  6:33 PM=0D
+                            ,  Robert Samuel White <rsw@rswfire.com>  wro=
+te:=0D
+                           =0D
+                           =0D
+                             =0D
+ To Whom It May Concern, =0D
+ =C2=A0 =0D
+ Pursuant to ORS 192.311 et seq., I am requesting the following records: =
+=0D
+ =C2=A0 =0D
+ All public records requests received by the Oregon Parks and Recreation =
+Department from January 1, 2023 to present, including for each: the date =
+received, the date of agency response, the method of production (electron=
+ic or physical mail),=0D
+ whether a fee was assessed, whether a fee waiver was requested, whether =
+a fee waiver was granted, and whether the request was fulfilled in whole,=
+ in part, or denied. =0D
+ =C2=A0 =0D
+ All written policies, procedures, or guidelines governing the agency's r=
+esponse to public records requests, including any internal guidance on pr=
+oduction format, fee assessment, and timeline compliance. =0D
+ =C2=A0 =0D
+ All records reflecting instances where the agency missed the statutory f=
+ive-business-day response deadline under ORS 192.324, from January 1, 202=
+3 to present. =0D
+ =C2=A0 =0D
+ All records reflecting the involvement of the OPRD Director, OPRD Interi=
+m Director, or OPRD Deputy Director in the review, approval, or direction=
+ of responses to public records requests from January 1, 2023 to present,=
+ including any communications=0D
+ in which executive staff directed the content, timing, or format of a re=
+sponse. =0D
+ =C2=A0 =0D
+ All records reflecting communications between OPRD legal counsel and exe=
+cutive staff regarding public records requests, including any guidance on=
+ withholding, delaying, or limiting production of records. =0D
+ =C2=A0 =0D
+ All records reflecting instances where OPRD legal counsel reviewed a pub=
+lic records request prior to response, from January 1, 2023 to present. =0D=
+
+ =C2=A0 =0D
+ I request that responsive records be produced on a rolling basis as they=
+ are identified rather than held until the request is fully processed. =0D=
+
+ =C2=A0 =0D
+ Please be advised that I expect all records potentially responsive to th=
+is request to be preserved immediately. Any destruction, deletion, modifi=
+cation, or alteration of responsive records following receipt of this req=
+uest may constitute=0D
+ spoliation and will be treated accordingly. =0D
+ =C2=A0 =0D
+ If any record or portion of a record is withheld, I require the followin=
+g for each withheld item: the specific statutory exemption claimed, the d=
+ate of the record, the author, and all recipients. A blanket exemption cl=
+aim is insufficient=0D
+ and will not be accepted as compliance. =0D
+ =C2=A0 =0D
+ I am requesting a fee waiver on the grounds that this request serves the=
+ public interest by enabling public oversight of agency compliance with O=
+regon public records law. This request is not commercial in nature. Respo=
+nsive records will=0D
+ be used to inform and supplement a public archive documenting institutio=
+nal conduct, accessible at oprdvolunteerabuse.org. Public access to this =
+information advances transparency and accountability in government. =0D
+ =C2=A0 =0D
+ I am further requesting that all responsive records be produced electron=
+ically in PDF or equivalent digital format and delivered to rsw@rswfire.c=
+om. =0D
+ =C2=A0 =0D
+ Please confirm receipt of this request in writing within the statutory f=
+ive-business-day window pursuant to ORS 192.324. =0D
+ =C2=A0 =0D
+ Robert Samuel White =0D
+ P.O. Box 334 =0D
+ Reedsport, Oregon 97467 =0D
+ rsw@rswfire.com =0D
+ =0D
+=0D
+=0D
+=0D
+                           =0D
+                         =
+
+----==_mimepart_69f6a5f9ad03b_1ce63060936091
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv style=3D"font-family:verdana, arial, sans-serif; font-size:15px;">=0D
+	<div><span data-teams=3D"true"><div>Thank you for submitting your public r=
+ecords request to the Oregon Parks and Recreation Department (<span class=
+=3D"caps">OPRD</span>).</div><div>&nbsp;</div><div>Expect to hear back from=
+ us in about 10 business days with any records that match your request or, =
+for larger requests, with an estimate for staff time and costs to gather th=
+e documents.</div><div>&nbsp;</div><div>Thank you,</div><div>Oregon Parks a=
+nd Recreation Department &nbsp;</div><p></span></div></p><div class=3D"fres=
+hdesk_quote">=0D
+                          <div class=3D"freshdesk_attr">=0D
+                            On=0D
+                            Sat, 2 May at  6:33 PM=0D
+                            <span class=3D"separator">,  Robert Samuel Whit=
+e &lt;rsw@rswfire.com&gt;  wrote:=0D
+                          </div>=0D
+                          <blockquote class=3D"freshdesk_quote" style=3D"ma=
+rgin:0 0 0 .8ex;border-left:1px solid #ccc;padding-left:1ex">=0D
+                            <div class=3D"WordSection1">=0D
+<div class=3D"MsoNormal">To Whom It May Concern,</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">Pursuant to ORS 192.311 et seq., I am requesting t=
+he following records:</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All public records requests received by the Oregon=
+ Parks and Recreation Department from January 1, 2023 to present, including=
+ for each: the date received, the date of agency response, the method of pr=
+oduction (electronic or physical mail),=0D
+ whether a fee was assessed, whether a fee waiver was requested, whether a =
+fee waiver was granted, and whether the request was fulfilled in whole, in =
+part, or denied.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All written policies, procedures, or guidelines go=
+verning the agency's response to public records requests, including any int=
+ernal guidance on production format, fee assessment, and timeline complianc=
+e.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All records reflecting instances where the agency =
+missed the statutory five-business-day response deadline under ORS 192.324,=
+ from January 1, 2023 to present.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All records reflecting the involvement of the OPRD=
+ Director, OPRD Interim Director, or OPRD Deputy Director in the review, ap=
+proval, or direction of responses to public records requests from January 1=
+, 2023 to present, including any communications=0D
+ in which executive staff directed the content, timing, or format of a resp=
+onse.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All records reflecting communications between OPRD=
+ legal counsel and executive staff regarding public records requests, inclu=
+ding any guidance on withholding, delaying, or limiting production of recor=
+ds.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">All records reflecting instances where OPRD legal =
+counsel reviewed a public records request prior to response, from January 1=
+, 2023 to present.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">I request that responsive records be produced on a=
+ rolling basis as they are identified rather than held until the request is=
+ fully processed.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">Please be advised that I expect all records potent=
+ially responsive to this request to be preserved immediately. Any destructi=
+on, deletion, modification, or alteration of responsive records following r=
+eceipt of this request may constitute=0D
+ spoliation and will be treated accordingly.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">If any record or portion of a record is withheld, =
+I require the following for each withheld item: the specific statutory exem=
+ption claimed, the date of the record, the author, and all recipients. A bl=
+anket exemption claim is insufficient=0D
+ and will not be accepted as compliance.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">I am requesting a fee waiver on the grounds that t=
+his request serves the public interest by enabling public oversight of agen=
+cy compliance with Oregon public records law. This request is not commercia=
+l in nature. Responsive records will=0D
+ be used to inform and supplement a public archive documenting institutiona=
+l conduct, accessible at oprdvolunteerabuse.org. Public access to this info=
+rmation advances transparency and accountability in government.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">I am further requesting that all responsive record=
+s be produced electronically in PDF or equivalent digital format and delive=
+red to rsw@rswfire.com.</div>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">Please confirm receipt of this request in writing =
+within the statutory five-business-day window pursuant to ORS 192.324.</div=
+>=0D
+<div class=3D"MsoNormal">&nbsp;</div>=0D
+<div class=3D"MsoNormal">Robert Samuel White</div>=0D
+<div class=3D"MsoNormal">P.O. Box 334</div>=0D
+<div class=3D"MsoNormal">Reedsport, Oregon 97467</div>=0D
+<div class=3D"MsoNormal">rsw@rswfire.com</div>=0D
+</div>=0D
+=0D
+=0D
+=0D
+                          </blockquote>=0D
+                        </div>=0D
+<br>=0D
+=0D
+=0D
+=0D
+=0D
+<span title=3D"fd_tkt_identifier" style=3D"font-size:0px; font-family:&quot=
+;fdtktid&quot;; min-height:0px; height:0px; opacity:0; max-height:0px; line=
+-height:0px; color:#ffffff">340083:1155212</span>=0D
+=0D
+</div>=
+
+----==_mimepart_69f6a5f9ad03b_1ce63060936091--

@@ -1,0 +1,525 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from SA1PR14MB5402.namprd14.prod.outlook.com (2603:10b6:806:23f::7)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Mon, 4 May 2026
+ 23:18:39 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=PlaG9ufs1At7C2S9VuBQVJK1XxGDk0jj8Oe6qRb9CMwfXoPfe/aFdoq9hwzITMXig/Yr0QErbt6HXO1rfaOq3S41ohsBmHEqz1Lk+qKPlT3oDAcPtK/zhoMXtv/+7DQjVFcJATaXlBHBCdgir579ACyHmt1zjHxQmyQlc4ZflTEdmSs7dNARQq9Ymtuy8jYCFc1ZON6MbZT3RV6lByZk+EKUNf1jyQHQcwQKUMgkZl2Tl9veBz7I/3HqsN+Dzu1G1JJYjZlkCzte5K1aKEruPKl7GyxOTeqfg4w3Ms6h3YLRsp8/P2p9wy3YvPrNT7uPHY3KPvP7fFQMGokskuiBXA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Phjh1t+o6pfpnTU/bhMpdzET9LCmQYFAu9/V4cUgThc=;
+ b=AeK3nDsC7m25d5mFYnns4KIU7tI3coQgsZBFsL8OOaaonYSIJ9E5v678uDtvCxxpTX2tDti/h8RwFAF323G6TPCs8kDw0HhObT9qfdNQqziQgzXXQ378EIHwdn7FftCTBZINWRj3J43sAoieTTy6VoTOCGGpihN2xj5JHfM2LPNgdVkJuGpRWYALYms9Hl2SGeQE7E8U21P6tMJFFtLHEkjzBRGzslPccxGZkWvmYcKL+sDGGeS4Wmyei1VE6oGbLL04anJqSQoJ0GCcxHUS9i3zZCYcAiDxDr4ZMSA7ilNsOVcm+gOr71uugslh97v/qHb4TB1cSifaekdgknq1wA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c001::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from DM6PR10CA0014.namprd10.prod.outlook.com (2603:10b6:5:60::27) by
+ SA1PR14MB5402.namprd14.prod.outlook.com (2603:10b6:806:23f::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9870.25; Mon, 4 May 2026 23:18:37 +0000
+Received: from DS3PEPF000099DB.namprd04.prod.outlook.com
+ (2603:10b6:5:60:cafe::3f) by DM6PR10CA0014.outlook.office365.com
+ (2603:10b6:5:60::27) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9870.25 via Frontend Transport; Mon,
+ 4 May 2026 23:18:37 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c001::1)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 2a01:111:f403:c001::1 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c001::1;
+ helo=BY5PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c001::1) by DS3PEPF000099DB.mail.protection.outlook.com
+ (2603:10b6:2c:400:0:1003:0:5) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.9 via Frontend Transport; Mon, 4
+ May 2026 23:18:36 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=P6CV3Po2abDhQ8C9uxP08sb5/kP7DesHLIjrbnHh+iAzzIHmSDwUsKoToEbgWzf4D0OBsWsutW4Xd/qwR5nr7PqQXrygGCDR1q5iJPuOt6Lp+OqLkMcZCPdcz/yW2eXq8AXuQIwGvbQAViBOLaPe73cTPXpl14YZLTXXs8JW8gYfu9g2iaJQ3yrLEz4Zgst7eM916TlHgFQPRlp2S60jXjN/LLnVnRnYo8TmIDe9uLX5xCnOQLXOh99vYy8MI1fAOIZ4sKeVC2yFsN3rtpLZg9anOxb5IWiPCz+C+nMWPpBoAUoINwmSw9yc2EZTdCFsPoNLv1mcMxfKQ4qcKHOJ3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Phjh1t+o6pfpnTU/bhMpdzET9LCmQYFAu9/V4cUgThc=;
+ b=fwzVNaRv04Gm+2geH9gPwPBi27u8uqQ8pOBz3bZTtEP+/WKitvnvfAspO2elhhL/8YlW1oJfnhSNkwY1mKwte+ej/D0YZUUZfUCjzyy3mdRKOirYO6pQtydQuYM66K3INx5RiGuZIh2xh/wh56hEbhhJwi+tTwQ0MQsiqhlne6Qb1RDg6Iby8L4NXG+wAni+Qai5CZ6foqbZ5urETd5sMJMdVHpbU3ywDVrHOb5/1jCHVmP5Ak1A0TjZNdy7GXBJ4GGdxjL0tWp91n+CtxcUn9ljn/y0R7j1evmzmS8UooweldWGCu09B3xzc2XHC0XlIRDPGDYBpDhYJvRTXZ11nw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Phjh1t+o6pfpnTU/bhMpdzET9LCmQYFAu9/V4cUgThc=;
+ b=BRRR2vtJ70hYxhjjRypKZFjnuHvSRTvFAZD+mmataerD5qx6UMegyJTWuk1+NghKcHmnT0DS//PQWgoy6vLP5VSHm1FndfDcW7XaMDoHqyLBwSed0ESETNhNUUHTfoEQQ++YEanBktZV+bu78LGextl3DWitgh9Cv1YuKYKbxbOUrorSUNIlZcr3G8S2ZJSAFg/sM84IUKxEz83PqZ7VWc1Nd0AgcmBYb6NpbOmt2G8DTAdeoos8O6RtfGRk50WXq4iZqDYRxL2yCzgsGADJVeEDFLyV513FFPbv+DONb+5Bn47FGk1i244yGKVWB/bpzdhrouBKPLkfiwhCYWP4YQ==
+Received: from DS0PR09MB10612.namprd09.prod.outlook.com (2603:10b6:8:16e::20)
+ by SJ0PR09MB8871.namprd09.prod.outlook.com (2603:10b6:a03:46d::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.25; Mon, 4 May
+ 2026 23:18:30 +0000
+Received: from DS0PR09MB10612.namprd09.prod.outlook.com
+ ([fe80::41ab:33a6:7a0e:463c]) by DS0PR09MB10612.namprd09.prod.outlook.com
+ ([fe80::41ab:33a6:7a0e:463c%5]) with mapi id 15.20.9870.023; Mon, 4 May 2026
+ 23:18:29 +0000
+From: GAUTHIER Katie * OPRD <Katie.GAUTHIER@oprd.oregon.gov>
+To: "rsw@rswfire.com" <rsw@rswfire.com>
+CC: COLLIER JR * OPRD <JR.COLLIER@oprd.oregon.gov>
+Subject: =?Windows-1252?Q?Re:_Public_Records_Request_=97_Agency_Compliance_and_Exe?=
+ =?Windows-1252?Q?cutive_Involvement_in_PRR_Processing,_January_1,_2023_to?=
+ =?Windows-1252?Q?_Present?=
+Thread-Topic: =?Windows-1252?Q?Public_Records_Request_=97_Agency_Compliance_and_Executi?=
+ =?Windows-1252?Q?ve_Involvement_in_PRR_Processing,_January_1,_2023_to_Pre?=
+ =?Windows-1252?Q?sent?=
+Thread-Index: AdzanNIjEFi7u282TYSplRlO/25LegBRdDJgAA5cOtY=
+Date: Mon, 4 May 2026 23:18:29 +0000
+Message-ID: <DS0PR09MB106122D971F3E995FD2CFC554DE312@DS0PR09MB10612.namprd09.prod.outlook.com>
+References: <CH2PR14MB41814FE181E68882351CCC16AD302@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <CO6PR09MB867993493541D45B7F481636D7312@CO6PR09MB8679.namprd09.prod.outlook.com>
+In-Reply-To: <CO6PR09MB867993493541D45B7F481636D7312@CO6PR09MB8679.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: DS0PR09MB10612:EE_|SJ0PR09MB8871:EE_|DS3PEPF000099DB:EE_|SA1PR14MB5402:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 71ac077f-7a8b-4bc9-bb61-08deaa337829
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|366016|1800799024|38070700021|8096899003|56012099003|22082099003|18002099003;
+X-Microsoft-Antispam-Message-Info-Original: iNCI5vSgZbib+mh++pprM2o+17Jg8jDaB2+LhPkWV425t4JO39KpGSppBYQRI5+5xTpmVTGRrxMaLM4MCiOitRNfbSBy62HcOY71aRG2ZJu1PP3XrasOEX2vmfdoK6cZjrVXhBuKHxiCs+2oicWPSO3WAzcpA7KlFaPmL1UTcskn+8DQRUgX4NeIfWTQw1id/FxPLqQhvixZDcE4tm11RaDnOQeam+Dx1WZySzrm2kSyPIG9MfiRQPrACg1dWcxK2LuXBzPBLtUsRi6JQGZvYvdnSJ8RW5IvIlnlXo1BtG/t7q7xSU7a3v3KcEdm+qEwf/sT3OsZCoXK0MU0ic9n9BR+WD0gqIW0ctMrhXLtmVH522mXWapOEQjABKSSdSBzUL+cxuY8/VocdAF2ITjoAS3z2qSTFZqp4+WYHc51Gkn8ujEnDF2l7BtYsi9bna5qk8VPrcDBGyMJ6pZTlDmMwtsMODXAIJ3/4eA0PO9b8SkVoC7hDmdPi1HWNVXFd6sO/IriS0Q/1X2zo9z43keQeApErnr1HncwVzF1M4G18KB8eIOTyxPMl+jLDxlZyyte/3yXwzCKQjIe+dMseqcK6NtkCq9beNsuruHKIZDVUBH8YwQe98Kob74xVEEA+78ZFhfzGxfs6Htji8CTUy9oC20WZCvFbPQvbK0NC8HSIS7AZX/wzWiCjMyYxR3kAfJT9GL3WgdfJqFMm2qbDJQWQYNXHKygK2NrsMGHOm/5LqIzZUzzWqiMLE2k0L4YUUhX
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DS0PR09MB10612.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(38070700021)(8096899003)(56012099003)(22082099003)(18002099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?Windows-1252?Q?L6Oxj42iQUW9kTY9Dmzpi3nW3rvOLNO3cHhdHL6j26hTXjw4oTKSAzh3?=
+ =?Windows-1252?Q?bb6MNtbjzE+9h2JctIVhNAzvOQvT0b1gSb1vCBhgWGlTQWp3BqAXY62a?=
+ =?Windows-1252?Q?+8ag4TkmGiA2sriZ1Yp7bAu2Y7x9cr+64Z16gchQUZ3LfGURKWQcBEd0?=
+ =?Windows-1252?Q?dPHNVMuS1rnK8/iTSp8w+bWFnuWHSdRdEmiN31sKoMHc+m2DWEKGaoXW?=
+ =?Windows-1252?Q?DDhgoqPym4iHswGLp5KUzMBKBrp6WOnScCdoo1JwKdS8rgDaAMIn8FG/?=
+ =?Windows-1252?Q?SM6LMoKOLnyw3Y5moDooC+HX/HGmIcphwqVQeh868hDTaIUiOWcB5Tsl?=
+ =?Windows-1252?Q?NEwnTqyVdtTRWYNk/nQFc72LZ7o0iahd0LK42fDhqgkWco0odEyMjSof?=
+ =?Windows-1252?Q?mSqRv/3fE3sfn9DxiLftrPIJeHfeCh4Su77VvTYa4cjmzroYRqoRtYUI?=
+ =?Windows-1252?Q?aKtgDXM7I/y3xD52r4iVOTWjK5Mj63MOLZxxtyCD7Cr8ZqtUy+rOKGpB?=
+ =?Windows-1252?Q?6VZUaIVLSkm3rVJXZ+BezPleCqhhsyIM95lpyhNiSuVvI8S5/tkaq18M?=
+ =?Windows-1252?Q?9A+NFhmu5L7RXSP6BLPG7Sdk0a4iRmGWGhwsJY+KCQFSRJiC9+h3wqWN?=
+ =?Windows-1252?Q?F6IA1YQM8BzGBoGAh2zMsUlFgGOFr4m/g+r0HUzgAO/m7HkiF5PRvuiW?=
+ =?Windows-1252?Q?9/p98W0UBka7Gdu11UYgmIPkZpFKtWLBmFQlP7xaw7wu/qYThHE5c2IC?=
+ =?Windows-1252?Q?VPOr+2xT72BbgPPD4VqJHirvad84fEpyR9LZkBhHzoHUcG/24mKO6dsg?=
+ =?Windows-1252?Q?SBT7gN6d0DI2m/n5o9kugGP4Y+ezSPTNzw5kqAvSjtdK4qGpdA8ZozIm?=
+ =?Windows-1252?Q?CyhP1IW+j6JE1S+Vr59KpoNplM3AuU6Uy4o7f4XPl+ESr83a//LOcBVS?=
+ =?Windows-1252?Q?hEh/aAXwEisk4Iz9w/MklYxTWgfpmWIR4MF3y1kFsdd0jZnLs9fZH1Vz?=
+ =?Windows-1252?Q?J7KBbolU4VebfMIwQvTMCRh48evPK7R2svO0E7hT5IeFDpD3EDOC9Uux?=
+ =?Windows-1252?Q?2k9faWLc3yJ5msCqHAvFzlL+uW2zrb1cRYlNtwrY+6FEpbMmvVgGghAF?=
+ =?Windows-1252?Q?OyRsnqLxwXSGqZZJ7kQ9f2Y2Dzzn3H1bYLjYlcILLeuxcam/35uIiMBV?=
+ =?Windows-1252?Q?T0DEbFNDyVALD8lxadiLZKO0P5QsAg87daGAFvYIX/uANSj/bxCKg7Oc?=
+ =?Windows-1252?Q?FFoBfQsUyH2zmFC6IkIPjN5QlA9Izr+7SEjcJBAlbhShtHzMD+1c/t8R?=
+ =?Windows-1252?Q?Ii2Qq8AfjAMsCF/EvfTqAcuJmQfm2lQ9eW7exZG4S/EHmiUUXGI7iv++?=
+ =?Windows-1252?Q?J/4hUkc1FsfZSZLCLX//9xGc4glKdakBrer7+9Pj4IseTA2aNoh36DzA?=
+ =?Windows-1252?Q?YUwQKrnJX5J/KygwQzt5BU3qwWX04vj886VjHNbWKjVDyzksjzjlL270?=
+ =?Windows-1252?Q?JCaTR7dEKH5JeBZQv9SoMhwtttbE91/a3jRxISnddooiWwSx0H9hbOSx?=
+ =?Windows-1252?Q?LpGaFkHCnu4Oo/cUuYgs5Bi4tVv04oM0MTDDZvB6ulYOLj2wI+Qq6BYs?=
+ =?Windows-1252?Q?ZD5KEDa4WfuyYmy/HXAsOLK1ekdSmuKBIzMx5p6Ko6+oG4qorN2hCs2t?=
+ =?Windows-1252?Q?VyxjFZ2WLRGXIKANvv+k1EC7T1/4LLztPnOhvPwFvry3BsNLAZK1gIaF?=
+ =?Windows-1252?Q?wQRNf3Pmk7BaRBYZ3HilHjadRCIDigT3tbkEDxI6FRWZH2aTinw9R8m4?=
+ =?Windows-1252?Q?vn9GbwyR1JrF0bKrukFLY9PWJffY0kwDSP4zEw66ns/N1PUPcwkH/bnx?=
+ =?Windows-1252?Q?wRwem31BPBoC/xR1BcVYARXYRrS0p4MPxE8=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DS0PR09MB106122D971F3E995FD2CFC554DE312DS0PR09MB10612na_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB8871
+Return-Path: Katie.GAUTHIER@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 04 May 2026 23:18:36.9243
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 71ac077f-7a8b-4bc9-bb61-08deaa337829
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: DS3PEPF000099DB.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: DS3PEPF000099DB.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: DS3PEPF000099DB.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: e710dbff-46bb-4f31-07a0-08deaa3373e8
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|35042699022|13003099007|18002099003|19002099003|16102099003|22082099003|8096899003|57112099003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c001::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09CU001.outbound.protection.outlook.com;PTR:mail-westusazlp170110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(35042699022)(13003099007)(18002099003)(19002099003)(16102099003)(22082099003)(8096899003)(57112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 May 2026 23:18:36.6916
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 71ac077f-7a8b-4bc9-bb61-08deaa337829
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: DS3PEPF000099DB.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR14MB5402
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0962423
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9870.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?SY1WUePo0aKSZEGV1p4Z2XgRg+jkhUYyPwUpvwXbrucxzmTvpzdW7GkJ?=
+ =?Windows-1252?Q?axbYlDrybkxmYXwTEFB+7GCSdiaXE3MkSscPppg83YyKX0iBCsZb6Xnb?=
+ =?Windows-1252?Q?Sj0yB6n5nCqmfiVQ0Ftmu1f9bpHSYIAqxmHXOxeGVpxOlcpizJivOHV6?=
+ =?Windows-1252?Q?gKfCQOR7NvausT8NUKJVmYOG+CFMoKjiSVn2Iofplm8wPY4Ag2vqZWJY?=
+ =?Windows-1252?Q?7MYya8+676uj8zBj0FmLvg4jRWOvV+6O6GJjEElvc+NSFGbRqFrUBx6f?=
+ =?Windows-1252?Q?+WqFvfWbir+JwWLpUbzPDE59nzYutecsXyoq97S6HTwuMSxi38YN53l0?=
+ =?Windows-1252?Q?ujsISgDUB+2ULhXNeM3uBZoDIuS0J7B7tppfs2hx6WzOGc9k0Pugi6OB?=
+ =?Windows-1252?Q?yci5/MhwGiDEn3cyW7HKyXO2SuTkqlno2iYt6ecm95uf0XXduh8Lc9fp?=
+ =?Windows-1252?Q?LfwFiK8H2XZ9mT/bRauZfgfR4elqQa4cYoHFcjL/TQ8gNPFMfUyZTXB9?=
+ =?Windows-1252?Q?M6doBXjPq9Kpx6Aq51HzjMq7tesZk4i4hGSN3a4mbMBl6coof8KcGU/m?=
+ =?Windows-1252?Q?gHJYU43Cakjy21MDxcunKhQkv3N0C9exR6RpWbk+VAWg9wNS15FHrgqL?=
+ =?Windows-1252?Q?AqGtMP3r4O/QlX307iPNXOiZSmKe4WneCpBPR/RL2fsabfy5Jsq5i+6z?=
+ =?Windows-1252?Q?62g7sbaTLNHxZ717d+J/dRxFeF0hy9ccxJOmBD0MlZDD2ysHZl6apKO3?=
+ =?Windows-1252?Q?q16W72/8EtLJbG7ymeSQOVI7DErJGLXnzFCJP+AeeY3v8aiNuAGfsOrK?=
+ =?Windows-1252?Q?m+voDw9gut/KsuIewaVsJa1zzqGHVKaZZTIljpXnJRw51udPUzQ2AXdJ?=
+ =?Windows-1252?Q?MS9wsaZlESUdiFhs0okgLJ7+kMn8AQnJD93c/MF2tcjy3laIaw911HkD?=
+ =?Windows-1252?Q?C6v+8avrOpLcOKTJatn74XvL6h0FQRyA1I0OZD9r5FDYmV6Oihj4+Bqv?=
+ =?Windows-1252?Q?ud+/nKyLqC3t80GPcoeeR+W2vIdgi6GoZaGh34HpU8Ty11Otkmpx66aq?=
+ =?Windows-1252?Q?hgF66Pb9dlJRMdNHJMaHwiS6e7dEXSm5lEPNa2Aj8Ci87RjS5Uja4hHn?=
+ =?Windows-1252?Q?4vZo1NAh1U2QUN2PGKTAf7n0zbtfvO5GnzCsvqmMNDuBl3hwXlJrR64P?=
+ =?Windows-1252?Q?UMf0RlRqnqECMBacAfqsYMzq6R/8Lh/ujKlj8Zjy7w8fG5mvglKY7ae+?=
+ =?Windows-1252?Q?ipMKTO4cFHvSgenChPv26UqRxaO+iu06FNuYm4lmVQsC6ufNQWx7B7EP?=
+ =?Windows-1252?Q?grBhGdOkUT2pYEuHCnT5p1OK5sdDoD0GccGrC9p/XHKBMnzgcuxvqvOE?=
+ =?Windows-1252?Q?IMC1V+l91REwMFg0T0xo0Iad11lvUtRJAC3eB4K9t2HLLRyH0S/i5EWm?=
+ =?Windows-1252?Q?rYPiFnjAH62WRt7FAiYpeC4XosPuNZNhOfwayhoHXvHDDBfyQGr7AuRH?=
+ =?Windows-1252?Q?9INTErqbCknjhJNUXrLh/Bwo0gG6bIaXEQ+uCG/4gQ7ZnJTGsvsVC0Sm?=
+ =?Windows-1252?Q?vDh1aGzTAMROLYzR1wUieLqwqGfwGtJwmQw56v6DymGRmZv+z3DukWDb?=
+ =?Windows-1252?Q?qLmDc2jPUwuHFJxjSDgX0v67mEDNXX8KQvjqkgT6ngO9mJz+SYnfQH/S?=
+ =?Windows-1252?Q?K1ZETPZ9y0GkSo3xgiyRM9tq/w0JHM+YY4+htEvNTnnzDzM0KrwGFXR+?=
+ =?Windows-1252?Q?R+xfLtysEA4wp6p4Jvip5kxPPsXMVjL0n0KB2IW7OSecxXpzfR34W3oZ?=
+ =?Windows-1252?Q?CLmJVLTDE4hcuFDErWTSfDKaYL4XE9aoc5XBWIbHNwfArMw1OHS04pzt?=
+ =?Windows-1252?Q?Ut/jenuAo6Z5ZwKZXh5SivXw4hKudPAJMCdFirPoGqNyrcqbPXnqkpf0?=
+ =?Windows-1252?Q?dzCWtbznjsqTknHAe4RgrZf1x7HKlQ/vhOYtqE3JT3NKNU+dPmTSbe3k?=
+ =?Windows-1252?Q?XiCPX/5hSMKsgXdfP6JCAIn7+1uTl4OQe3xts1/s+YIwZTUin6tvcTKK?=
+ =?Windows-1252?Q?lFaXCcMPAMEDvYw/jFJpUa4Y4fIzacFMLFG8NFdoBlIpwTFJDrVaGrfR?=
+ =?Windows-1252?Q?Y18iCI7ZCmMVumLXQHqPKM5UHf3417zLnPwTmEAlu3vWr7tO+80MByV6?=
+ =?Windows-1252?Q?j+ngC8Tk2ib8IhwAclFK/PkBORbv2Jpl9w0XRm+KYNEfx7Ta56aktIom?=
+ =?Windows-1252?Q?6tFaf+aGsB5Az9UzdX2qYFp1eIGrF3lmG3HZe6yRGrBYKpys5kbf2MR3?=
+ =?Windows-1252?Q?F/iznr8s8kT4b9CluA98jbMrninetAKQIwkvc7UZNqbKFfzB9wRzbw3V?=
+ =?Windows-1252?Q?fMiYq0cWI0H4DOhK5rKlxE0MAAdmMP6OrDZx3b/aX5rpQJP7cdZDvjgo?=
+ =?Windows-1252?Q?ASd3mQ8NrkA9Cb5vi0De08lgRzdXHS1C/iGWvVmVL6U/gMuW620n9MFL?=
+ =?Windows-1252?Q?lOHa958zvBlazvK5tFCVPmR2CuaSm7OioPxB4Q8afAcHUdni8B6HtVzC?=
+ =?Windows-1252?Q?TiDmF6HGJpnCZnEr7vZtsRPx5L9YCXI03JL87c5TkS0uYEfhXcRvnq1P?=
+ =?Windows-1252?Q?a2UrukYDamYPb7DAWNx5yBBvmq/JYUVdP/4zTfYXD0/a/DUi7BjhhSWu?=
+ =?Windows-1252?Q?XqpUKl0HQF/VoAj5nrPra1/M0pMgy4+rJxZYuWWg0Hc5bLlvVjJilU3f?=
+ =?Windows-1252?Q?NYi8fpiBUPP7hDkB5xUUNxBjOdLofatHN74fUdF8+I6x6M5v67Ib4c3L?=
+ =?Windows-1252?Q?Pk2ZHmupTECKybseduocNRkCZKA6/OjiaVGvmy57gCe+58UtK7yDoSQl?=
+ =?Windows-1252?Q?ySQrnp1ap7gHCww2WP9xttowNtKxuBTER7rt4fZgtKvZ0pm42chK3a/2?=
+ =?Windows-1252?Q?p3WXFZphUzNm5SyLLT/wgw=3D=3D?=
+MIME-Version: 1.0
+
+--_000_DS0PR09MB106122D971F3E995FD2CFC554DE312DS0PR09MB10612na_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Mr. White,
+Thank you for submitting your public records request to the Oregon Parks an=
+d Recreation Department (OPRD).
+Expect to hear back from us in about 10 business days with any records that=
+ match your request or, for larger requests, with an estimate for staff tim=
+e and costs to gather the documents.
+Thank you,
+Katie Gauthier
+Oregon Parks and Recreation Department
+
+
+
+
+
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Saturday, May 2, 2026 6:34 PM
+To: PUBLICRECORDS Oprd * OPRD <oprd.publicrecords@oprd.oregon.gov>
+Cc: PUBLICCOMMENT Oprc * OPRD <oprc.publiccomment@oprd.oregon.gov>; Governo=
+r Kotek * GOV <governor.kotek@oregon.gov>; marissa@tinafororegon.com
+Subject: Public Records Request =97 Agency Compliance and Executive Involve=
+ment in PRR Processing, January 1, 2023 to Present
+
+
+
+You don't often get email from rsw@rswfire.com<mailto:rsw@rswfire.com>. Lea=
+rn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+
+To Whom It May Concern,
+
+
+
+Pursuant to ORS 192.311 et seq., I am requesting the following records:
+
+
+
+All public records requests received by the Oregon Parks and Recreation Dep=
+artment from January 1, 2023 to present, including for each: the date recei=
+ved, the date of agency response, the method of production (electronic or p=
+hysical mail), whether a fee was assessed, whether a fee waiver was request=
+ed, whether a fee waiver was granted, and whether the request was fulfilled=
+ in whole, in part, or denied.
+
+
+
+All written policies, procedures, or guidelines governing the agency's resp=
+onse to public records requests, including any internal guidance on product=
+ion format, fee assessment, and timeline compliance.
+
+
+
+All records reflecting instances where the agency missed the statutory five=
+-business-day response deadline under ORS 192.324, from January 1, 2023 to =
+present.
+
+
+
+All records reflecting the involvement of the OPRD Director, OPRD Interim D=
+irector, or OPRD Deputy Director in the review, approval, or direction of r=
+esponses to public records requests from January 1, 2023 to present, includ=
+ing any communications in which executive staff directed the content, timin=
+g, or format of a response.
+
+
+
+All records reflecting communications between OPRD legal counsel and execut=
+ive staff regarding public records requests, including any guidance on with=
+holding, delaying, or limiting production of records.
+
+
+
+All records reflecting instances where OPRD legal counsel reviewed a public=
+ records request prior to response, from January 1, 2023 to present.
+
+
+
+I request that responsive records be produced on a rolling basis as they ar=
+e identified rather than held until the request is fully processed.
+
+
+
+Please be advised that I expect all records potentially responsive to this =
+request to be preserved immediately. Any destruction, deletion, modificatio=
+n, or alteration of responsive records following receipt of this request ma=
+y constitute spoliation and will be treated accordingly.
+
+
+
+If any record or portion of a record is withheld, I require the following f=
+or each withheld item: the specific statutory exemption claimed, the date o=
+f the record, the author, and all recipients. A blanket exemption claim is =
+insufficient and will not be accepted as compliance.
+
+
+
+I am requesting a fee waiver on the grounds that this request serves the pu=
+blic interest by enabling public oversight of agency compliance with Oregon=
+ public records law. This request is not commercial in nature. Responsive r=
+ecords will be used to inform and supplement a public archive documenting i=
+nstitutional conduct, accessible at oprdvolunteerabuse.org. Public access t=
+o this information advances transparency and accountability in government.
+
+
+
+I am further requesting that all responsive records be produced electronica=
+lly in PDF or equivalent digital format and delivered to rsw@rswfire.com<ma=
+ilto:rsw@rswfire.com>.
+
+
+
+Please confirm receipt of this request in writing within the statutory five=
+-business-day window pursuant to ORS 192.324.
+
+
+
+Robert Samuel White
+
+P.O. Box 334
+
+Reedsport, Oregon 97467
+
+rsw@rswfire.com<mailto:rsw@rswfire.com>
+
+--_000_DS0PR09MB106122D971F3E995FD2CFC554DE312DS0PR09MB10612na_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Mr. White,</div>
+<div id=3D"timeline-card-content-106547609" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+Thank you for submitting your public records request to the Oregon Parks an=
+d Recreation Department (OPRD).</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+Expect to hear back from us in about 10 business days with any records that=
+ match your request or, for larger requests, with an estimate for staff tim=
+e and costs to gather the documents.</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+Thank you,</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+Katie Gauthier</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+Oregon Parks and Recreation Department&nbsp;&nbsp;</div>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;"><span style=3D"font-size:=
+ 11pt;">&nbsp;</span></p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;"><span style=3D"font-size:=
+ 11pt;">&nbsp;</span></p>
+<div style=3D"padding: 3pt 0in 0in; border-top: 1pt solid rgb(225, 225, 225=
+);">
+<p style=3D"margin-top: 1em; margin-bottom: 1em;"><span style=3D"font-famil=
+y: Calibri, sans-serif; font-size: 11pt;"><b>From:</b>&nbsp;Robert Samuel W=
+hite &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b>&nbsp;Saturday, May 2, 2026 6:34 PM<br>
+<b>To:</b>&nbsp;PUBLICRECORDS Oprd * OPRD &lt;oprd.publicrecords@oprd.orego=
+n.gov&gt;<br>
+<b>Cc:</b>&nbsp;PUBLICCOMMENT Oprc * OPRD &lt;oprc.publiccomment@oprd.orego=
+n.gov&gt;; Governor Kotek * GOV &lt;governor.kotek@oregon.gov&gt;; marissa@=
+tinafororegon.com<br>
+<b>Subject:</b>&nbsp;Public Records Request =97 Agency Compliance and Execu=
+tive Involvement in PRR Processing, January 1, 2023 to Present</span></p>
+</div>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<table align=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"width: 100%;">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(166, 166, 166); padding: 5.25pt 1.5pt; w=
+idth: 0.3pt;">
+</td>
+<td style=3D"direction: ltr; text-indent: revert; line-height: revert; whit=
+e-space: revert; border-width: revert; border-style: revert; border-color: =
+revert; background-color: revert; padding: revert; word-break: revert; colo=
+r: revert; width: revert; height: revert;">
+<p style=3D"direction: ltr; text-indent: revert; line-height: revert; white=
+-space: revert; margin-top: 1em; margin-bottom: 1em;">
+<span style=3D"letter-spacing: revert; font-family: wf_segoe-ui_normal; fon=
+t-size: 9pt; color: rgb(33, 33, 33);">You don't often get email from
+<a href=3D"mailto:rsw@rswfire.com" id=3D"OWA724d7b06-f467-7661-60b6-d314393=
+6e657" class=3D"OWAAutoLink" style=3D"margin-top: 0px; margin-bottom: 0px;"=
+>
+rsw@rswfire.com</a>. <a href=3D"https://aka.ms/LearnAboutSenderIdentificati=
+on" id=3D"OWA94955de1-530a-5cd7-2c4f-ae636c3b6ef2" class=3D"OWAAutoLink" da=
+ta-auth=3D"NotApplicable" style=3D"margin-top: 0px; margin-bottom: 0px;">
+Learn why this is important</a></span></p>
+</td>
+<td style=3D"direction: ltr; text-indent: revert; line-height: revert; whit=
+e-space: revert; border-width: revert; border-style: revert; border-color: =
+revert; background-color: revert; padding: revert; word-break: revert; colo=
+r: revert; width: revert; height: revert;">
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">To Whom It May Concern,</=
+p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Pursuant to ORS 192.311 e=
+t seq., I am requesting the following records:</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All public records reques=
+ts received by the Oregon Parks and Recreation Department from January 1, 2=
+023 to present, including for each: the date received, the date of agency r=
+esponse, the method of production
+ (electronic or physical mail), whether a fee was assessed, whether a fee w=
+aiver was requested, whether a fee waiver was granted, and whether the requ=
+est was fulfilled in whole, in part, or denied.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All written policies, pro=
+cedures, or guidelines governing the agency's response to public records re=
+quests, including any internal guidance on production format, fee assessmen=
+t, and timeline compliance.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All records reflecting in=
+stances where the agency missed the statutory five-business-day response de=
+adline under ORS 192.324, from January 1, 2023 to present.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All records reflecting th=
+e involvement of the OPRD Director, OPRD Interim Director, or OPRD Deputy D=
+irector in the review, approval, or direction of responses to public record=
+s requests from January 1, 2023 to
+ present, including any communications in which executive staff directed th=
+e content, timing, or format of a response.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All records reflecting co=
+mmunications between OPRD legal counsel and executive staff regarding publi=
+c records requests, including any guidance on withholding, delaying, or lim=
+iting production of records.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">All records reflecting in=
+stances where OPRD legal counsel reviewed a public records request prior to=
+ response, from January 1, 2023 to present.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">I request that responsive=
+ records be produced on a rolling basis as they are identified rather than =
+held until the request is fully processed.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Please be advised that I =
+expect all records potentially responsive to this request to be preserved i=
+mmediately. Any destruction, deletion, modification, or alteration of respo=
+nsive records following receipt of
+ this request may constitute spoliation and will be treated accordingly.</p=
+>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">If any record or portion =
+of a record is withheld, I require the following for each withheld item: th=
+e specific statutory exemption claimed, the date of the record, the author,=
+ and all recipients. A blanket exemption
+ claim is insufficient and will not be accepted as compliance.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">I am requesting a fee wai=
+ver on the grounds that this request serves the public interest by enabling=
+ public oversight of agency compliance with Oregon public records law. This=
+ request is not commercial in nature.
+ Responsive records will be used to inform and supplement a public archive =
+documenting institutional conduct, accessible at oprdvolunteerabuse.org. Pu=
+blic access to this information advances transparency and accountability in=
+ government.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">I am further requesting t=
+hat all responsive records be produced electronically in PDF or equivalent =
+digital format and delivered to
+<a href=3D"mailto:rsw@rswfire.com" id=3D"OWA21cd2a85-0682-90ed-8054-7e76993=
+f04a7" class=3D"OWAAutoLink" style=3D"margin-top: 0px; margin-bottom: 0px;"=
+>
+rsw@rswfire.com</a>.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Please confirm receipt of=
+ this request in writing within the statutory five-business-day window purs=
+uant to ORS 192.324.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">&nbsp;</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Robert Samuel White</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">P.O. Box 334</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Reedsport, Oregon 97467</=
+p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;"><a href=3D"mailto:rsw@rsw=
+fire.com" id=3D"OWA49125faa-668b-6432-0cba-5e6d7a3d4546" class=3D"OWAAutoLi=
+nk" style=3D"margin-top: 0px; margin-bottom: 0px;">rsw@rswfire.com</a></p>
+</body>
+</html>
+
+--_000_DS0PR09MB106122D971F3E995FD2CFC554DE312DS0PR09MB10612na_--

@@ -1,0 +1,853 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from MW5PR14MB5499.namprd14.prod.outlook.com (2603:10b6:303:19c::19)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Mon, 23 Dec 2024
+ 15:58:56 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=Vc2j8SgfBcgQQMwn8YNusvOzP5+nhbZ1Q5Nc7qoNMMfieFGLR0Vy065LoX837+GKrOyf9iX7MX9M4DQqRCollzj6rF8FWp/MkV3omkAnH/8CHxLGAYHbF+aKNYBPOPbtOZcm+e8vO3JeFaDz3pAWIBvkj0W9q289zsnFOkjihFZuEVhwrTThxW9xSekgeTH2YrLuLfyhqB6FDqy20y5OaBu1BFaQEt83wAzFO9PQEuklTMr7w3Zm7Dc254e1V3n7mJxffowZ8QH6Se9+JKNftbk5xnbcsru0aYZy9Bti9/QQ6WMrJEqRAnBHK5lKnQwkL5/CNxxMvBy/wXn/VfiESQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=L5gKfW9SNKLmhDo6i4LzlcCbeHXkbYVWS+O+HA/Gylw=;
+ b=wlraftasQvwAHQNKEH/FSq3HQ26OlyigOZyvAfRDxGyCj1U1Tw019OAkGnl0tJXdOC2N0/Xh3BPIQAFvSiImQ0dgVjibWOBeIUZCxAYoZlBXj5cEaY5GbH+oqNtEYp1iczMZ/6ir4TXtBw7uWq54pBQm4X6ds1jRJFUwT4V8r4G2gtO8ldUElSkTZ9H/n2AXEl59bK6xGlq102J3ILpo277bAMLEqpN1zEQzBJlWLmf29BjL8U6xrNOtOAYnEPFp1aW1SsIRPYM6Nm1dD7ySuG4g4VhXI54u9eXvjyVia7NHGjDpYs4a8dfQLHFZMqSyQjm5+SXsbkUeEmm/I90DCQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.93.193.3) smtp.rcpttodomain=rswfire.com smtp.mailfrom=oprd.oregon.gov;
+ dmarc=pass (p=quarantine sp=none pct=100) action=none
+ header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from MN0P223CA0020.NAMP223.PROD.OUTLOOK.COM (2603:10b6:208:52b::11)
+ by MW5PR14MB5499.namprd14.prod.outlook.com (2603:10b6:303:19c::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8272.21; Mon, 23 Dec
+ 2024 15:58:52 +0000
+Received: from BL02EPF00021F6F.namprd02.prod.outlook.com
+ (2603:10b6:208:52b:cafe::c7) by MN0P223CA0020.outlook.office365.com
+ (2603:10b6:208:52b::11) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8272.20 via Frontend Transport; Mon,
+ 23 Dec 2024 15:58:51 +0000
+Authentication-Results: spf=pass (sender IP is 40.93.193.3)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 40.93.193.3 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.93.193.3; helo=SA9PR09CU002.outbound.protection.outlook.com;
+ pr=C
+Received: from SA9PR09CU002.outbound.protection.outlook.com (40.93.193.3) by
+ BL02EPF00021F6F.mail.protection.outlook.com (10.167.249.11) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8293.12
+ via Frontend Transport; Mon, 23 Dec 2024 15:58:51 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=RKzBS0cbq8nQ9MUltT5tPzmx7Xu7bOKXMf8AlXhvpqXWVb/pNS37Jtgyt8sEPbgWVEpE5G4Yyj88i8hRsix0jsLMWklXy6NFsd7Pv5ilXJOI7qnfT81k/yAdS4mcic6LqCOV+fBOwupqpvHJc0m+Gv6utkPCEFD697PBdExUEIqCK4bwycX8VTAN4LrcQ9nqKu6tofaamQSlhxjgiT0xNj9hEzA9GFkPB9yFTWo6ZwPRVU/j2muHcvZAagpiU0MYwbLRnFm1pP40fWKNTNLK8I1862waaRZuLf9Yo4vb9XPmRDvxyZaN1hv8m7D0AheGHUgS0gWja0T2bNvRuPX5bQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=L5gKfW9SNKLmhDo6i4LzlcCbeHXkbYVWS+O+HA/Gylw=;
+ b=Bo/QWJKVKXge4x008BHsy1UB6LBeLLBd5S/QGlbc0X527WK2fvbhpyLIZQr/4XS27dEy5HEgf3+sCIZD6SrWL/UiJY5eRhqL5H2i5YtXv1hqlo47o8mX+Sog6jJY78mNr+hp9lvVYzVxgyWZxwqAmUqhsr2LPNq6S0xW0lioGtOG2P0ioo8JQDGxiuefKvz8q/g0IMgC4ZukSRKLvKjLqFymxuV/3ucPBMlLBK4AFAr8B3mf3Ed1kJ3RM9kbYv/9zHU8HIuDuzgcVEpGYsi9gF2GWNICJ8hBQkep2wlnl/SeFlsjh6ht8IcJoDmr9lhq41Lt89xlxbksR0BW3alO8w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=L5gKfW9SNKLmhDo6i4LzlcCbeHXkbYVWS+O+HA/Gylw=;
+ b=To4ljmBQC1ob3GBV8gGkbOH8z+uYQVHD/NkFMG+Ze+O+HT/TqgGyKaQSXpOc6uGok9PKL9TNIBWobmfpashM47+GNZUAVKr8f/1eIE2o2YRrAYFvpaMpvQ63HIITgL3UR2mHdPq6O02kQAJRVCe69pkkJDuWlU7AmkTLAJDY4IYa8do42Uv86trWWxqkYBjKLbu+DEprP4Rn04VLZcBgT/NYcA1TpTe++Ajff9S1RFihZrp6G/5+geLcHmLZtKlGoAS5fzVQ9XW49UO5fQVknE+DS+A+3yEAruCDCSnvHBfg9LxXIjTC4Q6IKeJjmYFaZujwt2e6Q81fK2NpKR/bZg==
+Received: from SJ0PR09MB6141.namprd09.prod.outlook.com (2603:10b6:a03:264::18)
+ by MN2PR09MB4651.namprd09.prod.outlook.com (2603:10b6:208:216::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8272.21; Mon, 23 Dec
+ 2024 15:58:44 +0000
+Received: from SJ0PR09MB6141.namprd09.prod.outlook.com
+ ([fe80::6eec:6802:a6a5:b0f4]) by SJ0PR09MB6141.namprd09.prod.outlook.com
+ ([fe80::6eec:6802:a6a5:b0f4%6]) with mapi id 15.20.8272.013; Mon, 23 Dec 2024
+ 15:58:44 +0000
+From: Volunteer OPRD * OPRD <Volunteer.OPRD@oprd.oregon.gov>
+To: "rsw@rswfire.com" <rsw@rswfire.com>
+CC: ALLEGRA Franki * OPRD <Franki.Allegra@oprd.oregon.gov>
+Subject: Oregon State Parks Volunteer Application Received
+Thread-Topic: Oregon State Parks Volunteer Application Received
+Thread-Index: Adg6PPZvaPyMEYJaQ4W4RGnN+GkJUQ==
+Date: Mon, 23 Dec 2024 15:58:43 +0000
+Message-ID: <SJ0PR09MB61417287B88DF948AF1EE6A1D7022@SJ0PR09MB6141.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-traffictypediagnostic: SJ0PR09MB6141:EE_|MN2PR09MB4651:EE_|BL02EPF00021F6F:EE_|MW5PR14MB5499:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: bbe8f35c-c951-42ef-a4c3-08dd236ab1ec
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|1800799024|366016|8096899003|38070700018;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?9N7GMXsmqM/PerTEs6M5u0v07j2zeit9+wTB6QUFG0hDM7awQJ1k4rBNh4kW?=
+ =?us-ascii?Q?lKz+mbRg3RvBkChPDPgC02OAchq7/muMJk1vYlZt66TT1j+wwHbqqrESIPXj?=
+ =?us-ascii?Q?GOG+A6aiAG9q+e4YPTfvBQxtjrv4GbHU4ahOrb24v6n/XE7etnPkxIBxb5NU?=
+ =?us-ascii?Q?ZKOac+AdwPkWtFmJmFnmvGikZCjEyqgsHvGOUEFfbOzxmbsZix05LMCgkJSf?=
+ =?us-ascii?Q?CkSUQ4ZbO0sfqiUgoxGNZiWyGSZZ9dvJM7BPMbw5MJHmPl2ZyxOBTp5It5Dy?=
+ =?us-ascii?Q?2lofd2CZjURF/MjXa8fhfS3RuAkE+L3yPQTguriMOK0VTj15rijAKFnqiSRs?=
+ =?us-ascii?Q?g7G6hMWrvl/yfTT5ZIHsHZQFzZ6lm2lIxTqSh3tx1hUd8dJtcig20XQjd/hB?=
+ =?us-ascii?Q?rJrnP8qRz4qfGsLHz1htKbeK4UVKj0AWJX1sgJa8bm4Fnx9G8mvy5OIjvIjr?=
+ =?us-ascii?Q?QOBTdifyL/EBDyLYiof+p7gGHZ1fGqPARsD3UYblfDldMHGZCDyCSHwaT1Xk?=
+ =?us-ascii?Q?7HJK7D7sy1yJZUhHaj8WboOaO9Tz4SQrLm89eokrFd26exTEgo9A+aqUqnEF?=
+ =?us-ascii?Q?pW9CmK0SgUS/MkEQtZYoPyTKSjklGMaVyvaoGHO82k/qAAasn8alm2RICuIR?=
+ =?us-ascii?Q?k6T9nZJOzm7ir8Rsk4v6hCirkt7W48fFTwbGaef5TgIcYLXj5rY7jmiZxqou?=
+ =?us-ascii?Q?KdB6R8iHryuX04b+ij5V/gZUbt5dUGWFpFB/asrl5uKUknmfnqENWESkX8A7?=
+ =?us-ascii?Q?VxNSVrSHTloKHuV4qMdFiDFVp72vUpNap0R+TTO4rSkO2k9Zhvmd7GRaQdB3?=
+ =?us-ascii?Q?R3BcU5x2iLeTrdInfHGxTBH49o1Sp6/QBj5j3Cg/sSglAsBVatJU1GiuzeQG?=
+ =?us-ascii?Q?iPaBJzSIA83+DMTh8nKUvkorKoHSjdu4FLhmyF6DOGq+aJr+Lr/dq0VCfEn7?=
+ =?us-ascii?Q?3ExOVCqxgvZRp3zbyAhJ8NOybZ6UXq0AGTYnDIn1M4sF+cQ9USuPmnK2tVvT?=
+ =?us-ascii?Q?dINaRGZ8BceQxvx5az9ry8hHWgoViC/is1Og5DYk7hGVYLPEGfjtE7un/t6A?=
+ =?us-ascii?Q?CwU5orGW8w0ATFmF+HqMHre7JKsWSImalTkQ/WtYBT8aQuqBsNtNdDi5+zP7?=
+ =?us-ascii?Q?aShThKpQFhleqr52i7zdgQO585nG7ej+IEvsvJqTJOdcfLxdJZgOrnuJ66oh?=
+ =?us-ascii?Q?b0wsc8dMVfbu1IUu7phfk9Num6VMjIEB2pHwonwXwKM/K+i8UgDmzDa3TX/8?=
+ =?us-ascii?Q?bV1CB+wTL1Vq2TI8FDTIY6LC6BtPqR9PF/nSLzSmbwJ2yLERY8047tjtGaYT?=
+ =?us-ascii?Q?NgMAR083DwMERQeUMetrMV4OJWYIbwD4HFlLsX/ud89EzG1BUjP/wdda8gDf?=
+ =?us-ascii?Q?XzvKZ4GMFHa+c5lik20+6aBUQvAr?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR09MB6141.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(8096899003)(38070700018);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?TYY1AEBDCxnsEkegl0qqyAsQIMwrTHmTsBkfrgYjJvKC5UtMnM573bi0WYn5?=
+ =?us-ascii?Q?ZB+QtcpZSUmknRh+Wpr+bkMFdd6MzmVJCst4w8Rjsi9sQ9jhn3QRTKr3SwTA?=
+ =?us-ascii?Q?m9tYs2C2DnjckBr9cuZWCEQ1Vik25DcQXe5WGDaPq8eV5ls9oOgI5uxiGPVG?=
+ =?us-ascii?Q?A13x7TfXhdDJsFdfjiD73lqbRVMmGA09D8MxYEqX0oNMGxCmWLeRZNtYMH7b?=
+ =?us-ascii?Q?RwIKPAcU3IzOuWKdFb55xCrDcaTMwsi5slVjkyQUeyWlU3xJE0v8fu4O3s19?=
+ =?us-ascii?Q?rKX87n1t1zsfPl5s7KhUnK2vnMY1DdKgvBj1kleki1MrRTp3ZZ5OLzsTTX5U?=
+ =?us-ascii?Q?bU4twETeDJiTjfs0NLbNVB8O0uhoUacf83DTfvTk/T3hfda1UPceb8PONVf8?=
+ =?us-ascii?Q?9NXfqd3RG9j82rcfTMkhWzJESjSFHLjMPHpZ2+Th16eqN/crhk4IJp2MbdI0?=
+ =?us-ascii?Q?x4KapbSozDNn7cFd1YjhQPT0nCuaLDpK46ZIZU1qgucq64DKA/dC93Kfsqx4?=
+ =?us-ascii?Q?J67oOGlMCLzZrPgK7PStuNk842OBPKs5UGM7DLUvGYDxamS9JFJru5x4XiLi?=
+ =?us-ascii?Q?OHfv7jeo5jbddt5WmEHvJivIHzssSbnXQEPJA5wrYaQ5NjpN0FtlwqQW3YGN?=
+ =?us-ascii?Q?InkMXtCWZeuFk+uAbN42huLbHvHD/0iVUGG07n32C8euc4/iozhbM06RkN0C?=
+ =?us-ascii?Q?MrozJb4/w2vH4bH/egjCu89YCGASnKxhkLY2+eEqBSlqr4/FI9blDdQhGaSv?=
+ =?us-ascii?Q?IYxaiZca9CcvOiVeEH5wq7IqyA0GGT0bGYyjsO6UMUikIgvWKwvgvVUHSrC/?=
+ =?us-ascii?Q?TXXD0An7UlM/c4Ljr/AMUzZfmTPzsGLiZ2cs0u1bicLEa5HuSBw3ffxNU+5k?=
+ =?us-ascii?Q?YLrtS8KW++FU8VC+t2e91g1tzZnjtxSOJvu0CCtqfvvvNvGQ35eqWY/xmUpl?=
+ =?us-ascii?Q?ZI3yJ8qEkFmXbMY30lNFgBztAKtPuqBHPNQV6p5Fm8kevKj9icnokP1mX9xd?=
+ =?us-ascii?Q?3ktoA1ZrvWV/3zHyJp6p4JmOwQIsqdyvhLeuUdp8uDECMnzttjVe4FyH47Oa?=
+ =?us-ascii?Q?RdFxfjONcs8oRd+QEZKRaEsLD5LEjCz1BYejL2LGCBn8DLSpN5F8m7S9B8bM?=
+ =?us-ascii?Q?L61wf+bX1E6A6G0He4blBPSpSZ3BPRNtpJhRf7lot0uuO0/byz0evYt6Px0F?=
+ =?us-ascii?Q?NnoON9y1kY9Jv3921RPiVpV91knCSSNlr5lowQLenExM+m0dVe6EZIc79Cst?=
+ =?us-ascii?Q?TBr4YnshAERmHcxM+3JpcAfzBjS+F8xpxIbzVN/ue2K2Ow0/tCnsgWHTMOVu?=
+ =?us-ascii?Q?rys29jutsw2B6blFVdR6Ingo+65C2TAlaMPAeGgFD6m1Ak2gc/LmeR243n1u?=
+ =?us-ascii?Q?uk+VUH61YLaau+HAqalLZR7avHWiv4TcnqG2wq0eTL7qrv4YwdP3HUeADLWa?=
+ =?us-ascii?Q?lQU4cC8iTJbvzErObwMfHK62dKMwg+GKtz8gTq2/isslFcbFpch1pqH2EEk9?=
+ =?us-ascii?Q?XojKIpZYVwW4ZRyp06ehMqLKGe3EQgZE54E8RLcc44zvHzUEZDPOtRnNZLQN?=
+ =?us-ascii?Q?hL/OrQ9EQX/GqPkEYfzAXO4AMvWeUhIE07BSSsdY/tHzwCrdmYDW8Nu+gtfO?=
+ =?us-ascii?Q?cg=3D=3D?=
+Content-Type: multipart/related;
+	boundary="_004_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR09MB4651
+Return-Path: Volunteer.OPRD@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Dec 2024 15:58:51.5059
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: bbe8f35c-c951-42ef-a4c3-08dd236ab1ec
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BL02EPF00021F6F.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BL02EPF00021F6F.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BL02EPF00021F6F.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: ca44d609-15dc-46d3-e914-08dd236aad67
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: 9e2b96d3-40d8-439a-7926-08dd236ab3e0
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: Volunteer.OPRD@oprd.oregon.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|4073199012|5073199012|35042699022|4076899003|8096899003;
+X-Forefront-Antispam-Report: CIP:40.93.193.3;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA9PR09CU002.outbound.protection.outlook.com;PTR:mail-southcentralusazon11010003.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(4073199012)(5073199012)(35042699022)(4076899003)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Dec 2024 15:58:51.2247
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: bbe8f35c-c951-42ef-a4c3-08dd236ab1ec
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BL02EPF00021F6F.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW5PR14MB5499
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.3143692
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8272.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?1VucwjOUTz2XnZhWRGyeQqkOSh03oPYapPPrJ5CyeisO5izh3aZLqEQ4?=
+ =?Windows-1252?Q?opS7uLOtCtQqPaWF7/4+lpwZuVZga5uSaWU5ZtlBME2K8XBTyxtt0ku6?=
+ =?Windows-1252?Q?PaFDhx/pOyNQrhJxx9slaC2w0ZNWvhWNPJo56Sq/HuGsEBZTekoSoD1M?=
+ =?Windows-1252?Q?ft1AWT0Otq7JbrIltQ4xvm35BxpKSGlOVyaBEJKVTOPnnq4Azwsi1S5R?=
+ =?Windows-1252?Q?PGsgeDnz/2UvpwXaet0+yo39Jm4+zShy8kXWwZ4BhXW6AvzGdyFgjo2f?=
+ =?Windows-1252?Q?U5gLu8yll06bgfBQvGTWUSoiVvOm4T10X4mwLhI1ju1UItP8ZHcj7ore?=
+ =?Windows-1252?Q?jyzs8Eu+Txp9rWAxiGYq0dKMTDhua/bwJD20VF61EWuGt4baKdrzbfdO?=
+ =?Windows-1252?Q?v0xuk7QMKQVwCFpqyMt/TJIy3z+v/avR+UOO8UIR5qWcKl1GRUp5Rlvd?=
+ =?Windows-1252?Q?U0gbbkDRIADRUqHbFZpU4p+hPqXS3Uh0uY1ppEhC75BxbHut2PvmcEnU?=
+ =?Windows-1252?Q?y2J0Ci86A2Ri/77GJ8OoE3Ifb70KaaPweZ8iwBr9VV+rfDLv5vh1VX8f?=
+ =?Windows-1252?Q?gNY2poJLLk3Rga790kq1RUqJ4ERcVxgppkh6oPANnzpwr0WQ0anEZbog?=
+ =?Windows-1252?Q?pQGUQqEX0Fijq7aCMxO6MYgGXh35YkK5MN1YkEvS2iWMd0lpkfQnyFHd?=
+ =?Windows-1252?Q?+D8i/iewaB8uTm2aT67um2O0wMFm+Oc2xTES2uvnn+v7gsZo+CN9bptG?=
+ =?Windows-1252?Q?F+cIubUrTmJ17ZV3aNAq1X/1EQIClp+zIHyg44iYqeTbD1AtzUIPtiRU?=
+ =?Windows-1252?Q?wRJ3n02LOSL5041MvwS5Twnyz6CQeLYuuKFhEnmsYUDC1lTELV97QbQt?=
+ =?Windows-1252?Q?bkYHFNQfeA7VuobUa9WTD27PMyROhUFleHnXMj87kCpxgSM3/ILPt+BM?=
+ =?Windows-1252?Q?FPdShs3/bfMexPWiIqVT0Q0qcCOVrMDxMVIXymkIENPbJWnVtnilqQwF?=
+ =?Windows-1252?Q?/Uh/g1JoUK55Zmv3GTo+Iw7uFoHJ/0bGtsMvM0NlAWq9+156QpUofEK3?=
+ =?Windows-1252?Q?7abP0b/wsLmJTFqvFThee3IMHy6YL3bf+EqKhIp0nSGD5yFFV9RQ2bFq?=
+ =?Windows-1252?Q?QpZqNZUIRn3f1zKBs+gs/kmcXKIbW0c7sVs3j7p4zoV12lZ4RruxPmT8?=
+ =?Windows-1252?Q?PDUeswvkNQlcRqjdKSM74tsLwTno0wso+FZ2eWGvzF1GtOx90Xhqxrf9?=
+ =?Windows-1252?Q?/ocd24CMBUZSQHmD6+J6sTFxjEzO/QaLmMkwBcTFF0fdizd/yj5zZ1uo?=
+ =?Windows-1252?Q?7ujULaIelPH98ReOFYPEZSqpqhn/qJXrkbF/o/CxIKPZKyy7xQr+6P+v?=
+ =?Windows-1252?Q?P0jemkZS75PB3qMeqllHTn8ZMAKlItx4WcPB9fWdz+ck5RNMvbwvuw85?=
+ =?Windows-1252?Q?G2BszxZ6Q3+pet2LiUn1pnMy/I1iwzM3vu2mQCcBhOXjwwwBp1OOy5k7?=
+ =?Windows-1252?Q?UpSsZDvxerVa3qR/DU1hmOled5jTCHLhBvBFzNFAVEZSbSeGWWthJ2fU?=
+ =?Windows-1252?Q?xnU/QPbJaSPQMOiyTysBQlYKMhKl5FyXg0NUQIkzwFQDVBNWGtcxCFdv?=
+ =?Windows-1252?Q?ZU/7iJ7mlE8ToJClKjEf5HuhL+TTWOuTuXuL61IPj6Lx8uAAUeDNZPGR?=
+ =?Windows-1252?Q?ARczKz1z9XOlJS60vZah8VUrIOraCki996pgLgu5N1Jx9vPvye0w0Kf8?=
+ =?Windows-1252?Q?dXVCjd4lNn3PGNyCs0WkcEKsnfoqwM1DB8ir5BUmyN8F+BtZ2dQsP5i2?=
+ =?Windows-1252?Q?woKf34J6kQYmPTTnOWLUr+Bu6p0c4KPgHolfSpeS9wabjYIxXfjepRHi?=
+ =?Windows-1252?Q?dj9aa7QfmnL3uFYaZame2PEVUNGTXvUW4+ofmuNSAOq8aWqICRthkGD6?=
+ =?Windows-1252?Q?cOMH5rqIZyfw7YFpmB41C0MGGpuqF6rFpm+Y9zxbRfqRvVrdC5Gz9ZYh?=
+ =?Windows-1252?Q?NVweCniQf3FiGavAFf6VqqYcWlzsez3ijnzf3SHzqaL2Edqb4YIBy3Ik?=
+ =?Windows-1252?Q?Om6WbHs9So5qlwMdTLbm8AwxnF+K0KT8VrEZBeL/ixOthK/E3UKhmEZx?=
+ =?Windows-1252?Q?shZXEKAC9alUm+XHvaKuiFcKttxZXgN4CIj/YrRXrrhA4YZxW83YjvCU?=
+ =?Windows-1252?Q?E3CDF0OBzEM=3D?=
+MIME-Version: 1.0
+
+--_004_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_"
+
+--_000_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings Robert Samuel White,
+
+
+
+Thank you for applying to be a volunteer with Oregon State Parks! Your appl=
+ication has been uploaded to our statewide volunteer database and you have =
+been assigned a volunteer ID number. It is important to keep your volunteer=
+ ID number(s) accessible as it is used to look up your profile and verify t=
+raining requirements. Please keep in mind that you must complete several mo=
+re steps before officially being accepted into the volunteer program. The s=
+teps are detailed below.
+
+
+
+*Note - Please continue working with Franki Allegra as you may have already=
+ completed some of the steps below.
+
+
+
+The volunteer ID(s) associated with your volunteer profile is 40423
+
+
+
+Please be aware that host positions will have different duties and can be c=
+ompetitive at popular parks, especially during peak seasons. Your placement=
+ in a host position depends upon several factors; including your availabili=
+ty, the time of year you apply, and which locations you prefer to volunteer=
+. By expanding your availability and flexibility of park locations, you'll =
+have more opportunities.
+
+
+
+So...what's next?
+
+
+
+It's time to sign up for a park assignment! You can do this in several ways=
+:
+
+
+
+First time signing up:
+
+1.      View the OPRD volunteer opportunities webpage by clicking here<http=
+s://stateparks.oregon.gov/index.cfm?do=3Dgetinvolved.volunteer-openings> (h=
+ttps://stateparks.oregon.gov/index.cfm?do=3Dgetinvolved.volunteer-openings)=
+. This is the most efficient and effective method to view open and active v=
+olunteer recruitments.
+2.      Reach out to a specific park to seek out future opportunities if th=
+ey aren't posted on the webpage.
+
+*After you've completed the onboarding process with your first assignment, =
+you can also:
+
+3.      Sign up to receive email alerts for last minute park host openings.=
+ Sometimes parks need help filling vacancies due to last minute cancellatio=
+ns. You'll find the link to sign up for email alerts on the OPRD Volunteer =
+Voice webpage by clicking here<https://sites.google.com/view/oprdvolunteerv=
+oice/volunteer-opportunities-projects> (https://sites.google.com/view/oprdv=
+olunteervoice/volunteer-opportunities-projects).
+4.      Once you've developed a relationship with a park, they may reach ou=
+t to you directly by phone or email to fill vacancies. Additionally, park s=
+taff may do a search in the volunteer database to find hosts that best matc=
+h the needs of the park for a particular assignment.
+
+Once you've been scheduled for your first assignment, you'll go through the=
+ onboarding process with the park. This process is completed when you initi=
+ally sign up and then every January thereafter. It includes:
+
+1.      Background check and driving history check.
+2.      Statewide harassment and discrimination training.
+3.      Statewide safety training.
+4.      Volunteer Service Agreement.
+
+*With each assignment, park staff will provide you with a volunteer job des=
+cription explaining required tasks and duties.
+
+At each park, you can expect to:
+
+1.      Attend an orientation.
+2.      Receive site-specific training on duties assigned.
+3.      Receive keys, handbooks, equipment and resources to perform duties.
+
+*Volunteer uniforms, an en route pass and your host sign will be provided a=
+t your first park location. You will keep these for each assignment thereaf=
+ter. En route passes are renewed each year during annual registration.
+
+In the meantime, should you have any changes to your application, please em=
+ail us at park.info@oregon.gov<mailto:park.info@oregon.gov>.
+
+
+
+QUESTIONS?  Just call the State Parks Info Center:  800-551-6949
+
+
+
+
+
+
+
+
+
+
+
+Volunteer Programs
+
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+__________________
+
+Oregon Parks and Recreation Department
+
+725 Summer St. NE, Suite C, Salem, Oregon 97301
+
+Stateparks.oregon.gov<https://stateparks.oregon.gov/>
+
+
+
+
+
+
+
+
+--_000_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParag=
+raphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListPar=
+agraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagra=
+phCxSpLast
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle19
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:531302624;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1637154776 67698705 67698713 67698715 67698703 67698=
+713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:664750984;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1691051426 67698705 67698713 67698715 67698703 6769=
+8713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1017929193;
+	mso-list-template-ids:33861574;}
+@list l3
+	{mso-list-id:1063527014;
+	mso-list-template-ids:-624284396;}
+@list l4
+	{mso-list-id:1618294109;
+	mso-list-template-ids:-416919002;}
+@list l5
+	{mso-list-id:1690720231;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1045493128 67698705 67698713 67698715 67698703 67698=
+713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l6
+	{mso-list-id:1717663113;
+	mso-list-template-ids:-897947296;}
+@list l6:level1
+	{mso-level-start-at:3;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Greetings Robert Samuel White,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for applying to be a volunteer with Oregon=
+ State Parks! Your application has been uploaded to our statewide volunteer=
+ database and you have been assigned a volunteer ID number. It is important=
+ to keep your volunteer ID number(s)
+ accessible as it is used to look up your profile and verify training requi=
+rements. Please keep in mind that you must complete several more steps befo=
+re officially being accepted into the volunteer program. The steps are deta=
+iled below.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">*Note &#8211; Please continue working with Franki Al=
+legra as you may have already completed some of the steps below.<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>The volunteer ID(s) associated with your voluntee=
+r profile is
+<span style=3D"background:yellow;mso-highlight:yellow">40423</span><o:p></o=
+:p></b></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal">Please be aware that host positions will have differ=
+ent duties and can be competitive at popular parks, especially during peak =
+seasons. Your placement in a host position depends upon several factors; in=
+cluding your availability, the time
+ of year you apply, and which locations you prefer to volunteer. By expandi=
+ng your availability and flexibility of park locations, you&#8217;ll have m=
+ore opportunities.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>So&#8230;what&#8217;s next?<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal"><i>It&#8217;s time to <u>sign up for a park assignme=
+nt</u>! You can do this in several ways</i>:<o:p></o:p></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal">First time signing up:<o:p></o:p></p>
+<ol style=3D"margin-top:0in" start=3D"1" type=3D"1">
+<li class=3D"MsoListParagraphCxSpFirst" style=3D"margin-left:0in;mso-add-sp=
+ace:auto;mso-list:l1 level1 lfo3">
+View the OPRD volunteer opportunities webpage by <a href=3D"https://statepa=
+rks.oregon.gov/index.cfm?do=3Dgetinvolved.volunteer-openings">
+clicking here</a> (<a href=3D"https://stateparks.oregon.gov/index.cfm?do=3D=
+getinvolved.volunteer-openings">https://stateparks.oregon.gov/index.cfm?do=
+=3Dgetinvolved.volunteer-openings</a>). This is the most efficient and effe=
+ctive method to view open and active volunteer
+ recruitments. <o:p></o:p></li><li class=3D"MsoListParagraphCxSpLast" style=
+=3D"margin-left:0in;mso-add-space:auto;mso-list:l1 level1 lfo3">
+Reach out to a specific park to seek out future opportunities if they aren&=
+#8217;t posted on the webpage.
+<o:p></o:p></li></ol>
+<p class=3D"MsoNormal">*After you&#8217;ve completed the onboarding process=
+ with your first assignment, you can also:<o:p></o:p></p>
+<ol style=3D"margin-top:0in" start=3D"3" type=3D"1">
+<li class=3D"MsoListParagraphCxSpFirst" style=3D"margin-left:0in;mso-add-sp=
+ace:auto;mso-list:l1 level1 lfo3">
+Sign up to receive email alerts for last minute park host openings. Sometim=
+es parks need help filling vacancies due to last minute cancellations. You&=
+#8217;ll find the link to sign up for email alerts on the OPRD Volunteer Vo=
+ice webpage by
+<a href=3D"https://sites.google.com/view/oprdvolunteervoice/volunteer-oppor=
+tunities-projects">
+clicking here</a> (<a href=3D"https://sites.google.com/view/oprdvolunteervo=
+ice/volunteer-opportunities-projects">https://sites.google.com/view/oprdvol=
+unteervoice/volunteer-opportunities-projects</a>).
+<o:p></o:p></li><li class=3D"MsoListParagraphCxSpLast" style=3D"margin-left=
+:0in;mso-add-space:auto;mso-list:l1 level1 lfo3">
+Once you&#8217;ve developed a relationship with a park, they may reach out =
+to you directly by phone or email to fill vacancies. Additionally, park sta=
+ff may do a search in the volunteer database to find hosts that best match =
+the needs of the park for a particular
+ assignment. <o:p></o:p></li></ol>
+<p class=3D"MsoNormal"><i>Once you&#8217;ve been scheduled for your first a=
+ssignment, you&#8217;ll go through the
+<u>onboarding process </u></i><b><u>with the park</u></b><i>. This process =
+is completed when you initially sign up and then every January thereafter. =
+It includes</i>:
+<o:p></o:p></p>
+<ol style=3D"margin-top:0in" start=3D"1" type=3D"1">
+<li class=3D"MsoListParagraphCxSpFirst" style=3D"margin-left:0in;mso-add-sp=
+ace:auto;mso-list:l5 level1 lfo7">
+Background check and driving history check.<o:p></o:p></li><li class=3D"Mso=
+ListParagraphCxSpMiddle" style=3D"margin-left:0in;mso-add-space:auto;mso-li=
+st:l5 level1 lfo7">
+Statewide harassment and discrimination training.<o:p></o:p></li><li class=
+=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:0in;mso-add-space:auto=
+;mso-list:l5 level1 lfo7">
+Statewide safety training.<o:p></o:p></li><li class=3D"MsoListParagraphCxSp=
+Last" style=3D"margin-left:0in;mso-add-space:auto;mso-list:l5 level1 lfo7">
+Volunteer Service Agreement.<o:p></o:p></li></ol>
+<p class=3D"MsoNormal">*With each assignment, park staff will provide you w=
+ith a volunteer job description explaining required tasks and duties.<o:p><=
+/o:p></p>
+<p class=3D"MsoNormal"><i><u>At each park</u>, you can expect to</i>:<o:p><=
+/o:p></p>
+<ol style=3D"margin-top:0in" start=3D"1" type=3D"1">
+<li class=3D"MsoListParagraphCxSpFirst" style=3D"margin-left:0in;mso-add-sp=
+ace:auto;mso-list:l0 level1 lfo10">
+Attend an orientation.<o:p></o:p></li><li class=3D"MsoListParagraphCxSpMidd=
+le" style=3D"margin-left:0in;mso-add-space:auto;mso-list:l0 level1 lfo10">
+Receive site-specific training on duties assigned.<o:p></o:p></li><li class=
+=3D"MsoListParagraphCxSpLast" style=3D"margin-left:0in;mso-add-space:auto;m=
+so-list:l0 level1 lfo10">
+Receive keys, handbooks, equipment and resources to perform duties.<o:p></o=
+:p></li></ol>
+<p class=3D"MsoNormal">*Volunteer uniforms, an en route pass and your host =
+sign will be provided at your first park location. You will keep these for =
+each assignment thereafter. En route passes are renewed each year during an=
+nual registration.<o:p></o:p></p>
+<p class=3D"MsoNormal">In the meantime, should you have any changes to your=
+ application, please email us at
+<a href=3D"mailto:park.info@oregon.gov">park.info@oregon.gov</a>.<o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><span style=3D"color:red"><o:p>&nbsp;</o:p></span></=
+p>
+<p class=3D"MsoNormal">QUESTIONS?&nbsp; Just call the State Parks Info Cent=
+er:&nbsp; 800-551-6949<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"637" style=3D"width:477.75pt;border-collapse:collapse">
+<tbody>
+<tr>
+<td width=3D"67" style=3D"width:50.2pt;padding:0in .05in 0in .7pt">
+<p class=3D"MsoNormal" style=3D"margin-right:.05in"><span style=3D"font-siz=
+e:5.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-right:-.45pt"><img border=3D"0" widt=
+h=3D"78" height=3D"86" style=3D"width:.8125in;height:.8958in" id=3D"Picture=
+_x0020_7" src=3D"cid:image003.jpg@01D93564.DD019350"><o:p></o:p></p>
+</td>
+<td width=3D"570" style=3D"width:427.55pt;padding:0in .05in 0in .7pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:5.0pt;color:#4F6228;letter-=
+spacing:2.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><b><i><span style=3D"color:#007A37;letter-spacing:2.=
+0pt">Volunteer Programs</span></i></b><span style=3D"font-size:10.0pt;color=
+:gray"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6">___=
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_______________<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#348AA2;let=
+ter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><span s=
+tyle=3D"font-size:10.0pt;color:#348AA2;letter-spacing:1.0pt"><o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">725 Summ=
+er St. NE, Suite C, Salem, Oregon 97301<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><a href=3D"https://stateparks.oregon.gov/"><span sty=
+le=3D"color:#0563C1">Stateparks.oregon.gov</span></a><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray"><o:p>&nb=
+sp;</o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual"><o:=
+p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_--
+
+--_004_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_
+Content-Type: image/jpeg; name="image003.jpg"
+Content-Description: image003.jpg
+Content-Disposition: inline; filename="image003.jpg"; size=2998;
+	creation-date="Mon, 23 Dec 2024 15:58:43 GMT";
+	modification-date="Mon, 23 Dec 2024 15:58:43 GMT"
+Content-ID: <image003.jpg@01D93564.DD019350>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABWAE4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2R3WJ
+C8jBVUZJPQVkat4mstIt/OvLiC0iP3ZLp9m7/dX7zflUXizWo9D0e5vpQClpEZip/jfpGv4t/KvP
+bPSodOhs73U7VtU8Q3xyWnfcQ+CxALcIqj0H0q4QciJzUDek+IjXxP8AYul6rqY7SKgtYT9Gb5qr
+tqvjC7P7vTtDs1P/AD8yyXDj+lUtX1u8i0+6ilR7G7thHMxhYSB4N4VyhI6jPQjI4qheTzrDq9qW
+1NIZtNklhF8fnd0zuKkcqMFcg4rb2UVuY+1m9jXMHipz82paJGf7q6cD/OlVfFsOTHe6BMw7SWBX
+/wBBrPVJLDRb64srPTbW4azLRm0mMkp4BzggdBz9RTvK03TdR0h7C3jKTuFS5huR5k2VJO9cHeOM
+k564p+zh2J9pPuaaeIPFdlzc6FYXa9zp968J/wC+W4/Crlt8SrGKVYdUF7pUp4C6jb/IT7SJx+Jr
+A33b+F38QNqVwl0YTdLGH/cKOoj2dCMcE9c1dj1sXuvS6XNbRm0FuWZ5OR5oCs6YPGArjNJ0o9Cl
+Wl11PQLXVoLqFJQyGKT7ksbh42+jDj88Vfrx2M2XhubTvEOkJJbaRdyCK/tgSsbRSfKJNnQEHB49
+RXrVlIzwbXOXjJRj646H8Rg/jWEouLsbxkpK6OC8dyf2jq2jaR1S7vGuZgP+eUA4B9i2aTVoHurm
+1NpKkd/bMZ4vMHyOPusrY5wQeo6cVS1C8i/4WGJp3Cx2ukxIuezSuWJqnqWqGDxHJNGSRFGYvxwf
+61tCSjC55+MrqnJGkumyatNJcaobcJJbPaxw27lhtY/OSxAyflGMDjFacllbzeV50KymFSqM4yQC
+Np/McGuS0/Vvs4sEc/LDK7OfZuP6mulh1uwn4SfLYzt2nNaQqQauznp4mNTrYlttMsbJw9pZW0Dg
+Y3RxKpx9QKSPTtPtZDNHaWsLlt29Y1U7vXPrSf2gpkVRHKqE8yNGcD8OprRtL7S7UtKzTXM+PkLQ
+MAp/p+FZyxdFbST+Z0RvLqY3/CP6eJ1kaCZY2k81YGdxCzZzuCH5Tzz+tZ+qeGppbC1t7Gf5/tEj
+XM0hwzxy5808d8EY+ldtdalY6lEsTXa5AwwlBjVj/eUnoQf5msq6ltrZpPLvbeUJjKK5LH/dOOfp
++tKGIpyWrLleOqdyrqmmxajotzp20LHLCYlA/h4+X8iBWp8PtVbU/DOn3Ex/evb+VNnr5kR2MT7n
+is4anbKN8jNEo5zIhWs3wZeJb6brUUMgaOHV5DEw/uSKGx+YoqyhNKUXc0w0ldxOe8Up5fjmUPn9
+5p1sw+gGKqtsLE726fxDkn862viNbG28UaRdY+We3lsyR6xvuX9GrFWKRxlEZhnHAzXOeRmUWq78
+0iWGzkuI2aFkYqMsmcH9etQsHhchgyOOoPBFbeg2Nx5rMYJACwGWXgY55Hcf1xW3d6FBeuWm3ZLE
+lh97npW0aLlG6MIYaU4c0dzl7XWrq2XaSJU9H6/nVseJW2ndbLu7YfitOTwrDz9nk2+m9N39aYnh
+iVf+XxV/3YBXNPLoSd3E3isVDRMxzr94ZN37vb/c28U6bxBcSR7I0SInqw5P4elaDeF7gy/661we
+/lHP5UsvhWYR/u5IHbH3TGV/Iij+z4b8mxP+1WerOdluZp8ebK7+zNWz4FjZ9K1yRRkHUkX8o+f5
+1HL4evIVLNaAqoySkw4H41v/AAv07zfCETuNv26ee8IPXG4Iv6Ka05OTS1jryynNTlKXYtfEvSzc
+aJJdRxebLYSpqCJ/fCfLKv8A3yQa1rDwx4a1Kwt721sUeC4jWSNg7cgjI71t39uZ4Mqgd0+ZVPRu
+xU/UEiuO8G3Y8OaxL4VuHP2STddaRI38cROWi/3kOeOuM0HrSpwnrJJm1deGdA06ynu5bMpFBG0r
+lZHyFUZPf2rIt7WyulB/4Ri8DzRedb/6VuWVcjgsHwrYYHB684JxXV6xMINIupGuoLXEZAnuMeWh
+PALZ4IyRxXI+HktoNQ/tSB9K0zT4EaO7WzvxJDNIxG35eFTBzg9TuxRcn2FL+VfcVjfaRb6HLqk/
+h29jgVzFEi3O95nDlWVVD9trHnsDVqdbCG/tre08PXNyl6pe2ljvQFlUKGJ5fI4I60yfS4rB9Mtd
+Z1u306O2a6uU8u5VJHkkkbaQGH3QjsD7tVzQtJktptFiW+tbiDTUuPKZZtzvbvxE34AYJ6cU7sPY
+0/5V9xBZ6fp2oXkgt/DM7wxXDW73BuwMFW2scb84BrfXwlo6ZC2hGeOJn/xrlbWGw03WGu7iHQpj
+d30l1b3j6iFdkZ8ghduDjp1xkV6ESACSQAO9K4ewpfyr7jgfH2ladpfhpoLC1P8AaN/ItnaL5r/f
+c4z17DJrqvD+nRabp0VtB/qbeNLaM+qoME/i26uTsbh/GHi9tZiOdO08vaaWe0sp4ln+ijgevHeu
++iiWGJI0GFQACguMIx+FWH1y3i7w4mqWeVla3kjk8+C5QfNaTDo4/wBk/wAQ/GuppCM0FHnV34lu
+dZ8N3eh6nCtt4jt5IN8IXcsyiZMSxj+JOMkduafrfhm+v9dW1lFvftdQiS6XyzbQeXHuEakjflt8
+hb/gA6Vt+IvCVvqcUbKJY3gO+3ntztntW9Yz3X1Q/hWZZ+Mb/wAOhIPF0Xm2mdsesWqExN7SqOY2
+9e1AEOjxaxqOrWRZ0try30xrW5kntTKrSJNtOOV643Z7g1k2WiapfRRw2qGPyrBvtNuyFFu2W6kL
+RbuNivzwOzAdM59Qs7221C2S5sriK4gcZWSJwyn8RVPW/Eel+Hbbz9VvIrdT91Scu/sqjk/hQBxu
+pXtoZ7i6s5HsTd2UafY72wMkN2gDARqFwysCSpUH0OO9R3uuXHi21i0HSFaysIokTVbqM7vLJUZt
+oj/E/wDCSKsXV3rnjRli8u50XRZP+WY4vb1fp/yyQ9yf611ei6FbaTawxQwRQxwjEUMf3Ih3+rHu
+x5NAGW0knhqOzgs7CNY/LEaRjOIkHRBjq3cnuT3rqVOVBwRkdDS0UAFFFFABVW50+K43N9x2GGZQ
+PmHowPDD60UUAcVqngux0udrvT7i70aaQ/M+lybUk/3om+Ufga0NB8E6dZyi/jV5rpuTfXj+fcN9
+C3CfgKKKAOpgtorYHy1+ZuWYnLN9T1NTUUUAFFFFAH//2Q==
+
+--_004_SJ0PR09MB61417287B88DF948AF1EE6A1D7022SJ0PR09MB6141namp_--

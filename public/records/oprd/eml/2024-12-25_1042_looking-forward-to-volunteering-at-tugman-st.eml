@@ -1,0 +1,369 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH7PR14MB5596.namprd14.prod.outlook.com (2603:10b6:510:1f4::22)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Wed, 25 Dec 2024
+ 17:43:03 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=M5SHR1qk0pQMNGpj9oKVTbyWgK5rPdOCTzanl7gDa99lqfP67ILMYsR1CkXjINdJagQIrnpg9i0HEVOBnf10nbl7K9NFhorXpl2jtmH8WAkfL4qIF5F5rObTLWroPU86mLumSYtS4U+4sIDZ/1EZsAlHR5WwSMY9FXgJPLI2AAZXzfVU1ube2TRBhMVK3XTW/j6bmAA0g6tkFDpcAfjlQTK4rYTonvW/PhiqPZCXs5awJkoh7z+gRryH8QVj65MBCbLmXfUMQQMuva9wCHxH/3gsWdUbJVmBODyTJ6UGm24fBbuNVrUX+Il9S1lqQCqU6zQvRYz8CD00b5MtP2FQcQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Q5spdX6C2HafHXSPjuiIJJibg65j9rLpcxDXbhAUFQ8=;
+ b=FwqEL3v6+c2hJSn9AUvRKqVmfBeb4DI3LX6YZDoJ4aFfGLnQVjgGd2I73sM1hVGSCUT1RhmVIKHaGcrQ+ddtZb4RfsgqFDMDAV4nFxHH61mJxaJDULs5/uwEAN99k3hQ6vyPOex3aS0zQ3NHymoGSw4H8tCtqXmjZXo842Gv2FnCQcQUt963uTVhI36sBENHe2FL9Blo1ibvh0gb1Kv1e4hKlIqnTMPG74h+Tzup2ttq5oC6FE9hDUxfDRE742st5XLVtRPQ+ao6lGuLWz05krYibaXlgJWM+rvCH06v6yXgCClUlmhodxXGWASbqkf5kplqKhCdcPsOFsQ0of/ApA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 52.101.58.61) smtp.rcpttodomain=rswfire.com smtp.mailfrom=oprd.oregon.gov;
+ dmarc=pass (p=quarantine sp=none pct=100) action=none
+ header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from BY5PR16CA0010.namprd16.prod.outlook.com (2603:10b6:a03:1a0::23)
+ by PH7PR14MB5596.namprd14.prod.outlook.com (2603:10b6:510:1f4::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8272.20; Wed, 25 Dec
+ 2024 17:42:59 +0000
+Received: from SJ1PEPF00002321.namprd03.prod.outlook.com
+ (2603:10b6:a03:1a0:cafe::79) by BY5PR16CA0010.outlook.office365.com
+ (2603:10b6:a03:1a0::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8272.20 via Frontend Transport; Wed,
+ 25 Dec 2024 17:42:59 +0000
+Authentication-Results: spf=pass (sender IP is 52.101.58.61)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 52.101.58.61 as permitted sender) receiver=protection.outlook.com;
+ client-ip=52.101.58.61; helo=BN8PR09CU001.outbound.protection.outlook.com;
+ pr=C
+Received: from BN8PR09CU001.outbound.protection.outlook.com (52.101.58.61) by
+ SJ1PEPF00002321.mail.protection.outlook.com (10.167.242.91) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8293.12
+ via Frontend Transport; Wed, 25 Dec 2024 17:42:58 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=ENj3P48oNrYUFuaLdJA7UMfcu6sMS/QNw2GHYkVOfmKnmqQXQn2s0TZJPr4fzPzq+VcDrVwZe4//xxnbPmPk2ZwGktSUZBJzdI6XltreQCSH3chwjIOHyzPuK43NH9fv9zoJtNl2A0k6OumJKsYSKPTUJyBPvf6OSu5nmcHC9G0SGEcxaOG7dCwMstHgJmYw7/8CdM6i3x2gePeH0RB56kBTbQvaTuk8t1ZEQtnV9yU8UbaMvb80jSpkBjm80LU2Jip2MLOqF2aeT4Cm1M5qNpWCIynhbrvviPGpPBV2AnCokaMNHRNanX6T5rZMA+wOwj1f44iA+2XtMx2bHIspVQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Q5spdX6C2HafHXSPjuiIJJibg65j9rLpcxDXbhAUFQ8=;
+ b=itllGlQIYokcXZ/HsdysDp33vkvj5B2PLjS9Yp0qDlBBzJIXhmEgr6fyeX4Uwz2si50JJVuDkeKfuMjDeCjT/NxeKRXNqTQc/pN54iFvEv56kZlRmPi9jNNqqqYn8xSmTPvCo9FU7gK/IDV0MsI2WsVm2KgoNIgp5VctuO1RTJ5/hg2+0V5HHpGsZpf6e+8CDR9GjGLVqSR3Ui7eg/fJRBUMvOZitINt7eg7Iq1Cn+1GCf7JBZ8Q0idjqsFZcQrvMC311VU4V/YtMIecs6v4cvuX9KTOD55C0vu3deFOM5onAkczJ60BCQz7HjRNBpYgWThccWWGmeW1hT7SPcrNVQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Q5spdX6C2HafHXSPjuiIJJibg65j9rLpcxDXbhAUFQ8=;
+ b=tOgBAh35pNG4PZHwwF1IFoQ1TkYMy6HUf5FYaB14wtfuOpXq1AHcQfEB4l0oKZLhjGbqjppD+sksWl9zUx5BQDoGk3a/mZV4HJGEYmNMlaP3ALRLkNPHb0/54ayclHv47X3A8ztIAeI31pJnQ3uhABr4ibj5qQlUZqe7dP0uKrXjBgUqc5bb+cR8ijWZ66mkOjgzJdqHUXpACzA1PiaDgogmcgRXasadujUFd3sWXLOWCPUxDRgc1TvN5xuQdAvW4rZTR3SkrtSJCPr0LSzpMoviZWpqe84NL3YZ+E7x2ZwcPXQBXsn2Z9kKuaetZl0LNQ/cEXvTIOIF0TAow6PYmA==
+Received: from CO6PR09MB7430.namprd09.prod.outlook.com (2603:10b6:303:c7::22)
+ by DS0PR09MB11096.namprd09.prod.outlook.com (2603:10b6:8:172::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8293.14; Wed, 25 Dec
+ 2024 17:42:51 +0000
+Received: from CO6PR09MB7430.namprd09.prod.outlook.com
+ ([fe80::4e3c:40bb:e92d:e760]) by CO6PR09MB7430.namprd09.prod.outlook.com
+ ([fe80::4e3c:40bb:e92d:e760%7]) with mapi id 15.20.8251.015; Wed, 25 Dec 2024
+ 17:42:50 +0000
+From: ALLEGRA Franki * OPRD <Franki.ALLEGRA@oprd.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Re: Looking Forward to Volunteering at Tugman State Park 
+Thread-Topic: Looking Forward to Volunteering at Tugman State Park 
+Thread-Index: AQHbVnV0a6KjWdLXfkeX+xf/cszF77L3OzPl
+Date: Wed, 25 Dec 2024 17:42:50 +0000
+Message-ID: <CO6PR09MB74302AFA1BB4AF3C4589909ED40C2@CO6PR09MB7430.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181FA53EDA4D275E1C248CAAD0C2@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB4181FA53EDA4D275E1C248CAAD0C2@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-reactions: allow
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: CO6PR09MB7430:EE_|DS0PR09MB11096:EE_|SJ1PEPF00002321:EE_|PH7PR14MB5596:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: a77cfe06-6aca-443e-9375-08dd250b92bf
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|1800799024|366016|8096899003|7053199007|38070700018;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?3muS/oePD5V6UiFFRne3hz1kfhCubx/t4nyQCUvrYMfDnG1QqWrOGYhj2IYZ?=
+ =?us-ascii?Q?m0ExvMuRechFTTsZXyf3aUgRRTV6gxWO2cXvj4ZnSc9yNlFqR17mYTQrtbYE?=
+ =?us-ascii?Q?WNfJ2JmiTaWABJcVFApmttvcgRRGMyI/Y8j52ydfszf6DORlp/G8sshcq62s?=
+ =?us-ascii?Q?KLGYQ/tK+4o8/BsPfHVxxQSR26oPWVC0PLV689rGNMjwDCu4XnEhpnErrAzJ?=
+ =?us-ascii?Q?47xQcotOYSY7ZBtGiYbu2Y8tRGazJJ4ppaWGwHwmwmi/FLFCPL2KjdyFxl94?=
+ =?us-ascii?Q?jBkCEPwdb/VTRZGWdi1d5L5vCJeGeefuMsUVRBSF3zl8/bb5GvEbLvC8kgkp?=
+ =?us-ascii?Q?PV0efpMfpb2zTePyBvNERsTmEYvqYX6Pa2ciHDysN/xaYw/664InkfvUoFgx?=
+ =?us-ascii?Q?SgHGPGMCmgemARoncQkRI6+E4l4pU9lBpQUbJJMZ5d33y1r0eOZzoiYZY2JC?=
+ =?us-ascii?Q?4uNTj0vVu0zqkpVxtx8HNqU6ipVx4asWn+Cmen94I2NseVvWCUCZ8ZvPgVAy?=
+ =?us-ascii?Q?Wa8ODkGu+oFHguq+PiALl0xxHoGABSn5WqvxmVx3W9+t58pHXOECFy0Z+K2C?=
+ =?us-ascii?Q?Oogc6m+MJDdFkf8SRq8CProHCCCBmhmlXv5zWsk5TcCQi1W1v2/BKRMjNSrH?=
+ =?us-ascii?Q?7uYO+HWbURZv+2HKay85zEL5PSWthMMrhfNn4qeG1elBgq/7uC1Hs8U2bEyG?=
+ =?us-ascii?Q?BMbVmHp7vk8UxUcjUDoqEklq7mZUu1TbwOff/IMZ6P5vQxcExNSEYG3/505A?=
+ =?us-ascii?Q?BVihdjeeH1ETo7aKTpjedV85ft3DuPYsH9J7HmMX54n67rarOwmozQNecSZL?=
+ =?us-ascii?Q?RFj4v/T7q4GyxzKK2F/yuU4EXWbeiIKGIhn888Bgh7781tYw+NQnQUVlrdNj?=
+ =?us-ascii?Q?tS04ZgpXFlVssV2O36sR729UlNmrjwGo5LLTRP/+D45cSBHenuAltWdIMeZy?=
+ =?us-ascii?Q?5lFw1g4FSipxKX1lV6jsZYkFIzZ3edf8qREylFBkn5dTterhzvaDSqOTnTeF?=
+ =?us-ascii?Q?zAChRkelb1JRYPyPn7S3krhitFepUMBO8DQPKuDC0BPe8V54ZG+FrJDJ15Cn?=
+ =?us-ascii?Q?tFKbH0lNSl7BF/DE+P6jXuAkv7MAwvH2nyX2nEBTZYKaWHiajUq8rLRMJwV6?=
+ =?us-ascii?Q?SzRSPBDhCo77eSSfNNDWMgEiC1iruocNtQ1c0sw4vSNVQ90pWbB1uSb9mNm6?=
+ =?us-ascii?Q?8K/qKAiAC6I5RcZSR9SE6jNpY64hcG4P4HZ8WIqbA7x1FtDj3D68gpqBBAEm?=
+ =?us-ascii?Q?DmciieyR6IXzzmKkj67ARzU2dlfLAiBc4OhGUq2jSnDjduF7kmSXNAjHfkLR?=
+ =?us-ascii?Q?N8xiK9703dJ9sF/QZJZF9xEu7LX+QJW4QH5qhG1pykALJhHEajAvbhrchbv3?=
+ =?us-ascii?Q?geoxFxGRcgI4F6jLXGJ+yFGzlwy+yPbZRFbPfc9Preg02/GxYtv7HIyjlxHQ?=
+ =?us-ascii?Q?zbm2qvS1CHqA83tA2KqcrZ4ymRpWl2rUl6QbO6+x34ecuk+ihjFxLaENpPfa?=
+ =?us-ascii?Q?cXX2uvvsRLv/PS4=3D?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB7430.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(8096899003)(7053199007)(38070700018);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?Windows-1252?Q?9wZjU6Y0U+vydae/hMgPTApFtMJ0nKN35RoTUYGGn/1TJ1EO5klxdafR?=
+ =?Windows-1252?Q?62lQ39afWhTEj1v6L0xN8miIxgCYI1rM9exuT22Pp664xHjnmebHcPsv?=
+ =?Windows-1252?Q?H6dwfkDNiccMuDQv7MEjOYeg4d9GLXxje2FVYimFPflYbgGjIgm6Bbo1?=
+ =?Windows-1252?Q?uvYc3bbqb3VJj4wxeugPt5bTMVqWyES0/76sD1ZnxFUtVd73gxdbK9Y6?=
+ =?Windows-1252?Q?m6+jvoTR2cTNTEBrsWAIpetC5EsF+LwqRIXxaBBAXo9DFMA27Fjboovz?=
+ =?Windows-1252?Q?xxvg6JxjDSGQ8GS8UsZ8d1AwhP9GHFPyk13vNkMO99ZcLBDxo8KkebBf?=
+ =?Windows-1252?Q?HabmgXYx9W7fAVCqsm96SPN700P+gsyC/cBTV4DXac6Zzj503/R1q9no?=
+ =?Windows-1252?Q?XeIPjC5OMdVOXCk64OB2tolYglZ+XC+3IP39dmhyOPvGZkbULlLLWZFZ?=
+ =?Windows-1252?Q?kifL9kV1dpzmI+9imGkp9lnqt/mlRiIk9Qia8xZzGvdfAt7Nslp3N8bS?=
+ =?Windows-1252?Q?4tmLEZnwWCBMgqDZAn2Qw3CAJnzOdXHDuL0cI67mOyHNB24XqCAckw47?=
+ =?Windows-1252?Q?hZ9AkOS483gydAh3QJZYj1VD17lIpI0JyJVgNz1H+m9mA/iZ0BYhU4qq?=
+ =?Windows-1252?Q?QIUMYA8bwHozpg8QcqzEVIlR9rKBtjFeV7PEGzZeraKZ6jMuXrqLFuaN?=
+ =?Windows-1252?Q?SuY6HvL0WeSNo41ou8kIYQAHHrtW+L++yVQMfgEOZgKPE5UqCs6iZN53?=
+ =?Windows-1252?Q?K0zt4xnCuROd1+noNtZ1Xj6GiqZkA7Ys2n4H89f9bkZkPAFQoOw/UFdZ?=
+ =?Windows-1252?Q?3ZpUoQedzOnBQn6M5rqGLZEL6K5tOIQhTHh3fgJ2l8XENS6yGPjWc6hI?=
+ =?Windows-1252?Q?+bDtnwX+hOo1tayYNuMjMb6PTXf1yt3jQZauA/s29htzljst3IEtT1o8?=
+ =?Windows-1252?Q?x/KVsx0cXdQRKzRfAA9KBOgXVDJyilNeceETmlxNeQhiTG+tD2VzHa7I?=
+ =?Windows-1252?Q?x94VkvmFE52bRhhb1xggLPPzOlmCNrnl3mMFQXM4qoYHXP/5PjenA74E?=
+ =?Windows-1252?Q?n1SHU2Fq/Y9TrR/LiF6vjw+qgV/b6sTCq+2qD3EwuSEwc3Ny+Pt0RiEc?=
+ =?Windows-1252?Q?oAKl6J4Pk5UWLWV3ea2ySeymoh2g806h1RmDkTBkdpmpoMzGgeNLywTA?=
+ =?Windows-1252?Q?hDJD/jjx0yv1U9yDvUDDNmlIjiSNE+f0W8lQFNV8xKEFQOzV56DyQxgo?=
+ =?Windows-1252?Q?aqTuNEhucI7nDq4B68ehJA8rmfktZ1EeypS9onAP3N5/opgQFlWZvlOP?=
+ =?Windows-1252?Q?hQpgrBD8AzItoNVpvnoSioa5ZnAn5UPb8d40dmQVdzbBSPx/r3JJrnQm?=
+ =?Windows-1252?Q?3Jon70MWhibhOruYgZUHNBSCjlkKXTF1AmPOIAAp3PU0uBS036Veyk5r?=
+ =?Windows-1252?Q?KFidCw4Knqf8HawT5W4ONfxIXztqSnA8PORr6Ph/xRVXa++3JyzRwC5s?=
+ =?Windows-1252?Q?it8gcCBltAvQXDfeok7KwIsEE9rFBBaTXCeLyqfOPs0Pjvb0EB8sjdEd?=
+ =?Windows-1252?Q?GQ7L6TUhW7klgVy8NYavN53lq2obI8MYGkF/zNdhy4m5lyk5WuRTYnsY?=
+ =?Windows-1252?Q?ihtHl8hGDAO5zIck8AkHihohlcmWu8Rmq7YAQ1hh6JMIIpP50El/ddsN?=
+ =?Windows-1252?Q?j0W6noSzddJ/DV3muAPCXce9m2mJYyBCAAGUu619qNavDu3OHhv/TxRC?=
+ =?Windows-1252?Q?qrrebOdAVMzFUK0vYI4=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB74302AFA1BB4AF3C4589909ED40C2CO6PR09MB7430namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR09MB11096
+Return-Path: Franki.ALLEGRA@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Dec 2024 17:42:59.3375
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: a77cfe06-6aca-443e-9375-08dd250b92bf
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: SJ1PEPF00002321.namprd03.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: SJ1PEPF00002321.namprd03.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: SJ1PEPF00002321.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: f0dbd720-c087-4877-d122-08dd250b8d9f
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|35042699022|8096899003|7053199007;
+X-Forefront-Antispam-Report: CIP:52.101.58.61;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN8PR09CU001.outbound.protection.outlook.com;PTR:mail-eastus2azon11012061.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(35042699022)(8096899003)(7053199007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Dec 2024 17:42:58.9312
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a77cfe06-6aca-443e-9375-08dd250b92bf
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SJ1PEPF00002321.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR14MB5596
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.2469088
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8293.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?kZb4+Pt/Tiv3lNih1T3i8qdmK/Z+TSVhepde0iBvWWhyMmciDrYYEjTF?=
+ =?Windows-1252?Q?raUi1U/OWio5zdVfZ/kR+qt9SW41CSyg5SOuR6lzcbq5NslSiqE6xdtb?=
+ =?Windows-1252?Q?qjX1IeIr8yN5tXe1a+Sq6DKlU6OAaizvvut+PBTZ8o2wSsk8XlB3wzZB?=
+ =?Windows-1252?Q?L47jYMlC+FuSAQlzvCOWgddewaX7Kz8vFTH7+dzei66G1cjGmwGa4BSz?=
+ =?Windows-1252?Q?R8BtMPa2riZOdp6DFP2CPmgrahO4lQFLmOY4naCBx5L1izUdYu4eSv2W?=
+ =?Windows-1252?Q?jmzuoxke26wkvJnJaKEWfddOKcPhVtAKDM4kuqsL9gLmbcNnqiGQfiWi?=
+ =?Windows-1252?Q?/EeZqRpoVRJVsEdNS9kt7xRxPVZ88/fmiaugy6PTk1tGyVmkRgCguUxx?=
+ =?Windows-1252?Q?PxzJWzDWzyYkgajJ3/HmycbxDmHyWh+gpKWSuclPCa9UCZ45b2tIWTd6?=
+ =?Windows-1252?Q?1/VzhoWDtSLBYedFk1rSFQmvMuvN/KVoOn0stUplPWWbzp5V8M6PXW2v?=
+ =?Windows-1252?Q?268OJJAYCbaSB7ElK71qooG7QoPNxQvDypPZObRX65/+Jvb7WsEEmYox?=
+ =?Windows-1252?Q?nMSsr2/WcvUQIMqpYe8Q5U9JcMO5+JL2h7RszGyf1+ebDcM1+IVdPisQ?=
+ =?Windows-1252?Q?grsPcE9gmfD7qcFxt7aYcILzV70vdQ9gPO51HnBgfhS/wfkKoGhpGVes?=
+ =?Windows-1252?Q?YVitd6dWVBoxzBrGSIWu7yAH0H9DlTNRuFbFNKVRAhJxxgceuGuk52UA?=
+ =?Windows-1252?Q?aADnjyoIRQ0kpjIePK+bBdTAwQWqSpJUSK9xYQZa4kF0aFLTPpCwtSrd?=
+ =?Windows-1252?Q?bf4Cz7T0QF/5ATojy9UyCcOwoQFXchOWpEJ8Q5GZY/9NE+Pg+8w0FkZB?=
+ =?Windows-1252?Q?8qHLoBh0tvJQ43jcd6q4Wc7lazl7nT/XtPw33LrU/O/Hr+WPz1kpqGz5?=
+ =?Windows-1252?Q?p/uBFCOj61wCNrFctPTrgwjPHEkY/Mel/JU/xqK9BzejMWyGOBrtKa0F?=
+ =?Windows-1252?Q?JHTtjbJNJtaerJy/bv5qDTByMd8YR+f6vAn1L4U0hl50avRLV9XAoJgc?=
+ =?Windows-1252?Q?cQ/bHZF1p+5ERShbpvxjr/zzeU8LIZkhHfjrvZtr4Yimrm3Jo5IXSkb4?=
+ =?Windows-1252?Q?6CB+n2gq2EZjb36QzGcBIhMOmD8Kkl2RI8AXieNiNBSqL1IgvSod6YY2?=
+ =?Windows-1252?Q?ydILNPziWHgQ5pnzHZRroFsHCnphVnM+9SDr18ehidypvI+xkskZ8tF5?=
+ =?Windows-1252?Q?TdSqs0nEe+EuKAYRZVFNUCtgFcnoasFFn0tLMQaDv1ogXeSzYbomIpv/?=
+ =?Windows-1252?Q?618NI+thPWMCRB/YBRM8pXkggWKHBS2+iOD6Ilreba1/wQbiOPparGGJ?=
+ =?Windows-1252?Q?gzZ7SXEVS/v6rp5eyvaSx+V+5irq4BVBhdkW4IabbfI00cOB5tZbc7wG?=
+ =?Windows-1252?Q?jHAwB4CnTkqzTpEfg1WhavVvm9s7wbqzaxYJcU9xhm0ztVndb39aajKj?=
+ =?Windows-1252?Q?ei4xBZ5TzAdLCjQcwgtFjr4yumZotXykCzXfuGUcTDq4zI/iELelJRp4?=
+ =?Windows-1252?Q?4+ngZF8Mz/29IHENIBCfoJ0OzgYTlNKq8tpyHtsxQm2gEFVRzsxCqUbQ?=
+ =?Windows-1252?Q?vzFJjeHVCiPNdIscSOxYKCD03grthXB9u0rXp/+QEfXe0gq+gK6/n5kF?=
+ =?Windows-1252?Q?NSiiy+Hr2geJYRP4m4IQ/z6QqbNP3caPWBfHuWDIJvRtAR4L3xCDtZ96?=
+ =?Windows-1252?Q?eSEfoVJX9iqFpHjY4tuV4yvj+NUaaYzv8g3sbGCSSmBAvl693RkQ/o2R?=
+ =?Windows-1252?Q?BN9/n6vE3KKWHZeLKgVFaf47r+fP+fvKyM2Tt3JNAreVSlhNM0HeNobZ?=
+ =?Windows-1252?Q?PK3xVp+1U6vB3mPql72JGNCdu+uybGu9s0/jOPc5LjFNp0XM33SvHtrY?=
+ =?Windows-1252?Q?FVguF3miiAL9ZMhS7tyHawpMM3z9peV7V+K6KoiUvyvK/CcPCl86Vb72?=
+ =?Windows-1252?Q?6CcUnq9aBS1gY4l5RFi4IwJt7iTVuOdkPuA4rXqMRkHJ07B8bT793lIX?=
+ =?Windows-1252?Q?Z274Xa9cGX0y4x83pMJ+Ifa1cX4tEhvbMBCrhQ=3D=3D?=
+MIME-Version: 1.0
+
+--_000_CO6PR09MB74302AFA1BB4AF3C4589909ED40C2CO6PR09MB7430namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sam,
+That=92s great, I=92m so glad you like the park! I will be sure to order a =
+sign and name tag with =93Sam.=94 I had to wait until I had your host ID nu=
+mber to order them, so they probably won=92t be here until the second or th=
+ird week of January. And we can schedule assignments up to 18 months in adv=
+ance, so we can definitely talk about next year when you get here.
+Merry Christmas!
+Franki
+________________________________
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, December 24, 2024 6:34:02 PM
+To: ALLEGRA Franki * OPRD <franki.allegra@oprd.oregon.gov>
+Subject: Looking Forward to Volunteering at Tugman State Park
+
+Hi, Franki,
+
+Hope you're enjoying the holidays!
+
+With my family far away, I didn=92t have plans myself, so I made an impulsi=
+ve trip to Tugman State Park to check out the campground. I briefly met one=
+ of the park rangers (I believe it was John) to make sure it was okay.
+
+I didn=92t stay long, but I walked all three loops, checked out the shower =
+facilities, and explored the day-use area trail. It gave me a great sense o=
+f the space and the opportunities ahead.
+
+I wanted to share that I=92m eager to commit to volunteering for three mont=
+hs, January through March, if you=92ll have me that long. I understand the =
+first month is probationary, and I=92d love to demonstrate my fit for this =
+role. While I=92m likely to move on after March to explore other opportunit=
+ies heading north along the 101, I=92d love to return the following year as=
+ part of a circuit.
+
+These three months will allow me to fully transition into the nomadic lifes=
+tyle I=92ve been adopting while contributing to the park. Having a steady r=
+outine close to Coos Bay will be invaluable as I work through some logistic=
+al challenges and embrace this chapter of my journey.
+
+I=92m also starting to explore recreational opportunities in the area and a=
+m curious about the dunes (and dune buggies!) as well as moderately difficu=
+lt ocean trails. It looks like a beautiful spot to immerse myself in nature=
+.
+
+On a practical note, I wanted to check that my name placard will read "Sam"=
+ and not "Robert" (I go by my middle name). Also, I noticed some tree debri=
+s in Loop C during my visit=97I'd be happy to help clear that if it=92s sti=
+ll there when I return.
+
+Looking forward to meeting you in just over a week!
+
+Best regards,
+Sam
+
+
+--_000_CO6PR09MB74302AFA1BB4AF3C4589909ED40C2CO6PR09MB7430namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<div>
+<div dir=3D"ltr">
+<div dir=3D"ltr">Hi Sam,</div>
+<div dir=3D"ltr">That=92s great, I=92m so glad you like the park! I will be=
+ sure to order a sign and name tag with =93Sam.=94 I had to wait until I ha=
+d your host ID number to order them, so they probably won=92t be here until=
+ the second or third week of January. And we
+ can schedule assignments up to 18 months in advance, so we can definitely =
+talk about next year when you get here.&nbsp;</div>
+<div dir=3D"ltr">Merry Christmas!</div>
+<div dir=3D"ltr">Franki</div>
+</div>
+</div>
+<div id=3D"ms-outlook-mobile-signature">
+<div></div>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Robert Samuel White &=
+lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Tuesday, December 24, 2024 6:34:02 PM<br>
+<b>To:</b> ALLEGRA Franki * OPRD &lt;franki.allegra@oprd.oregon.gov&gt;<br>
+<b>Subject:</b> Looking Forward to Volunteering at Tugman State Park </font=
+>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"auto"><span style=3D"font-size:12pt">Hi, Franki,</span></div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Hope you're enjoying the holidays!</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">With my family far away, I didn=92t have plans myself, so=
+ I made an impulsive trip to Tugman State Park to check out the campground.=
+ I briefly met one of the park rangers (I believe it was John) to make sure=
+ it was okay.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">I didn=92t stay long, but I walked all three loops, check=
+ed out the shower facilities, and explored the day-use area trail. It gave =
+me a great sense of the space and the opportunities ahead.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">I wanted to share that I=92m eager to commit to volunteer=
+ing for three months, January through March, if you=92ll have me that long.=
+ I understand the first month is probationary, and I=92d love to demonstrat=
+e my fit for this role. While I=92m likely
+ to move on after March to explore other opportunities heading north along =
+the 101, I=92d love to return the following year as part of a circuit.</div=
+>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">These three months will allow me to fully transition into=
+ the nomadic lifestyle I=92ve been adopting while contributing to the park.=
+ Having a steady routine close to Coos Bay will be invaluable as I work thr=
+ough some logistical challenges and
+ embrace this chapter of my journey.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">I=92m also starting to explore recreational opportunities=
+ in the area and am curious about the dunes (and dune buggies!) as well as =
+moderately difficult ocean trails. It looks like a beautiful spot to immers=
+e myself in nature.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">On a practical note, I wanted to check that my name placa=
+rd will read &quot;Sam&quot; and not &quot;Robert&quot; (I go by my middle =
+name). Also, I noticed some tree debris in Loop C during my visit=97I'd be =
+happy to help clear that if it=92s still there when I return.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Looking forward to meeting you in just over a week!</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Best regards,</div>
+<div dir=3D"auto">Sam</div>
+<div id=3D"x_ms-outlook-mobile-signature" dir=3D"auto">
+<div><br>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB74302AFA1BB4AF3C4589909ED40C2CO6PR09MB7430namp_--

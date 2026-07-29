@@ -1,18 +1,24 @@
 // components/RecordsTable.tsx
 //
 // The communications table for one register: searchable, filterable by type,
-// sortable by date, built to hold hundreds of documents. Flagged filings are
-// accented and show their note; every row keeps its anchor id, its downloads,
-// and the unmodified original behind the disclosure.
+// sortable by date, built to hold hundreds of documents. Messages that share
+// a subject collapse into an expandable chain; a chain carrying a flagged
+// message shows the accent and the note on its collapsed header. Every row
+// keeps its anchor id, downloads, and the original behind the disclosure.
 "use client";
 
-import { useMemo, useState } from "react";
-import type { Filing, FilingKind } from "@/components/RecordsThread";
+import { useEffect, useMemo, useState } from "react";
+import type { ChainMeta, Filing, FilingKind } from "@/components/RecordsThread";
 import { KIND_LABEL } from "@/components/RecordsThread";
+import { CHAIN_PDFS } from "@/data/chains";
 
 function ext(href: string): string {
     const m = href.toLowerCase().match(/\.([a-z0-9]+)$/);
     return m ? m[1].toUpperCase() : "FILE";
+}
+
+function baseSubject(title: string): string {
+    return title.replace(/^((re|fw|fwd)\s*:\s*)+/i, "").trim();
 }
 
 function Chip({ label }: { label: string }) {
@@ -23,32 +29,169 @@ function Chip({ label }: { label: string }) {
     );
 }
 
-export default function RecordsTable({ filings }: { filings: Filing[] }) {
+const SENT_KINDS = new Set(["notice", "request", "followup", "statement", "petition", "supplement"]);
+
+const MONTH_ABBR: Record<string, string> = {
+    January: "Jan", February: "Feb", March: "Mar", April: "Apr", May: "May", June: "Jun",
+    July: "Jul", August: "Aug", September: "Sep", October: "Oct", November: "Nov", December: "Dec",
+};
+
+function shortStamp(f: Filing): string {
+    const noYear = f.date.replace(/, \d{4}$/, "");
+    const abbr = noYear.replace(/^(\w+)/, (m) => MONTH_ABBR[m] ?? m);
+    return f.time ? `${abbr}, ${f.time}` : abbr;
+}
+
+function counterparty(f: Filing): { label: string; who: string } | null {
+    const sent = SENT_KINDS.has(f.kind);
+    let who = sent ? f.to : f.from;
+    if (!who) who = sent ? f.from : f.to;
+    if (!who) return null;
+    who = who.replace(/(^|, )Robert White(, |$)/, "$1").replace(/^, |, $/g, "").trim();
+    if (!who) return null;
+    return { label: sent ? "To" : "From", who };
+}
+
+function Row({ f, member, onEml }: { f: Filing; member?: boolean; onEml: (href: string) => void }) {
+    const cp = counterparty(f);
+    return (
+        <div
+            id={f.id}
+            className={`scroll-mt-48 grid grid-cols-1 sm:grid-cols-[8rem_1fr_auto] gap-1 sm:gap-5 ${
+                member ? "pl-9 pr-5 py-2" : "px-5 py-3"
+            } ${f.flagged ? "bg-emerald-50/60" : member ? "bg-gray-100/70" : ""}`}
+        >
+            <div>
+                {member ? (
+                    <div className="text-xs font-semibold text-gray-600 whitespace-nowrap">{shortStamp(f)}</div>
+                ) : (
+                    <div className="text-sm font-bold text-gray-900">{f.date}</div>
+                )}
+                <div className="mt-0.5 text-[11px] uppercase tracking-wider text-gray-400">{KIND_LABEL[f.kind]}</div>
+            </div>
+
+            <div className="min-w-0">
+                {!member && (
+                    <div className={`text-sm leading-snug ${f.flagged ? "font-semibold text-gray-900" : "text-gray-800"}`}>
+                        {f.title}
+                    </div>
+                )}
+                {cp && (
+                    <div className={member ? "text-xs text-gray-600" : "mt-0.5 text-sm text-gray-700"}>
+                        <span className="text-gray-400">{cp.label} </span>
+                        {cp.who}
+                    </div>
+                )}
+                {f.flagged && f.summary && (
+                    <div className="mt-1 text-sm text-gray-700 leading-relaxed">{f.summary}</div>
+                )}
+                <div className={`${member ? "mt-0.5" : "mt-1"} font-mono text-[10px] tracking-widest text-gray-300`}>
+                    {f.ulid}
+                </div>
+            </div>
+
+            <div className="flex sm:justify-end items-start gap-1.5 flex-wrap sm:w-[7.5rem]">
+                {(f.docs ?? []).map((d) => (
+                    <a key={d.href} href={d.href} download title={d.label} className="group">
+                        <Chip label={ext(d.href)} />
+                    </a>
+                ))}
+                {f.eml && (
+                    <button
+                        type="button"
+                        onClick={() => onEml(f.eml!)}
+                        title="Unmodified email original"
+                        className="group"
+                    >
+                        <Chip label="EML" />
+                    </button>
+                )}
+            </div>
+        </div>
+    );
+}
+
+export default function RecordsTable({ filings, threadSlug, chains }: { filings: Filing[]; threadSlug: string; chains?: Record<string, ChainMeta> }) {
     const [query, setQuery] = useState("");
     const [kind, setKind] = useState<FilingKind | "all" | "flagged">("all");
     const [asc, setAsc] = useState(true);
     const [emlOpen, setEmlOpen] = useState<string | null>(null);
+    const [suppress, setSuppress] = useState(false);
+
+    const requestEml = (href: string) => {
+        if (typeof window !== "undefined" && window.localStorage.getItem("eml-notice-suppressed") === "1") {
+            const a = document.createElement("a");
+            a.href = href;
+            a.download = "";
+            a.click();
+            return;
+        }
+        setSuppress(false);
+        setEmlOpen(href);
+    };
+    const [open, setOpen] = useState<Set<string>>(() => new Set());
 
     const kinds = useMemo(
         () => Array.from(new Set(filings.map((f) => f.kind))),
         [filings]
     );
 
-    const rows = useMemo(() => {
+    const filtering = query.trim() !== "" || kind !== "all";
+
+    const groups = useMemo(() => {
         const q = query.trim().toLowerCase();
-        let out = filings.filter((f) => {
+        const rows = filings.filter((f) => {
             if (kind === "flagged" && !f.flagged) return false;
             if (kind !== "all" && kind !== "flagged" && f.kind !== kind) return false;
             if (!q) return true;
-            const hay = [f.title, f.summary, f.date, f.d, KIND_LABEL[f.kind], f.from, f.to]
+            const hay = [f.title, f.summary, f.date, f.d, f.ulid, KIND_LABEL[f.kind], f.from, f.to]
                 .filter(Boolean)
                 .join(" ")
                 .toLowerCase();
             return hay.includes(q);
         });
-        out = out.slice().sort((a, b) => (asc ? a.d.localeCompare(b.d) : b.d.localeCompare(a.d)));
+        // ULIDs are timestamp-prefixed, so lexicographic order is exact
+        // chronological order, including within a single day.
+        const sorted = rows.slice().sort((a, b) => a.ulid.localeCompare(b.ulid));
+        const byKey = new Map<string, Filing[]>();
+        for (const f of sorted) {
+            const key = f.chain ?? baseSubject(f.title).toLowerCase();
+            const g = byKey.get(key);
+            if (g) g.push(f);
+            else byKey.set(key, [f]);
+        }
+        const out = Array.from(byKey.entries()).map(([key, members]) => ({ key, members }));
+        out.sort((a, b) => a.members[0].ulid.localeCompare(b.members[0].ulid));
+        if (!asc) out.reverse();
         return out;
     }, [filings, query, kind, asc]);
+
+    const total = useMemo(() => groups.reduce((n, g) => n + g.members.length, 0), [groups]);
+
+    // Deep links into a collapsed chain: expand the chain and let the anchor land.
+    useEffect(() => {
+        const hash = window.location.hash.slice(1);
+        if (!hash) return;
+        for (const g of groups) {
+            if (g.members.length > 1 && g.members.some((m) => m.id === hash)) {
+                setOpen((prev) => new Set(prev).add(g.key));
+                setTimeout(() => document.getElementById(hash)?.scrollIntoView(), 50);
+                return;
+            }
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const isOpen = (g: { key: string; members: Filing[] }) =>
+        filtering || open.has(g.key);
+
+    const toggle = (key: string) =>
+        setOpen((prev) => {
+            const next = new Set(prev);
+            if (next.has(key)) next.delete(key);
+            else next.add(key);
+            return next;
+        });
 
     return (
         <div>
@@ -82,73 +225,85 @@ export default function RecordsTable({ filings }: { filings: Filing[] }) {
                     Date {asc ? "↑" : "↓"}
                 </button>
                 <span className="text-xs text-gray-500 min-[480px]:ml-auto">
-                    {rows.length} of {filings.length} documents
+                    {total} of {filings.length} documents
                 </span>
             </div>
 
             {/* table */}
             <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden bg-white divide-y divide-gray-200">
-                {/* header (sm+) */}
-                <div className="hidden sm:grid grid-cols-[7.5rem_1fr_auto] gap-4 px-4 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
+                <div className="hidden sm:grid grid-cols-[8rem_1fr_auto] gap-5 px-5 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
                     <span>Date</span>
                     <span>Document</span>
-                    <span className="text-right">Files</span>
+                    <span className="w-[7.5rem]" />
                 </div>
 
-                {rows.length === 0 && (
+                {groups.length === 0 && (
                     <div className="px-4 py-6 text-sm text-gray-500">No documents match.</div>
                 )}
 
-                {rows.map((f) => (
-                    <div
-                        key={f.id}
-                        id={f.id}
-                        className={`scroll-mt-48 grid grid-cols-1 sm:grid-cols-[7.5rem_1fr_auto] gap-2 sm:gap-4 px-4 py-3 ${
-                            f.flagged ? "border-l-4 border-l-emerald-600 bg-emerald-50/40" : ""
-                        }`}
-                    >
-                        <div className="text-sm text-gray-600">
-                            <div>{f.date.replace(/, \d{4}$/, "")}</div>
-                            <div className="mt-0.5 text-xs uppercase tracking-wider text-gray-400">
-                                {KIND_LABEL[f.kind]}
+                {groups.map((g) => {
+                    if (g.members.length === 1) {
+                        return <Row key={g.members[0].ulid} f={g.members[0]} onEml={requestEml} />;
+                    }
+                    const first = g.members[0];
+                    const last = g.members[g.members.length - 1];
+                    const meta = chains?.[g.key];
+                    const flaggedIn = meta?.flagged || g.members.some((m) => m.flagged);
+                    const opened = isOpen(g);
+                    const note = meta?.note ?? g.members.find((m) => m.flagged && m.summary)?.summary;
+                    const chainPdf = CHAIN_PDFS[`${threadSlug}|${g.key}`];
+                    const range = (() => {
+                        if (first.date === last.date) return first.date;
+                        const [m1, d1, y1] = first.date.replace(",", "").split(" ");
+                        const [m2, d2, y2] = last.date.replace(",", "").split(" ");
+                        if (y1 === y2 && m1 === m2) return `${m1} ${d1} to ${d2}, ${y1}`;
+                        if (y1 === y2) return `${m1} ${d1} to ${m2} ${d2}, ${y1}`;
+                        return `${first.date} to ${last.date}`;
+                    })();
+                    return (
+                        <div key={g.key}>
+                            <div
+                                className={`grid grid-cols-1 sm:grid-cols-[8rem_1fr_auto] gap-1 sm:gap-5 px-5 py-3 cursor-pointer hover:bg-gray-50 transition-colors ${
+                                    flaggedIn ? "bg-emerald-50/60" : ""
+                                }`}
+                                onClick={() => toggle(g.key)}
+                            >
+                                <div>
+                                    <div className="text-sm font-bold text-gray-900">{range}</div>
+                                    <div className="mt-0.5 text-[11px] uppercase tracking-wider text-gray-400">
+                                        {g.members.length} messages
+                                    </div>
+                                </div>
+                                <div className="min-w-0">
+                                    <div className={`text-sm leading-snug ${flaggedIn ? "font-semibold text-gray-900" : "text-gray-800"}`}>
+                                        <span className="mr-1.5 inline-block text-gray-400 text-xs">{opened ? "\u25be" : "\u25b8"}</span>
+                                        {baseSubject(first.title)}
+                                    </div>
+                                    {note && !opened && (
+                                        <div className="mt-1 text-sm text-gray-700 leading-relaxed">{note}</div>
+                                    )}
+                                </div>
+                                <div
+                                    className="flex sm:justify-end items-start gap-1.5 flex-wrap sm:w-[7.5rem]"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    {chainPdf && (
+                                        <a href={chainPdf} download title="Full chain as one PDF" className="group">
+                                            <Chip label="PDF" />
+                                        </a>
+                                    )}
+                                </div>
                             </div>
-                        </div>
-
-                        <div className="min-w-0">
-                            <div className={`text-sm ${f.flagged ? "font-semibold text-gray-900" : "text-gray-800"}`}>
-                                {f.title}
-                            </div>
-                            {(f.from || f.to) && (
-                                <div className="mt-0.5 text-xs text-gray-500">
-                                    {f.from && <span>From: {f.from}</span>}
-                                    {f.from && f.to && <span> &middot; </span>}
-                                    {f.to && <span>To: {f.to}</span>}
+                            {opened && (
+                                <div className="divide-y divide-gray-200/70 border-t border-gray-200">
+                                    {g.members.map((f) => (
+                                        <Row key={f.ulid} f={f} member onEml={requestEml} />
+                                    ))}
                                 </div>
                             )}
-                            {f.flagged && f.summary && (
-                                <div className="mt-1 text-sm text-gray-700 leading-relaxed">{f.summary}</div>
-                            )}
                         </div>
-
-                        <div className="flex sm:justify-end items-start gap-1.5 flex-wrap sm:max-w-[14rem]">
-                            {(f.docs ?? []).map((d) => (
-                                <a key={d.href} href={d.href} download title={d.label} className="group">
-                                    <Chip label={ext(d.href)} />
-                                </a>
-                            ))}
-                            {f.eml && (
-                                <button
-                                    type="button"
-                                    onClick={() => setEmlOpen(f.eml!)}
-                                    title="Unmodified email original"
-                                    className="group"
-                                >
-                                    <Chip label="EML" />
-                                </button>
-                            )}
-                        </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
 
             {/* disclosure modal */}
@@ -202,7 +357,10 @@ export default function RecordsTable({ filings }: { filings: Filing[] }) {
                             <a
                                 href={emlOpen}
                                 download
-                                onClick={() => setEmlOpen(null)}
+                                onClick={() => {
+                                    if (suppress) window.localStorage.setItem("eml-notice-suppressed", "1");
+                                    setEmlOpen(null);
+                                }}
                                 className="inline-block px-4 py-2 text-center text-sm font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-800 transition-colors"
                             >
                                 Download the Original
@@ -215,6 +373,16 @@ export default function RecordsTable({ filings }: { filings: Filing[] }) {
                                 Cancel
                             </button>
                         </div>
+                        <label className="mt-4 flex items-center gap-2 text-sm text-gray-600 select-none">
+                            <input
+                                type="checkbox"
+                                checked={suppress}
+                                onChange={(e) => setSuppress(e.target.checked)}
+                                className="h-4 w-4 accent-emerald-700"
+                            />
+                            Don't show this notice again
+                        </label>
+
                     </div>
                 </div>
             )}

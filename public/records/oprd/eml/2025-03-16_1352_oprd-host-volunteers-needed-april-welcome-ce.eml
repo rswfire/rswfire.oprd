@@ -1,0 +1,659 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH8PR14MB6993.namprd14.prod.outlook.com (2603:10b6:510:25c::5)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Sun, 16 Mar 2025
+ 20:53:13 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=fail;
+ b=xFIgUBijkBqh6EF13lR4ffI48fVc28KGL1JCwifSTByfYuagFusXtCaP1RcO7v48ROgtT0+77b03e7BsfCo8pmfb9gydnQTBNiT4/JQnafWAD6QndjGbYAsW4tjYFERnPIGpGfdUe/OVsjzZAwdy/crr54hASLTazvghe0RxhmyHX+AF77BaH1j0dHkXjxiZ9CRE0F4gGxHYLsOXRerflVyheHTY3WRTkrg78UIj1/5+47GPrGqwJnZznaHJrPrYn9E4mUjqYM0cZe1iUZuQohdQBYGgn82Woqn1+5EvxVljqrn1M+WQ5+Z7S6sA4oSudwub/3obUuglY4Q3cYtqjA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=UZv+J7cS6Em9eGTXiEOY58yifT+61ZdpG1ELD1mOaaE=;
+ b=GN9mAqQUm9Na8amohuY88yq7GMAYo2lnGhvz01zOT0tdjl+jbVnaQ+M57DjArJb+6luwP3a56DvnkO3fOkR7htge1jD9xEEBpIC7Rj+8XZhZ4FD3WjGDoaMfs/hrDnftLOPvuk0B7/fvTGGpawLfUqyrbEO4i0atJFYTKUNirk8LsqbfGAyg1w+34iBJOZFFb9nSWVI0FjtRcCDQmEA0ykFDWrmpBKJtGdkbJC+IW47bc83XRYQ+IGliQ80fnyM9qzitLOSqewJV63Yfpy3ho7h2VbjspZSHJ0MY7Lwp5YkqPj1ot15OA1CXP5cA2yMNhH/jU8P8dRhF58j56q/i8Q==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 159.121.206.199) smtp.rcpttodomain=rswfire.com smtp.mailfrom=omls.oregon.gov;
+ dmarc=pass (p=quarantine sp=none pct=100) action=none
+ header.from=oprd.oregon.gov; dkim=fail (signature did not verify)
+ header.d=oprd.oregon.gov; arc=fail (47)
+Received: from BN8PR07CA0017.namprd07.prod.outlook.com (2603:10b6:408:ac::30)
+ by PH8PR14MB6993.namprd14.prod.outlook.com (2603:10b6:510:25c::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8511.27; Sun, 16 Mar
+ 2025 20:53:04 +0000
+Received: from BL6PEPF0001AB4C.namprd04.prod.outlook.com
+ (2603:10b6:408:ac:cafe::fb) by BN8PR07CA0017.outlook.office365.com
+ (2603:10b6:408:ac::30) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8534.33 via Frontend Transport; Sun,
+ 16 Mar 2025 20:53:04 +0000
+Authentication-Results: spf=pass (sender IP is 159.121.206.199)
+ smtp.mailfrom=omls.oregon.gov; dkim=fail (signature did not verify)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of omls.oregon.gov
+ designates 159.121.206.199 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.206.199;
+ helo=listsmart.osl.state.or.us; pr=C
+Received: from listsmart.osl.state.or.us (159.121.206.199) by
+ BL6PEPF0001AB4C.mail.protection.outlook.com (10.167.242.70) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8534.20 via Frontend Transport; Sun, 16 Mar 2025 20:53:03 +0000
+Received: from listmart.osl.state.or.us (localhost [127.0.0.1])
+	by listsmart.osl.state.or.us (Postfix) with ESMTP id D7397302180B;
+	Sun, 16 Mar 2025 13:53:01 -0700 (PDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 listsmart.osl.state.or.us D7397302180B
+Authentication-Results-Original: listsmart.osl.state.or.us;	dkim=fail
+ reason="signature verification failed" (2048-bit key)
+ header.d=oprd.oregon.gov header.i=@oprd.oregon.gov header.b="k+uyEHXZ"
+X-Original-To: host-volunteers-urgent-park-needs@omls.oregon.gov
+Delivered-To: host-volunteers-urgent-park-needs@omls.oregon.gov
+Received: from WPORGEXCL14.ENTSS.OR.GOV (WPORGEXCL14.entss.or.gov
+ [198.177.16.71])
+ by listsmart.osl.state.or.us (Postfix) with ESMTP id 1CF6A3021803
+ for <host-volunteers-urgent-park-needs@omls.oregon.gov>;
+ Sun, 16 Mar 2025 13:53:00 -0700 (PDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 listsmart.osl.state.or.us 1CF6A3021803
+Received: from WPORGEXCL17.ENTSS.OR.GOV (198.177.16.74) by
+ WPORGEXCL14.ENTSS.OR.GOV (198.177.16.71) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.37; Sun, 16 Mar 2025 13:52:59 -0700
+Received: from BY5PR09CU001.outbound.protection.outlook.com (159.121.201.68)
+ by WPORGEXCL17.ENTSS.OR.GOV (198.177.16.74) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.37 via Frontend Transport; Sun, 16 Mar 2025 13:52:59 -0700
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=x1uFmvj4t/ZCPFT/JHM+Vp1aReCrp0M1KRZqRzGmJwnbWhPwsct+rEyxcWz6I9Jmu0DnCyEFKU3fDO3eKWD9tNSuGRoUqQqr/nYO4B8e10vax5g5HtJxPZ9d2UpBdfczrtk/SrjVfyeuIF5Chb7lm9BVfoFtlPV5zKQPFU93lZwkZmUR8p+vjnd894KDSbsMNPcrgPbdaOMc0Pr5AeZdIcXcxGAuT+PLkTq1hkvoUgCg2SgUmKAFZ8niL034DVLHKE4Vvo4q2okzxT4p1cae1JXqHJygQUA4qgLRSoKPfdqNs0A9l/4yvkgZd1FvsJtyu+aXpfPxMJICbnDd8S8Klg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=4AZFcwJLR2+HmavRn8U3r1e81kJpv0P/gFWDaDJw9MI=;
+ b=Ppxp5Qd5RoE/R3+uaVX6ws28GUMVEaS8s8lzkr8mWyBWrs3EddS3vGmza4TFZooUU8mwlMAt63s2EbaMSy6vHWH6x9o6PskIkujXspFHmIm5rTHs8TptuRZUa29GOIU36HIst8jLfloPyoqN1FHhn2IRIaJ6LCO0dMvtMiHOdh6FsHqbA4d+Jhra2IkOCsUeXNa38RN6R/ZS0f1xsGA2HSbEEi+Wve2PED5GE6EPogl1VbsZ57eEECgstvDeESUWpZzqgNVjBe8+sp7RVZx26X32jyFMlVp7fO3Psl8XfbKbrkOAza022H92GAYDyEetShP/4qbUUL1DY2QSVkgMmQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=4AZFcwJLR2+HmavRn8U3r1e81kJpv0P/gFWDaDJw9MI=;
+ b=k+uyEHXZievKRPs2MzuFnhlHXNe31f3J4jEKfDMcCf6V6+iMjmskQf3NdPsgaAYCJn2fLXBZZufN7y1xvAtrr24LlJYkiWBa8j49nv374jAQ1rv67Ko4xBSzs0eh4A3NYe3b6rgR2tYtqh12QNCfNIJnLB+yXJeTm2oJ3uq8qbtvIaNB5/7tVLoDfokmgy4gxwUuNyyyCJdKOoRZHfrMacOdRasUX6GtpPCbP55tiwqrLFfb5xKVETSrbwZCF+T4SShpCu9Q5dktIncJFs+DwfYVQQfJWATxRTxhjQ7+3/BZqY5kIHE5Pies1UWSPSxYqHlv6vYQ1Ed07W96lUZ1pQ==
+Received: from PH0PR09MB11421.namprd09.prod.outlook.com
+ (2603:10b6:510:2c4::14) by PH0PR09MB8762.namprd09.prod.outlook.com
+ (2603:10b6:510:64::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8534.33; Sun, 16 Mar
+ 2025 20:52:55 +0000
+Received: from PH0PR09MB11421.namprd09.prod.outlook.com
+ ([fe80::dc48:342f:49b2:ce13]) by PH0PR09MB11421.namprd09.prod.outlook.com
+ ([fe80::dc48:342f:49b2:ce13%7]) with mapi id 15.20.8534.031; Sun, 16 Mar 2025
+ 20:52:55 +0000
+From: MORRISON Paiute * OPRD <Paiute.Morrison@oprd.oregon.gov>
+To: "host-volunteers-urgent-park-needs@omls.oregon.gov"
+	<host-volunteers-urgent-park-needs@omls.oregon.gov>
+Thread-Topic: April Welcome Center Host(s) - Beverly Beach State Park
+Thread-Index: AduWtJ3Y1MR6bIOrRGORQJWuuxuBdA==
+Date: Sun, 16 Mar 2025 20:52:55 +0000
+Message-ID: <PH0PR09MB1142142417FA673E644C7B6D5B8DC2@PH0PR09MB11421.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: PH0PR09MB11421:EE_|PH0PR09MB8762:EE_|BL6PEPF0001AB4C:EE_|PH8PR14MB6993:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 2cec0237-30cc-4784-4abf-08dd64cc8bc2
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|366016|8096899003|41050700001;
+X-Microsoft-Antispam-Message-Info-Original: loqOS4xB0QDdZWrwG+7PNR2XR65FPb25XxUBz06HeFStY/n1USJW+s/s0+jlU7XnA5ca+zQikGsEg2BwVST0Jy/5MxeyuaEZeCS07AkdAqQSrIX0obirloUns4KA7OQXaShR19OHh2q0YGSolSi6mFOtPSgJcN8IOFOXhLzv/2XmgooUvbOmVJWQxFz3JFGNH1O14wOfR5JhrVPwgtkeGkV5KrHjHBkqmMSvKu7+NWPqsS8vzc7q5xU7cDI1D0f4rM60sm5fe9IaNNnoGPZE5aE3xTP1HryHKLnBTFQZgaCHOX/sLC5nI8+k2gvKypSRxIGA8+2Vp6hrV6fNu0l2he1v5H70hM9HIoyLMpueORUWh8lYrlsyJTo3pF/1smixOeDcpIvjkHGVgXsqxYmh2FSYUSqeorZNU4zepz6LlzwJsXqn61UaGFtC+vUTyTLXzCYNCqFJDHEAf8J4bm6RPJpHgOK5SZSc142KwWRi9WNgIwlaa0jV7eLZEzkITkm5XQSVCRqjtvpVgMjs8iVfo9xE9haF2CWpSl99hoGUvTt2Sk97PtkQLvusJ/mf8IqgdtzBdmHpgACzD07+/+Ms9LBd/dJ8FNFTtm2IIPZm+IlxjpjgUuLTS/NZ2ZWxTFymP3QZN1GHwI+O/ePfA+DxLFH2sIscN+eCmKn+YcA+hwNvPrhDThI86E2AXxCOCDJc3bT6uzahQWTXmrtoMd05gN1hVSkApwHIkqDjRcelptU=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255; CTRY:; LANG:en;
+ SCL:1; SRV:; IPV:NLI; SFV:NSPM; H:PH0PR09MB11421.namprd09.prod.outlook.com;
+ PTR:; CAT:NONE; SFS:(13230040)(366016)(8096899003)(41050700001); DIR:INT; 
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR09MB8762
+X-OrganizationHeadersPreserved: PH0PR09MB8762.namprd09.prod.outlook.com
+X-CrossPremisesHeadersPromoted: WPORGEXCL17.ENTSS.OR.GOV
+X-CrossPremisesHeadersFiltered: WPORGEXCL17.ENTSS.OR.GOV
+Subject: [OPRD-Host-Volunteers-Needed] April Welcome Center Host(s) -
+	Beverly Beach State Park
+X-BeenThere: host-volunteers-urgent-park-needs@omls.oregon.gov
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: Email list for Oregon State Park hosts to learn of last minute
+ cancelations and needs for volunteers in parks across the state
+ <host-volunteers-urgent-park-needs.omls.oregon.gov>
+List-Unsubscribe: <https://omls.oregon.gov/mailman/options/host-volunteers-urgent-park-needs>, 
+ <mailto:host-volunteers-urgent-park-needs-request@omls.oregon.gov?subject=unsubscribe>
+List-Archive: <https://omls.oregon.gov/mailman/private/host-volunteers-urgent-park-needs/>
+List-Help: <mailto:host-volunteers-urgent-park-needs-request@omls.oregon.gov?subject=help>
+List-Subscribe: <https://omls.oregon.gov/mailman/listinfo/host-volunteers-urgent-park-needs>, 
+ <mailto:host-volunteers-urgent-park-needs-request@omls.oregon.gov?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============7702284982762187379=="
+Errors-To: host-volunteers-urgent-park-needs-bounces@omls.oregon.gov
+Sender: "Host-volunteers-urgent-park-needs"
+ <host-volunteers-urgent-park-needs-bounces@omls.oregon.gov>
+Return-Path: host-volunteers-urgent-park-needs-bounces@omls.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Mar 2025 20:53:03.7350
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 2cec0237-30cc-4784-4abf-08dd64cc8bc2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BL6PEPF0001AB4C.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BL6PEPF0001AB4C.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: f71c0275-060f-4fb7-f505-08dd64cc86c7
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|4022899009|35042699022|8096899003|4053099003|4076899003;
+X-Forefront-Antispam-Report: CIP:159.121.206.199;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:listsmart.osl.state.or.us;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(4022899009)(35042699022)(8096899003)(4053099003)(4076899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Mar 2025 20:53:03.3288
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2cec0237-30cc-4784-4abf-08dd64cc8bc2
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BL6PEPF0001AB4C.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR14MB6993
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:09.8772896
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8534.029
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?TgaNI+nxuJTlkh27RdN8iLEmOG17IBpP/me4e6gMM100H1Cpm+uXHDIn91XA?=
+ =?us-ascii?Q?ZbKq/al8hVswXbZF8A9jOQaP/gzJ6aajwfXnOa0CpGkvRJP4VxOOUydl7yGo?=
+ =?us-ascii?Q?0M8P3KmYSvTVafvh7z/RaK/tMj/T16GbJ3Ah9U5Fx8Km8IPrmkTmhdmfwvRC?=
+ =?us-ascii?Q?CGJsEIube6IzYfFvgs+fFhsuD5Y5yZP2Z5zmdJOZU7lAdYNLosbI/hB55QZY?=
+ =?us-ascii?Q?0oxcAowRfWwlAEYzOlLY72PuOTcf89b2LygJa1mTfnyEQ3vZO/WDIoC5FV1L?=
+ =?us-ascii?Q?MY03tcquWYWhzIZM6MLsRMsEKAaR9apRBWNze5mcfarAJr33PoqZsVQ3KMgn?=
+ =?us-ascii?Q?f01rbFr2/Az5RJfGclRQOwu/SYRlXQMxEVIzfravDidfJo6JDRFJBOE8hbDy?=
+ =?us-ascii?Q?lqDu8ZqpkAcoQIDLKTBP8xQrW9SK7rwy8GKfPsqwA4NcZEhkY26ZFUbyB4w5?=
+ =?us-ascii?Q?4q82k3fBP2IQTDw47TF8qndo5sIFe1LPWr7TrQEQ+NQKTovxUfzbtxS5buGg?=
+ =?us-ascii?Q?m/7ApWPxuvbRzKkTn3C6JqzB5QDwXL+++v0OYC7NuBnzfvdpNZ9UsmhBqMzX?=
+ =?us-ascii?Q?m9u8AExN7K7vTpKwde98RoVZjJm/gs7dKF5t6+//1It6Qn0klSfrfMsnsc5t?=
+ =?us-ascii?Q?x86Re7i+KxxH6nOHck23dBO5BUUR4ZktP2bqrGh81l+KdP4OfvvhLg+W7MFt?=
+ =?us-ascii?Q?JbuEiCCZhjCMhX8IxHlUd5cIuwDMgqgLh6w80o69g8EAmfTFYUtowmNH1T6u?=
+ =?us-ascii?Q?KhSJcmb3I+Eu8GMtr7IrNJTrb6jzMlqYKP22Rj6CWHxLTVqYks/5x21HCzt+?=
+ =?us-ascii?Q?1EHuLQhYmSE+blut0SXymhJwBVTQ1TzzbDyvt/eClE+koAM0gp7SxGuWXJEL?=
+ =?us-ascii?Q?+WREA90cLgAb73dL4Z9q0xi9vpbwgNZF4kJUG+L2EeRFJlOihM0xGxCjjtGE?=
+ =?us-ascii?Q?fOYU3ZGVs5siN5zprScwtIQyG1aY2rzGj9NEEsrEnKZZqfBn6UGWKcR4qrxf?=
+ =?us-ascii?Q?bcfF+JgtGKcchNv5zXH0TcWr+sJbC3DqI60a1q1JD/9gZvnRVO7++5it4+58?=
+ =?us-ascii?Q?UUnHW6PVfZ6z8SDggAn5MB2kRtfNK+wWXBnq5GNkybR34fZr3CGM+repSPcX?=
+ =?us-ascii?Q?/jJzZovSILhMV6Hjr4wMwuwmZLJOHkDqHsvfD2i4aNhfVR1gs+NYV4Y+jHGD?=
+ =?us-ascii?Q?1JsQ1xoOjkIJ2ETugmEee1BwlVsUOb/y2DR7VeE90rpu8Fc40U7hj4Z2wZ0K?=
+ =?us-ascii?Q?m78n7ecF+oK+CKf0idBloFYNj9EX5SI9sRJNeiuy8U+gcWaDsPgxvUNhH4OH?=
+ =?us-ascii?Q?Vvs7J4YZzScW7EUr+0T+3s7pyf4Uoyujp3igX0d/P2hFw6axszmArThfD1wU?=
+ =?us-ascii?Q?ow3+GZbex+yHaFL+i/CCpx/M1tOqm+EEAqxpBRBf2vL8CosgbZ6GNQGD6MCZ?=
+ =?us-ascii?Q?zje8mVV22rrxz/c+1hvrYduMOMvLyCyHktO/jL4QGe6ueDvaD4Z1RIDSCGhH?=
+ =?us-ascii?Q?tt7ppk7kxgqQHVUiO2Ilpy0YqeIRkNH0/QPuPq+uRVYc7VowGwKo3KsDgf0i?=
+ =?us-ascii?Q?8iRfVo8QUy5D6cC2ukUfTqbG8uaKMwy0608daIZUFpFai4IttTz+jdgC0+VV?=
+ =?us-ascii?Q?4pyyMLONgLQT/hIjzlQTLX7jwiTsvll9yYKcV82cdT7LSvBV/taOjgVEKcFv?=
+ =?us-ascii?Q?lr7pDLVZJG8QoVcA4OTwdofkbAlwPoIJpya1J/ZYaPrA6e8iPgGCzstm228x?=
+ =?us-ascii?Q?5xV7pYMBvjcrcbvE1/3BzujsRVXhrtJZw/xhQmRUeHT/tpZltmkSbo0F3Poo?=
+ =?us-ascii?Q?giPpjYVBXWce2qwiX7lK4bdwYRFIDaqtZA9gqY8tLyvRSGGE/g3ZYiPpwwDJ?=
+ =?us-ascii?Q?GR5+7JO08HWmVct8EmZvd2q4/CvSaJCdB22mDVgXEVvDU9uFiHqootxDIiG+?=
+ =?us-ascii?Q?EAwQMDDGmRZ3N3/oBtAVqD3yjRFMz7DLYiXvfEZaeaKOvl0zLETGPv5WcsSv?=
+ =?us-ascii?Q?1DbsBFRQfzCCJXzz/kfHcf0WreHRLkfuHWv7IQppBS9LPMZ75PZm4nF92okP?=
+ =?us-ascii?Q?0Qk9yJKHsAMCq9ZAEmB57LVueSJmErwziQbSIzfxfCB3A35F0FVyr8BMtgBe?=
+ =?us-ascii?Q?RXnMzYZpMncwjN3fXxuuotlvRe48Lz133g=3D=3D?=
+MIME-Version: 1.0
+
+--===============7702284982762187379==
+Content-Language: en-US
+Content-Type: multipart/related;
+	boundary="_004_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_";
+	type="multipart/alternative"
+
+--_004_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_
+Content-Type: multipart/alternative;
+	boundary="_000_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_"
+
+--_000_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Location: Beverly Beach Welcome Center
+Host Assignment: Visitor Center Host(s)
+Dates Needed: April 1st-30th, 2025
+Site/Shift Details: C02, working  2-6pm Sunday-Thursday,  OFF Friday + Satu=
+rday
+
+Brief Position Description: The Welcome Center at Beverly Beach Campground =
+is focused on firewood and ice sales while providing informative conversati=
+on to the public about the campground, surrounding area and other visitor n=
+eeds. Some interpretation offered in the yurt, but not a requirement to ref=
+erence.
+
+  *   Greet visitors and field questions about area/park/nearby resources
+  *   Operate POYNT credit card sales system for selling firewood, ice, and=
+ other park merchandise
+  *   Cash handling and preforming OPRD revenue reconciliation procedures
+  *   Assist in daily cleaning in the building (ex: vacuuming, dusting, san=
+itizing surfaces)
+  *   Restock Firewood cabinet and wheelbarrow
+  *   Operate trash compactor and organize Recycling Center
+Physical Requirements of this position include:
+
+  *   Serve as a visible and professional representative of the park
+  *   Answer questions and give information to the public
+  *   Attend monthly host orientation and mid-month safety meeting
+  *   Complete all safety modules, background check, and annual required pa=
+perwork
+About the park/site: Your campsite, located at Beverly Beach State Park, of=
+fers both 30 and 50amp electrical/water/sewer hook-ups.  There are on-site =
+laundry facilities. Cell/internet service is limited within park.  Ongoing =
+campground projects include paving service road, re-doing laundry facilitie=
+s (laundry units still operational).
+
+Contact: Paiute Morrison, Beverly Beach VSL (Host Coordinator).  Email me s=
+eparately (not on this thread) at paiute.morrison@oprd.oregon.gov<mailto:pa=
+iute.morrison@oprd.oregon.gov> or call 541-270-2628 Wednesday-Sunday (9am-3=
+pm) if interested or have any questions. Thank you.
+
+
+
+[cid:image001.jpg@01DB967A.55648870]
+
+Paiute Morrison |  Park Ranger / Volunteer Service Leader
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+__________________
+Beverly Beach State Park
+Oregon Parks and Recreation Department
+198 NE 123rd St  Newport Or 97365
+Work Cell: 541-270-2628
+He/Him/His
+Work Schedule: Wed-Sun 8:00 AM-4:30 PM
+
+
+
+--_000_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Bahnschrift Light Condensed";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:752701935;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-441675282 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:961810138;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-318486580 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><b>Location</b>: Beverly Beach Welcome Center<o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><b>Host Assignment:</b>&nbsp;Visitor Center Host(s)<=
+o:p></o:p></p>
+<p class=3D"MsoNormal"><b>Dates Needed: <span style=3D"background:yellow;ms=
+o-highlight:yellow">
+April 1<sup>st</sup>-30<sup>th</sup>, 2025</span><o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b>Site/Shift Details: C02, working &nbsp;2-6pm Sund=
+ay-Thursday, &nbsp;OFF Friday + Saturday<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>Brief Position Description:</b>&nbsp;The Welcome =
+Center at Beverly Beach Campground is focused on firewood and ice sales whi=
+le providing informative conversation to the public about the campground, s=
+urrounding area and other visitor needs.
+ Some interpretation offered in the yurt, but not a requirement to referenc=
+e.<o:p></o:p></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo1">Greet visitors an=
+d field questions about area/park/nearby resources<o:p></o:p></li><li class=
+=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo1">Operate POYNT credit card =
+sales system for selling firewood, ice, and other park merchandise<o:p></o:=
+p></li><li class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo1">Cash handl=
+ing and preforming OPRD revenue reconciliation procedures<o:p></o:p></li><l=
+i class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo1">Assist in daily cle=
+aning in the building (ex: vacuuming, dusting, sanitizing surfaces)<o:p></o=
+:p></li><li class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo1">Restock F=
+irewood cabinet and wheelbarrow<o:p></o:p></li><li class=3D"MsoNormal" styl=
+e=3D"mso-list:l0 level1 lfo1">Operate trash compactor and organize Recyclin=
+g Center<o:p></o:p></li></ul>
+<p class=3D"MsoNormal"><b>Physical Requirements of this position include:&n=
+bsp;</b><o:p></o:p></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"mso-list:l1 level1 lfo2">Serve as a visibl=
+e and professional representative of the park<o:p></o:p></li><li class=3D"M=
+soNormal" style=3D"mso-list:l1 level1 lfo2">Answer questions and give infor=
+mation to the public<o:p></o:p></li><li class=3D"MsoNormal" style=3D"mso-li=
+st:l1 level1 lfo2">Attend monthly host orientation and mid-month safety mee=
+ting<o:p></o:p></li><li class=3D"MsoNormal" style=3D"mso-list:l1 level1 lfo=
+2">Complete all safety modules, background check, and annual required paper=
+work<o:p></o:p></li></ul>
+<p class=3D"MsoNormal"><b>About the park/site:</b>&nbsp;Your campsite, loca=
+ted at Beverly Beach State Park, offers both 30 and 50amp electrical/water/=
+sewer hook-ups.&nbsp; There are on-site laundry facilities. Cell/internet s=
+ervice is limited within park.&nbsp; Ongoing campground
+ projects include paving service road, re-doing laundry facilities (laundry=
+ units still operational).
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>Contact:</b> Paiute Morrison, Beverly Beach VSL (=
+Host Coordinator).&nbsp; Email me separately (not on this thread) at
+<a href=3D"mailto:paiute.morrison@oprd.oregon.gov">paiute.morrison@oprd.ore=
+gon.gov</a> or call 541-270-2628 Wednesday-Sunday (9am-3pm) if interested o=
+r have any questions. Thank you.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"625" style=3D"width:468.7pt;margin-left:.7pt;border-collaps=
+e:collapse">
+<tbody>
+<tr>
+<td width=3D"97" style=3D"width:72.7pt;padding:0in .05in 0in .7pt">
+<p class=3D"MsoNormal" style=3D"margin-right:.05in"><span style=3D"font-siz=
+e:5.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F497D"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-right:-.45pt"><span style=3D"color:#=
+1F497D"><img border=3D"0" width=3D"85" height=3D"86" style=3D"width:.8854in=
+;height:.8958in" id=3D"Picture_x0020_1" src=3D"cid:image001.jpg@01DB967A.55=
+648870"></span><span style=3D"font-size:11.0pt;color:#1F497D"><o:p></o:p></=
+span></p>
+</td>
+<td width=3D"528" style=3D"width:5.5in;padding:0in .05in 0in .7pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:5.0pt;color:#4F6228;letter-=
+spacing:2.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:18.0pt;font-family:&quot;Ba=
+hnschrift Light Condensed&quot;,sans-serif;color:#538135">Paiute Morrison</=
+span><span style=3D"font-size:10.0pt;color:gray"> |&nbsp; Park Ranger / Vol=
+unteer Service Leader<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6">___=
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_______________<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#1F497D;let=
+ter-spacing:1.0pt">Beverly Beach State Park
+<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#348AA2;let=
+ter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><span s=
+tyle=3D"font-size:10.0pt;color:#348AA2;letter-spacing:1.0pt"><o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-siz=
+e:10.0pt;color:gray">198 NE 123<sup>rd</sup> St&nbsp; Newport Or 97365<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">Work Cel=
+l: 541-270-2628
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">He/Him/H=
+is<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><u><span style=3D"font-size:10.0pt;color:#196B24">Wo=
+rk Schedule:
+</span></u><span style=3D"font-size:10.0pt;color:#196B24">Wed-Sun 8:00 AM-4=
+:30 PM<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_--
+
+--_004_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=3011;
+	creation-date="Sun, 16 Mar 2025 20:52:55 GMT";
+	modification-date="Sun, 16 Mar 2025 20:52:55 GMT"
+Content-ID: <image001.jpg@01DB967A.55648870>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABWAFUDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2R3WK
+NnkZURRlmY4AHqTWHf8Aiu2tbYzxhBbj/l6uZBBD+DNy3/AQah8Y6tDp2nu043QW8Zup0/vhSAkf
+/AnKj6A1wC6coW31HXIn1TWrpvlWZ9yoxy21QeFVR/KrhByJlNRNyb4gPfErp39oah/2D7YQxf8A
+f2XJP1AFVm1DX7tsrpNhEp/5/r6a5b8hgVT1LVrmKymieN7K4gMcjCIh90JcKxQ46jPpxWfezym3
+1KJpLxUijilEN5JiR8ONzAjohHB/kK19nFbmXtJPY1mt9bkY7h4aQ+g0vd/M09f7egHy23hyXH92
+1eA/mpqlP/oWk3yWy2NvIQpYWUheRU3AOxPXIUnmneZY6dqkRsbZNjQyMr29wG80Km7516npw3qa
+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
+
+--_004_PH0PR09MB1142142417FA673E644C7B6D5B8DC2PH0PR09MB11421na_--
+
+--===============7702284982762187379==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+_______________________________________________
+Host-volunteers-urgent-park-needs mailing list
+Host-volunteers-urgent-park-needs@omls.oregon.gov
+https://omls.oregon.gov/mailman/listinfo/host-volunteers-urgent-park-needs
+
+--===============7702284982762187379==--

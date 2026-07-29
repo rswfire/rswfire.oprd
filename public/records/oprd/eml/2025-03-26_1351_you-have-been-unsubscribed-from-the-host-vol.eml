@@ -1,0 +1,127 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH7PR14MB7009.namprd14.prod.outlook.com (2603:10b6:510:240::9)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Wed, 26 Mar 2025
+ 20:51:34 +0000
+Received: from CH5P221CA0001.NAMP221.PROD.OUTLOOK.COM (2603:10b6:610:1f2::6)
+ by PH7PR14MB7009.namprd14.prod.outlook.com (2603:10b6:510:240::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8534.44; Wed, 26 Mar
+ 2025 20:51:32 +0000
+Received: from CH1PEPF0000AD7D.namprd04.prod.outlook.com
+ (2603:10b6:610:1f2:cafe::9f) by CH5P221CA0001.outlook.office365.com
+ (2603:10b6:610:1f2::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8534.44 via Frontend Transport; Wed,
+ 26 Mar 2025 20:51:32 +0000
+Authentication-Results: spf=pass (sender IP is 159.121.206.199)
+ smtp.mailfrom=omls.oregon.gov; dkim=pass (signature was verified)
+ header.d=omls.oregon.gov;dmarc=pass action=none
+ header.from=omls.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of omls.oregon.gov
+ designates 159.121.206.199 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.206.199;
+ helo=listsmart.osl.state.or.us; pr=C
+Received: from listsmart.osl.state.or.us (159.121.206.199) by
+ CH1PEPF0000AD7D.mail.protection.outlook.com (10.167.244.86) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8534.20 via Frontend Transport; Wed, 26 Mar 2025 20:51:31 +0000
+Received: from listsmart.osl.state.or.us (localhost [127.0.0.1])
+	by listsmart.osl.state.or.us (Postfix) with ESMTP id CFE8F3017E45
+	for <rsw@rswfire.com>; Wed, 26 Mar 2025 13:51:30 -0700 (PDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 listsmart.osl.state.or.us CFE8F3017E45
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=omls.oregon.gov;
+	s=2020; t=1743022290;
+	bh=GZ+1NmIop8FYQZKOAxVt+pdysxEG73M6GZB70OE4gMY=;
+	h=Subject:From:To:Date:List-Id:From;
+	b=SjfRE4kfZ8saMvM1BMXS7PApKy1xrEc/ak4CAy4zTR49qR8wSU0nFjfXvEeYzA/T1
+	 TRVPOkhbfVVbnwST1naMDKTiW6XL+L7INXdnts9H+mTwKGiz/GDE63T3+HZdjCy6pk
+	 jfoBGmVsaVGbPSNw2NnmCyitc5ADd2D7NbIAFyfM=
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: You have been unsubscribed from the
+ Host-volunteers-urgent-park-needs mailing list
+From: host-volunteers-urgent-park-needs-bounces@omls.oregon.gov
+To: rsw@rswfire.com
+Message-ID: <mailman.0.1743022290.90586.host-volunteers-urgent-park-needs@omls.oregon.gov>
+Date: Wed, 26 Mar 2025 13:51:30 -0700
+Precedence: bulk
+X-BeenThere: host-volunteers-urgent-park-needs@omls.oregon.gov
+X-Mailman-Version: 2.1.15
+List-Id: Email list for Oregon State Park hosts to learn of last minute
+ cancelations and needs for volunteers in parks across the state
+ <host-volunteers-urgent-park-needs.omls.oregon.gov>
+X-List-Administrivia: yes
+Errors-To: host-volunteers-urgent-park-needs-bounces@omls.oregon.gov
+Sender: "Host-volunteers-urgent-park-needs"
+ <host-volunteers-urgent-park-needs-bounces@omls.oregon.gov>
+Return-Path: host-volunteers-urgent-park-needs-bounces@omls.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Mar 2025 20:51:31.8188
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 975871ca-9b29-4adf-7bf3-08dd6ca7fd1a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CH1PEPF0000AD7D:EE_|PH7PR14MB7009:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: CH1PEPF0000AD7D.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 975871ca-9b29-4adf-7bf3-08dd6ca7fd1a
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040;
+X-Forefront-Antispam-Report: CIP:159.121.206.199;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:listsmart.osl.state.or.us;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Mar 2025 20:51:31.5062
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 975871ca-9b29-4adf-7bf3-08dd6ca7fd1a
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: CH1PEPF0000AD7D.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR14MB7009
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.1558820
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8534.033
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4712040)(4999040)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?hg1tzL24GtlpQBv3B+Binzu+JC2oRCyIfkJ9KN0N2QUDxy/AxpByb46bJ2Bo?=
+ =?us-ascii?Q?0+PVB5HxHXvjkxDA9OuY9EJadli0tKSNKMZxFPZ3kZees79QhQ3eHpDuJ4JU?=
+ =?us-ascii?Q?86bcncNC79KULRb+UYgtAV24+71CrSu6oiHUmOKQ1rAw9gU3OA6Kf4BeCLcW?=
+ =?us-ascii?Q?BH4W/gLSDFYnxovu9uIoHNEprLt8qZYj+JRUxPUEXQkiK4sx/y8Dhsp6uXZX?=
+ =?us-ascii?Q?sZaY2KjqNX6LFvrKQEseRU0/j7VoryLv+RAiVBN3n7DRc51ASV0f8kj0fxQx?=
+ =?us-ascii?Q?52cV9a3cKJYMICM97YTCoNyEHIP2dsygiBKpvNqzb2MEd683+yztulizfW9h?=
+ =?us-ascii?Q?KHB5pCWptyKFMWLQV/z+DISxnxxeiFBmjUQ8XYmYUvBcccq8k5qxFpBOHNqs?=
+ =?us-ascii?Q?gquPJKPFhk5N0KYy82H9WNEWfrecqgSedyPpIUi55GcPz9JS6swkKPZzCwq1?=
+ =?us-ascii?Q?GtmDAV9wIIZgSrqzy5ytT8cZlX1vNmTYeFIQxXKNmSKmOShgukPNUWC7yOks?=
+ =?us-ascii?Q?4voRcCzFnT6fTGDrZyKBQ0SrCzo0Jrw0oLIwjz25gHosW/uz+98JjnDZriU3?=
+ =?us-ascii?Q?5ea2mfQrukIIa5TqbmO+DYn32eXIk4rpsVjeu0eY1aOHHuztxOc7CUvPdX4i?=
+ =?us-ascii?Q?fVqKY556azBsfE0V7iBdS6vZIg3Q/tPCwaVDzbsLGic3mhO1cGsPqk8Er5Y+?=
+ =?us-ascii?Q?T247DSyFXk0jeWlILSCXY3Ba++dXUPPd3GbKeoa2d1O/PFfM49IOEKmAZ708?=
+ =?us-ascii?Q?MDjlGz9S6vQE4CmfAobg0DsfItZpxMaFzgNmOzaldAvejA3zYuUkRPKbehfd?=
+ =?us-ascii?Q?CBY6aqmlt9IwrJY2iNScigB/C4Um9ZEawpH52aK6bi2uU0sS2U/UClK0jiIx?=
+ =?us-ascii?Q?dFq5ql7p/NBDF66MwadLzejv3z9f5rDPzgpNg1YrVAEk/Ht6ZyKBWLjtNx8m?=
+ =?us-ascii?Q?ftjj1Q07snzoh72SLTYxVx1XTh7x63xLAcmXtI/eq5Qm7OiJM9FO/xxZZRg2?=
+ =?us-ascii?Q?FksuYsxZulEUQcBHpOnlhH38CxVlT0mEedE+xf4AhgRoXMMzBtkXK+84u71n?=
+ =?us-ascii?Q?EM+4z7wtifoMbNxKnGcFwofhaZlWismo0quRvBuYT9KP0Fh2tYjrnpCvz7Rq?=
+ =?us-ascii?Q?2i88xXDB1QRC+rEkI2N+txiwMr4RszOjbzKWt8syvBRc5gokHPRovIT1SmOq?=
+ =?us-ascii?Q?WTQUqZ7Jab97d4rvBrqwCDTb9K2zF/9V1uJHzO7GF9rvi8IFUkrAxk/zxqV6?=
+ =?us-ascii?Q?6Os9Q6jUcyAonjJ7I0aWrLnhHmXHgHA4hMa1aTXh7+ifSlfHmPbDYaMhCp6e?=
+ =?us-ascii?Q?FVzkygTy3YPLTV208d3f/8crJzyvvNMhK4DVzRu63n6untxfZM7x38OBwrlm?=
+ =?us-ascii?Q?X+2gnWkK805zPm8kxebCayA/tzbEMQX8HXqVGmqgS76uZtLrbMnOIrerxyBf?=
+ =?us-ascii?Q?iBzWbmAba9A63znGeD3gVOTbO4NYICc2tzCXml68rwiBYuBNIYSG6giyLz49?=
+ =?us-ascii?Q?nAs9T4A86cR1O1Gtqz1Jc6/16x+CD4Wmf/dEuju3R+FLIySQUl8XW2p6yjHd?=
+ =?us-ascii?Q?ZV+L37pcFDjHlWfGwLPl4LMZ+aEDUqTOY/UAjSVBh5sFGgcUJo2sIWd+rhUG?=
+ =?us-ascii?Q?5uStzNN6XDvk2ez1d/SB2+oxddBlVZEBCkfyuPN4NzinFGHCUEha0u3LLUc7?=
+ =?us-ascii?Q?fVaRB9PEO/BjHAEFLa9LFWpNxSDkvbcIByn4lkqJFQQJwhO1SDCuWqJDkV5j?=
+ =?us-ascii?Q?d6/5yAsezB/Tjcwq2ui4mPz4f+LJiO+LX59m4GzhlnGBPHLINnOaIPmEcJFo?=
+ =?us-ascii?Q?Khyyosx1uaX76CyP7CZcw4Q9KNKpD6Fl4+N9Q74cL+8EIOOmbkZPLY5H2vN7?=
+ =?us-ascii?Q?vU5nJOP6BDl05SO6RBdQ4n15lpayixuHMGfITmaPBjQfBq9bQPnxJIODAhR1?=
+ =?us-ascii?Q?gHlQtdTtl6T7eE8j5hbRhtG2KewoyUINLuc1lT5ZdVcMxY762qDynksjhQgC?=
+ =?us-ascii?Q?mJciptbJ5vHLYKPjnB1m3EfRNEmw9xL/q9f6x/1/O1W4bCOCXjIv8h63TndK?=
+ =?us-ascii?Q?x/TPtFCZzH9vRl3D/nSRVRcFJSg2shdcuykZzd4Jffxs/2ZIfbiCt8NQ7Pw7?=
+ =?us-ascii?Q?k+yEfK13yNhC?=
+MIME-Version: 1.0
+
+Thank you OPRD Host. You will no longer receive email requests from
+parks looking for volunteer hosts for upcoming assignments.

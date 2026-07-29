@@ -1,0 +1,537 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from IA3PR14MB7606.namprd14.prod.outlook.com (2603:10b6:208:524::9)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Mon, 8 Dec 2025
+ 15:38:06 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=WzdaP+WUehnvlVKX1Dwg1A1qbzPs+YsBflrYzWsFbBzvgO4Na9n7ujpfH5StKCC3I+OkeYNeDzdfCkvIHosibaJBTHUJ/QTF3TNFcR8Gk6eFktqBpN/Zb3o9gnCHskeGg0Sv/OA+GxfbkHjTYm9C+k0WQ7kVP2/JRC3WuEc7AYZhx4WgaiXwgFBh+qEezw/1mZzpk2EsTgIxEVPoSlPzfWpcSD7uSAh3sctsdGuCIxyGvTu2SgyGKtTPTMnGOVgR7S1qJvhrM5V4aQ8ayx+33kiv+qsKpcG3/A8dXevKL76ky+tNSE6mwpWDr4uYWywNI6IRpaegXBUpj1rr4ga9jw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YCZZR1nliwF+fuFI2qPf6oAgtcPvYEq52Br0s64GWe4=;
+ b=NpDFGXFGgaEPKLoDkkNTXrSg+Alh28LJjS7nccm7c1Vd5h/gI17+FLZcuhaWWvT8N7Zg6+KWCcgjtxHyqlMxOVPAO6sChJzJmqTAy9Jru99yZxV7CioWbcyCz+Ghace7/Qz0XongTCsWjK2KUXVliQPUIzW8621WezY5ho/I1aiIrgfotpOP0jyX6o1tfZZgXDQkVX7W9pTbnEk2qpKIYk78RDLukZpne62COdMwjqlWbznJ5SVFdJVEEZ0btkhBlQtvXB1LJ5ei1JBvkICs7+dRaGwkEbbz6TqtyS4vp+kudl+C+sMiDD+9eSLzs4NJEJr939mnFVl1luGZdz4Svg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c110::5) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from SN7PR04CA0170.namprd04.prod.outlook.com (2603:10b6:806:125::25)
+ by IA3PR14MB7606.namprd14.prod.outlook.com (2603:10b6:208:524::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9343.11; Mon, 8 Dec
+ 2025 15:38:02 +0000
+Received: from SN1PEPF0002529F.namprd05.prod.outlook.com
+ (2603:10b6:806:125:cafe::7e) by SN7PR04CA0170.outlook.office365.com
+ (2603:10b6:806:125::25) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9388.14 via Frontend Transport; Mon,
+ 8 Dec 2025 15:37:44 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c110::5)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 2a01:111:f403:c110::5 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c110::5;
+ helo=BN8PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BN8PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c110::5) by SN1PEPF0002529F.mail.protection.outlook.com
+ (2603:10b6:82c:400:0:1004:0:6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9412.4 via Frontend Transport; Mon, 8
+ Dec 2025 15:38:01 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=aHK33vICteE7AbfFMeHZsNAynu/ql3AtKqvmqkEqAixTwA4/E4w45N2eoQHAGl4GSqBYsWV1xUjEBfpRNoXIpNn88bSyMOz3UpexluOy9FThdWlni2Dfn3Oz57m4WfvRTaEuJsjDTCnbj8s7eRJElnRMzTtmOdz0LI+xekcz2rWlF4hKQV4BcVTESIPWIcLuZFKth0Qe6Oitlo3kXMqQMQjjMSK/7EaCLV0uZVD+vIQ9BClJCieyj1PbT0fCODcMeuuGjQ56dhE5NhdX9kXJ+Q3yQTMvYjuJpymJ45RFfqw46LMo6C+6ZK2byYeF5JXS55MTfwnPJdYYRxB7ZSXe3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YCZZR1nliwF+fuFI2qPf6oAgtcPvYEq52Br0s64GWe4=;
+ b=JRlZkj9D62GSbTqTTwmpLKV34nDqpPHNP3XbQ1xPuyo/9Qs4xTx1GhE7l5boZcM1se0U6vUqhtGH6estWUp9W/5wGbQdWOfDtxAo6d3fPXriBjkQnZiedDS/ttmthDIDG4MvFSJR1G+E0+PxccUc+Hj/qDO9eLi8/NloEPXcyeAnWi5lGaQvNpWf4GLXN9doWr3OtnIyPCdIHC7MLU4z0V+tp2QmNopYfEfazjN+4sS6/fWABS4LkZTTKzRSdARgxYbUupeXveLziN/25NMiSRwrb4QIT60ZRmvI+kp59o+9tIBEQWnp42TVUU4lLnYl/kmhSqY1XpcYbgKo1zTwmg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=YCZZR1nliwF+fuFI2qPf6oAgtcPvYEq52Br0s64GWe4=;
+ b=RZVAT/rrIlANkkZ8xp69q6S9Q883aYI8x+My+YS+8s0k7GHWxf3KNRKj08pi2MvJT+I45CJ2+IAQkIiwq5NEV9Nd3zSlzOSE4NnPK/ODzKHWBMSgXK8eaF4Fp+YBCsdIFhiwrGurEIl5e5ZjPJcnAd35AlaMP/IP3x7RkyanwGHDxbtqWlsZ0nPqa5G8l04Fh0d2zncoCY74ljyz5znrtsL6KXGSb2Cdw82dCSj3qiemjZQZ3uvQ/7ngkNE0vZfxCReWjvCSt3M7nGP1SZ5kYlzEjRuFuB31btIOA5syHKzv4hPWvIxZ+nf8e8i3gqxwg/u5HN5MQ7UeG+vvord7DA==
+Received: from CO6PR09MB7413.namprd09.prod.outlook.com (2603:10b6:303:cd::10)
+ by SA0PR09MB7308.namprd09.prod.outlook.com (2603:10b6:806:76::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9388.14; Mon, 8 Dec
+ 2025 15:37:51 +0000
+Received: from CO6PR09MB7413.namprd09.prod.outlook.com
+ ([fe80::7945:126:fc7c:b08a]) by CO6PR09MB7413.namprd09.prod.outlook.com
+ ([fe80::7945:126:fc7c:b08a%6]) with mapi id 15.20.9388.013; Mon, 8 Dec 2025
+ 15:37:51 +0000
+From: SUMPTION Lisa * OPRD <lisa.sumption@oprd.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: There's something you should know.
+Thread-Topic: There's something you should know.
+Thread-Index: AQHcZ/vfwwRClwCt5EerCNF1I7zma7UX4Mmw
+Date: Mon, 8 Dec 2025 15:37:50 +0000
+Message-ID: <CO6PR09MB7413D0A19868160C139F74E6ADA2A@CO6PR09MB7413.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181E038622CACA2C4ABF915ADA2A@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB4181E038622CACA2C4ABF915ADA2A@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: CO6PR09MB7413:EE_|SA0PR09MB7308:EE_|SN1PEPF0002529F:EE_|IA3PR14MB7606:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 8c01b031-b965-48bb-42ed-08de366fc5b7
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|1800799024|366016|7053199007|8096899003|38070700021;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?JKKuKDd4gsu2NAGBqWL92wyjF1uMV2JcMS5IGRYEgGMX4h9Se/DJLxTDQce3?=
+ =?us-ascii?Q?rT7UuR2DKgrI8SB1mQUktxayVkH6F90x+QCIX+puITTamkZxOObZ9Rf2hXW6?=
+ =?us-ascii?Q?dryDlK/FtqBHkTxHdqoT+xMNeM7iGtrR0IzMaUyAP6h2CxRXJsfotNn5+wr1?=
+ =?us-ascii?Q?+R4MDLQfySL6s7mtyLYQpkCd+cXHn9BZ8UJGVQrmW0TSYCBq6p2KVWDNTiCJ?=
+ =?us-ascii?Q?g9giJFgTCgg4oqt9URH8bp77rcYYYbx8ryqNOQNTlbAy0jQkfJXfiq3eCqRt?=
+ =?us-ascii?Q?rdg7SWfy+WQvhrPXktI9sF2Jal+Vd/7ArZK6J3G6iRNx3h3oQzg9PjCdFNc/?=
+ =?us-ascii?Q?C4mnwBgJvX8L1GH8WEhxBfp/EjIDrcPqDY2Vt0Y3qw4xbTs2mrk4NIaHAMwr?=
+ =?us-ascii?Q?X292XX4jTwcdgNXvKOIY/3jVHvhjnVnxHRDklCnshABrdJ6TZZ5EYP9o/OcX?=
+ =?us-ascii?Q?Pg5+T82IZZU8e331x9QMMLqChZ7ND4GFXcPy2XQiQMNmo+4wlHI7mXzXjTU0?=
+ =?us-ascii?Q?G9eMzFW1/6IS7/dB32CJBevs74JF+QQiqVcTCqOt7i7XCak7ZOKM6AjG0zdk?=
+ =?us-ascii?Q?fpL65wLE+neNWhi7AhMv24TTZpaowhaKTj6LpYsduVnMd+kJjsO+HjvhLN+b?=
+ =?us-ascii?Q?3YOMfkzLpeMCPnLnFYBp3yvzfEn9MeyVoDTEe5O1FLUxsp6ghed5jIuR+RRl?=
+ =?us-ascii?Q?QSmOuvE57M+D5S4cefvqQTDI6QbCbqr9lLP28MOiZzl01MLztUCe/O+DV/0T?=
+ =?us-ascii?Q?NCjx2fZVGYpWekExp8tttP0Te4TUsBJIzo4gjJ1J/Bw9HHfQfe3yR7m7yQr8?=
+ =?us-ascii?Q?hGq9qmBJQ4ENRLsyYpWI4bDHgN2QfZYAUZq8vlID651Cdf72HRVG/KQgyd4k?=
+ =?us-ascii?Q?olukR9pj8EmaYBDjPEaM3u9yeWwtsim7JCfoRSu3Y9VydlTc9YGINLvXAQpS?=
+ =?us-ascii?Q?heZn+JExsg6LW8XiiuVLrLaSD817c+YwnMgKi+z4ks5R5t/hpALWRxHm+9jW?=
+ =?us-ascii?Q?y0GnHlhp9BCdpTY5gU1FwabR3nA4u1MFXk7Zvf5/r9vgiYbSSKfpP9IYq2o6?=
+ =?us-ascii?Q?YKlYJDeYdmvXoEPb3+F9RROkiAtGeA1Lpmdgrn0BgBmWM3gVqfAANYmBAcvm?=
+ =?us-ascii?Q?ESOsroukDIDzxLXjLOMO5bWThFsQPdHpEM+Y0/E6/ygzn/Gz+Jk9DtLdTVSF?=
+ =?us-ascii?Q?eJBMPpp2B46vTzYO7WhCwMNPk6euRhtok5EGx/rRZRM/Tl50YirooSmiPcF6?=
+ =?us-ascii?Q?+qSPNwrhKIet8s+kOmJDrlsys3Ul3BBJw4oLiftPD255Xu3H4aJoR/wyzuvF?=
+ =?us-ascii?Q?MR4q/BbDhbaXOgGdhi6tJvd5ua6cr14bMEZgO/IW9//VIqBOm22xUOtQY3vk?=
+ =?us-ascii?Q?l6zhgQyzSMq+4SGqGBeOojOIOW0ygm1gR9COkz4YOCzrXgReKCqCOw7JqV+s?=
+ =?us-ascii?Q?PIYmkHz9uRS6vP6ClFgfWFQZ/+dLry7tJmQQsFOLmhAm4wxVy5GEfTctTKEj?=
+ =?us-ascii?Q?qk2sQSwQvbp24lNqeEwPiHZtk6D9CFYF1bxL462NHpB01crLOcBuvKKF5vI1?=
+ =?us-ascii?Q?tBBsyHYseEDqFdzQjac=3D?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB7413.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(7053199007)(8096899003)(38070700021);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?cBw4CixX2SCzqQq6VJOBAEj9VByAaqoKaCxVV6CFKGvvNcrjXJdfg8aHui0Y?=
+ =?us-ascii?Q?vFo5YyWm6aZPPTNivsK52CcYhmWtN4Q5Uv/Rze/WDfw+BXil6cb9Zi3gEUsG?=
+ =?us-ascii?Q?R7BACYJ7+1kq/pZbCKKllYrcFhIIFYuN4A3ivpWOxfCEWjZcS3ki5pbRbtFQ?=
+ =?us-ascii?Q?UJqDctV88qdXin16jx/aqKcDJ5o/AYSre0jrRzoUWPpbE1s7VLqjaAjUc9K7?=
+ =?us-ascii?Q?nKsRq02IS8TRyySWImesvCQnkiN8A09ku3ebI5wDrBs4kojYTyGwmN5qx8X0?=
+ =?us-ascii?Q?mHgoSn0oQ42T40Ms7dz4R0JU7hz1ZsiLa+VytzEZtaSAatjkux9QI6x+j8AT?=
+ =?us-ascii?Q?T/33nfgAFpMmgCdaELhwSLQko+BDQgGDWyiwQmDMOAB8rjqXwH/JX2kRCiHJ?=
+ =?us-ascii?Q?BrKELz438csgV23HjlE7LJWSa0mgSjLqR0i7fi2gFmF81XHqnd0lrMG4VyBV?=
+ =?us-ascii?Q?bJUjbih6ZPrUykUcj+hk/BsaHw7bkNyyZqpE26DQqV/93bBh8uDR0SElkSC4?=
+ =?us-ascii?Q?ZTrso+3+0Fe9mcaKJ/EQyvA/K8GquQZmpAF8Fy1Q5y9tjHGsL+F6J/AAYOi+?=
+ =?us-ascii?Q?bDZpHOzLuspr7DdzlIIQlD+4RpRrapcybedmUKF6mVsZbqhaiz8Jf/8YVUwx?=
+ =?us-ascii?Q?8l6zLViqTpWwcrq5Simlf6p7Hp3Xga1AXxM0FdTSRDkUh6nJ3In+9WTHZo+y?=
+ =?us-ascii?Q?koI8mdXiqfVj5rvznvkiPRXrP1UlsKPJ4efU0h3m+j/KFE/1YPIQRmTLFJAD?=
+ =?us-ascii?Q?x9v/WffuD6FQSUU0QPOqUesflfjdx6Aa7G6/D6BODVvF438dgA4eYIAsWvZ7?=
+ =?us-ascii?Q?7QNh66m5U5AyIeqPL7uyF6TEVBVOV/xQqQgAfqIVuJmvOyjXb9R7YqwzuTgs?=
+ =?us-ascii?Q?nlpZRv7lY4/5PNSzBql1ILThGHTzDrqzFikFpobzuYJiK3xbQiUB6wvOdUFO?=
+ =?us-ascii?Q?HwUv9kfPGlFlNShJNfnkrcOBkp8K6zTHI4fgtT0yfX8+3K4q+nHTjAAkCR8/?=
+ =?us-ascii?Q?BqUqVP8SZfGLB65B6DqHuy4VJBJ/BXPDKO317EvIUG+lEGUsfTEQaTDuImcw?=
+ =?us-ascii?Q?kFvQP+ipoXiswtUsfRo8mdyeS7TpolmwjnzGR1h+6FGxM5UbosCPzMMrPZ7r?=
+ =?us-ascii?Q?ay7PQEGUwpFR+XR7vo8aEzdGCL3nczpVnQK7hOfiMG8J0LdfDlx6yOqcxPmA?=
+ =?us-ascii?Q?t26t8McO5TJPcJijVoKjigUGaxNMT+v6ukPZ0oVnsgLQhsd6eaZDOayn21zO?=
+ =?us-ascii?Q?/7WzYWByGXUbZ3A361GGkVC8QSQXd9iWATMBEA7nCEo3ODHLiUPMNULRbiqM?=
+ =?us-ascii?Q?/tCavYz3+sgtsvnr1AhTcidEBE74GGt7Ho+2vh9menv/VYxDNJEOC2KuQTSJ?=
+ =?us-ascii?Q?leTTtutr6TDtxAGtrQs+P8avdRkSDm6UJ7/gORJ7NfNlS5kvtVySJ2bEAkcn?=
+ =?us-ascii?Q?J8bqZIVZZDz/wQsmlhdPUN7PoMGVV/gPy8Ft0e8EwDmUcPkjyMtB4iXXuaFf?=
+ =?us-ascii?Q?Ma+g7T3NYtCY+Iq7bdHqr/XwXauKO8wPfx6AWCPFKj80jZ8QbBVUMl4S33rU?=
+ =?us-ascii?Q?ErsCwSqiYRTYuwrNqx/ZQdP2Y7NhQ2KecBzSYJUMVHZeDe9uOjdj+9bzpfd3?=
+ =?us-ascii?Q?eA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB7413D0A19868160C139F74E6ADA2ACO6PR09MB7413namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA0PR09MB7308
+Return-Path: lisa.sumption@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Dec 2025 15:38:01.9580
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 8c01b031-b965-48bb-42ed-08de366fc5b7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: SN1PEPF0002529F.namprd05.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: SN1PEPF0002529F.namprd05.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: SN1PEPF0002529F.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: cdbaccd4-ecc9-4ffe-c5aa-08de366fbf3f
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|35042699022|8096899003|7053199007;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c110::5;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN8PR09CU001.outbound.protection.outlook.com;PTR:mail-eastus2azlp170120005.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(35042699022)(8096899003)(7053199007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Dec 2025 15:38:01.7775
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8c01b031-b965-48bb-42ed-08de366fc5b7
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: SN1PEPF0002529F.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA3PR14MB7606
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.1943859
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9388.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?Pj7GOSU6B6VXUlerxkqSlzinGQMwXU1Gvlhn0ziWGrJ7rpezYWW2e1bj?=
+ =?Windows-1252?Q?w9foA8MITNEGiOoM0hD30/6bapJkhVhdsUO8/D+ryqn825I9zpf2u3iA?=
+ =?Windows-1252?Q?MuqyoJ7wGZ8DIvb5XHqQfJsdR1w/gS/3V5Mo0NpQSMy6Xb/IW5EhLTzm?=
+ =?Windows-1252?Q?EVCxIXxCVH8NRmOcdFqKitSR7RjD4LLV8iBeL/TUVXkmVwFIg+mLEyet?=
+ =?Windows-1252?Q?hCSD1/qVbcVMWiqZ5kr5FK157s0zpKtfNWaFZ9wpE9pbpOoVKMwaKiNQ?=
+ =?Windows-1252?Q?oB4BfTvOVQCoaajx8iaDEXtOZClMig70Va4l2qSoSBxtuZKOH6/yqdrB?=
+ =?Windows-1252?Q?EmC6hLeUI0qkf3thcd/5UTmPAGbsRWCy8AL78DShawXRwUswGZHr7ne9?=
+ =?Windows-1252?Q?n5k7w//ovvI2vFer4Oh17pr5LlGcneCdw1v5q5yazIDZ6dUtL8sQbk59?=
+ =?Windows-1252?Q?KIzr3uU5FgT8XGbtV5cVsU0jl0U3yTuSR50UQLeWQHp2xeWx+MPt80HQ?=
+ =?Windows-1252?Q?ozFvLmB1jQgDseg2Tpg7Y8q5YOcxlzoq4H6LJEIqtxytvXHIMtrzNB0M?=
+ =?Windows-1252?Q?3A+1SUjxn277V1XkPXBp6UG7r7KDkyqcnVtAPup61gLQosyNOsfL8nPL?=
+ =?Windows-1252?Q?41Ux3rnU7fPOdDSepWkwJMcwPFLD3pegnEwL3e7apR80EVoAIF2oK/Ux?=
+ =?Windows-1252?Q?4GMon1eFd0dbyljcePfT+0EtrtEAl8dxxJRuQQkagtbD8FUxdFYuDIw2?=
+ =?Windows-1252?Q?CbEyfcoP/svy5x/Vtt+lAOFIBQDw1Z53po2SPFTK8rNDkbLXAganKSOR?=
+ =?Windows-1252?Q?Pvto11hsi/3Ar7+dBy3DthmCMU39JgQXcvviJGAaU4u4JFRPi4eZ4raU?=
+ =?Windows-1252?Q?8jJrVbsNS+tQVZiUNi5eXjBcswx3Nz0oJjNEoaxg8vNqZ0na5oMw84ve?=
+ =?Windows-1252?Q?06FeQlzNsr7Aept+q/RLNwYQtFtfWaUmYc5etCCXNuc3v+3RQl2/X2XF?=
+ =?Windows-1252?Q?Lb8kR/RFPwTyoq8VMtN2DpNAA30DknpAG32cDt9NGfDyi6mUaQ4IP9gm?=
+ =?Windows-1252?Q?yU440Hcfavn42pbK8yPKAi0D5mkD/dqcrNChwKcZ0FLJT0J05g9DGu+a?=
+ =?Windows-1252?Q?O0ohe5rWAbvm1miRPFAbHsvfB/qgPPmV1SBESJFC24MB3Qg4TwKzgpsy?=
+ =?Windows-1252?Q?mTqxBKXUKKkbgst7xFEJojRRiPMQdgbis2sJkLSdy411CXmE4XCA/fg9?=
+ =?Windows-1252?Q?4w5MHlWC/gR4vZalexAJ52YIWQmzOTh69527gzuzdWuM3r+ugG1pfDfK?=
+ =?Windows-1252?Q?xuugz19zPOuryz4NC1gBcLNYywmjPnMPJKYqosAGJTcPFREcni8kHy7Y?=
+ =?Windows-1252?Q?1fIQuzjA2tdHL3bvMT26fm4Wm3CFfIMsi6kw8YvbEldZa5FPA0w1L0qg?=
+ =?Windows-1252?Q?xlx7U7bszJ2jd0KYHRBKHQkCwmaNKmvabSxL7GLPVXSZCpYNCGogHwPL?=
+ =?Windows-1252?Q?B2RZpd5IGWOeIyHygLW+oAKbsC6czSnBJYHKz2hq3qLAl86uCepAN5aI?=
+ =?Windows-1252?Q?isMHOeRpdAGYDBdZvjsDDMXQvsztNCteHvouJCFVNp5Zs4MYQ7zN6qi2?=
+ =?Windows-1252?Q?cBdYF6bWyDoxidX8uXHvfdHDwcmaV+CUxzugDstjNUTxJqIUSli8/hWq?=
+ =?Windows-1252?Q?Ne1wGHcH4Q2HiDMkTGNARmxdeZSVrRZQoZByqCE9ZxRJdaPSDcWJfjjR?=
+ =?Windows-1252?Q?kvyGVVmpY0eGnrVlmh+GmKM6Ekisc2KnYDplAKJhc4Wcsl6+Nlmt5xuX?=
+ =?Windows-1252?Q?BTGpYFydI3Dp501nEkaGgBYomH7nIzbwOLuNyP81ZWavRGZw37sm94/w?=
+ =?Windows-1252?Q?VahQhwdU7Zd1rvmT7MQJ62cQLbMKtWfwfzkOoXS+tMyDpSDxuw5maqi5?=
+ =?Windows-1252?Q?m5CaF+3BcMdoZxlq4dtboodV/yQM8tv9zTISDkJ/GkNtTveT3VkTLH0i?=
+ =?Windows-1252?Q?mpIiTj8AKZ0/ut3btgvICXmBoLKNDPehw8LZmPLSg89mbG/CFq6KFXvO?=
+ =?Windows-1252?Q?CBOnnJPskDjd97cam1MSOXvVeU24GEefoA5wXNhYvcSX5oWA70SPZ1dw?=
+ =?Windows-1252?Q?54lFWGylrOQB3ev5ehxePZG1G0rqCDY9aomXOpapJX44ymGoVE31oa3C?=
+ =?Windows-1252?Q?clnBC3323YaWWD2WGm6fWkSRR90oWclWqBYZiTAWrr8U7rstJGopDWN4?=
+ =?Windows-1252?Q?u9Eib0VEMpHbRop6sZDYoe2Er4uqtiNGEXR/N6qfUARoJwqP5dzPd3sB?=
+ =?Windows-1252?Q?xP/hkEHRD2/fTxEI6m9Ptg6rZ1qDFYmMU+FclRAnFZnaEGVGC4OFiizn?=
+ =?Windows-1252?Q?NlYOlYiXkxqBv1UHl5F5V5YD3Jf/a/Dd4cfNhGkGWTkAoJ9KyI7Yt8r0?=
+ =?Windows-1252?Q?QzCfKa5xb0x46FGVOmcUGGN7rB/EowHacI2SMeKgrWMe4Zc2Kl6qUItx?=
+ =?Windows-1252?Q?f8U9Xw8hk9RCHJAiQK6U6S//NjzhtekMWeh0AK0fmomsGV254gYXmpeC?=
+ =?Windows-1252?Q?HJtXxlILguugSGZ4ehw21LjMIhpVS1YyOEgDGRwv1GaV/yMGSFoVCo9s?=
+ =?Windows-1252?Q?5bJogtpE3JUczoPzaYoDAxuq?=
+MIME-Version: 1.0
+
+--_000_CO6PR09MB7413D0A19868160C139F74E6ADA2ACO6PR09MB7413namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Samuel,
+
+Thank you for taking the time to share your experiences and concerns so tho=
+roughly. I can see that this has been deeply painful for you, and I want to=
+ acknowledge the seriousness with which you've approached this situation. I=
+t's clear that your time at Honeyman left a lasting impact, and I hear the =
+frustration and hurt in your words.
+
+I also recognize the effort you've put into documenting your experience and=
+ advocating for what you believe is right. Your voice matters, and I don't =
+take lightly the trust it takes to continue reaching out.
+
+That said, I also need to be honest with you: we've reached a point where I=
+ don't believe further correspondence will lead to the resolution you're se=
+eking. While I respect your perspective, I must focus on the responsibiliti=
+es I carry today and the work ahead for the organization and its people.
+
+I sincerely wish you continued success in your current role and beyond. It =
+sounds like you've found a place where your contributions are valued, and I=
+ hope that brings you a sense of purpose and healing.
+
+Take care,
+
+Lisa
+
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Sunday, December 7, 2025 9:23 PM
+To: SUMPTION Lisa * OPRD <lisa.sumption@oprd.oregon.gov>
+Subject: There's something you should know.
+
+Lisa,
+
+There's something I think you should know.
+
+After I was dismissed from Honeyman, I had nowhere to go. They removed me a=
+t my most economically vulnerable moment, and frankly I don't think that wa=
+s an accident.
+
+As a result, I looked for opportunities nearby and I ended up directly next=
+ door in the United States Forest Service. I've been here for nine months. =
+Promoted twice. Now trusted with access to their work trucks and a 25 mile =
+daily route. Facts.
+
+I was never the problem - your leadership is.
+
+Kati and Ryan were abusive for two months. In ways that defy rationality. Y=
+our staff acted in ways that made no operational or ethical sense whatsoeve=
+r. This is why I don't understand why you protect them - they are very clea=
+rly liabilities.
+
+Allison covered it up for them. And you protected all of them. Your respons=
+e to my open letter doesn't make you sound like a responsible leader. It ma=
+kes you sound avoidant. The number of damning headlines that are inevitable=
+ if you don't act? I can't understand it. It's like you're paralyzed.
+
+This doesn't go away until you solve it. One day this story will come out a=
+nd it has the potential to destroy your reputation completely, something yo=
+u built over decades, something I have no desire to see happen. You cannot =
+possibly broaden your visibility while this lingers over an institution you=
+ stewarded for decades. Surely you recognize that?
+
+You can still fix this, internally, right now, because I'm not threatening =
+you with legal action or media attention or any other kind of action other =
+than documentation that wouldn't even need to exist if you actually protect=
+ed the people who came to serve you in good faith.
+
+That's the part that still stings for me. The abuse at Honeyman was surviva=
+ble. Allison's permanent dismissal was retaliatory and the driver behind ev=
+ery action you've seen since. Because I was removed from something I came t=
+o serve and I was punished for that. Doesn't that bother you?
+
+I'm still waiting for you to be the ethical leader I needed you to be. I wi=
+ll not reach out to you again. You will either choose to fix this or you wo=
+n't, and the future will unfold in the light of that choice. And you know I=
+'m right.
+
+Samuel
+
+
+--_000_CO6PR09MB7413D0A19868160C139F74E6ADA2ACO6PR09MB7413namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style>
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Dear Samuel,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you for takin=
+g the time to share your experiences and concerns so thoroughly. I can see =
+that this has been deeply painful for you, and I want to acknowledge the se=
+riousness with which you&#8217;ve approached
+ this situation. It&#8217;s clear that your time at Honeyman left a lasting=
+ impact, and I hear the frustration and hurt in your words.<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I also recognize th=
+e effort you&#8217;ve put into documenting your experience and advocating f=
+or what you believe is right. Your voice matters, and I don&#8217;t take li=
+ghtly the trust it takes to continue reaching out.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">That said, I also n=
+eed to be honest with you: we&#8217;ve reached a point where I don&#8217;t =
+believe further correspondence will lead to the resolution you&#8217;re see=
+king. While I respect your perspective, I must focus on
+ the responsibilities I carry today and the work ahead for the organization=
+ and its people.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I sincerely wish yo=
+u continued success in your current role and beyond. It sounds like you&#82=
+17;ve found a place where your contributions are valued, and I hope that br=
+ings you a sense of purpose and healing.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Take care,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><br>
+Lisa<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Sunday, December 7, 2025 9:23 PM<br>
+<b>To:</b> SUMPTION Lisa * OPRD &lt;lisa.sumption@oprd.oregon.gov&gt;<br>
+<b>Subject:</b> There's something you should know.<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Lisa,<o:p></o:p></span=
+></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">There's something I th=
+ink you should know.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">After I was dismissed =
+from Honeyman, I had nowhere to go. They removed me at my most economically=
+ vulnerable moment, and frankly I don't think that was an accident.<o:p></o=
+:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">As a result, I looked =
+for opportunities nearby and I ended up directly next door in the United St=
+ates Forest Service. I've been here for nine months. Promoted twice. Now tr=
+usted with access to their work trucks
+ and a 25 mile daily route. Facts.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">I was never the proble=
+m - your leadership is.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Kati and Ryan were abu=
+sive for two months. In ways that defy rationality. Your staff acted in way=
+s that made no operational or ethical sense whatsoever. This is why I don't=
+ understand why you protect them - they
+ are very clearly liabilities.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Allison covered it up =
+for them. And you protected all of them. Your response to my open letter do=
+esn't make you sound like a responsible leader. It makes you sound avoidant=
+. The number of damning headlines that
+ are inevitable if you don't act? I can't understand it. It's like you're p=
+aralyzed.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">This doesn't go away u=
+ntil you solve it. One day this story will come out and it has the potentia=
+l to destroy your reputation completely, something you built over decades, =
+something I have no desire to see happen.
+ You cannot possibly broaden your visibility while this lingers over an ins=
+titution you stewarded for decades. Surely you recognize that?<o:p></o:p></=
+span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">You can still fix this=
+, internally, right now, because I'm not threatening you with legal action =
+or media attention or any other kind of action other than documentation tha=
+t wouldn't even need to exist if you
+ actually protected the people who came to serve you in good faith.<o:p></o=
+:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">That's the part that s=
+till stings for me. The abuse at Honeyman was survivable. Allison's permane=
+nt dismissal was retaliatory and the driver behind every action you've seen=
+ since. Because I was removed from something
+ I came to serve and I was&nbsp;punished for that. Doesn't that bother you?=
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">I'm still waiting for =
+you to be the ethical leader I needed you to be. I will not reach out to yo=
+u again. You will either choose to fix this or you won't, and the future wi=
+ll unfold in the light of that choice.
+ And you know I'm right.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Samuel<o:p></o:p></spa=
+n></p>
+</div>
+<div id=3D"ms-outlook-mobile-body-separator-line">
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB7413D0A19868160C139F74E6ADA2ACO6PR09MB7413namp_--

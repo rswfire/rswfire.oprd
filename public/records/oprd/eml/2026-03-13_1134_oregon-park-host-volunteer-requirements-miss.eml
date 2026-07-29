@@ -1,0 +1,277 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BY5PR14MB4068.namprd14.prod.outlook.com (2603:10b6:a03:213::9)
+ by BY5PR14MB4178.namprd14.prod.outlook.com with HTTPS; Fri, 13 Mar 2026
+ 18:34:28 +0000
+Received: from BL1PR13CA0113.namprd13.prod.outlook.com (2603:10b6:208:2b9::28)
+ by BY5PR14MB4068.namprd14.prod.outlook.com (2603:10b6:a03:213::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9700.16; Fri, 13 Mar
+ 2026 18:34:24 +0000
+Received: from BL6PEPF0001AB52.namprd02.prod.outlook.com
+ (2603:10b6:208:2b9:cafe::58) by BL1PR13CA0113.outlook.office365.com
+ (2603:10b6:208:2b9::28) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9700.15 via Frontend Transport; Fri,
+ 13 Mar 2026 18:34:24 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.127.81)
+ smtp.mailfrom=amazonses.com; dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=fail action=none
+ header.from=oprd.oregon.gov;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.127.81 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.127.81; helo=a127-81.smtp-out.amazonses.com; pr=C
+Received: from a127-81.smtp-out.amazonses.com (54.240.127.81) by
+ BL6PEPF0001AB52.mail.protection.outlook.com (10.167.241.4) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9700.17
+ via Frontend Transport; Fri, 13 Mar 2026 18:34:24 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1773426863;
+	h=Date:From:Message-ID:MIME-Version:Content-Type:To:Subject:Feedback-ID;
+	bh=Md4TObEbc6kbvNQJpypVw6z0t437Q/BfrXpXkeTYgRY=;
+	b=saafUOkSnXHgGBko+j0OtJkNH/jCTi2PKIQS+GyOkGDel30LNQV9dDatNf4CE3b1
+	vb88RWew/yZNikrUQq70CkvocMD8bLdGeg8UWzXWhiM4KcIbUIv90kOHjwlqNXs2ACB
+	NoJqnWi2uUvVfRG3CCAAak8tQuCtiomoomiyCkoM=
+Date: Fri, 13 Mar 2026 18:34:23 +0000
+From: "volunteer.oprd@oprd.oregon.gov" <volunteer.oprd@oprd.oregon.gov>
+Message-ID: <0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000@email.amazonses.com>
+X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+q_id: 663149600
+domain_id: 6696
+Content-Type: multipart/alternative;
+ boundary="b1=_V232tKorYpBVPLJ6EAhwwbE1AhaHT1jewhDbHvaYuw"
+To: rsw@rswfire.com
+Subject: =?us-ascii?Q?Oregon_Park_Host_Volunteer:_Requirements_Missin?=
+ =?us-ascii?Q?g_-_Action_Needed?=
+Feedback-ID: ::1.us-east-1.oaOKGZCMPYSzWycXENZQhJ6Mro9SfFV7J8Bwvu3fXXY=:AmazonSES
+X-SES-Outgoing: 2026.03.13-54.240.127.81
+Return-Path: 0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Mar 2026 18:34:24.5133
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: f0787e1e-fdcb-4b10-4c54-08de812f26a7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BL6PEPF0001AB52:EE_|BY5PR14MB4068:EE_|BY5PR14MB4178:EE_
+X-MS-Exchange-Organization-AuthSource: BL6PEPF0001AB52.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: f0787e1e-fdcb-4b10-4c54-08de812f26a7
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704161411799003|5073199012|3109299003|7049299003|4022899009|7149299003|69100299015|32142699015|7142099003|8096899003|4076899003|19002099003|56012099003|16102099003|13003099007|43540500003;
+X-Forefront-Antispam-Report: CIP:54.240.127.81;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:a127-81.smtp-out.amazonses.com;PTR:a127-81.smtp-out.amazonses.com;CAT:NONE;SFS:(13230040)(704161411799003)(5073199012)(3109299003)(7049299003)(4022899009)(7149299003)(69100299015)(32142699015)(7142099003)(8096899003)(4076899003)(19002099003)(56012099003)(16102099003)(13003099007)(43540500003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Mar 2026 18:34:24.3322
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f0787e1e-fdcb-4b10-4c54-08de812f26a7
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BL6PEPF0001AB52.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR14MB4068
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.8683495
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9700.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4713098)(4999163)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?d1VTOVB4LzlDMGZzWWtFVkpPbkRDeVNtZmdseE9rQk9SbU10THA2d3Fyc0gr?=
+ =?utf-8?B?eStzNEwwazZFR3hZckhaSHZMS0FSYnBnSVNpcFhXcUh3alMrMGplQTZWSjdp?=
+ =?utf-8?B?Q1dxZGs2Q1EwNUxFZFhOYjNjMmpnMGhPVmMwMjdXY1pUSTVKbkUweFVKQlNh?=
+ =?utf-8?B?NDIyM284K3QyOUFPOTVzMDM5S2IrbVlZYk5Lc3BxdDNTOHN2VU9JcG9pQVd5?=
+ =?utf-8?B?WWxuU0RJd1A4bjdzN3RZQUUzUVRGNEkwRXpUMG5rcHZ2R0ZyVHhFK0FrWUFX?=
+ =?utf-8?B?dGhEMFVrMGRDYW81Z3ZWcm1WSDUzL3pSYTEzamI3WnVRVnluUFczK25GbVRF?=
+ =?utf-8?B?eDNGU0lGd1YvYWtJYTR6c1V0T2k1TGJqbFZtTldpZDlyR29NcUdJanNTaG5N?=
+ =?utf-8?B?UnBBWUt0TlhIL05WTmNValNMaXhXK2dJQ2lkRkczck5JSWgzMmdBb3lmSUlO?=
+ =?utf-8?B?RG5vbnY0T2pkeUFFTE1OQ1MyMndMNFdOVXBua0wxVDlCQmJNUDF5YkFuOHcy?=
+ =?utf-8?B?TFk0eFd0dHdkdzRTVmFSeGd1RU9hNzZnRDIwMGFta3FVMUQ1K1ltSmcrcWJ6?=
+ =?utf-8?B?dHpOM1JXaC96TjJyaGxYSCtrWWFHdnhhV3JjcnBKR2xWbHhNSzN5VHA3OERa?=
+ =?utf-8?B?ZUs2M2MzMEVjUE1sQy8rR1B6RVBmblJlTmt6TFNwK3NJZWFqSThUYlZQUEM2?=
+ =?utf-8?B?a0RSb0Jrd2U4UkR6Z1cvbHVHWFpkYmpiODluMU5lbG4xb0xNcTU1bGVVNW9s?=
+ =?utf-8?B?TUdaWjhPSmI3YUFzbTE3TEJROWJmVldnckVCMU0wd1VNOGxuRnh2RlRpL09v?=
+ =?utf-8?B?OUE5S2RLVitIS1hEaFhGYVhBdmo4OUc5TDdVbG03c3NsNi9WM01SdFVBV3Nq?=
+ =?utf-8?B?TVBweGM4Y3B4YVpxWURmN1dONTRsOU5sZkpwbU40UGk5cmdRYTV2c1dxaFAx?=
+ =?utf-8?B?MHZDdXRCQllBTEtrQXBJb1FqN0pBUlVQQklybldnU244dDN1QWlKa0NaMkU5?=
+ =?utf-8?B?bExYOW1FemFyTGFRRjBZbzM0UVRKRnhhdGRETk5UUStoQlVBVE9lSUlUQUs5?=
+ =?utf-8?B?OCtxMEFtcUlKV3lTNmdiaVVDcEVLR2RIVGJyakNmbUhiVmpxWEcyNXRKV0lu?=
+ =?utf-8?B?bjYxM04zK3d3Z2QvOXE3VklmQUJTbkJIN0ZFVFcvUHBTZjM5T3lxaFdmUjd6?=
+ =?utf-8?B?ek54T0I0aEZob1RjNWJJK1dQTXlEdGRzVmg5UWtmMExKNW5FMTcyZHR2bnkw?=
+ =?utf-8?B?N0NFZkNOeWdrakowalVmaUpwUUZmTzJCU2pHaC9Hd0NIMmNwdFM0Y21PNWZQ?=
+ =?utf-8?B?Z3J3Qk8xSXlXQkltbXNvSlZucG9rbGpKbjd5VHZlYURDMWV0andMUSs3eUVr?=
+ =?utf-8?B?Zk9xdTVhaGRVVU1EaEtqdWxKWXZKblVmYTE5SkJScHpEdnJNOFBKanJ1enA4?=
+ =?utf-8?B?dWw2MnlDUENwVkNMWUJDcHh3OFkrWkNWNXFyL2lnT1c0TTBJU2xmbGJMMlly?=
+ =?utf-8?B?SVo5Z1hiVXZyd1BCYUhsenZXS2dtRkJFdGV3Yjl2UVg0NW9jTG9lZzRyRzZN?=
+ =?utf-8?B?Qm0zS2xtT2ptaERJU29DNWNMNXZzeHdCOHBUS3lmTGtib2tRamFHU2FZZVNs?=
+ =?utf-8?B?MTZTS2tKemxiOXZJZGR5aDdoRjBjSG1XTHp2YXA0UFlHaUNacmd4dTJVQ1BC?=
+ =?utf-8?B?Uk5JVzFpTWFVcENCcGlCdW1iZlhWdDRxUkJWd3BGVm9FS003Tzl2WlRnd0lL?=
+ =?utf-8?B?S1lUaWNHUFFhSnM2eTBsaUl0NldkMzVRTDFxbW9qQXBTWFpTNVc0UW10YWNO?=
+ =?utf-8?B?MGNUMFpQaEw0d0dsdzVtVnRoWE5qV0pQSGVlcmFNZTJKQXRsWmhkb2wxTjht?=
+ =?utf-8?B?S3MvZGY4QmpYN3lvY0s5bXZIM3l5U1V5b0FEbmNoZmVCUTRQMXNYSGE5dHF0?=
+ =?utf-8?B?Unk0VzRxNitwcDhROHd4eWtpQjlHM2s5dkN1dndxNUhKRGRuQ3A5STFpeFhB?=
+ =?utf-8?B?UWE1WGdnOXQ1SkxOK2VkdlBqSkxaOFFrWFdXTGV2d3UrSkJZbjRCRWdPdXpD?=
+ =?utf-8?B?dURlWmg1VmxGWVdPSE9CRk5lY0VtWTgrazRZYmh2Uy9vRU95dFFhSXJjYjlP?=
+ =?utf-8?B?UHJpTFVvZG10UDRtT3dtaEZtQWx4NWZ5ZUliWXplVC84K0VubFl6T0VsVGZl?=
+ =?utf-8?B?SW1rd3BRck9BditVZ09BWXZXZS9odi9SSk9YK21GUUdWVDlXam9LU1UxaG5V?=
+ =?utf-8?B?dUJxcWlocTlZaXNnOW9NVy9MSy9RdGNkeFNlYnY5ZkJzUERwdDhTTHNWRjFB?=
+ =?utf-8?B?OWJpMStsZEFiTmxXdmRLNXV3eCtVajdMZ2hhT1FvMTdTOG04ODFHdjZZdCtX?=
+ =?utf-8?B?NHU0UUJoTURrUDJaaEpCUWh6YWJkNTE5VkMyekk2ZXVzdStwS3pCampUcy80?=
+ =?utf-8?B?dzRrdEV2Unk4WDU3TDlyRUxNS2lMTmt0bUlLZ1lOb0t1Rmp2QzBncEJDeWlB?=
+ =?utf-8?B?L0tETGRvUEE4ZzI0a1A3Ui9hTFBnZXp5RmZZVnZZNFZFNGpyQnBpQlRrQ0hB?=
+ =?utf-8?B?V25hdXIxRWJZR0JmOGVXNDJOalB4Y1JqaGVXTHppL255M21DRllWM3FBN2Jj?=
+ =?utf-8?B?QUttQlZ5Y0pUY1h1QlRqazFXL2tiei8vN05YdU5OTGZaemU5UzIxaFBiK3Y0?=
+ =?utf-8?B?UG1PVmUxRW5XbVdzZm9hcHFOYlBLeWNPVktpalZkZFN2eVZsdGsrc1ZjR3Qx?=
+ =?utf-8?B?M2x4dU5RZjNWSGZPVCtPRlBicC9jZDZMZ0ozb3RhS25GVmgxbHZlelRXa0U3?=
+ =?utf-8?B?MEkxbUZmTHNCc1dxM1dUdnQ5VjdReTF2SzFxakhPNHRMZUhDNVMvcHE2UHJ5?=
+ =?utf-8?B?UlNiYkJSdVNHWC9ZNzEvNXNjSCtRMGE2TTVpN0Z5ZGZnNFczaFhOcUptc1pp?=
+ =?utf-8?B?M1ZCRHJPanpBbTJEc0E4Rkl1QWhWT21DMXhTZC81Unk5a2trbHlBeGZzc2or?=
+ =?utf-8?B?SUNaNVZCQkVYM1JOYzU4aWFWaU40TE9UWkExMis3cEJ0NjBRTnFKYTkwK21C?=
+ =?utf-8?B?R0UwaHNIN2RpYmdFZmdHK2VYTm5lZjAydUgxVU8wRE94Q3pvT3VYVlZORVZH?=
+ =?utf-8?B?cVJGWDI4V1UrZ2lZcDU3VkNoZ3dOWWlrQ2xJaVg5UEcvWG4rU1UrbEhBbEtz?=
+ =?utf-8?B?WjhkZ2Q4T2ttWTZHc2tHK1U2bGwyTlhCWURGaEFuQzRneU1lMjhZTUtGNTRl?=
+ =?utf-8?B?WjIvVDVCMmtmYy9vMlByU3FWTUlkYlV0NTNSUG5FbG05eXk3ZGMza3R4dDVH?=
+ =?utf-8?B?STVNSkJvK3drZ0ViTmtNOHNvOFpCUlhUblRDcG05bHNOTTR4TzRmM0gySjZW?=
+ =?utf-8?B?M09CYkwwSHJJaTNYbGUvRkpqTFJCVm1nUVFIaUhsR2tPNGxEa0QvT3ZnaEM2?=
+ =?utf-8?B?REFOeTlacVF1Qll3MTVKRTdTRHU3V3VFSTdwanhKUDE3cE81RmV2Yk0ySE9q?=
+ =?utf-8?B?U3ZMN2Y0eCtTU0hRbm45cWRKd2tZWThwUGVVaVp3YVJUcHhXT3pFS0FuVWZa?=
+ =?utf-8?B?d0xCRG5QSW5rNHhacDRXL0ZLanMyTWRjUzZBcVBOU2RTaUVwL3czR21rSVpp?=
+ =?utf-8?B?M1VaTldFMXpMMkNFYTUxUHdHNjJBb1VVRlNURVAzeVBnK21wazY4Ukg0VUY5?=
+ =?utf-8?B?dE1BSm9MZmRRRDYrdDEyT3MrRUNvWFVzK0QwWUdzczB6VG1WUjY5eEhEMXl6?=
+ =?utf-8?B?cE5kdzI1dFc3bFpSUk40dTNGa0IxeWpWWkJFZ1BiWHVzbUlpMjltcW14VEZS?=
+ =?utf-8?B?Z1FxQVFDSGtXUkl2b1F3Z1pXMkhBRmNTYkVCSWJHRFd3UFpoaVlHWkxvNjFm?=
+ =?utf-8?B?VnV4dzVrZGc3YmJta090VENHNzZLb2VQRTFkY2tNTndvamFtSmVleDRMdG5G?=
+ =?utf-8?B?WXFjdXRTaEl4THFwS21xZjlrbDMrNi9IeG9EOHB1WWFYcVZLamtJUW1iU0Vy?=
+ =?utf-8?B?VW9xWU5KVTdFU25EZWtRQ2FHaFBaZ0wvWXM2UEg5a0ZZaWRYMWRjcURkYnhQ?=
+ =?utf-8?B?Q0pkWWtPaE5mRjQ4YlhZeVk1QlhnWGlwWklOUzdNRTBzMDlRUEhXTGZpa2VP?=
+ =?utf-8?B?UmRqUXExeGlnek1sdDBvT0JuMzRNVmxvRlJzTWEva1JXN2dOdXpwV1hZUFZa?=
+ =?utf-8?B?WXFDUVlqcG01OGlGb24zM242dW9uN1FWZkQ1NnhReDI3NFd2M0J1Q1JEMnhx?=
+ =?utf-8?B?MkVSWnZqUWFHWjRuQlJzQnViTWR3aklTbzRlSzdRU3JPdlFtNWZOUXdGaXBu?=
+ =?utf-8?B?bmhIcTQwYSs1WXFyUHVSa2h1RXdmT2IwM095OUhENzZXZ3l2L001N1BaV29j?=
+ =?utf-8?B?YkNWQklzOUk5V3I2ZnRybTNQc3BXcTcxdDV3bmdrSHB4bDB5STNmZ2JvdHcv?=
+ =?utf-8?B?M1dUY0VWSHdkUzgxcEtCVEZlUFFQWkNCZndUTU1Id0NnQjAyOWtGWlM4OEh5?=
+ =?utf-8?B?aTArajNkTGFnMUxGSUJSS2I2VElmQjEzMEM4SW02ZUxsTGh2RTdwN0M3amNj?=
+ =?utf-8?B?Qk1QczZpOXorTVlIYXpCNTMvMkxmRExHQVk1aGRpRWQ1b1NmOWcwYlpDMjhk?=
+ =?utf-8?B?aXBTNktBL3pLQ3NsU1loWFFSUnN2L3pjVjVSOGUzM2lLNkQ1VWFTcjlKdzFX?=
+ =?utf-8?Q?MAuFyXTDvjLO9n60Ov/jrUGTz0jwPVwYRtFe?=
+MIME-Version: 1.0
+
+--b1=_V232tKorYpBVPLJ6EAhwwbE1AhaHT1jewhDbHvaYuw
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<p>Hello (Robert),</p><p><br></p><p><strong>You are currently missing one or more requirements which need to be completed in advance of your service as a park host volunteer with Oregon State Parks. </strong>Please login to your online profile and complete any missing or expired requirements on your profile.</p><p><br></p><p>Volunteer Site: http://volunteer.oprd.oregon.gov/</p><p>Help Guides for Completing Requirements: <a href="https://sites.google.com/view/oprdvolunteervoice/get-connected" target="_blank">Click here.</a></p><p><br></p><p><em>All requirements, except for the 'Criminal Background Records Check' and the 'Driving Records Check' can be completed and submitted by volunteers. OPRD staff will send the records checks  to volunteers with scheduled upcoming assignment separately through our background check provider Advanced Reporting.</em></p><p><em><br></em></p><p>Thank you,</p><p><p>
+<br></p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="637" style="width: 634px;">
+    <tbody>
+        <tr>
+            <td width="67" style="width: 67px; padding: 0in 0.05in 0in 1px;">
+                <p class="MsoNormal" style="margin: 0in 0.05in 0in 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><a name="_MailAutoSig"><span style="font-size: 7px;"> </span></a><br></p>
+                <p class="MsoNormal" style="margin: 0in -1px 0in 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><span style="font-size: 15px;">
+                            <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                                <v:stroke joinstyle="miter">
+                                <v:formulas>
+                                    <v:f eqn="if lineDrawn pixelLineWidth 0">
+                                    <v:f eqn="sum @0 1 0">
+                                    <v:f eqn="sum 0 0 @1">
+                                    <v:f eqn="prod @2 1 2">
+                                    <v:f eqn="prod @3 21600 pixelWidth">
+                                    <v:f eqn="prod @3 21600 pixelHeight">
+                                    <v:f eqn="sum @0 0 1">
+                                    <v:f eqn="prod @6 1 2">
+                                    <v:f eqn="prod @7 21600 pixelWidth">
+                                    <v:f eqn="sum @8 21600 0">
+                                    <v:f eqn="prod @7 21600 pixelHeight">
+                                    <v:f eqn="sum @10 21600 0">
+                                </v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas>
+                                <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect">
+                                <o:lock v:ext="edit" aspectratio="t">
+                            </o:lock></v:path></v:stroke></v:shapetype>
+                            <v:shape id="Picture_x0020_7" o:spid="_x0000_i1025" type="#_x0000_t75" style="width:58.5pt;height:64.5pt;visibility:visible;mso-wrap-style:square">
+                                <v:imagedata src="file:///C:/Users/ALLISO~1.WAT/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg" o:title="">
+                            </v:imagedata></v:shape>
+                            <img src="https://s3.us-east-1.amazonaws.com/files.galaxydigital.com/6696/filemgr/full-color-oprd-shield.png" width="45" height="45"><!--[endif]----></span></span></p>
+  </td>
+  
+  <td width="570" style="width: 568px; padding: 0in 0.05in 0in 1px;">
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><span style="font-size: 7px; color: rgb(79, 98, 40); letter-spacing: 3px;"> </span></span><br></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><strong><em><span style="font-size: 15px; color: rgb(0, 122, 55); letter-spacing: 3px;">Volunteer Programs</span></em></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><strong><span style="font-size: 4px; color: rgb(166, 166, 166);">___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</span></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><strong><span style="font-size: 13px; color: rgb(52, 138, 162); letter-spacing: 1px;">Oregon Parks and Recreation Department</span></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><span style="font-size: 13px; color: gray;">725 Summer St. NE, Suite C, Salem, Oregon 97301</span></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><a href="https://stateparks.oregon.gov/"><span><span style="font-size: 15px; color: rgb(5, 99, 193);">Stateparks.oregon.gov</span></span></a></p><p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><a href="https://volunteer.oprd.oregon.gov">https://volunteer.oprd.oregon.gov</a><br></p>
+  
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><span style="font-size: 13px; color: gray;"> </span></span><br></p>
+  </td>
+  
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos",="" sans-serif;"=""><span><span style="font-size: 15px;"> </span></span><br></p><p><br></p></p><br /><p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#999999">If you no longer wish to receive these emails, <a href="https://volunteer.oprd.oregon.gov/communication/optout/?hash=ZIyrOm4%2BkklIZ12fxcJp49yH1%2BCZETNMBGj8ApTwxUNY5EH7b1nIapRzPBfHbqMgBh%2FrLP6R7kTW3PogMQfjTVsFR2mrcPyrYHyz2ZzP0M5uLRKxpwEZtKrJVLRsH%2F02HnxnY8WuAacYPN9l%2FQCkR7VaktRhTVKdtjvA4l5xzQd9r1zaiK4MVQdQzj8%2FpqQd&noCI=1" target="_blank">Unsubscribe Here</a>.</p>
+		</body>
+		</html>
+
+--b1=_V232tKorYpBVPLJ6EAhwwbE1AhaHT1jewhDbHvaYuw
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		</head>
+		<body>
+		<p>Hello&nbsp;(Robert),</p><p><br></p><p><strong>You are currently missing one or more requirements which need to be completed in advance of your service as a park host volunteer with Oregon State Parks. </strong>Please login to your online profile and complete any missing or expired requirements on your profile.</p><p><br></p><p>Volunteer Site:&nbsp;http://volunteer.oprd.oregon.gov/</p><p>Help Guides for Completing Requirements: <a href="https://bql7p776.r.us-east-1.awstrack.me/L0/https:%2F%2Fsites.google.com%2Fview%2Foprdvolunteervoice%2Fget-connected/1/0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000/hjYqhiGRN08kAf4IXSnCaIXtjBU=469" target="_blank">Click here.</a></p><p><br></p><p><em>All requirements, except for the 'Criminal Background Records Check' and the&nbsp;'Driving Records Check' can be completed and submitted by volunteers. OPRD staff will send the records checks  to volunteers with scheduled upcoming assignment separately through our background check provider Advanced Reporting.</em></p><p><em><br></em></p><p>Thank you,</p><p><p>
+<br></p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="637" style="width: 634px;">
+    <tbody>
+        <tr>
+            <td width="67" style="width: 67px; padding: 0in 0.05in 0in 1px;">
+                <p class="MsoNormal" style="margin: 0in 0.05in 0in 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><a name="_MailAutoSig"><span style="font-size: 7px;">&nbsp;</span></a><br></p>
+                <p class="MsoNormal" style="margin: 0in -1px 0in 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><span style="font-size: 15px;">
+                            <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                                <v:stroke joinstyle="miter">
+                                <v:formulas>
+                                    <v:f eqn="if lineDrawn pixelLineWidth 0">
+                                    <v:f eqn="sum @0 1 0">
+                                    <v:f eqn="sum 0 0 @1">
+                                    <v:f eqn="prod @2 1 2">
+                                    <v:f eqn="prod @3 21600 pixelWidth">
+                                    <v:f eqn="prod @3 21600 pixelHeight">
+                                    <v:f eqn="sum @0 0 1">
+                                    <v:f eqn="prod @6 1 2">
+                                    <v:f eqn="prod @7 21600 pixelWidth">
+                                    <v:f eqn="sum @8 21600 0">
+                                    <v:f eqn="prod @7 21600 pixelHeight">
+                                    <v:f eqn="sum @10 21600 0">
+                                </v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas>
+                                <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect">
+                                <o:lock v:ext="edit" aspectratio="t">
+                            </o:lock></v:path></v:stroke></v:shapetype>
+                            <v:shape id="Picture_x0020_7" o:spid="_x0000_i1025" type="#_x0000_t75" style="width:58.5pt;height:64.5pt;visibility:visible;mso-wrap-style:square">
+                                <v:imagedata src="file:///C:/Users/ALLISO~1.WAT/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg" o:title="">
+                            </v:imagedata></v:shape>
+                            <img src="https://s3.us-east-1.amazonaws.com/files.galaxydigital.com/6696/filemgr/full-color-oprd-shield.png" width="45" height="45"><!--[endif]----></span></span></p>
+  </td>
+  
+  <td width="570" style="width: 568px; padding: 0in 0.05in 0in 1px;">
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><span style="font-size: 7px; color: rgb(79, 98, 40); letter-spacing: 3px;">&nbsp;</span></span><br></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><strong><em><span style="font-size: 15px; color: rgb(0, 122, 55); letter-spacing: 3px;">Volunteer Programs</span></em></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><strong><span style="font-size: 4px; color: rgb(166, 166, 166);">___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</span></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><strong><span style="font-size: 13px; color: rgb(52, 138, 162); letter-spacing: 1px;">Oregon Parks and Recreation Department</span></strong></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><span style="font-size: 13px; color: gray;">725 Summer St. NE, Suite C, Salem, Oregon 97301</span></span></p>
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><a href="https://bql7p776.r.us-east-1.awstrack.me/L0/https:%2F%2Fstateparks.oregon.gov%2F/1/0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000/zcP37fdTiCx2XkkgK0BWPByagn0=469"><span><span style="font-size: 15px; color: rgb(5, 99, 193);">Stateparks.oregon.gov</span></span></a></p><p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><a href="https://bql7p776.r.us-east-1.awstrack.me/L0/https:%2F%2Fvolunteer.oprd.oregon.gov/1/0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000/wpvD8K8ykrYPkB2U42CTCDDPpEs=469">https://volunteer.oprd.oregon.gov</a><br></p>
+  
+  <p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><span style="font-size: 13px; color: gray;">&nbsp;</span></span><br></p>
+  </td>
+  
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin: 0in; font-size: 16px; font-family: " aptos?,="" sans-serif;?=""><span><span style="font-size: 15px;">&nbsp;</span></span><br></p><p><br></p></p><br><p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#999999">If you no longer wish to receive these emails, <a href="https://bql7p776.r.us-east-1.awstrack.me/L0/https:%2F%2Fvolunteer.oprd.oregon.gov%2Fcommunication%2Foptout%2F%3Fhash=ZIyrOm4%252BkklIZ12fxcJp49yH1%252BCZETNMBGj8ApTwxUNY5EH7b1nIapRzPBfHbqMgBh%252FrLP6R7kTW3PogMQfjTVsFR2mrcPyrYHyz2ZzP0M5uLRKxpwEZtKrJVLRsH%252F02HnxnY8WuAacYPN9l%252FQCkR7VaktRhTVKdtjvA4l5xzQd9r1zaiK4MVQdQzj8%252FpqQd%26noCI=1/1/0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000/3POhWUrG9ScJbsTp24A-uO5GfRo=469" target="_blank">Unsubscribe Here</a>.</p>
+		<img alt="" src="https://bql7p776.r.us-east-1.awstrack.me/I0/0100019ce87a6e4f-812a9c31-1034-423f-9d24-41e18b147504-000000/5WGKVul55ph2UKM61wZORQeaAF4=469" style="display: none; width: 1px; height: 1px;">
+</body>
+		</html>
+
+
+--b1=_V232tKorYpBVPLJ6EAhwwbE1AhaHT1jewhDbHvaYuw--

@@ -1,0 +1,319 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from DS5PPF0E5ADD16F.namprd14.prod.outlook.com
+ (2603:10b6:f:fc00::784) by CH2PR14MB4181.namprd14.prod.outlook.com with
+ HTTPS; Sat, 20 Dec 2025 23:53:26 +0000
+Received: from BYAPR06CA0010.namprd06.prod.outlook.com (2603:10b6:a03:d4::23)
+ by DS5PPF0E5ADD16F.namprd14.prod.outlook.com (2603:10b6:f:fc00::784) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9434.9; Sat, 20 Dec
+ 2025 23:53:24 +0000
+Received: from BY1PEPF0001AE1D.namprd04.prod.outlook.com
+ (2603:10b6:a03:d4:cafe::e0) by BYAPR06CA0010.outlook.office365.com
+ (2603:10b6:a03:d4::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9434.10 via Frontend Transport; Sat,
+ 20 Dec 2025 23:53:24 +0000
+Authentication-Results: spf=pass (sender IP is 44.192.35.80)
+ smtp.mailfrom=fwdkim1.oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of fwdkim1.oprd.oregon.gov
+ designates 44.192.35.80 as permitted sender) receiver=protection.outlook.com;
+ client-ip=44.192.35.80; helo=mail-usn81.freshemail.io; pr=C
+Received: from mail-usn81.freshemail.io (44.192.35.80) by
+ BY1PEPF0001AE1D.mail.protection.outlook.com (10.167.242.106) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9456.9
+ via Frontend Transport; Sat, 20 Dec 2025 23:53:23 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1766274803;
+	s=to66a; d=oprd.oregon.gov;
+	h=MIME-Version:Date:From:Reply-To:To:Message-ID:In-Reply-To:References:Subject:Content-Type:Content-Transfer-Encoding;
+	bh=RHspE7Z/8I0dD5xKi8iKyQ0hHuRffa4ioo11Q/C8lho=;
+	b=e3tfQeu4v/sxappFymEAuCM4vX9QfFdqEkLidym3tZBa2nqzRHVjOsyCDExcWXaW
+	FwlAQNOa+2cjosIpFSSE2mmJTuY1xOjiZmunbvjcGYNrsGLiwxRMsa/kX2Bx45Ft/zu
+	SvSQCFLdZ/aIRC7JllO4e2ncE9ucTWAz4LIcIEYQ+Tevj2pSt11jsRasWMHID1ScTFU
+	kaOciVyR9btui5LS7boJeEY8ZD6KpuIjUzZde4SlmPXiji4HhdI5RiPwVe7MAMoT6W0
+	V7+am0b+AoiVZmch9/2GqrMNYqn+L0Z3SGNfZgUBZuUNJyupEqvxie+pS15U0fUJ3Et
+	mfAvjYL/zg==
+Return-Path: bounces+us.1.1155212.318230-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov
+X-Received: from ip-172-16-116-191.ec2.internal (EHLO freshdesk.com) ([172.16.116.191])
+          by smtpout.freshdesk.com (Freshworks SMTP Server) with ESMTPA ID f81c6a20.2
+          for <rsw@rswfire.com>;
+          Sat, 20 Dec 2025 23:53:21 +0000 (UTC)
+Date: Sat, 20 Dec 2025 23:53:21 +0000
+From: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+Reply-To: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+To: rsw@rswfire.com
+Message-ID: <694736f151e90_1e06237c2112315.sidekiq-realtime-fd-poduseast1-main3-green-57fbd45486-4l5wl@automation.freshdesk.com>
+In-Reply-To: <CH2PR14MB4181BCDD32933F559DB0A8E4ADB6A@CH2PR14MB4181.namprd14.prod.outlook.com>
+References: <CH2PR14MB4181BCDD32933F559DB0A8E4ADB6A@CH2PR14MB4181.namprd14.prod.outlook.com>,
+ <694736f151e90_1e06237c2112315.sidekiq-realtime-fd-poduseast1-main3-green-57fbd45486-4l5wl@automation.freshdesk.com>
+Subject: Re: The whole story.
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_694736f170532_1e06237c2112476";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+sent-on: 2025-12-20 15:53:21 -0800
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: DR, RN, OOF, AutoReply
+X-FUP-PRIORITY: 5
+X-SDS-INFO: 0cuUhLnIUKFbWO0tvHaEt87EftwIddxVr8D4uSwfHKweDzA8KesPEh6TAdTD7crGYL1CuKJ6oZFoLysGmV_CNlRgh1G2GCgvytV9H3kYILaeSagaKuXHYWeJij3_iWfhhM6ICIDyuJZRSrJt0-eOBFn5txBomKvV5Dz7T7MLJ2x8KrGxZNqGUabphDhWkQEp
+X-MESSAGEID: LZM9anrQQzpntlLdFy8yE76M6ah3FCOgvTnzT8dVllXXfiFSdpqap7wqMo+YG73dRamz602UZFxzn0aBY45WCOiZVj2XNIuAqxYFhzQin1jiRFqCBjSq6rTHRH1OeNfXJcCPFbqEJ1bqKRxyGb79LdF9uDj3pljnYNawgz5WVE8=
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Dec 2025 23:53:23.4707
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 7645c7c8-32e2-4a72-316d-08de4022f613
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BY1PEPF0001AE1D:EE_|DS5PPF0E5ADD16F:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: BY1PEPF0001AE1D.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7645c7c8-32e2-4a72-316d-08de4022f613
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|83080400003|13003099007|7053199007|8096899003;
+X-Forefront-Antispam-Report: CIP:44.192.35.80;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-usn81.freshemail.io;PTR:mail-usn81.freshemail.io;CAT:NONE;SFS:(13230040)(83080400003)(13003099007)(7053199007)(8096899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Dec 2025 23:53:23.1478
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7645c7c8-32e2-4a72-316d-08de4022f613
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BY1PEPF0001AE1D.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS5PPF0E5ADD16F
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3015884
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9434.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009114)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QWFlZ3pVMWZiNW9kajUySHk3dDd1cUtyMy9IOVpFWmVyR2l2T3RFZitESk0v?=
+ =?utf-8?B?T3IwMDdZVlZaQSt3OFVxTllGTTFraUdJTkY2OFB1cm5hUHQ5dnBuUGVzVFhz?=
+ =?utf-8?B?QlYwMkJ3bFhueEpGMjhoTFV2VDlMMVBVQnJzVXp0UGV1ZVZyVDN5R1hpLzJF?=
+ =?utf-8?B?RG9FVUlOVy9pMUQ3eU9PdWlKeGNkRGhmc2ZxekY2RldTR0UrUzQxb2g3UXYy?=
+ =?utf-8?B?SFZNbDA2WmlvWlRQRnJ5YUxwWmE2ejgzbDBrVWpEcThLZXlRMkI3UWpsTWNl?=
+ =?utf-8?B?WDJvbmxTaVNaQVl1QVNtbmIreXpVYzQwRjYwcFpaK1NjM3dJQUFQMTVsMjM0?=
+ =?utf-8?B?YVp6RlovTThMQ2tnc1ZoRzRNUklTMmxTd2MrdGFoeGwyTkw4N0k3Q2k1SzlC?=
+ =?utf-8?B?L09EWjM1N2RoVkZtaWR5Q25hcUsrS2xHTmQ2ZjdKZVhXRjVKT0IrWkEyT25o?=
+ =?utf-8?B?M1hsekp4cGZoVCtxaTVaMjFPQWZDVC9GUEhKRUxqdlBKM0NlQkpOem1tOFlB?=
+ =?utf-8?B?R0JWK0ttTUQrZ1krMWZKSnArRFlqdTRlWU5iMGxaWTlQNlFZOUo3MW1HZ2ox?=
+ =?utf-8?B?ZlEvREJac3libHhJbjE3K2wrUjZUL1p2azRqV0FQdCsyTGJRN2w5S3BWdlJD?=
+ =?utf-8?B?Y2JqeGJVdEplTVVONFlaQUJxY0hCS1FvbXM2Q28va00yMWpmNWJCNnh1Y096?=
+ =?utf-8?B?cERiTkpGM0tFWEM5MlJ5L1Z0bWRHVFQ5cGhaVUJWRXowQ2s1RUozNDlkWnBN?=
+ =?utf-8?B?S0phbDlCTDFwZERvM0dyZUE2anJ5K1BMN3AraGNXODFCeGh6T2sxYTVITWdG?=
+ =?utf-8?B?L0NOUFZrUW1haVd1THRaN0oxdjdxNnNVMHpMcjFtSEMrZ3hTc3R1cXZ6eUFw?=
+ =?utf-8?B?VTlwS0t4c0FtL3lrbkZ4cDEwOTN1T0lpWFphS1hNWndqYUpycEVkU3Fwd01Y?=
+ =?utf-8?B?a0w1RnpNTkdwLzhGclZiZkJvb0R2Q2loN29RNjVZbnFwdFAzZGF2SkVFZ3BZ?=
+ =?utf-8?B?b3ZpQUpIeVZOTnBxRjZnNVdDbm1WZ2h2MUtXTlp5SjhudzBvSllpMVY3cGVM?=
+ =?utf-8?B?MDlydTVGVGczSFV2eWxOdVpLZDBrWTAxek03M1hGR3N1ZDc3S2lCb1hUbDBR?=
+ =?utf-8?B?dHdnd24wUmVnQmVtaG0xUzJUZC96S2JLbHR5Mzg1TnpnOXIxb3JycWVCVnVV?=
+ =?utf-8?B?Yk1ucjRiQlptWnNEckM2NVc5Ui9PbmJ1VFI0Q1dKdnBIQ3dURWl2Zi9XZVVV?=
+ =?utf-8?B?QzBZbDJ3ZFFJTzlVSFdiQkxjTXVnbkpMb3FsTnN3NjVBVkZQdjh4YVE5MWZC?=
+ =?utf-8?B?VVh2bGs4WWJvb0UrK1FjYWVENllEOGpqaHlFQ3FqWVdXRFRDcUVIM1JVVFBJ?=
+ =?utf-8?B?aVJKM3I0UXc0cXJlRlk3RjY5RlFXaGs1M2J2V2V3ZXhKSHQvanpWMHVTd2ZN?=
+ =?utf-8?B?bVRnSDEvZFVpYk1vRU9EZHEvRGpjMmg1SFNVTWZVeFYyYVVDVGpDTUJWbWtJ?=
+ =?utf-8?B?NEg2NlM0TVdFOTFHQ0tzdjd0N0dnY2l1Y0s0T2xDM2NrV3YwaUF4WUdnUXRR?=
+ =?utf-8?B?WDhqWklGWVg1NHRKRHhQcU05NEdjWEpCdWxyOXgvakVZRUZzdXVoc3c5V000?=
+ =?utf-8?B?MHU2b3VkcVBSYlVhNmI3d0UrVmFtaVhHZ0hWbldkMCsrM3FBTHh2LzhMV1d1?=
+ =?utf-8?B?NnpCV08yNjBmQ2ZIenUycnJrL3ZXWmozVG55V0YzTUZrWEx4a2V2ekQvbzNG?=
+ =?utf-8?B?M3dFR3IvTWhYWWpMRFRWZ3ZGMGZzWkpKT2g2MjNyU3ZLZ3htMWxmc1B6RlF1?=
+ =?utf-8?B?N29jdlVTQXFDUVBUckZZcE9OS1hJcEJ5eHA2SUF3VEdLRkhDYjBQOHVUSHJi?=
+ =?utf-8?B?ZEZBMVRLN3NuRXdLbDNzcHhaeGJxOUJxYVY0Mkd2clR4c01nV3hPNzFuTTgw?=
+ =?utf-8?B?aDJhNUx6cTlZUXhkME9zZ3kxTWdSRE5pL09OUHJIZVNwV29nMTJpemY5TGht?=
+ =?utf-8?B?NTRsNzZrcGNWNGpFK01ReEpRQmRrYnBsa2dQSHpMUElvODNwVlg4cUxGQVk2?=
+ =?utf-8?B?NDlxUlU5OUZQWElVRlFvTDBieldwRVdFWFpGNWpGOHhzaERxOEx1aWxwYnpk?=
+ =?utf-8?B?bW9IbXRWNklWU3FaN2g5alJHRTBmVTZ5b1VLUTFyeWpaTi9TQjdBZnFFUWoz?=
+ =?utf-8?B?SFdLVVhrUHBsSmhUSm5UY3ZMeWIvNXhKTUlSQUp1aHZ5YlhCRDJ6Mlhpd1dS?=
+ =?utf-8?B?Y1dwY1Bydmx6Wmh2bzlpdkRXOUFUbmFRcDF3YTlzaWxUWHlnMVRzekkvbkpO?=
+ =?utf-8?B?ZlVKUjNQWTJtSG1nSHViLzhwdEhwbUQvYVJrOTFuYytJcjhKVEF6RXNaNnZG?=
+ =?utf-8?B?S0ZMYlNNb0gwVmN6dStDWGhHVWVwbzBwZXQ4SWFQUWNRZ0U5aXIvcWxLN3Nm?=
+ =?utf-8?B?cXE4Mlh2eDZONm4wMXVDWlhSMTBCaDFmUDExSnI1U0Fic01BdDVWeVZabDNO?=
+ =?utf-8?B?UXdXTFdEVnVxMWFEM2prMjFpdm1kMGpVRUtCVEJpUC9Tak5vNDloOVlUYTA0?=
+ =?utf-8?B?YlYrcU44a3ZWQ3BHMExBVmxnU00yYm5lSkNhUWh6cmZDZ0VnaCtHeTFkN2dn?=
+ =?utf-8?B?N0ZkWkl6WEpJRGFzbXRpcXhsMkJ2eXQ3QkFuamx1a0w4T09RSlNFWW40M1Jj?=
+ =?utf-8?B?ZkdMRERvVE9HbkVVdDhUQWtScWxRY3RXTnlZYzNKQXdkSVNsSU9BeHhZL2Ro?=
+ =?utf-8?B?S0tSNzJhMndVQlJjR0tCRExkK3dyc1NlREdvVnhWTlJRbzhNZ01yaHoxdFgz?=
+ =?utf-8?B?N2J5MVpKT0lmdlk1UzBvVDdGWlNrWUlPRktpTklLM0JwQ1pqd0xqUTltcmNU?=
+ =?utf-8?B?Vkw1NG9xUXY3VzlEeEtLVEN3cXVXd1NZZS9lNmRxb0cwZFdHdWNXYitMdXhU?=
+ =?utf-8?B?Mm15THRzS1RBUUQ4cE5LRVY4VHFQSVB6N1VteHVoL3psK21Qb1kydEhWbjhq?=
+ =?utf-8?B?ZytJK1BSMFVXeW9XTy9sTUxtNlFKWUkveWw5NWdab0Q4cW85ellBWFRSTlFy?=
+ =?utf-8?B?aHAxSHpRNGY1MmpPb3lnUDl4RHZrY292dHUyU24xb0Q0aXk4elo3aWJCNkZn?=
+ =?utf-8?B?aE5ydjY2d3duQXgwakVtYkRZbWMzcCtSUHl0bTlHZz09?=
+MIME-Version: 1.0
+
+----==_mimepart_694736f170532_1e06237c2112476
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD).  =C2=A0  Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.  =C2=A0  Thank you,  Oregon Parks and Recreation Department =
+=C2=A0     =0D
+                           =0D
+                            On=0D
+                            Sat, 20 Dec at  3:53 PM=0D
+                            ,  Public Information Requests <oprd.publicre=
+cords@oprd.oregon.gov>  wrote:=0D
+                             =0D
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD). =0D
+ =C2=A0 =0D
+ Expect to hear back from us in about 10 business days with any records t=
+hat match your request or, for larger requests, with an estimate for staf=
+f time and costs to gather the documents. =0D
+ =C2=A0 =0D
+ Thank you, =0D
+ Oregon Parks and Recreation Department =C2=A0 =0D
+  =0D
+ =0D
+ =0D
+                           =0D
+                            On=0D
+                            Sat, 20 Dec at  3:53 PM=0D
+                            ,  Robert Samuel White <rsw@rswfire.com>  wro=
+te:=0D
+                             =0D
+I've now recorded the full account of what happened at Honeyman State Par=
+k and the decisions made afterward. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+https://www.youtube.com/watch?v=3DM82aVVW4mNI=0D
+ =0D
+ =0D
+ =0D
+ =0D
+ =0D
+I will not pretend to know what happens next. I don't believe any of us c=
+ould now. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+The archive, however, remains at =0D
+oprdvolunteerabuse.org. =0D
+ =0D
+ =0D
+ =0D
+ =0D
+=E2=80=94 Samuel White =0D
+=0D
+=0D
+=0D
+                          =0D
+ =0D
+                         =0D
+                           =0D
+                         =
+
+----==_mimepart_694736f170532_1e06237c2112476
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv style=3D"font-family:verdana, arial, sans-serif; font-size:15px;">=0D
+	<div><span data-teams=3D"true"><div>Thank you for submitting your public r=
+ecords request to the Oregon Parks and Recreation Department (<span class=
+=3D"caps">OPRD</span>).</div><div>&nbsp;</div><div>Expect to hear back from=
+ us in about 10 business days with any records that match your request or, =
+for larger requests, with an estimate for staff time and costs to gather th=
+e documents.</div><div>&nbsp;</div><div>Thank you,</div><div>Oregon Parks a=
+nd Recreation Department &nbsp;</div><p></span></div></p><div class=3D"fres=
+hdesk_quote">=0D
+                          <blockquote class=3D"freshdesk_quote">=0D
+                            On=0D
+                            Sat, 20 Dec at  3:53 PM=0D
+                            <span class=3D"separator">,  Public Information=
+ Requests &lt;oprd.publicrecords@oprd.oregon.gov&gt;  wrote:=0D
+                            <div class=3D"automation-note__subject" style=
+=3D"font-size: 16px; font-weight: 700; margin-bottom: 16px"></div>=0D
+<div><span><div>Thank you for submitting your public records request to the=
+ Oregon Parks and Recreation Department (<span class=3D"caps">OPRD</span>).=
+</div>=0D
+<div>&nbsp;</div>=0D
+<div>Expect to hear back from us in about 10 business days with any records=
+ that match your request or, for larger requests, with an estimate for staf=
+f time and costs to gather the documents.</div>=0D
+<div>&nbsp;</div>=0D
+<div>Thank you,</div>=0D
+<div>Oregon Parks and Recreation Department &nbsp;</div>=0D
+<div></div></span></div>=0D
+<div></div>=0D
+<div class=3D"freshdesk_quote">=0D
+                          <blockquote class=3D"freshdesk_quote">=0D
+                            On=0D
+                            Sat, 20 Dec at  3:53 PM=0D
+                            <span class=3D"separator">,  Robert Samuel Whit=
+e &lt;rsw@rswfire.com&gt;  wrote:=0D
+                            <div style=3D"font-family: Aptos, Aptos_Embedde=
+dFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt=
+; color: rgb(0, 0, 0)" class=3D"elementToProof">=0D
+I've now recorded the full account of what happened at Honeyman State Park =
+and the decisions made afterward.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+<a title=3D"https://www.youtube.com/watch?v=3DM82aVVW4mNI" href=3D"https://=
+www.youtube.com/watch?v=3DM82aVVW4mNI" rel=3D"noreferrer">https://www.youtu=
+be.com/watch?v=3DM82aVVW4mNI</a>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+I will not pretend to know what happens next. I don't believe any of us cou=
+ld now.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+The archive, however, remains at <a title=3D"https://oprdvolunteerabuse.org=
+" href=3D"https://oprdvolunteerabuse.org" rel=3D"noreferrer">=0D
+oprdvolunteerabuse.org</a>.</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)" class=
+=3D"elementToProof">=0D
+<br>=0D
+</div>=0D
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)">=0D
+=E2=80=94 Samuel White</div>=0D
+=0D
+=0D
+=0D
+                          </span>=0D
+</blockquote>=0D
+                        </div>=0D
+                          </blockquote>=0D
+                        </div>=0D
+<br>=0D
+=0D
+=0D
+=0D
+=0D
+<span title=3D"fd_tkt_identifier" style=3D"font-size:0px; font-family:&quot=
+;fdtktid&quot;; min-height:0px; height:0px; opacity:0; max-height:0px; line=
+-height:0px; color:#ffffff">318230:1155212</span>=0D
+=0D
+</div>=
+
+----==_mimepart_694736f170532_1e06237c2112476--

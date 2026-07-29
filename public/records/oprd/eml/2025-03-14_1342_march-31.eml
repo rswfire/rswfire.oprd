@@ -1,0 +1,494 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH7PR14MB5738.namprd14.prod.outlook.com (2603:10b6:510:212::17)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Fri, 14 Mar 2025
+ 20:42:50 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=MeBSUfx+TWHeIXnZmVUUDUgjV05lxoWCs/YYNEtT4J3PYQMMZ+B1+4JNuukxvAnVOTuClvp0NOoD9LEutHGqbJK/1saB/r5I9pblGyMWK4/nttIWZnHdyxv353VUU9ZsgFcJZDS15nN9w1nd64JWQ5VOnY5z6xoQ+TNuRra1KBlVIg7TSLtMPGNqGeShi+jKMLCv9zqrTEmUo313RsxZbcL/s8D1du2hP1F+1Nd4+2JM21Lrzv9xZ3nJu9j/bufIXsdezEVhK8qY+y85caCVNYN1OXn62aidaPO23FwoiFDcAwYMuBzWF33TOH1QNTS13AC/8jj+9JoBC+4Tmuc+tw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=y6MFDZsThLdC3zIj6LHuo4vlj/WnOAzZyRNwUybg2jI=;
+ b=qG2C3o+cu4Eb46sHMvTijOtGE6F0V6YuGWcQWUh5NGRD/KwT3QtQ7I/DTQOywfHXkhGs+U5MIoxf7O9GWRHktFNGAPpyanMilChAF0CqSjbAMg5H3bB8lJo+a+DMmmDtc+aE9ahzI2pE6iHEwZyWE1ogVIeBa6Mzqu4+IVJ1LJi/mVJrEJKsOgNPrbfz3v9kc7wqKT+BUKlYN1GZMJu7NFeFoUOzcInpe9BeaFDy6zNlWQjmwRVVGqvhDvgj/hQnYgVAabKgvlxiWxczolo3AQ8uUIfMWpSXUh73oUEyKgx4nQdgH+39nTLnD4tyVxr8rXDGSUfqAW3VAAjKxR7Hkg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c105::3) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oprd.oregon.gov] dkim=[1,1,header.d=oprd.oregon.gov]
+ dmarc=[1,1,header.from=oprd.oregon.gov])
+Received: from BLAPR03CA0071.namprd03.prod.outlook.com (2603:10b6:208:329::16)
+ by PH7PR14MB5738.namprd14.prod.outlook.com (2603:10b6:510:212::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8511.28; Fri, 14 Mar
+ 2025 20:42:46 +0000
+Received: from BL6PEPF0001AB71.namprd02.prod.outlook.com
+ (2603:10b6:208:329:cafe::61) by BLAPR03CA0071.outlook.office365.com
+ (2603:10b6:208:329::16) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8534.25 via Frontend Transport; Fri,
+ 14 Mar 2025 20:42:45 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c105::3)
+ smtp.mailfrom=oprd.oregon.gov; dkim=pass (signature was verified)
+ header.d=oprd.oregon.gov;dmarc=pass action=none
+ header.from=oprd.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oprd.oregon.gov
+ designates 2a01:111:f403:c105::3 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c105::3;
+ helo=CH1PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from CH1PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c105::3) by BL6PEPF0001AB71.mail.protection.outlook.com
+ (2603:10b6:22e:400:0:1009:0:4) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8534.20 via Frontend Transport; Fri,
+ 14 Mar 2025 20:42:44 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=OhPF76BW3l0YJ1tAxAOe09Vf92uZb34/XEGz9fjBj2s4B1YyYMIFxbVADQuyaxmKe+aIYneKZ3F1YdzovofC0rUZjXMucSTCKMv21JPhbxhERC+NjDNGH5jwfAB3TA5AP+7L859q2mhabRzV+6Pyo/aOVor77dYU5pb/hnQ057GuiJdW5VKDMyx0hY8byZmmCdHSXL96WjfV1SIWpC3bSzp2sdx5dgJGL3R6uN72ZbnUOGZtr+0LHNUZgYRXIUtVcZjKURSHZV4+kxuYNecom5nSGEId8osTsf5OxZzD3J6NDLCwqVINO62hVRlASO4PRtY8k/BRGljb278IgWxnmw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=y6MFDZsThLdC3zIj6LHuo4vlj/WnOAzZyRNwUybg2jI=;
+ b=rBl/1qiFPpDvrraYRUDRNBcuhB4Agq1U3/EecpBt6xYs45cKGTlCAUu92uVtedOvzxVXxvg4aZkG/H9BPGNPYGJOYUwvcW8ZaUit+1NtRuJwxeQlBPfCzL5g6XHKESEue1zxoya8yoWEnR6TsgiXVgpjeO9wD/k9vKNzrL9joaGyR66i4hCZYSrUfNt9JGoibj3+b52qXjIElN27USYto6KWSCUywbbvPLb26sXQvsyzQDaR38y1CbVZ24nhZbY561uH6P/hU+nbAQM5RyHImgffQ++jUYUCATpJ/O1tnTpl0GgqYhxO0PKiQF3IaeEMs3PJeb4xdRb6v6Te49zFyw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oprd.oregon.gov; dmarc=pass action=none
+ header.from=oprd.oregon.gov; dkim=pass header.d=oprd.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oprd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=y6MFDZsThLdC3zIj6LHuo4vlj/WnOAzZyRNwUybg2jI=;
+ b=D7MCwh09MwteX0akTFCsB730bSrtNeo5psWCF9b68HIdQ1rVpawFdQenZynT/44zFpSq44KYCpKABA3OKgJBOftl/GIfBiDZsPGJsmzzODeZfUrcvzC7O0t0Z+cZRHe16KT/DkB4tGryT6Q0wVGcNFW6UmukwffC6hniUoM3sfS5Pywr05T2CFXFnU9esNLPtLAQjxeT38P+FFhy/jJWM34BVsPEbwZROHhBJzCyiCeeS2EIx4G0AtDGQ1PVi/A/PqZtaT88Z67VcjtsyTYBf94JFUWslkYolst2aF7KO3oN/3qBft4CUQ5S6GMeHIauce2NXJnWkpWrvkHamrR5mQ==
+Received: from CO6PR09MB8294.namprd09.prod.outlook.com (2603:10b6:303:ce::20)
+ by SJ0PR09MB9700.namprd09.prod.outlook.com (2603:10b6:a03:446::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8534.28; Fri, 14 Mar
+ 2025 20:42:33 +0000
+Received: from CO6PR09MB8294.namprd09.prod.outlook.com
+ ([fe80::2328:a362:17a7:99e7]) by CO6PR09MB8294.namprd09.prod.outlook.com
+ ([fe80::2328:a362:17a7:99e7%6]) with mapi id 15.20.8534.027; Fri, 14 Mar 2025
+ 20:42:33 +0000
+From: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: March 31
+Thread-Topic: March 31
+Thread-Index: AQHblSDaRTry3MZXzUuaSSBfBRCA2LNzF+aQ
+Date: Fri, 14 Mar 2025 20:42:33 +0000
+Message-ID: <CO6PR09MB829413B0965BDC42C736A23AB1D22@CO6PR09MB8294.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181D3008BB5CDD911C09347ADD22@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB4181D3008BB5CDD911C09347ADD22@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oprd.oregon.gov;
+x-ms-traffictypediagnostic: CO6PR09MB8294:EE_|SJ0PR09MB9700:EE_|BL6PEPF0001AB71:EE_|PH7PR14MB5738:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 980c35fc-5158-4989-5b1c-08dd6338c5ca
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|366016|1800799024|38070700018|8096899003|4013099003|4053099003|13003099007|7053199007;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?3EQzdUdPqZHvSfF0KD+Tak6jLYH5jqxUNjFQ3NpLI6VFCh+UIDRFR1D1a/Aa?=
+ =?us-ascii?Q?6O8EAxsMVaLBpIkECtKNKItuRIntq4zabKMfrnk6dkoET/9bbhaLFooRBLug?=
+ =?us-ascii?Q?g955CKZZhbbxVRoFa38uM+ySm38oLAnvHQ8kD9xHIzVSXYFohHsB/5rsKhr1?=
+ =?us-ascii?Q?F+zNveqOD9EpudTb7M4Nkxpu9CGJsbVEHLMeqIW4zVhNNbbL/g8GkiQySlVc?=
+ =?us-ascii?Q?EoBSjjEgBJebKhmmt0tNvMSIdXXSrzLZnvjhad7JhMy3NCaUG3VwBK4kEdTu?=
+ =?us-ascii?Q?zHysB94w9qwNh1m2RjAuubNt6SQ/d6eJl2Ldig15k+4LWpr6Dtk5m9uFl67a?=
+ =?us-ascii?Q?DrvoU/sKor5pUeCgZIawfuPP+QLSo/tLCJULP7j75BfeiESghpi5PVgMgI9U?=
+ =?us-ascii?Q?Je7VrOve7veb394V5SKgpeUqyv/R9zNGsgskEug171Cl/CIc09umtS9xB8pS?=
+ =?us-ascii?Q?+36cMNfaSwcCMPDdX+jPPwM2HrQObc2jxwc2WZ2LQ6O4TZRmsijElpDHBXLj?=
+ =?us-ascii?Q?kQjAMt2S+2OWh+7UeQjOqc82a5OLnwKZORSZDVWasRHbei1tovnrkeVqqATh?=
+ =?us-ascii?Q?159JJ+U0s4kO83Wczug9ElI5L7Bjgimhe1QB8cOdYQ8tcm+0sTVvJoEfMTc4?=
+ =?us-ascii?Q?qv5Tg8FKnQ40v6JD+lSdPh2cdozDBiz+zEN/59b9gY9qnsFblvmbRdN9isEf?=
+ =?us-ascii?Q?vl7ruy2jNxq1n0Zrn3eceZs3BGfS4xpvERKTTP1ebebVKHzdxOPH0M8SoKIP?=
+ =?us-ascii?Q?2aIhzOH172V2HPvHqHOz4TEe8lq3i/O7sKs8+QDtt4fv+95FfH83Og8rE5xT?=
+ =?us-ascii?Q?U9x+Pia/Or8VZUmevnKpwsgk0/2xx9LbnRfrwqmmlz+dNax2p+NVq24Tl9Hz?=
+ =?us-ascii?Q?tt1u2+f35vsPy4ZVoT/ztbTWDg2LGP6CCUroM+Px2Qdr1Tr/2+TAboEFBErP?=
+ =?us-ascii?Q?SYEbkUmCKDvVC5pyVnvSUd2YguOrim6t1dLsCy1Y4b8iC5ecE3ZTA/2Xkq1K?=
+ =?us-ascii?Q?81uM+fItr9NobaGrxH1rEZ72ZWjgjZlqShUcPFveaEGIFKYfa0PIVtKjpNXT?=
+ =?us-ascii?Q?yTo1CCGboNaBJX43tR58/fdadpCmurooNlo41b3EjQbkCRGc1ONZ4rQL6Mch?=
+ =?us-ascii?Q?qXYN42wvgzIo1vitVpGlcQY1oKpcvLJl0ljoq18DC6PeBSv0gCmYsofhL1B5?=
+ =?us-ascii?Q?RyR/hMHXivmjyqZAnkIf6F8bFSZlXqRdUxAhrDSIhs44r1Cr0i3ucEg4hx5h?=
+ =?us-ascii?Q?71GgvSOJinVp4ObWDUX0XrKj4v3fNMQr42dYsPKHROnADTor4fU+lIJAEkFN?=
+ =?us-ascii?Q?Z2xmXyqaiFLlTKo6kKwHfDgpcUF8lQK2PNgT9q3c8AC5AsSc7DuCXKpsOdPO?=
+ =?us-ascii?Q?3zamxP1XaBzmpBNqrz0rfpEMIue/g0ztw75s2QMXcIUg14/q8lgqwBiaL1J2?=
+ =?us-ascii?Q?7tKpc/rIxWk=3D?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB8294.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(38070700018)(8096899003)(4013099003)(4053099003)(13003099007)(7053199007);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?P9cbqCoAAX4v5HEST1Vu3YRAVW9xIb7u3IwovC56/8cUnwK08OsPgaYNVhHN?=
+ =?us-ascii?Q?0fLCWDk5Q9rvNsGTDWdQr1t+wucW3LXseLKjSP4DREkChItuM4rolDxGYSGs?=
+ =?us-ascii?Q?trRUnirWKIiHNZDVD44PXAHW7I1gHNGOeoKeglB+fx0XYmSkXHJJSeIj3YO6?=
+ =?us-ascii?Q?zDsLrEuFBbzpJcxxwT4Po0r5UpLmwNPTrtXzkA0pNJ+JmSn54MnPXY8JW4lu?=
+ =?us-ascii?Q?SkjIyDZZKa8T3V8BHj3fbFf3VLNTJU36gvfz+9mSUSoBd2isW4k5FBsMWXP6?=
+ =?us-ascii?Q?1jRRg/bgKsTmZsczAGCbYFSfeQr1+RHWV5eONqxyTdGNkV5qKBTRAYWI2YfM?=
+ =?us-ascii?Q?vtTk8jd9pjDR/U4FlkrQ89PIwSTCZu4eUy573bgfcwMMtqehZ6072D1fw1D+?=
+ =?us-ascii?Q?iOySDjwJld297Zsxlr+TN2C3KgW2xJBxb7BL6O1WS1XlnZ4EBSIxA5U9Pbek?=
+ =?us-ascii?Q?+SoJx5QPYbEZbmxi22N+mplXB/7FswotFF8h9cM4zzSazzKKxMCju1Koyklb?=
+ =?us-ascii?Q?bzvkLDHxhOTUKcrmxXc/6WudDBPv+p9Y7ztz3r/gHCeP0/bMDNaKn6Jmvs/a?=
+ =?us-ascii?Q?httkrc7kul1lWfMWuhr7cEwHgVcZJ0E0rCVVgOurcgCy+fuTYM4z9ziXUMoa?=
+ =?us-ascii?Q?SRjGXTG47hTMJ4j8k/ReGLKK0fKJxJ8LE2oBEp/ctmbZSr9F+/fRT1jVsJ4G?=
+ =?us-ascii?Q?aQvhPI/vKnZjPnVlHpA1sNlYfCVAywZsURLhyumPGl1CaSoyS8R/INGlHEXB?=
+ =?us-ascii?Q?p87qnDeP3RTYVPF3/+yKT42iDPqoucIjFH5/hQVcPZxMCYg7ZYDvNxM0unex?=
+ =?us-ascii?Q?J3JzWySGzpln8qJnd6T4WTmY43oWsvlZRYGWvv3ArdGPdcInoC3VlnHnFSdZ?=
+ =?us-ascii?Q?gcdBB3fLpxtc3VVkaTm4hvORHZuVbYsmt5Fq+a4DCFKsVLvjolci2diDdfsw?=
+ =?us-ascii?Q?doxMf9cOf77aJB7WD8hM0FVFBjyFPPaYxZdWxyp8cE9RtBg6Wu9RDBjrCrzp?=
+ =?us-ascii?Q?LvYMg2NMKCqwBBE1UD2Y9mocf3lwnoBn7TdgL5qU4g250TUd9ug9dt8UlSp8?=
+ =?us-ascii?Q?2TyjegJbvGGUttB1wxT1rmMq6E5p7ecB60Zd/tnBoOyl+OJPPPuhabnmXfPq?=
+ =?us-ascii?Q?kQy8nGtyDxdwnjhZ6jVg2PCbxnlfgVFcpUfF4pOIU2GEyQPZDUMMvPX8z0i5?=
+ =?us-ascii?Q?AeXAuIwWRf9W/tJAG1gn2od93ynLYnOPxJAASDriZN+scfGbzLuDMfM+vj5u?=
+ =?us-ascii?Q?BJ2W+0zwPwApXk1SBr0vecVKsHxC5JB4N9iQ5KayhJvaTaH1XU7Jamh0M5+D?=
+ =?us-ascii?Q?Dh8+881XDiFP161DWCfrt1V/DGKqRKniq+lSLaS/dFmEOlisW39NG+w127YS?=
+ =?us-ascii?Q?2L8cIA6PzW4tR14bas6BelXNf7yJ0HuR8xxC54yAzj4crg5NZKl0NoReQP98?=
+ =?us-ascii?Q?RZmo/TfczsxHrdWgbo/N1WcQqaH2NtyC9wyl9rGMs+sedEVbYva2JHo+FuZT?=
+ =?us-ascii?Q?KWSr4DM56kiyuP3aUgOVE49Hobz2G5Kt531dUxs/0xxud9jowOsYxmNOaClU?=
+ =?us-ascii?Q?hScKeMSybQTcYc9+Qiy7YGrpwfMwpj85CYOsOnG3pw0WR4H+Jm2rLDel6An2?=
+ =?us-ascii?Q?HA=3D=3D?=
+Content-Type: multipart/related;
+	boundary="_004_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB9700
+Return-Path: Logan.BLISS@oprd.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Mar 2025 20:42:44.4170
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 980c35fc-5158-4989-5b1c-08dd6338c5ca
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BL6PEPF0001AB71.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BL6PEPF0001AB71.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BL6PEPF0001AB71.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: b239bc6b-26c5-457d-5954-08dd6338bf13
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: 9619d6e6-cc92-4d3b-a861-08dd6338c841
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: Logan.BLISS@oprd.oregon.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|35042699022|4013099003|13003099007|4053099003|7053199007|8096899003|4076899003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c105::3;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH1PR09CU001.outbound.protection.outlook.com;PTR:mail-northcentralusazlp170110003.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(35042699022)(4013099003)(13003099007)(4053099003)(7053199007)(8096899003)(4076899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Mar 2025 20:42:44.2294
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 980c35fc-5158-4989-5b1c-08dd6338c5ca
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BL6PEPF0001AB71.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR14MB5738
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.9310055
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8511.025
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?Eb0DK42A+ztwbNmOsL1EwZspy1rCRJLyOaEdP01Il0RDXNG5yhoel4Hv?=
+ =?Windows-1252?Q?whxV88NDSavBZOtffslYJx1+xEpN7azARxcGYKZM5uXvZNcv4QMWdam4?=
+ =?Windows-1252?Q?kY+629XkkBe33qOdLa8C0zjBRs67HhMeySps3vlMfietcqYEerO2GtF4?=
+ =?Windows-1252?Q?xfDkh+Pw3oVNj/qz+RhHN29gLXb9omZU4+CdGYC6NYvQrfk6N95JnfnS?=
+ =?Windows-1252?Q?FnBuJS6doSs1BoG8T23eEI8dS5ymUtK6kj0M7mmJwloQhzKinBbIJ7pu?=
+ =?Windows-1252?Q?Xo1WqiRNzYEYS0xxbZnM3eKluW6hryVYb9dgA/n9RDbSUXGR97XGXit8?=
+ =?Windows-1252?Q?IV/9JTVH3C7mIKeXJwq6xmcML1Mz3i/K5VNqd6hBPkIKWSiwrfmghiYJ?=
+ =?Windows-1252?Q?woQun3UDq0//l9Z8LSyguLXQglslm2HUGy0Ht8t+Szt0Up4mVUcPkTqg?=
+ =?Windows-1252?Q?mVpp4wYXDBi6FFkg2n66w7lap4RwCc28HcCjno5wISF3ZJUaPErpz3in?=
+ =?Windows-1252?Q?ZRETa6Ttc0kPPeoSRuSm0MTtUnooj/uXhw37rbImyEh29qJgu9NiYWxa?=
+ =?Windows-1252?Q?B2MEqo3cenTGSPPwrs3as22ODG0yvCNJLlXYCTeFZh+2JrzVGuP2/s9T?=
+ =?Windows-1252?Q?D1T2EzJR7CWGMQh9VSkLQq8MCBZPPS65AgA4U1pgS/WAHsgdTeOoGPvD?=
+ =?Windows-1252?Q?Wq7YvLQ5wLGBnv+m243OLT3nQYvqIn6cRsqcRzaN14oLDX9p1HDQyfFF?=
+ =?Windows-1252?Q?D64fLoMJxf0sWBHmbHAsunje5tFcLtbdpOxWRyZie1z2W4IYIQOu4uz+?=
+ =?Windows-1252?Q?RuFX6lkbHyOnt+GnodKaGVRAYBmux4sDCdhpxtDAs2593bKD0uSiWWn3?=
+ =?Windows-1252?Q?AjPdXfBQNxhgscrudLW1dvnUazHJBQnbwjp6Hcna7XjyXU5xTfYpg7n3?=
+ =?Windows-1252?Q?fsxVFBPa8tmaYdHF8oId0b4Ocv/3l5utPAzpx/WJ8a0GLFjGMVZPyw1z?=
+ =?Windows-1252?Q?J5ZQL9TrXj6kn8jK0RtsUG5PJSYRENy2ScFKpiJSHBtrsZLYeA1jE3OE?=
+ =?Windows-1252?Q?AkBcIMX3RRaEDOoAQRkjKYht8rkubb1EpPlHggJ2vwfJgV+vv6gAAChn?=
+ =?Windows-1252?Q?biO3VaNqmKpZy4+n5iQHNIv3i89HHn1gWTnUPEvKzKix1YSlqRmn+w24?=
+ =?Windows-1252?Q?SKY3h/Qoz0b/navh+olv18LIQgkg3keEaR/skPnFKuPbZFB0ZOj0DutO?=
+ =?Windows-1252?Q?MOroTJYL19dJ6Bzjv8AMN1eTZ1AyNwZ2Njfo0aRXUfLocYjnmY0D3No/?=
+ =?Windows-1252?Q?JlbBU2AsADBDVPeKTUEwErDwgY2raMo11UTBuqmugH34cod1oqxzQJza?=
+ =?Windows-1252?Q?jypWVPCFnQQVk/nhnndw4oF8vpqnlk+THzcbBNlag8GqXIIcaAbbN1/5?=
+ =?Windows-1252?Q?wG5IuQCprfBHml3NzMNCUmF3vNe0upYoU6wuJKmfCbFOUwJHpNkj0XoW?=
+ =?Windows-1252?Q?5RldH+gE4Ef31bKBCZ8fY3ddmi7sc3s29mixbuMB03XEu35/LFzjB9I7?=
+ =?Windows-1252?Q?IiBgQz70/Za889XsWCNM2ZMRnGBSHVEClAkjvGIux3BP5WVlLPfCjBqy?=
+ =?Windows-1252?Q?glvrCaqwHlM4ortmA2QycKQ6Fdi8ZJd04TOR8bvn0Vnc6mc5oi1KUGUN?=
+ =?Windows-1252?Q?07g7snRbiCBmiaEieTZWIOu4rXQdVzz1CfC5ogDfsbZAGjFrRHvkpihG?=
+ =?Windows-1252?Q?kyrsRhcK86pGDYnwG3uad2+FLoP6zPwEQnhY5DhbpteTdJfryoylRbsd?=
+ =?Windows-1252?Q?AbfcGa7/ahfcr6krOK4YKaWZoVrUDb3D81R8o5GxstzQgCwTG2qy6dAq?=
+ =?Windows-1252?Q?MfyPdKs4+yB0PJK4GZtA6O+CHAI6X9MIL7u5wR1G4RdO6Q7FsD9iJtvL?=
+ =?Windows-1252?Q?dofKpj9w8tIGMGgL7wgRuw8GosfZrKtI2fKfPjbUaIxsj6uiSRm1hk65?=
+ =?Windows-1252?Q?3FXNZxE+Xokl19FBhOnVpQxYT2BVmhE2MN+d5uBwYrpLfDm6atii2aOu?=
+ =?Windows-1252?Q?znsOuH3pnrEekvoDauBCF7iY7sw/FIJPs0JMlPuF5PatL+1wA9aX89dr?=
+ =?Windows-1252?Q?eTs=3D?=
+MIME-Version: 1.0
+
+--_004_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_"
+
+--_000_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sam,
+
+I was going to let you know about that when I ran into you again out in the=
+ field but haven't had a chance.  It would be completely fine to head out o=
+n Monday the 31st as that is usually what I try to coordinate with my depar=
+ting and incoming Volunteers.  Thank you for double checking though as I di=
+dn't note it on the schedules that I printed out.
+
+Leaving and arriving on the final day of the month is actually what most pa=
+rks are trying to coordinate with each other so that everyone can have a sm=
+ooth transition into the new month and able to jump right into the orientat=
+ions on the 1st.
+
+[cid:image001.jpg@01DB94E6.E3B35010]Logan Bliss | Volunteer Services Lead/R=
+anger 1
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+________________________
+Oregon Parks and Recreation Department
+84505 Highway 101
+Florence, OR 97439
+(541) 997-3851 Office
+(541) 999-5711 Cell
+(541) 997-4425 Fax
+https://stateparks.oregon.gov<https://stateparks.oregon.gov/>
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Friday, March 14, 2025 1:38 PM
+To: BLISS Logan * OPRD <Logan.BLISS@oprd.oregon.gov>
+Subject: March 31
+
+Hey Logan,
+
+Franki would like to know if I can leave on the 31st but I'm scheduled to w=
+ork that day. Can you let me know if that's okay or not? Thanks.
+
+Sam
+
+
+--_000_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Sam,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I was going to let =
+you know about that when I ran into you again out in the field but haven&#8=
+217;t had a chance.&nbsp; It would be completely fine to head out on Monday=
+ the 31<sup>st</sup> as that is usually what I
+ try to coordinate with my departing and incoming Volunteers.&nbsp; Thank y=
+ou for double checking though as I didn&#8217;t note it on the schedules th=
+at I printed out.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Leaving and arrivin=
+g on the final day of the month is actually what most parks are trying to c=
+oordinate with each other so that everyone can have a smooth transition int=
+o the new month and able to jump right
+ into the orientations on the 1<sup>st</sup>. <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img width=3D"82" h=
+eight=3D"91" style=3D"width:.8541in;height:.9479in" id=3D"Picture_x0020_1" =
+src=3D"cid:image001.jpg@01DB94E6.E3B35010"></span><b><i><span style=3D"font=
+-family:&quot;Cambria&quot;,serif;color:#007A37;letter-spacing:2.0pt">Logan
+ Bliss</span></i></b><b><span style=3D"font-size:10.0pt;color:#4F6228"> </s=
+pan></b><span style=3D"font-size:10.0pt;color:gray">|&nbsp;Volunteer Servic=
+es Lead/Ranger 1<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:3.0pt;color:#A6A6A6">___=
+___________________________________________________________________________=
+___________________________________________________________________________=
+___________________________________________________________________________=
+_____________________<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#348AA2;let=
+ter-spacing:1.0pt">Oregon Parks and Recreation Department</span></b><span s=
+tyle=3D"font-size:10.0pt;color:#348AA2;letter-spacing:1.0pt"><o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">84505 Hi=
+ghway 101<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">Florence=
+, OR 97439<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+7-3851 Office<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+9-5711 Cell<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:gray">(541) 99=
+7-4425 Fax<u><o:p></o:p></u></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#0070C0"><a hr=
+ef=3D"https://stateparks.oregon.gov/"><span style=3D"color:#0070C0">https:/=
+/stateparks.oregon.gov</span></a><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Friday, March 14, 2025 1:38 PM<br>
+<b>To:</b> BLISS Logan * OPRD &lt;Logan.BLISS@oprd.oregon.gov&gt;<br>
+<b>Subject:</b> March 31<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal">Hey Logan,<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Franki would like to know if I can leave on the 31st=
+ but I'm scheduled to work that day. Can you let me know if that's okay or =
+not? Thanks.<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Sam<o:p></o:p></p>
+</div>
+<div id=3D"ms-outlook-mobile-body-separator-line">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_--
+
+--_004_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=3230;
+	creation-date="Fri, 14 Mar 2025 20:42:32 GMT";
+	modification-date="Fri, 14 Mar 2025 20:42:33 GMT"
+Content-ID: <image001.jpg@01DB94E6.E3B35010>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABbAFIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2UkKC
+WIAHJJ7Vn3esQW1u05ZFgXrPM4jiH/Aj1/AGm65fwWFjJNdHFvBG1xN/uIM4/E4H515jDZRalYxe
+IPFnn311ctvgtHJdIt5+SNI+hOMdfxqoxciZS5TpLn4k2EsjRaab7VZRxt022+QH3kfj8RVVvEPi
+e7ObXw7a26+uoX7SH8VWopNWlis7m1gsXsL1LZ5raKVVKSbRnjacZHGR15qlp2sGTU9LMeqXF3Dd
+krL5tsI4gSmVCsFHzZ4xk55rTkitzNzl0LzHxfNlmbw5CPRbN3x+JpAni5PmW48PSY7NYMP5VQ8O
+2sk4gnk024mdJ5Fa7kvSQNrsNwTd2x0xSiBb/TLnUrqK9uLnz5lH2efY1oqMwG0FgBgKCfXNPkjb
+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
+
+--_004_CO6PR09MB829413B0965BDC42C736A23AB1D22CO6PR09MB8294namp_--
