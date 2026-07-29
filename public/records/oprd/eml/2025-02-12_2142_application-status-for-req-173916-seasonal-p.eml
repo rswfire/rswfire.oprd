@@ -1,0 +1,280 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from SJ0PR14MB5324.namprd14.prod.outlook.com (2603:10b6:a03:424::9)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Thu, 13 Feb 2025
+ 04:42:18 +0000
+Received: from DM6PR08CA0009.namprd08.prod.outlook.com (2603:10b6:5:80::22) by
+ SJ0PR14MB5324.namprd14.prod.outlook.com (2603:10b6:a03:424::9) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8445.11; Thu, 13 Feb 2025 04:42:14 +0000
+Received: from DS1PEPF0001708F.namprd03.prod.outlook.com
+ (2603:10b6:5:80:cafe::24) by DM6PR08CA0009.outlook.office365.com
+ (2603:10b6:5:80::22) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8445.13 via Frontend Transport; Thu,
+ 13 Feb 2025 04:42:14 +0000
+Authentication-Results: spf=pass (sender IP is 209.177.169.161)
+ smtp.mailfrom=myworkday.com; dkim=pass (signature was verified)
+ header.d=myworkday.com;dmarc=pass action=none
+ header.from=myworkday.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of myworkday.com designates
+ 209.177.169.161 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.177.169.161; helo=wd5-az-prod-mail-nat.myworkday.com; pr=C
+Received: from wd5-az-prod-mail-nat.myworkday.com (209.177.169.161) by
+ DS1PEPF0001708F.mail.protection.outlook.com (10.167.17.139) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8445.10
+ via Frontend Transport; Thu, 13 Feb 2025 04:42:13 +0000
+Received: from wire-prod-4o06v2dn.prod-wire.pr501.cust.pdx.wd (localhost
+ [127.0.0.1])
+	by wire-prod-4o06v2dn.prod-wire.pr501.cust.pdx.wd (Postfix) with ESMTP id
+ 4BB1F280009F
+	for <rsw@rswfire.com>; Wed, 12 Feb 2025 23:42:13 -0500 (EST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 wd5-az-prod-mail-nat.myworkday.com
+ 69DF34717
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myworkday.com;
+	s=0s00p2p5; t=1739421733;
+	bh=O7GVzPme/8tWeN3xQ9yX8TkDq0v2UUBmCPdkx6uPKSs=;
+	h=Date:From:Reply-To:To:Subject:List-Unsubscribe:From;
+	b=o20ULGO9SWZaBgIiyLCXglj5fIUht15XGj6rxwDjtIqQ5sKJtB2hR4j9tfnlqxQf+
+	 PxtlEJuELpoYME9EFoSfDQuDoQgQYY52q5ikEWwnjYrvdoVQuU6C2DgUjSWG3m0yIF
+	 Vq1QJLG0uxzaDh4lGWj5+aWQzyxF+R3+ybpFSQyk=
+Date: Wed, 12 Feb 2025 20:42:13 -0800 (PST)
+X-MSH: v 0.5.4
+From: Workday <oregon@myworkday.com>
+Reply-To: info@workday.com
+To: rsw@rswfire.com
+Message-ID: <743153590.8813825.1739421733308@myworkday.com>
+Subject: Application Status for REQ-173916 Seasonal Park Ranger Assistant -
+ Jessie M. Honeyman Memorial State Park (Evergreen) (Open)
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Workday-Security: false
+List-Unsubscribe-Post: 
+ <https://cust-drogon-unsubscribe.us-west-2.myworkdaymessaging.com/drogon/unsubscribe/oregon/drogon-wd5-prod/a2b194bb781910000476d4558ec20013/5f1b55badb7590017f41da72acd30000/cnN3QHJzd2ZpcmUuY29t>
+X-Workday-Static-BP-Address: false
+Feedback-ID: oregon:a2b194bb781910000476d4558ec20013:000:workday
+List-Unsubscribe: List-Unsubscribe=One-Click
+X-Workday-System: false
+Return-Path: oregon@myworkday.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Feb 2025 04:42:14.3121
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ b20ffbcb-81dc-4fa3-7909-08dd4be8c997
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS1PEPF0001708F:EE_|SJ0PR14MB5324:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b20ffbcb-81dc-4fa3-7909-08dd4be8c997
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:2;ARA:13230040|12012899012|5062899012|4022899009|3072899012|2092899012|8096899003|7053199007;
+X-Forefront-Antispam-Report: 
+ CIP:209.177.169.161;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:wd5-az-prod-mail-nat.myworkday.com;PTR:wd5-az-prod-mail-nat.myworkday.com;CAT:NONE;SFS:(13230040)(12012899012)(5062899012)(4022899009)(3072899012)(2092899012)(8096899003)(7053199007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Feb 2025 04:42:13.9996
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b20ffbcb-81dc-4fa3-7909-08dd4be8c997
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR14MB5324
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.1039002
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8422.015
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?utf-8?B?dGt2M1hrVDV3aDlBc2IyajIvT1ZvK2FDMGpDMFpodTdVcnZxTlBlN0IrSndq?=
+ =?utf-8?B?U0Zxck5PUEZ6cGw2RHFkMkJoems2R2Z2YmR3blpOdGFjYkUyZ2RMZVRmRnAz?=
+ =?utf-8?B?SEQ0bjYrYndkZTZDZWdIdm9sT29RSkREZVNjNktVNG5vZjhCUGlnZ2xhajY0?=
+ =?utf-8?B?OHMyK2Y4VmdtN29MTWFxTEt1R1ZoTlBQMGVWbGxFL2xQd2RoS0FpN3NFbFV3?=
+ =?utf-8?B?Nmh6YlY5SldnZTE0cDhSRERMc1c2UVNuMUNhTFR4WEFzdVZxbm0rdkpydHdR?=
+ =?utf-8?B?WVl3K0dGMzkxL1JRNEdJVzBNR202VHlIOVNJU3k4bXdqRnpTMlJHa2ZsNmtE?=
+ =?utf-8?B?U09ucFQ2VlZId3A0K3g2N1FhYXRxaE9lS1J1YWEyWStHZlpMdGU2czZJeUsv?=
+ =?utf-8?B?TFRkSWg2Ym1GVXdiSFg2bDdSRHN1S09Bemd3aldLZGFOamw0RWQyeG9TejF3?=
+ =?utf-8?B?djhMajcvSkhOb2FiOGdQSEJtR3ZERXhNVkp3VWtmTWptck5yNWpuSE1ORjhY?=
+ =?utf-8?B?dy8vWHRmM3QzcElCaWJNaXFnSlNSRU1ybUw3Uzkyd3ZvWG5KMVlPQzlJbFpr?=
+ =?utf-8?B?ZnlKNUo2YTFJYUxzZmlBSlc4K1N5bnBQWFE4N1hZVXJGajk0TDFkL1FmOGY5?=
+ =?utf-8?B?dTFSaU15bHkyNGVWUkF0VUpiUWtaeU1wcVk1cFV5OWZMTDR2bkhIUEVVeWgy?=
+ =?utf-8?B?K1dOYmRlN3d3VzZyVFl2cXB4RnQ5TGIvMFMrazYrcE5lUW5SNWF1OUtDZlNo?=
+ =?utf-8?B?L1JUZG5vQytqekNMcWxadVJSTG9UQjFSby9lTXZUeWtSS05RcVR5dDBFZ0Z5?=
+ =?utf-8?B?SUZ1N1FpVE5XdGxjVkVsVlhmeVpkNXFIaGVLWHNtS244SVZ2YW91NXliRWcw?=
+ =?utf-8?B?MEF6andwSXNzd0syTWpJREZXVE84NkRUM3VNejQ0TGdmQm5KSEVHZXJyWkRp?=
+ =?utf-8?B?TzJ1ZkRJWkloOWFRQ2tENE5zQ0J2Z0VnWEluRXdlekVsMUlzbHZuQmRFdnMz?=
+ =?utf-8?B?aUt6aHVZQ0hKeFNhem5nZ1kvZzBuYUxDKy9rblBGQkQvK1FnVG15YjJHWFo3?=
+ =?utf-8?B?Mm40RkJUZkpDNjZHMVhheXZsWVdzYWdsZldHV29OdUI5KzE1SUh2Ny93U3cx?=
+ =?utf-8?B?SXhMUkhHMkdJU2E2N3RLMWlXNUozMWV3NEUrbllWSkRuSmw2VE9oWE1jL0cy?=
+ =?utf-8?B?NDVDRG8yWWhvYktLUmdOL3V0VWpxVE1pK2Njbm9YNVZUemwwNEk0cFRzVzZa?=
+ =?utf-8?B?SU9FcFJzVEw5TW5OZmlxNUw4cmhDOTJBRmphbzcwK3oyYUZQaTB4Vm9XcWl4?=
+ =?utf-8?B?NVpXblh6UWVtM09DTFRLcm9sa0tkMXkxV3FxWWV4ZUt0RzlHY0JJdjkxZHBw?=
+ =?utf-8?B?ZkMxZkdqWmlmZTMzSVExUU5JMXR2WGYwQWo4RzlEcEpNZThhZ2VCOU5HdVYw?=
+ =?utf-8?B?RUkxS2NlZTU0V1lNVGg5K2Z5dU92RnduV1RXZktCSjFCZTVKZ05uWmRDOHhU?=
+ =?utf-8?B?dzBLcHZOVkR0VTltekdBUUhxV2hIZklBVFdjaG5vMExibEY5N24zWVBIdHZH?=
+ =?utf-8?B?c0ZFWXJhSUlzcGZZN0NNbElQc2N6YlVWR3EyRndwSVU2VVJwOWtHeXF4K1px?=
+ =?utf-8?B?YXdOeDVXMUplak9CUmRGTTVYNDRFRXFHdmlTQ2FQRzdIQ3BZMWQyU1M2Skpp?=
+ =?utf-8?B?OXNjbXZmc2I5RFc3V0dKQ3M4VU11cUZ4ZEl1UEppcHpHcnZtTWhkTHY3ZFdi?=
+ =?utf-8?B?OHpEdmk0UHY0dGJvQW9YWXlaWFl5K05IdUxJVnBCa1JJUFEwb0tTL0xGaTdl?=
+ =?utf-8?B?U2hNc2t1NUV6amZpVkxMQkF1QmRlYi9ENUV1MUhXTWlnR1BVb0lrYWlpV3By?=
+ =?utf-8?B?SEpLVmZiME1CMFh4QjVaVXUwR041YlhvV1pmVkhZcjhXMTg5U2pzKzRtdkNw?=
+ =?utf-8?B?Q3N3UFk4enpkb3N0aEh5NjIxQ2xDK1ZlKzROTy9MM0NWMWUyL1A3UjBzaFp6?=
+ =?utf-8?B?cTNDdzRqNXZZTTRhZVpXZ3FYZGN5K3NSbWtYRVVVbDRBSU4rTXU2bkV1YVky?=
+ =?utf-8?B?Y2ZHZllCSlk0NjRsS3ZzbDhhUmtSdVFMU3d0U3N4dHl4RGtYV0QrSU9DOTFn?=
+ =?utf-8?B?NGwxMHZJckUyMEVONXF4THF3ZVAxQUZNSStaVUhwMyt3WC81TDFUREhLdHhH?=
+ =?utf-8?B?QXptbjZaU09oSndQVVdIK2N5RVZ3MEw0b3VZRWNuc1o2TWFoQXFya2xELy9N?=
+ =?utf-8?B?MVQxeE1vUm5XbFh2V2k5VUZ5YkljZDFmOXFDZjZ5eXVadUFJZEFxS2lYR2E1?=
+ =?utf-8?B?a1Izb2tCOUtTU3VJbEFESVExdHBMZW9uV2tHUzcwVk1XUDMwcUEvWlZscXQ4?=
+ =?utf-8?B?Y3V5L1BMNFd6OXpTN2xGQzNrbUFnSkZVZFRmWXp3dzU4TnN3alM0WlRiTnBK?=
+ =?utf-8?B?eStWK2Y1Tm9ZOFRoVGlnczBwZlVyOUdWVmZCWVBkcldhbWZpR0dXNGNxMi9k?=
+ =?utf-8?B?QVl6U1hIVEprNTRBeitkZ29Ob0hJN05kOTBUWU5CalJnekJTRndFUkRJQTBu?=
+ =?utf-8?B?NkxDV2hCeHpjVXdwZXhwYzNNRWZNcFhYUzBWS0VhWXFxc05SMHRaSitPaXJ4?=
+ =?utf-8?B?Q0pUd1JlL2cySUVySCtBUiszejRXQWZkV1BmeXhuQ09wMmR4RHNGU2pqSUU5?=
+ =?utf-8?B?YWRpM0NnWGNIdVRsRUhQQjBZT2g4SDJBNU94RlRraXc1NGNEL1dJcDF5Yjk1?=
+ =?utf-8?B?LzlCWkxMdXBkbTRhTi9KNEMyWjRLNkc2MFBMTTJaSzkraTA5eitvbUdIM3Ax?=
+ =?utf-8?B?RitTbHZMeG1QVit1Wk1BMktXWDZPazNueDRQYjVZeXVHbzdjenRuVDJadUgw?=
+ =?utf-8?Q?v4nImY2pxBKAOldvLmO61sk7TqOLiEZrSW70rVmU=3D?=
+MIME-Version: 1.0
+
+<!doctype html><html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"u=
+rn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+      <title></title><style type=3D"text/css">body, table {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px; width:100%;
+}
+div {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+img=20
+{
+  border:0px;
+}</style></head>
+   <body><div><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quo=
+t;,sans-serif;color:black"></div><div>Thank you for applying with the State=
+ of Oregon! Your application has been received
+      and will be reviewed by members of our team soon. If you are selected=
+ for further
+      consideration, you will be contacted with information about next step=
+s. Refer to the
+      job posting for details about the open position and to find contact i=
+nformation for
+      the recruitment team. Please note, the use of outside resources such =
+as Artificial
+      Intelligence software during applicant skill assessments, examination=
+s, or interviews
+      is prohibited unless otherwise stated by the hiring agency. Unauthori=
+zed use of outside
+      resources during the hiring process will result in disqualification. =
+For applicant
+      help and information, visit https://www.oregon.gov/jobs <br><br>Since=
+rely, <br>State
+      of Oregon</div><div><br></div><div>Business Process: Job Application:=
+ Robert White =E2=80=8E- REQ-173916 Seasonal Park Ranger
+      Assistant - Jessie M. Honeyman Memorial State Park (CAND-498820) on 0=
+2/12/2025</div><div></span></div>
+      	     <div>
+      	    <!--[if mso | IE]>
+      	      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"600" align=3D"center"
+      style=3D"width:600px;">
+      	        <tr>
+      	          <td style=3D"line-height:0px;font-size:0px;mso-line-height=
+-rule:exactly;">
+      	      <![endif]-->
+      	    <div style=3D"margin:0 auto;max-width:600px;">
+      	      <table cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:=
+0px;width:100%;" align=3D"center" border=3D"0">
+      	        <tbody>
+      	          <tr>
+      	            <td style=3D"text-align:center;vertical-align:top;font-s=
+ize:0px;padding:20px
+      0px;"></td>
+      	          </tr>
+      	        </tbody>
+      	      </table>
+      	    </div>
+      	    <!--[if mso | IE]>
+      	      </td></tr></table>
+      	      <![endif]-->
+      	    <!--[if mso | IE]>
+      	      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"600" align=3D"center"
+      style=3D"width:600px;">
+      	        <tr>
+      	          <td style=3D"line-height:0px;font-size:0px;mso-line-height=
+-rule:exactly;">
+      	      <![endif]-->
+      	    <div style=3D"margin:0 auto;max-width:600px;">
+      	      <table cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:=
+0px;width:100%;" align=3D"center" border=3D"0">
+      	        <tbody>
+      	          <tr>
+      	            <td style=3D"text-align:center;vertical-align:top;font-s=
+ize:0px;padding:20px
+      0px;"></td>
+      	          </tr>
+      	        </tbody>
+      	      </table>
+      	    </div>
+      	    <!--[if mso | IE]>
+      	      </td></tr></table>
+      	      <![endif]-->
+     =20
+      <!--[if mso | IE]>
+	      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600=
+" align=3D"center" style=3D"width:600px;">
+	        <tr>
+	          <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;">
+	      <![endif]-->
+      <div xmlns:wd=3D"urn:com.workday/bsvc" style=3D"margin:0 auto;max-wid=
+th:600px;">
+         <table cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:0px;=
+width:100%;" align=3D"center" border=3D"0">
+            <tbody>
+               <tr>
+                  <td style=3D"text-align:center;vertical-align:top;font-si=
+ze:0px;padding:20px 0px;">
+                     <!--[if mso | IE]>
+	 <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"=
+vertical-align:top;width:600px;">
+	      <![endif]-->
+                     <div aria-labelledby=3D"mj-column-per-100" class=3D"mj=
+-column-per-100" style=3D"vertical-align:top;display:inline-block;font-size=
+:13px;text-align:left;width:100%;">
+                        <table cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" border=3D"0">
+                           <tbody>
+                              <tr>
+                                 <td style=3D"word-break:break-word;font-si=
+ze:0px;padding-bottom:0px;" align=3D"center">
+                                    <div style=3D"cursor:auto;color:#98a0a6=
+;font-family:Roboto;font-size:12px;font-weight:400;line-height:22px;">This =
+email was intended for rsw@rswfire.com</div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <!--[if mso | IE]>
+	      </td></tr></table>
+	      <![endif]-->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <!--[if mso | IE]>
+	      </td></tr></table>
+	      <![endif]-->
+   </body>
+</html>
+
