@@ -202,7 +202,7 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search the record"
-                    className="w-full min-[480px]:max-w-xs rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+                    className="w-full min-[480px]:flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
                 />
                 <select
                     value={kind}
@@ -224,9 +224,9 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
                 >
                     Date {asc ? "↑" : "↓"}
                 </button>
-                <span className="text-xs text-gray-500 min-[480px]:ml-auto">
-                    {total} of {filings.length} documents
-                </span>
+            </div>
+            <div className="mt-2 text-right text-xs text-gray-500">
+                {total} of {filings.length} documents
             </div>
 
             {/* table */}
