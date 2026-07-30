@@ -74,8 +74,6 @@ export default function PoliceIntimidationPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <h2 className="text-xl font-semibold">THE RIGHT TO KNOW</h2>
-
             <IdentityTracker />
 
             <AccountabilityRecord

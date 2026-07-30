@@ -40,6 +40,7 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
     const [html, setHtml] = useState<string | null>(null);
     const [failed, setFailed] = useState(false);
     const [emlOpen, setEmlOpen] = useState<string | null>(null);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         setHtml(null);
@@ -61,12 +62,25 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
 
     useEffect(() => {
         if (!doc) return;
-        const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key !== "Escape") return;
+            if (menuOpen) setMenuOpen(false);
+            else onClose();
+        };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [doc, onClose]);
+    }, [doc, onClose, menuOpen]);
+
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [doc]);
 
     if (!doc) return null;
+
+    // Attachments are what the correspondent sent; the rendering and the
+    // original are what the archive made of it.
+    const attachments = doc.docs.filter((d) => d.href.includes("/attachments/"));
+    const renderings = doc.docs.filter((d) => !d.href.includes("/attachments/"));
 
     return (
         <div
@@ -97,7 +111,7 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                         type="button"
                         onClick={onClose}
                         aria-label="Close"
-                        className="shrink-0 rounded-lg border border-gray-300 px-2.5 py-1 text-sm text-gray-600 hover:bg-gray-50"
+                        className="cursor-pointer shrink-0 rounded-lg border border-gray-300 px-2.5 py-1 text-sm text-gray-600 hover:bg-gray-50"
                     >
                         ✕
                     </button>
@@ -125,28 +139,75 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                 </div>
 
                 {/* downloads */}
-                <div className="px-5 py-3 border-t border-gray-200 bg-white flex flex-wrap items-center gap-2">
-                    {doc.docs.map((d) => (
-                        <a
-                            key={d.href}
-                            href={d.href}
-                            download
-                            title={d.label}
-                            className="text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-700 hover:text-white transition-colors"
-                        >
-                            Download {fileExt(d.href)}
-                        </a>
-                    ))}
-                    {doc.eml && (
+                <div className="px-5 py-3 border-t border-gray-200 bg-white flex items-center gap-3">
+                    <div className="relative">
                         <button
                             type="button"
-                            onClick={() => requestEml(doc.eml!, setEmlOpen)}
-                            title="Unmodified email original"
-                            className="text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-700 hover:text-white transition-colors"
+                            onClick={() => setMenuOpen((v) => !v)}
+                            aria-expanded={menuOpen}
+                            className="cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded px-3 py-1.5 hover:bg-emerald-800 transition-colors"
                         >
-                            Download EML
+                            Download
+                            <span className="text-[9px] leading-none">{menuOpen ? "▲" : "▼"}</span>
                         </button>
-                    )}
+
+                        {menuOpen && (
+                            <>
+                                <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
+                                <div className="absolute z-20 bottom-full left-0 mb-1.5 w-64 rounded-lg border border-gray-300 bg-white shadow-lg overflow-hidden">
+                                    {attachments.map((d) => (
+                                        <a
+                                            key={d.href}
+                                            href={d.href}
+                                            download
+                                            title={d.label}
+                                            onClick={() => setMenuOpen(false)}
+                                            className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50 border-b border-gray-100"
+                                        >
+                                            <span className="min-w-0 truncate">{d.label}</span>
+                                            <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
+                                                {fileExt(d.href)}
+                                            </span>
+                                        </a>
+                                    ))}
+
+                                    <div className={attachments.length > 0 ? "border-t-2 border-gray-300" : ""}>
+                                        {renderings.map((d) => (
+                                            <a
+                                                key={d.href}
+                                                href={d.href}
+                                                download
+                                                title={d.label}
+                                                onClick={() => setMenuOpen(false)}
+                                                className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50"
+                                            >
+                                                <span className="min-w-0 truncate">The record</span>
+                                                <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
+                                                    {fileExt(d.href)}
+                                                </span>
+                                            </a>
+                                        ))}
+                                        {doc.eml && (
+                                            <button
+                                                type="button"
+                                                onClick={() => {
+                                                    setMenuOpen(false);
+                                                    requestEml(doc.eml!, setEmlOpen);
+                                                }}
+                                                className="cursor-pointer w-full flex items-baseline justify-between gap-3 px-3 py-2 text-left text-sm text-gray-800 hover:bg-emerald-50"
+                                            >
+                                                <span className="min-w-0 truncate">The unmodified original</span>
+                                                <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
+                                                    EML
+                                                </span>
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+                            </>
+                        )}
+                    </div>
+
                     <Link
                         href={`/accountability/${doc.slug}/#${doc.ulid}`}
                         title="This document on its accountability page"

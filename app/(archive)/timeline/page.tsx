@@ -383,7 +383,7 @@ Oregon State Police release <Link href="/evidence/police" className="underline t
                 <li>
                     <div className="font-semibold">July 21, 2026</div>
                     <div className="mt-2 text-sm">
-The four local actors &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are identified by role rather than by name throughout the archive. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Reasoning stated publicly</Link>.
+The four named staff &mdash; the park manager, the park supervisor, the volunteer services lead, and the program manager &mdash; are identified by role rather than by name throughout the archive. <Link href="https://x.com/rswfire/status/2079630338322760159" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">Reasoning stated publicly</Link>.
                     </div>
                 </li>
 

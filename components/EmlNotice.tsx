@@ -55,7 +55,7 @@ export default function EmlNotice({ href, onClose }: { href: string | null; onCl
                         . Nothing in it has been altered.
                     </p>
                     <p>
-                        This archive refers to the local staff by role. That is a choice
+                        This archive refers to four OPRD staff by role. That is a choice
                         about emphasis, not concealment.
                     </p>
                     <p>
@@ -81,24 +81,24 @@ export default function EmlNotice({ href, onClose }: { href: string | null; onCl
                             if (suppress) window.localStorage.setItem("eml-notice-suppressed", "1");
                             onClose();
                         }}
-                        className="inline-block px-4 py-2 text-center text-sm font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-800 transition-colors"
+                        className="cursor-pointer inline-block px-4 py-2 text-center text-sm font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-800 transition-colors"
                     >
                         Download the Original
                     </a>
                     <button
                         type="button"
                         onClick={onClose}
-                        className="inline-block px-4 py-2 text-sm font-semibold uppercase tracking-wider text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                        className="cursor-pointer inline-block px-4 py-2 text-sm font-semibold uppercase tracking-wider text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
                     >
                         Cancel
                     </button>
                 </div>
-                <label className="mt-4 flex items-center gap-2 text-sm text-gray-600 select-none">
+                <label className="cursor-pointer mt-4 flex items-center gap-2 text-sm text-gray-600 select-none">
                     <input
                         type="checkbox"
                         checked={suppress}
                         onChange={(e) => setSuppress(e.target.checked)}
-                        className="h-4 w-4 accent-emerald-700"
+                        className="cursor-pointer h-4 w-4 accent-emerald-700"
                     />
                     Don&apos;t show this notice again
                 </label>

@@ -29,12 +29,20 @@ function shortStamp(f: Filing): string {
     return f.time ? `${abbr}, ${f.time}` : abbr;
 }
 
+const SELF_NAME = /^Robert (Samuel )?White$/;
+
+/** Who the other party was. His own name is dropped: he is always one side. */
+function otherParty(value?: string): string {
+    return (value ?? "")
+        .split(";")
+        .map((s) => s.trim())
+        .filter((s) => s && !SELF_NAME.test(s))
+        .join("; ");
+}
+
 function counterparty(f: Filing): { label: string; who: string } | null {
     const sent = SENT_KINDS.has(f.kind);
-    let who = sent ? f.to : f.from;
-    if (!who) who = sent ? f.from : f.to;
-    if (!who) return null;
-    who = who.replace(/(^|, )Robert White(, |$)/, "$1").replace(/^, |, $/g, "").trim();
+    const who = otherParty(sent ? f.to : f.from) || otherParty(sent ? f.from : f.to);
     if (!who) return null;
     return { label: sent ? "To" : "From", who };
 }
@@ -54,41 +62,42 @@ function Row({
     return (
         <div
             id={f.ulid}
-            className={`scroll-mt-48 flex items-start gap-3 sm:gap-5 ${
-                member ? "pl-9 pr-4 py-2.5" : "px-4 sm:px-5 py-3"
+            className={`scroll-mt-48 flex items-start gap-3 ${
+                member ? "pl-8 pr-4 py-3 sm:pl-12" : "px-4 sm:px-5 py-3.5"
             } ${f.flagged ? "bg-emerald-50/60" : member ? "bg-gray-50" : ""}`}
         >
-            <div className="w-24 sm:w-32 shrink-0">
-                <span id={f.id} className="block scroll-mt-48" />
-                {member ? (
-                    <div className="text-xs font-semibold text-gray-700">{shortStamp(f)}</div>
-                ) : (
-                    <div className="text-sm font-bold text-gray-900">{f.date}</div>
-                )}
-                <div className="mt-0.5 text-[10px] uppercase tracking-wider text-gray-400 leading-tight">
-                    {f.slug.toUpperCase()} &middot; {KIND_LABEL[f.kind]}
-                </div>
-            </div>
-
             <div className="min-w-0 flex-1">
+                <span id={f.id} className="block scroll-mt-48" />
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                    <span className="text-sm font-bold text-gray-900">
+                        {member ? shortStamp(f) : f.date}
+                    </span>
+                    <span className="text-[10px] uppercase tracking-wider text-gray-400">
+                        {f.slug.toUpperCase()} &middot; {KIND_LABEL[f.kind]}
+                    </span>
+                </div>
+
                 {!member && (
-                    <div className={`text-sm leading-snug ${f.flagged ? "font-semibold text-gray-900" : "text-gray-800"}`}>
+                    <div className={`mt-1 leading-snug ${f.flagged ? "text-[15px] font-semibold text-gray-900" : "text-sm text-gray-800"}`}>
                         {f.title}
                     </div>
                 )}
+
                 {cp && (
-                    <div className={member ? "text-xs text-gray-600" : "mt-0.5 text-sm text-gray-700"}>
+                    <div className="mt-1 text-sm text-gray-600 leading-snug line-clamp-2" title={cp.who}>
                         <span className="text-gray-400">{cp.label} </span>
                         {cp.who}
                     </div>
                 )}
+
                 {f.flagged && f.summary && (
-                    <div className="mt-1 text-sm text-gray-700 leading-relaxed">{f.summary}</div>
+                    <div className="mt-1.5 text-sm text-gray-700 leading-relaxed">{f.summary}</div>
                 )}
+
                 <a
                     href={`/accountability/${f.slug}/#${f.ulid}`}
                     title="This document on its accountability page"
-                    className="mt-1 block font-mono text-[10px] tracking-widest text-gray-300 hover:text-emerald-700 transition-colors"
+                    className="mt-1.5 inline-block font-mono text-[10px] tracking-widest text-gray-300 hover:text-emerald-700 transition-colors"
                 >
                     {f.ulid}
                 </a>
@@ -98,7 +107,7 @@ function Row({
                 type="button"
                 onClick={() => onView(f)}
                 title="Read the document"
-                className="shrink-0 text-xs font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-800 transition-colors"
+                className="cursor-pointer shrink-0 text-xs font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-800 transition-colors"
             >
                 View
             </button>
@@ -207,7 +216,7 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
                 <select
                     value={kind}
                     onChange={(e) => setKind(e.target.value as FilingKind | "all" | "flagged")}
-                    className="rounded-lg border border-gray-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                    className="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600"
                 >
                     <option value="all">All types</option>
                     <option value="flagged">Flagged</option>
@@ -220,7 +229,7 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
                 <button
                     type="button"
                     onClick={() => setAsc(!asc)}
-                    className="rounded-lg border border-gray-300 px-3 py-2 text-sm bg-white hover:bg-gray-50 text-gray-700 text-left min-[480px]:text-center"
+                    className="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 text-sm bg-white hover:bg-gray-50 text-gray-700 text-left min-[480px]:text-center"
                 >
                     Date {asc ? "↑" : "↓"}
                 </button>
@@ -231,11 +240,6 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
 
             {/* table */}
             <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden bg-white divide-y divide-gray-200">
-                <div className="flex gap-3 sm:gap-5 px-4 sm:px-5 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
-                    <span className="w-24 sm:w-32 shrink-0">Date</span>
-                    <span className="flex-1">Document</span>
-                    <span className="w-[3.4rem] shrink-0" />
-                </div>
 
                 {groups.length === 0 && (
                     <div className="px-4 py-6 text-sm text-gray-500">No documents match.</div>
@@ -262,27 +266,29 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
                     return (
                         <div key={g.key}>
                             <div
-                                className={`flex items-start gap-3 sm:gap-5 px-4 sm:px-5 py-3 cursor-pointer hover:bg-gray-50 transition-colors ${
+                                className={`flex items-start gap-3 px-4 sm:px-5 py-3.5 cursor-pointer hover:bg-gray-50 transition-colors ${
                                     flaggedIn ? "bg-emerald-50/60" : ""
                                 }`}
                                 onClick={() => toggle(g.key)}
                             >
-                                <div className="w-24 sm:w-32 shrink-0">
-                                    <div className="text-sm font-bold text-gray-900">{range}</div>
-                                    <div className="mt-0.5 text-[10px] uppercase tracking-wider text-gray-400 leading-tight">
-                                        {first.slug.toUpperCase()} &middot; {g.members.length} messages
-                                    </div>
-                                </div>
                                 <div className="min-w-0 flex-1">
-                                    <div className={`text-sm leading-snug ${flaggedIn ? "font-semibold text-gray-900" : "text-gray-800"}`}>
+                                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                                        <span className="text-sm font-bold text-gray-900">{range}</span>
+                                        <span className="text-[10px] uppercase tracking-wider text-gray-400">
+                                            {first.slug.toUpperCase()} &middot; {g.members.length} messages
+                                        </span>
+                                    </div>
+                                    <div className={`mt-1 leading-snug ${flaggedIn ? "text-[15px] font-semibold text-gray-900" : "text-sm text-gray-800"}`}>
                                         <span className="mr-1.5 inline-block text-gray-400 text-xs">{opened ? "\u25be" : "\u25b8"}</span>
                                         {baseSubject(first.title)}
                                     </div>
                                     {note && !opened && (
-                                        <div className="mt-1 text-sm text-gray-700 leading-relaxed">{note}</div>
+                                        <div className="mt-1.5 text-sm text-gray-700 leading-relaxed">{note}</div>
                                     )}
                                 </div>
-                                <div className="w-[3.4rem] shrink-0" />
+                                <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-gray-500 border border-gray-300 rounded px-2.5 py-1">
+                                    {opened ? "Close" : "Open"}
+                                </span>
                             </div>
                             {opened && (
                                 <div className="divide-y divide-gray-200/70 border-t border-gray-200">
