@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import IdentityTracker from "@/components/IdentityTracker";
 import PersonLink from "@/components/PersonLink";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import CadRecord from "@/components/CadRecord";
+import AccountabilityRecord, { flaggedIn } from "@/components/AccountabilityRecord";
 import { POLICE_EXPLOITATION } from "@/data/exploitation";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
@@ -62,19 +63,26 @@ export default function PoliceIntimidationPage() {
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <IdentityTracker />
+            <h2 className="text-xl font-semibold">THE STATE&rsquo;S OWN RECORD</h2>
+
+            <div className="mt-4 text-base leading-relaxed">
+                CAD record SP26097765 is the state&rsquo;s account of this visit: two pages, released in full
+                on July 14, 2026, 112 days after the event. This is what it says.
+            </div>
+
+            <CadRecord />
 
             <hr className="my-6 border-t border-gray-300" />
 
-            <div className="mt-4 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-                <div className="text-xs font-semibold uppercase tracking-widest text-emerald-800">The public record of this visit</div>
-                <p className="mt-2 text-base leading-relaxed">
-                    I asked Oregon State Police for the records of this visit. What followed &mdash; a &ldquo;no records&rdquo; denial, a record that surfaced anyway, the state&rsquo;s own account of it, and a petition to the Oregon Attorney General &mdash; is documented in full on its own page.
-                </p>
-                <div className="mt-4">
-                    <Link href="/accountability/osp" className="inline-block px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-700 hover:text-white transition-colors">Oregon State Police &rarr;</Link>
-                </div>
-            </div>
+            <h2 className="text-xl font-semibold">THE RIGHT TO KNOW</h2>
+
+            <IdentityTracker />
+
+            <AccountabilityRecord
+                heading="The record of this visit"
+                intro="The key documents. Each opens here and links to its place on the accountability pages."
+                items={flaggedIn("osp", "usfs")}
+            />
 
         </SectionPage>
     );

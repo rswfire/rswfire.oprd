@@ -4,6 +4,7 @@ import { Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
+import AccountabilityRecord, { withPerson } from "@/components/AccountabilityRecord";
 
 export const metadata: Metadata = {
     title: "Volunteer Services Lead",
@@ -151,6 +152,12 @@ export default function VolunteerServicesLeadPage() {
                     7. Expulsion &amp; Retaliation &rarr;
                 </Link>
             </div>
+
+            <AccountabilityRecord
+                heading="Correspondence with the volunteer services lead"
+                intro="The correspondence to and from the volunteer services lead. Each document opens here and links to its place on the accountability pages."
+                items={withPerson("[Volunteer Services Lead]")}
+            />
 
         </SectionPage>
     );

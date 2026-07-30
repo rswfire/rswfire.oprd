@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { ORIGIN_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -88,6 +89,16 @@ Sam
                 Every institutional action taken against me traced back to this exchange &mdash; not because I did anything wrong, but because I named her tone and insisted on the operational support I needed to serve effectively.
             </div>
 
+            <AccountabilityRecord
+                heading="The origin, on the accountability pages"
+                intro="The written record of this event. Each document opens here and links to its place on the accountability pages."
+                items={byTitles(
+                    "oprd",
+                    "Documentation of Recent Utility Issues in H Loop",
+                    "Following Up on the Power Outage",
+                    "RE: Following Up on the Power Outage",
+                )}
+            />
 
         </SectionPage>
     );

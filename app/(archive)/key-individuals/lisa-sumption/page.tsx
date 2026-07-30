@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import AccountabilityRecord, { withPerson } from "@/components/AccountabilityRecord";
 
 export const metadata: Metadata = {
     title: "Lisa Sumption",
@@ -102,6 +103,12 @@ export default function LisaSumptionKeyIndividualPage() {
                     The Closure &rarr;
                 </Link>
             </div>
+
+            <AccountabilityRecord
+                heading="Correspondence with the Director"
+                intro="The correspondence to and from the Director. Each document opens here and links to its place on the accountability pages."
+                items={withPerson("Lisa Sumption")}
+            />
 
         </SectionPage>
     );

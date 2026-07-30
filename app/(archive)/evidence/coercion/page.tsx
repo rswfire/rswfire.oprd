@@ -5,6 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { COERCION_EXPLOITATION } from "@/data/exploitation";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
@@ -46,6 +47,11 @@ export default function CoercionPage() {
 
             <PrimaryTransmission transmission={COERCION_TRANSMISSION} defaultExpanded />
 
+            <AccountabilityRecord
+                heading="This stage, on the accountability pages"
+                intro="The written record around the March 5 meeting. Each document opens here and links to its place on the accountability pages."
+                items={byTitles("oprd", "Public Record Notice", "Re: Jessie M. Honeyman State Park Hosting for March 2025")}
+            />
 
         </SectionPage>
     );

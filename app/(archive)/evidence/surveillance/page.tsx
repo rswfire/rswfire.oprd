@@ -6,6 +6,7 @@ import Email from "@/components/archive/Email";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { SURVEILLANCE_EXPLOITATION } from "@/data/exploitation";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
@@ -490,6 +491,18 @@ Steward of oprdvolunteerabuse.org
                 </div>
             </div>
 
+            <AccountabilityRecord
+                heading="The encounter, on the accountability pages"
+                intro="The same-day report, the reply, and the letters that placed the encounter on the record. Each document opens here and links to its place on the accountability pages."
+                items={byTitles(
+                    "oprd",
+                    "Question About Unidentified Visitor",
+                    "Re: Question About Unidentified Visitor",
+                    "For the Record - March 20 Field Encounter",
+                    "The Setup You Now Own",
+                    "Fw: The Setup You Now Own",
+                )}
+            />
 
         </SectionPage>
     );

@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import AccountabilityRecord, { withPerson } from "@/components/AccountabilityRecord";
 
 export const metadata: Metadata = {
     title: "Governor Tina Kotek",
@@ -78,6 +79,12 @@ export default function TinaKotekKeyIndividualPage() {
                     The Governor&rsquo;s Silence &rarr;
                 </Link>
             </div>
+
+            <AccountabilityRecord
+                heading="Correspondence with the Governor"
+                intro="The correspondence to and from the Governor. Each document opens here and links to its place on the accountability pages."
+                items={withPerson("Governor Kotek")}
+            />
 
         </SectionPage>
     );

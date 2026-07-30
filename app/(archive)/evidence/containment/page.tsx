@@ -5,6 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import PersonLink from "@/components/PersonLink";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byUlids } from "@/components/AccountabilityRecord";
 import { CONTAINMENT_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -179,6 +180,21 @@ JR Collier`}</pre>
                 </div>
             </div>
 
+            <AccountabilityRecord
+                heading="This stage, on the accountability pages"
+                intro="The written record of this stage. Each document opens here and links to its place on the accountability pages."
+                items={byUlids(
+                    "01K2QNT3G0QP8S42VBMG49CD7Y",
+                    "01K399TM7GG3FNAXSR4BX9TB1X",
+                    "01K3FDT5P09S9N9QSZYWS9KN7A",
+                    "01K3HPAXBG8F4QZG4DJNDY5QY8",
+                    "01KA45NDXG8VA4XB2YG7M8G0F5",
+                    "01KAHTQ0ZG656XCF1G2Q9X15KY",
+                    "01KBY6KNMGEGV4MZ98QEK6R8JP",
+                    "01KBZ9S95G2W5B44TTGT6HA69N",
+                    "01KHCRFBDG3DMYZSSTGV5WC7E7",
+                )}
+            />
 
         </SectionPage>
     );

@@ -10,23 +10,10 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ChainMeta, Filing, FilingKind } from "@/components/RecordsThread";
 import { KIND_LABEL } from "@/components/RecordsThread";
-import { CHAIN_PDFS } from "@/data/chains";
-
-function ext(href: string): string {
-    const m = href.toLowerCase().match(/\.([a-z0-9]+)$/);
-    return m ? m[1].toUpperCase() : "FILE";
-}
+import DocViewer, { type ViewDoc } from "@/components/DocViewer";
 
 function baseSubject(title: string): string {
     return title.replace(/^((re|fw|fwd)\s*:\s*)+/i, "").trim();
-}
-
-function Chip({ label }: { label: string }) {
-    return (
-        <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2 py-0.5 group-hover:bg-emerald-700 group-hover:text-white transition-colors">
-            {label}
-        </span>
-    );
 }
 
 const SENT_KINDS = new Set(["notice", "request", "followup", "statement", "petition", "supplement"]);
@@ -52,25 +39,38 @@ function counterparty(f: Filing): { label: string; who: string } | null {
     return { label: sent ? "To" : "From", who };
 }
 
-function Row({ f, member, onEml }: { f: Filing; member?: boolean; onEml: (href: string) => void }) {
+export type TableFiling = Filing & { slug: string };
+
+function Row({
+    f,
+    member,
+    onView,
+}: {
+    f: TableFiling;
+    member?: boolean;
+    onView: (f: TableFiling) => void;
+}) {
     const cp = counterparty(f);
     return (
         <div
-            id={f.id}
-            className={`scroll-mt-48 grid grid-cols-1 sm:grid-cols-[8rem_1fr_auto] gap-1 sm:gap-5 ${
-                member ? "pl-9 pr-5 py-2" : "px-5 py-3"
-            } ${f.flagged ? "bg-emerald-50/60" : member ? "bg-gray-100/70" : ""}`}
+            id={f.ulid}
+            className={`scroll-mt-48 flex items-start gap-3 sm:gap-5 ${
+                member ? "pl-9 pr-4 py-2.5" : "px-4 sm:px-5 py-3"
+            } ${f.flagged ? "bg-emerald-50/60" : member ? "bg-gray-50" : ""}`}
         >
-            <div>
+            <div className="w-24 sm:w-32 shrink-0">
+                <span id={f.id} className="block scroll-mt-48" />
                 {member ? (
-                    <div className="text-xs font-semibold text-gray-600 whitespace-nowrap">{shortStamp(f)}</div>
+                    <div className="text-xs font-semibold text-gray-700">{shortStamp(f)}</div>
                 ) : (
                     <div className="text-sm font-bold text-gray-900">{f.date}</div>
                 )}
-                <div className="mt-0.5 text-[11px] uppercase tracking-wider text-gray-400">{KIND_LABEL[f.kind]}</div>
+                <div className="mt-0.5 text-[10px] uppercase tracking-wider text-gray-400 leading-tight">
+                    {f.slug.toUpperCase()} &middot; {KIND_LABEL[f.kind]}
+                </div>
             </div>
 
-            <div className="min-w-0">
+            <div className="min-w-0 flex-1">
                 {!member && (
                     <div className={`text-sm leading-snug ${f.flagged ? "font-semibold text-gray-900" : "text-gray-800"}`}>
                         {f.title}
@@ -85,51 +85,49 @@ function Row({ f, member, onEml }: { f: Filing; member?: boolean; onEml: (href: 
                 {f.flagged && f.summary && (
                     <div className="mt-1 text-sm text-gray-700 leading-relaxed">{f.summary}</div>
                 )}
-                <div className={`${member ? "mt-0.5" : "mt-1"} font-mono text-[10px] tracking-widest text-gray-300`}>
+                <a
+                    href={`/accountability/${f.slug}/#${f.ulid}`}
+                    title="This document on its accountability page"
+                    className="mt-1 block font-mono text-[10px] tracking-widest text-gray-300 hover:text-emerald-700 transition-colors"
+                >
                     {f.ulid}
-                </div>
+                </a>
             </div>
 
-            <div className="flex sm:justify-end items-start gap-1.5 flex-wrap sm:w-[7.5rem]">
-                {(f.docs ?? []).map((d) => (
-                    <a key={d.href} href={d.href} download title={d.label} className="group">
-                        <Chip label={ext(d.href)} />
-                    </a>
-                ))}
-                {f.eml && (
-                    <button
-                        type="button"
-                        onClick={() => onEml(f.eml!)}
-                        title="Unmodified email original"
-                        className="group"
-                    >
-                        <Chip label="EML" />
-                    </button>
-                )}
-            </div>
+            <button
+                type="button"
+                onClick={() => onView(f)}
+                title="Read the document"
+                className="shrink-0 text-xs font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-800 transition-colors"
+            >
+                View
+            </button>
         </div>
     );
 }
 
-export default function RecordsTable({ filings, threadSlug, chains }: { filings: Filing[]; threadSlug: string; chains?: Record<string, ChainMeta> }) {
+export default function RecordsTable({ filings, chains }: { filings: TableFiling[]; chains?: Record<string, ChainMeta> }) {
     const [query, setQuery] = useState("");
     const [kind, setKind] = useState<FilingKind | "all" | "flagged">("all");
     const [asc, setAsc] = useState(true);
-    const [emlOpen, setEmlOpen] = useState<string | null>(null);
-    const [suppress, setSuppress] = useState(false);
-
-    const requestEml = (href: string) => {
-        if (typeof window !== "undefined" && window.localStorage.getItem("eml-notice-suppressed") === "1") {
-            const a = document.createElement("a");
-            a.href = href;
-            a.download = "";
-            a.click();
-            return;
-        }
-        setSuppress(false);
-        setEmlOpen(href);
-    };
+    const [view, setView] = useState<ViewDoc | null>(null);
     const [open, setOpen] = useState<Set<string>>(() => new Set());
+
+    const onView = (f: TableFiling) => {
+        const cp = counterparty(f);
+        setView({
+            slug: f.slug,
+            id: f.id,
+            title: f.title,
+            date: f.date,
+            time: f.time,
+            kindLabel: KIND_LABEL[f.kind],
+            counterparty: cp ? `${cp.label} ${cp.who}` : undefined,
+            ulid: f.ulid,
+            docs: f.docs ?? [],
+            eml: f.eml,
+        });
+    };
 
     const kinds = useMemo(
         () => Array.from(new Set(filings.map((f) => f.kind))),
@@ -153,9 +151,11 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
         // ULIDs are timestamp-prefixed, so lexicographic order is exact
         // chronological order, including within a single day.
         const sorted = rows.slice().sort((a, b) => a.ulid.localeCompare(b.ulid));
-        const byKey = new Map<string, Filing[]>();
+        const byKey = new Map<string, TableFiling[]>();
         for (const f of sorted) {
-            const key = f.chain ?? baseSubject(f.title).toLowerCase();
+            // The register slug is part of the key so a mixed-register list
+            // never chains same-subject documents across agencies.
+            const key = `${f.slug}|${f.chain ?? baseSubject(f.title).toLowerCase()}`;
             const g = byKey.get(key);
             if (g) g.push(f);
             else byKey.set(key, [f]);
@@ -170,10 +170,10 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
 
     // Deep links into a collapsed chain: expand the chain and let the anchor land.
     useEffect(() => {
-        const hash = window.location.hash.slice(1);
+        const hash = decodeURIComponent(window.location.hash.slice(1));
         if (!hash) return;
         for (const g of groups) {
-            if (g.members.length > 1 && g.members.some((m) => m.id === hash)) {
+            if (g.members.length > 1 && g.members.some((m) => m.ulid === hash || m.id === hash)) {
                 setOpen((prev) => new Set(prev).add(g.key));
                 setTimeout(() => document.getElementById(hash)?.scrollIntoView(), 50);
                 return;
@@ -231,10 +231,10 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
 
             {/* table */}
             <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden bg-white divide-y divide-gray-200">
-                <div className="hidden sm:grid grid-cols-[8rem_1fr_auto] gap-5 px-5 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
-                    <span>Date</span>
-                    <span>Document</span>
-                    <span className="w-[7.5rem]" />
+                <div className="flex gap-3 sm:gap-5 px-4 sm:px-5 py-2 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <span className="w-24 sm:w-32 shrink-0">Date</span>
+                    <span className="flex-1">Document</span>
+                    <span className="w-[3.4rem] shrink-0" />
                 </div>
 
                 {groups.length === 0 && (
@@ -243,15 +243,14 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
 
                 {groups.map((g) => {
                     if (g.members.length === 1) {
-                        return <Row key={g.members[0].ulid} f={g.members[0]} onEml={requestEml} />;
+                        return <Row key={g.members[0].ulid} f={g.members[0]} onView={onView} />;
                     }
                     const first = g.members[0];
                     const last = g.members[g.members.length - 1];
-                    const meta = chains?.[g.key];
+                    const meta = chains?.[g.key.slice(g.key.indexOf("|") + 1)];
                     const flaggedIn = meta?.flagged || g.members.some((m) => m.flagged);
                     const opened = isOpen(g);
                     const note = meta?.note ?? g.members.find((m) => m.flagged && m.summary)?.summary;
-                    const chainPdf = CHAIN_PDFS[`${threadSlug}|${g.key}`];
                     const range = (() => {
                         if (first.date === last.date) return first.date;
                         const [m1, d1, y1] = first.date.replace(",", "").split(" ");
@@ -263,18 +262,18 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
                     return (
                         <div key={g.key}>
                             <div
-                                className={`grid grid-cols-1 sm:grid-cols-[8rem_1fr_auto] gap-1 sm:gap-5 px-5 py-3 cursor-pointer hover:bg-gray-50 transition-colors ${
+                                className={`flex items-start gap-3 sm:gap-5 px-4 sm:px-5 py-3 cursor-pointer hover:bg-gray-50 transition-colors ${
                                     flaggedIn ? "bg-emerald-50/60" : ""
                                 }`}
                                 onClick={() => toggle(g.key)}
                             >
-                                <div>
+                                <div className="w-24 sm:w-32 shrink-0">
                                     <div className="text-sm font-bold text-gray-900">{range}</div>
-                                    <div className="mt-0.5 text-[11px] uppercase tracking-wider text-gray-400">
-                                        {g.members.length} messages
+                                    <div className="mt-0.5 text-[10px] uppercase tracking-wider text-gray-400 leading-tight">
+                                        {first.slug.toUpperCase()} &middot; {g.members.length} messages
                                     </div>
                                 </div>
-                                <div className="min-w-0">
+                                <div className="min-w-0 flex-1">
                                     <div className={`text-sm leading-snug ${flaggedIn ? "font-semibold text-gray-900" : "text-gray-800"}`}>
                                         <span className="mr-1.5 inline-block text-gray-400 text-xs">{opened ? "\u25be" : "\u25b8"}</span>
                                         {baseSubject(first.title)}
@@ -283,21 +282,12 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
                                         <div className="mt-1 text-sm text-gray-700 leading-relaxed">{note}</div>
                                     )}
                                 </div>
-                                <div
-                                    className="flex sm:justify-end items-start gap-1.5 flex-wrap sm:w-[7.5rem]"
-                                    onClick={(e) => e.stopPropagation()}
-                                >
-                                    {chainPdf && (
-                                        <a href={chainPdf} download title="Full chain as one PDF" className="group">
-                                            <Chip label="PDF" />
-                                        </a>
-                                    )}
-                                </div>
+                                <div className="w-[3.4rem] shrink-0" />
                             </div>
                             {opened && (
                                 <div className="divide-y divide-gray-200/70 border-t border-gray-200">
                                     {g.members.map((f) => (
-                                        <Row key={f.ulid} f={f} member onEml={requestEml} />
+                                        <Row key={f.ulid} f={f} member onView={onView} />
                                     ))}
                                 </div>
                             )}
@@ -306,86 +296,7 @@ export default function RecordsTable({ filings, threadSlug, chains }: { filings:
                 })}
             </div>
 
-            {/* disclosure modal */}
-            {emlOpen && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
-                    onClick={() => setEmlOpen(null)}
-                >
-                    <div
-                        className="w-full max-w-lg rounded-2xl bg-white border border-gray-300 p-6 sm:p-8"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <h2 className="text-base font-semibold uppercase tracking-widest text-gray-900">
-                            Unmodified Email Original
-                        </h2>
-
-                        <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-700">
-                            <p>
-                                This is a raw email file, exactly as sent or received. Its full
-                                headers, addresses, and authentication signatures can be examined
-                                with{" "}
-                                <a
-                                    href="https://toolbox.googleapps.com/apps/messageheader/"
-                                    target="_blank"
-                                    className="underline text-emerald-700 hover:text-emerald-600"
-                                >
-                                    standard tools
-                                </a>
-                                . Nothing in it has been altered.
-                            </p>
-                            <p>
-                                This archive refers to the local staff by role. That is a choice
-                                about emphasis, not concealment.
-                            </p>
-                            <p>
-                                In an unmodified record, identity is not protected, because it
-                                cannot be.{" "}
-                                <a
-                                    href="https://github.com/rswfire/rswfire.oprd"
-                                    target="_blank"
-                                    className="underline text-emerald-700 hover:text-emerald-600"
-                                >
-                                    Everything here is public
-                                </a>
-                                , including the open-source repository this archive is published
-                                from.
-                            </p>
-                        </div>
-
-                        <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                            <a
-                                href={emlOpen}
-                                download
-                                onClick={() => {
-                                    if (suppress) window.localStorage.setItem("eml-notice-suppressed", "1");
-                                    setEmlOpen(null);
-                                }}
-                                className="inline-block px-4 py-2 text-center text-sm font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded-lg hover:bg-emerald-800 transition-colors"
-                            >
-                                Download the Original
-                            </a>
-                            <button
-                                type="button"
-                                onClick={() => setEmlOpen(null)}
-                                className="inline-block px-4 py-2 text-sm font-semibold uppercase tracking-wider text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
-                            >
-                                Cancel
-                            </button>
-                        </div>
-                        <label className="mt-4 flex items-center gap-2 text-sm text-gray-600 select-none">
-                            <input
-                                type="checkbox"
-                                checked={suppress}
-                                onChange={(e) => setSuppress(e.target.checked)}
-                                className="h-4 w-4 accent-emerald-700"
-                            />
-                            Don't show this notice again
-                        </label>
-
-                    </div>
-                </div>
-            )}
+            <DocViewer doc={view} onClose={() => setView(null)} />
         </div>
     );
 }

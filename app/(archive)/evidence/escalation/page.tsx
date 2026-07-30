@@ -4,6 +4,7 @@ import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import PersonLink from "@/components/PersonLink";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byUlids } from "@/components/AccountabilityRecord";
 import { ESCALATION_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -96,6 +97,11 @@ Sam`}</pre>
                 They had the opportunity to reset. They chose escalation instead.
             </div>
 
+            <AccountabilityRecord
+                heading="This stage, on the accountability pages"
+                intro="The written record of this stage. Each document opens here and links to its place on the accountability pages."
+                items={byUlids("01JKXC1M80V9A90EV4SX6BFJ35")}
+            />
 
         </SectionPage>
     );

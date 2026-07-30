@@ -5,6 +5,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { TRUST_EXPLOITATION } from "@/data/exploitation";
 
 export const metadata: Metadata = {
@@ -209,6 +210,11 @@ https://oprdvolunteerabuse.org/naming-the-harm
 `}</pre>
             </Email>
 
+            <AccountabilityRecord
+                heading="This stage, on the accountability pages"
+                intro="The written record of this stage. Each document opens here and links to its place on the accountability pages."
+                items={byTitles("oprd", "Trust.", "The whole story.")}
+            />
 
         </SectionPage>
     );

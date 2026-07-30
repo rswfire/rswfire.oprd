@@ -5,6 +5,7 @@ import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import Email from "@/components/archive/Email";
 import EvidenceTabs from "@/components/EvidenceTabs";
+import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { EXPULSION_EXPLOITATION } from "@/data/exploitation";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
 
@@ -119,6 +120,11 @@ Respectfully,
                 Every piece is documented. Every step is permanent. The pattern is undeniable.
             </div>
 
+            <AccountabilityRecord
+                heading="The exclusion, on the accountability pages"
+                intro="The statewide exclusion. It opens here and links to its place on the accountability pages."
+                items={byTitles("oprd", "Volunteering with Oregon Parks and Recreation Department")}
+            />
 
         </SectionPage>
     );

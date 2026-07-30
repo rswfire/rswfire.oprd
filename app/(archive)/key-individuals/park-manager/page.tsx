@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
+import AccountabilityRecord, { withPerson } from "@/components/AccountabilityRecord";
 
 export const metadata: Metadata = {
     title: "Park Manager",
@@ -93,6 +94,12 @@ export default function ParkManagerPage() {
                     6. Dismissal Without Process &rarr;
                 </Link>
             </div>
+
+            <AccountabilityRecord
+                heading="Correspondence with the park manager"
+                intro="The correspondence to and from the park manager. Each document opens here and links to its place on the accountability pages."
+                items={withPerson("[Park Manager]")}
+            />
 
         </SectionPage>
     );

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
+import AccountabilityRecord, { withPerson } from "@/components/AccountabilityRecord";
 
 export const metadata: Metadata = {
     title: "Program Manager",
@@ -128,6 +129,12 @@ export default function ProgramManagerPage() {
                     7. Expulsion &amp; Retaliation &rarr;
                 </Link>
             </div>
+
+            <AccountabilityRecord
+                heading="Correspondence with the program manager"
+                intro="The correspondence to and from the program manager. Each document opens here and links to its place on the accountability pages."
+                items={withPerson("[Program Manager]")}
+            />
 
         </SectionPage>
     );

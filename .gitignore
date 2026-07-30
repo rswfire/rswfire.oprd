@@ -6,6 +6,7 @@
 /.yarn/*
 /build/
 /coverage/
+/docs/
 /node_modules/
 /out/
 

@@ -84,7 +84,10 @@ export default function RecordsThread({ thread }: { thread: RecordsThreadData })
             </div>
 
             <div className="mt-8">
-                <RecordsTable filings={thread.filings} threadSlug={thread.slug} chains={thread.chains} />
+                <RecordsTable
+                    filings={thread.filings.map((f) => ({ ...f, slug: thread.slug }))}
+                    chains={thread.chains}
+                />
             </div>
 
             {thread.note && (
