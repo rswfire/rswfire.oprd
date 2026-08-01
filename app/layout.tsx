@@ -26,6 +26,8 @@ const dmSerif = DM_Serif_Display({
 })
 
 export const metadata: Metadata = {
+    // Absolute canonical and Open Graph URLs are built from this.
+    metadataBase: new URL("https://oprdvolunteerabuse.org"),
     title: {
         default: "Oregon State Parks Volunteer Abuse Archive | oprdvolunteerabuse.org",
         template: "%s | Oregon State Parks Volunteer Abuse Archive | oprdvolunteerabuse.org",

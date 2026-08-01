@@ -214,8 +214,8 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                     </div>
 
                     <Link
-                        href={`/accountability/${doc.slug}/#${doc.ulid}`}
-                        title="This document on its accountability page"
+                        href={`/accountability/${doc.slug}/${doc.ulid}`}
+                        title="This document, on its own page"
                         className="ml-auto font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
                     >
                         {doc.ulid}

@@ -95,8 +95,8 @@ function Row({
                 )}
 
                 <a
-                    href={`/accountability/${f.slug}/#${f.ulid}`}
-                    title="This document on its accountability page"
+                    href={`/accountability/${f.slug}/${f.ulid}`}
+                    title="This document, on its own page"
                     className="mt-1.5 inline-block font-mono text-[10px] tracking-widest text-gray-300 hover:text-emerald-700 transition-colors"
                 >
                     {f.ulid}
