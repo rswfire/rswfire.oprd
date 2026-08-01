@@ -104,11 +104,13 @@ export default function DocViewer({
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-3 sm:p-6"
+            className="fixed inset-0 z-50 flex items-stretch justify-center bg-black/50 sm:items-center sm:p-6"
             onClick={onClose}
         >
+            {/* Full screen on a phone; a fixed 90vh panel above that, so the
+                document does not resize the window as you page through. */}
             <div
-                className="w-full max-w-3xl max-h-[90vh] flex flex-col rounded-2xl bg-white border border-gray-300 overflow-hidden"
+                className="w-full h-full flex flex-col bg-white sm:h-[90vh] sm:max-w-3xl sm:rounded-2xl sm:border sm:border-gray-300 overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* header */}
