@@ -5685,4 +5685,46 @@ export const DAS_THREAD: RecordsThreadData = {
     ],
 };
 
-export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, DAS_THREAD, USFS_THREAD];
+export const LEGISLATION_THREAD: RecordsThreadData = {
+    slug: "legislation",
+    title: "The Oregon Legislature",
+    agency: "Oregon Legislative Assembly",
+    matter: "Statewide HR Policy 50.010.02, Violence-Free Workplace",
+    status: "No response yet.",
+    summary: [
+        "Correspondence with legislators concerning Statewide HR Policy 50.010.02, the Violence-Free Workplace policy issued by the DAS Chief Human Resources Office, which applies to every executive branch agency in Oregon.",
+    ],
+    filings: [
+        {
+            id: "2026-08-01_1238_defect-in-statewide-hr-policy-50-010-02",
+            ulid: "01KYZDAQCG7F6YKYGHWJ1KT9Z4",
+            flagged: true,
+            date: "August 1, 2026",
+            time: "12:38 PM",
+            d: "2026-08-01",
+            from: "Robert Samuel White",
+            to: "Representative Boomer Wright, House District 9; Senator Dick Anderson, Senate District 5",
+            kind: "notice",
+            title: "A defect in Statewide HR Policy 50.010.02",
+            summary: "Section 7 of the policy names volunteers among those who may be barred and terminated. Section 8 names only employees as protected from retaliation.",
+            docs: [{ label: "Letter to the Legislators", href: "/records/legislation/attachments/01kyzdaqcg7f6ykyghwj1kt9z4-2026-08-01-letter-legislators-50-010-02.pdf" }, { label: "Transmittal", href: "/records/legislation/2026-08-01_1238-defect-in-statewide-hr-policy-50-010-02.pdf" }],
+            eml: "/records/legislation/eml/2026-08-01_1238_defect-in-statewide-hr-policy-50-010-02.eml",
+        },
+        {
+            id: "2026-08-01_1239_chro-policy-team-acknowledgment",
+            ulid: "01KYZDDWYGC8W9EJYM6ZAG5MH4",
+            date: "August 1, 2026",
+            time: "12:39 PM",
+            d: "2026-08-01",
+            from: "DAS Chief Human Resources Office",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "CHRO Policy Team acknowledgment",
+            summary: "Automatic reply from the office that issues the policy, stating the email was received and a team member will reply.",
+            docs: [{ label: "Acknowledgment", href: "/records/legislation/2026-08-01_1239-chro-policy-team-acknowledgment.pdf" }],
+            eml: "/records/legislation/eml/2026-08-01_1239_chro-policy-team-acknowledgment.eml",
+        },
+    ],
+};
+
+export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, DAS_THREAD, USFS_THREAD, LEGISLATION_THREAD];

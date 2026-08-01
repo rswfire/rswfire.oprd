@@ -33,6 +33,7 @@ export const THREAD_LABEL: Record<string, string> = {
     usfs: "USFS",
     osp: "OSP",
     das: "DAS",
+    legislation: "LEGISLATURE",
 };
 
 function fileExt(href: string): string {
