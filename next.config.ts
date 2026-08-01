@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   // local `serve` of out/. Set ASSET_PREFIX to pin assets to an absolute
   // origin (e.g. a CDN) if ever needed.
   assetPrefix: process.env.ASSET_PREFIX || "",
+  env: { NEXT_PUBLIC_ASSET_PREFIX: process.env.ASSET_PREFIX || "" },
 };
 
 export default nextConfig;

@@ -24,6 +24,10 @@ export interface ViewDoc {
     eml?: string;
 }
 
+// Runtime fetches follow the same prefix as every other asset, so one
+// build serves the apex, a test subdomain, or a local serve of out/.
+const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
+
 export const THREAD_LABEL: Record<string, string> = {
     oprd: "OPRD",
     usfs: "USFS",
@@ -51,7 +55,7 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
             return;
         }
         let alive = true;
-        fetch(`/records/${doc.slug}/html/${doc.id}.html`)
+        fetch(`${PREFIX}/records/${doc.slug}/html/${doc.id}.html`)
             .then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
             .then((t) => alive && setHtml(t))
             .catch(() => alive && setFailed(true));
@@ -161,7 +165,7 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                                             href={d.href}
                                             download
                                             title={d.label}
-                                            onClick={() => setMenuOpen(false)}
+                                            onClick={() => setTimeout(() => setMenuOpen(false), 0)}
                                             className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50 border-b border-gray-100"
                                         >
                                             <span className="min-w-0 truncate">{d.label}</span>
@@ -178,7 +182,7 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                                                 href={d.href}
                                                 download
                                                 title={d.label}
-                                                onClick={() => setMenuOpen(false)}
+                                                onClick={() => setTimeout(() => setMenuOpen(false), 0)}
                                                 className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50"
                                             >
                                                 <span className="min-w-0 truncate">The record</span>
