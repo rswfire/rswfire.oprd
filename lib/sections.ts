@@ -12,6 +12,7 @@ export const archiveSections = [
             { href: "/accountability/osp", label: "Oregon State Police" },
             { href: "/accountability/das", label: "Administrative Services" },
             { href: "/accountability/usfs", label: "U.S. Forest Service" },
+            { href: "/accountability/legislation", label: "Oregon Legislative Assembly" },
         ]
     },
     { href: "#separator-3", label: "", separator: true },

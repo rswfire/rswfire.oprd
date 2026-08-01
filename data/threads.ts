@@ -5689,10 +5689,10 @@ export const LEGISLATION_THREAD: RecordsThreadData = {
     slug: "legislation",
     title: "The Oregon Legislature",
     agency: "Oregon Legislative Assembly",
-    matter: "Statewide HR Policy 50.010.02, Violence-Free Workplace",
+    matter: "Legislative correspondence",
     status: "No response yet.",
     summary: [
-        "Correspondence with legislators concerning Statewide HR Policy 50.010.02, the Violence-Free Workplace policy issued by the DAS Chief Human Resources Office, which applies to every executive branch agency in Oregon.",
+        "Correspondence with Oregon legislators about statewide policy and the treatment of volunteers by state agencies.",
     ],
     filings: [
         {
