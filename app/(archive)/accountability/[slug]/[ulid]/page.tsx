@@ -11,6 +11,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import EmlDownload from "@/components/EmlDownload";
 import { KIND_LABEL } from "@/components/RecordsThread";
 import type { Filing, RecordsThreadData } from "@/components/RecordsThread";
 import { THREADS } from "@/data/threads";
@@ -162,16 +163,7 @@ export default async function DocumentPage({
                             The record ({ext(d.href)})
                         </a>
                     ))}
-                    {filing.eml && (
-                        <a
-                            href={filing.eml}
-                            download
-                            className="text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-700 hover:text-white transition-colors"
-                            title="The unmodified email original"
-                        >
-                            The unmodified original (EML)
-                        </a>
-                    )}
+                    {filing.eml && <EmlDownload href={filing.eml} />}
                 </div>
                 <div className="mt-4 font-mono text-[10px] tracking-widest text-gray-400">{filing.ulid}</div>
             </div>

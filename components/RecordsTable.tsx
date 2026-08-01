@@ -122,9 +122,9 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
     const [view, setView] = useState<ViewDoc | null>(null);
     const [open, setOpen] = useState<Set<string>>(() => new Set());
 
-    const onView = (f: TableFiling) => {
+    const toViewDoc = (f: TableFiling): ViewDoc => {
         const cp = counterparty(f);
-        setView({
+        return {
             slug: f.slug,
             id: f.id,
             title: f.title,
@@ -135,8 +135,10 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
             ulid: f.ulid,
             docs: f.docs ?? [],
             eml: f.eml,
-        });
+        };
     };
+
+    const onView = (f: TableFiling) => setView(toViewDoc(f));
 
     const kinds = useMemo(
         () => Array.from(new Set(filings.map((f) => f.kind))),
@@ -176,6 +178,15 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
     }, [filings, query, kind, asc]);
 
     const total = useMemo(() => groups.reduce((n, g) => n + g.members.length, 0), [groups]);
+
+    // Everything the table is showing, in display order, so the viewer can
+    // step through the register without closing.
+    const shown = useMemo(() => groups.flatMap((g) => g.members), [groups]);
+    const at = view ? shown.findIndex((f) => f.ulid === view.ulid) : -1;
+    const step = (delta: number) => {
+        const nextRow = shown[at + delta];
+        if (nextRow) setView(toViewDoc(nextRow));
+    };
 
     // Deep links into a collapsed chain: expand the chain and let the anchor land.
     useEffect(() => {
@@ -302,7 +313,12 @@ export default function RecordsTable({ filings, chains }: { filings: TableFiling
                 })}
             </div>
 
-            <DocViewer doc={view} onClose={() => setView(null)} />
+            <DocViewer
+                doc={view}
+                onClose={() => setView(null)}
+                onPrev={at > 0 ? () => step(-1) : undefined}
+                onNext={at >= 0 && at < shown.length - 1 ? () => step(1) : undefined}
+            />
         </div>
     );
 }

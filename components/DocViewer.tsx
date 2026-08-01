@@ -41,7 +41,17 @@ function fileExt(href: string): string {
     return m ? m[1].toUpperCase() : "FILE";
 }
 
-export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClose: () => void }) {
+export default function DocViewer({
+    doc,
+    onClose,
+    onPrev,
+    onNext,
+}: {
+    doc: ViewDoc | null;
+    onClose: () => void;
+    onPrev?: () => void;
+    onNext?: () => void;
+}) {
     const [html, setHtml] = useState<string | null>(null);
     const [failed, setFailed] = useState(false);
     const [emlOpen, setEmlOpen] = useState<string | null>(null);
@@ -68,13 +78,18 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
     useEffect(() => {
         if (!doc) return;
         const onKey = (e: KeyboardEvent) => {
-            if (e.key !== "Escape") return;
-            if (menuOpen) setMenuOpen(false);
-            else onClose();
+            if (e.key === "Escape") {
+                if (menuOpen) setMenuOpen(false);
+                else onClose();
+                return;
+            }
+            if (menuOpen) return;
+            if (e.key === "ArrowLeft" && onPrev) onPrev();
+            if (e.key === "ArrowRight" && onNext) onNext();
         };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [doc, onClose, menuOpen]);
+    }, [doc, onClose, menuOpen, onPrev, onNext]);
 
     useEffect(() => {
         setMenuOpen(false);
@@ -213,13 +228,37 @@ export default function DocViewer({ doc, onClose }: { doc: ViewDoc | null; onClo
                         )}
                     </div>
 
-                    <Link
-                        href={`/accountability/${doc.slug}/${doc.ulid}`}
-                        title="This document, on its own page"
-                        className="ml-auto font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
-                    >
-                        {doc.ulid}
-                    </Link>
+                    <div className="ml-auto flex items-center gap-3">
+                        <Link
+                            href={`/accountability/${doc.slug}/${doc.ulid}`}
+                            title="This document, on its own page"
+                            className="hidden sm:block font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
+                        >
+                            {doc.ulid}
+                        </Link>
+                        <div className="flex items-center gap-1">
+                            <button
+                                type="button"
+                                onClick={onPrev}
+                                disabled={!onPrev}
+                                title="Previous document"
+                                aria-label="Previous document"
+                                className="cursor-pointer rounded border border-gray-300 px-2 py-1 text-sm text-gray-600 hover:bg-gray-50 disabled:cursor-default disabled:opacity-30 disabled:hover:bg-transparent"
+                            >
+                                &larr;
+                            </button>
+                            <button
+                                type="button"
+                                onClick={onNext}
+                                disabled={!onNext}
+                                title="Next document"
+                                aria-label="Next document"
+                                className="cursor-pointer rounded border border-gray-300 px-2 py-1 text-sm text-gray-600 hover:bg-gray-50 disabled:cursor-default disabled:opacity-30 disabled:hover:bg-transparent"
+                            >
+                                &rarr;
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 

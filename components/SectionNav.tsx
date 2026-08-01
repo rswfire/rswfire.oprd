@@ -50,7 +50,10 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                 {s.subsections && (
                                     <ul className="ml-4 mt-1 space-y-1">
                                         {s.subsections.map((sub) => {
-                                            const subActive = pathname === sub.href || pathname === sub.href + '/';
+                                            // A document page lives under its register, so the
+                                            // register stays highlighted while reading one.
+                                            const subActive = pathname === sub.href
+                                                || pathname.startsWith(sub.href + '/');
                                             return (
                                                 <li key={sub.href}>
                                                     <Link
