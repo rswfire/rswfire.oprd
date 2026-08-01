@@ -4254,6 +4254,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "Re: Notice of publication — OPRD record complete", href: "/records/oprd/2026-07-28_2135-notice-of-publication-oprd-record-complete.pdf" }],
             eml: "/records/oprd/eml/2026-07-28_2135_notice-of-publication-oprd-record-complete.eml",
         },
+        {
+            id: "2026-08-01_0007_violence-free-workplace-policy",
+            ulid: "01KYY2C05RZ76JBTEKHE0EEB59",
+            flagged: true,
+            date: "August 1, 2026",
+            time: "12:07 AM",
+            d: "2026-08-01",
+            from: "Robert Samuel White",
+            to: "Director Lisa Sumption; Deputy Director JR Collier; Merilee Nowak, DAS; Governor Kotek",
+            kind: "request",
+            title: "Statewide HR Policy 50.010.02, Violence-Free Workplace, and its application to me",
+            summary: "One question to the Director, who administers the policy under Section 1: whether 50.010.02, or any threat assessment or safety planning process under it, was applied to me. The letter sets out six flaws in the policy as published, including that Section 7 reaches volunteers as subjects while Section 8 protects only employees from retaliation.",
+            docs: [{ label: "Letter to the Director", href: "/records/oprd/attachments/01kyy2c05rz76jbtekhe0eeb59-2026-07-31-letter-director-deputy-violence-free-workplace.pdf" }, { label: "Transmittal", href: "/records/oprd/2026-08-01_0007-violence-free-workplace-policy.pdf" }],
+            eml: "/records/oprd/eml/2026-08-01_0007_violence-free-workplace-policy.eml",
+        },
     ],
 };
 
