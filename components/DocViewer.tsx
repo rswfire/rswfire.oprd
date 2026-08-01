@@ -228,36 +228,36 @@ export default function DocViewer({
                         )}
                     </div>
 
-                    <div className="ml-auto flex items-center gap-3">
+                    <div className="ml-auto flex items-center gap-2">
+                        <button
+                            type="button"
+                            onClick={onPrev}
+                            disabled={!onPrev}
+                            title="Previous document"
+                            className="cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1.5 hover:bg-emerald-700 hover:text-white transition-colors disabled:cursor-default disabled:border-gray-200 disabled:text-gray-300 disabled:hover:bg-transparent disabled:hover:text-gray-300"
+                        >
+                            <span aria-hidden>&larr;</span>
+                            <span className="hidden sm:inline">Prev</span>
+                        </button>
+
                         <Link
                             href={`/accountability/${doc.slug}/${doc.ulid}`}
                             title="This document, on its own page"
-                            className="hidden sm:block font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
+                            className="hidden md:block font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
                         >
                             {doc.ulid}
                         </Link>
-                        <div className="flex items-center gap-1">
-                            <button
-                                type="button"
-                                onClick={onPrev}
-                                disabled={!onPrev}
-                                title="Previous document"
-                                aria-label="Previous document"
-                                className="cursor-pointer rounded border border-gray-300 px-2 py-1 text-sm text-gray-600 hover:bg-gray-50 disabled:cursor-default disabled:opacity-30 disabled:hover:bg-transparent"
-                            >
-                                &larr;
-                            </button>
-                            <button
-                                type="button"
-                                onClick={onNext}
-                                disabled={!onNext}
-                                title="Next document"
-                                aria-label="Next document"
-                                className="cursor-pointer rounded border border-gray-300 px-2 py-1 text-sm text-gray-600 hover:bg-gray-50 disabled:cursor-default disabled:opacity-30 disabled:hover:bg-transparent"
-                            >
-                                &rarr;
-                            </button>
-                        </div>
+
+                        <button
+                            type="button"
+                            onClick={onNext}
+                            disabled={!onNext}
+                            title="Next document"
+                            className="cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1.5 hover:bg-emerald-700 hover:text-white transition-colors disabled:cursor-default disabled:border-gray-200 disabled:text-gray-300 disabled:hover:bg-transparent disabled:hover:text-gray-300"
+                        >
+                            <span className="hidden sm:inline">Next</span>
+                            <span aria-hidden>&rarr;</span>
+                        </button>
                     </div>
                 </div>
             </div>
