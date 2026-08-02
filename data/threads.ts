@@ -4736,7 +4736,7 @@ export const OSP_THREAD: RecordsThreadData = {
     title: "Oregon State Police",
     agency: "Oregon State Police",
     matter: "Public Records Requests PR27478 and PR36445 · CAD event SP26097765",
-    status: "Petition dismissed in part and denied in part. Supplemental response outstanding.",
+    status: "Awaiting substantive response.",
     summary: [
         "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it.",
     ],

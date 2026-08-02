@@ -27,7 +27,7 @@ export default function OverviewPage() {
 
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
-                        <span className="block">One thing has been asked of every agency:</span>
+                        <span className="block">The State of Oregon has been asked for one thing:</span>
                         <span className="block">integrity.</span>
                     </div>
 
@@ -36,7 +36,7 @@ export default function OverviewPage() {
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">The same integrity they require of a volunteer.</span>
                                 <span className="block mt-2">This archive is the record of how each one answered.</span>
-                                <span className="block mt-2">And how I answered too.</span>
+                                <span className="block mt-2">And how I answered back.</span>
                             </p>
                         </blockquote>
 
@@ -78,7 +78,7 @@ export default function OverviewPage() {
                                 href="/tombstone"
                                 className="inline-block text-base text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
                             >
-                                A final statement to the Oregon Parks and Recreation Department
+                                A final statement to the Oregon Parks and Recreation Department.
                             </Link>
                         </div>
 
@@ -90,15 +90,7 @@ export default function OverviewPage() {
             {/* ACCOUNTABILITY */}
             <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-200">
 
-                <h2 className="font-bold text-lg tracking-wide">
-                    <Link href="/accountability" className="text-emerald-900 hover:text-emerald-700 transition-colors">ACCOUNTABILITY</Link>
-                </h2>
-
-                <div className="mt-4 text-base leading-relaxed">
-                    The correspondence record for this matter, organized by agency: every request, every response, every filing, posted with the documents and the unmodified email originals.
-                </div>
-
-                <div className="mt-6 rounded-lg overflow-hidden border border-emerald-200 divide-y divide-emerald-100 bg-white">
+                <div className="rounded-lg overflow-hidden border border-emerald-200 divide-y divide-emerald-100 bg-white">
                     {THREADS.map((t) => (
                         <Link
                             key={t.slug}
@@ -122,20 +114,22 @@ export default function OverviewPage() {
             {/* QUESTIONS */}
             <div className="mt-4 p-6 rounded-xl bg-white border border-slate-200">
 
-                <h2 className="font-bold text-lg tracking-wide">
+                <h2 className="font-bold text-lg tracking-wide text-center">
                     <Link href="/faq" className="text-emerald-900 hover:text-emerald-700 transition-colors">COMMON QUESTIONS ANSWERED HERE</Link>
                 </h2>
 
-                <div className="mt-6 grid grid-cols-1 gap-y-2.5 text-base">
-                    {FAQ_QUESTIONS.map((q) => (
-                        <Link
-                            key={q.id}
-                            href={`/faq#${q.id}`}
-                            className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
-                        >
-                            {q.question}
-                        </Link>
-                    ))}
+                <div className="mt-4">
+                    <div className="grid grid-cols-1 gap-y-2.5 text-base text-center">
+                        {FAQ_QUESTIONS.map((q) => (
+                            <Link
+                                key={q.id}
+                                href={`/faq#${q.id}`}
+                                className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
+                            >
+                                {q.question}
+                            </Link>
+                        ))}
+                    </div>
                 </div>
 
             </div>
