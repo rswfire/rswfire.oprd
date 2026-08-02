@@ -4,7 +4,6 @@ import {Landmark, Map} from "lucide-react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import ArchiveVideos from "@/components/ArchiveVideos";
-import PrimaryDocuments from "@/components/PrimaryDocuments";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import PersonLink from "@/components/PersonLink";
@@ -118,8 +117,8 @@ export default function OverviewPage() {
                     <Link href="/faq" className="text-emerald-900 hover:text-emerald-700 transition-colors">COMMON QUESTIONS ANSWERED HERE</Link>
                 </h2>
 
-                <div className="mt-4">
-                    <div className="grid grid-cols-1 gap-y-2.5 text-base text-center">
+                <div className="mt-4 sm:pl-10">
+                    <div className="grid grid-cols-1 gap-y-2.5 text-base">
                         {FAQ_QUESTIONS.map((q) => (
                             <Link
                                 key={q.id}
@@ -255,11 +254,6 @@ export default function OverviewPage() {
 
             {/* ARCHIVE VIDEOS */}
             <ArchiveVideos/>
-
-            {/* PRIMARY DOCUMENTS */}
-            <div className="mt-8">
-                <PrimaryDocuments />
-            </div>
 
             <div className="mt-8 p-8 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm">
 
