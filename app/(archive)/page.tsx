@@ -27,15 +27,15 @@ export default function OverviewPage() {
                     {/* OPENING STATEMENT */}
                     <div className="mt-4 sm:mt-6 px-2 md:text-center text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 leading-normal">
                         <span className="block">One thing has been asked of every agency:</span>
-                        <span className="block">be accountable to your own behavior.</span>
+                        <span className="block">integrity.</span>
                     </div>
 
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
-                                <span className="block">Not accountable to a volunteer.</span>
-                                <span className="block mt-2">To themselves.</span>
+                                <span className="block">The same integrity they require of a volunteer.</span>
                                 <span className="block mt-2">This archive is the record of how each one answered.</span>
+                                <span className="block mt-2">And how I answered too.</span>
                             </p>
                         </blockquote>
 
