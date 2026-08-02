@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import { FAQ_QUESTIONS } from "@/data/faq";
 
 export const metadata: Metadata = {
     title: "Frequently Asked Questions",
@@ -21,20 +22,13 @@ export default function FAQPage() {
                 <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
                     <div className="text-base font-semibold mb-4">QUESTIONS:</div>
                     <ul className="space-y-2">
-                        <li><a href="#sue" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you sue them?</a></li>
-                        <li><a href="#target" className="text-emerald-700 underline hover:text-emerald-600">Why would they target you?</a></li>
-                        <li><a href="#leave" className="text-emerald-700 underline hover:text-emerald-600">Why didn't you leave?</a></li>
-                        <li><a href="#move-on" className="text-emerald-700 underline hover:text-emerald-600">Why not move on?</a></li>
-                        <li><a href="#response" className="text-emerald-700 underline hover:text-emerald-600">Have they responded to any of this?</a></li>
-                        <li><a href="#verify" className="text-emerald-700 underline hover:text-emerald-600">How can people verify this documentation?</a></li>
-                        <li><a href="#accountability" className="text-emerald-700 underline hover:text-emerald-600">What do you want to happen?</a></li>
-                        <li><a href="#retaliation" className="text-emerald-700 underline hover:text-emerald-600">Aren't you worried about retaliation?</a></li>
-                        <li><a href="#proper-channels" className="text-emerald-700 underline hover:text-emerald-600">Why make this public instead of going through proper channels?</a></li>
-                        <li><a href="#silence" className="text-emerald-700 underline hover:text-emerald-600">What does their silence mean?</a></li>
-                        <li><a href="#tone" className="text-emerald-700 underline hover:text-emerald-600">Why is your tone so direct?</a></li>
-                        <li><a href="#epistemic" className="text-emerald-700 underline hover:text-emerald-600">What is an epistemic violation?</a></li>
-                        <li><a href="#egregious" className="text-emerald-700 underline hover:text-emerald-600">What made this case particularly egregious?</a></li>
-                        <li><a href="#next" className="text-emerald-700 underline hover:text-emerald-600">What happens next?</a></li>
+                        {FAQ_QUESTIONS.map((q) => (
+                            <li key={q.id}>
+                                <a href={`#${q.id}`} className="text-emerald-700 underline hover:text-emerald-600">
+                                    {q.question}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 

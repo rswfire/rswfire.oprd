@@ -11,6 +11,7 @@ import PersonLink from "@/components/PersonLink";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 import { THREADS } from "@/data/threads";
+import { FAQ_QUESTIONS } from "@/data/faq";
 
 export default function OverviewPage() {
     return (
@@ -81,7 +82,6 @@ export default function OverviewPage() {
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
 
-                        <div className="p-4 mt-4 text-lg tracking-tight"><Link href="/faq" className="text-emerald-700 hover:underline hover:text-emerald-600">Common questions answered here</Link>.</div>
                     </div>
 
                 </div>
@@ -113,6 +113,27 @@ export default function OverviewPage() {
                                 {t.status}
                                 <span className="ml-1.5 text-emerald-700 group-hover:translate-x-0.5 inline-block transition-transform">&rarr;</span>
                             </span>
+                        </Link>
+                    ))}
+                </div>
+
+            </div>
+
+            {/* QUESTIONS */}
+            <div className="mt-4 p-6 rounded-xl bg-white border border-slate-200">
+
+                <h2 className="font-bold text-lg tracking-wide">
+                    <Link href="/faq" className="text-emerald-900 hover:text-emerald-700 transition-colors">COMMON QUESTIONS ANSWERED HERE</Link>
+                </h2>
+
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                    {FAQ_QUESTIONS.map((q) => (
+                        <Link
+                            key={q.id}
+                            href={`/faq#${q.id}`}
+                            className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
+                        >
+                            {q.question}
                         </Link>
                     ))}
                 </div>
