@@ -15,6 +15,7 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|cash transactions": "/records/oprd/threads/cash-transactions.pdf",
     "oprd|day 339.": "/records/oprd/threads/day-339.pdf",
     "oprd|day 347.": "/records/oprd/threads/day-347.pdf",
+    "oprd|defining abuse": "/records/oprd/threads/defining-abuse.pdf",
     "oprd|end of the month (friday 28th) schedule change": "/records/oprd/threads/end-of-the-month-friday-28th-schedule-change.pdf",
     "oprd|escalating-retaliation-2026": "/records/oprd/threads/escalating-retaliation-at-a-federal-work-center-may-4-2026.pdf",
     "oprd|evidence page 10 \u2014 police intimidation": "/records/oprd/threads/evidence-page-10-police-intimidation.pdf",

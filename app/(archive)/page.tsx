@@ -73,12 +73,12 @@ export default function OverviewPage() {
                         </div>
 
                         {/* FINAL STATEMENT */}
-                        <div className="mt-8 text-center">
+                        <div className="mt-8">
                             <Link
                                 href="/tombstone"
-                                className="inline-block text-xl text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
+                                className="inline-block text-base text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
                             >
-                                A Final Statement to the Oregon Parks and Recreation Department
+                                A final statement to the Oregon Parks and Recreation Department
                             </Link>
                         </div>
 
@@ -140,6 +140,91 @@ export default function OverviewPage() {
 
             </div>
 
+            {/* WHAT THE WORD VOLUNTEER CONCEALS */}
+            <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">
+
+                <h2 className="font-bold text-lg text-center tracking-wide">
+                    WHAT THE WORD VOLUNTEER CONCEALS
+                </h2>
+
+                <hr className="my-6 border-t border-gray-300" />
+
+                <div className="space-y-4">
+
+                    <div>The word smuggles something in. It suggests that because you are there of your own volition, you do not need structural protections. That whatever happens to you, you chose it, and can simply choose otherwise.</div>
+
+                    <div>That is not what volunteering in a public agency is.</div>
+
+                    <div>Volunteers provide a public service to public institutions that need them. It is civic participation. It is how a citizen engages directly with the function of government, on public land, in the open, for no pay.</div>
+
+                    <div>For the institution, it is labor they could not otherwise afford. Volunteers cover the shortfall. We clean the facilities, maintain the trails, meet the visitors, and hold the ground the agency cannot staff. The work is not incidental to how these places operate. In many parks and forests, it is how they operate.</div>
+
+                    <div>And we receive none of the benefits or protections that the people supervising us receive.</div>
+
+                    <div>No union. No human resources access. No grievance process. No appeal. No progressive discipline. No requirement that a reason be given. A supervisor&rsquo;s account of you is the only account, and there is no mechanism by which it can be questioned.</div>
+
+                </div>
+
+                <h3 className="mt-8 text-lg font-bold">You cannot always leave</h3>
+
+                <div className="mt-4 space-y-4">
+
+                    <div>The idea that a volunteer can simply walk away assumes a relationship that ends at the property line. Many of these do not.</div>
+
+                    <div>We live on the land we steward. The position comes with a site, a hookup, a place to live. It is arranged months in advance and often built around a long-term commitment. Leaving is not resignation from a role. It is losing your housing, on a date you did not choose, with somewhere to be next and no time to arrange it.</div>
+
+                    <div>Every park and every forest is different. What does not vary is the dependence. Your entire experience, and often your entire situation, rests on fair supervision. On the assumption that the person with authority over your placement will not use that authority against you.</div>
+
+                    <div>When that assumption fails, there is nothing underneath it.</div>
+
+                </div>
+
+                <h3 className="mt-8 text-lg font-bold">What happened to me</h3>
+
+                <div className="mt-4 space-y-4">
+
+                    <div>I served as an unpaid volunteer at Honeyman State Park in early 2025. I asked an operational question during a power outage and followed up with an email that named a dismissive tone. That email created a record, and the record is what everything after it responded to.</div>
+
+                    <div>I was confronted alone. Personal disclosures were drawn out of me and passed up the chain. I was held at a picnic table for sixty-two minutes and told to chew glass and swallow it. My sexuality was used against me. I was pressured to resign and I did not.</div>
+
+                    <div>I was dismissed by phone six days before my term ended. The park manager arrived at my RV within the hour to collect keys and gave me twenty-four hours to vacate. Two days later I was permanently expelled from every Oregon State Parks volunteer program, in writing, on agency letterhead, for documenting my treatment.</div>
+
+                    <div>A year later, on the anniversary of that dismissal, armed officers arrived at a locked gate where I live and work. My date of birth reached the police record from a volunteer file.</div>
+
+                    <div>Every mechanism that could have protected me was pointed the other way.</div>
+
+                </div>
+
+                <h3 className="mt-8 text-lg font-bold">The instrument</h3>
+
+                <div className="mt-4 space-y-4">
+
+                    <div>Oregon has a statewide policy, 50.010.02, Violence-Free Workplace. It applies to every executive branch agency.</div>
+
+                    <div>Section 7 names volunteers among those who may be barred and terminated under it.</div>
+
+                    <div>Section 8 prohibits retaliation against those who report workplace violence. It names employees only.</div>
+
+                    <div>The same document brings volunteers inside its enforcement reach and leaves them outside its protection. It can be pointed at us. It offers us nothing pointed back.</div>
+
+                    <div>Twice I reported conduct that meets that policy&rsquo;s own definition of workplace violence. Once in writing. Once on the call where I was dismissed. Both times, the half of the instrument that would have protected me did not reach me. The half that could remove me did.</div>
+
+                </div>
+
+                <h3 className="mt-8 text-lg font-bold">Why this is here</h3>
+
+                <div className="mt-4 space-y-4">
+
+                    <div>This is not a claim that volunteers deserve special treatment. It is a claim that we are inside the structure, doing the work the structure depends on, and that the protections stop at a line drawn around the people who are paid.</div>
+
+                    <div>That line is not an oversight in one park. It is written into a policy that governs an entire executive branch, and it has been in force since at least November 1, 2024.</div>
+
+                    <div>I am one volunteer who kept the records. This archive exists so the next one does not have to.</div>
+
+                </div>
+
+            </div>
+
             {/* THE DISPLACEMENT FRAMEWORK */}
             <div className="mt-4 p-6 rounded-xl bg-red-50 border border-red-200">
 
@@ -171,102 +256,6 @@ export default function OverviewPage() {
                 <div className="mt-4">
                     <Link href="/resources/volunteers" className="block text-lg text-red-700 hover:text-red-600 font-semibold text-center">If this happened to you, it has a name.</Link>
                 </div>
-
-            </div>
-
-            {/* THE VERDICT */}
-            <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">
-
-                <h2 className="font-bold text-lg text-center tracking-wide">
-                    THIS IS WHAT THEY DID
-                </h2>
-
-                <div className="mt-2 text-center text-sm font-bold">
-                    Independently verifiable. Never legally challenged. Not going away.
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="space-y-4 text-base">
-
-                    <div>In early 2025, an unpaid volunteer at Honeyman State Park asked his supervisor a straightforward operational question during a power outage. He followed up with an email that named her dismissive tone. That email &mdash; a professional, documented request for guidance &mdash; became the origin point of everything that followed. Not because anything in it was wrong. Because it created a record.</div>
-
-                    <div>That same day, park management escalated. The volunteer was confronted alone and cataloged for every minor first-week mistake &mdash; not to correct him, but to make clear what happens when you put things in writing.</div>
-
-                    <div>In the weeks that followed, trust was manufactured. A supervisor spent 90 minutes drawing the volunteer out in a late-night conversation, creating the conditions for personal disclosure. Everything shared in confidence was transmitted up the chain.</div>
-
-                    <div>Then came the meeting &mdash; a public picnic table, over an hour of sustained psychological pressure. The volunteer was told to &ldquo;chew glass and swallow it.&rdquo; His sexuality was mocked. He was repeatedly pressured to resign. On recording, park management admitted he had never been given the benefit of the doubt from day one.</div>
-
-                    <div>The disclosures his supervisor had extracted were later weaponized &mdash; used to construct a psychological profile that framed the volunteer as paranoid and delusional, including fabricated claims he never made to anyone.</div>
-
-                    <div>When the volunteer still wouldn&rsquo;t quit, he was dismissed by phone six days before his scheduled completion. No paperwork. No formal process. No documented cause. One hour later, the park manager arrived at his RV to collect keys and gave him 24 hours to vacate.</div>
-
-                    <div>The volunteer sent a detailed letter documenting the full pattern of misconduct. Hours later, the program manager permanently expelled him from all Oregon State Parks volunteer programs. She put the reason in writing: <em>&ldquo;the public comments made about staff regarding your volunteer service, were not in line with expectations.&rdquo;</em> That is First Amendment retaliation. On agency letterhead. In her own words.</div>
-
-                </div>
-
-                <div className="mt-6 space-y-4 text-base">
-
-                    <div className="text-lg font-bold">The institutional response</div>
-
-                    <div>Every mechanism of accountability was used to shield the institution, not the person it harmed. The agency director received comprehensive evidence &mdash; audio recordings, video documentation, email chains, and written proof of constitutional retaliation. She responded with procedural language and no commitments. No investigation was ordered. No employees were held accountable. When she closed communication months later, she deployed therapeutic framing &mdash; &ldquo;deeply painful for you,&rdquo; &ldquo;healing&rdquo; &mdash; to convert documented abuse into a narrative about a person who needs help. Every person who abused their authority remains in their position.</div>
-
-                    <div>A public records request went unanswered for 90 days &mdash; a violation of Oregon public records law. The Governor&rsquo;s office received a formal complaint. Oregon&rsquo;s first openly LGBTQ+ governor was told that a gay volunteer had been targeted by her state employees. Silence.</div>
-
-                    <div>On the one-year anniversary of the volunteer&rsquo;s dismissal, a federal law enforcement agent coordinated a state police visit to his location &mdash; cross-agency pressure delivered to someone who had done nothing but document what was done to him.</div>
-
-                </div>
-
-                <div className="mt-6 ml-0 sm:ml-4 pl-4 border-l-2 border-emerald-600">
-                    <div className="text-sm font-semibold text-emerald-800 mb-2">The people responsible are documented individually:</div>
-                    <div className="text-sm space-y-1">
-                        <div><PersonLink name="park supervisor" /></div>
-                        <div><PersonLink name="park manager" /></div>
-                        <div><PersonLink name="volunteer services lead" /></div>
-                        <div><PersonLink name="program manager" /></div>
-                        <div><PersonLink name="Lisa Sumption" />, Director</div>
-                        <div><PersonLink name="Tina Kotek" label="Governor Tina Kotek" /></div>
-                    </div>
-                </div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="mt-4 text-lg font-bold">What they took:</div>
-
-                <div className="mt-4">Volunteer service is not charity labor.</div>
-                <div>It is civic participation.</div>
-                <div>It is how citizens engage directly with the function of government.</div>
-
-                <div className="mt-4">I chose to serve Oregon State Parks.</div>
-                <div>I maintained trails. I cleaned facilities. I engaged with visitors.</div>
-                <div>I participated in government as a citizen directly stewarding public land &mdash; until they took that away from me.</div>
-
-                <div className="mt-4">On March 26, 2025, the <PersonLink name="program manager" /> permanently expelled me from all Oregon State Parks volunteer programs.</div>
-
-                <div className="mt-4">She put the reason in writing:</div>
-                <div className="ml-4 italic">&ldquo;the public comments made about staff regarding your volunteer service, were not in line with expectations.&rdquo;</div>
-
-                <div className="mt-4">That is retaliation for protected speech.</div>
-                <div>That is denial of civic participation as punishment for exercising constitutional rights.</div>
-
-                <hr className="my-6 border-t border-gray-300" />
-
-                <div className="mt-4 text-lg font-bold">Why it matters:</div>
-
-                <div className="mt-4">This archive exists because institutional accountability failed at every level.</div>
-
-                <div className="mt-4">When government denies citizens the right to participate because they spoke about abuse &mdash;</div>
-                <div className="ml-4">that government has stopped functioning as a democracy.</div>
-
-                <div className="mt-4">When constitutional violations go uncorrected through every layer of escalation &mdash;</div>
-                <div className="ml-4">your rights stop being real and become theoretical.</div>
-
-                <div className="mt-4">When silence becomes the institutional response to documented harm &mdash;</div>
-                <div className="ml-4">the system protects power, not people.</div>
-
-                <div className="mt-4 font-bold">That is what this archive documents.</div>
-                <div className="font-bold">That is what continues right now.</div>
-                <div className="font-bold">That will not be absolved by silence, or by time.</div>
 
             </div>
 

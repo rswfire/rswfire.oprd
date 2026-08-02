@@ -129,7 +129,7 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>This is the right question.</div>
                         <div>Audio recordings, video documentation, and email correspondence are embedded throughout this archive.</div>
-                        <div>The <Link href="/correspondence" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> stores all external communications in unmodified .eml format in my <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">public repository</Link>.</div>
+                        <div>The <Link href="/accountability" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> stores all external communications in unmodified .eml format in my <Link href="https://github.com/rswfire/rswfire.oprd" target="_blank" className="text-emerald-700 underline hover:text-emerald-600">public repository</Link>.</div>
                         <div>Everything claimed here is independently verifiable. Names, dates, specific statements &mdash; all documented.</div>
                         <div>I invite you to request further information from <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link> directly. I will note I tried the <Link href="/lisa-sumption/public-records-request" className="text-emerald-700 underline hover:text-emerald-600">public records</Link> route myself but that route resulted in no records being produced despite statutory timelines.</div>
                         <div>But as far as the record is concerned: everything you need is already here.</div>
@@ -296,7 +296,7 @@ export default function FAQPage() {
                         <div>That depends on them.</div>
                         <div>They could order an independent investigation tomorrow. They could hold people accountable. They could implement the protections volunteers deserve. They could demonstrate that institutional failure gets corrected, not protected.</div>
                         <div>Or they can continue choosing silence.</div>
-                        <div>If they do, the <Link href="/correspondence" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will keep growing. External scrutiny may increase. Independent actors might engage. Oversight mechanisms may activate. Federal oversight might intervene.</div>
+                        <div>If they do, the <Link href="/accountability" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will keep growing. External scrutiny may increase. Independent actors might engage. Oversight mechanisms may activate. Federal oversight might intervene.</div>
                         <div>Or not. Time will tell.</div>
                         <div>But I can say this much: the archive is permanent. The evidence is independently verifiable. The institutional failure is documented.</div>
                         <div>What happens next is their choice.</div>
