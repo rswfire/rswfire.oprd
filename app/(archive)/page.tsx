@@ -212,7 +212,9 @@ export default function OverviewPage() {
 
                     <div>That line is not an oversight in one park. It is written into a policy that governs an entire executive branch, and it has been in force since at least November 1, 2024.</div>
 
-                    <div>I am one volunteer who kept the records. This archive exists so the next one does not have to.</div>
+                    <div>I am one volunteer who kept the records, and that is the only reason this archive is possible.</div>
+
+                    <div>If you volunteer for a public agency, document what happens to you, and do it with integrity, and you will already be on the right side of any action they take against you.</div>
 
                 </div>
 
