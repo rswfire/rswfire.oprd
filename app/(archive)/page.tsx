@@ -110,41 +110,18 @@ export default function OverviewPage() {
 
             </div>
 
-            {/* QUESTIONS */}
-            <div className="mt-4 p-6 rounded-xl bg-white border border-slate-200">
-
-                <h2 className="font-bold text-lg tracking-wide text-center">
-                    <Link href="/faq" className="text-emerald-900 hover:text-emerald-700 transition-colors">COMMON QUESTIONS ANSWERED HERE</Link>
-                </h2>
-
-                <div className="mt-4 sm:pl-10">
-                    <div className="grid grid-cols-1 gap-y-2.5 text-base">
-                        {FAQ_QUESTIONS.map((q) => (
-                            <Link
-                                key={q.id}
-                                href={`/faq#${q.id}`}
-                                className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
-                            >
-                                {q.question}
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-
-            </div>
-
-            {/* WHAT THE WORD VOLUNTEER CONCEALS */}
+            {/* WHAT IT MEANS TO VOLUNTEER */}
             <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">
 
                 <h2 className="font-bold text-lg text-center tracking-wide">
-                    WHAT THE WORD VOLUNTEER CONCEALS
+                    WHAT IT MEANS TO VOLUNTEER
                 </h2>
 
                 <hr className="my-6 border-t border-gray-300" />
 
                 <div className="space-y-4">
 
-                    <div>The word smuggles something in. It suggests that because you are there of your own volition, you do not need structural protections. That whatever happens to you, you chose it, and can simply choose otherwise.</div>
+                    <div>The word smuggles something in. It suggests that because you are there by choice, you need no protection. That whatever happens to you, you chose it, and can simply choose otherwise. It treats the decision to arrive as proof that you are free to leave.</div>
 
                     <div>That is not what volunteering in a public agency is.</div>
 
@@ -220,6 +197,28 @@ export default function OverviewPage() {
 
             </div>
 
+            {/* QUESTIONS */}
+            <div className="mt-4 p-6 rounded-xl bg-white border border-slate-200">
+
+                <h2 className="font-bold text-lg tracking-wide text-center">
+                    <Link href="/faq" className="text-emerald-900 hover:text-emerald-700 transition-colors">COMMON QUESTIONS ANSWERED HERE</Link>
+                </h2>
+
+                <div className="mt-4 sm:pl-10">
+                    <div className="grid grid-cols-1 gap-y-2.5 text-base">
+                        {FAQ_QUESTIONS.map((q) => (
+                            <Link
+                                key={q.id}
+                                href={`/faq#${q.id}`}
+                                className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
+                            >
+                                {q.question}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+            </div>
             {/* THE DISPLACEMENT FRAMEWORK */}
             <div className="mt-4 p-6 rounded-xl bg-red-50 border border-red-200">
 
