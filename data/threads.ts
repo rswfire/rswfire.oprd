@@ -5836,6 +5836,20 @@ export const DAS_THREAD: RecordsThreadData = {
             docs: [{ label: "R000911: custodian of some records, unsure as to others", href: "/records/das/2026-08-03_0924-r000911-custodian-in-part.pdf" }],
             eml: "/records/das/eml/2026-08-03_0924_r000911-custodian-in-part.eml",
         },
+        {
+            id: "2026-08-03_1849_awaiting-the-departments-position",
+            ulid: "01KZ57CKSRYZSCN1A0PDZ1VSNZ",
+            date: "August 3, 2026",
+            time: "6:49 PM",
+            d: "2026-08-03",
+            from: "Robert Samuel White",
+            to: "OREGONDAS Support; Merilee Nowak, DAS; Governor Kotek",
+            kind: "followup",
+            title: "Awaiting the Department's position",
+            summary: "Receipt acknowledged, with fifteen business days allowed for the Department to establish its position.",
+            docs: [{ label: "Reply", href: "/records/das/2026-08-03_1849-awaiting-the-departments-position.pdf" }],
+            eml: "/records/das/eml/2026-08-03_1849_awaiting-the-departments-position.eml",
+        },
     ],
 };
 
