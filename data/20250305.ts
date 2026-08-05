@@ -1,10 +1,14 @@
 import { TransmissionData } from "@/components/PrimaryTransmission";
 
 export const COERCION_TRANSMISSION: TransmissionData = {
-    ulid: "01JW9VC5QG9FHNN587PTEKHK4K",
-    signalUrl: "https://rswfire.com/signal/01JW9VC5QG9FHNN587PTEKHK4K",
+    ulid: "01JNK2TKG01JTERAMB7J6AKPK1",
+    signalUrl: "https://rswfire.com/signal/01JNK2TKG01JTERAMB7J6AKPK1",
     date: "March 5, 2025",
     duration: "62:12",
+    // The signal was re-keyed onto a ULID that encodes the meeting date;
+    // the stored object keeps the folder it was uploaded under, so the
+    // playback id is pinned rather than parsed back out of s3Url.
+    signalId: "01JNK2TKG01JTERAMB7J6AKPK1",
     s3Url: "https://hel1.your-objectstorage.com/autonomyrealms/01KE634HWNGQBK7D0CVDFYEFK0/transmissions/01JW9VC5QG9FHNN587PTEKHK4K/video.mp4",
     energeticSignature: "n/a",
     fieldState: "n/a",

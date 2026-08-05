@@ -2,6 +2,10 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import { fetchSignal, hasAnalysis, type SignalRecord } from "@/lib/qp";
+import SignalAnalysis from "@/components/SignalAnalysis";
+import SignalChapters from "@/components/SignalChapters";
+import AutonomyExplainer from "@/components/AutonomyExplainer";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -103,8 +107,15 @@ function libraryUrl(signalUrl: string): string {
     return signalUrl.replace(/\/signal\//, "/library/signal/");
 }
 
-function TransmissionVideo({ signalId, errorLabel = "Failed to load transmission" }: { signalId: string; errorLabel?: string }) {
-    const videoRef = useRef<HTMLVideoElement>(null);
+function TransmissionVideo({
+    signalId,
+    errorLabel = "Failed to load transmission",
+    videoRef,
+}: {
+    signalId: string;
+    errorLabel?: string;
+    videoRef: React.RefObject<HTMLVideoElement | null>;
+}) {
     const [error, setError] = useState(false);
     // Cache-buster bumped on manual retry to force the proxy to re-sign.
     const [nonce, setNonce] = useState(0);
@@ -132,8 +143,12 @@ function TransmissionVideo({ signalId, errorLabel = "Failed to load transmission
         textTransform: 'uppercase' as const,
     };
 
+    // The black stage shrink-wraps the video rather than spanning the card.
+    // A 360x640 transmission was painting a full-width black field with a
+    // narrow strip of picture in it; landscape is unaffected, since a 16:9
+    // file hits max-w-full long before it hits the height cap.
     return (
-        <div className="bg-slate-900 flex items-center justify-center w-full">
+        <div className="bg-slate-900 flex items-center justify-center w-fit max-w-full mx-auto">
             {error ? (
                 // Error/loading keeps a 16:9 stage so the panel doesn't collapse.
                 <div className="aspect-video w-full flex flex-col items-center justify-center gap-3 px-4 text-center">
@@ -209,12 +224,37 @@ function Entry({ entry }: { entry: TransmissionEntry }) {
 // ─── Main Component ──────────────────────────────────────────────────────────
 
 export default function PrimaryTransmission({ transmission, defaultExpanded = false, videoErrorLabel }: PrimaryTransmissionProps) {
-    const [expanded, setExpanded] = useState(defaultExpanded);
     const {
         ulid, signalUrl, date, duration,
         energeticSignature, fieldState, orientation,
         label, preview, entries, closing,
     } = transmission;
+
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    // The platform's reading of this transmission, read live from its
+    // Queryable Personhood record. Nothing about it is stored here: the page
+    // shows whatever the platform currently says, or nothing if it can't be
+    // reached. The video, the preview and the transcript never depend on it.
+    const [analysis, setAnalysis] = useState<SignalRecord | null>(null);
+    const [analysisState, setAnalysisState] = useState<"loading" | "ready" | "failed">("loading");
+
+    useEffect(() => {
+        const controller = new AbortController();
+        fetchSignal(ulid, controller.signal)
+            .then((record) => {
+                setAnalysis(record);
+                setAnalysisState("ready");
+            })
+            .catch((e) => {
+                if (e?.name === "AbortError") return;
+                setAnalysisState("failed");
+            });
+        return () => controller.abort();
+    }, [ulid]);
+
+
+    const ready = analysisState === "ready" && analysis;
 
     return (
         <div className="my-6" style={{ border: '1px solid rgba(26,58,74,0.2)', overflow: 'hidden' }}>
@@ -242,6 +282,8 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
         </span>
             </div>
 
+            <AutonomyExplainer />
+
             {/* ── Identity metadata ── */}
             <div className="flex flex-wrap gap-x-8 gap-y-3 px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
                 <MetadataTag label="Date" value={date} />
@@ -252,8 +294,14 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
             {/* ── Video (if present) ── */}
             {(() => {
                 const videoSignalId = resolveVideoSignalId(transmission);
-                return videoSignalId ? <TransmissionVideo signalId={videoSignalId} errorLabel={videoErrorLabel} /> : null;
+                return videoSignalId ? <TransmissionVideo signalId={videoSignalId} errorLabel={videoErrorLabel} videoRef={videoRef} /> : null;
             })()}
+
+            {/* Chapter marks, from the platform. Directly under the player,
+                because seeking is what they are for. */}
+            {ready && analysis!.chapters.length > 0 && (
+                <SignalChapters chapters={analysis!.chapters} videoRef={videoRef} />
+            )}
 
             {/* ── Label + signal link ── */}
             <div className="flex items-start justify-between gap-4 px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
@@ -287,98 +335,98 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
                 </Link>
             </div>
 
-            {/* ── Realm analysis ── */}
-            <div className="px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)', backgroundColor: 'rgba(26,58,74,0.03)' }}>
-                <div style={{
-                    fontFamily: 'var(--font-dm-mono), monospace',
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    color: '#8a9ba8',
-                    textTransform: 'uppercase',
-                    marginBottom: '10px',
-                }}>
-                    Realm Analysis
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <MetadataTag label="Energetic Signature" value={energeticSignature} />
-                    <MetadataTag label="Field State" value={fieldState} />
-                    <MetadataTag label="Orientation" value={orientation} />
-                </div>
-            </div>
+            {/* ── The platform's reading, always on screen, with the authored
+                 transcript as the last tab in its strip. --*/}
+            {ready && hasAnalysis(analysis!) && (
+                <SignalAnalysis
+                    signal={analysis!}
+                    transcript={entries.length > 0 ? (
+                        <div>
+                            <div className="px-3 py-3" style={{ backgroundColor: 'rgba(26,58,74,0.06)', borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
+                                <div style={{
+                                    fontFamily: 'var(--font-dm-mono), monospace',
+                                    fontSize: '11px',
+                                    letterSpacing: '0.15em',
+                                    color: '#1a3a4a',
+                                    textTransform: 'uppercase',
+                                    fontWeight: 600,
+                                }}>
+                                    Transcript &amp; Commentary
+                                </div>
+                                <div style={{ fontSize: '12px', color: '#8a9ba8', marginTop: '3px' }}>
+                                    The recording, timestamped, with my own account of it. Written by me, not generated.
+                                </div>
+                            </div>
 
-            {/* ── Preview ── */}
-            <div className="px-3 py-4">
-                <p style={{ fontSize: '14px', lineHeight: '1.75', color: '#4a6475', margin: 0 }}>
-                    {preview}
-                </p>
-            </div>
-
-            {/* ── Expanded transcript ── */}
-            {expanded && (
-                <div className="px-3 py-4 space-y-8" style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
-                    {entries.map((entry, i) => (
-                        <Entry key={i} entry={entry} />
-                    ))}
-                    {closing && (
-                        <div className="space-y-4 pt-6" style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
-                            {closing.split("\n\n").map((para, i) => (
-                                <p key={i} style={{ fontSize: '14px', lineHeight: '1.75', color: '#4a6475', margin: 0 }}>
-                                    {para}
+                            {/* The opening paragraph belongs to the transcript
+                                it introduces, in the same voice, above the
+                                first timestamp. */}
+                            <div className="px-3 pt-4">
+                                <p style={{ fontSize: '14px', lineHeight: '1.75', color: '#4a6475', margin: 0 }}>
+                                    {preview}
                                 </p>
-                            ))}
+                            </div>
+
+                            <div className="px-3 py-4 space-y-8">
+                                {entries.map((entry, i) => (
+                                    <Entry key={i} entry={entry} />
+                                ))}
+                                {closing && (
+                                    <div className="space-y-4 pt-6" style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
+                                        {closing.split("\n\n").map((para, i) => (
+                                            <p key={i} style={{ fontSize: '14px', lineHeight: '1.75', color: '#4a6475', margin: 0 }}>
+                                                {para}
+                                            </p>
+                                        ))}
+                                    </div>
+                                )}
+                                <div className="flex items-center justify-between pt-4" style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
+                                    <span style={{
+                                        fontFamily: 'var(--font-dm-mono), monospace',
+                                        fontSize: '10px',
+                                        letterSpacing: '0.15em',
+                                        color: '#8a9ba8',
+                                        textTransform: 'uppercase',
+                                    }}>
+                                        Source
+                                    </span>
+                                    <Link
+                                        href={libraryUrl(signalUrl)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ fontFamily: 'var(--font-dm-mono), monospace', fontSize: '10px', letterSpacing: '0.1em', color: '#c4622d', textDecoration: 'none' }}
+                                        className="hover:opacity-70 transition-opacity"
+                                    >
+                                        {libraryUrl(signalUrl)} →
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    )}
-                    <div className="flex items-center justify-between pt-4" style={{ borderTop: '1px solid rgba(26,58,74,0.1)' }}>
-            <span style={{
-                fontFamily: 'var(--font-dm-mono), monospace',
-                fontSize: '10px',
-                letterSpacing: '0.15em',
-                color: '#8a9ba8',
-                textTransform: 'uppercase',
-            }}>
-              Source
-            </span>
-                        <Link
-                            href={libraryUrl(signalUrl)}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ fontFamily: 'var(--font-dm-mono), monospace', fontSize: '10px', letterSpacing: '0.1em', color: '#c4622d', textDecoration: 'none' }}
-                            className="hover:opacity-70 transition-opacity"
-                        >
-                            {libraryUrl(signalUrl)} →
-                        </Link>
+                    ) : undefined}
+                />
+            )}
+
+            {/* ── The transmission's own three fields, for anything the
+                 platform has not analysed yet. --*/}
+            {analysisState === "ready" && analysis && !hasAnalysis(analysis) && (
+                <div className="px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)', backgroundColor: 'rgba(26,58,74,0.03)' }}>
+                    <div style={{
+                        fontFamily: 'var(--font-dm-mono), monospace',
+                        fontSize: '10px',
+                        letterSpacing: '0.15em',
+                        color: '#8a9ba8',
+                        textTransform: 'uppercase',
+                        marginBottom: '10px',
+                    }}>
+                        Realm Analysis
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <MetadataTag label="Energetic Signature" value={energeticSignature} />
+                        <MetadataTag label="Field State" value={fieldState} />
+                        <MetadataTag label="Orientation" value={orientation} />
                     </div>
                 </div>
             )}
-
-            {/* ── Toggle ── */}
-            <button
-                onClick={() => setExpanded(!expanded)}
-                className="w-full flex items-center justify-between px-3 py-2 hover:opacity-70 transition-opacity"
-                style={{ borderTop: '1px solid rgba(26,58,74,0.1)', backgroundColor: 'rgba(26,58,74,0.03)', cursor: 'pointer' }}
-            >
-        <span style={{
-            fontFamily: 'var(--font-dm-mono), monospace',
-            fontSize: '10px',
-            letterSpacing: '0.2em',
-            color: '#4a6475',
-            textTransform: 'uppercase',
-        }}>
-          {expanded ? "Collapse Transcript" : "Read Full Transcript"}
-        </span>
-                <svg
-                    style={{
-                        width: '14px',
-                        height: '14px',
-                        color: '#8a9ba8',
-                        transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.2s ease',
-                    }}
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
-                </svg>
-            </button>
 
         </div>
     );

@@ -33,9 +33,9 @@ export default function OverviewPage() {
                     <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
                             <p className="text-lg md:text-base text-gray-800 leading-relaxed">
-                                <span className="block">The same integrity they require of a volunteer.</span>
-                                <span className="block mt-2">This archive is the record of how each one answered.</span>
-                                <span className="block mt-2">And how I answered back.</span>
+                                <span className="block">Every system was tested for it.</span>
+                                <span className="block mt-2">And every system came back with silence.</span>
+                                <span className="block mt-2">This archive is the permanent record.</span>
                             </p>
                         </blockquote>
 
