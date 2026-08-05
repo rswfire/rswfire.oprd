@@ -297,12 +297,6 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
                 return videoSignalId ? <TransmissionVideo signalId={videoSignalId} errorLabel={videoErrorLabel} videoRef={videoRef} /> : null;
             })()}
 
-            {/* Chapter marks, from the platform. Directly under the player,
-                because seeking is what they are for. */}
-            {ready && analysis!.chapters.length > 0 && (
-                <SignalChapters chapters={analysis!.chapters} videoRef={videoRef} />
-            )}
-
             {/* ── Label + signal link ── */}
             <div className="flex items-start justify-between gap-4 px-3 py-3" style={{ borderBottom: '1px solid rgba(26,58,74,0.1)' }}>
                 <h3 style={{
@@ -334,6 +328,12 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
                     Signal: {ulid} →
                 </Link>
             </div>
+
+            {/* Chapter marks, from the platform. Directly under the player,
+                because seeking is what they are for. */}
+            {ready && analysis!.chapters.length > 0 && (
+                <SignalChapters chapters={analysis!.chapters} videoRef={videoRef} />
+            )}
 
             {/* ── The platform's reading, always on screen, with the authored
                  transcript as the last tab in its strip. --*/}

@@ -64,9 +64,10 @@ export interface SignalRecord {
 }
 
 // Deliberately NOT falling back to the media origin. /qp is realm-scoped and
-// 404s on the base domain by design, and the media origin is the base domain
-// — so inheriting it points every fetch at a guaranteed 404. Media and the
-// record are served from different hosts and this must say which.
+// 404s on the platform's own base domain, which is what the media origin is
+// set to — so inheriting it points every fetch at a guaranteed 404. A realm
+// host may be a subdomain or a root domain of its own; either way it is not
+// the base domain, and this has to name which one it wants.
 const QP_ORIGIN = process.env.NEXT_PUBLIC_QP_ORIGIN || "https://rswfire.com";
 
 const REFLECTION_ORDER = ["narrative", "symbolic", "lineage", "mirror"];
