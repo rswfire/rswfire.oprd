@@ -63,13 +63,11 @@ export interface SignalRecord {
     provenance?: Provenance | null;
 }
 
-// Separate from the media origin on purpose. Media is served from wherever
-// the signals physically live; the analysis can be read from a development
-// host without dragging video playback along with it.
-const QP_ORIGIN =
-    process.env.NEXT_PUBLIC_QP_ORIGIN ||
-    process.env.NEXT_PUBLIC_MEDIA_ORIGIN ||
-    "https://rswfire.com";
+// Deliberately NOT falling back to the media origin. /qp is realm-scoped and
+// 404s on the base domain by design, and the media origin is the base domain
+// — so inheriting it points every fetch at a guaranteed 404. Media and the
+// record are served from different hosts and this must say which.
+const QP_ORIGIN = process.env.NEXT_PUBLIC_QP_ORIGIN || "https://rswfire.com";
 
 const REFLECTION_ORDER = ["narrative", "symbolic", "lineage", "mirror"];
 
