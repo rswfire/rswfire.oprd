@@ -30,9 +30,9 @@ export default function OverviewPage() {
                         <span className="block">integrity.</span>
                     </div>
 
-                    <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-center md:gap-8 md:px-6 lg:px-10">
-                        <blockquote className="mx-4 sm:mx-6 md:mx-0 md:order-2 md:flex-1 border-l-4 border-red-700 pl-6 py-2">
-                            <p className="text-lg md:text-base text-gray-800 leading-relaxed">
+                    <div className="mt-4 flex flex-row items-center gap-4 px-2 sm:px-4 md:gap-8 md:px-6 lg:px-10">
+                        <blockquote className="order-2 flex-1 min-w-0 border-l-4 border-red-700 pl-4 sm:pl-6 py-2">
+                            <p className="text-sm min-[400px]:text-base sm:text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">Every system was tested for it.</span>
                                 <span className="block mt-2">And every system came back with silence.</span>
                                 <span className="block mt-2">This archive is the permanent record.</span>
@@ -42,14 +42,14 @@ export default function OverviewPage() {
                         {/* FOR VOLUNTEERS */}
                         <Link
                             href="/resources/volunteers"
-                            className="group md:order-1 shrink-0 flex flex-col w-full h-48 md:w-56 md:h-56 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+                            className="group order-1 shrink-0 flex flex-col w-28 h-28 min-[400px]:w-36 min-[400px]:h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
                         >
                             <div className="flex h-1/2 w-full items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors">
-                                <Icon name="Shield" className="text-white" size={56} strokeWidth={1.5} />
+                                <Icon name="Shield" className="text-white w-7 h-7 min-[400px]:w-9 min-[400px]:h-9 sm:w-11 sm:h-11 md:w-14 md:h-14" size={56} strokeWidth={1.5} />
                             </div>
                             <div className="flex h-1/2 w-full flex-col items-center justify-center bg-white px-4 text-center">
-                                <div className="text-sm sm:text-base font-bold uppercase tracking-widest text-red-900">For Volunteers</div>
-                                <div className="mt-1.5 text-xs leading-snug text-gray-600">If this happened to you,<br/>it has a name.</div>
+                                <div className="text-[10px] min-[400px]:text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider md:tracking-widest text-red-900 leading-tight">For Volunteers</div>
+                                <div className="mt-1 hidden min-[400px]:block text-[10px] sm:text-xs leading-snug text-gray-600">If this happened to you,<br/>it has a name.</div>
                             </div>
                         </Link>
                     </div>
