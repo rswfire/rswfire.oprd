@@ -1,0 +1,553 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CY5PR14MB5631.namprd14.prod.outlook.com (2603:10b6:930:31::16)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Thu, 6 Aug 2026
+ 21:10:06 +0000
+Received: from LV3P220CA0024.NAMP220.PROD.OUTLOOK.COM (2603:10b6:408:234::20)
+ by CY5PR14MB5631.namprd14.prod.outlook.com (2603:10b6:930:31::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.292.21; Thu, 6 Aug
+ 2026 21:10:02 +0000
+Received: from BN1PEPF00006003.namprd05.prod.outlook.com
+ (2603:10b6:408:234:cafe::29) by LV3P220CA0024.outlook.office365.com
+ (2603:10b6:408:234::20) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.292.21 via Frontend Transport; Thu, 6
+ Aug 2026 21:10:02 +0000
+Authentication-Results: spf=pass (sender IP is 168.245.107.68)
+ smtp.mailfrom=em9851.govqa.us; dkim=pass (signature was verified)
+ header.d=govqa.us;dmarc=pass action=none header.from=govqa.us;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em9851.govqa.us
+ designates 168.245.107.68 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.245.107.68;
+ helo=o2.sgmail.govqa.us; pr=C
+Received: from o2.sgmail.govqa.us (168.245.107.68) by
+ BN1PEPF00006003.mail.protection.outlook.com (10.167.243.235) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.315.6
+ via Frontend Transport; Thu, 6 Aug 2026 21:10:01 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1786050601;
+	bh=0D757NF+fi+mi8HpRVlu++s0kV6TE5vZ7BIY8B0ZvDM=;
+	b=Jlzns996157q8JZD3I0rw1z6TbwMGYX73CSKGEm1rV//GxY3Pl+YBEUPWfheSHJJ5aWS
+	I+153zDK0rVCAlTpD3cd4r9RJ5NZbqh3I0+HDYRC5n1joo9PmdMc5i15z0AICOUU2wY4Ug
+	IUnmQu86IbOn9pSA6yje03QEAg+VkeeFb56uVg5V0bdorpqApIhhJnbNsxd2XvCdk+rSsD
+	ENxo9V5Ct1RbNGRctiaHW2AQYtDiLeYrOmmP34jcpO7TK4eQTCvKrGRqlna4EZ36cl6mZJ
+	m73WD594bOeTxp+MNKNMxcRyTQWvX+Wp1EU0p2iMU2aed8bBC1jmMZYUPgy1q3Gg==
+Received: by recvd-657c56bfc8-8k2fp with SMTP id
+ recvd-657c56bfc8-8k2fp-1-6A74F829-2F
+	2026-08-06 21:10:01.402631014 +0000 UTC m=+785954.128114212
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-2 (SG) with HTTP
+	id Lvby4dEGRqyNZKrquYOw8w
+	Thu, 06 Aug 2026 21:10:01.386 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Thu, 06 Aug 2026 21:10:01 +0000 (UTC)
+From: OREGONDAS Support <oregondas@govqa.us>
+Message-ID: <Lvby4dEGRqyNZKrquYOw8w@geopod-ismtpd-2>
+Subject: [Records Center] Public Records Request :: R000911-072626
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EBEOnyYN91QnqAv3BY9pmP=2FQ60Ob+GwA7Wb0qxYI4r8B+ZksGxTJ7tr0uV?=
+ =?us-ascii?Q?qNtEVt1D5UX9+mFUO2ur4ulNCLQoRAKwsoBEGEs?=
+ =?us-ascii?Q?szzmVTzsOi50967JnDIOokHzBDsfRw9=2FmpjqSAo?=
+ =?us-ascii?Q?WX+3Kbw4gUnn4DZrIorPd9abSWyf5eCP558TeAP?=
+ =?us-ascii?Q?7SSs0qhiO2K33vrX8516cCWrijbQoKzKe4iZLtS?=
+ =?us-ascii?Q?VBhCCujtL2ThDW7MFAT94TX=2FLkqmmuUajdaPVQ3?= =?us-ascii?Q?nBbh?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdVgqj=2FkKRBQh+z8oA2PKaIkX1qbkF+Js5?=
+ =?us-ascii?Q?5FvougZruR2E4x5VqK87gSZytdau5JIl3uyc5vW?=
+ =?us-ascii?Q?Ha=2Fl4lV4Sr3ksCYSa3mrkFxhDUPYpNt5en4L7LL?=
+ =?us-ascii?Q?AZCuivi4rQItcRy19l?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+Return-Path: bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us
+X-MS-Exchange-Organization-ExpirationStartTime: 06 Aug 2026 21:10:02.0092
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ b336ce6e-7438-47ef-9a4b-08def3ff148b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN1PEPF00006003:EE_|CY5PR14MB5631:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN1PEPF00006003.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b336ce6e-7438-47ef-9a4b-08def3ff148b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-Wildcard-Rule: Yes
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|29132699027|69100299015|7049299003|7149299003|3109299003|5023799004|5063699009|56012099006|19002099009|10067099003|6133799003|18003699003|3023799007|55112099003|16102099003|8096899003|80162021;
+X-Forefront-Antispam-Report: 
+ CIP:168.245.107.68;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.sgmail.govqa.us;PTR:o2.sgmail.govqa.us;CAT:NONE;SFS:(13230040)(29132699027)(69100299015)(7049299003)(7149299003)(3109299003)(5023799004)(5063699009)(56012099006)(19002099009)(10067099003)(6133799003)(18003699003)(3023799007)(55112099003)(16102099003)(8096899003)(80162021);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 06 Aug 2026 21:10:01.8885
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b336ce6e-7438-47ef-9a4b-08def3ff148b
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN1PEPF00006003.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY5PR14MB5631
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0266369
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0292.011
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info: 
+ =?Windows-1252?Q?dQTt8jlkTJNW6zlUoRwPgHdTHAn9Cml/xm43Od8lG0V2GCLjyDoxr+tb?=
+ =?Windows-1252?Q?AHm97VVqHXCaC77WweNPHfP8sN/XeaWsuV2O1PoLFfuHlevhrPYRMci5?=
+ =?Windows-1252?Q?MxMvgeZuWu03HRB2yfT5mDHP73YGI8a/ZyIRvRD6bPutBZ+UiZcoTnyC?=
+ =?Windows-1252?Q?MOHT5oHQQ6v3nR6VvCgoEC1d+6bzH6nvkbWO1UQ6l5oV0kvM3YLerdT/?=
+ =?Windows-1252?Q?jNxGn3UlAcnzkgw5QJhPy9ql9vZhQUHqBJm3XptH3RiCwkbJK7OMM1oN?=
+ =?Windows-1252?Q?/0EV7PmEUAL6rNErNQMeMKp/hRudXYaYdu016yd/aOXVwgMEi2AruKVz?=
+ =?Windows-1252?Q?SXHs3VLUF2ityd1S0ilhHkRPqiXp70xNJY8lFFeD859roZSl7g3LD8BM?=
+ =?Windows-1252?Q?T9ZCJqA4IFq+C94M8w+rBNNqIc3/2ArRGQuZEoox2moEhQ0JkYWqiNUs?=
+ =?Windows-1252?Q?0RZKEemniGHC/LxMtTUJInbHoxgL4VLiZsG39JbjF+gl+W4zeFMhj3bh?=
+ =?Windows-1252?Q?v7GlCmdZzt7kh0hN5I+Cn5VqwuAdn8nryY6GhoG4XFihpg3KrFwChAdo?=
+ =?Windows-1252?Q?PJQfxyLxHfhWGh5+qo3/FRYEi1TVzP7uFMddyjzyLurLq5OKUKdyNgRF?=
+ =?Windows-1252?Q?HwXuGIgpGcWmT+WuhzQp49g8dFUVU302YCxVih98iUZ7XKaCQysigAB4?=
+ =?Windows-1252?Q?rtFoO9jYN5JTG1TNzC69CKHemRkk9XvxB8/LB6ApNTJFmUPasa5bNVp9?=
+ =?Windows-1252?Q?px1YritwL1UehypHF0MggNRwPskF7eG9XHK6sAXvPzF16haEFaCsnmFe?=
+ =?Windows-1252?Q?WWu7HsRd9pld591gm/XbOEdhKet8k85BZEkltsxWovYdcbkQ31T30Ipb?=
+ =?Windows-1252?Q?38Yf9xkGrUkKA2LH/Hmjb9K6ifIYzKhYs/MGROCJEnuQ/z++o5HeCLbq?=
+ =?Windows-1252?Q?/GgwG0imrgwfjTYVurQj6kTE+uIrxOfRwmBttseZi7duX/6DXG5Se+yG?=
+ =?Windows-1252?Q?qXy9mXkbwQox+a2/M0FsEHbjPOs+aYUO5hgJZsnNbig2cr5lR3funxbK?=
+ =?Windows-1252?Q?uFAABKvoKitQHp/SCV0t0GiDqlPzs58V960iToZkiqT0GTilTvtDycwq?=
+ =?Windows-1252?Q?kibTtif2TqkgNRIMtWt9qvrfz6ZdpC9NA8sbmL906EvTqNVG0PfPKlA1?=
+ =?Windows-1252?Q?YPF4+tUdy71zeZpp1auoc+Mfd0YRK5FurOY9vnYSdelwk+LGdj0jsy3v?=
+ =?Windows-1252?Q?wZJ0ZpbehYjqZzYB/SxkJate5mOODaVA1PXXvcnwCmn5UbS8XEah363r?=
+ =?Windows-1252?Q?pUtgjpXKYRc0MkbJ9A4q1OQm+jDI5DuDCfIc2NRK2iEoRcneV+afnooj?=
+ =?Windows-1252?Q?Ov6ceNKJzMkDqwWzUcxXYoWnvMxaqrUX8Rrsm++xyMYyLwzC+jHzmXY+?=
+ =?Windows-1252?Q?0YVR1fJq38Sen9Fs7kv2yfippqhStZ20ugouAN+Y798duhkzEpYygwQZ?=
+ =?Windows-1252?Q?NMaAU9EPfcHyFQweJvITh0hbzYgl21DsO8XfCZivFbz1x3SBEoXIzcsW?=
+ =?Windows-1252?Q?TNQ0mUL+ey+7MHBJ9Cw0ZzF2MPZ6AldIzdgnMi7lR8fqqQUWtvbCDhvF?=
+ =?Windows-1252?Q?d5Z6ETCTFgnNyNhMg9j0rSnkRa1TaNBViEvvfxXGafx7kJWs9r2xrqP5?=
+ =?Windows-1252?Q?nQrLSbzSLKTT0Ls2xoUfEG3atnOcFVSO5L12GvqHoKbPPuB4UoBO8PQw?=
+ =?Windows-1252?Q?FGcWzhCtX3uPC9jy7KeZsKch8V2p0A4wFEmucF6FJeki7b622PjZG5M1?=
+ =?Windows-1252?Q?LAXtbB0L9fnTGjWLveIwUdeRmdR8u2CL91eDNzmD2t2Fz0ZuP4eukq5D?=
+ =?Windows-1252?Q?GTTOkQok7ZNyo6vIdMFCb8iWHusJpZPO6mPmuUdbdDyjSykog2hnC3E/?=
+ =?Windows-1252?Q?+aZ8UmJSxggCu9Bu4Mp0oMVMiHLF8sqiIwhup0HfI6R55w8rD8wYLPUH?=
+ =?Windows-1252?Q?EDDYIRNiBgnKjlHlf0ndvWSFZbGpJ9Faa3Bt0ARxTEWPW+TK/EVWnmKJ?=
+ =?Windows-1252?Q?gIuMYUASSjxjFgc82uc3l8G/n4icnjewQga2WQVCMHECWoPhFU/DAxbW?=
+ =?Windows-1252?Q?33SSWg0eL1pkHh4kMz3cqjD6MzNs2hdVHidK8MFY7/Wx1ChKkwaKITxI?=
+ =?Windows-1252?Q?B1Ey2WvPK1FeT10SRop67lIbRWp0p9Sxoi3hJyp9o+qUFo/QZgDoV/Jk?=
+ =?Windows-1252?Q?B6kFNfVOd1Nd9A9orr4Bl/EkDq9QBT4h/afGNHFLz6Nq1TexJRWbBuhd?=
+ =?Windows-1252?Q?IxVumTcoZnzupID6tJ9bsj4YRCXMwVIeUoGF1NkY+gQXjAHWEZx9lLCd?=
+ =?Windows-1252?Q?C/UySNDVB6FqPRvmJBC7xpWKa5izoF1YmQ+Gh9QBeAmyED31Mc8nZMyu?=
+ =?Windows-1252?Q?hI9V0cv3cRGDAJC/6dTvQRNRdXJfz4VGchhGu5A9KYDxcAKy3Swd0E+C?=
+ =?Windows-1252?Q?gvJlUX7nvjTtux9chiGWSv64v/w/ZVoR6Oa9tqp/qH0ea8rbBJRgPjGk?=
+ =?Windows-1252?Q?4Sw1ff2xAV/MpqgKQ2vE9omS9EnzbHKM/ZIXUq3cSPtOUg5d8rIAsvN8?=
+ =?Windows-1252?Q?9QQrRaklvmI0QWjWpc+AULDkPMfKMWeeLoOsbK4IeS95dawAYsHecFsB?=
+ =?Windows-1252?Q?9x5x/jes/yxUmlq2Fp0r9QtRf/LkCD1fGgSo4Y2tgxd8Rczw5HKkFxBL?=
+ =?Windows-1252?Q?ToeRs5u7b+NUX4oXbh8QM+yArRRRfZ1l1NCxUsEHe1LdqErkb9nbhQ3T?=
+ =?Windows-1252?Q?3UyLIwMmR8BIXFmJCMhVczWgPSvQknjAm8T9WVGymiWFQ22W?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head>
+<body><br><br><b>Attachments:</b><br><a href=3D"https://u8387778.ct.sendgri=
+d.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2B8l1b7S-2BQf6AVAAD4hy6Vx3=
+vMOioU4eMbovKJYepmNCQV1FGsHT9idzkvvk5L2J0XHrw-2BLloLvZo2BlAAK5-2Bhr5kq1anTQ=
+5tyJp4C2GdWZ9z8O-2BJFmR79hr6aaRLPjyhkXHjP4-2BPblOVkLZ-2Bhlv9U7GL7n5I3QLphyg=
+WxMRx2yGqj6QS43IxdIdw9H9-2FZZuTahjaxl7KNB2nQdSWw7n2wS3Hh0w6rrjKUFMH6aphE7Dn=
+uvoDwwmsPSI-2F-2BqNBT7WDXGDfToQDC78yWobSBwziVnPcSv5bmzmeGmOmNF4lJ7mAxV_0GMY=
+b285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrK=
+v6UGrmKbARuWTlMPUaUXWPMIZa-2FIccee-2BZ-2F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbd=
+XcZEoOKlWaYJRI65Wu8ztWT3n-2B8PPMPQtuN9-2FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0r=
+WPdHi-2BfJaB0p-2FJ9fc955p-2FlA2OrMkMjuZfjjjnuFZl9YQ96ZrgGKl3tT976oXHasVKfhs=
+C-2B5tntkZ5D9KjGn91KCAEVaitLlw6Yn-2FFUu-2Bem2J0jBj19KKjtOUft7I00k-2Fu1QsSsP=
+89Zz1RqcyEetAw-3D">Violence_Free_Workplace_50-010-02.pdf</a><br><a href=3D"=
+https://u8387778.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf=
+-2B8l1b7S-2BQf6AVAAD4hy6Vx3vMOioU4eMbovKJYepmNCQV1FGsHT9idzkvvk5L2J0XHrw-2B=
+LloLvZo2BlAAK5-2Bhr5kq1anTQ5tyJp4C2GdWZ9z8O-2BJFmR79hr6aaRLPjyhkXHjP4-2BPbl=
+OVkLZ-2Bhlv9U7GL7n5I3QLphygWxMRx2yWqWJEaJwBNShnGu-2BURHSFBQwb-2BoxcIeuYzb6P=
+MREOe3fwiQMY-2Fis9o-2FGVHioeZ1KV351n89eVoI1gUWOiX2lV9KH8C-2B0A4WAzaif2NyF6n=
+XKfA9YBKEfpB-2BV37GK7duXtAKa_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTo=
+fkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMIZa-2FIccee-2BZ-2F7=
+5dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3n-2B8PPMPQtuN9-2Fu=
+uIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955p8BBfxWK4KoOdrrzut=
+24gjj1-2F6vsmANwXIsIhQxW2o9d0W2ydpe9oYBJh2za9t1L25otCBfTXyg2JQ1BX35-2BGzli2=
+CSTQ1LflCxC8DGWIZbebtU88ANSVILuKjQCl45LFo-3D">Workplace_Effects_of_Domestic=
+_Violence...50-010-04.pdf</a><br><a href=3D"https://u8387778.ct.sendgrid.ne=
+t/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2B8l1b7S-2BQf6AVAAD4hy6Vx3vMOi=
+oU4eMbovKJYepmNCQV1FGsHT9idzkvvk5L2J0XHrw-2BLloLvZo2BlAAK5-2Bhr5kq1anTQ5tyJ=
+p4C2GdWZ9z8O-2BJFmR79hr6aaRLPjyhkXHjP4-2BPblOVkLZ-2Bhlv9U7GL7n5I3QLphygWxMR=
+x2yP7sJL0Vq6k2cNpFzD57xyh9IRz6-2FgHz00MG4VHCiHc1vx5DbBwwJb31CaLHT2oESp6Vnav=
+nzcmmKq0wb-2B7RnddbobNI1U4XPGhJUKhwF-2B4SQgYx2crehlqGhCmNikTLpEcp2T8139JheT=
+v3pZOQqWw-3D-3DfSH__0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp=
+9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMIZa-2FIccee-2BZ-2F75dF3yw9Pn=
+yyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3n-2B8PPMPQtuN9-2FuuIpnjHehS=
+gOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955p9o4ncH5PD7ERCSZfVvZiArNqbw=
+8Xk-2FlLj5DhWAdXD40T-2BVlH8IQbCOu4HNM-2Fhh-2FvwErK3jqTL0n0x3qBRwUf7IDns-2Bl=
+1v1-2BlPezGofxYDM7F7a8pX3pDW5d6LilmSinxQ-3D">Domestic_Violence_Toolkit.pdf<=
+/a><span id=3D"fileLinksSectionSeperator"></span><br><br>--- Please respond=
+ above this line ---<br><br><div style=3D"align: center; padding: 10px; bor=
+der: 3px solid #808080; border-radius: 5px;">
+<img alt=3D"" src=3D"https://uploads.govqa.us/OREGONDAS/OregonDAS_NEW.png" =
+style=3D"width: 768.333px; height: 109px;">
+<div><hr>
+<strong><span style=3D"color: #000000;"><br>
+</span></strong></div>
+<div><p>RE: Public Records Request of July 26, 2026, Reference # R000911-07=
+2626.</p><p>Dear Robert Samuel White,</p><p>Please see responses below rega=
+rding your records request:</p><p>Hello Robert,</p><p>Please see responses =
+below regarding your records request:</p><p><em>1. All records concerning m=
+e held by DAS in any division, including the Chief Human Resources Office, =
+Risk Management, Enterprise Goods and Services, and the Office of the Direc=
+tor. This includes records indexed under Robert White, Robert Samuel White,=
+ Robert S. White, Sam White, or my date of birth.</em></p><p><strong>An ext=
+ensive search has been conducted and no records exist.</strong></p><p><em>2=
+. All records reflecting any behavioral threat assessment, threat managemen=
+t, workplace violence assessment, or safety planning process concerning me.=
+ This includes but is not limited to: workplace violence incident reports; =
+reports made under Statewide HR Policy 50.010.02; threat assessment team or=
+ workplace violence prevention team records, agendas, minutes, notes, or re=
+ferrals; completed or partial assessment instruments of any kind; designati=
+ons of me as a subject of concern, person of concern, or equivalent; safety=
+ plans; no-contact or no-trespass directives; and any recommendation to con=
+tact or involve law enforcement.</em></p><p><strong>An extensive search has=
+ been conducted and no records exist.</strong></p><p>3. All communications =
+between DAS and OPRD concerning me, including any consultation, guidance, o=
+r technical assistance provided by DAS to OPRD regarding my dismissal, my e=
+xclusion, my correspondence, my public records requests, the archive at opr=
+dvolunteerabuse.org, or the March 24, 2026 police visit.</p><p><strong>An e=
+xtensive search has been conducted and no records exist.</strong></p><p>4. =
+All communications between DAS and Oregon State Police, the Oregon Departme=
+nt of Justice, the Office of the Governor, or any federal agency concerning=
+ me.</p><p><strong>An extensive search has been conducted and no records ex=
+ist.</strong></p><p>5. All records reflecting the disclosure of my personal=
+ information, including my date of birth, my residence, or my volunteer fil=
+e, to any person or agency outside OPRD.</p><p><strong>An extensive search =
+has been conducted, and no records exist other than your public records req=
+uests.</strong></p><p>6. The following policy and training records, without=
+ regard to date:</p><p><strong>Many of these records are publicly available=
+. We&#8217;re providing them for you as a courtesy. </strong></p><p><em>(a)=
+ Statewide Policy 50.010.02, Violence-Free Workplace, in both the version e=
+ffective 11/1/2024 and the superseded version effective 02/01/2019.</em></p=
+><p><strong><a href=3D"https://u8387778.ct.sendgrid.net/ls/click?upn=3Du001=
+.VEsWrlMiJDg0mXafq1mEXf0oVfxPf5K8rF-2Fqf3N4ZYul-2FPAvE7jTbg7MmH1JDeHtJw-2Fm=
+Kh2DzJc-2FIEjFIfOrtg-3D-3Dv0aR_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pN=
+Tofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMIZa-2FIccee-2BZ-2=
+F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3n-2B8PPMPQtuN9-2=
+FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955p9UfE4j8JXShdHO6=
+AJhSimxM955TAj3o-2BjXhT874A1vnUln8JSPmKUmAwzjlPPixlbO1hSCRbxBz2b-2F4ikQC1Ya=
+pH3HLQiU6UbmE4Gs3SOB20nuRhFkCk1nrtxU1tQfkMo-3D"><span style=3D"color: windo=
+wtext;">50-010-02.pdf</span></a> &#8211; copy attached.</strong></p><p><em>=
+(b) Statewide Policy 50.010.04, Workplace Effects of Domestic Violence, Sex=
+ual Assault, and Stalking, and the accompanying online Toolkit referenced i=
+n 50.010.02(4).</em></p><p><a href=3D"https://u8387778.ct.sendgrid.net/ls/c=
+lick?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf0oVfxPf5K8rF-2Fqf3N4ZYuOa4S-2BQeJHYS3=
+iASGGla-2FEHVISY7ocxo5EeAxLOnMP6g-3D-3D7XvH_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl=
+1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMIZa-=
+2FIccee-2BZ-2F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3n-2=
+B8PPMPQtuN9-2FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955p-2=
+FZ1i2F5i6wgI7LPeadWmyg4jLzA7AD7JwldwhrNmv0RiAxpMQKcf1j-2Ff-2B26iZ6cToZImdY1=
+mrehqUowJiiVYdnA-2BJytzcIC-2FCgS-2BWu96VlBgQf4PuF7K91ZG5C9PjTrdo-3D">50-010=
+-04.pdf</a> <strong>&#8211; copy attached</strong></p><p><a href=3D"https:/=
+/u8387778.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXSygofkpk=
+lPfB5YE5QZ1FcxsFprzyD6U6EgPsZmbOnw-2FWsonjLU6gj-2FTSQ3f9Spe8c4krZYbIQyS4n-2=
+BebE3nU3LAQIMibErBZBQdWIKJhndtUZPl7Kfvu3DpAX-2BukLuZtd89-2F3tY9RC0V-2Bm8XDQ=
+QEli2zcIp3gC7HktN-2Bja-2BigR5M4Z3_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm=
+3pNTofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMIZa-2FIccee-2B=
+Z-2F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3n-2B8PPMPQtuN=
+9-2FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955p-2BZ8WPfj1i7=
+2amRyMOlJo2R9yPGnFjgfqjbepSzrG5TyHBuipB1VIm9GQozEAx9RW14jG61uzJaIdVivkBhn7I=
+TP9hjFxu0vLXmNANWP79kfW-2BXnD2NzTmOTSltiisEUVk-3D">Employee training.docx</=
+a> (toolkit) <strong>&#8211; copy attached.</strong></p><p><em>(c) The DAS-=
+CHRO Violence and Weapons Free Workplace training required by 50.010.02(10)=
+, including all slides, scripts, scenarios, handouts, and completion record=
+s.</em></p><p><strong>Training media will need to be converted into a reada=
+ble format. Completion records for the training would be extensive since th=
+is is a yearly statewide training requirement. <span>&nbsp;</span>Date para=
+meters are needed for these records.<span>&nbsp; </span>Fee estimate for th=
+is process is below:</strong></p><table border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"629" style=3D"width: 472pt;">    <tbody>        <tr =
+style=3D"height: 0.2in;">            <td valign=3D"bottom" style=3D"border:=
+1pt solid;background: #0e2841; height: 0.2in; width: 242pt; padding: 0in 5.=
+4pt;    text-align: left;">            <p style=3D"line-height: normal;"><s=
+trong><span style=3D"color: white; font-size: 11pt; font-family: 'Times New=
+ Roman';">Staff Time</span></strong></p>            </td>            <td va=
+lign=3D"bottom" style=3D"background: #0e2841; height: 0.2in; width: 119pt; =
+padding: 0in 5.4pt; border-width: 1pt 1pt 1pt medium; border-style: solid s=
+olid solid none; border-color: initial; text-align: left;">            <p s=
+tyle=3D"text-align: center; line-height: normal;"><strong><span style=3D"co=
+lor: white; font-size: 11pt; font-family: 'Times New Roman';">Estimated Sta=
+ff Hours</span></strong></p>            </td>            <td valign=3D"bott=
+om" style=3D"background: #0e2841; height: 0.2in; width: 48pt; padding: 0in =
+5.4pt; border-width: 1pt 1pt 1pt medium; border-style: solid solid solid no=
+ne; border-color: initial; text-align: left;">            <p style=3D"text-=
+align: center; line-height: normal;"><strong><span style=3D"color: white; f=
+ont-size: 11pt; font-family: 'Times New Roman';">Rate</span></strong></p>  =
+          </td>            <td valign=3D"bottom" style=3D"background: #0e28=
+41; height: 0.2in; width: 63pt; padding: 0in 5.4pt; border-width: 1pt 1pt 1=
+pt medium; border-style: solid solid solid none; border-color: initial; tex=
+t-align: left;">            <p style=3D"text-align: center; line-height: no=
+rmal;"><strong><span style=3D"color: white; font-size: 11pt; font-family: '=
+Times New Roman';">Total</span></strong></p>            </td>        </tr> =
+       <tr style=3D"height: 29.4pt;">            <td valign=3D"bottom" styl=
+e=3D"height: 29.4pt; width: 242pt; padding: 0in 5.4pt; border-width: medium=
+ 1pt 1pt; border-style: none solid solid; border-color: initial; text-align=
+: left;">            <p style=3D"line-height: normal;"><strong><span style=
+=3D"color: black; font-size: 11pt; font-family: 'Times New Roman';">Clerica=
+l</span></strong><span style=3D"color: black; font-size: 11pt; font-family:=
+ 'Times New Roman';"> (administrative, office specialists, other support st=
+aff)</span></p>            </td>            <td valign=3D"bottom" style=3D"=
+background: #f7c7ac; height: 29.4pt; width: 119pt; padding: 0in 5.4pt; bord=
+er-width: medium 1pt 1pt medium; border-style: none solid solid none; borde=
+r-color: initial; text-align: left;">            <p style=3D"text-align: ce=
+nter; line-height: normal;"><strong><span style=3D"color: black; font-size:=
+ 14pt; font-family: 'Times New Roman';">3</span></strong></p>            </=
+td>            <td valign=3D"bottom" style=3D"height: 29.4pt; width: 48pt; =
+padding: 0in 5.4pt; border-width: medium 1pt 1pt medium; border-style: none=
+ solid solid none; border-color: initial; text-align: left;">            <p=
+ style=3D"text-align: center; line-height: normal;"><span style=3D"color: b=
+lack; font-size: 11pt; font-family: 'Times New Roman';">$25.00</span></p>  =
+          </td>            <td valign=3D"bottom" style=3D"height: 29.4pt; w=
+idth: 63pt; padding: 0in 5.4pt; border-width: medium 1pt 1pt medium; border=
+-style: none solid solid none; border-color: initial; text-align: left;">  =
+          <p style=3D"text-align: center; line-height: normal;"><span style=
+=3D"color: black; font-size: 11pt; font-family: 'Times New Roman';">$75.00<=
+/span></p>            </td>        </tr>        <tr style=3D"height: 30pt;"=
+>            <td valign=3D"bottom" style=3D"height: 30pt; width: 242pt; pad=
+ding: 0in 5.4pt; border-width: medium 1pt 1.5pt; border-style: none solid s=
+olid; border-color: initial; text-align: left;">            <p style=3D"lin=
+e-height: normal;"><strong><span style=3D"color: black; font-size: 11pt; fo=
+nt-family: 'Times New Roman';">Managerial</span></strong><span style=3D"col=
+or: black; font-size: 11pt; font-family: 'Times New Roman';"> (Program mana=
+gers, Public Information Officers)</span></p>            </td>            <=
+td valign=3D"bottom" style=3D"background: #f7c7ac; height: 30pt; width: 119=
+pt; padding: 0in 5.4pt; border-width: medium 1pt 1.5pt medium; border-style=
+: none solid solid none; border-color: initial; text-align: left;">        =
+    <p style=3D"text-align: center; line-height: normal;"><strong><span sty=
+le=3D"color: black; font-size: 14pt; font-family: 'Aptos Narrow', sans-seri=
+f;">1</span></strong></p>            </td>            <td valign=3D"bottom"=
+ style=3D"height: 30pt; width: 48pt; padding: 0in 5.4pt; border-width: medi=
+um 1pt 1.5pt medium; border-style: none solid solid none; border-color: ini=
+tial; text-align: left;">            <p style=3D"text-align: center; line-h=
+eight: normal;"><span style=3D"color: black; font-size: 11pt; font-family: =
+'Times New Roman';">$40.00</span></p>            </td>            <td valig=
+n=3D"bottom" style=3D"height: 30pt; width: 63pt; padding: 0in 5.4pt; border=
+-width: medium 1pt 1.5pt medium; border-style: none solid solid none; borde=
+r-color: initial; text-align: left;">            <p style=3D"text-align: ce=
+nter; line-height: normal;"><span style=3D"color: black; font-size: 11pt; f=
+ont-family: 'Times New Roman';">$40.00</span></p>            </td>        <=
+/tr>        <tr style=3D"height: 18.6pt;">            <td valign=3D"bottom"=
+ style=3D"height: 18.6pt; width: 242pt; padding: 0in 5.4pt; text-align: lef=
+t;"></td>            <td colspan=3D"2" valign=3D"bottom" style=3D"height: 1=
+8.6pt; width: 167pt; padding: 0in 5.4pt; text-align: left;">            <p =
+style=3D"text-align: right; line-height: normal;"><strong><span style=3D"co=
+lor: black; font-size: 14pt; font-family: 'Times New Roman';">Total Fee Est=
+imate:</span></strong></p>            </td>            <td valign=3D"bottom=
+" style=3D"height: 18.6pt; width: 63pt; padding: 0in 5.4pt; text-align: lef=
+t;">            <p style=3D"text-align: center; line-height: normal;"><stro=
+ng><span style=3D"color: black; font-size: 14pt; font-family: 'Times New Ro=
+man';">$115.00</span></strong></p>            </td>        </tr>    </tbody=
+></table><p><span style=3D"color: red;">&nbsp;</span></p><p><em>(d) Any age=
+ncy safety plan, procedure, guidance, form, checklist, or assessment instru=
+ment used to carry out 50.010.02(4) or 50.010.02(6), including any used to =
+assess reported incidents, and any addressing application of the policy to =
+volunteers or other non-employees within the definition of &quot;others wor=
+king in an agency.&quot;</em></p><p><strong>Agencies maintain their own int=
+ernal safety plans and must be requested directly from each agency. Interna=
+lly, DAS has numerous safety plans and procedures for many program areas. D=
+AS is assessing a fee for employee time searching and producing any respons=
+ive documents. At a minimum, we estimate the costs to be $290. To reduce fe=
+es, we suggest you consider narrowing your request by being more specific a=
+bout what type of plan you are seeking.</strong></p><table border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"629" style=3D"width: 472pt;">    =
+<tbody>        <tr style=3D"height: 0.2in;">            <td valign=3D"botto=
+m" style=3D"border:1pt solid;background: #0e2841; height: 0.2in; width: 242=
+pt; padding: 0in 5.4pt;    text-align: left;">            <p style=3D"line-=
+height: normal;"><strong><span style=3D"color: white; font-size: 11pt; font=
+-family: 'Times New Roman';">Staff Time</span></strong></p>            </td=
+>            <td valign=3D"bottom" style=3D"background: #0e2841; height: 0.=
+2in; width: 119pt; padding: 0in 5.4pt; border-width: 1pt 1pt 1pt medium; bo=
+rder-style: solid solid solid none; border-color: initial; text-align: left=
+;">            <p style=3D"text-align: center; line-height: normal;"><stron=
+g><span style=3D"color: white; font-size: 11pt; font-family: 'Times New Rom=
+an';">Estimated Staff Hours</span></strong></p>            </td>           =
+ <td valign=3D"bottom" style=3D"background: #0e2841; height: 0.2in; width: =
+48pt; padding: 0in 5.4pt; border-width: 1pt 1pt 1pt medium; border-style: s=
+olid solid solid none; border-color: initial; text-align: left;">          =
+  <p style=3D"text-align: center; line-height: normal;"><strong><span style=
+=3D"color: white; font-size: 11pt; font-family: 'Times New Roman';">Rate</s=
+pan></strong></p>            </td>            <td valign=3D"bottom" style=
+=3D"background: #0e2841; height: 0.2in; width: 63pt; padding: 0in 5.4pt; bo=
+rder-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; borde=
+r-color: initial; text-align: left;">            <p style=3D"text-align: ce=
+nter; line-height: normal;"><strong><span style=3D"color: white; font-size:=
+ 11pt; font-family: 'Times New Roman';">Total</span></strong></p>          =
+  </td>        </tr>        <tr style=3D"height: 29.4pt;">            <td v=
+align=3D"bottom" style=3D"height: 29.4pt; width: 242pt; padding: 0in 5.4pt;=
+ border-width: medium 1pt 1pt; border-style: none solid solid; border-color=
+: initial; text-align: left;">            <p style=3D"line-height: normal;"=
+><strong><span style=3D"color: black; font-size: 11pt; font-family: 'Times =
+New Roman';">Clerical</span></strong><span style=3D"color: black; font-size=
+: 11pt; font-family: 'Times New Roman';"> (administrative, office specialis=
+ts, other support staff)</span></p>            </td>            <td valign=
+=3D"bottom" style=3D"background: #f7c7ac; height: 29.4pt; width: 119pt; pad=
+ding: 0in 5.4pt; border-width: medium 1pt 1pt medium; border-style: none so=
+lid solid none; border-color: initial; text-align: left;">            <p st=
+yle=3D"text-align: center; line-height: normal;"><strong><span style=3D"col=
+or: black; font-size: 14pt; font-family: 'Aptos Narrow', sans-serif;">1</sp=
+an></strong></p>            </td>            <td valign=3D"bottom" style=3D=
+"height: 29.4pt; width: 48pt; padding: 0in 5.4pt; border-width: medium 1pt =
+1pt medium; border-style: none solid solid none; border-color: initial; tex=
+t-align: left;">            <p style=3D"text-align: center; line-height: no=
+rmal;"><span style=3D"color: black; font-size: 11pt; font-family: 'Times Ne=
+w Roman';">$25.00</span></p>            </td>            <td valign=3D"bott=
+om" style=3D"height: 29.4pt; width: 63pt; padding: 0in 5.4pt; border-width:=
+ medium 1pt 1pt medium; border-style: none solid solid none; border-color: =
+initial; text-align: left;">            <p style=3D"text-align: center; lin=
+e-height: normal;"><span style=3D"color: black; font-size: 11pt; font-famil=
+y: 'Times New Roman';">$25.00</span></p>            </td>        </tr>     =
+   <tr style=3D"height: 29.4pt;">            <td valign=3D"bottom" style=3D=
+"height: 29.4pt; width: 242pt; padding: 0in 5.4pt; border-width: medium 1pt=
+ 1pt; border-style: none solid solid; border-color: initial; text-align: le=
+ft;">            <p style=3D"line-height: normal;"><strong><span style=3D"c=
+olor: black; font-size: 11pt; font-family: 'Times New Roman';">Managerial</=
+span></strong><span style=3D"color: black; font-size: 11pt; font-family: 'T=
+imes New Roman';"> (Program managers, Public Information Officers)</span></=
+p>            </td>            <td valign=3D"bottom" style=3D"background: #=
+f7c7ac; height: 29.4pt; width: 119pt; padding: 0in 5.4pt; border-width: med=
+ium 1pt 1pt medium; border-style: none solid solid none; border-color: init=
+ial; text-align: left;">            <p style=3D"text-align: center; line-he=
+ight: normal;"><strong><span style=3D"color: black; font-size: 14pt; font-f=
+amily: 'Aptos Narrow', sans-serif;">1</span></strong></p>            </td> =
+           <td valign=3D"bottom" style=3D"height: 29.4pt; width: 48pt; padd=
+ing: 0in 5.4pt; border-width: medium 1pt 1pt medium; border-style: none sol=
+id solid none; border-color: initial; text-align: left;">            <p sty=
+le=3D"text-align: center; line-height: normal;"><span style=3D"color: black=
+; font-size: 11pt; font-family: 'Times New Roman';">$40.00</span></p>      =
+      </td>            <td valign=3D"bottom" style=3D"height: 29.4pt; width=
+: 63pt; padding: 0in 5.4pt; border-width: medium 1pt 1pt medium; border-sty=
+le: none solid solid none; border-color: initial; text-align: left;">      =
+      <p style=3D"text-align: center; line-height: normal;"><span style=3D"=
+color: black; font-size: 11pt; font-family: 'Times New Roman';">$40.00</spa=
+n></p>            </td>        </tr>        <tr style=3D"height: 30pt;">   =
+         <td valign=3D"bottom" style=3D"height: 30pt; width: 242pt; padding=
+: 0in 5.4pt; border-width: medium 1pt 1.5pt; border-style: none solid solid=
+; border-color: initial; text-align: left;">            <p style=3D"line-he=
+ight: normal;"><strong><span style=3D"color: black; font-size: 11pt; font-f=
+amily: 'Times New Roman';">Professional</span></strong><span style=3D"color=
+: black; font-size: 11pt; font-family: 'Times New Roman';"> (Information Te=
+chnology, Human Resources, High-level Analyst)</span></p>            </td> =
+           <td valign=3D"bottom" style=3D"background: #f7c7ac; height: 30pt=
+; width: 119pt; padding: 0in 5.4pt; border-width: medium 1pt 1.5pt medium; =
+border-style: none solid solid none; border-color: initial; text-align: lef=
+t;">            <p style=3D"text-align: center; line-height: normal;"><stro=
+ng><span style=3D"color: black; font-size: 14pt; font-family: 'Times New Ro=
+man';">3</span></strong></p>            </td>            <td valign=3D"bott=
+om" style=3D"height: 30pt; width: 48pt; padding: 0in 5.4pt; border-width: m=
+edium 1pt 1.5pt medium; border-style: none solid solid none; border-color: =
+initial; text-align: left;">            <p style=3D"text-align: center; lin=
+e-height: normal;"><span style=3D"color: black; font-size: 11pt; font-famil=
+y: 'Times New Roman';">$75.00</span></p>            </td>            <td va=
+lign=3D"bottom" style=3D"height: 30pt; width: 63pt; padding: 0in 5.4pt; bor=
+der-width: medium 1pt 1.5pt medium; border-style: none solid solid none; bo=
+rder-color: initial; text-align: left;">            <p style=3D"text-align:=
+ center; line-height: normal;"><span style=3D"color: black; font-size: 11pt=
+; font-family: 'Times New Roman';">$225.00</span></p>            </td>     =
+   </tr>        <tr style=3D"height: 18.6pt;">            <td valign=3D"bot=
+tom" style=3D"height: 18.6pt; width: 242pt; padding: 0in 5.4pt; text-align:=
+ left;"></td>            <td colspan=3D"2" valign=3D"bottom" style=3D"heigh=
+t: 18.6pt; width: 167pt; padding: 0in 5.4pt; text-align: left;">           =
+ <p style=3D"text-align: right; line-height: normal;"><strong><span style=
+=3D"color: black; font-size: 14pt; font-family: 'Times New Roman';">Total F=
+ee Estimate:</span></strong></p>            </td>            <td valign=3D"=
+bottom" style=3D"height: 18.6pt; width: 63pt; padding: 0in 5.4pt; text-alig=
+n: left;">            <p style=3D"text-align: center; line-height: normal;"=
+><strong><span style=3D"color: black; font-size: 14pt; font-family: 'Times =
+New Roman';">$290.00</span></strong></p>            </td>        </tr>    <=
+/tbody></table><p><span style=3D"color: red;">&nbsp;</span></p><p><em>(e) A=
+ny guidance, training, or written material issued by DAS or CHRO to executi=
+ve branch agencies concerning behavioral threat assessment, threat manageme=
+nt teams, or workplace violence prevention teams.</em></p><p><strong>DAS ha=
+s not issued any of the above other than our publicly available policies. <=
+/strong></p><p><em>(f) Any record identifying the agency directors, human r=
+esource sections, or safety sections designated to administer 50.010.02 at =
+the Oregon Parks and Recreation Department, and any delegation of that auth=
+ority. </em></p><p><strong>DAS does not possess any information nor is it t=
+he custodian of records about how the OPRD administers the DAS policy and h=
+ow they delegate authority. </strong></p><p><em>7. All records reflecting t=
+he number of behavioral threat assessments, workplace violence assessments,=
+ or threat management processes initiated by executive branch agencies sinc=
+e January 1, 2023, in whatever aggregate or summary form DAS maintains.</em=
+></p><p><strong>DAS does not collect information and/or maintain this infor=
+mation.</strong></p><p><em>If any responsive record is withheld, please ide=
+ntify it by date, author, recipient, and subject, and cite the specific exe=
+mption claimed. If DAS is not the custodian of a particular record, please =
+identify the custodian rather than closing the request. ORS 192.311(2)(b) d=
+efines the custodian to include a public body that owns or retains a record=
+, and DAS is the custodian of its own correspondence.</em></p><p><strong>No=
+ records are being withheld.</strong></p><p><em>I request a fee waiver. Dis=
+closure of these records is in the public interest. The question of whether=
+ an authority created to prevent violence has been used against a volunteer=
+ for documenting his own treatment is a matter of public concern, and the r=
+esulting records bear on the conduct of two state agencies toward a member =
+of the public.</em></p><p><strong>After careful review, we have determined =
+that your request does not meet the statutory criteria for a waiver or redu=
+ction. The request does not demonstrate that disclosure would primarily ben=
+efit the general public. Therefore, we must deny the fee-waiver request. </=
+strong></p><p><strong>We have included fee estimates for the cost of search=
+ing and producing any responsive records for your requests #6 (c) and (d). =
+Keep in mind that public bodies may charge for search time even if they fai=
+l to locate any records responsive to the request or even if the records lo=
+cated are subsequently determined to be exempt from disclosure.<span>&nbsp;=
+ </span>The total cost to fulfill your records request is $450.00 The stand=
+ard fee structure outlined in&nbsp;<a href=3D"https://u8387778.ct.sendgrid.=
+net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf0oVfxPf5K8rF-2Fqf3N4ZYt1onY-2=
+FPvwN3I0qCZ15U7H-2FEPjc2sbSLZJOsC4BGrdKNw-3D-3DvXZe_0GMYb285Q7ANw-2BFhpRsBx=
+TcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaU=
+XWPMIZa-2FIccee-2BZ-2F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8=
+ztWT3n-2B8PPMPQtuN9-2FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9=
+fc955p-2BD-2BKKg30Ug-2Ftz0ogVxcoLbp2WzdRgINuDIx9dGrjp3q3V-2BVHwyp0bwrvYJ1Dx=
+uZq86ryzyAJf9qLt4CqySGTmYxVCr-2B-2Be7neUsuTKlT9Ud5R-2Bn1f3SXS5Iod5wf8tEEYc-=
+3D" target=3D"_blank">statewide policy 107-001-030</a>, the fee for these r=
+ecords is determined in accordance with ORS 192.324(4)(a) and ORS 192.324(4=
+)(b).&nbsp;<br><br>If you choose to proceed with your request, please reply=
+ to this email and we will begin the invoice process.</strong></p><p>Thank =
+you,</p><p>Merilee Nowak<br>Oregon Department of Administrative Services</p=
+></div>
+<img title=3D"DAS logo" src=3D"https://uploads.govqa.us/OREGONDAS/OR-DAS-Lo=
+go-Small.JPG" alt=3D"DAS logo"></div>
+<div>&nbsp;</div>
+<hr>
+<span style=3D"font-size: 10pt;"></span>
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a href=3D"https://u8387778.ct.sendgrid.net/l=
+s/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2B8l1b7S-2BQf6AVAAD4hy6Wdx7KCjG-2=
+FuKfw4vv1GMo7IpKwltyXAjfjKeT2mM0oAfw-3D-3D7uyn_0GMYb285Q7ANw-2BFhpRsBxTcZL2=
+NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BAQBcMlj3YrKv6UGrmKbARuWTlMPUaUXWPMI=
+Za-2FIccee-2BZ-2F75dF3yw9PnyyCmuye2mTmg-2BoCqdxlgbdXcZEoOKlWaYJRI65Wu8ztWT3=
+n-2B8PPMPQtuN9-2FuuIpnjHehSgOBArYucOdlBPt1tAaY7MU0rWPdHi-2BfJaB0p-2FJ9fc955=
+p-2BQafZoNB-2BE0c0-2F8MJxkKRmDHjOEHEN31YYmAJ-2BL6HxoezRWR-2FY94kYS4ZUz1YW9P=
+xX-2B57xX1HChssMjAWt2-2F0nIKF-2FfPl8ZsO8tCXuhRdpZ2MS532MGkRopuaIIEA8Mxg-3D"=
+ target=3D"_blank" title=3D"Public Records Center">Public Records Center</a=
+></div>
+<div><center><br>
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo"></center></div><img src=3D"htt=
+ps://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J7JFRtrSZDjZbS0Fz8qZ0N=
+QbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV8z-2BGboKBswCz8dQEId2RLV0aTL76ALRxpJfE=
+Mau-2Ff7F46JKhsNjbsUFv3P14p-2BW5SSfdoHO491WnZqyNXnhXiHbxnZNmlXnoBUbYAFOoAk9=
+Fk8tAkbJpzKwQSbx33ZCrO7vOEdcrQTSlW-2BEoFFUwsYpEy0Wm0-2FZvTGRmVqOaOcPjKxlKK5=
+-2Bi22DKq6e-2BAp-2FYk1WQtOcUT1iBqELPzCHPhzNNpohe54KLgBGqJ5TM-2FoRUVVrSpbOnU=
+MiIh4J7kNOJqgSs2T9Mm7rNOZUk8-2BXebHDpxhav25Gd0mvZN97JMrBg3bpmjdXK7TSeKlucra=
+N1q" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !im=
+portant;width:1px !important;border-width:0 !important;margin-top:0 !import=
+ant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !imp=
+ortant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0=
+ !important;padding-left:0 !important;"></body></html>
+
