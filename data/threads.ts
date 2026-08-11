@@ -229,7 +229,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Robert White",
             kind: "letter",
             title: "Oregon State Parks – Umpqua-Tugman MU 2025 Volunteer Assignment Confirmation",
-            docs: [{ label: "Oregon State Parks – Umpqua-Tugman MU 2025 Volunteer Assignment Confir", href: "/records/oprd/2024-12-18_1717-oregon-state-parks-umpqua-tugman-mu-2025-vol.pdf" }, { label: "Tugman Yurt Assignment Description", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Tugman-Yurt-Assignment-Description.docx" }, { label: "Site Directory Tugman", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Site-Directory-Tugman.pdf" }, { label: "January Weekly Host Schedule DRAFT", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-January-Weekly-Host-Schedule-DRAFT.pdf" }, { label: "Umpqua Tugman Host Resource Guide", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Umpqua-Tugman-Host-Resource-Guide.docx" }],
+            docs: [{ label: "Oregon State Parks – Umpqua-Tugman MU 2025 Volunteer Assignment Confir", href: "/records/oprd/2024-12-18_1717-oregon-state-parks-umpqua-tugman-mu-2025-vol.pdf" }, { label: "Tugman Yurt Assignment Description", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Tugman-Yurt-Assignment-Description.docx" }, { label: "Site Directory Tugman", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Site-Directory-Tugman.pdf" }, { label: "Umpqua Tugman Host Resource Guide", href: "/records/oprd/attachments/01jfe4cxyg5y40scja2h3etmt2-Umpqua-Tugman-Host-Resource-Guide.docx" }],
             eml: "/records/oprd/eml/2024-12-18_1717_oregon-state-parks-umpqua-tugman-mu-2025-vol.eml",
         },
         {
