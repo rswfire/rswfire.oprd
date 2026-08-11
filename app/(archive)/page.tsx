@@ -1,13 +1,12 @@
 // app/(archive)/page.tsx
 
-import {Landmark, Map} from "lucide-react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import ArchiveVideos from "@/components/ArchiveVideos";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
-import PersonLink from "@/components/PersonLink";
 import DeadmanReveal from "@/components/DeadmanReveal";
+import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 import { THREADS } from "@/data/threads";
 import { FAQ_QUESTIONS } from "@/data/faq";
@@ -54,37 +53,11 @@ export default function OverviewPage() {
                         </Link>
                     </div>
 
-                    <div className="mt-6 text-base sm:text-lg tracking-tight border-slate-200 border-t">
-                        <div className="md:mx-8 md:p-4 space-y-4">
-                            <div className="mt-4">In early 2025, I served as an unpaid volunteer at <Link href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Honeyman State Park</span><Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
-                            <div>What began as a routine volunteer assignment quickly escalated into two months of systematic psychological pressure, coercive tactics, and institutional retaliation, followed by dismissal and expulsion from all <Link href="https://www.oregon.gov/oprd/AO/Pages/AU-about.aspx" target="_blank" className="inline-flex items-baseline gap-1 text-emerald-800 hover:text-emerald-600 underline decoration-emerald-300"><span>Oregon State Parks</span><Landmark size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" /></Link>.</div>
-                            <div>This archive is not a story about me.</div>
-                            <div>It is a story about <em>them</em> &mdash; the choices they made when given evidence of abuse, when given the opportunity to stop, when given time to self-correct. And every mechanism of accountability instead used to shield themselves.</div>
-                        </div>
-                    </div>
-
-                    <div className="mt-4 pb-6 ml-0 sm:ml-8 text-base text-gray-600">
-
-                        <div className="mt-2 ml-0 sm:ml-8 pl-0 sm:pl-4 border-0 sm:border-l-4 border-emerald-700 space-y-1">
-                            <div><strong>Why I built this archive</strong>: to correct an <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600"><em>epistemic violation</em></Link>.</div>
-                            <div>It is not designed to <em>win attention</em>.</div>
-                            <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
-                        </div>
-
-                        {/* FINAL STATEMENT */}
-                        <div className="mt-8">
-                            <Link
-                                href="/tombstone"
-                                className="inline-block text-base text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
-                            >
-                                A final statement to the Oregon Parks and Recreation Department.
-                            </Link>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
+
+            {/* THE CASE, IN THEIR DOCUMENTS */}
+            <CaseTimeline />
 
             {/* ACCOUNTABILITY */}
             <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-200">
