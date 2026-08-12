@@ -176,7 +176,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -198,7 +198,7 @@ function Card({
                 <h3 className="mt-1 text-lg font-semibold tracking-tight text-gray-900">{card.title}</h3>
                 {/* Only the document's text scrolls; the date, title and
                     link hold still. */}
-                <div className="mt-2 flex-1 min-h-0 overflow-y-auto space-y-2">
+                <div className="case-scroll mt-2 flex-1 min-h-0 overflow-y-auto space-y-2">
                     {card.body.split("\n\n").map((para, i) => (
                         <p key={i} className="text-sm leading-relaxed text-gray-700">{para}</p>
                     ))}
@@ -375,7 +375,7 @@ export default function CaseTimeline() {
     // On mobile the cards are near-full-width, so the arrows hug the screen
     // edges and go translucent; sm+ keeps the solid floating buttons.
     const arrowCls =
-        "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/50 sm:bg-white/95 border border-transparent sm:border-gray-300 shadow-none sm:shadow-md text-gray-600/70 sm:text-gray-700 hover:text-emerald-800 sm:hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
+        "absolute top-1/2 -translate-y-1/2 z-10 hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
 
     return (
         <div className="mt-4 rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
@@ -386,7 +386,7 @@ export default function CaseTimeline() {
                     onClick={() => scrollToStop(stopRef.current - 1)}
                     disabled={stop <= 0}
                     aria-label="Previous"
-                    className={`${arrowCls} left-0 sm:left-2`}
+                    className={`${arrowCls} left-2`}
                 >
                     <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2" aria-hidden>
                         <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -397,7 +397,7 @@ export default function CaseTimeline() {
                     onClick={() => scrollToStop(stopRef.current + 1)}
                     disabled={stop >= STOP_COUNT - 1}
                     aria-label="Next"
-                    className={`${arrowCls} right-0 sm:right-2`}
+                    className={`${arrowCls} right-2`}
                 >
                     <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2" aria-hidden>
                         <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -413,7 +413,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
                             The chronology
                         </div>
@@ -468,7 +468,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: where to go deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <p className="text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
@@ -484,9 +484,23 @@ export default function CaseTimeline() {
                 </div>
             </div>
 
-            {/* Progress rail — one dot per stop, ends included */}
+            {/* Progress rail — one dot per stop, ends included. On small
+                screens prev/next flank the rail; the floating arrows would
+                cover the card. */}
             <div className="px-4 pb-4">
-                <div className="relative h-8">
+                <div className="flex items-center gap-2">
+                    <button
+                        type="button"
+                        onClick={() => scrollToStop(stopRef.current - 1)}
+                        disabled={stop <= 0}
+                        aria-label="Previous"
+                        className="sm:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
+                    >
+                        <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" aria-hidden>
+                            <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+                    <div className="relative h-8 flex-1">
                     <div className="absolute left-0 right-0 top-[13px] h-px bg-gray-200" />
                     <div
                         className="absolute left-0 top-[13px] h-px bg-emerald-700 transition-[width] duration-300"
@@ -514,6 +528,18 @@ export default function CaseTimeline() {
                             </button>
                         ))}
                     </div>
+                    </div>
+                    <button
+                        type="button"
+                        onClick={() => scrollToStop(stopRef.current + 1)}
+                        disabled={stop >= STOP_COUNT - 1}
+                        aria-label="Next"
+                        className="sm:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
+                    >
+                        <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" aria-hidden>
+                            <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
                 </div>
                 <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-gray-400">
                     <span>March 2025</span>
