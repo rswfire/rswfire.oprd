@@ -33,7 +33,6 @@ export default function OverviewPage() {
                         <blockquote className="order-2 flex-1 min-w-0 border-l-4 border-red-700 pl-4 sm:pl-6 py-2">
                             <p className="text-sm min-[400px]:text-base sm:text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">Every system was tested for it.</span>
-                                <span className="block mt-2">And every system came back with silence.</span>
                                 <span className="block mt-2">This archive is the permanent record.</span>
                             </p>
                         </blockquote>

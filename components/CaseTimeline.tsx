@@ -372,8 +372,10 @@ export default function CaseTimeline() {
         scrollToStop(stopRef.current + (e.key === "ArrowRight" ? 1 : -1));
     };
 
+    // On mobile the cards are near-full-width, so the arrows hug the screen
+    // edges and go translucent; sm+ keeps the solid floating buttons.
     const arrowCls =
-        "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
+        "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/50 sm:bg-white/95 border border-transparent sm:border-gray-300 shadow-none sm:shadow-md text-gray-600/70 sm:text-gray-700 hover:text-emerald-800 sm:hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
 
     return (
         <div className="mt-4 rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
@@ -384,7 +386,7 @@ export default function CaseTimeline() {
                     onClick={() => scrollToStop(stopRef.current - 1)}
                     disabled={stop <= 0}
                     aria-label="Previous"
-                    className={`${arrowCls} left-2`}
+                    className={`${arrowCls} left-0 sm:left-2`}
                 >
                     <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2" aria-hidden>
                         <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -395,7 +397,7 @@ export default function CaseTimeline() {
                     onClick={() => scrollToStop(stopRef.current + 1)}
                     disabled={stop >= STOP_COUNT - 1}
                     aria-label="Next"
-                    className={`${arrowCls} right-2`}
+                    className={`${arrowCls} right-0 sm:right-2`}
                 >
                     <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2" aria-hidden>
                         <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -411,7 +413,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
                             The chronology
                         </div>
@@ -458,6 +460,7 @@ export default function CaseTimeline() {
                                 A final statement to the Oregon Parks and Recreation Department.
                             </Link>
                         </div>
+                        </div>
                     </div>
 
                     {CASE_CARDS.map((card, i) => (
@@ -465,7 +468,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: where to go deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <p className="text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
@@ -476,6 +479,7 @@ export default function CaseTimeline() {
                         >
                             The accountability pages →
                         </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -517,7 +521,7 @@ export default function CaseTimeline() {
                         {CASE_CARDS[stop - 1] ? (
                             <>
                                 <span className="text-gray-600 font-semibold">{CASE_CARDS[stop - 1].date}</span>
-                                <span className="text-gray-500">{CASE_CARDS[stop - 1].title}</span>
+                                <span className="hidden sm:block text-gray-500">{CASE_CARDS[stop - 1].title}</span>
                             </>
                         ) : (
                             <span className="text-xs tracking-[0.25em] text-gray-600 font-semibold">
