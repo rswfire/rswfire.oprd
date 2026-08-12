@@ -28,19 +28,11 @@ export default function Header() {
     }, [mobileMenuOpen]);
 
     return (
-        <header className="sticky top-0 z-20 border-b border-stone-200 bg-white backdrop-blur">
+        <header className="relative z-20 border-b border-stone-200 bg-white lg:sticky lg:top-0">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
                     <Link href="/" className="flex items-start gap-3">
-                        <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-md">
-                            <Icon
-                                name="TreeDeciduous"
-                                size="26"
-                                className="text-emerald-700"
-                            />
-                        </div>
-
                         <div className="leading-tight">
                             <h1 className="text-sm sm:text-lg font-bold tracking-wide uppercase text-slate-900">
                                 OPRD Volunteer Abuse
@@ -66,20 +58,45 @@ export default function Header() {
                         <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
                     </div>
 
-                    {mounted && (
-                        <button
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="lg:hidden rounded-md p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                            aria-label="Toggle menu"
-                        >
-                            <Icon name={mobileMenuOpen ? "X" : "Menu"} size="22" />
-                        </button>
-                    )}
                 </div>
 
+                {/* Floating menu button — the header itself scrolls away on
+                    mobile; this stays. */}
+                {mounted && (
+                    <button
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label="Toggle menu"
+                        className="lg:hidden fixed top-3 right-3 z-50 flex flex-col items-center gap-0.5 rounded-xl border border-stone-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur hover:shadow-lg transition-shadow"
+                    >
+                        <Icon
+                            name={mobileMenuOpen ? "X" : "TreeDeciduous"}
+                            size="24"
+                            className="text-emerald-700"
+                        />
+                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-600">
+                            {mobileMenuOpen ? "Close" : "Menu"}
+                        </span>
+                    </button>
+                )}
+
                 {mounted && mobileMenuOpen && (
-                    <nav className="lg:hidden mt-3 border-t border-slate-200 pt-2 max-h-[calc(100vh-120px)] overflow-y-auto">
-                        <ul className="space-y-0">
+                    <nav className="lg:hidden fixed inset-0 z-40 overflow-y-auto bg-white px-4 pt-4 pb-8">
+                        <Link
+                            href="/"
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="block border-b border-slate-200 pb-3 pr-24 leading-tight"
+                        >
+                            <h1 className="text-sm font-bold tracking-wide uppercase text-slate-900">
+                                OPRD Volunteer Abuse
+                            </h1>
+                            <h2 className="text-xs font-semibold tracking-tight text-slate-600">
+                                Oregon Parks &amp; Recreation Department
+                            </h2>
+                            <p className="text-xs tracking-tight text-slate-500">
+                                Director Lisa Sumption's Stewardship
+                            </p>
+                        </Link>
+                        <ul className="mt-2 space-y-0">
                             {archiveSections.map((section, index) => {
                                 if (section.separator) {
                                     return (

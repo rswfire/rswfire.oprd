@@ -164,7 +164,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[calc(100dvh-8rem)] sm:max-h-none flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -176,7 +176,7 @@ function Card({
 
             <CardMedia card={card} onOpenDoc={() => onOpenDoc(card)} />
 
-            <div className="flex-1 flex flex-col p-4">
+            <div className="flex-1 flex flex-col p-4 overflow-y-auto">
                 <div className="flex items-baseline justify-between gap-3">
                     <div className="text-base font-semibold text-gray-900">{card.date}</div>
                     <div className="text-[10px] uppercase tracking-widest text-gray-500 whitespace-nowrap">
@@ -276,41 +276,46 @@ export default function CaseTimeline() {
         [stopEls],
     );
 
-    // Track which stop owns the center of the strip.
+    // Which stop owns the center of the strip right now.
+    const computeStop = useCallback(() => {
+        const scroller = scrollerRef.current;
+        if (!scroller) return;
+        const mid = scroller.scrollLeft + scroller.clientWidth / 2;
+        const els = stopEls();
+        let best = 0;
+        let bestDist = Infinity;
+        els.forEach((el, i) => {
+            const center = el.offsetLeft + el.offsetWidth / 2;
+            const dist = Math.abs(center - mid);
+            if (dist < bestDist) {
+                bestDist = dist;
+                best = i;
+            }
+        });
+        setStop(best);
+        stopRef.current = best;
+        (window as unknown as Record<string, unknown>).__caseDebug = { best, scrollLeft: scroller.scrollLeft, at: performance.now() };
+        if (interacted.current) {
+            const card = CASE_CARDS[best - 1];
+            const hash = card ? `case-${card.id}` : best === 0 ? "case-start" : "case-record";
+            history.replaceState(null, "", `#${hash}`);
+        }
+    }, [stopEls]);
+
     useEffect(() => {
         const scroller = scrollerRef.current;
         if (!scroller) return;
         let raf = 0;
         const onScroll = () => {
             cancelAnimationFrame(raf);
-            raf = requestAnimationFrame(() => {
-                const mid = scroller.scrollLeft + scroller.clientWidth / 2;
-                const els = stopEls();
-                let best = 0;
-                let bestDist = Infinity;
-                els.forEach((el, i) => {
-                    const center = el.offsetLeft + el.offsetWidth / 2;
-                    const dist = Math.abs(center - mid);
-                    if (dist < bestDist) {
-                        bestDist = dist;
-                        best = i;
-                    }
-                });
-                setStop(best);
-                stopRef.current = best;
-                if (interacted.current) {
-                    const card = CASE_CARDS[best - 1];
-                    const hash = card ? `case-${card.id}` : best === 0 ? "case-start" : "case-record";
-                    history.replaceState(null, "", `#${hash}`);
-                }
-            });
+            raf = requestAnimationFrame(computeStop);
         };
         scroller.addEventListener("scroll", onScroll, { passive: true });
         return () => {
             scroller.removeEventListener("scroll", onScroll);
             cancelAnimationFrame(raf);
         };
-    }, [stopEls]);
+    }, [computeStop]);
 
     // Vertical wheel advances the strip — but never traps the page: at
     // either end, the event is left alone so the page keeps scrolling.
@@ -331,18 +336,23 @@ export default function CaseTimeline() {
         return () => scroller.removeEventListener("wheel", onWheel);
     }, []);
 
-    // #case-<id> deep link — the intro and outro panels included.
+    // #case-<id> deep link — the intro and outro panels included. The
+    // browser's own anchor scroll runs before hydration, so no scroll event
+    // reaches the listener; the stop is computed directly afterwards.
     useEffect(() => {
         const m = window.location.hash.match(/^#case-(.+)$/);
-        if (!m) return;
-        const els = stopEls();
-        const stopIndex =
-            m[1] === "start" ? 0 :
-            m[1] === "record" ? els.length - 1 :
-            CASE_CARDS.findIndex((c) => c.id === m[1]) + 1;
-        if (stopIndex < 1 && m[1] !== "start") return;
-        els[stopIndex]?.scrollIntoView({ behavior: "auto", inline: "center", block: "nearest" });
-    }, [stopEls]);
+        if (m) {
+            const els = stopEls();
+            const stopIndex =
+                m[1] === "start" ? 0 :
+                m[1] === "record" ? els.length - 1 :
+                CASE_CARDS.findIndex((c) => c.id === m[1]) + 1;
+            if (stopIndex >= 1 || m[1] === "start") {
+                els[stopIndex]?.scrollIntoView({ behavior: "auto", inline: "center", block: "nearest" });
+            }
+        }
+        computeStop();
+    }, [stopEls, computeStop]);
 
     const onKeyDown = (e: React.KeyboardEvent) => {
         if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
@@ -389,7 +399,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] flex flex-col justify-center px-2">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[calc(100dvh-8rem)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
                             The chronology
                         </div>
@@ -442,7 +452,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: where to go deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] flex flex-col justify-center px-2">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[calc(100dvh-8rem)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
                         <p className="text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.

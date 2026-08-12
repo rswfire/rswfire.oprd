@@ -29,7 +29,7 @@ export default function OverviewPage() {
                         <span className="block">integrity.</span>
                     </div>
 
-                    <div className="mt-4 flex flex-row items-center gap-4 px-2 sm:px-4 md:gap-8 md:px-6 lg:px-10">
+                    <div className="mt-4 mb-4 sm:mb-6 flex flex-row items-center gap-4 px-2 sm:px-4 md:gap-8 md:px-6 lg:px-10">
                         <blockquote className="order-2 flex-1 min-w-0 border-l-4 border-red-700 pl-4 sm:pl-6 py-2">
                             <p className="text-sm min-[400px]:text-base sm:text-lg md:text-base text-gray-800 leading-relaxed">
                                 <span className="block">Every system was tested for it.</span>
