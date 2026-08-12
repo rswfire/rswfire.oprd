@@ -31,6 +31,7 @@ const mediaUrl = (signalId: string, item: "video" | "thumbnail") =>
 // contradicts the state record, and is never dressed as either.
 const AUTHOR_STYLE: Record<CaseAuthor, { band: string; label: string; quote: string }> = {
     state: { band: "bg-slate-800 text-slate-100", label: "The State of Oregon", quote: "border-slate-400" },
+    recorded: { band: "bg-slate-800 text-slate-100", label: "Their Own Words", quote: "border-slate-400" },
     federal: { band: "bg-stone-600 text-stone-50", label: "A Federal Third Party", quote: "border-stone-400" },
     volunteer: { band: "bg-emerald-800 text-emerald-50", label: "The Volunteer", quote: "border-emerald-600" },
 };
@@ -217,6 +218,17 @@ function Card({
 
 // ─── The timeline ────────────────────────────────────────────────────────────
 
+// Numbers under one hundred are spelled out in the site's prose.
+const ONES = ["zero","one","two","three","four","five","six","seven","eight","nine","ten",
+    "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+const TENS = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+function spell(n: number): string {
+    if (n < 20) return ONES[n];
+    if (n < 100) return TENS[Math.floor(n / 10)] + (n % 10 ? "-" + ONES[n % 10] : "");
+    return String(n);
+}
+const capitalize = (w: string) => w.charAt(0).toUpperCase() + w.slice(1);
+
 // Rail stops: the intro panel, every card, the outro panel.
 const STOP_COUNT = CASE_CARDS.length + 2;
 const stopLabel = (stop: number): string => {
@@ -235,7 +247,10 @@ export default function CaseTimeline() {
     const [view, setView] = useState<ViewDoc | null>(null);
     const interacted = useRef(false);
 
-    const stateCount = useMemo(() => CASE_CARDS.filter((c) => c.author === "state").length, []);
+    const stateCount = useMemo(
+        () => CASE_CARDS.filter((c) => c.author === "state" || c.author === "recorded").length,
+        [],
+    );
 
     // Documents only, for viewer prev/next — the reader walks the paper trail.
     const docCards = useMemo(() => CASE_CARDS.filter((c) => c.ulid), []);
@@ -404,7 +419,7 @@ export default function CaseTimeline() {
                             The chronology
                         </div>
                         <h2 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
-                            The case, in their documents
+                            The case, in their documents.
                         </h2>
                         <p className="mt-3 text-sm leading-relaxed text-gray-700">
                             In early 2025, I served as an unpaid volunteer at{" "}
@@ -416,15 +431,16 @@ export default function CaseTimeline() {
                                 <span>Honeyman State Park</span>
                                 <Map size={13} strokeWidth={1.5} className="relative top-[2px] shrink-0" />
                             </Link>. What happened over the next eighteen months is told here in
-                            order — mostly in the state’s own records. {stateCount} of the {CASE_CARDS.length}{" "}
-                            that follow were written by the State of Oregon. Click any document to read it in
-                            full.
+                            order. {capitalize(spell(stateCount))} of the{" "}
+                            {spell(CASE_CARDS.length)} that follow are the state’s own words.
                         </p>
                         <p className="mt-3 text-sm leading-relaxed text-gray-700">
                             This archive is not a story about me. It is a story about <em>them</em> — the choices
                             they made when given evidence of abuse, when given the opportunity to stop, when
-                            given time to self-correct. And every mechanism of accountability instead used to
-                            shield themselves.
+                            given time to self-correct.
+                        </p>
+                        <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                            Every mechanism of accountability was used to shield themselves.
                         </p>
                         <div className="mt-3 pl-4 border-l-4 border-emerald-700 space-y-1 text-sm leading-relaxed text-gray-700">
                             <div>
@@ -498,9 +514,20 @@ export default function CaseTimeline() {
                         ))}
                     </div>
                 </div>
-                <div className="flex justify-between text-[10px] uppercase tracking-widest text-gray-400">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-gray-400">
                     <span>March 2025</span>
-                    <span className="text-gray-600 font-semibold">{stopLabel(stop)}</span>
+                    <span className="flex min-h-[2.1rem] flex-col items-center justify-center text-center leading-tight">
+                        {CASE_CARDS[stop - 1] ? (
+                            <>
+                                <span className="text-gray-600 font-semibold">{CASE_CARDS[stop - 1].date}</span>
+                                <span className="text-gray-500">{CASE_CARDS[stop - 1].title}</span>
+                            </>
+                        ) : (
+                            <span className="text-xs tracking-[0.25em] text-gray-600 font-semibold">
+                                {stop === 0 ? "Start" : "End"}
+                            </span>
+                        )}
+                    </span>
                     <span>August 2026</span>
                 </div>
             </div>
