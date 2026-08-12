@@ -82,6 +82,9 @@ function CardMedia({ card, onOpenDoc }: { card: CaseCard; onOpenDoc: () => void 
     if (card.signalId) {
         return (
             <div className="relative h-44 bg-slate-900 overflow-hidden">
+                <span className="absolute top-2 left-2 z-10 font-mono text-[9px] tracking-tight text-white/60 pointer-events-none">
+                    {card.signalId}
+                </span>
                 {playing && !failed ? (
                     <video
                         src={mediaUrl(card.signalId, "video")}
@@ -125,24 +128,32 @@ function CardMedia({ card, onOpenDoc }: { card: CaseCard; onOpenDoc: () => void 
 
     if (card.ulid) {
         return (
-            <button
-                type="button"
-                onClick={onOpenDoc}
-                className="group/media relative block w-full h-44 overflow-hidden bg-gray-100 border-b border-gray-200 cursor-pointer text-left"
-                aria-label={`Open document: ${card.title}`}
-            >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                    src={`${PREFIX}/case/${card.ulid}.jpg`}
-                    alt={`First page — ${card.title}`}
-                    loading="lazy"
-                    className="w-full object-cover object-top group-hover/media:scale-[1.02] transition-transform duration-300"
-                />
-                <span className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white/90 to-transparent" />
-                <span className="absolute bottom-2 right-2 rounded bg-gray-900/80 px-2.5 py-1 text-[10px] uppercase tracking-widest text-white group-hover/media:bg-gray-900 transition-colors">
-                    Read the document
-                </span>
-            </button>
+            <div className="relative border-b border-gray-200">
+                <button
+                    type="button"
+                    onClick={onOpenDoc}
+                    className="group/media relative block w-full h-44 overflow-hidden bg-gray-100 cursor-pointer text-left"
+                    aria-label={`Open document: ${card.title}`}
+                >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        src={`${PREFIX}/case/${card.ulid}.jpg`}
+                        alt={`First page — ${card.title}`}
+                        loading="lazy"
+                        className="w-full object-cover object-top group-hover/media:scale-[1.02] transition-transform duration-300"
+                    />
+                    <span className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white/90 to-transparent" />
+                    <span className="absolute bottom-2 right-2 rounded bg-gray-900/80 px-2.5 py-1 text-[10px] uppercase tracking-widest text-white group-hover/media:bg-gray-900 transition-colors">
+                        Read the document
+                    </span>
+                </button>
+                <Link
+                    href={`/accountability/${BY_ULID[card.ulid]?.slug}/${card.ulid}`}
+                    className="absolute bottom-2 left-2 font-mono text-[9px] tracking-tight text-gray-500 hover:text-emerald-700 transition-colors"
+                >
+                    {card.ulid}
+                </Link>
+            </div>
         );
     }
 
@@ -165,7 +176,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[calc(100dvh-8rem)] sm:max-h-none flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -177,7 +188,7 @@ function Card({
 
             <CardMedia card={card} onOpenDoc={() => onOpenDoc(card)} />
 
-            <div className="flex-1 flex flex-col p-4 overflow-y-auto">
+            <div className="flex-1 min-h-0 flex flex-col p-4 pb-3">
                 <div className="flex items-baseline justify-between gap-3">
                     <div className="text-base font-semibold text-gray-900">{card.date}</div>
                     <div className="text-[10px] uppercase tracking-widest text-gray-500 whitespace-nowrap">
@@ -185,28 +196,24 @@ function Card({
                     </div>
                 </div>
                 <h3 className="mt-1 text-lg font-semibold tracking-tight text-gray-900">{card.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-700">{card.body}</p>
-                {card.quote && (
-                    <blockquote className={`mt-3 border-l-2 pl-3 ${style.quote}`}>
-                        <p className="font-serif italic text-[15px] leading-relaxed text-gray-800">
-                            {card.quote.startsWith("…") || card.quote.startsWith("FOR") ? card.quote : `“${card.quote}”`}
-                        </p>
-                    </blockquote>
-                )}
-                <div className="mt-auto pt-4 flex items-center justify-between gap-3">
-                    {card.ulid ? (
-                        <Link
-                            href={`/accountability/${BY_ULID[card.ulid]?.slug}/${card.ulid}`}
-                            className="font-mono text-[10px] tracking-tight text-gray-400 hover:text-emerald-700 transition-colors"
-                        >
-                            {card.ulid}
-                        </Link>
-                    ) : (
-                        <span className="font-mono text-[10px] tracking-tight text-gray-400">{card.signalId}</span>
+                {/* Only the document's text scrolls; the date, title and
+                    link hold still. */}
+                <div className="mt-2 flex-1 min-h-0 overflow-y-auto space-y-2">
+                    {card.body.split("\n\n").map((para, i) => (
+                        <p key={i} className="text-sm leading-relaxed text-gray-700">{para}</p>
+                    ))}
+                    {card.quote && (
+                        <blockquote className={`mt-3 border-l-2 pl-3 ${style.quote}`}>
+                            <p className="font-serif italic text-[15px] leading-relaxed text-gray-800">
+                                {card.quote.startsWith("…") || card.quote.startsWith("FOR") ? card.quote : `“${card.quote}”`}
+                            </p>
+                        </blockquote>
                     )}
+                </div>
+                <div className="pt-3">
                     <Link
                         href={card.href}
-                        className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600 whitespace-nowrap"
+                        className="block border-t border-gray-200 pt-3 text-center text-sm font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600"
                     >
                         {card.hrefLabel} →
                     </Link>
@@ -244,6 +251,8 @@ export default function CaseTimeline() {
     // Rapid arrow clicks arrive before the scroll listener updates state;
     // the ref always holds the latest settled-or-requested stop.
     const stopRef = useRef(0);
+    // The last stop written into the URL hash.
+    const hashStop = useRef(-1);
     const [view, setView] = useState<ViewDoc | null>(null);
     const interacted = useRef(false);
 
@@ -309,11 +318,18 @@ export default function CaseTimeline() {
         });
         setStop(best);
         stopRef.current = best;
-        (window as unknown as Record<string, unknown>).__caseDebug = { best, scrollLeft: scroller.scrollLeft, at: performance.now() };
-        if (interacted.current) {
+        // Only touch the History API when the stop actually changes —
+        // Firefox rate-limits replaceState and throws past the limit,
+        // which killed the page under rapid clicking.
+        if (interacted.current && best !== hashStop.current) {
+            hashStop.current = best;
             const card = CASE_CARDS[best - 1];
             const hash = card ? `case-${card.id}` : best === 0 ? "case-start" : "case-record";
-            history.replaceState(null, "", `#${hash}`);
+            try {
+                history.replaceState(null, "", `#${hash}`);
+            } catch {
+                // rate-limited: the next change will catch up
+            }
         }
     }, [stopEls]);
 
@@ -331,25 +347,6 @@ export default function CaseTimeline() {
             cancelAnimationFrame(raf);
         };
     }, [computeStop]);
-
-    // Vertical wheel advances the strip — but never traps the page: at
-    // either end, the event is left alone so the page keeps scrolling.
-    useEffect(() => {
-        const scroller = scrollerRef.current;
-        if (!scroller) return;
-        const onWheel = (e: WheelEvent) => {
-            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return; // native horizontal
-            const max = scroller.scrollWidth - scroller.clientWidth;
-            const forward = e.deltaY > 0;
-            if ((forward && scroller.scrollLeft < max - 1) || (!forward && scroller.scrollLeft > 1)) {
-                e.preventDefault();
-                interacted.current = true;
-                scroller.scrollLeft += e.deltaY;
-            }
-        };
-        scroller.addEventListener("wheel", onWheel, { passive: false });
-        return () => scroller.removeEventListener("wheel", onWheel);
-    }, []);
 
     // #case-<id> deep link — the intro and outro panels included. The
     // browser's own anchor scroll runs before hydration, so no scroll event
@@ -414,7 +411,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[calc(100dvh-8rem)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
                             The chronology
                         </div>
@@ -468,7 +465,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: where to go deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[calc(100dvh-8rem)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-none overflow-y-auto flex flex-col justify-center px-2">
                         <p className="text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
