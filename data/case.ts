@@ -100,7 +100,7 @@ export const CASE_CARDS: CaseCard[] = [
         author: "recorded",
         authorLabel: "Program Manager, OPRD",
         typeLabel: "Recording · 30:56",
-        title: "Then they dismissed my evidence.",
+        title: "Then they dismissed the evidence.",
         body: "Less than a day later, the program manager called from Salem. I told her I was still processing what had just happened and needed more time. She said okay, and in the next breath: “That dismissal is still moving forward.”\n\nThen she worked through the file they had built. Unnamed sources. A found journal. Conversations I never had, including words I never said. I answered every item with specifics, and every answer was filed as “perspective.”\n\nShe closed by promising a process, with a determination about my year of placements by Friday.",
         signalId: "01JQ59R3S0SHQ18E23BC0BM696",
         duration: "30:56",
