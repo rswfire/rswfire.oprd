@@ -4284,6 +4284,23 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-08-11_1315_electronic-communications.eml",
         },
         {
+            id: "document-notification",
+            ulid: "01KZZ5VDBG9FR4BRN1KBMRH28B",
+            date: "August 13, 2026",
+            time: "8:43 PM",
+            d: "2026-08-13",
+            from: "Robert Samuel White",
+            to: "[Park Supervisor]; [Volunteer Services Lead]; [Park Manager]; [Program Manager]; Director Lisa Sumption",
+            kind: "notice",
+            title: "Document Notification",
+            summary: "Notification to the named individuals, the Director, the Commission and the Governor of a document to be circulated to legislators, press and educators, linking the primary records. The deck is attached as sent.",
+            docs: [
+                { label: "Document Notification", href: "/records/oprd/2026-08-13-document-notification.pdf" },
+                { label: "The Record of What Happened", href: "/records/oprd/attachments/01kzz5vdbg9fr4brn1kbmrh28b-the-record-of-what-happened.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-08-13_2043_document-notification.eml",
+        },
+        {
             id: "2025-02-12_0956_hosting-for-march-2025-park-manager-reply",
             ulid: "01JKXHEPAR0PEQMPJXJGG9GZJ4",
             date: "February 12, 2025",
