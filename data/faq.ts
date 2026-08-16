@@ -15,6 +15,7 @@ export const FAQ_QUESTIONS: FaqQuestion[] = [
     { id: "move-on", question: "Why not move on?" },
     { id: "response", question: "Have they responded to any of this?" },
     { id: "verify", question: "How can people verify this documentation?" },
+    { id: "ai", question: "Does any of this use AI?" },
     { id: "accountability", question: "What do you want to happen?" },
     { id: "retaliation", question: "Aren't you worried about retaliation?" },
     { id: "proper-channels", question: "Why make this public instead of going through proper channels?" },

@@ -139,6 +139,19 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
+                <div id="ai" className="scroll-mt-48">
+                    <h2 className="text-xl font-semibold mb-3">
+                        Does any of this use AI?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>Yes. I&rsquo;ve used machines all of my life. AI is no different.</div>
+                        <div>AI is in all of my writing, this site included, and I am not ashamed of that. It works from my intent. Directing it is the job: I decide what needs to be said, and I make sure the language is accurate and says it. Nothing is published here that I have not read, corrected, and stood behind.</div>
+                        <div>None of this touches the record. The state&rsquo;s letters are preserved as received. The recordings are unedited. The emails carry cryptographic signatures. Download any original and verify it yourself. You do not have to trust me, and you do not have to trust a machine.</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
                 {/* Question 7 */}
                 <div id="accountability" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
