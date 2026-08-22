@@ -5497,6 +5497,24 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Re: PR27478 - Funds secured", href: "/records/osp/2026-08-20-funds-secured.pdf" }],
             eml: "/records/osp/eml/2026-08-20_2224_funds-secured.eml",
         },
+        {
+            id: "2026-08-21_1425_tracking-number",
+            ulid: "01M0K3ECVRYYT8H5HSWTXV9475",
+            flagged: true,
+            date: "August 21, 2026",
+            time: "2:25 PM",
+            d: "2026-08-21",
+            from: "Robert Samuel White",
+            to: "Micah Hubbard, OSP; Holly Bolton, OSP",
+            kind: "followup",
+            title: "Re: PR27478 - Tracking number",
+            summary: "The tracking number for the mailed fee, copied to the Director, the Governor and the Commission, with a photo from the gate. Notice that the next dispute goes to court, not to the Attorney General.",
+            docs: [
+                { label: "Re: PR27478 - Tracking number", href: "/records/osp/2026-08-21-tracking-number.pdf" },
+                { label: "Photo from the gate", href: "/records/osp/attachments/01m0k3ecvryyt8h5hswtxv9475-1000015119.jpg" },
+            ],
+            eml: "/records/osp/eml/2026-08-21_1425_tracking-number.eml",
+        },
     ],
 };
 
