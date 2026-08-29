@@ -126,7 +126,7 @@ export default function EvidencePage() {
                         8. INSTITUTIONAL CONTAINMENT
                     </Link>
                     <div className="mt-2 text-sm text-gray-700">
-                        August 2025–February 2026 — Every institutional response to accountability — the Director's procedural deflection, the public records obstruction, the reframing of documentation as emotional processing, the Deputy Director's attempt to restrict communication — follows the same logic. Not correction. Containment.
+                        August 2025–February 2026 — Every institutional response to accountability — the Director's procedural deflection, the public records obstruction, the use of therapeutic language to answer documentation, the Deputy Director's attempt to restrict communication — follows the same logic. Not correction. Containment.
                     </div>
                     <div className="mt-2 text-sm font-semibold">
                         Format: Email correspondence, official agency communications

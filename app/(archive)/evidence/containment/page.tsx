@@ -85,7 +85,7 @@ export default function ContainmentPage() {
             <h2 className="text-xl font-semibold">DECEMBER 8, 2025 — THE CLOSURE</h2>
 
             <div className="mt-4">
-                <Link href="/lisa-sumption/closure/" className="underline text-emerald-800 hover:text-emerald-600">Director Sumption's final response</Link> reframed the entire documented record as emotional processing. She closed communication.
+                <Link href="/lisa-sumption/closure/" className="underline text-emerald-800 hover:text-emerald-600">Director Sumption's final response</Link> answered the entire documented record with therapeutic language. She closed communication.
             </div>
 
             <div className="mt-4">

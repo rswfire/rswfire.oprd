@@ -37,13 +37,14 @@ export default function FAQPage() {
                 {/* Question 1 */}
                 <div id="sue" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
-                        Why didn't you sue them?
+                        Why haven't you sued them?
                     </h2>
                     <div className="space-y-4">
-                        <div>Because suing them would have allowed them to disappear the evidence.</div>
-                        <div>It would have potentially required my silence during the litigation and it often ends in settlements with NDAs &mdash; and I will <em>never</em> agree to sign one.</div>
-                        <div>Litigation favors institutions with resources and time. Public documentation favors truth that can't be sealed or settled away.</div>
-                        <div>This doesn't mean I won't. I'm tracking statutes of limitations. I'm considering every option. And I'm giving them every opportunity to prevent it.</div>
+                        <div>Because I chose to establish the public record first. Litigation can limit what becomes public and end in a settlement with an NDA. I will not sign one.</div>
+                        <div>But I will sue. OPRD&rsquo;s statewide exclusion remains in force. It is an ongoing prohibition on volunteer service imposed in writing for public speech. I have a claim under 42 U.S.C. &sect; 1983 against Director Lisa Sumption.</div>
+                        <div>I also intend to sue over the police operation of March 24, 2026, when three men with guns came through a locked federal gate to my home and workplace because of what I published about OPRD. I served <Link href="/accountability/oprd/01KYFER0GR6CQHWMTVNTBJV58S" className="text-emerald-700 underline hover:text-emerald-600">notice under the Oregon Tort Claims Act</Link>. Once the records identify who initiated the operation, I expect the &sect; 1983 claim to include that person.</div>
+                        <div>The public-records dispute with Oregon State Police is separate. Oregon State Police confirmed that it holds incident reports and attachments, officer notes, dispatch records, electronic communications, and body-camera footage of the March 24 police operation. I paid its $157.50 production fee for the records it agreed to process. If the agency redacts those records or claims that any record covered by my payment is exempt, I will file a public-records action against Oregon State Police. The agency is already withholding the body-camera footage. I will challenge that withholding in court. The <Link href="/accountability/osp" className="text-emerald-700 underline hover:text-emerald-600">complete records process</Link> is public.</div>
+                        <div>The record came first. Litigation comes next.</div>
                     </div>
                 </div>
 
@@ -56,7 +57,7 @@ export default function FAQPage() {
                     </h2>
                     <div className="space-y-4">
                         <div>This question implies I did something to justify what happened.</div>
-                        <div>Ask yourself this instead: what could I have done that justifies sustained psychological pressure over two months, dismissal without cause, permanent ban from volunteer service, and seven months of institutional silence after comprehensive evidence was provided?</div>
+                        <div>Ask yourself this instead: what could I have done that justifies sustained psychological pressure over two months, dismissal without cause, a permanent statewide ban from volunteer service, three men with guns at my home and workplace one year later, and the institution&rsquo;s continuing refusal to account for any of it?</div>
                         <div>The answer is nothing.</div>
                         <div>Because the question itself is backwards.</div>
                         <div>The issue isn't what I did &mdash; the issue is what <em>they did</em> when someone documented their behavior and refused to accept their behavior as normal.</div>
@@ -110,12 +111,11 @@ export default function FAQPage() {
                     </h2>
 
                     <div className="space-y-4">
-                        <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">responded in August 2025</Link> with procedural language and no commitments. She <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">closed communication in December 2025</Link>, reframing comprehensive documentation of misconduct and retaliation as &quot;emotional processing.&quot;</div>
+                        <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">responded in August 2025</Link> with procedural language and no commitments. She <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">closed communication in December 2025</Link>, answering comprehensive documentation of misconduct and retaliation with therapeutic language.</div>
                         <div>This is a common institutional response to documented harm: evidence is reduced to emotion, documentation is treated as distress, and continued reporting is framed as the problem rather than the conduct being reported.</div>
                         <div>The effects of this response are predictable and harmful. It delegitimizes documented abuse, discourages others from reporting, and shields the people who caused the harm by recasting accountability requests as instability.</div>
                         <div>No investigation was ordered. No findings were issued. No corrective action was taken.</div>
-                        <div>Governor Kotek’s office and campaign have been contacted multiple times. No response. Not even an acknowledgement of receipt.</div>
-                        <div><Link href="/governor-kotek" className="text-emerald-700 underline hover:text-emerald-600">They have been silent</Link>.</div>
+                        <div>Governor Kotek&rsquo;s office has been contacted repeatedly and copied on the later record. There has been no response and no acknowledgment of receipt. <Link href="/governor-kotek" className="text-emerald-700 underline hover:text-emerald-600">That complete silence is documented here</Link>.</div>
                     </div>
                 </div>
 
@@ -181,15 +181,12 @@ export default function FAQPage() {
                     </h2>
 
                     <div className="space-y-4">
+                        <div>No.</div>
                         <div>They already retaliated.</div>
                         <div>That's documented in <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">the program manager's removal letter</Link>, which explicitly states I was banned for speaking publicly about what happened.</div>
-                        <div>This took away any soft leverage they might have held over me.</div>
-                        <div>Could they retaliate further? Yes. They could attempt to damage my reputation through back channels. They could use their institutional positions to interfere with future opportunities. They could continue the unethical patterns I've documented across months.</div>
-                        <div>They may attempt to pathologize me publicly if institutional pressure increases.</div>
-                        <div>All of this is possible. But I will not be silent. That is what they are counting on. Silence serves their interests, and their interests are not aligned with the truth.</div>
-                        <div>If they retaliate, it will simply add to this record. More documentation of an institution that protects abusers and punishes those who document abuse.</div>
-                        <div>But every action they take now happens in public view. This protects me to an extent.</div>
-                        <div>More importantly, it may protect someone else.</div>
+                        <div>The retaliation did not end with expulsion. On March 24, 2026 &mdash; exactly one year after my dismissal &mdash; three men with guns came through a locked gate to the federal land where I live and work because of what I published about OPRD. I declined to speak without an attorney and <Link href="/evidence/police" className="text-emerald-700 underline hover:text-emerald-600">recorded them leaving</Link>.</div>
+                        <div>I am not worried about further retaliation.</div>
+                        <div>Any further act will enter the same public, independently verifiable record.</div>
                     </div>
                 </div>
 
@@ -201,11 +198,12 @@ export default function FAQPage() {
                         Why make this public instead of going through proper channels?
                     </h2>
                     <div className="space-y-4">
-                        <div>Because there are no such thing as proper channels in an institution like this one.</div>
+                        <div>Because I used the available channels, and the record shows what each one produced.</div>
                         <div>The program manager had the opportunity to protect me when I <Link href="/timeline" className="text-emerald-700 underline hover:text-emerald-600">reported what was happening</Link> &mdash; on March 10, the day she called to intimidate me about recording the day-use area meeting.</div>
                         <div>That was her job. There was <em>no one else</em> to escalate to if you experienced a problem. I was isolated. That is a design choice.</div>
                         <div>Instead, when I <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">documented the abuse</Link> publicly (something I only did after I'd <em>already</em> been dismissed by the park manager and told to &quot;get through my time&quot; by the program manager), she <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">retaliated in writing</Link>, explicitly citing my protected speech as the reason for expulsion.</div>
-                        <div>&quot;Proper channels&quot; only exist when institutions want accountability. When they don't, those channels become mechanisms to exhaust, isolate, and dismiss the person reporting harm.</div>
+                        <div>After that I wrote to the Director, the Deputy Director, the Commission, and the Governor. I made public records requests to OPRD, Oregon State Police, and the Department of Administrative Services. I filed petitions with the Attorney General, a federal incident report, and an inquiry with the U.S. Forest Service. I notified legislators about the statewide policy gap that exposes volunteers to retaliation. The <Link href="/accountability" className="text-emerald-700 underline hover:text-emerald-600">accountability pages</Link> preserve the requests and the responses in date order.</div>
+                        <div>A &quot;proper channel&quot; is meaningful only if it can produce accountability. Here, every available channel preserved the institution&rsquo;s authority while exhausting, isolating, or dismissing the person reporting harm.</div>
                         <div>But here's the better question: why shouldn't I document in public?</div>
                         <div>Who are we protecting by keeping institutional abuse private? The answer is the institution &mdash; not the people it harms.</div>
                         <div>And I know this is shocking, but institutions don't have to harm people.</div>
@@ -220,12 +218,14 @@ export default function FAQPage() {
                         What does their silence mean?
                     </h2>
                     <div className="space-y-4">
-                        <div>Their silence is a choice. It is also evidence.</div>
+                        <div>Their silence is a choice.</div>
                         <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">received comprehensive evidence</Link> in August 2025 &mdash; audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action.</div>
-                        <div>Governor Kotek's office has been notified multiple times over months. No response. Not even acknowledgment &mdash; the minimum standard of professional communication.</div>
-                        <div>Silence means they believe shielding abusers from accountability is more important than the safety of volunteers who offer their labor freely to support public institutions.</div>
-                        <div>It means they've decided the political cost of accountability is higher than the risk of doing nothing. It means every person involved in targeting me remains in their position, free to do this again to someone else &mdash; only next time, with increased liability because I made the pattern visible.</div>
-                        <div>Their silence is not neutrality. It's a decision. And it's documented.</div>
+                        <div>Governor Kotek's office has been notified repeatedly and copied on the later interagency record. There has been no response and no acknowledgment of receipt.</div>
+                        <div>OPRD&rsquo;s silence rests on a judgment about standing. In the institution&rsquo;s view of itself, a former volunteer it expelled has no recognized position from which to require an answer: no employment relationship, no grievance right, no place inside the institution. It treats my removal as if it also removed its obligation to account for what it did.</div>
+                        <div>That is an inversion of what a public institution is.</div>
+                        <div>A public institution does not decide who has standing to question its use of public power. Its authority comes from the public. I do not need an ongoing role inside OPRD, or OPRD&rsquo;s recognition of me, to require it to answer for the conduct of its officials.</div>
+                        <div>If expelling someone also extinguishes the institution&rsquo;s obligation to answer them, removal becomes a mechanism for escaping accountability. The institution could create its own silence by first excluding the person to whom it owes an answer.</div>
+                        <div>This is not standing in the technical sense required by a court. It is the relationship between a public institution and the public from which its authority derives. OPRD answers to the public. The public does not answer to OPRD.</div>
                     </div>
                 </div>
 
@@ -237,13 +237,10 @@ export default function FAQPage() {
                         Why is your tone so direct?
                     </h2>
                     <div className="space-y-4">
-                        <div>Because I'm not performing the role they've assigned to me.</div>
-                        <div>Because I'm not performing grief or asking for sympathy. I'm documenting institutional failure with precision. And that requires precise language.</div>
-                        <div>I was targeted by people in positions of authority. I documented what they did. I reported it through every available channel. They chose silence over accountability.</div>
-                        <div>Those are facts.</div>
-                        <div>Softening my language doesn't change what happened. It just makes it easier for people to dismiss it. Direct language forces clarity: either the evidence supports the claims or it does not. Either institutions act on documented harm or they don't.</div>
-                        <div>I'm not asking anyone to feel sorry for me. The abuse happened. I processed it. Now I'm seeking accountability.</div>
-                        <div>This is what accountability sounds like.</div>
+                        <div>Because I am direct. There is nothing wrong with that.</div>
+                        <div>Direct communication is not misconduct. It does not justify coercion, surveillance, dismissal, expulsion, retaliation, or any other treatment documented in this archive.</div>
+                        <div>My tone does not alter the recordings, the correspondence, the dates, or the agency&rsquo;s own documents. The evidence either supports what I say or it does not.</div>
+                        <div>Using my directness to explain or excuse what happened would invert responsibility: it would make my manner of describing institutional conduct more important than the conduct itself.</div>
                     </div>
                 </div>
 
@@ -256,17 +253,17 @@ export default function FAQPage() {
                     </h2>
                     <div className="space-y-4">
                         <div>The institutional assertion of authority over what is considered real, even when it conflicts with lived experience.</div>
-                        <div>An epistemic violation is when someone with institutional power attempts to overwrite your direct experience with their preferred narrative &mdash; and demands you accept their version as truth.</div>
+                        <div>An epistemic violation is when someone with institutional power attempts to overwrite your direct experience with their preferred narrative &mdash; and demands you accept their version.</div>
                         <div>It's not just lying. It's the insistence that <em>their</em> account has more authority than what actually happened to you. This is what the park manager meant <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">by &quot;chew glass and swallow it.&quot;</Link></div>
-                        <div>When Director Lisa Sumption reframed comprehensive documentation as &quot;emotional processing,&quot; <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. She was asserting institutional authority to define what my evidence means &mdash; over what the evidence actually shows.</div>
-                        <div>When the park manager told me I was &quot;never given the benefit of the doubt&quot; while simultaneously claiming <em>I</em> was the problem, <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. The contradiction doesn't matter to them. What matters is that their version becomes the official record.</div>
-                        <div>When the volunteer services lead spent 90 minutes eliciting vulnerability through reciprocal disclosure, then transmitted everything I shared to the park supervisor and the park manager, who weaponized it against me &mdash; and then the program manager used those same disclosures to construct a psychological profile weaponizing my disclosures to frame me as paranoid and delusional &mdash; <Link href="/evidence/trust" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. They extracted my interior reality under false pretenses, then rewrote it as pathology.</div>
+                        <div>When Director Lisa Sumption answered comprehensive documentation with therapeutic language, <Link href="/lisa-sumption/closure" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. She was asserting institutional authority to define what my evidence means &mdash; over what the evidence actually shows.</div>
+                        <div>When the park manager told me I was &quot;never given the benefit of the doubt&quot; while simultaneously claiming <em>I</em> was the problem, <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. The contradiction remains in the recording. Their version nevertheless became the institutional account.</div>
+                        <div>When the volunteer services lead spent 90 minutes eliciting vulnerability through reciprocal disclosure, then transmitted everything I shared to the park supervisor and the park manager, who weaponized it against me &mdash; and then the program manager used those same disclosures to construct a psychological profile weaponizing my disclosures to frame me as paranoid and delusional &mdash; <Link href="/evidence/trust" className="text-emerald-700 underline hover:text-emerald-600">that was an epistemic violation</Link>. They extracted private disclosures under false pretenses, then rewrote them as pathology.</div>
                         <div>When the program manager stated in writing that I was removed for speaking publicly about what happened &mdash; then the institution acts as if retaliation didn't occur &mdash; <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">that's an epistemic violation at scale</Link>.</div>
                         <div>This is why documentation matters. Not just to prove what happened, but to refuse the institutional demand that I live inside their fiction.</div>
                         <div>They wanted me to accept their narrative: that I was unstable, that I misunderstood, that they acted appropriately, that my removal was justified.</div>
                         <div>This archive is my refusal.</div>
                         <div>Because once you let an institution overwrite reality with their preferred story, you've given them permission to do it again. To you. To others. Without limit.</div>
-                        <div>An epistemic violation isn't just about one person's experience. It's about who gets to say what's real &mdash; and what happens when documentation proves the institution wrong.</div>
+                        <div>An epistemic violation isn't just about one person's experience. It's about whose account is permitted to become knowledge &mdash; and what happens when documentation disproves the institutional account.</div>
                     </div>
                 </div>
 
@@ -278,7 +275,7 @@ export default function FAQPage() {
                         What made this case particularly egregious?
                     </h2>
                     <div className="space-y-4">
-                        <div className="italic">Their actions were designed to deliberately distort the public record, committed by a public agency, against one of its own people. This lives at the <span className="not-italic">heart of identity-based targeting</span>.</div>
+                        <div className="italic">Their actions were designed to deliberately distort the public record: institutional accusations were preserved while the evidence needed to contest them was excluded. A public agency did this to one of its own people. This lives at the <span className="not-italic">heart of identity-based targeting</span>.</div>
                         <div>They tried to dismiss and expel me with a story I could not correct.</div>
                         <div>The park manager <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">dismissed me by phone with a fabricated pretext</Link>. No documentation. No formal process. Just his word against mine.</div>
                         <div>The program manager <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">formalized my expulsion in writing</Link>, citing my protected speech &mdash; but <Link href="/evidence/trust" className="text-emerald-700 underline hover:text-emerald-600">framing it through the volunteer services lead's betrayed disclosures</Link> and their own institutional interpretation of my motives, my psychology, my reality.</div>
@@ -306,13 +303,12 @@ export default function FAQPage() {
                         What happens next?
                     </h2>
                     <div className="space-y-4">
-                        <div>That depends on them.</div>
+                        <div>The archive is no longer waiting on a single institutional response. Several tracks are now documented in parallel.</div>
                         <div>They could order an independent investigation tomorrow. They could hold people accountable. They could implement the protections volunteers deserve. They could demonstrate that institutional failure gets corrected, not protected.</div>
-                        <div>Or they can continue choosing silence.</div>
-                        <div>If they do, the <Link href="/accountability" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will keep growing. External scrutiny may increase. Independent actors might engage. Oversight mechanisms may activate. Federal oversight might intervene.</div>
-                        <div>Or not. Time will tell.</div>
+                        <div>Meanwhile, Oregon State Police has confirmed additional records concerning the March 24 visit. The production fee has been funded and mailed; the body-camera withholding remains disputed. The legislative record also asks lawmakers to correct a statewide policy that authorizes action against volunteers while extending its express anti-retaliation protection only to employees.</div>
+                        <div>The <Link href="/accountability" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will continue to record each response, refusal, production, and correction.</div>
                         <div>But I can say this much: the archive is permanent. The evidence is independently verifiable. The institutional failure is documented.</div>
-                        <div>What happens next is their choice.</div>
+                        <div>What happens next is partly their choice. Whether their choice is preserved in public is mine.</div>
                         <div>They either act or they don't. Both choices have consequences. Only one of them protects the next volunteer.</div>
                         <div>If that matters to you, ask <em>them</em> this question.</div>
                     </div>

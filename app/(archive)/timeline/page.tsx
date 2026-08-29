@@ -162,14 +162,14 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 7, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8, reframing documentation as emotional processing, closes communication.
+                        Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8 in therapeutic language and closes communication.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">December 8, 2025</div>
                     <div className="mt-2 text-sm">
-                        Director Sumption calls comprehensive documented evidence "emotional processing" and closes communication. I register <Link href="/" className="underline text-emerald-800 hover:text-emerald-600">oprdvolunteerabuse.org</Link> with my last $7 and begin building the public evidentiary archive.
+                        Director Sumption answers comprehensive documented evidence with therapeutic language and closes communication. I register <Link href="/" className="underline text-emerald-800 hover:text-emerald-600">oprdvolunteerabuse.org</Link> with my last $7 and begin building the public evidentiary archive.
                     </div>
                 </li>
 

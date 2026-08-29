@@ -249,13 +249,13 @@ export default function DisplacementPage() {
                 <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                     <p>When the volunteer continues to document and escalate, the institution builds walls.</p>
                     <p>A senior official redirects all correspondence through a single channel. The channel produces no substantive responses. Evidence of constitutional violations is described as dissatisfaction with a personnel decision. Requests for investigation are met with procedural language and no commitments. Public records requests are slow-walked past statutory deadlines then fulfilled through inaccessible portals at prohibitive cost.</p>
-                    <p>The director closes communication by reframing comprehensive documented evidence as emotional processing.</p>
+                    <p>The director closes communication by answering comprehensive documented evidence with therapeutic language.</p>
                     <p>Every mechanism of accountability is redirected to shield the people accountability was built to reach.</p>
                     <p>Then silence. The institution stops responding entirely. Not because there is nothing to say. Because everything it might say creates additional exposure. The surveillance cannot be explained. The cover story cannot be substantiated. The expulsion letter reaches up to someone who approved it. The containment wall is evidence of knowing something needed to be contained.</p>
                     <p>Silence feels like distance. The institution believes that if it stops engaging, the situation stops existing. That the volunteer will eventually exhaust themselves. That the documentation will fade when the intensity fades.</p>
                     <p>What silence actually produces is a timestamped record of institutional knowledge and inaction. Every letter unanswered. Every question ignored. Every opportunity to self-correct declined. All of it documented. All of it permanent. All of it discoverable.</p>
                     <p>Silence is not the end of the system. It is the system&rsquo;s final gift to the record.</p>
-                    <p>In this case: <Link href="/evidence/containment" className="text-red-700 hover:underline">a Deputy Director containment wall, seven months of institutional silence, and a director who called documented evidence of constitutional violations emotional processing.</Link></p>
+                    <p>In this case: <Link href="/evidence/containment" className="text-red-700 hover:underline">a Deputy Director containment wall, seven months of institutional silence, and a director who answered documented evidence of constitutional violations with therapeutic language.</Link></p>
                 </div>
             </section>
 

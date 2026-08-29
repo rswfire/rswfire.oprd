@@ -59,7 +59,7 @@ export default function LisaSumptionIndexPage() {
                     <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">
                         The Closure (December 2025)
                     </Link>
-                    &mdash; reframed documentation as emotional processing; closed communication one day before
+                    &mdash; answered documentation with therapeutic language; closed communication one day before
                     the final revelation concerning the weaponization of queer vulnerability was published.
                 </li>
             </ul>

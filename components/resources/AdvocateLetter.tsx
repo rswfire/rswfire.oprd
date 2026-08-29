@@ -90,7 +90,7 @@ export default function AdvocateLetter() {
                         <p>I spent a year trying every legitimate channel available to me. Every one failed.</p>
 
                         <p>
-                            <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption</Link> closed communication by characterizing my comprehensive documented evidence as <em>emotional processing</em>. <Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link> never responded &mdash; not once, not even an acknowledgment. Deputy Director <Link href="/evidence/containment" className="underline text-emerald-800 hover:text-emerald-600">J.R. Collier</Link> characterized documented constitutional violation as <em>dissatisfaction with a volunteer management decision</em>.
+                            <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption</Link> closed communication by answering my comprehensive documented evidence with <em>therapeutic language</em>. <Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Tina Kotek</Link> never responded &mdash; not once, not even an acknowledgment. Deputy Director <Link href="/evidence/containment" className="underline text-emerald-800 hover:text-emerald-600">J.R. Collier</Link> characterized documented constitutional violation as <em>dissatisfaction with a volunteer management decision</em>.
                         </p>
 
                         <p>
