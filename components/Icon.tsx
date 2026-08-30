@@ -2,6 +2,7 @@
 import { LucideProps } from 'lucide-react';
 import {
     AlertTriangle,
+    Bot,
     ChevronDown,
     ChevronUp,
     Eye,
@@ -27,6 +28,7 @@ import {
 
 const iconMap = {
     AlertTriangle,
+    Bot,
     ChevronDown,
     ChevronUp,
     Eye,

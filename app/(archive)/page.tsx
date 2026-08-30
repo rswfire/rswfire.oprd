@@ -7,7 +7,7 @@ import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import NewsletterSignup from "@/components/NewsletterSignup";
-import RecordFeature from "@/components/RecordFeature";
+import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 import { LEGAL_FUND_TRANSMISSION } from "@/data/20260829";
@@ -21,8 +21,8 @@ export default function OverviewPage() {
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
 
-            {/* THE OPRD RECORD — the machine's live reading of the evidence */}
-            <RecordFeature />
+            {/* THE QUERYABLE RECORD — human door and machine door */}
+            <QueryableRecord />
 
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
