@@ -78,13 +78,13 @@ export default function OverviewPage() {
                 </div>
             </a>
 
+            {/* THE CASE, IN THEIR DOCUMENTS */}
+            <CaseTimeline />
+
             {/* THE LEGAL FUND ANNOUNCEMENT — the video, with transcript */}
             <div className="mt-4">
                 <PrimaryTransmission transmission={LEGAL_FUND_TRANSMISSION} />
             </div>
-
-            {/* THE CASE, IN THEIR DOCUMENTS */}
-            <CaseTimeline />
 
             {/* ACCOUNTABILITY */}
             <div className="mt-4 p-6 rounded-xl bg-emerald-50 border border-emerald-200">
