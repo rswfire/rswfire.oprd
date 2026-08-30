@@ -10,9 +10,6 @@ export const archiveSections = [
         subsections: [
             { href: "/accountability/oprd", label: "Oregon Parks & Recreation" },
             { href: "/accountability/osp", label: "Oregon State Police" },
-            { href: "/accountability/das", label: "Administrative Services" },
-            { href: "/accountability/legislation", label: "Oregon Legislative Assembly" },
-            { href: "/accountability/usfs", label: "U.S. Forest Service" },
         ]
     },
     { href: "#separator-3", label: "", separator: true },
@@ -49,8 +46,6 @@ export const archiveSections = [
     },
     { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
-    { href: "#separator-6", label: "", separator: true },
-    { href: "/tombstone", label: "A Final Statement" },
     { href: "#separator-7", label: "", separator: true },
     {
         href: "/resources",
@@ -64,6 +59,8 @@ export const archiveSections = [
         ]
     },
     { href: "#separator-8", label: "", separator: true },
+    { href: "/tombstone", label: "A Final Statement" },
+    { href: "/record", label: "The OPRD Record" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];

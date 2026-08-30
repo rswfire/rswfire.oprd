@@ -6,8 +6,11 @@ import ArchiveVideos from "@/components/ArchiveVideos";
 import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import RecordFeature from "@/components/RecordFeature";
 import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
+import { LEGAL_FUND_TRANSMISSION } from "@/data/20260829";
 import { THREADS } from "@/data/threads";
 import { FAQ_QUESTIONS } from "@/data/faq";
 
@@ -17,6 +20,9 @@ export default function OverviewPage() {
 
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
+
+            {/* THE OPRD RECORD — the machine's live reading of the evidence */}
+            <RecordFeature />
 
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
@@ -72,6 +78,11 @@ export default function OverviewPage() {
                 </div>
             </a>
 
+            {/* THE LEGAL FUND ANNOUNCEMENT — the video, with transcript */}
+            <div className="mt-4">
+                <PrimaryTransmission transmission={LEGAL_FUND_TRANSMISSION} />
+            </div>
+
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
 
@@ -98,6 +109,9 @@ export default function OverviewPage() {
                 </div>
 
             </div>
+
+            {/* NEWSLETTER */}
+            <NewsletterSignup />
 
             {/* WHAT IT MEANS TO VOLUNTEER */}
             <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">

@@ -119,6 +119,11 @@ function TransmissionVideo({
     const [error, setError] = useState(false);
     // Cache-buster bumped on manual retry to force the proxy to re-sign.
     const [nonce, setNonce] = useState(0);
+    // Portrait video is tall for no reason while idle: collapse it to a
+    // strip until playback starts, expand while it plays, fold back when
+    // it ends. Landscape never hits either cap and is unaffected.
+    const [portrait, setPortrait] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     const src = `${mediaUrl(signalId, "video")}${nonce ? `?r=${nonce}` : ""}`;
     const poster = mediaUrl(signalId, "thumbnail");
@@ -169,15 +174,18 @@ function TransmissionVideo({
                 </div>
             ) : (
                 // No forced aspect ratio — object-contain shows the whole frame.
-                // Landscape fills the width; portrait is capped to 80vh and
-                // centered, with the black stage as letterbox/pillarbox.
+                // Landscape fills the width. Portrait idles collapsed and
+                // expands during playback, centered on the black stage.
                 <video
                     ref={videoRef}
                     src={src}
                     poster={poster}
                     controls
                     preload="metadata"
-                    className="w-auto max-w-full max-h-[80vh]"
+                    className={`w-auto max-w-full transition-[max-height] duration-300 ${portrait && !expanded ? "max-h-[24vh]" : "max-h-[55vh]"}`}
+                    onLoadedMetadata={(e) => setPortrait(e.currentTarget.videoHeight > e.currentTarget.videoWidth)}
+                    onPlay={() => setExpanded(true)}
+                    onEnded={() => setExpanded(false)}
                     onError={() => setError(true)}
                     style={{ objectFit: "contain" }}
                 >

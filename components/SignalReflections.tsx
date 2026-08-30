@@ -13,7 +13,7 @@ import type { SignalReflection } from "@/lib/qp";
 import { INK, MONO, MUTED, RULE, label, prose, reflectionChrome } from "@/components/signalChrome";
 import AiFraming from "@/components/AiFraming";
 
-const ORDER = ["NARRATIVE", "SYMBOLIC", "LINEAGE", "MIRROR"];
+const ORDER = ["NARRATIVE", "SYMBOLIC", "LINEAGE", "MIRROR", "SHAPE", "SYSTEMIC"];
 
 /**
  * Inline emphasis only. The reflections use italics heavily for quoted
@@ -78,7 +78,7 @@ function Prose({ blocks, idPrefix }: { blocks: string[]; idPrefix: string }) {
     );
 }
 
-export default function SignalReflections({ reflections }: { reflections: SignalReflection[] }) {
+export default function SignalReflections({ reflections, framing }: { reflections: SignalReflection[]; framing?: string }) {
     const available = [
         ...ORDER.filter((t) => reflections.some((r) => r.type === t)),
         ...reflections.map((r) => r.type).filter((t) => !ORDER.includes(t)),
@@ -98,9 +98,7 @@ export default function SignalReflections({ reflections }: { reflections: Signal
     return (
         <div style={{ borderTop: `1px solid ${RULE}` }}>
             <AiFraming model={current.model} generated={current.created}>
-                One of four readings the platform makes of this transmission. This is analysis of the
-                record. It is not the record, and it is not testimony &mdash; the recording and the
-                transcript are the evidence.
+                {framing ?? `One of ${reflections.length} readings the platform makes of this transmission. This is analysis of the record. It is not the record, and it is not testimony — the recording and the transcript are the evidence.`}
             </AiFraming>
 
             {/* One link per reading. */}
