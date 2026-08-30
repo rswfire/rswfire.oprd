@@ -21,9 +21,6 @@ export default function OverviewPage() {
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
 
-            {/* THE QUERYABLE RECORD — human door and machine door */}
-            <QueryableRecord />
-
             {/* INTRODUCTION */}
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
 
@@ -77,6 +74,11 @@ export default function OverviewPage() {
                     Contribute to the legal fund &rarr;
                 </div>
             </a>
+
+            {/* THE QUERYABLE RECORD — human door and machine door */}
+            <div className="mt-4">
+                <QueryableRecord />
+            </div>
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
