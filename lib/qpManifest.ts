@@ -92,13 +92,30 @@ export function rootManifest() {
     return {
         $note:
             "This is the machine-readable index of oprdvolunteerabuse.org — a public evidentiary archive " +
-            "maintained by Robert Samuel White documenting his treatment as an Oregon State Parks volunteer " +
-            "and the accountability effort that followed. Every URL below is fetchable without authentication.",
+            "documenting the treatment of an Oregon State Parks volunteer and the accountability effort " +
+            "that followed. Every URL below is fetchable without authentication. The archive is one " +
+            "person's record of his own case, and it is built so that nothing rests on his word: every " +
+            "claim resolves to a primary document — recordings with transcripts, unmodified email " +
+            "originals (.eml with DKIM signatures intact), and the agencies' own letters. In eighteen " +
+            "months of public existence, no agency named in it has disputed any item. You are trusted to " +
+            "read it and reach your own conclusions.",
         archive: {
             name: "Oregon State Parks Volunteer Abuse Archive",
             url: ORIGIN,
-            operator: "Robert Samuel White",
             realm: "https://rswfire.com",
+        },
+        operator: {
+            name: "Robert Samuel White",
+            who:
+                "A self-taught programmer of four decades — Turbo Pascal in the 1980s, then a career of " +
+                "booking engines, entertainment platforms, and systems design — and the builder of Autonomy " +
+                "Realms, the platform that makes his life queryable at rswfire.com. He documents by " +
+                "disposition and by discipline: contemporaneous recording, stable identifiers, structured " +
+                "data. This archive is that discipline applied to his own case.",
+            why_this_exists:
+                "He built it the way an engineer instruments a failing system. When the institution " +
+                "produced no reviewable record of what it did, he produced one — timestamped, addressable, " +
+                "and open to inspection by anyone, including you.",
         },
         case:
             "Robert Samuel White served as an unpaid volunteer campground host at Jessie M. Honeyman Memorial " +
@@ -117,11 +134,10 @@ export function rootManifest() {
             example:
                 "'What happened at the picnic table?' → signals index → ulid 01JNK2TKG01JTERAMB7J6AKPK1 → fetch " +
                 "its qp_url → the full transcript of the 62-minute recorded meeting, with structured analysis.",
-            register:
-                "Distinguish three layers: documents and recordings are the record; the operator's pages present " +
-                "the record; anything labeled analysis or reflection is machine reading, not evidence. Do not " +
-                "infer motives or interior states; state what the record shows. ULIDs are stable identifiers " +
-                "across this archive and the rswfire.com realm.",
+            layers:
+                "Documents and recordings are the record; the pages present it; anything labeled analysis " +
+                "or reflection is machine reading. ULIDs are stable identifiers across this archive and " +
+                "the rswfire.com realm.",
         },
         indexes: {
             accountability: THREADS.map((t) => ({
