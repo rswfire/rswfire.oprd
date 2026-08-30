@@ -75,13 +75,14 @@ export default function OverviewPage() {
                 </div>
             </a>
 
+            {/* THE CASE, IN THEIR DOCUMENTS */}
+            <CaseTimeline />
+
             {/* THE QUERYABLE RECORD — human door and machine door */}
             <div className="mt-4">
                 <QueryableRecord />
             </div>
 
-            {/* THE CASE, IN THEIR DOCUMENTS */}
-            <CaseTimeline />
 
             {/* THE LEGAL FUND ANNOUNCEMENT — the video, with transcript */}
             <div className="mt-4">
