@@ -145,7 +145,7 @@ export function rootManifest() {
                 matter: t.matter,
                 status: t.status,
                 document_count: t.filings.length,
-                json: `${ORIGIN}/qp/accountability/${t.slug}.json`,
+                json: `${ORIGIN}/record/accountability/${t.slug}.json`,
                 page: `${ORIGIN}/accountability/${t.slug}`,
             })),
             evidence: EVIDENCE.map((e) => ({ ...e, url: abs(e.url) })),
