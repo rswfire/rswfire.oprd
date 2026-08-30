@@ -138,6 +138,9 @@ export function rootManifest() {
                 "the rswfire.com realm.",
         },
         indexes: {
+            // Full filings inlined — one fetch of this manifest carries the
+            // complete correspondence record; the per-thread JSONs remain as
+            // smaller per-agency views.
             accountability: THREADS.map((t) => ({
                 slug: t.slug,
                 agency: t.agency,
@@ -146,6 +149,7 @@ export function rootManifest() {
                 document_count: t.filings.length,
                 json: `${ORIGIN}/record/accountability/${t.slug}.json`,
                 page: `${ORIGIN}/accountability/${t.slug}`,
+                filings: t.filings.map((f) => filingJson(t.slug, f)),
             })),
             evidence: EVIDENCE.map((e) => ({ ...e, url: abs(e.url) })),
             signals: SIGNALS.map((s) => ({
