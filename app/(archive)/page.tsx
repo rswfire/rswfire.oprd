@@ -7,6 +7,7 @@ import ResourcesOverview from "@/components/resources/ResourcesOverview";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import LegalFund from "@/components/LegalFund";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
@@ -58,22 +59,8 @@ export default function OverviewPage() {
                 </div>
             </div>
 
-            {/* THE LEGAL FUND */}
-            <a
-                href="https://gofund.me/87331061f"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-4 block rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
-            >
-                <img
-                    src="/legal-fund.jpg"
-                    alt="Announcing the legal fund v. Oregon State Parks"
-                    className="w-full h-auto block"
-                />
-                <div className="bg-white px-4 py-3 text-center text-sm font-semibold uppercase tracking-widest text-red-700 group-hover:text-red-600 transition-colors">
-                    Contribute to the legal fund &rarr;
-                </div>
-            </a>
+            {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}
+            <LegalFund />
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
