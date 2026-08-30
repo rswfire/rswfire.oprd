@@ -58,7 +58,7 @@ export default function QueryableRecord() {
 
                     <div className="text-sm leading-relaxed text-gray-700">
                         This archive runs on structured data. Every primary recording is an independently
-                        addressable signal on Autonomy Realms; all thirteen are held as one queryable object,
+                        addressable signal on Autonomy Realms; all ten are held as one queryable object,
                         with a synthesis and six analytical passes computed from the evidence &mdash; inspectable,
                         regenerable, and labeled as analysis.
                     </div>
@@ -125,7 +125,7 @@ export default function QueryableRecord() {
 
                 <div className="mt-4 px-1 text-xs text-gray-300">
                     One URL: the case summary, indexes of all 438 accountability documents, the nine
-                    evidence pages, and the thirteen primary recordings with transcripts and analysis.
+                    evidence pages, and the ten primary recordings with transcripts and analysis.
                     Results vary by model &mdash; agentic tools like Claude Code or OpenAI's Codex work best, because they
                     can follow the indexes and fetch the underlying records reliably.
                 </div>

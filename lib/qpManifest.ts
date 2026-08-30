@@ -17,7 +17,9 @@ const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href
 
 export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
-// The thirteen primary recordings, as held in the OPRD Record cluster.
+// The ten primary recordings, as held in the OPRD Record cluster.
+// Membership is evidentiary: signals the archive cites only as background
+// reading are not members.
 // qp_url returns the full Queryable Personhood record: transcript (where
 // one exists), structured analysis, and reflections.
 const SIGNALS = [
@@ -25,10 +27,7 @@ const SIGNALS = [
     { ulid: "01JPP5GY2GPEZ5F08Q2PF6ZAHG", date: "2025-03-19", title: "Recording a Day at Siltcoos After a Failed Encounter", archive_page: null },
     { ulid: "01JQ51HAK8QR862VWGK0RKTFXN", date: "2025-03-24", title: "Documenting Removal Without Process at Honeyman", note: "The recorded dismissal phone call and same-day removal.", archive_page: "/evidence/dismissal" },
     { ulid: "01JQ59R3S0SHQ18E23BC0BM696", date: "2025-03-25", title: "Program Manager Confirms Dismissal Before Review Call", archive_page: "/evidence/expulsion" },
-    { ulid: "01JQ7VZB00NEQK4NYZMW5WYW04", date: "2025-03-26", title: "Preserving the Original Honeyman Narrative Account", archive_page: null },
     { ulid: "01KCYZ8E1GTHBZCDNYA57AM2Q0", date: "2025-12-20", title: "Recording the OPRD Account While Hiking", archive_page: null },
-    { ulid: "01KK1G9NG0DN009HPGW9N4E2VB", date: "2026-03-06", title: "Naming What Was Already Known", archive_page: null },
-    { ulid: "01KKD32X00FHMNP5MDZQ1N1HP2", date: "2026-03-11", title: "Naming the Compass as Operating Principle", archive_page: null },
     { ulid: "01KME4GSG02JSTJ45Z1QYH90JD", date: "2026-03-23", title: "Marking One-Year Anniversary of OPRD Dismissal", archive_page: null },
     { ulid: "01KMFMJW809QNR8PVTXT8HAAG7", date: "2026-03-24", title: "Three Officers at the Work Center Gate", note: "Recorded during the armed visit, one year to the day after the dismissal.", archive_page: "/evidence/police" },
     { ulid: "01KN9KDSG0H3W0WZ9GBCJDJMG5", date: "2026-04-03", title: "Naming Displacement as OPRD's Volunteer Mechanism", archive_page: null },
@@ -52,7 +51,7 @@ const PAGES = [
     { title: "The Displacement Framework", url: "/displacement", holds: "The nine-stage mechanism, named from the documented sequence." },
     { title: "Timeline", url: "/timeline", holds: "The case in date order." },
     { title: "Key Individuals", url: "/key-individuals", holds: "Who acted, in what role." },
-    { title: "The OPRD Record", url: "/record", holds: "The thirteen primary signals as one cluster, with the platform's synthesis and six analytical readings." },
+    { title: "The OPRD Record", url: "/record", holds: "The ten primary evidentiary signals as one cluster, with the platform's synthesis and six analytical readings." },
     { title: "Frequently Asked Questions", url: "/faq", holds: "Why no lawsuit yet, what happens next, what an epistemic violation is." },
     { title: "What It Means to Volunteer", url: "/", holds: "On the homepage: the structural position of the public-agency volunteer." },
 ];
@@ -160,7 +159,7 @@ export function rootManifest() {
             cluster: {
                 ulid: CLUSTER_ULID,
                 title: "The OPRD Record",
-                holds: "All thirteen primary signals as one object: synthesis plus six analytical readings.",
+                holds: "All ten primary evidentiary signals as one object: synthesis plus six analytical readings.",
                 qp_url: `${QP_CLUSTER}${CLUSTER_ULID}`,
                 page: `${ORIGIN}/record`,
             },
