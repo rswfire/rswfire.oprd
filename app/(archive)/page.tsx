@@ -59,11 +59,12 @@ export default function OverviewPage() {
                 </div>
             </div>
 
+            {/* THE CASE, IN THEIR DOCUMENTS */}
+            <CaseTimeline />
+
             {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}
             <LegalFund />
 
-            {/* THE CASE, IN THEIR DOCUMENTS */}
-            <CaseTimeline />
 
             {/* THE QUERYABLE RECORD — human door and machine door */}
             <div className="mt-4">
