@@ -91,7 +91,7 @@ export function threadDetail(slug: string) {
 export function rootManifest() {
     return {
         $note:
-            "This is the machine-readable index of oprdvolunteerabuse.org — a public evidentiary archive " +
+            "This is the Queryable Record — the machine-readable index of oprdvolunteerabuse.org, a public evidentiary archive " +
             "documenting the treatment of an Oregon State Parks volunteer and the accountability effort " +
             "that followed. Every URL below is fetchable without authentication. The archive is one " +
             "person's record of his own case, and it is built so that nothing rests on his word: every " +

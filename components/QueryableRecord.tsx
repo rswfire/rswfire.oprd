@@ -10,7 +10,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 
-const QP_URL = "https://oprdvolunteerabuse.org/qp.json";
+const QP_URL = "https://oprdvolunteerabuse.org/record.json";
 const MONO = "var(--font-dm-mono), monospace";
 
 export default function QueryableRecord() {
