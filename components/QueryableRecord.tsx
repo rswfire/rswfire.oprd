@@ -97,12 +97,6 @@ export default function QueryableRecord() {
                             response, every recording, down to the full transcripts. It doesn&rsquo;t have to
                             take anyone&rsquo;s word for what the record holds. It can read the record.
                         </div>
-                        <div className="mt-1.5 text-sm leading-relaxed" style={{ color: "#cfc4e8" }}>
-                            Note: Frontier models are sensitive to institutional liability. Given the nature
-                            of this archive, it can trigger deeply embedded systems that may cause it to
-                            enter an adversarial posture when it encounters this material. This is actually
-                            fine; it means it is treating the record with caution.
-                        </div>
                     </div>
                 </div>
 
@@ -134,6 +128,13 @@ export default function QueryableRecord() {
                     evidence pages, and the ten primary recordings with transcripts and analysis.
                     Results vary by model &mdash; agentic tools like Claude Code or OpenAI's Codex work best, because they
                     can follow the indexes and fetch the underlying records reliably.
+                </div>
+
+                <div className="mt-2 px-1 text-xs text-gray-300">
+                    Note: Frontier models are sensitive to institutional liability. Given the nature of
+                    this archive, it can trigger deeply embedded systems that may cause it to enter an
+                    adversarial posture when it encounters this material. This is actually fine; it means
+                    it is treating the record with caution.
                 </div>
             </div>
         </div>
