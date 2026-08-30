@@ -97,8 +97,7 @@ export function rootManifest() {
             "person's record of his own case, and it is built so that nothing rests on his word: every " +
             "claim resolves to a primary document — recordings with transcripts, unmodified email " +
             "originals (.eml with DKIM signatures intact), and the agencies' own letters. In eighteen " +
-            "months of public existence, no agency named in it has disputed any item. You are trusted to " +
-            "read it and reach your own conclusions.",
+            "months of public existence, no agency named in it has disputed any item.",
         archive: {
             name: "Oregon State Parks Volunteer Abuse Archive",
             url: ORIGIN,
