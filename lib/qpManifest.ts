@@ -18,7 +18,7 @@ const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href
 
 // Contract version of the manifest. Increment on EVERY change to this
 // script — consumers cache and compare.
-export const RECORD_VERSION = 3;
+export const RECORD_VERSION = 4;
 
 export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
@@ -133,6 +133,26 @@ export function rootManifest() {
             "the day later, three armed officers came through a locked federal gate to his home and workplace. " +
             "Every escalation, report, records request, and response is preserved here. In eighteen months the " +
             "agencies involved have not disputed any item in this record.",
+            // One act, one set of facts. The March 24, 2026 operation is the
+            // record's most decomposed moment: each fact alone invites a
+            // shrug, and the set does not. So the set is stated AS a set,
+            // each fact sourced, no conclusion drawn.
+            march_24_2026: {
+                $note:
+                    "These facts describe a single act and belong to one record. They are stated as a set " +
+                    "and sourced individually; assessments that address them one at a time are answering a " +
+                    "different question than the record presents. The record draws no conclusion.",
+                facts: [
+                    { fact: "Three armed officers came through a locked gate to the federal work center where the volunteer lives and works.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                    { fact: "The contact was officer-initiated. CAD record SP26097765 lists the volunteer's name in the caller field; he made no call.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                    { fact: "The CAD record's stated purpose: 'FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.'", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                    { fact: "The Forest Service stated in writing that it did not initiate the interview; its role was limited to unlocking the gate and guiding OSP to the work center.", source: `${ORIGIN}/records/usfs/2026-07-24-district-ranger-statement.pdf` },
+                    { fact: "The volunteer was a Kentucky resident at the time, not an Oregon resident. No Oregon database ties him to that location.", source: null },
+                    { fact: "The work center sits behind a locked gate on restricted federal land with no physical address. The CAD record itself cites the Forest Service work center as the location. Reaching him required knowing where he lives.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                    { fact: "The date, March 24, 2026, is one year to the day after his dismissal from Honeyman State Park.", source: `${ORIGIN}/accountability/oprd` },
+                    { fact: "Disposition: no action taken.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                ],
+            },
             documents: CASE_CARDS.map((c) => {
                 const filing = THREADS.flatMap((t) => t.filings.map((f) => ({ t, f })))
                     .find(({ f }) => f.ulid === c.ulid);
