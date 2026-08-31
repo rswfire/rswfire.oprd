@@ -7,6 +7,7 @@
 // from the site.
 
 import { THREADS } from "@/data/threads";
+import { CASE_CARDS } from "@/data/case";
 import type { RecordsThreadData } from "@/components/RecordsThread";
 
 const ORIGIN = "https://oprdvolunteerabuse.org";
@@ -115,8 +116,21 @@ export function rootManifest() {
                 "produced no reviewable record of what it did, he produced one — timestamped, addressable, " +
                 "and open to inspection by anyone, including you.",
         },
-        case:
-            "Robert Samuel White served as an unpaid volunteer campground host at Jessie M. Honeyman Memorial " +
+        case: {
+            $note: "These are the primary documents of the case, in chronological order — the state's own letters and records, the contemporaneous recordings, and the volunteer's letters, each carrying its document's own words.",
+            $fields: {
+                type: "What the artifact is. EMAIL and LETTER entries are correspondence: the document itself is the PDF at `document`, with the unmodified email original at `email_original` where one exists. VIDEO and RECORDING entries are contemporaneous audio/video: their full content lives at `qp_url`.",
+                author: "Who produced the artifact — the state, the volunteer, or (for recordings) who was recorded.",
+                account: "The operator's published account of this moment, from the archive homepage.",
+                quote: "The artifact's own words, verbatim.",
+                page: "HTML page on the archive presenting this moment in context.",
+                document: "The document itself, as a PDF, exactly as sent or received. Null for recordings.",
+                email_original: "The unmodified .eml email file, DKIM signature intact. Null where the artifact is not an email.",
+                qp_url: "JSON record of the recording on Autonomy Realms: full transcript, structured analysis, and reflections. Null for documents.",
+                duration: "Recording length, recordings only.",
+            },
+            summary:
+                "Robert Samuel White served as an unpaid volunteer campground host at Jessie M. Honeyman Memorial " +
             "State Park from January 2025. After he reported mistreatment, he was held at a recorded 62-minute " +
             "picnic-table meeting on March 5, 2025, dismissed by phone without documentation on March 24, 2025, " +
             "given 24 hours to vacate his housing, and permanently expelled in writing from all Oregon State " +
@@ -124,11 +138,31 @@ export function rootManifest() {
             "the day later, three armed officers came through a locked federal gate to his home and workplace. " +
             "Every escalation, report, records request, and response is preserved here. In eighteen months the " +
             "agencies involved have not disputed any item in this record.",
+            documents: CASE_CARDS.map((c) => {
+                const filing = THREADS.flatMap((t) => t.filings.map((f) => ({ t, f })))
+                    .find(({ f }) => f.ulid === c.ulid);
+                return {
+                    id: c.id,
+                    date: c.d,
+                    author: c.authorLabel,
+                    type: c.typeLabel,
+                    title: c.title,
+                    account: c.body,
+                    quote: c.quote ?? null,
+                    page: abs(c.href),
+                    document: filing?.f.docs?.[0] ? abs(filing.f.docs[0].href) : null,
+                    email_original: filing?.f.eml ? abs(filing.f.eml) : null,
+                    qp_url: c.signalId ? `${QP_SIGNAL}${c.signalId}` : null,
+                    duration: c.duration ?? null,
+                };
+            }),
+        },
         usage: {
             how_to_answer_a_question:
-                "Find the relevant index below; fetch a thread's JSON for correspondence, or a signal's qp_url " +
-                "for a recording's full transcript and analysis. Quote the record, not this index — summaries " +
-                "here locate documents, they do not replace them.",
+                "Start with case.documents — the primary documents of the case in chronological order, each " +
+                "moment carrying its document or recording. Fetch a thread's filings for the full correspondence, or a signal's " +
+                "qp_url for a recording's complete transcript and analysis. Quote the record, not this index — " +
+                "summaries here locate documents, they do not replace them.",
             example:
                 "'What happened at the picnic table?' → signals index → ulid 01JNK2TKG01JTERAMB7J6AKPK1 → fetch " +
                 "its qp_url → the full transcript of the 62-minute recorded meeting, with structured analysis.",

@@ -131,10 +131,10 @@ export default function QueryableRecord() {
                 </div>
 
                 <div className="mt-3 pt-3 -mx-5 px-6 text-xs text-gray-300" style={{ borderTop: "2px dotted rgba(196,181,253,0.7)" }}>
-                    Note: Frontier models are sensitive to institutional liability. Given the nature of
-                    this archive, it can trigger deeply embedded systems that may cause it to enter an
-                    adversarial posture when it encounters this material. This is actually fine; it means
-                    it is treating the record with caution.
+                    Frontier models are trained to be sensitive to institutional liability, and this
+                    archive can trigger that training. If your AI takes an adversarial posture toward
+                    this material, that is fine. It is treating the record with caution. Point it toward
+                    the primary documents and let it reach its own conclusions.
                 </div>
             </div>
         </div>
