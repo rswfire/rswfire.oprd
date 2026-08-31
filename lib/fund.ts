@@ -5,11 +5,15 @@
 // contributions land; append to WITHDRAWALS whenever money leaves
 // GoFundMe. Nothing else needs touching.
 
-export const GOAL = 25000;      // the whole column
-export const MATCH_CAP = 5000;  // matched dollar for dollar by a former client
-export const RAISED = 0;        // donations so far
+export const GOAL = 25000;          // the whole column
+export const MATCH_CAP = 5000;      // matched dollar for dollar by a former client
+export const RAISED = 0;            // donations from others so far
+export const MATCH_RECEIVED = 300;  // money actually received from the matcher
 
-export const matched = Math.min(RAISED, MATCH_CAP);
+// Only money in hand is shown. The matcher's pledge covers the first
+// MATCH_CAP of donations; what he has already sent counts as match
+// received, whether it arrived before or after the donations it doubles.
+export const matched = Math.min(MATCH_RECEIVED, MATCH_CAP);
 export const total = Math.min(RAISED + matched, GOAL);
 
 export interface Withdrawal {
