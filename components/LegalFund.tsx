@@ -8,14 +8,9 @@
 // zone fills in lockstep as the donation fill above it grows, and every
 // dollar given below the cap moves the total by two.
 
-const GOAL = 25000;      // the whole column
-const MATCH_CAP = 5000;  // the match zone at the bottom, filled 1:1 by the first MATCH_CAP of donations
-const RAISED = 0;        // donations so far — update by hand as they land
+import Link from "next/link";
+import { GOAL, MATCH_CAP, RAISED, matched, total, usd } from "@/lib/fund";
 
-const matched = Math.min(RAISED, MATCH_CAP);
-const total = Math.min(RAISED + matched, GOAL);
-
-const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
 const usdK = (n: number) => (n >= 1000 ? `$${n / 1000}k` : `$${n}`);
 
 // Column geometry, as percentages of GOAL.
@@ -113,10 +108,10 @@ export default function LegalFund() {
                 <ul className="mt-2 space-y-1.5 text-sm text-gray-700 list-disc pl-5">
                     <li>I will reach out to relevant constitutional lawyers when the fund reaches $10,000.</li>
                     <li>The $25,000 goal is an AI estimate; the right lawyer will give me the real number.</li>
-                    <li>This is a &sect;1983 case against the institution &mdash; the only individual defendants are at the directorial level: the Director and the Deputy Director.</li>
+                    <li>This is a &sect;1983 case against the institution. The only individual defendants are the director and her deputy.</li>
                     <li>&sect;1983 carries a fee-shifting statute (42 U.S.C. &sect;1988): if the case prevails, the state pays the attorney&rsquo;s fees.</li>
-                    <li>The March 24, 2026 police visit may be treated as a separate case; how that one is constructed, including whether officers are named individually, is for the lawyers to decide.</li>
-                    <li>The funds stay in GoFundMe until a lawyer is secured; I will withdraw them only to send them to that lawyer.</li>
+                    <li>The Oregon State Police matters may be treated as a separate case; how that one is constructed, including whether officers are named individually, is for the lawyers to decide.</li>
+                    <li>Withdrawals go to two things only: the retained lawyer, and technical costs of the case such as public records fees and archive infrastructure. <Link href="/fund" className="underline text-emerald-800 hover:text-emerald-600">Every withdrawal is accounted for publicly.</Link></li>
                 </ul>
             </div>
         </div>
