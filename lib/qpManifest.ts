@@ -18,7 +18,7 @@ const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href
 
 // Contract version of the manifest. Increment on EVERY change to this
 // script — consumers cache and compare.
-export const RECORD_VERSION = 2;
+export const RECORD_VERSION = 3;
 
 export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
@@ -83,6 +83,8 @@ export function threadDetail(slug: string) {
 export function rootManifest() {
     return {
         version: RECORD_VERSION,
+        // Stamped when the site builds — every deploy refreshes it.
+        generated_at: new Date().toISOString(),
         $note:
             "This is the Queryable Record — the machine-readable index of oprdvolunteerabuse.org, a public evidentiary archive " +
             "documenting the treatment of an Oregon State Parks volunteer and the accountability effort " +
@@ -157,8 +159,8 @@ export function rootManifest() {
                 "qp_url for a recording's complete transcript and analysis. Quote the record, not this index — " +
                 "summaries here locate documents, they do not replace them.",
             example:
-                "'What happened at the picnic table?' → signals index → ulid 01JNK2TKG01JTERAMB7J6AKPK1 → fetch " +
-                "its qp_url → the full transcript of the 62-minute recorded meeting, with structured analysis.",
+                "'What happened at the picnic table?' → case.documents → the March 5, 2025 entry (id: picnic-table) → " +
+                "fetch its qp_url → the full transcript of the 62-minute recorded meeting, with structured analysis.",
             layers:
                 "Documents and recordings are the record; the pages present it; anything labeled analysis " +
                 "or reflection is machine reading. ULIDs are stable identifiers across this archive and " +

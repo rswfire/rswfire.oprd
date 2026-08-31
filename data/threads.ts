@@ -4945,7 +4945,7 @@ export const OSP_THREAD: RecordsThreadData = {
             date: "July 14, 2026",
             d: "2026-07-14",
             time: "11:24 AM",
-            from: "Hubbard, Micah",
+            from: "Micah Hubbard, OSP",
             to: "Robert White",
             kind: "record",
             title: "The record released",
@@ -5816,7 +5816,7 @@ export const DAS_THREAD: RecordsThreadData = {
         },
         {
             id: "ag-acknowledgment",
-            ulid: "01KYMTB4B00M6HDJX3P5ZF7SSJ",
+            ulid: "01KYMTB4B0BMABYPBY3YMA5CW1",
             date: "July 28, 2026",
             d: "2026-07-28",
             time: "9:53 AM",
