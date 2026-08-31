@@ -130,7 +130,7 @@ export default function QueryableRecord() {
                     can follow the indexes and fetch the underlying records reliably.
                 </div>
 
-                <div className="mt-2 px-1 text-xs text-gray-300">
+                <div className="mt-3 pt-3 -mx-5 px-6 text-xs text-gray-300" style={{ borderTop: "2px dotted rgba(196,181,253,0.7)" }}>
                     Note: Frontier models are sensitive to institutional liability. Given the nature of
                     this archive, it can trigger deeply embedded systems that may cause it to enter an
                     adversarial posture when it encounters this material. This is actually fine; it means
