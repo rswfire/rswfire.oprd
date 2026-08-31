@@ -16,6 +16,10 @@ const QP_CLUSTER = "https://rswfire.com/qp/cluster/";
 
 const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href}`);
 
+// Contract version of the manifest. Increment on EVERY change to this
+// script — consumers cache and compare.
+export const RECORD_VERSION = 2;
+
 export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
 // The ten primary recordings, as held in the OPRD Record cluster.
@@ -34,18 +38,6 @@ const SIGNALS = [
     { ulid: "01KN9KDSG0H3W0WZ9GBCJDJMG5", date: "2026-04-03", title: "Naming Displacement as OPRD's Volunteer Mechanism", archive_page: null },
     { ulid: "01KNER77G00DQ4C9BZGEHCPWN3", date: "2026-04-05", title: "Naming the Displacement Framework on Camera", archive_page: "/displacement" },
     { ulid: "01M16TYA60K65X6VXMWQEMZ1P2", date: "2026-08-29", title: "Announcing Legal Fund for OPRD Accountability", archive_page: "/record" },
-];
-
-const EVIDENCE = [
-    { stage: 1, slug: "origin", title: "The Origin Event", url: "/evidence/origin" },
-    { stage: 2, slug: "escalation", title: "The Escalation Response", url: "/evidence/escalation" },
-    { stage: 3, slug: "trust", title: "Trust Recruitment", url: "/evidence/trust" },
-    { stage: 4, slug: "coercion", title: "The Coercion Meeting", url: "/evidence/coercion" },
-    { stage: 5, slug: "surveillance", title: "Assessment & Surveillance", url: "/evidence/surveillance" },
-    { stage: 6, slug: "dismissal", title: "Dismissal Without Process", url: "/evidence/dismissal" },
-    { stage: 7, slug: "expulsion", title: "Expulsion & Retaliation", url: "/evidence/expulsion" },
-    { stage: 8, slug: "containment", title: "Institutional Containment", url: "/evidence/containment" },
-    { stage: 9, slug: "police", title: "Police Intimidation", url: "/evidence/police" },
 ];
 
 const PAGES = [
@@ -90,6 +82,7 @@ export function threadDetail(slug: string) {
 
 export function rootManifest() {
     return {
+        version: RECORD_VERSION,
         $note:
             "This is the Queryable Record — the machine-readable index of oprdvolunteerabuse.org, a public evidentiary archive " +
             "documenting the treatment of an Oregon State Parks volunteer and the accountability effort " +
@@ -185,7 +178,6 @@ export function rootManifest() {
                 page: `${ORIGIN}/accountability/${t.slug}`,
                 filings: t.filings.map((f) => filingJson(t.slug, f)),
             })),
-            evidence: EVIDENCE.map((e) => ({ ...e, url: abs(e.url) })),
             signals: SIGNALS.map((s) => ({
                 ulid: s.ulid,
                 date: s.date,

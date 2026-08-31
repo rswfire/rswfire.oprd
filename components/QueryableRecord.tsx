@@ -124,8 +124,8 @@ export default function QueryableRecord() {
                 </div>
 
                 <div className="mt-4 px-1 text-xs text-gray-300">
-                    One URL: the case summary, indexes of all 438 accountability documents, the nine
-                    evidence pages, and the ten primary recordings with transcripts and analysis.
+                    One URL: the case in its primary documents, indexes of all 438 accountability
+                    documents, and the ten primary recordings with transcripts and analysis.
                     Results vary by model &mdash; agentic tools like Claude Code or OpenAI's Codex work best, because they
                     can follow the indexes and fetch the underlying records reliably.
                 </div>
