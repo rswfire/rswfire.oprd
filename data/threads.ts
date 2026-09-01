@@ -4826,9 +4826,9 @@ export const OSP_THREAD: RecordsThreadData = {
     title: "Oregon State Police",
     agency: "Oregon State Police",
     matter: "Public Records Requests PR27478 and PR36445 · CAD event SP26097765",
-    status: "Records confirmed, not released.",
+    status: "Fee paid. Litigation hold acknowledged. Awaiting production.",
     summary: [
-        "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it.",
+        "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it. The $157.50 production fee was delivered in August 2026; the agency has acknowledged a litigation hold over every record associated with the event. What remains is how the Department responds.",
     ],
     filings: [
         {
