@@ -213,7 +213,7 @@ export const CASE_CARDS: CaseCard[] = [
         authorLabel: "Oregon State Police",
         typeLabel: "Letter",
         title: "The state police continue to block the record.",
-        body: "So I kept asking the state police: for the video, the reports, the communications around the visit. In August they answered. Six categories of records exist, including body camera video of the encounter. The video is withheld.",
+        body: "In April they said no records existed. Ten days later, one did: the CAD record, for a $12.50 fee by check or money order. In July they released it at no charge. I asked my questions about what it showed and what was missing. The answers never came, and I petitioned the Attorney General.\n\nFive days after the petition, the Department found additional records \u201cnot in our system at the time of the original request\u201d and reopened the request. In August it identified what it holds: incident reports and attachments, officer notes, dispatch records, electronic communications, and body camera video of the encounter, withheld. Processing was conditioned on $157.50 before any work begins.\n\nI paid the fee. Their Risk office has acknowledged a litigation hold over the records of the event. They are in their window now, to produce or to assert.",
         quote: "Body Cam Video – Body Cam video will be withheld pursuant to ORS 192.345(40).",
         ulid: "01KZS0AAY88AYPJ32PDEZABW03",
         href: "/accountability/osp",
