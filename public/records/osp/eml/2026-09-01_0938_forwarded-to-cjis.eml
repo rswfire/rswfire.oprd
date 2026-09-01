@@ -1,0 +1,1538 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from DM3PR14MB7517.namprd14.prod.outlook.com (2603:10b6:8:1ad::12)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 1 Sep 2026
+ 16:38:46 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=HNOSkNbhmHILVzoD8gI1O0ndM2VTLLz9g2I6NF9WqWUM3I+KJ+Yfqspz2Zff6GZvWjGiSBjk1PdEq+2hxIDeF2HKFAmu6ApE1spEuNDjMDBh60PoVpqFr2l6r8+e4bAirQmRu9JIHqeVW20oIpzdVIfuctTuK6dJPkLVzsuKn8CSGoIwsxWXkqRdeyNnwti2QfGayUcrAWpvwqGqeGMhKq9A+KTfF2koX6vDFtMJr6wXboC1ODYbTH0v2p8qNhrr0aNLC8sU6U37HWgG1KSMpGxK7pwCJ6l9mzD5FpxP/AbDaiWrlszN2Siov2mYxp1LIds6FPA40nXxY8imGC8dVA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=SyQgTwMB2o/OpjwQVJ/cQovmgFZW6EaOIIoXom4/dJQ=;
+ b=XVh+0gMBWQ2Qh8LeFAfQ0UgTTvBwUwBFk2dCACniEjMjtU2Qi8hTyN4Qu90TRF2EUgFB1hQ4C2QipBgetuLPA6+llQ3PaSSbLsfxtn2pvpIwFRrWlYsQhEa/PGj6tA+XdsPRnQAbud0RHJM3C2zKYyVBCje+ZfrOj0Y+jROgBR5D6nIUvAkcHK9P3mXdfDGkbSO6GpJt2uXgR/5SVPeLQOOWMB8coJG18tTy8AoDOAskWfV5sM4snkpfMUPTF7elNC+1hp8sI5njcfZUO35c+oWH5Yvc1McOnaYEAb5bNFtGidGbf4qkYpIZsgza8+dHaaAN6j1qdCWUdmUTnAOrmA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c10e::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=osp.oregon.gov; dmarc=pass (p=none sp=none pct=100) action=none
+ header.from=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=osp.oregon.gov] dkim=[1,1,header.d=osp.oregon.gov]
+ dmarc=[1,1,header.from=osp.oregon.gov])
+Received: from MW4P221CA0008.NAMP221.PROD.OUTLOOK.COM (2603:10b6:303:8b::13)
+ by DM3PR14MB7517.namprd14.prod.outlook.com (2603:10b6:8:1ad::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.360.13; Tue, 1 Sep
+ 2026 16:38:37 +0000
+Received: from MWH0EPF000A6730.namprd04.prod.outlook.com
+ (2603:10b6:303:8b:cafe::6c) by MW4P221CA0008.outlook.office365.com
+ (2603:10b6:303:8b::13) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.360.13 via Frontend Transport; Tue, 1
+ Sep 2026 16:38:37 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c10e::1)
+ smtp.mailfrom=osp.oregon.gov; dkim=pass (signature was verified)
+ header.d=osp.oregon.gov;dmarc=pass action=none
+ header.from=osp.oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of osp.oregon.gov
+ designates 2a01:111:f403:c10e::1 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c10e::1;
+ helo=SA9PR09CU002.outbound.protection.outlook.com; pr=C
+Received: from SA9PR09CU002.outbound.protection.outlook.com
+ (2a01:111:f403:c10e::1) by MWH0EPF000A6730.mail.protection.outlook.com
+ (2603:10b6:30f:fff5::416) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.382.8 via Frontend Transport; Tue, 1
+ Sep 2026 16:38:36 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=KVZekqhu+1RQ2MA6mX/ae5l/eeOgGUSOHxc6bZPev8WsxknJfXyUZwwLmeWDq3MciH4qW+vFVk3RDhAfSznCD9cJpTztefqWe8VOSLFj/1D1luaWxU07FoLaQygld8ntbza5jfjrLO3sz+3Kipw4lzxKpLmrQThRV6+9cpp2OAXQlmDqfMcWY53Fw94w+Cmsfp27KfeyZnQNV7mjf/rK1mbKkluWKzSGZTfxEEOdaO48T7PmxIJvcMCA0Fqh1uyez1DGQhtm06MspWTFY6gWeySe+spoxteNLSqzW0VRreWvc0jZDKTIWXA1Ajq8D9v7LrV5J7ADYGIwGBK2d76cHg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=SyQgTwMB2o/OpjwQVJ/cQovmgFZW6EaOIIoXom4/dJQ=;
+ b=QmTLvgqLaj5wkFZ4WEGbhYF7m5psqqKIYLcgP4eNq2n9O9W4fHioatb+57x/Pmyjows8ag1o0VSfXTu8nQdwd0P66eWOpmYlI0k+Pun0ASDfV35eYPaMs3uFPj2Y/dV280nZzLFTUG6Pw1avj78BvVF1HA9j90bpyLV4vkhobL2uDjVuTNxA5bku9spXeoqmQPsrwHVm2JgW2aQhX0+Oni/x/BbBNDRd1v43RqrHgJKix72zSW/P9N1UlI4pVj70QUUm/BL+Aw720sCdHDtgK+UAdwxFyBfotvOFTPnaa6jg4lKe/CekZSNf6qkgnYylnXe7gLPcyF2cQDVPF7/bnw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=osp.oregon.gov; dmarc=pass action=none
+ header.from=osp.oregon.gov; dkim=pass header.d=osp.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=osp.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=SyQgTwMB2o/OpjwQVJ/cQovmgFZW6EaOIIoXom4/dJQ=;
+ b=APReZqa1+PWt9sTHKIXjWztwW/55xDYa4e7+MpRsQUt3GjwLif4WMpcUfk4PzR/CX4nLrn9lvQcAOsnUUykvSMYEhGYzfR45d5FpJP9IPnAhiXTeEAxBZuISyTIviQRoUz1+srXrWG/YkO7H8hy2fjvWf1cH//3cuVGrAWhBSmcUqdCIhudBkk3ehF7SHuEitf/3S8dGEkOfDd8aEdmFEla1SqP5OKUtS+OXMNrt6WdojGG4Z/GXv2SVrsSb/B06pmd7zzh+EWsEI6xOyWEjsOIs5LGQ4gx9NDb78BMKEbAicuAjmU/nns2kJXRcSF/h0CiPMiqNj9NWtyS8G59zyQ==
+Received: from SA1PR09MB12035.namprd09.prod.outlook.com (2603:10b6:806:48d::7)
+ by SJ0PR09MB9794.namprd09.prod.outlook.com (2603:10b6:a03:463::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.360.13; Tue, 1 Sep
+ 2026 16:38:33 +0000
+Received: from SA1PR09MB12035.namprd09.prod.outlook.com
+ ([fe80::f095:dc18:2741:f620]) by SA1PR09MB12035.namprd09.prod.outlook.com
+ ([fe80::f095:dc18:2741:f620%4]) with mapi id 15.21.0360.008; Tue, 1 Sep 2026
+ 16:38:33 +0000
+From: OSP Risk <risk@osp.oregon.gov>
+To: 'Robert Samuel White' <rsw@rswfire.com>, OSP Risk <risk@osp.oregon.gov>
+Subject: RE: Preservation scope for SP26-097765
+Thread-Topic: Preservation scope for SP26-097765
+Thread-Index: AQHdOZEjauukh9K7Hkm1wBXlDMs/D7a4tf7ggAEzVqqAAAPx4A==
+Date: Tue, 1 Sep 2026 16:38:32 +0000
+Message-ID: 
+ <SA1PR09MB12035C4CD4375EFF01CA6C612C8A82@SA1PR09MB12035.namprd09.prod.outlook.com>
+References: 
+ <CH2PR14MB4181E5373FB2D1E0922DB4D5ADA92@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <SA1PR09MB1203591228E6C4FB2F59EAF58C8A82@SA1PR09MB12035.namprd09.prod.outlook.com>
+ <CH2PR14MB41810591EC9CBC5413B5B1DFADA82@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: 
+ <CH2PR14MB41810591EC9CBC5413B5B1DFADA82@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=osp.oregon.gov;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-traffictypediagnostic: 
+ SA1PR09MB12035:EE_|SJ0PR09MB9794:EE_|MWH0EPF000A6730:EE_|DM3PR14MB7517:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 2cbb244f-5c34-43e1-8f7f-08df08477842
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: 
+ BCL:0;ARA:13230040|6049299003|366016|1800799024|23010399003|10067099003|6133799003|22082099003|18002099003|8096899003|4143699003|56012099006|5023799004|4013099003|38070700021|4053099003;
+X-Microsoft-Antispam-Message-Info-Original: 
+ 2Qhtm6Grl+hroGC8QYOk5ISgyn0UcT1myFmgPfO07RR+3roxHIk82tZPyDHRaD2BiHytMOpEaWi6FBmXAG74emRWh/FESAWPQK1gzBSGTVaf+Mv7kXLpCjUG2ByBAmOMloBVPKD0tQf23unl6wYoby2joV/ny7u1xO9nWbXKoyEph1Zalrmxz5TyV0YVFcZnt3H3Otj7mANNLSgp4o2eDfzjWvQWPmiAR+f9DW9HGY7q0CNXDsA5ICun51l/q776p3PQhiQl7iNjG4vHEY1tIbXoq3t/0EzZJNd071B/b9BJhjqaS0XmrxdTypUV8hS6xQQSWeG2Rgpe6+2SaUgH5PxpI1eRxjjzDhi3byssfRZfIMQU5F9AXuy7kyFpZ7EK01N2NhRlVxM1KXa10BhTppYFrCqP3QGot+g5qETCgvZf/z35ESKcsD4e0vwOaC+KPlUpI4Nbh1UuVHwxiWDzsMBIP43BkPsTPKnpIp1TTK01t33PI+lW473QQwObgHC6CmglqrnuS3OiaxMYtPj33UwDkycg03wzgOYQg1sHEXqzGee55NmkKf/wVezx6+bJiSp2fFCKRcBzlRfQcUJT/EJKbImOFO/B+pkv+YNdDA2HPMExWYdDDJ5qFlcwOpdSbQyjsqe1j9wDXMrOgHTSbaAjHfkjsvYcFgof3zTef+3ZUYybi52vKj8EA4vZ1V4BmWgPGywyGRpX5Ieoofis+0GMXMpyJQoBW3OMnVdpZNGW6Aj78oIqVHmzRwCFam87p3N0lZ5cfhCD9RnPzuNXrQ==
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA1PR09MB12035.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(6049299003)(366016)(1800799024)(23010399003)(10067099003)(6133799003)(22082099003)(18002099003)(8096899003)(4143699003)(56012099006)(5023799004)(4013099003)(38070700021)(4053099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ =?us-ascii?Q?+VUKIEx4Ih3kdhSRfMbmRryhJ2G/KWUI0iMj1389rMDlFJ+420CFpwvH+fyN?=
+ =?us-ascii?Q?uEdMmj0ug0KIvpB7Yw8dpyMx8HzieIh74fbxevJZKnUurXI7CkstywAZsjsC?=
+ =?us-ascii?Q?X+gkhTffUEGM4jLsNIxR8wQT0kl+GpyleBvXvNMIa5MYq+B9iQbhhbm8JVgR?=
+ =?us-ascii?Q?YS48ZiS9MmViCDmWL/mmIVAjTYrE4jsvLObkUdh+xn6K8LhInrebv4EiNJkV?=
+ =?us-ascii?Q?0f8v/TA7m3t2iSf8SybDz6bpArUWSaCCt8gqyDjojbiaGIKcS4Dm5yQVgU1G?=
+ =?us-ascii?Q?/DZvq3Y708loiO4c7FFq06NOOZmlNSjXxQzyM+7DMcFa7klVTUn9ToXz2x/V?=
+ =?us-ascii?Q?+B7VQ/LEOTgKUaQ/gQdjaQ6fZrGO0VadN/24ZpSQsnEm8IAJO3ajGbiYyeQe?=
+ =?us-ascii?Q?1gdXHVF3z4X6epRHF+z/7M+kNo+3oE7iorzl/ILZHdCFtQsUg9iQz/SOrek+?=
+ =?us-ascii?Q?5k5ZgbXtgRNaajlI8rsWsllCxzoerEKehn/5GpzhKoAm5W/L5iDXZwEzGkhU?=
+ =?us-ascii?Q?6WzmuIxgJ+RiZ0Lq5YH0PSLIOsPDFQJP6jdrky3pwu0Lck+JvwwfjCpPOYcB?=
+ =?us-ascii?Q?LT90niRnQeObNyiL1620hkdYa9KVl6vhKDWcR/TdfBrHkRePWAj/+Yx6BtaQ?=
+ =?us-ascii?Q?OKIB1MVXx+gNhpDNjLypNHu1PcHjOZ0YavhH1rVHH1TJqlMHvEYB+YzIJ8RE?=
+ =?us-ascii?Q?G+OCILwGCqnEbiW82m2C0lH6luYt2q9PU7ach1hppKMIoUkJPnCl7EMxKIip?=
+ =?us-ascii?Q?F+nGAns+kIffLYOphG5GDW1r3fmXXkgFeVyMrSRvid7/eOLOLUF0ViGIB0v3?=
+ =?us-ascii?Q?aXao7iUqi6x+7iTeE1n8pB4S6iXmel6OQG0BMS5kGmZvcw710IkTu+5lmv4s?=
+ =?us-ascii?Q?MJRJFvB1qCOJl0h6VpHvo2Gwc9ObtHKUpqzqazf1lUJNL56Pt2T4xr8rrYTi?=
+ =?us-ascii?Q?ZiCmYHmUyQu/JFGOpSjWmiaKwVW3XggsnWR9WDYjoaeKmvzAU3qB1ZAF+qc+?=
+ =?us-ascii?Q?MZuwU8+eAG//Qo5XC2lXiGeS7IuSkMBZ1VER3zEvc7P9HPb1swUmuptgMN3N?=
+ =?us-ascii?Q?QezDd9Xf9o/IiDIBuG4c9cds5JzbQrmPOanKQ3tKLApIGhAKv0lLOXSE1iNy?=
+ =?us-ascii?Q?dvlInb4iuySvx10Lnvj7XBkZKhlDyJZm/KawBoMXQYvob2OwUzEpThcPnfJF?=
+ =?us-ascii?Q?NJKxvE3aBPhhzJ5zM+U6q43nLot2cjbS60r3wwKJYVaLrRW5qJ6GFm0NVOR8?=
+ =?us-ascii?Q?uL2F5SFvXZumQX/G6hCXAVcGXCXufKRHfcku0bbKZ41LGQwtx6FBl7798LrJ?=
+ =?us-ascii?Q?r6wJGbhFkvgaojWvveBuGv0mi+sTB/xRcGgsWx7zTIMEE0pgKFY4kTuZxes7?=
+ =?us-ascii?Q?NXpjuMiCY/uAV8evrqoB7wHsb1+eP97xD0Jvty+so4RRTblIu3IuE37s5Hs1?=
+ =?us-ascii?Q?XisdfRp18o+wq8eA9poLWs9r9y+lPt/DDjGSvZt184fiNvxiIq0pQ5jYAsbV?=
+ =?us-ascii?Q?q/JYKsHfhfi+DonIcDWjyEiEuzGCq7D3zDdouiCJDfiP8TlZxQxVy4AEsRdb?=
+ =?us-ascii?Q?pBJrkoFbiNKLMfivXQviQhhGoeulzPpfjqTjzWjrCLXI9cQatOV/gaKn4XNa?=
+ =?us-ascii?Q?A/9Qu1XXmAWd04DoI5KXLzImwzvZCPL27qh5DXjAritknQ3IiWZ/oN5/MeC3?=
+ =?us-ascii?Q?TNtNsF6nAjLiuRgBHjpthZKwYjSKkj51TXoymDpkNG6I2REm1F/e0wCBwpGN?=
+ =?us-ascii?Q?tPwRR8xuurD7KVHYir53UUNPbfPuaLk=3D?=
+Content-Type: multipart/related;
+	boundary="_004_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB9794
+Return-Path: risk@osp.oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Sep 2026 16:38:36.3227
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 2cbb244f-5c34-43e1-8f7f-08df08477842
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ MWH0EPF000A6730.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ MWH0EPF000A6730.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ MWH0EPF000A6730.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ 20e58935-f171-4cd1-1baf-08df0847764d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: a8261b72-e191-473b-be14-08df08477d19
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: risk@osp.oregon.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 
+ 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|6073799003|6113799003|35042699022|7149299003|6049299003|4013099003|4053099003|4143699003|8123199003|10067099003|19002099009|5023799004|5063699009|6133799003|16102099003|55112099003|22082099003|18002099003|56012099006|4076899003|8096899003|13003099007;
+X-Forefront-Antispam-Report: 
+ CIP:2a01:111:f403:c10e::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA9PR09CU002.outbound.protection.outlook.com;PTR:mail-southcentralusazlp170100001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(6073799003)(6113799003)(35042699022)(7149299003)(6049299003)(4013099003)(4053099003)(4143699003)(8123199003)(10067099003)(19002099009)(5023799004)(5063699009)(6133799003)(16102099003)(55112099003)(22082099003)(18002099003)(56012099006)(4076899003)(8096899003)(13003099007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Sep 2026 16:38:36.0727
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 2cbb244f-5c34-43e1-8f7f-08df08477842
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ MWH0EPF000A6730.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM3PR14MB7517
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:10.1845374
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0360.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?Windows-1252?Q?wm3KIrmC9hqU2OLOf8iQl2uq3LXgktOs3tEhMSXGQ6pohzakC7gUQotr?=
+ =?Windows-1252?Q?2p3h8FWDEjnVlyWEoBwJ2ttLPnccqUgDALz1+VjZcqKJB35hICXZIm0q?=
+ =?Windows-1252?Q?TcYzig7TJ2snHtPraArC6xmnwit08Q2n6TsCiUGuBRyTbMYFw7u0X1Qi?=
+ =?Windows-1252?Q?cy7WnuDRtJoE1x1QzpJarbL5PTP7LuURe1tHMbfvbpGUZBBRfY4mqOg8?=
+ =?Windows-1252?Q?gmr+Oj08JiBns47nHTluCmxArI4LeYaLJQhgnFdtVX3YABbyCzohPIFt?=
+ =?Windows-1252?Q?eBeBriKh7YzimgxpEJYl5NOdStRd7pvqJh1t9HhIUrOPq6hbdDT+jOOa?=
+ =?Windows-1252?Q?uGz1711V3J+JulzblbeNI2dt5C7ZAE1TYM5GnEDZhclYXMpU7DdBbrk+?=
+ =?Windows-1252?Q?z8vWx3HZ3XhZU3ZQoTxYZbl+C06eP+qc5PRXCQmfF1WU27G3C7W20DHx?=
+ =?Windows-1252?Q?Y0mlQemSebnznBMnt9G1vL8sZnVHAKURWmPhJ5fX61QayiSz6mPSmRGH?=
+ =?Windows-1252?Q?f8MUB/tUTbaMHquTJTeYybH4DOPgtDQr9j5PhuAnKzgaCpgPSuMEesHZ?=
+ =?Windows-1252?Q?DKhU8qQdvthmlXE7JlUjHy3iAmw9tqua8S5FtbD+/Xl3JUQ81CS2pQb+?=
+ =?Windows-1252?Q?y2olatkM5CXFf5Jqv4g/+LzHuTIfbJK80+tLdacXkOGuJ7IUFCz54ik4?=
+ =?Windows-1252?Q?QKCq764l+F/lFjM8H4yJZB77+SS/J0pufESaem9YVXC46FUddM4/ySnG?=
+ =?Windows-1252?Q?YGoADj07r5LBYf+hPGPUoUYMpVtVm6uBGnZqWNkzdl7KJhZMy5Z5kC9c?=
+ =?Windows-1252?Q?He/LNmY8Z32nIr+EorfmiIiyuO2IjhqRVkN1BmoYNl7GqoXdx5rZbDjN?=
+ =?Windows-1252?Q?3zYL2mwifLd+IFtbLXl9DxAeIeSgfpLhTpUKAeh1o/KcXF7sIbdqoSIl?=
+ =?Windows-1252?Q?CXe8GuBOOTf6RVY/pMhdNbdaJY2IqQnuMNrwcB0PXlWztVbdzvAQqDMU?=
+ =?Windows-1252?Q?HtfAbw/0Wh+vCtB+2jyL4ov7bf6Tj1X8fRFa0yABgHTRmyUW73+jzu7P?=
+ =?Windows-1252?Q?fXOVmqznVfm0Ow5ZBlF4iMLbdpjx1atwoRu9IUP75U+5H7N87WaeHChD?=
+ =?Windows-1252?Q?CfuGidCWEodn8rLgwBQItJ1h3smeo3FFmp2LKupASDNzzx78YFgZCydr?=
+ =?Windows-1252?Q?78MM/EYeNODG8QOfnH2zrvL/RTGfdyW2tqz++el1+ASH+fMVqQexz/aU?=
+ =?Windows-1252?Q?abr0md2gemvAIcVK+Va4VhbWN8WVeekRfN1HjpCwHtBzmb2gyM+eAad0?=
+ =?Windows-1252?Q?/iTFAw5Lwx8iQGQCdZgjGE13VbIzI7rr4y7Bm/+D6sl3wFlxIukRnaY7?=
+ =?Windows-1252?Q?LonRTeUfU9otoLf+D5jVpga/qxwkllGfwT9gXsXmMIWEaouytpDVAU/Y?=
+ =?Windows-1252?Q?CbcUj+z0abSQ1roYgIcPJiG0hn+pZlEtBBWPbiRSiydEYEJQV3e7tMWK?=
+ =?Windows-1252?Q?+TBxhVEkI6dfIDHMceJL7ZPn2OT/zUpNMWFTnqzA3dSRdH8bC6aQCeWd?=
+ =?Windows-1252?Q?WSe9122IT1XC/TuNJ7XLKkYXVm4tQh/s0qJ5EKR7OJMglx1c8tUm8oRU?=
+ =?Windows-1252?Q?hQcRHI9YVdJkN+Q+juV5wp5a+USZWzy53Yz3/1tuBNdemhdOLOkNRMAY?=
+ =?Windows-1252?Q?ME2u68y7isxq4FbFpksjwd47HY8xwfl7P2P6/LacGquIfYnKY6Q0EJw8?=
+ =?Windows-1252?Q?LHDDZrGQjjRPa+yZgnnajN73aWdA1Z1fELFGnm9qoWpl6iLTlsXW+rWI?=
+ =?Windows-1252?Q?LUs2qJ+xWNPVLZpcTktUNXcgoic5jO/zW3rLQOrIYb9xQnIQJdpupWIY?=
+ =?Windows-1252?Q?/a5z5+t+aPyX0Y/DAL+wbtTVu32YCncaF+BBit9lEcxRDNNFbZ1faR1Y?=
+ =?Windows-1252?Q?C+Kan1H969EeVgV7K89LtaYzyzJ5yEqEiD7k/eQa4RG14gdmN5IcOqkv?=
+ =?Windows-1252?Q?b9KbgWBzxOZJyPkA8HmMyteGM5ZDZcexKPpnKoFljEamRYQkSvW8Z5CR?=
+ =?Windows-1252?Q?p0rQpbWC+6HK3lSlC0LsQf7hD9siTtw1EpzYEOkPDAvXtYBszDHQWwS2?=
+ =?Windows-1252?Q?gEVj/5F6+WuhwLFRX7EtMpMUXerNRqsBVauU5e56vzIwcTnZ19xxOWAQ?=
+ =?Windows-1252?Q?sDFfq0/XHUA3GdTvwyYf/dEglnTgfEJsuMduDCnCEppb7Tpg9GBoIcYi?=
+ =?Windows-1252?Q?m6O8JJGfzhDM680SJQYbUyc6pMoz44JiMm3b9ohmNpvmfKQtSKUSPyAU?=
+ =?Windows-1252?Q?wjLK9c/pvwWRjval2W/UHigjE0nIOmTlw98aZyFUZydBFY4nYYQrsXim?=
+ =?Windows-1252?Q?Fkuy2XjYcQnSTVDUdOE42oJcp5OeSBmfYGeEJRtZTRm1WiIk0FVroI31?=
+ =?Windows-1252?Q?j6VPYhJjYt4j4qIO1zmUVYU+jBZh4D06lf9hilVodQBHCDYv9Be0R/DJ?=
+ =?Windows-1252?Q?Dg9RSizFeh4vNZmEluSUVGOQxbcxFeSOeWFhaAavwCjA41mN/K/ZtT7B?=
+ =?Windows-1252?Q?Cb2AqDFuAaopb53jb6+A+YF7q6/x7qQCnbV5UaPxWf9ipkL6Zs4/L5it?=
+ =?Windows-1252?Q?LR1jWPeKH6+SDD5SutbmutDAt0KC1P7iXmh5uEvashhHsg=3D=3D?=
+MIME-Version: 1.0
+
+--_004_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_
+Content-Type: multipart/alternative;
+	boundary="_000_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_"
+
+--_000_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for the context, Mr. White. I will forward this to our CJIS team =
+and inquire about a hold.
+
+
+[cid:image001.png@01DD39F5.A5E17590]Chelsea Bradley, JD
+Risk Analyst & Consultant
+Office of Professional Standards
+Oregon State Police General Headquarters
+3565 Trelstad Ave SE | Salem, OR 97317
+Email: chelsea.bradley@osp.oregon.gov<mailto:chelsea.bradley@osp.oregon.gov=
+>
+Mobile: 503-302-8128
+
+"To provide premier public safety services"
+
+Please note that the OSP Risk team may now be reached at risk@osp.oregon.go=
+v<mailto:risk@osp.oregon.gov>.
+
+*****CONFIDENTIALITY  NOTICE*****
+
+This e-mail may contain information that is privileged, confidential, or ot=
+herwise exempt from disclosure under applicable law. If you are not the add=
+ressee or it appears from the context or otherwise that you have received t=
+his e-mail in error, please advise me immediately by reply e-mail, keep the=
+ contents confidential, and immediately delete the message and any attachme=
+nts from your system.
+
+********************************
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, September 1, 2026 9:26 AM
+To: OSP Risk <risk@osp.oregon.gov>
+Subject: Re: Preservation scope for SP26-097765
+
+You don't often get email from rsw@rswfire.com<mailto:rsw@rswfire.com>. Lea=
+rn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+
+CAUTION:  This email originated from outside of OSP.  Do not click links or=
+ open attachments unless you know the content is safe.
+Ms. Bradley,
+
+Thank you for confirming.
+
+On item seven, I believe it falls inside the categories you've already conf=
+irmed.
+
+I was not an Oregon resident on March 24, 2026. I held no Oregon license an=
+d appeared in no Oregon system except Oregon State Parks' volunteer program=
+. My date of birth could not have been retrieved from any database availabl=
+e to the Department, and it was entered ten days before I provided it.
+
+It therefore came into the Department from an external source. Whatever car=
+ried it - a communication, a transmitted record, a query log, or a CAD entr=
+y log - is a record, not an inquiry.
+
+I am not asking the Department to determine the source. I'm asking that the=
+ records capable of showing it be preserved along with the rest.
+
+Kind Regards,
+Robert Samuel White
+________________________________
+From: OSP Risk <risk@osp.oregon.gov<mailto:risk@osp.oregon.gov>>
+Sent: Tuesday, 01 September 2026 09:14:29
+To: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Cc: OSP Risk <risk@osp.oregon.gov<mailto:risk@osp.oregon.gov>>
+Subject: RE: Preservation scope for SP26-097765
+
+
+Good afternoon Mr. White,
+
+Thank you for sending me a confirmation of your ongoing preservation reques=
+t. I can confirm records associated with this incident are preserved, with =
+the exception of number seven, which is beyond the scope of this process.
+
+
+
+
+
+Thank you,
+
+
+
+[cid:image001.png@01DD39F5.A5E17590]Chelsea Bradley, JD
+
+Risk Analyst & Consultant
+
+Office of Professional Standards
+
+Oregon State Police General Headquarters
+
+3565 Trelstad Ave SE | Salem, OR 97317
+
+Email: chelsea.bradley@osp.oregon.gov<mailto:chelsea.bradley@osp.oregon.gov=
+>
+
+Mobile: 503-302-8128
+
+
+
+"To provide premier public safety services"
+
+
+
+Please note that the OSP Risk team may now be reached at risk@osp.oregon.go=
+v<mailto:risk@osp.oregon.gov>.
+
+
+
+*****CONFIDENTIALITY  NOTICE*****
+
+
+
+This e-mail may contain information that is privileged, confidential, or ot=
+herwise exempt from disclosure under applicable law. If you are not the add=
+ressee or it appears from the context or otherwise that you have received t=
+his e-mail in error, please advise me immediately by reply e-mail, keep the=
+ contents confidential, and immediately delete the message and any attachme=
+nts from your system.
+
+
+
+********************************
+
+
+
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Monday, August 31, 2026 2:42 PM
+To: OSP Risk <risk@osp.oregon.gov<mailto:risk@osp.oregon.gov>>
+Cc: Hubbard, Micah E <Micah.Hubbard@osp.oregon.gov<mailto:Micah.Hubbard@osp=
+.oregon.gov>>; Bolton, Holly R <Holly.Bolton@osp.oregon.gov<mailto:Holly.Bo=
+lton@osp.oregon.gov>>; Governor Kotek * GOV <governor.kotek@oregon.gov<mail=
+to:governor.kotek@oregon.gov>>
+Subject: Preservation scope for SP26-097765
+
+
+
+CAUTION:  This email originated from outside of OSP.  Do not click links or=
+ open attachments unless you know the content is safe.
+
+I received your letter of July 23, 2026 regarding the litigation hold for C=
+AD event SP26-097765. Thank you for confirming the hold and for identifying=
+ the standard by which it operates.
+
+
+
+My case is not resolved. This message serves as the confirmation your lette=
+r requests, and I will continue to confirm at the intervals you describe.
+
+
+
+Because your letter states the hold applies to any record included in my pr=
+eservation request, I am setting out that scope explicitly so there is no a=
+mbiguity about what is covered. The following are all associated with the M=
+arch 24, 2026 contact at my residence on restricted federal land in the Sil=
+tcoos corridor of the Siuslaw National Forest, Lane County, Oregon, reached=
+ through a locked gate off Siltcoos Beach Access Road.
+
+
+
+1. CAD event SP26-097765 in full, including the complete audit trail, all e=
+dits, all entries and deletions, all timestamps, all user identifiers, and =
+any field showing when and by whom my date of birth was entered.
+
+
+
+2. All recorded dispatch communications relating to that event, including r=
+adio traffic, telephone lines, and any recorded call preceding or following=
+ it.
+
+
+
+3. All body-worn camera and in-car video recordings from every officer pres=
+ent or dispatched, in original unedited form, including any footage recorde=
+d before arrival and after departure from the location.
+
+
+
+4. All incident reports, supplemental reports, officer notes, and after-act=
+ion documentation.
+
+
+
+5. All electronic communications concerning me, this event, my name, my dat=
+e of birth, my residence, the domain oprdvolunteerabuse.org, or my online a=
+ctivity, including email, text messages, and messaging on any state or pers=
+onal device used for state business.
+
+
+
+6. All communications between any Oregon State Police employee and any empl=
+oyee of the Oregon Parks and Recreation Department, the United States Fores=
+t Service, or the Oregon Department of Justice concerning me or this event.
+
+
+
+7. Any record reflecting the source of my date of birth and the manner in w=
+hich it entered any Oregon State Police system.
+
+
+
+8. Any record reflecting the basis for the event's classification, includin=
+g unit type, priority, call type, and the comment field entry stating the v=
+isit was made for the Forest Service.
+
+
+
+9. All records concerning my public records requests PR27478 and PR36445, i=
+ncluding internal communications regarding the search conducted, the respon=
+ses issued, the fee assessed, and the exemption applied.
+
+
+
+10. All backup copies, archived copies, and system snapshots of any of the =
+above.
+
+
+
+I ask that the hold suspend any automated deletion, overwriting, or retenti=
+on-schedule disposition applicable to these categories, including any short=
+ retention period governing body-worn camera footage.
+
+
+
+Please confirm that the hold as applied covers this scope, and identify any=
+ category listed above that it does not cover.
+
+
+
+Regards,
+
+
+
+Robert Samuel White
+
+--_000_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:wf_segoe-ui_normal;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle25
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1028" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"purple" style=3D"word-wrap:b=
+reak-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,sans-serif">Thank you for the context, Mr. White. I will forwar=
+d this to our CJIS team and inquire about a hold.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><!--[if gte vml 1]><v:shapetype id=3D"_x0000_t75" co=
+ordsize=3D"21600,21600" o:spt=3D"75" o:preferrelative=3D"t" path=3D"m@4@5l@=
+4@11@9@11@9@5xe" filled=3D"f" stroked=3D"f">
+<v:stroke joinstyle=3D"miter" />
+<v:formulas>
+<v:f eqn=3D"if lineDrawn pixelLineWidth 0" />
+<v:f eqn=3D"sum @0 1 0" />
+<v:f eqn=3D"sum 0 0 @1" />
+<v:f eqn=3D"prod @2 1 2" />
+<v:f eqn=3D"prod @3 21600 pixelWidth" />
+<v:f eqn=3D"prod @3 21600 pixelHeight" />
+<v:f eqn=3D"sum @0 0 1" />
+<v:f eqn=3D"prod @6 1 2" />
+<v:f eqn=3D"prod @7 21600 pixelWidth" />
+<v:f eqn=3D"sum @8 21600 0" />
+<v:f eqn=3D"prod @7 21600 pixelHeight" />
+<v:f eqn=3D"sum @10 21600 0" />
+</v:formulas>
+<v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect" />
+<o:lock v:ext=3D"edit" aspectratio=3D"t" />
+</v:shapetype><v:shape id=3D"Picture_x0020_3" o:spid=3D"_x0000_s1027" type=
+=3D"#_x0000_t75" style=3D'position:absolute;margin-left:0;margin-top:0;widt=
+h:106.5pt;height:106.5pt;z-index:251660288;visibility:visible;mso-wrap-styl=
+e:square;mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:7.=
+2pt;mso-wrap-distance-top:0;mso-wrap-distance-right:7.2pt;mso-wrap-distance=
+-bottom:0;mso-position-horizontal:left;mso-position-horizontal-relative:tex=
+t;mso-position-vertical:absolute;mso-position-vertical-relative:line;mso-wi=
+dth-percent:0;mso-height-percent:0;mso-width-relative:page;mso-height-relat=
+ive:page' o:allowoverlap=3D"f">
+<v:imagedata src=3D"cid:image001.png@01DD39F5.A5E17590" o:title=3D"" />
+<w:wrap type=3D"square" anchory=3D"line"/>
+</v:shape><![endif]--><![if !vml]><img width=3D"142" height=3D"142" style=
+=3D"width:1.4791in;height:1.4791in" src=3D"cid:image001.png@01DD39F5.A5E175=
+90" align=3D"left" hspace=3D"10" v:shapes=3D"Picture_x0020_3"><![endif]><sp=
+an style=3D"font-family:&quot;Calibri Light&quot;,sans-serif;mso-ligatures:=
+standardcontextual">Chelsea
+ Bradley, JD</span><span style=3D"font-family:&quot;Times New Roman&quot;,s=
+erif;mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">Risk Analyst &amp; Consultant=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">Office of Professional Standa=
+rds</span><span style=3D"font-family:&quot;Times New Roman&quot;,serif;mso-=
+ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">Oregon State Police General H=
+eadquarters</span><span style=3D"font-family:&quot;Times New Roman&quot;,se=
+rif;mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">3565 Trelstad Ave SE | Salem,=
+ OR 97317</span><span style=3D"font-family:&quot;Times New Roman&quot;,seri=
+f;mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">Email:
+<u><a href=3D"mailto:chelsea.bradley@osp.oregon.gov"><span style=3D"color:#=
+0563C1">chelsea.bradley@osp.oregon.gov</span></a>
+</u></span><span style=3D"font-family:&quot;Times New Roman&quot;,serif;mso=
+-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">Mobile: 503-302-8128</span><s=
+pan style=3D"font-family:&quot;Times New Roman&quot;,serif;mso-ligatures:st=
+andardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;mso-ligatures:standardcontextual">&nbsp;</span><span style=3D"f=
+ont-family:&quot;Times New Roman&quot;,serif;mso-ligatures:standardcontextu=
+al"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><i><span style=3D"mso-ligatures:standardcontextual">=
+&#8220;To provide premier public safety services&#8221;</span></i><i><span =
+style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;mso-li=
+gatures:standardcontextual"><o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"mso-ligatures:standardcontextual">=
+<o:p>&nbsp;</o:p></span></i></p>
+<p class=3D"MsoNormal"><b><i><u><span style=3D"font-family:&quot;Calibri Li=
+ght&quot;,sans-serif;mso-ligatures:standardcontextual">Please note that the=
+ OSP Risk team may now be reached at
+<a href=3D"mailto:risk@osp.oregon.gov"><span style=3D"color:#0563C1">risk@o=
+sp.oregon.gov</span></a>.</span></u></i></b><b><i><u><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif;mso-ligatures:standardcontextual"><o=
+:p></o:p></span></u></i></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif;mso-ligatures:standardcontextual"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">***=
+**CONFIDENTIALITY&nbsp; NOTICE*****</span><span style=3D"font-family:&quot;=
+Times New Roman&quot;,serif;mso-ligatures:standardcontextual"><o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">&nb=
+sp;</span><span style=3D"font-family:&quot;Times New Roman&quot;,serif;mso-=
+ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">Thi=
+s e-mail may contain information that is privileged, confidential, or other=
+wise exempt from disclosure under applicable law. If you are not the addres=
+see or it appears from the context or
+ otherwise that you have received this e-mail in error, please advise me im=
+mediately by reply e-mail, keep the contents confidential, and immediately =
+delete the message and any attachments from your system.
+</span><span style=3D"font-family:&quot;Times New Roman&quot;,serif;mso-lig=
+atures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">&nb=
+sp;</span><span style=3D"font-family:&quot;Times New Roman&quot;,serif;mso-=
+ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">***=
+*****************************</span><span style=3D"font-family:&quot;Times =
+New Roman&quot;,serif;mso-ligatures:standardcontextual"><o:p></o:p></span><=
+/p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Tuesday, September 1, 2026 9:26 AM<br>
+<b>To:</b> OSP Risk &lt;risk@osp.oregon.gov&gt;<br>
+<b>Subject:</b> Re: Preservation scope for SP26-097765<o:p></o:p></span></p=
+>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;visibility:revert !important;white-space:revert !important;width=
+:revert !important;word-break:revert !important;word-spacing:revert !import=
+ant;writing-mode:revert !important;zoom: revert !important">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:wf_segoe-ui_normal;color:#212121=
+">You don't often get email from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;visibility:revert !important;white-space:revert !important;width:r=
+evert !important;word-break:revert !important;word-spacing:revert !importan=
+t;writing-mode:revert !important;zoom: revert !important;align: left !impor=
+tant">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p align=3D"center" style=3D"text-align:center"><strong><span style=3D"font=
+-family:&quot;Aptos&quot;,sans-serif;color:red">CAUTION:</span></strong><st=
+rong><span style=3D"font-family:&quot;Aptos&quot;,sans-serif">&nbsp;
+<span style=3D"color:red">This email originated from outside of OSP.&nbsp; =
+Do not click links or open attachments unless you know the content is safe.=
+</span></span></strong><o:p></o:p></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Ms. Bradley,<o:p></o:p=
+></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Thank you for confirmi=
+ng.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">On item seven, I belie=
+ve it falls inside the categories you've already confirmed.<o:p></o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">I was not an Oregon re=
+sident on March 24, 2026. I held no Oregon license and appeared in no Orego=
+n system except Oregon State Parks' volunteer program. My date of birth cou=
+ld not have been retrieved from any
+ database available to the Department, and it was entered ten days before I=
+ provided it.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">It therefore came into=
+ the Department from an external source. Whatever carried it &#8212; a comm=
+unication, a transmitted record, a query log, or a CAD entry log &#8212; is=
+ a record, not an inquiry.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">I am not asking the De=
+partment to determine the source. I'm asking that the records capable of sh=
+owing it be preserved along with the rest.<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Kind Regards,<o:p></o:=
+p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">Robert Samuel White<o:=
+p></o:p></span></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> OSP Ri=
+sk &lt;<a href=3D"mailto:risk@osp.oregon.gov">risk@osp.oregon.gov</a>&gt;<b=
+r>
+<b>Sent:</b> Tuesday, 01 September 2026 09:14:29<br>
+<b>To:</b> Robert Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@r=
+swfire.com</a>&gt;<br>
+<b>Cc:</b> OSP Risk &lt;<a href=3D"mailto:risk@osp.oregon.gov">risk@osp.ore=
+gon.gov</a>&gt;<br>
+<b>Subject:</b> RE: Preservation scope for SP26-097765</span> <o:p></o:p></=
+p>
+<div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">Good afternoon Mr. White,</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">Thank you for sending me a confirmation of your on=
+going preservation request. I can confirm records associated with this inci=
+dent are preserved, with the exception of number
+ seven, which is beyond the scope of this process.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">Thank you,</span><o:p></o:p></p>
+<div>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_1" =
+o:spid=3D"_x0000_s1026" type=3D"#_x0000_t75" style=3D'position:absolute;mar=
+gin-left:0;margin-top:0;width:106.5pt;height:106.5pt;z-index:251658240;visi=
+bility:visible;mso-wrap-style:square;mso-width-percent:0;mso-height-percent=
+:0;mso-wrap-distance-left:7.5pt;mso-wrap-distance-top:0;mso-wrap-distance-r=
+ight:7.5pt;mso-wrap-distance-bottom:0;mso-position-horizontal:left;mso-posi=
+tion-horizontal-relative:text;mso-position-vertical:absolute;mso-position-v=
+ertical-relative:line;mso-width-percent:0;mso-height-percent:0;mso-width-re=
+lative:page;mso-height-relative:page' o:allowoverlap=3D"f">
+<v:imagedata src=3D"cid:image001.png@01DD39F5.A5E17590" o:title=3D"" />
+<w:wrap type=3D"square" anchory=3D"line"/>
+</v:shape><![endif]--><![if !vml]><img width=3D"142" height=3D"142" style=
+=3D"width:1.4791in;height:1.4791in" src=3D"cid:image001.png@01DD39F5.A5E175=
+90" align=3D"left" hspace=3D"10" v:shapes=3D"Picture_x0020_1"><![endif]><sp=
+an style=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Chelsea
+ Bradley, JD</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">Risk Analyst &amp; Consultant</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">Office of Professional Standards</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">Oregon State Police General Headquarters</span><o:p></o:p></p=
+>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">3565 Trelstad Ave SE | Salem, OR 97317</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">Email:
+</span><a href=3D"mailto:chelsea.bradley@osp.oregon.gov"><span style=3D"fon=
+t-family:&quot;Calibri Light&quot;,sans-serif;color:#0563C1">chelsea.bradle=
+y@osp.oregon.gov</span></a><u><span style=3D"font-family:&quot;Calibri Ligh=
+t&quot;,sans-serif">
+</span></u><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">Mobile: 503-302-8128</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Calibri Light&quot=
+;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><i>&#8220;To provide premier public safety services=
+&#8221;</i><o:p></o:p></p>
+<p class=3D"xmsonormal"><i>&nbsp;</i><o:p></o:p></p>
+<p class=3D"xmsonormal"><b><i><u><span style=3D"font-family:&quot;Calibri L=
+ight&quot;,sans-serif">Please note that the OSP Risk team may now be reache=
+d at
+</span></u></i></b><a href=3D"mailto:risk@osp.oregon.gov"><b><i><span style=
+=3D"font-family:&quot;Calibri Light&quot;,sans-serif;color:#0563C1">risk@os=
+p.oregon.gov</span></i></b></a><b><i><u><span style=3D"font-family:&quot;Ca=
+libri Light&quot;,sans-serif">.</span></u></i></b><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-family:&quot;Times New Roman&qu=
+ot;,serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal">*****CONFIDENTIALITY&nbsp; NOTICE*****<o:p></o:p></=
+p>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+<p class=3D"xmsonormal">This e-mail may contain information that is privile=
+ged, confidential, or otherwise exempt from disclosure under applicable law=
+. If you are not the addressee or it appears from the context or otherwise =
+that you have received this e-mail
+ in error, please advise me immediately by reply e-mail, keep the contents =
+confidential, and immediately delete the message and any attachments from y=
+our system.
+<o:p></o:p></p>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+<p class=3D"xmsonormal">********************************<o:p></o:p></p>
+</div>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"xmsonormal"><b><span style=3D"font-size:11.0pt;font-family:&quo=
+t;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt=
+;font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;<a hr=
+ef=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&gt;
+<br>
+<b>Sent:</b> Monday, August 31, 2026 2:42 PM<br>
+<b>To:</b> OSP Risk &lt;<a href=3D"mailto:risk@osp.oregon.gov">risk@osp.ore=
+gon.gov</a>&gt;<br>
+<b>Cc:</b> Hubbard, Micah E &lt;<a href=3D"mailto:Micah.Hubbard@osp.oregon.=
+gov">Micah.Hubbard@osp.oregon.gov</a>&gt;; Bolton, Holly R &lt;<a href=3D"m=
+ailto:Holly.Bolton@osp.oregon.gov">Holly.Bolton@osp.oregon.gov</a>&gt;; Gov=
+ernor Kotek * GOV &lt;<a href=3D"mailto:governor.kotek@oregon.gov">governor=
+.kotek@oregon.gov</a>&gt;<br>
+<b>Subject:</b> Preservation scope for SP26-097765</span><o:p></o:p></p>
+</div>
+</div>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+<p align=3D"center" style=3D"text-align:center"><strong><span style=3D"font=
+-family:&quot;Aptos&quot;,sans-serif;color:red">CAUTION:</span></strong><st=
+rong><span style=3D"font-family:&quot;Aptos&quot;,sans-serif">&nbsp;
+<span style=3D"color:red">This email originated from outside of OSP.&nbsp; =
+Do not click links or open attachments unless you know the content is safe.=
+</span></span></strong><o:p></o:p></p>
+<div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">I received your lette=
+r of July 23, 2026 regarding the litigation hold for CAD event SP26-097765.=
+ Thank you for confirming the hold and for identifying the standard by whic=
+h it operates.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">My case is not resolv=
+ed. This message serves as the confirmation your letter requests, and I wil=
+l continue to confirm at the intervals you describe.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">Because your letter s=
+tates the hold applies to any record included in my preservation request, I=
+ am setting out that scope explicitly so there is no ambiguity about what i=
+s covered. The following are all associated
+ with the March 24, 2026 contact at my residence on restricted federal land=
+ in the Siltcoos corridor of the Siuslaw National Forest, Lane County, Oreg=
+on, reached through a locked gate off Siltcoos Beach Access Road.</span><o:=
+p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">1. CAD event SP26-097=
+765 in full, including the complete audit trail, all edits, all entries and=
+ deletions, all timestamps, all user identifiers, and any field showing whe=
+n and by whom my date of birth was entered.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">2. All recorded dispa=
+tch communications relating to that event, including radio traffic, telepho=
+ne lines, and any recorded call preceding or following it.</span><o:p></o:p=
+></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">3. All body-worn came=
+ra and in-car video recordings from every officer present or dispatched, in=
+ original unedited form, including any footage recorded before arrival and =
+after departure from the location.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">4. All incident repor=
+ts, supplemental reports, officer notes, and after-action documentation.</s=
+pan><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">5. All electronic com=
+munications concerning me, this event, my name, my date of birth, my reside=
+nce, the domain oprdvolunteerabuse.org, or my online activity, including em=
+ail, text messages, and messaging on
+ any state or personal device used for state business.</span><o:p></o:p></p=
+>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">6. All communications=
+ between any Oregon State Police employee and any employee of the Oregon Pa=
+rks and Recreation Department, the United States Forest Service, or the Ore=
+gon Department of Justice concerning
+ me or this event.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">7. Any record reflect=
+ing the source of my date of birth and the manner in which it entered any O=
+regon State Police system.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">8. Any record reflect=
+ing the basis for the event's classification, including unit type, priority=
+, call type, and the comment field entry stating the visit was made for the=
+ Forest Service.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">9. All records concer=
+ning my public records requests PR27478 and PR36445, including internal com=
+munications regarding the search conducted, the responses issued, the fee a=
+ssessed, and the exemption applied.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">10. All backup copies=
+, archived copies, and system snapshots of any of the above.</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">I ask that the hold s=
+uspend any automated deletion, overwriting, or retention-schedule dispositi=
+on applicable to these categories, including any short retention period gov=
+erning body-worn camera footage.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">Please confirm that t=
+he hold as applied covers this scope, and identify any category listed abov=
+e that it does not cover.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">Regards,</span><o:p><=
+/o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">&nbsp;</span><o:p></o=
+:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"color:#212121">Robert Samuel White</=
+span><o:p></o:p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_--
+
+--_004_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=23465;
+	creation-date="Tue, 01 Sep 2026 16:38:30 GMT";
+	modification-date="Tue, 01 Sep 2026 16:38:32 GMT"
+Content-ID: <image001.png@01DD39F5.A5E17590>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAI0AAACNCAYAAACKXvmlAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAO
+xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUATWljcm9zb2Z0IE9mZmljZX/tNXEAAFspSURBVHhe
+7Z0HYF3VlbW3eq+WLPfeuw0GjMH03kkCpDCT3nsy/yRkUieThJlUQhJCOiGFkEIzvZjebYwb7t2W
+ZMuS1Zulf33naYvLQ7aaRUl8iSJLeu++c89ZZ9e190lu12VHriMz0MMZ+MY3vpGQ3MPXHnnZkRno
+nIEjoDkChl7PwBHQ9HrKjrzhCGiOYKDXM3AENL2esiNvOAKaIxjo9QwcAU2vp+zIG970oCHMlJCQ
+YPX19ZaZmRlWtKmpydLS0qytrc0SExOtrq7OsrKywt9aWlosJSXFGhsbLT09vRMBBw4csP3791th
+YWF4f3JysnHvpKSkcP+amhrLyckJf2tubg7/5l68js/hdVytra3hdz4OPosxcPEZ/ro3M/T+aUAT
+XQwWmYvvLGIUQCwwF7/jqqqqsvz8/LCYfI/+zUHgINmyZYuNGTPGUlNTAwAARPwVHYe/zscS/RuA
+4x5R4L5ZgPSmB40DpKsF9MVyiVNdXW25ubmdUoNFQ2L4hRThfixkbW2tZWdnB6nhi52RkdEJRiQV
+0ovvLln4IxIPQPK7hoaGIP1cIkVBwXj5/Dfj9U8DGlcBqBT/NwBgwX3RHVgubVgw/rZv376glhwU
+/L6ysjIsKlKG16C6xo4dG9aYv/lrkSb+efwNwPnn8TcuxuQqzNWjv/YIaF7nGXD7Jrrz3Y5goQsK
+CsLi5eXldUqbFStW2JNPPmnnn3++DRs2zPbu3Wu7d++2JUuWBKn0zDPP2IQJE2zcuHG2fPlyO+qo
+o+ynP/2pDRkyxK644gorKSmxNWvWGFIMUA0ePLhzFhxMgIh/Mz6+onbP6zxlffr4N72k4and8I3O
+AGrD7Q7UBIB56qmn7LjjjgsvQy2xeEuXLrVbb73VTjvttPD7oqKi8Lfi4uIAjL/97W92wQUXhPdh
+0/D3adOm2U033WSf+tSnwntefPFF27lzZ3gfoOGzkVCAzqWZSxyXPowJNRaVUn1awdfhTf8UoHHb
+wCUNP2/YsCHYJSw26gf75De/+U1YWCSKS50zzjjD7rrrrk4JwXvc8GU9sFumTp0ajOQ5c+aEe158
+8cV2++232xNPPGGTJ0/uBNjo0aPDEqKi4g1cDG6AMnTo0PAaxvhmBAxj/6cAjbM73AbBPQY05eXl
+ATRIDFQLv/vZz35m1157baeLDohQSRiw2DwsNgDjqq2ttgQRR5Aww4cPD8YtX7wG4HAf1Nq8efNs
+ypQp4T1RCQJQkDaAg3tgFyGp+Byk3Jv1et1BE41duKSITiaGI3EWd4crKips0KBBwSNxW2HdunVh
+52OrfPCDHwwLBRhmzZoVblVaWhqkzS233GLvec977Pvf/7599rOfDfZNckqaZWRmBwnCfZNCSCXm
+licnKT6zv9KGDxti7W0scizewjjPOvtc+/G1Pw1SCzfcLzeQkVarV68Oqu/MM88MYOX7CSecEKSM
+P4/fD6Pd40M8F8/H7wBpvPrtSh2/lgB83UETH19hQZgULvQ/u5IJZmeyU1lYFts9IRZ7xowZdt99
+99kDDzwQXNwPfOADYWGxL7gXkubOO+8Mv/vIRz5in/zkJ23u3LlhAdPTU4MK2rRpk40fP972V+0L
+9smk8eOssQ73OcX276uwFoEjRePBDmEx3U465phjguThZySKfzF2pNw//vEPu/LKK8P7GAsG9Ykn
+nhgAzzNxL0DE6z12xHOyAXhOxszv+Q6Qoq+LemL/UqAJ+1qTw+T5FxPPDuO7exr8DGCY0JUrV9qu
+Xbts/fr1AQSoExbmrLPOsv/3//5fAA8SB5UDcJA0fN++fbstXLjQfvjDH9rXvvY1u+GGG8LipCQn
+BvuE+5eX7Q6qZNSoUVYt0OQPKrJ9+6WmIgFD7rvixResvq6m0y5hUT2m4zYWr5s5c2YIIAJyJM/d
+d98dQIo6w67iwnBGdfIdULkU8uAk7+XffPeYE593sNjUQAPodZc0PGC8QegeRlARAourML7jCmNw
+jhgxIuzuk046KYh+wICRec8999jb3va2oILuuOOOMH+eZvj3f//38DMu9I9//GP7+c9/HkB3zjnn
+hB2MSgFEeEfZeFf6vC/851U2qKhAKkxBOv29pTWmulBLSLSysrIwHk9h8DekCAAAJH/84x9t0aJF
+ARQf//jHA7gBZ9SmAUQ333yzoXpRn7jujINxR+fGN5V7hp4aGWiQxN//DQEaHxTim0nyHeQ5IxYT
+FYB9gG1y0UUXhbcsWLDAduzYYZ/4xCcCmHg9cROkyBe/+MXOFMHWrVtt1apV4WdsHSTPbbfdFu6B
+ervssssCOD1i7OPJysnVri/snLMDwgvg4rVICmwmpIlfAMFzVagUwAGgAfNXvvKVYEzzOy6P1/D6
+bdu22bJly+zss88OqgiVdu6554Zn4e9sFp+bqGf2L6ueooZwNGTPxLJATBYTxS57/PHHg6fC5Z4J
+9snf//73oHqmT58edjDfmfzrrrvOvvCFLwQ18OlPfzpEcVkEpAT35d/uKflChu/6Ki/fa0WDi6ym
+tlHjSA5fUTcaIDNe3+1RwCEB+SxsJL8+9rGPBS/NL08j8Fxf//rXDdvo/e9/fwDTCy+8YL///e+D
+ZPIIs0syT2+81tIl+nlvCEnDAgAQN4pxmblYULcl+BmDFomC7cKO9TwREgdDFrAw6Xv27LHPf/7z
+QQ1xr4kTJ4bd6rYG7wNUfG7wlPSe5pYDMVWI9pGTlJ2XH8CTnKo8UmqCtej3rQJahgxn3peVmW6J
+8q64uG90nG7A8jtey3dUGKkK/uaSk/cRXGTsSEaPZDPeX//610H9ARq8Q56XLyRxNC/2eoDndQeN
+u5du4CHuCcvzM66sTxQT/653vSsAA71//PHHh8lnx2K0EnhzrwN74Nhjj+2cT59kByV2CNIn2E7t
+Bzq8kvTgHYEZwJKWlmy79+yzmqoamzRxtOwbGbpkxoUTTwfwAW6oe+ITILiH5ZlspI6nMXgPQOBn
+nhFVioTBjkFC8beNGzcGm8btmT/84Q/hWZCqrt742ROirzVwXlPQxOdcUBFMHJPq9gsLgu1CPujB
+Bx8M88Eio9+xDf73f/83iG1EOpHal156yU4//fRgqzDRXEy2g9AlVnRiuVf0Aix8fmYH54a//e2W
+O+2aa39syYkpAu8o+/hHP2zz5swQSNo61FSbHQjcmVhS0q9oCMG9Hv4GSF2i8jMAx45BKrIZuFC5
+zAlGOvYNz8Q8YNxjEz377LNBarJJ2FzulkeNZecVRTlEhxtUryloXPy6PcCOdJWBbeDclq9+9av2
+0Y9+NKgYvlBLiPCRI0eGXYlUAVDsNIxRFiRqm/RmksJCahx8PhIGuk2V7Jjm1gP22c//h+Vk5cpQ
+3SIVlR7+HlVD/akzRIpip2C7/OlPfwpuNolSvCiM7C9/+ctBLRGEvPrqq23+/PkBYH/961/t8ssv
+D6kLLs/YI015BgdtNGnbm/noyWtfE9BEI73OhovfmXg0gIMLtXHVVVfZe9/73iBJiPASv+C9P/rR
+j+ztb397iMfEbBILKsoX0z8ruriHmohorKOxpVX3Sg4q55FHH7eSYUMtR9HidevWWmpyko0aMcwK
+c2PsQK6eLEz0Ne4J+cISO+IL0BNQ3Lx5c7BjLr300iCJ2DxsFMCFlzhp0qTgVbHRUH3O22EsSJso
+DWQg81oDDpqoW+jhb580tzWYIAeMc1uYzC996UsBHMQ6MGr5mV3o9INoPCdqfPacUqmgYpuIUB10
+zObmGGhS0tJtt/JWf8ctb0tQjCbNpk+bEhYFmycBGilJqZhsYskOikuXRs7t4YXMgwfnWFzyUTwT
+UWouAIQ6wnj+1re+FYKNRLyRtkcffXR4PZQO8mkXXnhh2FRRSetzHlXRPZEgPX3NgIOGifaJiy4y
+A+RBAY7bIohfF7tIETLQiOi3vvWtIRZDlBexjkeENEAcc08mx0PyPdn90ckJdhZg0PpnZ6VbTYOI
+V/KkTjv9TKttbJLH1Cp7qtiOnn+sbJ40GcTylpoaLTNVnOAOXvChJptn97CC735PC3i+ydMHvqkI
+HzAXH/rQh4IEIUTAZiGQycUmQ609//zzwa0n/oOdw8Vn+XwPlLQZcNAw8GgijgdjQvg9ngDAefrp
+pwMAyCFxASTcU4Bz6qmnBjUAgJgYt3uiC+WJvfhJ6gmRO3hEugBidke+h3gKn3XmGWeHvyXIw3Iw
+S0tZGgT2diUw6Z0Q87oPejEmzy+Fe0XSEfwMYFA9RLj93+SsfvWrX4V0CHNHrspZgxi4OAJcJGnh
+8pBWwbh38LmkfdNKGh4uPkcCCHCr0eEEtXAl//znP4eJgM6AqHZjmV30b//2b8HD8uSdAwugRXNW
+8SvXU0O1PUJTkGdtpQI1on9QcUkA7NbNG22t0gDDhg627Kiz1AGAQ8MmBhTu4y642x+8D1AAGFcp
+/NtdeugXpEL+53/+J6hmvEgMZGwc2INc2Dm/+MUvQigCdRZVzT19/u7GH//3AZc0UZvGbRgMP0Qw
+7jOSA1caYAGUaJidycXt9N3JznEV58avew8OnugDdm/bJCpHRGwky3Lz0q2uodUqK4jN7LdNGzYq
+2Thb1kqCrV+z2sp27bZ9e/dZYn6OjGIlDxOVF9L3Q9kzjCVaWsOYAU/USPcxoiZZZJ7PE628H9VM
+3AZ3m1wZkgZvy8MQSGSkDZFyABe9X29VdU/Bc9hBg0pwErVnqxkM4Ikaa7jNAIQHRrKQ/3nf+94X
+AncuUeLVSxQELooPpbd74kGlZWSZzBYBVky6pGQBptaeeeIZG1ky3KaMnWBNSjzWzZijyO1zNnvq
+dCsqKLQkVa60E+RD3XQz09FEJi+NH5M/R5TUHk1EMhdIW4BDQhOXm5SFOwNwmIn3/Nd//VcAjNdn
+dcXD4fPdYXC12VOgRF932EDjrm7U7eODkB5MDLvMDT1UEAEs4iyIV6KgZKAhbUff072k6Msjv/we
+931q6hosPy9DydAme+ihh6xQKYRTTjnFUhISLbdwkM2ZOUPcmlp79NFH5eWVaEcXWENTu2WkSdr0
+ADj9GSUgY24hcPFvQEJQk38TBEVt4STwOwDxve99L2T5PQ+H5IqGIZzg3p8xHRbQHEx3ekjdB+gA
+YhcQi/jmN78Z4i4Ygi5hBsp4O9QkZWfH6pmWLXteHJ11MjwXCcwT9O+NUgc1QeyffsapAvo18lie
+1c9nWroA0ygRlal0w0BenvzkM6B/AFyMZGwuvCfsnne+851hCMS2+DtuOSEMJHl8Xiwq7XriKHT1
+bP1+4vjAHT97GD9aXwQHxPMz/B6viOvd73530NcuVaKh9r4+VG8WEVcbj2jNSxtsxcrlmvB5smVm
+2L7KfZaeIeZgcprV1lXLmxpkJ5+8yNZvWGvPPa/XHTW7Nx/T59d6xNyz6CRrZ8+eHQDklRXEtmAh
+ErqACcCFW+4AcRUeXas+D0hv7DdoeCg3uJwj4qy7ruwNXuPgWbt2bWDzu60TlTKvFVs/fI5sgbKy
+UkmQYYqFnGKZGdkKsO1WfGSoQgFKXO7eJ8N9j51z7qmWeE+bPL/VcnEHK0IcqywYyIu5YYwE8DCW
+MYSRInyh5gEJAUA2H/QLXsPrARkgis4jc+/2JmPuaxznsILGo57RwTi6Me54YOwbpyUAGCQQYtQz
+1gDOXc6eGLL9XTCCwVu3bbUhcqfxQLKyMmVw7pfN0C4bZ68ir7uV35phm7dstGHDiwWqRbZt+xar
+rqmy+oY8y854Oa3Q37F09X4WGQMYw9f5Rj6nEMmuueaaTuYicZvf/e53IZzxlre8JQCL757Rd/qs
+f05f57ffoImPC0QDS6T/H3vssWAAn3zyya+oPvQAHg/grrRnwZ1APRCLEH9PbIaWlqYQ48gQoCv2
+VQeXt03BuxdXrBRneK9NmBijaGzdus3GjxtlU2S8l+0pCzs9e/SYAR0mCw1gAAoby6Uyc0URH54V
+YF+8eHFI7uJQkOAkUkxxICkJ7uHBya42dG8foN+gcdXEwkdFIToVAxfCNhlpxCiEbtCNW0h8wfkv
+XpbCAqK6/MEGMr3vE7Vnb5lEf3YADN4Uz1BYmK+odUUAxYLjFwQS++TJE7UANba/Wm1LstOC6C8a
+FCOGD+TlToYHO6OfRRQY2xDJDWmLPB0OBfMH8Amc3nvvvSGD/oYCDQ8RJX77Q5HmJ8EG6nkAQt8Y
+bEgdYg4Ep9gpXB7Qc1vHgXg4idPuhXguiM/YtXvXKyibu5VpP6CYDTGT5557LmSUB4vyuXnz1hCM
+zM3NCYA/0NZkBfkARmxAJTzbRfdDwjrYvftEfK6tL+ByFeLxHL+HzxHfScsQ0iDOxYXK924VbEyi
+ykTduVy1kSoh8dmXq9+Shg/1yfIHQXIgLiFIg3LY+PwN0Yl45QFxuXm4+Mnoy0P05D1e1eghfd4D
+kIq1W7Oysq1JwcdmudBpZLh3l4U4B6BV0ruzdKa6ukYR2xTLU1RYBTe6Aw2PZFx2JCWj89BXe6En
+zxL/GqQevCIvPybuhSHsnGbiNg4STAakfH/64vQbNB4HiE4SkoNyVQxdLHsY+ewCko5MLGBBJ/eV
+ONWXiQW0SAmXXki6aByJyWRM6ekJQS0de8x8vb5Bu7g+jBP1W1ZWq+8HgkHPc2Smp1mSAoBtHQE4
+9/4GOigZfX6eAYkGT5oyGVgAnrvD44KwxcXYGDeA8RRENLzRmzntN2iYICabSeQBYhOfHgwxopRk
+aIn+fvvb3w62AXRFUggsxGtVguHq00MBTCA7r7CIchJl4ZVCqK2pl1rKDHTODOWiaHJVXV2rMe8W
+LWGyiOTQSRsF+HrbV1FljQ3NNmrk8JBHcHLVQCUID7WgngyGIYA54KqKZ3QQ86yofjYMEsjprn1V
+n/0GjetQ7xoFaIi/kFNCt8OyI8wNj5cCNqKVBKKw6uO5ur1Be29eyzjQ8Z7fQaqwy0oGq0Zbi14l
+F7tNUT74vnhLg/X78vJ67cx6FcgdkNiv1PszFARMFdiTgyvO35qa1L9PAUDP40QXynd3X2MhPX0+
+N5AxdAEGoAEkbE4kC1ITWgXeKr9njN4CxfNUPf2sTnuqt2/o6vWuZgACYCHEjSHJQEnbf+5znwsM
+M17HgPk9ruJrdUUlgAe+YuUxqiaAE1xVHSRMVWV1qHfKzx9ku3eVdbqq+1WRwGLk5DB+WqrFylhY
+kBTlotJUE4V6dmnLc3nOaKCfMWoT8m/oJniq5PSItFMWDN+GzDhSiVowr4yIto7rzTj7LWkYAB+O
+6PfumNgvNPxBTdETBncQkHhCkkX02qa+Drw3D8k4XEUhnpGGLuW2bd0RRDYqqb4ew1wUidpYw6FM
+8YNjRW3lwes4IC+ppqZOv0sKdsS+ikrLF5CSElFnMZ6yByYB0EBLGZfySA8+ny9UP3aLd7NAygAe
+PFgkPuNG4mI0E/Tri8Heb9BEi9hxs5EkHhNgoJDDveAL0HgOhYH3nO/hPNxYHfUrrvYOfm6Eo+Bn
+EQU+r34gTdAiCqdsVkm5ek1UkuWq5LautslKd5Zakgricgoygz9UMqjQaurrbOQw9aNRMrJOHtPg
+wbmWodfUNtSLb7PHktIyLUv2T1PdfmuoVxVABgsWawnL5bQJDOR49nDnMH2Q3XErog/bxSFL7gWx
+EZhv5t8ZkHiuP/jBD0KLFQJ/3u2L1wKsvl79Bo1/MCinJpmBUm7hhVx8J96ByHSxyG70QF6bSLcs
+qtja6sKg2iOolBFGXFvoGMXq80ldgIYOmexwLQ+LBTLEBTe6ybRIMqSp4Uz53koboiL+3aWVtnXL
+Ljth4fzwgopdey3pQJIVZuUbhLy8jDQrys+0tgP7LT2l3pa/uMwGFxXaKHkktZDfi7OsKLfEMgW4
+Ctk+I4cMsoq9e2zo4ALxbupU9oJHWKDojVReg+wo3Y8hBchrwSnIDNAKix97lrY2jRfaKE48f3eU
+xQGktVV17h0bILwwvIdbiSamN3n6xQOiSB+6akDKx4Ml0cnfMB9wQLxFSl+Ac1hA4xRNqhopYiN4
+B7K5kCjYOLDzoi00vHlzcFkpydCkBGu+AzCterDgiWnimaADrc2dNT6JYs0liTAVXov4CG1K4OIS
+botdLFaqJrOxxaxYgKHcNl22x9Hz5goAdSKRq0ZIQB1SlGtDhxUoX7PC6uqrra4415a98IxSCM+r
+c0S6Iq4nK1pcr3qkv2kzHKt7DbVtT+1UYGywyktG26QJaklSWW6ZuQW6f6qAudOyxMfJErmrhQw6
+QwQ0HRLlgPik7YogJuhLtRAypFWnHqVyRZld+vdegZKNFCvko4S44wFBUOAVxgoDsbHYjB5SoL79
+v//7vwNdApXFhVQiXUKUGA50tBlTb8DTb9BgxxAX4Dt2C3U78GSIQhJwAgjU7nhTw2glZZT6mJb8
+cuIvlrxUqzJv7swOFH/hZQUQKRuJk/9MZagY6NjRCZpoxWrlFZXJBtlj0yaNtwotbG0VYMqzVC32
+6mXPyfa6Vi1Fcu2EE4+VdzfFGhq3CEzFeoYR8gZf1A5dYpMnldjMGaPt5r8slk1QZVMmz7QLzrtM
+uE21VkmaDEmgYUOKrEmeWB2qq7kleFhkzfOycwwNlgR6VLWph3tZ6nQIDgr18OKCXRQ6b6lxZEdR
+HP8+oBIbgolOpGrVRkpJzww/v1ybHlt+JMmHP/zhQBf1uFEsRVIYKLaYEq8baIhGUpdDjgl2Ga41
+EgVvA2+KsgtAw+VBJY/n8KAYxIAnSnd8OX7QFmIlSZLreCzJaj6UBNcyXLRYVVxIEqld+ihBkgc1
+106hvqr11UMqvK9qb4U1yTYZMjhfu7vW6mrKLb8g2Z564nE77pijpJbYq7U2dfIIjTvb1qySxzF9
+pFSRvKu2BkmNbHt0yT3KZieqI9Zuy8hOshHD8mXzDFILtTPs/nvutM1bd9n8Y4+zhScssnpqp2Tv
+pImH8+LylVZQWCRJtM92taodv8aJhMzOzLL83LwgQZLTBWmkUYj38BV0rGwxpK6i1nWNARTJkqSJ
+kpwJoYU+Moo/v1wNgUHLfOKZMp9IdgJ7qCJASNEhnUoBC2YE9yQg2Jer35KGRSeohE3z8MMPB4lD
+CJ5GQTyARywx0jzHhDHM63lImgdxQYYi9kG0GOOayasUwTuW43n5ikmSNsVPWkImur62LsZOS6SJ
+Yqp+3xbuwZUqsKSnJFpLU401yOhtb6m2+x992EaI4rBl0zLLzT5g848/ScG7SbZfKmbHzi22p7TM
+WpvVXkQTT6PG5U8+ZuW7S+14gaJN6nKDMt8V5XvsvHMvsESN49knn7ARo8bZCrH+EoTYU849LwB6
+x7YddtLxx1pdo6pA21VXJTAfaFX3CY0P976hURHaxhotaIsET6wBJLZboJdoc6QKXGEzqTtFQEiH
+WorZeDGVnCxgcnk+CTUVjbJjNxIbo3o11KoLpNSIQ2V95JFHQk0Zrnlvr36DBh3qLDzvlUfeCcOL
+B6ADJq9xgjXg8fwT0mj9hk1BZJJFzs6WVyI+i9vBAGafqApOHvJ4i8dEmLscEb3ZTYkCTTrqrIP4
+K+nfcWm1WtJs29Y1omjKRijbYts3L9XLmu2Rh3fb+NFTrHDURPXaa7YXlq61wkEl1livpon1yUoT
+DNLiV9oJx5+lCPfEID33V6ovTWKOyoRn269/+etAS8Abw7U9+thj9JkyogSK4SVEmwXslnpJiAyB
+UDxpBQjdMNaQNe4OmamxomVbpVfDgR1Saa16b5IkS70mo6mhMfye9iZFxbGmSLskxeHNbN+5I3TQ
+YPE9ReM9ABkvG4jc33nnnfeKjhNsXC9rfs1BEw1oEQm+//77Q/Ebhhb1SoAlmothN7CD6IRArfJL
+a9fb+EmTg/695JJLwkOS8OQ9TFTRoOIglVBfTEaqesXES559UmGlOzfbHnk0u3fstj3lpaIktsut
+zrS3XHKele3eLGNbp6gMzbNTT1mgwONjonBWhLzS40+tsOMTh6tQbpyVDK8Ixu89978YKJ55eTGa
+BhJr7T1LNQ41i+as2KThtqu0xWrq1OwoJcGmTR0byoaTstOtrbrCHnlMnuL+Gpt/3EI1DsiwsvJK
+27Zzr6RwoyoZsqUGB1teQXGYm+LBsqvSkqTOdFqLQJKGYZyQYWm6L5sCJymUvjSmBDefa+Omzfbb
+3/42eEbbt28N8waLAAqou+DMFwYwNfAeAea9xGeYW5yWvkgZ7tFvSYMIpDUZPVRw50gR0HOFvFPn
+XhdQAAMPgpTB9SZK+a4r/92mzphpj4qoxX12KjeVLxupQBUAg4uKsRWDjYKDxPfqmmZ5Zrtsg7yz
+Tfoq105au2ldiE9AT8iXsTlI0mlIsbqKa+dNVl+Zner4cMPvrpOxnm011aV2+pkLNQaBLzPPTjzp
+fDHzmuymv90d4kfZOfk2auxUqb9GTXgsa5ypUl2+E/AjILh69UsS9Q16z31aUOWqNK6du0pjHoqM
+k/vuudsefHiJ3PTRtnZNtp129kUCulSMjOWy9GqpXD3Dlq1W9vQLVrV/n7jI4vMIqN60CNVcLJ4O
+P+fJsB6j+6SrljxdYrKpqdlq65skDYvt7Ve8s0PCTAjzzvw5JQKvE+kbjYV5ysCPJgKwN954Y2Ae
+9PbqFjQeSY0nJTvLjvgLHhOBO5KSkJ4ZMBd6lIFzD757VpUFQorw8I/TVVPe19lnnGmjx4zQ4uh0
+Ey0q4nr5yg1a9O32mOyG8t3l8kaapF7KVRabYaNHqHZZW3HeUcfasccp7iKjaNK4sdYqAJVownPy
+tCubau2RB++RLdNkn//qd2zrquft3vtvs8lTxlhaVpG9uHqtLVvVot0+2abOmS/jsSSoyBS55rXN
+Oo0ld7DlyqjPyB3aEQdJsKPzab3WElIImzeutr07Vmk3F1tiToEt/vOfVCHwjM2YNim2oxMo3W20
+wmKpUBnCo0apM5fMrda2dEmf/equ1WJ7S3fYvqqyEFVnYSsqq0LIgnTAoIK8YPcRLB0+dJgciuEh
+LZArg/3aa/+h121Q/qwoVEyEkpvIUULuWLAWpHS4B9KJpDFfOC9EjdEGqHvWM1qMeKiqkG5B46Fw
+D5F7XbI3JQQQMPMYMA14MIoZIAYxuhZ7xkHk92JAhLaffuZnVji4xDbLmse6x1VvlPfxx1/eGPrO
+wZ4L3I+0DJs8dZpiDGPD4vHZBQWDbMiwEssrytcEb7IxI0ZaYYHI19qR27aul6SZoGhuhU0cP1Ju
+9HF2iwrmh48oUsAvQS1Extqti2+x+qZ0m7/wcktNHxrAkqjIbrNc2iaB7IACPCFP1ZHsRALwcyVU
+UI2/WOGFoSOKra5irIC5WL35bldwz0RrPdVKFPS77757VHT3uCii223azHn6nLMkWRoFtj02ZdpU
+eWVZtn3HviCRcqoyg0dF+BpVEg78UBvarKyMkGTct7c82FPbZFxju9Hb+CnVP61esyrEooaoQQG2
+FfMSBQ4bnXvRgQLw4cXiVREZxiXnswAPJTrR6LzbOgfLgncLmmhuwg1SpIj3tMXgxQbhQyH7IF2Q
+JJCeAQbsPCab9yI+UU/EB9Cpm7dss52alAkTJ9vsOfMkLOQxabJGjBppw0eOkuscMwyHDx8Z7g8d
+AXeeXdkor6RW4f5WGcpjVAk5vFg9XLbuVJS2yKbPmmZb162UO3y7zT9qjkjjRdpdO+0Pf/qrLTrt
+FLv57/dIPRXaolNPkTmsqG1is7VqwfT/iiqnhLE2tTbEzkgo1NlPTeLaVMUaOza1xTzCBOgg0pnp
+2fk2btJsScSNIQO+6LwLJWIr1Dzyr6GaYbgI67ff9ncrKhllw0ZN1swdsKefW6HUhYzpsWOkVlL0
+tyIZ2BwV1CIO8tCg8ipUAjy2JE8ksTyrrR4ZOwkvJVWbJT3EoUaMGh1U/Kix4izLicAciJ5HxRqx
+dswf3TYIh6CSot3O6XoKkNzm9L95gd3B1Fa3oImqJWezOyqZPHYCBGY6HGCEUYuDW0fHKh+M3yPa
+1AfDd/4xx9ndDy2RR1ASQJSdmWItkiwjUD0CEPkiPgOwZEiCFI8cqslr0q7bFxKMJYOHSdKkaceW
+2c1/+qNlq4Dt1EVKYch9/v2vr7PTTl5o99x7u6RelR1z3AJ734c+Zv+4dbENGTHZpsyYJU9YsZAW
+xTdUK5ebkxUA7a1LGptimewUGd4N+swmVVTGMsqt+ne9VElliKHkpmfb0QtOsTHjxtuKF562Zx59
+QuB9KcwFtBDCCBs3Ky4isKSpPQm1VDffcqtVVjfZ7LlHKeZTIkmqXJh2PVJ1X5XqySsrwmdXVDQG
+KV08WFye3FTbs7dWf4uxHS+5+C127PyjJUnHBBXlRi3zFa0X47UU1HEfosSwKSnjpXUJqsljaLwH
+0PD8Xhcf3+7OQdQtaLhBfD2Sg4bI4vXXXx9EJ2IQAJFGoLQVErkP3qUVO8EL4pEYBJeOP+VkdQSv
+1Y5rss3byzSBmTZ12ljds075qiflouJFtchAJne0J/wbcVqlROJfNAHLV61UP5l6O9Cw397xtgtt
+7JiRtjuh3goGcR95Dnlpun+Vbd2+Q/mgA1JJSTZxynG2TgZ1dl6u1MNIqQHFizpOkSPKyq5mknnu
+cn0mz5un+yFd6VJOc8dsqY5c5ZnaW1LtiWdWKtudYsPlum/ZvNxapNrGqE3+3Qr8PfjAEjvptDMU
+bc6TP9eiSoYJNlOScPG9j9pPr/uZJele0EdR5RDa1655KUTWF9KxdMvm8KxZORPF5VFX9aeelidY
+KhtqjE2ZOkWB1IUhquz+JOONUmhdwjN+KCpIf8Ij2KDYTHQWBdyoNvjCUS8rWiQQL3G6BQ1viPJR
+QB/o5TuRRbwGylOihe7QO4k+4gq6mPQPRlp1dsQS31YmhjweFadJ3VCnDIPuWAXSxo4drSrGY9SD
+ZbG4LaWBtwudcb9cWURxTnaeLV3+gm1XW/rTzzjZPvLeTyrZCCFKmeohhXbO2afZn2+6MaizdRu2
+2GlnXmBPL11tp51xie2paLFZc08O4j01SSGBNgGzttlqmhUxlpfkxPCYfSAjUQG56vbasAObm1S4
+llkQO4qwud32yrLdKnd6pzXa0XMmSnrMt7ZmSaHaPfbcM0/axz/xUdltQ+z5556yhLRCm3vsqYoq
+Z0jN5IVqThKeZ51xWjBO77rrHgUim4MR3a6djxoPG0RBztDNQoYyxiuSeJgi0qgp76vkUXbWwTcp
+wAcU2JmMlxJoKLhcxG64kD4eX4tqFbRCLP716i5fPQJNV1V53DBwaaVWHDDO+Me2wZDl50DOjhT/
+829XW+weLkl+G6qFfutbLrAXVmyw55Yt1cJW2qIT5tico+ZZafk9Vl6xVwbscGmtcrvltjtkzJ2h
+77fag488Kk9kZyBPNdW1W9mO1dZSX2Zzp4+3Cy48N7Sa/9BpH7AX12yVyFdQrKzK1qwvtU07G2PG
+YwP5ITJViHVBRJKD/xLl5ye1x47Y4flr6ltirr0kQ5LsJ6zeMtE+d1epWeS8BbZ900pbtmK11FWT
+5WW12/RJo4KNd/3111mdCOuNLYl2zsVvF8VCnqEee8vWTTZt+my74vLLbFjJkBAEpeQHQ3X7zl3B
+PlkoqmxhYZZqx1bbdtVcAYBZc2YrfFAYI5Bp3kiAclpMfOMF5tVb9/M+4maoMHdKWAdCHx5o5Rl5
+Pl4brZjtyq7pMWj8zW6dOxLZ/fw7ehQNngbijzyUH2XsAwl96+hZB8FcpKcURTllioQLA3AYhWHS
+txX79ttddz4uV3KhwNCoWMTK4IoSrOJr7do1Ot3tZrvgoovVVPEBe+D+e+ytF5yk6Gmlvbj0SVu7
+/DGbM3tmqDCorKpTiuNZO+mMi5QbknqaNNVyC4Yo4Ncaym9TlO1mXATvGCdt+JjcFjVuZPwhQy/1
+2CiA7RSjr76uOdgfjaF3njyq6kr1HFadlIzt7LRWO/mEuZaaVWy/v/EXel+RXSSDe8o8TrTLsP21
++2wk91MMJll5tPFjxtk3vvGNkHmeMGF84B/DBMQOOeXEuVLRL9jG9RsU5CwMYY1RwwuVOhFwlf0k
+DZUQ+CAd8xda1Ma8Sy7+7R4QzgoSKKhYgcOTxcTY4HOTdAZA2FK+Pn32npyxzwfxodEDP5EyUCBA
+MUEiPhAxS14D1eSduePR6iKPsDg7hTwT0X8QPFzUhFx1BV/dvN5Wrl5jjzz0mM2dd7R94L3vUW/f
+W+XCbhUhXLaEJgvC+oTxk2308GG2ok3H/2W02/1L7rWhRVn2wnPLtCCjrXp/k6TNTr1nrMaTalu2
+7ZQNtM0mTFawTvGZ9OQ87eKtYaKy1f6V72G3KR9E7qmyqlKxlf2dVNVJ02VfaDGQom0C1rjxRZJc
+G2yvjvfJzh9iOZIQ5VXi5exPtxNPvsTKtq9RsLHEWvbvsT1VnOoyzlI4jkfBvnkz59uf/nizPfvM
+so4zGFCFrXbphRfZuWecZEsefEapjedDWfBsfRVpMyYK0PlZsmQ0Yc0CNe33/YrWQvnvWDdUGhKf
+Nru424AD+ifPgHcbbccPULwJ9sFYfT2SNC7qfFDe0Yp4zHe+851g9HrXAnQl9cOwx+LbpnUl6hJD
+d01xbPXHQFSS6M7PTVfcZWhYwNUCzqNyrc+Wa8+u/+VvfmuZ2RKtkkRETYlE/9s7L1VPmWy5t8V2
+yQXn2LZNq2zqFZdJujwt43SuHKRUm6EFSssulNRI0Ptxs9sUz1mnGMh+UR6mhLpnAI+KyEvMs5KC
+kmB7DNU4vEtVoH7qv1YtVoKIMvmDclVwJxDny/OSVEsRvWP3tlJbsUp9h7WqUyeU2PM7lwQpUr5n
+t+JRu23OMWfaXH1NkLfVWN8g1fNEMEIrqyqsWrbLOy6/wj7wwfcLTLfIGdhtcxXMw7gvyleg75V9
+rsnzd9tZCdOBmBkJZDYDtd6wDbCXaHqNNghSPnIYCIIh6prHr1u3oPHunI66aHloiGMoZkIXpv/4
+j/8ID+9nQHpOqrsaoISIoRUMsQ4G21DFVlJVNtKsbPZW6fif/OR6u+iSi0Uq+oKCVV8LuaHCgsFS
+Wy/Y7bkpNn18QXjw6v2qIpAxS9Po6TPnWvHQyfboUy9ZYmadrd0sc1ULPkQ8mVwF10gTQkrC60OC
+oWLhADFpfrIbYttPWvGoNoZq6OOr8H7yPrLuB2Sol0sVttsuSbLN69eo/3CLnbJIQFKooFQ2V4mk
+zfRZ823s5PmWXzxMzQNq7eFHHtKCVsqVLlNCM8XeJqBfcvEl2gi/D6kQJALjKRQ44wHDQnY3t7yG
+uJl7ttBUKCnClmHD+3PB8CPhyhr3pKyoW9BEYyzsfBbGDV98fu/KBIDw//lgdiyFcQw2vn3Yq6TN
+K0CDMSqKgEbFrwvy02SszpX+TpGXURlahxHJ/MxnPqUDvm60dWo6NGXq5ACclLbhtvT5dHv2sdsU
+fk9X6HyZ0hI6sLQ4lp0uHDJB8Q5liHXz0nLZMany4sT5rZP3Uy2PjMn1LqT8G6mCtMRmg4PC37x1
+LfYB85AjV7m5Ve+TG7NPXtCI4WNt1HHHSMo0S8TXiZKwKxjbt9+y1kp3bbdsBR+3ldbbtNltsqW2
+2yOPPyc3Vwd3yLa6+K1vsSvefrnd+Lsbws9Izivf+Q4RuLC1NGvO6AvE59gshg33yvztq6YXtYTX
+hUPAs7BJsDkJvPI88IcBEyUvXN4+/1A1Ud2CxhON3DBUFcLh1QVHg0QZ6slRCvK9Ry45Ej8Ztiu1
+1Pk7GaHhEkE8xISQuB3cIuYkNzcpAHNQsSKrd9wZsujEGt4qqXPz3/+hZOej6iKeIdWlU1m0WzMV
+oR1UWCAbYL6SjfniB+9Tpjk1iOiG1kQtcpsSrCtkWJ4oCbNPKlA5IgGJmBPg4ruHFPAOMbqRQmwE
+pKpXWzIPOSpnKRWgkmTjVCkgly3JmKksNfGY6pra4F3ec+dfdbThWPGSr1CH0G228qUdwVYaOqTY
+Ro8cEcIJH3zf+0NF6m9/9WtlsuXpTBhjJy48XuPgIPqO6dGcwOpLct6I5q1dmziBrPshLm+ywHdU
+EhIGaUIsiEaZRO+9k5b3DjqUauKjugWNt2KN5jW4OfYEFj7tSrk4I5JosJduhLA/oW/p0UNd4cE7
+pA3MuxgjLcboj4FJlMfCVC1wu1104fn2zNPPaXf8XVzf+dL/l4XUw6oXnw+xC7ybIon+vRVqA7JH
+ATfRD4qGTgyG4Dpllu+6d4nAUx1AdOLC40KFwSa5skOHDAvEMXYXNg2eH+8hBsXzMAfsSp7Zj99h
+aFQg7BMzMFuNATZrFxMVhzVYu3+vnXHycVJNKbKVhimyq5Yrjz+tMEKVtSXKQ1FuC0rD9h2b7fLL
+3m5nnHm6/fY3vw4OwegxE+3sMxUMLEgRuA6EaHHg1cMSjRDu2VkhFHLwZulh+lw6erMFfgeYSS7T
+1ID14zlZq0AD0Rx0Z1p0Cxo+xLOgTn4CNIhvqiXdffM6YQcIIOtJTU1IhOrhA01agw5YiTDxw/EH
++uWUSVr4DaVqNz8p0BUefugRO/b4hfaJT37EfviD71pVjchaNtQmTZFNktQa4kSp6TkyMKulkYj4
+IqYVJJP9Mlze3l5JlSzZDHiAK1esCu489oMfc+iuKfaLxy88zYA0wphsaIxVLUIcE/Xdtiv5V1+5
+V7xj0TiVMqiT+iOvViZjGQbexEFDxJCI2V7J4stcdtlbFIQ8067/+U9s5PARoTP6KWqa5IDJEbU0
+8MddHXV8D8FWffXEpnHzAi8YEwJJTQ9i3He8XL+8SjS2GWLteQ92/25B4+LNjUN3lxFrkK4wHrk5
+oKFJICKcvv0shuvJQ4qajnIMdk3sAWNt8TGJEUAdDcXDLSZNGCIVEmsjdtKJC+y2OxfbCCUrL7/8
+bfbwvbcG1XTL3/8mPm1roHCWlVVaek6iVahrVVuCODQiUyVKOiD9iGaHOqzK/Z3UUyKngIdnRvej
+piBXMYmMyc/YfpnY3aZGjen0jpAnVGf1yqrD3x0zdqSNGq2G0rJNbrtjsRae+Ak14602aOhYJS4n
+hhzUvLkz7Ze/uC6UB48W7eHcc88RuEVZFbMEwDSor3FmuvwwOEUBOx2k8wCYbkRMx6SzKQE2dgz8
+GSLAeE0QzrnYEBjGXvHqaZ749FF0DbsFjVdARrtMMoFMHO26oEWgJ0Eykw1Q0P8MoqfMMNST5jRy
+xeI2QcrpS3nLwLHFIBysaGxKyoSgVy+84Fy758ElAsB6O2rWbOV67rdsSZeLzz9XfN9tCqSpp7Ei
+uyUKpu0SgGbMmCaX+D7bqMDgadrRNJlOFpsfEY5Kwk6BN4skAZi44eh/bBpI8iT5kDYw5nhGDFVp
+DzEG94j7K6KMstQUN43V+VBpkiy8r7auyRYcM09/0hHRYhi2JStrLu40AP3xtT+yhfNPCHVixxw9
+X0lTkoWx1AASJisjtjyhUqdjNmLSu4v6r0PsTLxaeE+sF/k+jGOcGJ6X8iIYf6heNpPznw4VLukW
+NBhF3ChK6gEwTB6+P6WeoS6nI+fBhPhAXEodUtL04I9RPDGZuUoOjhg2WKelqBRYKuD+B++3J595
+2sbBrxHXZPFd98uOUBK1IF9xkcm2RXYK4y/Qz8na4a3Kmm/dvEVG7gSRsdQLUDsRXgmTS4YeQ5tJ
+A0jYZkgbvDakKclYnh9VhuFMPKmlqUGZ7W0B1ZmK7XDWNwHPVcuXKs4zUi51jSK31G6Z3OdBtk15
+NDyrExedKhLZHJsow7d4UI4Mak0GqYxo7dOr5qd3gOHtSBqAQcKSzc/FuiJVyEVhp0VDK66W+pzl
+jtdr0Y5PGL5ut3jpBGDymu3ujOCu8RKblGhBa6ch2CF5qB8qkfuclS9VpWqDVkWDHxdwWpX9zM1X
+fEc2DBybVGWit+3YGeiYM+bMtfEHxoZT4ja+tEnnar8YQDNCbD+8CkCFMQgQ6BPIMToAAzABGrxF
+1C5SFqOZ1w8SCCn2W7PqJRHQtwcJMFqBONiLPDuNBYqVftinrhRphO+VlM3T2V4kXZHOFOLNn3WU
+ymsGa8wdnPgOYjwU11e7070HTGBIdpTgeuYeScP4o6kfAIK26EmpdLeSxpNezrHwm7ruI4bBa6Jn
+KzJhzs3ogSDp9iWJRM1fLvEJO5G8S5ZyNzm5WdpFC6xC43hSJTSlCq4NDfzi/Va2r9z2q9N4onRI
+4KVoocaqseKOzdutVLTRJx9XrZZ0/SD9nvEDDHYlOh6V5Z1IARLinTgUXhWLwHxQRblVKQSMciRE
+hkBKXGbe0Ufp3o+pYrPJ6qp2mGjhem1C6Branrhd9d8tdv6FF9gxUktD8kWc9yrADrcaI/lwAIaJ
+9a4SzhF2teMODLYkVyz31lnCEX53MAB1Cxre7MZvNE3udAlEOlwNDkVnItmlGMG9a4sWqZjshJDv
+qphy6vSqOuI44fNxUYcPCXXbpC/27Cyzvdt3Bde2tGyX3HaZ0wriHahvE+3iKY1rgRiCsxSx3RTC
+/S+uXGGjJ04QdSHW24XxE9DDliESTByK3Yedw+dBWOJnXgvINq1br0K6R4KYp35r1tGzAk2EDUN6
+QPUF1q4Mel6mmg2kKUsuMldpxVqxAUVqP+Ek3UP1Xf68AEb6i+z6K8p0w9+7kjBdzdmr959zmtw2
+pTbNNQEHdMDq8wy5d7xwAXGw3dwj0EQR58wwrxnGaCRSCzeFi0Afu40BdN9pqXtxG2WhOXpihqGM
+ZX2H1FBN1lbcHJoOQak4IE4KHJQ0EdST9aLyyj22aftmqZWZgcNSWV5hTz36rK1evzYc2ZykGD06
+n8QdtplHhJFMhNgBiB+sihTli5ojckrLly/TcT7ZAWRniRxPQHPxXXeEoFmrGiJlia8DVzklUdUO
+Ut2NcmWHqIWJz02wa4PV3+FCR2MxBwWML2f3wGEc3tmDiDA2GXVpbGr4S9ikfnk1Znfr1i1oPE0e
+reJzkYa+h/0FMhkIF9lTJh4wdcXxiEfvy17SKyWLvy7mWXb4nGFuXzaL+Rdfefq8PNkOeDelSgpu
+lARIkl0DETtJDM2G1npxT1rt4cceFttOu1z5lzTRFOrUdmTL7u3BkwAcGMBISSaaSUXvExFm0rHZ
+eCYARQj+rrvush2btlhOclawcWYcNT1Erv1vWarfhgTe1KhyEjEGkxNaBJgDNnHyeDkQ54VeOMmK
+5nZmASKR3oPt8NjvY/MU9S4P9XrGDhiwWbDNkIQEZXFS6OZB3GbatGlB7Xp8phOSHRSW+Pt3CxpX
+SehE4hTR5j2IOnx/4jXYAUgfBtPV6W9dPxhL3jVYOl/vk0nsJsRxXh2fqJMBC3v/tDNONyWvBYC1
+Aon4y8oRtSU0Kyo8SISqBHvwrnuttbbFvnzVl5VvWRjOa7rl7rulMvbIyF2uGqQKucg1wUA8oAL8
+sj1qZqR6Kp4HY5km1X/5y19CHofXFImbu2j+gpBOOF/uf2KawhC33mZb1qyzwQrWDR08VAV1dcEw
+RxLu0f1OP/NUsQAutZVrV7/cu6ajbUhnaekhUeNz1rM4DbdCXfrRjxQyYvATh0LtQv4ibgMzwYO3
+8TTdXoPG3xDlj7q6gkPDF4XmxB0gk5N6xybwQzwPvWuiXlI3k4BKiibnfKtJPxXQ6aqlOTD43v2B
+t8tWWWq36VgbqiXrtMtrK2sUWGsQdWK4PfrwQ/afKsj/6bU/s4KicyyrKMeWPPKwOMTqJKFWEgfa
+xRFurlOBWkr43iqg5OSn287SLbJpRijWsjd0l5g1Y4o6RAy1yeMm2fQZUxVLarBvfPFrtlyR6EzZ
+NzACOWisQF0pamr3K0iXZVmifJxx1umqKjCbMHq8qBm7bMzIYaFjaGgawskeHVByad4V3ZI5fXW7
+pIPPNIBBehJ8JXUAj5t1giv8mc985hVvjJoi/ebTHGxIiGvKWEDnlVde2VmFgDhHPUW7QRz8sXq+
+a16WQLF/qelCENUt2k3YU0SRM1WOm6caqAMqrq+T90TR/Ec/+NHAO35I+aFHHlmicb7bvv4/37FL
+LrpIxXMzQmxps85ISE9VGzVRK2g4XaGqB3Yk1QF1apuWOjZV+bUFVi+piyqaLJL4pAnjFOjbEc5d
+2rRxs82Su42hOWF8rOfdLf+4VamEiVLZeHkvl81Wq7/fIPX2Czkl0idxtsyhUzA9ny8vL2IdqOfm
+y8uMSJn05epWPXV3U1QSutEvgELeAhHY147Y3X1m9O8AZmdplUo8CmzkiMEKky8O0WhOJPnmN/87
+iOU0bW2AfdZZZwTVwqFgNSot+dSnPmOf+vSXbObso2ziJTNVn71b1QRbbe26l1TdkGSjlexsU3eH
+lHa1UhUzb82L4vVOnGtTlaLABmhTI6Y/3Pgb+81vf6WIcOyMcKopvvqVrwdm4be/fbUK9EbKja+w
+RSfODKW09LWBjYnbXl2tcataoiuV25O8XU/myUMh2DSeD2TNOIm3b3G0HmS5ezIwwBEVa1jfeBs9
+t2168ikHfw1SzS1+vCFC5eefe3aIq/xc3SxHakf96te/DWH05ctXBPWZmZ0rWkK5fflLX7FFJ50a
+SkgwpM8762w7avYcGap1IePNcyHBkmlZIoOSqkdU8XU/+ak9+NADUj17A2CyRPri7zgHHE4KOJgX
+mjtyX+wGXPa1aniwZctOGaUcMbgnVBVEhcyhymH7Mkvess7XB/uGjU3E2klYvb1vvyUNaXYA4nXA
+njpgcNGIY28H1pvXByK77AcuUgf0oKuWZ3SVGIVV0uU3/fEPtl9ZcMg6gAsy1rq1GxTxna2WIm22
+7iUdjL7smfAMBArZnceqbUiqEmIqapTaWRFyT7HmzmXhRLcKqaxk2SDEgopFf9hTWq6qSVE4VIv9
++9/fKLpEftjJgOeH11xrF110tuI+a0M9OnwG+gKiMmgv4k0ePU7Sm2fv7rXMDfYMgOa58Ap9M3dL
+kDvIzfsNGj+AE9SyIERScV9xwclNeZ1Ndw/X17/X1ce6WgLQmhp5PKIsQNmggwPh+W996ztBYkCV
+KFaH8gb1etmnzHZeqJjYpErNWEnJoMIYwWrdS8/qHrvt6SfvFu8l1vaEiWcThM4S8pSGDy+SCt4r
+7z9BUd+WkLBMUZkmXhSlxOxqVABlNRiaOAXVqqhkbtxtr6sTgV2UCtR4srjFh0sdxc8jUhiVzOfi
+WiNhfDNHk9C9mf9+g4bQO54VEgd+BsEjjEoG5y1IezOg3r6WySbMjwqpUOXAehmjnKedo7jNNlVs
+blZi8ns/+GE4m2HVC8tsiOrCMWzpSp4hF/lAa1XoglXRstvOOe9dyiFtsYW5k0QvLVecZ0uoplyw
+YGIIJCJpEpS6OPf8swPh6oEHaY8m9ZKYHqoJ9uo90DeZE/JLN974x2AwY1QXFHCk4aiw43F1p06d
+ECs5Di1YYqUz8dfhUFVOimNMfLHJiSvRNqVnTsqrV6TfoCGqCFXAmX1kien+gDFK/GagLzi0fpY1
+UoGFQV3Cl+HfP1HpKzXL1/3sevv2/15tSx5QhwsF3mokcSq1+/LzZEqrLkSJbxs9drASmU8oMjxH
+tM1Ben+hGjQ9KbtDNUr0Ea7TIe8rV4l2sV4uvBoVjFRnqwQdttGeIWm2K0iL/ZU71BViWrBrSG0w
+NwTV8KhQcSwai+d2TLNAdLBEYbSyta/ziAoigYr0BUBEsmFZ8p0KEo627u3Vb9AwCYTbaT+K2PPd
+gVgkD4XIx/DEowLZTk5noV+VIujt6PV6ZQxCDzsiwqtWrQn5nUZVMIwapWYB+t4sm2HpC8vtyndc
+EgrrkAArVP9drfHRQbOhtE4EqGzxWeaF58AdRaKU6LlY7DvuuDtI0LlHHR3UzG2LVwqUeXahqgau
+vvrHAp7qz9OVwIQNr+uc8y8MKskz5M8+t1SVlDMVaKwMJCyaHdDUUvSaMF/lpdtt+LAYbyeUyEj6
+YKgejJbQ1RR53x/PVGO3eBdVT1QSnyEEAP+JDdVdZ4hDLUW/QUOeiVgGEwA1ksFgVxBmJ4AENzUa
+r3HWm3NSe0JZPNQDwMmNSTkx9CRpvJAfGwRDFDH87HPPi9h9oh234HjFUeYpdH6vuCV3yMBdLfpn
+nYzaJnv8yRVyodOC1JgwYY7ooGUqJfmHGHT54thcqs4SmSGvNWlikQKB+1QOvFSlugqxJaWHSswZ
+02eFbp/HHXu8PnNIyH0BAtR2zG5JDvOANGJs9BIsVpCwWUCKAqS7oF78XDjbgN9HVZznBgno3a2o
+N/1/2LxIvC9+8YtBE2Dn9OXqN2jYGSTpGAAGF8BhEkA0OQ4mgV3EhHmTRnaC8277Mujoe5pa1d1B
+4T1pD1VPbhVBK0/BvHY1EKq2fKUc6E+XrPrpdv07I0s9YSaMUFsQlfZOmBKCfEtF3tovsO3audXu
+u3+5nmOvAKOuEHR1NBX5i7N0z93PicilsyBV7VArA3bNTQ9ZuwqpZ6jUdvq0WUHKzVXbkGOOOTrY
+Sm2SYLi6dLUiHlStDqQuAVNVbcDX7vIyzVtuAJS3p+e5oqCJ7z7W1Vy5B4Rdh3cUpa4g6WEgcE+i
+9a6K0AJcffVu+w0aRCPtuTiNnogn1EV2N1xUWnqBbn/4aDCpd9SJg0OLXeuEdEQwjR2blFJoVWg+
+Q2Tyl9ZtCNnrNHFfGpoa7bc3/M3uVnaaRZ+q7lpvuew9Vrmn0nYqC16tI3maGmpUTaBSXH2RmmiS
+NySNJjBMUs12jfJN6XbORSeo4G5k8MrSlFPi0PdHHn4ipCpQ11QtUpICkAZpPO5KI3lcnWPfzJs9
+MWwoPy+Cp4zaMdHGCwebAZdSqFb+zXogzQAT9UyMhc8AQFAh8ARhIeI5ubfb243bb9DgRmJoEZLG
+gyFOwyEOREw9Y4xBjI53CeMdP7urr+nJw7BLnTyEtBs3fkJHB++M0JR6hpoXIYl+pFjJDX+40Sql
+zzOHDrF56ry1btNWxWEK7dSzL1bZa449tuRBZchXWoOqFvLkPnO2Ae54VfV+VRPkhkrPGhGrps2e
+r5Zoc23Z88/afYtvV83T3hDVpZfO0489aU9LJfzyl78URYQgIcRt5Z60iOzsOh3AwZxhV9B6H8nA
+nHlIvyvO0qHmAYC4HcS93FtC4vN7LlQ2a4E3C/sQ2idzBgeqL1e/QcPAMHC9MA7RhztKLxSMMeI1
+TAoD92rMaNVmXwYdfY/vGPU6CruUncR4stSVgYnbun2bPaBJorJyhBoBTT7zrM6uU8OGj7bRqqle
+9dIatZLdro7kZeorPMomTxhrg0WUooLg2GOmScWV23Y1E9qjfNFOxWTKVUe+Se74HJHBF8yXjaSO
+nmT82QRTZ84KnTixr+6S3ZSqeA2Sl/Zlo0fHKimQuEgaaB+xWmvV9nZcUfbcwZKV0edH7UcPMeU9
+SCi4PlRWYFu61CG1Atkfugdr01eXvt+g8Q/2OiEGye7CrWTg5HwAEsBhEZ2veriin9wnTcZ3xV51
+QVfH8mylB+hcTrZ45crV9vCSRy1LEVtUUYYWiJZsQ9TnhqBjfl6hALArdvpLXrIddcyJ4vRmKTOd
+qQ6h+doIRcqc77MxE3R4hr626tSWnO05NkSNl+g+8fwLT9nsydPsJDVnnCNV9LSaGEELrVH0mcj0
+ZFWZ4onR0QqaxVCxDIlW56lt7UYFFjnsg820e5ekTofXFDVmewIaABQ9hod5R21C5SCdwim50B9C
+SkXq6T//8z+DxPdy3b6ct9Vv0AAWjyyiT4kBwM0A0RB+uDDS/vznP4fdxd+44jtR9lXipIjySfE8
+HRc4NyFJh1XQTr5Wh5auWLnGps2YHQJzg3RqCnqfyaLMBrCtWvmC1JmI5arOHKTWZeNHjxQfR63P
+Rg8LJTItMrIH60wFjO12if5Rw4pUN6Uu4nLl8wWuUvWq2bxxXegRM2nCxBAPOlr8YLwVnAKeEZui
+9UCs5wtfzFehaJ78rULdrWhviysea7ny8iwETnSUChI/QR0VC75po14U/yaAh2HMmuAtMR6qKgEx
+ahKg9QUwDKPfoOEm3poC/Yqb7TaLPxA6HFohlX24gDDnmDxsEAbubne0SxP3dTXmtk+05YdPUrOk
+2LDiobZWUiVFNSApourt3SfCWJ6K/ROyJC3Gh+rHQTrYYviwEbJT1KZEi1WoSoZTTjhexW4ycqWK
+UK/UgKeImAXxgHI9zkeAVprK+Tvhd2Zj1BO4WUZ0iRa7RrbRrsFlkjq71CtvpdqObA8lrguO+6+Q
+tnhICc1MGeOoo106+WVM9agwVxMnT7CHHpZ0FK9nxpQJtl2Hq9Yq816gjp9cSMPUwK2JdboKh2wE
+DnGsCWMKRxx1kNe8N57PB5KL1rzOA/a5xRkgaepSyA3uvqQv+g0aBstEOHM/6iYiXt2ih/BDBpif
+iU4CmniXz9vM+j2i5cBMoMc5+Dd/45S4JnlEheoSEUS5LEsAekCLukOkKjqF4w4DCA5lZx2SEhQi
+0MJzxkC++tSMGJKvdmfpsnMy1eCoAxwdZa9hQvlfqBKIdcsKm0SvS1UVRHa6apx07gF2VJHU0dZt
+m7UpHg7ltXiRF198qjpDLA3eUY5SLWymDKGU8z4SMYDVJIATWAgT7JTNRCwoUwQhEpjNTRwHwJGG
+L4ubYORGxZHG0lHIHDLqVIbwrBTpffrTn7b/+7//66zl5r2Mk3Xyatae9A/qSgP0GzQeJ+iKlAxA
+OL8S6QP55yc/+UlILdA5+2CWuwONBWORou1nozoeoNIRNHSw1JM1qk1ro1xkMs+0g6+sUmPnUSPC
+jqNbVKtUTL2YeRzOTm/fEcOHxtrL5+iwC0pGOi4Ay6RGGfmh3rzj9z6GWMBSXTIkuYqLc+Q5jpBB
+OllBtLXaHJvtmWefVjdS1UCpRx4XKrxG4KmtVbNo9ToeM1L0UY2zRg0iuSdxHcbuF8+VqkoKQEuV
+Ce1H6E7ReaHu9ORkyVG/GL0Y34CGon5sGexJGk8zfsCCix1oHh33ed0M4ZgIVTNmDcyRS0QYwjKq
+iCpFOmUhVRCdGMPerisaOnd971KkK4S7KHUbinsxcdAM6H+HNEmSzZEvQKVqkvKUTMxWnglmXY3a
+548ePdSKpYJyVKWQr/4veWpDFs+BO1hE1mub48s7qPikzyMqpUjd0+fLmypRM+m1G9T+TRUaOAHD
+RgwPLvVQgZUqSkqQOfepTJ5YZmasvVWMYcd9aK7AIr+yBikav2kPzSMFIsWIIJhhe1Fu873vfS+E
+O9gobFC6rNLPj59xt5Hwfr5of8Id/ZY0XS0yIAIQGGGctuK5ESaQtAMGGjvhmmuuCRPWVRWnT5Ln
+TuIDXTz0fu1c/NY6daCiJ/AJi04MIjhFauOA8lFEcNeLwI3+H6IFHauzF4oHcfwf9kFM7bSH6vqX
+Jc3BdHxUyrl4J86CKqFJQaIq+kILVkmeqdPGhwYAFYrPLF36gq18UXwcJTRxDoapdJg6rZISbKi8
+4Haz8wFNdC7Rts1qRZuqTDzDi+fuwt2J9WSJ0UWdcosxDiuPXoh4Snx1dXkzx74EWQ8LaLyfibdW
+I7D3jne8Q8Sji8J4iQkgFYgOI234vXtaRC3jj/fxyfPCNH72ZJwXqfM7AFIpu6BGPOB0GaYcAdQq
+e4amQZTE1iqVACA5S2rUSJGzuI92MsfioAkgjdPRM3o5aDwk4PZVFDT+mkSJGdrtp6p2m+LE0F2i
+42bZspfa23PFKT5G4YdynRyzKYQgqL1adOKcYPNUi8rxwvI1IZXA89XqILNcva9RZS8ZqlNHPXUa
+wtGSy2DXxKo4yuRi33TzX4LndsUVV4RuEBi8RH1pZElQj4uGBTwDG5Zxem6qS0R188t+g8at9miN
+k3eV8PpoL9bCniH/gduNriWmAfeGHeh8YibPDd7oQrEjvEkyz0S9FRnkkcpEEwPZsGmjdmXspBdE
+f6MM9DwZt7QcQbqghgiQNuo0t3QVsFEJA4Wz4yzbvsxdTCWrDX6bXGra2fLcuP30R8Z+zVP1QaJi
+Rqgt2omgQkIxXr24Oes325KH7guvKZCUxONB7X70wx96RSohJnFjkvAAc9Nhj7RK0m7TAWHPPqMD
+WrURSaG4kUt4g0Pb6YVIwphqETayX6GdXEfRf18evN+gcUPYm+aw4BhcHtJmEZkMbBwY+4CGvAyq
+ilwVehePx0Hjbrf3ueVndiKuuZOGCMHjGfz5pr/Y9epR16qJfe65Z8Ju9XrtISWiNoxVEyHNSrOk
+CyWvWdL/aTp8nbrMNsVjUFHJHYXUrnK8MsBtF5c0UcnDRMdUKp2o1NyQJkX6nshZC0gzfRbEcgzb
+nEz1pZE+KtbZ3vBXWLDFi+8OHb1K5aJ//GMfCEcv33zzzcEYPvfss7SJxsXO4pTUjAFbl54x0Ev4
+XIGVKDCbkFhYiVx/b16AVAcgnD3BZmVDEpF2L9aPAuKWTp/oLXD6DRr/wK7KVVxSYAiTTsCTIpUA
++ZtAHzENOk8QiPKW6g4MFsmNNQ9CuRQCcBCs7pK4HztxkgzckfZXTXq6DMOTsWs460mTznSzRzPw
+jiSSOTnXxTo2SLSD+0HrizrsnYPVN9NJJ6XTq4mVySaHniGRhl7kmLTWOlROUoFePnNCQLKsbIwt
+PP5odZXQWZmSuCR+kdwYw8SGcLc7zS39I8yN5oVynSGiNiy5RqkaldtQiIfq42ATxomKIsSBhPGL
+TRjPDuyrijpsoDkYWrFBiIp6q3UG6v34kC7wOrB3HAgOFK/o5L4YiZ72j2bMt23ZpKZG99vSZcuD
+2D/v3LPUFVOAwcAFNNQUcYODRlZ7Xj90qN0IGDlU3S9lf/SfR1DUuUECiAaUDaJVZGQliq8TI12V
+lu1Uz70rg6cEZRZp/ZEPfTB4TzwDgOEUO6RIilReriQyvyRwSA0XzsTHPvqJ0POPfBL5Pjbg73W2
+FRINj7UnrUNeN0lzsA9mIjD6AAs6HfYbWXGMYlQCtg35EnYRv8cdxzhmUj1YBWAAE0ACaLwXLjKd
+PWOHuZt9V57YYKUCQscsfuXHk2ASBLMg2mwAFLkc6u2Uxb8+di/v9OCGsFtLgCWAV18cWK/OMOEG
+tFgbv2O0feYT/xAO5P3JLoEqO2vWzPD3TZu2CQijQskMXzzDfkXQV0gikabAuH/Hle+yW0RJqVBN
+FvPLxmTevCJkIADD2AZc0rjrjF7FeEV3u1fFAe8Aw61+dDbUSpJrXtbLBCBy2YnoYz/bGw7ud7//
+PbHpKnQW5SL74HveJ9tJ3SNUVI8308L52JEW8KFxQABO6PPdefWmvPXg8OpalDlw/PPy82KA4UpK
+btcpvMeJQ3yjDpL/Tai7eu973xvyTw0q6QUwHPSRooaPzGGlDhSBjz1MG+abCt7Rrg0JlKXyYTYV
+qgkVB3BwNKKGb3+3Rfz7Bxw0jnYezHMfSAomAIBA3nLdigEN74Yie6c4ADYuJg6p5T9D2qbBNRnk
+wQqaZalhYrWIUxnymLBwW0W5S0nUv4Ph6I8dAwzQcZ+kf/Lm1erNP0qmd/hQ+s00qdYpdtJu7HPh
+J/Os2Tpn6m1vuzh8cXXQXzrjVjEvlL+ogVJHE+mVMoDJYG/cuN7uf+hBsQz32cc+8fHAZyYZSf9m
+VBSGMg5GX1MFhwLagIMm1jI1K6gXdCyRUf4NZxVDOHp+IglMT/OjhrydPLkbfg8AkTR4SEgdbJ1x
+OjQjdsleoGexjJk2pRdg7YX6V9poRS6ixw6cw2LRdEqwrqeZz4gRxlV1IElH7ihX52Ue7CKgh7eZ
+lpL1iqAntA5U+I033BCkNRHhLNkylCMT9f3Vr34VJAwqH+mM8zAQgGHcAw4ad6V5YFw8J1hDT8BT
+8IAg9goeFj1iiC2g42mWRGsMIpxIHtSUSxomB+nF2QIcdZOuKDCHWDSqPjo9C7eap+v68VzS8P2V
+kDrU/jrE3yI9c1yqxYzjGJjJg7YpENii3FiasvAdgVzRT3VOZmN7SGlUVzeE58tTPixVTQjqFOhj
+TrLU+DFHRyVyEaqYofKYWDhD51iyYfTZX7zqi2EDxcqAY2w9NlVPmn/35YkHHDQMyg3aqIsHCYrc
+DBNAfIKAFBRJRCqTg/WPF0BcB+lCKSyGsgcR3UWOdeQmshbrvJCuYjVWq0pVAPni64YVijM5+hfS
+6/k0OzgCzULMwWSlBEKQMRAv2kXLyNCXzr1SICdfrfq5kDQ8D+GFL3/lSyHtwlmYGXLB0iRJx3Wc
+YbBBbW0bJZGeePLpMF9uBnjoI8o77vmIe/bKAQcNEiH+jAR+h4vMZEDawvAldnODRC9xHCYM/g3e
+BP1vAM3Xvva14FJiEHs+it+zu2jETAVCIoXXLItWK1cqLGzHjohqm9QWAbdEImngCJc89tJ+XXVq
+FIDx6fkzt718ER2zwT6RfQMnhteWK4o9uHhI+OwW2V8tCUqySmKmKXXAONN0HND06VPlKd2pGMzd
+IYdE4hGVwybbpdTE96/5cWALYPQ6zSRk/TsaZffrwQ7x5gEHzcE+G0nB5EGZ4GK3EL3k9xjCXmoL
+aej73/9+CJMDNOwcAoN0YIiqKhoCMWHVOuUN6QOtskGLwf0Q1SyYX4AS17SvZanRZ3LpyUJ58DHq
+6nrcyQ8mwcND9ZYIMO4aQ2Jn7LSew5hFuqK+qSejCJG5wLNC0n73u98Nsa2jdFLuaB3RjO0SbTgV
+Tf72lfrQHdgGHDTORYnPHns/YhaV+igIWuwiJA+dmiCnk2K44447ghFM2p/FwLb57Gc/GxJyuO5M
+IJPP/Zg8z3N1BYooDzdKNehukrr7uydT/Zl4vdd7+edEOSxedsJ4Mf5JsTh/GrcZ54G8EZ4k1QOA
+DC+T2BQRdOYHzxFQRa8oAY7fO6uvu/H39u8DDhofUJRIDoCiYXvvaYc0oV4K1jwiFzVEkRc5Gy6q
+FfG6eD3cECblW9/6VmCpIYWilYrOtndvjIgzC+m78nB5Fs4Jig+kuYTz5w9RXTqaa5z8jfHxXsAC
+fQQXHA4Mz3rppZeGt/E6uL3vfve7g/TEO2JT0I0DIHnvGV7rVIfoOPpbvXowMA04aFzSHGxnY7Ch
+jzGWUTlf+MIXwuICCE+yedITb4mCeiQTqozMMKl/mkUibci5xGycWNs2P7eJifQMsE+Ec3x6u8vi
+Xx8FH/eMEtKi3GfGECV/8xx4PDwvKghAIEnYKGwaxgvLjjkB+NhNqEJO4MUlZ+MAIAeL1ztFx9fT
+aobezsGAg4YBxaum6M++891YJkgFwJg8bBZ2E7uQL4q8EN0YyACNHcfF71kwRDuvZ6fyeiaWRWXB
+oovrxmJvJ6ur13tDA8bs4/TXYc/wxcJGy0z4O9FxOjcgSQl2UjHwuc99LrSnpQrTx89roTkQPWdO
+AAz3cnssypv2z3W3+00rafxBDsV6hxLKrvJDHthBgAlRzYN7WzJOsWNn+uko3JteLxCp8a4IFjLp
+7Fh2MmKdfoAsGhPOwjqP5HBNKM91sGbNSAuMdkpiidSSGmEsfJFjQzXhOWKfEJ+66aabgi2H0csm
+YGPgcnuRIZKGeXED2tupdAXmvlQZ9HQTvSaSpqvBuI2DCAUwzvtlol11UAvOhepiQnndhRdeGH7n
+3heGMvoewHABNCLGeFy+G0mIIoWQNthCvuuj6qKnExb/Ojc+GTMdwb0lPn32WGw+k9IdgMV3stGo
+GnJNqGYoDahYwHDVVVeFPBwGsJ81SUrAjWRXN9wLCQc9hMsNcX7v9uI/JWji+SlR9zd+5+JWkrdC
+4kBbxEhGUuCKsjMhU7sR7NwbqgvpxwLwICsBnHDybMeJJFHDnInHUMZI9UaG0f45vNZdZuwQDHI+
+DxuL9wAC4kyoznBGg8ZFaB/bC04LxjrjxCNCBTE2pAREKdxrPpvNAsiQjDgEbugzNh+zAyE+VBDP
+lRlIwDCe103S9HRn+2JhEAbidseZmLiinMkNgNiNSCpPUaDTSUXgjeDCs7jYPxjJSIRYl041g9aX
+H2eDCiEOEg1EelUkoGGhoCSQTWah+byrr746pDiQgMSWKHvl/qhPjHLGh/1FrzukBPYaVBCMXiQR
+r0Nt0Q4EIjifA7sRz4irJ10jejqPh/N1b3jQOBB46KgdgthncuHeuLrieyB3a/KxGZAK7GBEPQvk
+FwvoRipqgX+j/gDCJZdcEr5jUDu9ACnF71CFdLkChNgb3AdjnZwZ0sXbyfM5gIV4Cn+DZI9b/Z73
+vCeMC28JsEJ3pbQEo5iLz3TQhqRl9CzGw7nq/bzXmwI0Ud6wR13JXeFRIInYkdEJ9gM+WVBA5bEL
+V2H8zGswwGG/ASqoGkgoOpOiCqN8FAB3/fXXB4ObRff+u6g7j78AVMaAqgHMfBb2FR4c48Nu4R7Q
+MFFTq1atCtILI9iZjUg+N9o9SNnP9R2Qt7/hQeNi2kHh8RsmHPuFLwDgB33wehaKvnbYCNFILH9z
+wxWbBaMU2wPVhR0Q4+e2BDUFaAAA0gS7hTwXr8cLY2FRk/wbqYNRi+GNUetpET6Xz8JjAjSoI1xn
+QAmQqWfn8iOQo02i3S4byKRjf9D0hgdNvBRhEd1QxvVkd/JztCcuAMPYxIZwWwdQReuzWHQWxwNk
+2BZ8FvmfaDMgJhcDl1wQxi738UUFMACIMWDDoOL8fG9UI1IJsAAgpBRJR9SPZ/2907rbap7mAMDe
+96c/iztQ733DgyY+qhn1DGLkpliz52hrNuwNIqeBKiFwuKfEz9GqCX5P63tyXKgoaqBJkKLWoguJ
+AY1XQ/4L4OAhcS9iMEgIONCoHSQbHCAkF+43xq1f3B/JwQVw/Nhjp3rwPRqUO1wR64EAzhseNDw0
+eRrUEQACKKgFfo42KSQ2g3rhNV6F6akLB5oTvhyILBKLjcRg0fDQ/FQ5XuONABgDfyfyjD1C/svP
+6yaB6GoP2wQ7BumDxPHL64swuvkb93ZymmfBvXdg4P1KcvF5hyOO9C8Lmvj6nPhmPF7UHt/rPz5e
+ER//QUJ5m34mN9qS3z01Tzm4i05XKdSKqyl/ncdOujrZJDr++MSm22r+3dMd3LevZxcMBFCi93xT
+SJqBnoRD3T8+3cDiIsFcrbyeY3u9PvsIaHo586gWpMpAR117OazX9OVHQNOD6fY6b5c6/8qAYbqO
+gKYHoHFOkDPhoj8PVBVjD4b1ur3kCGh6MPXuqnuXLN7yryxtjoCmG9BEebfxfOeBYsb1AMev60uO
+gKab6Se24+6wZ70dLP+q0uYIaLoBTTQRGu9mHwHN6yrwjnz4m2kGjkiaN9NqvUHGegQ0b5CFeDMN
+I1l8kv6WM7+ZnvfIWA/DDPx/5Z+4vRW1ld0AAAAASUVORK5CYII=
+
+--_004_SA1PR09MB12035C4CD4375EFF01CA6C612C8A82SA1PR09MB12035na_--
+
