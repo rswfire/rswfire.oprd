@@ -9,6 +9,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import { THREADS } from "@/data/threads";
+
+const DOC_COUNT = THREADS.reduce((n, t) => n + t.filings.length, 0);
 
 const QP_URL = "https://oprdvolunteerabuse.org/record.json";
 const MONO = "var(--font-dm-mono), monospace";
@@ -124,7 +127,7 @@ export default function QueryableRecord() {
                 </div>
 
                 <div className="mt-4 px-1 text-xs text-gray-300">
-                    One URL: the case in its primary documents, indexes of all 438 accountability
+                    One URL: the case in its primary documents, indexes of all {DOC_COUNT} accountability
                     documents, and the ten primary recordings with transcripts and analysis.
                     Results vary by model &mdash; agentic tools like Claude Code or OpenAI's Codex work best, because they
                     can follow the indexes and fetch the underlying records reliably.
