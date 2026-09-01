@@ -18,7 +18,7 @@ const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href
 
 // Contract version of the manifest. Increment on EVERY change to this
 // script — consumers cache and compare.
-export const RECORD_VERSION = 4;
+export const RECORD_VERSION = 5;
 
 export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
@@ -65,10 +65,18 @@ function filingJson(threadSlug: string, f: RecordsThreadData["filings"][number])
     };
 }
 
+const THREAD_FIELDS = {
+    agency: "The public agency this register documents correspondence with.",
+    matter: "What the correspondence concerns.",
+    status: "The operator's one-line characterization of where the matter stands and how the institution has conducted itself. His words, not the agency's.",
+    filings: "Every document in the register, in date order. Each filing: `ulid` (stable identifier), `date` (ISO), `kind` (request|followup|response|record|statement|notice|letter|petition|supplement), `from`/`to` (parties; bracketed role names are the render layer's redactions of protected individuals), `summary` (the operator's one-or-two sentence description), `flagged` (marked significant by the operator), `page` (the filing's permanent HTML page), `documents` (the artifacts as PDFs, exactly as sent or received), `email_original` (the unmodified .eml with DKIM signature intact, where the artifact is an email).",
+};
+
 export function threadDetail(slug: string) {
     const t = THREADS.find((x) => x.slug === slug);
     if (!t) return null;
     return {
+        $fields: THREAD_FIELDS,
         slug: t.slug,
         agency: t.agency,
         matter: t.matter,
@@ -94,11 +102,13 @@ export function rootManifest() {
             "originals (.eml with DKIM signatures intact), and the agencies' own letters. In eighteen " +
             "months of public existence, no agency named in it has disputed any item.",
         archive: {
+            $fields: { url: "The archive itself.", realm: "The operator's platform, where the recordings live as addressable signals." },
             name: "Oregon State Parks Volunteer Abuse Archive",
             url: ORIGIN,
             realm: "https://rswfire.com",
         },
         operator: {
+            $fields: { who: "Who the operator is.", why_this_exists: "Why he built the archive." },
             name: "Robert Samuel White",
             who:
                 "A self-taught programmer of four decades — Turbo Pascal in the 1980s, then a career of " +
@@ -187,6 +197,12 @@ export function rootManifest() {
                 "the rswfire.com realm.",
         },
         indexes: {
+            $fields: {
+                accountability: "One entry per agency register. `status` is the operator's characterization of the institution's conduct — his words, not the agency's. `document_count` counts filings; `filings` carries them in full (see the per-thread `json` for the same data as a smaller fetch); `page` is the human-readable register.",
+                signals: "The primary recordings, as held in the OPRD Record cluster. `qp_url` returns the full machine-readable record: transcript where one exists, structured analysis, reflections. `archive_page` is where the recording is presented in context, when one exists.",
+                cluster: "All primary evidentiary signals as one object on Autonomy Realms: a synthesis and six analytical readings, machine analysis and labeled as such.",
+                pages: "The archive's human-facing pages and what each holds.",
+            },
             // Full filings inlined — one fetch of this manifest carries the
             // complete correspondence record; the per-thread JSONs remain as
             // smaller per-agency views.

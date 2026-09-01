@@ -460,13 +460,18 @@ export default function CaseTimeline() {
                                 A final statement to the Oregon Parks and Recreation Department.
                             </Link>
                         </div>
-                        <div className="mt-4">
+                        <div className="mt-5">
                             <a
                                 href="/the-case-in-their-documents.pdf"
                                 download
-                                className="inline-flex items-center gap-2 rounded-lg border border-red-200 bg-red-50 hover:bg-red-100 transition-colors px-4 py-2 text-xs font-semibold uppercase tracking-widest text-red-700"
+                                className="group block w-full sm:w-auto sm:inline-block rounded-xl bg-red-700 hover:bg-red-800 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all px-6 py-4 text-white"
                             >
-                                Download the case &darr;
+                                <span className="block text-base sm:text-lg font-bold uppercase tracking-widest">
+                                    Download the case &darr;
+                                </span>
+                                <span className="mt-1 block text-[11px] uppercase tracking-wider text-red-200 group-hover:text-red-100">
+                                    Fifteen pages &middot; their own documents &middot; free to share
+                                </span>
                             </a>
                         </div>
                         </div>
