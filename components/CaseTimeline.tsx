@@ -460,18 +460,22 @@ export default function CaseTimeline() {
                                 A final statement to the Oregon Parks and Recreation Department.
                             </Link>
                         </div>
-                        <div className="mt-5">
+                        <div className="mt-6">
                             <a
                                 href="/the-case-in-their-documents.pdf"
                                 download
-                                className="group block w-full sm:w-auto sm:inline-block rounded-xl bg-red-700 hover:bg-red-800 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all px-6 py-4 text-white"
+                                className="group relative block w-full max-w-sm"
                             >
-                                <span className="block text-base sm:text-lg font-bold uppercase tracking-widest">
-                                    Download the case &darr;
-                                </span>
-                                <span className="mt-1 block text-[11px] uppercase tracking-wider text-red-200 group-hover:text-red-100">
-                                    Fifteen pages &middot; their own documents &middot; free to share
-                                </span>
+                                <div className="absolute inset-0 translate-x-2 translate-y-2 rotate-[1.2deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
+                                <div className="absolute inset-0 translate-x-1 translate-y-1 rotate-[0.6deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-6">
+                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-red-700">oprdvolunteerabuse.org</div>
+                                    <div className="mt-2 font-serif text-2xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
+                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">Thirteen moments &middot; their own words &middot; free to share</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                        Download &darr;
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         </div>

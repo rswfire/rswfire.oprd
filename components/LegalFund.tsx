@@ -111,7 +111,7 @@ export default function LegalFund() {
                     <li>This is a &sect;1983 case against the institution. The only individual defendants are the director and her deputy.</li>
                     <li>&sect;1983 carries a fee-shifting statute (42 U.S.C. &sect;1988): if the case prevails, the state pays the attorney&rsquo;s fees.</li>
                     <li>The Oregon State Police matters may be treated as a separate case; how that one is constructed, including whether officers are named individually, is for the lawyers to decide.</li>
-                    <li>Withdrawals go to two things only: the retained lawyer, and technical costs of the case such as public records fees and archive infrastructure. <Link href="/fund" className="underline text-emerald-800 hover:text-emerald-600">Every withdrawal is accounted for publicly.</Link></li>
+                    <li>Funds go to two things only: the retained lawyer, and technical costs of the case such as public records fees, internet and server costs, and archive infrastructure. <Link href="/fund" className="underline text-emerald-800 hover:text-emerald-600">Every dollar spent is accounted for publicly.</Link></li>
                 </ul>
             </div>
         </div>

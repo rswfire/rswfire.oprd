@@ -2,8 +2,8 @@
 //
 // The legal fund's numbers, in one place. The homepage card and the
 // public accounting page both read from here. Update RAISED as
-// contributions land; append to WITHDRAWALS whenever money leaves
-// GoFundMe. Nothing else needs touching.
+// contributions land; append to EXPENDITURES whenever fund money
+// is spent. Nothing else needs touching.
 
 export const GOAL = 25000;          // the whole column
 export const MATCH_CAP = 5000;      // matched dollar for dollar by a former client
@@ -16,7 +16,7 @@ export const MATCH_RECEIVED = 300;  // money actually received from the matcher
 export const matched = Math.min(MATCH_RECEIVED, MATCH_CAP);
 export const total = Math.min(RAISED + matched, GOAL);
 
-export interface Withdrawal {
+export interface Expenditure {
     date: string;      // ISO date
     amount: number;    // dollars
     purpose: string;   // what it paid for
@@ -24,9 +24,9 @@ export interface Withdrawal {
     document?: string; // receipt or invoice URL, when one exists
 }
 
-// Every withdrawal from the fund, in order. Empty until the first one.
-export const WITHDRAWALS: Withdrawal[] = [];
+// Every dollar spent from the fund, in order. Empty until the first one.
+export const EXPENDITURES: Expenditure[] = [];
 
-export const withdrawn = WITHDRAWALS.reduce((sum, w) => sum + w.amount, 0);
+export const spent = EXPENDITURES.reduce((sum, e) => sum + e.amount, 0);
 
 export const usd = (n: number) => `$${n.toLocaleString("en-US")}`;

@@ -2,11 +2,11 @@
 
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
-import { GOAL, MATCH_CAP, RAISED, WITHDRAWALS, matched, total, usd, withdrawn } from "@/lib/fund";
+import { EXPENDITURES, GOAL, MATCH_CAP, RAISED, matched, total, usd, spent } from "@/lib/fund";
 
 export const metadata: Metadata = {
     title: "The Legal Fund, Accounted For",
-    description: "Every dollar in and every withdrawal out of the legal fund, stated publicly.",
+    description: "Every dollar into and out of the legal fund, stated publicly.",
 };
 
 function Tile({ label, value }: { label: string; value: string }) {
@@ -22,14 +22,14 @@ export default function FundPage() {
     return (
         <SectionPage
             title="THE LEGAL FUND"
-            subtitle="EVERY WITHDRAWAL, ACCOUNTED FOR"
+            subtitle="EVERY DOLLAR, ACCOUNTED FOR"
             previousPage={{ href: "/", label: "Overview" }}
         >
             <div className="mb-6 space-y-4 text-base">
                 <div>
-                    This page is the fund&rsquo;s public accounting. Withdrawals go to two things only:
-                    the retained lawyer, and technical costs of the case such as public records fees and
-                    archive infrastructure. Each one is recorded here when it happens, with what it paid
+                    This page is the fund&rsquo;s public accounting. Funds go to two things only:
+                    the retained lawyer, and technical costs of the case such as public records fees,
+                    internet and server costs, and archive infrastructure. Every expenditure is recorded here when it happens, with what it paid
                     for and who received it.
                 </div>
             </div>
@@ -37,8 +37,8 @@ export default function FundPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <Tile label="Donated" value={usd(RAISED)} />
                 <Tile label="Matched" value={usd(matched)} />
-                <Tile label="Withdrawn" value={usd(withdrawn)} />
-                <Tile label="In the fund" value={usd(total - withdrawn)} />
+                <Tile label="Spent" value={usd(spent)} />
+                <Tile label="Remaining" value={usd(total - spent)} />
             </div>
 
             <div className="mt-2 text-xs text-gray-500">
@@ -46,14 +46,14 @@ export default function FundPage() {
             </div>
 
             <div className="mt-8">
-                <h2 className="font-bold text-lg tracking-wide">WITHDRAWALS</h2>
-                {WITHDRAWALS.length === 0 ? (
+                <h2 className="font-bold text-lg tracking-wide">EXPENDITURES</h2>
+                {EXPENDITURES.length === 0 ? (
                     <div className="mt-3 rounded-lg border border-slate-200 bg-white px-4 py-6 text-sm text-gray-600">
-                        No withdrawals have been made. The fund is untouched.
+                        No funds have been spent. The fund is untouched.
                     </div>
                 ) : (
                     <div className="mt-3 rounded-lg overflow-hidden border border-slate-200 bg-white divide-y divide-slate-100">
-                        {WITHDRAWALS.map((w, i) => (
+                        {EXPENDITURES.map((w, i) => (
                             <div key={i} className="px-4 py-3 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 text-sm">
                                 <span className="text-gray-400 whitespace-nowrap">{w.date}</span>
                                 <span className="font-semibold text-gray-900 whitespace-nowrap">{usd(w.amount)}</span>
