@@ -5710,6 +5710,22 @@ export const OSP_THREAD: RecordsThreadData = {
             ],
             eml: "/records/osp/eml/2026-09-03_1025_records-produced.eml",
         },
+        {
+            id: "the-production-is-not-sufficient",
+            ulid: "01M1M6H4RR51K8RXNASW5AB9RC",
+            flagged: true,
+            date: "September 3, 2026",
+            d: "2026-09-03",
+            time: "10:54 AM",
+            from: "Robert Samuel White",
+            to: "Micah Hubbard, OSP Central Records",
+            kind: "followup",
+            title: "The production is not sufficient",
+            summary:
+                "Ten categories of records the production itself identifies and does not include, each to be produced or its exemption stated under ORS 192.329: the body-worn camera video, the \"OSP Hasty Form\" knock-and-talk plan, the DMV record, records of the referenced calls and texts, calendar entries, and the messages produced with headers and no body. At the end, one question for the record: before two detectives and a federal agent were driven to his home, did anyone identify an actual statement claimed to be a veiled threat, and look at it.",
+            docs: [{ label: "The production is not sufficient", href: "/records/osp/2026-09-03-the-production-is-not-sufficient.pdf" }],
+            eml: "/records/osp/eml/2026-09-03_1054_the-production-is-not-sufficient.eml",
+        },
     ],
 };
 
