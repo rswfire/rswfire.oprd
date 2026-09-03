@@ -4471,6 +4471,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "Defining Abuse", href: "/records/oprd/2026-02-16_0355-defining-abuse.pdf" }],
             eml: "/records/oprd/eml/2026-02-16_0355_defining-abuse.eml",
         },
+        {
+            id: "governor-letter-forwarded",
+            ulid: "01M1MESFR8QGCRQZBDJMH3HN1Z",
+            flagged: true,
+            date: "September 3, 2026",
+            d: "2026-09-03",
+            time: "1:19 PM",
+            from: "Robert Samuel White",
+            to: "Kati Baker, Logan Bliss, Ryan Warren, Allison Watson",
+            kind: "notice",
+            title: "The Governor letter, forwarded",
+            summary:
+                "The letter to the Governor on the September 3 production, forwarded FYI to Kati Baker, Logan Bliss, Ryan Warren, and Allison Watson, with the Deputy Director, the Director, the Commission, and the Governor's office copied.",
+            docs: [{ label: "The Governor letter, forwarded", href: "/records/oprd/2026-09-03-governor-letter-forwarded.pdf" }],
+            eml: "/records/oprd/eml/2026-09-03_1319_governor-letter-forwarded.eml",
+        },
     ],
 };
 
@@ -5725,6 +5741,22 @@ export const OSP_THREAD: RecordsThreadData = {
                 "Ten categories of records the production itself identifies and does not include, each to be produced or its exemption stated under ORS 192.329: the body-worn camera video, the \"OSP Hasty Form\" knock-and-talk plan, the DMV record, records of the referenced calls and texts, calendar entries, and the messages produced with headers and no body. At the end, one question for the record: before two detectives and a federal agent were driven to his home, did anyone identify an actual statement claimed to be a veiled threat, and look at it.",
             docs: [{ label: "The production is not sufficient", href: "/records/osp/2026-09-03-the-production-is-not-sufficient.pdf" }],
             eml: "/records/osp/eml/2026-09-03_1054_the-production-is-not-sufficient.eml",
+        },
+        {
+            id: "governor-your-office-was-the-reason",
+            ulid: "01M1MEQP4GVGV0ED9D555043P2",
+            flagged: true,
+            date: "September 3, 2026",
+            d: "2026-09-03",
+            time: "1:18 PM",
+            from: "Robert Samuel White",
+            to: "Governor Tina Kotek",
+            kind: "letter",
+            title: "Governor, your office was the reason",
+            summary:
+                "To the Governor, on the production: the referral originated at OPRD, its stated reason was correspondence that included her office, the police found no threat and no crime before they came, and the reason entered in the dispatch record was not the real one. The request: an independent investigation, not an internal review by the people named in the documents and not by the Department of Justice, which has represented every agency involved.",
+            docs: [{ label: "Governor, your office was the reason", href: "/records/osp/2026-09-03-governor-your-office-was-the-reason.pdf" }],
+            eml: "/records/osp/eml/2026-09-03_1318_governor-your-office-was-the-reason.eml",
         },
     ],
 };
