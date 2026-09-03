@@ -10,19 +10,19 @@ const officers = [
   },
   {
     id: "hyde",
-    name: "Trooper Jake Hyde — Badge 56397",
-    agency: "Oregon State Police",
+    name: "Detective Jake Hyde — Badge 56397",
+    agency: "Oregon State Police — Task Force Officer, Portland FBI-JTTF",
     status: "confirmed" as const,
-    confirmedBy: "OSP CAD record SP26097765, released July 14, 2026",
-    notes: "Named as the primary unit in the state's dispatch record."
+    confirmedBy: "OSP CAD record SP26097765, released July 14, 2026; report SP26096984, produced September 3, 2026",
+    notes: "Named as the primary unit in the state's dispatch record. The September 3 production shows he circulated my name to FBI personnel, obtained my DMV record through the task force, and wrote on March 6, after reviewing this archive: “nothing is standing out to me more than what Parks and Rec sent you.”"
   },
   {
-    id: "officer-3",
-    name: "Unidentified Officer",
-    agency: "Unknown",
-    status: "unidentified" as const,
-    plate: "731 QRV",
-    notes: "Third officer present. No identification provided."
+    id: "nelson",
+    name: "Detective Jerred Nelson — Badge 54468",
+    agency: "Oregon State Police — Major Crimes Section",
+    status: "confirmed" as const,
+    confirmedBy: "OSP report SP26096984, produced September 3, 2026",
+    notes: "Case lead. Opened CAD event SP26096984 on March 23 naming me Suspect, authored the “Hasty Plan for Robert White knock and talk,” and wrote the report concluding I made no threats and committed no crimes. Identity withheld for 163 days."
   }
 ]
 
@@ -72,12 +72,6 @@ export default function IdentityTracker() {
 
             {officer.forests && (
               <p className="text-sm text-gray-500 mb-1">{officer.forests}</p>
-            )}
-
-            {officer.plate && (
-              <p className="text-sm font-mono text-gray-700 mb-1">
-                Plate on camera: {officer.plate}
-              </p>
             )}
 
             {officer.confirmedBy && (

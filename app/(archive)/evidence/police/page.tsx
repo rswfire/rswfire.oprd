@@ -66,11 +66,54 @@ export default function PoliceIntimidationPage() {
             <h2 className="text-xl font-semibold">THE STATE&rsquo;S OWN RECORD</h2>
 
             <div className="mt-4 text-base leading-relaxed">
-                CAD record SP26097765 is the state&rsquo;s account of this visit: two pages, released in full
+                CAD record SP26097765 was the state&rsquo;s first account of this visit: two pages, released in full
                 on July 14, 2026, 112 days after the event. This is what it says.
             </div>
 
             <CadRecord />
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold">THE OPERATION, IN THEIR DOCUMENTS</h2>
+
+            <div className="mt-4 space-y-4 text-base leading-relaxed">
+                <p>
+                    On September 3, 2026, under public records request PR27478, Oregon State Police produced
+                    sixteen files: the case report, a second CAD record, dispatch audio, and the emails in which
+                    the visit was planned. The production is filed in full in the{" "}
+                    <a href="/accountability/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">accountability record</a>.
+                    This is what their documents say.
+                </p>
+                <p>
+                    It began at Oregon Parks and Recreation. On March 3, 2026, OPRD Emergency Manager Jamen Lee
+                    wrote to OSP Captain Kyle Kennedy of Government and Media Relations, copying Deputy Director
+                    JR Collier: &ldquo;Fyi - sharing for situational awareness since he is now including the Governor
+                    as well as our Director.&rdquo; The next morning the order came down: &ldquo;Capt. Kennedy is
+                    requesting that a threat assessment be conducted asap.&rdquo;
+                </p>
+                <p>
+                    The case went to the Major Crimes Section and to Detective Jake Hyde, a task force officer with
+                    the Portland FBI-JTTF, who forwarded my name to FBI personnel and obtained my DMV record. A DOJ
+                    fusion center analyst documented the activity. On March 6, after reviewing this archive, Hyde
+                    wrote: &ldquo;Based on the website nothing is standing out to me more than what Parks and Rec
+                    sent you. Sounds like this person does have a grievance with the former employer.&rdquo; They
+                    came anyway, eighteen days later.
+                </p>
+                <p>
+                    On March 23, Detective Jerred Nelson opened CAD event SP26096984 naming me{" "}
+                    <em>Suspect</em>, with a narrative stating the basis: sending &ldquo;concerning emails to former
+                    supervisors in parks department and publicly airing grievances.&rdquo; The same day he sent his
+                    sergeant the &ldquo;Hasty Plan for Robert White knock and talk.&rdquo; My Forest Service
+                    supervisor &ldquo;was told not to advise WHITE that FS LE was inquiring about his
+                    whereabouts.&rdquo;
+                </p>
+                <p>
+                    Nelson&rsquo;s own report closes it: no direct threats, no &ldquo;leakage towards violence or
+                    violent behavior,&rdquo; and &ldquo;no evidence White has committed any crimes.&rdquo; The
+                    report references body-worn camera video of the encounter. It was not produced.{" "}
+                    <a href="/accountability/osp/01M1M6H4RR51K8RXNASW5AB9RC" className="underline text-emerald-800 hover:text-emerald-600">My response demanding it, and everything else the production identifies and does not include, is on the record</a>.
+                </p>
+            </div>
 
             <hr className="my-6 border-t border-gray-300" />
 
