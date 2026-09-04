@@ -177,7 +177,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`sm:snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[420px] sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -411,10 +411,10 @@ export default function CaseTimeline() {
                     onKeyDown={onKeyDown}
                     onPointerDown={() => (interacted.current = true)}
                     aria-label="The case, in their documents — scroll right through the chronology"
-                    className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
+                    className="flex flex-col sm:flex-row items-stretch gap-4 sm:overflow-x-auto sm:snap-x sm:snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
+                    <div id="case-start" data-case-stop className="sm:snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[460px] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
                         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
@@ -510,7 +510,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop className="sm:snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[420px] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
                             Common questions, answered.
                         </h2>
@@ -548,7 +548,7 @@ export default function CaseTimeline() {
             {/* Progress rail — one dot per stop, ends included. On small
                 screens prev/next flank the rail; the floating arrows would
                 cover the card. */}
-            <div className="px-4 pb-4">
+            <div className="hidden sm:block px-4 pb-4">
                 <div className="flex items-center gap-2">
                     <button
                         type="button"
