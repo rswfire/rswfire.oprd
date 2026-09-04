@@ -5774,6 +5774,22 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Notice of Tort Claim", href: "/records/osp/attachments/01m1n523f0wnm96c18dtdmk0np-2026-09-03-tort-claim-notice.pdf" }, { label: "Transmittal Email", href: "/records/osp/2026-09-03-notice-of-tort-claim.pdf" }],
             eml: "/records/osp/eml/2026-09-03_1948_notice-of-tort-claim.eml",
         },
+        {
+            id: "notice-delivered-to-das",
+            ulid: "01M1N5VQS0YZ10HHN9RWY74J3A",
+            flagged: true,
+            date: "September 3, 2026",
+            d: "2026-09-03",
+            time: "8:02 PM",
+            from: "Robert Samuel White",
+            to: "DAS Risk Management",
+            kind: "notice",
+            title: "The notice, delivered to the statutory address",
+            summary:
+                "The same notice, delivered to risk.management@das.oregon.gov, the address DAS publishes for tort claim filings. The signed original follows by certified mail.",
+            docs: [{ label: "The notice, delivered to the statutory address", href: "/records/osp/2026-09-03-notice-delivered-to-das.pdf" }],
+            eml: "/records/osp/eml/2026-09-03_2002_notice-delivered-to-das.eml",
+        },
     ],
 };
 
