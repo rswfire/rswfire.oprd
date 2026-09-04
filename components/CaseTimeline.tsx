@@ -462,7 +462,7 @@ export default function CaseTimeline() {
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-6">
                                     <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-red-700">oprdvolunteerabuse.org</div>
                                     <div className="mt-2 font-serif text-2xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">Thirteen moments &middot; ten in their words</div>
+                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">Independently verifiable</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
@@ -476,9 +476,9 @@ export default function CaseTimeline() {
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">Served on the State &middot; September 3, 2026</div>
+                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 3, 2026</div>
                                     <div className="mt-2 font-serif text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">ORS 30.275 &middot; the claims, named</div>
+                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">42 U.S.C. &sect;1983 &middot; the claims, named</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
@@ -492,7 +492,7 @@ export default function CaseTimeline() {
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">Sent May 4, 2026</div>
+                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">May 4, 2026</div>
                                     <div className="mt-2 font-serif text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
                                     <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">The chapter, closed on my terms</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
