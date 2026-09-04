@@ -5789,6 +5789,38 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "The notice, delivered to the statutory address", href: "/records/osp/2026-09-03-notice-delivered-to-das.pdf" }],
             eml: "/records/osp/eml/2026-09-03_2002_notice-delivered-to-das.eml",
         },
+        {
+            id: "claim-number-assigned",
+            ulid: "01M1PJ5NSR125CJQ606QX5ZXM1",
+            flagged: true,
+            date: "September 4, 2026",
+            d: "2026-09-04",
+            time: "8:56 AM",
+            from: "DAS Risk Management",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "A claim number and an adjuster",
+            summary:
+                "Receipt acknowledged the morning after service, with a claim number, P195403, and an adjuster to be assigned. The acknowledgment characterizes the notice as a submission.",
+            docs: [{ label: "A claim number and an adjuster", href: "/records/osp/2026-09-04-claim-number-assigned.pdf" }],
+            eml: "/records/osp/eml/2026-09-04_0856_claim-number-assigned.eml",
+        },
+        {
+            id: "notices-not-a-claim-application",
+            ulid: "01M1PJXMD0F3B9HEWWPHF4KQ1C",
+            flagged: true,
+            date: "September 4, 2026",
+            d: "2026-09-04",
+            time: "9:09 AM",
+            from: "Robert Samuel White",
+            to: "DAS Risk Management",
+            kind: "followup",
+            title: "Notices, not a claim application",
+            summary:
+                "The reference number is noted and the characterization corrected: what was served preserves rights and asks for an accounting and an independent investigation, not adjustment. No settlement is sought, no confidentiality will be accepted, and everything in the matter remains published.",
+            docs: [{ label: "Notices, not a claim application", href: "/records/osp/2026-09-04-notices-not-a-claim-application.pdf" }],
+            eml: "/records/osp/eml/2026-09-04_0909_notices-not-a-claim-application.eml",
+        },
     ],
 };
 
