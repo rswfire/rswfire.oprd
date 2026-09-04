@@ -21,8 +21,8 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
     const pathname = usePathname();
 
     return (
-        <div className="hidden md:block space-y-3">
-            <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
+        <div className="space-y-3">
+            <nav className="hidden lg:block rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                 <ul className="space-y-1">
                     {sections.map((s) => {
                         if (s.separator) {
