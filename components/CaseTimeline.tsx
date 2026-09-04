@@ -452,14 +452,6 @@ export default function CaseTimeline() {
                             <div>It is not designed to <em>win attention</em>.</div>
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
-                        <div className="mt-3">
-                            <Link
-                                href="/tombstone"
-                                className="text-sm text-gray-900 font-serif hover:text-emerald-700 underline underline-offset-4 decoration-gray-400 hover:decoration-emerald-600 transition-colors"
-                            >
-                                A final statement to the Oregon Parks and Recreation Department.
-                            </Link>
-                        </div>
                         <div className="mt-6">
                             <a
                                 href="/the-case-in-their-documents.pdf"
@@ -489,6 +481,22 @@ export default function CaseTimeline() {
                                     <div className="mt-2 font-serif text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
                                     <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">ORS 30.275 &middot; the claims, named</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                        Download &darr;
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="mt-5">
+                            <a
+                                href="/final-statement-to-oprd.pdf"
+                                download
+                                className="group relative block w-full max-w-sm"
+                            >
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
+                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">Sent May 4, 2026</div>
+                                    <div className="mt-2 font-serif text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
+                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">The chapter, closed on my terms</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
                                 </div>

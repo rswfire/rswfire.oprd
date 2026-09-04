@@ -59,7 +59,6 @@ export const archiveSections = [
         ]
     },
     { href: "#separator-8", label: "", separator: true },
-    { href: "/tombstone", label: "A Final Statement" },
     { href: "/record", label: "The OPRD Record" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
