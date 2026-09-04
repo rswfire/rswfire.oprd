@@ -177,7 +177,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[420px] h-[480px] sm:h-auto sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-full lg:w-[85vw] max-w-none lg:max-w-[420px] h-[520px] lg:h-auto lg:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -376,7 +376,7 @@ export default function CaseTimeline() {
     // On mobile the cards are near-full-width, so the arrows hug the screen
     // edges and go translucent; sm+ keeps the solid floating buttons.
     const arrowCls =
-        "absolute top-1/2 -translate-y-1/2 z-10 hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
+        "absolute top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
 
     return (
         <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
@@ -414,7 +414,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[460px] h-[480px] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-full lg:w-[85vw] max-w-none lg:max-w-[460px] h-[520px] lg:h-auto lg:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
                         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
@@ -510,7 +510,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-full sm:w-[85vw] max-w-none sm:max-w-[420px] h-[480px] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-full lg:w-[85vw] max-w-none lg:max-w-[420px] h-[520px] lg:h-auto lg:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
                             Common questions, answered.
                         </h2>
@@ -555,7 +555,7 @@ export default function CaseTimeline() {
                         onClick={() => scrollToStop(stopRef.current - 1)}
                         disabled={stop <= 0}
                         aria-label="Previous"
-                        className="sm:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
+                        className="lg:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
                     >
                         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" aria-hidden>
                             <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -595,7 +595,7 @@ export default function CaseTimeline() {
                         onClick={() => scrollToStop(stopRef.current + 1)}
                         disabled={stop >= STOP_COUNT - 1}
                         aria-label="Next"
-                        className="sm:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
+                        className="lg:hidden shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 text-gray-600 disabled:opacity-30 cursor-pointer"
                     >
                         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" aria-hidden>
                             <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
