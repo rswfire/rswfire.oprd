@@ -22,7 +22,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
 
     return (
         <div className="space-y-3">
-            <nav className="hidden lg:block rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
+            <nav className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur shadow-sm p-3 text-sm">
                 <ul className="space-y-1">
                     {sections.map((s) => {
                         if (s.separator) {

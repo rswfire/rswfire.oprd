@@ -3,7 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import AccountabilityStatus from "@/components/AccountabilityStatus";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import Tracker from "@/components/Tracker";
+import VolunteerShield from "@/components/VolunteerShield";
 import Permanence from "@/components/Permanence";
 import { archiveSections } from "@/lib/sections";
 
@@ -146,7 +149,10 @@ export default function Header() {
                                 }
                             }}
                         >
+                            <VolunteerShield />
+                            <NewsletterSignup />
                             <Tracker />
+                            <AccountabilityStatus />
                             <Permanence />
                         </div>
                     </nav>
