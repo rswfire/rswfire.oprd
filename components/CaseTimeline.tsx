@@ -17,6 +17,7 @@ import { KIND_LABEL } from "@/components/RecordsThread";
 import type { Filing } from "@/components/RecordsThread";
 import { THREADS } from "@/data/threads";
 import { CASE_CARDS, type CaseCard, type CaseAuthor } from "@/data/case";
+import { FAQ_QUESTIONS } from "@/data/faq";
 
 const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
 
@@ -506,15 +507,29 @@ export default function CaseTimeline() {
                         <Card key={card.id} card={card} active={i + 1 === stop} onOpenDoc={openDoc} />
                     ))}
 
-                    {/* Outro panel: where to go deeper */}
+                    {/* Outro panel: common questions, then the way deeper */}
                     <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div>
-                        <p className="text-sm leading-relaxed text-gray-700">
+                        <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
+                            Common questions, answered.
+                        </h2>
+                        <div className="mt-3 grid grid-cols-1 gap-y-2 text-sm">
+                            {FAQ_QUESTIONS.map((q) => (
+                                <Link
+                                    key={q.id}
+                                    href={`/faq#${q.id}`}
+                                    className="block text-emerald-700 underline decoration-emerald-200 hover:text-emerald-600 hover:decoration-emerald-500 transition-colors"
+                                >
+                                    {q.question}
+                                </Link>
+                            ))}
+                        </div>
+                        <p className="mt-5 pt-4 border-t border-gray-200 text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
                         </p>
                         <Link
                             href="/accountability/oprd"
-                            className="mt-4 text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600"
+                            className="mt-3 mb-2 text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600"
                         >
                             The accountability pages →
                         </Link>

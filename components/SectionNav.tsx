@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Icon from "@/components/Icon";
 import AccountabilityStatus from "@/components/AccountabilityStatus";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import Tracker from "@/components/Tracker";
 import Permanence from "@/components/Permanence";
 
@@ -87,8 +88,9 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                 </ul>
             </nav>
 
-            <AccountabilityStatus />
+            <NewsletterSignup />
             <Tracker />
+            <AccountabilityStatus />
             <Permanence />
         </div>
     );

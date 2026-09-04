@@ -7,7 +7,7 @@ export default function AccountabilityStatus() {
     return (
         <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 shadow-sm p-3">
             <div className="px-1 pb-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900">
-                Accountability
+                Where Things Stand
             </div>
             <div className="rounded-lg overflow-hidden border border-emerald-200 divide-y divide-emerald-100 bg-white">
                 {THREADS.map((t) => (
