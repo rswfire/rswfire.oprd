@@ -15,7 +15,7 @@ export default function FAQPage() {
         <SectionPage
             title="FREQUENTLY ASKED QUESTIONS"
             previousPage={{ href: "/displacement", label: "The Displacement Framework" }}
-            nextPage={{ href: "/resources", label: "Resources" }}
+            nextPage={{ href: "/for-volunteers", label: "For Volunteers" }}
         >
             <div className="mt-8 space-y-8">
 

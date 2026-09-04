@@ -36,7 +36,7 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                 </p>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
                     <Link
-                        href={`/resources/volunteers#stage-${entry.stage.split('.')[0]}`}
+                        href={`/for-volunteers#stage-${entry.stage.split('.')[0]}`}
                         className="text-sm font-mono text-red-700 hover:underline mr-4"
                     >
                         Stage {entry.stage.split('.')[0]} →
@@ -44,13 +44,13 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     {entry.volunteer.body}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                    <Link href="/resources/volunteers" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                    <Link href="/for-volunteers" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         For Volunteers
                     </Link>
-                    <Link href="/resources/volunteers#you-should-know" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                    <Link href="/for-volunteers#you-should-know" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         You Should Know
                     </Link>
-                    <Link href={`/resources/volunteers#stage-${entry.stage.split('.')[0]}`} className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                    <Link href={`/for-volunteers#stage-${entry.stage.split('.')[0]}`} className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         Stage {entry.stage.split('.')[0]}
                     </Link>
                 </div>

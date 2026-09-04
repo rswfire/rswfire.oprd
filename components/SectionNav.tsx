@@ -3,12 +3,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Icon from "@/components/Icon";
 import Tracker from "@/components/Tracker";
 import Permanence from "@/components/Permanence";
 
 type Section = {
     href: string;
     label: string;
+    icon?: React.ComponentProps<typeof Icon>["name"];
     separator?: boolean;
     subsections?: { href: string; label: string }[];
 };
@@ -44,7 +46,14 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                             : "text-slate-700 hover:bg-slate-50"
                                     }`}
                                 >
-                                    {s.label}
+                                    {s.icon ? (
+                                        <span className="inline-flex items-center gap-2">
+                                            <Icon name={s.icon} size={15} strokeWidth={2} className="text-red-700" />
+                                            {s.label}
+                                        </span>
+                                    ) : (
+                                        s.label
+                                    )}
                                 </Link>
 
                                 {s.subsections && (

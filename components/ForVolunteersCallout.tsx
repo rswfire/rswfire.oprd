@@ -16,7 +16,7 @@ export default function ForVolunteersCallout({ stage, summary }: ForVolunteersCa
                 {summary}
             </p>
             <Link
-                href={`/resources/volunteers#stage-${stage}`}
+                href={`/for-volunteers#stage-${stage}`}
                 className="text-sm text-red-700 hover:underline font-mono"
             >
                 If this happened to you, start here →

@@ -47,18 +47,7 @@ export const archiveSections = [
     { href: "#separator-5", label: "", separator: true },
     { href: "/governor-kotek", label: "The Governor's Silence" },
     { href: "#separator-7", label: "", separator: true },
-    {
-        href: "/resources",
-        label: "Resources",
-        subsections: [
-            { href: "/resources/advocates", label: "For Advocates" },
-            { href: "/resources/lawyers", label: "For Lawyers" },
-            { href: "/resources/legislators", label: "For Legislators" },
-            { href: "/resources/press", label: "For Press" },
-            { href: "/resources/volunteers", label: "For Volunteers" }
-        ]
-    },
-    { href: "#separator-8", label: "", separator: true },
+    { href: "/for-volunteers", label: "For Volunteers", icon: "Shield" as const },
     { href: "/record", label: "The OPRD Record" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },

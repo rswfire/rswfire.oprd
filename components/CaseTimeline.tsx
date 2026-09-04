@@ -413,11 +413,8 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
-                        <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                            The chronology
-                        </div>
-                        <h2 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div>
+                        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
                         <p className="mt-3 text-sm leading-relaxed text-gray-700">
@@ -510,7 +507,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: where to go deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div>
                         <p className="text-sm leading-relaxed text-gray-700">
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
