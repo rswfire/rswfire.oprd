@@ -529,12 +529,17 @@ export default function CaseTimeline() {
                             The full record is hundreds of documents across five accountability pages — every
                             original preserved, every one readable and downloadable.
                         </p>
-                        <Link
-                            href="/accountability/oprd"
-                            className="mt-3 mb-2 text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600"
-                        >
-                            The accountability pages →
-                        </Link>
+                        <div className="mt-3 mb-2 flex flex-col gap-1.5">
+                            <Link href="/accountability/oprd" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">
+                                The accountability pages →
+                            </Link>
+                            <Link href="/evidence" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">
+                                The evidence pages →
+                            </Link>
+                            <Link href="/for-volunteers" className="text-[11px] font-semibold uppercase tracking-widest text-red-700 hover:text-red-600">
+                                For volunteers →
+                            </Link>
+                        </div>
                         </div>
                     </div>
                 </div>
