@@ -91,21 +91,28 @@ export default function SelectedReadingPage() {
                     </div>
                 </Link>
 
-                {/* STORMCHASER'S SOLILOQUY I — PLACEHOLDER */}
-                <div className="border border-gray-100 rounded-lg p-6 bg-white opacity-50">
+                {/* STORMCHASER'S SOLILOQUY I */}
+                <Link
+                    href="https://rswfire.com/library/signal/01JGF4VGG0DXDJAKWA4VDBZ67E"
+                    className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
+                    target="_blank"
+                >
                     <div className="flex items-start justify-between">
                         <div>
-                            <div className="text-xs uppercase tracking-widest text-gray-300 font-semibold">2025</div>
-                            <h2 className="text-xl font-bold mt-1 text-gray-400">Stormchaser&apos;s Soliloquy I</h2>
+                            <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold group-hover:text-emerald-600 transition-colors duration-200">December 31, 2024</div>
+                            <h2 className="text-xl font-bold mt-1 text-gray-900">Stormchaser&apos;s Soliloquy I</h2>
                         </div>
-                        <span className="text-sm text-gray-300 whitespace-nowrap ml-4 mt-1">
-                            Coming →
+                        <span className="text-sm text-gray-400 group-hover:text-emerald-600 whitespace-nowrap ml-4 mt-1 transition-colors duration-200">
+                            Read →
                         </span>
                     </div>
-                    <div className="mt-3 text-sm text-gray-400 leading-relaxed">
-                        The poem that became evidence. Written before Honeyman. Sent to a volunteer coordinator as an explanation of why the coast mattered — why it was worth moving into an RV and driving across the country for. Used at the coercion meeting as an attempt to establish inappropriate boundaries. It was a poem about the ocean.
+                    <div className="mt-3 text-sm text-gray-600 leading-relaxed">
+                        The poem that became evidence. Written at Cape Blanco the day before volunteering for Oregon State Parks began. Sent to a volunteer coordinator as an explanation of why the coast mattered — why it was worth moving into an RV and driving across the country for. Used at the coercion meeting as an attempt to establish inappropriate boundaries. It was a poem about the ocean.
                     </div>
-                </div>
+                    <div className="mt-4 text-sm italic text-gray-400 border-l-2 border-gray-200 group-hover:border-emerald-400 pl-3 transition-colors duration-200">
+                        "I am not afraid of the dark, only of forgetting how to love it."
+                    </div>
+                </Link>
 
             </div>
 

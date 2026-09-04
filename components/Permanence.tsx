@@ -19,9 +19,6 @@ export default function Permanence() {
                     Hosted free and open on GitHub directly. No server to seize.
                     No host to pressure. No invoice to cancel.
                 </p>
-                <p className="mt-3 font-semibold text-slate-900">
-                    It does not come down.<br />It does not go away.<br />It does not need me to stay up.
-                </p>
             </div>
         </div>
     );

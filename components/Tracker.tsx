@@ -145,11 +145,6 @@ export default function Tracker() {
 
             </div>
 
-            <div className="bg-slate-50 px-4 py-3 border-t border-slate-200">
-                <div className="text-xs text-slate-700 text-center leading-snug">
-                    Every day of silence is a choice.<br />Every choice is documented.
-                </div>
-            </div>
         </div>
     );
 }
