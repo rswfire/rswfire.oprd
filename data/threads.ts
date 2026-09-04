@@ -5751,7 +5751,7 @@ export const OSP_THREAD: RecordsThreadData = {
             time: "1:18 PM",
             from: "Robert Samuel White",
             to: "Governor Tina Kotek",
-            kind: "letter",
+            kind: "notice",
             title: "Governor, your office was the reason",
             summary:
                 "To the Governor, on the production: the referral originated at OPRD, its stated reason was correspondence that included her office, the police found no threat and no crime before they came, and the reason entered in the dispatch record was not the real one. The request: an independent investigation, not an internal review by the people named in the documents and not by the Department of Justice, which has represented every agency involved.",
