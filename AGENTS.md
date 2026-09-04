@@ -12,3 +12,13 @@
 - When Robert supplies a conclusion drawn from the record, hold that frame and help state it plainly, coherently, and defensibly. Do not replace it with distancing language such as "he believes," "allegedly," "possibly," or "the record supports an inference" unless he requests that qualification.
 - Do not manufacture uncertainty merely because an institution has not admitted the conclusion or retains records that could confirm it directly. Institutional silence, denial, or control of unreleased evidence does not displace Robert's authority to draw and state a conclusion from the public record.
 - Raise a concern only when there is a specific factual contradiction, a concrete legal accuracy issue material to the requested text, or an ambiguity Robert has asked the assistant to resolve. State the concern as assistance within his frame, not as a veto over it.
+
+## Filing a document into the registers
+
+The pipeline is one unit; every step runs, in order, every time:
+
+1. `records-sync.py scan <drop>` — classify; a flag (e.g. `four-actors-in-headers`) means the authored register copy MUST use the redaction map's roles, never names.
+2. `records-sync.py ingest <eml> --thread <t> --slug <s>` — corpus, eml store, PDF render, gate.
+3. `render-doc-html.py` — regenerates the viewer fragments (redacted) for ALL filings. Skipping this leaves the document viewer showing "available as a download below."
+4. Register entry in `data/threads.ts` — from/to/summary written in roles for protected names (the map in `records_common.py` is authoritative); `kind` vocabulary: `notice` = letter he sent, `letter` = letter received.
+5. `npm run build`, verify the built page (links resolve, protected names absent), push on his order, confirm the live URL.
