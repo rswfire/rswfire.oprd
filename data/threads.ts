@@ -5777,7 +5777,6 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "notice-delivered-to-das",
             ulid: "01M1N5VQS0YZ10HHN9RWY74J3A",
-            flagged: true,
             date: "September 3, 2026",
             d: "2026-09-03",
             time: "8:02 PM",
