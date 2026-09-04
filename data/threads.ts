@@ -4479,11 +4479,11 @@ export const OPRD_THREAD: RecordsThreadData = {
             d: "2026-09-03",
             time: "1:19 PM",
             from: "Robert Samuel White",
-            to: "Kati Baker, Logan Bliss, Ryan Warren, Allison Watson",
+            to: "[Park Supervisor], [Volunteer Services Lead], [Park Manager], [Program Manager]",
             kind: "notice",
             title: "The Governor letter, forwarded",
             summary:
-                "The letter to the Governor on the September 3 production, forwarded FYI to Kati Baker, Logan Bliss, Ryan Warren, and Allison Watson, with the Deputy Director, the Director, the Commission, and the Governor's office copied.",
+                "The letter to the Governor on the September 3 production, forwarded FYI to the [Park Supervisor], the [Volunteer Services Lead], the [Park Manager], and the [Program Manager], with the Deputy Director, the Director, the Commission, and the Governor's office copied.",
             docs: [{ label: "The Governor letter, forwarded", href: "/records/oprd/2026-09-03-governor-letter-forwarded.pdf" }],
             eml: "/records/oprd/eml/2026-09-03_1319_governor-letter-forwarded.eml",
         },
