@@ -5758,6 +5758,22 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Governor, your office was the reason", href: "/records/osp/2026-09-03-governor-your-office-was-the-reason.pdf" }],
             eml: "/records/osp/eml/2026-09-03_1318_governor-your-office-was-the-reason.eml",
         },
+        {
+            id: "notice-of-tort-claim",
+            ulid: "01M1N523F0WNM96C18DTDMK0NP",
+            flagged: true,
+            date: "September 3, 2026",
+            d: "2026-09-03",
+            time: "7:48 PM",
+            from: "Robert Samuel White",
+            to: "DAS Risk Management",
+            kind: "notice",
+            title: "Formal notice of tort claim",
+            summary:
+                "Notice under ORS 30.275 to the State of Oregon, OPRD, and OSP, with claims named against five officials in their individual capacities, delivered to DAS Risk Management by certified mail with copies to OSP Risk, OPRD leadership, the Commission, and the Governor's office. Seven pages; the circumstances are the September 3 production.",
+            docs: [{ label: "Notice of Tort Claim", href: "/records/osp/attachments/01m1n523f0wnm96c18dtdmk0np-2026-09-03-tort-claim-notice.pdf" }, { label: "Transmittal Email", href: "/records/osp/2026-09-03-notice-of-tort-claim.pdf" }],
+            eml: "/records/osp/eml/2026-09-03_1948_notice-of-tort-claim.eml",
+        },
     ],
 };
 
