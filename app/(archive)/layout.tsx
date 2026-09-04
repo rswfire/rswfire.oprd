@@ -10,8 +10,8 @@ export default function ArchiveLayout({
 }) {
     return (
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
-            <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
-                <aside className="hidden lg:block mb-24">
+            <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8">
+                <aside className="hidden md:block mb-24">
                     <VolunteerShield />
                     <SectionNav sections={archiveSections} />
                 </aside>

@@ -69,7 +69,7 @@ export default function Header() {
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label="Toggle menu"
-                        className="lg:hidden fixed top-3 right-3 z-50 flex flex-col items-center gap-0.5 rounded-xl border border-stone-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur hover:shadow-lg transition-shadow"
+                        className="md:hidden fixed top-3 right-3 z-50 flex flex-col items-center gap-0.5 rounded-xl border border-stone-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur hover:shadow-lg transition-shadow"
                     >
                         <Icon
                             name={mobileMenuOpen ? "X" : "TreeDeciduous"}
@@ -83,7 +83,7 @@ export default function Header() {
                 )}
 
                 {mounted && mobileMenuOpen && (
-                    <nav className="lg:hidden fixed inset-0 z-40 overflow-y-auto bg-white px-4 pt-4 pb-8">
+                    <nav className="md:hidden fixed inset-0 z-40 overflow-y-auto bg-white px-4 pt-4 pb-8">
                         <Link
                             href="/"
                             onClick={() => setMobileMenuOpen(false)}
