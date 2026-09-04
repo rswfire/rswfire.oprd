@@ -379,7 +379,7 @@ export default function CaseTimeline() {
         "absolute top-1/2 -translate-y-1/2 z-10 hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
 
     return (
-        <div className="mt-4 rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+        <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
             <div className="relative">
                 {/* Prev / next — the visible way through */}
                 <button
