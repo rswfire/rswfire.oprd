@@ -414,7 +414,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div>
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
                         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
@@ -450,7 +450,8 @@ export default function CaseTimeline() {
                             <div>It is not designed to <em>win attention</em>.</div>
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
-                        <div className="mt-6">
+                        <div className="my-auto py-4">
+                        <div className="mt-2">
                             <a
                                 href="/the-case-in-their-documents.pdf"
                                 download
@@ -501,6 +502,7 @@ export default function CaseTimeline() {
                             </a>
                         </div>
                         </div>
+                        </div>
                     </div>
 
                     {CASE_CARDS.map((card, i) => (
@@ -508,7 +510,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div>
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
                             Common questions, answered.
                         </h2>
