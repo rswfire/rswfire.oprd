@@ -177,7 +177,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-[85vw] max-w-[420px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -414,7 +414,7 @@ export default function CaseTimeline() {
                     className="flex items-stretch gap-4 overflow-x-auto snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
+                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
                         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
@@ -510,7 +510,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] max-h-[min(calc(100dvh-8rem),520px)] sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] h-[min(calc(100dvh-15rem),460px)] sm:h-auto sm:max-h-[calc(100dvh-8rem)] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
                             Common questions, answered.
                         </h2>
