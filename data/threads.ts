@@ -4235,7 +4235,6 @@ export const OPRD_THREAD: RecordsThreadData = {
         {
             id: "governor-letter-forwarded",
             ulid: "01M1MESFR8QGCRQZBDJMH3HN1Z",
-            flagged: true,
             date: "September 3, 2026",
             d: "2026-09-03",
             time: "1:19 PM",
@@ -5584,7 +5583,6 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "claim-number-assigned",
             ulid: "01M1PJ5NSR125CJQ606QX5ZXM1",
-            flagged: true,
             date: "September 4, 2026",
             d: "2026-09-04",
             time: "8:56 AM",
@@ -5600,7 +5598,6 @@ export const OSP_THREAD: RecordsThreadData = {
         {
             id: "notices-not-a-claim-application",
             ulid: "01M1PJXMD0F3B9HEWWPHF4KQ1C",
-            flagged: true,
             date: "September 4, 2026",
             d: "2026-09-04",
             time: "9:09 AM",
@@ -5931,7 +5928,6 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
         {
             id: "records-request-to-the-governors-office",
             ulid: "01M1SQ1ZF04E04FHP6PEEXPVH2",
-            flagged: true,
             date: "September 5, 2026",
             d: "2026-09-05",
             time: "2:19 PM",
