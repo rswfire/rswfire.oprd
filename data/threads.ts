@@ -4256,7 +4256,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             time: "12:11 PM",
             from: "Robert Samuel White",
             to: "[Program Manager]",
-            kind: "letter",
+            kind: "notice",
             title: "The record says you lied",
             summary:
                 "Her recorded March 25, 2025 promise of a review by Friday, set beside her agency's statement to the police that the permanent ineligibility attaches to March 25 -- the day of the call. If either document is honest, the other is not; the letter closes: if you can dispute a single word of this, do so now.",
@@ -4272,7 +4272,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             time: "9:06 AM",
             from: "Robert Samuel White",
             to: "Jamen Lee, OPRD",
-            kind: "letter",
+            kind: "notice",
             title: "Your March 3, 2026 email to Captain Kennedy",
             summary:
                 "To the author of the referral, on the record: what was reported to the police was a citizen publishing a documented record on an announced schedule, and every officer who examined it wrote down that there was nothing. It closes with one line: if you can dispute a single word of this, do so now.",
@@ -4634,7 +4634,7 @@ export const USFS_THREAD: RecordsThreadData = {
             time: "9:45 AM",
             from: "Robert Samuel White",
             to: "District Ranger Michele Holman",
-            kind: "letter",
+            kind: "notice",
             title: "A proper thank you",
             summary:
                 "A personal letter to the District Ranger, asking for nothing: what the September 3 production shows was done over a letter with an FYI, the months of fear it produced, and the dead man's switch built against a return that never came. Her July 24 letter is named as the thing that ended it.",
@@ -5619,7 +5619,7 @@ export const OSP_THREAD: RecordsThreadData = {
             time: "9:09 AM",
             from: "Robert Samuel White",
             to: "Captain Kyle Kennedy, OSP",
-            kind: "letter",
+            kind: "notice",
             title: "Your order is the first act of state power in that file",
             summary:
                 "To the captain of Government and Media Relations who ordered the assessment asap: everything in the Department's file descends from that order, aimed from the press office at a publisher. It closes on the badge beside every OSP signature: does yours say integrity also.",
@@ -5928,6 +5928,7 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
         {
             id: "records-request-to-the-governors-office",
             ulid: "01M1SQ1ZF04E04FHP6PEEXPVH2",
+            flagged: true,
             date: "September 5, 2026",
             d: "2026-09-05",
             time: "2:19 PM",
