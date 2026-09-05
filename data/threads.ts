@@ -5956,6 +5956,21 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             docs: [{ label: "One correction", href: "/records/governor/2026-09-05-one-correction.pdf" }],
             eml: "/records/governor/eml/2026-09-05_1426_one-correction.eml",
         },
+        {
+            id: "wrong-year-no-correction-needed",
+            ulid: "01M1SRKQ8G5P2RMHJNF3WMB2TM",
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "2:46 PM",
+            from: "Robert Samuel White",
+            to: "Cameron D. Miles, Office of the Governor",
+            kind: "followup",
+            title: "Wrong year; no correction was needed",
+            summary:
+                "The earlier correction withdrawn: November 18, 2025 was the accurate date, as the original request stated.",
+            docs: [{ label: "Wrong year; no correction was needed", href: "/records/governor/2026-09-05-wrong-year-no-correction-needed.pdf" }],
+            eml: "/records/governor/eml/2026-09-05_1446_wrong-year-no-correction-needed.eml",
+        },
     ],
 };
 
