@@ -5944,6 +5944,22 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             docs: [{ label: "Public records request to the Office of the Governor", href: "/records/governor/2026-09-05-records-request-to-the-governors-office.pdf" }],
             eml: "/records/governor/eml/2026-09-05_1419_records-request-to-the-governors-office.eml",
         },
+        {
+            id: "one-correction",
+            ulid: "01M1SQF1E03D4GQXPD2DB7870N",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "2:26 PM",
+            from: "Robert Samuel White",
+            to: "Cameron D. Miles, Office of the Governor",
+            kind: "followup",
+            title: "One correction",
+            summary:
+                "A correction to the request, on the record within minutes: the first contact with the office was the June 28, 2026 Formal Notice and Request for Independent Investigation. The register link is provided.",
+            docs: [{ label: "One correction", href: "/records/governor/2026-09-05-one-correction.pdf" }],
+            eml: "/records/governor/eml/2026-09-05_1426_one-correction.eml",
+        },
     ],
 };
 
