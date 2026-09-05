@@ -5821,6 +5821,38 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Notices, not a claim application", href: "/records/osp/2026-09-04-notices-not-a-claim-application.pdf" }],
             eml: "/records/osp/eml/2026-09-04_0909_notices-not-a-claim-application.eml",
         },
+        {
+            id: "what-you-gave-the-police",
+            ulid: "01M1S53NH8C3YG644R0W1TG0DS",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "9:06 AM",
+            from: "Robert Samuel White",
+            to: "Jamen Lee, OPRD",
+            kind: "letter",
+            title: "Your March 3, 2026 email to Captain Kennedy",
+            summary:
+                "To the author of the referral, on the record: what was reported to the police was a citizen publishing a documented record on an announced schedule, and every officer who examined it wrote down that there was nothing. It closes with one line: if you can dispute a single word of this, do so now.",
+            docs: [{ label: "Your March 3, 2026 email to Captain Kennedy", href: "/records/osp/2026-09-05-what-you-gave-the-police.pdf" }],
+            eml: "/records/osp/eml/2026-09-05_0906_what-you-gave-the-police.eml",
+        },
+        {
+            id: "the-first-act-of-state-power",
+            ulid: "01M1S5AS2G1PK98P6VYW8M9RSQ",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "9:09 AM",
+            from: "Robert Samuel White",
+            to: "Captain Kyle Kennedy, OSP",
+            kind: "letter",
+            title: "Your order is the first act of state power in that file",
+            summary:
+                "To the captain of Government and Media Relations who ordered the assessment "asap": everything in the Department's file descends from that order, aimed from the press office at a publisher. It closes on the badge beside every OSP signature: does yours say integrity also.",
+            docs: [{ label: "Your order is the first act of state power in that file", href: "/records/osp/2026-09-05-the-first-act-of-state-power.pdf" }],
+            eml: "/records/osp/eml/2026-09-05_0909_the-first-act-of-state-power.eml",
+        },
     ],
 };
 
