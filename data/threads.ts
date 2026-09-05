@@ -5947,7 +5947,6 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
         {
             id: "one-correction",
             ulid: "01M1SQF1E03D4GQXPD2DB7870N",
-            flagged: true,
             date: "September 5, 2026",
             d: "2026-09-05",
             time: "2:26 PM",
