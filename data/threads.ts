@@ -5849,7 +5849,7 @@ export const OSP_THREAD: RecordsThreadData = {
             kind: "letter",
             title: "Your order is the first act of state power in that file",
             summary:
-                "To the captain of Government and Media Relations who ordered the assessment "asap": everything in the Department's file descends from that order, aimed from the press office at a publisher. It closes on the badge beside every OSP signature: does yours say integrity also.",
+                "To the captain of Government and Media Relations who ordered the assessment asap: everything in the Department's file descends from that order, aimed from the press office at a publisher. It closes on the badge beside every OSP signature: does yours say integrity also.",
             docs: [{ label: "Your order is the first act of state power in that file", href: "/records/osp/2026-09-05-the-first-act-of-state-power.pdf" }],
             eml: "/records/osp/eml/2026-09-05_0909_the-first-act-of-state-power.eml",
         },
