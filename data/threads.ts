@@ -4853,7 +4853,6 @@ export const USFS_THREAD: RecordsThreadData = {
         {
             id: "a-proper-thank-you",
             ulid: "01M1S7BP78CZV1FKM7S621R2VE",
-            flagged: true,
             date: "September 5, 2026",
             d: "2026-09-05",
             time: "9:45 AM",
