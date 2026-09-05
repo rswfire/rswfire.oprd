@@ -4487,6 +4487,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "The Governor letter, forwarded", href: "/records/oprd/2026-09-03-governor-letter-forwarded.pdf" }],
             eml: "/records/oprd/eml/2026-09-03_1319_governor-letter-forwarded.eml",
         },
+        {
+            id: "what-you-gave-the-police",
+            ulid: "01M1S53NH8C3YG644R0W1TG0DS",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "9:06 AM",
+            from: "Robert Samuel White",
+            to: "Jamen Lee, OPRD",
+            kind: "letter",
+            title: "Your March 3, 2026 email to Captain Kennedy",
+            summary:
+                "To the author of the referral, on the record: what was reported to the police was a citizen publishing a documented record on an announced schedule, and every officer who examined it wrote down that there was nothing. It closes with one line: if you can dispute a single word of this, do so now.",
+            docs: [{ label: "Your March 3, 2026 email to Captain Kennedy", href: "/records/oprd/2026-09-05-what-you-gave-the-police.pdf" }],
+            eml: "/records/oprd/eml/2026-09-05_0906_what-you-gave-the-police.eml",
+        },
     ],
 };
 
@@ -5820,22 +5836,6 @@ export const OSP_THREAD: RecordsThreadData = {
                 "The reference number is noted and the characterization corrected: what was served preserves rights and asks for an accounting and an independent investigation, not adjustment. No settlement is sought, no confidentiality will be accepted, and everything in the matter remains published.",
             docs: [{ label: "Notices, not a claim application", href: "/records/osp/2026-09-04-notices-not-a-claim-application.pdf" }],
             eml: "/records/osp/eml/2026-09-04_0909_notices-not-a-claim-application.eml",
-        },
-        {
-            id: "what-you-gave-the-police",
-            ulid: "01M1S53NH8C3YG644R0W1TG0DS",
-            flagged: true,
-            date: "September 5, 2026",
-            d: "2026-09-05",
-            time: "9:06 AM",
-            from: "Robert Samuel White",
-            to: "Jamen Lee, OPRD",
-            kind: "letter",
-            title: "Your March 3, 2026 email to Captain Kennedy",
-            summary:
-                "To the author of the referral, on the record: what was reported to the police was a citizen publishing a documented record on an announced schedule, and every officer who examined it wrote down that there was nothing. It closes with one line: if you can dispute a single word of this, do so now.",
-            docs: [{ label: "Your March 3, 2026 email to Captain Kennedy", href: "/records/osp/2026-09-05-what-you-gave-the-police.pdf" }],
-            eml: "/records/osp/eml/2026-09-05_0906_what-you-gave-the-police.eml",
         },
         {
             id: "the-first-act-of-state-power",
