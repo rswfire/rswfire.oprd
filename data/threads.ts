@@ -4850,6 +4850,22 @@ export const USFS_THREAD: RecordsThreadData = {
             docs: [{ label: "Something I Built Here", href: "/records/usfs/2026-04-03_1559-something-i-built-here.pdf" }],
             eml: "/records/usfs/eml/2026-04-03_1559_something-i-built-here.eml",
         },
+        {
+            id: "a-proper-thank-you",
+            ulid: "01M1S7BP78CZV1FKM7S621R2VE",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "9:45 AM",
+            from: "Robert Samuel White",
+            to: "District Ranger Michele Holman",
+            kind: "letter",
+            title: "A proper thank you",
+            summary:
+                "A personal letter to the District Ranger, asking for nothing: what the September 3 production shows was done over a letter with an FYI, the months of fear it produced, and the dead man's switch built against a return that never came. Her July 24 letter is named as the thing that ended it.",
+            docs: [{ label: "A proper thank you", href: "/records/usfs/2026-09-05-a-proper-thank-you.pdf" }],
+            eml: "/records/usfs/eml/2026-09-05_0945_a-proper-thank-you.eml",
+        },
     ],
 };
 
