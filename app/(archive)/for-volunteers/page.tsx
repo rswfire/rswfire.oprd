@@ -308,13 +308,6 @@ export default function ForVolunteersPage() {
                 </div>
             </details>
 
-            <div className="mt-20 border-t border-gray-200 pt-14 pb-4 text-center">
-                <p className="mx-auto max-w-2xl text-xl sm:text-2xl font-semibold leading-relaxed tracking-tight text-gray-900">
-                    This archive exists for those who have been told they imagined it.
-                    <span className="block mt-3 text-gray-700">For those about to walk into something similar.</span>
-                    <span className="block mt-3 text-emerald-800">For the future, when denial no longer holds.</span>
-                </p>
-            </div>
 
         </SectionPage>
     )
