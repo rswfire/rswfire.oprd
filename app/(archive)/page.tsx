@@ -6,6 +6,7 @@ import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
+import RecordIndexCard from "@/components/RecordIndexCard";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
@@ -25,6 +26,10 @@ export default function OverviewPage() {
 
             {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}
             <LegalFund />
+
+
+            {/* THE OPRD RECORD — door to the live cluster and its six readings */}
+            <RecordIndexCard />
 
 
             {/* THE QUERYABLE RECORD — human door and machine door */}

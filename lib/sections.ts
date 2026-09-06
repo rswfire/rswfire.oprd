@@ -49,7 +49,7 @@ export const archiveSections = [
     { href: "/governor-kotek", label: "The Governor's Silence" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/for-volunteers", label: "For Volunteers", icon: "Shield" as const },
-    { href: "/record", label: "The OPRD Record" },
+    { href: "/record", label: "The OPRD Record", icon: "Layers" as const },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];

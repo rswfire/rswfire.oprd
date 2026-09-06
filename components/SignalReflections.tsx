@@ -78,12 +78,13 @@ function Prose({ blocks, idPrefix }: { blocks: string[]; idPrefix: string }) {
     );
 }
 
-export default function SignalReflections({ reflections, framing }: { reflections: SignalReflection[]; framing?: string }) {
+export default function SignalReflections({ reflections, framing, initialType }: { reflections: SignalReflection[]; framing?: string; initialType?: string | null }) {
     const available = [
         ...ORDER.filter((t) => reflections.some((r) => r.type === t)),
         ...reflections.map((r) => r.type).filter((t) => !ORDER.includes(t)),
     ];
-    const [active, setActive] = useState(available[0] ?? null);
+    const wanted = initialType ? initialType.toUpperCase() : null;
+    const [active, setActive] = useState(wanted && available.includes(wanted) ? wanted : (available[0] ?? null));
     const [expanded, setExpanded] = useState(false);
 
     if (!active) return null;

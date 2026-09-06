@@ -43,6 +43,13 @@ function blocks(text: string): React.ReactNode[] {
 export default function ClusterRecord({ ulid }: { ulid: string }) {
     const [record, setRecord] = useState<ClusterData | null>(null);
     const [state, setState] = useState<"loading" | "ready" | "failed">("loading");
+    const [wantedReading, setWantedReading] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setWantedReading(new URLSearchParams(window.location.search).get("reading"));
+        }
+    }, []);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -51,6 +58,12 @@ export default function ClusterRecord({ ulid }: { ulid: string }) {
             .catch((e) => { if (e?.name !== "AbortError") setState("failed"); });
         return () => controller.abort();
     }, [ulid]);
+
+    useEffect(() => {
+        if (state === "ready" && wantedReading && typeof document !== "undefined") {
+            document.getElementById("readings")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }, [state, wantedReading]);
 
     if (state === "failed") {
         return (
@@ -136,10 +149,13 @@ export default function ClusterRecord({ ulid }: { ulid: string }) {
 
             {/* Six readings of the whole. */}
             {record.reflections.length > 0 && (
-                <SignalReflections
-                    reflections={record.reflections}
-                    framing={`One of ${record.reflections.length} readings the platform makes of this record as a whole — the ${record.members.length} signals above, read together across ${span || "their span"}. This is analysis of the record. It is not the record, and it is not testimony — the recordings and documents it reads are the evidence.`}
-                />
+                <div id="readings" style={{ scrollMarginTop: "80px" }}>
+                    <SignalReflections
+                        reflections={record.reflections}
+                        initialType={wantedReading}
+                        framing={`One of ${record.reflections.length} readings the platform makes of this record as a whole — the ${record.members.length} signals above, read together across ${span || "their span"}. This is analysis of the record. It is not the record, and it is not testimony — the recordings and documents it reads are the evidence.`}
+                    />
+                </div>
             )}
         </div>
     );

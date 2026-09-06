@@ -7,7 +7,7 @@ import ClusterRecord from "@/components/ClusterRecord";
 export const metadata: Metadata = {
     title: "The OPRD Record",
     description:
-        "The ten primary evidentiary signals of this archive, clustered on Autonomy Realms and read together across six analytical lenses.",
+        "The fourteen primary evidentiary signals of this archive, clustered on Autonomy Realms and read together across six analytical lenses.",
 };
 
 const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
@@ -16,7 +16,7 @@ export default function RecordPage() {
     return (
         <SectionPage
             title="THE OPRD RECORD"
-            subtitle="TEN SIGNALS, READ TOGETHER"
+            subtitle="FOURTEEN SIGNALS, READ TOGETHER"
             previousPage={{ href: "/", label: "Overview" }}
         >
             <div className="mb-6 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
@@ -39,9 +39,9 @@ export default function RecordPage() {
                 <div>
                     Every primary recording this archive cites lives permanently on{" "}
                     <a href="https://rswfire.com" className="underline text-emerald-800 hover:text-emerald-600">Autonomy Realms</a>{" "}
-                    as a signal &mdash; transcribed, analyzed, and independently addressable. This page holds ten of those
+                    as a signal &mdash; transcribed, analyzed, and independently addressable. This page holds fourteen of those
                     signals — the evidentiary core — as one cluster: the record from the recorded picnic-table meeting of March 5,
-                    2025 through the legal fund announcement of August 29, 2026.
+                    2025 through the final letter to the department&rsquo;s director on September 5, 2026.
                 </div>
                 <div>
                     The platform reads the cluster as a whole &mdash; a synthesis, and six analytical readings of the
