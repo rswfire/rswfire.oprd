@@ -55,16 +55,44 @@ export default function Header() {
                         </div>
                     </Link>
 
-                    <div className="hidden md:flex flex-col items-end text-right gap-0.5">
-                        <span className="lg:hidden text-sm tracking-tight text-slate-500">Under Director Lisa Sumption's Stewardship</span>
-                        <span className="lg:hidden text-xs font-semibold text-emerald-700">Independently verifiable. Never legally challenged. Not going away.</span>
-                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Independently verifiable.</span>
-                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Never legally challenged.</span>
-                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
+                    <div className="hidden md:flex items-center gap-4">
+                        <div className="flex flex-col items-end text-right gap-0.5">
+                            <span className="lg:hidden text-sm tracking-tight text-slate-500">Under Director Lisa Sumption's Stewardship</span>
+                            <span className="lg:hidden text-xs font-semibold text-emerald-700">Independently verifiable. Never legally challenged. Not going away.</span>
+                            <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Independently verifiable.</span>
+                            <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Never legally challenged.</span>
+                            <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
+                        </div>
+
+                        {/* The shield, compact, routing every page to the reason for the archive */}
+                        <Link
+                            href="/for-volunteers"
+                            className="group flex items-center gap-3 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+                        >
+                            <div className="flex h-14 w-12 items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors">
+                                <Icon name="Shield" className="text-white w-6 h-6" size={24} strokeWidth={1.5} />
+                            </div>
+                            <div className="py-1.5 pr-4 leading-tight">
+                                <div className="text-[11px] font-bold uppercase tracking-widest text-red-900">For Volunteers</div>
+                                <div className="text-[11px] text-gray-600">If this happened to you,<br/>it has a name.</div>
+                            </div>
+                        </Link>
                     </div>
 
                 </div>
+            </div>
 
+            {/* On phones the shield becomes a full-width bar under the header. */}
+            <Link
+                href="/for-volunteers"
+                className="md:hidden flex items-center gap-2 border-t border-red-200 bg-red-700 px-4 py-2 text-white active:bg-red-800"
+            >
+                <Icon name="Shield" className="w-4 h-4 shrink-0" size={16} strokeWidth={1.75} />
+                <span className="text-[11px] font-bold uppercase tracking-widest">For Volunteers</span>
+                <span className="text-[11px] text-red-100">&mdash; if this happened to you, it has a name.</span>
+            </Link>
+
+            <div className="mx-auto max-w-6xl px-4 sm:px-6">
                 {/* Floating menu button — the header itself scrolls away on
                     mobile; this stays. */}
                 {mounted && (

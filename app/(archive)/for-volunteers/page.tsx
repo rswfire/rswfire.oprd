@@ -1,10 +1,9 @@
-// app/(archive)/resources/volunteers/page.tsx
+// app/(archive)/for-volunteers/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
-import PrimaryTransmission from "@/components/PrimaryTransmission";
 import VolunteersIntro from "@/components/VolunteersIntro";
-import { NAMING_DISPLACEMENT_TRANSMISSION } from "@/data/20260403";
+import RetaliationMap from "@/components/RetaliationMap";
 
 export const metadata: Metadata = {
     title: "For Volunteers",
@@ -76,18 +75,191 @@ export default function ForVolunteersPage() {
         <SectionPage
             title="FOR VOLUNTEERS"
             subtitle="YOU'RE NOT ALONE"
-            previousPage={{ href: "/displacement", label: "The Displacement Framework" }}
-            nextPage={{ href: "/evidence", label: "Evidence" }}
+            previousPage={{ href: "/faq", label: "Frequently Asked Questions" }}
+            nextPage={{ href: "/reading", label: "Selected Reading" }}
         >
 
-            {/* WHAT IT MEANS TO VOLUNTEER */}
-            <div className="mt-8 w-full p-8 rounded-xl bg-white border border-slate-200 text-base">
+            <div className="mt-8 p-6 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+                <div className="text-base font-semibold mb-4">ON THIS PAGE:</div>
+                <ul className="space-y-2">
+                    <li>
+                        <a href="#how-they-work" className="text-emerald-700 underline hover:text-emerald-600">How they work</a>
+                        <ul className="mt-2 ml-4 space-y-1.5 border-l border-emerald-200 pl-4 text-sm">
+                            <li><a href="#the-ladder" className="text-emerald-700 underline hover:text-emerald-600">The escalation ladder</a></li>
+                            <li><a href="#the-dictionary" className="text-emerald-700 underline hover:text-emerald-600">The reframing dictionary</a></li>
+                            <li><a href="#the-network" className="text-emerald-700 underline hover:text-emerald-600">How an FYI becomes force</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#displacement-framework" className="text-emerald-700 underline hover:text-emerald-600">The displacement framework</a></li>
+                    <li><a href="#you-should-know" className="text-emerald-700 underline hover:text-emerald-600">What you should know</a></li>
+                    <li><a href="#real-process" className="text-emerald-700 underline hover:text-emerald-600">What a real process looks like</a></li>
+                    <li><a href="#get-help" className="text-emerald-700 underline hover:text-emerald-600">If this is happening to you</a></li>
+                    <li><a href="#full-record" className="text-emerald-700 underline hover:text-emerald-600">The full record</a></li>
+                </ul>
+            </div>
 
-                <h2 className="font-bold text-lg text-center tracking-wide">
-                    WHAT IT MEANS TO VOLUNTEER
-                </h2>
+            <hr className="border-gray-200 mb-12" />
 
-                <hr className="my-6 border-t border-gray-300" />
+            <VolunteersIntro />
+
+            <hr className="border-gray-200 mb-12" />
+
+            <h2 id="how-they-work" className="text-xl font-semibold text-gray-900 mb-4 scroll-mt-48">
+                HOW THEY WORK
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed mb-8">
+                Everything in this archive was one institution&rsquo;s conduct toward one
+                person. But the shape of it is not unique, and it is not random. It is a
+                machine with parts that can be named. This is the map of it, built from the
+                record, so that the next person can recognize the room they are standing in
+                before the door closes.
+            </p>
+
+            <RetaliationMap />
+
+            <hr className="border-gray-200 my-12" />
+
+            <h2 id="displacement-framework" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
+                THE DISPLACEMENT FRAMEWORK
+            </h2>
+
+            <p className="text-base text-gray-700 leading-relaxed mb-8">
+                Displacement is not a single act. It is a sequence — applied in stages, designed to remove a volunteer from the ground they stand on before they can build a record that holds. Every stage below is documented in this archive. If you recognize yourself in any of them, you are not imagining it.
+            </p>
+
+            <div className="space-y-8 mb-16">
+                {stages.map((item) => (
+                    <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-48">
+                        <p className="text-xs font-mono text-red-700 uppercase tracking-widest mb-1">
+                            Stage {item.stage}
+                        </p>
+                        <h3 className="text-base font-semibold text-gray-900 mb-2">
+                            {item.title}
+                        </h3>
+                        <p className="text-base text-gray-700 leading-relaxed">
+                            {item.body}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            <hr className="border-gray-200 mb-12" />
+
+            <h2 id="you-should-know" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
+                WHAT YOU SHOULD KNOW
+            </h2>
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-16">
+                {[
+                    ["You have First Amendment protections.", "If you were removed because of speech — a complaint, a video, a social media post, an email — that is retaliation for protected speech. It does not matter that you were unpaid. The First Amendment does not require a paycheck."],
+                    ["The absence of a paper trail is not the absence of a case.", "Institutions remove volunteers without documentation precisely because they know it makes challenges harder. But your own records — emails, texts, notes, recordings — are evidence. What you remember matters. What you wrote matters."],
+                    ["You are not alone in this pattern.", "What happened to you did not happen because of something uniquely wrong with you. It happened because the system has no mechanism to protect unpaid labor from the people who manage it. That is a structural failure. This archive exists to document it."],
+                    ["Documentation is your only protection.", "If you are still inside the situation: write everything down. Date it. Keep copies outside any institutional system. Record what the law allows. The record you build now is the only thing that survives displacement."],
+                    ["Needing help is not weakness.", "You gave your time freely to an institution that was supposed to steward it with integrity. When it didn’t, you were left without union protection, without HR access, without recourse. Asking for help after that is not weakness. It is honest."],
+                ].map(([title, body]) => (
+                    <div key={title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                        <h3 className="text-base font-semibold text-gray-900 mb-2">{title}</h3>
+                        <p className="text-sm text-gray-700 leading-relaxed">{body}</p>
+                    </div>
+                ))}
+            </div>
+
+            <hr className="border-gray-200 mb-12" />
+
+<h2 id="real-process" className="text-xl font-semibold text-gray-900 mb-4 scroll-mt-48">
+                WHAT A REAL PROCESS LOOKS LIKE
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed mb-8">
+                None of this required a new law. Every protection below already exists for
+                paid employees of the same agencies. On September 5, 2026, I asked the
+                Director of Oregon Parks and Recreation to extend the ordinary machinery of
+                fairness to the people who make the parks possible.
+            </p>
+
+            <ul className="space-y-4 mb-6">
+                {[
+                    ["Written standards.", "A volunteer should be able to read, in advance, what conduct can end their service. Not a supervisor's private judgment. A written standard, applied the same way to everyone."],
+                    ["Notice.", "Before removal, a volunteer should be told what they are alleged to have done, in writing, with enough specificity to answer it."],
+                    ["A hearing before displacement.", "For many volunteers the position is their housing. No one should lose the ground they live on by a phone call, with twenty-four hours to vacate and no paperwork. A hearing must come first."],
+                    ["An appeal that reaches past the accuser.", "The supervisor whose account is in question cannot also be the only judge of it. An appeal has to reach someone with no stake in the original decision."],
+                    ["Protection from retaliation for documentation.", "Recording your own treatment, filing a complaint, or speaking publicly about how you were treated must be protected, not punished. The moment documentation becomes the offense, the process is the abuse."],
+                ].map(([title, body]) => (
+                    <li key={title} className="rounded-lg border-l-4 border-emerald-700 bg-emerald-50/50 px-5 py-4">
+                        <h3 className="text-base font-semibold text-gray-900">{title}</h3>
+                        <p className="mt-1 text-sm leading-relaxed text-gray-700">{body}</p>
+                    </li>
+                ))}
+            </ul>
+
+            <p className="text-sm text-gray-500 leading-relaxed mb-16">
+                Read the letter that asked for these directly:{" "}
+                <Link href="/accountability/oprd/01M1T0PHFRWQNERYJENF7MVRZV" className="text-emerald-800 underline hover:text-emerald-600">
+                    The choices are still yours
+                </Link>
+                .
+            </p>
+
+            <hr className="border-gray-200 mb-12" />
+
+            <h2 id="get-help" className="text-xl font-semibold text-gray-900 mb-4 scroll-mt-48">
+                IF THIS IS HAPPENING TO YOU
+            </h2>
+
+            <p className="text-base text-gray-700 leading-relaxed mb-4">
+                I built this because there was no one for me to turn to. There can be one for
+                you. If you recognize your situation in this record &mdash; whether it is
+                unfolding now or ended years ago &mdash; you can write to me directly. I am not
+                a lawyer and cannot give legal advice. What I can do is help you understand
+                what you are looking at, how to document it so it holds, and that you are not
+                imagining it and not alone. There is no cost, and nothing you send is
+                published without your word.
+            </p>
+
+            <p className="text-base text-gray-700 mb-2">
+                <span className="font-semibold">Robert Samuel White</span>
+            </p>
+            <p className="text-sm text-gray-500 mb-1">Former Oregon State Parks Volunteer</p>
+            <p className="text-sm text-gray-500 mb-4">Current U.S. Forest Service Caretaker</p>
+            <p className="text-sm text-gray-500 mb-1">P.O. Box 334</p>
+            <p className="text-sm text-gray-500 mb-4">Reedsport, Oregon 97467</p>
+            <a href="mailto:rsw@rswfire.com" className="text-red-700 hover:underline text-sm font-mono">
+                rsw@rswfire.com
+            </a>
+
+            <hr className="border-gray-200 mb-12" />
+
+            <h2 id="full-record" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
+                THE FULL RECORD
+            </h2>
+
+            <p className="text-base text-gray-700 leading-relaxed mb-8">
+                Every stage of the displacement framework is documented in this archive — with recordings, correspondence, and primary documents. If you are trying to understand what happened to you, the evidence pages are the place to start.
+            </p>
+
+            <div className="space-y-3 mb-16">
+                {evidenceLinks.map((link) => (
+                    <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block text-sm text-red-700 hover:underline font-mono"
+                    >
+                        {link.label} →
+                    </Link>
+                ))}
+            </div>
+
+            <hr className="border-gray-200 mb-12" />
+
+{/* WHAT IT MEANS TO VOLUNTEER — collapsed by default */}
+            <details className="group mt-8 w-full rounded-xl bg-white border border-slate-200 text-base [&_h3]:mt-8 [&_h3]:text-lg [&_h3]:font-bold">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-8">
+                    <h2 className="font-bold text-lg tracking-wide">WHAT IT MEANS TO VOLUNTEER</h2>
+                    <span className="shrink-0 text-xs font-semibold uppercase tracking-widest text-emerald-800 group-open:hidden">Read →</span>
+                    <span className="hidden shrink-0 text-xs font-semibold uppercase tracking-widest text-gray-400 group-open:inline">Close</span>
+                </summary>
+
+                <div className="px-6 pb-8 sm:px-8">
+                <hr className="mb-6 border-t border-gray-300" />
 
                 <div className="space-y-4">
 
@@ -164,124 +336,8 @@ export default function ForVolunteersPage() {
                     <div>If you volunteer for a public agency, document what happens to you, and do it with integrity, and you will already be on the right side of any action they take against you.</div>
 
                 </div>
-
-            </div>
-
-            <VolunteersIntro />
-
-            <hr className="border-gray-200 mb-12" />
-
-            <div className="mb-12">
-                <PrimaryTransmission transmission={NAMING_DISPLACEMENT_TRANSMISSION} />
-            </div>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">
-                THE DISPLACEMENT FRAMEWORK
-            </h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Displacement is not a single act. It is a sequence — applied in stages, designed to remove a volunteer from the ground they stand on before they can build a record that holds. Every stage below is documented in this archive. If you recognize yourself in any of them, you are not imagining it.
-            </p>
-
-            <div className="space-y-8 mb-16">
-                {stages.map((item) => (
-                    <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-48">
-                        <p className="text-xs font-mono text-red-700 uppercase tracking-widest mb-1">
-                            Stage {item.stage}
-                        </p>
-                        <h3 className="text-base font-semibold text-gray-900 mb-2">
-                            {item.title}
-                        </h3>
-                        <p className="text-base text-gray-700 leading-relaxed">
-                            {item.body}
-                        </p>
-                    </div>
-                ))}
-            </div>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 id="you-should-know" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
-                WHAT YOU SHOULD KNOW
-            </h2>
-
-            <div className="space-y-6 mb-16">
-                <div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">You have First Amendment protections.</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                        If you were removed because of speech — a complaint, a video, a social media post, an email — that is retaliation for protected speech. It does not matter that you were unpaid. The First Amendment does not require a paycheck.
-                    </p>
                 </div>
-                <div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">The absence of a paper trail is not the absence of a case.</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                        Institutions remove volunteers without documentation precisely because they know it makes challenges harder. But your own records — emails, texts, notes, recordings — are evidence. What you remember matters. What you wrote matters.
-                    </p>
-                </div>
-                <div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">You are not alone in this pattern.</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                        What happened to you did not happen because of something uniquely wrong with you. It happened because the system has no mechanism to protect unpaid labor from the people who manage it. That is a structural failure. This archive exists to document it.
-                    </p>
-                </div>
-                <div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">Documentation is your only protection.</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                        If you are still inside the situation: write everything down. Date it. Keep copies outside any institutional system. Record what the law allows. The record you build now is the only thing that survives displacement.
-                    </p>
-                </div>
-                <div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">Needing help is not weakness.</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                        You gave your time freely to an institution that was supposed to steward it with integrity. When it didn&rsquo;t, you were left without union protection, without HR access, without recourse. Asking for help after that is not weakness. It is honest.
-                    </p>
-                </div>
-            </div>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">
-                THE FULL RECORD
-            </h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Every stage of the displacement framework is documented in this archive — with recordings, correspondence, and primary documents. If you are trying to understand what happened to you, the evidence pages are the place to start.
-            </p>
-
-            <div className="space-y-3 mb-16">
-                {evidenceLinks.map((link) => (
-                    <Link
-                        key={link.href}
-                        href={link.href}
-                        className="block text-sm text-red-700 hover:underline font-mono"
-                    >
-                        {link.label} →
-                    </Link>
-                ))}
-            </div>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                CONTACT
-            </h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-4">
-                If this archive reflects your experience and you want to share it — or if you have information relevant to this case — you can reach the author directly.
-            </p>
-
-            <p className="text-base text-gray-700 mb-2">
-                <span className="font-semibold">Robert Samuel White</span>
-            </p>
-            <p className="text-sm text-gray-500 mb-1">Former Oregon State Parks Volunteer</p>
-            <p className="text-sm text-gray-500 mb-4">Current U.S. Forest Service Caretaker</p>
-            <p className="text-sm text-gray-500 mb-1">P.O. Box 334</p>
-            <p className="text-sm text-gray-500 mb-4">Reedsport, Oregon 97467</p>
-            <a href="mailto:rsw@rswfire.com" className="text-red-700 hover:underline text-sm font-mono">
-                rsw@rswfire.com
-            </a>
+            </details>
 
             <div className="mt-16 border-t border-gray-200 pt-10">
                 <p className="text-sm text-gray-500 leading-relaxed">
