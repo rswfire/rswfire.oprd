@@ -471,6 +471,22 @@ export default function CaseTimeline() {
                         </div>
                         <div className="mt-5">
                             <a
+                                href="/the-choices-are-still-yours.pdf"
+                                download
+                                className="group relative block w-full max-w-sm"
+                            >
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
+                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 5, 2026</div>
+                                    <div className="mt-2 font-serif text-xl leading-tight text-gray-900">The Choices Are Still Yours.</div>
+                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">The letter to the Director</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-slate-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-slate-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                        Download &darr;
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="mt-5">
+                            <a
                                 href="/notice-of-tort-claim.pdf"
                                 download
                                 className="group relative block w-full max-w-sm"
