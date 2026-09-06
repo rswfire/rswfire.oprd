@@ -4,7 +4,9 @@
 // communications table. Each filing is one document row; flagged filings
 // stand out and show their note. A new development is one appended Filing.
 
+import Link from "next/link";
 import RecordsTable from "@/components/RecordsTable";
+import { THREADS } from "@/data/threads";
 
 export type FilingKind =
     | "request"
@@ -71,6 +73,27 @@ export const KIND_LABEL: Record<FilingKind, string> = {
 export default function RecordsThread({ thread }: { thread: RecordsThreadData }) {
     return (
         <div className="mt-8">
+            {/* Every register, one strip; the one you are reading is filled. */}
+            <nav aria-label="Institutions" className="mb-6 flex flex-wrap gap-2">
+                {THREADS.map((t) => {
+                    const active = t.slug === thread.slug;
+                    return (
+                        <Link
+                            key={t.slug}
+                            href={`/accountability/${t.slug}`}
+                            aria-current={active ? "page" : undefined}
+                            className={`rounded-full border px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
+                                active
+                                    ? "border-emerald-700 bg-emerald-700 text-white"
+                                    : "border-slate-200 bg-white text-slate-600 hover:border-emerald-400 hover:text-emerald-800"
+                            }`}
+                        >
+                            {t.title}
+                        </Link>
+                    );
+                })}
+            </nav>
+
             <div className="text-sm">
                 <span className="font-semibold uppercase tracking-widest text-emerald-800">
                     {thread.agency}
