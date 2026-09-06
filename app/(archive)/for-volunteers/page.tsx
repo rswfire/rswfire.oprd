@@ -58,18 +58,6 @@ const stages = [
     }
 ]
 
-const evidenceLinks = [
-    { label: "1. The Origin Event", href: "/evidence/origin" },
-    { label: "2. The Escalation Response", href: "/evidence/escalation" },
-    { label: "3. Trust Recruitment", href: "/evidence/trust" },
-    { label: "4. The Coercion Meeting", href: "/evidence/coercion" },
-    { label: "5. Assessment & Surveillance", href: "/evidence/surveillance" },
-    { label: "6. Dismissal Without Process", href: "/evidence/dismissal" },
-    { label: "7. Expulsion & Retaliation", href: "/evidence/expulsion" },
-    { label: "8. Institutional Containment", href: "/evidence/containment" },
-    { label: "9. Police Intimidation", href: "/evidence/police" },
-]
-
 export default function ForVolunteersPage() {
     return (
         <SectionPage
@@ -94,7 +82,6 @@ export default function ForVolunteersPage() {
                     <li><a href="#you-should-know" className="text-emerald-700 underline hover:text-emerald-600">What you should know</a></li>
                     <li><a href="#real-process" className="text-emerald-700 underline hover:text-emerald-600">What a real process looks like</a></li>
                     <li><a href="#get-help" className="text-emerald-700 underline hover:text-emerald-600">If this is happening to you</a></li>
-                    <li><a href="#full-record" className="text-emerald-700 underline hover:text-emerald-600">The full record</a></li>
                 </ul>
             </div>
 
@@ -142,6 +129,15 @@ export default function ForVolunteersPage() {
                     </div>
                 ))}
             </div>
+
+            <p className="text-base text-gray-700 leading-relaxed mb-16">
+                Each stage is documented in full &mdash; with recordings, correspondence, and
+                primary evidence &mdash; on{" "}
+                <Link href="/displacement" className="text-emerald-800 underline hover:text-emerald-600">
+                    the displacement framework page
+                </Link>
+                .
+            </p>
 
             <hr className="border-gray-200 mb-12" />
 
@@ -225,28 +221,6 @@ export default function ForVolunteersPage() {
             <a href="mailto:rsw@rswfire.com" className="text-red-700 hover:underline text-sm font-mono">
                 rsw@rswfire.com
             </a>
-
-            <hr className="border-gray-200 mb-12" />
-
-            <h2 id="full-record" className="text-xl font-semibold text-gray-900 mb-6 scroll-mt-48">
-                THE FULL RECORD
-            </h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Every stage of the displacement framework is documented in this archive — with recordings, correspondence, and primary documents. If you are trying to understand what happened to you, the evidence pages are the place to start.
-            </p>
-
-            <div className="space-y-3 mb-16">
-                {evidenceLinks.map((link) => (
-                    <Link
-                        key={link.href}
-                        href={link.href}
-                        className="block text-sm text-red-700 hover:underline font-mono"
-                    >
-                        {link.label} →
-                    </Link>
-                ))}
-            </div>
 
             <hr className="border-gray-200 mb-12" />
 
