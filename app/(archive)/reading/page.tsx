@@ -22,6 +22,28 @@ export default function SelectedReadingPage() {
 
             <div className="mt-8 space-y-4">
 
+                {/* WHAT IT MEANS TO VOLUNTEER — internal essay */}
+                <Link
+                    href="/for-volunteers/what-it-means"
+                    className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
+                >
+                    <div className="flex items-start justify-between">
+                        <div>
+                            <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold group-hover:text-emerald-600 transition-colors duration-200">The Argument</div>
+                            <h2 className="text-xl font-bold mt-1 text-gray-900">What It Means to Volunteer</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 group-hover:text-emerald-600 whitespace-nowrap ml-4 mt-1 transition-colors duration-200">
+                            Read →
+                        </span>
+                    </div>
+                    <div className="mt-3 text-sm text-gray-600 leading-relaxed">
+                        Why an unpaid volunteer is inside the structure and outside its protections. The labor the parks depend on, the housing tied to the placement, the statewide policy that can remove a volunteer but will not protect one, and why this archive exists at all.
+                    </div>
+                    <div className="mt-4 text-sm italic text-gray-400 border-l-2 border-gray-200 group-hover:border-emerald-400 pl-3 transition-colors duration-200">
+                        "We are inside the structure, doing the work the structure depends on, and the protections stop at a line drawn around the people who are paid."
+                    </div>
+                </Link>
+
                 {/* THE COMPASS */}
                 <Link
                     href="https://rswfire.com/library/signal/01KKD32X00FHMNP5MDZQ1N1HP2"
