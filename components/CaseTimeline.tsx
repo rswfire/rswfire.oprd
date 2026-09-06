@@ -178,10 +178,12 @@ function Card({
     card,
     active,
     onOpenDoc,
+    onNext,
 }: {
     card: CaseCard;
     active: boolean;
     onOpenDoc: (card: CaseCard) => void;
+    onNext: () => void;
 }) {
     const style = AUTHOR_STYLE[card.author];
     return (
@@ -230,6 +232,13 @@ function Card({
                     >
                         {card.hrefLabel} →
                     </Link>
+                    <button
+                        type="button"
+                        onClick={onNext}
+                        className="lg:hidden mx-auto mt-2 block text-[10px] uppercase tracking-widest text-gray-400 hover:text-emerald-700 cursor-pointer"
+                    >
+                        Next slide →
+                    </button>
                 </div>
             </div>
         </article>
@@ -268,8 +277,11 @@ export default function CaseTimeline() {
     const hashStop = useRef(-1);
     const [view, setView] = useState<ViewDoc | null>(null);
     const interacted = useRef(false);
-    // #3: the right-edge scrim retires after the first interaction.
+    // #3: the right-edge scrim retires only on real horizontal movement or
+    // arrow use — never on a touch that is just page-scrolling past.
     const [hasInteracted, setHasInteracted] = useState(false);
+    const cueRetired = useRef(false);
+    const nudging = useRef(false);
 
     const stateCount = useMemo(
         () => CASE_CARDS.filter((c) => c.author === "state" || c.author === "recorded").length,
@@ -306,6 +318,7 @@ export default function CaseTimeline() {
     const scrollToStop = useCallback(
         (i: number) => {
             interacted.current = true;
+            cueRetired.current = true;
             setHasInteracted(true);
             const els = stopEls();
             const clamped = Math.max(0, Math.min(i, els.length - 1));
@@ -320,6 +333,10 @@ export default function CaseTimeline() {
     const computeStop = useCallback(() => {
         const scroller = scrollerRef.current;
         if (!scroller) return;
+        if (!cueRetired.current && !nudging.current && scroller.scrollLeft > 8) {
+            cueRetired.current = true;
+            setHasInteracted(true);
+        }
         const mid = scroller.scrollLeft + scroller.clientWidth / 2;
         const els = stopEls();
         let best = 0;
@@ -425,9 +442,11 @@ export default function CaseTimeline() {
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         try { if (sessionStorage.getItem("case-nudged")) return; } catch { return; }
         const t1 = setTimeout(() => {
-            if (interacted.current) return;
+            if (cueRetired.current || scroller.scrollLeft > 4) return;
+            nudging.current = true;
             scroller.scrollTo({ left: 28, behavior: "smooth" });
             setTimeout(() => scroller.scrollTo({ left: 0, behavior: "smooth" }), 420);
+            setTimeout(() => (nudging.current = false), 1100);
             try { sessionStorage.setItem("case-nudged", "1"); } catch {}
         }, 900);
         return () => clearTimeout(t1);
@@ -464,7 +483,7 @@ export default function CaseTimeline() {
                     ref={scrollerRef}
                     tabIndex={0}
                     onKeyDown={onKeyDown}
-                    onPointerDown={() => { interacted.current = true; setHasInteracted(true); }}
+                    onPointerDown={() => (interacted.current = true)}
                     aria-label="The case, in their documents — scroll right through the chronology"
                     className="flex items-stretch gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
@@ -505,9 +524,6 @@ export default function CaseTimeline() {
                             <div>It is not designed to <em>win attention</em>.</div>
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
-                        <p className="mt-2 text-[10px] uppercase tracking-widest text-gray-400 lg:hidden">
-                            {capitalize(spell(CASE_CARDS.length))} moments · swipe →
-                        </p>
                         <div className="my-auto py-3">
                         <div className="mt-2">
                             <a
@@ -575,13 +591,20 @@ export default function CaseTimeline() {
                                 </div>
                             </a>
                         </div>
+                        <button
+                            type="button"
+                            onClick={() => scrollToStop(1)}
+                            className="lg:hidden mx-auto mt-3 block text-[10px] uppercase tracking-widest text-gray-400 hover:text-emerald-700 cursor-pointer"
+                        >
+                            Next slide →
+                        </button>
                         </div>
                         </div>
                         <ScrollHint />
                     </div>
 
                     {CASE_CARDS.map((card, i) => (
-                        <Card key={card.id} card={card} active={i + 1 === stop} onOpenDoc={openDoc} />
+                        <Card key={card.id} card={card} active={i + 1 === stop} onOpenDoc={openDoc} onNext={() => scrollToStop(i + 2)} />
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
