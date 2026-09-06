@@ -1,16 +1,23 @@
 import Icon from "@/components/Icon";
 import Link from "next/link";
+import VolunteerShield from "@/components/VolunteerShield";
 
 export default function Footer() {
     return (
         <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-600 bg-white/90">
 
+            <div className="mb-8 flex justify-center">
+                <div className="w-full max-w-xs px-4">
+                    <VolunteerShield />
+                </div>
+            </div>
+
             <div className="flex justify-center font-bold text-lg">
-                <Link href="/displacement" className="text-emerald-700 hover:text-emerald-900 hover:bg-gray-100 rounded-lg px-4 py-2 transition-colors text-left sm:text-center font-mono">
+                <div className="text-emerald-700 rounded-lg px-4 py-2 text-left sm:text-center font-mono">
                     <span className="block sm:inline"><Icon name="Map" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE MAP.</span>
                     <span className="block sm:inline sm:ml-6"><Icon name="Repeat" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE PATTERN.</span>
                     <span className="block sm:inline sm:ml-6"><Icon name="Eye" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE MIRROR.</span>
-                </Link>
+                </div>
             </div>
 
             <div className="mt-6 max-w-6xl mx-auto px-4 space-y-2">

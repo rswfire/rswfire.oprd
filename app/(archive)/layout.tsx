@@ -1,6 +1,5 @@
 // app/(archive)/layout.tsx
 import SectionNav from "@/components/SectionNav";
-import VolunteerShield from "@/components/VolunteerShield";
 import { archiveSections } from "@/lib/sections";
 
 export default function ArchiveLayout({
@@ -13,9 +12,6 @@ export default function ArchiveLayout({
             <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8">
                 <aside className="hidden md:block mb-24">
                     <SectionNav sections={archiveSections} />
-                    <div className="mt-6">
-                        <VolunteerShield />
-                    </div>
                 </aside>
                 <article className="min-w-0 max-w-6xl">
                     {children}
