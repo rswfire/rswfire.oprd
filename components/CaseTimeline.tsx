@@ -561,7 +561,7 @@ export default function CaseTimeline() {
                                     </div>
                                 </div>
                             </a>
-                            <a href="/the-choices-are-still-yours.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
+                            <a href="/the-choices-are-still-yours.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &middot; v1.1 &darr;</a>
                         </div>
                         <div className="mt-3 lg:mt-5">
                             <a
