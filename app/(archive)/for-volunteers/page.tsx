@@ -110,7 +110,7 @@ export default function ForVolunteersPage() {
                 THE DISPLACEMENT FRAMEWORK
             </h2>
 
-            <div className="space-y-8 mb-16">
+            <div className="space-y-8 mb-4">
                 {stages.map((item) => (
                     <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-48">
                         <p className="text-xs font-mono text-red-700 uppercase tracking-widest mb-1">
