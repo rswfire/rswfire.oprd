@@ -74,6 +74,17 @@ function toViewDoc(r: Resolved): ViewDoc {
     };
 }
 
+
+// #2: a sticky bottom fade + chevron inside every vertical scroller; the
+// effect in CaseTimeline shows it only while there is more below the fold.
+const ScrollHint = () => (
+    <div aria-hidden data-scroll-hint className="pointer-events-none sticky bottom-0 -mt-8 flex h-8 items-end justify-center bg-gradient-to-t from-white via-white/75 to-transparent opacity-0 transition-opacity duration-300">
+        <svg viewBox="0 0 24 24" className="mb-0.5 h-4 w-4 fill-none stroke-current stroke-2 text-gray-400" aria-hidden>
+            <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    </div>
+);
+
 // ─── The recording, played in place ──────────────────────────────────────────
 
 function CardMedia({ card, onOpenDoc }: { card: CaseCard; onOpenDoc: () => void }) {
@@ -177,7 +188,7 @@ function Card({
         <article
             id={`case-${card.id}`}
             data-case-stop
-            className={`snap-center shrink-0 w-[85vw] max-w-[420px] h-[520px] lg:h-auto lg:max-h-[42rem] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
+            className={`snap-center shrink-0 w-[82vw] sm:w-[85vw] max-w-[420px] h-[520px] lg:h-auto lg:max-h-[42rem] flex flex-col rounded-lg border overflow-hidden bg-white transition-shadow ${
                 active ? "border-gray-400 shadow-md" : "border-gray-200 shadow-sm"
             }`}
         >
@@ -199,7 +210,7 @@ function Card({
                 <h3 className="mt-1 text-lg font-semibold tracking-tight text-gray-900">{card.title}</h3>
                 {/* Only the document's text scrolls; the date, title and
                     link hold still. */}
-                <div className="case-scroll mt-2 flex-1 min-h-0 overflow-y-auto space-y-2">
+                <div data-vscroll className="case-scroll mt-2 flex-1 min-h-0 overflow-y-auto space-y-2">
                     {card.body.split("\n\n").map((para, i) => (
                         <p key={i} className="text-sm leading-relaxed text-gray-700">{para}</p>
                     ))}
@@ -210,6 +221,7 @@ function Card({
                             </p>
                         </blockquote>
                     )}
+                    <ScrollHint />
                 </div>
                 <div className="pt-3">
                     <Link
@@ -256,6 +268,8 @@ export default function CaseTimeline() {
     const hashStop = useRef(-1);
     const [view, setView] = useState<ViewDoc | null>(null);
     const interacted = useRef(false);
+    // #3: the right-edge scrim retires after the first interaction.
+    const [hasInteracted, setHasInteracted] = useState(false);
 
     const stateCount = useMemo(
         () => CASE_CARDS.filter((c) => c.author === "state" || c.author === "recorded").length,
@@ -292,6 +306,7 @@ export default function CaseTimeline() {
     const scrollToStop = useCallback(
         (i: number) => {
             interacted.current = true;
+            setHasInteracted(true);
             const els = stopEls();
             const clamped = Math.max(0, Math.min(i, els.length - 1));
             stopRef.current = clamped;
@@ -378,6 +393,46 @@ export default function CaseTimeline() {
     const arrowCls =
         "absolute top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white/95 border border-gray-300 shadow-md text-gray-700 hover:text-emerald-800 hover:border-emerald-600 transition-colors cursor-pointer disabled:opacity-0 disabled:pointer-events-none";
 
+
+    // #2: show each scroller's bottom hint only while content remains below.
+    useEffect(() => {
+        const scroller = scrollerRef.current;
+        if (!scroller) return;
+        const updateHints = () => {
+            scroller.querySelectorAll<HTMLElement>("[data-vscroll]").forEach((el) => {
+                const hint = el.querySelector<HTMLElement>("[data-scroll-hint]");
+                if (!hint) return;
+                const scrollable = el.scrollHeight > el.clientHeight + 4;
+                const atEnd = el.scrollTop + el.clientHeight >= el.scrollHeight - 8;
+                hint.style.opacity = scrollable && !atEnd ? "1" : "0";
+            });
+        };
+        updateHints();
+        const t = setTimeout(updateHints, 600);
+        scroller.addEventListener("scroll", updateHints, true);
+        window.addEventListener("resize", updateHints);
+        return () => {
+            clearTimeout(t);
+            scroller.removeEventListener("scroll", updateHints, true);
+            window.removeEventListener("resize", updateHints);
+        };
+    }, []);
+
+    // #5: a one-time nudge the first time the strip is seen this session.
+    useEffect(() => {
+        const scroller = scrollerRef.current;
+        if (!scroller) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        try { if (sessionStorage.getItem("case-nudged")) return; } catch { return; }
+        const t1 = setTimeout(() => {
+            if (interacted.current) return;
+            scroller.scrollTo({ left: 28, behavior: "smooth" });
+            setTimeout(() => scroller.scrollTo({ left: 0, behavior: "smooth" }), 420);
+            try { sessionStorage.setItem("case-nudged", "1"); } catch {}
+        }, 900);
+        return () => clearTimeout(t1);
+    }, []);
+
     return (
         <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
             <div className="relative">
@@ -409,16 +464,16 @@ export default function CaseTimeline() {
                     ref={scrollerRef}
                     tabIndex={0}
                     onKeyDown={onKeyDown}
-                    onPointerDown={() => (interacted.current = true)}
+                    onPointerDown={() => { interacted.current = true; setHasInteracted(true); }}
                     aria-label="The case, in their documents — scroll right through the chronology"
                     className="flex items-stretch gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory px-4 py-6 pb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 [scrollbar-width:thin]"
                 >
                     {/* Intro panel: what this is, for a reader arriving cold */}
-                    <div id="case-start" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[460px] h-[520px] lg:h-auto lg:max-h-[42rem] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
-                        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
+                    <div id="case-start" data-case-stop data-vscroll className="snap-center shrink-0 w-[82vw] sm:w-[85vw] max-w-[460px] h-[520px] lg:h-auto lg:max-h-[42rem] case-scroll overflow-y-auto flex flex-col px-2"><div className="flex min-h-full flex-col">
+                        <h2 className="text-xl lg:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                             The case, in their documents.
                         </h2>
-                        <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                        <p className="mt-2 lg:mt-3 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
                             In early 2025, I served as an unpaid volunteer at{" "}
                             <Link
                                 href="https://rswfire.com/?center=43.92593%2C-124.11341&zoom=15"
@@ -431,15 +486,15 @@ export default function CaseTimeline() {
                             order. {capitalize(spell(stateCount))} of the{" "}
                             {spell(CASE_CARDS.length)} that follow are the state’s own words.
                         </p>
-                        <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                        <p className="mt-2 lg:mt-3 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
                             This archive is not a story about me. It is a story about <em>them</em> — the choices
                             they made when given evidence of abuse, when given the opportunity to stop, when
                             given time to self-correct.
                         </p>
-                        <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                        <p className="mt-2 lg:mt-3 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
                             Every mechanism of accountability was used to shield themselves.
                         </p>
-                        <div className="mt-3 pl-4 border-l-4 border-emerald-700 space-y-1 text-sm leading-relaxed text-gray-700">
+                        <div className="mt-2 lg:mt-3 pl-3 lg:pl-4 border-l-4 border-emerald-700 space-y-0.5 lg:space-y-1 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
                             <div>
                                 <strong>Why I built this archive</strong>: to correct an{" "}
                                 <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
@@ -450,7 +505,10 @@ export default function CaseTimeline() {
                             <div>It is not designed to <em>win attention</em>.</div>
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
-                        <div className="my-auto py-4">
+                        <p className="mt-2 text-[10px] uppercase tracking-widest text-gray-400 lg:hidden">
+                            {capitalize(spell(CASE_CARDS.length))} moments · swipe →
+                        </p>
+                        <div className="my-auto py-3">
                         <div className="mt-2">
                             <a
                                 href="/the-case-in-their-documents.pdf"
@@ -459,59 +517,59 @@ export default function CaseTimeline() {
                             >
                                 <div className="absolute inset-0 translate-x-2 translate-y-2 rotate-[1.2deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
                                 <div className="absolute inset-0 translate-x-1 translate-y-1 rotate-[0.6deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-6">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-red-700">oprdvolunteerabuse.org</div>
-                                    <div className="mt-2 font-serif text-2xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">Independently verifiable</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-4 lg:px-6 lg:py-6">
+                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-red-700">oprdvolunteerabuse.org</div>
+                                    <div className="mt-1.5 lg:mt-2 font-serif text-xl lg:text-2xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
+                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">Independently verifiable</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div className="mt-5">
+                        <div className="mt-3 lg:mt-5">
                             <a
                                 href="/the-choices-are-still-yours.pdf"
                                 download
                                 className="group relative block w-full max-w-sm"
                             >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 5, 2026</div>
-                                    <div className="mt-2 font-serif text-xl leading-tight text-gray-900">The Choices Are Still Yours.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">The letter to the Director</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-slate-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-slate-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
+                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 5, 2026</div>
+                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">The Choices Are Still Yours.</div>
+                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">The letter to the Director</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-slate-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-slate-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div className="mt-5">
+                        <div className="mt-3 lg:mt-5">
                             <a
                                 href="/notice-of-tort-claim.pdf"
                                 download
                                 className="group relative block w-full max-w-sm"
                             >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 3, 2026</div>
-                                    <div className="mt-2 font-serif text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">42 U.S.C. &sect;1983</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
+                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 3, 2026</div>
+                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
+                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">42 U.S.C. &sect;1983</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div className="mt-5">
+                        <div className="mt-3 lg:mt-5">
                             <a
                                 href="/final-statement-to-oprd.pdf"
                                 download
                                 className="group relative block w-full max-w-sm"
                             >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-6 py-5">
-                                    <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">May 4, 2026</div>
-                                    <div className="mt-2 font-serif text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
-                                    <div className="mt-2 text-[11px] uppercase tracking-wider text-gray-400">Under Director Sumption&rsquo;s stewardship</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
+                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
+                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">May 4, 2026</div>
+                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
+                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">Under Director Sumption&rsquo;s stewardship</div>
+                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
                                         Download &darr;
                                     </div>
                                 </div>
@@ -519,6 +577,7 @@ export default function CaseTimeline() {
                         </div>
                         </div>
                         </div>
+                        <ScrollHint />
                     </div>
 
                     {CASE_CARDS.map((card, i) => (
@@ -526,7 +585,7 @@ export default function CaseTimeline() {
                     ))}
 
                     {/* Outro panel: common questions, then the way deeper */}
-                    <div id="case-record" data-case-stop className="snap-center shrink-0 w-[85vw] max-w-[420px] h-[520px] lg:h-auto lg:max-h-[42rem] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
+                    <div id="case-record" data-case-stop data-vscroll className="snap-center shrink-0 w-[82vw] sm:w-[85vw] max-w-[420px] h-[520px] lg:h-auto lg:max-h-[42rem] case-scroll overflow-y-auto flex flex-col px-2"><div className="my-auto">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-900 leading-tight">
                             Common questions, answered.
                         </h2>
@@ -556,9 +615,13 @@ export default function CaseTimeline() {
                                 For volunteers →
                             </Link>
                         </div>
+                        <ScrollHint />
                         </div>
                     </div>
                 </div>
+                {!hasInteracted && (
+                    <div aria-hidden className="pointer-events-none absolute inset-y-6 right-0 w-10 bg-gradient-to-l from-white to-transparent lg:hidden" />
+                )}
             </div>
 
             {/* Progress rail — one dot per stop, ends included. On small
@@ -631,6 +694,7 @@ export default function CaseTimeline() {
                                 {stop === 0 ? "Start" : "End"}
                             </span>
                         )}
+                        <span className="md:hidden text-[9px] tracking-widest text-gray-400">{stop + 1} / {CASE_CARDS.length + 2}</span>
                     </span>
                     <span>August 2026</span>
                 </div>
