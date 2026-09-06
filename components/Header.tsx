@@ -45,20 +45,22 @@ export default function Header() {
                                 Oregon Parks &amp; Recreation Department
                             </h2>
 
-                            <p className="text-xs sm:text-sm tracking-tight text-slate-500">
+                            <p className="text-xs sm:text-sm tracking-tight text-slate-500 md:hidden lg:block">
                                 <span className="hidden sm:inline">Under </span>Director Lisa Sumption's Stewardship
                             </p>
 
-                            <p className="hidden sm:block mt-1 text-xs font-semibold text-emerald-700 lg:hidden">
+                            <p className="hidden sm:block mt-1 text-xs font-semibold text-emerald-700 md:hidden">
                                 Independently verifiable. Never legally challenged. Not going away.
                             </p>
                         </div>
                     </Link>
 
-                    <div className="hidden lg:flex flex-col items-end text-right gap-0.5">
-                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Independently verifiable.</span>
-                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Never legally challenged.</span>
-                        <span className="text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
+                    <div className="hidden md:flex flex-col items-end text-right gap-0.5">
+                        <span className="lg:hidden text-sm tracking-tight text-slate-500">Under Director Lisa Sumption's Stewardship</span>
+                        <span className="lg:hidden text-xs font-semibold text-emerald-700">Independently verifiable. Never legally challenged. Not going away.</span>
+                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Independently verifiable.</span>
+                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Never legally challenged.</span>
+                        <span className="hidden lg:block text-xs font-bold tracking-widest uppercase text-slate-800">Not going away.</span>
                     </div>
 
                 </div>
