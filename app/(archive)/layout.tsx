@@ -12,8 +12,10 @@ export default function ArchiveLayout({
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
             <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8">
                 <aside className="hidden md:block mb-24">
-                    <VolunteerShield />
                     <SectionNav sections={archiveSections} />
+                    <div className="mt-6">
+                        <VolunteerShield />
+                    </div>
                 </aside>
                 <article className="min-w-0 max-w-6xl">
                     {children}
