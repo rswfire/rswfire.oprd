@@ -4400,6 +4400,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-05_1555_records-request-director-and-deputy.eml",
         },
         {
+            id: "the-choices-are-still-yours",
+            ulid: "01M1T0PHFRWQNERYJENF7MVRZV",
+            flagged: true,
+            date: "September 5, 2026",
+            d: "2026-09-05",
+            time: "5:08 PM",
+            from: "Robert Samuel White",
+            to: "Director Lisa Sumption",
+            kind: "letter",
+            title: "The choices are still yours",
+            summary:
+                "Everything on the table, to the Director: the waiting strategy named, the ledger of seventeen months in which every act became evidence, why time is not the agency's shelter, and the options that remain. The case can be bought; the record cannot. The price of ending it has never changed: tell the truth, withdraw the bar, and build a real process for the people who make the parks possible.",
+            docs: [{ label: "The choices are still yours", href: "/records/oprd/2026-09-05-the-choices-are-still-yours.pdf" }],
+            eml: "/records/oprd/eml/2026-09-05_1708_the-choices-are-still-yours.eml",
+        },
+        {
             id: "what-you-gave-the-police",
             ulid: "01M1S53NH8C3YG644R0W1TG0DS",
             flagged: true,
