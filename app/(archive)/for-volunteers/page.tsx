@@ -110,10 +110,6 @@ export default function ForVolunteersPage() {
                 THE DISPLACEMENT FRAMEWORK
             </h2>
 
-            <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Displacement is not a single act. It is a sequence — applied in stages, designed to remove a volunteer from the ground they stand on before they can build a record that holds. Every stage below is documented in this archive. If you recognize yourself in any of them, you are not imagining it.
-            </p>
-
             <div className="space-y-8 mb-16">
                 {stages.map((item) => (
                     <div key={item.stage} id={`stage-${item.stage}`} className="border-l-4 border-gray-200 pl-6 scroll-mt-48">
@@ -131,8 +127,7 @@ export default function ForVolunteersPage() {
             </div>
 
             <p className="text-base text-gray-700 leading-relaxed mb-16">
-                Each stage is documented in full &mdash; with recordings, correspondence, and
-                primary evidence &mdash; on{" "}
+                Every stage, documented, on{" "}
                 <Link href="/displacement" className="text-emerald-800 underline hover:text-emerald-600">
                     the displacement framework page
                 </Link>
