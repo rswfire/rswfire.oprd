@@ -527,8 +527,9 @@ export default function CaseTimeline() {
                         <div className="my-auto py-3">
                         <div className="mt-2">
                             <a
-                                href="/the-case-in-their-documents.pdf"
-                                download
+                                href="https://rswfire.com/library/signal/01M1A0NXW0T6H8PJPEDVEVE7QE"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="absolute inset-0 translate-x-2 translate-y-2 rotate-[1.2deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
@@ -538,15 +539,17 @@ export default function CaseTimeline() {
                                     <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
                                     <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">Independently verifiable</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Download &darr;
+                                        Read &rarr;
                                     </div>
                                 </div>
                             </a>
+                            <a href="/the-case-in-their-documents.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
                         </div>
                         <div className="mt-3 lg:mt-5">
                             <a
-                                href="/the-choices-are-still-yours.pdf"
-                                download
+                                href="https://rswfire.com/library/signal/01M1T0PHFRTSA49E5PJNZ0NB14"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
@@ -554,15 +557,17 @@ export default function CaseTimeline() {
                                     <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">Director Sumption,</div>
                                     <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">The Choices Are Still Yours.</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-slate-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-slate-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Download &darr;
+                                        Read &rarr;
                                     </div>
                                 </div>
                             </a>
+                            <a href="/the-choices-are-still-yours.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
                         </div>
                         <div className="mt-3 lg:mt-5">
                             <a
-                                href="/notice-of-tort-claim.pdf"
-                                download
+                                href="https://rswfire.com/library/signal/01M1N51QR0K7S69YC5S2K8NSV3"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
@@ -570,15 +575,17 @@ export default function CaseTimeline() {
                                     <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
                                     <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">42 U.S.C. &sect;1983</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Download &darr;
+                                        Read &rarr;
                                     </div>
                                 </div>
                             </a>
+                            <a href="/notice-of-tort-claim.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
                         </div>
                         <div className="mt-3 lg:mt-5">
                             <a
-                                href="/final-statement-to-oprd.pdf"
-                                download
+                                href="https://rswfire.com/library/signal/01KQV3TDK09MWP86W4QPGPJ318"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group relative block w-full max-w-sm"
                             >
                                 <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
@@ -586,10 +593,11 @@ export default function CaseTimeline() {
                                     <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
                                     <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">After the police intimidation</div>
                                     <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Download &darr;
+                                        Read &rarr;
                                     </div>
                                 </div>
                             </a>
+                            <a href="/final-statement-to-oprd.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
                         </div>
                         <button
                             type="button"
