@@ -19,6 +19,22 @@ export default function RecordPage() {
             subtitle="TEN SIGNALS, READ TOGETHER"
             previousPage={{ href: "/", label: "Overview" }}
         >
+            <div className="mb-6 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
+                <span aria-hidden className="mt-0.5 shrink-0 text-amber-600">
+                    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current stroke-2" aria-hidden>
+                        <path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </span>
+                <div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-amber-800">Experimental</div>
+                    <p className="mt-1 text-sm leading-relaxed text-amber-900">
+                        This page reads a live cluster from Autonomy Realms and is still in development.
+                        Its layout and machine readings may change or break. The primary recordings and
+                        the accountability registers are the stable record.
+                    </p>
+                </div>
+            </div>
+
             <div className="mb-6 space-y-4 text-base">
                 <div>
                     Every primary recording this archive cites lives permanently on{" "}
