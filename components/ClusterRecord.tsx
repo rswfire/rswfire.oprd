@@ -9,8 +9,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { fetchCluster, type ClusterRecord as ClusterData } from "@/lib/qp";
-import { ACCENT, BODY, INK, MONO, MUTED, RULE, TINT, formatDate, label, prose } from "@/components/signalChrome";
+import { ACCENT, BODY, INK, MONO, MUTED, RULE, formatDate, label, prose } from "@/components/signalChrome";
 import SignalReflections from "@/components/SignalReflections";
+import ClusterAnalysis from "@/components/ClusterAnalysis";
 
 const LIBRARY_ORIGIN = "https://rswfire.com/library/signal/";
 
@@ -95,6 +96,10 @@ export default function ClusterRecord({ ulid, initialData }: { ulid: string; ini
     }
 
     const span = [formatDate(record.spanStart), formatDate(record.spanEnd)].filter(Boolean).join(" — ");
+    const generatedIso = record.provenance?.generated
+        ?? [...record.reflections.map((r) => r.created)].filter(Boolean).sort().pop()
+        ?? null;
+    const generated = formatDate(generatedIso);
 
     return (
         <div style={{ border: "1px solid rgba(26,58,74,0.2)", overflow: "hidden" }}>
@@ -120,6 +125,7 @@ export default function ClusterRecord({ ulid, initialData }: { ulid: string; ini
             <div className="flex flex-wrap gap-x-8 gap-y-3 px-3 py-3" style={{ borderBottom: `1px solid ${RULE}` }}>
                 {span && <Meta k="Span" v={span} />}
                 <Meta k="Signals" v={String(record.members.length)} />
+                {generated && <Meta k="Generated" v={generated} />}
                 <Meta k="ULID" v={record.ulid} />
             </div>
 
@@ -131,14 +137,9 @@ export default function ClusterRecord({ ulid, initialData }: { ulid: string; ini
                 </div>
             )}
 
-            {/* Signature */}
-            {(record.energy || record.state || record.orientation) && (
-                <div className="flex flex-wrap gap-x-8 gap-y-3 px-3 py-3" style={{ borderBottom: `1px solid ${RULE}`, backgroundColor: TINT }}>
-                    {record.energy && <Meta k="Energetic Signature" v={record.energy} />}
-                    {record.state && <Meta k="Field State" v={record.state} />}
-                    {record.orientation && <Meta k="Orientation" v={record.orientation} />}
-                </div>
-            )}
+            {/* The platform's full structured analysis of the record, same
+                tabbed treatment the single-signal viewer uses. */}
+            <ClusterAnalysis record={record} />
 
             {/* The members — the record itself, in date order. */}
             <div className="px-4 py-4" style={{ borderBottom: `1px solid ${RULE}` }}>

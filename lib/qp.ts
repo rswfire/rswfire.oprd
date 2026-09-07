@@ -169,14 +169,20 @@ export interface ClusterRecord {
     canonicalUrl: string | null;
     spanStart: string | null;
     spanEnd: string | null;
+    temperature: number | null;
+    density: number | null;
     energy: string | null;
     state: string | null;
     orientation: string | null;
+    environment: string | null;
+    substrate: string | null;
     tags: string[];
     dominantLanguage: string[];
     symbolicElements: string[];
     subsystems: string[];
     ontologicalStates: string[];
+    entities: Record<string, SignalEntity[]>;
+    actions: SignalActions;
     members: ClusterMemberRef[];
     reflections: SignalReflection[];
     provenance?: Provenance | null;
@@ -216,6 +222,19 @@ export function mapClusterPayload(ulid: string, payload: Record<string, unknown>
               }))
         : [];
 
+    // Entities and actions share the signal's shape, so build them the same way.
+    const rawEntities = (payload.entities ?? {}) as Record<string, unknown>;
+    const entities: Record<string, SignalEntity[]> = {};
+    for (const [group, items] of Object.entries(rawEntities)) {
+        if (!Array.isArray(items)) continue;
+        const list = items
+            .filter((i): i is Record<string, unknown> => Boolean(i) && typeof i === "object")
+            .filter((i) => typeof i.name === "string")
+            .map((i) => ({ name: i.name as string, context: (i.context as string) ?? null }));
+        if (list.length) entities[group] = list;
+    }
+    const rawActions = (payload.actions ?? {}) as Record<string, unknown>;
+
     return {
         ulid,
         title: (payload.title as string) ?? null,
@@ -223,14 +242,24 @@ export function mapClusterPayload(ulid: string, payload: Record<string, unknown>
         canonicalUrl: (meta.canonical_url as string) ?? null,
         spanStart: (meta.span_start as string) ?? null,
         spanEnd: (meta.span_end as string) ?? null,
+        temperature: num(meta.temperature),
+        density: num(meta.density),
         energy: (meta.energy as string) ?? null,
         state: (meta.state as string) ?? null,
         orientation: (meta.orientation as string) ?? null,
+        environment: (payload.environment as string) ?? null,
+        substrate: (payload.substrate as string) ?? null,
         tags: strings(meta.tags),
         dominantLanguage: strings(meta.dominant_language),
         symbolicElements: strings(meta.symbolic_elements),
         subsystems: strings(payload.subsystems),
         ontologicalStates: strings(payload.ontological_states),
+        entities,
+        actions: {
+            performed: strings(rawActions.performed),
+            referenced: strings(rawActions.referenced),
+            planned: strings(rawActions.planned),
+        },
         members,
         reflections,
         provenance: (payload.analysis_provenance as Provenance) ?? null,
