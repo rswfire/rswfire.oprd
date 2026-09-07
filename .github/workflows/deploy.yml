@@ -49,6 +49,51 @@ jobs:
       - name: Disable Jekyll
         run: touch out/.nojekyll
 
+      # Deploy-window fix for the blank-page-on-refresh bug: a deploy used
+      # to replace every content-hashed asset, so a viewer holding cached
+      # HTML (browser or Pages edge, ~10 min) 404'd on its chunks and
+      # hydration blanked the page. Keep an archive of prior builds'
+      # /_next/static across runs and overlay it under the new build —
+      # hashed filenames never collide, so old HTML keeps resolving.
+      # Entries unseen for 14 days are pruned via the manifest.
+      - name: Restore prior static assets
+        uses: actions/cache/restore@v4
+        with:
+          path: .chunk-archive
+          key: chunk-archive-${{ github.run_id }}
+          restore-keys: chunk-archive-
+
+      - name: Merge prior static assets into build
+        run: |
+          set -e
+          mkdir -p .chunk-archive/static
+          MANIFEST=.chunk-archive/manifest.txt
+          touch "$MANIFEST"
+          NOW=$(date +%s)
+          CUTOFF=$((NOW - 14*24*3600))
+          # Record this build's files with the current timestamp.
+          (cd out/_next/static && find . -type f) | while read -r f; do
+            echo "$NOW $f"
+          done >> "$MANIFEST"
+          # Keep the newest timestamp per file; drop entries past cutoff.
+          sort -k2 -k1,1nr "$MANIFEST" | awk '!seen[$2]++' | awk -v c="$CUTOFF" '$1 >= c' > "$MANIFEST.tmp"
+          mv "$MANIFEST.tmp" "$MANIFEST"
+          # Prune archived files no longer in the manifest.
+          (cd .chunk-archive/static && find . -type f) | while read -r f; do
+            grep -qF " $f" "$MANIFEST" || rm -f ".chunk-archive/static/$f"
+          done
+          # Archive the new build's assets, then overlay the archive into
+          # out/ WITHOUT overwriting anything the new build produced.
+          cp -Rf out/_next/static/. .chunk-archive/static/
+          cp -R --update=none .chunk-archive/static/. out/_next/static/
+          echo "archive: $(find .chunk-archive/static -type f | wc -l) files; build now serves $(find out/_next/static -type f | wc -l)"
+
+      - name: Save static asset archive
+        uses: actions/cache/save@v4
+        with:
+          path: .chunk-archive
+          key: chunk-archive-${{ github.run_id }}
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

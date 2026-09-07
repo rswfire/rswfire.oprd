@@ -44,6 +44,17 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${openSans.variable} ${dmMono.variable}`}>
         <head>
+            {/* Deploy-window recovery. A deploy replaces every content-hashed
+                chunk; a viewer holding cached HTML (browser or Pages edge)
+                then 404s on script load, hydration throws, and React blanks
+                the page. When any /_next/ script fails to load, force one
+                cache-busted reload; the sessionStorage guard prevents loops
+                when the failure is real (offline, adblock). */}
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `window.addEventListener("error",function(e){var t=e.target;if(!t||t.tagName!=="SCRIPT"||!t.src||t.src.indexOf("/_next/")===-1)return;try{var k="chunk-reload-at",n=Date.now(),l=+sessionStorage.getItem(k)||0;if(n-l<3e4)return;sessionStorage.setItem(k,String(n))}catch(x){}location.reload()},true);`,
+                }}
+            />
             {process.env.NODE_ENV === "production" && (
                 <Script
                     src="https://analytics.rswfire.online/script.js"
