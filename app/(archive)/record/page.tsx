@@ -54,7 +54,7 @@ export default async function RecordPage() {
                     <a href="https://rswfire.com" className="underline text-emerald-800 hover:text-emerald-600">Autonomy Realms</a>{" "}
                     as a signal &mdash; transcribed, analyzed, and independently addressable. This page holds fourteen of those
                     signals as one cluster: the record from the recorded picnic-table meeting of March 5,
-                    2025 through the final letter to the department&rsquo;s director on September 5, 2026.
+                    2025 through the final letter to the department&rsquo;s director on Labor Day, September 7, 2026.
                 </div>
                 <div>
                     The platform reads the cluster as a whole &mdash; a synthesis, and six analytical readings of the
