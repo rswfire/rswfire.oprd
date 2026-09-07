@@ -45,7 +45,15 @@ function emphasis(text: string, keyPrefix: string): React.ReactNode[] {
 function paragraphs(content: string): string[] {
     const lines = content.split(/\r?\n/);
     let start = 0;
-    while (start < lines.length && (lines[start].trim() === "" || /^#{1,6}\s/.test(lines[start].trim()))) {
+    // Drop leading chrome: blank lines, markdown headings, and a standalone
+    // bold title line (e.g. "**The account he would not sign**"), so the
+    // reading opens on its first real paragraph, not a header.
+    while (
+        start < lines.length &&
+        (lines[start].trim() === "" ||
+            /^#{1,6}\s/.test(lines[start].trim()) ||
+            /^\*\*[^*]+\*\*$/.test(lines[start].trim()))
+    ) {
         start += 1;
     }
     return lines
