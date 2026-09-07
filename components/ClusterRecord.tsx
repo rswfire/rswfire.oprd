@@ -4,7 +4,7 @@
 // live from its Queryable Personhood record on Autonomy Realms. Same
 // contract as the signal panels: nothing here is stored in the archive;
 // the page shows whatever the platform currently says. The member
-// signals are the evidence; this is the machine reading them together.
+// signals are the record; this is the machine reading them together.
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -153,7 +153,7 @@ export default function ClusterRecord({ ulid }: { ulid: string }) {
                     <SignalReflections
                         reflections={record.reflections}
                         initialType={wantedReading}
-                        framing={`One of ${record.reflections.length} readings the platform makes of this record as a whole — the ${record.members.length} signals above, read together across ${span || "their span"}. This is analysis of the record. It is not the record, and it is not testimony — the recordings and documents it reads are the evidence.`}
+                        framing={`One of ${record.reflections.length} readings the platform makes of this record as a whole — the ${record.members.length} signals above, read together across ${span || "their span"}. This is analysis of the record. It is not the record, and it is not testimony — the recordings and documents it reads are the record.`}
                     />
                 </div>
             )}

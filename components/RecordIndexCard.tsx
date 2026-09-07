@@ -1,7 +1,7 @@
 // app/(archive) homepage — the OPRD Record card.
 //
 // A door on the overview to the live cluster on /record: the ten-plus
-// evidentiary signals read together by Autonomy Realms across six lenses.
+// primary signals read together by Autonomy Realms across six lenses.
 // The graphic refracts one record into its six readings; each reading links
 // straight into that tab on /record. Flagged experimental, like the page it
 // opens, because the machine readings are live and may change.
@@ -56,7 +56,7 @@ export default function RecordIndexCard() {
                             Experimental
                         </span>
                     </div>
-                    <h2 className="mt-1 text-xl font-bold text-gray-900">The evidence, read together</h2>
+                    <h2 className="mt-1 text-xl font-bold text-gray-900">The whole record, read as one</h2>
                 </div>
                 <Link
                     href="/record"
@@ -71,9 +71,9 @@ export default function RecordIndexCard() {
                 <p className="text-sm leading-relaxed text-gray-600">
                     Every primary recording this archive cites lives permanently on{" "}
                     <a href="https://rswfire.com" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline hover:text-emerald-600">Autonomy Realms</a>{" "}
-                    as an analyzed signal. The evidentiary core is held there as one cluster, and the platform reads the whole cluster
+                    as an analyzed signal. The record is held there as one cluster, and the platform reads the whole cluster
                     across six lenses. Each reading below opens that lens on the live record. The readings are machine analysis; the
-                    recordings and documents they read are the evidence.
+                    recordings and documents they read are the record.
                 </p>
                 <div className="h-24 sm:h-28">
                     <Prism />
