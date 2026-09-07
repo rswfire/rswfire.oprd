@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import ClusterRecord from "@/components/ClusterRecord";
+import { fetchCluster, type ClusterRecord as ClusterData } from "@/lib/qp";
 
 export const metadata: Metadata = {
     title: "The OPRD Record",
@@ -12,11 +13,23 @@ export const metadata: Metadata = {
 
 const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
-export default function RecordPage() {
+// Fetch the cluster at build time so the record renders in the static HTML
+// for every visitor — even where a browser blocks or stalls the live
+// cross-origin call to rswfire.com. The client still refetches for freshness.
+async function getInitialCluster(): Promise<ClusterData | null> {
+    try {
+        return await fetchCluster(CLUSTER_ULID);
+    } catch {
+        return null;
+    }
+}
+
+export default async function RecordPage() {
+    const initialData = await getInitialCluster();
     return (
         <SectionPage
             title="THE OPRD RECORD"
-            subtitle="RECORDED IN REAL TIME, READ AS ONE"
+            subtitle="THE WHOLE RECORD, READ AS ONE"
             previousPage={{ href: "/", label: "Overview" }}
         >
             <div className="mb-6 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
@@ -49,7 +62,7 @@ export default function RecordPage() {
                 </div>
             </div>
 
-            <ClusterRecord ulid={CLUSTER_ULID} />
+            <ClusterRecord ulid={CLUSTER_ULID} initialData={initialData} />
         </SectionPage>
     );
 }

@@ -238,7 +238,10 @@ export function mapClusterPayload(ulid: string, payload: Record<string, unknown>
 }
 
 export async function fetchCluster(ulid: string, signal?: AbortSignal): Promise<ClusterRecord> {
-    const res = await fetch(`${QP_ORIGIN}/qp/cluster/${ulid}`, {
+    // Cache-bust: rswfire.com sits behind a CDN that caches the plain URL for
+    // minutes. The archive promises a live read, and a stale synthesis has
+    // real cost here, so every fetch (build-time and client) goes to origin.
+    const res = await fetch(`${QP_ORIGIN}/qp/cluster/${ulid}?_=${Date.now()}`, {
         signal,
         credentials: "omit",
         headers: { Accept: "application/json" },

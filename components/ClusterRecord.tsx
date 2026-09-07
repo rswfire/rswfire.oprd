@@ -40,9 +40,9 @@ function blocks(text: string): React.ReactNode[] {
     });
 }
 
-export default function ClusterRecord({ ulid }: { ulid: string }) {
-    const [record, setRecord] = useState<ClusterData | null>(null);
-    const [state, setState] = useState<"loading" | "ready" | "failed">("loading");
+export default function ClusterRecord({ ulid, initialData }: { ulid: string; initialData?: ClusterData | null }) {
+    const [record, setRecord] = useState<ClusterData | null>(initialData ?? null);
+    const [state, setState] = useState<"loading" | "ready" | "failed">(initialData ? "ready" : "loading");
     const [wantedReading, setWantedReading] = useState<string | null>(null);
 
     useEffect(() => {
@@ -52,12 +52,21 @@ export default function ClusterRecord({ ulid }: { ulid: string }) {
     }, []);
 
     useEffect(() => {
+        // The record is baked into the page at build time (initialData). This
+        // refetch keeps it live for browsers that can reach rswfire.com; a
+        // failure or stall never blanks the page, because initialData stands.
         const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 12000);
         fetchCluster(ulid, controller.signal)
             .then((r) => { setRecord(r); setState("ready"); })
-            .catch((e) => { if (e?.name !== "AbortError") setState("failed"); });
-        return () => controller.abort();
-    }, [ulid]);
+            .catch((e) => {
+                if (e?.name === "AbortError") return;
+                // Only fall back to the error notice when there is nothing to show.
+                setState((s) => (initialData ? "ready" : "failed"));
+            })
+            .finally(() => clearTimeout(timeout));
+        return () => { clearTimeout(timeout); controller.abort(); };
+    }, [ulid, initialData]);
 
     useEffect(() => {
         if (state === "ready" && wantedReading && typeof document !== "undefined") {
@@ -75,7 +84,15 @@ export default function ClusterRecord({ ulid }: { ulid: string }) {
             </div>
         );
     }
-    if (!record) return null;
+    if (!record) {
+        return (
+            <div className="p-4" style={{ border: `1px solid ${RULE}` }}>
+                <span style={{ fontFamily: MONO, fontSize: "11px", color: MUTED }}>
+                    Loading the record from Autonomy Realms&hellip;
+                </span>
+            </div>
+        );
+    }
 
     const span = [formatDate(record.spanStart), formatDate(record.spanEnd)].filter(Boolean).join(" — ");
 
