@@ -11,7 +11,7 @@ export const LENSES: { type: LensType; label: string; blurb: string }[] = [
     { type: "LINEAGE", label: "Lineage", blurb: "The record as heritage and continuity: what it descends from, and what it hands to those who come after." },
     { type: "MIRROR", label: "Mirror", blurb: "The record turned back on the one who kept it, showing him what it shows about himself." },
     { type: "SHAPE", label: "Shape", blurb: "The form the whole record takes when narrative and mirror are held together, and what moved within it." },
-    { type: "SYSTEMIC", label: "Systemic", blurb: "The record described strictly as a system: its inputs, constraints, control laws, and failure modes." },
+    { type: "SYSTEMIC", label: "Systemic", blurb: "The record as a system of nodes: what each one optimizes for, where those aims cannot both be met, and what happens where they meet." },
 ];
 
 export function lensBlurb(type: string): string | null {
