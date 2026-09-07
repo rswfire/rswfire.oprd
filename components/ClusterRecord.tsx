@@ -171,6 +171,7 @@ export default function ClusterRecord({ ulid, initialData }: { ulid: string; ini
                     <SignalReflections
                         reflections={record.reflections}
                         initialType={wantedReading}
+                        showLensCard
                         framing={`One of ${record.reflections.length} readings the platform makes of this record as a whole — the ${record.members.length} signals above, read together across ${span || "their span"}. This is analysis of the record. It is not the record, and it is not testimony — the recordings and documents it reads are the record.`}
                     />
                 </div>

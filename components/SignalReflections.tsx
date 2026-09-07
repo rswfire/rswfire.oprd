@@ -10,7 +10,8 @@
 
 import { useEffect, useState } from "react";
 import type { SignalReflection } from "@/lib/qp";
-import { INK, MONO, MUTED, RULE, label, prose, reflectionChrome } from "@/components/signalChrome";
+import { BODY, INK, MONO, MUTED, RULE, label, prose, reflectionChrome } from "@/components/signalChrome";
+import { lensBlurb, lensLabel } from "@/lib/lenses";
 import AiFraming from "@/components/AiFraming";
 
 const ORDER = ["NARRATIVE", "SYMBOLIC", "LINEAGE", "MIRROR", "SHAPE", "SYSTEMIC"];
@@ -86,7 +87,7 @@ function Prose({ blocks, idPrefix }: { blocks: string[]; idPrefix: string }) {
     );
 }
 
-export default function SignalReflections({ reflections, framing, initialType }: { reflections: SignalReflection[]; framing?: string; initialType?: string | null }) {
+export default function SignalReflections({ reflections, framing, initialType, showLensCard }: { reflections: SignalReflection[]; framing?: string; initialType?: string | null; showLensCard?: boolean }) {
     const available = [
         ...ORDER.filter((t) => reflections.some((r) => r.type === t)),
         ...reflections.map((r) => r.type).filter((t) => !ORDER.includes(t)),
@@ -148,6 +149,22 @@ export default function SignalReflections({ reflections, framing, initialType }:
                     );
                 })}
             </div>
+
+            {/* What this reflection type IS — a definition card above the
+                reading, coloured to the active lens so the type is unmistakable. */}
+            {showLensCard && lensBlurb(active) && (
+                <div
+                    className="px-3 py-3"
+                    style={{ background: chrome.tint, borderLeft: `3px solid ${chrome.ink}`, borderBottom: `1px solid ${RULE}` }}
+                >
+                    <div style={{ fontFamily: MONO, fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: chrome.ink, marginBottom: "4px" }}>
+                        {lensLabel(active)}
+                    </div>
+                    <div style={{ fontSize: "13px", lineHeight: 1.55, color: BODY }}>
+                        {lensBlurb(active)}
+                    </div>
+                </div>
+            )}
 
             <div className="px-3 py-4" style={{ borderLeft: `2px solid ${chrome.border}` }}>
                 {first && <Prose blocks={[first]} idPrefix={`${active}-first`} />}

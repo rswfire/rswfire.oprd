@@ -49,6 +49,8 @@ export const REFLECTION_CHROME: Record<string, { tint: string; border: string; i
     SYMBOLIC: { tint: "rgba(92,74,132,0.07)", border: "rgba(92,74,132,0.35)", ink: "#5c4a84" },
     LINEAGE: { tint: "rgba(150,105,42,0.07)", border: "rgba(150,105,42,0.35)", ink: "#96692a" },
     MIRROR: { tint: "rgba(42,94,130,0.07)", border: "rgba(42,94,130,0.35)", ink: "#2a5e82" },
+    SHAPE: { tint: "rgba(58,107,107,0.07)", border: "rgba(58,107,107,0.35)", ink: "#3a6b6b" },
+    SYSTEMIC: { tint: "rgba(161,67,50,0.07)", border: "rgba(161,67,50,0.35)", ink: "#a14332" },
 };
 
 export const reflectionChrome = (type: string) =>
