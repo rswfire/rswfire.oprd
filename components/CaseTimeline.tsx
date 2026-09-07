@@ -77,6 +77,116 @@ function toViewDoc(r: Resolved): ViewDoc {
 
 // #2: a sticky bottom fade + chevron inside every vertical scroller; the
 // effect in CaseTimeline shows it only while there is more below the fold.
+// The four primary documents on the intro panel. Each card opens its signal
+// on Autonomy Realms; the action row beneath gives the PDF and deep-links
+// into the signal's Analysis and Reflections tabs. Badge marks a versioned
+// document. Stacked=true draws the paper-pile effect (the dossier is a stack).
+type DocCardDef = {
+    ulid: string;
+    pdf: string;
+    eyebrow: string;
+    eyebrowClass: string;
+    title: React.ReactNode;
+    sub: React.ReactNode;
+    accent: string; // tailwind color stem for the READ stamp, e.g. "red-700"
+    badge?: string;
+    stacked?: boolean;
+};
+
+const DOC_CARDS: DocCardDef[] = [
+    {
+        ulid: "01M1A0NXW0T6H8PJPEDVEVE7QE",
+        pdf: "/the-case-in-their-documents.pdf",
+        eyebrow: "oprdvolunteerabuse.org",
+        eyebrowClass: "text-red-700",
+        title: <>The Case,<br/>In Their Documents.</>,
+        sub: "Independently verifiable",
+        accent: "red-700",
+        stacked: true,
+    },
+    {
+        ulid: "01M1YH9QSRTJYYQCC4QKX81T7N",
+        pdf: "/the-choices-are-still-yours.pdf",
+        eyebrow: "September 7, 2026",
+        eyebrowClass: "text-gray-500",
+        title: <>Director Sumption,</>,
+        sub: "The Choices Are Still Yours.",
+        accent: "slate-700",
+        badge: "v1.2",
+    },
+    {
+        ulid: "01M1N51QR0K7S69YC5S2K8NSV3",
+        pdf: "/notice-of-tort-claim.pdf",
+        eyebrow: "September 3, 2026",
+        eyebrowClass: "text-gray-500",
+        title: <>Formal Notice of Tort Claim.</>,
+        sub: <>42 U.S.C. &sect;1983</>,
+        accent: "gray-800",
+    },
+    {
+        ulid: "01KQV3TDK09MWP86W4QPGPJ318",
+        pdf: "/final-statement-to-oprd.pdf",
+        eyebrow: "May 4, 2026",
+        eyebrowClass: "text-gray-500",
+        title: <>A Final Statement to Oregon Parks.</>,
+        sub: "After the police intimidation",
+        accent: "emerald-700",
+    },
+];
+
+// Static class maps so Tailwind sees every class it must emit.
+const STAMP: Record<string, string> = {
+    "red-700": "border-red-700 text-red-700",
+    "slate-700": "border-slate-700 text-slate-700",
+    "gray-800": "border-gray-800 text-gray-800",
+    "emerald-700": "border-emerald-700 text-emerald-700",
+};
+
+function DocCard({ d, first }: { d: DocCardDef; first?: boolean }) {
+    const signal = `https://rswfire.com/library/signal/${d.ulid}`;
+    const action =
+        "flex min-h-[44px] items-center justify-center rounded border bg-white px-1 text-center " +
+        "text-[10px] font-semibold uppercase tracking-widest leading-tight transition-colors";
+    return (
+        <div className={first ? "mt-2" : "mt-4 lg:mt-5"}>
+            <a href={signal} target="_blank" rel="noopener noreferrer" className="group relative block w-full max-w-sm">
+                {d.stacked && (
+                    <>
+                        <div className="absolute inset-0 translate-x-2 translate-y-2 rotate-[1.2deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
+                        <div className="absolute inset-0 translate-x-1 translate-y-1 rotate-[0.6deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
+                    </>
+                )}
+                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-4 lg:px-6 lg:py-5">
+                    {d.badge && (
+                        <div className="absolute -right-2 -top-2 rotate-[3deg] rounded border-2 border-red-700 bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">
+                            {d.badge}
+                        </div>
+                    )}
+                    <div className={`text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] ${d.eyebrowClass}`}>{d.eyebrow}</div>
+                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">{d.title}</div>
+                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">{d.sub}</div>
+                    <div className={`absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest shadow-sm group-hover:rotate-[-2deg] transition-transform ${STAMP[d.accent]}`}>
+                        Read &rarr;
+                    </div>
+                </div>
+            </a>
+            {/* Action row: the document, its structured analysis, its readings.
+                Three real targets, sized for a thumb. */}
+            <div className="mt-2 grid w-full max-w-sm grid-cols-3 gap-1.5">
+                <a href={d.pdf} download className={`${action} border-gray-300 text-gray-600 hover:border-gray-500 hover:text-gray-900`}>
+                    PDF &darr;
+                </a>
+                <a href={`${signal}?tab=analysis`} target="_blank" rel="noopener noreferrer" className={`${action} border-amber-300 text-amber-800 hover:border-amber-500 hover:bg-amber-50`}>
+                    Analysis
+                </a>
+                <a href={`${signal}?tab=reflections`} target="_blank" rel="noopener noreferrer" className={`${action} border-sky-300 text-sky-800 hover:border-sky-500 hover:bg-sky-50`}>
+                    Reflections
+                </a>
+            </div>
+        </div>
+    );
+}
+
 const ScrollHint = () => (
     <div aria-hidden data-scroll-hint className="pointer-events-none sticky bottom-0 -mt-8 flex h-8 items-end justify-center bg-gradient-to-t from-white via-white/75 to-transparent opacity-0 transition-opacity duration-300">
         <svg viewBox="0 0 24 24" className="mb-0.5 h-4 w-4 fill-none stroke-current stroke-2 text-gray-400" aria-hidden>
@@ -525,80 +635,9 @@ export default function CaseTimeline() {
                             <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         </div>
                         <div className="my-auto py-3">
-                        <div className="mt-2">
-                            <a
-                                href="https://rswfire.com/library/signal/01M1A0NXW0T6H8PJPEDVEVE7QE"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative block w-full max-w-sm"
-                            >
-                                <div className="absolute inset-0 translate-x-2 translate-y-2 rotate-[1.2deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
-                                <div className="absolute inset-0 translate-x-1 translate-y-1 rotate-[0.6deg] rounded-sm bg-white border border-gray-300 shadow-sm" aria-hidden="true" />
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-4 lg:px-6 lg:py-6">
-                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-red-700">oprdvolunteerabuse.org</div>
-                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">The Case,<br/>In Their Documents.</div>
-                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">Independently verifiable</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-red-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-red-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Read &rarr;
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/the-case-in-their-documents.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
-                        </div>
-                        <div className="mt-3 lg:mt-5">
-                            <a
-                                href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative block w-full max-w-sm"
-                            >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
-                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 7, 2026</div>
-                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">Director Sumption,</div>
-                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">The Choices Are Still Yours.</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-slate-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-slate-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Read &rarr;
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/the-choices-are-still-yours.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &middot; v1.2 &darr;</a>
-                        </div>
-                        <div className="mt-3 lg:mt-5">
-                            <a
-                                href="https://rswfire.com/library/signal/01M1N51QR0K7S69YC5S2K8NSV3"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative block w-full max-w-sm"
-                            >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
-                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">September 3, 2026</div>
-                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">Formal Notice of Tort Claim.</div>
-                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">42 U.S.C. &sect;1983</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-gray-800 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-gray-800 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Read &rarr;
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/notice-of-tort-claim.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
-                        </div>
-                        <div className="mt-3 lg:mt-5">
-                            <a
-                                href="https://rswfire.com/library/signal/01KQV3TDK09MWP86W4QPGPJ318"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative block w-full max-w-sm"
-                            >
-                                <div className="relative rounded-sm bg-white border border-gray-300 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all px-5 py-3.5 lg:px-6 lg:py-5">
-                                    <div className="text-[9px] lg:text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">May 4, 2026</div>
-                                    <div className="mt-1.5 lg:mt-2 font-serif text-lg lg:text-xl leading-tight text-gray-900">A Final Statement to Oregon Parks.</div>
-                                    <div className="mt-1.5 lg:mt-2 text-[10px] lg:text-[11px] uppercase tracking-wider text-gray-400">After the police intimidation</div>
-                                    <div className="absolute -right-3 -bottom-3 rotate-[-6deg] rounded border-2 border-emerald-700 bg-white/95 px-2.5 py-1 text-[10px] lg:px-3 lg:py-1.5 lg:text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm group-hover:rotate-[-2deg] transition-transform">
-                                        Read &rarr;
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/final-statement-to-oprd.pdf" download className="mt-1.5 block w-full max-w-sm text-center text-[10px] uppercase tracking-widest text-gray-400 hover:text-gray-600">Download PDF &darr;</a>
-                        </div>
+                        {DOC_CARDS.map((d, i) => (
+                            <DocCard key={d.ulid} d={d} first={i === 0} />
+                        ))}
                         <button
                             type="button"
                             onClick={() => scrollToStop(1)}
