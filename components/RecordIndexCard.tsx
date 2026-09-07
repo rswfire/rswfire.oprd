@@ -17,12 +17,12 @@ type Reading = {
 
 // Order and hues follow the platform's own reflection chrome.
 const READINGS: Reading[] = [
-    { type: "narrative", label: "Narrative", color: "#2e694f", blurb: "The record read in order, as the account its documents give." },
-    { type: "symbolic", label: "Symbolic", color: "#5c4a84", blurb: "The images and figures the record keeps returning to." },
-    { type: "lineage", label: "Lineage", color: "#96692a", blurb: "What this record descends from, and what it sets down for later." },
-    { type: "mirror", label: "Mirror", color: "#2a5e82", blurb: "What the record reflects back about the person who kept it." },
-    { type: "shape", label: "Shape", color: "#3a6b6b", blurb: "The form the whole takes when the parts are seen at once." },
-    { type: "systemic", label: "Systemic", color: "#a14332", blurb: "The mechanism the record documents — how the pattern operates." },
+    { type: "narrative", label: "Narrative", color: "#2e694f", blurb: "The record told as a story — what happened across it, and what that means." },
+    { type: "symbolic", label: "Symbolic", color: "#5c4a84", blurb: "The archetypes beneath the record — the threshold, the exile, the refusal, the return." },
+    { type: "lineage", label: "Lineage", color: "#96692a", blurb: "Heritage and continuity — what the record descends from, and what it hands to those who come after." },
+    { type: "mirror", label: "Mirror", color: "#2a5e82", blurb: "The record turned back on the one who kept it — what it shows him about himself." },
+    { type: "shape", label: "Shape", color: "#3a6b6b", blurb: "The person across the whole — what the record changed in him, and what did not move." },
+    { type: "systemic", label: "Systemic", color: "#a14332", blurb: "The record read as a system under load — its binding constraint, and how the pattern operates." },
 ];
 
 function Prism() {
