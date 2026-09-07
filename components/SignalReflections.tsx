@@ -8,7 +8,7 @@
 // header, because a reader who arrives at evidence needs to know before the
 // first sentence that this is machine analysis and not part of the record.
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { SignalReflection } from "@/lib/qp";
 import { INK, MONO, MUTED, RULE, label, prose, reflectionChrome } from "@/components/signalChrome";
 import AiFraming from "@/components/AiFraming";
@@ -94,6 +94,16 @@ export default function SignalReflections({ reflections, framing, initialType }:
     const wanted = initialType ? initialType.toUpperCase() : null;
     const [active, setActive] = useState(wanted && available.includes(wanted) ? wanted : (available[0] ?? null));
     const [expanded, setExpanded] = useState(false);
+
+    // initialType (from the ?reading= deep link) is read in a parent effect and
+    // can arrive after this component has already mounted on baked data, so the
+    // useState seed above misses it. Re-sync the active tab when it lands.
+    useEffect(() => {
+        if (!initialType) return;
+        const t = initialType.toUpperCase();
+        if (available.includes(t)) { setActive(t); setExpanded(false); }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [initialType]);
 
     if (!active) return null;
 
