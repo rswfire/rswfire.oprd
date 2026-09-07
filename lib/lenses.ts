@@ -1,5 +1,5 @@
-// The six reflection lenses, defined once. What each reflection TYPE is — the
-// operation it performs on the record — not a description of any particular
+// The six reflection lenses, defined once. What each reflection TYPE is: the
+// operation it performs on the record, not a description of any particular
 // record's content. Used by the homepage door card and by the definition card
 // above each reading on /record, so the two never drift.
 
