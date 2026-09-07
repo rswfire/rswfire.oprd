@@ -143,7 +143,10 @@ const STAMP: Record<string, string> = {
 };
 
 function DocCard({ d, first }: { d: DocCardDef; first?: boolean }) {
-    const signal = `https://rswfire.com/library/signal/${d.ulid}`;
+    // Atlas links: the document opens in the panel with the map booted at
+    // Honeyman underneath it — the ground the record is about.
+    const HONEYMAN = "center=43.92593%2C-124.11341&zoom=15";
+    const signal = `https://rswfire.com/atlas/signal/${d.ulid}?${HONEYMAN}`;
     const action =
         "flex min-h-[44px] items-center justify-center rounded border bg-white px-1 text-center " +
         "text-[10px] font-semibold uppercase tracking-widest leading-tight transition-colors";
@@ -176,10 +179,10 @@ function DocCard({ d, first }: { d: DocCardDef; first?: boolean }) {
                 <a href={d.pdf} download className={`${action} border-gray-300 text-gray-600 hover:border-gray-500 hover:text-gray-900`}>
                     PDF &darr;
                 </a>
-                <a href={`${signal}?tab=analysis`} target="_blank" rel="noopener noreferrer" className={`${action} border-amber-300 text-amber-800 hover:border-amber-500 hover:bg-amber-50`}>
+                <a href={`${signal}&tab=analysis`} target="_blank" rel="noopener noreferrer" className={`${action} border-amber-300 text-amber-800 hover:border-amber-500 hover:bg-amber-50`}>
                     Analysis
                 </a>
-                <a href={`${signal}?tab=reflections`} target="_blank" rel="noopener noreferrer" className={`${action} border-sky-300 text-sky-800 hover:border-sky-500 hover:bg-sky-50`}>
+                <a href={`${signal}&tab=reflections`} target="_blank" rel="noopener noreferrer" className={`${action} border-sky-300 text-sky-800 hover:border-sky-500 hover:bg-sky-50`}>
                     Reflections
                 </a>
             </div>
