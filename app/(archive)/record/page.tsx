@@ -16,7 +16,7 @@ export default function RecordPage() {
     return (
         <SectionPage
             title="THE OPRD RECORD"
-            subtitle="FOURTEEN SIGNALS, READ TOGETHER"
+            subtitle="THE EVIDENCE, READ TOGETHER"
             previousPage={{ href: "/", label: "Overview" }}
         >
             <div className="mb-6 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
