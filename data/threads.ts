@@ -4445,6 +4445,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-08_1044_odot-thanks.eml",
         },
         {
+            id: "for-the-record-odot-statement",
+            ulid: "01M21706K0KZKPM48E0E14936B",
+            flagged: true,
+            date: "September 8, 2026",
+            d: "2026-09-08",
+            time: "12:13 PM",
+            from: "Robert Samuel White",
+            to: "Director Lisa Sumption",
+            kind: "notice",
+            title: "For the record: ODOT's statement attributed to you",
+            summary:
+                "ODOT's answer, forwarded to the Director it quotes, copied to the Commission and the Governor. A notification, not a question: if the statement is not disputed, the record treats it as accurate, and anything responsive lives on OPRD devices, which the pending records request to the Department already reaches.",
+            docs: [{ label: "For the record: ODOT's statement attributed to you", href: "/records/oprd/2026-09-08-for-the-record-odot-statement.pdf" }],
+            eml: "/records/oprd/eml/2026-09-08_1213_for-the-record-odot-statement.eml",
+        },
+        {
             id: "records-request-director-and-deputy",
             ulid: "01M1SWHHM8QSPN71SK56Q97F8C",
             flagged: true,
