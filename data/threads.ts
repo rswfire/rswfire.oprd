@@ -5877,6 +5877,21 @@ export const OSP_THREAD: RecordsThreadData = {
             eml: "/records/osp/eml/2026-09-08_0940_portal-submission-received-p195427.eml",
         },
         {
+            id: "one-claim-two-filings",
+            ulid: "01M217EVB045J4DG2M6C5N74TP",
+            date: "September 8, 2026",
+            d: "2026-09-08",
+            time: "12:21 PM",
+            from: "Robert Samuel White",
+            to: "DAS Risk Management",
+            kind: "followup",
+            title: "One claim, two filings",
+            summary:
+                "The two claim numbers reconciled for the record: P195403 is the original emailed notice, P195427 the same notice entered through the Department's own form, filed so no future argument can claim the notice missed the statutory requirements. Consolidation left to the office's preference.",
+            docs: [{ label: "One claim, two filings", href: "/records/osp/2026-09-08-one-claim-two-filings.pdf" }],
+            eml: "/records/osp/eml/2026-09-08_1221_one-claim-two-filings.eml",
+        },
+        {
             id: "the-first-act-of-state-power",
             ulid: "01M1S5AS2G1PK98P6VYW8M9RSQ",
             flagged: true,
