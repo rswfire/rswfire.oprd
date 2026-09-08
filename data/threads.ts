@@ -5329,6 +5329,20 @@ export const OSP_THREAD: RecordsThreadData = {
             eml: "/records/osp/eml/2026-07-14_1330_first-questions-on-the-record.eml",
         },
         {
+            id: "osp-litigation-hold-sp26-097765",
+            ulid: "01KY85JKW045VWDEKXY25B0R3D",
+            flagged: true,
+            date: "July 23, 2026",
+            d: "2026-07-23",
+            from: "Oregon State Police",
+            to: "Robert Samuel White",
+            kind: "letter",
+            title: "Litigation hold on SP26-097765",
+            summary:
+                "OSP Risk Management's written confirmation, mailed to the post office box: a litigation hold applied to the records and evidence in the preservation request for SP26-097765, under OAR 166-030-0045, ORS 192.108, and ORS 131.125. The hold requires reconfirmation every six months, or the Department may presume the case resolved and release it.",
+            docs: [{ label: "Litigation hold on SP26-097765", href: "/records/osp/2026-07-23-osp-litigation-hold-sp26-097765.pdf" }],
+        },
+        {
             id: "2026-07-27_1501_portal-notice-and-open-request",
             ulid: "01KYJSJ3DREJ3NZQZWA759NZ2Z",
             date: "July 27, 2026",
