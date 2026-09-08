@@ -1,0 +1,181 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BY5PR14MB3286.namprd14.prod.outlook.com (2603:10b6:a03:1e7::14)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 8 Sep 2026
+ 17:43:40 +0000
+Received: from CH2PR03CA0024.namprd03.prod.outlook.com (2603:10b6:610:59::34)
+ by BY5PR14MB3286.namprd14.prod.outlook.com (2603:10b6:a03:1e7::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.7; Tue, 8 Sep 2026
+ 17:43:02 +0000
+Received: from CH2PEPF0000013F.namprd02.prod.outlook.com
+ (2603:10b6:610:59:cafe::3a) by CH2PR03CA0024.outlook.office365.com
+ (2603:10b6:610:59::34) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.7 via Frontend Transport; Tue, 8
+ Sep 2026 17:43:02 +0000
+Authentication-Results: spf=pass (sender IP is 168.245.107.68)
+ smtp.mailfrom=em9851.govqa.us; dkim=pass (signature was verified)
+ header.d=govqa.us;dmarc=pass action=none header.from=govqa.us;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em9851.govqa.us
+ designates 168.245.107.68 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.245.107.68;
+ helo=o2.sgmail.govqa.us; pr=C
+Received: from o2.sgmail.govqa.us (168.245.107.68) by
+ CH2PEPF0000013F.mail.protection.outlook.com (10.167.244.71) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.5
+ via Frontend Transport; Tue, 8 Sep 2026 17:43:01 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=from:date:subject:mime-version:to:content-type:cc:content-type:date:
+	from:subject:to;
+	s=s1; t=1788889381;
+	bh=tH86FyXR6sh3zVeUBtPvidJkpM6bjxFHBHRr8LLfli0=;
+	b=IkYwFkfYTJUZfrBZV9IJZrvpz+tV+ZSSendG3uU6JqAPeE+I9ACZTNbGIZ9/fGRywWX+
+	0X/KMQYYnI+fd7blwKB9GgrvHEvTyd252c0Uv0VDIxbpprJZMvI9i2GySXbQcEHvjmAG0A
+	WqRTSqN06NoeOt9uD0oXtme5WdOsP6QqxZD9wJdYcbSPU15PpPrjd7cn7SV/WUY+z064IV
+	hUeyKQ8SfbkeMwljp36R+hAD99AWbp8xWIrVNgFuTnM9sdz88CnibTMV+NOr0/mPzfLDF+
+	qUMaf3ZR5xViqgfkwmbk35gZJ2ed4cDrrCrEUeaGF01tiZtKpYaYVDZ2mQk0aPqQ==
+Received: by recvd-546cc58b87-mpxnb with SMTP id
+ recvd-546cc58b87-mpxnb-1-6AA04925-7
+	2026-09-08 17:43:01.019499801 +0000 UTC m=+3624734.044939142
+Received: from vaazbot10 (unknown)
+	by geopod-ismtpd-97 (SG) with ESMTP
+	id dMZ2zS3RScKJhc5eL2ENxw
+	for <oregon.gov@rswfire.email>;
+	Tue, 08 Sep 2026 17:43:00.997 +0000 (UTC)
+From: ODOT Public Records <publicrecordsodot@govqa.us>
+Date: Tue, 08 Sep 2026 17:43:01 +0000 (UTC)
+Subject: Public Records Request :: R027904-090526
+Message-ID: <I6R37F3E9UU4.8H6ZZUD7ZTWB3@vaazbot10>
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EAEMEjZhCqVU8BPKvVGfTGaQ9pvm4PbFj+XjkxmFB8BLlaPPln4RDpMSpI?=
+ =?us-ascii?Q?TSjkhHtqj4f8oXoPWV=2FSykbbmvU89SS4ikOcoRt?=
+ =?us-ascii?Q?N3N=2FJPKIQqCLyCP5=2FNzucmNjgWj2LujD3TnPWoW?=
+ =?us-ascii?Q?6kRqzn9LISwOn0hRQhevpyzBYgbGaHyQVTI992b?=
+ =?us-ascii?Q?tL62btuPihaCt=2Fp6UtxcXgfJ45k7IyB9cH9FUgS?=
+ =?us-ascii?Q?JcqsS95J70H+TciaM1adNEiUzDKzK7LG5lnL4ZQ?=
+ =?us-ascii?Q?k3iUgNULsTkic+CwcPzJX6etrw=3D=3D?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.vpvDusfPA9Cz9X1NjORazA==
+Content-Type: multipart/alternative; boundary="=-Q4ssaiz9LdRGxCn7Fc1d/Q=="
+Return-Path: bounces+4037834-851a-oregon.gov=rswfire.email@em9851.govqa.us
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Sep 2026 17:43:01.8689
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 06082224-69a3-4d4c-5778-08df0dd0a132
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH2PEPF0000013F:EE_|BY5PR14MB3286:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CH2PEPF0000013F.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 06082224-69a3-4d4c-5778-08df0dd0a132
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-Wildcard-Rule: Yes
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|69100299015|29132699027|7149299003|7049299003|3109299003|10067099003|18003699003|4133799003|19002099009|16102099003|55112099003|5063699009|56012099006|8096899003|4076899003|80162021;
+X-Forefront-Antispam-Report: 
+ CIP:168.245.107.68;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.sgmail.govqa.us;PTR:o2.sgmail.govqa.us;CAT:NONE;SFS:(13230040)(69100299015)(29132699027)(7149299003)(7049299003)(3109299003)(10067099003)(18003699003)(4133799003)(19002099009)(16102099003)(55112099003)(5063699009)(56012099006)(8096899003)(4076899003)(80162021);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Sep 2026 17:43:01.6190
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 06082224-69a3-4d4c-5778-08df0dd0a132
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH2PEPF0000013F.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR14MB3286
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:38.5123624
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info: 
+ =?us-ascii?Q?EgeTbGs51gsBlWfhaoSvbcJpJ1QwzEB7vEuPBzwdI1YHTOFHMOIAPoMrPyWt?=
+ =?us-ascii?Q?HkQf+myfa0iT+1210T87MK4eTKk5sMM2mWVncDk12kbJvhiOThSzkWDSxJue?=
+ =?us-ascii?Q?bTnQnvepy7lziVojQgPnyAt+gR79zlT7cfEWcVq1zBhE+DjYdPqvaEP22eBs?=
+ =?us-ascii?Q?UXda4kB+kQPbJDxpyWOTDQuzG7kQdnQDwR4Pxeb2/xPUFpVJHz8nsLlQ90ru?=
+ =?us-ascii?Q?s5LWnu5lAKSIo6we0m8rthiXEh8lLmR34d9U1nguWAznEr8rAx4bwTpfg/sJ?=
+ =?us-ascii?Q?iMO1xkojTCH7EHiiJXWtSUCojrgkxT85SQgbKRcBp6YlApAh5omUABGM+g+L?=
+ =?us-ascii?Q?FNOHSPYQlBAI0V8MKs0nCWx1/uhvKByzN8ObDGNFp4KTHbArsG9Xy6c5tbPz?=
+ =?us-ascii?Q?cLu2s2u030GF61f/6CFJ+eLw/tPsbZd2kFCZmhurN5RnUrpB2ibI6PpJWPQM?=
+ =?us-ascii?Q?E0hbZYjBUCzb0mC9a/8iX5QRfMfPnr9RC4W6d3AgIhrsNyUz/m1gADoWmovU?=
+ =?us-ascii?Q?2xpsJ3g4AgyBSwLPcK6yOLLNVYiG93bnzl87mOZTs9JlW5kVbHRFgzIxZXNS?=
+ =?us-ascii?Q?rrRq5LAl2bX50J1nZ2MFFCLeVhJrd/PPIjXT8bHv8IqYgXjBtMAUeV2jhx/p?=
+ =?us-ascii?Q?j4ojj1chI1zRLGvH+rabyia+NYetxLrpEqsICryNeJnmMlyichiu1HtpZC6w?=
+ =?us-ascii?Q?B/dH76Y7jIz0ZW0EWT/TWxF1+sT8ErbH5vKp2dXUKwmlcPPFwTKDbo8pz3Xd?=
+ =?us-ascii?Q?ODUAMr73oISS5Nn+qxpQVhZn83slKlV8aPbWbhx8SkTrEduMl/s2VW/RqpYx?=
+ =?us-ascii?Q?PC2PuwhWzveiu8NURiH4cArCFBo1Vh1DtP9JGwQIGBX5OCMcu0YhZM7YWEoN?=
+ =?us-ascii?Q?xxL9TyVRFUWt2zTxV9+ZyEiZ2f3zFfqny2x4Yj3sg/Y1l8taty4cbBVMVr1O?=
+ =?us-ascii?Q?YXSd67c3tO3iaCem15UE6538lBQaKeD6dxuXjqs1KMS2EpTUWqNa7VsH6JHD?=
+ =?us-ascii?Q?FvAWv28ZDQKS6Eg7SpyEM+s5iyiX9GT/6egPi7IKZDe1uaSHflum3eSJOWR0?=
+ =?us-ascii?Q?9/p+i/OfjNgq3UycwcpZbO0K220oNa625vO/mmBvLJs6OzxMFnCFp9zRRNCf?=
+ =?us-ascii?Q?KewQpxkleaJPn9mlu1RWTp9TfutQvNgsN4QXIh2U6/vLiUWYJBcASm7DfOhz?=
+ =?us-ascii?Q?m7Mwp1Nkx8J4p2YMvP//xRvyvwhYYmjiD1aKRTr5aykau8Ivd4eoAonS31aI?=
+ =?us-ascii?Q?+KwhpzWGngyeSWdrMMAOnLXomPbQhfcEcYJyI0OYEsnRLiWUtgK84mlB+j+n?=
+ =?us-ascii?Q?4yqVX4ro/XokXBf/zeNzKluLB9NISllJs1OcZg+VJ8+IIhFGMhm1WuaumRm7?=
+ =?us-ascii?Q?OuNnFSZdu+/nF/hAxOonmv244UsM+4Ow+jT5idqI3GLOm2faaymOO2WNP3JA?=
+ =?us-ascii?Q?tsHH5rvwZDpF8hXnZDMdz11wC2/XYtFy88hFnDV0PAQCgB0wf1hNxWte06Sl?=
+ =?us-ascii?Q?kgkLN18MllFi8e7b84ryfmZx5+jv918P01jpMTJCAufvd3jN4TQ5w9uec5+V?=
+ =?us-ascii?Q?8obdEU+R22HUzAXYs2iLO2T93tMkuSO5LLV123k0LK2CdwouyFTeqk3bsj/q?=
+ =?us-ascii?Q?qtypZwtP3Fqi0mXTBzUMWJTHYVUAqy/SwfemlXXWGY1s/RzQLA43NaWhitVx?=
+ =?us-ascii?Q?8Gp0y3LqsEnMkiW2/lKfeC6SUxY+Sc9NgPu2T0pnQUkHLthF4l/XxTmjjq4d?=
+ =?us-ascii?Q?gUd+TLHDMZFRZzy/4PjmqQlq5c1jnmCnFYAxizalmoXwQUnKgA4liGhW1tcA?=
+ =?us-ascii?Q?REgPhnq0RjlXk96FbK5bT/dKciyjwSm1XG0wfn4krdMfjkPJq4FbiqWtFVUM?=
+ =?us-ascii?Q?rtbn0aWU5vfAEJl2BMAYyymjyZaufHANxt3V6lqScZhkMu5rjb2WpwxRpp71?=
+ =?us-ascii?Q?JGCRDbZ8QS5zZuZJNXl9ljwXeaqhKcRFpgMSVVEyaMfpipGuVhdDPIOvwmcX?=
+ =?us-ascii?Q?Bbr55Z7J0g03ZkD1NWhrWMTVwO4Jl2yOYKHzIZCBG15Bio4d1q+Qg+DADI+p?=
+ =?us-ascii?Q?DjwRwJgEZQeTHLlM2kJitlLqlURmo6aiY0jc23QqBQhBPYQGOCvJl/1anjQm?=
+ =?us-ascii?Q?rEEW5S3mVDGy4hjMhhXYPHGeEibpF34wV02nlLduwGiPzDw5bKUaAorvZ3Xv?=
+ =?us-ascii?Q?CS5iGtppO7JGR5P+Krl1NDVcdERaMq+VsqzhzVUI+mP8h9HgOccDOIq4Lb1f?=
+ =?us-ascii?Q?pTproefevG5cgGks1334m0o0DrOWx4fAmSfTLE3guRk3Ru0MA5DrGUB/g+m2?=
+ =?us-ascii?Q?lB4Tii8XCGnCPIpInfgDca5IXy8ZWd/pNsPmqPUdYq2dTzNrRB0EgoVu4HkF?=
+ =?us-ascii?Q?uVwNcVho4xYjkNB8gihLadCn2foyOTP/UTwNUmiEtBf3N8Fut/OgpO3+Rl5a?=
+ =?us-ascii?Q?4b26/jgleve/aF5ScTBZ82CGW9zPoEvprOkPKIWkmBZXT2QQCj4SGT7k7Ad7?=
+ =?us-ascii?Q?N8hcdkbGMp7VaS5joxid45zdFff1XN/HPG90G5N3ivPlaZzE721+j20KfQwG?=
+ =?us-ascii?Q?whxG5EpG7Rxjmo2GeX3DoFB491IXrIqlb5FNTx1B0NYUiDNTg69VVHm1OvyG?=
+ =?us-ascii?Q?RD6JZgi2MYdCduLmcWY5lrs=3D?=
+MIME-Version: 1.0
+
+--=-Q4ssaiz9LdRGxCn7Fc1d/Q==
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<br><br>--- Please respond above this line ---<br><br><div style="align: center; padding: 10px; border: 3px solid #808080; border-radius: 5px;">
+<div><strong><span style="color: #000000;"><img alt="" src="https://u4037834.ct.sendgrid.net/ls/click?upn=u001.-2FAS5I4Q2WzghfBbrz2TDtQTe8uIBiChgEvuFLXC9INgiNMC7mws4gfZTZdXCtcxisGn-2BPvEBLoLxnEI8kVsuGg-3D-3Dmkb1_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNT6IuWt2HWULhw2SMhxP9u-2BSCzOC7TECIh6dsufFnd5s2ZVsY1hHCVIae-2FD0zJM-2Bx4NAOIf2GX0v-2BypZYOb68I7NTUeyEEkPEUIUnEi1MnOdELx3TT34ClyHHfpvWZQ5rYZ1ygR1e5R6Td3jq-2Brb8ovkIG-2FIbdiPAjeZstJ1Y5Vng-3D-3D /></span></strong></div>
+<div><hr />
+<strong><span style="color: #000000;"><br />
+</span></strong></div>
+<div><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">RE: Public Records Request of September 05, 2026, Reference # R027904-090526</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">Dear Robert Samuel White,</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-family: Arial; font-size: 14px;">ODOT does not know what was sent or received on OPRD devices. We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices.</span>&nbsp;</p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">Sincerely,</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">ODOT Public Records<br /></span></p></div>
+<hr />
+<span style="font-size: 10pt;"></span>
+<div style="text-align: left;">To monitor the progress or update this request please log into the&nbsp;<a href="https://u4037834.ct.sendgrid.net/ls/click?upn=u001.-2FAS5I4Q2WzghfBbrz2TDtSr5zK6P-2BSiSWpVPtzSzll99kDIW-2Frm0eYFdCN6T298rHO7eLRjAdL9xeTS3bPOuP3xFv5qbsyqTrny6JHBYfaJG4dcWkMCk6Dv1O6JfzadPGh1XzdgO0g-2BzxwHlqrDRJA-3D-3D1uc5_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNT6IuWt2HWULhw2SMhxP9u-2BSCzOC7TECIh6dsufFnd5s-2F7aaWxEMx7ppkfSHNkFT1I6UJ-2B2k-2BsQIyw-2FZB3Pwr250YtXOZWxDGcduHSwlTCLoMZNQ8orpzxlmE3J-2BWTTKY6p5MEEjM4bOFR8YU3lmXTN-2FZOxCQl-2B0ivatBn5v6wu2g-3D-3D target="_blank" title="Public Records Center">Public Records Center</a></div>
+<div><center><br />
+<img title="GovQA logo" src="https://u4037834.ct.sendgrid.net/ls/click?upn=u001.-2FAS5I4Q2WzghfBbrz2TDtVEW2-2FW1P99b6jGhBxsuUHxAR6-2ByiZuH6-2FjnJFVdbMcAAwX4GoDENnBUtk5v7gs0u5bO8lXGQDbZRsjiV2rTfKA-3DKoHq_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNT6IuWt2HWULhw2SMhxP9u-2BSCzOC7TECIh6dsufFnd5s3rxp3tS3QmBTGD8IImoqwze01EA2aiQF5Vm-2BB70gjP8vx8dZ6gJlj8NUzXP3KdUwqWvIMd-2BHAlbfm5bXuKjZt1NqsEjyqJbm-2FbbfxpiB3-2FVMt5MnfCOTb7mFaKfaUxdTg-3D-3D alt="GovQA logo" /></center></div>
+</div>
+--=-Q4ssaiz9LdRGxCn7Fc1d/Q==
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"><br><br>--- Please respond above this line ---<br><br><div style="align: center; padding: 10px; border: 3px solid #808080; border-radius: 5px;">
+<div><strong><span style="color: #000000;"><img alt="" src="https://uploads.govqa.us/ODOT/logocustresize.png"></span></strong></div>
+<div><hr>
+<strong><span style="color: #000000;"><br>
+</span></strong></div>
+<div><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">RE: Public Records Request of September 05, 2026, Reference # R027904-090526</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">Dear Robert Samuel White,</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-family: Arial; font-size: 14px;">ODOT does not know what was sent or received on OPRD devices. We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices.</span>&nbsp;</p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">Sincerely,</span></p><p style="margin-top: 0px; margin-bottom: 10px;"><span style="font-size: 14px; font-family: Arial;">ODOT Public Records<br></span></p></div>
+<hr>
+<span style="font-size: 10pt;"></span>
+<div style="text-align: left;">To monitor the progress or update this request please log into the&nbsp;<a href="https://u4037834.ct.sendgrid.net/ls/click?upn=u001.-2FAS5I4Q2WzghfBbrz2TDtSr5zK6P-2BSiSWpVPtzSzll99kDIW-2Frm0eYFdCN6T298rHO7eLRjAdL9xeTS3bPOuP3xFv5qbsyqTrny6JHBYfaJG4dcWkMCk6Dv1O6JfzadPcnfjbFc5pjHpv6tLeiHtqg-3D-3DHEAh_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNT6IuWt2HWULhw2SMhxP9u-2BSCzOC7TECIh6dsufFnd5s831G6ciXrtFCwkHAffKerD4e31XvKBdpv5d42olnANycBWh9XndhtBo1yGmWIfPB4tHqG1odjik8H7uXYLkRLST-2BwyJ6wZvojT7qcNP8nEqbbc6tdP1Bk3G-2Fpn6YB-2BwAQ-3D-3D" target="_blank" title="Public Records Center">Public Records Center</a></div>
+<div><center><br>
+<img title="GovQA logo" src="https://uploads.mycusthelp.com/WEBQASUPPORT/PoweredByGovQALogo.png" alt="GovQA logo"></center></div>
+</div><img src="https://u4037834.ct.sendgrid.net/wf/open?upn=u001.Dj74J7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aif-2FtWKVvGuKJUoodafPFAGiavdK7YxOqjVt82cmvnVkeVgH-2B-2BZ374bLeL7-2BE-2F908huw-2F6Cz31L9egxGkk9CWmGGPez29VkyETCr-2F-2Bgc14J03P0vSWsQnxotTRg00U6tpFMa3HWGsXtwQ561I7AU5ITSJ7pgTDUWXcktzBf-2BjyydiVL4KQUwQjkUOHd9boIguhY-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;">
+--=-Q4ssaiz9LdRGxCn7Fc1d/Q==--
+

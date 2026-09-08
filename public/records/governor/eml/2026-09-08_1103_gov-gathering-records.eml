@@ -1,0 +1,539 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CH2PR14MB3820.namprd14.prod.outlook.com (2603:10b6:610:61::8)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 8 Sep 2026
+ 18:04:45 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=OBVQJvOeSavzgmfWCGaN+yes7RdiEoizdwzwObYOcAFNgEpJr1G9uUZRs45NK1+Z0dzoCEb9cMSbCsFPkiBQ5uTpYl4pg4qeKYjBvbdGADjYTdG/wpwdEiSgOfD83Q9RIxyWRpKsk5JLN+qG2yxpzQQ8WSbf3QKkh87JZmfxYmPktcN7w7nKK4NYxZcJbTNn/9fBvxcZy90cyxZbHaK/uBZeR4JPsnpzXWMHOgJ4CluuK2G37IdljVgUhNFQRB5LPdzNZyuF4NoULvFS59MoToU0blUKrTnLaYBN0vXsBd3HvfmModXIPkgIW+x1c54I/7LABBvQaKIy7qf81qdcRg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=m2+7/Tzlp7ZyW6h/ToDCjxU2ev6M+JaY6Ekq+To2+zM=;
+ b=M0lye+7Cy+QWlmHzlCwjVVTsXFBfQ6oet6Hwr3hLrAyBlwpmsL/Z9Ff/dfFdSlAO8HPby4wRiTT8KsZ8fLHtbQP3dw0fEL6kluP5qAXtTVYf1LaN1ttvo4J0HJOaWxAo7T1bO/qGmUSG44auj2C2tJO5YsAYtZ1iKagiD83uw01dEfwOs3sZ9K5UKgZ7IMEPmar+OrorMNJb2qEzUwUJtlmtYRIebFzHI4BtU/3N2VZt4Pv5VfVFfMSpjW4Su+UKOiorbGyCOy1rDjBKT500Jd7kX6BFIJYBpGmqQ6RjCxXJ4FVvgWSoBfCZFvRPmylyWBsWFAi60yvcicE1Par7LA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c001::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=oregon.gov; dkim=pass (signature was verified)
+ header.d=oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oregon.gov] dkim=[1,1,header.d=oregon.gov]
+ dmarc=[1,1,header.from=oregon.gov])
+Received: from PH3PEPF000040AC.namprd05.prod.outlook.com (2603:10b6:518:1::5b)
+ by CH2PR14MB3820.namprd14.prod.outlook.com (2603:10b6:610:61::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.7; Tue, 8 Sep 2026
+ 18:04:08 +0000
+Received: from SN1PEPF000397B2.namprd05.prod.outlook.com
+ (2a01:111:f403:f90f::3) by PH3PEPF000040AC.outlook.office365.com
+ (2603:1036:903:49::3) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.382.8 via Frontend Transport; Tue, 8
+ Sep 2026 18:04:07 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c001::1)
+ smtp.mailfrom=oregon.gov; dkim=pass (signature was verified)
+ header.d=oregon.gov;dmarc=pass action=none
+ header.from=oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oregon.gov designates
+ 2a01:111:f403:c001::1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=2a01:111:f403:c001::1;
+ helo=BY5PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c001::1) by SN1PEPF000397B2.mail.protection.outlook.com
+ (2603:10b6:80f:fc04::38) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.5 via Frontend Transport; Tue, 8
+ Sep 2026 18:04:06 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=SFEku5xHjFvqIG2jEZ04EBqIz/zfM1eTyGitrfru0tVEdty1OcOLhrpeyVKnLUqh3HqppKQYdsBNgRVfi3SI5FQK5DUXjRuwLHMzQPDouWpRYqytmWpS/2rT5UJsB6ZdjkeDn8yy9cdmkpgfPIIH7Du3FuFzaIEE6YI4VGIa3xOXs6X+twJALNNOzWHmpQz3x5aqcfvXS8mCV/z/JoQfVl+E3NRk2Oalxt25In2XpieC2gMBCKuEZ+WoxjZSWiutOZ8Zu1TYZ36GAIgzzg0APZrqZAgBS0wlffkRmfTIQG+FRACuw8r07fZC1da1i7Nw1CxHzF/275npX+iRKUKz7w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=m2+7/Tzlp7ZyW6h/ToDCjxU2ev6M+JaY6Ekq+To2+zM=;
+ b=PZWYkMnyvd3dMglAltUoGr54HIwsP7Ut8mN1so0EHD+aAKxlHOdj+97BTZ8kK621ZyvG9Y/mkR0QIM6CC134sxgKRBvdjoKtgGq6gywheADdFdrs0LTcgGtlMEtXyptzJx56kDAqwxfY+4FFKQiRoq/Um8MOATvbQI9TtIU9b82ZVQFkPfJDUIP6yHODyU+QkAuL0l54wRMIrcjVkiJNElcjzHzsCsfTFRwhrxxhBdFDWT4msifrVRwz6znVOcryz0VMlF8HJAkLxgCGUQgVjC7UiY51paffsIZN1Qq4k/8A34pRq2ppsqVjkuwsCJBmBSafjd6v2iIGvLN96i0pLQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oregon.gov; dmarc=pass action=none header.from=oregon.gov;
+ dkim=pass header.d=oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=m2+7/Tzlp7ZyW6h/ToDCjxU2ev6M+JaY6Ekq+To2+zM=;
+ b=fI7WNlHzSVZ0Hi6+U1On9z9QGcur4jEwrQ9xdb7CD4z0AqMuDs6JuI204t5VWP9aoowZdfIKl2oDbQ03iadEmWkIlOIYxSxhRGKeQG0WZ7LWjDDS4d1ZELNLBfUmNtsGU1uS0Zno2keRifl8ValVoXP3eYhZVxUjlQBk2RLdAKyj+la5q9c4F2sCjf1w9tVP+1qWwREfriBN1FV2LqQJp1qFYXMTn7vJNcFfMipmLRIc9Og+Wf4dU4nP3vM8lN9FUAvWmoKWOemBxi+pU8pnB/cxDt71leSUIb6pDP0mWD7FroRnEr1ntOtNJ8Ibqoz33TtJuWX+vFcRcySG7MP1NQ==
+Received: from BLAPR09MB7234.namprd09.prod.outlook.com (2603:10b6:208:2ab::23)
+ by FT1PR09MB13000.namprd09.prod.outlook.com (2603:10b6:170:3::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.360.6; Tue, 8 Sep 2026
+ 18:03:44 +0000
+Received: from BLAPR09MB7234.namprd09.prod.outlook.com
+ ([fe80::51bd:4281:11a8:317f]) by BLAPR09MB7234.namprd09.prod.outlook.com
+ ([fe80::51bd:4281:11a8:317f%6]) with mapi id 15.21.0382.007; Tue, 8 Sep 2026
+ 18:03:44 +0000
+From: SOLORIO Yasmin * GOV <Yasmin.Solorio@oregon.gov>
+To: "rsw@rswfire.com" <rsw@rswfire.com>
+CC: MILES Cameron D * GOV <Cameron.D.MILES@oregon.gov>
+Subject: Your 9/5/26 Public Records Request
+Thread-Topic: Your 9/5/26 Public Records Request
+Thread-Index: Ad0/vGKGg3NKiUYWRF2mbhawXKZtfw==
+Date: Tue, 8 Sep 2026 18:03:44 +0000
+Message-ID: 
+ <BLAPR09MB72341D443AB3A671E8DF7200F0B12@BLAPR09MB7234.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oregon.gov;
+x-ms-traffictypediagnostic: 
+ BLAPR09MB7234:EE_|FT1PR09MB13000:EE_|SN1PEPF000397B2:EE_|CH2PR14MB3820:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 95d8c5df-b92a-4aa4-1119-08df0dd39323
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: 
+ BCL:0;ARA:13230040|1800799024|366016|23010399003|38070700021|5023799004|10067099003|56012099006|18002099003|8096899003|3023799007;
+X-Microsoft-Antispam-Message-Info-Original: 
+ YR9JTX1q3FZSj2bVcNURZyQulWNbZqwtofZbxTMbLe5nPDgx0AUzdnq7361rtk0NNfmHta1WvNufuDnjiYpkxvceWqScy/YBf0CgZDobI+P/Z+KCIfjuhbQfscu+32ep1PNSIrQTcLfg6n+H89BGnhTaYGl0YciPQdzoh/D3VBwPEdK/LGQ2x6umX8zWWGjjy7K7oWJPtPbcpoEWKcULdd4NYwsX5JRFyAyVgwJu8loY5WB25kzz3jGaiiTujcNMDTSMsZXxUm3IbYeCF46GeoyGYzS6RMUtvTvRoOrv6xaCSfLHO2hUWiqLSks/DFHrH7gESZKvTfUfveEh+WOgJ7u5X8qf5dPEdrsTh9EDdk3mQaZHLa1axnpwYqtbG2KRb+y0HElTL2Eyd+f1givGRmniJzsYBTWt4x9bR+vMePthNmh2uynYeDSCY/FiS4+Fu9iY089EJT7XMMLQjXIXH2ahfX5CWxt/wF3yP2rLQswKSKOBypVzKtQIHWx7q+2imuS/J4grcczK5qjpnz5vUUX4D2UaQx96/WE0d7vu8myIijwEV7TWRCKR/apru+bAYKsGuyBFD36Sq8csamkCSxzssBHcWQNL/VvO+VdTLt3+9LOKU3cdeIGhyXWhTvsS3d70s43pFtjOYRJhFSk1ZMRu4k2V6hCv/jBxEPTJ9Q9+DF8apcExCVFplqJQ8RVL8ypG68Ky/mpiLsVh81is5cz7x9ud9yFjrXa6WyqeYDQ=
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BLAPR09MB7234.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(23010399003)(38070700021)(5023799004)(10067099003)(56012099006)(18002099003)(8096899003)(3023799007);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ =?us-ascii?Q?6VnKpv9t9Xj1hw0sqwSBqjN0c6eQiKirINrr58toj+/tNNKwwpjiTovThGjF?=
+ =?us-ascii?Q?jX6wqM68HugniSiZTR5oFZWtYEKLyyhaZs/G8UAlfLPgTOmayHizoZyb8Euj?=
+ =?us-ascii?Q?iHHrQsaaKtXYfkT5dVYcTTIlGLvJjYKYPBkcXFN4TZIkbMe9rdTA/haMvtTM?=
+ =?us-ascii?Q?MA5yNn3hh+rB4N7LK0Rlwr1WO8FcApLKhxFtOhMb+wrpNxqQ3aUcDS8uuxAS?=
+ =?us-ascii?Q?wjaFW1SZMWf04kyxNrC4+0iLtwfo/TZtuFaaCQ0tgTHU9KyPVgqA5S/cuw6m?=
+ =?us-ascii?Q?gvYwmQx1uR7jtrp2pc08Mt5S1zLuOl6QbMqJW3qGI8ih25Y5InSssL2hmpJi?=
+ =?us-ascii?Q?x6gZYn4pPcZiHXGZ+QleBaKPCsCg1uTGdoh7MytmOh7ztgWsBqhCEG6WBggG?=
+ =?us-ascii?Q?cy4TUoZhuo5ZDMC090dzJdTxONyfkTLP0difG32qlbh+qvvz9gk8H5izS8R2?=
+ =?us-ascii?Q?D2I1koF4lxsSaFMzQijiTxdoGLB2fEYMQFJ0gXmyyKavkRqasGuSSawJnrFK?=
+ =?us-ascii?Q?6Tzpv8O9Fx2oWNtLoGEFGAhGe0bF+mzOwSDlztW3ffpFOgicOviuK7K1PckU?=
+ =?us-ascii?Q?ZVdDf4SaVo7UUomt6LxEcEn1QDIl6s1DW+Up0ELqvWS1/1RMUaDRxZzq/OES?=
+ =?us-ascii?Q?1a/lPH9VXpN58D8Fw6eYWNalozE4RBAyC5CWDWscwoUOx9UJT9mYP0bRT6nD?=
+ =?us-ascii?Q?mnaViQRdLpmtRaLcXMFyU8qPtkvMtfoBew+LVU7UmAG0B2+g+0o+3BwExTmn?=
+ =?us-ascii?Q?AFOoHwk6/O7QhFLRzuIdpPpGISAWqny13L3VngsACVyXCgo0pusFtYvWDVzw?=
+ =?us-ascii?Q?KgmoRWazyZvR1lCTRbd28O1YcBDNnveZg3EBfTJrxT/7vDWqT/WOoEhlbOr3?=
+ =?us-ascii?Q?WheywiOzNu4+VyGlwfen5XcH74wp+s9SezMgiI/5OHrpD/Vrbg0DfPASvFWi?=
+ =?us-ascii?Q?ndo2+QALxDRqjwDT3O69xSSA26GLdU8GVd+FLBH4y9BQXd2UJj1A4DWgGIV/?=
+ =?us-ascii?Q?cR2iCS/fz8jBTgTXsqDgaDEVEi5P469HAUrbtk2wEmafGzhIkmSZVcZq4X6n?=
+ =?us-ascii?Q?15eDzyaC0PA96083duYtPR7xyLP5rfFwBvn6HSrZVRpF+be0EpDcO6uLhEO8?=
+ =?us-ascii?Q?A8n4wkRUc23Of7dpy8gBPRhXfCi27wEAU/iii/HaW/Cpmw16wSUpcwsPIAvY?=
+ =?us-ascii?Q?oiW/nJAsDIDiFQCavFQStQ9NVB0CGSegiowYp+TCh7pr42enCxnJczPUsam/?=
+ =?us-ascii?Q?63t9ZN/AMoR3cS2su9pURM1uOHFlivFmKMN92Ai6LZ3ZvHTDAnxqW3iqQArZ?=
+ =?us-ascii?Q?YrlNgwA0vEjDh9F4XmN5vlP2QnCbMq2XYURwiVl7gDxqNExSgrKVGIIr11qg?=
+ =?us-ascii?Q?nIUEPvTmdVdkM/cE7j8xZ16NisYYqNUHO2YrFgsstIHH218y3MFPdz/tL70T?=
+ =?us-ascii?Q?AI2aGEG7gIBqQvgA3bZc+HQ8KucjTYn8HuNH16DLcS4qqjpRrTxExSMAi5e5?=
+ =?us-ascii?Q?GhPa/rpmuGGlJNWuYP+Xh2UMf4SUMX6pOMJyE7kWzKVuyna+ZhaVbvT+FDBi?=
+ =?us-ascii?Q?RyMZi2Iwm/dE/3Q8gXILLZscHf13ZI7sF/4EqDOeHeWmkMRmp4qPO7osgMu1?=
+ =?us-ascii?Q?BCiewT/lEapWOTImef0+0R6AZ2foSmX8VddpFwlev7YReBJcs33JbjgLM2d1?=
+ =?us-ascii?Q?wjvP+zqFfmB2/JcW/WDLsKCj3GYFc2ZeDN0PugnzRlV9hV8iwgP+9cptEm1F?=
+ =?us-ascii?Q?czQFmThWTA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BLAPR09MB72341D443AB3A671E8DF7200F0B12BLAPR09MB7234namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: FT1PR09MB13000
+Return-Path: Yasmin.Solorio@oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Sep 2026 18:04:06.7709
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 95d8c5df-b92a-4aa4-1119-08df0dd39323
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ SN1PEPF000397B2.namprd05.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ SN1PEPF000397B2.namprd05.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ SN1PEPF000397B2.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ 9878ab03-a4fc-423a-2ca4-08df0dd385cc
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|704160611799003|35042699022|6073799003|6113799003|10067099003|3023799007|19002099009|16102099003|55112099003|18002099003|5023799004|5063699009|56012099006|8096899003|42103499003;
+X-Forefront-Antispam-Report: 
+ CIP:2a01:111:f403:c001::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09CU001.outbound.protection.outlook.com;PTR:mail-westusazlp170110001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704160611799003)(35042699022)(6073799003)(6113799003)(10067099003)(3023799007)(19002099009)(16102099003)(55112099003)(18002099003)(5023799004)(5063699009)(56012099006)(8096899003)(42103499003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Sep 2026 18:04:06.5567
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 95d8c5df-b92a-4aa4-1119-08df0dd39323
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SN1PEPF000397B2.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR14MB3820
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:38.5800047
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710232)(4712192)(4999285)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?Windows-1252?Q?jbxZ9AES1oTssMii5ndUPKV9deWMxyxHiv+4psBeMGyObwW+G9yZYNwy?=
+ =?Windows-1252?Q?O3Qz19sczafCRaXiuuf5awdazIip6cF+jtHBDEgWi8ZtlDkmDeXLG55/?=
+ =?Windows-1252?Q?zig/a8eb5shMogKunuoB5/eD5SVkP41xRMhqsgFY5lRAr5w55ud9cim2?=
+ =?Windows-1252?Q?Monym6dBaKXCVy6ov5Eb7q6fikViYd287X8WoOzZbpBmW/LEaqdtTSTR?=
+ =?Windows-1252?Q?CmbmXulcg3GCHXhzQRgB6RJHqYYwqoZPzZ/DlVlrNcKJqnGjG8arJCG7?=
+ =?Windows-1252?Q?+ZdnktBhTYXx80YIwxk1LcYWXRP4PQ03vJuzFmO7RHQHm4oGcY7svsvP?=
+ =?Windows-1252?Q?+mrEnonGkHQ9bHEhDROICA4tU64pwP5eZBK2CJ4yOQMGSh5ulGfZIyL/?=
+ =?Windows-1252?Q?1R7EqLCgNfmMuP2w3A2GHBAt9nNlGA6ovLzpqN6FitSXZuEW+o7PyNE3?=
+ =?Windows-1252?Q?4Y6u+5SXyGOp9B9eNNk1pHxnGxNFaoWN4/4JjZlLKRuKII5VVo2sYq+W?=
+ =?Windows-1252?Q?8jXZ0LsznHm5f5G7yizAlXF8WaNcbzPjYO1L2avvXKOT/J/gA6ce+gd2?=
+ =?Windows-1252?Q?U2hp8MI+TksfJ55S91edf7u1xUrEKCz141PoQCjmP4Q7zH/c0OPfAkUX?=
+ =?Windows-1252?Q?8jE4XBL9wWx0PCpIhXISE+gM9kyJ3xSOQ1G+x4tvilkOjzReC6UCDQRq?=
+ =?Windows-1252?Q?uhzXOfxV1xcup8262S+5CK4l/gM0mceWMVzkIU+o76nnN0fFJ/GI4/wY?=
+ =?Windows-1252?Q?397IVy/84FqhzKeibnYyW8CT+pdhaYt2FJ47WD2hJOG8hrjlKsbRCQuw?=
+ =?Windows-1252?Q?SDhhTB62vNjwnroQb8uxWPfhIZ9zw7yAIg64akF4gkxbkLLCo5zTav58?=
+ =?Windows-1252?Q?ToJOzNMnCfygcjurdkL39af8Bk9od/+Ho7lJ8NnHDTvG+PGXsZ+hOtj/?=
+ =?Windows-1252?Q?3yBkN+tWERoPgMfF+LwxPsk2bsdYsUKzXR87RXcKv61uAiYDZLhYyBOH?=
+ =?Windows-1252?Q?i62csYIntcnJ4NhR/d5TQFq0tXnYqDUJU24AqUp00q4s9G4IkgKv2VHH?=
+ =?Windows-1252?Q?Jz3y2TUHQ4dru0DKW81psgUFIuUGbn9OX04EeCvhQ05a4Gka3bT7nPf1?=
+ =?Windows-1252?Q?J9Hu0XXHbwq9r1bbN3kk1T/NwJ6B2utskIJCNtWS5xeBtedQDwZKO6z6?=
+ =?Windows-1252?Q?dSSlv2+sD+1jOYRxQwe3lDJNRV2K2qD029FXqY4qfq7wlt8kV4uKcFMy?=
+ =?Windows-1252?Q?rQyoKBm+iGZHae6vVq0UdKATI/GojmVMWBRUC1CcCUJS5hsLP2ERUGXv?=
+ =?Windows-1252?Q?bhG4xOGXkR3PTr2aDeyp6NI3/tHromOiRtezjc4VdvNe6LT+O5NeXJbz?=
+ =?Windows-1252?Q?TZyNhDsDovytkS+h85hqiYf0NVGnIDHSlRLNu6t0OZosPgvbRmtQvilb?=
+ =?Windows-1252?Q?hQDXf+M5i+jmc9oL8db2wwN7L5+sy4SacjZyptPsd4a2S71JUumnadlV?=
+ =?Windows-1252?Q?cikQMq9aZ4Iug72tDk7dGTNkWoVznN01pqxZiC4xW//m9Y9noKdHOlej?=
+ =?Windows-1252?Q?Mhb+aAdL79gCgtbqwn7LBXRWqh7Jef/kfO54d8+3P0YEnROuNeG3Kv2B?=
+ =?Windows-1252?Q?KxOKxiTkAbDyYSprscGveMav3dw6nOID+uiYXfjHMUoiu77HIw3Hc+Cc?=
+ =?Windows-1252?Q?3VVK+dKANyI4Wdg0v7iFJlr3Uun2p1N+umq42b1Cc7u3v2u6W8ZzlNR3?=
+ =?Windows-1252?Q?nLoD4I+240ah5Qw23yXmFkrGhJFGXZB6cXbVAYsy/hTcqPqslWUVxLht?=
+ =?Windows-1252?Q?6hlPIjzAOiKFyZQIibOzQqKklgEJbk39W//ptewUBrqurUjY1wkbQ9Fc?=
+ =?Windows-1252?Q?dcau8BVcHZJ/ZDfM9N/n6upT4dqNdQ0VxG9eMI5XM5S4oiG7MNoyyOmB?=
+ =?Windows-1252?Q?SACDldwQuRpLfwtfZ4DV8g83ltbgy4gEl7slJAzA6PKPu/X+gK+c0Qjz?=
+ =?Windows-1252?Q?llpgGb2sBPV4jjzn1BbQJxWyLAtECG2/6ps6X3E3lzEjXiz3pdT2tydP?=
+ =?Windows-1252?Q?WG8yAHLwKLyBjMKcwZv+j48UAd5Vw2OI5VaktIIimzhEayGY0ocDWFmT?=
+ =?Windows-1252?Q?+tnT1iRSaxWPsDenDxzaurhsaXe0MTi3K0tJB4Xp5t8igVEfD7SnvmZ7?=
+ =?Windows-1252?Q?gUbctpNUkVXJJJ0Ol+yuSgEPan0ox6IwuAX8t0QgUzkiccGF3GbgqQ+7?=
+ =?Windows-1252?Q?cqsjBmJcyX/4hbahntoj+oAfKHEWxNjOzFIeDAuuYH49eHMIrB5kECSd?=
+ =?Windows-1252?Q?62RQwwEJjX2VAn6zFI1NDtpnpmkaITSkpx9XdQUQGk0gQzgGlqQEMgOw?=
+ =?Windows-1252?Q?q51O1nPN2HQZKMZtA6M10IXSGrUdZAeFk4CPmxPL5cilv7GQa3OZg4CR?=
+ =?Windows-1252?Q?gEG8QPv4/q/Vp6hvlXx4H0wl22EmIVYVEIt6EWf4FFAyj1UZcYq7mRRl?=
+ =?Windows-1252?Q?wyzdkvdm5MIWgZ4tgwYLkWVQp0MNZdlriHPnjK4a17/nZUQ/HPOmNn0F?=
+ =?Windows-1252?Q?2bakc3oX5CRD5A8XjRqAAdYCTk6CsGLgYKiwmYMMAfXBsyhGYGOtX1ho?=
+ =?Windows-1252?Q?SSqZxVtyxCQxui2lNmzsuzHouBOjOzp9smWPUh1bkIPoNON95RzBYTZf?=
+ =?Windows-1252?Q?YVWe/TG/lybV6v+pBhv0RH8ceb4wAesA8s4ufKg0cY74hqt9jxduAEh6?=
+ =?Windows-1252?Q?88m3ZCuMkxS+bLYeEKA=3D?=
+MIME-Version: 1.0
+
+--_000_BLAPR09MB72341D443AB3A671E8DF7200F0B12BLAPR09MB7234namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+The Office of the Governor has received your September 05, 2026 public reco=
+rds request, which states "To Public Records Officer, Office of Governor Ti=
+na Kotek From Robert Samuel White, P.O. Box 334, Reedsport, Oregon 97467 --=
+ rsw@rswfire.com -- 458-230-1869 Date September 4, 2026 Subject Public reco=
+rds request under ORS 192.311 to 192.478 This is a request under the Oregon=
+ Public Records Law. I am Robert Samuel White, date of birth April 11, 1977=
+. I served as an unpaid volunteer with the Oregon Parks and Recreation Depa=
+rtment at Jessie M. Honeyman Memorial State Park. I was dismissed on March =
+24, 2025. The letter permanently excluding me from all OPRD volunteer progr=
+ams, citing my public comments about staff, is dated March 26, 2025. The De=
+partment's own report to Oregon State Police states that I was "dismissed f=
+rom volunteering with OPRD on 3/25/25 and flagged as ineligible for future =
+service" - a date one day earlier than the written notice I received, and a=
+ determination for which I was never given notice at all. I have written to=
+ the Office of the Governor concerning that matter beginning November 18, 2=
+025, and have been a party to or subject of correspondence with that office=
+ on dozens of occasions. On September 3, 2026, Oregon State Police produced=
+ its file on me under PR27478. That production shows that on March 3, 2026 =
+an OPRD Emergency Manager notified Oregon State Police about me, and gave a=
+s the stated reason that I was "now including the Governor as well as our D=
+irector." That email alleged no crime, described no threat, and quoted no s=
+tatement of mine. A threat assessment was ordered the following morning by =
+the captain of OSP Government and Media Relations. On March 24, 2026, one y=
+ear to the day of that retaliatory dismissal, two OSP detectives and a fede=
+ral officer came to my residence. Unless otherwise noted, the period reques=
+ted is February 1, 2025 to the present. I request the following. 1. All rec=
+ords concerning me held by the Office of the Governor in any division or fu=
+nction, including records indexed under Robert White, Robert Samuel White, =
+Robert S. White, Sam White, rsw@rswfire.com, oprdvolunteerabuse.org, rswfir=
+e.com, or my date of birth. 2. All records reflecting the receipt, routing,=
+ logging, assignment, review, or disposition of correspondence I sent to th=
+e Office of the Governor. This includes constituent services tracking syste=
+m entries, case or ticket records, routing notes, assignment records, inter=
+nal forwarding, and any record of a decision not to respond. 3. Any summary=
+, briefing note, memorandum, talking point, or other internal document prep=
+ared about me or about the matter described in my correspondence, and any r=
+ecord identifying who prepared it and for whom. 4. All communications betwe=
+en the Office of the Governor and the Oregon Parks and Recreation Departmen=
+t concerning me, including any communication with Director Lisa Sumption, D=
+eputy Director J.R. Collier, or any OPRD employee. 5. All communications be=
+tween the Office of the Governor and Oregon State Police concerning me, inc=
+luding any communication concerning the March 24, 2026 contact at my reside=
+nce, OSP case SP26096984, or CAD event SP26097765. 6. All communications be=
+tween the Office of the Governor and the Oregon Department of Justice, the =
+Department of Administrative Services, or any other state or federal agency=
+ concerning me. 7. Any record reflecting that the Governor was personally i=
+nformed of this matter, in any form, on any date, and any record reflecting=
+ a direction, instruction, or decision given by the Governor or her staff c=
+oncerning it. 8. Any record of a meeting, call, or briefing at which this m=
+atter, my correspondence, or I was discussed. This includes calendar entrie=
+s, meeting invitations, agendas, notes taken during or after, and any recor=
+d identifying who was present. 9. Any recurring or periodic briefing docume=
+nt produced for the Governor or her senior staff - daily or weekly issue su=
+mmaries, constituent correspondence reports, agency issue reports, or equiv=
+alent - in which I, my correspondence, the Oregon Parks and Recreation Depa=
+rtment's handling of it, or the archive at oprdvolunteerabuse.org appears. =
+10. All communications concerning me between any Office of the Governor emp=
+loyee and any person acting for the Kotek campaign, to the extent held on s=
+tate systems or by state employees. 11. Any record described above held in =
+a personal email account, personal device, or non-state messaging applicati=
+on by an Office of the Governor employee, where the record concerns state b=
+usiness regarding me. 12. Any record reflecting the disclosure of my person=
+al information, including my date of birth, my residence, my correspondence=
+, or my volunteer file, by the Office of the Governor to any person or agen=
+cy. 13. All records concerning the archive at oprdvolunteerabuse.org, my pu=
+blic records requests, my notice of tort claim served September 3, 2026, DA=
+S Risk Management claim P195403, or the legal fund I have opened in this ma=
+tter. Administration Fee waiver. I request a waiver under ORS 192.324(5). D=
+isclosure primarily benefits the general public. These records concern whet=
+her correspondence from a citizen to his Governor was the stated basis for =
+a state police threat assessment, and an intimidating "knock and talk" behi=
+nd a locked gate on restricted federal land, and how that correspondence wa=
+s handled by the office that received it. I have no commercial purpose. All=
+ records produced will be published in full, at no charge, at oprdvolunteer=
+abuse.org. Acknowledgment and timeline. ORS 192.324(2) requires acknowledgm=
+ent or completion within five business days, and ORS 192.329(5) requires a =
+reasonable estimated completion date where a response cannot be completed w=
+ithin fifteen business days. I request both in writing. Fees. ORS 192.324(4=
+) prohibits a fee exceeding $25 without prior written notice. If a fee is t=
+o be charged, I request that notice with an itemized basis before any work =
+is performed, and the opportunity to narrow the request rather than have it=
+ held pending payment. Format. Electronic delivery by email or secure link.=
+ I am specifying format at the time of this request, as your office's publi=
+shed policy requires: I request records in their native format with links, =
+metadata, and attachments preserved and intact - not converted to PDF. Emai=
+l should be produced in a format that retains full headers, recipients, tim=
+estamps, and attachments. I have no ability to receive or return printed fo=
+rms. Preservation. Please treat all records responsive to this request as s=
+ubject to litigation hold. I have served a notice of tort claim on the Stat=
+e of Oregon under ORS 30.275 concerning the conduct described above, and DA=
+S Risk Management has opened claim P195403. Disposition. For each numbered =
+item, please state whether responsive records exist, produce them, or cite =
+the specific exemption claimed for each record or portion withheld, as ORS =
+192.329(2) requires. If the Office is not the custodian of a category, plea=
+se identify the custodian rather than closing the request as to that catego=
+ry. ORS 192.311(2)(b). Robert Samuel White oprdvolunteerabuse.org"
+
+We will begin gathering records responsive to your request, to the extent r=
+ecords exist, and will be in touch. Don't hesitate to reach out to Cameron =
+Miles (copied) for updates on the status of your request.
+
+Thank you,
+
+
+Yasmin Solorio (she/her/hers)
+Business Operations Coordinator and Executive Assistant to:
+Andre Bealer, Equity and Racial Justice Director
+Javier Cervantes, Racial Justice Council Advisor
+Constantin Severe, Deputy General Counsel
+Cameron Miles, Government Accountability Attorney
+Office of Governor Tina Kotek
+Phone: 503-986-6536
+
+
+--_000_BLAPR09MB72341D443AB3A671E8DF7200F0B12BLAPR09MB7234namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">The Office of the Governor has received your September 05, 2026 p=
+ublic records request, which states &#8220;</span><span style=3D"font-size:=
+10.0pt">To Public Records Officer, Office of Governor
+ Tina Kotek From Robert Samuel White, P.O. Box 334, Reedsport, Oregon 97467=
+ -- rsw@rswfire.com -- 458-230-1869 Date September 4, 2026 Subject Public r=
+ecords request under ORS 192.311 to 192.478 This is a request under the Ore=
+gon Public Records Law. I am Robert
+ Samuel White, date of birth April 11, 1977. I served as an unpaid voluntee=
+r with the Oregon Parks and Recreation Department at Jessie M. Honeyman Mem=
+orial State Park. I was dismissed on March 24, 2025. The letter permanently=
+ excluding me from all OPRD volunteer
+ programs, citing my public comments about staff, is dated March 26, 2025. =
+The Department's own report to Oregon State Police states that I was &quot;=
+dismissed from volunteering with OPRD on 3/25/25 and flagged as ineligible =
+for future service&quot; &#8212; a date one day
+ earlier than the written notice I received, and a determination for which =
+I was never given notice at all. I have written to the Office of the Govern=
+or concerning that matter beginning November 18, 2025, and have been a part=
+y to or subject of correspondence
+ with that office on dozens of occasions. On September 3, 2026, Oregon Stat=
+e Police produced its file on me under PR27478. That production shows that =
+on March 3, 2026 an OPRD Emergency Manager notified Oregon State Police abo=
+ut me, and gave as the stated reason
+ that I was &quot;now including the Governor as well as our Director.&quot;=
+ That email alleged no crime, described no threat, and quoted no statement =
+of mine. A threat assessment was ordered the following morning by the capta=
+in of OSP Government and Media Relations.
+ On March 24, 2026, one year to the day of that retaliatory dismissal, two =
+OSP detectives and a federal officer came to my residence. Unless otherwise=
+ noted, the period requested is February 1, 2025 to the present. I request =
+the following. 1. All records concerning
+ me held by the Office of the Governor in any division or function, includi=
+ng records indexed under Robert White, Robert Samuel White, Robert S. White=
+, Sam White, rsw@rswfire.com, oprdvolunteerabuse.org, rswfire.com, or my da=
+te of birth. 2. All records reflecting
+ the receipt, routing, logging, assignment, review, or disposition of corre=
+spondence I sent to the Office of the Governor. This includes constituent s=
+ervices tracking system entries, case or ticket records, routing notes, ass=
+ignment records, internal forwarding,
+ and any record of a decision not to respond. 3. Any summary, briefing note=
+, memorandum, talking point, or other internal document prepared about me o=
+r about the matter described in my correspondence, and any record identifyi=
+ng who prepared it and for whom.
+ 4. All communications between the Office of the Governor and the Oregon Pa=
+rks and Recreation Department concerning me, including any communication wi=
+th Director Lisa Sumption, Deputy Director J.R. Collier, or any OPRD employ=
+ee. 5. All communications between
+ the Office of the Governor and Oregon State Police concerning me, includin=
+g any communication concerning the March 24, 2026 contact at my residence, =
+OSP case SP26096984, or CAD event SP26097765. 6. All communications between=
+ the Office of the Governor and
+ the Oregon Department of Justice, the Department of Administrative Service=
+s, or any other state or federal agency concerning me. 7. Any record reflec=
+ting that the Governor was personally informed of this matter, in any form,=
+ on any date, and any record reflecting
+ a direction, instruction, or decision given by the Governor or her staff c=
+oncerning it. 8. Any record of a meeting, call, or briefing at which this m=
+atter, my correspondence, or I was discussed. This includes calendar entrie=
+s, meeting invitations, agendas,
+ notes taken during or after, and any record identifying who was present. 9=
+. Any recurring or periodic briefing document produced for the Governor or =
+her senior staff &#8212; daily or weekly issue summaries, constituent corre=
+spondence reports, agency issue reports,
+ or equivalent &#8212; in which I, my correspondence, the Oregon Parks and =
+Recreation Department's handling of it, or the archive at oprdvolunteerabus=
+e.org appears. 10. All communications concerning me between any Office of t=
+he Governor employee and any person acting
+ for the Kotek campaign, to the extent held on state systems or by state em=
+ployees. 11. Any record described above held in a personal email account, p=
+ersonal device, or non-state messaging application by an Office of the Gove=
+rnor employee, where the record
+ concerns state business regarding me. 12. Any record reflecting the disclo=
+sure of my personal information, including my date of birth, my residence, =
+my correspondence, or my volunteer file, by the Office of the Governor to a=
+ny person or agency. 13. All records
+ concerning the archive at oprdvolunteerabuse.org, my public records reques=
+ts, my notice of tort claim served September 3, 2026, DAS Risk Management c=
+laim P195403, or the legal fund I have opened in this matter. Administratio=
+n Fee waiver. I request a waiver
+ under ORS 192.324(5). Disclosure primarily benefits the general public. Th=
+ese records concern whether correspondence from a citizen to his Governor w=
+as the stated basis for a state police threat assessment, and an intimidati=
+ng &quot;knock and talk&quot; behind a locked
+ gate on restricted federal land, and how that correspondence was handled b=
+y the office that received it. I have no commercial purpose. All records pr=
+oduced will be published in full, at no charge, at oprdvolunteerabuse.org. =
+Acknowledgment and timeline. ORS
+ 192.324(2) requires acknowledgment or completion within five business days=
+, and ORS 192.329(5) requires a reasonable estimated completion date where =
+a response cannot be completed within fifteen business days. I request both=
+ in writing. Fees. ORS 192.324(4)
+ prohibits a fee exceeding $25 without prior written notice. If a fee is to=
+ be charged, I request that notice with an itemized basis before any work i=
+s performed, and the opportunity to narrow the request rather than have it =
+held pending payment. Format. Electronic
+ delivery by email or secure link. I am specifying format at the time of th=
+is request, as your office's published policy requires: I request records i=
+n their native format with links, metadata, and attachments preserved and i=
+ntact &#8212; not converted to PDF. Email
+ should be produced in a format that retains full headers, recipients, time=
+stamps, and attachments. I have no ability to receive or return printed for=
+ms. Preservation. Please treat all records responsive to this request as su=
+bject to litigation hold. I have
+ served a notice of tort claim on the State of Oregon under ORS 30.275 conc=
+erning the conduct described above, and DAS Risk Management has opened clai=
+m P195403. Disposition. For each numbered item, please state whether respon=
+sive records exist, produce them,
+ or cite the specific exemption claimed for each record or portion withheld=
+, as ORS 192.329(2) requires. If the Office is not the custodian of a categ=
+ory, please identify the custodian rather than closing the request as to th=
+at category. ORS 192.311(2)(b).
+ Robert Samuel White oprdvolunteerabuse.org</span>&#8221;<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">We will begin gathering records responsive to your request, to th=
+e extent records exist, and will be in touch. Don&#8217;t hesitate to reach=
+ out to Cameron Miles (copied) for updates on the status
+ of your request. <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">Thank you,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Times New Roman&quot;,serif">Yasmin Solorio (she/her/hers)<o:p></o:p></spa=
+n></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif;mso-ligatures:none">Business Operations Coordinat=
+or and Executive Assistant to:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif;mso-ligatures:none">Andre Bealer, Equity and Raci=
+al Justice Director<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif;mso-ligatures:none">Javier Cervantes, Racial Just=
+ice Council Advisor<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">Constantin Severe, Deputy General Counsel<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">Cameron Miles, Government Accountability Attorne=
+y
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">Office of Governor Tina Kotek<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">Phone: 503-986-6536<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BLAPR09MB72341D443AB3A671E8DF7200F0B12BLAPR09MB7234namp_--
+

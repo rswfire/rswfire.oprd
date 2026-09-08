@@ -1,0 +1,120 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BY5PR14MB3702.namprd14.prod.outlook.com (2603:10b6:a03:1d3::11)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 8 Sep 2026
+ 17:45:22 +0000
+Received: from CH2PR14MB4181.namprd14.prod.outlook.com (2603:10b6:610:a9::17)
+ by BY5PR14MB3702.namprd14.prod.outlook.com (2603:10b6:a03:1d3::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.7; Tue, 8 Sep 2026
+ 17:44:57 +0000
+Received: from CH2PR14MB4181.namprd14.prod.outlook.com
+ ([fe80::9c24:cfd0:1b97:ec7b]) by CH2PR14MB4181.namprd14.prod.outlook.com
+ ([fe80::9c24:cfd0:1b97:ec7b%4]) with mapi id 15.21.0406.005; Tue, 8 Sep 2026
+ 17:44:57 +0000
+From: Robert Samuel White <rsw@rswfire.com>
+To: ODOT Public Records <publicrecordsodot@govqa.us>,
+	"oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+Subject: Re: Public Records Request :: R027904-090526
+Thread-Topic: Public Records Request :: R027904-090526
+Thread-Index: AQHdP7mVVt2Kbv8sS0GG1/ReckNnx7bE8/gV
+Date: Tue, 8 Sep 2026 10:44:57 -0700
+Message-ID: 
+ <CH2PR14MB4181B9D253A0FA46B2A71882ADB12@CH2PR14MB4181.namprd14.prod.outlook.com>
+References: <I6R37F3E9UU4.8H6ZZUD7ZTWB3@vaazbot10>
+In-Reply-To: <I6R37F3E9UU4.8H6ZZUD7ZTWB3@vaazbot10>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CH2PR14MB4181.namprd14.prod.outlook.com
+X-MS-Has-Attach: 
+X-MS-Exchange-Organization-Network-Message-Id: 
+ e117ec49-d798-4485-8783-08df0dd0e653
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=rswfire.com;
+x-ms-office365-filtering-correlation-id: e117ec49-d798-4485-8783-08df0dd0e653
+x-ms-traffictypediagnostic: 
+ CH2PR14MB4181:EE_|BY5PR14MB3702:EE_|CH2PR14MB4181:EE_
+x-wildcard-rule: Yes
+x-ms-exchange-transport-rules-loop: 1
+x-ms-exchange-transport-crosstenantheadersstamped: BY5PR14MB3702
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR14MB4181.namprd14.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(69100299015)(366016)(376014)(3109299003)(7049299003)(23010399003)(10067099003)(56012099006)(22082099003)(8096899003)(18002099003)(41050700001);DIR:INT;
+x-microsoft-antispam: 
+ BCL:0;ARA:13230040|69100299015|366016|376014|3109299003|7049299003|23010399003|10067099003|56012099006|22082099003|8096899003|18002099003|41050700001;
+x-ms-exchange-crosstenant-originalarrivaltime: 08 Sep 2026 17:44:57.8356 (UTC)
+x-ms-exchange-crosstenant-network-message-id: 
+ e117ec49-d798-4485-8783-08df0dd0e653
+x-ms-exchange-crosstenant-id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+x-ms-exchange-crosstenant-authsource: CH2PR14MB4181.namprd14.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-reactions: allow
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info: 
+ PtPcNLcG3dKBw7t8tmH/KsIPlJvsmbkm2hGsedGnIJ9qo+MQf8ljQh6gBr9M5uu2gia35MrCPOf+yqWMn0p6jd/p81uOBImvP9mz1paCBgfrk4//2g5TRf/mwIjLzfgoJDj4c2LFmLE44L55RnH2QjqaWJYauC4EF/EMyeh8Crjto6i8+NB2grON3ANQ3vmyAzMYrlFRzja5U0HCjjVZRV74LKnvFu1h4hBc2S/gRl5Hr7ZHV5vorR7VwJYgz8XHio+e+G5+Kw5+HppyoVAMt4ya/SzvX5P33wiNr7AavoG+DknOtbJ/ACFFikrL+I9pX/V3dU51/hu80SLxYp4LiCgZajcZRFYbyyj0iEn1xQ7vgtjzkiXFHrSGXebkL5Xy8NhOYhLsx3SPzM95VBL7TNB9BCHuVGrm8aOLP4XhBZFMBLN0tyCQf8gD1URX/OV4Q9nxx1c0nhDAH9OLQRWhG2lwcyEdrF5RrpU8LasrTGL1r3NWN/w1llIsH6dASrBdntcMt8frU5ZIFXb3LH1vw79Zx8CL1Xg2P42eHx+hn4+uzx6jQ+8TYipFjKLaWA9UhW3Cpcf4uHSE2ShblJt9k7cMwseX5J+JrUZ4RxMuVHBG2eQLZbjQuomXd+y0PI0iwO/z6NKBla3+W3rBj4HI9RFZyZI6rUOPpfMVs0YXt7q1ci4mnm5d/HetGcqNsEVh+71TvbeikqxRhalMPrsrLYttBuTmcEsgDI+1jFAizRNcgzug+FGhFJKp0BGIXq12LfOBE+x0ILidnaxccHLwUQNt9Z1EfSDFrSctYQRm5xlNBvjjCHAznVBqhMhpLIpK
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+</head>
+<body>
+<div dir="auto" style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);">
+Thank you for your assistance this morning!</div>
+<div dir="auto" style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);">
+<br>
+</div>
+<div dir="auto" style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);">
+Robert Samuel White</div>
+<div id="ms-outlook-mobile-body-separator-line" data-applydefaultfontstyles="true" style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;" dir="auto">
+<div dir="auto" style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+<br>
+</div>
+</div>
+<hr style="display:inline-block;width:98%" tabindex="-1">
+<div id="divRplyFwdMsg" dir="ltr"><font face="Calibri, sans-serif" style="font-size:11pt" color="#000000"><b>From:</b> ODOT Public Records &lt;publicrecordsodot@govqa.us&gt;<br>
+<b>Sent:</b> Tuesday, 08 September 2026 10:43:01<br>
+<b>To:</b> oregon.gov@rswfire.email &lt;oregon.gov@rswfire.email&gt;<br>
+<b>Subject:</b> Public Records Request :: R027904-090526</font>
+<div>&nbsp;</div>
+</div>
+<div><br>
+<br>
+--- Please respond above this line ---<br>
+<br>
+<div style="padding:10px; border:3px solid #808080; border-radius:5px">
+<div><strong><span style="color:#000000"><img alt="" src="https://uploads.govqa.us/ODOT/logocustresize.png"></span></strong></div>
+<div>
+<hr>
+<strong><span style="color:#000000"><br>
+</span></strong></div>
+<div>
+<p style="margin-top:0px; margin-bottom:10px"><span style="font-size:14px; font-family:Arial">RE: Public Records Request of September 05, 2026, Reference # R027904-090526</span></p>
+<p style="margin-top:0px; margin-bottom:10px"><span style="font-size:14px; font-family:Arial">Dear Robert Samuel White,</span></p>
+<p style="margin-top:0px; margin-bottom:10px"><span style="font-family:Arial; font-size:14px">ODOT does not know what was sent or received on OPRD devices. We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications
+ responsive to your request were on OPRD devices.</span>&nbsp;</p>
+<p style="margin-top:0px; margin-bottom:10px"><span style="font-size:14px; font-family:Arial">Sincerely,</span></p>
+<p style="margin-top:0px; margin-bottom:10px"><span style="font-size:14px; font-family:Arial">ODOT Public Records<br>
+</span></p>
+</div>
+<hr>
+<span style="font-size:10pt"></span>
+<div style="text-align:left">To monitor the progress or update this request please log into the&nbsp;<a href="https://u4037834.ct.sendgrid.net/ls/click?upn=u001.-2FAS5I4Q2WzghfBbrz2TDtSr5zK6P-2BSiSWpVPtzSzll99kDIW-2Frm0eYFdCN6T298rHO7eLRjAdL9xeTS3bPOuP3xFv5qbsyqTrny6JHBYfaJG4dcWkMCk6Dv1O6JfzadPcnfjbFc5pjHpv6tLeiHtqg-3D-3DHEAh_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNT6IuWt2HWULhw2SMhxP9u-2BSCzOC7TECIh6dsufFnd5s831G6ciXrtFCwkHAffKerD4e31XvKBdpv5d42olnANycBWh9XndhtBo1yGmWIfPB4tHqG1odjik8H7uXYLkRLST-2BwyJ6wZvojT7qcNP8nEqbbc6tdP1Bk3G-2Fpn6YB-2BwAQ-3D-3D" target="_blank" title="Public Records Center">Public
+ Records Center</a></div>
+<div>
+<center><br>
+<img title="GovQA logo" src="https://uploads.mycusthelp.com/WEBQASUPPORT/PoweredByGovQALogo.png" alt="GovQA logo"></center>
+</div>
+</div>
+<img src="https://u4037834.ct.sendgrid.net/wf/open?upn=u001.Dj74J7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aif-2FtWKVvGuKJUoodafPFAGiavdK7YxOqjVt82cmvnVkeVgH-2B-2BZ374bLeL7-2BE-2F908huw-2F6Cz31L9egxGkk9CWmGGPez29VkyETCr-2F-2Bgc14J03P0vSWsQnxotTRg00U6tpFMa3HWGsXtwQ561I7AU5ITSJ7pgTDUWXcktzBf-2BjyydiVL4KQUwQjkUOHd9boIguhY-3D" alt="" width="1" height="1" border="0" style="height:1px!important; width:1px!important; border-width:0!important; margin-top:0!important; margin-bottom:0!important; margin-right:0!important; margin-left:0!important; padding-top:0!important; padding-bottom:0!important; padding-right:0!important; padding-left:0!important"></div>
+</body>
+</html>
+
