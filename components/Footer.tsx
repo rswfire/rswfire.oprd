@@ -34,7 +34,10 @@ export default function Footer() {
                     <div><strong>This website is an independent public-interest documentation project</strong>.</div>
                     <div>It is not affiliated with, endorsed by, or operated by the State of Oregon, Oregon Parks &amp; Recreation Department (OPRD), or any other government entity.</div>
                     <div>All information presented reflects the creator’s firsthand experience, contemporaneous records, and evidence-based documentation.</div>
-
+                    <div>
+                        Public statements are made in one place:{" "}
+                        <a href="https://x.com/rswfire" target="_blank" rel="noopener noreferrer" className="underline text-emerald-800 hover:text-emerald-600">x.com/rswfire</a>.
+                    </div>
                 </div>
 
                 <hr className="max-w-6xl mx-auto border-t border-gray-200 my-8" />

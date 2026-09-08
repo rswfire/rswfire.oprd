@@ -5782,6 +5782,20 @@ export const OSP_THREAD: RecordsThreadData = {
             eml: "/records/osp/eml/2026-09-04_0909_notices-not-a-claim-application.eml",
         },
         {
+            id: "tort-claim-filed-das-portal",
+            ulid: "01M20YBPY0GWCDHN7HABPJK83D",
+            date: "September 8, 2026",
+            d: "2026-09-08",
+            time: "9:42 AM",
+            from: "Robert Samuel White",
+            to: "DAS Risk Management",
+            kind: "notice",
+            title: "The notice, filed through the Department's own portal",
+            summary:
+                "The ORS 30.275 notice entered into the Oregon General Liability (Tort) Report form, the online system DAS links from its claims page. The portal opened a second claim number, P195427, alongside P195403; the police report field carries SP26-097765, and the document is the portal's own rendered record of the submission.",
+            docs: [{ label: "The notice, filed through the Department's own portal", href: "/records/osp/2026-09-08-tort-claim-filed-das-portal-p195427.pdf" }],
+        },
+        {
             id: "the-first-act-of-state-power",
             ulid: "01M1S5AS2G1PK98P6VYW8M9RSQ",
             flagged: true,

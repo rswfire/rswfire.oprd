@@ -77,6 +77,25 @@ export default function Header() {
                                 <div className="text-[11px] text-gray-600">If this happened to you,<br/>it has a name.</div>
                             </div>
                         </Link>
+
+                        {/* The one place he makes public statements, and the one
+                            place he can be found. Same weight as the shield. */}
+                        <a
+                            href="https://x.com/rswfire"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 rounded-xl border border-slate-300 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+                        >
+                            <div className="flex h-14 w-12 items-center justify-center bg-slate-900 group-hover:bg-black transition-colors">
+                                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" aria-hidden="true">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z" />
+                                </svg>
+                            </div>
+                            <div className="py-1.5 pr-4 leading-tight">
+                                <div className="text-[11px] font-bold uppercase tracking-widest text-slate-900">Public Statements</div>
+                                <div className="text-[11px] text-gray-600">@rswfire &mdash; the one place<br/>to find me.</div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
@@ -91,6 +110,20 @@ export default function Header() {
                 <span className="text-[11px] font-bold uppercase tracking-widest">For Volunteers</span>
                 <span className="text-[11px] text-red-100">&mdash; if this happened to you, it has a name.</span>
             </Link>
+
+            {/* And the one place he speaks publicly, same treatment. */}
+            <a
+                href="https://x.com/rswfire"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:hidden flex items-center gap-2 border-t border-slate-700 bg-slate-900 px-4 py-2 text-white active:bg-black"
+            >
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0 fill-white" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z" />
+                </svg>
+                <span className="text-[11px] font-bold uppercase tracking-widest">@rswfire</span>
+                <span className="text-[11px] text-slate-300">&mdash; public statements. The one place to find me.</span>
+            </a>
 
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
                 {/* Floating menu button — the header itself scrolls away on
