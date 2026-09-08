@@ -5900,9 +5900,9 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
     title: "Office of the Governor",
     agency: "Office of the Governor of Oregon",
     matter: "Direct correspondence with the Office of Governor Tina Kotek",
-    status: "Silent.",
+    status: "Gathering records.",
     summary: [
-        "Letters addressed directly to the Office of the Governor, beginning November 18, 2025, and the office's responses to them. There are none.",
+        "Letters addressed directly to the Office of the Governor, beginning November 18, 2025, and the office's responses to them. The first came September 8, 2026: the office is gathering records responsive to the public records request, with its Government Accountability Attorney as the point of contact. The letters themselves remain unanswered.",
     ],
     filings: [
 
