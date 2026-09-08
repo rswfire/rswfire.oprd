@@ -1,0 +1,466 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from PH7PR14MB6644.namprd14.prod.outlook.com (2603:10b6:510:2a7::12)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 8 Sep 2026
+ 16:47:39 +0000
+Received: from SJ0PR13CA0018.namprd13.prod.outlook.com (2603:10b6:a03:2c0::23)
+ by PH7PR14MB6644.namprd14.prod.outlook.com (2603:10b6:510:2a7::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.382.15; Tue, 8 Sep
+ 2026 16:47:02 +0000
+Received: from BY1PEPF000264B4.namprd02.prod.outlook.com
+ (2603:10b6:a03:2c0:cafe::69) by SJ0PR13CA0018.outlook.office365.com
+ (2603:10b6:a03:2c0::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.6 via Frontend Transport; Tue, 8
+ Sep 2026 16:47:02 +0000
+Authentication-Results: spf=pass (sender IP is 168.245.121.10)
+ smtp.mailfrom=em9851.govqa.us; dkim=pass (signature was verified)
+ header.d=govqa.us;dmarc=pass action=none header.from=govqa.us;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em9851.govqa.us
+ designates 168.245.121.10 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.245.121.10;
+ helo=o1.sgmail.mycusthelp.net; pr=C
+Received: from o1.sgmail.mycusthelp.net (168.245.121.10) by
+ BY1PEPF000264B4.mail.protection.outlook.com (10.167.242.121) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.5
+ via Frontend Transport; Tue, 8 Sep 2026 16:47:01 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=from:date:subject:mime-version:to:content-type:cc:content-type:date:
+	from:subject:to;
+	s=s1; t=1788886020;
+	bh=cKWDdhRrG3nBsf1+3xNHgCDdlXdxC1FkKrLrnovzxOI=;
+	b=HL/GG+Ie8IXhNVwOUd7s8OD6lSrnI2XHLZatFTI0eKXIWgMS6Mc3DuoHX3ti5ZPL5znl
+	xIDw1h5bgqys8sGDMrrKPyFjbfq9tbGzxKb5ECXMZmCmlnIbT1xYP/9s8I4PG/TKXZHagh
+	JtWXI3/25CSr+iGTDsnxeXz/YYCXM9TjCNaSTLSnPd2XBNZtF5iVlMcXNQeuY+hx55CdRT
+	blU5385l7jucDLUcm9+nxA6EcvYcCtI532gVkEgQrtkEEvKLEmzxlKp7jGQMUgStQe16lI
+	KKKRQgnvkS8O2ZaO607VukNQD4dWy8Ldti9tPNmoogGSipycCjj/z05ehyqYO8tA==
+Received: by recvd-546cc58b87-wbn8t with SMTP id
+ recvd-546cc58b87-wbn8t-1-6AA03C04-AD
+	2026-09-08 16:47:00.733777232 +0000 UTC m=+3621405.056018140
+Received: from vaazbot10 (unknown)
+	by geopod-ismtpd-85 (SG) with ESMTP
+	id N6i_DD4zSkyfetRxHc5WkQ
+	for <oregon.gov@rswfire.email>;
+	Tue, 08 Sep 2026 16:47:00.705 +0000 (UTC)
+From: ODOT Public Records <publicrecordsodot@govqa.us>
+Date: Tue, 08 Sep 2026 16:47:00 +0000 (UTC)
+Subject: Public Records Request :: R027904-090526
+Message-ID: <OJ6GHZND9UU4.J8HIXSDDKM7V@vaazbot10>
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EAEMEjZhCqVU8BPKvVGfTGaQ9pvm4PbFj+XjkxmFB8BLlaPPln4RDpMSpI?=
+ =?us-ascii?Q?TSjkhHtqj4f8oXoPWV=2FSykbbmvU89SS4ikOcoRt?=
+ =?us-ascii?Q?N3N=2FJPKIQqBBGv1Up2ktEWxll33QRPvxxa8eUm7?=
+ =?us-ascii?Q?N9Q0Vj91blYRe6gct=2Ft=2FkHSoHL0EsQ7SrFWAHCr?=
+ =?us-ascii?Q?D6G39pY9fxF0SmPUoNMZCNvwKQZDWETAWi4F+NC?=
+ =?us-ascii?Q?wWlAwhYo174HD9rfph7y2InoH6BZ2QebDuW1Dw0?=
+ =?us-ascii?Q?sRZegecWRcEqTVYm46pq8x9rmw=3D=3D?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.vpvDusfPA9Cz9X1NjORazA==
+Content-Type: multipart/alternative; boundary="=-gT9azwT/bMHWB2RxDCsLCQ=="
+Return-Path: bounces+4037834-851a-oregon.gov=rswfire.email@em9851.govqa.us
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Sep 2026 16:47:02.1636
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 5e6bdd0e-f49c-484f-fe49-08df0dc8cea7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BY1PEPF000264B4:EE_|PH7PR14MB6644:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BY1PEPF000264B4.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5e6bdd0e-f49c-484f-fe49-08df0dc8cea7
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-Wildcard-Rule: Yes
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|69100299015|3109299003|7049299003|29132699027|7149299003|80162021|19002099009|4133799003|18003699003|10067099003|5023799004|56012099006|5063699009|4076899003|8096899003|16102099003|55112099003;
+X-Forefront-Antispam-Report: 
+ CIP:168.245.121.10;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o1.sgmail.mycusthelp.net;PTR:o1.sgmail.mycusthelp.net;CAT:NONE;SFS:(13230040)(69100299015)(3109299003)(7049299003)(29132699027)(7149299003)(80162021)(19002099009)(4133799003)(18003699003)(10067099003)(5023799004)(56012099006)(5063699009)(4076899003)(8096899003)(16102099003)(55112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Sep 2026 16:47:01.8436
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 5e6bdd0e-f49c-484f-fe49-08df0dc8cea7
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BY1PEPF000264B4.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR14MB6644
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:38.1096847
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info: 
+ =?Windows-1252?Q?HtJDoggCvYR55mFznpt/SO90yFpAZ6uggvZEbudz0WYgNmX9ln7JMTFE?=
+ =?Windows-1252?Q?6hUe19uObWRh5JSyU6+HI9yKcvOiTnX3qGw5m1OkxN84OnwdIRUWumJ+?=
+ =?Windows-1252?Q?Z0ADOObY+Ya2aaQPR7g0eZjBkFp4g2t941rTxYsNQDQ1r8m8ptGqnzeA?=
+ =?Windows-1252?Q?W8FXmEvjdEfbQKQba0bVMd2BLRBn8RWOKuxZMYESs2M6j2wIeGrIuV++?=
+ =?Windows-1252?Q?QjiFEAZby2KfXmViMXuWWVHAjuLWmtYUiHAZT97oJlvQj2O9liLkpO+4?=
+ =?Windows-1252?Q?ihywwu08S2F6+1AdisVcNXNO5IUE8/XGaCbA0CFVVPap7s7xte66eUJn?=
+ =?Windows-1252?Q?iNZJpraZI5yEYam0LCgWBad1AevpD5xN80TnwFTvwHLLmkD7205S+isA?=
+ =?Windows-1252?Q?mJnRsQiULx4ynuRsLgtfUPHW5F1imVwhxnnEWWKWhtqk3UpFEy87XlCH?=
+ =?Windows-1252?Q?NZRVBU3RMkahdjPNmEQBMjVefB7p+ynSh2UNM4P+cJ582AZvsjoUP5eo?=
+ =?Windows-1252?Q?nwTpccNAMIasiNUZKyRkyjI44y7YV3CHeyN/AZV4CTkNauTewOzwKteP?=
+ =?Windows-1252?Q?RtemX3ab6qIW99Z9yeUTT7CzIdSymoeeXjaGKmcK2ihoTGOV+1Oc6Xek?=
+ =?Windows-1252?Q?7EaTdnvH9ZzSNCUy1NAernhXJI1WCUT8NzEcS8vuuBwovsIO+uGFaH1N?=
+ =?Windows-1252?Q?G5LWkI4YPtAT+G6c3TSJDwF9aK4ypfZ0xRakvXVRnkQHRyngSGf8Qc/4?=
+ =?Windows-1252?Q?kVhklfMnITTV4uY6pxn6V7MG3T2d5crevd45yENC5BUFUeZqzsprmwRM?=
+ =?Windows-1252?Q?3K7xECWfin/BipXSSZGGsOUe48eEFtn8UYuSsELAdcWntAuSvJKVAj1C?=
+ =?Windows-1252?Q?UNc07Ftt5xV6uGe2kZwUvgv+AVHQJahyqhPJTvdDwvxFJ2pQ8Hz/Ztsx?=
+ =?Windows-1252?Q?xsIJ/DrGWV2kNePSrxwEmWClL9GUx61aSiK3p6IQvlmtWYZXp9e1PEyT?=
+ =?Windows-1252?Q?/v5MMH0hqN1ZpzL3ePTydMHlc1aWqepWqT861Vel3xCjzSuL80NkGHla?=
+ =?Windows-1252?Q?ng82e21gcNNTLxSUCJr/1sxlhzm9bvupOqj9pSce+yGefbZJ8qBm72tx?=
+ =?Windows-1252?Q?S3SRVuj8xcq4ldJ0JleJZVZEzfCHaZshhlmD8giI5wzt0dzv3Zg4lnCH?=
+ =?Windows-1252?Q?O+Mx/DSFGVJIo7YQvhsxpC/cQU1JWmVZa0Be7mNw7DGOr+5ERVxzHAhp?=
+ =?Windows-1252?Q?Cnw/e1qkDkPmjJuwkH4pcEfFrsTQbgwkVOyZem7eX3nfRe4iiweXJ1cg?=
+ =?Windows-1252?Q?/2TJOZjPeHr7tpZV4jAUZtLCB2Lu3uDeXXEYLoXSsCp4mEKbYDlo+S14?=
+ =?Windows-1252?Q?o84TYbpcbGTplGA1bzJUnUNI6OAY2t1J9owXVDqQQRPoBt8WhXNc5IAN?=
+ =?Windows-1252?Q?D95earKZCWAAEO7jqQO4VnwUAxr5OGyIMmvnltS4RBy/YuiPLNRUlq+0?=
+ =?Windows-1252?Q?k7CZbkHB7MyqD6VqfWYkZcoTFbIknKkg1D2DrrgdJzIBg9a/WwuB+bEk?=
+ =?Windows-1252?Q?6a3x55mXZxFJRS4cmJYbri9EZmBH5x7QjhfX59+q8R05z8BKsALcc9x3?=
+ =?Windows-1252?Q?+MpUb0ztEVuprrpJU0aOPR1dVOjxgTofHnFnUIiPFVt5oh/5W+70v6LD?=
+ =?Windows-1252?Q?wYWoOX6ZuMBCfbJR4+nlvAh7UzD2BTyt+aBrxd/l791a1ckZg5YgSU2B?=
+ =?Windows-1252?Q?p+wQ6aMRdPQ6CKvpwjRMbnEv+nEkv3mPXsNv6aq715OMPYoT/xLEj3bW?=
+ =?Windows-1252?Q?9WsTf8yykHbMNjcdRrxAZLhIthYmyme7p0nvtcHr+Fw77twdnqflTpTH?=
+ =?Windows-1252?Q?nUQKZxW3Se1W2/Pgc+pvH24NhNdUFS54zc6z64eBRhjZ3C4VML7oxmL7?=
+ =?Windows-1252?Q?vLfBP5VoT0aFsbjofw9bBhF/DZ9Qz+BrKp6ug4IXJCKCCqkbhgR2K5HZ?=
+ =?Windows-1252?Q?tILbgdSFOzL/mdRT29eXxQmtw8b65FOwybdCOHX3WHe2ObEy9ZfXWwS9?=
+ =?Windows-1252?Q?bMGjhzucjyzS3YgnBKvDJeS0LAHplOJaMu0QM33U3FrqO9rmQ55PRxFb?=
+ =?Windows-1252?Q?k375CzMBFVEt8gn3fux4iqxbHTLv6J8D0745wO1uQCBwJvXidjEWnBgE?=
+ =?Windows-1252?Q?vSPrGaC2AL2iO/IJcBTk2VM695AuCu7IAVk1VeVZATYwgn+v63kEEuZE?=
+ =?Windows-1252?Q?qczUQ6Iu6v1XQzKUiuLsNXH2pdWs1m7ejJ/TV4uZ3lqcqlO8dtXXnjMI?=
+ =?Windows-1252?Q?oyRmBBTPLsf3l+rqEyciRD1oaciH7fYetqlbEEY6Jav2e6ZZXN6+IVuB?=
+ =?Windows-1252?Q?p7uR69j8pmDicjAQAgX7ojVL/SUd6PH6OYtVuaKNe46RhwJMhKdL6hoI?=
+ =?Windows-1252?Q?7W2qxoGIVYJmbigl25Da5sStzNqwM0bBs3ATc+rPEAk7873+pqTpC8/0?=
+ =?Windows-1252?Q?rSIdLsZjaCM6w1dIPpLhxs+6KGvkGotslRSh9NzLP4RJ8ef7ehJoQTkv?=
+ =?Windows-1252?Q?lygNspjLPNap4kokX0voA4SB89REpD2/Dl5nI3CLcMpxECmCLPRzfGLf?=
+ =?Windows-1252?Q?A5W96JvHGpXd958Bzo4ovZ5dry0kXXOQLKGXMrfIJIgt8NhK3FhCNrmM?=
+ =?Windows-1252?Q?R/od4qiSohD/uI7GwIlxC2ktNLCAgpq0ybjQxIv75RTtNOo5GDqUh7Wz?=
+ =?Windows-1252?Q?aBApdveStBsq1DSi4i9IcfHw5B9DitTEGnjcu40VE5ksJOsj+s0zKuJH?=
+ =?Windows-1252?Q?piXUSYv/REDLK9Uc/QDgmoTpl8aa6WsOhikX7cblNzj3Ikfg?=
+MIME-Version: 1.0
+
+--=-gT9azwT/bMHWB2RxDCsLCQ==
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<br><br>--- Please respond above this line ---<br><br><div style=3D"align: =
+center; padding: 10px; border: 3px solid #808080; border-radius: 5px;">
+<div><strong><span style=3D"color: #000000;"><img alt=3D"" src=3D"https://u=
+4037834.ct.sendgrid.net/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtQTe8uIBi=
+ChgEvuFLXC9INgiNMC7mws4gfZTZdXCtcxisGn-2BPvEBLoLxnEI8kVsuGg-3D-3DwKqo_0GMYb=
+285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU=
+4zFVSGEEtEFP-2BbADV11MBNtBRZiREOwM09pakcy7tnjaDAaaVwBhIqlQWhaOFiFzrDuSUmXWz=
+b35TW6oDbsAtQizMw8e5d-2FUD1gwNauzY8HzAFppzqmHwkW-2FBYlJj3Ad2aUq5gRg-3D-3D /=
+></span></strong></div>
+<div><hr />
+<strong><span style=3D"color: #000000;"><br />
+</span></strong></div>
+<div><p style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font=
+-size: 14px; font-family: Arial;">RE: Public Records Request of September 0=
+5, 2026, Reference # R027904-090526</span></p><p style=3D"margin-top: 0px; =
+margin-bottom: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">=
+Dear Robert Samuel White,</span></p><p style=3D"margin-top: 0px; margin-bot=
+tom: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">The Oregon=
+ Department of Transportation received a public records request from you on=
+ September 05, 2026. You requested:</span></p><p style=3D"margin-top: 0px; =
+margin-bottom: 10px; margin-left: 40px;"><span style=3D"font-size: 14px; fo=
+nt-family: Arial;"><strong>"This is a request under the Oregon Public Recor=
+ds Law. It is narrow and concerns one individual.<br /><br />Lisa Sumption =
+served as interim director of the Oregon Department of Transportation from =
+January 2, 2026 until approximately the end of June 2026, while continuing =
+to hold the position of director of the Oregon Parks and Recreation Departm=
+ent. This request concerns records held by the Department of Transportation=
+ relating to me during and after that period.<br /><br />I am Robert Samuel=
+ White, date of birth April 11, 1977. I was an unpaid volunteer with the Or=
+egon Parks and Recreation Department and was permanently excluded from all =
+Department volunteer programs in a letter dated March 26, 2025. I have corr=
+esponded with Director Sumption about that matter since August 2025. On Mar=
+ch 24, 2026 &mdash; during her ODOT tenure &mdash; Oregon State Police dete=
+ctives and a federal officer came to my residence following a referral made=
+ by an OPRD employee.<br /><br />The period requested is January 1, 2026 to=
+ the present.<br /><br />I request the following.<br /><br />1.  All record=
+s concerning me held by the Oregon Department of Transportation, in any div=
+ision or function, including records indexed under Robert White, Robert Sam=
+uel White, Robert S. White, Sam White, rsw@rswfire.com, oprdvolunteerabuse.=
+org, rswfire.com, or my date of birth.<br /><br />2.  All communications co=
+ncerning me sent or received by Lisa Sumption using any Oregon Department o=
+f Transportation email account, device, or system, in any medium, including=
+ email, text message, instant message, and any messaging application.<br />=
+<br />3.  All records concerning me created, received, or held by any other=
+ Department of Transportation employee.<br /><br />4.  All communications b=
+etween the Department of Transportation and the Oregon Parks and Recreation=
+ Department, Oregon State Police, the Office of the Governor, the Departmen=
+t of Administrative Services, or the Department of Justice concerning me.<b=
+r /><br />5.  Any record reflecting the forwarding, transfer, deletion, or =
+migration of records concerning me between Department of Transportation sys=
+tems and any other agency's systems, including at the conclusion of Directo=
+r Sumption's interim appointment.<br /><br />6.  Any record reflecting the =
+retention or disposition of Lisa Sumption's Department of Transportation em=
+ail account and its contents following the end of her interim appointment.<=
+br /><br />For the purpose of this request, "concerning me" includes any re=
+cord referring to Robert White, Robert Samuel White, Robert S. White, Sam W=
+hite, my correspondence, my volunteer service with OPRD, my dismissal or ex=
+clusion, my public records requests, the archive at oprdvolunteerabuse.org,=
+ the March 24, 2026 law enforcement contact at my residence, or the legal f=
+und I have opened.<br /><br /><br />Administration<br /><br />Fee waiver. I=
+ request a waiver under ORS 192.324(5). Disclosure primarily benefits the g=
+eneral public. These records concern whether a state agency director, while=
+ serving simultaneously at two agencies, used the systems of one to conduct=
+ business concerning a citizen's complaint against the other. I have no com=
+mercial purpose. All records produced will be published in full, at no char=
+ge, at oprdvolunteerabuse.org.<br /><br />Acknowledgment and timeline. ORS =
+192.324(2) requires acknowledgment or completion within five business days,=
+ and ORS 192.329(5) requires a reasonable estimated completion date where a=
+ response cannot be completed within fifteen business days. I request both =
+in writing.<br /><br />Fees. ORS 192.324(4) prohibits a fee exceeding $25 w=
+ithout prior written notice. If a fee is to be charged, I request that noti=
+ce with an itemized basis before any work is performed, and the opportunity=
+ to narrow the request rather than have it held pending payment. I have no =
+ability to receive or return printed forms; any fee waiver determination sh=
+ould not be conditioned on the return of a printed document.<br /><br />For=
+mat. Electronic delivery by email or secure link, in native format with hea=
+ders, recipients, timestamps, metadata, and attachments preserved and intac=
+t.<br /><br />Preservation. Please treat all records responsive to this req=
+uest as subject to litigation hold. I have served a notice of tort claim on=
+ the State of Oregon under ORS 30.275, and the Department of Administrative=
+ Services has opened claim P195403. This preservation request extends to an=
+y archived, backed-up, or deprovisioned account or mailbox associated with =
+Lisa Sumption's interim appointment.<br /><br />Disposition. For each numbe=
+red item, please state whether responsive records exist, produce them, or c=
+ite the specific exemption claimed for each record or portion withheld, as =
+ORS 192.329(2) requires. If the Department is not the custodian of a catego=
+ry, please identify the custodian rather than closing the request as to tha=
+t category. ORS 192.311(2)(b).<br /><br />Robert Samuel White<br />oprdvolu=
+nteerabuse.org"</strong></span></p><p style=3D"margin-top: 0px; margin-bott=
+om: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">The Oregon =
+Department of Transportation has reviewed its files and has determined ther=
+e are no records responsive to your request.</span></p><div style=3D"margin=
+-top: 0px; margin-bottom: 10px;"><span style=3D"font-size: 14px; font-famil=
+y: Arial;">For items 1 and 3, <span style=3D"font-family: Arial; font-size:=
+ 14px;">ODOT does not have any records indexed under Robert White, Robert S=
+amuel White, Robert S. White, Sam White, rsw@rswfire.com, oprdvolunteerabus=
+e.org, rswfire.com, or your date of birth beyond what Oregon DMV may have. =
+Y</span>ou may wish to order your own record(s) from Oregon Driver and Moto=
+r Vehicle (DMV) Services. You can order your own driving records online at =
+DMV's web portal <a href=3D"https://u4037834.ct.sendgrid.net/ls/click?upn=
+=3Du001.-2FAS5I4Q2WzghfBbrz2TDtcBTco-2BDHbjTFFS5-2FHbA9QaVg18ofmChBtXc-2BB-=
+2BVzHSi6aRg_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLCh=
+Jvycaeamge8Fy0HMU4zFVSGEBmqr1xZDqIcnoogKqPII5MWMQPTzw-2B3Y5lSu1dG3wC0kWqa7g=
+fvW5nyWcTnIPHT1LzScTpvJ-2B5HIomCC1E4iWJE6NSI4438tRvXmuzVJ0UpWCZ-2BoE-2FZuTe=
+-2FNFdPRRhtTA-3D-3D>DMV2U.Oregon.gov</a> or by mail: <a href=3D"https://u40=
+37834.ct.sendgrid.net/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtYrwnOmYg6r=
+6Tu2yVOea77vkvPQ9jmkDrkFHS7caCemWJzUriSGYIHpn68ygjptrcg-3D-3D9-rP_0GMYb285Q=
+7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU4zFV=
+SGEPO9kZ2UqfZ74-2FJzCu7R-2BDhSMmFNr-2BTJk70IZIrpULR42yn2veQbsfsfxeVwA6glB9-=
+2FEy-2FDntVT4M-2FHztunvr787bS6xifjcyVMsfaw-2BuqLnSWu3aZaKuz6v9g-2FavViXcA-3=
+D-3D>Order Your Own Record</a>.&nbsp;</span></div><div style=3D"margin-top:=
+ 0px; margin-bottom: 10px;"><span style=3D"font-size: 14px; font-family: Ar=
+ial;">For items 2, 4 and 5, ODOT does not have any records to provide. Any =
+records relating to you were sent or received on OPRD devices, not ODOT dev=
+ices.&nbsp;</span><span style=3D"font-family: Arial; font-size: 14px;">We s=
+uggest you contact OPRD to request responsive records: </span><a href=3D"ht=
+tps://u4037834.ct.sendgrid.net/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtY=
+rwnOmYg6r6Tu2yVOea77uv-2B6XqYBFDiAGr9kUAZOmJIcBVjw-2Fc1xuRbHiq59OY9w-3D-3DV=
+r27_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeam=
+ge8Fy0HMU4zFVSGEDYTp4UZwegrg-2BeMHqVQOWGLLPCwr8OOprwHvRZfK5q8AJY-2F1FkOyrVP=
+CaSZucZi7Bi3t-2BvAGB3lfnmrU5oYMd9v-2F3nNJleDOb3Cs5Y9U7pPA44-2FTwkp-2FRxMpTc=
+dbvOiCg-3D-3D style=3D"font-family: Arial; font-size: 14px;">Public Records=
+ Requests</a><span style=3D"font-family: Arial; font-size: 14px;">.</span><=
+/div><div style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"fo=
+nt-family: Arial; font-size: 14px;">Item 6: ODOT does not have a record to =
+provide. The way M365 is configured today, we effectively have a permanent =
+retention and there is not a date ODOT loses access to emails. We do not ha=
+ve access via&nbsp;the standard mailbox interface after a person&rsquo;s M3=
+65 license is removed from their account. But, the emails are still availab=
+le to discovery.</span>&nbsp;</div><p style=3D"margin-top: 0px; margin-bott=
+om: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">Sincerely,<=
+/span></p><p style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D=
+"font-size: 14px; font-family: Arial;">ODOT Public Records<br /></span></p>=
+</div>
+<hr />
+<span style=3D"font-size: 10pt;"></span>
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a href=3D"https://u4037834.ct.sendgrid.net/l=
+s/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtSr5zK6P-2BSiSWpVPtzSzll99kDIW-2Fr=
+m0eYFdCN6T298rHO7eLRjAdL9xeTS3bPOuP3xFv5qbsyqTrny6JHBYfaJG4dcWkMCk6Dv1O6Jfz=
+adPGh1XzdgO0g-2BzxwHlqrDRJA-3D-3Dawco_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkX=
+KIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU4zFVSGEIA-2BaAOL2uetuFN-2BMQBaL7=
+GmhBszD28prH7LfVv3c-2BTSvtFJ4ZPvzJNWBHp5gFW-2BcjDm5a2h4o7QW5hSYH27N6egdohmh=
+Xry6KL8Wx3CJFhasg9dKtgbK7KNrRyNKyB2Ag-3D-3D target=3D"_blank" title=3D"Publ=
+ic Records Center">Public Records Center</a></div>
+<div><center><br />
+<img title=3D"GovQA logo" src=3D"https://u4037834.ct.sendgrid.net/ls/click?=
+upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtVEW2-2FW1P99b6jGhBxsuUHxAR6-2ByiZuH6-2Fjn=
+JFVdbMcAAwX4GoDENnBUtk5v7gs0u5bO8lXGQDbZRsjiV2rTfKA-3DQ992_0GMYb285Q7ANw-2B=
+FhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU4zFVSGEEDdl=
+q8Ro0-2B-2Fd3sT8-2F-2Fnp18qCyM0XSIyxbzC-2B0BJgMTskIXpieoozsVfMnQK-2BKZwRIyu=
+qqRa2lAYXmBduhNNXF81tmrEra6SeNL3TmYgGEuSjL1c3DzUYM1tfJSn-2FjUwxw-3D-3D alt=
+=3D"GovQA logo" /></center></div>
+</div>
+--=-gT9azwT/bMHWB2RxDCsLCQ==
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><br><br>--- Please respond above this line ---<br><br><div style=3D"align:=
+ center; padding: 10px; border: 3px solid #808080; border-radius: 5px;">
+<div><strong><span style=3D"color: #000000;"><img alt=3D"" src=3D"https://u=
+ploads.govqa.us/ODOT/logocustresize.png"></span></strong></div>
+<div><hr>
+<strong><span style=3D"color: #000000;"><br>
+</span></strong></div>
+<div><p style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font=
+-size: 14px; font-family: Arial;">RE: Public Records Request of September 0=
+5, 2026, Reference # R027904-090526</span></p><p style=3D"margin-top: 0px; =
+margin-bottom: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">=
+Dear Robert Samuel White,</span></p><p style=3D"margin-top: 0px; margin-bot=
+tom: 10px;"><span style=3D"font-size: 14px; font-family: Arial;">The Oregon=
+ Department of Transportation received a public records request from you on=
+ September 05, 2026. You requested:</span></p><p style=3D"margin-top: 0px; =
+margin-bottom: 10px; margin-left: 40px;"><span style=3D"font-size: 14px; fo=
+nt-family: Arial;"><strong>&quot;This is a request under the Oregon Public =
+Records Law. It is narrow and concerns one individual.<br><br>Lisa Sumption=
+ served as interim director of the Oregon Department of Transportation from=
+ January 2, 2026 until approximately the end of June 2026, while continuing=
+ to hold the position of director of the Oregon Parks and Recreation Depart=
+ment. This request concerns records held by the Department of Transportatio=
+n relating to me during and after that period.<br><br>I am Robert Samuel Wh=
+ite, date of birth April 11, 1977. I was an unpaid volunteer with the Orego=
+n Parks and Recreation Department and was permanently excluded from all Dep=
+artment volunteer programs in a letter dated March 26, 2025. I have corresp=
+onded with Director Sumption about that matter since August 2025. On March =
+24, 2026 &#8212; during her ODOT tenure &#8212; Oregon State Police detecti=
+ves and a federal officer came to my residence following a referral made by=
+ an OPRD employee.<br><br>The period requested is January 1, 2026 to the pr=
+esent.<br><br>I request the following.<br><br>1.  All records concerning me=
+ held by the Oregon Department of Transportation, in any division or functi=
+on, including records indexed under Robert White, Robert Samuel White, Robe=
+rt S. White, Sam White, rsw@rswfire.com, oprdvolunteerabuse.org, rswfire.co=
+m, or my date of birth.<br><br>2.  All communications concerning me sent or=
+ received by Lisa Sumption using any Oregon Department of Transportation em=
+ail account, device, or system, in any medium, including email, text messag=
+e, instant message, and any messaging application.<br><br>3.  All records c=
+oncerning me created, received, or held by any other Department of Transpor=
+tation employee.<br><br>4.  All communications between the Department of Tr=
+ansportation and the Oregon Parks and Recreation Department, Oregon State P=
+olice, the Office of the Governor, the Department of Administrative Service=
+s, or the Department of Justice concerning me.<br><br>5.  Any record reflec=
+ting the forwarding, transfer, deletion, or migration of records concerning=
+ me between Department of Transportation systems and any other agency's sys=
+tems, including at the conclusion of Director Sumption's interim appointmen=
+t.<br><br>6.  Any record reflecting the retention or disposition of Lisa Su=
+mption's Department of Transportation email account and its contents follow=
+ing the end of her interim appointment.<br><br>For the purpose of this requ=
+est, &quot;concerning me&quot; includes any record referring to Robert Whit=
+e, Robert Samuel White, Robert S. White, Sam White, my correspondence, my v=
+olunteer service with OPRD, my dismissal or exclusion, my public records re=
+quests, the archive at oprdvolunteerabuse.org, the March 24, 2026 law enfor=
+cement contact at my residence, or the legal fund I have opened.<br><br><br=
+>Administration<br><br>Fee waiver. I request a waiver under ORS 192.324(5).=
+ Disclosure primarily benefits the general public. These records concern wh=
+ether a state agency director, while serving simultaneously at two agencies=
+, used the systems of one to conduct business concerning a citizen's compla=
+int against the other. I have no commercial purpose. All records produced w=
+ill be published in full, at no charge, at oprdvolunteerabuse.org.<br><br>A=
+cknowledgment and timeline. ORS 192.324(2) requires acknowledgment or compl=
+etion within five business days, and ORS 192.329(5) requires a reasonable e=
+stimated completion date where a response cannot be completed within fiftee=
+n business days. I request both in writing.<br><br>Fees. ORS 192.324(4) pro=
+hibits a fee exceeding $25 without prior written notice. If a fee is to be =
+charged, I request that notice with an itemized basis before any work is pe=
+rformed, and the opportunity to narrow the request rather than have it held=
+ pending payment. I have no ability to receive or return printed forms; any=
+ fee waiver determination should not be conditioned on the return of a prin=
+ted document.<br><br>Format. Electronic delivery by email or secure link, i=
+n native format with headers, recipients, timestamps, metadata, and attachm=
+ents preserved and intact.<br><br>Preservation. Please treat all records re=
+sponsive to this request as subject to litigation hold. I have served a not=
+ice of tort claim on the State of Oregon under ORS 30.275, and the Departme=
+nt of Administrative Services has opened claim P195403. This preservation r=
+equest extends to any archived, backed-up, or deprovisioned account or mail=
+box associated with Lisa Sumption's interim appointment.<br><br>Disposition=
+. For each numbered item, please state whether responsive records exist, pr=
+oduce them, or cite the specific exemption claimed for each record or porti=
+on withheld, as ORS 192.329(2) requires. If the Department is not the custo=
+dian of a category, please identify the custodian rather than closing the r=
+equest as to that category. ORS 192.311(2)(b).<br><br>Robert Samuel White<b=
+r>oprdvolunteerabuse.org&quot;</strong></span></p><p style=3D"margin-top: 0=
+px; margin-bottom: 10px;"><span style=3D"font-size: 14px; font-family: Aria=
+l;">The Oregon Department of Transportation has reviewed its files and has =
+determined there are no records responsive to your request.</span></p><div =
+style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font-size: 1=
+4px; font-family: Arial;">For items 1 and 3, <span style=3D"font-family: Ar=
+ial; font-size: 14px;">ODOT does not have any records indexed under Robert =
+White, Robert Samuel White, Robert S. White, Sam White, rsw@rswfire.com, op=
+rdvolunteerabuse.org, rswfire.com, or your date of birth beyond what Oregon=
+ DMV may have. Y</span>ou may wish to order your own record(s) from Oregon =
+Driver and Motor Vehicle (DMV) Services. You can order your own driving rec=
+ords online at DMV's web portal <a href=3D"https://u4037834.ct.sendgrid.net=
+/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtcBTco-2BDHbjTFFS5-2FHbA9QaYpHT1=
+ej2zBhon6PiA6fU5j3Tj_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRr=
+HF69TGLChJvycaeamge8Fy0HMU4zFVSGEAcpb-2F9XNAnNwBCols63DtnsQY8Sx2i20EiinLOzM=
+ZWNnUDmZOS7H6deV0i0nEf80nHHCsX5IdkouME8z9R1yt-2FmOH67zXjgs3KJTIHsniBuDGyO3P=
+hEQ2s4yTuYnMqPNg-3D-3D">DMV2U.Oregon.gov</a> or by mail: <a href=3D"https:/=
+/u4037834.ct.sendgrid.net/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtYrwnOm=
+Yg6r6Tu2yVOea77vkvPQ9jmkDrkFHS7caCemWuxITH8P5EpqM7Hw9Rdz8pA-3D-3DtSlW_0GMYb=
+285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU=
+4zFVSGEDHUt6WKoKg83vl3ZYHIsY6E8vdpCLiVGxmReOa5cDhJyu-2Ft2zDRlKLWUBRaH1Zt572=
+PTTkOzhQIalPfpiuo4my7hLqr6OhazNIQMG4zVohmH-2BTnTJHfkt-2Ft2MDwzQSMFA-3D-3D">=
+Order Your Own Record</a>.&nbsp;</span></div><div style=3D"margin-top: 0px;=
+ margin-bottom: 10px;"><span style=3D"font-size: 14px; font-family: Arial;"=
+>For items 2, 4 and 5, ODOT does not have any records to provide. Any recor=
+ds relating to you were sent or received on OPRD devices, not ODOT devices.=
+&nbsp;</span><span style=3D"font-family: Arial; font-size: 14px;">We sugges=
+t you contact OPRD to request responsive records: </span><a href=3D"https:/=
+/u4037834.ct.sendgrid.net/ls/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtYrwnOm=
+Yg6r6Tu2yVOea77uv-2B6XqYBFDiAGr9kUAZOmJJBP-2BDV6gCTOugMRmSzijJg-3D-3DLqRA_0=
+GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy=
+0HMU4zFVSGEJSboHSErJICQiJpxU2uCxRJn2ogCYu7gRBXUKdqNHR1-2BWWOxVU37dpqfeErgYq=
+0geSPN-2FY7ZZLIL8CeOXQrolv40X-2FCqhPaAnGqVwR6w6hRpotJzEsLs3FGaFMz3YgbKg-3D-=
+3D" style=3D"font-family: Arial; font-size: 14px;">Public Records Requests<=
+/a><span style=3D"font-family: Arial; font-size: 14px;">.</span></div><div =
+style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font-family:=
+ Arial; font-size: 14px;">Item 6: ODOT does not have a record to provide. T=
+he way M365 is configured today, we effectively have a permanent retention =
+and there is not a date ODOT loses access to emails. We do not have access =
+via&nbsp;the standard mailbox interface after a person&#8217;s M365 license=
+ is removed from their account. But, the emails are still available to disc=
+overy.</span>&nbsp;</div><p style=3D"margin-top: 0px; margin-bottom: 10px;"=
+><span style=3D"font-size: 14px; font-family: Arial;">Sincerely,</span></p>=
+<p style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font-size=
+: 14px; font-family: Arial;">ODOT Public Records<br></span></p></div>
+<hr>
+<span style=3D"font-size: 10pt;"></span>
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a href=3D"https://u4037834.ct.sendgrid.net/l=
+s/click?upn=3Du001.-2FAS5I4Q2WzghfBbrz2TDtSr5zK6P-2BSiSWpVPtzSzll99kDIW-2Fr=
+m0eYFdCN6T298rHO7eLRjAdL9xeTS3bPOuP3xFv5qbsyqTrny6JHBYfaJG4dcWkMCk6Dv1O6Jfz=
+adPcnfjbFc5pjHpv6tLeiHtqg-3D-3Dw0Vc_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKI=
+qm3pNSsbWkltSRrHF69TGLChJvycaeamge8Fy0HMU4zFVSGEG7CWVpY3jpKgLvFT6PuIo2TsNgz=
+Qs3aPjMzQg9o2TwRWnZN8TDmryirpMLi9PkKBO-2FlWYd4xQbveAIs8axAbVShzU3Zt-2F8IwcO=
+-2FNOObl7YPD3y-2FlBADXsIoi-2FH-2FqTQLDg-3D-3D" target=3D"_blank" title=3D"P=
+ublic Records Center">Public Records Center</a></div>
+<div><center><br>
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo"></center></div>
+</div><img src=3D"https://u4037834.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J=
+7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aieTX3kSaPzCnhes7GQw08NLPJ48Jf6bWVdyvpnN=
+VXNRsV5y2yzNj-2FpLRHh8pJlIgjVID9zoExIUuVG5eQxkOqai2XOM7VlWUjaGm4vwAB-2BLud8=
+lMrER-2FNBbFUyEcdHQYAP5t7Hh-2Bo5yekuDAR52fDpA1V7kLmFHUbTBRotGvGsIigzLiaiLOm=
+Lx4umACRD-2Bbgc-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D=
+"height:1px !important;width:1px !important;border-width:0 !important;margi=
+n-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;mar=
+gin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;=
+padding-right:0 !important;padding-left:0 !important;">=
+
+--=-gT9azwT/bMHWB2RxDCsLCQ==--
+

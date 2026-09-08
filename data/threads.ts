@@ -4384,6 +4384,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-05_1553_odot-request-forwarded.eml",
         },
         {
+            id: "odot-no-responsive-records",
+            ulid: "01M20YMVX0Y7FBDFVH6QPR70RQ",
+            flagged: true,
+            date: "September 8, 2026",
+            d: "2026-09-08",
+            time: "9:47 AM",
+            from: "ODOT Public Records",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "ODOT: no responsive records",
+            summary:
+                "The Department's answer to R027904: no records concerning him exist on ODOT systems from the Director's interim tenure; anything relating to him was sent or received on OPRD devices, with DMV the noted exception. On retention, the Department states its M365 configuration is effectively permanent and the emails remain available to discovery.",
+            docs: [{ label: "ODOT: no responsive records", href: "/records/oprd/2026-09-08-odot-no-responsive-records-r027904.pdf" }],
+            eml: "/records/oprd/eml/2026-09-08_0947_odot-no-responsive-records-r027904.eml",
+        },
+        {
             id: "records-request-director-and-deputy",
             ulid: "01M1SWHHM8QSPN71SK56Q97F8C",
             flagged: true,
@@ -5780,6 +5796,24 @@ export const OSP_THREAD: RecordsThreadData = {
                 "The reference number is noted and the characterization corrected: what was served preserves rights and asks for an accounting and an independent investigation, not adjustment. No settlement is sought, no confidentiality will be accepted, and everything in the matter remains published.",
             docs: [{ label: "Notices, not a claim application", href: "/records/osp/2026-09-04-notices-not-a-claim-application.pdf" }],
             eml: "/records/osp/eml/2026-09-04_0909_notices-not-a-claim-application.eml",
+        },
+        {
+            id: "portal-submission-received-p195427",
+            ulid: "01M20Y81R0ZC1ZN8VCB9B06NZJ",
+            date: "September 8, 2026",
+            d: "2026-09-08",
+            time: "9:40 AM",
+            from: "DAS Risk Management",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The portal filing, acknowledged with the report attached",
+            summary:
+                "The automated receipt for the ORS 30.275 notice entered through the Department's own online claim form: submission and attachments received, claim P195427 opened alongside P195403, an adjuster to be assigned. The Department's own copy of the submitted report is attached as received.",
+            docs: [
+                { label: "The portal filing, acknowledged", href: "/records/osp/2026-09-08-portal-submission-received-p195427.pdf" },
+                { label: "The submitted report, as returned by DAS", href: "/records/osp/attachments/2026-09-08-portal-submission-p195427-IR.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-08_0940_portal-submission-received-p195427.eml",
         },
         {
             id: "the-first-act-of-state-power",
