@@ -45,10 +45,15 @@ export default function RecordsRequestsPage() {
         >
             <div className="mb-8 space-y-4 text-base">
                 <div>
-                    This page tracks the public records requests in this matter. For each agency: what
-                    was asked, what the agency has said it holds, what is withheld and on what basis,
-                    a statute, a fee, or silence, the clocks running on both sides, and the process it
-                    took to get here.
+                    When an institution chooses silence, you can force a response through public records.
+                    A letter can be ignored; a records request cannot be ignored quietly. Its deadlines
+                    are statutory. Every answer becomes a public record. Every refusal must name its
+                    basis, and every silence gets a date.
+                </div>
+                <div>
+                    They are losing to it because each of their moves is now on this page: what was
+                    asked, what they said they hold, what they withhold and on what basis, a statute,
+                    a fee, or silence, and the clocks running on both sides.
                 </div>
                 <div>
                     The documents themselves live in the{" "}
