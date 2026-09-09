@@ -8,10 +8,10 @@ export const archiveSections = [
         href: "/accountability",
         label: "Accountability",
         subsections: [
-            { href: "/accountability/oprd", label: "Oregon Parks & Recreation" },
-            { href: "/accountability/osp", label: "Oregon State Police" },
             { href: "/accountability/governor", label: "Office of the Governor" },
+            { href: "/accountability/osp", label: "Oregon State Police" },
             { href: "/accountability/lane-county", label: "Lane County Sheriff" },
+            { href: "/accountability/oprd", label: "Oregon Parks & Recreation" },
         ]
     },
     { href: "/records-requests", label: "Records Requests" },
