@@ -48,12 +48,12 @@ export default function RecordsRequestsPage() {
                     When an institution chooses silence, you can force a response through public records.
                     A letter can be ignored; a records request cannot be ignored quietly. Its deadlines
                     are statutory. Every answer becomes a public record. Every refusal must name its
-                    basis, and every silence gets a date.
+                    basis. Every silence gets a date.
                 </div>
                 <div>
                     Each of their moves is now on this page: what was asked, what they said they hold,
-                    what they withhold and on what basis, a statute, a fee, or silence, and the clocks
-                    running on both sides. The documents themselves live in the{" "}
+                    what they withhold and on what basis, and the clocks running on both sides. The
+                    documents themselves live in the{" "}
                     <Link href="/accountability" className="underline text-emerald-800 hover:text-emerald-600">accountability registers</Link>;
                     this page keeps the score.
                 </div>

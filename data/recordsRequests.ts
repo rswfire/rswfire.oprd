@@ -40,6 +40,37 @@ export interface AgencyRequests {
 
 export const RECORDS_REQUESTS: AgencyRequests[] = [
     {
+        slug: "governor",
+        agency: "Office of the Governor",
+        refs: "Request of September 5, 2026",
+        status: "Gathering records.",
+        asked: [
+            "All records concerning him held by the office, in any division or function",
+            "The routing and disposition of every letter he sent: tracking entries, assignment records, and any record of a decision not to respond",
+            "Internal briefings, memoranda, and talking points prepared about him, and who prepared them for whom",
+            "All communications with OPRD, OSP, DOJ, DAS, or any other agency concerning him",
+            "Any record that the Governor was personally informed, any direction given by her or her staff, and every meeting or briefing at which he was discussed",
+            "Recurring briefing documents in which he or the archive appears; campaign-adjacent communications on state systems; responsive records held in personal accounts or devices",
+            "Any record disclosing his personal information to any person or agency; all records concerning the archive, his requests, claim P195403, or the legal fund",
+        ],
+        claims: [
+            "September 8, 2026: the office will begin gathering responsive records “to the extent records exist,” with the Government Accountability Attorney as point of contact.",
+        ],
+        withheld: [],
+        deadlines: [
+            {
+                d: "2026-09-29",
+                date: "September 29, 2026",
+                who: "them",
+                what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days from the September 8 acknowledgment",
+            },
+        ],
+        timeline: [
+            { d: "2026-09-05", date: "September 5, 2026", event: "Request filed, native format, fee waiver on public-interest grounds, litigation hold noted under claim P195403" },
+            { d: "2026-09-08", date: "September 8, 2026", event: "The office responds: gathering records; Cameron Miles, Government Accountability Attorney, copied as contact" },
+        ],
+    },
+    {
         slug: "osp",
         agency: "Oregon State Police",
         refs: "PR27478 · PR36445",
@@ -150,26 +181,23 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
     {
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
-        refs: "Request of September 5, 2026",
+        refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",
         status: "Pending. No acknowledgment.",
         asked: [
-            "All communications concerning him sent or received by Director Lisa Sumption, in any medium, on any device or account used for Department business",
-            "The same for Deputy Director J.R. Collier, and all communications between the two of them concerning him",
-            "All notes, memoranda, summaries, calendar entries, and handwritten notes authored by either concerning him",
-            "Any record of a direction or instruction given by either concerning him, including any instruction on whether or how staff should respond to his correspondence",
-            "February 1, 2025 to the present. Two custodians only, by design.",
+            "August 22, 2025: thirty-three categories across volunteer program operations, Honeyman State Park operations, administrative communications, investigations, and his own employment applications",
+            "April 2, 2026: all OPRD communications with the U.S. Forest Service, Oregon State Police, or Lane County Sheriff's Office referencing him, and all internal communications referencing him or the archive",
+            "May 2, 2026: every public records request the Department received since 2023 and how each was handled, and every record of executive involvement in public records responses",
+            "September 5, 2026: every communication, note, calendar entry, and instruction concerning him held by Director Sumption and Deputy Director Collier, February 1, 2025 to the present, in any medium, on any device used for Department business, including any instruction on whether or how staff should respond to his correspondence",
         ],
         claims: [
-            "Nothing. The Department has not acknowledged the request.",
+            "August 28, 2025, by phone: an attempt to narrow the request. Then silence.",
+            "November 20, 2025, after a notice of violation: the response had been posted August 29 to an internal portal he had no access to and was never told existed, with estimates in the tens of thousands of dollars. He withdrew the request.",
+            "April 10, 2026: a cost estimate pricing volunteer-program categories at forty to eighty hours each, and the law-enforcement coordination records, the ones that would show what preceded the March 24 visit, at two to five hours.",
+            "May 4, 2026: the no-cost items produced, with a review of law-enforcement emails promised within the week. He closed all requests with the Department that evening.",
+            "Nothing on the September 5 request. The Department has not acknowledged it.",
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
         ],
-        withheld: [
-            {
-                item: "Everything requested",
-                basis: "silence",
-                detail: "No acknowledgment yet; the five business days ORS 192.324 allows run through September 15",
-            },
-        ],
+        withheld: [],
         deadlines: [
             {
                 d: "2026-09-15",
@@ -185,40 +213,19 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             },
         ],
         timeline: [
-            { d: "2026-09-05", date: "September 5, 2026", event: "Request filed: two custodians, every medium, response-handling instructions included" },
-            { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices" },
-            { d: "2026-09-08", date: "September 8, 2026", event: "The ODOT statement forwarded to the Director for the record: undisputed, it stands as accurate" },
-        ],
-    },
-    {
-        slug: "governor",
-        agency: "Office of the Governor",
-        refs: "Request of September 5, 2026",
-        status: "Gathering records.",
-        asked: [
-            "All records concerning him held by the office, in any division or function",
-            "The routing and disposition of every letter he sent: tracking entries, assignment records, and any record of a decision not to respond",
-            "Internal briefings, memoranda, and talking points prepared about him, and who prepared them for whom",
-            "All communications with OPRD, OSP, DOJ, DAS, or any other agency concerning him",
-            "Any record that the Governor was personally informed, any direction given by her or her staff, and every meeting or briefing at which he was discussed",
-            "Recurring briefing documents in which he or the archive appears; campaign-adjacent communications on state systems; responsive records held in personal accounts or devices",
-            "Any record disclosing his personal information to any person or agency; all records concerning the archive, his requests, claim P195403, or the legal fund",
-        ],
-        claims: [
-            "September 8, 2026: the office will begin gathering responsive records “to the extent records exist,” with the Government Accountability Attorney as point of contact.",
-        ],
-        withheld: [],
-        deadlines: [
-            {
-                d: "2026-09-29",
-                date: "September 29, 2026",
-                who: "them",
-                what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days from the September 8 acknowledgment",
-            },
-        ],
-        timeline: [
-            { d: "2026-09-05", date: "September 5, 2026", event: "Request filed, native format, fee waiver on public-interest grounds, litigation hold noted under claim P195403" },
-            { d: "2026-09-08", date: "September 8, 2026", event: "The office responds: gathering records; Cameron Miles, Government Accountability Attorney, copied as contact" },
+            { d: "2025-08-22", date: "August 22, 2025", event: "Comprehensive request filed: thirty-three categories" },
+            { d: "2025-08-28", date: "August 28, 2025", event: "A phone call attempting to narrow the request; he declines and asks for everything in writing" },
+            { d: "2025-08-29", date: "August 29, 2025", event: "A response posted to an internal portal he cannot access and was never told existed" },
+            { d: "2025-11-15", date: "November 15, 2025", event: "Notice of violation after eighty-five days of silence" },
+            { d: "2025-11-20", date: "November 20, 2025", event: "The portal posting surfaces, with estimates in the tens of thousands; the request withdrawn" },
+            { d: "2026-04-02", date: "April 2, 2026", event: "New request: OPRD's communications with law enforcement about him, and everything internal referencing him or the archive" },
+            { d: "2026-04-10", date: "April 10, 2026", event: "Cost estimate: the law-enforcement records priced at two to five hours" },
+            { d: "2026-04-14", date: "April 14, 2026", event: "Estimates rejected; fee waiver demanded on indigence and public-interest grounds" },
+            { d: "2026-04-29", date: "April 29, 2026", event: "Acknowledgment; no-cost items promised by May 1" },
+            { d: "2026-05-01", date: "May 1, 2026", event: "The May 1 commitment not fulfilled; nothing received" },
+            { d: "2026-05-04", date: "May 4, 2026", event: "No-cost items arrive in the morning; the May 2 compliance request acknowledged; he closes all requests with the Department that evening" },
+            { d: "2026-09-05", date: "September 5, 2026", event: "The current request: two custodians, every medium, response-handling instructions included" },
+            { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices; the statement forwarded to the Director for the record, undisputed" },
         ],
     },
 ];
