@@ -221,6 +221,47 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
     },
     {
+        slug: "lane-county",
+        agency: "Lane County Sheriff's Office",
+        refs: "P015875-090926",
+        status: "Filed September 9. Receipt confirmed.",
+        officers: [
+            { name: "Evan Meyers", role: "Deputy" },
+        ],
+        asked: [
+            "The March 27, 2026 email from SA Oliver to Deputy Meyers, with all attachments, as held by the county",
+            "Every communication with the Forest Service, OSP, OPRD, the FBI or any task force, or any other agency concerning him, including every update after March 27",
+            "Every record in county systems indexed under his name, date of birth, driver's license number, email, the archive, or the Siltcoos Work Center: CAD, RMS, incident and case records, flags, alerts, advisories, bulletins, briefing notes, officer notes",
+            "Any patrol advisory or instruction concerning him or law-enforcement response at the Siltcoos Work Center",
+            "Everything Deputy Meyers authored, received, or holds concerning him, and his assignment and patrol area in March 2026",
+            "Any onward dissemination of his information by the county",
+        ],
+        claims: [
+            "September 9, 2026, minutes after filing: receipt confirmed, reference P015875-090926 assigned.",
+        ],
+        withheld: [],
+        produced: [],
+        deadlines: [
+            {
+                d: "2026-09-16",
+                date: "September 16, 2026",
+                who: "them",
+                what: "Acknowledge or complete the September 9 request: ORS 192.324 allows five business days",
+            },
+            {
+                d: "2026-09-30",
+                date: "September 30, 2026",
+                who: "them",
+                what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days",
+            },
+        ],
+        timeline: [
+            { d: "2026-03-27", date: "March 27, 2026", event: "SA Oliver sends Deputy Meyers the file: name, date of birth, driver's license number, residence, schedule, correspondence, text messages; “will keep you up to date”" },
+            { d: "2026-09-09", date: "September 9, 2026", event: "Correction letter to SA Oliver, Deputy Meyers copied: the false characterizations corrected, preservation of the March 27 email demanded" },
+            { d: "2026-09-09", date: "September 9, 2026", event: "Request filed through the county's records portal; receipt confirmed within minutes, reference P015875-090926" },
+        ],
+    },
+    {
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",

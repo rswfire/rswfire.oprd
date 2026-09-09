@@ -1,0 +1,288 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from EAYPR14MB958570.namprd14.prod.outlook.com
+ (2603:10b6:303:2d2::10) by CH2PR14MB4181.namprd14.prod.outlook.com with
+ HTTPS; Wed, 9 Sep 2026 19:27:36 +0000
+Received: from IA1P220CA0009.NAMP220.PROD.OUTLOOK.COM (2603:10b6:208:461::6)
+ by EAYPR14MB958570.namprd14.prod.outlook.com (2603:10b6:303:2d2::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.8; Wed, 9 Sep 2026
+ 19:27:32 +0000
+Received: from BL6PEPF0001AB4D.namprd04.prod.outlook.com
+ (2603:10b6:208:461:cafe::97) by IA1P220CA0009.outlook.office365.com
+ (2603:10b6:208:461::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.8 via Frontend Transport; Wed, 9
+ Sep 2026 19:27:32 +0000
+Authentication-Results: spf=pass (sender IP is 168.245.107.68)
+ smtp.mailfrom=em9851.govqa.us; dkim=pass (signature was verified)
+ header.d=govqa.us;dmarc=pass action=none header.from=govqa.us;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em9851.govqa.us
+ designates 168.245.107.68 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.245.107.68;
+ helo=o2.sgmail.govqa.us; pr=C
+Received: from o2.sgmail.govqa.us (168.245.107.68) by
+ BL6PEPF0001AB4D.mail.protection.outlook.com (10.167.242.71) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.5
+ via Frontend Transport; Wed, 9 Sep 2026 19:27:31 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1788982050;
+	bh=KkIHagnQEEN9yHUMVwOXodxEQraeR43slRQtJk28MHU=;
+	b=JGXi+FtG3mAHVp3sKk7pTWScPOnxFlZT14N4VeXCbPRLKOGKgoHpWXxXw2nEVzSleym8
+	B4u/FMyjWwO+VeIV8oZQwoeDePspZ1zXC44Da4P3EcRxJh9vVwTFJqcpBAgSexnyI67e3V
+	wqc0XL3XZXKWChHeYOPAd8g7805YpRZdltAl5eCBVb4X55LbtOeiiAHEimmAFgICBZedJp
+	bNTpHLExdck/dcHRuZF562DJoW7TJHReTq22jB6qchqoqdjoBBIwtSlS9kNim9prO5b3B1
+	hGnjF938cRVs/TWLA+Nv2oW1grs3y53zgaZBOX0TsHk0gsL1EJrLxnSpa7OKfH/w==
+Received: by recvd-68fdbf8579-8sc4j with SMTP id
+ recvd-68fdbf8579-8sc4j-1-6AA1B322-8C
+	2026-09-09 19:27:30.663271089 +0000 UTC m=+1371773.371156643
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-79 (SG) with HTTP
+	id oFYWJF-dTCiPlDsJ9uVdOg
+	Wed, 09 Sep 2026 19:27:30.633 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Wed, 09 Sep 2026 19:27:30 +0000 (UTC)
+From: Lane County Sheriff's Office Records <lcso@govqa.us>
+Message-ID: <oFYWJF-dTCiPlDsJ9uVdOg@geopod-ismtpd-79>
+Subject: Public Records Request :: P015875-090926
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EWmvlIxj7mK2v72OPc0ikVHC3YU7tjxpNmyy8dP30lzMVsNig2Biv0u3vk?=
+ =?us-ascii?Q?AZP4b4vzpIWC409dAyGtVCDgqlptfOez+lkrplk?=
+ =?us-ascii?Q?JrO+pJTm485A85P9sh0OO6L0n3PGxW=2FDSrb+2gG?=
+ =?us-ascii?Q?BqkAug46sHWnKxFzER6nnvreVv6ebIT9TeOZSKS?=
+ =?us-ascii?Q?uJPa7EaM0pdrYwQbluKsAKrLQ+exrAufUavA8Ph?=
+ =?us-ascii?Q?u2ggSuYrlQd0ev7aYG4I4Oia4JvjOg3zCkLpYRf?= =?us-ascii?Q?+FMz?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdPi0HQLDnMyhFqR7bVEEG6AqAw6Wdvta=2F?=
+ =?us-ascii?Q?tVihrOQE9J71F8UHaP006V6khmUalX7SmY=2FR24M?=
+ =?us-ascii?Q?Bk4tc+UBExgWPT+rfvpcL4Dz+zWeio58ssOe5=2FY?=
+ =?us-ascii?Q?0bybxsaGQHQXGwywM=2F?=
+To: "rsw@rswfire.com" <rsw@rswfire.com>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+Return-Path: bounces+8387778-9cd5-rsw=rswfire.com@em9851.govqa.us
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Sep 2026 19:27:31.6760
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ fa425daa-dd0b-4e0c-bda9-08df0ea864b4
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL6PEPF0001AB4D:EE_|EAYPR14MB958570:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL6PEPF0001AB4D.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: fa425daa-dd0b-4e0c-bda9-08df0ea864b4
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|7049299003|3109299003|7149299003|12012899012|69100299015|29132699027|5073199012|10067099003|3023799007|18003699003|19002099009|16102099003|56012099006|5023799004|5063699009|4076899003|8096899003|55112099003|80162021;
+X-Forefront-Antispam-Report: 
+ CIP:168.245.107.68;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.sgmail.govqa.us;PTR:o2.sgmail.govqa.us;CAT:NONE;SFS:(13230040)(7049299003)(3109299003)(7149299003)(12012899012)(69100299015)(29132699027)(5073199012)(10067099003)(3023799007)(18003699003)(19002099009)(16102099003)(56012099006)(5023799004)(5063699009)(4076899003)(8096899003)(55112099003)(80162021);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Sep 2026 19:27:31.5650
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ fa425daa-dd0b-4e0c-bda9-08df0ea864b4
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL6PEPF0001AB4D.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EAYPR14MB958570
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2896273
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710232)(4713193)(4999285)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?utf-8?B?SlE3dHZxdzREdlVTVU53YkY5aCtsbzlaaUFnYkQvOXY0TjZOTTBTcHlJWHZR?=
+ =?utf-8?B?dE9Ob3ZPaHBmUnhQZUMwV3ZMd1NzQUd4NFVOaUlvcmdkMXlZN0JCbjkxekF0?=
+ =?utf-8?B?T2Ryb1V4RitmY3BXY24xWEdmQ1lNVERJVmYwd3ByRG5TVDFvemF0bEtWQ0No?=
+ =?utf-8?B?RDNrVUNTMzlFOGI0dm1tQmpmeXB3RHJsMnBnczF3ZWg0OVJSN25HNlVGVzdK?=
+ =?utf-8?B?STYrdFZmVGFzREpBQTdmK0QwcnVtaVlJbjhobTRWNVJIT2ZhcE1IazhWaHFl?=
+ =?utf-8?B?azc5WWxjWVRaTDJOUnFxWUhUYTBWbHNUUHRoWU1jVW1sdWlGRlNJbitwSGtM?=
+ =?utf-8?B?KzlUR3FyV3IyNXQxV0R4c0Z4dmxmUXZyNGNKNGk3dkpwZ0U4QzF6L3VCMktO?=
+ =?utf-8?B?SHJMYkV1UitEZEZML01kUExIZ3l2ajR6QnJlOXJOSXNBelY4OVR0SGsvRStR?=
+ =?utf-8?B?RVlLaDNFNDdDT1RSUWxSa0liNWg0YTJxZFgvZ2pnb3IwM2NRckhmemYydE4w?=
+ =?utf-8?B?cUFJNVpFL0JuUzBpamxXM1ZNL1UzbUtGVHN1Tk5PRjNvQ0xjTm5tbDVRZnF1?=
+ =?utf-8?B?T1BPd0tNeDN1QzZlVnNjWE16MGRpc1luV0p3QVVUUXIvN0JhUkZxWkpLdlR2?=
+ =?utf-8?B?TzQzTVB6ZWdKcTNmZWJ6T0c2Y0x0c1BUTThOamRmTVlrZGszYkIrUUd3VE5s?=
+ =?utf-8?B?aldWYXF4Zm8zR3Z3cXd4SmZYZ2J5ZUU3bDFjVDZtU3BBaVgzNGdiSmw4WHJG?=
+ =?utf-8?B?WEJUcUVmcWJDd1dWUFlGZDhOc05vRVJJRW14TFlDb2p4aWs4ZytjNWxRTWg4?=
+ =?utf-8?B?aGhCNy81NGYvb0xYVFBqa2svWjBlRGc2NzFPMmRVS1dHbjdFVVJSTWNTUVJl?=
+ =?utf-8?B?bUlHTzFoZmU5SDJ6VXdjWVdPeEsveUdpanhKazZDQ2pUejFhbE5Pdi9WMHFR?=
+ =?utf-8?B?TEdha2J1RWFhemtUQ3RUcVpFYU9mUXJPbTYxM1k4UlZtL1cxdnZGTHhyRmFF?=
+ =?utf-8?B?UUlBVDJDTTRTS2tqSEtVUjFpTk1ZdThPSE9jcjE0TFNFYmlJbzFCSm11VklL?=
+ =?utf-8?B?TFJYOUNaN0VnbWNmajIxOXdsUURtT2ZEdE1TSVdGZWZXT3ZiQjRQSWZOY2Q4?=
+ =?utf-8?B?MDAzQ2Npc051L0pkM3grV2JkS1NhdzlPNUtDTG1UYUs4ZnRlOXJzKzgyWUM5?=
+ =?utf-8?B?S0llR2RrSHBDaXhEY0pwNnd1dVd6emM0cTFsYXZnL2VrZVY1a1RaWlhmUlYw?=
+ =?utf-8?B?WmtCNHdpeGFVbkxzdDErNlRuTlptN0xvdGp4dlo2NVBFcklQYUREVDBpSmNF?=
+ =?utf-8?B?bkZPWHF0RFlaZ2ZhMERiR3dZUUVNQ2xLM3JnaDhQa0taUTRoNjlEb0hlTkY2?=
+ =?utf-8?B?eXVLQmJ1eGd1SDRvWFdoMGFMN1NvRzdnTUdZMUtFZ2tvRjArK0tTMzFoZ0d2?=
+ =?utf-8?B?OGtWa3B5SUJmSjdqZDQ0WFNKSlh5YW5OWTFDVnc5cEhpaStEOEU0M1JqakNK?=
+ =?utf-8?B?K08xRE5KOHpURkpzN0tDc0FmTUVBckVJWHZub2NaRVVicE5DYkNnQ05iQWox?=
+ =?utf-8?B?b29aVFhubENHeVlYcnJzdEkwbkJ5TUs3eHVqUnE5cFU5UlBIRmZSb2g3aHJL?=
+ =?utf-8?B?cHl3UFhsK3BYYzFnd0xwOURKRmM3ZlQvR05kV2NXMEx0NmdTZjBodk9UcHVF?=
+ =?utf-8?B?RURFU0c5eXM4NDBERHhpTnVaY1VDb1p4dWhGRDdWNkNic0s2ek82dWU1c3F1?=
+ =?utf-8?B?bXZSS0hIQmZxVGlORTVEZzV0Sk8xbFU1bTZUSUw4T2NDbXIrampSMXUrMkxp?=
+ =?utf-8?B?OUk5UXM3SVJTNnVGVUtoSTBwRVRxaEhXVGpnZ3B4ek1Kb0lSeURKd3M2cXcx?=
+ =?utf-8?B?TDVVT1dxcjJRTWZXQTZhMmFpWCtHbnZyWlBjT2JSSzgwdXd5MlliY1F3UjhV?=
+ =?utf-8?B?OTFjNGZnTTZrMlZIVGd5OVRDUFhiQXZsYkhTQnd2NEpxdFBzMDNpMzhUUFd5?=
+ =?utf-8?B?ZmtQTzUwOFZhWSs5OU1xajZya0xZalBrRks3K0NYaUZ1T1hxTCttc0dhYWIw?=
+ =?utf-8?B?Q1l5S0ZzMC9tN3RVNDY0bWYyRGwxSW5EOFpJWDVnb1ZRTVhUOUZ6ZkJoSUJO?=
+ =?utf-8?B?b3QvbnNwOTF4ZWE4bWVkdGZxMEF3SXhsVUhIcVFUUG42R04rMzhHdDJZZlNT?=
+ =?utf-8?B?dGIwY2w1dmluUWJNekhTTC9sVU04QVFFdm5sREdTSXhCcmNSWHFkYTlhZnRs?=
+ =?utf-8?B?N3g1U2xFWW5VZERvV1cxVXdlQzAzTzY2aGxYRS85ZDdRVjExTElRRlRVMWVF?=
+ =?utf-8?B?cTRndkZ4ZnFaclloUzNyYUh0R2xqSTF0dm9CRzNYU0xnaWhNeXVvWWFhS2E5?=
+ =?utf-8?B?UThaYkxDcmlMazR0ZkhzWDBNZXdGMWZYbDFva2pvMlZ1UW9ZRFo0NHlHc0cx?=
+ =?utf-8?B?U0UxUWhTZ0xTR1U2TVFBQ0R6TG1uZ0tGVFNmSVUzUWwraEJCeStpVmdhbHpl?=
+ =?utf-8?B?YVlYczNYLys1ckE0TG9NSkdnMWlKd25pNFpDZWw4L05rT2JxODdkMjVxWGk4?=
+ =?utf-8?B?TS9tbW8zdWpyVVdZY2lKQWI0TlpOMmdHbFl0dXROT013M2lPVFVJVlYvbjAx?=
+ =?utf-8?B?QjNISW1BQlZCd1ZVdEhzNElHUXc1bERiMmFBZXUvc2cvNXpGbzAzN0tWcWFr?=
+ =?utf-8?B?aFhvcnJyRHU2OWlOMVlnSGVteDBtMnl1RFZNNDRWZ1lIbFF2RVd4T2ozUHhG?=
+ =?utf-8?B?d29ocWxyWmJNbDI5L0NKNVkzOVJnazM1SnNLMHZya2ZCQS9yYTJ5bjNDTm9S?=
+ =?utf-8?B?ak5odmY4VzU2cDIyRHF2SnpJaW5qU1ZxR1Ywc2k3RDYzRGFCZ2I5cGVGRFdU?=
+ =?utf-8?B?UnpYSnJ5QmRDNTdEeWpvclVRb2Fid2pOOUpTZmJlMnYyZFY5ekpnYithNVVG?=
+ =?utf-8?B?NDI0aTZxMEtmZklFRmNuMUgwNXA1ZnZSZzJkWW4zSVVpaWdTK09uMVVUWGp5?=
+ =?utf-8?B?UHRObkdHUmhGZFozRmxmZVNZaHJEOEFBODkvQUkyYmJia3BFNmhqMElDYUJj?=
+ =?utf-8?B?UmFyN2FUeW9ZVTYzakxwcy9FU09BN3ZNMzFzM1RpZUl6VG1KTzBKL2NIUWJS?=
+ =?utf-8?B?Skg3eTZvTXlMKzBwTmJENTBndXVOazJtNyttZll0V1grRURDOEtUMHE3L0lQ?=
+ =?utf-8?B?a2xja2J0dEl3Nnh3MVRUVUtEVmtwZXMzOUcvemc1MFZCQm93TWVmMFYwM1Zo?=
+ =?utf-8?B?b3VhWE5sWkNYZ3pneXZLeEU4bWNEVXdRZTRDVUd3WTNZQWowTDJqdm1DRUdS?=
+ =?utf-8?B?Wld0c3BFaFhURk1DNGF4anVENGlPNEZzYVZUY0ZjTE5rd2kvOU1FcUliY1pZ?=
+ =?utf-8?B?OGFBWkFmTkJkWUpaVmt5VXMySnNkZjd2SXRXNzBWaVg3dUNPWEtSa2dhS2FE?=
+ =?utf-8?B?Q2NHeGhwZEFvQmVlL05hTHNvUUNDVTZWaFI1WnV4eFR2VTdkbnRkMC9ucTUv?=
+ =?utf-8?B?VEtvdFZtdStKeXhXRGMrczlpa1dRcXhiWW9SOE9HYWp6TDdBbUo1YTV5THhY?=
+ =?utf-8?B?NUhLWlNKM3k2eG1uOXdnMngzckFKeldJVWZ4djFRRnBHYVpRPT0=?=
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><br><br><div style=3D"align: center; padding: 10px; border: 3px solid=
+ #808080; border-radius: 5px;">
+<div><strong><span style=3D"color: #000000;"><img alt=3D"" src=3D"https://u=
+ploads.govqa.us/LCSO/IntranetSmallerGoldStar.jpg"></span></strong></div>
+<div><hr>
+</div>
+<div>Dear Robert Samuel White:<br>
+<br>
+Thank you for your interest in public records of Lane County Sheriff's Offi=
+ce. Your request has been received and is being processed in accordance wit=
+h the Oregon Public Records Law. </div>
+<div>&nbsp;</div>
+<div>Your request was received in this office on <strong>9/9/2026</strong> =
+and given the reference number <strong>P015875-090926</strong> for tracking=
+ purposes.<br>
+<br>
+Your request will be forwarded to the relevant department(s) to locate the =
+information you seek and to determine the volume and any costs associated w=
+ith satisfying your request. You will be contacted about the availability a=
+nd/or provided with copies of the records in question. PLEASE NOTE: The Ore=
+gon Public Records Law does not require a governmental body to create new i=
+nformation, to do legal research, or to answer questions.</div>
+<div>&nbsp;</div>
+<div><strong>Records Requested:</strong> To the Records Officer, Lane Count=
+y Sheriff's Office:<br><br>This is a request under the Oregon Public Record=
+s Law.<br><br>I am Robert Samuel White, date of birth April 11, 1977. On Se=
+ptember 3, 2026, Oregon State Police produced its file on me under public r=
+ecords request PR27478. That production contains an email dated March 27, 2=
+026, 11:04 AM, from U.S. Forest Service Special Agent Matthew Oliver to Dep=
+uty Evan Meyers at evan.meyers@lanecountyor.gov, subject &quot;Siltcoos WC =
+Volunteer,&quot; copied to two OSP detectives. It transmitted my name, my d=
+ate of birth, my driver's license number, my residence, my work schedule, m=
+y duties, my correspondence, and my text messages, and it closed with a com=
+mitment to &quot;keep you up to date.&quot; I committed no crime; the OSP f=
+ile itself concludes as much. This request concerns what your office receiv=
+ed, what it created, and what it did with it.<br><br>Unless otherwise noted=
+, the period requested is January 1, 2025 to the present.<br><br>I request =
+the following.<br><br>The March 27, 2026 email described above, with all at=
+tachments, as held by Lane County.<br><br>All communications between any La=
+ne County Sheriff's Office employee and Special Agent Oliver or any other U=
+.S. Forest Service employee concerning me, the Siltcoos Work Center, or the=
+ archive at oprdvolunteerabuse.org, including every update received after M=
+arch 27, 2026.<br><br>All communications between any Lane County Sheriff's =
+Office employee and any employee of Oregon State Police, including Detectiv=
+es Jake Hyde and Jerred Nelson, Sergeant Sean Henderson, and Lieutenant Hal=
+ey McQuillan; the Oregon Parks and Recreation Department; the FBI or any ta=
+sk force; or any other agency, concerning me.<br><br>Every record in county=
+ systems indexed under Robert White, Robert Samuel White, Robert S. White, =
+Sam White, my date of birth, my driver's license number, rsw@rswfire.com, o=
+prdvolunteerabuse.org, or the Siltcoos Work Center as it relates to me: CAD=
+ entries, records management system entries, incident or case records, flag=
+s, alerts, advisories, bulletins, briefing notes, and officer notes.<br><br=
+>Any record reflecting a patrol advisory, instruction, or direction concern=
+ing me or concerning law enforcement response at the Siltcoos Work Center.<=
+br>All records authored, received, or held by Deputy Evan Meyers concerning=
+ me, in any medium, including notes and calendar entries.<br><br>Any record=
+ reflecting dissemination of my information by Lane County to any person or=
+ agency.<br><br>Records sufficient to identify Deputy Meyers's assignment a=
+nd patrol area during March 2026.<br><br>Administration<br><br>Fee waiver. =
+I request a waiver under ORS 192.324(5). Disclosure primarily benefits the =
+general public: these records concern how a citizen's personal file, assemb=
+led over speech the reviewing agencies concluded involved no crime, was cir=
+culated to a fourth agency. I have no commercial purpose. All records produ=
+ced will be published in full, at no charge, at oprdvolunteerabuse.org.<br>=
+<br>Acknowledgment and timeline. ORS 192.324(2) requires acknowledgment or =
+completion within five business days, and ORS 192.329(5) requires a reasona=
+ble estimated completion date where a response cannot be completed within f=
+ifteen business days. I request both in writing.<br><br>Fees. ORS 192.324(4=
+) prohibits a fee exceeding $25 without prior written notice. If a fee is t=
+o be charged, I request that notice with an itemized basis before any work =
+is performed, and the opportunity to narrow the request rather than have it=
+ held pending payment.<br><br>Format. Electronic delivery, native format, w=
+ith headers, recipients, timestamps, metadata, and attachments preserved an=
+d intact.<br><br>Preservation. Please treat all records responsive to this =
+request as subject to litigation hold. I have served notice of tort claim o=
+n the State of Oregon under ORS 30.275; the Department of Administrative Se=
+rvices holds claims P195403 and P195427. On September 9, 2026, I asked Depu=
+ty Meyers in writing to preserve his copy of the March 27 email, its attach=
+ments, and my correction letter.<br><br>Disposition. For each numbered item=
+, please state whether responsive records exist, produce them, or cite the =
+specific exemption claimed for each record or portion withheld, as ORS 192.=
+329(2) requires. If Lane County is not the custodian of a category, please =
+identify the custodian rather than closing the request as to that category.=
+ ORS 192.311(2)(b).<br><br>Robert Samuel White<br>P.O. Box 334, Reedsport, =
+Oregon 97467<br>rsw@rswfire.com =E2=80=94 458-230-1869<br>
+<br>
+You can monitor the progress of your request at the link below and you'll r=
+eceive an email when your request has been completed. Again, thank you for =
+using the Public Records Center.</div>
+<div>&nbsp;</div>
+<div>Thank you,</div>
+<div>
+Lane County Sheriff's Office</div>
+<hr>
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a title=3D"Public Records Center" href=3D"ht=
+tps://u8387778.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXWzs=
+TT53xaujT56bk1UJhL-2F8mTZvAqA-2BKujYC-2BXVv9jQ71jvu-2FnZlMGI562JQabfuw-3D-3=
+DTYUg_wlXzD5uqFWDsXkrpcvabptj2v-2Bi3pT1KSLgEiHC2uGS-2Fpj2OTIj-2B8irCUBY5NPn=
+yHrrczNWTaw07JUTC9UtME2IV0DGYxtFQHjeSTJoNsxzaXN6Kg22pzNBcehJeXekTDuu7WRXC6z=
+mAOrtlV54XphR-2BL4OlrXWQK3Qkj7ukxBcmUNNAq39f-2FN6atQ-2BsOM2waiuqDwJSWO9RuC-=
+2FwhQYqaZe3bti0mgec8HkbgviiccRtdflDFb-2Fy3xvJGddDOTRGHu8JmPbVUBmpmgTrPZMih-=
+2FqE1ZGaRSfItr5Z5pSqLQEzCCuTz8qMPYx3sepp-2BfYidWT-2B-2BScUFuLvqfGzVBa0VdQZZ=
+-2FeHZHkZdCTApsRWT1A-3D" target=3D"_blank">Public Records Center</a></div>
+<div><center><br>
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo"></center></div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.h3EN9=
+jRrVtTuLI-2FpKregpaF3pb25dG7v2oXU5CnYhypiMEsK8XeakoY1bS3aoRN-2FEgQIXLlRaXAu=
+NVZmkMlMXsIMq1BSHy0E6TyHJi63wzsyr5yFR7s7Pm0n2Z90jrhnCk3IEEjhPl0v343aaEohE1Z=
+rLZN8FURb7MQcBt4hxkjUmzLtSwUz7MbqjPkNZ4GXfRwad4DDuhiADtMFdXF6KnCBJNQ94Kbln5=
+PXGCAqHeXMBk-2BXTVDlDVVBdNHTyEzCgkfI3mBLUqEBl576uNHl9p9synR-2FRsQgYHnWXb2dY=
+iqJeaSv7p5qSMGBNd3wCo2jg0xqO0Bc9ojLIR3zSUIfDg0s92nU7XpkbMT36H67fNo-3D" alt=
+=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;=
+width:1px !important;border-width:0 !important;margin-top:0 !important;marg=
+in-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;p=
+adding-top:0 !important;padding-bottom:0 !important;padding-right:0 !import=
+ant;padding-left:0 !important;"></body></html>
+

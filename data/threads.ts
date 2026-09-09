@@ -6785,4 +6785,32 @@ export const LEGISLATION_THREAD: RecordsThreadData = {
     ],
 };
 
-export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD];
+export const LANE_COUNTY_THREAD: RecordsThreadData = {
+    slug: "lane-county",
+    title: "Lane County Sheriff's Office",
+    agency: "Lane County Sheriff's Office",
+    matter: "The March 27, 2026 dissemination · Deputy Evan Meyers",
+    status: "Pending. P015875-090926.",
+    summary: [
+        "On March 27, 2026, hours after being asked to identify the officers who came to the door, U.S. Forest Service Special Agent Matthew Oliver sent Deputy Evan Meyers a file: name, date of birth, driver's license number, residence, schedule, duties, correspondence, and text messages, with a promise to “keep you up to date.” This register holds the correspondence with the fourth agency in the distribution.",
+    ],
+    filings: [
+        {
+            id: "request-filed-p015875-090926",
+            ulid: "01M23T7F6GKVBM4NFTK7597P0Q",
+            date: "September 9, 2026",
+            d: "2026-09-09",
+            time: "12:27 PM",
+            from: "Lane County Sheriff's Office Records",
+            to: "Robert Samuel White",
+            kind: "request",
+            title: "Request filed: everything the county holds. Reference P015875-090926",
+            summary:
+                "The request, filed through the county's records portal and echoed in full in the county's same-day receipt: the March 27 email and attachments, every interagency communication concerning him, every county system record indexed under his identifiers, any patrol advisory, everything Deputy Meyers holds, and any onward dissemination. Receipt confirmed within minutes.",
+            docs: [{ label: "Public Records Request P015875-090926", href: "/records/lane-county/2026-09-09-request-filed-p015875-090926.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-09_1227_request-filed-p015875-090926.eml",
+        },
+    ],
+};
+
+export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD, LANE_COUNTY_THREAD];
