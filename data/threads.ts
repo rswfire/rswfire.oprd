@@ -4890,6 +4890,22 @@ export const USFS_THREAD: RecordsThreadData = {
             docs: [{ label: "A proper thank you", href: "/records/usfs/2026-09-05-a-proper-thank-you.pdf" }],
             eml: "/records/usfs/eml/2026-09-05_0945_a-proper-thank-you.eml",
         },
+        {
+            id: "correction-for-the-record-oliver-to-meyers",
+            ulid: "01M23SJK7GFQVZK7TBD2XQSVTG",
+            flagged: true,
+            date: "September 9, 2026",
+            d: "2026-09-09",
+            time: "12:16 PM",
+            from: "Robert Samuel White",
+            to: "SA Matthew Oliver",
+            kind: "notice",
+            title: "Correction for the record: the March 27 email to Deputy Meyers",
+            summary:
+                "Four corrections to SA Oliver's March 27, 2026 briefing of Lane County Deputy Evan Meyers, sent to every recipient of the original: the dismissal letter's actual basis, the intimidation statement, the restricted-access dispute, and the veiled-threat claim no agency has ever produced a statement for. Preservation requested from Lane County and the Forest Service.",
+            docs: [{ label: "Correction for the record", href: "/records/usfs/2026-09-09-correction-for-the-record-oliver-to-meyers.pdf" }, { label: "SA Oliver's March 27 email to Deputy Meyers, as produced", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf" }],
+            eml: "/records/usfs/eml/2026-09-09_1216_correction-for-the-record-oliver-to-meyers.eml",
+        },
     ],
 };
 
