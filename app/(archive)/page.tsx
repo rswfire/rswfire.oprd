@@ -7,6 +7,7 @@ import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
 import RecordIndexCard from "@/components/RecordIndexCard";
+import RecordsRequestsCard from "@/components/RecordsRequestsCard";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
@@ -36,6 +37,10 @@ export default function OverviewPage() {
             <div className="mt-4">
                 <QueryableRecord />
             </div>
+
+
+            {/* RECORDS REQUESTS — the scoreboard across the agencies */}
+            <RecordsRequestsCard />
 
 
 

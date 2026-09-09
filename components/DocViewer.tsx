@@ -66,7 +66,10 @@ export default function DocViewer({
             return;
         }
         let alive = true;
-        fetch(`${PREFIX}/records/${doc.slug}/html/${doc.id}.html`)
+        // no-store: the render files appear after deploys, and a browser that
+        // cached a 404 from before a deploy would otherwise show the download
+        // fallback forever.
+        fetch(`${PREFIX}/records/${doc.slug}/html/${doc.id}.html`, { cache: "no-store" })
             .then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
             .then((t) => alive && setHtml(t))
             .catch(() => alive && setFailed(true));

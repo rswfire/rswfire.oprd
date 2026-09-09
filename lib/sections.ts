@@ -13,6 +13,7 @@ export const archiveSections = [
             { href: "/accountability/governor", label: "Office of the Governor" },
         ]
     },
+    { href: "/records-requests", label: "Records Requests" },
     { href: "#separator-3", label: "", separator: true },
     { href: "/timeline", label: "Timeline" },
     {
