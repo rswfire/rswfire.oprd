@@ -51,9 +51,9 @@ export default function RecordsRequestsPage() {
                     basis, and every silence gets a date.
                 </div>
                 <div>
-                    They are losing to it because each of their moves is now on this page: what was
-                    asked, what they said they hold, what they withhold and on what basis, a statute,
-                    a fee, or silence, and the clocks running on both sides.
+                    Each of their moves is now on this page: what was asked, what they said they hold,
+                    what they withhold and on what basis, a statute, a fee, or silence, and the clocks
+                    running on both sides.
                 </div>
                 <div>
                     The documents themselves live in the{" "}
