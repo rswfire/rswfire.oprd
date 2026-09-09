@@ -18,6 +18,11 @@ export interface TimelineStep {
     event: string;
 }
 
+export interface ProducedDoc {
+    label: string;
+    href: string; // archived copy: same target serves view and download
+}
+
 export interface Deadline {
     d: string; // ISO date
     date: string; // display date
@@ -34,6 +39,8 @@ export interface AgencyRequests {
     asked: string[];
     claims: string[]; // what the agency has said it holds, in sequence
     withheld: WithheldItem[];
+    produced: ProducedDoc[]; // the documents actually produced, as archived
+    producedNote?: string; // shown when produced is empty
     deadlines: Deadline[];
     timeline: TimelineStep[];
 }
@@ -57,6 +64,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "September 8, 2026: the office will begin gathering responsive records “to the extent records exist,” with the Government Accountability Attorney as point of contact.",
         ],
         withheld: [],
+        produced: [],
         deadlines: [
             {
                 d: "2026-09-29",
@@ -149,6 +157,25 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
                 detail: "Records identified August 11, held behind a fee of $16,315",
             },
         ],
+        produced: [
+            { label: "CAD record SP26097765, released in full July 14, 2026", href: "/osp-cad-record-sp26097765.pdf" },
+            { label: "Release letter for the September 3, 2026 production", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-PR27478.pdf" },
+            { label: "Threat-assessment report SP26096984, Major Crimes Section", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf" },
+            { label: "Report attachment: the February 14 email chain", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-021426-Email-Chain.pdf" },
+            { label: "Report attachment: the original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf" },
+            { label: "Report attachment: CAD SP26096984", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984-CAD.pdf" },
+            { label: "Report attachment: text messages, March 27, first of two", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Text-message-3-27-1-of-2.pdf" },
+            { label: "Report attachment: text messages, March 27, second of two", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Text-message-3-27-2-of-2.pdf" },
+            { label: "Report attachment: SA Oliver's email, Siltcoos Work Center volunteer", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf" },
+            { label: "Dispatch CAD SP26096984", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26096984-CAD.pdf" },
+            { label: "Dispatch CAD SP26097765", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26097765-CAD.pdf" },
+            { label: "Dispatch audio, both events", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP2696984-SP2697765.mp3" },
+            { label: "The Department's electronic communications", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf" },
+            { label: "Communications attachment: the dismissal letter", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Attachments-Dismissal-Letter.pdf" },
+            { label: "Communications attachment: timeline of events", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Attachments-Timeline-of-Events.docx" },
+            { label: "Communications attachment: onX Hunt map screenshot, pin at his location, wide view", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Attachments-original-57317B84-4606-4EBC-B0A7-05C03DF7766F.pdf" },
+            { label: "Communications attachment: onX Hunt map screenshot, pin at his location, close view", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Attachments-original-89EB9E3A-E8B9-4631-818D-E34DE3A35BDD.pdf" },
+        ],
         deadlines: [
             {
                 d: "2026-09-25",
@@ -198,6 +225,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
         ],
         withheld: [],
+        produced: [],
+        producedNote: "The no-cost items of May 4, 2026 were served through Department file-share links. Nothing has been produced on the September 5 request.",
         deadlines: [
             {
                 d: "2026-09-15",
