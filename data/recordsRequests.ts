@@ -31,11 +31,17 @@ export interface Deadline {
     recurs?: string; // e.g. "every six months"
 }
 
+export interface Officer {
+    name: string;
+    role?: string; // as signed or stated in the correspondence
+}
+
 export interface AgencyRequests {
     slug: string; // register thread for the "full record" link
     agency: string;
     refs: string; // request reference numbers
     status: string; // one line, operator's characterization
+    officers: Officer[]; // the public officers named in the correspondence
     asked: string[];
     claims: string[]; // what the agency has said it holds, in sequence
     withheld: WithheldItem[];
@@ -51,6 +57,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         agency: "Office of the Governor",
         refs: "Request of September 5, 2026",
         status: "Gathering records.",
+        officers: [
+            { name: "Yasmin Solorio", role: "Business Operations Coordinator and Executive Assistant" },
+            { name: "Cameron Miles", role: "Government Accountability Attorney" },
+        ],
         asked: [
             "All records concerning him held by the office, in any division or function",
             "The routing and disposition of every letter he sent: tracking entries, assignment records, and any record of a decision not to respond",
@@ -83,6 +93,11 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         agency: "Oregon State Police",
         refs: "PR27478 · PR36445",
         status: "Produced. Not sufficient.",
+        officers: [
+            { name: "Marni L. Carlson", role: "AS1, Central Records Section" },
+            { name: "Micah Hubbard", role: "Records Request Unit Senior Admin" },
+            { name: "Holly Bolton", role: "Legal Compliance Specialist" },
+        ],
         asked: [
             "The full names, badge numbers, and unit assignments of the two officers present at the March 24, 2026 visit",
             "All communications, internal or external, related to the planning, authorization, or coordination of the visit, including with the U.S. Forest Service, OPRD, or any other agency",
@@ -210,6 +225,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",
         status: "Pending. No acknowledgment.",
+        officers: [
+            { name: "Katie Gauthier", role: "External Relations Manager" },
+        ],
         asked: [
             "August 22, 2025: thirty-three categories across volunteer program operations, Honeyman State Park operations, administrative communications, investigations, and his own employment applications",
             "April 2, 2026: all OPRD communications with the U.S. Forest Service, Oregon State Police, or Lane County Sheriff's Office referencing him, and all internal communications referencing him or the archive",
@@ -225,8 +243,13 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
         ],
         withheld: [],
-        produced: [],
-        producedNote: "The no-cost items of May 4, 2026 were served through Department file-share links. Nothing has been produced on the September 5 request.",
+        produced: [
+            { label: "Volunteer policy VOL.010.000", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-VOL.010.000-1.pdf" },
+            { label: "Volunteer Dismissal Guidance", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-Volunteer-Dismissal-Guidance.pdf" },
+            { label: "Volunteer Programs Staff Guide, 2021, v1.0", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-Volunteer-Programs-Staff-Guide-2021-V1.0.pdf" },
+            { label: "Volunteer Program Staff Guide, website edition, seventeen sections (zip)", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-Volunteer-Program-Staff-Guide-website.zip" },
+        ],
+        producedNote: "The no-cost items of May 4, 2026, retrieved from the Department's file-share September 9. Nothing has been produced on the September 5 request.",
         deadlines: [
             {
                 d: "2026-09-15",

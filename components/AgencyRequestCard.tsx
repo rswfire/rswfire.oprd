@@ -56,6 +56,22 @@ export default function AgencyRequestCard({ a }: { a: AgencyRequests }) {
                 </div>
             </div>
 
+            {/* public officers named in the correspondence */}
+            {a.officers.length > 0 && (
+                <div className="border-b border-gray-100 px-5 py-2.5 sm:px-6">
+                    <span className="mr-2 text-[10px] font-bold uppercase tracking-widest text-gray-400">The officers</span>
+                    <span className="text-sm text-gray-700">
+                        {a.officers.map((o, i) => (
+                            <span key={i}>
+                                {i > 0 && <span className="text-gray-300"> &middot; </span>}
+                                <span className="font-semibold text-gray-900">{o.name}</span>
+                                {o.role && <span className="text-gray-500"> ({o.role})</span>}
+                            </span>
+                        ))}
+                    </span>
+                </div>
+            )}
+
             {/* tabs */}
             <div className="flex flex-wrap gap-x-1 gap-y-1 border-b border-gray-200 bg-gray-50/60 px-3 pt-2 sm:px-4">
                 {TABS.map((t) => (
@@ -101,6 +117,8 @@ export default function AgencyRequestCard({ a }: { a: AgencyRequests }) {
                     (a.produced.length === 0 ? (
                         <div className="text-sm text-gray-500">{a.producedNote ?? "Nothing produced yet."}</div>
                     ) : (
+                        <>
+                        {a.producedNote && <div className="mb-3 text-sm text-gray-500">{a.producedNote}</div>}
                         <ul className="divide-y divide-gray-100">
                             {a.produced.map((doc, i) => (
                                 <li key={i} className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-2">
@@ -125,6 +143,7 @@ export default function AgencyRequestCard({ a }: { a: AgencyRequests }) {
                                 </li>
                             ))}
                         </ul>
+                        </>
                     ))}
 
                 {tab === "withheld" &&
