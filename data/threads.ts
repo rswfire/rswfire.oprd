@@ -6821,11 +6821,47 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
     title: "Lane County Sheriff's Office",
     agency: "Lane County Sheriff's Office",
     matter: "The March 27, 2026 dissemination · Deputy Evan Meyers",
-    status: "Pending. P015875-090926.",
+    status: "On notice. P015875-090926.",
     summary: [
         "On March 27, 2026, hours after being asked to identify the officers who came to the door, U.S. Forest Service Special Agent Matthew Oliver sent Deputy Evan Meyers a file: name, date of birth, driver's license number, residence, schedule, duties, correspondence, and text messages, with a promise to “keep you up to date.” This register holds the correspondence with the fourth agency in the distribution.",
     ],
     filings: [
+        {
+            id: "the-rifle-joke-recorded",
+            ulid: "01KWD7TC80XT92EB5YMQRZFN3W",
+            flagged: true,
+            date: "June 30, 2026",
+            d: "2026-06-30",
+            time: "2:44 PM",
+            from: "Robert Samuel White",
+            to: "Deputy Evan Meyers",
+            kind: "record",
+            title: "The rifle “joke,” recorded",
+            summary:
+                "Deputy Meyers's “joke” about access to a high-powered rifle, answered on camera: notice of the open confrontation with the state, and that such jokes stop. Documented publicly the same afternoon; the deputy's office had held SA Oliver's file for three months.",
+            docs: [
+                { label: "Record of the June 30 exchange, with transcript", href: "/records/lane-county/2026-06-30-the-rifle-joke-recorded.pdf" },
+                { label: "The recording (YouTube)", href: "https://youtube.com/shorts/ZxNt_7rJJjY" },
+                { label: "The public statement (X)", href: "https://x.com/rswfire/status/2072073769749991593" },
+            ],
+        },
+        {
+            id: "public-statement-august-30",
+            ulid: "01M1AD1E401WAW7WXB7N7QVYTQ",
+            date: "August 30, 2026",
+            d: "2026-08-30",
+            time: "3:36 PM",
+            from: "Robert Samuel White",
+            to: "The public record",
+            kind: "statement",
+            title: "The August 30 statement",
+            summary:
+                "A dumb joke to the same deputy, owned publicly within hours, in a thread anticipating its weaponization. If it is ever used against him, it is proof Lane County took an active role in the retaliation.",
+            docs: [
+                { label: "Public statement of August 30, 2026", href: "/records/lane-county/2026-08-30-public-statement.pdf" },
+                { label: "The thread (X)", href: "https://x.com/rswfire/status/2094192604544188794" },
+            ],
+        },
         {
             id: "request-filed-p015875-090926",
             ulid: "01M23T7F6GKVBM4NFTK7597P0Q",
@@ -6840,6 +6876,22 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
                 "The request, filed through the county's records portal and echoed in full in the county's same-day receipt: the March 27 email and attachments, every interagency communication concerning him, every county system record indexed under his identifiers, any patrol advisory, everything Deputy Meyers holds, and any onward dissemination. Receipt confirmed within minutes.",
             docs: [{ label: "Public Records Request P015875-090926", href: "/records/lane-county/2026-09-09-request-filed-p015875-090926.pdf" }],
             eml: "/records/lane-county/eml/2026-09-09_1227_request-filed-p015875-090926.eml",
+        },
+        {
+            id: "documenting-interactions-with-deputy-meyers",
+            ulid: "01M23Y8C6G9JH2APF7HJTSER4K",
+            flagged: true,
+            date: "September 9, 2026",
+            d: "2026-09-09",
+            time: "1:37 PM",
+            from: "Robert Samuel White",
+            to: "Deputy Evan Meyers",
+            kind: "notice",
+            title: "Documenting Interactions with Lane County Deputy Evan Meyers",
+            summary:
+                "Notice to the county, copied to the state: the June 30 rifle “joke” and the recorded answer, the August 30 remark owned the same day, and what the office held since March 27. Any use of a mundane moment from the daily contacts stands as proof Lane County took an active role in the retaliation.",
+            docs: [{ label: "Documenting Interactions with Lane County Deputy Evan Meyers", href: "/records/lane-county/2026-09-09-documenting-interactions-with-deputy-meyers.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-09_1337_documenting-interactions-with-deputy-meyers.eml",
         },
     ],
 };
