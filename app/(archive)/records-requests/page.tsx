@@ -53,10 +53,7 @@ export default function RecordsRequestsPage() {
                 <div>
                     Each of their moves is now on this page: what was asked, what they said they hold,
                     what they withhold and on what basis, a statute, a fee, or silence, and the clocks
-                    running on both sides.
-                </div>
-                <div>
-                    The documents themselves live in the{" "}
+                    running on both sides. The documents themselves live in the{" "}
                     <Link href="/accountability" className="underline text-emerald-800 hover:text-emerald-600">accountability registers</Link>;
                     this page keeps the score.
                 </div>
