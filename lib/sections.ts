@@ -13,7 +13,6 @@ export const archiveSections = [
             { href: "/accountability/governor", label: "Office of the Governor" },
         ]
     },
-    { href: "/records-requests", label: "Records Requests" },
     { href: "#separator-3", label: "", separator: true },
     { href: "/timeline", label: "Timeline" },
     {
@@ -51,6 +50,7 @@ export const archiveSections = [
     { href: "#separator-7", label: "", separator: true },
     { href: "/for-volunteers", label: "For Volunteers", icon: "Shield" as const },
     { href: "/record", label: "The OPRD Record", icon: "TreeDeciduous" as const, iconClass: "text-emerald-700" },
+    { href: "/records-requests", label: "Records Requests" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];

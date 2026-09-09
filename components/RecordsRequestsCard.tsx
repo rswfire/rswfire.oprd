@@ -24,6 +24,7 @@ export default function RecordsRequestsCard() {
                 {RECORDS_REQUESTS.map((a) => {
                     const silence = a.withheld.filter((w) => w.basis === "silence").length;
                     const statute = a.withheld.filter((w) => w.basis === "statute").length;
+                    const fee = a.withheld.filter((w) => w.basis === "fee").length;
                     return (
                         <Link
                             key={a.slug}
@@ -38,6 +39,11 @@ export default function RecordsRequestsCard() {
                                 {statute > 0 && (
                                     <span className="rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-800">
                                         {statute} by statute
+                                    </span>
+                                )}
+                                {fee > 0 && (
+                                    <span className="rounded-full border border-sky-300 bg-sky-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-sky-800">
+                                        {fee} by fee
                                     </span>
                                 )}
                                 {silence > 0 && (

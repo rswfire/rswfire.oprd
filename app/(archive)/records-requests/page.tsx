@@ -16,12 +16,20 @@ export const metadata: Metadata = {
         "What each agency was asked for, what it claims it holds, what it is withholding and on what basis, and the process it took to get the records.",
 };
 
-function BasisChip({ basis }: { basis: "statute" | "silence" }) {
-    return basis === "statute" ? (
-        <span className="shrink-0 rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-800">
-            Statute
-        </span>
-    ) : (
+function BasisChip({ basis }: { basis: "statute" | "fee" | "silence" }) {
+    if (basis === "statute")
+        return (
+            <span className="shrink-0 rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-800">
+                Statute
+            </span>
+        );
+    if (basis === "fee")
+        return (
+            <span className="shrink-0 rounded-full border border-sky-300 bg-sky-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-sky-800">
+                Fee
+            </span>
+        );
+    return (
         <span className="shrink-0 rounded-full border border-red-300 bg-red-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-red-800">
             Silence
         </span>
@@ -35,12 +43,18 @@ export default function RecordsRequestsPage() {
             subtitle="ASKED. CLAIMED. WITHHELD."
             previousPage={{ href: "/", label: "Overview" }}
         >
-            <div className="mb-8 text-base">
-                Every request below was made under the Oregon Public Records Law, ORS 192.311 to 192.478.
-                For each agency: what was asked, what the agency has said it holds, what it is withholding
-                and on what basis, and the process it took. The documents themselves live in the{" "}
-                <Link href="/accountability" className="underline text-emerald-800 hover:text-emerald-600">accountability registers</Link>;
-                this page keeps the score.
+            <div className="mb-8 space-y-4 text-base">
+                <div>
+                    This page tracks the public records requests in this matter. For each agency: what
+                    was asked, what the agency has said it holds, what is withheld and on what basis,
+                    a statute, a fee, or silence, the clocks running on both sides, and the process it
+                    took to get here.
+                </div>
+                <div>
+                    The documents themselves live in the{" "}
+                    <Link href="/accountability" className="underline text-emerald-800 hover:text-emerald-600">accountability registers</Link>;
+                    this page keeps the score.
+                </div>
             </div>
 
             <div className="space-y-10">
@@ -107,6 +121,29 @@ export default function RecordsRequestsPage() {
                                 </ul>
                             )}
                         </div>
+
+                        {/* deadline clocks */}
+                        {a.deadlines.length > 0 && (
+                            <div className="border-b border-gray-100 px-5 py-4 sm:px-6">
+                                <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">The clocks</div>
+                                <ul className="space-y-2.5">
+                                    {a.deadlines.map((dl, i) => (
+                                        <li key={i} className="flex items-start gap-3">
+                                            {dl.who === "me" ? (
+                                                <span className="shrink-0 rounded-full border border-violet-300 bg-violet-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-violet-800">Mine</span>
+                                            ) : (
+                                                <span className="shrink-0 rounded-full border border-emerald-300 bg-emerald-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800">Theirs</span>
+                                            )}
+                                            <div className="text-sm">
+                                                <span className="font-semibold text-gray-900">{dl.date}</span>
+                                                <span className="text-gray-700"> &mdash; {dl.what}.</span>
+                                                {dl.recurs && <span className="text-gray-500"> Recurs {dl.recurs}.</span>}
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
 
                         {/* process timeline */}
                         <div className="px-5 py-4 sm:px-6 bg-gray-50/60">

@@ -24,17 +24,17 @@ export default function AccountabilityStatus() {
                         <span className="mt-0.5 block text-[10px] uppercase tracking-wider text-gray-400">{t.filings.length} documents</span>
                     </Link>
                 ))}
-                <Link
-                    href="/records-requests"
-                    className="group block px-3 py-2.5 hover:bg-emerald-50 transition-colors"
-                >
-                    <span className="block text-xs font-semibold text-emerald-900 group-hover:text-emerald-700 transition-colors">Records Requests</span>
-                    <span className="mt-0.5 block text-xs text-gray-700">
-                        Asked. Claimed. Withheld.
-                        <span className="ml-1 text-emerald-700 group-hover:translate-x-0.5 inline-block transition-transform">&rarr;</span>
-                    </span>
-                </Link>
             </div>
+            <Link
+                href="/records-requests"
+                className="group mt-2 block rounded-lg border border-amber-300 bg-amber-50 px-3 py-2.5 hover:bg-amber-100 transition-colors"
+            >
+                <span className="block text-[10px] font-bold uppercase tracking-widest text-amber-800">The Tracker</span>
+                <span className="mt-0.5 block text-xs font-semibold text-amber-900">
+                    Records Requests: asked, claimed, withheld
+                    <span className="ml-1 text-amber-700 group-hover:translate-x-0.5 inline-block transition-transform">&rarr;</span>
+                </span>
+            </Link>
         </div>
     );
 }
