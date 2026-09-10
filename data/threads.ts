@@ -5980,6 +5980,25 @@ export const OSP_THREAD: RecordsThreadData = {
             eml: "/records/osp/eml/2026-09-09_0958_requests-now-tracked-publicly.eml",
         },
         {
+            id: "what-all-of-you-have-been-doing",
+            ulid: "01M2670AB06W82K8B7XVZ9D5RW",
+            flagged: true,
+            date: "September 10, 2026",
+            d: "2026-09-10",
+            time: "10:49 AM",
+            from: "Robert Samuel White",
+            to: "Detective Jerred Nelson",
+            kind: "notice",
+            title: "Report SP26096984, and what all of you have been doing",
+            summary:
+                "The threat-assessment report's author, and every official who characterized him, answered at once: each characterization quoted verbatim beside the evidence that refutes it, from the picnic-table note to the Director's therapeutic reframing to “Suspect” with no crime. The pattern named; the tape waiting; no further characterization survives publication.",
+            docs: [
+                { label: "Report SP26096984, and what all of you have been doing", href: "/records/osp/2026-09-10-what-all-of-you-have-been-doing.pdf" },
+                { label: "The threat-assessment report SP26096984, as produced", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-10_1049_what-all-of-you-have-been-doing.eml",
+        },
+        {
             id: "the-first-act-of-state-power",
             ulid: "01M1S5AS2G1PK98P6VYW8M9RSQ",
             flagged: true,
