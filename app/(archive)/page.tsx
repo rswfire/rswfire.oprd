@@ -21,6 +21,27 @@ export default function OverviewPage() {
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
 
+            {/* THE QUESTION EVERY PROSPECTIVE HOST RESEARCHES */}
+            <div className="mb-4 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm">
+                <p className="text-lg leading-relaxed text-gray-800">
+                    This archive answers the one question every camp host researches
+                    before saying yes: <span className="font-semibold">what happens if something
+                    goes wrong?</span> It was written by one of their own.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-gray-800">
+                    The record&rsquo;s answer: there is no process. There is a handwritten note at
+                    a picnic table, a two-day statewide review, a permanent bar for public
+                    comments, and thirteen months later, police at your gate.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-gray-800">
+                    Director Lisa Sumption has stewarded this agency for more than a decade.
+                    I wrote her{" "}
+                    <a href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N" target="_blank" rel="noopener" className="text-emerald-800 underline hover:text-emerald-600">a letter</a>{" "}
+                    documenting her choices, past and future. She is the one who can protect
+                    you. She is the one choosing not to.
+                </p>
+            </div>
+
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
 
