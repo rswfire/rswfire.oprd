@@ -29,10 +29,13 @@ export default function OverviewPage() {
                     happens if something goes wrong?</span>
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-800">
-                    The record&rsquo;s answer: there is no process. There is a handwritten note at
-                    a picnic table, a two-day statewide review, a permanent bar for public
-                    comments, and thirteen months later, police at your door.
-                </p>
+                    The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
+                    is the only account, and there is no mechanism by which it can be questioned.
+                    Volunteers serve with no written standards, no notice, no hearing, no appeal,
+                    no protection from retaliation. There are characterizations. There are
+                    accusations never put in writing. There is a permanent statewide ban. And
+                    where there is contemporaneous documentation the institution cannot disappear,
+                    there is force: investigation, police at the door.</p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-800">
                     Director Lisa Sumption has stewarded this agency for more than a decade.
                     I wrote her{" "}
