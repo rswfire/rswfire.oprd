@@ -226,14 +226,14 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         refs: "P015875-090926",
         status: "Filed September 9. Receipt confirmed.",
         officers: [
-            { name: "Evan Meyers", role: "Deputy" },
+            { name: "[Lane County Deputy]" },
         ],
         asked: [
-            "The March 27, 2026 email from SA Oliver to Deputy Meyers, with all attachments, as held by the county",
+            "The March 27, 2026 email from SA Oliver to [Lane County Deputy], with all attachments, as held by the county",
             "Every communication with the Forest Service, OSP, OPRD, the FBI or any task force, or any other agency concerning him, including every update after March 27",
             "Every record in county systems indexed under his name, date of birth, driver's license number, email, the archive, or the Siltcoos Work Center: CAD, RMS, incident and case records, flags, alerts, advisories, bulletins, briefing notes, officer notes",
             "Any patrol advisory or instruction concerning him or law-enforcement response at the Siltcoos Work Center",
-            "Everything Deputy Meyers authored, received, or holds concerning him, and his assignment and patrol area in March 2026",
+            "Everything [Lane County Deputy] authored, received, or holds concerning him, and his assignment and patrol area in March 2026",
             "Any onward dissemination of his information by the county",
         ],
         claims: [
@@ -256,8 +256,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             },
         ],
         timeline: [
-            { d: "2026-03-27", date: "March 27, 2026", event: "SA Oliver sends Deputy Meyers the file: name, date of birth, driver's license number, residence, schedule, correspondence, text messages; “will keep you up to date”" },
-            { d: "2026-09-09", date: "September 9, 2026", event: "Correction letter to SA Oliver, Deputy Meyers copied: the false characterizations corrected, preservation of the March 27 email demanded" },
+            { d: "2026-03-27", date: "March 27, 2026", event: "SA Oliver sends [Lane County Deputy] the file: name, date of birth, driver's license number, residence, schedule, correspondence, text messages; “will keep you up to date”" },
+            { d: "2026-09-09", date: "September 9, 2026", event: "Correction letter to SA Oliver, [Lane County Deputy] copied: the false characterizations corrected, preservation of the March 27 email demanded" },
             { d: "2026-09-09", date: "September 9, 2026", event: "Request filed through the county's records portal; receipt confirmed within minutes, reference P015875-090926" },
         ],
     },

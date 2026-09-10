@@ -53,6 +53,7 @@ export interface RecordsThreadData {
     matter: string;
     status: string;
     summary: string[];
+    redaction?: string[]; // why names are redacted on this register, stated
     filings: Filing[];
     chains?: Record<string, ChainMeta>; // keyed by chain key (normalized subject or explicit chain field)
     note?: string[];
@@ -105,6 +106,15 @@ export default function RecordsThread({ thread }: { thread: RecordsThreadData })
                 <span className="font-semibold uppercase tracking-wide">Status:</span>{" "}
                 {thread.status}
             </div>
+
+            {thread.redaction && (
+                <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50/70 px-5 py-4 sm:px-6">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">On redaction</div>
+                    {thread.redaction.map((para, i) => (
+                        <p key={i} className="text-sm text-gray-600 leading-relaxed [&:not(:first-of-type)]:mt-2">{para}</p>
+                    ))}
+                </div>
+            )}
 
             <div className="mt-8">
                 <RecordsTable

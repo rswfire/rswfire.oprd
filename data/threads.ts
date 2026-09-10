@@ -13,6 +13,11 @@ export const OPRD_THREAD: RecordsThreadData = {
     agency: "Oregon Parks & Recreation Department",
     matter: "The originating agency",
     status: "Fully documented. Wholly unaccountable.",
+    redaction: [
+        "Most of the people who did this are not named here. Each redaction is a choice about what belongs on a permanent public record, made one person at a time.",
+        "[Volunteer Services Lead], [Park Supervisor], and [Park Manager] are not named. Their part was small.",
+        "And none of them are named because their liability traveled upward to their director, and her deputy.",
+    ],
     summary: [
         "Correspondence with the Oregon Parks and Recreation Department, the agency where this matter began.",
     ],
@@ -4563,6 +4568,9 @@ export const USFS_THREAD: RecordsThreadData = {
     agency: "U.S. Forest Service",
     matter: "The March 24, 2026 visit",
     status: "Fully accountable, minus one special agent.",
+    redaction: [
+        "The local crew are not named on this register. They are bystanders to a situation completely constructed by OPRD and OSP, and bystanders do not belong in it. This register names only those who acted.",
+    ],
     summary: [
         "Correspondence with the U.S. Forest Service concerning the identity and role of the officers present on March 24, 2026.",
     ],
@@ -4891,7 +4899,7 @@ export const USFS_THREAD: RecordsThreadData = {
             eml: "/records/usfs/eml/2026-09-05_0945_a-proper-thank-you.eml",
         },
         {
-            id: "correction-for-the-record-oliver-to-meyers",
+            id: "correction-for-the-record-oliver-march-27",
             ulid: "01M23SJK7GFQVZK7TBD2XQSVTG",
             flagged: true,
             date: "September 9, 2026",
@@ -4900,11 +4908,11 @@ export const USFS_THREAD: RecordsThreadData = {
             from: "Robert Samuel White",
             to: "SA Matthew Oliver",
             kind: "notice",
-            title: "Correction for the record: the March 27 email to Deputy Meyers",
+            title: "Correction for the record: the March 27 email to [Lane County Deputy]",
             summary:
-                "Four corrections to SA Oliver's March 27, 2026 briefing of Lane County Deputy Evan Meyers, sent to every recipient of the original: the dismissal letter's actual basis, the intimidation statement, the restricted-access dispute, and the veiled-threat claim no agency has ever produced a statement for. Preservation requested from Lane County and the Forest Service.",
-            docs: [{ label: "Correction for the record", href: "/records/usfs/2026-09-09-correction-for-the-record-oliver-to-meyers.pdf" }, { label: "SA Oliver's March 27 email to Deputy Meyers, as produced", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf" }],
-            eml: "/records/usfs/eml/2026-09-09_1216_correction-for-the-record-oliver-to-meyers.eml",
+                "Four corrections to SA Oliver's March 27, 2026 briefing of [Lane County Deputy], sent to every recipient of the original: the dismissal letter's actual basis, the intimidation statement, the restricted-access dispute, and the veiled-threat claim no agency has ever produced a statement for. Preservation requested from Lane County and the Forest Service.",
+            docs: [{ label: "Correction for the record", href: "/records/usfs/2026-09-09-correction-for-the-record-oliver-march-27.pdf" }, { label: "SA Oliver's March 27 email to [Lane County Deputy], as produced", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf" }],
+            eml: "/records/usfs/eml/2026-09-09_1216_correction-for-the-record-oliver-march-27.eml",
         },
         {
             id: "opr-administrative-investigation",
@@ -4946,6 +4954,9 @@ export const OSP_THREAD: RecordsThreadData = {
     agency: "Oregon State Police",
     matter: "Public Records Requests PR27478 and PR36445 · CAD event SP26097765",
     status: "Produced, four records short.",
+    redaction: [
+        "No one is redacted on this register. Force is never anonymous, and they tried to be.",
+    ],
     summary: [
         "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it. The $157.50 production fee was delivered in August 2026; the agency has acknowledged a litigation hold over every record associated with the event. What remains is how the Department responds.",
     ],
@@ -6820,10 +6831,13 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
     slug: "lane-county",
     title: "Lane County Sheriff's Office",
     agency: "Lane County Sheriff's Office",
-    matter: "The March 27, 2026 dissemination · Deputy Evan Meyers",
+    matter: "The March 27, 2026 dissemination · [Lane County Deputy]",
     status: "On notice. P015875-090926.",
+    redaction: [
+        "The deputy is not named on this register. The county has taken no position, it has never been openly antagonistic toward me, and I do not yet know the extent of its involvement. Redaction is what an open question looks like here.",
+    ],
     summary: [
-        "On March 27, 2026, hours after being asked to identify the officers who came to the door, U.S. Forest Service Special Agent Matthew Oliver sent Deputy Evan Meyers a file: name, date of birth, driver's license number, residence, schedule, duties, correspondence, and text messages, with a promise to “keep you up to date.” This register holds the correspondence with the fourth agency in the distribution.",
+        "On March 27, 2026, hours after being asked to identify the officers who came to the door, U.S. Forest Service Special Agent Matthew Oliver sent [Lane County Deputy] a file: name, date of birth, driver's license number, residence, schedule, duties, correspondence, and text messages, with a promise to “keep you up to date.” This register holds the correspondence with the fourth agency in the distribution.",
     ],
     filings: [
         {
@@ -6834,11 +6848,11 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             d: "2026-06-30",
             time: "2:44 PM",
             from: "Robert Samuel White",
-            to: "Deputy Evan Meyers",
+            to: "[Lane County Deputy]",
             kind: "record",
             title: "The rifle “joke,” recorded",
             summary:
-                "Deputy Meyers's “joke” about access to a high-powered rifle, answered on camera: notice of the open confrontation with the state, and that such jokes stop. Documented publicly the same afternoon; the deputy's office had held SA Oliver's file for three months.",
+                "[Lane County Deputy]'s “joke” about access to a high-powered rifle, answered on camera: notice of the open confrontation with the state, and that such jokes stop. Documented publicly the same afternoon; the deputy's office had held SA Oliver's file for three months.",
             docs: [
                 { label: "Record of the June 30 exchange, with transcript", href: "/records/lane-county/2026-06-30-the-rifle-joke-recorded.pdf" },
                 { label: "The recording (YouTube)", href: "https://youtube.com/shorts/ZxNt_7rJJjY" },
@@ -6873,25 +6887,25 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             kind: "request",
             title: "Request filed: everything the county holds. Reference P015875-090926",
             summary:
-                "The request, filed through the county's records portal and echoed in full in the county's same-day receipt: the March 27 email and attachments, every interagency communication concerning him, every county system record indexed under his identifiers, any patrol advisory, everything Deputy Meyers holds, and any onward dissemination. Receipt confirmed within minutes.",
+                "The request, filed through the county's records portal and echoed in full in the county's same-day receipt: the March 27 email and attachments, every interagency communication concerning him, every county system record indexed under his identifiers, any patrol advisory, everything [Lane County Deputy] holds, and any onward dissemination. Receipt confirmed within minutes.",
             docs: [{ label: "Public Records Request P015875-090926", href: "/records/lane-county/2026-09-09-request-filed-p015875-090926.pdf" }],
             eml: "/records/lane-county/eml/2026-09-09_1227_request-filed-p015875-090926.eml",
         },
         {
-            id: "documenting-interactions-with-deputy-meyers",
+            id: "documenting-interactions-lane-county-deputy",
             ulid: "01M23Y8C6G9JH2APF7HJTSER4K",
             flagged: true,
             date: "September 9, 2026",
             d: "2026-09-09",
             time: "1:37 PM",
             from: "Robert Samuel White",
-            to: "Deputy Evan Meyers",
+            to: "[Lane County Deputy]",
             kind: "notice",
-            title: "Documenting Interactions with Lane County Deputy Evan Meyers",
+            title: "Documenting Interactions with [Lane County Deputy]",
             summary:
                 "Notice to the county, copied to the state: the June 30 rifle “joke” and the recorded answer, the August 30 remark owned the same day, and what the office held since March 27. Any use of a mundane moment from the daily contacts stands as proof Lane County took an active role in the retaliation.",
-            docs: [{ label: "Documenting Interactions with Lane County Deputy Evan Meyers", href: "/records/lane-county/2026-09-09-documenting-interactions-with-deputy-meyers.pdf" }],
-            eml: "/records/lane-county/eml/2026-09-09_1337_documenting-interactions-with-deputy-meyers.eml",
+            docs: [{ label: "Documenting Interactions with [Lane County Deputy]", href: "/records/lane-county/2026-09-09-documenting-interactions-lane-county-deputy.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-09_1337_documenting-interactions-lane-county-deputy.eml",
         },
     ],
 };
