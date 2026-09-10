@@ -61,10 +61,6 @@ export default function DocViewer({
         setHtml(null);
         setFailed(false);
         if (!doc) return;
-        if (!doc.eml) {
-            setFailed(true);
-            return;
-        }
         let alive = true;
         // no-store: the render files appear after deploys, and a browser that
         // cached a 404 from before a deploy would otherwise show the download
