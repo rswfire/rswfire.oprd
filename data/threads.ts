@@ -6264,7 +6264,7 @@ export const DAS_THREAD: RecordsThreadData = {
     title: "Department of Administrative Services",
     agency: "Oregon Department of Administrative Services",
     matter: "Public Records Requests R000879, R000885 and R000911",
-    status: "Closed.",
+    status: "Answered. Accepted.",
     summary: [
         "Public records requests R000879 and R000885 to the Department of Administrative Services, and the Department's responses to them.",
     ],

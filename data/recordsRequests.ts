@@ -322,3 +322,29 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
     },
 ];
+
+export interface AnsweredAgency {
+    agency: string;
+    refs: string;
+    status: string;
+    note: string;
+    href: string; // where their documents live
+}
+
+// The other side of the ledger: agencies that answered and closed.
+export const ANSWERED_AGENCIES: AnsweredAgency[] = [
+    {
+        agency: "Oregon Department of Transportation",
+        refs: "R027904-090526",
+        status: "Answered. Closed.",
+        note: "Asked September 5 for communications concerning him. Answered within one business day: no responsive records on ODOT devices, confirmed with Director Sumption personally that anything responsive lives on OPRD devices. Thanked and closed the same morning, no dispute.",
+        href: "/accountability/oprd",
+    },
+    {
+        agency: "Oregon Department of Administrative Services",
+        refs: "R000879 · R000885 · R000911 · Claims P195403 · P195427",
+        status: "Answered. Accepted.",
+        note: "Records requests answered. The tort notice acknowledged and assigned a claim number within a day. Process followed throughout.",
+        href: "/accountability/das",
+    },
+];
