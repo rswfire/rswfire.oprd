@@ -31,6 +31,8 @@ export default function OverviewPage() {
                 <p className="mt-4 text-lg leading-relaxed text-gray-800">
                     The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
                     is the only account, and there is no mechanism by which it can be questioned.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-gray-800">
                     Volunteers serve with no written standards, no notice, no hearing, no appeal,
                     no protection from retaliation. There are characterizations. There are
                     accusations never put in writing. There is a permanent statewide ban. And
@@ -43,6 +45,17 @@ export default function OverviewPage() {
                     documenting her choices, past and future. She is the one who can protect
                     you. She is the one choosing not to.
                 </p>
+                <div className="mt-4 pl-4 border-l-4 border-emerald-700 space-y-1 text-lg leading-relaxed text-gray-700">
+                    <div>
+                        <strong>Why I built this archive</strong>: to correct an{" "}
+                        <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
+                            <em>epistemic violation</em>
+                        </Link>
+                        .
+                    </div>
+                    <div>It is not designed to <em>win attention</em>.</div>
+                    <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                </div>
             </div>
 
             {/* THE CASE, IN THEIR DOCUMENTS */}

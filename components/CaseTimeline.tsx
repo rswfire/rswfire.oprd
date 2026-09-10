@@ -626,17 +626,6 @@ export default function CaseTimeline() {
                         <p className="mt-2 lg:mt-3 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
                             Every mechanism of accountability was used to shield themselves.
                         </p>
-                        <div className="mt-2 lg:mt-3 pl-3 lg:pl-4 border-l-4 border-emerald-700 space-y-0.5 lg:space-y-1 text-[13px] lg:text-sm leading-snug lg:leading-relaxed text-gray-700">
-                            <div>
-                                <strong>Why I built this archive</strong>: to correct an{" "}
-                                <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
-                                    <em>epistemic violation</em>
-                                </Link>
-                                .
-                            </div>
-                            <div>It is not designed to <em>win attention</em>.</div>
-                            <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
-                        </div>
                         <div className="my-auto py-3">
                         {DOC_CARDS.map((d, i) => (
                             <DocCard key={d.ulid} d={d} first={i === 0} />
