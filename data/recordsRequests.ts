@@ -280,8 +280,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "November 20, 2025, after a notice of violation: the response had been posted August 29 to an internal portal he had no access to and was never told existed, with estimates in the tens of thousands of dollars. He withdrew the request.",
             "April 10, 2026: a cost estimate pricing volunteer-program categories at forty to eighty hours each, and the law-enforcement coordination records, the ones that would show what preceded the March 24 visit, at two to five hours.",
             "May 4, 2026: the no-cost items produced, with a review of law-enforcement emails promised within the week. He closed all requests with the Department that evening.",
-            "September 11, 2026: the request is under review, with an estimate for staff time and costs promised by September 22, citing OAR 736-001-0030.",
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
+            "September 11, 2026: the request is under review, with an estimate for staff time and costs promised by September 22, citing OAR 736-001-0030.",
         ],
         withheld: [],
         produced: [
