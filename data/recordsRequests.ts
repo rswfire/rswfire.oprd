@@ -320,6 +320,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-05", date: "September 5, 2026", event: "The current request: two custodians, every medium, response-handling instructions included" },
             { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices; the statement forwarded to the Director for the record, undisputed" },
             { d: "2026-09-11", date: "September 11, 2026", event: "Acknowledged, four days inside the window: under review, an estimate for staff time and costs promised by September 22" },
+            { d: "2026-09-11", date: "September 11, 2026", event: "His reply, fourteen minutes later: the acknowledgment is already on the public record, tracker linked, Director and Governor copied" },
         ],
     },
 ];

@@ -4496,6 +4496,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "the-early-morning-reply",
+            ulid: "01M28DVPZGW8396NENBMK2MNMW",
+            date: "September 11, 2026",
+            d: "2026-09-11",
+            time: "7:27 AM",
+            from: "Robert Samuel White",
+            to: "Katie Gauthier",
+            kind: "notice",
+            title: "Thank you for the early morning reply",
+            summary:
+                "Fourteen minutes after the acknowledgment: it is already on the public record, with the tracker linked. The Director, the Commission, and the Governor copied.",
+            docs: [{ label: "Thank you for the early morning reply", href: "/records/oprd/2026-09-11-the-early-morning-reply.pdf" }],
+            eml: "/records/oprd/eml/2026-09-11_0727_the-early-morning-reply.eml",
+        },
+        {
             id: "records-request-director-and-deputy",
             ulid: "01M1SWHHM8QSPN71SK56Q97F8C",
             flagged: true,
