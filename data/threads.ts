@@ -4481,6 +4481,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-09_0958_requests-now-tracked-publicly.eml",
         },
         {
+            id: "acknowledged-estimate-by-september-22",
+            ulid: "01M28D2P6GKA8N9YJ81GZP0WF1",
+            date: "September 11, 2026",
+            d: "2026-09-11",
+            time: "7:13 AM",
+            from: "Katie Gauthier",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "Acknowledged: an estimate by September 22",
+            summary:
+                "The Department's answer to the September 5 request, four days inside the statutory window: under review, with an estimate for staff time and costs promised by September 22, citing OAR 736-001-0030. The request's fee-waiver demand and ORS 192.324(4) notice terms await that estimate.",
+            docs: [{ label: "Acknowledged: an estimate by September 22", href: "/records/oprd/2026-09-11-acknowledged-estimate-by-september-22.pdf" }],
+            eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
+        },
+        {
             id: "records-request-director-and-deputy",
             ulid: "01M1SWHHM8QSPN71SK56Q97F8C",
             flagged: true,

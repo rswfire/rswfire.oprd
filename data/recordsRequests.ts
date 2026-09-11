@@ -265,7 +265,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",
-        status: "Pending. No acknowledgment.",
+        status: "Acknowledged. Estimate promised by September 22.",
         officers: [
             { name: "Katie Gauthier", role: "External Relations Manager" },
         ],
@@ -280,7 +280,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "November 20, 2025, after a notice of violation: the response had been posted August 29 to an internal portal he had no access to and was never told existed, with estimates in the tens of thousands of dollars. He withdrew the request.",
             "April 10, 2026: a cost estimate pricing volunteer-program categories at forty to eighty hours each, and the law-enforcement coordination records, the ones that would show what preceded the March 24 visit, at two to five hours.",
             "May 4, 2026: the no-cost items produced, with a review of law-enforcement emails promised within the week. He closed all requests with the Department that evening.",
-            "Nothing on the September 5 request. The Department has not acknowledged it.",
+            "September 11, 2026: the request is under review, with an estimate for staff time and costs promised by September 22, citing OAR 736-001-0030.",
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
         ],
         withheld: [],
@@ -293,10 +293,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         producedNote: "The no-cost items of May 4, 2026, retrieved from the Department's file-share September 9. Nothing has been produced on the September 5 request.",
         deadlines: [
             {
-                d: "2026-09-15",
-                date: "September 15, 2026",
+                d: "2026-09-22",
+                date: "September 22, 2026",
                 who: "them",
-                what: "Acknowledge the September 5 request: ORS 192.324 allows five business days",
+                what: "Deliver the promised estimate for staff time and costs: their own September 11 commitment",
             },
             {
                 d: "2026-09-29",
@@ -319,6 +319,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-05-04", date: "May 4, 2026", event: "No-cost items arrive in the morning; the May 2 compliance request acknowledged; he closes all requests with the Department that evening" },
             { d: "2026-09-05", date: "September 5, 2026", event: "The current request: two custodians, every medium, response-handling instructions included" },
             { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices; the statement forwarded to the Director for the record, undisputed" },
+            { d: "2026-09-11", date: "September 11, 2026", event: "Acknowledged, four days inside the window: under review, an estimate for staff time and costs promised by September 22" },
         ],
     },
 ];
