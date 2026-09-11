@@ -265,7 +265,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",
-        status: "Acknowledged. Estimate promised by September 22.",
+        status: "Acknowledged.",
         officers: [
             { name: "Katie Gauthier", role: "External Relations Manager" },
         ],
