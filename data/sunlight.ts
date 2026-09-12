@@ -45,7 +45,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "Accurate as far as it goes, and it deletes the ending. [My follow-up is on the record.](https://oprdvolunteerabuse.org/accountability/oprd/01JKMXJCF8D4M3JQHEH9G94SBP/) So is what the document leaves out: [the supervisor wrote back the next day and apologized](https://oprdvolunteerabuse.org/accountability/oprd/01JKRMYTC8KZCWWMCGCWFZH2MA/), \"that was absolutely not my intent,\" with written protocols [I thanked her for](https://oprdvolunteerabuse.org/accountability/oprd/01JKRNVP6RQ12HQYQJ8A35C50J/).\n\nA resolved misunderstanding, with an apology on the record. The document keeps my concern and removes her apology."
+                "md": "False. I texted the supervisor at 6 a.m. and she answered by text. She did not answer an email, because no email existed yet.\n\nI documented it. [I emailed her](https://oprdvolunteerabuse.org/accountability/oprd/01JKMXJCF8D4M3JQHEH9G94SBP/), and [I emailed the volunteer services lead](https://oprdvolunteerabuse.org/accountability/oprd/01JKMXKQE8BSX3BFPWVAK1PXRZ/). Only then did she write to me. [She apologized](https://oprdvolunteerabuse.org/accountability/oprd/01JKRMYTC8KZCWWMCGCWFZH2MA/), \"that was absolutely not my intent,\" and gave me the written protocols [I thanked her for](https://oprdvolunteerabuse.org/accountability/oprd/01JKRNVP6RQ12HQYQJ8A35C50J/).\n\nThe document reverses that order. In its sequence she answers me and I write again to say she made me feel small. In the record my email is what produced her apology. The reversal turns documentation into a complaint about a matter already handled."
             }
         ]
     },
