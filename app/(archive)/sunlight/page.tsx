@@ -87,7 +87,7 @@ export default function SunlightPage() {
                 January 21, 2026, five days after my notice of a federal claim.
             </div>
             <div className="mt-4">
-                Their story survives only in the dark. This is sunlight.
+                Their story survives only in the dark.
             </div>
             <SunlightTabs
                 tabs={[
