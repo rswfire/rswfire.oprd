@@ -97,7 +97,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "True. [I applied for a job at Honeyman that night.](https://oprdvolunteerabuse.org/accountability/oprd/01JKYSTM48Y0QK5CM8QSD0QC6X/)"
+                "md": "True. I believed the reset was real. [I applied for a job at Honeyman that night.](https://oprdvolunteerabuse.org/accountability/oprd/01JKYSTM48Y0QK5CM8QSD0QC6X/)"
             }
         ]
     },
