@@ -4518,7 +4518,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             time: "9:59 PM",
             d: "2026-09-11",
             from: "Robert Samuel White",
-            to: "Franki Allegra; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
+            to: "[Tugman Volunteer Services Lead]; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
             kind: "notice",
             title: "sunlight: the collapse of the story you told the police and yourselves",
             summary:
