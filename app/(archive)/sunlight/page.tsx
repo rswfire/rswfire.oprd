@@ -71,7 +71,7 @@ export default function SunlightPage() {
     return (
         <SectionPage
             title="SUNLIGHT"
-            subtitle="Their words, next to the record."
+            subtitle="EVERY CLAIM THEY MADE, CHECKED AGAINST THE RECORD."
         >
             <div className="mt-4">
                 The State of Oregon wrote a story about me. It was written over ten months by the
