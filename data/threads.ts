@@ -4496,6 +4496,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "the-revisions-request",
+            ulid: "01M2F996FGBZCCP238E07PP1FF",
+            date: "September 11, 2026",
+            time: "11:22 PM",
+            d: "2026-09-11",
+            from: "Robert Samuel White",
+            to: "Katie Gauthier; OPRD Public Records; Director Lisa Sumption; OPRD Commissioners; Governor Kotek",
+            kind: "request",
+            title: "Public Records Request — Version History, \"Timeline of Events: Robert Samuel White (Sam)\"",
+            summary:
+                "Every version and revision of the Timeline of Events and of every source it cites, the version logs, and every transmitting email. Native files, metadata intact, preservation confirmation requested.",
+            docs: [{ label: "Public Records Request — Version History", href: "/records/oprd/2026-09-11-the-revisions-request.pdf" }],
+            eml: "/records/oprd/eml/2026-09-11_2322_the-revisions-request.eml",
+        },
+        {
             id: "sunlight",
             ulid: "01M2F4J1J8N250W0G69CAKQSRM",
             flagged: true,
