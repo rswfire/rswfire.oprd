@@ -116,7 +116,7 @@ function TimelinePanel() {
             <div className="mt-10 space-y-10">
                 {SUNLIGHT_SECTIONS.map((section) => (
                     <section key={section.heading}>
-                        <h2 className="text-lg font-bold text-gray-900">{section.heading}</h2>
+                        <h2 className="text-lg font-mono font-bold text-gray-900">{section.heading}</h2>
                         <div className="mt-3 space-y-4">
                             {section.blocks.map((block, i) => {
                                 if (block.t === "says") {

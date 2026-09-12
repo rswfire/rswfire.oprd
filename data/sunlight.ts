@@ -37,7 +37,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/9/25 \u2014 the power outage",
+        "heading": "02/09/25 \u2014 the power outage",
         "blocks": [
             {
                 "t": "says",
@@ -50,7 +50,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/10/25 \u2014 the call",
+        "heading": "02/10/25 \u2014 the call",
         "blocks": [
             {
                 "t": "says",
@@ -58,12 +58,12 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "True. A guest needed an answer and I called down the escalation chart, the rangers first, the park manager last. He did not answer.\n\nI described this call at the picnic table a month later, as my example of Patrick’s condescension: a guest situation I had to escalate, where I called everyone including him, and when he arrived he recited the entire call log back to me ([10:36](https://oprdvolunteerabuse.org/evidence/coercion/?t=10:36)).\n\nHe came to the welcome center the next day anyway. [I documented it the following morning](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/): \"a park manager showed up at the start of his shift, without his direct supervisor for support, and this created a whole new situation.\" In [his reply](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/) he addressed my belief \"that if a person in my role shows up it is indicative of a problem.\""
+                "md": "True. A guest needed an answer and I called down the escalation chart, the rangers first, the park manager last. He did not answer.\n\nI described this call at the picnic table a month later, as my example of Patrick’s condescension: a guest situation I had to escalate, where I called everyone including him, and when he arrived he recited the entire call log back to me ([10:36](https://oprdvolunteerabuse.org/evidence/coercion/?t=10:36))."
             }
         ]
     },
     {
-        "heading": "2/11/25 \u2014 the visit",
+        "heading": "02/11/25 \u2014 the visit",
         "blocks": [
             {
                 "t": "says",
@@ -71,12 +71,12 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "This was not a courtesy check-in. It was management arriving unbidden, which I experienced as escalation and said so at the time.\n\nThe red book: I stopped the doodles the moment it was first raised, weeks earlier. I photographed every page of that book. There are no poems in it. There are notes between staff and volunteers wishing each other a good day, written by all of them, not only me. I have the photographs."
+                "md": "False. He came, and nothing the entry gives as the reason is true.\n\n[The next morning I put in writing, to all three of them, what this was](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/): \"the volunteer asserted a boundary as softly as he could and he felt it was respected and was already moving on, but the system saw it differently, and a park manager showed up at the start of his shift, without his direct supervisor for support, and this created a whole new situation.\"\n\nThe red book: I raised it myself. I showed him the book and asked. I stopped the doodles that day, and said so at the picnic table weeks later ([35:30](https://oprdvolunteerabuse.org/evidence/coercion/?t=35:30)). I photographed every page of that book. There are no poems in it. There are notes between staff and volunteers wishing each other a good day. I have the photographs."
             }
         ]
     },
     {
-        "heading": "2/12/25 \u2014 dissatisfaction",
+        "heading": "02/12/25 \u2014 dissatisfaction",
         "blocks": [
             {
                 "t": "says",
@@ -89,7 +89,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/12/25 \u2014 the reset meeting",
+        "heading": "02/12/25 \u2014 the reset meeting",
         "blocks": [
             {
                 "t": "says",
@@ -102,7 +102,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/12/25 \u2014 the fabricated quotation",
+        "heading": "02/12/25 \u2014 the fabricated quotation",
         "blocks": [
             {
                 "t": "says",
@@ -115,7 +115,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/15/25 and 2/16/25 \u2014 the withdrawal",
+        "heading": "02/15/25 and 02/16/25 \u2014 the withdrawal",
         "blocks": [
             {
                 "t": "says",
@@ -128,7 +128,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/19/25 \u2014 \"heavy things\"",
+        "heading": "02/19/25 \u2014 \"heavy things\"",
         "blocks": [
             {
                 "t": "says",
@@ -141,7 +141,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/25/25 \u2014 the piercing email",
+        "heading": "02/25/25 \u2014 the piercing email",
         "blocks": [
             {
                 "t": "says",
@@ -154,7 +154,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/26/25 \u2014 Patrick",
+        "heading": "02/26/25 \u2014 Patrick",
         "blocks": [
             {
                 "t": "says",
@@ -167,7 +167,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/27/25 \u2014 the poem",
+        "heading": "02/27/25 \u2014 the poem",
         "blocks": [
             {
                 "t": "says",
@@ -180,7 +180,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/28/25 \u2014 \"friends\"",
+        "heading": "02/28/25 \u2014 \"friends\"",
         "blocks": [
             {
                 "t": "says",
@@ -193,7 +193,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/1/25 \u2014 Patrick again",
+        "heading": "03/01/25 \u2014 Patrick again",
         "blocks": [
             {
                 "t": "says",
@@ -206,7 +206,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/2/25 \u2014 the \"trust\" email",
+        "heading": "03/02/25 \u2014 the \"trust\" email",
         "blocks": [
             {
                 "t": "says",
@@ -219,7 +219,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/5/25 \u2014 the meeting",
+        "heading": "03/05/25 \u2014 the meeting",
         "blocks": [
             {
                 "t": "says",
@@ -296,7 +296,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/5/25 \u2014 the recording",
+        "heading": "03/05/25 \u2014 the recording",
         "blocks": [
             {
                 "t": "says",
@@ -309,7 +309,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/10/25 \u2014 the admonition",
+        "heading": "03/10/25 \u2014 the admonition",
         "blocks": [
             {
                 "t": "says",
@@ -322,7 +322,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/21/25 \u2014 the hearsay",
+        "heading": "03/21/25 \u2014 the hearsay",
         "blocks": [
             {
                 "t": "says",
@@ -339,7 +339,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/21/25 \u2014 the journal",
+        "heading": "03/21/25 \u2014 the journal",
         "blocks": [
             {
                 "t": "says",
@@ -352,7 +352,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/24/25 \u2014 the dismissal",
+        "heading": "03/24/25 \u2014 the dismissal",
         "blocks": [
             {
                 "t": "says",
@@ -365,7 +365,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/24/25 \u2014 the video",
+        "heading": "03/24/25 \u2014 the video",
         "blocks": [
             {
                 "t": "says",
@@ -378,7 +378,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/24/25 \u2014 the recording, shared",
+        "heading": "03/24/25 \u2014 the recording, shared",
         "blocks": [
             {
                 "t": "says",
@@ -391,7 +391,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/25/25 \u2014 the videos",
+        "heading": "03/25/25 \u2014 the videos",
         "blocks": [
             {
                 "t": "says",
@@ -404,7 +404,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/25/25 \u2014 the [Program Manager] call",
+        "heading": "03/25/25 \u2014 the [Program Manager] call",
         "blocks": [
             {
                 "t": "says",
@@ -417,7 +417,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/25/25 \u2014 \"for being me\"",
+        "heading": "03/25/25 \u2014 \"for being me\"",
         "blocks": [
             {
                 "t": "says",
@@ -430,7 +430,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/25/25 \u2014 \"eat glass\"",
+        "heading": "03/25/25 \u2014 \"eat glass\"",
         "blocks": [
             {
                 "t": "says",
@@ -443,7 +443,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/25/25 \u2014 my follow-up",
+        "heading": "03/25/25 \u2014 my follow-up",
         "blocks": [
             {
                 "t": "says",
@@ -456,7 +456,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "3/26/25 \u2014 the letter",
+        "heading": "03/26/25 \u2014 the letter",
         "blocks": [
             {
                 "t": "says",
@@ -495,7 +495,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "5/20/25",
+        "heading": "05/20/25",
         "blocks": [
             {
                 "t": "says",
@@ -521,7 +521,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "1/6/26",
+        "heading": "01/06/26",
         "blocks": [
             {
                 "t": "says",
