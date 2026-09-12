@@ -149,7 +149,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "True, and [I corrected it within hours on my own](https://oprdvolunteerabuse.org/accountability/oprd/01JMYAV0MR16ZWGVW9HM44HT59/): \"Sorry, that was meant for a friend. Please disregard.\" A misdirected message, caught and retracted by me. It is in the file because everything is in the file."
+                "md": "True, and [I corrected it within hours on my own](https://oprdvolunteerabuse.org/accountability/oprd/01JMYAV0MR16ZWGVW9HM44HT59/): \"Sorry, that was meant for a friend. Please disregard.\""
             }
         ]
     },
@@ -162,7 +162,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "[I asked, without escalation](https://oprdvolunteerabuse.org/accountability/oprd/01JN0Q6H10990Z8DBSZ1E25HT7/), whether I would be trained by a ranger who had been repeatedly condescending, and said \"no need to escalate\u2014just wanted to clarify.\"\n\nOn the March 5 tape I say Patrick was very polite ([8:13](https://oprdvolunteerabuse.org/evidence/coercion/?t=8:13)), that I had no issue with him and navigated him easily ([6:59](https://oprdvolunteerabuse.org/evidence/coercion/?t=6:59)), that I navigate him like I do everybody ([9:12](https://oprdvolunteerabuse.org/evidence/coercion/?t=9:12)), and that he is not out to get me, he is just being himself ([27:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=27:33)). I never had a conflict with Patrick.\n\nThe issue was that I had been told a different ranger would train me, and that turned out not to be true. The park manager confirms it himself on the tape: the volunteer services lead told me Leaf would train me ([7:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=7:33)), and it was the park manager who overrode it, and nobody told me ([28:49](https://oprdvolunteerabuse.org/evidence/coercion/?t=28:49))."
+                "md": "I named no one. [I asked](https://oprdvolunteerabuse.org/accountability/oprd/01JN0Q6H10990Z8DBSZ1E25HT7/) whether I would be training with \"a certain ranger here who is consistently patronizing toward me every time we interact,\" and closed: \"This isn’t an issue unless I hear otherwise, so no need to escalate\u2014just wanted to clarify.\"\n\nOn the March 5 tape I say Patrick was very polite ([8:13](https://oprdvolunteerabuse.org/evidence/coercion/?t=8:13)), that I had no issue with him and navigated him easily ([6:59](https://oprdvolunteerabuse.org/evidence/coercion/?t=6:59)), that I navigate him like I do everybody ([9:12](https://oprdvolunteerabuse.org/evidence/coercion/?t=9:12)), and that he is just being himself ([27:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=27:33)). I never had a conflict with Patrick."
             }
         ]
     },
