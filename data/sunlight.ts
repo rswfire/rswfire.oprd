@@ -283,7 +283,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "The park manager claimed a pattern: an instance every other week, consistent throughout the month ([44:02](https://oprdvolunteerabuse.org/evidence/coercion/?t=44:02)). I asked for the examples ([44:22](https://oprdvolunteerabuse.org/evidence/coercion/?t=44:22)). He gave two: the supervisor's text message from the first week of February, and his own visit. Both happened on the same day ([44:42](https://oprdvolunteerabuse.org/evidence/coercion/?t=44:42)).\n\nI asked again near the end of the meeting. He said he had provided them, \"lots of emails and texts\" ([52:42](https://oprdvolunteerabuse.org/evidence/coercion/?t=52:42)). No email and no text was produced at that table, and the only incident named in sixty-two minutes was the text message from the first week of February."
+                "md": "False. I answered every point they raised, and where a claim was untrue I said so and asked what it rested on ([44:41](https://oprdvolunteerabuse.org/evidence/coercion/?t=44:41)), and asked again near the end of the meeting ([52:42](https://oprdvolunteerabuse.org/evidence/coercion/?t=52:42)). Nothing was produced in sixty-two minutes."
             }
         ]
     },
