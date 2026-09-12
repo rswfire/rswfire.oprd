@@ -12,6 +12,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
+import SunlightTabs from "@/components/SunlightTabs";
 import { SUNLIGHT_SECTIONS } from "@/data/sunlight";
 import { TIMELINE_CITED_SOURCES } from "@/data/recordsRequests";
 
@@ -22,10 +23,10 @@ export const metadata: Metadata = {
 };
 
 // Minimal inline-markdown renderer for the generated content: [text](url)
-// links and **bold**. Everything else passes through as written.
+// links, **bold** and *italic*. Everything else passes through as written.
 function md(text: string): ReactNode[] {
     const out: ReactNode[] = [];
-    const pattern = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
+    const pattern = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
     let last = 0;
     let m: RegExpExecArray | null;
     let key = 0;
@@ -48,11 +49,22 @@ function md(text: string): ReactNode[] {
             );
         } else if (m[3] !== undefined) {
             out.push(<strong key={key++}>{m[3]}</strong>);
+        } else if (m[4] !== undefined) {
+            out.push(<em key={key++}>{m[4]}</em>);
         }
         last = pattern.lastIndex;
     }
     if (last < text.length) out.push(text.slice(last));
     return out;
+}
+
+// A block's text may hold several paragraphs, separated by a blank line.
+function paragraphs(text: string): ReactNode[] {
+    return text.split("\n\n").map((p, i) => (
+        <p key={i} className={i > 0 ? "mt-3" : undefined}>
+            {md(p)}
+        </p>
+    ));
 }
 
 export default function SunlightPage() {
@@ -62,8 +74,8 @@ export default function SunlightPage() {
             subtitle="Their words, next to the record."
         >
             <div className="mt-4">
-                The State of Oregon wrote a story about me. It was written in secret, over ten months,
-                by the program manager who expelled me. It was never shown to me. It was handed to the
+                The State of Oregon wrote a story about me. It was written over ten months by the
+                program manager who expelled me. It was never shown to me. It was handed to the
                 state police, and armed officers came to my door.
             </div>
             <div className="mt-4">
@@ -81,7 +93,23 @@ export default function SunlightPage() {
             <div className="mt-4">
                 Their story survives only in the dark. This is sunlight.
             </div>
-            <div className="mt-4 text-sm text-gray-500">
+            <SunlightTabs
+                tabs={[
+                    {
+                        id: "timeline",
+                        label: '"Timeline"',
+                        panel: <TimelinePanel />,
+                    },
+                ]}
+            />
+        </SectionPage>
+    );
+}
+
+function TimelinePanel() {
+    return (
+        <>
+            <div className="text-sm text-gray-500">
                 The document as produced:{" "}
                 <Link href="/accountability/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
                     the September 3 production
@@ -103,7 +131,7 @@ export default function SunlightPage() {
                                     return (
                                         <div key={i} className="border-l-2 border-amber-300 bg-amber-50/60 rounded-r-md px-4 py-3">
                                             <div className="text-[11px] uppercase tracking-widest text-amber-700 font-semibold mb-1">The document says</div>
-                                            <div className="text-[15px] leading-relaxed text-gray-700">{md(block.md)}</div>
+                                            <div className="text-[15px] leading-relaxed text-gray-700">{paragraphs(block.md)}</div>
                                         </div>
                                     );
                                 }
@@ -111,7 +139,7 @@ export default function SunlightPage() {
                                     return (
                                         <div key={i} className="border-l-2 border-emerald-400 rounded-r-md px-4 py-3 bg-white">
                                             <div className="text-[11px] uppercase tracking-widest text-emerald-700 font-semibold mb-1">The record</div>
-                                            <div className="text-[15px] leading-relaxed text-gray-800">{md(block.md)}</div>
+                                            <div className="text-[15px] leading-relaxed text-gray-800">{paragraphs(block.md)}</div>
                                         </div>
                                     );
                                 }
@@ -126,7 +154,7 @@ export default function SunlightPage() {
                                 }
                                 return (
                                     <div key={i} className="text-[15px] leading-relaxed text-gray-800">
-                                        {md(block.md)}
+                                        {paragraphs(block.md)}
                                     </div>
                                 );
                             })}
@@ -158,6 +186,6 @@ export default function SunlightPage() {
                     will what does not.
                 </div>
             </div>
-        </SectionPage>
+        </>
     );
 }
