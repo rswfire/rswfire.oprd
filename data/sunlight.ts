@@ -227,7 +227,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "This entire meeting is on tape. Sixty-two minutes, public for over a year, with transcript, chapters, and analysis:"
+                "md": "False. It was not expectation-setting. It was pretext-setting, and all sixty-two minutes of it are recorded, public for over a year, with transcript, chapters, and analysis:"
             },
             {
                 "t": "links",
@@ -235,15 +235,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "p",
-                "md": "It was not expectation-setting. This is what is on the tape."
-            },
-            {
-                "t": "p",
                 "md": "The park manager opened with praise: I was doing a great job at the welcome center ([0:00](https://oprdvolunteerabuse.org/evidence/coercion/?t=0:00)). Then he read from a list of talking points, a single piece of paper in front of him ([2:53](https://oprdvolunteerabuse.org/evidence/coercion/?t=2:53)). When I disagreed, he said \"You don't have to agree with it\" ([4:39](https://oprdvolunteerabuse.org/evidence/coercion/?t=4:39)), and \"this isn't an argument,\" twice ([6:26](https://oprdvolunteerabuse.org/evidence/coercion/?t=6:26)).\n\nNine minutes went to Patrick, a ranger I called very polite ([8:13](https://oprdvolunteerabuse.org/evidence/coercion/?t=8:13)); at the end of them he said, \"So I understand you have a conflict with Patrick\" ([9:12](https://oprdvolunteerabuse.org/evidence/coercion/?t=9:12)). His example of tone was the difference between introducing yourself politely and telling a camper to \"shut the fuck up\" ([12:52](https://oprdvolunteerabuse.org/evidence/coercion/?t=12:52)).\n\nHe told me the emails were not the issue, that communication was healthy; I asked, \"Do you really mean this?\" and he said he did ([15:20](https://oprdvolunteerabuse.org/evidence/coercion/?t=15:20)). He claimed my emails contained words they do not contain; I told him they were not in there; he said \"fair enough\" and moved on. He had no emails at that table. He had a handwritten piece of paper ([15:45](https://oprdvolunteerabuse.org/evidence/coercion/?t=15:45)).\n\nThe supervisor spoke for the first time in nineteen minutes. One word: \"Tone\" ([18:59](https://oprdvolunteerabuse.org/evidence/coercion/?t=18:59)). He instructed me to have only conversations that do not result in threats or demands ([21:15](https://oprdvolunteerabuse.org/evidence/coercion/?t=21:15)), and quoted demands I never wrote; I denied them and he could not produce them ([21:31](https://oprdvolunteerabuse.org/evidence/coercion/?t=21:31)). He reminded me of his fifteen years in the agency, the disciplinary processes, HR ([22:40](https://oprdvolunteerabuse.org/evidence/coercion/?t=22:40)). Then he told me to chew glass and swallow it ([23:17](https://oprdvolunteerabuse.org/evidence/coercion/?t=23:17)).\n\nHe told me to stop sending follow-up emails ([29:16](https://oprdvolunteerabuse.org/evidence/coercion/?t=29:16)). Thirty minutes in, and for the first time, he told me the volunteer services lead had no supervisory authority, and: \"If we do dismissal \u2014 it's not the volunteer services lead doing a dismissal. It's the park supervisor or myself\" ([29:52](https://oprdvolunteerabuse.org/evidence/coercion/?t=29:52)). He raised the poem and said he did not need an explanation ([36:20](https://oprdvolunteerabuse.org/evidence/coercion/?t=36:20)).\n\nHe counted my first week, one day and one text message, as two incidents, and called it a pattern ([44:42](https://oprdvolunteerabuse.org/evidence/coercion/?t=44:42)). He described a claim I never made about the supervisor and called it \"the most false thing I've ever heard\"; I told him I never said it, and he answered, \"that's how it was received\" ([45:30](https://oprdvolunteerabuse.org/evidence/coercion/?t=45:30)). The supervisor then confirmed the interpretation was hers ([46:29](https://oprdvolunteerabuse.org/evidence/coercion/?t=46:29)).\n\nWhen I said I was not being given the benefit of the doubt, he answered, \"I may not be able to help you with that\" ([50:10](https://oprdvolunteerabuse.org/evidence/coercion/?t=50:10)). When I asked for examples of the pattern, he said he had provided them ([52:42](https://oprdvolunteerabuse.org/evidence/coercion/?t=52:42)). In the final two minutes he told me four times I did not have to stay ([59:31](https://oprdvolunteerabuse.org/evidence/coercion/?t=59:31))."
-            },
-            {
-                "t": "p",
-                "md": "The \"Manager notes\" make six claims about that meeting. The tape answers each."
             },
             {
                 "t": "says",

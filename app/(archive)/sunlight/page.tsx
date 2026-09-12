@@ -14,6 +14,7 @@ import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import SunlightTabs from "@/components/SunlightTabs";
 import { SUNLIGHT_SECTIONS } from "@/data/sunlight";
+import type { SunlightBlock } from "@/data/sunlight";
 import { TIMELINE_CITED_SOURCES } from "@/data/recordsRequests";
 
 export const metadata: Metadata = {
@@ -67,6 +68,37 @@ function paragraphs(text: string): ReactNode[] {
     ));
 }
 
+// A "says" block opens a quoted segment; a "record" block opens an answering
+// segment that carries every paragraph and list after it, until the document
+// speaks again.
+function group(blocks: SunlightBlock[]): { t: "says" | "record"; blocks: SunlightBlock[] }[] {
+    const segs: { t: "says" | "record"; blocks: SunlightBlock[] }[] = [];
+    for (const b of blocks) {
+        if (b.t === "says" || b.t === "record" || segs.length === 0) {
+            segs.push({ t: b.t === "says" ? "says" : "record", blocks: [b] });
+        } else {
+            segs[segs.length - 1].blocks.push(b);
+        }
+    }
+    return segs;
+}
+
+function body(blocks: SunlightBlock[]): ReactNode[] {
+    return blocks.map((b, i) =>
+        b.t === "links" ? (
+            <ul key={i} className="mt-3 list-disc pl-6 space-y-1">
+                {b.md.split("\n").map((line, j) => (
+                    <li key={j}>{md(line.replace(/^- /, ""))}</li>
+                ))}
+            </ul>
+        ) : (
+            <div key={i} className={i > 0 ? "mt-3" : undefined}>
+                {paragraphs(b.md)}
+            </div>
+        ),
+    );
+}
+
 export default function SunlightPage() {
     return (
         <SectionPage
@@ -118,35 +150,19 @@ function TimelinePanel() {
                     <section key={section.heading}>
                         <h2 className="text-lg font-mono font-bold text-gray-900">{section.heading}</h2>
                         <div className="mt-3 space-y-4">
-                            {section.blocks.map((block, i) => {
-                                if (block.t === "says") {
+                            {group(section.blocks).map((seg, i) => {
+                                if (seg.t === "says") {
                                     return (
                                         <div key={i} className="border-l-2 border-amber-300 bg-amber-50/60 rounded-r-md px-4 py-3">
                                             <div className="text-[11px] uppercase tracking-widest text-amber-700 font-semibold mb-1">The document says</div>
-                                            <div className="text-[15px] leading-relaxed text-gray-700">{paragraphs(block.md)}</div>
+                                            <div className="text-[15px] leading-relaxed text-gray-700">{body(seg.blocks)}</div>
                                         </div>
-                                    );
-                                }
-                                if (block.t === "record") {
-                                    return (
-                                        <div key={i} className="border-l-2 border-emerald-400 rounded-r-md px-4 py-3 bg-white">
-                                            <div className="text-[11px] uppercase tracking-widest text-emerald-700 font-semibold mb-1">The record</div>
-                                            <div className="text-[15px] leading-relaxed text-gray-800">{paragraphs(block.md)}</div>
-                                        </div>
-                                    );
-                                }
-                                if (block.t === "links") {
-                                    return (
-                                        <ul key={i} className="list-disc pl-6 text-[15px] leading-relaxed text-gray-800 space-y-1">
-                                            {block.md.split("\n").map((line, j) => (
-                                                <li key={j}>{md(line.replace(/^- /, ""))}</li>
-                                            ))}
-                                        </ul>
                                     );
                                 }
                                 return (
-                                    <div key={i} className="text-[15px] leading-relaxed text-gray-800">
-                                        {paragraphs(block.md)}
+                                    <div key={i} className="border-l-2 border-emerald-400 rounded-r-md px-4 py-3 bg-white">
+                                        <div className="text-[11px] uppercase tracking-widest text-emerald-700 font-semibold mb-1">The record</div>
+                                        <div className="text-[15px] leading-relaxed text-gray-800">{body(seg.blocks)}</div>
                                     </div>
                                 );
                             })}
