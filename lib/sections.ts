@@ -4,6 +4,8 @@ export const archiveSections = [
     { href: "/ethics", label: "A Note About Ethics" },
     { href: "/displacement", label: "The Displacement Framework" },
     { href: "#separator-accountability", label: "", separator: true },
+    { href: "/records-requests", label: "Records Requests", icon: "FileText" as const, iconClass: "text-sky-700" },
+    { href: "#separator-records", label: "", separator: true },
     {
         href: "/accountability",
         label: "Accountability",
@@ -14,8 +16,8 @@ export const archiveSections = [
             { href: "/accountability/oprd", label: "Oregon Parks & Recreation Dept." },
         ]
     },
-    { href: "/records-requests", label: "Records Requests" },
     { href: "#separator-3", label: "", separator: true },
+    { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
     { href: "/timeline", label: "Timeline" },
     {
         href: "/key-individuals",

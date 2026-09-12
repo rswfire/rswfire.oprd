@@ -25,6 +25,7 @@ import {
     Wrench,
     X,
     Shield,
+    Sun,
 } from 'lucide-react';
 
 const iconMap = {
@@ -52,6 +53,7 @@ const iconMap = {
     Video,
     Wrench,
     X,
+    Sun,
 } as const;
 
 export type IconName = keyof typeof iconMap;

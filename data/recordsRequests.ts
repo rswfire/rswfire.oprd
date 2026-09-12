@@ -364,3 +364,37 @@ export const ANSWERED_AGENCIES: AnsweredAgency[] = [
         href: "/accountability/das",
     },
 ];
+
+// The source documents the Timeline of Events cites, by the filenames in
+// its own text, none produced. One source of truth: the September 11, 2026
+// revisions request asks for each of these with every version and revision;
+// the sunlight section renders this list. Filenames reproduced exactly,
+// including the citations' own errors.
+export const TIMELINE_CITED_SOURCES: string[] = [
+    "RE_ Sam White; Host 40423.pdf",
+    "020925 - 1.pdf",
+    "020925 - 2.pdf",
+    "030425 Management Summary.pdf",
+    "021225 - 2.pdf",
+    "021225 - 3.docx",
+    "021925 - 1.pdf",
+    "022525 - 1.pdf",
+    "022625 - 1.pdf",
+    "022725 - 1.pdf",
+    "022825 - 1.pdf",
+    "030125 - 1.pdf",
+    "030225 - 1.pdf",
+    "030524 - 2.pdf",
+    "030525 - Manager notes.docx",
+    "030525 - 3.pdf",
+    "031025 - 1.docx",
+    "032125 - 1.pdf",
+    "03212 - 2.pdf",
+    "032425 - 1.pdf",
+    "032425 - 2.pdf",
+    "032425 - 3.pdf",
+    "3.25.25 Phone Call with Allison Watson and Robert Samuel White.docx",
+    "032525 - 1.pdf",
+    "032625 - 1.pdf",
+    "032625 - 2.pdf",
+];
