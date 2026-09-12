@@ -58,7 +58,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "False. I made no such call.\n\nThe entry exists to give the park manager an innocent reason to appear at the welcome center the next day. The correspondence shows he arrived unprompted. In [his own February 12 email](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/) he addressed my belief \"that if a person in my role shows up it is indicative of a problem.\" He came on his own. The February 10 call was written in afterward to disguise that."
+                "md": "False. I made no such call.\n\nThe entry exists to give the park manager an innocent reason to appear at the welcome center the next day. [I documented the visit the next morning](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/): \"a park manager showed up at the start of his shift, without his direct supervisor for support, and this created a whole new situation.\" In [his own February 12 email](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/) he addressed my belief \"that if a person in my role shows up it is indicative of a problem.\" He came on his own. The February 10 call was written in afterward to disguise that."
             }
         ]
     },
