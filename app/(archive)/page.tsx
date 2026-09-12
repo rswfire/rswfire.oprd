@@ -6,6 +6,7 @@ import ArchiveVideos from "@/components/ArchiveVideos";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
+import SunlightCard from "@/components/SunlightCard";
 import RecordIndexCard from "@/components/RecordIndexCard";
 import RecordsRequestsCard from "@/components/RecordsRequestsCard";
 import QueryableRecord from "@/components/QueryableRecord";
@@ -57,6 +58,10 @@ export default function OverviewPage() {
                     <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                 </div>
             </div>
+
+            {/* SUNLIGHT — their words, next to the record */}
+            <SunlightCard />
+
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />

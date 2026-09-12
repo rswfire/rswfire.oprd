@@ -566,7 +566,7 @@ export default function CaseTimeline() {
     }, []);
 
     return (
-        <div className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+        <div className="mt-4 rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
             <div className="relative">
                 {/* Prev / next — the visible way through */}
                 <button
