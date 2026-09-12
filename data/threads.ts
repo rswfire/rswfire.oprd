@@ -4496,6 +4496,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "the-standing-notice",
+            ulid: "01M2G5FNCGG1YSG83H6838E3V5",
+            date: "September 12, 2026",
+            time: "7:35 AM",
+            d: "2026-09-12",
+            from: "Robert Samuel White",
+            to: "[Tugman Volunteer Services Lead]; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
+            kind: "notice",
+            title: "Re: sunlight — the standing notice",
+            summary:
+                "The section is named and live. Per-update notification replaced by a standing notice: the record is public and open source, and every change to it can be diffed character by character.",
+            docs: [{ label: "The standing notice", href: "/records/oprd/2026-09-12-the-standing-notice.pdf" }],
+            eml: "/records/oprd/eml/2026-09-12_0735_the-standing-notice.eml",
+        },
+        {
             id: "i-want-to-do-it-justice",
             ulid: "01M2G1SG4GP759TPZK5NGEVFHP",
             date: "September 12, 2026",
