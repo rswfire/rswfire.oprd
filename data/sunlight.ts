@@ -50,7 +50,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "2/10/25 \u2014 the call that never happened",
+        "heading": "2/10/25 \u2014 the call",
         "blocks": [
             {
                 "t": "says",
@@ -58,7 +58,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "False. I made no such call.\n\nThe entry exists to give the park manager an innocent reason to appear at the welcome center the next day. [I documented the visit the next morning](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/): \"a park manager showed up at the start of his shift, without his direct supervisor for support, and this created a whole new situation.\" In [his own February 12 email](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/) he addressed my belief \"that if a person in my role shows up it is indicative of a problem.\" He came on his own. The February 10 call was written in afterward to disguise that."
+                "md": "True. A guest needed an answer and I called down the escalation chart, the rangers first, the park manager last. He did not answer.\n\nI described this call at the picnic table a month later, as my example of Patrick’s condescension: a guest situation I had to escalate, where I called everyone including him, and when he arrived he recited the entire call log back to me ([10:36](https://oprdvolunteerabuse.org/evidence/coercion/?t=10:36)).\n\nHe came to the welcome center the next day anyway. [I documented it the following morning](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/): \"a park manager showed up at the start of his shift, without his direct supervisor for support, and this created a whole new situation.\" In [his reply](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/) he addressed my belief \"that if a person in my role shows up it is indicative of a problem.\""
             }
         ]
     },
