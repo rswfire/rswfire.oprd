@@ -82,8 +82,8 @@ export default function SunlightPage() {
                 I paid for it under a records request, read it, and answered it the same day.
             </div>
             <div className="mt-4">
-                The file{"’"}s own properties: created March 25, 2025, at 7:02 in the morning, the day
-                of the review call. Twenty-three revisions. 193 minutes of editing. A last edit on
+                The file{"’"}s own properties: created the morning of the review call.
+                Twenty-three revisions. 193 minutes of editing. A last edit on
                 January 21, 2026, five days after my notice of a federal claim. Inside the Oregon
                 State Police six weeks later.
             </div>
