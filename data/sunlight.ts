@@ -322,11 +322,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "Secondhand, from an unnamed source, repeating the same apocalyptic invention that appears nowhere in ten weeks of my correspondence. It is not evidence. It is the fabrication, cited a second time to make it look corroborated."
-            },
-            {
-                "t": "p",
-                "md": "The document claims that week held a volunteer \"saying some concerning things.\" This is what that week held. On March 18, six days before my dismissal, with every ranger away at a regional event, a man [the agency later confirmed as its own employee](https://oprdvolunteerabuse.org/accountability/oprd/01JPTVM380TK5VF35A8TSM9EGJ/) came to me while I worked alone and probed me about leadership: how I was being treated, whether leadership was treating me well.\n\n[I documented it within hours.](https://oprdvolunteerabuse.org/accountability/oprd/01JPNSRRZ0358ZTTN8NMXHESYP/) [The supervisor replied within the hour with the explanation](https://oprdvolunteerabuse.org/accountability/oprd/01JPNX0J88PQE161MCS09FZA6C/): IT staff photographing sites, and \"I think you handled it wonderfully.\" [My reply noted the photographs were taken before I had cleaned.](https://oprdvolunteerabuse.org/accountability/oprd/01JPTVWKPRBZ74W0XHC9XVSWEJ/)\n\n[I named the encounter as a baited assessment to the program manager on May 26, 2025](https://oprdvolunteerabuse.org/accountability/oprd/01JW7QYBXRQ096VC43S9EQJC94/), and [to the director on August 15, 2025](https://oprdvolunteerabuse.org/accountability/oprd/01K2QNT3G0QP8S42VBMG49CD7Y/). Neither responded. [The full record of the encounter is in the archive.](https://oprdvolunteerabuse.org/evidence/surveillance/)"
+                "md": "Manufactured."
             }
         ]
     },
