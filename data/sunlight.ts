@@ -259,7 +259,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "These are the park manager's words, said to me at that table. I said nothing, because it is obvious. His words imply I thought otherwise. I never did.\n\nI reported that the volunteer services lead told me a specific ranger would train me. That was his commitment, not my demand ([5:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=5:33)). On the tape the park manager confirms it was management that overrode it, without telling me ([28:49](https://oprdvolunteerabuse.org/evidence/coercion/?t=28:49))."
+                "md": "False. Nothing in the recording corroborates this statement. No one said it to me at that table, and I never said or implied otherwise."
             },
             {
                 "t": "says",
