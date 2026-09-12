@@ -4496,6 +4496,21 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "i-want-to-do-it-justice",
+            ulid: "01M2G1SG4GP759TPZK5NGEVFHP",
+            date: "September 12, 2026",
+            time: "6:30 AM",
+            d: "2026-09-12",
+            from: "Robert Samuel White",
+            to: "[Tugman Volunteer Services Lead]; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
+            kind: "notice",
+            title: "Re: sunlight: the collapse of the story you told the police and yourselves",
+            summary:
+                "A revision before Monday, announced to the document's author. A new archive section to follow: their words placed next to the permanent record.",
+            docs: [{ label: "Re: sunlight", href: "/records/oprd/2026-09-12-i-want-to-do-it-justice.pdf" }],
+            eml: "/records/oprd/eml/2026-09-12_0630_i-want-to-do-it-justice.eml",
+        },
+        {
             id: "the-revisions-request",
             ulid: "01M2F996FGBZCCP238E07PP1FF",
             date: "September 11, 2026",
