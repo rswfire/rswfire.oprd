@@ -79,16 +79,13 @@ export default function SunlightPage() {
                 state police, and armed officers came to my door.
             </div>
             <div className="mt-4">
-                I paid for it, read it, and answered it the same day. Every entry below is theirs, in
-                quotation marks, exactly as written. Then the record: the emails, the recordings, a
-                permanent public link for every fact. Timestamps open the recordings at the cited
-                second.
+                I paid for it under a records request, read it, and answered it the same day.
             </div>
             <div className="mt-4">
-                The file{"’"}s own properties tell you what it is. Created March 25, 2025, at 7:02 in
-                the morning {"—"} the day of the review call. Twenty-three revisions. 193 minutes of
-                editing. A last edit on January 21, 2026, five days after my notice of a federal claim.
-                Inside the Oregon State Police six weeks later.
+                The file{"’"}s own properties: created March 25, 2025, at 7:02 in the morning, the day
+                of the review call. Twenty-three revisions. 193 minutes of editing. A last edit on
+                January 21, 2026, five days after my notice of a federal claim. Inside the Oregon
+                State Police six weeks later.
             </div>
             <div className="mt-4">
                 Their story survives only in the dark. This is sunlight.
@@ -113,10 +110,6 @@ function TimelinePanel() {
                 The document as produced:{" "}
                 <Link href="/accountability/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
                     the September 3 production
-                </Link>
-                . The response as sent:{" "}
-                <Link href="/accountability/oprd/01M2F4J1J8N250W0G69CAKQSRM" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
-                    the September 11 letter
                 </Link>
                 .
             </div>
