@@ -188,7 +188,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "True. [The letter is on the record.](https://oprdvolunteerabuse.org/accountability/oprd/01JN7XVHD89PACJKYM3JMKTYFW/) It was my last day at the welcome center: \"I had a very good day. I helped a lot of people, and I'm going to miss the welcome center.\" Three requests: a strong review, help finding the same role at other coastal parks, consideration for a return next year.\n\nAnd the document stops quoting one sentence early. The letter continues: \"I accept this. What I do know is that I bring value \u2014 to this park, to this system, to the people I serve. I trust that you will advocate for me in a professional capacity.\""
+                "md": "[True.](https://oprdvolunteerabuse.org/accountability/oprd/01JN7XVHD89PACJKYM3JMKTYFW/) It was my last day at the welcome center: \"I had a very good day. I helped a lot of people, and I'm going to miss the welcome center.\" Three requests: a strong review, help finding the same role at other coastal parks, consideration for a return next year.\n\nI had not seen the volunteer services lead once in the nine days since the walk on February 19. I did not know then what he had done with what I told him on it. I wrote that letter to close the personal question myself and keep the working relationship.\n\nAnd the document stops quoting one sentence early. [The letter continues](https://oprdvolunteerabuse.org/accountability/oprd/01JN7XVHD89PACJKYM3JMKTYFW/): \"I accept this. What I do know is that I bring value \u2014 to this park, to this system, to the people I serve. I trust that you will advocate for me in a professional capacity.\""
             }
         ]
     },
