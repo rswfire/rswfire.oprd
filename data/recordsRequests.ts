@@ -264,7 +264,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
     {
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
-        refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026",
+        refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026 · Sep 11 2026",
         status: "Acknowledged.",
         officers: [
             { name: "Katie Gauthier", role: "External Relations Manager" },
@@ -274,6 +274,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "April 2, 2026: all OPRD communications with the U.S. Forest Service, Oregon State Police, or Lane County Sheriff's Office referencing him, and all internal communications referencing him or the archive",
             "May 2, 2026: every public records request the Department received since 2023 and how each was handled, and every record of executive involvement in public records responses",
             "September 5, 2026: every communication, note, calendar entry, and instruction concerning him held by Director Sumption and Deputy Director Collier, February 1, 2025 to the present, in any medium, on any device used for Department business, including any instruction on whether or how staff should respond to his correspondence",
+            "September 11, 2026: every version and revision of the Timeline of Events document produced to the Oregon State Police — the version histories, the version log with date, time, and account for each save, and every email that transmitted any version — and every document the Timeline cites as a source, twenty-six files by their cited filenames, with every version and revision of each, all in native format with metadata intact",
         ],
         claims: [
             "August 28, 2025, by phone: an attempt to narrow the request. Then silence.",
@@ -304,6 +305,18 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
                 who: "them",
                 what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days",
             },
+            {
+                d: "2026-09-18",
+                date: "September 18, 2026",
+                who: "them",
+                what: "Acknowledge the September 11 revisions request: ORS 192.324(2), five business days",
+            },
+            {
+                d: "2026-10-02",
+                date: "October 2, 2026",
+                who: "them",
+                what: "Complete the September 11 revisions request or provide a written estimated completion date: ORS 192.329(5), fifteen business days",
+            },
         ],
         timeline: [
             { d: "2025-08-22", date: "August 22, 2025", event: "Comprehensive request filed: thirty-three categories" },
@@ -321,6 +334,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices; the statement forwarded to the Director for the record, undisputed" },
             { d: "2026-09-11", date: "September 11, 2026", event: "Acknowledged, four days inside the window: under review, an estimate for staff time and costs promised by September 22" },
             { d: "2026-09-11", date: "September 11, 2026", event: "His reply, fourteen minutes later: the acknowledgment is already on the public record, tracker linked, Director and Governor copied" },
+            { d: "2026-09-11", date: "September 11, 2026", event: "New request: every version and revision of the Timeline of Events document and of every source it cites, the version logs, and every email that transmitted any version" },
         ],
     },
 ];
