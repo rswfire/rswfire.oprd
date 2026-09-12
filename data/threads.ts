@@ -4496,6 +4496,25 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "sunlight",
+            ulid: "01M2F4J1J8N250W0G69CAKQSRM",
+            flagged: true,
+            date: "September 11, 2026",
+            time: "9:59 PM",
+            d: "2026-09-11",
+            from: "Robert Samuel White",
+            to: "Franki Allegra; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
+            kind: "notice",
+            title: "sunlight: the collapse of the story you told the police and yourselves",
+            summary:
+                "The Timeline of Events, answered entry by entry, with a permanent public link for every fact. Sent with the full document attached.",
+            docs: [
+                { label: "sunlight: the collapse of the story you told the police and yourselves", href: "/records/oprd/2026-09-11-sunlight.pdf" },
+                { label: "The Timeline of Events, Against the Record", href: "/records/oprd/attachments/01m2f4j1j8n250w0g69cakqsrm-The-Timeline-of-Events-Against-the-Record.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-11_2159_sunlight.eml",
+        },
+        {
             id: "the-early-morning-reply",
             ulid: "01M28DVPZGW8396NENBMK2MNMW",
             date: "September 11, 2026",

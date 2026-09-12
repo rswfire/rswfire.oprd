@@ -240,6 +240,33 @@ export default function PrimaryTransmission({ transmission, defaultExpanded = fa
 
     const videoRef = useRef<HTMLVideoElement>(null);
 
+    // ?t=46:29 (or ?t=2789) parks the player at that moment on arrival, so
+    // documents can cite a second of the recording by URL. Waits for the
+    // video element to mount and its metadata to load before seeking.
+    useEffect(() => {
+        const raw = new URLSearchParams(window.location.search).get("t");
+        if (!raw) return;
+        const parts = raw.split(":").map(Number);
+        if (parts.some((n) => !isFinite(n))) return;
+        const seconds = parts.reduce((acc, n) => acc * 60 + n, 0);
+        if (seconds <= 0) return;
+
+        let cancelled = false;
+        const seek = (video: HTMLVideoElement) => {
+            video.currentTime = seconds;
+            video.scrollIntoView({ behavior: "smooth", block: "center" });
+        };
+        const arm = () => {
+            if (cancelled) return;
+            const video = videoRef.current;
+            if (!video) { setTimeout(arm, 200); return; }
+            if (video.readyState >= 1) seek(video);
+            else video.addEventListener("loadedmetadata", () => { if (!cancelled) seek(video); }, { once: true });
+        };
+        arm();
+        return () => { cancelled = true; };
+    }, []);
+
     // The platform's reading of this transmission, read live from its
     // Queryable Personhood record. Nothing about it is stored here: the page
     // shows whatever the platform currently says, or nothing if it can't be
