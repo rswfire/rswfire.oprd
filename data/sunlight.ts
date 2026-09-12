@@ -478,7 +478,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "Baseless."
+                "md": "False."
             }
         ]
     },
@@ -504,7 +504,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "I wrote to them about what they had done, and asked for nothing. [All of it is published.](https://oprdvolunteerabuse.org/accountability/oprd/)"
+                "md": "True. That is what I do. I put things on the record: public records requests, a notice of violation when they did not answer one, notice of the archive, notice under 42 U.S.C. § 1983, and letters naming what each of them did. None of them asked for a response.\n\nThat is why this document can be answered line by line. Every claim in it meets something [I wrote down and published at the time](https://oprdvolunteerabuse.org/accountability/oprd/)."
             }
         ]
     },
@@ -517,7 +517,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "No email from January 6 exists. [On January 9 I wrote to her](https://oprdvolunteerabuse.org/accountability/oprd/01KEK5MQNRVQK9HPE1AB1N2PPE/), and [on January 16 I gave notice under 42 U.S.C. \u00a7 1983](https://oprdvolunteerabuse.org/accountability/oprd/01KF3KC3AR9KFMTRD44ZFFMZ2C/).\n\nFive days after that, the metadata of this document shows its author returned to it and finished her final edits. Six weeks after that, it was in the hands of the state police.\n\n[On July 8, 2026, I withdrew the individual capacity claim against her.](https://oprdvolunteerabuse.org/accountability/oprd/01KX28CF90H15CJVJRJWKXCP5N/)"
+                "md": "False. Notification is not a threat. I have no record of anything going out on January 6. [On January 9 I wrote to her](https://oprdvolunteerabuse.org/accountability/oprd/01KEK5MQNRVQK9HPE1AB1N2PPE/), and [on January 16 I gave her notice under 42 U.S.C. \u00a7 1983](https://oprdvolunteerabuse.org/accountability/oprd/01KF3KC3AR9KFMTRD44ZFFMZ2C/).\n\nFive days after that, the metadata of this document shows its author returned to it and finished her final edits. Six weeks after that, it was in the hands of the state police.\n\n[On July 8, 2026, unprompted, a month after my final statement to the agency, I wrote to her and withdrew the individual capacity claim](https://oprdvolunteerabuse.org/accountability/oprd/01KX28CF90H15CJVJRJWKXCP5N/): \"I am writing to tell you that I will not pursue that claim against you personally. Not now, not later, not if this matter proceeds against the state, and not if it goes to trial. The claim is available to me. I decline to bring it.\" I told her why: \"I know what it is to have someone with authority impose a personal cost on a person's life. You imposed that on mine. I have decided I will not impose it on yours.\""
             }
         ]
     },
