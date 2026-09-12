@@ -267,7 +267,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "The sentence asserts I was disproved. It does not say of what, or by what. The examples it refers to, twice, appear nowhere in the document.\n\nThe exchange it describes is on the tape: when I said I was not being given the benefit of the doubt, the park manager answered, \"I may not be able to help you with that\" ([50:10](https://oprdvolunteerabuse.org/evidence/coercion/?t=50:10))."
+                "md": "False. When the park manager laid out the rule, \"assume positive intent until proven otherwise\" ([26:31](https://oprdvolunteerabuse.org/evidence/coercion/?t=26:31)), I told him that was already my default position with people in general ([27:07](https://oprdvolunteerabuse.org/evidence/coercion/?t=27:07)).\n\nHe returned to it, asking me to take them at their word and let the trust issue with the volunteer services lead go ([32:41](https://oprdvolunteerabuse.org/evidence/coercion/?t=32:41)).\n\nWhen I said the rule was not running in my direction, \"I'm not getting that benefit of the doubt\" ([50:32](https://oprdvolunteerabuse.org/evidence/coercion/?t=50:32)), he answered, \"I may not be able to help you with that\" ([50:39](https://oprdvolunteerabuse.org/evidence/coercion/?t=50:39)).\n\nHe then said there was no positive intent from my side ([51:09](https://oprdvolunteerabuse.org/evidence/coercion/?t=51:09)), and that I had been proven otherwise since the first of the month ([52:32](https://oprdvolunteerabuse.org/evidence/coercion/?t=52:32))."
             },
             {
                 "t": "says",
