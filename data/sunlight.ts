@@ -251,7 +251,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "I bolded words to emphasize them. That is what bold text is for. I said I was direct and meant exactly what I wrote, so no one needed to read hidden meaning into it ([17:52](https://oprdvolunteerabuse.org/evidence/coercion/?t=17:52)). The exchange is on the tape ([20:30](https://oprdvolunteerabuse.org/evidence/coercion/?t=20:30)).\n\nA volunteer bolded a word in an email. That is what this entry is about, in a document a state agency wrote about a person and delivered to the police."
+                "md": "False. I bolded words to emphasize them. That is what bold text is for, and I told him so at the table: it was the only time I had ever bolded anything in an email, and I did it to make a point ([20:17](https://oprdvolunteerabuse.org/evidence/coercion/?t=20:17), [20:49](https://oprdvolunteerabuse.org/evidence/coercion/?t=20:49)).\n\nNothing was disproved. The park manager had said bolding insinuates a tone that can be perceived as negative or threatening ([19:06](https://oprdvolunteerabuse.org/evidence/coercion/?t=19:06)). I said the opposite of what this entry credits him with proving: I write directly and mean exactly what I write, so there is nothing under it to read ([17:52](https://oprdvolunteerabuse.org/evidence/coercion/?t=17:52)).\n\nA volunteer bolded a word in an email. That is what this entry is about, in a document a state agency wrote about a person and delivered to the police."
             },
             {
                 "t": "says",
