@@ -309,7 +309,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "Five days after the meeting, the program manager called me. The subject of the call was not what happened at that table. It was that I had recorded it."
+                "md": "False. I recorded that call. She never said anything about a higher standard. I told her they were public officials in a public setting, and she answered that as a volunteer I was an agent of the state.\n\nTrue: five days after the meeting, the program manager called me. The subject of the call was not what happened at that table. It was that I had recorded it."
             }
         ]
     },
