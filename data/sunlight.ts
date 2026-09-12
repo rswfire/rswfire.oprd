@@ -504,7 +504,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "True. That is what I do. I put things on the record: public records requests, a notice of violation when they did not answer one, notice of the archive, notice under 42 U.S.C. § 1983, and letters naming what each of them did. None of them asked for a response.\n\nThat is why this document can be answered line by line. Every claim in it meets something [I wrote down and published at the time](https://oprdvolunteerabuse.org/accountability/oprd/)."
+                "md": "True. I put things on the record: public records requests, a notice of violation when they did not answer one, notice of the archive, notice under 42 U.S.C. § 1983, and letters naming what each of them did. None of them asked for a response.\n\nThat is why this document can be answered line by line. Every claim in it meets something [I wrote down and published at the time](https://oprdvolunteerabuse.org/accountability/oprd/)."
             }
         ]
     },

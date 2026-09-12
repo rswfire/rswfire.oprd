@@ -4,10 +4,10 @@
 // normalized subject to the merged single-PDF rendering of that chain.
 
 export const CHAIN_PDFS: Record<string, string> = {
+    "governor|escalating-retaliation-2026": "/records/governor/threads/escalating-retaliation-at-a-federal-work-center-may-4-2026.pdf",
     "oprd|42 u.s.c. \u00a7 1983": "/records/oprd/threads/42-u-s-c-1983.pdf",
     "oprd|[oprd-host-volunteers-needed] april welcome center host(s) -\tbeverly beach state park": "/records/oprd/threads/oprd-host-volunteers-needed-april-welcome-center-host-s-beve.pdf",
     "oprd|[oprd-host-volunteers-needed] william tugman state park,\tcampground greeting host, april 5 - 30": "/records/oprd/threads/oprd-host-volunteers-needed-william-tugman-state-park-campgr.pdf",
-    "oprd|[park supervisor]": "/records/oprd/threads/park-supervisor.pdf",
     "oprd|an open letter": "/records/oprd/threads/an-open-letter.pdf",
     "oprd|background check approved!": "/records/oprd/threads/background-check-approved.pdf",
     "oprd|beverly beach": "/records/oprd/threads/beverly-beach.pdf",
@@ -15,15 +15,12 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|cash transactions": "/records/oprd/threads/cash-transactions.pdf",
     "oprd|day 339.": "/records/oprd/threads/day-339.pdf",
     "oprd|day 347.": "/records/oprd/threads/day-347.pdf",
-    "oprd|defining abuse": "/records/oprd/threads/defining-abuse.pdf",
     "oprd|end of the month (friday 28th) schedule change": "/records/oprd/threads/end-of-the-month-friday-28th-schedule-change.pdf",
-    "oprd|escalating-retaliation-2026": "/records/oprd/threads/escalating-retaliation-at-a-federal-work-center-may-4-2026.pdf",
     "oprd|evidence page 10 \u2014 police intimidation": "/records/oprd/threads/evidence-page-10-police-intimidation.pdf",
     "oprd|final day & next steps": "/records/oprd/threads/final-day-next-steps.pdf",
     "oprd|follow-up on our march 25 call": "/records/oprd/threads/follow-up-on-our-march-25-call.pdf",
     "oprd|follow-up: public records request response \u2013 april 14, 2026 letter": "/records/oprd/threads/follow-up-public-records-request-response-april-14-2026-lett.pdf",
     "oprd|following up on the power outage": "/records/oprd/threads/following-up-on-the-power-outage.pdf",
-    "oprd|for the record \u2014 supervisory betrayal": "/records/oprd/threads/for-the-record-supervisory-betrayal.pdf",
     "oprd|fw-march-31-2026": "/records/oprd/threads/march-31.pdf",
     "oprd|fyi": "/records/oprd/threads/fyi.pdf",
     "oprd|gate": "/records/oprd/threads/gate.pdf",
@@ -58,6 +55,7 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|september": "/records/oprd/threads/september.pdf",
     "oprd|setup-second-encounter-2026": "/records/oprd/threads/the-setup-you-now-own.pdf",
     "oprd|store/visitor center host position at honeyman": "/records/oprd/threads/store-visitor-center-host-position-at-honeyman.pdf",
+    "oprd|sunlight: the collapse of the story you told the police and yourselves": "/records/oprd/threads/sunlight-the-collapse-of-the-story-you-told-the-police-and-y.pdf",
     "oprd|thank you...": "/records/oprd/threads/thank-you.pdf",
     "oprd|the firestorm you created": "/records/oprd/threads/the-firestorm-you-created.pdf",
     "oprd|the setup you now own": "/records/oprd/threads/the-setup-you-now-own.pdf",
@@ -72,5 +70,4 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|work schedule": "/records/oprd/threads/work-schedule.pdf",
     "oprd|you made this possible...": "/records/oprd/threads/you-made-this-possible.pdf",
     "usfs|evidence page 10 \u2014 police intimidation": "/records/usfs/threads/evidence-page-10-police-intimidation.pdf",
-    "usfs|extra information": "/records/usfs/threads/extra-information.pdf",
 };

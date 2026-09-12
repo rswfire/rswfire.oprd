@@ -4496,8 +4496,26 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "revision-notification",
+            ulid: "01M2BY2J6RHPA70PWC2ZTRSWFV",
+            date: "September 12, 2026",
+            time: "4:08 PM",
+            d: "2026-09-12",
+            from: "Robert Samuel White",
+            to: "[Tugman Volunteer Services Lead]; [Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Risk; DAS Risk Management; Governor Kotek",
+            kind: "notice",
+            title: "Revision Notification",
+            summary:
+                "Notice that the response to the Timeline of Events is revised and republished. Of its forty entries, twenty-eight are false.",
+            docs: [
+                { label: "Revision Notification", href: "/records/oprd/2026-09-12-revision-notification.pdf" },
+                { label: "sunlight: the Timeline against the record", href: "/records/oprd/attachments/01m2by2j6rhpa70pwc2ztrswfv-2026-09-12-sunlight-the-timeline-against-the-record.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-12_1608_revision-notification.eml",
+        },
+        {
             id: "the-standing-notice",
-            ulid: "01M2G5FNCGG1YSG83H6838E3V5",
+            ulid: "01M2B0P7CG01G4YP0HQ89JBG7D",
             date: "September 12, 2026",
             time: "7:35 AM",
             d: "2026-09-12",
@@ -4512,7 +4530,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "i-want-to-do-it-justice",
-            ulid: "01M2G1SG4GP759TPZK5NGEVFHP",
+            ulid: "01M2AX024GFJ98QPY7VYNNY7M8",
             date: "September 12, 2026",
             time: "6:30 AM",
             d: "2026-09-12",
@@ -4527,7 +4545,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "the-revisions-request",
-            ulid: "01M2F996FGBZCCP238E07PP1FF",
+            ulid: "01M2A4FRFG5RNZ53DZS39Y9W0Y",
             date: "September 11, 2026",
             time: "11:22 PM",
             d: "2026-09-11",
@@ -4542,7 +4560,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "sunlight",
-            ulid: "01M2F4J1J8N250W0G69CAKQSRM",
+            ulid: "01M29ZRKJ8KB38SPR38V64HH2C",
             flagged: true,
             date: "September 11, 2026",
             time: "9:59 PM",
@@ -4555,7 +4573,7 @@ export const OPRD_THREAD: RecordsThreadData = {
                 "The Timeline of Events, answered entry by entry, with a permanent public link for every fact. Sent with the full document attached.",
             docs: [
                 { label: "sunlight: the collapse of the story you told the police and yourselves", href: "/records/oprd/2026-09-11-sunlight.pdf" },
-                { label: "The Timeline of Events, Against the Record", href: "/records/oprd/attachments/01m2f4j1j8n250w0g69cakqsrm-The-Timeline-of-Events-Against-the-Record.pdf" },
+                { label: "The Timeline of Events, Against the Record", href: "/records/oprd/attachments/01m29zrkj8kb38spr38v64hh2c-The-Timeline-of-Events-Against-the-Record.pdf" },
             ],
             eml: "/records/oprd/eml/2026-09-11_2159_sunlight.eml",
         },
