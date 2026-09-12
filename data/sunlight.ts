@@ -243,7 +243,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "I never wavered on the tape. Nineteen minutes in, I stopped him: \"Let's get to the real issue here.\" I did not trust the volunteer services lead. He had given me no reason to trust him. I laid out why ([19:17](https://oprdvolunteerabuse.org/evidence/coercion/?t=19:17)): he told me another ranger would train me, and that did not happen ([7:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=7:33)).\n\nWhen the park manager claimed I had written things I had not, I told him it was not in the emails, and he said \"fair enough\" and moved on because he could not produce them ([15:45](https://oprdvolunteerabuse.org/evidence/coercion/?t=15:45)). The contradiction it describes did not occur."
+                "md": "False. Nineteen minutes in, I stopped him: \"Let's get to the real issue here.\" I did not trust the volunteer services lead. He had given me no reason to trust him. I laid out why ([19:17](https://oprdvolunteerabuse.org/evidence/coercion/?t=19:17)): he told me another ranger would train me, and that did not happen ([7:33](https://oprdvolunteerabuse.org/evidence/coercion/?t=7:33)).\n\nWhen the park manager claimed I had written things I had not, I told him it was not in the emails, and he said \"fair enough\" and moved on because he could not produce them ([15:45](https://oprdvolunteerabuse.org/evidence/coercion/?t=15:45)). The contradiction it describes did not occur."
             },
             {
                 "t": "says",
