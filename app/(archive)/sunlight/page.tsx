@@ -84,8 +84,7 @@ export default function SunlightPage() {
             <div className="mt-4">
                 The file{"’"}s own properties: created the morning <em>after</em> my dismissal, hours
                 before she called me. Twenty-three revisions. 193 minutes of editing. A last edit on
-                January 21, 2026, five days after my notice of a federal claim. Inside the Oregon
-                State Police six weeks later.
+                January 21, 2026, five days after my notice of a federal claim.
             </div>
             <div className="mt-4">
                 Their story survives only in the dark. This is sunlight.
