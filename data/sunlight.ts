@@ -84,7 +84,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "[My February 12 email is on the record.](https://oprdvolunteerabuse.org/accountability/oprd/01JKXC1M80V9A90EV4SX6BFJ35/) It asked to \"reset\" and said, in my words, \"I will conform. I will recalibrate. I will be a model volunteer.\" [The park manager's reply agreed](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/): \"A reset sounds good to me.\" What the document files as dissatisfaction was me asking for a fresh start, and believing I got one.\n\nIts author had seen this email. On December 19, 2025, [I forwarded it to [Program Manager] directly](https://oprdvolunteerabuse.org/accountability/oprd/01KCW58AYR8F09QY561CPNAY9F/), under the subject \"The Email You Never Investigated,\" with the full February 12 message beneath it, before her final edits to the document reproduced here. The program manager held my good-faith attempt at reconciliation in her own inbox, by name, and the document still files it as dissatisfaction."
+                "md": "False. I expressed no dissatisfaction. That is a characterization. The email is quoted above, and it asked for a reset: \"I will conform. I will recalibrate. I will be a model volunteer.\" [The park manager agreed](https://oprdvolunteerabuse.org/accountability/oprd/01JKXHEPAR0PEQMPJXJGG9GZJ4/): \"A reset sounds good to me.\"\n\n[I forwarded it to the program manager on December 19, 2025](https://oprdvolunteerabuse.org/accountability/oprd/01KCW58AYR8F09QY561CPNAY9F/)."
             }
         ]
     },
