@@ -140,32 +140,66 @@ export default async function DocumentPage({
                 </div>
             )}
 
-            <div className="mt-8 border-t border-gray-300 pt-5">
-                <div className="text-xs font-semibold uppercase tracking-wider text-gray-500">Documents</div>
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                    {attachments.map((d) => (
-                        <a
-                            key={d.href}
-                            href={d.href}
-                            download
-                            className="text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-700 hover:text-white transition-colors"
-                        >
-                            {d.label} ({ext(d.href)})
-                        </a>
-                    ))}
-                    {renderings.map((d) => (
-                        <a
-                            key={d.href}
-                            href={d.href}
-                            download
-                            className="text-xs font-semibold uppercase tracking-wider text-emerald-700 border border-emerald-700 rounded px-2.5 py-1 hover:bg-emerald-700 hover:text-white transition-colors"
-                        >
-                            The record ({ext(d.href)})
-                        </a>
-                    ))}
-                    {filing.eml && <EmlDownload href={filing.eml} />}
+            <div className="mt-8 bg-white border border-gray-200 rounded-lg overflow-hidden">
+                {attachments.length > 0 && (
+                    <>
+                        <div className="px-4 py-2 border-b border-gray-100 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                            Attachments ({attachments.length})
+                        </div>
+                        <ul className="divide-y divide-gray-100">
+                            {attachments.map((d) => (
+                                <li key={d.href} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2">
+                                    <span className="min-w-0 text-sm text-gray-800">
+                                        {d.label}
+                                        <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">{ext(d.href)}</span>
+                                    </span>
+                                    <span className="flex shrink-0 items-center gap-2">
+                                        <a href={d.href} target="_blank" rel="noopener"
+                                           className="rounded-md border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-800 hover:bg-emerald-100">
+                                            View
+                                        </a>
+                                        <a href={d.href} download
+                                           className="rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-100">
+                                            Download
+                                        </a>
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </>
+                )}
+                <div className={attachments.length > 0 ? "border-t border-gray-200" : ""}>
+                    <ul className="divide-y divide-gray-100">
+                        {renderings.map((d) => (
+                            <li key={d.href} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2 bg-gray-50/60">
+                                <span className="min-w-0 text-sm text-gray-600">
+                                    The record
+                                    <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">{ext(d.href)}</span>
+                                </span>
+                                <span className="flex shrink-0 items-center gap-2">
+                                    <a href={d.href} target="_blank" rel="noopener"
+                                       className="rounded-md border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-800 hover:bg-emerald-100">
+                                        View
+                                    </a>
+                                    <a href={d.href} download
+                                       className="rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-100">
+                                        Download
+                                    </a>
+                                </span>
+                            </li>
+                        ))}
+                        {filing.eml && (
+                            <li className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2 bg-gray-50/60">
+                                <span className="min-w-0 text-sm text-gray-600">
+                                    The unmodified original
+                                    <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">EML</span>
+                                </span>
+                                <EmlDownload href={filing.eml} />
+                            </li>
+                        )}
+                    </ul>
                 </div>
-                <div className="mt-4 font-mono text-[10px] tracking-widest text-gray-400">{filing.ulid}</div>
+                <div className="px-4 py-2 border-t border-gray-200 font-mono text-[10px] tracking-widest text-gray-400">{filing.ulid}</div>
             </div>
         </SectionPage>
     );

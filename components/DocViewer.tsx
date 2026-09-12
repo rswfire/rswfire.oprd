@@ -55,7 +55,6 @@ export default function DocViewer({
     const [html, setHtml] = useState<string | null>(null);
     const [failed, setFailed] = useState(false);
     const [emlOpen, setEmlOpen] = useState<string | null>(null);
-    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         setHtml(null);
@@ -78,21 +77,15 @@ export default function DocViewer({
         if (!doc) return;
         const onKey = (e: KeyboardEvent) => {
             if (e.key === "Escape") {
-                if (menuOpen) setMenuOpen(false);
-                else onClose();
+                onClose();
                 return;
             }
-            if (menuOpen) return;
             if (e.key === "ArrowLeft" && onPrev) onPrev();
             if (e.key === "ArrowRight" && onNext) onNext();
         };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [doc, onClose, menuOpen, onPrev, onNext]);
-
-    useEffect(() => {
-        setMenuOpen(false);
-    }, [doc]);
+    }, [doc, onClose, onPrev, onNext]);
 
     if (!doc) return null;
 
@@ -148,7 +141,7 @@ export default function DocViewer({
                     )}
                     {failed && (
                         <div className="text-sm text-gray-600 py-8 text-center">
-                            This document is available as a download below.
+                            This document is available in the files below.
                         </div>
                     )}
                     {html !== null && (
@@ -157,78 +150,77 @@ export default function DocViewer({
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                     )}
+                    {(attachments.length > 0 || renderings.length > 0 || doc.eml) && (
+                        <div className="mt-4 bg-white border border-gray-200 rounded-lg overflow-hidden">
+                            {attachments.length > 0 && (
+                                <>
+                                    <div className="px-4 py-2 border-b border-gray-100 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                                        Attachments ({attachments.length})
+                                    </div>
+                                    <ul className="divide-y divide-gray-100">
+                                        {attachments.map((d) => (
+                                            <li key={d.href} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2">
+                                                <span className="min-w-0 text-sm text-gray-800">
+                                                    {d.label}
+                                                    <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">{fileExt(d.href)}</span>
+                                                </span>
+                                                <span className="flex shrink-0 items-center gap-2">
+                                                    <a href={d.href} target="_blank" rel="noopener"
+                                                       className="rounded-md border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-800 hover:bg-emerald-100">
+                                                        View
+                                                    </a>
+                                                    <a href={d.href} download
+                                                       className="rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-100">
+                                                        Download
+                                                    </a>
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+                            <div className={attachments.length > 0 ? "border-t border-gray-200" : ""}>
+                                <ul className="divide-y divide-gray-100">
+                                    {renderings.map((d) => (
+                                        <li key={d.href} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2 bg-gray-50/60">
+                                            <span className="min-w-0 text-sm text-gray-600">
+                                                The record
+                                                <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">{fileExt(d.href)}</span>
+                                            </span>
+                                            <span className="flex shrink-0 items-center gap-2">
+                                                <a href={d.href} target="_blank" rel="noopener"
+                                                   className="rounded-md border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-800 hover:bg-emerald-100">
+                                                    View
+                                                </a>
+                                                <a href={d.href} download
+                                                   className="rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-100">
+                                                    Download
+                                                </a>
+                                            </span>
+                                        </li>
+                                    ))}
+                                    {doc.eml && (
+                                        <li className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 px-4 py-2 bg-gray-50/60">
+                                            <span className="min-w-0 text-sm text-gray-600">
+                                                The unmodified original
+                                                <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-gray-400">EML</span>
+                                            </span>
+                                            <button type="button"
+                                                onClick={() => requestEml(doc.eml!, setEmlOpen)}
+                                                className="cursor-pointer shrink-0 rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-100">
+                                                Download
+                                            </button>
+                                        </li>
+                                    )}
+                                </ul>
+                            </div>
+                        </div>
+                    )}
+
                 </div>
 
-                {/* downloads */}
+                {/* footer */}
                 <div className="px-5 py-3 border-t border-gray-200 bg-white flex items-center gap-3">
-                    <div className="relative">
-                        <button
-                            type="button"
-                            onClick={() => setMenuOpen((v) => !v)}
-                            aria-expanded={menuOpen}
-                            className="cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-emerald-700 border border-emerald-700 rounded px-3 py-1.5 hover:bg-emerald-800 transition-colors"
-                        >
-                            Download
-                            <span className="text-[9px] leading-none">{menuOpen ? "▲" : "▼"}</span>
-                        </button>
-
-                        {menuOpen && (
-                            <>
-                                <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
-                                <div className="absolute z-20 bottom-full left-0 mb-1.5 w-64 rounded-lg border border-gray-300 bg-white shadow-lg overflow-hidden">
-                                    {attachments.map((d) => (
-                                        <a
-                                            key={d.href}
-                                            href={d.href}
-                                            download
-                                            title={d.label}
-                                            onClick={() => setTimeout(() => setMenuOpen(false), 0)}
-                                            className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50 border-b border-gray-100"
-                                        >
-                                            <span className="min-w-0 truncate">{d.label}</span>
-                                            <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
-                                                {fileExt(d.href)}
-                                            </span>
-                                        </a>
-                                    ))}
-
-                                    <div className={attachments.length > 0 ? "border-t-2 border-gray-300" : ""}>
-                                        {renderings.map((d) => (
-                                            <a
-                                                key={d.href}
-                                                href={d.href}
-                                                download
-                                                title={d.label}
-                                                onClick={() => setTimeout(() => setMenuOpen(false), 0)}
-                                                className="cursor-pointer flex items-baseline justify-between gap-3 px-3 py-2 text-sm text-gray-800 hover:bg-emerald-50"
-                                            >
-                                                <span className="min-w-0 truncate">The record</span>
-                                                <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
-                                                    {fileExt(d.href)}
-                                                </span>
-                                            </a>
-                                        ))}
-                                        {doc.eml && (
-                                            <button
-                                                type="button"
-                                                onClick={() => {
-                                                    setMenuOpen(false);
-                                                    requestEml(doc.eml!, setEmlOpen);
-                                                }}
-                                                className="cursor-pointer w-full flex items-baseline justify-between gap-3 px-3 py-2 text-left text-sm text-gray-800 hover:bg-emerald-50"
-                                            >
-                                                <span className="min-w-0 truncate">The unmodified original</span>
-                                                <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-gray-400">
-                                                    EML
-                                                </span>
-                                            </button>
-                                        )}
-                                    </div>
-                                </div>
-                            </>
-                        )}
-                    </div>
-
                     <div className="ml-auto flex items-center gap-2">
                         <button
                             type="button"

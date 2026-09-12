@@ -112,10 +112,15 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "April 3, 2026, same day as the request: “The Department has conducted a search which identified no records responsive to your request.”",
             "July 14, 2026: the CAD record for SP26097765, released in full, reviewed for exempt material “with none being identified.”",
             "July 23, 2026, by mail: a litigation hold on the records and evidence for SP26-097765, requiring reconfirmation every six months.",
-            "August 11, 2026: records identified under PR27478 behind a fee of $157.50, and under PR36445 behind a fee of $16,315.",
+            "August 11, 2026: records identified under PR27478 behind a fee of $157.50, and under PR36445 behind a fee of $16,315.00.",
             "September 3, 2026, after the fee was paid: sixteen files under both case numbers — the Major Crimes Section threat-assessment report SP26096984, both CAD records, dispatch audio, and the Department's electronic communications — with a $95.00 refund.",
         ],
         withheld: [
+            {
+                item: "PR36445: the fee-and-exemption letter template, its versions, the instructions governing its use, and the letters issued on it",
+                basis: "fee",
+                detail: "Records identified August 11, held behind a fee of $16,315.00.00",
+            },
             {
                 item: "The body-worn camera video of the March 24 contact",
                 basis: "statute",
@@ -166,11 +171,6 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
                 basis: "silence",
                 detail: "Demanded September 3; the Department's own report concludes he made no direct threats and committed no crimes",
             },
-            {
-                item: "PR36445: the fee-and-exemption letter template, its versions, the instructions governing its use, and the letters issued on it",
-                basis: "fee",
-                detail: "Records identified August 11, held behind a fee of $16,315",
-            },
         ],
         produced: [
             { label: "CAD record SP26097765, released in full July 14, 2026", href: "/osp-cad-record-sp26097765.pdf" },
@@ -215,7 +215,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-07-23", date: "July 23, 2026", event: "Litigation hold confirmed by mail for SP26-097765" },
             { d: "2026-07-28", date: "July 28, 2026", event: "Attorney General petition acknowledged" },
             { d: "2026-07-29", date: "July 29, 2026", event: "Attorney General order issues; the order reveals ORS 192.345(40) was cited for body camera video, never cited to him" },
-            { d: "2026-08-11", date: "August 11, 2026", event: "Records identified under both requests: $157.50 under PR27478, $16,315 under PR36445" },
+            { d: "2026-08-11", date: "August 11, 2026", event: "Records identified under both requests: $157.50 under PR27478, $16,315.00 under PR36445" },
             { d: "2026-09-03", date: "September 3, 2026", event: "Sixteen files produced under both case numbers; $95.00 refunded" },
             { d: "2026-09-03", date: "September 3, 2026", event: "The production reviewed and answered the same morning: not sufficient; ten categories stated as outstanding" },
         ],
