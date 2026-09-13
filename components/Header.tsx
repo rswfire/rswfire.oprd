@@ -35,7 +35,13 @@ export default function Header() {
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
-                    <Link href="/" className="flex items-start gap-3">
+                    <Link href="/" className="flex items-center gap-3">
+                        <Icon
+                            name="TreeDeciduous"
+                            className="shrink-0 text-emerald-700 w-7 h-7 sm:w-9 sm:h-9"
+                            size={36}
+                            strokeWidth={1.5}
+                        />
                         <div className="leading-tight">
                             <h1 className="text-sm sm:text-lg font-bold tracking-wide uppercase text-slate-900">
                                 OPRD Volunteer Abuse
