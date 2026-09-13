@@ -491,7 +491,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "False. [The emails are on the record](https://oprdvolunteerabuse.org/accountability/oprd/01JVPH4Z7G0VBTE6PWCDVCRF5X/), and neither one mentions a video. There was nothing in them to send anyone to my channel.\n\nBy this date the agency had expelled me from every park in Oregon, two months earlier. There was no volunteer relationship left, and my YouTube channel was never theirs to monitor.\n\nI deleted it because I built my own platform for my videos. My life has never centered on them.\n\nWhat this entry documents is a state employee, and \"multiple OPRD staff,\" watching a private citizen's channel and writing down what they saw there, two months after the agency had severed every tie to him."
+                "md": "False. [The emails are on the record](https://oprdvolunteerabuse.org/accountability/oprd/01JVPH4Z7G0VBTE6PWCDVCRF5X/), and neither one mentions a video. There was nothing in them to send anyone to my channel.\n\nBy this date the agency had expelled me from every park in Oregon, two months earlier. There was no volunteer relationship left, and my YouTube channel was never theirs to monitor.\n\nI deleted it because I built my own platform for my videos. My life has never centered on them.\n\nWhat this entry documents is the program manager going to a private citizen's channel two months after the agency had severed every tie to him, and recording in an internal file what she attributes to \"multiple OPRD staff.\""
             }
         ]
     },
