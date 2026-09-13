@@ -31,7 +31,7 @@ export default function OverviewPage() {
                     I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
                     me ever since, and I brought that to a state park that claims to be the same
                     thing. I was a volunteer park host for Oregon&rsquo;s state parks, and it
-                    betrayed that promise. This archive answers the
+                    is not that. This archive answers the
                     question: <span className="font-semibold">what happens if something goes
                     wrong?</span>
                 </p>
