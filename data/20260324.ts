@@ -15,12 +15,12 @@ export const POLICE_INTIMIDATION_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[0:00 — 0:08]",
             quote: "So the police just came to my work center behind a federal gate. Three police officers. They didn't identify what agency they're with.",
-            commentary: "Three officers. Behind a locked federal gate. No agency identified. This is not a welfare check. This is not a complaint response. This is presence. Deliberate. On federal land. At his workplace.",
+            commentary: "Three men with guns. Behind a locked federal gate. No agency identified. This is not a welfare check. This is not a complaint response. This is presence. Deliberate. On federal land. At his workplace.",
         },
         {
             timestamp: "[0:08 — 0:17]",
             quote: "They just tried to tell me that I'm posting things online that they're concerned about seeing I'm not in trouble.",
-            commentary: "They are concerned about what he is posting online. He is not in trouble. They came to tell him that. Behind a federal gate. With three officers. To tell him he is not in trouble.",
+            commentary: "They are concerned about what he is posting online. He is not in trouble. They came to tell him that. Behind a federal gate. With three men with guns. To tell him he is not in trouble.",
         },
         {
             timestamp: "[0:17 — 0:29]",

@@ -140,7 +140,7 @@ export function rootManifest() {
             "picnic-table meeting on March 5, 2025, dismissed by phone without documentation on March 24, 2025, " +
             "given 24 hours to vacate his housing, and permanently expelled in writing from all Oregon State " +
             "Parks volunteering — the expulsion letter citing his public speech. On March 24, 2026, one year to " +
-            "the day later, three armed officers came through a locked federal gate to his home and workplace. " +
+            "the day later, three men with guns came through a locked federal gate to his home and workplace. " +
             "Every escalation, report, records request, and response is preserved here. In eighteen months the " +
             "agencies involved have not disputed any item in this record.",
             // One act, one set of facts. The March 24, 2026 operation is the
@@ -153,7 +153,7 @@ export function rootManifest() {
                     "and sourced individually; assessments that address them one at a time are answering a " +
                     "different question than the record presents. The record draws no conclusion.",
                 facts: [
-                    { fact: "Three armed officers came through a locked gate to the federal work center where the volunteer lives and works.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
+                    { fact: "Three men with guns came through a locked gate to the federal work center where the volunteer lives and works.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
                     { fact: "The contact was officer-initiated. CAD record SP26097765 lists the volunteer's name in the caller field; he made no call.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
                     { fact: "The CAD record's stated purpose: 'FOR THE FOREST SERVICE // FOLLOWUP INTERVIEW W/ ROBERT WHITE.'", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
                     { fact: "The Forest Service stated in writing that it did not initiate the interview; its role was limited to unlocking the gate and guiding OSP to the work center.", source: `${ORIGIN}/records/usfs/2026-07-24-district-ranger-statement.pdf` },

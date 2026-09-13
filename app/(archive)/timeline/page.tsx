@@ -298,7 +298,7 @@ export default function TimelinePage() {
                     <div className="mt-2 text-sm">
                         One year after the dismissal.&nbsp;
                         <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">
-                            Three police officers arrive at a locked federal gate
+                            Three men with guns arrive at a locked federal gate
                         </Link> on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. I record them leaving. Twenty minutes later, a man identifying himself as Forest Service calls — hostile, tells me this isn&rsquo;t going away. He is later confirmed as <PersonLink name="Matthew Oliver" label="Special Agent Matthew Oliver" />, Law Enforcement &amp; Investigations.
                     </div>
                 </li>

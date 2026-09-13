@@ -49,7 +49,7 @@ export default function TinaKotekKeyIndividualPage() {
                 <div>
                     <div className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-1">March 24, 2026</div>
                     <div>
-                        On the one-year anniversary of the dismissal, <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">armed officers arrived at a locked federal gate</Link> on restricted federal land where I live and work as a U.S. Forest Service caretaker. One was a federal special agent. Two were unidentified state officers. They said they were concerned about what I was posting online. The governor remained silent.
+                        On the one-year anniversary of the dismissal, <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">men with guns arrived at a locked federal gate</Link> on restricted federal land where I live and work as a U.S. Forest Service caretaker. One was a federal special agent. Two were unidentified state officers. They said they were concerned about what I was posting online. The governor remained silent.
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ export default function TinaKotekKeyIndividualPage() {
                     Governor Kotek sits at the top of the hierarchy that shielded every actor in this case. Her appointed director received comprehensive evidence of abuse, retaliation, and identity-based targeting &mdash; and chose institutional avoidance. The governor was notified directly. She chose silence.
                 </div>
                 <div>
-                    Her silence is not neutral. It is the final layer of institutional protection. When every internal channel has failed &mdash; from the park to the director to the governor&rsquo;s office &mdash; and the institution&rsquo;s response is to send armed officers to a volunteer&rsquo;s door, the governor&rsquo;s silence becomes the architecture that makes it possible.
+                    Her silence is not neutral. It is the final layer of institutional protection. When every internal channel has failed &mdash; from the park to the director to the governor&rsquo;s office &mdash; and the institution&rsquo;s response is to send men with guns to a volunteer&rsquo;s door, the governor&rsquo;s silence becomes the architecture that makes it possible.
                 </div>
                 <div>
                     She shattered a barrier that existed for 166 years. She spent her career fighting for queer Oregonians. When it was time to protect one of her own from documented abuse by her state employees, <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">police arrived at his door</Link>.

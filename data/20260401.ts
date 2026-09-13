@@ -10,7 +10,7 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
     fieldState: "clear-eyed",
     orientation: "toward structural accountability — recorded on the trail in a storm because the work doesn't stop",
     label: "Primary Document — April 1, 2026",
-    preview: "Recorded while hiking near the Siltcoos Corridor during the first real storm in months. One week after three armed officers arrived at a locked federal gate on restricted federal land because of what he was posting online. He lays out the full picture — what they did, what he built, what comes next — and asks for help because that is what capable people do when the system is designed to isolate them.",
+    preview: "Recorded while hiking near the Siltcoos Corridor during the first real storm in months. One week after three men with guns arrived at a locked federal gate on restricted federal land because of what he was posting online. He lays out the full picture — what they did, what he built, what comes next — and asks for help because that is what capable people do when the system is designed to isolate them.",
     entries: [
         {
             timestamp: "[0:00 — 0:16]",
@@ -20,12 +20,12 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[0:16 — 0:50]",
             quote: "For the past year, I have been volunteering on the Oregon coast for the United States Forest Service as a caretaker. I live behind a locked gate on restricted federal lands. I'm trusted with one of their work trucks and a route that I do 5 days a week.",
-            commentary: "The man they sent armed officers to intimidate is the same man they trust with their land, their truck, and their route. Five days a week since October. Camp host before that. Oregon State Parks before that. He has been serving continuously. That context matters.",
+            commentary: "The man they sent men with guns to intimidate is the same man they trust with their land, their truck, and their route. Five days a week since October. Camp host before that. Oregon State Parks before that. He has been serving continuously. That context matters.",
         },
         {
             timestamp: "[0:50 — 1:20]",
             quote: "I created an archive, a professional archive online documenting everything they did. I have so much evidence. It's the cleanest case I can imagine. And they've been silent. And then on the one-year anniversary of them dismissing me, they sent three armed men behind that locked gate to intimidate me for that archive.",
-            commentary: "The cleanest case he can imagine. Built from real-time documentation. A year of silence from the institution — and then armed officers on the anniversary. He is connecting the sequence because the sequence is the point.",
+            commentary: "The cleanest case he can imagine. Built from real-time documentation. A year of silence from the institution — and then men with guns on the anniversary. He is connecting the sequence because the sequence is the point.",
         },
         {
             timestamp: "[1:20 — 1:40]",
@@ -103,5 +103,5 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
             commentary: "Asking for help is not weakness. He has been building since the sixth grade. He built this archive with his last seven dollars. He built a platform. He built a case. He is capable of amazing things and he knows it. He is asking for help because one person against an entire state apparatus needs other people — and saying so plainly is the mark of someone who has stopped performing and started operating.",
         },
     ],
-    closing: "Recorded on the trail in the rain. Walking through a storm because the work doesn't stop. One week after armed officers arrived at a locked gate on restricted federal land because of what he was posting online about Oregon State Parks.\n\nHe is still here. He is still building. He is still asking the same question he asked a year ago:\n\nThere was no mechanism that kept me safe in their parks.\n\nWhy not?",
+    closing: "Recorded on the trail in the rain. Walking through a storm because the work doesn't stop. One week after men with guns arrived at a locked gate on restricted federal land because of what he was posting online about Oregon State Parks.\n\nHe is still here. He is still building. He is still asking the same question he asked a year ago:\n\nThere was no mechanism that kept me safe in their parks.\n\nWhy not?",
 };

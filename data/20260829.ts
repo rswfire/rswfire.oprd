@@ -25,7 +25,7 @@ export const LEGAL_FUND_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[1:07 — 1:45]",
             quote: "They would escalate, thinking that at some point they could make me go away. They could make this archive go away. They escalated all the way to police intimidation on the anniversary of that dismissal, behind a lock gate on restricted federal lands, involving a completely another agency and their matter. And every escalation they ever did where deception was used has collapsed. This has happened twice now.",
-            commentary: "March 24, 2026: three armed officers through a locked federal gate, one year to the day after the dismissal. The escalation pattern and both collapses are documented across the evidence and accountability pages.",
+            commentary: "March 24, 2026: three men with guns through a locked federal gate, one year to the day after the dismissal. The escalation pattern and both collapses are documented across the evidence and accountability pages.",
         },
         {
             timestamp: "[1:52 — 2:07]",
@@ -55,7 +55,7 @@ export const LEGAL_FUND_TRANSMISSION: TransmissionData = {
         {
             timestamp: "[7:21 — 7:50]",
             quote: "Is Oregon State Parks, right now, are they violating my constitutional rights by making it impossible for me to participate in civic government as a volunteer over my protected speech? Should they be allowed to do that? They escalated all the way to police because of letters. All I have ever done is write letters.",
-            commentary: "The question the fund exists to put before a court. The expulsion letter cites his public speech in writing; the police operation followed his publications. Letters in, armed officers out.",
+            commentary: "The question the fund exists to put before a court. The expulsion letter cites his public speech in writing; the police operation followed his publications. Letters in, men with guns out.",
         },
         {
             timestamp: "[8:34 — 9:05]",

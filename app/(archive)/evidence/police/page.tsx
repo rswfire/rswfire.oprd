@@ -38,11 +38,47 @@ export default function PoliceIntimidationPage() {
             </div>
 
             <div className="mt-4">
-                Three officers. No agency identified. They told me they were concerned about what I was posting online. They said I was not in trouble. I declined to speak with them without an attorney and closed my door.
+                Three men with guns. No agency identified. They told me they were concerned about what I was posting online. They said I was not in trouble. I declined to speak with them without an attorney and closed my door.
             </div>
 
             <div className="mt-4">
                 I recorded them leaving.
+            </div>
+
+            <div className="mt-6 border-l-4 border-emerald-700 pl-4 text-base leading-relaxed text-gray-700">
+                <div className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+                    A note on how I describe them
+                </div>
+                <p className="mt-2">
+                    Three weeks. A captain&rsquo;s order for a threat assessment. A Major Crimes
+                    detective on an FBI task force who pulled my DMV record and sent my name to
+                    the Bureau. A fusion center analyst logging the file. This archive read end
+                    to end. They found no crime, and their own detective wrote it down on
+                    March 6.
+                </p>
+                <p className="mt-3">
+                    They came anyway. Eighteen days later, on the anniversary of the day the
+                    parks department threw me out, three armed men drove through a locked
+                    federal gate to the home of a man they had already cleared, to tell him he
+                    was not in trouble.
+                </p>
+                <p className="mt-3">
+                    Nobody brings guns to a cleared man&rsquo;s door to inform him. They bring
+                    them so he understands what is available.
+                </p>
+                <p className="mt-3">
+                    Take the flag off this and every American recognizes it instantly, because
+                    we are taught to recognize it in other countries. A citizen criticizes the
+                    government. The government opens a file on him. The file finds no crime.
+                    Armed men are sent to his home anyway. That is the machinery of a police
+                    state. It does not require a dictator. It requires officials willing to do
+                    this and a public that does not look.
+                </p>
+                <p className="mt-3">
+                    So this archive does not call them officers. Three men chose to drive out
+                    here and stand at my door with weapons on their hips over words I wrote.
+                    They answer for that as men, in a record that does not expire.
+                </p>
             </div>
 
             <hr className="my-6 border-t border-gray-300" />

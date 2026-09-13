@@ -76,7 +76,7 @@ export const displacementFraming: Record<string, DisplacementEntry> = {
     },
     police: {
         stage: "9. Police Intimidation",
-        connection: "The final displacement attempt. Three officers at a locked federal gate on the anniversary of dismissal — designed to make the cost of continuing feel unsurvivable. It failed. And in failing, it became the loudest evidence of everything that came before it.",
+        connection: "The final displacement attempt. Three men with guns at a locked federal gate on the anniversary of dismissal — designed to make the cost of continuing feel unsurvivable. It failed. And in failing, it became the loudest evidence of everything that came before it.",
         volunteer: {
             title: "They used force.",
             body: "Not everyone gets here. But if the record you built was strong enough to threaten them — they may have. A visit. A call. A warning. The goal is to make the cost of continuing feel unsurvivable. It isn't. But they need you to believe it is."

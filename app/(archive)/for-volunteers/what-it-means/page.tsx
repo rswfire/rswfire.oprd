@@ -55,7 +55,7 @@ export default function WhatItMeansPage() {
 
                 <div>I was dismissed by phone six days before my term ended. The park manager arrived at my RV within the hour to collect keys and gave me twenty-four hours to vacate. Two days later I was permanently expelled from every Oregon State Parks volunteer program, in writing, on agency letterhead, for documenting my treatment.</div>
 
-                <div>A year later, on the anniversary of that dismissal, armed officers arrived at a locked gate where I live and work. My date of birth reached the police record from a volunteer file.</div>
+                <div>A year later, on the anniversary of that dismissal, men with guns arrived at a locked gate where I live and work. My date of birth reached the police record from a volunteer file.</div>
 
                 <div>Every mechanism that could have protected me was pointed the other way.</div>
 

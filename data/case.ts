@@ -171,7 +171,7 @@ export const CASE_CARDS: CaseCard[] = [
         authorLabel: "Oregon State Police",
         typeLabel: "Video · 0:55",
         title: "The police show up at my door.",
-        body: "Exactly one year after the dismissal, police came through a locked gate posted against public access, onto the federal land where I live and work as caretaker, and knocked on my door. Three officers, no agency identified, concerned about what I was posting online.\n\nI declined to speak without an attorney and closed my door. I recorded them leaving.",
+        body: "Exactly one year after the dismissal, police came through a locked gate posted against public access, onto the federal land where I live and work as caretaker, and knocked on my door. Three men with guns, no agency identified, concerned about what I was posting online.\n\nI declined to speak without an attorney and closed my door. I recorded them leaving.",
         signalId: "01KMFMJW809QNR8PVTXT8HAAG7",
         duration: "0:55",
         href: "/evidence/police",

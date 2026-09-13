@@ -56,7 +56,7 @@ const LADDER: {
     {
         move: "Force",
         tell: "Actual state power, and only ever last. A threat assessment. Surveillance. Officers at your door. It arrives when everything cheaper has failed to make you stop, and its own file will show there was never a predicate for it.",
-        record: "A press captain's threat-assessment order; a criminal unit; satellite-view map screenshots of the residence; armed officers at a locked gate.",
+        record: "A press captain's threat-assessment order; a criminal unit; satellite-view map screenshots of the residence; men with guns at a locked gate.",
         href: "/evidence/police",
         tone: "border-red-700 bg-red-100/70",
     },
