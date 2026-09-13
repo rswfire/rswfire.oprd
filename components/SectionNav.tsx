@@ -76,7 +76,15 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                                                 : "text-slate-600 hover:bg-slate-50"
                                                         }`}
                                                     >
-                                                        {sub.label}
+                                                        {/* A numbered stage carries its own marker; everything else gets a bullet. */}
+                                                        {/^\d/.test(sub.label) ? (
+                                                            sub.label
+                                                        ) : (
+                                                            <span className="flex items-baseline gap-2">
+                                                                <span aria-hidden className="text-slate-400">&bull;</span>
+                                                                <span>{sub.label}</span>
+                                                            </span>
+                                                        )}
                                                     </Link>
                                                 </li>
                                             );
