@@ -24,10 +24,16 @@ export default function OverviewPage() {
 
             {/* THE QUESTION EVERY PROSPECTIVE HOST RESEARCHES */}
             <div className="mb-4 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm">
+                <div className="mb-4 text-xs font-bold uppercase tracking-widest text-emerald-700">
+                    Welcome
+                </div>
                 <p className="text-lg leading-relaxed text-gray-800">
-                    This archive was written by a camp host. It answers the question you
-                    don&rsquo;t think to ask until it matters: <span className="font-semibold">what
-                    happens if something goes wrong?</span>
+                    I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
+                    me ever since, and I brought that to a state park that claims to be the same
+                    thing. I was a volunteer park host for Oregon&rsquo;s state parks, and it
+                    betrayed that promise. This archive answers the
+                    question: <span className="font-semibold">what happens if something goes
+                    wrong?</span>
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-800">
                     The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
@@ -46,25 +52,14 @@ export default function OverviewPage() {
                     documenting her choices, past and future. She is the one who can protect
                     you. She is the one choosing not to.
                 </p>
-                <div className="mt-4 pl-4 border-l-4 border-emerald-700 space-y-1 text-lg leading-relaxed text-gray-700">
-                    <div>
-                        <strong>Why I built this archive</strong>: to correct an{" "}
-                        <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
-                            <em>epistemic violation</em>
-                        </Link>
-                        .
-                    </div>
-                    <div>It is not designed to <em>win attention</em>.</div>
-                    <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
-                </div>
             </div>
-
-            {/* SUNLIGHT — their words, next to the record */}
-            <SunlightCard />
-
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
+
+
+            {/* SUNLIGHT — their words, next to the record */}
+            <SunlightCard />
 
 
             {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}

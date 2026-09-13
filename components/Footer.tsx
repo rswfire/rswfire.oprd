@@ -55,33 +55,18 @@ export default function Footer() {
 
                 <hr className="max-w-6xl mx-auto border-t border-gray-200 my-8" />
 
-                <div className="flex justify-center gap-4 text-sm">
-                    <a
-                        href="https://github.com/rswfire/rswfire.oprd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        href="https://rswfire.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                    >
-                        rswfire.com
-                    </a>
-
-                    <a
-                        href="mailto:rsw@rswfire.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                    >
-                        Contact
-                    </a>
+                <div className="max-w-6xl mx-auto px-4 mb-8 flex justify-center">
+                    <div className="pl-4 border-l-4 border-emerald-700 text-left text-lg leading-relaxed text-gray-700 space-y-1">
+                        <div>
+                            <strong>Why I built this archive</strong>: to correct an{" "}
+                            <Link href="/faq#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
+                                <em>epistemic violation</em>
+                            </Link>
+                            .
+                        </div>
+                        <div>It is not designed to <em>win attention</em>.</div>
+                        <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
+                    </div>
                 </div>
 
             </div>
