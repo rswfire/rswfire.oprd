@@ -4,9 +4,9 @@ const officers = [
     name: "Special Agent Matthew Oliver",
     agency: "U.S. Forest Service — Law Enforcement & Investigations",
     forests: "Willamette and Siuslaw National Forests",
-    status: "escorted" as const,
-    confirmedBy: "Patrol Captain Felicia Sloan, March 30, 2026",
-    notes: "Per the District Ranger, the Forest Service did not initiate the interview — its law enforcement officer accompanied Oregon State Police to unlock the gate and guide them to a restricted area."
+    status: "participated" as const,
+    confirmedBy: "Patrol Captain Felicia Sloan, March 30, 2026; his own March 27 email, produced by OSP September 3, 2026",
+    notes: "The Forest Service's account was that its agent only unlocked the gate for the state police. Three days later, on March 27, hours after I asked his agency to identify the men he had brought in, Oliver sent a Lane County deputy a file on me: name, date of birth, driver's license number, where I live, my schedule and my duties, my correspondence and my text messages, and a promise to “keep you up to date.” His part was ending. He handed my name to a fourth agency, the one whose deputy works beside me. That is not an escort."
   },
   {
     id: "hyde",
@@ -28,19 +28,19 @@ const officers = [
 
 const statusColors = {
   confirmed: "border-green-600 bg-green-50",
-  escorted: "border-slate-400 bg-slate-50",
+  participated: "border-amber-600 bg-amber-50",
   unidentified: "border-red-700 bg-red-50"
 }
 
 const statusLabels = {
   confirmed: "Confirmed",
-  escorted: "Escorted",
+  participated: "Participated",
   unidentified: "Identity Withheld"
 }
 
 const statusTextColors = {
   confirmed: "text-green-700",
-  escorted: "text-slate-600",
+  participated: "text-amber-700",
   unidentified: "text-red-700"
 }
 
