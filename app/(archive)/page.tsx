@@ -32,11 +32,12 @@ export default function OverviewPage() {
                     me ever since, and I brought that to a state park that claims to be the same
                     thing. I was a volunteer park host for the Oregon Parks &amp; Recreation
                     Department, and it
-                    is not that. This archive answers the
-                    question: <span className="font-semibold">what happens if something goes
-                    wrong?</span>
+                    is not that.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-800">
+                    This archive answers the
+                    question: <span className="font-semibold">what happens if something goes
+                    wrong?</span>{" "}
                     The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
                     is the only account, and there is no mechanism by which it can be questioned.
                 </p>
