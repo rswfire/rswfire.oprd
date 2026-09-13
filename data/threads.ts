@@ -4496,6 +4496,24 @@ export const OPRD_THREAD: RecordsThreadData = {
             eml: "/records/oprd/eml/2026-09-11_0713_acknowledged-estimate-by-september-22.eml",
         },
         {
+            id: "your-silence-built-this",
+            ulid: "01M2DRZJGRM705954TP93CYBYC",
+            date: "September 13, 2026",
+            time: "9:18 AM",
+            d: "2026-09-13",
+            from: "Robert Samuel White",
+            to: "Director Lisa Sumption; OPRD Commissioners; Governor Kotek",
+            kind: "notice",
+            title: "To Director Sumption",
+            summary:
+                "Two sentences to the Director, closing with the words she used to close her own door. Sent with a picture of the archive her silence produced.",
+            docs: [
+                { label: "To Director Sumption", href: "/records/oprd/2026-09-13-your-silence-built-this.pdf" },
+                { label: "The archive, as sent", href: "/records/oprd/attachments/01m2drzjgrm705954tp93cybyc-the-archive-as-sent.png" },
+            ],
+            eml: "/records/oprd/eml/2026-09-13_0918_your-silence-built-this.eml",
+        },
+        {
             id: "revision-notification",
             ulid: "01M2BY2J6RHPA70PWC2ZTRSWFV",
             date: "September 12, 2026",
