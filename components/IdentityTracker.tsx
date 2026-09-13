@@ -5,8 +5,7 @@ const officers = [
     agency: "U.S. Forest Service — Law Enforcement & Investigations",
     forests: "Willamette and Siuslaw National Forests",
     status: "participated" as const,
-    confirmedBy: "Patrol Captain Felicia Sloan, March 30, 2026; his own March 27 email, produced by OSP September 3, 2026",
-    notes: "The Forest Service's account was that its agent only unlocked the gate for the state police. Three days later, on March 27, hours after I asked his agency to identify the men he had brought in, Oliver sent a Lane County deputy a file on me: name, date of birth, driver's license number, where I live, my schedule and my duties, my correspondence and my text messages, and a promise to “keep you up to date.” His part was ending. He handed my name to a fourth agency, the one whose deputy works beside me. That is not an escort."
+    notes: "On July 24, the Forest Service stated its role: it did not initiate the interview, its involvement was “limited to assisting OSP by providing access and guiding them to the Siltcoos Work Center,” and its officer “accompanied them solely to facilitate entry and ensure they reached the correct location.”\n\nOn March 27, hours after I asked Oliver himself to identify the men he brought to my door, he sent a Lane County deputy a file on me: name, date of birth, driver's license number, where I live, my schedule and my duties, my correspondence and my text messages, and a promise to “keep you up to date.”\n\nThe Forest Service unlocked a gate. Everything after that is his. The agency referred him to Law Enforcement & Investigations' Office of Professional Responsibility."
   },
   {
     id: "hyde",
@@ -28,7 +27,7 @@ const officers = [
 
 const statusColors = {
   confirmed: "border-green-600 bg-green-50",
-  participated: "border-amber-600 bg-amber-50",
+  participated: "border-red-700 bg-red-50",
   unidentified: "border-red-700 bg-red-50"
 }
 
@@ -40,7 +39,7 @@ const statusLabels = {
 
 const statusTextColors = {
   confirmed: "text-green-700",
-  participated: "text-amber-700",
+  participated: "text-red-700",
   unidentified: "text-red-700"
 }
 
@@ -80,9 +79,11 @@ export default function IdentityTracker() {
               </p>
             )}
 
-            <p className="text-sm text-gray-700 italic">
-              {officer.notes}
-            </p>
+            {officer.notes.split("\n\n").map((para, i) => (
+              <p key={i} className={`text-sm text-gray-700 italic${i > 0 ? " mt-3" : ""}`}>
+                {para}
+              </p>
+            ))}
           </div>
         ))}
       </div>
