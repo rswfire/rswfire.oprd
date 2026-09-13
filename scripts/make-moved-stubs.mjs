@@ -9,6 +9,10 @@
 // a meta refresh, a canonical link, and a visible link for a reader with no
 // JavaScript and no refresh.
 //
+// No noindex here. A zero-delay meta refresh is read as a redirect and the
+// canonical names the new address; adding noindex would put a conflicting
+// signal on the same page and risk carrying it to the target.
+//
 // Run once after a move; addresses minted after it never had an old form.
 //
 //   node scripts/make-moved-stubs.mjs
@@ -45,7 +49,6 @@ const html = (to) => `<!doctype html>
 <meta charset="utf-8">
 <meta http-equiv="refresh" content="0; url=${to}/">
 <link rel="canonical" href="https://oprdvolunteerabuse.org${to}/">
-<meta name="robots" content="noindex, follow">
 <title>Moved</title>
 </head>
 <body style="font-family:system-ui,sans-serif;padding:3rem;line-height:1.6">
