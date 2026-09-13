@@ -139,7 +139,7 @@ function TimelinePanel() {
         <>
             <div className="text-sm text-gray-500">
                 The document as produced:{" "}
-                <Link href="/accountability/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
+                <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
                     the September 3 production
                 </Link>
                 .

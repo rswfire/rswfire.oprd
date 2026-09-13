@@ -184,7 +184,7 @@ export default function ForVolunteersPage() {
 
             <p className="text-sm text-gray-500 leading-relaxed mb-16">
                 Read the letter that asked for these directly:{" "}
-                <Link href="/accountability/oprd/01M1T0PHFRWQNERYJENF7MVRZV" className="text-emerald-800 underline hover:text-emerald-600">
+                <Link href="/record/oprd/01M1T0PHFRWQNERYJENF7MVRZV" className="text-emerald-800 underline hover:text-emerald-600">
                     The choices are still yours
                 </Link>
                 .

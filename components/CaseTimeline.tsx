@@ -273,7 +273,7 @@ function CardMedia({ card, onOpenDoc }: { card: CaseCard; onOpenDoc: () => void 
                     </span>
                 </button>
                 <Link
-                    href={`/accountability/${BY_ULID[card.ulid]?.slug}/${card.ulid}`}
+                    href={`/record/${BY_ULID[card.ulid]?.slug}/${card.ulid}`}
                     className="absolute bottom-2 left-2 font-mono text-[9px] tracking-tight text-gray-500 hover:text-emerald-700 transition-colors"
                 >
                     {card.ulid}
@@ -667,7 +667,7 @@ export default function CaseTimeline() {
                             original preserved, every one readable and downloadable.
                         </p>
                         <div className="mt-3 mb-2 flex flex-col gap-1.5">
-                            <Link href="/accountability/oprd" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">
+                            <Link href="/records/oprd" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">
                                 The accountability pages →
                             </Link>
                             <Link href="/evidence" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">

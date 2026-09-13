@@ -2,7 +2,7 @@
 //
 // Mail clients linkify a URL written at the end of a sentence and swallow the
 // punctuation that follows it, so a recipient clicking a link from a letter
-// lands on /accountability/legislation, or /accountability/osp. and gets the
+// lands on /records/legislation, or /records/osp. and gets the
 // not-found page. This recovers those: on the 404, strip trailing punctuation
 // and go to the page the sender meant.
 "use client";

@@ -20,7 +20,7 @@ export default function PoliceIntimidationPage() {
             title="POLICE INTIMIDATION"
             subtitle="BEHIND A LOCKED FEDERAL GATE"
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}
-            nextPage={{ href: "/accountability", label: "Accountability" }}
+            nextPage={{ href: "/records", label: "Accountability" }}
             summary="On March 24, 2026 — exactly one year after the park manager dismissed me from Honeyman State Park — police showed up at my door behind a locked federal gate to intimidate me. I recorded them leaving."
 
         >
@@ -81,7 +81,7 @@ export default function PoliceIntimidationPage() {
                     On September 3, 2026, under public records request PR27478, Oregon State Police produced
                     sixteen files: the case report, a second CAD record, dispatch audio, and the emails in which
                     the visit was planned. The production is filed in full in the{" "}
-                    <a href="/accountability/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">accountability record</a>.
+                    <a href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">accountability record</a>.
                     This is what their documents say.
                 </p>
                 <p>
@@ -111,7 +111,7 @@ export default function PoliceIntimidationPage() {
                     Nelson&rsquo;s own report closes it: no direct threats, no &ldquo;leakage towards violence or
                     violent behavior,&rdquo; and &ldquo;no evidence White has committed any crimes.&rdquo; The
                     report references body-worn camera video of the encounter. It was not produced.{" "}
-                    <a href="/accountability/osp/01M1M6H4RR51K8RXNASW5AB9RC" className="underline text-emerald-800 hover:text-emerald-600">My response demanding it, and everything else the production identifies and does not include, is on the record</a>.
+                    <a href="/record/osp/01M1M6H4RR51K8RXNASW5AB9RC" className="underline text-emerald-800 hover:text-emerald-600">My response demanding it, and everything else the production identifies and does not include, is on the record</a>.
                 </p>
             </div>
 

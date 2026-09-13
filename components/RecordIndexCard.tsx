@@ -60,7 +60,7 @@ export default function RecordIndexCard() {
                     <h2 className="mt-1 text-xl font-bold text-gray-900">The whole record, read as one</h2>
                 </div>
                 <Link
-                    href="/record"
+                    href="/synthesis"
                     className="whitespace-nowrap text-sm font-medium text-emerald-700 hover:text-emerald-600 hover:underline"
                 >
                     Open the full record →

@@ -13,7 +13,7 @@ export default function AccountabilityStatus() {
                 {THREADS.map((t) => (
                     <Link
                         key={t.slug}
-                        href={`/accountability/${t.slug}`}
+                        href={`/records/${t.slug}`}
                         className="group block px-3 py-2.5 hover:bg-emerald-50 transition-colors"
                     >
                         <span className="block text-xs font-semibold text-emerald-900 group-hover:text-emerald-700 transition-colors">{t.title}</span>

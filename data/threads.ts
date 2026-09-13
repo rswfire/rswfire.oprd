@@ -144,7 +144,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             kind: "notice",
             title: "Notice of publication",
             to: "Deputy Director JR Collier; Director Lisa Sumption; OPRD Commissioners; OSP Central Records; Bryanna Duke, DAS; Merilee Nowak, DAS; DAS Media Relations; Governor Kotek",
-            summary: "Notice to the agencies that the correspondence record for this matter is published at oprdvolunteerabuse.org/accountability, organized by agency, with each entry posted as a PDF rendering and as the unmodified original email, whose DKIM signatures allow independent verification.",
+            summary: "Notice to the agencies that the correspondence record for this matter is published at oprdvolunteerabuse.org/records, organized by agency, with each entry posted as a PDF rendering and as the unmodified original email, whose DKIM signatures allow independent verification.",
             docs: [{ label: "Notice of Publication", href: "/records/oprd/2026-07-28-notice-of-publication.pdf" }],
             eml: "/records/oprd/eml/2026-07-28_1142_notice-of-publication.eml",
         },
@@ -4509,7 +4509,7 @@ export const OPRD_THREAD: RecordsThreadData = {
                 "Notice that the response to the Timeline of Events is revised and republished. Of its forty entries, twenty-eight are false.",
             docs: [
                 { label: "Revision Notification", href: "/records/oprd/2026-09-12-revision-notification.pdf" },
-                { label: "sunlight: the Timeline against the record", href: "/records/oprd/attachments/01m2by2j6rhpa70pwc2ztrswfv-2026-09-12-sunlight-the-timeline-against-the-record.pdf" },
+                { label: "The Timeline of Events, Against the Record", href: "/records/oprd/2026-09-12-sunlight-the-timeline-against-the-record.pdf" },
             ],
             eml: "/records/oprd/eml/2026-09-12_1608_revision-notification.eml",
         },

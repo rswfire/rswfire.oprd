@@ -200,7 +200,7 @@ export default function AgencyRequestCard({ a }: { a: AgencyRequests }) {
             {/* footer */}
             <div className="border-t border-gray-100 px-5 py-3 sm:px-6 bg-gray-50/60">
                 <Link
-                    href={`/accountability/${a.slug}`}
+                    href={`/records/${a.slug}`}
                     className="text-sm font-medium text-emerald-700 underline hover:text-emerald-600"
                 >
                     The full register &rarr;

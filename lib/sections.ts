@@ -7,13 +7,13 @@ export const archiveSections = [
     { href: "/records-requests", label: "Records Requests", icon: "FileText" as const, iconClass: "text-sky-700" },
     { href: "#separator-records", label: "", separator: true },
     {
-        href: "/accountability",
-        label: "Accountability",
+        href: "/records",
+        label: "The Records",
         subsections: [
-            { href: "/accountability/governor", label: "Office of the Governor" },
-            { href: "/accountability/osp", label: "Oregon State Police" },
-            { href: "/accountability/lane-county", label: "Lane County Sheriff’s Office" },
-            { href: "/accountability/oprd", label: "Oregon Parks & Recreation Dept." },
+            { href: "/records/governor", label: "Office of the Governor" },
+            { href: "/records/osp", label: "Oregon State Police" },
+            { href: "/records/lane-county", label: "Lane County Sheriff’s Office" },
+            { href: "/records/oprd", label: "Oregon Parks & Recreation Dept." },
         ]
     },
     { href: "#separator-3", label: "", separator: true },
@@ -53,7 +53,7 @@ export const archiveSections = [
     { href: "/governor-kotek", label: "The Governor's Silence" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/for-volunteers", label: "For Volunteers", icon: "Shield" as const },
-    { href: "/record", label: "The OPRD Record", icon: "TreeDeciduous" as const, iconClass: "text-emerald-700" },
+    { href: "/synthesis", label: "The Synthesis", icon: "TreeDeciduous" as const, iconClass: "text-emerald-700" },
     { href: "/faq", label: "Frequently Asked Questions" },
     { href: "/reading", label: "Selected Reading" },
 ];

@@ -33,7 +33,7 @@ export default function QueryableRecord() {
         <div className="mb-4 rounded-xl overflow-hidden border shadow-sm" style={{ borderColor: "rgba(109,40,217,0.45)" }}>
 
             {/* The human door — whole panel clickable. */}
-            <Link href="/record" className="group block px-5 py-4 bg-violet-50" style={{ textDecoration: "none" }}>
+            <Link href="/synthesis" className="group block px-5 py-4 bg-violet-50" style={{ textDecoration: "none" }}>
                 <div className="flex flex-col gap-2">
                     <div className="flex items-center justify-between gap-4">
                         <span

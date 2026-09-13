@@ -37,14 +37,14 @@ const SIGNALS = [
     { ulid: "01KMFMJW809QNR8PVTXT8HAAG7", date: "2026-03-24", title: "Three Officers at the Work Center Gate", note: "Recorded during the armed visit, one year to the day after the dismissal.", archive_page: "/evidence/police" },
     { ulid: "01KN9KDSG0H3W0WZ9GBCJDJMG5", date: "2026-04-03", title: "Naming Displacement as OPRD's Volunteer Mechanism", archive_page: null },
     { ulid: "01KNER77G00DQ4C9BZGEHCPWN3", date: "2026-04-05", title: "Naming the Displacement Framework on Camera", archive_page: "/displacement" },
-    { ulid: "01M16TYA60K65X6VXMWQEMZ1P2", date: "2026-08-29", title: "Announcing Legal Fund for OPRD Accountability", archive_page: "/record" },
+    { ulid: "01M16TYA60K65X6VXMWQEMZ1P2", date: "2026-08-29", title: "Announcing Legal Fund for OPRD Accountability", archive_page: "/synthesis" },
 ];
 
 const PAGES = [
     { title: "The Displacement Framework", url: "/displacement", holds: "The nine-stage mechanism, named from the documented sequence." },
     { title: "Timeline", url: "/timeline", holds: "The case in date order." },
     { title: "Key Individuals", url: "/key-individuals", holds: "Who acted, in what role." },
-    { title: "The OPRD Record", url: "/record", holds: "The ten primary evidentiary signals as one cluster, with the platform's synthesis and six analytical readings." },
+    { title: "The OPRD Record", url: "/synthesis", holds: "The ten primary evidentiary signals as one cluster, with the platform's synthesis and six analytical readings." },
     { title: "Frequently Asked Questions", url: "/faq", holds: "Why no lawsuit yet, what happens next, what an epistemic violation is." },
     { title: "What It Means to Volunteer", url: "/", holds: "On the homepage: the structural position of the public-agency volunteer." },
 ];
@@ -59,7 +59,7 @@ function filingJson(threadSlug: string, f: RecordsThreadData["filings"][number])
         to: f.to ?? null,
         summary: f.summary ?? null,
         flagged: f.flagged ?? false,
-        page: `${ORIGIN}/accountability/${threadSlug}/${f.ulid}`,
+        page: `${ORIGIN}/record/${threadSlug}/${f.ulid}`,
         documents: (f.docs ?? []).map((d) => ({ label: d.label, url: abs(d.href) })),
         email_original: f.eml ? abs(f.eml) : null,
     };
@@ -83,7 +83,7 @@ export function threadDetail(slug: string) {
         status: t.status,
         summary: t.summary,
         document_count: t.filings.length,
-        page: `${ORIGIN}/accountability/${t.slug}`,
+        page: `${ORIGIN}/records/${t.slug}`,
         filings: t.filings.map((f) => filingJson(t.slug, f)),
     };
 }
@@ -159,7 +159,7 @@ export function rootManifest() {
                     { fact: "The Forest Service stated in writing that it did not initiate the interview; its role was limited to unlocking the gate and guiding OSP to the work center.", source: `${ORIGIN}/records/usfs/2026-07-24-district-ranger-statement.pdf` },
                     { fact: "The volunteer was a Kentucky resident at the time, not an Oregon resident. No Oregon database ties him to that location.", source: null },
                     { fact: "The work center sits behind a locked gate on restricted federal land with no physical address. The CAD record itself cites the Forest Service work center as the location. Reaching him required knowing where he lives.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
-                    { fact: "The date, March 24, 2026, is one year to the day after his dismissal from Honeyman State Park.", source: `${ORIGIN}/accountability/oprd` },
+                    { fact: "The date, March 24, 2026, is one year to the day after his dismissal from Honeyman State Park.", source: `${ORIGIN}/records/oprd` },
                     { fact: "Disposition: no action taken.", source: `${ORIGIN}/records/oprd/attachments/01kxh1jxw0057g6vgf9j2h1bx6-SP26097765-CAD.pdf` },
                 ],
             },
@@ -213,7 +213,7 @@ export function rootManifest() {
                 status: t.status,
                 document_count: t.filings.length,
                 json: `${ORIGIN}/record/accountability/${t.slug}.json`,
-                page: `${ORIGIN}/accountability/${t.slug}`,
+                page: `${ORIGIN}/records/${t.slug}`,
                 filings: t.filings.map((f) => filingJson(t.slug, f)),
             })),
             signals: SIGNALS.map((s) => ({

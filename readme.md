@@ -24,7 +24,7 @@ Live at **[oprdvolunteerabuse.org](https://oprdvolunteerabuse.org)**.
 
 **Evidence** (`/evidence`) documents what happened, in nine stages, from the origin event in February 2025 through the police visit of March 24, 2026. Every claim is supported by audio recordings, video, email correspondence, or official documents.
 
-**Accountability** (`/accountability`) is the correspondence record for the matter, organized by agency:
+**The Records** (`/records`) is the correspondence record for the matter, organized by agency:
 
 - Oregon Parks & Recreation Department
 - Oregon State Police (Public Records Request PR27478)
@@ -43,8 +43,8 @@ Each register lists, in date order, the correspondence between that agency and m
 ## Repository Layout
 
 ```
-app/(archive)/          Pages: evidence, accountability, timeline, resources
-data/threads.ts         The accountability registers as data: one Filing per document
+app/(archive)/          Pages: evidence, records, timeline, resources
+data/threads.ts         The registers as data: one Filing per document
 data/*.ts               Transcribed primary transmissions
 components/             RecordsThread, FilingDocs, and the archive components
 public/records/         Rendered PDFs and unmodified .eml originals, by agency

@@ -234,7 +234,7 @@ export default function DocViewer({
                         </button>
 
                         <Link
-                            href={`/accountability/${doc.slug}/${doc.ulid}`}
+                            href={`/record/${doc.slug}/${doc.ulid}`}
                             title="This document, on its own page"
                             className="hidden md:block font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
                         >

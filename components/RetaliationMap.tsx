@@ -22,14 +22,14 @@ const LADDER: {
         move: "Ignore",
         tell: "Silence. No acknowledgment, no answer, correspondence that vanishes into no reply. Silence is not an absence of a decision. It is the decision.",
         record: "Letters to the Director and the Governor's office, unanswered since November 2025.",
-        href: "/accountability/governor",
+        href: "/records/governor",
         tone: "border-slate-300 bg-slate-50",
     },
     {
         move: "Route",
         tell: "You are handed to a process. A portal. A form. A ticket number. A single designated recipient. The point is not to answer you. It is to wear you down until you give up.",
         record: "A records portal locked to the requester; a $12.50 fee; a cost estimate in the tens of thousands.",
-        href: "/accountability/oprd",
+        href: "/records/oprd",
         tone: "border-slate-400 bg-slate-50",
     },
     {
@@ -43,7 +43,7 @@ const LADDER: {
         move: "Contain",
         tell: "You are walled off. “Direct all correspondence to one person.” “Do not contact staff.” A “structured process” that structures you out of every room where a decision is made.",
         record: "The Deputy Director's letter directing all correspondence to himself alone.",
-        href: "/accountability/oprd",
+        href: "/records/oprd",
         tone: "border-orange-400 bg-orange-50/60",
     },
     {

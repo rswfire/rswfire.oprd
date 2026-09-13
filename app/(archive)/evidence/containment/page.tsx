@@ -97,7 +97,7 @@ export default function ContainmentPage() {
             <h2 className="text-xl font-semibold">JANUARY 16, 2026 — THE FORMAL NOTICE</h2>
 
             <div className="mt-4">
-                <Link href="/accountability/oprd/01KF4NTAT878BQNBK345SZCJQS" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to the program manager</Link> documenting First Amendment retaliation. The expulsion letter — written by the <PersonLink name="program manager" />, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation.
+                <Link href="/record/oprd/01KF4NTAT878BQNBK345SZCJQS" className="underline text-emerald-800 hover:text-emerald-600">Formal notice sent to the program manager</Link> documenting First Amendment retaliation. The expulsion letter — written by the <PersonLink name="program manager" />, citing protected speech as grounds for permanent removal — is direct evidence of a clearly established constitutional violation.
             </div>
 
             <div className="mt-4">
@@ -154,11 +154,11 @@ JR Collier`}</pre>
             </div>
 
             <div className="mt-4">
-                On February 14, <Link href="/accountability/oprd/01KHFDVVV82TVEJPHPYAMAD3JH" className="underline text-emerald-800 hover:text-emerald-600">the full pattern was named directly</Link> — to Collier, to every named individual, and to the Governor — in a single correspondence. Every tactic documented in sequence. Every reframe named for what it is.
+                On February 14, <Link href="/record/oprd/01KHFDVVV82TVEJPHPYAMAD3JH" className="underline text-emerald-800 hover:text-emerald-600">the full pattern was named directly</Link> — to Collier, to every named individual, and to the Governor — in a single correspondence. Every tactic documented in sequence. Every reframe named for what it is.
             </div>
 
             <div className="mt-4">
-                On February 17, <Link href="/accountability/oprd/01KHK1EBD8ZSWHRRWT7Y69NDA1" className="underline text-emerald-800 hover:text-emerald-600">an open declaration defining abuse</Link> was sent to all named individuals, Commissioners, and Governor Kotek. 327 days of constitutional violation.
+                On February 17, <Link href="/record/oprd/01KHK1EBD8ZSWHRRWT7Y69NDA1" className="underline text-emerald-800 hover:text-emerald-600">an open declaration defining abuse</Link> was sent to all named individuals, Commissioners, and Governor Kotek. 327 days of constitutional violation.
             </div>
 
             <hr className="my-6 border-t border-gray-300" />

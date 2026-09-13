@@ -60,7 +60,7 @@ export function byTitles(slug: string, ...titles: string[]): RegisterRef[] {
 }
 
 export function registerHref(ref: RegisterRef): string {
-    return `/accountability/${ref.thread.slug}/#${ref.filing.ulid}`;
+    return `/records/${ref.thread.slug}/#${ref.filing.ulid}`;
 }
 
 export default function AccountabilityRecord({

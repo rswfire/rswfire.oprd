@@ -81,7 +81,7 @@ export default function RecordsThread({ thread }: { thread: RecordsThreadData })
                     return (
                         <Link
                             key={t.slug}
-                            href={`/accountability/${t.slug}`}
+                            href={`/records/${t.slug}`}
                             aria-current={active ? "page" : undefined}
                             className={`rounded-full border px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors ${
                                 active
