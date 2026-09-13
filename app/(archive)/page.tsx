@@ -30,7 +30,8 @@ export default function OverviewPage() {
                 <p className="text-lg leading-relaxed text-gray-800">
                     I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
                     me ever since, and I brought that to a state park that claims to be the same
-                    thing. I was a volunteer park host for Oregon&rsquo;s state parks, and it
+                    thing. I was a volunteer park host for the Oregon Parks &amp; Recreation
+                    Department, and it
                     is not that. This archive answers the
                     question: <span className="font-semibold">what happens if something goes
                     wrong?</span>
