@@ -526,7 +526,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "p",
-                "md": "The last edit to this document was January 21, 2026. Nothing was ever added after that.\n\nTwo months later, on March 24, 2026, one year to the day after my dismissal, [armed officers came to my door, behind a locked gate, on restricted federal land](https://oprdvolunteerabuse.org/accountability/oprd/01KMTJ21JGSSD4W0BTW6HP1E05/).\n\nThey sent police over a document that records no threat, no crime, and no new event in the two months before they sent them. Its last entry is my notice of a lawsuit."
+                "md": "The last edit to this document was January 21, 2026. Nothing was ever added after that.\n\nTwo months later, on March 24, 2026, one year to the day after my dismissal, [men with guns came to my door, behind a locked gate, on restricted federal land](https://oprdvolunteerabuse.org/accountability/oprd/01KMTJ21JGSSD4W0BTW6HP1E05/).\n\nThey sent police over a document that records no threat, no crime, and no new event in the two months before they sent them. Its last entry is my notice of a lawsuit."
             }
         ]
     }

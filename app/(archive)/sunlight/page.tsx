@@ -108,7 +108,7 @@ export default function SunlightPage() {
             <div className="mt-4">
                 The State of Oregon wrote a story about me. It was written over ten months by the
                 program manager who expelled me. It was never shown to me. It was handed to the
-                state police, and armed officers came to my door.
+                state police, and men with guns came to my door.
             </div>
             <div className="mt-4">
                 I paid for it under a records request, read it, and answered it the same day.
