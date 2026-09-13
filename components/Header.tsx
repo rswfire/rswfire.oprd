@@ -37,7 +37,7 @@ export default function Header() {
 
                     <Link href="/" className="flex items-center gap-3">
                         <Icon
-                            name="TreeDeciduous"
+                            name="Park"
                             className="shrink-0 text-emerald-700 w-7 h-7 sm:w-9 sm:h-9"
                             size={36}
                             strokeWidth={1.5}
