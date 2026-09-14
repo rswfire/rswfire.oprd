@@ -223,8 +223,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
     {
         slug: "lane-county",
         agency: "Lane County Sheriff's Office",
-        refs: "P015875-090926",
-        status: "Filed September 9. Receipt confirmed.",
+        refs: "#26-825; P015875-090926",
+        status: "Acknowledged September 14. County confirms custody; fee-waiver answered.",
         officers: [
             { name: "[Lane County Deputy]" },
         ],
@@ -238,27 +238,24 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
         claims: [
             "September 9, 2026, minutes after filing: receipt confirmed, reference P015875-090926 assigned.",
+            "September 14, 2026: request #26-825 acknowledged the same day; the County states it is processing the request for the Lane County Sheriff's Office and is the custodian of at least some of the requested records; a fee estimate to follow.",
         ],
         withheld: [],
         produced: [],
         deadlines: [
             {
-                d: "2026-09-16",
-                date: "September 16, 2026",
+                d: "2026-10-05",
+                date: "October 5, 2026",
                 who: "them",
-                what: "Acknowledge or complete the September 9 request: ORS 192.324 allows five business days",
-            },
-            {
-                d: "2026-09-30",
-                date: "September 30, 2026",
-                who: "them",
-                what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days",
+                what: "Complete request #26-825 or provide a written estimated completion date and any fee: ORS 192.329(5), fifteen business days from the September 14 acknowledgment",
             },
         ],
         timeline: [
             { d: "2026-03-27", date: "March 27, 2026", event: "SA Oliver sends [Lane County Deputy] the file: name, date of birth, driver's license number, residence, schedule, correspondence, text messages; “will keep you up to date”" },
             { d: "2026-09-09", date: "September 9, 2026", event: "Correction letter to SA Oliver, [Lane County Deputy] copied: the false characterizations corrected, preservation of the March 27 email demanded" },
             { d: "2026-09-09", date: "September 9, 2026", event: "Request filed through the county's records portal; receipt confirmed within minutes, reference P015875-090926" },
+            { d: "2026-09-14", date: "September 14, 2026", event: "Request #26-825 submitted and acknowledged the same day; the county states it is processing for the Sheriff's Office and is custodian of at least some records, and sends a fee-waiver questionnaire" },
+            { d: "2026-09-14", date: "September 14, 2026", event: "Response to the fee-waiver questionnaire: he is the subject of the records, no fee is warranted, produce in full and without delay" },
         ],
     },
     {

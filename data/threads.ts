@@ -7116,6 +7116,21 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             docs: [{ label: "Fee-waiver questionnaire", href: "/records/lane-county/2026-09-14-26-825-fee-waiver-questionnaire.pdf" }],
             eml: "/records/lane-county/eml/2026-09-14_1334_26-825-fee-waiver-questionnaire.eml",
         },
+        {
+            id: "response-to-26-825-fee-waiver",
+            ulid: "01M2GWE3B0RA7M5REH1C904E46",
+            date: "September 14, 2026",
+            d: "2026-09-14",
+            time: "2:16 PM",
+            from: "Robert Samuel White",
+            to: "Tim Wallace, Lane County Public Records",
+            kind: "notice",
+            title: "Response to the fee-waiver questionnaire",
+            summary:
+                "His answers to the county's fee-waiver questionnaire for request #26-825: he is the subject of the records, he already publishes a public archive carrying the other agencies in this matter, the records concern him and serve the public interest, and no fee is warranted. Copied to the OPRD director and commissioners, the Governor, and OSP Risk Management.",
+            docs: [{ label: "Response to the fee-waiver questionnaire", href: "/records/lane-county/2026-09-14-response-to-26-825-fee-waiver.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-14_1416_response-to-26-825-fee-waiver.eml",
+        },
     ],
 };
 
