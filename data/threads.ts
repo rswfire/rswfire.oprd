@@ -7124,7 +7124,7 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             d: "2026-09-14",
             time: "2:16 PM",
             from: "Robert Samuel White",
-            to: "Tim Wallace, Lane County Public Records",
+            to: "[Lane County Lieutenant]",
             kind: "notice",
             title: "Response to the fee-waiver questionnaire",
             summary:
