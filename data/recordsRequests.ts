@@ -224,7 +224,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "lane-county",
         agency: "Lane County Sheriff's Office",
         refs: "#26-825; P015875-090926",
-        status: "Acknowledged September 14. County confirms custody; fee-waiver answered.",
+        status: "Gathering records.",
         officers: [
             { name: "[Lane County Deputy]" },
         ],
