@@ -1,6 +1,7 @@
 // components/SectionPage.tsx
 import type { ReactNode } from 'react';
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 
 type SystemMapLink = {
     href: string;
@@ -13,6 +14,10 @@ type SectionPageProps = {
     subtitle?: string;
     supplemental?: string;
     summary?: string;
+    /** Lucide icon name, centered above the title. */
+    emblem?: string;
+    /** A quieter third line under the subtitle. */
+    tagline?: string;
     systemMap?: SystemMapLink | SystemMapLink[];
     children: ReactNode;
     previousPage?: {
@@ -29,6 +34,8 @@ export default function SectionPage({
                                         title,
                                         subtitle,
                                         supplemental,
+                                        emblem,
+                                        tagline,
                                         summary,
                                         systemMap,
                                         children,
@@ -36,7 +43,7 @@ export default function SectionPage({
                                         nextPage
                                     }: SectionPageProps) {
     const systemMapLinks = systemMap ? (Array.isArray(systemMap) ? systemMap : [systemMap]) : [];
-    const hasHeader = Boolean(title?.trim() || subtitle || supplemental);
+    const hasHeader = Boolean(title?.trim() || subtitle || supplemental || emblem);
     const hasNavigation = Boolean(previousPage || nextPage);
 
     const NavigationLinks = () => (
@@ -68,16 +75,40 @@ export default function SectionPage({
 
                 {hasHeader && (
                     <header className="pb-6">
+                        {emblem && (
+                            <div className="mb-3 flex justify-center">
+                                <Icon name={emblem as never} className="text-violet-700" size={30} strokeWidth={1.5} />
+                            </div>
+                        )}
+
                         {title?.trim() && (
-                            <h1 className="text-3xl font-bold mb-2 text-center tracking-widest">
+                            <h1
+                                className={
+                                    emblem
+                                        ? "mb-3 text-center text-xl font-light uppercase tracking-[0.14em] text-slate-900 sm:text-2xl lg:text-[26px] lg:tracking-[0.16em]"
+                                        : "text-3xl font-bold mb-2 text-center tracking-widest"
+                                }
+                            >
                                 {title}
                             </h1>
                         )}
 
                         {(subtitle || supplemental) && (
-                            <div className="text-gray-700 space-y-0 text-center">
+                            <div
+                                className={
+                                    emblem
+                                        ? "text-center text-[13px] font-semibold uppercase tracking-[0.18em] text-slate-700 sm:text-sm"
+                                        : "text-gray-700 space-y-0 text-center"
+                                }
+                            >
                                 {subtitle && <div>{subtitle}</div>}
                                 {supplemental && <div>{supplemental}</div>}
+                            </div>
+                        )}
+
+                        {tagline && (
+                            <div className="mt-2 text-center text-[11px] uppercase tracking-[0.18em] text-slate-400 sm:text-xs">
+                                {tagline}
                             </div>
                         )}
                     </header>

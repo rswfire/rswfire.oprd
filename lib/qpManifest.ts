@@ -27,7 +27,7 @@ export const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 // reading are not members.
 // qp_url returns the full Queryable Personhood record: transcript (where
 // one exists), structured analysis, and reflections.
-const SIGNALS = [
+export const PRIMARY_SIGNALS = [
     { ulid: "01JNK2TKG01JTERAMB7J6AKPK1", date: "2025-03-05", title: "Two Managers Pressure Volunteer at Picnic Table", note: "The recorded 62-minute picnic-table meeting at Honeyman State Park. Full transcript in the QP record.", archive_page: "/evidence/coercion" },
     { ulid: "01JPP5GY2GPEZ5F08Q2PF6ZAHG", date: "2025-03-19", title: "Recording a Day at Siltcoos After a Failed Encounter", archive_page: null },
     { ulid: "01JQ51HAK8QR862VWGK0RKTFXN", date: "2025-03-24", title: "Documenting Removal Without Process at Honeyman", note: "The recorded dismissal phone call and same-day removal.", archive_page: "/evidence/dismissal" },
@@ -216,7 +216,7 @@ export function rootManifest() {
                 page: `${ORIGIN}/records/${t.slug}`,
                 filings: t.filings.map((f) => filingJson(t.slug, f)),
             })),
-            signals: SIGNALS.map((s) => ({
+            signals: PRIMARY_SIGNALS.map((s) => ({
                 ulid: s.ulid,
                 date: s.date,
                 title: s.title,

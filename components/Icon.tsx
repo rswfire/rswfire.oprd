@@ -15,6 +15,7 @@ import {
     Gavel,
     GraduationCap,
     HelpCircle,
+    Image,
     Landmark,
     Layers,
     Mail,
@@ -27,6 +28,7 @@ import {
     Repeat,
     Scale,
     Share2,
+    Sprout,
     TreeDeciduous,
     Trees,
     UserRound,
@@ -36,6 +38,9 @@ import {
     X,
     Shield,
     Sun,
+    MapPin,
+    Route,
+    Check,
 } from 'lucide-react';
 
 const iconMap = {
@@ -53,6 +58,7 @@ const iconMap = {
     Gavel,
     GraduationCap,
     HelpCircle,
+    Image,
     Landmark,
     Layers,
     Mail,
@@ -66,6 +72,7 @@ const iconMap = {
     Scale,
     Shield,
     Share2,
+    Sprout,
     TreeDeciduous,
     Trees,
     UserRound,
@@ -74,6 +81,9 @@ const iconMap = {
     Wrench,
     X,
     Sun,
+    MapPin,
+    Route,
+    Check,
 } as const;
 
 export type IconName = keyof typeof iconMap;

@@ -4,7 +4,7 @@
 // "Timeline." Each document that arrives gets its own tab here.
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 
 export type SunlightTab = {
@@ -15,6 +15,32 @@ export type SunlightTab = {
 
 export default function SunlightTabs({ tabs }: { tabs: SunlightTab[] }) {
     const [active, setActive] = useState(tabs[0]?.id);
+
+    // A citation elsewhere in the archive lands here as /sunlight/#<entry>.
+    // Select the tab that holds the entry, then put it under the reader's eye
+    // rather than under the sticky header. Also answers a hash change, so a
+    // second citation clicked from this page still moves.
+    useEffect(() => {
+        const go = () => {
+            const id = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+            if (!id) return;
+            const owner = tabs.find((t) => t.id === id);
+            if (owner) setActive(owner.id);
+            // The entry lives inside a panel that may have just been shown, so
+            // wait a frame for it to exist before measuring.
+            requestAnimationFrame(() => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const y = el.getBoundingClientRect().top + window.scrollY - 96;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+                el.classList.add('sunlight-landed');
+                window.setTimeout(() => el.classList.remove('sunlight-landed'), 2400);
+            });
+        };
+        go();
+        window.addEventListener('hashchange', go);
+        return () => window.removeEventListener('hashchange', go);
+    }, [tabs]);
 
     return (
         <div className="mt-10">

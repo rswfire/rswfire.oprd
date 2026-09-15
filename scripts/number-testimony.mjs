@@ -1,0 +1,81 @@
+// scripts/number-testimony.mjs
+//
+// Stamps paragraph identity into the testimony.
+//
+//     node scripts/number-testimony.mjs
+//
+// Every <p> inside a <Part> becomes <P id="…" n={…}>. The id is canonical:
+// minted once, preserved on every later run, never reused. The n is the
+// paragraph's current position and is recomputed each run.
+//
+// Run it after editing the testimony. Numbers shift, links do not.
+import { readFileSync, writeFileSync } from "node:fs";
+
+const FILE = "app/(archive)/testimony/page.tsx";
+const src = readFileSync(FILE, "utf8");
+
+// Only paragraphs inside the parts are numbered. The opening block, the
+// citation key and the closing note are framing, not testimony.
+const firstPart = src.indexOf('<Part n="One"');
+if (firstPart < 0) throw new Error("no parts found");
+const lastPart = src.lastIndexOf("</Part>") + "</Part>".length;
+const head = src.slice(0, firstPart);
+const tail = src.slice(lastPart);
+let body = src.slice(firstPart, lastPart);
+
+const used = new Set([...src.matchAll(/<P id="([a-z0-9]+)"/g)].map((m) => m[1]));
+const ALPHABET = "abcdefghjkmnpqrstuvwxyz23456789"; // no look-alikes
+function mint() {
+    for (;;) {
+        let t = "p";
+        for (let i = 0; i < 5; i++) t += ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
+        if (!used.has(t)) { used.add(t); return t; }
+    }
+}
+
+let n = 0;
+let minted = 0;
+
+// Existing numbered paragraphs keep their id and take a fresh number.
+body = body.replace(/<P id="([a-z0-9]+)" n=\{\d+\}>/g, (_m, id) => `<P id="${id}" n={${++n}}>`);
+
+// Plain paragraphs are adopted, in document order, interleaved with the above.
+// Two passes cannot interleave, so redo it as a single ordered walk.
+n = 0;
+body = body.replace(/<P id="([a-z0-9]+)" n=\{\d+\}>|<p>/g, (m, id) => {
+    n += 1;
+    if (id) return `<P id="${id}" n={${n}}>`;
+    minted += 1;
+    return `<P id="${mint()}" n={${n}}>`;
+});
+body = body.replace(/<\/p>/g, "</P>");
+
+let out = head + body + tail;
+if (!out.includes('import P from "@/components/testimony/P"')) {
+    out = out.replace(
+        'import TestimonyToc from "@/components/testimony/TestimonyToc";',
+        'import TestimonyToc from "@/components/testimony/TestimonyToc";\nimport P from "@/components/testimony/P";'
+    );
+}
+
+// The byline has to be true. It was hand-typed once and went stale the first
+// time a citation was cut, so it is counted here instead, from the document
+// itself, on every run.
+const consts = Object.fromEntries(
+    [...out.matchAll(/const ([A-Z0-9_]+) = "([0-9A-HJKMNP-TV-Z]{26})";/g)].map((m) => [m[1], m[2]])
+);
+const scope = out.slice(out.indexOf('<Part n="One"'));
+const momentTags = [...scope.matchAll(/<Moment ulid=\{?"?([A-Za-z0-9_]+)"?\}?/g)].map((m) => m[1]);
+const recordings = new Set(momentTags.map((t) => consts[t] ?? t)).size;
+const documents =
+    new Set([...scope.matchAll(/<Cite ulid="([0-9A-HJKMNP-TV-Z]{26})"/g)].map((m) => m[1])).size +
+    new Set([...scope.matchAll(/<SunCite entry="([^"]+)"/g)].map((m) => m[1])).size;
+
+out = out.replace(
+    /<TestimonyMeta documents=\{\d+\} recordings=\{\d+\} moments=\{\d+\} \/>/,
+    `<TestimonyMeta documents={${documents}} recordings={${recordings}} moments={${momentTags.length}} />`
+);
+
+writeFileSync(FILE, out);
+console.log(`paragraphs: ${n}   newly minted ids: ${minted}   carried over: ${n - minted}`);
+console.log(`built from: ${documents} documents · ${recordings} recordings · ${momentTags.length} cited moments`);

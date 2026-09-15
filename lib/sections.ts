@@ -16,6 +16,8 @@ export const archiveSections = [
         ]
     },
     { href: "#separator-3", label: "", separator: true },
+    { href: "/testimony", label: "Testimony", icon: "Sprout" as const, iconClass: "text-violet-700" },
+    { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
     {
 
         href: "/evidence",
@@ -41,7 +43,6 @@ export const archiveSections = [
         iconClass: "text-slate-600",
     },
     { href: "/timeline", label: "Timeline", icon: "ChartNoAxesGantt" as const, iconClass: "text-slate-600" },
-    { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
     { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",

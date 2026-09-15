@@ -5,6 +5,13 @@ import {Open_Sans, DM_Mono, DM_Serif_Display} from 'next/font/google'
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PlayerProvider from "@/components/player/PlayerProvider";
+import DocViewerProvider from "@/components/DocViewerProvider";
+import SunlightProvider from "@/components/sunlight/SunlightProvider";
+import PhotoProvider from "@/components/photos/PhotoProvider";
+import PlaceProvider from "@/components/places/PlaceProvider";
+import TraceProvider from "@/components/traces/TraceProvider";
+import ReflectionProvider from "@/components/reflections/ReflectionProvider";
 import Script from 'next/script'
 
 const openSans = Open_Sans({
@@ -65,11 +72,25 @@ export default function RootLayout({
             )}
         </head>
         <body className={openSans.className}>
-        <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-        </div>
+        <PlayerProvider>
+            <DocViewerProvider>
+                <SunlightProvider>
+                    <PhotoProvider>
+                        <PlaceProvider>
+                        <TraceProvider>
+                        <ReflectionProvider>
+                        <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900">
+                            <Header />
+                            <main className="flex-1">{children}</main>
+                            <Footer />
+                        </div>
+                        </ReflectionProvider>
+                        </TraceProvider>
+                        </PlaceProvider>
+                    </PhotoProvider>
+                </SunlightProvider>
+            </DocViewerProvider>
+        </PlayerProvider>
         </body>
         </html>
     );

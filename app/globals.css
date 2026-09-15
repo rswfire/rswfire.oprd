@@ -87,3 +87,14 @@ body {
 .case-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
+/* A citation from elsewhere in the archive lands on one entry; hold a light
+   behind it for a moment so the reader's eye finds the right paragraph. */
+@keyframes sunlight-land {
+    from { background-color: rgb(254 243 199 / 0.9); }
+    to   { background-color: transparent; }
+}
+.sunlight-landed {
+    animation: sunlight-land 2.4s ease-out;
+    border-radius: 0.5rem;
+}

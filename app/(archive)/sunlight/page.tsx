@@ -17,6 +17,16 @@ import { SUNLIGHT_SECTIONS } from "@/data/sunlight";
 import type { SunlightBlock } from "@/data/sunlight";
 import { TIMELINE_CITED_SOURCES } from "@/data/recordsRequests";
 
+// The anchor a citation elsewhere in the archive points at. Must match
+// scripts/make-sunlight-index.mjs: change one and the links stop landing.
+function anchorFor(heading: string): string {
+    return heading
+        .toLowerCase()
+        .replace(/[\u2014\u2013]/g, "-")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+}
+
 export const metadata: Metadata = {
     title: "sunlight: their words, next to the record",
     description:
@@ -147,7 +157,7 @@ function TimelinePanel() {
 
             <div className="mt-10 space-y-10">
                 {SUNLIGHT_SECTIONS.map((section) => (
-                    <section key={section.heading}>
+                    <section key={section.heading} id={anchorFor(section.heading)} className="scroll-mt-24">
                         <h2 className="text-lg font-mono font-bold text-gray-900">{section.heading}</h2>
                         <div className="mt-3 space-y-4">
                             {group(section.blocks).map((seg, i) => {
