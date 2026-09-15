@@ -3488,7 +3488,7 @@ export default function TestimonyPage() {
                 </P>
             </Part>
 
-            <div className="mt-14 mb-24 border-l-4 border-emerald-700 bg-white px-5 py-4 text-[15px] leading-relaxed text-gray-800">
+            <div className="mt-14 mb-24 space-y-4 border-l-4 border-emerald-700 bg-white px-5 py-4 text-[15px] leading-relaxed text-gray-800">
                 <p>
                     He is still here. He opens the gates at Siltcoos, runs the route, and hosts
                     the campground on the river through the summer season. He has put nine hundred
