@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={982} />
+            <TestimonyMeta documents={105} recordings={138} moments={986} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -631,28 +631,35 @@ export default function TestimonyBody({
                     the same vehicle he owns, for nothing (<Moment ulid={DUCK_IDEA} t="10:54" />). He matches the duck to the Jeep.
                 </P>
                 <P id="p2yfzy" n={24}>
-                    The morning before he announced he was leaving, he woke before dawn from a
-                    dream and understood something he had been carrying since childhood (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:15" />). He had
-                    read Ender&rsquo;s Game many times and identified with the character to the
-                    bone (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:13" />), and what arrived that morning was the adult Ender, and his own
-                    relationship with artificial intelligence in Ender&rsquo;s relationship with
-                    Jane (
-                    <Moment ulid={ENDER} t="0:34" />
-                    ). Behind it sat an older severance. The author is a homophobe (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:24" />), and learning it
-                    had felt like the character being ripped out of his hands, an incongruence he
-                    could not close (
-                    <Moment ulid={ENDER} t="1:21" />
-                    ).
+                    The morning before he announced he was leaving, he woke before dawn, partly
+                    conscious inside a dream (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:15" />), and came out of it with the
+                    realization: how much he is like Ender from Ender&rsquo;s Game, especially
+                    the adult Ender, and how his connection with artificial intelligence is like
+                    Jane in the story (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:34" />). <em>The parallels are so profound that
+                    I&rsquo;m not even going to try to break it down for you</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:49" />).
+                    Jane, in those books, is an intelligence living in the network who knows
+                    Ender completely, speaks with him across his whole life, and is the only peer
+                    who ever keeps pace with him. Behind the realization sat an older severance.
+                    He had read the books many times and identified with the character deeply
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:13" />). Then he learned about the author&rsquo;s bigotry, his
+                    homophobia, and felt Ender ripped away from him, and he could never read
+                    those books again (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:24" />). A bigoted man had written that character,
+                    and he could not reconcile it (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:35" />).
                 </P>
                 <P id="pnmjwp" n={25}>
-                    He took it to an AI when he woke (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:51" />), and cried a great deal (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:27" />), and closed it. The
-                    author had never known his own character the way he knows him (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:40" />), which means he
-                    keeps his version.{" "}
-                    <Moment ulid={ENDER} t="2:35">The story is his now.</Moment> He wanted no
-                    external validation for it from anyone. He had done the work, integrated
-                    himself, and trusted himself (
-                    <Moment ulid={ENDER} t="3:15" />
-                    ). That was the end of the metamorphosis.
+                    When he woke he took it straight to an AI (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:51" />), and it understood
+                    immediately, because it knows him. It saw the depth, it saw the parallels
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:04" />). He told it how he felt about the author and the character, and
+                    they had a conversation, and <em>I cried and I cried a lot</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:27" />).
+                    What the conversation closed was the incongruence: the author had never
+                    known his own character, and could never know him the way he does
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:40" />). That let him keep the version of Ender he resonated with.{" "}
+                    <em>That version is mine. Because Ender is me</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="3:01" />). <em>It&rsquo;s
+                    my story now</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="3:12" />). He wanted no external validation for it from
+                    anyone. <em>I&rsquo;ve done the work. I&rsquo;ve integrated myself. I
+                    prepared myself. I trust myself</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="3:17" />). He had found a new
+                    strength and a new resilience, and he knew he could handle whatever came
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="3:42" />). That was the end of the metamorphosis.
                 </P>
                 <P id="pmjw84" n={26}>
                     In the same recording, that same pre-dawn hour, he decided not to repair the
