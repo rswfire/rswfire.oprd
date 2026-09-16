@@ -2068,9 +2068,9 @@ export default function TestimonyBodyV1_0({ version, isCurrent }: { version: str
                     The first item off the sheet lands at{" "}
                     <Moment ulid={PICNIC} t="3:52">three minutes and fifty-two seconds</Moment>:
                     dissatisfaction with multiple members of the crew. Named on the list were the
-                    park manager himself, the park supervisor, the volunteer services lead, Individual 1 and
-                    Individual 2. He had never criticised the park manager and he had never criticised
-                    Individual 1, and forty-seven seconds later he was told he did not have to agree with it
+                    park manager himself, the park supervisor, the volunteer services lead, Park Ranger 1 and
+                    Park Ranger 2. He had never criticised the park manager and he had never criticised
+                    Park Ranger 1, and forty-seven seconds later he was told he did not have to agree with it
                     (
                     <Moment ulid={PICNIC} t="4:39" />
                     ). That is the mechanism, and it ran for the next hour: a correction is offered,
@@ -2081,18 +2081,18 @@ export default function TestimonyBodyV1_0({ version, isCurrent }: { version: str
                     <Moment ulid={PICNIC} t="6:26">this isn&rsquo;t an argument</Moment>.
                 </P>
                 <P id="pdavyh" n={128}>
-                    The evidence against Individual 2 was that Individual 2 had said <em>I&rsquo;m here to
+                    The evidence against Park Ranger 2 was that Park Ranger 2 had said <em>I&rsquo;m here to
                     support you</em> and had gone on saying it across an hour (
                     <Moment ulid={PICNIC} t="6:59" />
-                    ). He had no problem with Individual 2 (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="7:23" />), who was very polite and whom he navigated the
+                    ). He had no problem with Park Ranger 2 (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="7:23" />), who was very polite and whom he navigated the
                     way he navigates everybody (
                     <Moment ulid={PICNIC} t="8:13" />,{" "}
                     <Moment ulid={PICNIC} t="8:36" />
-                    ). What he had actually reported was not Individual 2 at all. It was that the
-                    volunteer services lead had told him Individual 1 would run his orientation (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="6:09" />), and at that
+                    ). What he had actually reported was not Park Ranger 2 at all. It was that the
+                    volunteer services lead had told him Park Ranger 1 would run his orientation (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="6:09" />), and at that
                     table the park manager confirmed the lead had known otherwise when he said it (
                     <Moment ulid={PICNIC} t="7:33" />
-                    ). Nine minutes in, Individual 2 was still the only subject that had been raised
+                    ). Nine minutes in, Park Ranger 2 was still the only subject that had been raised
                     (
                     <Moment ulid={PICNIC} t="9:12" />
                     ). At ten thirty-six he supplied the actual examples, including the call log of
@@ -2575,7 +2575,7 @@ export default function TestimonyBodyV1_0({ version, isCurrent }: { version: str
                     Then the things he had held back on the phone. The eat-glass line had been used
                     on him once before, in the welcome center, the first time he was confronted,
                     which made it a pattern rather than a remark. The March 5 meeting ended with
-                    five minutes of being pressed to leave on his own, and he declined. Individual 1 had
+                    five minutes of being pressed to leave on his own, and he declined. Park Ranger 1 had
                     never been told he was training him. And the journal had been turned into
                     something it was not: not all rangers are helpful was never a criticism of
                     staff, it was an appeal that the thing not be lost in the lost and found. He
