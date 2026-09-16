@@ -628,8 +628,7 @@ export default function TestimonyBody({
                     and then a green-accented duck set on a second Jeep&rsquo;s windshield
                     because the door style made the usual spot impractical (<Moment ulid={DUCK_DROPS} t="0:00" />, <Moment ulid={DUCK_DROPS} t="0:26" />).
                     He does this for two years. He gives small rubber ducks to strangers who own
-                    the same vehicle he owns, for nothing (<Moment ulid={DUCK_IDEA} t="10:54" />),
-                    and keeps track of which ones already have one.
+                    the same vehicle he owns, for nothing (<Moment ulid={DUCK_IDEA} t="10:54" />).
                 </P>
                 <P id="p2yfzy" n={24}>
                     The morning before he announced he was leaving, he woke before dawn from a
