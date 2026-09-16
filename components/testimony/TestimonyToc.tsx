@@ -143,8 +143,8 @@ export default function TestimonyToc() {
                             {entries[active]?.label}
                         </span>
                     </span>
-                    <span className="shrink-0 font-mono text-[13px] font-bold uppercase text-gray-900">
-                        C{active + 1} P{para}
+                    <span className="shrink-0 font-mono text-xl font-bold text-gray-900">
+                        &sect;{active + 1} &para;{para}
                     </span>
                     <Icon
                         name={open ? "ChevronDown" : "ChevronUp"}
