@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import TestimonyBodyV1_0 from "./v1.0";
 import TestimonyBodyV1_1 from "./v1.1";
+import TestimonyBodyV1_2 from "./v1.2";
 
 // Frozen bodies for superseded versions. When a new version is cut, the
 // outgoing body is copied here as v<old>.tsx and registered below, so
@@ -12,4 +13,5 @@ export const FROZEN_BODIES: Record<
 > = {
     "1.0": TestimonyBodyV1_0,
     "1.1": TestimonyBodyV1_1,
+    "1.2": TestimonyBodyV1_2,
 };
