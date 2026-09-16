@@ -31,8 +31,7 @@ export default function CiteHow() {
                     <p>
                         Every version of this testimony is frozen at its own permanent address,
                         so a citation to a version and a paragraph can never drift. The number
-                        on any paragraph opens its sharing (click or tap on it): the permanent
-                        address, and a citation ready to copy.
+                        on any paragraph opens its citation (click or tap on it).
                     </p>
                 </div>
             )}
