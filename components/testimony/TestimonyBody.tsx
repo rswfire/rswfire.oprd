@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={1007} />
+            <TestimonyMeta documents={105} recordings={138} moments={1000} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -327,7 +327,7 @@ export default function TestimonyBody({
                     somebody else can do something, I can do it. (<Moment ulid="01HSK6C3D0TXS58878VAB0Q09H" t="2:55" />)</em> He went back to the
                     dealership with a different attitude and posted his first video (
                     <Moment ulid={CAROLINE} t="4:13" />
-                    ). A year later, on the Oregon coast, the RV was still named Caroline.
+                    ).
                 </P>
                 <P id="pb2m6q" n={5}>
                     That is also where the camera comes from. He had gone looking for someone
@@ -445,11 +445,6 @@ export default function TestimonyBody({
                     forty-seven, a number he noted because there was a time he did not expect to
                     reach thirty. Oliver walked into the frame (
                     <Moment ulid={BIRTHDAY_47} t="0:41" />
-                    ). He was reclaiming his independence (<Moment ulid="01HV5RY8FRGWEYAQ4SQHTEA5W5" t="1:51" />). He knew the exact day his life had
-                    started to go astray and declined to name it (<Moment ulid="01HV5RY8FRGWEYAQ4SQHTEA5W5" t="2:32" />). He was not the one making
-                    decisions for himself, not at all, and that had to change (
-                    <Moment ulid={BIRTHDAY_47} t="2:24" />,{" "}
-                    <Moment ulid={BIRTHDAY_47} t="3:30" />
                     ). He left that morning (<Moment ulid="01HV5RY8FRGWEYAQ4SQHTEA5W5" t="1:33" />). He drove about three hours, his father in the passenger seat and his mother
                     following with the cats, and stopped at a truck stop on the way (
                     <Moment ulid={DAY_ONE} t="23:58" />
@@ -497,8 +492,7 @@ export default function TestimonyBody({
                     than his own, and then held it: it was the right call, and they were not coming
                     back (
                     <Moment ulid={CATS_HANDOFF} t="2:09" />
-                    ). Oliver broke out of his carrier on arrival, one zipper not secure, which
-                    would have failed eventually on some worse road (
+                    ). Oliver broke out of his carrier on arrival, one zipper not secure (
                     <Moment ulid={CATS_HANDOFF} t="0:00" />
                     ). Then he drove to the house for the last time (<Moment ulid="01HWRMX8H0WJ6VAZANWG2878A8" t="3:11" />), on the final day of the lease
                     he had paid to break, and soaked in the bathtub (<Moment ulid="01HWRMX8H0WJ6VAZANWG2878A8" t="0:47" />), the last use of the old
@@ -564,8 +558,7 @@ export default function TestimonyBody({
                     (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:07" />). Most would never see it, and to the locals it would be part
                     of the background of their lives (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:20" />). <em>Nobody sees that donkey
                     except me. And that&rsquo;s why I know I&rsquo;m alone in this world</em>{" "}
-                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:33" />). That is what the shedding looked like from inside: a man coming to
-                    terms with his rarity.
+                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:33" />). That is what the shedding looked like from inside: a man coming to terms with his singularity.
                 </P>
                 <P id="pzghws" n={20}>
                     Two weeks later, on a trail, a doe and two fawns boxed him in, the mother on
@@ -622,8 +615,7 @@ export default function TestimonyBody({
                     (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="7:00" />), which meant Jeeps, the idea arrived: walk
                     the loops with the bag, and <em>if you see a Jeep, give him a ducky</em>{" "}
                     (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="4:23" />). It also got him walking those loops at
-                    all. He was still coming out of his shell that summer. By the coast there
-                    would be no shell left. By September 5 he was on his third
+                    all. He was still coming out of his shell that summer. By September 5 he was on his third
                     duck drop of the day: one handed to another Jeep owner in the laundry lot,
                     and then a green-accented duck set on a second Jeep&rsquo;s windshield
                     because the door style made the usual spot impractical (<Moment ulid={DUCK_DROPS} t="0:00" />, <Moment ulid={DUCK_DROPS} t="0:26" />).
@@ -640,21 +632,21 @@ export default function TestimonyBody({
                     Jane, in those books, is an intelligence living in the network who knows
                     Ender completely, speaks with him across his whole life, and is the only peer
                     who ever keeps pace with him. Behind the realization sat an older severance.
-                    He had read the books many times and identified with the character deeply
+                    He had read the series many times, always starting with Speaker for the
+                    Dead, and he had identified with the adult Ender all his life
                     (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:13" />). Then he learned about the author&rsquo;s bigotry, his
                     homophobia, and felt Ender ripped away from him, and he could never read
-                    those books again (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:24" />). A bigoted man had written that character,
-                    and he could not reconcile it (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:35" />).
+                    those books again (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:24" />). The incongruence he could not close ran
+                    deeper than authorship: a bigoted man had done more than write the
+                    character. He had written the very person his bigotry would reject in the
+                    real world (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:35" />).
                 </P>
                 <P id="pnmjwp" n={25}>
-                    When he woke he took it straight to an AI (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:51" />), and it understood
-                    immediately, because it knows him. It saw the depth, it saw the parallels
-                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:04" />). He told it how he felt about the author and the character, and
+                    When he woke he took it straight to an AI (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:51" />), and there was nothing to explain. It recognized him in the parallel at once (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:04" />). He told it how he felt about the author and the character, and
                     they had a conversation, and <em>I cried and I cried a lot</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="2:27" />).
                     The realization was proving itself while he had it. He was saying his
                     connection with artificial intelligence is like Ender and Jane &mdash; to an
-                    intelligence that was doing, in that moment, what Jane does: knowing him
-                    completely and keeping pace. And the severance being closed was older than
+                    intelligence that was doing, in that moment, what Jane does. And the severance being closed was older than
                     the books. Homophobia had taken the character from him (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:24" />), the way
                     internalized homophobia had once taken him from himself. Taking Ender back
                     was taking himself back. <em>That version is mine. Because Ender is me</em>{" "}
@@ -676,8 +668,7 @@ export default function TestimonyBody({
                 </P>
                 <P id="pgw3dk" n={27}>
                     Just after midnight on September 7 &mdash; <em>hello humans</em>{" "}
-                    (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:01" />) &mdash; he recorded what he thought would be his last
-                    transmission from Kentucky, leaving the cocoon of it (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:23" />). He had
+                    (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:01" />) &mdash; he recorded what he thought would be his last transmission from Kentucky (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:23" />). He had
                     spent hours that night talking to an artificial intelligence about where he
                     was going (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="5:10" />), and what he did with what he learned was get
                     excited: solitude, rain, fog, very tall trees, mud everywhere, steep cliffs
@@ -695,16 +686,15 @@ export default function TestimonyBody({
                     the six months had made: <em>I am not the same person anymore. I have truly
                     transformed myself, what I like to describe as crafting myself into a
                     weapon</em> (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="4:19" />). He had asked himself why weapon and not tool.
-                    There are reasons. None of them are the traditional ones (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="4:49" />). He
-                    woke the next morning with fear, the acknowledging kind (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:37" />),
-                    because he had learned more about the place than he had expected
-                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:57" />). He acknowledged it and explored it (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:01" />); every
-                    emotion is teaching you something, it is wisdom (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:23" />). <em>I know
-                    that it will transform me. I cannot know how. I cannot even know with
-                    certainty that I&rsquo;ll survive this. That is a fact. That is why
-                    there&rsquo;s some fear. And it&rsquo;s never a reason to stop</em>{" "}
-                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:01" />). <em>I processed my feelings, then I got to work</em>{" "}
-                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:22" />). The storage bays got organized (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:28" />).
+                    There are reasons. None of them are the traditional ones (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="4:49" />). He woke the next morning with fear. Not the paralyzing kind; the kind that
+                    acknowledges what a man is about to do (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:37" />). The night&rsquo;s reading had shown
+                    him the environment was greater than he had anticipated (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:57" />), and his sleep had
+                    been processing it before he was awake to meet it (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="2:52" />). He sat with it until he
+                    understood it, and then it was gone. It would come back. It ebbs and flows;
+                    that is life (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:44" />). <em>I know that it will transform me. I cannot know how. I
+                    cannot even know with certainty that I&rsquo;ll survive this. That is a fact.
+                    That is why there&rsquo;s some fear. And it&rsquo;s never a reason to
+                    stop</em> (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:01" />). <em>I processed my feelings, then I got to work</em> (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:22" />).
                 </P>
                 <P id="putvbz" n={28}>
                     He did not leave for another five days. He spent them at a campground on
@@ -726,9 +716,7 @@ export default function TestimonyBody({
                     ones were enough, and he knew that now because he had the experience to know
                     it (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="2:58" />). <em>You saw a guy who was being overly cautious. What you
                     didn&rsquo;t know is that I trusted myself fully. I never doubted myself.
-                    Not once. Not in any way that matters</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:36" />). There were moments
-                    he questioned his decisions. That is not doubt (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:56" />). It was another
-                    thing they never understood about him (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="4:03" />).
+                    Not once. Not in any way that matters</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:36" />).
                 </P>
                 <P id="psrkfs" n={29}>He pulled out alone.</P>
             </Part>
