@@ -4,16 +4,13 @@
 //
 // A numbered paragraph of the testimony.
 //
-// Two identifiers, doing two different jobs. `id` is canonical: minted once,
-// never reused, never changed, and it is what a link points at. `n` is the
-// paragraph's current position in the document, recomputed every time
-// scripts/number-testimony.mjs runs, and it exists so a reader can find their
-// place and say where they are.
-//
-// The consequence is the right one: editing the document renumbers what is
-// displayed and breaks nothing that was linked. A paragraph that is deleted
-// takes its anchor with it, which is the same thing that happens to any
-// address for something that no longer exists.
+// Two anchors, doing two different jobs. The paragraph's element id is its
+// NUMBER (`p27`), because links always carry the version and every version is
+// frozen at a permanent address: v1.4/#p27 means the same words forever. The
+// minted `id` slug stays as a second anchor inside the paragraph so links
+// copied before numbers became the address keep resolving. `n` itself is
+// recomputed by scripts/number-testimony.mjs whenever the current draft
+// changes; on a frozen version it never changes again.
 import Icon from "@/components/Icon";
 import { useState } from "react";
 import { useTestimonyVersion, versionedHref } from "@/components/testimony/versionContext";
@@ -33,7 +30,7 @@ export default function P({
     const copy = (e: React.MouseEvent) => {
         // Let a modified click do what the browser would normally do.
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-        const url = `${window.location.origin}${versionedHref(version, id)}`;
+        const url = `${window.location.origin}${versionedHref(version, `p${n}`)}`;
         navigator.clipboard?.writeText(url).then(
             () => { setCopied(true); window.setTimeout(() => setCopied(false), 1400); },
             () => {}
@@ -41,9 +38,10 @@ export default function P({
     };
 
     return (
-        <p id={id} className="scroll-mt-24">
+        <p id={`p${n}`} className="scroll-mt-24">
+            <span id={id} aria-hidden className="scroll-mt-24" />
             <a
-                href={`#${id}`}
+                href={`#p${n}`}
                 onClick={copy}
                 aria-label={`Copy a link to paragraph ${n}`}
                 title="Copy link to this paragraph"

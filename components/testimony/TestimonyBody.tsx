@@ -15,6 +15,7 @@ import PlaceCite from "@/components/places/PlaceCite";
 import TraceCite from "@/components/traces/TraceCite";
 import TestimonyMeta from "@/components/testimony/TestimonyMeta";
 import Hash from "@/components/testimony/Hash";
+import CiteHow from "@/components/testimony/CiteHow";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
 import P from "@/components/testimony/P";
 
@@ -256,6 +257,7 @@ export default function TestimonyBody({
                 <div className="mt-2 text-[13px] text-slate-600">
                     <em>Italics are his words, verbatim, from the cited source.</em>
                 </div>
+                <CiteHow />
             </div>
 
             <Part n="One" title="THE SHEDDING">
