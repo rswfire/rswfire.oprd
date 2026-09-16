@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={972} />
+            <TestimonyMeta documents={105} recordings={137} moments={978} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -585,16 +585,25 @@ export default function TestimonyBody({
                 </P>
                 <P id="psabmq" n={21}>
                     Two days after that he devoted an entire recording to whether he could walk
-                    back from the shower house in his pyjamas, given that a new neighbour had
-                    parked behind him. He works the variables on camera: the laundry arithmetic of
-                    RV living, whether it is respectful (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="1:11" />), what he has observed other people at that
-                    campground doing. The easy answer was available to him, the one that says who
-                    cares, and he declined it. He is a holistic thinker, and skipping a variable is
-                    not something he can do (
-                    <Moment ulid={PYJAMAS} t="0:32" />,{" "}
-                    <Moment ulid={PYJAMAS} t="1:04" />
-                    ). What resolved it was precedent, women on campsites in their nightgowns (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="4:11" />), the
-                    norms of a campground being their own. He wore the pyjamas (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="2:45" />).
+                    back from the shower house in his pyjamas. He announced it as an exceptionally
+                    good example of what it means to be a holistic thinker (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="0:00" />), and then
+                    a new neighbour parked behind him, which he noted played right into it
+                    (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="0:08" />). The inputs: a hundred-degree day of hiking, mosquito repellent
+                    that needed to come off, the sun nearly down, and the laundry arithmetic of
+                    RV living, which argues against burning a set of clothes on one walk
+                    (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="0:16" />). The variables: is it respectful, is it normal, what have other
+                    people at this campground been wearing (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="1:06" />). <em>There are some
+                    people out there who&rsquo;ll be like, who cares, don&rsquo;t even worry
+                    about that. But I don&rsquo;t think that way. I&rsquo;m a holistic thinker. I
+                    actually consider all the variables. It is impossible for me not to.</em>{" "}
+                    (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="1:44" />) What resolved the conflict was precedent, the women he had seen
+                    on campsites in their little silk things (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="1:18" />) &mdash; the word
+                    nightgown arrived in the shower, since he thinks of things by their function
+                    before their names (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="3:12" />) &mdash; and the norms of a campground being
+                    their own (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="4:06" />). He wore the pyjamas, loved it, and said he would be
+                    doing it often now (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="2:00" />, <Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="2:45" />). A bat went
+                    over his head on the walk back. He likes bats. He actually thinks bats are
+                    awesome (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="4:26" />).
                 </P>
                 <P id="p8zhm9" n={22}>
                     The next day he drove forty minutes for coffee (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="3:30" />) and came home from
