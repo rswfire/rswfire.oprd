@@ -564,8 +564,8 @@ export default function TestimonyBody({
                     (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:07" />). Most would never see it, and to the locals it would be part
                     of the background of their lives (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:20" />). <em>Nobody sees that donkey
                     except me. And that&rsquo;s why I know I&rsquo;m alone in this world</em>{" "}
-                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:33" />). That is what the shedding looked like from inside: coming to
-                    terms with his rarity, with proof he trusted.
+                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:33" />). That is what the shedding looked like from inside: a man coming to
+                    terms with his rarity.
                 </P>
                 <P id="pzghws" n={20}>
                     Two weeks later he was sitting on a bench when a doe and two fawns boxed him
