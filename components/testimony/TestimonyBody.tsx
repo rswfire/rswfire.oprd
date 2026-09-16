@@ -581,8 +581,7 @@ export default function TestimonyBody({
                     promise</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="10:41" />), until the fawns and their mother were reunited
                     (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="10:57" />). It took an hour (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="11:01" />). <em>That was truly one of the
                     coolest experiences of my life</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="11:03" />). <em>This is their space
-                    too, more theirs than ours</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="3:42" />), and he had a place in their
-                    lives for that hour.
+                    too, more theirs than ours</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="3:42" />).
                 </P>
                 <P id="psabmq" n={21}>
                     Two days after that he devoted an entire recording to whether he could walk
