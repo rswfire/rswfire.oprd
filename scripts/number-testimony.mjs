@@ -11,7 +11,7 @@
 // Run it after editing the testimony. Numbers shift, links do not.
 import { readFileSync, writeFileSync } from "node:fs";
 
-const FILE = "app/(archive)/testimony/page.tsx";
+const FILE = "components/testimony/TestimonyBody.tsx";
 const src = readFileSync(FILE, "utf8");
 
 // Only paragraphs inside the parts are numbered. The opening block, the

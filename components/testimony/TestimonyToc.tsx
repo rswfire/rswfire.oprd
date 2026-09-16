@@ -12,6 +12,8 @@
 // items does not fit a 375px screen.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "@/components/Icon";
+import { CURRENT_VERSION } from "@/data/testimonyVersions";
+import { useTestimonyVersion } from "@/components/testimony/versionContext";
 
 interface Entry {
     id: string;
@@ -23,6 +25,7 @@ export default function TestimonyToc() {
     const [active, setActive] = useState(0);
     const [open, setOpen] = useState(false);
     const listRef = useRef<HTMLDivElement | null>(null);
+    const { version, isCurrent } = useTestimonyVersion();
 
     // Read the parts from the rendered page, once, after mount.
     useEffect(() => {
@@ -71,6 +74,24 @@ export default function TestimonyToc() {
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[70] flex justify-center px-2 pb-2 sm:px-4 sm:pb-4">
             <div className="pointer-events-auto w-full max-w-3xl overflow-hidden rounded-2xl border border-slate-300 bg-white/95 shadow-lg backdrop-blur">
+                {!isCurrent && (
+                    <button
+                        onClick={() =>
+                            document.dispatchEvent(new CustomEvent("testimony:open-revisions"))
+                        }
+                        className="flex w-full items-center gap-2 border-b border-amber-200 bg-amber-50 px-4 py-2 text-left text-[12px] text-amber-900 hover:bg-amber-100"
+                    >
+                        <span className="min-w-0 flex-1">
+                            You are reading{" "}
+                            <span className="font-mono font-semibold">v{version}</span>. The current
+                            version is{" "}
+                            <span className="font-mono font-semibold">v{CURRENT_VERSION.version}</span>.
+                        </span>
+                        <span className="shrink-0 font-bold uppercase tracking-wide underline">
+                            Revisions
+                        </span>
+                    </button>
+                )}
                 {open && (
                     <div
                         ref={listRef}

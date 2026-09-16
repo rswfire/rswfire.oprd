@@ -12,13 +12,15 @@
 // gets its address second.
 import Icon from "@/components/Icon";
 import { useState } from "react";
+import { useTestimonyVersion, versionedHref } from "@/components/testimony/versionContext";
 
 export default function Hash({ id, label }: { id: string; label?: string }) {
     const [copied, setCopied] = useState(false);
+    const { version } = useTestimonyVersion();
 
     const copy = (e: React.MouseEvent) => {
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-        const url = `${window.location.origin}${window.location.pathname}#${id}`;
+        const url = `${window.location.origin}${versionedHref(version, id)}`;
         navigator.clipboard?.writeText(url).then(
             () => { setCopied(true); window.setTimeout(() => setCopied(false), 1400); },
             () => {}

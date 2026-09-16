@@ -16,6 +16,7 @@
 // address for something that no longer exists.
 import Icon from "@/components/Icon";
 import { useState } from "react";
+import { useTestimonyVersion, versionedHref } from "@/components/testimony/versionContext";
 
 export default function P({
     id,
@@ -27,11 +28,12 @@ export default function P({
     children: React.ReactNode;
 }) {
     const [copied, setCopied] = useState(false);
+    const { version } = useTestimonyVersion();
 
     const copy = (e: React.MouseEvent) => {
         // Let a modified click do what the browser would normally do.
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-        const url = `${window.location.origin}${window.location.pathname}#${id}`;
+        const url = `${window.location.origin}${versionedHref(version, id)}`;
         navigator.clipboard?.writeText(url).then(
             () => { setCopied(true); window.setTimeout(() => setCopied(false), 1400); },
             () => {}
