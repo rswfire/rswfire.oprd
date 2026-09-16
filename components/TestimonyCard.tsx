@@ -50,7 +50,12 @@ export default function TestimonyCard() {
                     <span><span className="font-bold text-gray-900">105</span> documents</span>
                     <span><span className="font-bold text-gray-900">137</span> recordings</span>
                     <span><span className="font-bold text-gray-900">963</span> cited moments</span>
-                    <span className="font-mono text-gray-400">v{CURRENT_VERSION.version}</span>
+                    <Link
+                        href="/testimony/#version-meta"
+                        className="font-mono text-gray-400 underline decoration-gray-300 underline-offset-2 hover:text-emerald-700"
+                    >
+                        v{CURRENT_VERSION.version}
+                    </Link>
                 </div>
             </div>
 

@@ -45,12 +45,21 @@ export default function TestimonyMeta({
                 <div>
                     <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Version</div>
                     <div className="font-mono text-sm text-slate-900">
-                        v{viewed.version}
+                        <a
+                            href={`/testimony/v${viewed.version}/`}
+                            className="underline decoration-slate-300 underline-offset-2 hover:text-emerald-700"
+                            title="The permanent address of this version"
+                        >
+                            v{viewed.version}
+                        </a>
                         <span className="ml-2 text-slate-500">{viewed.date}</span>
                         {!isCurrent && (
-                            <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">
+                            <a
+                                href="/testimony/"
+                                className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800 hover:bg-amber-200"
+                            >
                                 superseded by v{CURRENT_VERSION.version}
-                            </span>
+                            </a>
                         )}
                     </div>
                 </div>
