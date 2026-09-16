@@ -353,7 +353,7 @@ export default function TestimonyBody({
                     .
                 </P>
                 <P id="pn6z76" n={7}>
-                    He took delivery on March 8 in Murfreesboro (<Moment ulid="01HRG07V80PSGCFP68DVR3J4EB" t="1:46" />), Tennessee. He sat in
+                    He took delivery on March 8 in Murfreesboro, Tennessee (<Moment ulid="01HRG07V80PSGCFP68DVR3J4EB" t="1:46" />). He sat in
                     it alone first (
                     <Moment ulid={DELIVERY} t="0:00" />
                     ), then drove it in circles around the lot to learn its radius, setting the
