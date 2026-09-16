@@ -12,7 +12,7 @@
 // recomputed by scripts/number-testimony.mjs whenever the current draft
 // changes; on a frozen version it never changes again.
 import { useState } from "react";
-import ShareParagraph from "@/components/testimony/ShareParagraph";
+import ShareOverlay from "@/components/testimony/ShareOverlay";
 import { useTestimonyVersion } from "@/components/testimony/versionContext";
 
 export default function P({
@@ -47,7 +47,13 @@ export default function P({
                 {n}
             </a>
             {sharing ? (
-                <ShareParagraph version={version} n={n} onClose={() => setSharing(false)} />
+                <ShareOverlay
+                    version={version}
+                    anchor={`p${n}`}
+                    label={`paragraph ${n}`}
+                    citeRef={`¶${n}`}
+                    onClose={() => setSharing(false)}
+                />
             ) : null}
             {children}
         </p>

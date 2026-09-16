@@ -1,30 +1,36 @@
 "use client";
 
-// components/testimony/ShareParagraph.tsx
+// components/testimony/ShareOverlay.tsx
 //
-// The share overlay for one paragraph, opened from its number tag. Three
-// things, nothing sophisticated: the permanent address in an input, share
-// buttons that are plain URL intents, and a ready citation in a textarea.
+// The share overlay for anything addressable on the testimony: a paragraph
+// (opened from its number), a part title, or a heading (opened from their #).
+// Three things, nothing sophisticated: the permanent address in an input,
+// share buttons that are plain URL intents, and a ready citation in a
+// textarea.
 import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import { TESTIMONY_VERSIONS } from "@/data/testimonyVersions";
 
-export default function ShareParagraph({
+export default function ShareOverlay({
     version,
-    n,
+    anchor,
+    label,
+    citeRef,
     onClose,
 }: {
     version: string;
-    n: number;
+    anchor: string;   // the fragment: "p27", "the-shedding"
+    label: string;    // for the header: "paragraph 27", "Part One, THE SHEDDING"
+    citeRef: string;  // for the citation line: "¶27", "Part One, THE SHEDDING"
     onClose: () => void;
 }) {
     const [copiedUrl, setCopiedUrl] = useState(false);
     const [copiedCite, setCopiedCite] = useState(false);
 
     const v = TESTIMONY_VERSIONS.find((x) => x.version === version) ?? TESTIMONY_VERSIONS[0];
-    const url = `https://oprdvolunteerabuse.org/testimony/v${version}/#p${n}`;
-    const title = `Testimony of Robert Samuel White, ¶${n}`;
-    const citation = `Testimony of Robert Samuel White, v${version} (${v.date}), ¶${n}.\n${url}`;
+    const url = `https://oprdvolunteerabuse.org/testimony/v${version}/#${anchor}`;
+    const title = `Testimony of Robert Samuel White, ${citeRef}`;
+    const citation = `Testimony of Robert Samuel White, v${version} (${v.date}), ${citeRef}.\n${url}`;
 
     useEffect(() => {
         const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
@@ -60,7 +66,7 @@ export default function ShareParagraph({
             >
                 <div className="flex items-center justify-between border-b border-slate-200 px-5 py-3">
                     <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-                        Share paragraph {n}
+                        Share {label}
                     </div>
                     <button
                         onClick={onClose}
