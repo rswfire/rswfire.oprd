@@ -92,7 +92,7 @@ export default function TestimonyMeta({
                                 <span className="shrink-0 font-mono text-slate-500">
                                     <a
                                         href={current ? "/testimony/" : `/testimony/v${v.version}/`}
-                                        className="hover:text-emerald-700"
+                                        className="text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600"
                                     >
                                         v{v.version}
                                     </a>

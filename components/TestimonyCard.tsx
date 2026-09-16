@@ -73,7 +73,7 @@ export default function TestimonyCard() {
                                     <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">
                                         {String(c * 7 + i + 1).padStart(2, "0")}
                                     </span>
-                                    <span className="font-mono text-[13px] font-bold text-gray-800 group-hover:text-emerald-800">
+                                    <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
                                         {title}
                                     </span>
                                 </Link>
