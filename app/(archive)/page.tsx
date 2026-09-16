@@ -7,6 +7,7 @@ import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
 import SunlightCard from "@/components/SunlightCard";
+import TestimonyCard from "@/components/TestimonyCard";
 import RecordIndexCard from "@/components/RecordIndexCard";
 import RecordsRequestsCard from "@/components/RecordsRequestsCard";
 import QueryableRecord from "@/components/QueryableRecord";
@@ -58,6 +59,10 @@ export default function OverviewPage() {
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
+
+
+            {/* TESTIMONY — his life, every chapter a door */}
+            <TestimonyCard />
 
 
             {/* SUNLIGHT — their words, next to the record */}
