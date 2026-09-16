@@ -21,7 +21,7 @@ export default function CiteHow() {
             <button
                 onClick={() => setOpen((o) => !o)}
                 aria-expanded={open}
-                className="inline-flex items-center gap-1 text-[13px] font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600"
+                className="inline-flex items-center gap-1 text-[13px] font-semibold text-gray-900 underline decoration-gray-300 underline-offset-2 hover:text-emerald-700"
             >
                 How to cite this record
                 <Icon name={open ? "ChevronUp" : "ChevronDown"} size={14} strokeWidth={2} aria-hidden />
