@@ -158,13 +158,23 @@ function partId(title: string): string {
     return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
+// Chapter numbers, so a part's address is its number: /testimony/v1.4/#c7.
+// The slug stays as a second anchor inside the section so links copied before
+// numbers became the address keep resolving.
+const PART_NUMBERS: Record<string, number> = {
+    One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
+    Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12, Thirteen: 13, Fourteen: 14,
+};
+
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
+    const c = `c${PART_NUMBERS[n]}`;
     return (
-        <section id={partId(title)} data-part={title} className="mt-12 scroll-mt-20 first:mt-8">
+        <section id={c} data-part={title} className="mt-12 scroll-mt-20 first:mt-8">
+            <span id={partId(title)} aria-hidden className="scroll-mt-20" />
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
             <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
                 {title}
-                <Hash id={partId(title)} label={`Part ${n}, ${title}`} />
+                <Hash id={c} label={`Part ${n}, ${title}`} />
             </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">{children}</div>
         </section>

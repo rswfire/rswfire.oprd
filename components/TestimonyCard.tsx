@@ -27,10 +27,6 @@ const CHAPTERS = [
     "WHAT HE HAS PUT IN FRONT OF THE STATE",
 ];
 
-function slug(title: string): string {
-    return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-}
-
 export default function TestimonyCard() {
     return (
         <div className="mt-4 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
@@ -68,7 +64,7 @@ export default function TestimonyCard() {
                             {column.map((title, i) => (
                                 <Link
                                     key={title}
-                                    href={`/testimony/#${slug(title)}`}
+                                    href={`/testimony/#c${c * 7 + i + 1}`}
                                     className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
                                 >
                                     <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">
