@@ -485,8 +485,7 @@ export default function TestimonyBody({
                     expect and learned that days three through five are the worst. He was on day
                     one (
                     <Moment ulid={WITHDRAWAL} t="0:17" />
-                    ). <em>You do not always get to choose what your life looks like.</em> (<Moment ulid="01HWKKQKKGCAB9V1R31K77N4N4" t="1:06" />) He got to do this
-                    here. He took it cold (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:17" />), all the way to zero, three hundred milligrams a day to
+                    ). <em>You do not always get to choose what your life looks like.</em> (<Moment ulid="01HWKKQKKGCAB9V1R31K77N4N4" t="1:06" />) He took it cold (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:17" />), all the way to zero, three hundred milligrams a day to
                     nothing. Hard for a couple of days, and then never revisited (
                     <Moment ulid={NINE_MONTHS} t="0:13" />
                     ).
