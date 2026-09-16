@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={969} />
+            <TestimonyMeta documents={105} recordings={137} moments={972} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -568,18 +568,20 @@ export default function TestimonyBody({
                     terms with his rarity.
                 </P>
                 <P id="pzghws" n={20}>
-                    Two weeks later he was sitting on a bench when a doe and two fawns boxed him
-                    in, the mother on one side and the two fawns on the other, nowhere to go
-                    without forcing one of them to move. He held still rather than make them move,
-                    opened a negotiation out loud on the assumption that
-                    there was another party to negotiate with, and told them he was harmless and
-                    would wait (
-                    <Moment ulid={DEER} t="1:32" />
-                    ). They fed. He held his position the whole time (
-                    <Moment ulid={DEER} t="8:08" />
-                    ). It took an hour (
-                    <Moment ulid={DEER} t="11:01" />
-                    ). <em>The space is theirs, more theirs than ours</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="3:42" />), and he had a place in their
+                    Two weeks later, on a trail, a doe and two fawns boxed him in, the mother on
+                    one side and the fawns on the other, nowhere to go without forcing one of
+                    them to move. He held still rather than make them move, opened a negotiation
+                    out loud on the assumption that there was another party to negotiate with,
+                    and told them he was harmless and would wait (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="1:32" />). They fed. When he
+                    saw another hiker coming down the path he named it before it arrived,{" "}
+                    <em>this could be a problem, I&rsquo;ll go deal with them</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="6:08" />),
+                    and went and dealt with them, and came back to his post. An hour in, more
+                    humans got the fawns moving, and he talked them past him,{" "}
+                    <em>don&rsquo;t worry about me, I&rsquo;m right here, I&rsquo;m not moving, I
+                    promise</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="10:41" />), until the fawns and their mother were reunited
+                    (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="10:57" />). It took an hour (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="11:01" />). <em>That was truly one of the
+                    coolest experiences of my life</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="11:03" />). <em>This is their space
+                    too, more theirs than ours</em> (<Moment ulid="01J6CRDP48EB8313JBFC581F9D" t="3:42" />), and he had a place in their
                     lives for that hour.
                 </P>
                 <P id="psabmq" n={21}>
