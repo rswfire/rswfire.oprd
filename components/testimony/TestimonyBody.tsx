@@ -419,7 +419,7 @@ export default function TestimonyBody({
                     On March 20 he set the date: April 11, his forty-seventh birthday (
                     <Moment ulid={THE_DATE} t="0:11" />
                     ). He was nowhere near ready for it. The house was still full, the lease still
-                    live, the cats still with him, still on the medications, still insulating. The
+                    live, the cats still with him, still insulating. The
                     date did not mark the end of the work. It started it. He fixed a day he could
                     not yet meet so he could not back out, and everything after it got done because
                     the date was set (
