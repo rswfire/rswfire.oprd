@@ -7196,6 +7196,36 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             docs: [{ label: "An email address for correspondence", href: "/records/lane-county/2026-09-14-26-825-correspondence-channel-request.pdf" }],
             eml: "/records/lane-county/eml/2026-09-14_1652_26-825-correspondence-channel-request.eml",
         },
+        {
+            id: "26-825-portal-is-the-channel",
+            ulid: "01M2KPVJ580NCJ00HK8W7YWRME",
+            date: "September 15, 2026",
+            d: "2026-09-15",
+            time: "4:36 PM",
+            from: "Lane County Public Records",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The portal is the channel",
+            summary:
+                "Lane County Public Records replies to the correspondence-channel letter: the office prefers the NextRequest portal, will receive email but would have to duplicate its responses, and does not normally send files as attachments. The reply copies the public records officer.",
+            docs: [{ label: "The portal is the channel", href: "/records/lane-county/2026-09-15-26-825-portal-is-the-channel.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-15_1636_26-825-portal-is-the-channel.eml",
+        },
+        {
+            id: "26-825-portal-accepted-with-email-copies",
+            ulid: "01M2M17R1GYM865S4W6C8BN482",
+            date: "September 15, 2026",
+            d: "2026-09-15",
+            time: "7:37 PM",
+            from: "Robert Samuel White",
+            to: "Lane County Public Records",
+            kind: "notice",
+            title: "Portal accepted, with email copies for the timestamps",
+            summary:
+                "His reply, accepting the portal for all responses and stating for the record that he requires none outside it. He will copy his own messages to the mailbox so the matter is documented with his own timestamps, which could matter if statutory claims are required later.",
+            docs: [{ label: "Portal accepted, with email copies", href: "/records/lane-county/2026-09-15-26-825-portal-accepted-with-email-copies.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-15_1937_26-825-portal-accepted-with-email-copies.eml",
+        },
     ],
 };
 

@@ -46,7 +46,7 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|oregon parks and recreation contact information": "/records/oprd/threads/oregon-parks-and-recreation-contact-information.pdf",
     "oprd|public records request - volunteer program operations and management": "/records/oprd/threads/public-records-request-volunteer-program-operations-and-mana.pdf",
     "oprd|public records request \u2014 agency compliance and executive involvement in prr processing, january 1, 2023 to present": "/records/oprd/threads/public-records-request-agency-compliance-and-executive-invol.pdf",
-    "oprd|public records request \u2014 law enforcement visit, march 24, 2026, 82900 highway 101, florence, oregon \u2014 robert samuel white": "/records/oprd/threads/public-records-request-law-enforcement-visit-march-24-2026-8.pdf",
+    "oprd|public records request \u2014 law enforcement visit, march 24, 2026, [physical address] \u2014 robert samuel white": "/records/oprd/threads/public-records-request-law-enforcement-visit-march-24-2026-p.pdf",
     "oprd|question": "/records/oprd/threads/question.pdf",
     "oprd|question about unidentified visitor": "/records/oprd/threads/question-about-unidentified-visitor.pdf",
     "oprd|questions": "/records/oprd/threads/questions.pdf",
