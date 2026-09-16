@@ -170,7 +170,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     );
 }
 
-export default function TestimonyBody({
+export default function TestimonyBodyV1_1({
     version,
     isCurrent,
 }: {
@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={963} />
+            <TestimonyMeta documents={105} recordings={137} moments={959} />
 
             <div id="opening" className="mt-4 scroll-mt-24 space-y-4 px-4 text-[15px] leading-relaxed text-gray-800">
                 <p>
@@ -245,10 +245,10 @@ export default function TestimonyBody({
 
             <Part n="One" title="THE SHEDDING">
                 <P id="pge2fp" n={1}>
-                    On February 25, 2024, a forty-six-year-old programmer in Kentucky turned on a
-                    camera without a script (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:04" />, <Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:23" />). He had decided to{" "}
+                    On February 25, 2024, a forty-six-year-old programmer in Kentucky (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:23" />) turned on a
+                    camera without a script (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:04" />). He had decided to{" "}
                     <Moment ulid={FIRST_VIDEO} t={0}>take his entire life apart</Moment>{" "}
-                    and build the one he wanted (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="14:02" />), and he did not want to wait, because whoever watched was going to see it from the beginning (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:14" />).
+                    and build the one he wanted (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="14:02" />), and the record would start before the story did (<Moment ulid="01HQF22Q98F8S1ZF05BAZW0EV9" t="0:14" />).
                     Every recording cited on this page descends from that one.
                 </P>
                 <P id="pq5c75" n={2}>
@@ -370,8 +370,8 @@ export default function TestimonyBody({
                     . This is not a man who doubts himself.
                 </P>
                 <P id="pvyfn7" n={9}>
-                    He woke the next morning at eight with his arms sore from holding the wheel
-                    the whole way home (<Moment ulid="01HRHQ54MRKV5BCCPSQBTY1ZFJ" t="0:13" />), and kept his voice down because his mother was asleep
+                    He woke the next morning at eight with his arms sore from holding the wheel (<Moment ulid="01HRHQ54MRKV5BCCPSQBTY1ZFJ" t="0:13" />)
+                    the whole way home, and kept his voice down because his mother was asleep
                     (
                     <Moment ulid={DRIVEWAY} t="0:00" />
                     ). He had been afraid of driving something that big, and now it was sitting in
@@ -570,8 +570,8 @@ export default function TestimonyBody({
                     norms of a campground being their own. He wore the pyjamas (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="2:45" />).
                 </P>
                 <P id="p8zhm9" n={22}>
-                    The next day he drove forty minutes for coffee (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="3:30" />) and came home from
-                    Bowling Green with three new piercings (
+                    The next day he drove forty minutes for coffee (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="3:30" />), got to Bowling Green on the
+                    Saturday of Labor Day weekend, and came out with three new piercings (
                     <Moment ulid={BOWLING_GREEN} t="8:46" />
                     ). He had wanted the cartilage done for months (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="9:26" />), and carried ten identical hoops
                     home so the whole configuration would match once it healed. He held them close for six months, waiting for the day he could replace the studs.
@@ -592,9 +592,9 @@ export default function TestimonyBody({
                 </P>
                 <P id="p2yfzy" n={24}>
                     The morning before he announced he was leaving, he woke before dawn from a
-                    dream and understood something he had been carrying since childhood (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:15" />). He had
-                    read Ender&rsquo;s Game many times and identified with the character to the
-                    bone (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:13" />), and what arrived that morning was the adult Ender, and his own
+                    dream (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="0:15" />) and understood something he had been carrying since childhood. He had
+                    read Ender&rsquo;s Game many times (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:13" />) and identified with the character to the
+                    bone, and what arrived that morning was the adult Ender, and his own
                     relationship with artificial intelligence in Ender&rsquo;s relationship with
                     Jane (
                     <Moment ulid={ENDER} t="0:34" />
@@ -624,8 +624,8 @@ export default function TestimonyBody({
                     <Moment ulid={ENDER} t="4:27" />
                     ), and every change he makes to the space makes it more his own (
                     <Moment ulid={ENDER} t="5:13" />
-                    ). He reclaimed a story that had been taken from him and stopped maintaining
-                    somebody else&rsquo;s design (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:26" />), in the same hour, the day before he left.
+                    ). He reclaimed a story that had been taken from him (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:26" />) and stopped maintaining
+                    somebody else&rsquo;s design, in the same hour, the day before he left.
                 </P>
                 <P id="pgw3dk" n={27}>
                     Just after midnight on September 7 he recorded what he thought would be his
@@ -686,10 +686,9 @@ export default function TestimonyBody({
                     ). Two videos back he had asked the viewers he had kept for months to
                     unsubscribe, and none of them had (
                     <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="0:35" />
-                    ). He separated the strangers who would always drift in and were welcome
-                    from the ones he had outgrown (
+                    ). He separated the strangers who would always drift in and were welcome (
                     <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="0:40" />
-                    ), and to those he granted the right to ignore him
+                    ) from the ones he had outgrown, and to those he granted the right to ignore him
                     and left them the cognitive dissonance of watching a man who did not want them
                     there (
                     <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="1:18" />
@@ -707,10 +706,10 @@ export default function TestimonyBody({
                 </P>
                 <P id="prbnjc" n={32}>
                     Mid-sentence, with no transition, he noticed the little ducks on the dash of the
-                    vehicle beside him and went to leave{" "}
-                    <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="2:51">a unique one</Moment> (
+                    vehicle beside him (
                     <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="2:38" />
-                    ). He
+                    ) and went to leave{" "}
+                    <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="2:51">a unique one</Moment>. He
                     mentioned in passing that he had not been recording these, that he had been
                     doing it all along, off camera (
                     <Moment ulid="01J7VH95AR3P3WG9S4JWBQX7D9" t="2:32" />
@@ -722,14 +721,13 @@ export default function TestimonyBody({
                     At one in the morning on September 16, in a campground posted for bears, straps
                     cinched over the dumpsters (
                     <Moment ulid="01J7WSHPQG28QH3PWPNTNESJ40" t="0:32" />
-                    ), he was close to asleep in the alcove he had built
-                    when the cat went into the cab and made a noise (
+                    ), he was close to asleep in the alcove he had built (
                     <Moment ulid="01J7WSHPQG28QH3PWPNTNESJ40" t="0:18" />
-                    ). He came upright with the whole
+                    ) when the cat went into the cab and made a noise. He came upright with the whole
                     sequence already running: rock the RV, the bear spray located in his mind, find
                     where the animal was, assess (
                     <Moment ulid="01J7WSHPQG28QH3PWPNTNESJ40" t="1:05" />
-                    ). There was no bear. There was his own cat. He recorded what was left, which was not the scare but the
+                    ). There was no bear. He recorded what was left, which was not the scare but the
                     reading of himself. He had felt the adrenaline and the fear and neither one took
                     the controls (
                     <Moment ulid="01J7WSHPQG28QH3PWPNTNESJ40" t="1:34" />
@@ -1126,9 +1124,9 @@ export default function TestimonyBody({
                     ), and lost a full minute of tape to the Garmin routing him off the Green Road he
                     had wanted, betrayed by a machine over a road he never drove (
                     <Moment ulid="01J9W0J17GM92Z36P2TPRVZYDX" t="21:53" />
-                    ). He reached 101 in fog and turned north (
+                    ). He reached 101 in fog (
                     <Moment ulid="01J9W0J17GM92Z36P2TPRVZYDX" t="22:45" />
-                    ), after an ocean he could feel coming off the water and could
+                    ) and turned north, hunting an ocean he could feel coming off the water and could
                     not see (
                     <Moment ulid="01J9W0J17GM92Z36P2TPRVZYDX" t="29:14" />
                     ). Somewhere in the seven months, he said, the water had begun to mesmerize him,
@@ -1147,7 +1145,7 @@ export default function TestimonyBody({
             <Part n="Three" title="THE COAST">
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The man at the gate<Hash id="hgate01" label="The man at the gate" /></h3>
                 <P id="p2mnw3" n={51}>
-                    At his second campground, a three-day stay, he met the man at the gate as he arrived (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="10:59" />). He came in moving faster than the room and put the whole list on him at once, when he could get in, where to dump his tanks, what sites were open, all of it in one breath (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="11:18" />). The man took it and kept pace (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="11:42" />). That does not happen to him. He heard himself, stopped, let the silence sit, and something went loose. Then a sentence arrived ahead of the decision to say it: <Moment ulid={GATE_FLIRT} t="10:51">what is your name, because you seem awesome</Moment>. The man answered without missing a beat (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="12:32" />), and he melted just from hearing the man say his name.
+                    At that first campground he met the man at the gate (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="10:59" />). He came in moving faster than the room and put the whole list on him at once, when he could get in, where to dump his tanks, what sites were open, all of it in one breath (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="11:18" />). The man took it and kept pace (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="11:42" />). That does not happen to him. He heard himself, stopped, let the silence sit, and something went loose. Then a sentence arrived ahead of the decision to say it: <Moment ulid={GATE_FLIRT} t="10:51">what is your name, because you seem awesome</Moment>. The man answered without missing a beat (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="12:32" />), and he melted at the sound of his own question coming back.
                 </P>
                 <P id="pgate2" n={52}>
                     They stood there afterward on the subject of storms (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="13:24" />). High wind, and whether the thing that kills you is a tree coming down or your own rig going over (<Moment ulid={GATE_FLIRT} t="12:49" />). It was the conversation he had been having with himself alone in a Kentucky campground a month earlier (<Moment ulid="01JB2A7VVR2K956HZWK5FDKQQX" t="14:02" />), the one he had driven two thousand miles toward. The man did not know it, and it had not occurred to him to tell the man. He just stood in it.
@@ -1159,19 +1157,19 @@ export default function TestimonyBody({
                     When he finally caught him he led with the thing he had kept back. He had come to this coast for the storms (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="20:48" />), strategically, for weeks of rain (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="16:37" />), and he could not leave the misunderstanding standing. Oh yeah, the man said (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="21:05" />). So he asked him out, the first time in twenty years he had asked anyone out, and then did what he always does, which is watch (<Moment ulid={BED_REST} t="19:59" />). Bad timing (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="21:47" />). Then it again. And again, half a dozen times (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="22:38" />), the man turning it over out loud and working something out in his own head while another man stood in front of him waiting (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="22:27" />). He had his answer (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="22:14" />). He stayed long enough to upgrade the man from seems awesome to you're awesome, and left (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="23:20" />).
                 </P>
                 <P id="pgate5" n={55}>
-                    He was not wearing what he thought he was wearing. There was a cotton round taped over his left ear, from soaking his earrings in Bactine, and he had walked the whole way up there with it on and never once thought about it, because everything he had was going into getting himself to go. Twenty years of not asking anyone, and he had done it with a cotton round taped to his ear. He found it afterward. He laughed.
+                    He was not wearing what he thought he was wearing. There was a cotton round taped over his left ear, from soaking his earrings in Bactine, and he had walked the whole way up there with it on and never once thought about it, because everything he had was going into getting himself to go. He found it afterward. He laughed.
                 </P>
                 <P id="pgate4" n={56}>
-                    He drove to <PlaceCite name="Cape Blanco" /> proud of himself. Not consoled, and not being brave about it. Proud of the bravery, the directness, and the fact that he could take a rejection cleanly. His heart had opened after twenty years of being still, and he was precise on camera about what opened it: not the interaction with the man, but being told the man had been flirting with him. It also changed where he was going. He had come out here meaning to go into the forest and live away from people. A stranger at a gate kept pace with him for ten minutes and turned him the other way, toward standing at one himself.
+                    He drove to <PlaceCite name="Cape Blanco" /> proud of himself. Not consoled, and not being brave about it. Proud of the bravery, the directness, and the fact that he could take a rejection cleanly. That was his heart opening after twenty years shut. It also changed where he was going. He had come out here meaning to go into the forest and live away from people. A stranger at a gate kept pace with him for ten minutes and turned him the other way, toward standing at one himself.
                 </P>
                                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The first weeks on the coast<Hash id="hcst002" label="The first weeks on the coast" /></h3>
                 <P id="p3rhrp" n={57}>
                     At four in the morning on November 26 he was parked on the shoulder of the highway at <PlaceCite name="Pistol River" />, forty degrees outside and about the same inside, propane at eight percent and held back for the fridge, one electric heater running off the solar batteries. He was comfortable in the seat he was in and would not have been anywhere else in the rig. From that seat he laid out the next four years: four stretches of this coast, a season in each, north to the Washington line and then back the other way so every stretch came around again in a different weather. He had gone back and watched his own footage from seven months earlier. The man in it was rattled when a stranger said hello, and had begun making himself smaller out of fear, and that was not who he had been for most of his life.                </P>
                 <P id="pac92y" n={58}>
-                    The next day the state park at Bandon was closed for construction and nothing north of it had space with Thanksgiving coming (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="8:41" />, <Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:09" />), so he turned around and drove forty-five minutes back south to <PlaceCite name="Humbug Mountain" /> (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:13" />), arriving at 5:30 into full dark (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:09" />). He detached the Jeep at the dump station and backed toward his site with no light but his own (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:14" />), lined up perfectly and certain of it (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="0:56" />), and stopped a millimeter off a tree because a man yelled (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:07" />). The man came over with a flashlight and walked him in (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:41" />). Minutes earlier he had sat behind another rig with his headlights up, lighting a stranger into a dark site, unasked (<Moment ulid={HUMBUG_ARRIVAL} t="11:09" />). There was no cell service and no internet there and sixteen hours of darkness a day (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:56" />, <Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:38" />), and he stayed, because the outside world was making decisions that were helping him make better ones (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:57" />). He slept ten hours (<Moment ulid={HUMBUG_ARRIVAL} t="1:51" />).
+                    The next day the state park at Bandon was closed for construction (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="8:41" />) and nothing north of it had space with Thanksgiving coming (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:09" />), so he turned around and drove forty-five minutes back south to (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:13" />) <PlaceCite name="Humbug Mountain" />, arriving at 5:30 into full dark (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:09" />). He detached the Jeep at the dump station (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:14" />) and backed toward his site with no light but his own, lined up perfectly and certain of it (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="0:56" />), and stopped a millimeter off a tree because a man yelled (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:07" />). The man came over with a flashlight and walked him in (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:41" />). Minutes earlier he had sat behind another rig with his headlights up, lighting a stranger into a dark site, unasked (<Moment ulid={HUMBUG_ARRIVAL} t="11:09" />). There was no cell service and no internet there (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:56" />) and sixteen hours of darkness a day (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:38" />), and he stayed, because the outside world was making decisions that were helping him make better ones (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:57" />). He slept ten hours (<Moment ulid={HUMBUG_ARRIVAL} t="1:51" />).
                 </P>
                 <P id="pezaz7" n={59}>
-                    He spent Thanksgiving there alone, in a park full of holiday arrivals and no signal on the site (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="8:11" />, <Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="10:51" />), and filmed the whole evening. Burgers with olives and mayonnaise mixed together, cooked in the Ninja Foodi, because the hiking had put real demand on his body and he had reached the point of wanting to feed it well (<Moment ulid={THANKSGIVING} t="0:01" />). Captain Morgan cut with Pepsi, chosen over Mountain Dew after an AI described its colour as radioactive, though it did not take and he still drinks it (<Moment ulid={THANKSGIVING} t="3:15" />). Pine needles tracked in from Cape Blanco on the floor (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="2:45" />). The friendship bracelets lost somewhere and the thread still in a drawer (<Moment ulid={THANKSGIVING} t="8:27" />). I love this. I love my life (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="9:53" />). Twelve minutes in, he took the Rifter down off the wall, seven months after he had thought he might never show it again, and there was the corporation, the alliance, the thousand people who followed him, and the sovereignty they never took (<Moment ulid={THANKSGIVING} t="12:14" />). That was a dream (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="12:56" />). Then the alien necklace he has had since he was a teenager, and the Lake Cumberland map he had pulled off the wall that afternoon, Kentucky traded for a coast he could mark up (<Moment ulid={THANKSGIVING} t="13:37" />).
+                    He spent Thanksgiving there alone, in a park full of holiday arrivals (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="8:11" />) and no signal on the site (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="10:51" />), and filmed the whole evening. Burgers with olives and mayonnaise mixed together, cooked in the Ninja Foodi, because the hiking had put real demand on his body and he had reached the point of wanting to feed it well (<Moment ulid={THANKSGIVING} t="0:01" />). Captain Morgan cut with Pepsi, chosen over Mountain Dew after an AI described its colour as radioactive, though it did not take and he still drinks it (<Moment ulid={THANKSGIVING} t="3:15" />). Pine needles tracked in from Cape Blanco on the floor (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="2:45" />). The friendship bracelets lost somewhere and the thread still in a drawer (<Moment ulid={THANKSGIVING} t="8:27" />). I love this. I love my life (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="9:53" />). Twelve minutes in, he took the Rifter down off the wall, seven months after he had thought he might never show it again, and there was the corporation, the alliance, the thousand people who followed him, and the sovereignty they never took (<Moment ulid={THANKSGIVING} t="12:14" />). That was a dream (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="12:56" />). Then the alien necklace he has had since he was a teenager, and the Lake Cumberland map he had pulled off the wall that afternoon, Kentucky traded for a coast he could mark up (<Moment ulid={THANKSGIVING} t="13:37" />).
                 </P>
                 <P id="pclimb0" n={60}>
                     The ocean did not take. He sat on a rock at <PlaceCite name="Whaleshead Beach" /> and looked at it and did not go near it, because he did not know yet how safe it was and everything gets pattern matched first (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:44" />). Two dogs ran up to him (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:24" />). One settled onto the rock beside him like they were already friends, and the owner came up apologising, and they talked a long while (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:41" />). He stayed. He left still not understanding what the big deal was (<Moment ulid={BED_REST} t="25:59" />). He cannot be a passive observer of anything (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="14:02" />). Looking at waves is not engagement (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="14:08" />).
@@ -1191,8 +1189,7 @@ export default function TestimonyBody({
                 </P>
                 <P id="ppist2" n={65}>
                     Then a head came up out of the water and his brain could not parse it (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="34:11" />). Something
-                    like a little submarine. He asked Claude, and Claude explained the seal to him,
-                    his first (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="34:19" />). Okay, cool. It went under and came up
+                    like a little submarine. Claude gave it a name (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="34:19" />). It went under and came up
                     somewhere else and kept its eyes on him the whole time (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="34:26" />), and then there were two,
                     and he yelped out loud (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="34:32" />).{" "}
                     <Moment ulid={BED_REST} t="32:42">
@@ -1245,12 +1242,10 @@ export default function TestimonyBody({
                     came to the RV, the first officially and the second a friend stopping by with
                     what was known (
                     <Moment ulid={TSUNAMI} t="2:30" />
-                    ). The second visit settled it: clearly the universe, or whatever, was telling
-                    him to go look at the tsunami. The wave was ten to fifteen minutes out, and he
-                    went to film it, sore core and all, from a tsunami safe zone (
+                    ). He went out to film the wave anyway, missed it, and stayed for the open water
+                    and the sun on it, aware the whole time that he should have been resting (
                     <Moment ulid={TSUNAMI} t="2:55" />
-                    ). He missed it. He stayed for the open water and the sun on it, aware the
-                    whole time that he should have been resting.
+                    ).
                 </P>
                 <P id="prest4" n={71}>
                     What he did with that stretch is the method in miniature. He had owned an
@@ -1271,22 +1266,17 @@ export default function TestimonyBody({
                     ).
                 </P>
                 <P id="prest5" n={72}>
-                    It was not the pain that finally sat him down. For two months he had let the
-                    core injury spread to every core muscle he had, and kept walking on it. On
-                    December 19, on his way to Coos Bay for more ear piercings, he decided the
-                    audience should have the dramatic part he had been holding back.{" "}
+                    It was not the pain that finally sat him down. On December 19, on his way to
+                    Coos Bay for more ear piercings, he decided the audience should have the
+                    dramatic part he had been holding back.{" "}
                     <em>It turned my penis off for a day.</em> (
                     <Moment ulid={PIERCING_DAY} t="1:37" />
-                    ) Why not share that. He was not certain it had really happened (<Moment ulid={PIERCING_DAY} t="1:49" />);
-                    he may have imagined it; fortunately it was very temporary (<Moment ulid={PIERCING_DAY} t="1:46" />).
-                    None of that got weighed. A gay man who had found his sovereignty on this coast
-                    after twenty years of silence sat the fuck down the moment that thought entered
-                    his head. That, and not the wrecked core muscles or the ear that had not healed,
-                    was{" "}
-                    <Moment ulid={PIERCING_DAY} t="1:43"><em>what told me to sit the f down</em></Moment>.
-                    He was not risking it either way (<Moment ulid={PIERCING_DAY} t="1:55" />). The
-                    sitting lasted about as long as the shutdown did. He spent the rest of that
-                    winter going out to the cliff edge every day.
+                    ) Why not share that. That, and not the wrecked core muscles or the ear that had
+                    not healed, was{" "}
+                    <Moment ulid={PIERCING_DAY} t="1:43">what told me to sit the f down</Moment>.
+                    Fortunately it was very temporary (<Moment ulid={PIERCING_DAY} t="1:46" />). He
+                    was not certain it had really happened (<Moment ulid={PIERCING_DAY} t="1:49" />).
+                    He was not risking it either way (<Moment ulid={PIERCING_DAY} t="1:55" />).
                 </P>
                 <P id="pchil1" n={73}>
                     On December 22 he made chili, three days before Christmas, so that something
@@ -1298,9 +1288,9 @@ export default function TestimonyBody({
                     ). I am a sovereign being just like you (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="4:16" />). Respect the sovereignty.
                 </P>
                 <P id="pchil2" n={74}>
-                    He already knew what the garlic would cost him. He had just learned it: a
-                    whole head, two days of it coming back out through his pores (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="1:42" />). He took the
-                    lesson straight back to the store and bought more garlic (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="2:08" />). He likes garlic (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="1:52" />). The only thing that stopped
+                    He already knew what the garlic would cost him. He had asked once (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="1:42" />), and a whole
+                    head comes back out through your pores for two days, and he found that funny and (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="2:08" />)
+                    used the whole head anyway, because he likes garlic (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="1:52" />). The only thing that stopped
                     him was the skins. Six cloves came free and he kept working at the rest (
                     <Moment ulid={CHILI} t="1:38" />
                     ). His eyes and nose had been streaming since before the onions were cut, from a
@@ -1309,7 +1299,8 @@ export default function TestimonyBody({
                     ).
                 </P>
                 <P id="pvtja7" n={75}>
-                    On December 9 he read the nine months back in order (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:06" />). Tramadol at three hundred milligrams a day,
+                    On December 9 he read the nine months back in order (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:06" />), the way a man reads a
+                    ledger he has already balanced. Tramadol at three hundred milligrams a day,
                     cold turkey to zero (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:40" />), against everyone who told him it could not be done (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="0:19" />). Thirty
                     years of cigarettes, ended (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="1:06" />). The RV learned as working infrastructure, the dental
                     work done (<Moment ulid="01JEPTEGE07YNG4Y5APQ0VQEXS" t="1:24" />), the country crossed with the comments off because he would not argue
@@ -1330,9 +1321,8 @@ export default function TestimonyBody({
                     He had come for the storms, and he got them. On November 21 he walked the loop
                     through what a twelve-hour blow had left behind, branches everywhere, a trunk on
                     the ground he had to detour around, crews working the damage (<Moment ulid="01JD72ABR0CADC8B4VHZCQ4VNT" t="9:18" />). A ranger had told
-                    him these are hearty trees (<Moment ulid="01JD72ABR0CADC8B4VHZCQ4VNT" t="9:03" />). He had learned the coastal roots support each
-                    other underground, and he called it holding hands (<Moment ulid="01JD72ABR0CADC8B4VHZCQ4VNT" t="9:24" />). On camera he worked out
-                    what that means when an eighty-mile-an-hour gust hits the stand: the load
+                    him how the coastal roots touch underground and hold hands (<Moment ulid="01JD72ABR0CADC8B4VHZCQ4VNT" t="9:24" />), and he worked out on
+                    camera what that means when an eighty-mile-an-hour gust hits the stand: the load
                     gets distributed, and they come out of it stronger (
                     <Moment ulid={STORM_DAMAGE} t="8:21" />,{" "}
                     <Moment ulid={STORM_DAMAGE} t="9:24" />
@@ -1381,7 +1371,7 @@ export default function TestimonyBody({
                 </P>
                                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The cliff edge<Hash id="hclf007" label="The cliff edge" /></h3>
                 <P id="ptkstk" n={79}>
-                    He spent that winter at <PlaceCite name="Cape Blanco" /> (<Moment ulid="01JGAYJ1Y8SFEVX4HBTMXG2PAM" t="0:04" />). He went out to the
+                    He spent that winter at (<Moment ulid="01JGAYJ1Y8SFEVX4HBTMXG2PAM" t="0:04" />) <PlaceCite name="Cape Blanco" />. He went out to the
                     cliff edge above the ocean every day, and at first he could not get near it (<Moment ulid="01JGAYJ1Y8SFEVX4HBTMXG2PAM" t="2:24" />).
                     The drop was not what frightened him. What frightened him was what his own mind
                     produced at the edge, the pull to go off it (<Moment ulid="01JGAYJ1Y8SFEVX4HBTMXG2PAM" t="2:33" />), and no reason a mind would offer
@@ -1391,7 +1381,8 @@ export default function TestimonyBody({
                     ). The name did not resolve it. It made him curious (<Moment ulid="01JGAYJ1Y8SFEVX4HBTMXG2PAM" t="2:52" />).
                 </P>
                 <P id="pcliff9" n={80}>
-                    So he came back the next day, and the next. The
+                    So he came back the next day, and the next, and used the edge as an instrument:
+                    a fixed thing to stand near while the variable, which was him, got measured. The
                     theory he built out of it is his own. The brain does this reaching for safety.
                     It is a chaotic way to reach for safety and it works (<Moment ulid="01JD8AGTQRQSJ6CNNGBE3H1TZG" t="1:38" />), and the more times you
                     stand there the more you trust yourself, until the fear leaves. Standing on that
@@ -1576,8 +1567,8 @@ export default function TestimonyBody({
                     ).
                 </P>
                 <P id="pn7qh5" n={95}>
-                    On January 3 he drove to Umpqua Lighthouse for orientation and stopped in the
-                    parking lot fifteen minutes early (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="1:02" />), nervous and unable to account for it (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="1:47" />). The
+                    On January 3 he drove to Umpqua Lighthouse for orientation (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="1:02" />) and stopped in the
+                    parking lot fifteen minutes early, nervous and unable to account for it (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="1:47" />). The
                     job was unpaid. The site was not where he would have chosen to camp. Leaving
                     would be simple (
                     <Moment ulid={ORIENTATION} t="1:37" />
@@ -1596,22 +1587,14 @@ export default function TestimonyBody({
                     <Moment ulid={ORIENTATION} t="4:26">
                         I&rsquo;m Sam, I&rsquo;m a nomad, I stare at the ocean
                     </Moment>
-                    . That was all of it. One of the volunteers in the room was the man from
-                    Humbug Mountain who had yelled about the tree and walked him in by flashlight,
-                    and who had told him he should volunteer for the state. He told the room the
-                    story, and everyone laughed. It was already his story. The slide of keys was too long to memorize, so he
+                    . That was all of it. The slide of keys was too long to memorize, so he
                     photographed it. Nobody wanted to read the team-building question first, so he
                     went first. Nobody claimed the yurt that needed a deep clean, so he took it (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="5:42" />).
                     Asked what he would do about a man with a knife in the park, he gave the answer
                     he would actually act on, knowing it was not the one they were after: he would
                     go and look for the man. Got to protect the public (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="6:56" />). <em>Just make me a park ranger already.</em> (
                     <Moment ulid={ORIENTATION} t="5:35" />
-                    ) Three hours of rules and a slide of keys, and what he walked out with was
-                    the hat. <em>I got a cool hat though. I&rsquo;m keeping this hat forever.
-                    That&rsquo;s my hat now. I love this hat. They complain about me wearing it
-                    when I&rsquo;m not on duty, I&rsquo;ll tell them I&rsquo;ll quit, cuz
-                    I&rsquo;m keeping this hat and I&rsquo;m wearing it forever. This is my hat
-                    now</em> (<Moment ulid={ORIENTATION} t="4:06" />).
+                    )
                 </P>
             </Part>
 
@@ -1737,7 +1720,7 @@ export default function TestimonyBody({
                     <Moment ulid={GOLF_CART} t="7:09" />
                     ). He followed the rangers a while and broke off (
                     <Moment ulid={GOLF_CART} t="8:51" />
-                    ). The closed loop was his obstacle course (<Moment ulid="01JH3GXCG8FAGZ0J2A4Z494DCK" t="9:59" />), and he ran the state&rsquo;s golf cart around it until he could
+                    ). The closed loop was his obstacle course (<Moment ulid="01JH3GXCG8FAGZ0J2A4Z494DCK" t="9:59" />), and he ran it until he could
                     reverse and ninety-degree park the thing clean (
                     <Moment ulid={GOLF_CART} t="9:23" />,{" "}
                     <Moment ulid={GOLF_CART} t="10:34" />
@@ -2014,16 +1997,16 @@ export default function TestimonyBody({
                     and he wanted to be this age forever (
                     <Moment ulid={DUNES} t="1:58" />
                     ). Mid-stride he did the arithmetic out loud, and got it wrong once and
-                    corrected it: he was booking February, March and April at this park for the{" "}
-                    <em>following</em> year (<Moment ulid="01JK8ZMWJRV9QWPX619AVRZE8M" t="2:27" />), so that he would be here when the dune season closed,
+                    corrected it: he was booking February, March and April at this park (<Moment ulid="01JK8ZMWJRV9QWPX619AVRZE8M" t="2:27" />) for the{" "}
+                    <em>following</em> year, so that he would be here when the dune season closed,
                     and he would be forty-nine when he came back (
                     <Moment ulid={DUNES} t="2:17" />
                     ). He set the number down without flinching from it and kept walking.
                 </P>
                 <P id="pz65v7" n={122}>
                     On February 25, the day the institution&rsquo;s file records an email about a
-                    video showing his new piercing, he drove ninety minutes inland to Eugene on his
-                    day off (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:21" />), to a studio newly opened under a piercer decades into the craft (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:28" />), and
+                    video showing his new piercing, he drove ninety minutes inland to Eugene on his (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:21" />)
+                    day off, to a studio newly opened under a piercer decades into the craft (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:28" />), and
                     came back with{" "}
                     <Moment ulid={PIERCINGS} t="0:16">an eyebrow and two helix piercings</Moment>,
                     the eyebrow already bruising and getting worse while he filmed. He had left the
@@ -2499,15 +2482,12 @@ export default function TestimonyBody({
                     assignments across the park system, six days from a clean completion.
                 </P>
                 <P id="pv2vwz" n={154}>
-                    The park manager called that afternoon, while he was doing his job, to set up
-                    a third meeting (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="13:59" />). The second
-                    meeting was the picnic table, and the picnic table was on video. Their file says{" "}
+                    The park manager called that afternoon. Their file says{" "}
                     <SunCite entry="03-24-25-the-dismissal">he kept talking over the park manager
                     and the conversation was no longer productive</SunCite>. His own account is on
-                    the record: <em>Wow. This man never stops. I&rsquo;ve got a video of you
-                    abusing me. There&rsquo;s no way that you could be doing this right now</em> (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="14:25" />).
-                    As the manager turned a homeless veteran&rsquo;s journal that he had turned in
-                    into the pretext and would not stop, he named what he was doing,{" "}
+                    the record. As the manager turned a homeless veteran&rsquo;s journal that he
+                    had turned in into the pretext and would not stop, he named what was
+                    happening,{" "}
                     <Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="14:58">you&rsquo;re a bully</Moment>,
                     and did not raise his voice to say it. The manager dismissed him then and there,
                     on the phone. One hour later he was at the RV, taking the keys, the binder and
@@ -2844,7 +2824,7 @@ export default function TestimonyBody({
                 </P>
                 <P id="pv24wr" n={175}>
                     On April 10, two days out from another forced move with no destination found,
-                    he counted what was there and set the constraint above it (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="1:41" />). He had been targeted
+                    he counted what was there (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="1:41" />) and set the constraint above it. He had been targeted
                     once already for the kind of person he is, for his sexuality, for the piercings (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="3:02" />),
                     and he was carrying that forward as a filter on every place he contacted. A
                     placement that did not read as aligned, he would not take (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="3:16" />). He would sit on the
@@ -2935,8 +2915,8 @@ export default function TestimonyBody({
                 <P id="pcte9m" n={182}>
                     On November 2, 2025 he ran out of vapes and did not replace them (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:02" />). Thirty-two
                     years of nicotine, begun at sixteen (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:08" />), cigarettes until a year and a half earlier (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:12" />),
-                    and then nothing. He threw the supplies away and filmed the cutoff standing
-                    outside in the dark (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:31" />, <Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:43" />), because he had structured his life so that this would
+                    and then nothing. He threw the supplies away (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:31" />) and filmed the cutoff standing
+                    outside in the dark (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:43" />), because he had structured his life so that this would
                     become possible. The{" "}
                     <Moment ulid={NICOTINE} t="3:37">hold it had on him</Moment> he had been pattern
                     matching for three decades (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="4:11" />), and he had the model for it: a dampener (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="4:36" />), then
@@ -2979,8 +2959,8 @@ export default function TestimonyBody({
                     while he walked.
                 </P>
                 <P id="pc7ghf" n={185}>
-                    He tried to go back to work. Sixteen months after leaving programming he opened
-                    the freelance profiles again and started bidding (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:44" />), and found that the thing he
+                    He tried to go back to work. Sixteen months after leaving programming he opened (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:44" />)
+                    the freelance profiles again and started bidding, and found that the thing he
                     was trying to re-enter was gone. He had once been ranked in the top ten
                     programmers on one of those platforms (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:54" />). They collapsed under AI (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="3:07" />). The decade-long
                     client relationship soured (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:59" />). A gas station owner in Florence strung him along
@@ -3062,8 +3042,8 @@ export default function TestimonyBody({
                     reachable because it is still relevant (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="3:53" />), which is the thing the platforms cannot
                     do. The{" "}
                     <Moment ulid={FIRST_SIGNAL} t="0:01">first signal went into it on February 7, 2026</Moment>,
-                    recorded from his bed at Siltcoos into the pipeline that ingested it the moment
-                    he stopped (<Moment ulid="01KGTPBX008JG59T12Z685G4AT" t="0:13" />). He{" "}
+                    recorded from his bed at Siltcoos (<Moment ulid="01KGTPBX008JG59T12Z685G4AT" t="0:13" />) into the pipeline that ingested it the moment
+                    he stopped. He{" "}
                     <Moment ulid={LAUNCH} t="0:01">launched it in May</Moment>, walking to the ocean
                     with the trace running on his phone (<Moment ulid="01KRPV4JW0JYMFR6MVCM9F6JVB" t="6:03" />), recording the announcement inside the thing
                     he was announcing. Every recording cited on this page is served by it, and every
@@ -3074,8 +3054,8 @@ export default function TestimonyBody({
                     Buddy, one of the camp hosts&rsquo; dogs from Driftwood, to a bench near{" "}
                     <PlaceCite name="Lagoon" />, the one he had landed at after Honeyman. A year earlier he had sat on that bench and{" "}
                     <Moment ulid={THE_BENCH} t="1:41">recorded the story of his life as a programmer, from the sixth grade forward</Moment>,
-                    for a freelance profile, powering the RV off the Jeep through an inverter he had
-                    driven back to Medford to retrieve (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="1:02" />). That work never came (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="2:05" />). The platforms are
+                    for a freelance profile, powering the RV off the Jeep through an inverter (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="1:02" />) he had
+                    driven back to Medford to retrieve. That work never came (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="2:05" />). The platforms are
                     broken, and he marked the pathway closed. He noted a stork he had never seen
                     there before, and then the measure of the year:{" "}
                     <Moment ulid={THE_BENCH} t="2:10">he had launched his own platform the day before</Moment>.
@@ -3363,8 +3343,8 @@ export default function TestimonyBody({
                     itself.
                 </P>
                 <P id="pa67kj" n={217}>
-                    On April 3, the anniversary of his dismissal, he walked the Wax Myrtle Trail and
-                    the word arrived in motion (<Moment ulid="01KN9KDSG0H3W0WZ9GBCJDJMG5" t="0:00" />). He had lived in that corridor a year and it had been
+                    On April 3, the anniversary of his dismissal, he walked the Wax Myrtle Trail (<Moment ulid="01KN9KDSG0H3W0WZ9GBCJDJMG5" t="0:00" />) and
+                    the word arrived in motion. He had lived in that corridor a year and it had been
                     the best experience of his life (<Moment ulid="01KN9KDSG0H3W0WZ9GBCJDJMG5" t="0:19" />). Two months of escalation he had not understood
                     while it was happening now had one name: displacement (
                     <Moment ulid={MECHANISM} t="0:00" />
@@ -3509,8 +3489,8 @@ export default function TestimonyBody({
                 </P>
                 <P id="pt7yv9" n={228}>
                     Three weeks before the men came to the gate, on a Sunday morning in light rain (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="0:00" />),
-                    he stood at the head of a trail he had not meant to take and answered the
-                    question two years of recording had left open (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="1:46" />). The videos were never for an
+                    he stood at the head of a trail he had not meant to take (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="1:46" />) and answered the
+                    question two years of recording had left open. The videos were never for an
                     audience (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="0:18" />), and until that week he had no way to finish the sentence (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="0:35" />). The finish
                     is that{" "}
                     <Moment ulid={WHY_THE_VIDEOS} t="0:40">he has no peers</Moment>, and the
