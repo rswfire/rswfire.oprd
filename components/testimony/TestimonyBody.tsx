@@ -16,6 +16,7 @@ import TraceCite from "@/components/traces/TraceCite";
 import TestimonyMeta from "@/components/testimony/TestimonyMeta";
 import Hash from "@/components/testimony/Hash";
 import CiteHow from "@/components/testimony/CiteHow";
+import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
 import P from "@/components/testimony/P";
 
@@ -181,7 +182,9 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                 {title}
                 <Hash id={c} label={`Chapter ${n}, ${titleCase(title)}`} />
             </h2>
-            <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">{children}</div>
+            <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
+                <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
+            </div>
         </section>
     );
 }

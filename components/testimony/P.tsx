@@ -14,6 +14,7 @@
 import { useState } from "react";
 import ShareOverlay from "@/components/testimony/ShareOverlay";
 import { useTestimonyVersion } from "@/components/testimony/versionContext";
+import { useChapter } from "@/components/testimony/chapterContext";
 
 export default function P({
     id,
@@ -26,6 +27,10 @@ export default function P({
 }) {
     const [sharing, setSharing] = useState(false);
     const { version } = useTestimonyVersion();
+    const chapter = useChapter();
+    const citeRef = chapter
+        ? `Chapter ${chapter.word}, ${chapter.title}, ¶${n}`
+        : `¶${n}`;
 
     const open = (e: React.MouseEvent) => {
         // Let a modified click do what the browser would normally do.
@@ -51,7 +56,7 @@ export default function P({
                     version={version}
                     anchor={`p${n}`}
                     label={`paragraph ${n}`}
-                    citeRef={`¶${n}`}
+                    citeRef={citeRef}
                     onClose={() => setSharing(false)}
                 />
             ) : null}
