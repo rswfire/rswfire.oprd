@@ -57,27 +57,43 @@ export default function ShareOverlay({
 
     return (
         <div
-            className="fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/40 p-4"
+            className="fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/50 p-4 backdrop-blur-sm"
             onClick={onClose}
         >
             <div
-                className="w-full max-w-md rounded-2xl border border-slate-200 bg-white shadow-xl"
+                className="w-full max-w-md overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-xl"
                 onClick={(e) => e.stopPropagation()}
             >
-                <div className="flex items-center justify-between border-b border-slate-200 px-5 py-3">
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-                        Share {label}
+                {/* ── The head: what is being shared ── */}
+                <div className="bg-gradient-to-b from-emerald-50/90 to-white px-5 pt-4 pb-3">
+                    <div className="flex items-start justify-between gap-4">
+                        <div className="min-w-0">
+                            <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
+                                <Icon name="Sprout" size={12} strokeWidth={2} aria-hidden />
+                                Share
+                            </div>
+                            <div className="mt-1 font-mono text-lg font-bold text-gray-900">
+                                {citeRef}
+                            </div>
+                            <div className="mt-0.5 text-[12px] text-gray-500">
+                                Testimony of Robert Samuel White &middot;{" "}
+                                <span className="font-mono">v{version}</span> &middot; {v.date}
+                            </div>
+                        </div>
+                        <button
+                            onClick={onClose}
+                            aria-label="Close"
+                            className="shrink-0 rounded-md p-1 text-slate-400 hover:bg-emerald-50 hover:text-slate-700"
+                        >
+                            <Icon name="X" size={16} strokeWidth={2} />
+                        </button>
                     </div>
-                    <button
-                        onClick={onClose}
-                        aria-label="Close"
-                        className="rounded-md p-1 text-slate-500 hover:bg-slate-100 hover:text-slate-800"
-                    >
-                        <Icon name="X" size={16} strokeWidth={2} />
-                    </button>
                 </div>
 
+                <div className="h-px w-full bg-gradient-to-r from-emerald-600 via-emerald-300 to-emerald-100" />
+
                 <div className="space-y-4 px-5 py-4">
+                    {/* ── The permanent address ── */}
                     <div>
                         <div className="mb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                             Permanent address
@@ -91,15 +107,16 @@ export default function ShareOverlay({
                             />
                             <button
                                 onClick={() => copy(url, setCopiedUrl)}
-                                className="shrink-0 rounded-lg border border-slate-300 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:bg-slate-50"
+                                className="shrink-0 rounded-lg bg-emerald-700 px-3.5 py-2 text-[10px] font-bold uppercase tracking-widest text-white shadow-sm hover:bg-emerald-600"
                             >
                                 {copiedUrl ? "Copied" : "Copy"}
                             </button>
                         </div>
                     </div>
 
+                    {/* ── The doors out ── */}
                     <div>
-                        <div className="mb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                        <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                             Share to
                         </div>
                         <div className="flex flex-wrap gap-2">
@@ -109,7 +126,7 @@ export default function ShareOverlay({
                                     href={t.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="rounded-lg border border-slate-300 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-800"
+                                    className="rounded-full border border-emerald-300 bg-white px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800 shadow-sm transition-colors hover:border-emerald-400 hover:bg-emerald-50"
                                 >
                                     {t.label}
                                 </a>
@@ -117,14 +134,15 @@ export default function ShareOverlay({
                         </div>
                     </div>
 
-                    <div>
+                    {/* ── The citation ── */}
+                    <div className="rounded-xl border border-emerald-100 bg-emerald-50/50 p-3">
                         <div className="mb-1 flex items-center justify-between">
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-700">
                                 Citation
                             </span>
                             <button
                                 onClick={() => copy(citation, setCopiedCite)}
-                                className="rounded-md border border-slate-300 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-600 hover:bg-slate-50"
+                                className="rounded-md border border-emerald-300 bg-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-800 hover:bg-emerald-50"
                             >
                                 {copiedCite ? "Copied" : "Copy"}
                             </button>
@@ -134,7 +152,7 @@ export default function ShareOverlay({
                             value={citation}
                             rows={3}
                             onFocus={(e) => e.currentTarget.select()}
-                            className="w-full resize-none rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 font-mono text-[12px] leading-relaxed text-slate-800"
+                            className="w-full resize-none rounded-lg border border-emerald-200 bg-white px-3 py-2 font-mono text-[12px] leading-relaxed text-slate-800"
                         />
                     </div>
                 </div>
