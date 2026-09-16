@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={963} />
+            <TestimonyMeta documents={105} recordings={137} moments={964} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -379,7 +379,7 @@ export default function TestimonyBody({
                     <Moment ulid={DRIVE_HOME} t="1:54">
                         he knew if he pushed himself long enough this is where he would end up
                     </Moment>
-                    . This is not a man who doubts himself.
+                    .
                 </P>
                 <P id="pvyfn7" n={9}>
                     He woke the next morning at eight with his arms sore from holding the wheel
@@ -2006,11 +2006,7 @@ export default function TestimonyBody({
                     that the thing with the supervisor would not happen twice, he was promised
                     training from another ranger, and no one had arranged it.
                 </P>
-                <P id="pv9ynz" n={120}>
-                    That is what February was: a volunteer who documented one conversation, and was
-                    quietly moved to the outside of the place for it.
-                </P>
-                <P id="p696cf" n={121}>
+                <P id="p696cf" n={120}>
                     What he was actually doing that month is on camera twice. On February 4 he
                     walked out past the day use area to where{" "}
                     <Moment ulid={DUNES} t="0:45">
@@ -2032,7 +2028,7 @@ export default function TestimonyBody({
                     <Moment ulid={DUNES} t="2:17" />
                     ). He set the number down without flinching from it and kept walking.
                 </P>
-                <P id="pz65v7" n={122}>
+                <P id="pz65v7" n={121}>
                     On February 25, the day the institution&rsquo;s file records an email about a
                     video showing his new piercing, he drove ninety minutes inland to Eugene on his
                     day off (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:21" />), to a studio newly opened under a piercer decades into the craft (<Moment ulid="01JMY11BH8QJN5A5VYXNTEQTT4" t="1:28" />), and
@@ -2056,7 +2052,7 @@ export default function TestimonyBody({
                     <Moment ulid={PIERCINGS} t="4:29" />,{" "}
                     <Moment ulid={PIERCINGS} t="5:10" />
                     ).                </P>
-                <P id="pybchp" n={123}>
+                <P id="pybchp" n={122}>
                     What finally made him send it was the training. He had warned the ranger
                     privately, and been promised that another ranger would train him; when he checked, that
                     ranger knew nothing about it. He wrote Trust. at 6:57 the next morning. An hour and a
@@ -2068,7 +2064,7 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Seven" title="THE PICNIC TABLE">
-                <P id="pvfypv" n={124}>
+                <P id="pvfypv" n={123}>
                     Three days after he sent Trust., the park manager and the park supervisor sat
                     him down at a picnic table in the day use area and talked at him for
                     sixty-two minutes. The institution&rsquo;s file logs it as a meeting held{" "}
@@ -2079,7 +2075,7 @@ export default function TestimonyBody({
                     forward: once as the thing they were conducting, once as the thing he was
                     keeping.
                 </P>
-                <P id="p49369" n={125}>
+                <P id="p49369" n={124}>
                     The praise comes first (
                     <Moment ulid={PICNIC} t="0:00" />
                     ), and it is the floor being laid before the weight goes on it: a great job at
@@ -2093,16 +2089,16 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="1:49" />
                     ).
                 </P>
-                <P id="pw2k8m" n={126}>
+                <P id="pw2k8m" n={125}>
                     Two minutes in, the frame gave way to the actual business. The park manager had
                     read his correspondence and had come to believe he felt unsupported, and in the
                     same breath that he was not supportive of the crew (
                     <Moment ulid={PICNIC} t="2:53" />
                     ). There was a single handwritten sheet of paper on the table in front of the
                     manager, and he looked at it often. A month of emails and texts had been read,
-                    interpreted, and written down as conduct (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="4:19" />). The sheet was the meeting.
+                    interpreted, and written down as conduct (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="4:19" />).
                 </P>
-                <P id="pme8u2" n={127}>
+                <P id="pme8u2" n={126}>
                     The first item off the sheet lands at{" "}
                     <Moment ulid={PICNIC} t="3:52">three minutes and fifty-two seconds</Moment>:
                     dissatisfaction with multiple members of the crew. Named on the list were the
@@ -2119,7 +2115,7 @@ export default function TestimonyBody({
                     ). Then, twice,{" "}
                     <Moment ulid={PICNIC} t="6:26">this isn&rsquo;t an argument</Moment>.
                 </P>
-                <P id="pdavyh" n={128}>
+                <P id="pdavyh" n={127}>
                     The evidence against Park Ranger 2 was that he had said <em>I&rsquo;m here to
                     support you</em> and had gone on saying it across an hour (
                     <Moment ulid={PICNIC} t="6:59" />
@@ -2148,7 +2144,7 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="14:29" />
                     ).
                 </P>
-                <P id="pqt3ev" n={129}>
+                <P id="pqt3ev" n={128}>
                     At fifteen minutes it turns to the emails (
                     <Moment ulid={PICNIC} t="15:11" />
                     ), and then immediately away from them: the emails were not the issue,
@@ -2174,7 +2170,7 @@ export default function TestimonyBody({
                     </Moment>
                     .
                 </P>
-                <P id="puverh" n={130}>
+                <P id="puverh" n={129}>
                     That sentence became the next charge inside a minute. Words have inflection (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="18:56" />).
                     Bolded text has inflection (
                     <Moment ulid={PICNIC} t="18:59" />
@@ -2188,7 +2184,7 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="21:31" />
                     ).
                 </P>
-                <P id="p2ux2d" n={131}>
+                <P id="p2ux2d" n={130}>
                     At twenty-two forty the power at the table was made explicit: park manager,
                     fifteen years in the agency, half of it in management (
                     <Moment ulid={PICNIC} t="22:40" />
@@ -2200,7 +2196,7 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="24:38" />
                     ), and the subject changed to a story about a camper with a beaten-up truck (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="24:52" />).
                 </P>
-                <P id="p75art" n={132}>
+                <P id="p75art" n={131}>
                     The rest of it is a man being asked (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="24:30" />), over and over, to assume positive intent
                     about everyone else at that park (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="50:10" />). It was already his default (
                     <Moment ulid={PICNIC} t="27:06" />
@@ -2217,7 +2213,7 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="34:32" />
                     ).
                 </P>
-                <P id="p97tn5" n={133}>
+                <P id="p97tn5" n={132}>
                     What came off the paper was the non-work emails and texts to park staff (
                     <Moment ulid={PICNIC} t="36:20" />
                     ), the red book he had brought to them himself (
@@ -2239,14 +2235,14 @@ export default function TestimonyBody({
                     ). One day, split into two, spread across a month, and called a pattern. That
                     was the case, on a handwritten sheet of paper, with not one email quoted.
                 </P>
-                <P id="pq4nv8" n={134}>
+                <P id="pq4nv8" n={133}>
                     He asked if they were good moving on (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="45:10" />). He had put it so far behind him that he
                     had applied for a job there (
                     <Moment ulid={PICNIC} t="45:10" />
                     ). That application went in after the reset. The park manager said that was
                     good, and went back to his paper.
                 </P>
-                <P id="pt8mzc" n={135}>
+                <P id="pt8mzc" n={134}>
                     What came off it next was the withdrawal email. He had pulled out of the
                     application and given no reason (<Moment ulid={PICNIC} t="47:03" />), and the
                     park supervisor had read his silence as an accusation against her and carried it
@@ -2268,13 +2264,13 @@ export default function TestimonyBody({
                     and he named exactly what was being done to him: he was being held responsible
                     for other people&rsquo;s thoughts.
                 </P>
-                <P id="pr5wdk" n={136}>
+                <P id="pr5wdk" n={135}>
                     Then he turned to the park supervisor directly. He had completely let it go (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="48:36" />), and
                     he liked her. She said okay (
                     <Moment ulid={PICNIC} t="48:34" />
                     ).
                 </P>
-                <P id="p6qtrn" n={137}>
+                <P id="p6qtrn" n={136}>
                     At fifty minutes he turned it around. If positive intent is the standard, then
                     apply it here:{" "}
                     <Moment ulid={PICNIC} t="50:10">
@@ -2287,7 +2283,7 @@ export default function TestimonyBody({
                     to rest. That is the admission, fifty minutes into an hour spent instructing him
                     to extend to everyone else the exact thing he was refused on request.
                 </P>
-                <P id="pne9g6" n={138}>
+                <P id="pne9g6" n={137}>
                     He apologised to the park supervisor again anyway (
                     <Moment ulid={PICNIC} t="52:01" />
                     ), asked them to assume positive intent with him (
@@ -2300,7 +2296,7 @@ export default function TestimonyBody({
                     </Moment>
                     .
                 </P>
-                <P id="pxygmq" n={139}>
+                <P id="pxygmq" n={138}>
                     The last two minutes are what the hour was for. Four times, the park manager
                     told him he should not feel obligated to stay, that if it did not feel right he
                     would never expect him to stay, that life is too short (
@@ -2309,10 +2305,9 @@ export default function TestimonyBody({
                     Honeyman, that was no longer possible, and he would finish the month (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="59:26" />). His last
                     correction was the shortest one. He did not feel obligated. He was there by
                     choice. Nothing in those sixty-two minutes is a warning, a written standard, or
-                    a document. It is an hour of pressure to leave, applied to a man whose offence
-                    was writing things down. The catalogue was theirs. The record is his.
+                    a document.
                 </P>
-                <P id="pur8vj" n={140}>
+                <P id="pur8vj" n={139}>
                     Then he texted the recording to the park supervisor. The institution&rsquo;s
                     file has that,{" "}
                     <SunCite entry="03-05-25-the-recording">worded as though it were a
@@ -2322,7 +2317,7 @@ export default function TestimonyBody({
                     only escalate. Sending her the tape was a move on a board. It said: I have the
                     hour, you and I both know what is on it, this is a stalemate. It said stop.
                 </P>
-                <P id="ptaaag" n={141}>
+                <P id="ptaaag" n={140}>
                     Five days later the program manager called him about it, and he recorded that
                     call too. Their entry says{" "}
                     <SunCite entry="03-10-25-the-admonition">she explained that as a volunteer,
@@ -2333,11 +2328,7 @@ export default function TestimonyBody({
                     state. Nothing about a higher standard. That phrase was written into the file
                     afterward.
                 </P>
-                <P id="pyz467" n={142}>
-                    The institution was handed an hour of two managers pressuring an unpaid
-                    volunteer to resign, and what it responded to was the microphone.
-                </P>
-                <P id="p77dmm" n={143}>
+                <P id="p77dmm" n={141}>
                     He kept working. On March 16 he marked a year since he bought the RV (<Moment ulid="01JPFQSYSR2783EPWKDE04M27P" t="0:08" />), a year
                     since he walked out of a twenty-year life in Kentucky that was working by every
                     metric and was killing him (<Moment ulid="01JPFQSYSR2783EPWKDE04M27P" t="0:38" />), and he was off every medication he had taken for
@@ -2378,7 +2369,7 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Eight" title="NINETEEN DAYS">
-                <P id="pnqxwe" n={144}>
+                <P id="pnqxwe" n={142}>
                     Between the picnic table and the dismissal he did the job and kept asking
                     about the next one. On March 6 he put himself forward to{" "}
                     <Cite ulid="01JNP97GTGCMEC62J4JVYA61DJ">gain experience as a relief host</Cite>{" "}
@@ -2387,7 +2378,7 @@ export default function TestimonyBody({
                     work, and{" "}
                     <Cite ulid="01JPB69WN8ZN24M2GXDGEZNFDG">was told it was fine</Cite>.
                 </P>
-                <P id="pc9qr6" n={145}>
+                <P id="pc9qr6" n={143}>
                     Four days after the picnic table, in a Saturday night update from inside the
                     RV, he named the shift off the welcome center desk and onto yurts and
                     campsites. He reached for the word for what it was, discarded fun, and landed on
@@ -2398,7 +2389,7 @@ export default function TestimonyBody({
                     <Moment ulid={YURTS_REWARDING} t="4:36" />
                     ).
                 </P>
-                <P id="pmx6yc" n={146}>
+                <P id="pmx6yc" n={144}>
                     On March 15, his day off, he walked the service road in the rain out to the
                     vantage over the 101 bridge, taking the ledger with him (
                     <Moment ulid={BRIDGE_DAY} t="1:03" />
@@ -2410,7 +2401,7 @@ export default function TestimonyBody({
                     <Moment ulid={BRIDGE_DAY} t="4:14" />
                     ).
                 </P>
-                <P id="p83p7j" n={147}>
+                <P id="p83p7j" n={145}>
                     On March 20 he learned the other volunteers had been talking among themselves
                     about his broken slide and his bed platform, working out between them how to
                     fix it for him (
@@ -2429,7 +2420,7 @@ export default function TestimonyBody({
                     <Moment ulid={ADAPTATION} t="5:14" />
                     ).
                 </P>
-                <P id="p4r7wh" n={148}>
+                <P id="p4r7wh" n={146}>
                     On March 16 the tent structure on his golf cart{" "}
                     <Cite ulid="01JPFK4TB0V1JVBH266AK81P0T">would not zip shut</Cite> on the
                     driver&rsquo;s side, and he reported it. On March 17 he put two other volunteers
@@ -2452,7 +2443,7 @@ export default function TestimonyBody({
                     <Cite ulid="01JPNX0J88PQE161MCS09FZA6C">I think you handled it
                     wonderfully</Cite>, she wrote.
                 </P>
-                <P id="pv9mhd" n={149}>
+                <P id="pv9mhd" n={147}>
                     The same evening he made a video about the man, and he was amused. It had
                     happened again, he announced: a man had fled from him and failed spectacularly,
                     because he knows he is not the problem (<Moment ulid={SILTCOOS_DAY} t="0:01" />).
@@ -2472,15 +2463,17 @@ export default function TestimonyBody({
                     his problem, it is theirs (<Moment ulid={SILTCOOS_DAY} t="1:49" />). He had lost
                     nothing. Maybe some shadow sex (<Moment ulid={SILTCOOS_DAY} t="3:38" />).
                 </P>
-                <P id="pj6ytw" n={150}>
+                <P id="pj6ytw" n={148}>
                     The one thing he kept back was himself. The man had made a point of being in
                     I.T., talking down to a little volunteer at a park cleaning the yurts. He had
                     been programming since the sixth grade and could have ended the flex in a
                     sentence. He kept it, and let the misread stand, and watched the man fail a test
-                    the man never knew he was taking. Anyone who had actually earned that attitude
-                    would not have had it.
+                    the man never knew he was taking. <em>You&rsquo;re very small, like you really
+                    are. Somebody who is truly confident, who has earned the right to have the
+                    attitude this man had, wouldn&rsquo;t have that attitude. I don&rsquo;t have
+                    that attitude.</em> (<Moment ulid={SILTCOOS_DAY} t="3:07" />)
                 </P>
-                <P id="puh63s" n={151}>
+                <P id="puh63s" n={149}>
                     Their file covers these same days differently. On March 21 it records{" "}
                     <SunCite entry="03-21-25-the-hearsay">another host reporting that he was
                     expressing dissatisfaction with the rangers and saying concerning things about
@@ -2492,13 +2485,13 @@ export default function TestimonyBody({
                     in the box underlining please try, because he had been homeless himself and knew
                     what a journal weighs.
                 </P>
-                <P id="pe7yku" n={152}>
+                <P id="pe7yku" n={150}>
                     On March 23, a week before he was due to leave anyway, he wrote to settle{" "}
                     <Cite ulid="01JQ18GA2GAY14ZE9BFG12TRZ6">what to do with the keys, the binder
                     and the golf cart</Cite> at the end of his last shift. They dismissed him the
                     next day, for cause they never wrote down.
                 </P>
-                <P id="p5dhnt" n={153}>
+                <P id="p5dhnt" n={151}>
                     At 8:45 on the morning of March 24 the Tugman lead wrote about{" "}
                     <Cite ulid="01JQ4D8830BX5NSFR9688G7DVB">his next assignment</Cite>:
                     cancellations had moved his April placement to Tugman, into site A42, and did
@@ -2510,7 +2503,7 @@ export default function TestimonyBody({
                     too. Tugman feels like home. See you next week.</Cite> A year of scheduled
                     assignments across the park system, six days from a clean completion.
                 </P>
-                <P id="pv2vwz" n={154}>
+                <P id="pv2vwz" n={152}>
                     The park manager called that afternoon, while he was doing his job, to set up
                     a third meeting (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="13:59" />). The second
                     meeting was the picnic table, and the picnic table was on video. Their file says{" "}
@@ -2536,7 +2529,7 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Nine" title="THE WEEK HE TOLD IT">
-                <P id="ptt2f7" n={155}>
+                <P id="ptt2f7" n={153}>
                     At 2:40, with the keys already gone, he wrote to the program manager:{" "}
                     <Cite ulid="01JQ51JFPRZVFQ28F1R1ASPWNE">dismissed one week before my scheduled
                     departure, no paperwork, no documentation</Cite>. That was the whole of it: a
@@ -2548,7 +2541,7 @@ export default function TestimonyBody({
                     <Cite ulid="01JQ59FCFG8N47SMSJ6EFF4AJ9">either time worked</Cite>, but earlier
                     would be better, because they had asked him to be off the site by one.
                 </P>
-                <P id="p4asvz" n={156}>
+                <P id="p4asvz" n={154}>
                     At 6:31 that evening he wrote to the one person in the institution he trusted:{" "}
                     <Cite ulid="01JQ5ES9ZGPRFAZ2AFRK83PCV8">I just need to know someone I trust
                     within the system has at least heard what happened to me at Honeyman, because
@@ -2556,11 +2549,9 @@ export default function TestimonyBody({
                     <Cite ulid="01JQ75M860BH848CACWBGP8FDX">She wrote back the next
                     morning</Cite>: I&rsquo;m really sorry to hear that, we can talk about it when
                     you get here if you want. She had coordinated the volunteers for her park when
-                    all of this began. Directly after it she was demoted to a regular ranger. The
-                    one person in this record who treated him with plain decency was the one who
-                    lost standing.
+                    all of this began. Directly after it she was demoted to a regular ranger.
                 </P>
-                <P id="p8nf8p" n={157}>
+                <P id="p8nf8p" n={155}>
                     Before any of that, in the hours between the phone call and the golf cart, he set
                     a camera on the site he had been told to vacate and reassembled two months in
                     order:{" "}
@@ -2580,7 +2571,7 @@ export default function TestimonyBody({
                     <Moment ulid={DISMISSAL} t={831} />
                     ). He was six days short of two months at that park (<Moment ulid="01JQ51HAK8QR862VWGK0RKTFXN" t="0:24" />).
                 </P>
-                <P id="ps28cg" n={158}>
+                <P id="ps28cg" n={156}>
                     The program manager called on the morning of March 25, and inside four minutes
                     the dismissal was not going to be overturned (
                     <Moment ulid={REVIEW_CALL} t="2:30" />
@@ -2595,7 +2586,7 @@ export default function TestimonyBody({
                     <Moment ulid={REVIEW_CALL} t="8:18" />
                     ).
                 </P>
-                <P id="puwcmw" n={159}>
+                <P id="puwcmw" n={157}>
                     He met every one of them at its exact edge, conceding nothing and expanding into
                     no one&rsquo;s frame. He had never said that. He had never said the world was
                     ending. The remark about rangers was general, made while handing in a
@@ -2612,7 +2603,7 @@ export default function TestimonyBody({
                     <Moment ulid={REVIEW_CALL} t="27:38" />
                     ). The letter arrived on Wednesday the twenty-sixth.
                 </P>
-                <P id="pn3vqd" n={160}>
+                <P id="pn3vqd" n={158}>
                     That night he{" "}
                     <Cite ulid="01JQ8HA5JRRCWX12W7B52YRVAT">wrote to her</Cite> to put the context
                     into the record and to mark what he could see coming: thoughtful, human
@@ -2620,7 +2611,7 @@ export default function TestimonyBody({
                     mechanism that had run the whole two months at Honeyman, and it had just run
                     again on her call.
                 </P>
-                <P id="pk7sfj" n={161}>
+                <P id="pk7sfj" n={159}>
                     Then the things he had held back on the phone. The eat-glass line had been used
                     on him once before, in the welcome center, the first time he was confronted,
                     which made it a pattern rather than a remark. The March 5 meeting ended with
@@ -2630,7 +2621,7 @@ export default function TestimonyBody({
                     staff, it was an appeal that the thing not be lost in the lost and found. He
                     had been homeless. He knows what a journal is worth.
                 </P>
-                <P id="p3hbwv" n={162}>
+                <P id="p3hbwv" n={160}>
                     He had been awake since six that morning (<Moment ulid="01JQ76PWJRJ1BYAMAFDF77YK32" t="0:06" />), the site nearly stripped (<Moment ulid="01JQ76PWJRJ1BYAMAFDF77YK32" t="1:03" />), two and a
                     half hours left on ground he had held for two months (<Moment ulid="01JQ76PWJRJ1BYAMAFDF77YK32" t="3:29" />), and he already knew what
                     he was watching: an institution closing around itself (
@@ -2645,7 +2636,7 @@ export default function TestimonyBody({
                     <Moment ulid={PACKING} t="0:24" />
                     ); he kept their name out of it because he judged they wanted it that way (<Moment ulid="01JQ76PWJRJ1BYAMAFDF77YK32" t="0:29" />).
                 </P>
-                <P id="psbtdp" n={163}>
+                <P id="psbtdp" n={161}>
                     On March 26 she called again and left a voicemail. He did not pick up, and not
                     by accident. She had told him the previous morning that it would not be
                     overturned, so nothing was left on that call to decide, and he was not going to
@@ -2662,7 +2653,7 @@ export default function TestimonyBody({
                     <Cite ulid="01JQA8N4FGQ6VXMRA09D8RZE62">I acknowledge receipt. I have returned
                     my volunteer items.</Cite>
                 </P>
-                <P id="pc9e9c" n={164}>
+                <P id="pc9e9c" n={162}>
                     That afternoon, from inside his RV, the light too dim to work with under a
                     cloudy sky (<Moment ulid="01JQA6VKN8G6FTMHZSTDRRZPPA" t="0:03" />), he turned
                     the camera on and read the letter against what it did not contain. It gave{" "}
@@ -2686,7 +2677,7 @@ export default function TestimonyBody({
                     </a>{" "}
                     of the whole term, the page this archive grew out of.
                 </P>
-                <P id="pbkx6y" n={165}>
+                <P id="pbkx6y" n={163}>
                     On March 27 he drove back to Tugman and stood on the dock at night filming
                     Eel Lake after the rain, the most beautiful he had ever seen it (
                     <Moment ulid={EEL_LAKE} t="0:01" />
@@ -2704,7 +2695,7 @@ export default function TestimonyBody({
                     <Moment ulid={EEL_LAKE} t="2:26" />
                     ).
                 </P>
-                <P id="pcvcnb" n={166}>
+                <P id="pcvcnb" n={164}>
                     Movement is how he processes, so he was moving (
                     <Moment ulid={EEL_LAKE} t="3:23" />
                     ). Disappointment, sadness, and under those, grief (<Moment ulid="01JQAQYKJ82GNS2N7WHPR16PQH" t="5:26" />): he had detached from the
@@ -2721,7 +2712,7 @@ export default function TestimonyBody({
                     <Moment ulid={EEL_LAKE} t="5:59" />
                     ).
                 </P>
-                <P id="ppdnbn" n={167}>
+                <P id="ppdnbn" n={165}>
                     On March 28 he read the unanswered letter into the public record (<Moment ulid="01JQD4DCE88XVM3S4AEGRY84R2" t="0:20" />), because{" "}
                     <Moment ulid={LETTER_READ} t="0:45">the program manager had ignored it</Moment>.
                     He could not confirm it was in his file, so he put it where they did not
@@ -2748,7 +2739,7 @@ export default function TestimonyBody({
                     <Moment ulid={LETTER_READ} t="5:08" />
                     ).
                 </P>
-                <P id="px29gz" n={168}>
+                <P id="px29gz" n={166}>
                     On March 29, over coffee at half past eight, he gave the fullest account of the
                     week (
                     <Moment ulid={MAR29} t="0:00" />
@@ -2761,7 +2752,7 @@ export default function TestimonyBody({
                     ). That was where he actually stood: nowhere to go (<Moment ulid="01JQHBXG9RYCN4XHFFK0WV8C37" t="1:21" />), after two months of
                     navigating something he did not start (<Moment ulid="01JQHBXG9RYCN4XHFFK0WV8C37" t="1:38" />).
                 </P>
-                <P id="pwy8aj" n={169}>
+                <P id="pwy8aj" n={167}>
                     He was asking for help (<Moment ulid="01JQHBXG9RYCN4XHFFK0WV8C37" t="2:46" />). He says it plainly, the way he says everything (<Moment ulid="01JQHBXG9RYCN4XHFFK0WV8C37" t="0:16" />), which
                     is the reason it keeps getting missed. Two thousand people watched the
                     dismissal video and not one of them sent anything (
@@ -2777,7 +2768,7 @@ export default function TestimonyBody({
                     <Moment ulid={MAR29} t="7:33" />
                     ). Ten months later he deleted the channels.
                 </P>
-                <P id="pdats9" n={170}>
+                <P id="pdats9" n={168}>
                     In the middle of that week, on the afternoon the letter arrived, he was on a
                     beach at the next park tracing waves, walking in as the water pulled back and
                     out as it came, his favourite thing in the world (
@@ -2800,11 +2791,11 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Ten" title="DISPLACED">
-                <P id="p82469" n={171}>
+                <P id="p82469" n={169}>
                     The ban was statewide and immediate, so what followed was not a transition. It
                     was a month with nowhere to be.
                 </P>
-                <P id="pp55fh" n={172}>
+                <P id="pp55fh" n={170}>
                     He went to <PlaceCite name="Beverly Beach" /> first. It was not a random
                     direction. He had applied for it back in January, for October through December,
                     and he had looked at it the way he looks at every park he intends to be in.
@@ -2824,7 +2815,7 @@ export default function TestimonyBody({
                     <Moment ulid={BEVERLY} t="0:57" />
                     ).
                 </P>
-                <P id="pdq7zx" n={173}>
+                <P id="pdq7zx" n={171}>
                     On April 4 he drove a hundred miles south to <PlaceCite name="Lagoon" /> Campground in the dunes (<Moment ulid="01JR1J5HR8C8D2B9MSENRZY03S" t="7:56" />). The
                     site ran against every instinct he had built, and he had to drive past it,
                     swerve, and come back around at an angle rather than back straight in (
@@ -2844,7 +2835,7 @@ export default function TestimonyBody({
                     <Moment ulid={SILTCOOS_TRAILS} t="0:01" />
                     ).
                 </P>
-                <P id="pqf8hs" n={174}>
+                <P id="pqf8hs" n={172}>
                     He did not know it yet, but he had just arrived at the ground he still lives
                     on. <PlaceCite name="Lagoon" /> sits in the Siltcoos corridor a few miles south
                     of the park that had expelled him. Everything since has happened inside a
@@ -2854,7 +2845,7 @@ export default function TestimonyBody({
                     the caretaker and remains the caretaker today. He drove himself into that
                     corridor, and he has been there ever since.
                 </P>
-                <P id="pv24wr" n={175}>
+                <P id="pv24wr" n={173}>
                     On April 10, two days out from another forced move with no destination found,
                     he counted what was there and set the constraint above it (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="1:41" />). He had been targeted
                     once already for the kind of person he is, for his sexuality, for the piercings (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="3:02" />),
@@ -2866,14 +2857,14 @@ export default function TestimonyBody({
                     not worthy of it, or that he was worthy and they still were not helping (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="3:44" />). He took
                     the second as the accurate one. He was not defeated, and he would make it (<Moment ulid="01JRGAAQWRVCMWP074HMZAF2D5" t="2:22" />).
                 </P>
-                <P id="pct3kr" n={176}>
+                <P id="pct3kr" n={174}>
                     Meanwhile he did the paperwork. The Forest Service placement required a
                     federal background check, which meant fingerprints, which meant{" "}
                     <TraceCite ulid="01JRTW0TT80GWGSJR3J4FQC5MF">driving inland to Corvallis and
                     back</TraceCite>, and then waiting on an agency clock while the fourteen night
                     maximum at his campground ran down.
                 </P>
-                <P id="pqaxzk" n={177}>
+                <P id="pqaxzk" n={175}>
                     On{" "}
                     <Moment ulid={BIRTHDAY} t={2}>April 11 he turned forty-eight</Moment>, one
                     year to the day since he drove away from the house in Kentucky (<Moment ulid="01JRHW67J034ANKJ2B7YEAGW4K" t="2:08" />). He marked the
@@ -2891,7 +2882,7 @@ export default function TestimonyBody({
                     important to him but a defining attribute of how he is (<Moment ulid="01JRM3ES38X7NEYNSW4FNFZ5C9" t="6:19" />). He did not have to
                     decide it that night (<Moment ulid="01JRM3ES38X7NEYNSW4FNFZ5C9" t="9:49" />), and he did not.
                 </P>
-                <P id="pardd5" n={178}>
+                <P id="pardd5" n={176}>
                     April 18 was the morning he had to be off the site, and he had woken without a
                     next move and gone about the day on the assumption that he would work one out.
                     The placement came through that morning, and it was not the one forty miles
@@ -2912,12 +2903,12 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Eleven" title="WHAT HE BUILT">
-                <P id="pfkd8j" n={179}>
+                <P id="pfkd8j" n={177}>
                     Two things ran at once from here and have never stopped running at once. He
                     built a life on this coast, and he built the record of what was done to him on
                     it. Neither waited for the other.
                 </P>
-                <P id="pk36ww" n={180}>
+                <P id="pk36ww" n={178}>
                     Nineteen days after a state agency banned him from every park it runs, a
                     federal one gave him a campground. He took a six-month term at{" "}
                     <PlaceCite name="Driftwood II" />, then <PlaceCite name="Tahkenitch Landing" />,
@@ -2930,7 +2921,7 @@ export default function TestimonyBody({
                     He does not live on a campground (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:38" />). He lives on restricted federal land behind a
                     federal gate, and the distinction is one he enjoys.
                 </P>
-                <P id="p7pjz8" n={181}>
+                <P id="p7pjz8" n={179}>
                     The days are the point, and they are all on the record. He opens gates. He runs
                     the route. His{" "}
                     <Moment ulid={NICOTINE} t="0:00">days off are Mondays and Tuesdays</Moment>, and
@@ -2944,7 +2935,7 @@ export default function TestimonyBody({
                     outside. He goes out to the ocean at night. He greets it. He traces waves at the
                     water line, which he has called his favourite thing in the world.
                 </P>
-                <P id="pcte9m" n={182}>
+                <P id="pcte9m" n={180}>
                     On November 2, 2025 he ran out of vapes and did not replace them (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:02" />). Thirty-two
                     years of nicotine, begun at sixteen (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:08" />), cigarettes until a year and a half earlier (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:12" />),
                     and then nothing. He threw the supplies away and filmed the cutoff standing
@@ -2966,7 +2957,7 @@ export default function TestimonyBody({
                     <Moment ulid={BARREN} t="5:54">laid out the step-down from cigarettes to vape to patches</Moment>{" "}
                     as a plan rather than a wish. He finished it.
                 </P>
-                <P id="pv8ywz" n={183}>
+                <P id="pv8ywz" n={181}>
                     He built the platform in that corridor, on those days, in those conditions. The
                     first working skeleton of Autonomy went up on GitHub on a Monday (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="1:22" />), and that night
                     he was{" "}
@@ -2979,7 +2970,7 @@ export default function TestimonyBody({
                     <Moment ulid={ONE_WEEK_OFF} t="2:04"><em>once he built that feature</em></Moment>.
                     That was November 9, 2025.
                 </P>
-                <P id="pasfb6" n={184}>
+                <P id="pasfb6" n={182}>
                     He built it. The first trace in his realm was recorded on{" "}
                     <strong>March 24, 2026</strong> &mdash; the day three men with guns came
                     through the locked gate. He had just finished the feature. The system that now
@@ -2990,7 +2981,7 @@ export default function TestimonyBody({
                     correcting his own backend from memory mid-sentence and specifying the fix
                     while he walked.
                 </P>
-                <P id="pc7ghf" n={185}>
+                <P id="pc7ghf" n={183}>
                     He tried to go back to work. Sixteen months after leaving programming he opened
                     the freelance profiles again and started bidding (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:44" />), and found that the thing he
                     was trying to re-enter was gone. He had once been ranked in the top ten
@@ -3003,7 +2994,7 @@ export default function TestimonyBody({
                     He worked the problem the way he works every problem, and the market he was
                     working against no longer exists.
                 </P>
-                <P id="pv428w" n={186}>
+                <P id="pv428w" n={184}>
                     He built a life here that has people in it (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="8:32" />). A hiking companion twenty years
                     older than him, until{" "}
                     <Moment ulid={WENDY} t="0:01">she moved south for the winter</Moment>. A fellow
@@ -3018,7 +3009,7 @@ export default function TestimonyBody({
                     people in his life did not support him through that year. A few helped where
                     they could. He is proceeding on his own.
                 </P>
-                <P id="pbsvr7" n={187}>
+                <P id="pbsvr7" n={185}>
                     On December 6, 2025 he was at the dump station with a hose running clean water
                     through a tank that was already clear (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="1:01" />), because he wanted it extra sparkly (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="1:44" />), and
                     the light was going and he had no flashlight (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="0:28" />). Two years living this way and more
@@ -3038,7 +3029,7 @@ export default function TestimonyBody({
                     <Moment ulid={TWO_YEARS} t="10:45">failing air mattress and a donated couch that smells of cigarette smoke</Moment>,
                     and regretted none of it (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="11:46" />). Every level, everything overcome, is another brick (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="12:26" />).
                 </P>
-                <P id="p3mqd7" n={188}>
+                <P id="p3mqd7" n={186}>
                     And then there is why the platform exists, which this archive is the proof of.
                     Every place he had put his life belonged to someone else. In October 2025, hours
                     before his connection was shut off, he set out what was wrong with the biggest
@@ -3052,7 +3043,7 @@ export default function TestimonyBody({
                     And a state agency had looked at a man who wrote things down and decided the
                     writing was the offence. So he built the exit.
                 </P>
-                <P id="p66paa" n={189}>
+                <P id="p66paa" n={187}>
                     On January 20, 2026 he deleted the channels outright. Nearly nine hundred
                     videos,{" "}
                     <Moment ulid={DELETE_YT} t="0:23">downloaded first and moved into his realm</Moment>,
@@ -3066,7 +3057,7 @@ export default function TestimonyBody({
                     and started the rebuild in the tools of his own career, PHP and Laravel, because
                     those are what he has always been (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="7:01" />).
                 </P>
-                <P id="pdpbyv" n={190}>
+                <P id="pdpbyv" n={188}>
                     What he was building is a realm: a{" "}
                     <Moment ulid={DELETE_YT} t="15:42">system that takes a life in</Moment> as
                     recordings, photographs, documents and ground, transcribes it, analyses it (<Moment ulid="01KGTPBX008JG59T12Z685G4AT" t="0:36" />),
@@ -3081,7 +3072,7 @@ export default function TestimonyBody({
                     he was announcing. Every recording cited on this page is served by it, and every
                     timestamp on this page resolves through it.
                 </P>
-                <P id="ppscuz" n={191}>
+                <P id="ppscuz" n={189}>
                     On May 19, 2026 he walked in from the dunes after several hours out, with
                     Buddy, one of the camp hosts&rsquo; dogs from Driftwood, to a bench near{" "}
                     <PlaceCite name="Lagoon" />, the one he had landed at after Honeyman. A year earlier he had sat on that bench and{" "}
@@ -3094,10 +3085,10 @@ export default function TestimonyBody({
                     The same bench received him twice. He did not narrate the distance between the
                     two arrivals. He was taking in the moment (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="2:43" />).
                 </P>
-                <P id="pyvmux" n={192}>
+                <P id="pyvmux" n={190}>
                     He used every channel the state has, in order, and kept the answers.
                 </P>
-                <P id="p2a7nz" n={193}>
+                <P id="p2a7nz" n={191}>
                     What it cost him to keep asking is in the recordings alongside them. On June
                     17, 2025, near midnight, the first thing in frame was his teeth (<Moment ulid="01JXYDAD88RTT8JN4K0825E6MD" t="3:26" />). The soft liner
                     a Kentucky dentist had put in his bottom denture had disintegrated a month
@@ -3110,7 +3101,7 @@ export default function TestimonyBody({
                     <Moment ulid={JUNE} t="2:44" />
                     ).
                 </P>
-                <P id="p58b8n" n={194}>
+                <P id="p58b8n" n={192}>
                     Two weeks without internet ended on the morning of August 19 (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="0:16" />), and the first
                     thing he did with the connection was lay down the whole thread for three
                     followers on a channel that was days old (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="0:26" />): the house in Kentucky (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="2:09" />), the career he
@@ -3122,7 +3113,7 @@ export default function TestimonyBody({
                     <Moment ulid={REINTRO} t="22:32" />
                     ).
                 </P>
-                <P id="pbr4bx" n={195}>
+                <P id="pbr4bx" n={193}>
                     In{" "}
                     <Cite ulid="01JVPH4Z7G0VBTE6PWCDVCRF5X">May 2025 he reminded them the record
                     was public</Cite>. On{" "}
@@ -3136,7 +3127,7 @@ export default function TestimonyBody({
                     opens by acknowledging what she had built in her tenure and an institution he
                     says he had remarkable respect for and wanted to be part of.
                 </P>
-                <P id="pk67rd" n={196}>
+                <P id="pk67rd" n={194}>
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">She answered the next day</Cite>. The
                     reply was sentiment: she wrote that she heard the depth of his concern, that she
                     valued the contributions volunteers make, and that she could not respond to the
@@ -3145,13 +3136,13 @@ export default function TestimonyBody({
                     appropriate channels within the department. Nothing in the record since suggests
                     that happened.
                 </P>
-                <P id="pg69p8" n={197}>
+                <P id="pg69p8" n={195}>
                     The records request was not answered at all. On November 15, eighty-five days
                     later, he sent{" "}
                     <Cite ulid="01KA45NDXG8VA4XB2YG7M8G0F5">a notice of violation</Cite> quoting
                     the statute back to them.
                 </P>
-                <P id="pysux4" n={198}>
+                <P id="pysux4" n={196}>
                     Then, on December 7, he wrote her the letter that explains what he had been
                     asking for the entire year. After the dismissal he had{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">nowhere to go, removed at his most
@@ -3164,12 +3155,12 @@ export default function TestimonyBody({
                     not need to exist if she had protected the people who came to serve her in good
                     faith. She could still fix it internally, right now.
                 </P>
-                <P id="pajsbm" n={199}>
+                <P id="pajsbm" n={197}>
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">She answered at 8:37 the next
                     morning</Cite> and ended the correspondence. She wrote that she did not believe
                     continuing it would lead to the resolution he was seeking.
                 </P>
-                <P id="p8acgv" n={200}>
+                <P id="p8acgv" n={198}>
                     An account of how a public agency treated an unpaid volunteer, supported at
                     every point by documents that agency itself had written, came back to him as
                     his own pain. Not one fact in it was engaged. Not one name in it was addressed.
@@ -3180,7 +3171,7 @@ export default function TestimonyBody({
                     afternoon, to the message that carried it. That is the last thing the director
                     of Oregon Parks and Recreation has ever said to him.
                 </P>
-                <P id="p57nx6" n={201}>
+                <P id="p57nx6" n={199}>
                     This archive was born out of that reply. She had told him that further
                     correspondence would not produce a resolution, so he stopped corresponding. Ten
                     days later he turned on a camera and gave the thing its address out loud,
@@ -3205,7 +3196,7 @@ export default function TestimonyBody({
                     him. He recorded another one, standing next door to the park (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="19:35" />), on a route he
                     drives daily for the agency that gave him the truck (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="19:52" />).
                 </P>
-                <P id="p6x98k" n={202}>
+                <P id="p6x98k" n={200}>
                     On March 4, 2026 he put her on notice, personally rather than institutionally,
                     that he intended to file{" "}
                     <Cite ulid="01KJWMK70R1GJJ7NYFN6EZCFER">a civil rights claim under 42 U.S.C.
@@ -3214,13 +3205,13 @@ export default function TestimonyBody({
                     <Cite ulid="01KJXAVPYRJ9WPYX4SWG3EQCP">the sixty-two minutes at the picnic
                     table, minute by minute</Cite>, and sent it to her.
                 </P>
-                <P id="p5zcaj" n={203}>
+                <P id="p5zcaj" n={201}>
                     Twelve days later OPRD asked the Oregon State Police for a threat assessment.
                 </P>
             </Part>
 
             <Part n="Twelve" title="THE POLICE">
-                <P id="pfbekq" n={204}>
+                <P id="pfbekq" n={202}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
                     and gave him twenty-four hours to vacate (
@@ -3247,7 +3238,7 @@ export default function TestimonyBody({
                     <Moment ulid={ANNIVERSARY} t="3:02" />
                     ).
                 </P>
-                <P id="p9zswx" n={205}>
+                <P id="p9zswx" n={203}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
@@ -3257,15 +3248,14 @@ export default function TestimonyBody({
                     order came back: <em>Capt. Kennedy is requesting that a threat assessment be
                     conducted asap.</em>
                 </P>
-                <P id="p8knha" n={206}>
+                <P id="p8knha" n={204}>
                     It went to the Major Crimes Section, and to a detective who is a task force
                     officer with the Portland FBI Joint Terrorism Task Force. That detective
                     forwarded his name to FBI personnel and pulled his DMV record through the task
                     force, and a Department of Justice fusion center analyst documented the
-                    activity. An unpaid campground volunteer who wrote letters to a state agency
-                    was run through federal counterterrorism machinery.
+                    activity.
                 </P>
-                <P id="pgxwqf" n={207}>
+                <P id="pgxwqf" n={205}>
                     On March 6 that detective read this archive end to end and wrote down what he
                     found: <em>Based on the website nothing is standing out to me more than what
                     Parks and Rec sent you. Sounds like this person does have a grievance with the
@@ -3274,7 +3264,7 @@ export default function TestimonyBody({
                     man who wrote it. There was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
-                <P id="pewtmp" n={208}>
+                <P id="pewtmp" n={206}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
                     him <em>Suspect</em>, and wrote the basis into it: sending <em>concerning emails
                     to former supervisors in parks department and publicly airing grievances</em>.
@@ -3283,7 +3273,7 @@ export default function TestimonyBody({
                     Forest Service supervisor <em>was told not to advise WHITE that FS LE was
                     inquiring about his whereabouts</em>.
                 </P>
-                <P id="pqdfr8" n={209}>
+                <P id="pqdfr8" n={207}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
                     came through a locked federal gate, posted against public access (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:00" />), onto
                     restricted federal land, to the work center where he lives and works. Nobody
@@ -3296,13 +3286,13 @@ export default function TestimonyBody({
                     off the vehicle while it was still in frame (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:17" />). The place is his home. He lives
                     there alone, in exchange for stewardship of that land.
                 </P>
-                <P id="pt7c8w" n={210}>
+                <P id="pt7c8w" n={208}>
                     The second detective&rsquo;s own report closes the question of what they had:
                     no direct threats, no <em>leakage towards violence or violent behavior</em>,
                     and <em>no evidence White has committed any crimes</em>. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
-                <P id="pwmw3z" n={211}>
+                <P id="pwmw3z" n={209}>
                     Three days later he filed a Siuslaw National Forest incident report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
                     and the plate number off one of the vehicles. The same day he asked the Forest
@@ -3310,10 +3300,9 @@ export default function TestimonyBody({
                     were. Hours after that question, the special agent sent a Lane County deputy a
                     file on him: his name, his date of birth, his driver&rsquo;s licence number,
                     where he lives, his schedule and his duties, his correspondence and his text
-                    messages, and a promise to <em>keep you up to date</em>. He asked to be told
-                    who came to his door, and the answer was a wider distribution of himself.
+                    messages, and a promise to <em>keep you up to date</em>.
                 </P>
-                <P id="pn89s9" n={212}>
+                <P id="pn89s9" n={210}>
                     Four months later the Forest Service put its own role in writing: it did not
                     initiate the interview, its involvement was{" "}
                     <em>limited to assisting OSP by providing access and guiding them to the
@@ -3332,7 +3321,7 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Thirteen" title="AFTER THE GATE">
-                <P id="pesfmf" n={213}>
+                <P id="pesfmf" n={211}>
                     He did not wait. The day after they came he built the page. Two days after they
                     came, on the morning of March 26, he put the director of Oregon Parks and
                     Recreation on notice in her own name:{" "}
@@ -3349,13 +3338,13 @@ export default function TestimonyBody({
                         warned. That you knew. That you chose silence.
                     </Cite>
                 </P>
-                <P id="pck83r" n={214}>
+                <P id="pck83r" n={212}>
                     Armed strangers had found the place he sleeps and no one would say who sent
                     them. So he made his own safety a matter of public record, in writing, addressed
                     to the person who could have stopped it, so that whatever happened next would
                     already have an author.
                 </P>
-                <P id="p44e3w" n={215}>
+                <P id="p44e3w" n={213}>
                     That same night it went to all of them, each named in turn: the interim
                     director, responsible for the conduct of the institution; the deputy director,
                     who had made himself the point of contact; the Governor, whose office had gone
@@ -3366,7 +3355,7 @@ export default function TestimonyBody({
                     passed the point of being liability and had become active harm. No written
                     acknowledgment came.
                 </P>
-                <P id="pvhedx" n={216}>
+                <P id="pvhedx" n={214}>
                     On March 27 he filed the Forest Service incident report and asked the special
                     agent who had opened the gate to name the men. On March 28 he wrote to the
                     department under the subject line it deserved: you sent police to my door,
@@ -3374,7 +3363,7 @@ export default function TestimonyBody({
                     press. On April 2 he filed the first public records request for the visit
                     itself.
                 </P>
-                <P id="pa67kj" n={217}>
+                <P id="pa67kj" n={215}>
                     On April 3, the anniversary of his dismissal, he walked the Wax Myrtle Trail and
                     the word arrived in motion (<Moment ulid="01KN9KDSG0H3W0WZ9GBCJDJMG5" t="0:00" />). He had lived in that corridor a year and it had been
                     the best experience of his life (<Moment ulid="01KN9KDSG0H3W0WZ9GBCJDJMG5" t="0:19" />). Two months of escalation he had not understood
@@ -3391,7 +3380,7 @@ export default function TestimonyBody({
                     archive is now organised around. They had aimed at the self (<Moment ulid="01KNER77G00DQ4C9BZGEHCPWN3" t="1:58" />). He did not leave
                     the coast, and he did not stop working the site.
                 </P>
-                <P id="p5j2y8" n={218}>
+                <P id="p5j2y8" n={216}>
                     Three months later, unprompted and a month after his final statement to the
                     agency, he{" "}
                     <Cite ulid="01KX28CF90H15CJVJRJWKXCP5N">withdrew the individual-capacity claim
@@ -3406,7 +3395,7 @@ export default function TestimonyBody({
                     binding: whether a state agency may permanently expel a volunteer, in writing,
                     over protected speech.
                 </P>
-                <P id="pdmbsg" n={219}>
+                <P id="pdmbsg" n={217}>
                     On September 3 the state police produced the file, and inside it was the
                     document: ten months of editing about a volunteer they had for three, created
                     the morning after his dismissal,{" "}
@@ -3425,7 +3414,7 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Fourteen" title="WHAT HE HAS PUT IN FRONT OF THE STATE">
-                <P id="pdz7dx" n={220}>
+                <P id="pdz7dx" n={218}>
                     On April 2, 2026 he asked Oregon State Police for{" "}
                     <Cite ulid="01KN7Y4QZ8NJKCC08VT82FDBSP" thread="osp">the records of the
                     visit</Cite>: who authorised it, what its purpose was, who the men were. The
@@ -3434,7 +3423,7 @@ export default function TestimonyBody({
                     that a search had identified no records responsive to the request</Cite>. That
                     was not true, and their own later production proves it was not true.
                 </P>
-                <P id="pzqaeq" n={221}>
+                <P id="pzqaeq" n={219}>
                     He did not accept it as the file. He asked six questions of the responding
                     unit&rsquo;s supervisor, asked for{" "}
                     <Cite ulid="01KXMK4EARQK8CKJXYMPSW78AJ" thread="osp">the dispatch audio and
@@ -3452,7 +3441,7 @@ export default function TestimonyBody({
                     template of the letter they use to charge fees and claim exemptions, its
                     versions, the instructions governing its use, and the letters issued on it.
                 </P>
-                <P id="p5y2td" n={222}>
+                <P id="p5y2td" n={220}>
                     He paid the hundred and fifty-seven fifty. He is an unpaid volunteer living on
                     a federal work center, and he{" "}
                     <Cite ulid="01M0HCEDH0YDZCBMM9Q7E0TH00" thread="osp">put on the record what
@@ -3464,7 +3453,7 @@ export default function TestimonyBody({
                     The sixteen thousand three hundred and fifteen dollars he has not paid. Those
                     records are still behind it.
                 </P>
-                <P id="pkud65" n={223}>
+                <P id="pkud65" n={221}>
                     The production came on September 3: sixteen files, and ninety-five dollars back.
                     He read every page and built the inventory of what was missing, item by item,
                     each with the ground the department stood on. The body-worn camera video of
@@ -3481,11 +3470,11 @@ export default function TestimonyBody({
                     they produce, or quote, or state in writing does not exist, given that their own
                     report concludes he made no threats and committed no crimes.
                 </P>
-                <P id="pdqk3x" n={224}>
+                <P id="pdqk3x" n={222}>
                     Among the files they did produce were screenshots of a hunting map, with a pin
                     dropped on where he lives.
                 </P>
-                <P id="pp8dve" n={225}>
+                <P id="pp8dve" n={223}>
                     He ran the same process at the Department of Administrative Services, which{" "}
                     <Cite ulid="01KWWCTCW09VNDMKKGABWBSKHT" thread="das">closed his request on the
                     basis that it was not the custodian</Cite>. He asked them to reopen it the same
@@ -3500,7 +3489,7 @@ export default function TestimonyBody({
                     <Cite ulid="01KW8KH1N8VJXGXGERYEFA5YQJ" thread="governor">the Governor, asking
                     for an independent investigation</Cite>.
                 </P>
-                <P id="pkbt5v" n={226}>
+                <P id="pkbt5v" n={224}>
                     The same week the production landed, the file{" "}
                     <Cite ulid="01M1M6H4RR51K8RXNASW5AB9RC" thread="osp">was not sufficient and he
                     told them so</Cite>. He filed{" "}
@@ -3511,7 +3500,7 @@ export default function TestimonyBody({
                     <Cite ulid="01M1S5AS2G1PK98P6VYW8M9RSQ" thread="osp">in front of the captain
                     who received it</Cite>.
                 </P>
-                <P id="pfskxy" n={227}>
+                <P id="pfskxy" n={225}>
                     The clocks are still running, and the archive shows them running: the{" "}
                     <Link href="/records-requests" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
                         records page
@@ -3519,7 +3508,7 @@ export default function TestimonyBody({
                     tracks what was asked, what was claimed, and what is still withheld, by agency,
                     with the statutory deadlines counted in days.
                 </P>
-                <P id="pt7yv9" n={228}>
+                <P id="pt7yv9" n={226}>
                     Three weeks before the men came to the gate, on a Sunday morning in light rain (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="0:00" />),
                     he stood at the head of a trail he had not meant to take and answered the
                     question two years of recording had left open (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="1:46" />). The videos were never for an
