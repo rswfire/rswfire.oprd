@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={978} />
+            <TestimonyMeta documents={105} recordings={138} moments={981} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -609,7 +609,11 @@ export default function TestimonyBody({
                     The next day he drove forty minutes for coffee and came home from
                     Bowling Green with three new piercings (
                     <Moment ulid={BOWLING_GREEN} t="3:30" />, <Moment ulid={BOWLING_GREEN} t="8:46" />
-                    ). He had wanted the cartilage done for months (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="9:26" />), and carried ten identical hoops
+                    ). The next morning he cleaned them on camera, in pain, with the camera
+                    upside down. The camera got a whatever. He had just woken up (<Moment ulid="01J6NNQNA0CMJVE5YXG0CEDS8X" t="0:14" />).{" "}
+                    <em>Oh, I can feel that. Worth it, by the way. Totally worth it</em> (<Moment ulid="01J6NNQNA0CMJVE5YXG0CEDS8X" t="0:24" />).
+                    His ear was a different color. <em>Wow. Worth it</em> (<Moment ulid="01J6NNQNA0CMJVE5YXG0CEDS8X" t="0:37" />).
+                    He had wanted the cartilage done for months (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="9:26" />), and carried ten identical hoops
                     home so the whole configuration would match once it healed. He held them close for six months, waiting for the day he could replace the studs.
                 </P>
                 <P id="p46vc4" n={23}>
