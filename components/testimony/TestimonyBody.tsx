@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={985} />
+            <TestimonyMeta documents={105} recordings={138} moments={1002} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -664,36 +664,47 @@ export default function TestimonyBody({
                 </P>
                 <P id="pmjw84" n={26}>
                     In the same recording, that same pre-dawn hour, he decided not to repair the
-                    slide. It is a design flaw: it throws the weight to one side and makes a moving
-                    thing sit like a stationary one (
-                    <Moment ulid={ENDER} t="3:47" />
-                    ). He would have the bed platform taken out entirely and sleep on foam on the
-                    floor to keep the mobility (
-                    <Moment ulid={ENDER} t="4:27" />
-                    ), and every change he makes to the space makes it more his own (
-                    <Moment ulid={ENDER} t="5:13" />
-                    ). He reclaimed a story that had been taken from him and stopped maintaining
-                    somebody else&rsquo;s design (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="1:26" />), in the same hour, the day before he left.
+                    slide. The mechanism had broken because it is a design flaw, and a repaired
+                    flaw just breaks again (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="4:21" />). Out, it throws the weight to one side
+                    and makes the rig feel stuck, like living stationary (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="4:37" />). <em>I
+                    want to be mobile. I want to be portable</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="4:41" />). The slide
+                    would go all the way in and never come out again (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="4:48" />). The bed
+                    platform would go entirely &mdash; <em>just remove it, destroy it</em>{" "}
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="4:57" />) &mdash; and he would sleep on foam on the floor if he had to
+                    (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="5:05" />). Every change he makes to the space makes it feel more like
+                    his (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="5:13" />). <em>And this decision feels right</em> (<Moment ulid="01J73JPHV0BXMCDEPAC6TTZZE3" t="5:22" />).
                 </P>
                 <P id="pgw3dk" n={27}>
-                    Just after midnight on September 7 he recorded what he thought would be his
-                    last transmission from Kentucky, leaving the cocoon of it (
-                    <Moment ulid={LEAVING_KY} t="0:01" />
-                    ). He had spent hours that night reading about where he was going (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="5:10" />), and what he
-                    did with what he learned was get excited about it: rain, fog, tall trees, mud,
-                    cliffs down to the ocean, storms that run for days (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="1:43" />), wind strong enough to
-                    dictate which way you park the rig (
-                    <Moment ulid={LEAVING_KY} t="1:15" />
-                    ). He went straight to what he would do inside it. Build book nooks through the
-                    storms. Hike anyway, in the mud and the rain. Maybe take up tea, and cooking
-                    (
-                    <Moment ulid={LEAVING_KY} t="2:35" />
-                    ). He woke the next morning afraid and filmed that too. The fear came from
-                    having learned more about the place than he had expected, he could not know
-                    with certainty that he would survive it, and that is never a reason to stop (
-                    <Moment ulid={NAMING_FEAR} t="1:32" />,{" "}
-                    <Moment ulid={NAMING_FEAR} t="3:38" />
-                    ). Then he went out and organized the storage bays (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:25" />).
+                    Just after midnight on September 7 &mdash; <em>hello humans</em>{" "}
+                    (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:01" />) &mdash; he recorded what he thought would be his last
+                    transmission from Kentucky, leaving the cocoon of it (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:23" />). He had
+                    spent hours that night talking to an artificial intelligence about where he
+                    was going (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="5:10" />), and what he did with what he learned was get
+                    excited: solitude, rain, fog, very tall trees, mud everywhere, steep cliffs
+                    down to the ocean (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="0:47" />). <em>It sounds magical. Oh, I forgot to
+                    mention the winds</em> (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="1:11" />), winds strong enough to dictate how
+                    and where you position an RV (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="1:16" />). <em>It excites the shit out of
+                    me</em> (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="1:33" />). Bailey walked into the frame mid-transmission and
+                    made the very small space smaller (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="1:56" />). He went straight to what
+                    he would do inside it: build book nooks through the storms, intricate little
+                    worlds being built inside while violent chaos ran outside (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="2:45" />);
+                    hike anyway, despite the mud, despite the constant rain (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="3:07" />);
+                    maybe finally get into tea, which he had tried once already, <em>it
+                    didn&rsquo;t go so well</em> (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="3:27" />), because some challenges are
+                    cyclical and he is comfortable with that (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="3:43" />). Then he named what
+                    the six months had made: <em>I am not the same person anymore. I have truly
+                    transformed myself, what I like to describe as crafting myself into a
+                    weapon</em> (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="4:19" />). He had asked himself why weapon and not tool.
+                    There are reasons. None of them are the traditional ones (<Moment ulid="01J75KATD8PXD1DRY9PXQD3AJN" t="4:49" />). He
+                    woke the next morning with fear, the acknowledging kind (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:37" />),
+                    because he had learned more about the place than he had expected
+                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="1:57" />). He acknowledged it and explored it (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:01" />); every
+                    emotion is teaching you something, it is wisdom (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:23" />). <em>I know
+                    that it will transform me. I cannot know how. I cannot even know with
+                    certainty that I&rsquo;ll survive this. That is a fact. That is why
+                    there&rsquo;s some fear. And it&rsquo;s never a reason to stop</em>{" "}
+                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:01" />). <em>I processed my feelings, then I got to work</em>{" "}
+                    (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:22" />). The storage bays got organized (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:28" />).
                 </P>
                 <P id="putvbz" n={28}>
                     He did not leave for another five days, and the reason was his mother (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:03" />). On
