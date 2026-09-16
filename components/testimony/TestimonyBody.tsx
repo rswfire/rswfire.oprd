@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={981} />
+            <TestimonyMeta documents={105} recordings={138} moments={982} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -617,18 +617,19 @@ export default function TestimonyBody({
                     home so the whole configuration would match once it healed. He held them close for six months, waiting for the day he could replace the studs.
                 </P>
                 <P id="p46vc4" n={23}>
-                    And the ducks start. On September 1, watching the culture of the campground he
-                    was sitting in, he had the idea (
-                    <Moment ulid={DUCK_IDEA} t="3:37" />
-                    ). By September 5 he was on his third duck drop of the day: one handed to
-                    another Jeep owner in the laundry lot, and then a green-accented duck set on a
-                    second Jeep&rsquo;s windshield because the door style made the usual spot
-                    impractical (
-                    <Moment ulid={DUCK_DROPS} t="0:00" />,{" "}
-                    <Moment ulid={DUCK_DROPS} t="0:26" />
-                    ). He does this for two years. He gives small rubber ducks to strangers who own
-                    the same vehicle he owns, for nothing (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="10:54" />), and keeps track of which ones already
-                    have one.
+                    And the ducks start. He had brought a whole bag of them with him from home.
+                    On September 1, with the campground packed for the Labor Day weekend
+                    (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="7:00" />), which meant Jeeps, the idea arrived: walk
+                    the loops with the bag, and <em>if you see a Jeep, give him a ducky</em>{" "}
+                    (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="4:23" />). It also got him walking those loops at
+                    all. He was still learning to come out of his shell, the shell he would bust
+                    through by the time he reached the coast. By September 5 he was on his third
+                    duck drop of the day: one handed to another Jeep owner in the laundry lot,
+                    and then a green-accented duck set on a second Jeep&rsquo;s windshield
+                    because the door style made the usual spot impractical (<Moment ulid={DUCK_DROPS} t="0:00" />, <Moment ulid={DUCK_DROPS} t="0:26" />).
+                    He does this for two years. He gives small rubber ducks to strangers who own
+                    the same vehicle he owns, for nothing (<Moment ulid={DUCK_IDEA} t="10:54" />),
+                    and keeps track of which ones already have one.
                 </P>
                 <P id="p2yfzy" n={24}>
                     The morning before he announced he was leaving, he woke before dawn from a
