@@ -29,17 +29,10 @@ export default function CiteHow() {
             {open && (
                 <div className="mt-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-[13px] leading-relaxed text-slate-700">
                     <p>
-                        Cite the version and the paragraph. Every version of this testimony is
-                        frozen at a permanent address, so the citation can never drift.
-                    </p>
-                    <p className="mt-2 break-words rounded bg-white px-2.5 py-2 font-mono text-[12px] text-slate-800">
-                        Testimony of Robert Samuel White, v{v.version} ({v.date}), &para;1.
-                        <br />
-                        https://oprdvolunteerabuse.org/testimony/v{v.version}/#p1
-                    </p>
-                    <p className="mt-2">
-                        The number on any paragraph opens sharing for it: the permanent
-                        address, and the citation ready to copy.
+                        Every version of this testimony is frozen at its own permanent address,
+                        so a citation to a version and a paragraph can never drift. The number
+                        on any paragraph opens its sharing: the permanent address, and a
+                        citation ready to copy.
                     </p>
                 </div>
             )}
