@@ -622,8 +622,8 @@ export default function TestimonyBody({
                     (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="7:00" />), which meant Jeeps, the idea arrived: walk
                     the loops with the bag, and <em>if you see a Jeep, give him a ducky</em>{" "}
                     (<Moment ulid="01J6QCSQ1R94A4PSBEZ6EFPZVM" t="4:23" />). It also got him walking those loops at
-                    all. He was still learning to come out of his shell, the shell he would bust
-                    through by the time he reached the coast. By September 5 he was on his third
+                    all. He was still coming out of his shell that summer. By the coast there
+                    would be no shell left. By September 5 he was on his third
                     duck drop of the day: one handed to another Jeep owner in the laundry lot,
                     and then a green-accented duck set on a second Jeep&rsquo;s windshield
                     because the door style made the usual spot impractical (<Moment ulid={DUCK_DROPS} t="0:00" />, <Moment ulid={DUCK_DROPS} t="0:26" />).
