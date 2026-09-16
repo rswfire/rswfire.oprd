@@ -253,6 +253,9 @@ export default function TestimonyBody({
                         <span className="font-semibold text-orange-800">Their document</span>
                     </span>
                 </div>
+                <div className="mt-2 text-[13px] text-slate-600">
+                    <em>Italics are his words, verbatim, from the cited source.</em>
+                </div>
             </div>
 
             <Part n="One" title="THE SHEDDING">
@@ -348,7 +351,7 @@ export default function TestimonyBody({
                     down on the couch because a YouTube video had told him to sit down on the
                     couch. Sitting there he said, to nobody,{" "}
                     <Moment ulid={WALKTHROUGH} t="15:00">
-                        oh my God, I&rsquo;m falling in love with it
+                        <em>oh my God, I&rsquo;m falling in love with it</em>
                     </Moment>
                     .
                 </P>
@@ -773,12 +776,12 @@ export default function TestimonyBody({
                     respected himself too much for it (
                     <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="4:30" />
                     ):{" "}
-                    <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="4:48">I am not mad at the painter, I am mad at the painting</Moment>.
+                    <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="4:48"><em>I am not mad at the painter, I am mad at the painting</em></Moment>.
                     Through the channel he had closed he told the people who had judged him for the
                     teeth to let the guilt go, they were human (
                     <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="5:42" />
                     ), and named who he was talking to:{" "}
-                    <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="7:00">this is just a camera, I am staring at myself without teeth right now</Moment>.
+                    <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="7:00"><em>this is just a camera, I am staring at myself without teeth right now</em></Moment>.
                     If he had judged himself, they would have missed seven months of his life (
                     <Moment ulid="01J8BH6V6GJ6ART855S43T7MVX" t="9:34" />
                     ).
@@ -805,7 +808,7 @@ export default function TestimonyBody({
                     ). The word he chose for what the advice did was{" "}
                     <Moment ulid="01J8H8VWM89QEZNZB4KDR41RT3" t="6:00">dishonor</Moment>, and he left
                     it open at the end, unresolved:{" "}
-                    <Moment ulid="01J8H8VWM89QEZNZB4KDR41RT3" t="9:38">I will respect and honor your process, it is just unfortunate I never got that in return</Moment>.
+                    <Moment ulid="01J8H8VWM89QEZNZB4KDR41RT3" t="9:38"><em>I will respect and honor your process, it is just unfortunate I never got that in return</em></Moment>.
                 </P>
                 <P id="pb76zs" n={36}>
                     At seven the next morning, before a drive he put at six hours and probably
@@ -878,9 +881,9 @@ export default function TestimonyBody({
                     that follows him (
                     <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="5:15" />
                     ), and transmitted it whole through the channel he had shut:{" "}
-                    <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="15:26">you made me hate me</Moment>,
+                    <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="15:26"><em>you made me hate me</em></Moment>,
                     you fracture everything,{" "}
-                    <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="16:52">you are the problem, not me and not people like me</Moment>.
+                    <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="16:52"><em>you are the problem, not me and not people like me</em></Moment>.
                     He would have gone around the state if going around things were something he did.
                     It is not, so he drove into it (
                     <Moment ulid="01J8Q5R7JGK3KM3B62416VXB40" t="12:50" />
@@ -983,7 +986,7 @@ export default function TestimonyBody({
                     <Moment ulid="01J92ND90RHADWF5N4BF77702C" t="0:45" />
                     ). He crossed the border and something took hold. That mountain wants to be felt (
                     <Moment ulid="01J92ND90RHADWF5N4BF77702C" t="13:45" />
-                    ); I am in Nevada, I might not leave (
+                    ); <em>I am in Nevada, I might not leave</em> (
                     <Moment ulid="01J92ND90RHADWF5N4BF77702C" t="13:34" />
                     ). He stopped posting his location in real time, seven months of never having
                     done that, because someone could use it to cause him trouble, and he would delay
@@ -1183,7 +1186,7 @@ export default function TestimonyBody({
                     The next day the state park at Bandon was closed for construction and nothing north of it had space with Thanksgiving coming (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="8:41" />, <Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:09" />), so he turned around and drove forty-five minutes back south to <PlaceCite name="Humbug Mountain" /> (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="9:13" />), arriving at 5:30 into full dark (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:09" />). He detached the Jeep at the dump station and backed toward his site with no light but his own (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:14" />), lined up perfectly and certain of it (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="0:56" />), and stopped a millimeter off a tree because a man yelled (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:07" />). The man came over with a flashlight and walked him in (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="11:41" />). Minutes earlier he had sat behind another rig with his headlights up, lighting a stranger into a dark site, unasked (<Moment ulid={HUMBUG_ARRIVAL} t="11:09" />). There was no cell service and no internet there and sixteen hours of darkness a day (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="1:56" />, <Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:38" />), and he stayed, because the outside world was making decisions that were helping him make better ones (<Moment ulid="01JDQ4KVCR43KJZRG8Q9ARRSAW" t="2:57" />). He slept ten hours (<Moment ulid={HUMBUG_ARRIVAL} t="1:51" />).
                 </P>
                 <P id="pezaz7" n={59}>
-                    He spent Thanksgiving there alone, in a park full of holiday arrivals and no signal on the site (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="8:11" />, <Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="10:51" />), and filmed the whole evening. Burgers with olives and mayonnaise mixed together, cooked in the Ninja Foodi, because the hiking had put real demand on his body and he had reached the point of wanting to feed it well (<Moment ulid={THANKSGIVING} t="0:01" />). Captain Morgan cut with Pepsi, chosen over Mountain Dew after an AI described its colour as radioactive, though it did not take and he still drinks it (<Moment ulid={THANKSGIVING} t="3:15" />). Pine needles tracked in from Cape Blanco on the floor (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="2:45" />). The friendship bracelets lost somewhere and the thread still in a drawer (<Moment ulid={THANKSGIVING} t="8:27" />). I love this. I love my life (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="9:53" />). Twelve minutes in, he took the Rifter down off the wall, seven months after he had thought he might never show it again, and there was the corporation, the alliance, the thousand people who followed him, and the sovereignty they never took (<Moment ulid={THANKSGIVING} t="12:14" />). That was a dream (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="12:56" />). Then the alien necklace he has had since he was a teenager, and the Lake Cumberland map he had pulled off the wall that afternoon, Kentucky traded for a coast he could mark up (<Moment ulid={THANKSGIVING} t="13:37" />).
+                    He spent Thanksgiving there alone, in a park full of holiday arrivals and no signal on the site (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="8:11" />, <Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="10:51" />), and filmed the whole evening. Burgers with olives and mayonnaise mixed together, cooked in the Ninja Foodi, because the hiking had put real demand on his body and he had reached the point of wanting to feed it well (<Moment ulid={THANKSGIVING} t="0:01" />). Captain Morgan cut with Pepsi, chosen over Mountain Dew after an AI described its colour as radioactive, though it did not take and he still drinks it (<Moment ulid={THANKSGIVING} t="3:15" />). Pine needles tracked in from Cape Blanco on the floor (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="2:45" />). The friendship bracelets lost somewhere and the thread still in a drawer (<Moment ulid={THANKSGIVING} t="8:27" />). <em>I love this. I love my life</em> (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="9:53" />). Twelve minutes in, he took the Rifter down off the wall, seven months after he had thought he might never show it again, and there was the corporation, the alliance, the thousand people who followed him, and the sovereignty they never took (<Moment ulid={THANKSGIVING} t="12:14" />). That was a dream (<Moment ulid="01JDTRVGP8M6HVWM989ZCBH607" t="12:56" />). Then the alien necklace he has had since he was a teenager, and the Lake Cumberland map he had pulled off the wall that afternoon, Kentucky traded for a coast he could mark up (<Moment ulid={THANKSGIVING} t="13:37" />).
                 </P>
                 <P id="pclimb0" n={60}>
                     The ocean did not take. He sat on a rock at <PlaceCite name="Whaleshead Beach" /> and looked at it and did not go near it, because he did not know yet how safe it was and everything gets pattern matched first (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:44" />). Two dogs ran up to him (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:24" />). One settled onto the rock beside him like they were already friends, and the owner came up apologising, and they talked a long while (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="26:41" />). He stayed. He left still not understanding what the big deal was (<Moment ulid={BED_REST} t="25:59" />). He cannot be a passive observer of anything (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="14:02" />). Looking at waves is not engagement (<Moment ulid="01JEAT2HSRT54TFHKM54Q60T3A" t="14:08" />).
@@ -1307,7 +1310,7 @@ export default function TestimonyBody({
                     anybody watching, and it was how to get the papers off garlic cloves (
                     <Moment ulid={CHILI} t="3:05" />,{" "}
                     <Moment ulid={CHILI} t="3:55" />
-                    ). I am a sovereign being just like you (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="4:16" />). Respect the sovereignty.
+                    ). <em>I am a sovereign being just like you</em> (<Moment ulid="01JFNZ6AEG1VP92BF3WGNDZQN5" t="4:16" />). <em>Respect the sovereignty.</em>
                 </P>
                 <P id="pchil2" n={74}>
                     He already knew what the garlic would cost him. He had just learned it: a
@@ -1510,7 +1513,7 @@ export default function TestimonyBody({
                     the RV in a shop for electrical repairs and the two of them in a motel room (<Moment ulid="01J16CAD8RXTGQZTXG6447FJH3" t="0:02" />), he
                     made the promise he would have to break six months later:{" "}
                     <Moment ulid={REPAIR_DAY} t="8:15">
-                        I will never abandon Bailey. I got a camper because I had cats
+                        <em>I will never abandon Bailey. I got a camper because I had cats</em>
                     </Moment>
                     . He did it before he started volunteering rather than during. He was not going
                     to take a post at a park with something unresolved sitting in the back of the
@@ -1606,7 +1609,7 @@ export default function TestimonyBody({
                     his supervisor and told her this was the most awkward thing she could have
                     asked him to do, and the whole room laughed (<Moment ulid="01JGMV909RZFVTRPJ856K5XYXH" t="4:38" />). Then:{" "}
                     <Moment ulid={ORIENTATION} t="4:26">
-                        I&rsquo;m Sam, I&rsquo;m a nomad, I stare at the ocean
+                        <em>I&rsquo;m Sam, I&rsquo;m a nomad, I stare at the ocean</em>
                     </Moment>
                     . That was all of it. One of the volunteers in the room was the man from
                     Humbug Mountain who had yelled about the tree and walked him in by flashlight,
@@ -2165,8 +2168,8 @@ export default function TestimonyBody({
                     ). What he put down in its place was the plainest thing anyone put on that
                     table:{" "}
                     <Moment ulid={PICNIC} t="17:52">
-                        I am a very direct person. I mean what I say. You do not have to read
-                        subtext into anything I write
+                        <em>I am a very direct person. I mean what I say. You do not have to read
+                        subtext into anything I write</em>
                     </Moment>
                     .
                 </P>
@@ -2224,7 +2227,7 @@ export default function TestimonyBody({
                     ). At forty-two eighteen he stopped the man before the insinuation could be
                     finished:{" "}
                     <Moment ulid={PICNIC} t="42:18">
-                        I think you don&rsquo;t want to actually say what you&rsquo;re about to
+                        <em>I think you don&rsquo;t want to actually say what you&rsquo;re about to</em>
                     </Moment>
                     . Then the shape of the case: every other week there was an instance, a pattern,
                     consistent throughout the month (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="44:20" />). He asked for the instances (<Moment ulid="01JNK2TKG01JTERAMB7J6AKPK1" t="44:42" />), and two were
@@ -2274,7 +2277,7 @@ export default function TestimonyBody({
                     At fifty minutes he turned it around. If positive intent is the standard, then
                     apply it here:{" "}
                     <Moment ulid={PICNIC} t="50:10">
-                        I&rsquo;m not getting that benefit of the doubt
+                        <em>I&rsquo;m not getting that benefit of the doubt</em>
                     </Moment>
                     . There is a silence. Then: I see where you&rsquo;re coming from. I may not be
                     able to help you with that (
@@ -2292,7 +2295,7 @@ export default function TestimonyBody({
                     <Moment ulid={PICNIC} t="53:58" />
                     ). He conceded the only concrete thing anyone had actually asked of him:{" "}
                     <Moment ulid={PICNIC} t="54:56">
-                        you won&rsquo;t have to worry about emails from me
+                        <em>you won&rsquo;t have to worry about emails from me</em>
                     </Moment>
                     .
                 </P>
@@ -2513,7 +2516,7 @@ export default function TestimonyBody({
                     abusing me. There&rsquo;s no way that you could be doing this right now</em> (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="14:25" />).
                     As the manager turned a homeless veteran&rsquo;s journal that he had turned in
                     into the pretext and would not stop, he named what he was doing,{" "}
-                    <Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="14:58">you&rsquo;re a bully</Moment>,
+                    <Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="14:58"><em>you&rsquo;re a bully</em></Moment>,
                     and did not raise his voice to say it. The manager dismissed him then and there,
                     on the phone. One hour later he was at the RV, taking the keys, the binder and
                     the cart. The removal was built to be verbal and private. He set a camera at
@@ -2777,7 +2780,7 @@ export default function TestimonyBody({
                     himself in it because it does not ask anybody for permission to be what it is,
                     and it reaches everything (<Moment ulid="01JQ807JC0CG5M84DPGHVMQ6A1" t="1:47" />):{" "}
                     <Moment ulid={WAVES} t="2:03">
-                        nothing can contain the ocean, and nothing can contain me either
+                        <em>nothing can contain the ocean, and nothing can contain me either</em>
                     </Moment>
                     . Two days later he spent the day driving the Umpqua coast with John, a fellow
                     volunteer twenty years his senior, handing rubber ducks to other Jeep owners in
