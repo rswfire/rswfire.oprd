@@ -23,8 +23,10 @@ interface Entry {
 export default function TestimonyToc() {
     const [entries, setEntries] = useState<Entry[]>([]);
     const [active, setActive] = useState(0);
+    const [para, setPara] = useState(1);
     const [open, setOpen] = useState(false);
     const listRef = useRef<HTMLDivElement | null>(null);
+    const paraEls = useRef<HTMLElement[]>([]);
     const { version, isCurrent } = useTestimonyVersion();
 
     // Read the parts from the rendered page, once, after mount.
@@ -34,24 +36,35 @@ export default function TestimonyToc() {
             label: el.dataset.part ?? el.id,
         }));
         setEntries(found);
+        paraEls.current = [...document.querySelectorAll<HTMLElement>("p[id]")].filter((el) =>
+            /^p\d+$/.test(el.id)
+        );
     }, []);
 
-    // Track the part the reader is in: the last one whose top has passed the
-    // upper third of the viewport.
+    // Track where the reader is: the last chapter and the last paragraph whose
+    // top has passed the middle of the viewport.
     useEffect(() => {
         if (entries.length === 0) return;
-        const onScroll = () => {
-            const line = window.innerHeight / 3;
+        let raf = 0;
+        const measure = () => {
+            raf = 0;
+            const line = window.innerHeight / 2;
             let current = 0;
             entries.forEach((e, i) => {
                 const el = document.getElementById(e.id);
                 if (el && el.getBoundingClientRect().top <= line) current = i;
             });
             setActive(current);
+            let p = 1;
+            for (const el of paraEls.current) {
+                if (el.getBoundingClientRect().top <= line) p = Number(el.id.slice(1));
+            }
+            setPara(p);
         };
-        onScroll();
+        const onScroll = () => { if (!raf) raf = window.requestAnimationFrame(measure); };
+        measure();
         window.addEventListener("scroll", onScroll, { passive: true });
-        return () => window.removeEventListener("scroll", onScroll);
+        return () => { window.removeEventListener("scroll", onScroll); if (raf) window.cancelAnimationFrame(raf); };
     }, [entries]);
 
     // Keep the open list scrolled to the part the reader is in.
@@ -129,6 +142,9 @@ export default function TestimonyToc() {
                         <span className="block truncate font-mono text-[13px] text-slate-900">
                             {entries[active]?.label}
                         </span>
+                    </span>
+                    <span className="shrink-0 font-mono text-[13px] font-bold uppercase text-gray-900">
+                        C{active + 1} P{para}
                     </span>
                     <Icon
                         name={open ? "ChevronDown" : "ChevronUp"}
