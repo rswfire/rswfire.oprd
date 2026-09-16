@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={1000} />
+            <TestimonyMeta documents={105} recordings={138} moments={999} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -694,7 +694,7 @@ export default function TestimonyBody({
                     that is life (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="3:44" />). <em>I know that it will transform me. I cannot know how. I
                     cannot even know with certainty that I&rsquo;ll survive this. That is a fact.
                     That is why there&rsquo;s some fear. And it&rsquo;s never a reason to
-                    stop</em> (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:01" />). <em>I processed my feelings, then I got to work</em> (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:22" />).
+                    stop</em> (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:01" />).
                 </P>
                 <P id="putvbz" n={28}>
                     He did not leave for another five days. He spent them at a campground on
