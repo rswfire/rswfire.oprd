@@ -158,6 +158,11 @@ function partId(title: string): string {
     return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
+// Titles are set in caps on the page; a citation wants them as words.
+function titleCase(t: string): string {
+    return t.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
+}
+
 // Chapter numbers, so a part's address is its number: /testimony/v1.4/#c7.
 // The slug stays as a second anchor inside the section so links copied before
 // numbers became the address keep resolving.
@@ -174,7 +179,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
             <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
                 {title}
-                <Hash id={c} label={`Chapter ${n}, ${title}`} />
+                <Hash id={c} label={`Chapter ${n}, ${titleCase(title)}`} />
             </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">{children}</div>
         </section>
