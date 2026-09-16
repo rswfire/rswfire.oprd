@@ -606,9 +606,9 @@ export default function TestimonyBody({
                     awesome (<Moment ulid="01J6GV2VZG1R256970K5A03BS6" t="4:26" />).
                 </P>
                 <P id="p8zhm9" n={22}>
-                    The next day he drove forty minutes for coffee (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="3:30" />) and came home from
+                    The next day he drove forty minutes for coffee and came home from
                     Bowling Green with three new piercings (
-                    <Moment ulid={BOWLING_GREEN} t="8:46" />
+                    <Moment ulid={BOWLING_GREEN} t="3:30" />, <Moment ulid={BOWLING_GREEN} t="8:46" />
                     ). He had wanted the cartilage done for months (<Moment ulid="01J6KEMCQ07SXFNXT4TR3VSYFR" t="9:26" />), and carried ten identical hoops
                     home so the whole configuration would match once it healed. He held them close for six months, waiting for the day he could replace the studs.
                 </P>
