@@ -3245,11 +3245,11 @@ export default function TestimonyBody({
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
-                    in one line: <em>Fyi &mdash; sharing for situational awareness since he is now
-                    including the Governor as well as our Director.</em> The trigger was not
+                    in one line: &ldquo;Fyi &mdash; sharing for situational awareness since he is now
+                    including the Governor as well as our Director.&rdquo; The trigger was not
                     anything he had done. It was who else was now reading. The next morning the
-                    order came back: <em>Capt. Kennedy is requesting that a threat assessment be
-                    conducted asap.</em>
+                    order came back: &ldquo;Capt. Kennedy is requesting that a threat assessment be
+                    conducted asap.&rdquo;
                 </P>
                 <P id="p8knha" n={204}>
                     It went to the Major Crimes Section, and to a detective who is a task force
@@ -3269,12 +3269,12 @@ export default function TestimonyBody({
                 </P>
                 <P id="pewtmp" n={206}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
-                    him <em>Suspect</em>, and wrote the basis into it: sending <em>concerning emails
-                    to former supervisors in parks department and publicly airing grievances</em>.
+                    him &ldquo;Suspect&rdquo;, and wrote the basis into it: sending &ldquo;concerning emails
+                    to former supervisors in parks department and publicly airing grievances&rdquo;.
                     That is the whole of it. Emails, and publishing. The same day he sent his
-                    sergeant the <em>Hasty Plan for Robert White knock and talk</em>, and his
-                    Forest Service supervisor <em>was told not to advise WHITE that FS LE was
-                    inquiring about his whereabouts</em>.
+                    sergeant the &ldquo;Hasty Plan for Robert White knock and talk&rdquo;, and his
+                    Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was
+                    inquiring about his whereabouts&rdquo;.
                 </P>
                 <P id="pqdfr8" n={207}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
@@ -3291,8 +3291,8 @@ export default function TestimonyBody({
                 </P>
                 <P id="pt7c8w" n={208}>
                     The second detective&rsquo;s own report closes the question of what they had:
-                    no direct threats, no <em>leakage towards violence or violent behavior</em>,
-                    and <em>no evidence White has committed any crimes</em>. The report refers to
+                    no direct threats, no &ldquo;leakage towards violence or violent behavior&rdquo;,
+                    and &ldquo;no evidence White has committed any crimes&rdquo;. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
                 <P id="pwmw3z" n={209}>
@@ -3303,7 +3303,7 @@ export default function TestimonyBody({
                     were. Hours after that question, the special agent sent a Lane County deputy a
                     file on him: his name, his date of birth, his driver&rsquo;s licence number,
                     where he lives, his schedule and his duties, his correspondence and his text
-                    messages, and a promise to <em>keep you up to date</em>.
+                    messages, and a promise to &ldquo;keep you up to date&rdquo;.
                 </P>
                 <P id="pn89s9" n={210}>
                     Four months later the Forest Service put its own role in writing: it did not
@@ -3461,12 +3461,12 @@ export default function TestimonyBody({
                     He read every page and built the inventory of what was missing, item by item,
                     each with the ground the department stood on. The body-worn camera video of
                     three armed men at his door, withheld under a statute cited to the Attorney
-                    General and never to him, while their own report says <em>please see attached
-                    BWC</em>. The planning document, <em>OSP Hasty Form Robert White.pdf</em>, named
+                    General and never to him, while their own report says &ldquo;please see attached
+                    BWC&rdquo;. The planning document, &ldquo;OSP Hasty Form Robert White.pdf&rdquo;, named
                     in the production and not included, with no exemption claimed and no disposition
                     given. His DMV file and a report on him, named and not included, the same
                     silence. The call logs for calls their own emails arrange. The text messages:{" "}
-                    <em>shoot me a text or call Monday to confirm for Tuesday</em>. The calendar
+                    &ldquo;shoot me a text or call Monday to confirm for Tuesday&rdquo;. The calendar
                     entries. Messages produced as headers with no body, no redaction marks, and no
                     statement that they are empty. The fusion center traffic beyond a single chain.
                     And the statement somebody characterised as a veiled threat, which he demanded
