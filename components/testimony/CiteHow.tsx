@@ -33,13 +33,13 @@ export default function CiteHow() {
                         frozen at a permanent address, so the citation can never drift.
                     </p>
                     <p className="mt-2 break-words rounded bg-white px-2.5 py-2 font-mono text-[12px] text-slate-800">
-                        Testimony of Robert Samuel White, v{v.version} ({v.date}), &para;27.
+                        Testimony of Robert Samuel White, v{v.version} ({v.date}), &para;1.
                         <br />
-                        https://oprdvolunteerabuse.org/testimony/v{v.version}/#p27
+                        https://oprdvolunteerabuse.org/testimony/v{v.version}/#p1
                     </p>
                     <p className="mt-2">
                         The number on any paragraph copies that paragraph&rsquo;s permanent
-                        address. The # on any part title does the same for the whole part.
+                        address.
                     </p>
                 </div>
             )}
