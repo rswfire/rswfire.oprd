@@ -413,8 +413,7 @@ export default function TestimonyBody({
                     pulled all of it back out and did it again (
                     <Moment ulid={INSULATION} t="0:30" />,{" "}
                     <Moment ulid={INSULATION} t="3:15" />
-                    ). <em>Always do things right if you can.</em> (<Moment ulid="01HSC0KG6GC0E8DB5PA8EASV3W" t="0:38" />) Nobody but him would ever have known it
-                    was insufficient.
+                    ). <em>Always do things right if you can.</em> (<Moment ulid="01HSC0KG6GC0E8DB5PA8EASV3W" t="0:38" />)
                 </P>
                 <P id="p5mrj9" n={12}>
                     On March 20 he set the date: April 11, his forty-seventh birthday (
