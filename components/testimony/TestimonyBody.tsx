@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={137} moments={964} />
+            <TestimonyMeta documents={105} recordings={137} moments={969} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -539,21 +539,33 @@ export default function TestimonyBody({
                     )
                 </P>
                 <P id="pt9kx7" n={19}>
-                    That summer is also where you find out what he was shedding, and it is not obvious. In August he recorded
-                    six minutes about a donkey (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="0:58" />). There was a house on the road he drove twice a day
-                    to reach a trail, with a big fenced yard and one donkey in it and no other
-                    animal, and across a month of passes the donkey was always in the same corner
-                    near the driveway with its head tilted down over the fence (
-                    <Moment ulid={DONKEY} t="0:58" />,{" "}
-                    <Moment ulid={DONKEY} t="2:21" />
-                    ). Every pass deepened it (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="3:55" />), because there is a cumulative effect (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="4:14" />). He mapped
-                    every route to intervention and found each one ended in nothing (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="4:24" />), so the only
-                    variable left was the road, and he gave up the trail (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:16" />). He has no filter (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:28" />). He
-                    cannot not see it and not feel it (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:31" />). That is the sense in which he may be the
-                    loneliest person on earth, not the ordinary sense of the word but the
-                    existential one (
-                    <Moment ulid={DONKEY} t="0:05" />
-                    ). He named it about himself not because it was broken, but because it was not.
+                    That summer is also where you find out what he was shedding, and it is not
+                    obvious. In August he opened a recording with the largest claim he had ever
+                    made about himself. <em>I think I might be the loneliest person on Earth</em>{" "}
+                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="0:05" />), not in the word&rsquo;s simple context:{" "}
+                    <em>existentially, cosmically alone</em> (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="0:20" />). Then he set out to
+                    prove it, with an analogy that was not one: <em>this analogy is a real thing,
+                    something that really happened to me</em> (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="0:42" />). For a month he had
+                    driven the same road twice a day to a trail, past a house with a big fenced
+                    yard and one donkey in it and no other animal. Different days, different
+                    hours, and the donkey always in the same corner by the driveway, head tilted
+                    down over the fence (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="1:57" />, <Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="2:21" />). He knew
+                    nothing about donkeys (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="2:28" />). He felt the animal was sad and alone,
+                    and every pass deepened it, because there is a cumulative effect (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="4:14" />).
+                    Midway through the explanation a spider came down from the ceiling, and the
+                    case for cosmic loneliness waited while he dealt with it (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="3:07" />). He
+                    ran the interventions. Animal welfare, dismissed, because he could model the
+                    whole call and the call went nowhere (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="4:31" />). Talking to the owners,
+                    no version of it worked (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:01" />). The only variable left was the road,
+                    so he gave up the trail (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:16" />). <em>I don&rsquo;t have a filter. I
+                    can&rsquo;t not see that and feel it</em> (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="5:28" />). That night he put
+                    the question to an AI: how would other people perceive that situation. It
+                    could not come up with a single person who noticed the donkey the way he did
+                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:07" />). Most would never see it, and to the locals it would be part
+                    of the background of their lives (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:20" />). <em>Nobody sees that donkey
+                    except me. And that&rsquo;s why I know I&rsquo;m alone in this world</em>{" "}
+                    (<Moment ulid="01J57XVSD0PWXARCQPBMEY3BCT" t="6:33" />). That is what the shedding looked like from inside: coming to
+                    terms with his rarity, with proof he trusted.
                 </P>
                 <P id="pzghws" n={20}>
                     Two weeks later he was sitting on a bench when a doe and two fawns boxed him
