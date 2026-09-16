@@ -8,6 +8,7 @@
 import Link from "next/link";
 import { Sprout } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
+import { TESTIMONY_META } from "@/data/testimonyMeta";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -46,10 +47,10 @@ export default function TestimonyCard() {
                 </Link>
 
                 <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-gray-600">
-                    <span><span className="font-bold text-gray-900">228</span> numbered paragraphs</span>
-                    <span><span className="font-bold text-gray-900">105</span> documents</span>
-                    <span><span className="font-bold text-gray-900">137</span> recordings</span>
-                    <span><span className="font-bold text-gray-900">963</span> cited moments</span>
+                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.paragraphs}</span> numbered paragraphs</span>
+                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.documents}</span> documents</span>
+                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.recordings}</span> recordings</span>
+                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.moments}</span> cited moments</span>
                     <Link
                         href="/testimony/#version-meta"
                         className="font-mono text-gray-400 underline decoration-gray-300 underline-offset-2 hover:text-emerald-700"
