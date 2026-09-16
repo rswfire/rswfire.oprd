@@ -174,7 +174,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
             <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
                 {title}
-                <Hash id={c} label={`Part ${n}, ${title}`} />
+                <Hash id={c} label={`Chapter ${n}, ${title}`} />
             </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">{children}</div>
         </section>

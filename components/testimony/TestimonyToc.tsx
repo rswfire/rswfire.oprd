@@ -124,7 +124,7 @@ export default function TestimonyToc() {
                     <Icon name="Sprout" className="shrink-0 text-violet-700" size={16} strokeWidth={2} />
                     <span className="min-w-0 flex-1">
                         <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                            Part {active + 1} of {entries.length}
+                            Chapter {active + 1} of {entries.length}
                         </span>
                         <span className="block truncate font-mono text-[13px] text-slate-900">
                             {entries[active]?.label}
