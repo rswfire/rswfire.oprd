@@ -532,10 +532,11 @@ export default function TestimonyBody({
                     hiking is one of the things that defines him (<Moment ulid="01HXHP0FNRVDAGB49E18SVBR3F" t="5:27" />). He was still smoking (<Moment ulid="01HXHP0FNRVDAGB49E18SVBR3F" t="6:37" />), carrying
                     only the vape pen, and the step-down to patches was a plan rather than a wish (
                     <Moment ulid={BARREN} t="5:54" />
-                    ). Midway up the trail he stated the principle the whole year runs on: run
-                    toward what scares you (
+                    ). Midway up the trail he stated the principle the whole year runs on.{" "}
+                    <em>I really want you to hear this. If it scares you, run towards it. I mean
+                    that.</em> (
                     <Moment ulid={BARREN} t="13:00" />
-                    ).
+                    )
                 </P>
                 <P id="pt9kx7" n={19}>
                     That summer is also where you find out what he was shedding, and it is not obvious. In August he recorded
