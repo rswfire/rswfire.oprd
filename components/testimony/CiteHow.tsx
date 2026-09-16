@@ -38,8 +38,8 @@ export default function CiteHow() {
                         https://oprdvolunteerabuse.org/testimony/v{v.version}/#p1
                     </p>
                     <p className="mt-2">
-                        The number on any paragraph copies that paragraph&rsquo;s permanent
-                        address.
+                        The number on any paragraph opens sharing for it: the permanent
+                        address, and the citation ready to copy.
                     </p>
                 </div>
             )}
