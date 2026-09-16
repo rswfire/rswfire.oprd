@@ -25,7 +25,7 @@ export const TESTIMONY_VERSIONS: TestimonyVersion[] = [
         version: "1.4",
         date: "September 15, 2026",
         d: "2026-09-15",
-        note: "",
+        note: "polished chapter one",
     },
     {
         version: "1.3",
