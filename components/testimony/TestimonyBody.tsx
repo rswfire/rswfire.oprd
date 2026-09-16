@@ -187,7 +187,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={105} recordings={138} moments={1002} />
+            <TestimonyMeta documents={105} recordings={138} moments={1007} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -707,26 +707,28 @@ export default function TestimonyBody({
                     (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:22" />). The storage bays got organized (<Moment ulid="01J76KRY4GSWFARFZXHCPH3MYW" t="4:28" />).
                 </P>
                 <P id="putvbz" n={28}>
-                    He did not leave for another five days, and the reason was his mother (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:03" />). On
-                    September 12, at exactly noon, with the Jeep hitched and ready, he recorded the
-                    real departure (
-                    <Moment ulid={LEAVING_KY_FINAL} t="0:05" />
-                    ). He had his new teeth, fitted and comfortable (
-                    <Moment ulid={LEAVING_KY_FINAL} t="0:31" />
-                    ). And he had told her exactly what he was doing and why, including the thing
-                    that had been holding him in place: her kidney disease is advanced and she
-                    weighs eighty-seven pounds, he had always expected to be there at the end (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:31" />), and
-                    leaving meant he might never see her again (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="2:00" />).{" "}
-                    <Moment ulid={LEAVING_KY_FINAL} t="1:03">She told him to go</Moment>. Grief was
-                    the first hard thing he expected to meet on the road, and he would face it when
-                    it came (
-                    <Moment ulid={LEAVING_KY_FINAL} t="2:13" />
-                    ). Then he took the auxiliary mirrors off the RV, the ones he had added when he
-                    was afraid to drive it, because six months had made them unnecessary. What
-                    people saw in those six months was caution. What they could not see was that he
-                    trusted himself the entire time (
-                    <Moment ulid={LEAVING_KY_FINAL} t="2:45" />
-                    ).
+                    He did not leave for another five days. He spent them at a campground on
+                    Nolin River Lake and never went to see the lake; there was a lot to do
+                    (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="0:34" />). On September 12, at exactly noon, which felt fitting somehow
+                    (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="0:05" />), with the home ready and the Jeep hooked up, he recorded the
+                    departure. The new teeth were in, comfortable, natural, no sore spots; his
+                    dentist did a wonderful job (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="0:46" />). <em>I made closure with my
+                    mother</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:03" />). He had told her exactly what he was doing and why,
+                    and the thing that had been keeping him there: her kidney disease is
+                    advanced, she weighs eighty-seven pounds, and he had always thought he would
+                    be there with her at the end (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:22" />). Leaving meant no turning back,
+                    and he might never see her again (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="1:57" />). <em>And she told me to go.
+                    She validated me</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="2:04" />). Grief, he expected, would be his first
+                    big challenge on the road; it is not possible to know how it will feel until
+                    it happens, and he would face it (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="2:34" />). He took down the auxiliary
+                    mirrors he had added six months earlier, when he was afraid of the rig and
+                    thought he needed <em>mirrors to the mirrors</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:15" />). The main
+                    ones were enough, and he knew that now because he had the experience to know
+                    it (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="2:58" />). <em>You saw a guy who was being overly cautious. What you
+                    didn&rsquo;t know is that I trusted myself fully. I never doubted myself.
+                    Not once. Not in any way that matters</em> (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:36" />). There were moments
+                    he questioned his decisions. That is not doubt (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="3:56" />). It was another
+                    thing they never understood about him (<Moment ulid="01J7KRK15RGX02GAFPAQ57JBGA" t="4:03" />).
                 </P>
                 <P id="psrkfs" n={29}>He pulled out alone.</P>
             </Part>
