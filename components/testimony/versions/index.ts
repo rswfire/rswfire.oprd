@@ -3,6 +3,7 @@ import TestimonyBodyV1_0 from "./v1.0";
 import TestimonyBodyV1_1 from "./v1.1";
 import TestimonyBodyV1_2 from "./v1.2";
 import TestimonyBodyV1_3 from "./v1.3";
+import TestimonyBodyV1_4 from "./v1.4";
 
 // Frozen bodies for superseded versions. When a new version is cut, the
 // outgoing body is copied here as v<old>.tsx and registered below, so
@@ -16,4 +17,5 @@ export const FROZEN_BODIES: Record<
     "1.1": TestimonyBodyV1_1,
     "1.2": TestimonyBodyV1_2,
     "1.3": TestimonyBodyV1_3,
+    "1.4": TestimonyBodyV1_4,
 };
