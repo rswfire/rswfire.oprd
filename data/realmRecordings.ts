@@ -387,6 +387,7 @@ export const REALM_RECORDINGS: RealmRecording[] = [
     { u: "01J8Q5R7JGK3KM3B62416VXB40", d: "2024-09-26", t: "Entering Wyoming, Naming Matthew Shepard", s: 1022 },
     { u: "01J8T0G4C8ZZMEA9WT6R35366H", d: "2024-09-27", t: "Surveying New Campground and Walking to Siltcoos Lake", s: 1108 },
     { u: "01J8T7R37GV4D272NF98VQCXJ8", d: "2024-09-27", t: "Sealing a Failed RV Slide Before Oregon", s: 815 },
+    { u: "01J8REV7N0Q440VE7PFYG10DM7", d: "2024-09-27", t: "Crossing Wyoming Toward Oregon, Naming Matthew Shepard", s: 2979 },
     { u: "01J8X4TSK0F0R1GCV5748XSE84", d: "2024-09-28", t: "Driving Wyoming Toward Oregon With Bailey", s: 1513 },
     { u: "01J8XT857G2D7M88YJ6B51BGVH", d: "2024-09-29", t: "Recording Night Sky at Wagon Trail Pullout", s: 586 },
     { u: "01J909B3F005XP4AKX6KWZ1HRK", d: "2024-09-30", t: "Approaching Oregon Without a Plan", s: 544 },
