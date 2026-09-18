@@ -34,7 +34,7 @@ export default function TestimonyCard() {
             <div className="bg-gradient-to-b from-emerald-50/90 to-white px-6 pt-8 pb-6 sm:px-8">
                 <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-emerald-700">
                     <Sprout size={14} strokeWidth={2} className="shrink-0" />
-                    For the first time, his complete testimony
+                    Testimony of Robert Samuel White
                 </div>
                 <Link href="/testimony" className="mt-2 block">
                     <h2 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">

@@ -31,11 +31,11 @@ export default function TestimonyToc() {
 
     // Read the parts from the rendered page, once, after mount.
     useEffect(() => {
-        const found = [...document.querySelectorAll<HTMLElement>("section[data-part]")].map((el) => ({
+        const parts = [...document.querySelectorAll<HTMLElement>("section[data-part]")].map((el) => ({
             id: el.id,
-            label: el.dataset.part ?? el.id,
+            label: el.dataset.toc ?? el.dataset.part ?? el.id,
         }));
-        setEntries(found);
+        setEntries([{ id: "__top", label: "TOP" }, ...parts]);
         paraEls.current = [...document.querySelectorAll<HTMLElement>("p[id]")].filter((el) =>
             /^p\d+$/.test(el.id)
         );
@@ -49,23 +49,34 @@ export default function TestimonyToc() {
         const measure = () => {
             raf = 0;
             const line = window.innerHeight / 2;
-            let current = 0;
-            entries.forEach((e, i) => {
-                const el = document.getElementById(e.id);
-                if (el && el.getBoundingClientRect().top <= line) current = i;
-            });
-            setActive(current);
+            // The chapter is read off the paragraph the reader is in, not
+            // measured separately, so the two can never disagree at a
+            // chapter boundary.
             let p = 1;
+            let sec = "";
             for (const el of paraEls.current) {
-                if (el.getBoundingClientRect().top <= line) p = Number(el.id.slice(1));
+                if (el.getBoundingClientRect().top > line) break;
+                p = Number(el.id.slice(1));
+                sec = el.closest("section[data-part]")?.id ?? sec;
             }
             setPara(p);
+            const i = sec ? entries.findIndex((e) => e.id === sec) : 0;
+            setActive(i > 0 ? i : 0);
         };
         const onScroll = () => { if (!raf) raf = window.requestAnimationFrame(measure); };
         measure();
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => { window.removeEventListener("scroll", onScroll); if (raf) window.cancelAnimationFrame(raf); };
     }, [entries]);
+
+    // Open list: the page behind it is frozen, so a scroll gesture moves the
+    // list rather than the testimony under it.
+    useEffect(() => {
+        if (!open) return;
+        const { overflow } = document.body.style;
+        document.body.style.overflow = "hidden";
+        return () => { document.body.style.overflow = overflow; };
+    }, [open]);
 
     // Keep the open list scrolled to the part the reader is in.
     useEffect(() => {
@@ -75,6 +86,11 @@ export default function TestimonyToc() {
     }, [open, active]);
 
     const jump = useCallback((id: string) => {
+        if (id === "__top") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setOpen(false);
+            return;
+        }
         const el = document.getElementById(id);
         if (!el) return;
         const y = el.getBoundingClientRect().top + window.scrollY - 80;
@@ -85,6 +101,14 @@ export default function TestimonyToc() {
     if (entries.length === 0) return null;
 
     return (
+        <>
+            {open && (
+                <div
+                    onClick={() => setOpen(false)}
+                    className="fixed inset-0 z-[69] bg-slate-900/10"
+                    aria-hidden
+                />
+            )}
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[70] flex justify-center px-2 pb-2 sm:px-4 sm:pb-4">
             <div className="pointer-events-auto w-full max-w-3xl overflow-hidden rounded-2xl border border-slate-300 bg-white/95 shadow-lg backdrop-blur">
                 {!isCurrent && (
@@ -119,8 +143,12 @@ export default function TestimonyToc() {
                                     i === active ? "text-violet-800" : "text-slate-700"
                                 }`}
                             >
-                                <span className="w-6 shrink-0 font-mono text-[11px] text-slate-400">
-                                    {String(i + 1).padStart(2, "0")}
+                                <span className="flex w-6 shrink-0 items-center justify-start font-mono text-[11px] text-slate-400">
+                                    {e.id === "__top" ? (
+                                        <Icon name="ChevronUp" size={14} strokeWidth={2.5} />
+                                    ) : e.id === "c15" ? null : (
+                                        String(i).padStart(2, "0")
+                                    )}
                                 </span>
                                 <span className={i === active ? "font-semibold" : undefined}>{e.label}</span>
                             </button>
@@ -137,14 +165,18 @@ export default function TestimonyToc() {
                     <Icon name="Sprout" className="shrink-0 text-violet-700" size={16} strokeWidth={2} />
                     <span className="min-w-0 flex-1">
                         <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                            Chapter {active + 1} of {entries.length}
+                            {entries[active]?.id === "__top"
+                                ? "The testimony"
+                                : entries[active]?.id === "c15"
+                                  ? "Addendum"
+                                  : `Chapter ${active} of ${entries.length - 2}`}
                         </span>
                         <span className="block truncate font-mono text-[13px] text-slate-900">
                             {entries[active]?.label}
                         </span>
                     </span>
                     <span className="shrink-0 font-mono text-xl font-bold text-gray-900">
-                        &sect;{active + 1} &para;{para}
+                        &sect;{active || 1} &para;{para}
                     </span>
                     <Icon
                         name={open ? "ChevronDown" : "ChevronUp"}
@@ -155,5 +187,6 @@ export default function TestimonyToc() {
                 </button>
             </div>
         </div>
+        </>
     );
 }
