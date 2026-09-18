@@ -4707,6 +4707,36 @@ export const OPRD_THREAD: RecordsThreadData = {
             ],
             eml: "/records/oprd/eml/2026-09-15_1244_testimony-of-robert-samuel-white.eml",
         },
+        {
+            id: "chapter-two-rewritten",
+            ulid: "01M2RPE3B0PGSNC3BQ8RCFS9RZ",
+            date: "September 17, 2026",
+            d: "2026-09-17",
+            time: "3:05 PM",
+            from: "Robert Samuel White",
+            to: "OPRD leadership",
+            kind: "notice",
+            title: "Notice that the testimony will keep changing",
+            summary:
+                "Notice of a substantive rewrite of chapter two, sent to the same seven OPRD staff with the Governor, OSP Risk Management and DAS Risk Management copied. He states he will continue to edit the document because it is his story to tell, that every version is permanent and available through the revisions feature, and that an addendum on the end of the world is coming.",
+            docs: [{ label: "Notice that the testimony will keep changing", href: "/records/oprd/2026-09-17-chapter-two-rewritten.pdf" }],
+            eml: "/records/oprd/eml/2026-09-17_1505_chapter-two-rewritten.eml",
+        },
+        {
+            id: "on-the-end-of-the-world",
+            ulid: "01M2SHMGVGDRK544YRJ1K92HQB",
+            date: "September 17, 2026",
+            d: "2026-09-17",
+            time: "11:00 PM",
+            from: "Robert Samuel White",
+            to: "Logan Bliss, OPRD",
+            kind: "notice",
+            title: "On the End of the World",
+            summary:
+                "The addendum to the testimony, sent in full to the volunteer services lead with OPRD leadership and the Governor copied. It is the account of the February 2025 walk in his own words: the boundary he set first, what he said about systemic failure and what it means for a gay man, and why he withdrew the ranger assistant application. It ends: \"The subject is closed again.\"",
+            docs: [{ label: "On the End of the World", href: "/records/oprd/2026-09-17-on-the-end-of-the-world.pdf" }],
+            eml: "/records/oprd/eml/2026-09-17_2300_on-the-end-of-the-world.eml",
+        },
     ],
 };
 
