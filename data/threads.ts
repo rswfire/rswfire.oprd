@@ -4737,6 +4737,60 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "On the End of the World", href: "/records/oprd/2026-09-17-on-the-end-of-the-world.pdf" }],
             eml: "/records/oprd/eml/2026-09-17_2300_on-the-end-of-the-world.eml",
         },
+        {
+            id: "estimate-on-the-september-5-request",
+            ulid: "01M2VE25T0WZXS6PE4BXJK0693",
+            date: "September 18, 2026",
+            d: "2026-09-18",
+            time: "4:36 PM",
+            from: "Katie Gauthier, OPRD",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The September 5 request, priced at $1,728",
+            summary:
+                "An invoice for the request covering Director Sumption's and Deputy Director Collier's communications, notes and calendar entries. Fifty to fifty-four hours at thirty-two dollars an hour. Six hours to search every message on every device belonging to the Director; forty hours for the same two people's own notes and calendar entries, which is three quarters of the total. The fee waiver requested under ORS 192.324(5) is not granted, denied, or mentioned.",
+            docs: [
+                { label: "The September 5 request, priced at $1,728", href: "/records/oprd/2026-09-18-estimate-on-the-september-5-request.pdf" },
+                { label: "The invoice", href: "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-18_1636_estimate-on-the-september-5-request.eml",
+        },
+        {
+            id: "estimate-on-the-september-11-request",
+            ulid: "01M2VEFTARQHQW029628GQA1Y7",
+            date: "September 18, 2026",
+            d: "2026-09-18",
+            time: "4:44 PM",
+            from: "Katie Gauthier, OPRD",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The Timeline version histories, priced at $80",
+            summary:
+                "An invoice for the request covering every version and revision of the Timeline of Events document produced to the Oregon State Police. Two and a half hours at thirty-two dollars an hour. Item 2, the version history log recording the date, time and account of each save, is answered “This is not a record we have,” on the same page where item 1 agrees to produce the SharePoint or OneDrive version histories of the same file.",
+            docs: [
+                { label: "The Timeline version histories, priced at $80", href: "/records/oprd/2026-09-18-estimate-on-the-september-11-request.pdf" },
+                { label: "The invoice", href: "/records/oprd/attachments/01m2veftarqhqw029628gqa1y7-invoice-public-records-Robert-Samuel-White-request-09112026.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-18_1644_estimate-on-the-september-11-request.eml",
+        },
+        {
+            id: "the-estimates",
+            ulid: "01M2VF2JXGC49DZZZDFKKMXS2J",
+            date: "September 18, 2026",
+            d: "2026-09-18",
+            time: "4:54 PM",
+            from: "Robert Samuel White",
+            to: "Katie Gauthier, OPRD",
+            kind: "notice",
+            title: "Both estimates disputed, and neither will be paid",
+            summary:
+                "His answer to both invoices, ten minutes after the second one arrived. He does not pay for records he has a right to see, he will not narrow either request, and everything produced is published free, so the public pays nothing while the Department bills him for its own disclosure work. He states that the waiver is the custodian's to grant, that the custodian is the Director, and that the Director is the subject of the records. He rejects every hourly figure the Department has given him since 2025 on the ground that no basis has ever been shown for any of them. The next step is a suit to compel under ORS 192.415, on his timetable, with no petition to the Attorney General.",
+            docs: [
+                { label: "Both estimates disputed, and neither will be paid", href: "/records/oprd/2026-09-18-the-estimates-letter.pdf" },
+                { label: "The covering email", href: "/records/oprd/2026-09-18-the-estimates.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-18_1654_the-estimates.eml",
+        },
     ],
 };
 
