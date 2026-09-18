@@ -3383,7 +3383,7 @@ export default function TestimonyBody({
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
                 <P id="pad08" n={292}>
-                    That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That they would weaponize it is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
+                    That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
                 <P id="pad09" n={293}>
                     No more will be said about this.
