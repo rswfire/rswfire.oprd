@@ -57,12 +57,12 @@ export default function OverviewPage() {
                 </p>
             </div>
 
-            {/* THE CASE, IN THEIR DOCUMENTS */}
-            <CaseTimeline />
-
-
             {/* TESTIMONY — his life, every chapter a door */}
             <TestimonyCard />
+
+
+            {/* THE CASE, IN THEIR DOCUMENTS */}
+            <CaseTimeline />
 
 
             {/* SUNLIGHT — their words, next to the record */}
