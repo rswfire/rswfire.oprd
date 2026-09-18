@@ -3048,7 +3048,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Twelve" title="THE POLICE">
+            <Part n="Twelve" title="THREE MEN WITH GUNS">
                 <P id="pfbekq" n={260}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
