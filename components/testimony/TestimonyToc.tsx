@@ -168,7 +168,7 @@ export default function TestimonyToc() {
                             {active === null ? "Contents" : `Chapter ${active} of ${entries.length - 1}`}
                         </span>
                         <span className="block truncate font-mono text-[13px] text-slate-900">
-                            {active === null ? "Testimony" : entries[active]?.label}
+                            {active === null ? "TESTIMONY OF ROBERT SAMUEL WHITE" : entries[active]?.label}
                         </span>
                     </span>
                     {active !== null && para !== null && (
