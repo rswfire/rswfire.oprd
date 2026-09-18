@@ -4729,7 +4729,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             d: "2026-09-17",
             time: "11:00 PM",
             from: "Robert Samuel White",
-            to: "Logan Bliss, OPRD",
+            to: "[Volunteer Services Lead]; [Park Supervisor]; [Park Manager]; [Program Manager]; Deputy Director JR Collier; Director Lisa Sumption; Governor Kotek",
             kind: "notice",
             title: "On the End of the World",
             summary:
