@@ -15,11 +15,22 @@ import ClusterAnalysis from "@/components/ClusterAnalysis";
 
 const LIBRARY_ORIGIN = "https://rswfire.com/library/signal/";
 
-function Meta({ k, v }: { k: string; v: string }) {
+function Meta({ k, v, href }: { k: string; v: string; href?: string }) {
     return (
         <div className="flex flex-col gap-0.5">
             <span style={{ fontFamily: MONO, fontSize: "10px", letterSpacing: "0.15em", color: MUTED, textTransform: "uppercase" }}>{k}</span>
-            <span style={{ fontFamily: MONO, fontSize: "11px", color: BODY }}>{v}</span>
+            {href ? (
+                <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ fontFamily: MONO, fontSize: "11px", color: ACCENT, textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                    {v}
+                </a>
+            ) : (
+                <span style={{ fontFamily: MONO, fontSize: "11px", color: BODY }}>{v}</span>
+            )}
         </div>
     );
 }
@@ -126,7 +137,7 @@ export default function ClusterRecord({ ulid, initialData }: { ulid: string; ini
                 {span && <Meta k="Span" v={span} />}
                 <Meta k="Signals" v={String(record.members.length)} />
                 {generated && <Meta k="Generated" v={generated} />}
-                <Meta k="ULID" v={record.ulid} />
+                <Meta k="ULID" v={record.ulid} href={`https://rswfire.com/library/cluster/${record.ulid}`} />
             </div>
 
             {/* The platform's synthesis */}
