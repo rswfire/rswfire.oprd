@@ -3392,21 +3392,6 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <div className="mt-14 mb-24 space-y-4 border-l-4 border-emerald-700 bg-white px-5 py-4 text-[15px] leading-relaxed text-gray-800">
-                <p>
-                    He is still here. He opens the gates at Siltcoos, runs the route, and hosts
-                    the campground on the river through the summer season. He has put nine hundred
-                    recordings on the permanent record and built the platform that holds them. The
-                    coast he chose in November 2024 is where he lives.
-                </p>
-                <p>
-                    Oregon Parks and Recreation spent ten months writing a document about three of
-                    those months, and gave it to the police. This page is the rest of the life
-                    that document is a fragment of. Anyone can check it: the emails are the ones
-                    that were sent, the recordings are the ones made that day, and both were in
-                    the open long before anyone came asking.
-                </p>
-            </div>
             <TestimonyToc />
         </SectionPage>
         </TestimonyVersionProvider>
