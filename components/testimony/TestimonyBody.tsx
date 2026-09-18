@@ -3368,7 +3368,7 @@ export default function TestimonyBody({
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and nothing he was doing or thinking made it so. It made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
                 <P id="pad03" n={287}>
-                    The next afternoon, February 18, was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
+                    A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
                 <P id="pad04" n={288}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
@@ -3383,12 +3383,9 @@ export default function TestimonyBody({
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
                 <P id="pad08" n={292}>
-                    A debt was created that night and he paid it the next day, the way anyone pays it, by matching what he had been given.
-                </P>
-                <P id="pad09" n={293}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That they would weaponize it is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad10" n={294}>
+                <P id="pad09" n={293}>
                     No more will be said about this.
                 </P>
             </Part>
