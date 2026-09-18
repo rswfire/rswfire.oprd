@@ -178,10 +178,12 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     return (
         <section id={c} data-part={title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
-            <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
+            {n !== "Addendum" && (
+                <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
+            )}
             <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
                 {title}
-                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+                <Hash id={c} label={n === "Addendum" ? titleCase(title) : `Chapter ${n}, ${titleCase(title)}`} />
             </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
@@ -3360,7 +3362,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Addendum" title="ON THE END OF THE WORLD">
+            <Part n="Addendum" title="ADDENDUM: ON THE END OF THE WORLD">
                 <P id="pad01" n={285}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
