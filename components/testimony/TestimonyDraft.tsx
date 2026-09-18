@@ -196,7 +196,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                     target="_blank"
                     rel="noreferrer"
                     title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                    className="mt-2 inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[10px] font-bold uppercase leading-none tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
+                    className="mt-2 inline-flex flex-col items-center gap-1 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
                 >
                     <Icon name="Bot" size={22} strokeWidth={1.75} className="shrink-0" />
                     AI Analysis
