@@ -170,7 +170,6 @@ function titleCase(t: string): string {
 const PART_NUMBERS: Record<string, number> = {
     One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
     Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12, Thirteen: 13, Fourteen: 14,
-    Addendum: 15,
 };
 
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
@@ -181,7 +180,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
             <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
                 {title}
-                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+                <Hash id={c} label={`Chapter ${n}, ${titleCase(title)}`} />
             </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
@@ -190,7 +189,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     );
 }
 
-export default function TestimonyBody({
+export default function TestimonyBodyV1_5({
     version,
     isCurrent,
 }: {
@@ -3357,39 +3356,6 @@ export default function TestimonyBody({
                     public because he is still looking (
                     <Moment ulid={WHY_THE_VIDEOS} t="1:07" />
                     ). Then he turned the camera outward and kept walking toward the ocean (<Moment ulid="01KJKB3Q00SPY65YM59VRBN1T2" t="1:36" />).
-                </P>
-            </Part>
-
-            <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={285}>
-                    On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
-                </P>
-                <P id="pad02" n={286}>
-                    The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and nothing he was doing or thinking made it so. It made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
-                </P>
-                <P id="pad03" n={287}>
-                    The next afternoon, February 18, was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
-                </P>
-                <P id="pad04" n={288}>
-                    The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
-                </P>
-                <P id="pad05" n={289}>
-                    The second was why he was here. He told the man he was preparing for something he could see coming and could not put a time on, that the systems ordinary life runs on are under strain and will fail, and that he did not know when, and it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
-                </P>
-                <P id="pad06" n={290}>
-                    The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
-                </P>
-                <P id="pad07" n={291}>
-                    <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
-                </P>
-                <P id="pad08" n={292}>
-                    A debt was created that night and he paid it the next day, the way anyone pays it, by matching what he had been given.
-                </P>
-                <P id="pad09" n={293}>
-                    That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That they would weaponize it is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
-                </P>
-                <P id="pad10" n={294}>
-                    No more will be said about this.
                 </P>
             </Part>
 
