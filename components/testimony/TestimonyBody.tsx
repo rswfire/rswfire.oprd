@@ -18,6 +18,7 @@ import Hash from "@/components/testimony/Hash";
 import CiteHow from "@/components/testimony/CiteHow";
 import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
+import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
 import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
 
@@ -180,20 +181,24 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
         <section id={c} data-part={title} data-toc={n === "Addendum" ? `ADDENDUM: ${title}` : title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
-            <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
-                {title}
-                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
-            </h2>
-            {CHAPTER_SIGNALS[n] && (
-                <a
-                    href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-1.5 inline-block font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-700 underline decoration-emerald-300 underline-offset-4 hover:text-emerald-600"
-                >
-                    AI Analysis &amp; Reflections @ Autonomy Realms
-                </a>
-            )}
+            <div className="mt-1 flex items-baseline justify-between gap-4">
+                <h2 className="font-mono text-lg font-bold text-gray-900">
+                    {title}
+                    <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+                </h2>
+                {CHAPTER_SIGNALS[n] && (
+                    <a
+                        href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="The chapter as a signal in his realm, with the platform's analysis and reflections"
+                        className="group inline-flex shrink-0 items-center gap-1 self-center rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 font-mono text-[9px] font-bold uppercase tracking-[0.18em] text-emerald-700 hover:border-emerald-300 hover:bg-emerald-100"
+                    >
+                        <Icon name="Bot" size={12} strokeWidth={2} className="shrink-0" />
+                        AI Analysis
+                    </a>
+                )}
+            </div>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
