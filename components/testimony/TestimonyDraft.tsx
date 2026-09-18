@@ -185,21 +185,23 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     return (
         <section id={c} data-part={title} data-toc={n === "Addendum" ? `ADDENDUM: ${title}` : title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
-            <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
-            <div className="mt-1 flex items-baseline justify-between gap-4">
-                <h2 className="font-mono text-lg font-bold text-gray-900">
-                    {title}
-                    <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
-                </h2>
+            <div className="flex items-center justify-between gap-4">
+                <div className="min-w-0">
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
+                    <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
+                        {title}
+                        <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+                    </h2>
+                </div>
                 {CHAPTER_SIGNALS[n] && (
                     <a
                         href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
                         target="_blank"
                         rel="noreferrer"
                         title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                        className="group inline-flex shrink-0 items-center gap-1.5 self-center rounded-full border border-violet-200 bg-violet-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
+                        className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2.5 font-mono text-[10px] font-bold uppercase leading-none tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
                     >
-                        <Icon name="Bot" size={18} strokeWidth={2} className="shrink-0" />
+                        <Icon name="Bot" size={26} strokeWidth={1.75} className="shrink-0" />
                         AI Analysis
                     </a>
                 )}
