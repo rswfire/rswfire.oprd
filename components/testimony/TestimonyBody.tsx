@@ -19,6 +19,7 @@ import CiteHow from "@/components/testimony/CiteHow";
 import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
 import P from "@/components/testimony/P";
+import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
 
 // ── The decision, Kentucky, February to April 2024 ──
 const FIRST_VIDEO = "01HQF22Q98F8S1ZF05BAZW0EV9";
@@ -183,6 +184,16 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                 {title}
                 <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
             </h2>
+            {CHAPTER_SIGNALS[n] && (
+                <a
+                    href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-1.5 inline-block font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-700 underline decoration-emerald-300 underline-offset-4 hover:text-emerald-600"
+                >
+                    AI Analysis &amp; Reflections @ Autonomy Realms
+                </a>
+            )}
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
