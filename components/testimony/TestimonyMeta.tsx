@@ -26,6 +26,9 @@ export default function TestimonyMeta({
 }) {
     const [open, setOpen] = useState(false);
     const { version, isCurrent } = useTestimonyVersion();
+    // "draft" is the working copy at /testimony/draft. It is not a version and
+    // has no permanent address, so it names itself and links nowhere.
+    const isDraft = version === "draft";
     const viewed = TESTIMONY_VERSIONS.find((v) => v.version === version) ?? CURRENT_VERSION;
 
     useEffect(() => {
@@ -45,14 +48,22 @@ export default function TestimonyMeta({
                 <div>
                     <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Version</div>
                     <div className="font-mono text-sm text-slate-900">
-                        <a
-                            href={`/testimony/v${viewed.version}/`}
-                            className="underline decoration-slate-300 underline-offset-2 hover:text-emerald-700"
-                            title="The permanent address of this version"
-                        >
-                            v{viewed.version}
-                        </a>
-                        <span className="ml-2 text-slate-500">{viewed.date}</span>
+                        {isDraft ? (
+                            <span className="rounded bg-amber-500 px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
+                                draft
+                            </span>
+                        ) : (
+                            <a
+                                href={`/testimony/v${viewed.version}/`}
+                                className="underline decoration-slate-300 underline-offset-2 hover:text-emerald-700"
+                                title="The permanent address of this version"
+                            >
+                                v{viewed.version}
+                            </a>
+                        )}
+                        <span className="ml-2 text-slate-500">
+                            {isDraft ? `unreleased, on top of v${CURRENT_VERSION.version}` : viewed.date}
+                        </span>
                         {!isCurrent && (
                             <a
                                 href="/testimony/"

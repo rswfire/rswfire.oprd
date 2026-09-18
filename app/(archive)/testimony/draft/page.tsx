@@ -19,7 +19,7 @@ export default function Page() {
             <div className="fixed inset-x-0 top-0 z-[80] bg-amber-500 px-4 py-1.5 text-center text-[11px] font-bold uppercase tracking-widest text-white">
                 Draft · not the record · published version is v{CURRENT_VERSION.version}
             </div>
-            <TestimonyDraft version={CURRENT_VERSION.version} isCurrent />
+            <TestimonyDraft version="draft" isCurrent />
         </>
     );
 }
