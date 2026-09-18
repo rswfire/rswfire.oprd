@@ -1,4 +1,9 @@
-// app/(archive)/testimony/page.tsx
+// components/testimony/TestimonyDraft.tsx
+//
+// The working copy of the testimony. Every edit lands here first and is read
+// at /testimony/draft; the published document at /testimony does not move
+// until a release copies this file over TestimonyBody.tsx, freezes the
+// outgoing body as versions/v<old>.tsx, and adds the version entry.
 //
 // The testimony: a man on the Oregon coast, and the three months a state
 // agency spent inside that life. Built from his own record — the recordings
@@ -190,7 +195,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     );
 }
 
-export default function TestimonyBody({
+export default function TestimonyDraft({
     version,
     isCurrent,
 }: {
@@ -3048,7 +3053,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Twelve" title="THE POLICE">
+            <Part n="Twelve" title="THREE MEN WITH GUNS">
                 <P id="pfbekq" n={260}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
