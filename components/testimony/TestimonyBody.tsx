@@ -3374,7 +3374,7 @@ export default function TestimonyBody({
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
                 <P id="pad05" n={289}>
-                    The second was why he was here. He told the man he was preparing for something he could see coming and could not put a time on, that the systems ordinary life runs on are under strain and will fail, and that he did not know when, and it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
+                    The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
                 <P id="pad06" n={290}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
