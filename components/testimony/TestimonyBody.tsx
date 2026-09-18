@@ -3386,7 +3386,7 @@ export default function TestimonyBody({
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
                 <P id="pad09" n={293}>
-                    No more will be said about this.
+                    The subject is closed again.
                 </P>
             </Part>
 
