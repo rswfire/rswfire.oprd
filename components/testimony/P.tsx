@@ -29,7 +29,7 @@ export default function P({
     const { version } = useTestimonyVersion();
     const chapter = useChapter();
     const citeRef = chapter
-        ? `Chapter ${chapter.word}, ${chapter.title}, ¶${n}`
+        ? `${chapter.word === "Addendum" ? "Addendum" : `Chapter ${chapter.word}`}, ${chapter.title}, ¶${n}`
         : `¶${n}`;
 
     const open = (e: React.MouseEvent) => {
