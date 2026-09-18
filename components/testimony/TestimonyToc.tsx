@@ -22,8 +22,8 @@ interface Entry {
 
 export default function TestimonyToc() {
     const [entries, setEntries] = useState<Entry[]>([]);
-    const [active, setActive] = useState(0);
-    const [para, setPara] = useState(1);
+    const [active, setActive] = useState<number | null>(null);
+    const [para, setPara] = useState<number | null>(null);
     const [open, setOpen] = useState(false);
     const listRef = useRef<HTMLDivElement | null>(null);
     const paraEls = useRef<HTMLElement[]>([]);
@@ -52,7 +52,7 @@ export default function TestimonyToc() {
             // The chapter is read off the paragraph the reader is in, not
             // measured separately, so the two can never disagree at a
             // chapter boundary.
-            let p = 1;
+            let p: number | null = null;
             let sec = "";
             for (const el of paraEls.current) {
                 if (el.getBoundingClientRect().top > line) break;
@@ -60,8 +60,8 @@ export default function TestimonyToc() {
                 sec = el.closest("section[data-part]")?.id ?? sec;
             }
             setPara(p);
-            const i = sec ? entries.findIndex((e) => e.id === sec) : 0;
-            setActive(i > 0 ? i : 0);
+            const i = sec ? entries.findIndex((e) => e.id === sec) : -1;
+            setActive(p === null || i < 1 ? null : i);
         };
         const onScroll = () => { if (!raf) raf = window.requestAnimationFrame(measure); };
         measure();
@@ -81,7 +81,7 @@ export default function TestimonyToc() {
     // Keep the open list scrolled to the part the reader is in.
     useEffect(() => {
         if (!open || !listRef.current) return;
-        const row = listRef.current.querySelector<HTMLElement>(`[data-i="${active}"]`);
+        const row = listRef.current.querySelector<HTMLElement>(`[data-i="${active ?? 0}"]`);
         row?.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
     }, [open, active]);
 
@@ -146,7 +146,7 @@ export default function TestimonyToc() {
                                 <span className="flex w-6 shrink-0 items-center justify-start font-mono text-[11px] text-slate-400">
                                     {e.id === "__top" ? (
                                         <Icon name="ChevronUp" size={14} strokeWidth={2.5} />
-                                    ) : e.id === "c15" ? null : (
+                                    ) : (
                                         String(i).padStart(2, "0")
                                     )}
                                 </span>
@@ -165,19 +165,17 @@ export default function TestimonyToc() {
                     <Icon name="Sprout" className="shrink-0 text-violet-700" size={16} strokeWidth={2} />
                     <span className="min-w-0 flex-1">
                         <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                            {entries[active]?.id === "__top"
-                                ? "The testimony"
-                                : entries[active]?.id === "c15"
-                                  ? "Addendum"
-                                  : `Chapter ${active} of ${entries.length - 2}`}
+                            {active === null ? "Contents" : `Chapter ${active} of ${entries.length - 1}`}
                         </span>
                         <span className="block truncate font-mono text-[13px] text-slate-900">
-                            {entries[active]?.label}
+                            {active === null ? "Testimony" : entries[active]?.label}
                         </span>
                     </span>
-                    <span className="shrink-0 font-mono text-xl font-bold text-gray-900">
-                        &sect;{active || 1} &para;{para}
-                    </span>
+                    {active !== null && para !== null && (
+                        <span className="shrink-0 font-mono text-xl font-bold text-gray-900">
+                            &sect;{active} &para;{para}
+                        </span>
+                    )}
                     <Icon
                         name={open ? "ChevronDown" : "ChevronUp"}
                         className="shrink-0 text-slate-500"
