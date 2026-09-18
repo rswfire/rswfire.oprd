@@ -197,9 +197,9 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                         target="_blank"
                         rel="noreferrer"
                         title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                        className="group inline-flex shrink-0 items-center gap-1 self-center rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 font-mono text-[9px] font-bold uppercase tracking-[0.18em] text-emerald-700 hover:border-emerald-300 hover:bg-emerald-100"
+                        className="group inline-flex shrink-0 items-center gap-1.5 self-center rounded-full border border-violet-200 bg-violet-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
                     >
-                        <Icon name="Bot" size={12} strokeWidth={2} className="shrink-0" />
+                        <Icon name="Bot" size={18} strokeWidth={2} className="shrink-0" />
                         AI Analysis
                     </a>
                 )}
