@@ -1864,6 +1864,10 @@ export default function TestimonyDraft({
                     training from another ranger, and no one had arranged it.
                 </P>
                 <P id="p696cf" n={178}>
+                    His traces from that month put him on the beach. On February 25 he walked out to the
+                    South Jetty and stood at the water at 10:41, and the next morning he was on the
+                    sand at Siltcoos at 9:26, ground that would be his to keep two months after
+                    they threw him off. That afternoon he walked Beverly Beach at 1:58.
                     What he was actually doing that month is on camera twice. On February 4 he
                     walked out past the day use area to where{" "}
                     <Moment ulid={DUNES} t="0:45">
@@ -2693,6 +2697,11 @@ export default function TestimonyDraft({
                     ).
                 </P>
                 <P id="pqf8hs" n={230}>
+                    He was at the ocean the next morning, April 5, on the sand at Siltcoos at 9:01.
+                    It was the first of the walks that have not stopped since: the twenty-third at
+                    1:28, the twenty-fourth at 12:04, the twenty-ninth at 6:02 in the evening while
+                    mapping the campsites at Driftwood, May 4 at 2:31, and three separate walks out
+                    on May 5 inside sixteen minutes.
                     He did not know it yet, but he had just arrived at the ground he still lives
                     on. <PlaceCite name="Lagoon" /> sits in the Siltcoos corridor a few miles south
                     of the park that had expelled him. Everything since has happened inside a
@@ -3418,7 +3427,9 @@ export default function TestimonyDraft({
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
                 <P id="pwmw3z" n={288}>
-                    Three days later he filed a Siuslaw National Forest incident report documenting
+                    Two days after they came he walked to Waxmyrtle Beach and stood at the water at 2:08
+                    in the afternoon. Three days later he filed a Siuslaw National Forest incident
+                    report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
                     and the plate number off one of the vehicles. The same day he asked the Forest
                     Service special agent who had opened that gate to tell him who the three men
