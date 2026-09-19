@@ -3068,6 +3068,27 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Twelve" title="THE DIRECTOR AND HER DEPUTY">
+                <figure className="mt-2 mb-6">
+                    <img
+                        src="/director-and-deputy.jpg"
+                        alt="Director Lisa Sumption and Deputy Director J.R. Collier in a kayak on the Willamette River, wearing life jackets."
+                        className="w-full max-w-md rounded border border-gray-200"
+                    />
+                    <figcaption className="mt-2 max-w-md text-xs leading-relaxed text-gray-500">
+                        Director Lisa Sumption and Deputy Director J.R. Collier on the Willamette
+                        River, posted by Oregon State Parks on May 19, 2023 for Wear Your Life
+                        Jacket at Work Day.{" "}
+                        <a
+                            href="https://www.instagram.com/p/CscFqgRtj4V/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline decoration-gray-300 hover:text-gray-700"
+                        >
+                            The agency&rsquo;s own post
+                        </a>
+                        .
+                    </figcaption>
+                </figure>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he put in her hands<Hash id="hdd01" label="The letter he put in her hands" /></h3>
                 <P id="pdd01" n={260}>
                     On July 29, 2025 he was a campground host at Driftwood II, in the Siltcoos
