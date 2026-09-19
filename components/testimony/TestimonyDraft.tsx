@@ -3331,8 +3331,7 @@ export default function TestimonyDraft({
                     framework he had never used.
                 </P>
                 <P id="pdd07" n={277}>
-                    In February the Deputy Director wrote the fourth and final reply. It was not
-                    an internal forward and it did not pretend to be. He wrote that the agency
+                    In February the Deputy Director wrote the fourth and final reply. He wrote that the agency
                     recognised he might be filing a legal action, and that when he did, his
                     correspondence would go to their Department of Justice counsel. The matter had
                     been in legal hands and he was being told so. What the letter did with that was
