@@ -3141,10 +3141,8 @@ export default function TestimonyDraft({
                     has its own arc and its own reflections instead of a hundred separate entries.
                     All of it embedded and indexed, so the record can be put a question, and so a
                     machine reading him reads the whole pattern rather than the last thing he said.
-                    Maps of everywhere he walked with the photographs pinned to them. An access
-                    layer the realmholder owns outright, the money going to their own account, no
-                    one standing in between. And he built it open, so anyone could run it on their
-                    own machine, for their own life, without asking him or anyone.
+                    Maps of everywhere he walked with the photographs pinned to them. It runs on
+                    hardware he pays for, under a name he has held for twenty-three years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
                 <P id="pdd02a" n={263}>
