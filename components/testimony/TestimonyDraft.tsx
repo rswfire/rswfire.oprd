@@ -3118,7 +3118,10 @@ export default function TestimonyDraft({
                     working through Pascal and C and C++ and Java and PHP. He had been building a
                     system for a year by then. It took a recorded life in at one end and produced a
                     structured, searchable account of it at the other, and he was building it because
-                    no platform he had used would hold a life without flattening it.
+                    no platform he had used would hold a life without flattening it. On his days off he
+                    walked to the ocean. On August 31 he took the Tahkenitch Creek trail out with a
+                    friend, three and a third miles, and stood at the water at 1:56 in the
+                    afternoon.
                 </P>
                 <P id="pdd02" n={263}>
                     He waited a month. Then he published an Open Letter to her on r/volunteer. He
@@ -3190,7 +3193,9 @@ export default function TestimonyDraft({
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
                     he became the caretaker embedded on federal land behind a locked gate, a few
                     miles from the park that dismissed him. It was his second advancement in five
-                    months and he is still there.
+                    months and he is still there. He reached the ocean on foot four times that October,
+                    the longest of them seven miles down the Tahkenitch Creek trail on the
+                    twenty-third, at the water by 3:36.
                 </P>
                 <P id="pdd03b" n={268}>
                     The public records request he had filed on August 22 was in its third month
@@ -3232,10 +3237,14 @@ export default function TestimonyDraft({
                     thirty-two years of it, from the age of sixteen. He built the conditions to hold
                     it rather than trusting himself to hold it: no fuel, no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
-                    reachable. He walked instead, to the ocean and back, ten and fifteen miles at a
-                    time, in rain and after dark, far enough that a step counter put him in the top
-                    three percent of everyone it tracks. On the sixth day he said it was the furthest
-                    he had made it in thirty-two years.
+                    reachable. He walked instead. He had stood at Siltcoos Beach at 12:40 on the
+                    second, the day he wrote down the statute violation. He was back at the water on
+                    the sixth at 5:03, the ninth at 11:43 after seven and a half miles, the tenth at
+                    11:40 after twelve and a half, the eleventh at 12:04, and the fifteenth at
+                    11:31. Seven times that month he walked out to the ocean and back, in rain and
+                    after dark, far enough that a step counter put him in the top three percent of
+                    everyone it tracks. On the sixth day he said it was the furthest he had made it
+                    in thirty-two years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
                 <P id="pdd05a" n={273}>
@@ -3243,7 +3252,10 @@ export default function TestimonyDraft({
                     clustered the archive into groups that hold a stretch of time at once, and a
                     query totaling the runtime returned more than seven straight days of it. On the
                     eighteenth he gave the archive its own address and put every individual and what
-                    each of them did into it. In nine months no one had disputed a line of it.
+                    each of them did into it. In nine months no one had disputed a line of it. On the
+                    twenty-seventh he set out for the beach and turned back two and a half miles in
+                    because the trail was under water. It is the only time in these seven months
+                    that he started for the ocean and did not reach it.
                 </P>
                 <P id="pdd04" n={274}>
                     On December 7 he wrote to tell her what he had made of the nine months since.
@@ -3317,7 +3329,9 @@ export default function TestimonyDraft({
                     him holding the facts alone.
                 </P>
                 <P id="pdd08" n={280}>
-                    February 13, 2026 was the last time either of them wrote to him.
+                    That morning he had walked five miles and stood at Waxmyrtle Beach at 12:21. The
+                    letter came at 4:23 that afternoon. February 13, 2026 was the last time either
+                    of them wrote to him.
                 </P>
             </Part>
 
