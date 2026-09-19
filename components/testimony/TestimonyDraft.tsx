@@ -3269,8 +3269,7 @@ export default function TestimonyDraft({
                 </P>
                 <P id="pdd04c" n={272}>
                     He did the same to himself. On November 4 he put down nicotine, cold, after
-                    thirty-two years of it, from the age of sixteen. He built the conditions to hold
-                    it rather than trusting himself to hold it: no fuel, no willingness to ask for
+                    thirty-two years of it, from the age of sixteen. He built the conditions to hold it: no fuel, no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
                     reachable. He walked instead. He had been at Siltcoos Beach on the second, the
                     day he wrote down the statute violation, and he was back at the water on the
