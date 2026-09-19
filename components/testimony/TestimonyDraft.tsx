@@ -3291,8 +3291,8 @@ export default function TestimonyDraft({
                     She answered at 8:37 the next morning in therapeutic language. She could see
                     how painful this had been for him. She heard the frustration and the hurt in
                     his words. She recognised the seriousness with which he had approached it.
-                    Every sentence was about his emotional state and not one was about a fact he
-                    had given her, and on that basis she closed the correspondence.{" "}
+                    Not one sentence in it addressed a fact he had given her, and on that basis
+                    she closed the correspondence.{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         we&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
