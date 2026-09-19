@@ -3196,16 +3196,46 @@ export default function TestimonyDraft({
                     begins. He wished her well first.
                 </P>
                 <P id="pdd02" n={270}>
-                    A month later he sent her an Open Letter, and he opened that one by naming what
-                    she had built: the first woman to lead the Department, millions in
-                    infrastructure, accessibility work, president of the national association of
-                    state park directors. He wrote it publicly, he said, because{" "}
+                    A month later he published an Open Letter to her on r/volunteer, a community
+                    that would later ban him for continuing to advocate for himself. He wrote it
+                    there, he said, because{" "}
                     <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
                         private channels have been met with silence
                     </Cite>
-                    .
+                    . He opened it by naming what she had built: the first woman to lead the
+                    Department, millions in infrastructure, accessibility work, president of the
+                    national association of state park directors, an appointment to the National
+                    Parks Service Advisory Board.
                 </P>
-                <P id="pdd03" n={271}>
+                <P id="pdd02b" n={271}>
+                    Then he set out what happened and what he wanted. He named the manager telling
+                    him to chew glass and swallow it, the admission that he was never given the
+                    benefit of the doubt from day one, two months of pressure designed to force a
+                    resignation, and a dismissal six days before his scheduled completion. He wrote
+                    that the recordings exist and that the only question was how she would answer
+                    them. He also named the imbalance out loud:{" "}
+                    <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
+                        The very people who harm volunteers often have the institutional power to
+                        compound that harm through retaliation. It has literally already happened
+                        at Honeyman.
+                    </Cite>
+                </P>
+                <P id="pdd02c" n={272}>
+                    What he asked for was not for himself.{" "}
+                    <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
+                        I am not asking for apologies or personal remedies. I am asking for
+                        institutional accountability that protects future volunteers from
+                        experiencing what I experienced.
+                    </Cite>{" "}
+                    He listed five things: a transparent investigation of the misconduct at
+                    Honeyman, consequences for managers who use coercive tactics on volunteers,
+                    protections against retaliation for volunteers who report, a grievance process
+                    that does not depend on the good faith of the managers causing the harm, and
+                    training and oversight for volunteer supervision. He said none of it was
+                    extraordinary, and that if it happened the whole thing became a story about an
+                    institution learning something.
+                </P>
+                <P id="pdd03" n={273}>
                     She answered the next afternoon.{" "}
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">
                         I hear the depth of your concern, and I recognize the effort you have put
@@ -3217,22 +3247,20 @@ export default function TestimonyDraft({
                         want to assure you that I take concerns about our volunteer program
                         seriously.
                     </Cite>{" "}
-                    He had published it on r/volunteer, where anyone could read it and where an
-                    answer would also be in the open. That community would later ban him for
-                    continuing to advocate for himself. She avoided accountability. She did not say the
+                    She answered none of the five. She avoided accountability. She did not say the
                     claims were false and she did not say they were true, and by thanking him for
                     his perspective she spent the letter. An open letter works once. After her
                     reply it was useless to him. He knew she had done it while he was reading it,
                     and he was impressed. He did not see a next move against it, so he waited until
                     one came to him.
                 </P>
-                <P id="pdd04" n={272}>
+                <P id="pdd04" n={274}>
                     In December he wrote to tell her what had happened to him since. He had gone
                     next door to the United States Forest Service. Nine months. Promoted twice. A
                     work truck and a twenty-five mile daily route.{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">Facts. I was never the problem</Cite>.
                 </P>
-                <P id="pdd05" n={273}>
+                <P id="pdd05" n={275}>
                     She answered at 8:37 the next morning.{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         I can see that this has been deeply painful for you&hellip; I hear the
@@ -3247,14 +3275,14 @@ export default function TestimonyDraft({
                     the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>
                 </P>
-                <P id="pdd06" n={274}>
+                <P id="pdd06" n={276}>
                     His own record says what he was doing that week. Hiking the Lagoon Trail.
                     Photographing the days, one after another. Planning a React front end, and
                     detailing the gallery and atlas architecture of the thing he was building.
                     Carter Lake on Christmas. The resolution she did not believe further
                     correspondence would lead to was not what he was spending his life on.
                 </P>
-                <P id="pdd07" n={275}>
+                <P id="pdd07" n={277}>
                     In February the Deputy Director wrote the fourth and final reply, and it was a
                     routing instruction. Messages he had sent to the program manager had been
                     forwarded up. The Department recognized he might file a legal action.
@@ -3266,11 +3294,11 @@ export default function TestimonyDraft({
                     It investigated nothing. It closed every channel but one, and the one it left
                     open never answered him again.
                 </P>
-                <P id="pdd08" n={276}>
+                <P id="pdd08" n={278}>
                     That was the last time either of them wrote to him. February 13, 2026.
                     Everything after this happened into silence.
                 </P>
-                <P id="pdd09" n={277}>
+                <P id="pdd09" n={279}>
                     What he was doing that month, by his own record: introducing himself on the Wax
                     Myrtle Trail. Naming AI&rsquo;s automation of epistemic denial. Defining vibe
                     coding through an analogy about writing a novel. Introducing Autonomy Realms
@@ -3279,16 +3307,16 @@ export default function TestimonyDraft({
                     bench after finding work. Naming the compass as an operating principle. Naming
                     unfairness at the fire.
                 </P>
-                <P id="pdd10" n={278}>
+                <P id="pdd10" n={280}>
                     On March 23, 2026 his record carries two entries. One is titled Marking
                     One-Year Anniversary of OPRD Dismissal. The other is titled Betting Everything
                     on Autonomy Realms.
                 </P>
-                <P id="pdd11" n={279}>
+                <P id="pdd11" n={281}>
                     The next entry, dated March 24, is titled Three Officers at the Work Center
                     Gate.
                 </P>
-                <P id="pdd12" n={280}>
+                <P id="pdd12" n={282}>
                     He wrote to the Director that evening at 5:58, and copied the Deputy Director.{" "}
                     <Cite ulid="01KMH80CG0VFEJHKTPW5PPF4TK">
                         One year ago today you dismissed me from Honeyman State Park and gave me 24
@@ -3297,17 +3325,17 @@ export default function TestimonyDraft({
                         caretaker. Three officers.
                     </Cite>
                 </P>
-                <P id="pdd13" n={281}>
+                <P id="pdd13" n={283}>
                     Nothing came back.
                 </P>
-                <P id="pdd14" n={282}>
+                <P id="pdd14" n={284}>
                     On May 1 his record begins a series he called Summer at Siltcoos. Day 1. Day 2.
                     On May 3, Day 3, he found a box in the road directly in front of that same
                     gate. Bi-Mart branding. Inside it, spent twelve-gauge shotgun shells. The box
                     and the ground under it were wet with urine, which told him it had been done
                     recently and close by. He found it in daylight. He kept it.
                 </P>
-                <P id="pdd15" n={283}>
+                <P id="pdd15" n={285}>
                     He wrote to the Director that afternoon, and to the Deputy Director, and copied
                     the Commission and the Governor. He accused no one.{" "}
                     <Cite ulid="01KQR5YHJ80H5V45AYAGHT7ZXF">
@@ -3321,17 +3349,17 @@ export default function TestimonyDraft({
                         my gate. The distance between those two things is the record.
                     </Cite>
                 </P>
-                <P id="pdd16" n={284}>
+                <P id="pdd16" n={286}>
                     Nothing came back. His record continues: Summer at Siltcoos, Day 4. Day 6. Day
                     7. Day 8. Day 9. Day 10.
                 </P>
-                <P id="pdd17" n={285}>
+                <P id="pdd17" n={287}>
                     The register holds one hundred and seven documents in which the Director or the
                     Deputy Director is a party. Four are from them. Three are about how he felt and
                     one is about where to send the rest. Everything else in that pile went one
                     direction.
                 </P>
-                <P id="pdd18" n={286}>
+                <P id="pdd18" n={288}>
                     Notice under 42 U.S.C. &sect; 1983. A notice of ongoing constitutional
                     violation. A document titled &ldquo;The Only Path That Doesn&rsquo;t End in
                     Federal Court.&rdquo; Day 339, Day 347, Day 365. Three versions of a document
@@ -3345,14 +3373,14 @@ export default function TestimonyDraft({
                         anyway and then went silent.
                     </Cite>
                 </P>
-                <P id="pdd19" n={287}>
+                <P id="pdd19" n={289}>
                     So the question is available to anyone. Where were they on March 24, when
                     officers were sent to a locked federal gate over a website. Where were they on
                     May 3. What did either of them do when those letters arrived, who did they
                     tell, and what instruction did they give about a man who would not stop writing
                     to them.
                 </P>
-                <P id="pdd20" n={288}>
+                <P id="pdd20" n={290}>
                     The answers exist. They are notes, calendar entries, and instructions, held by
                     two people, on Department systems. On September 8, 2026, the Department of
                     Transportation told him it had confirmed with the Director personally that
@@ -3361,14 +3389,14 @@ export default function TestimonyDraft({
                     December 2025. She answered it to another agency, about where her records were
                     kept, and not to him.
                 </P>
-                <P id="pdd21" n={289}>
+                <P id="pdd21" n={291}>
                     So he asked for them. Two custodians only. Their communications, their notes,
                     their memoranda, their calendar entries, and any instruction either of them
                     gave about whether staff should respond to him. He requested a fee waiver under
                     ORS 192.324(5), and said in the request that everything produced would be
                     published in full, for free, where anyone could read it.
                 </P>
-                <P id="pdd22" n={290}>
+                <P id="pdd22" n={292}>
                     On September 18, 2026 the Department priced the answer at one thousand six
                     hundred to one thousand seven hundred twenty-eight dollars. Six hours to search
                     every message on every device belonging to the Director. Forty hours for the
@@ -3376,14 +3404,14 @@ export default function TestimonyDraft({
                     was not priced at all. It was folded into the forty. The waiver was not
                     granted, not denied, and not mentioned.
                 </P>
-                <P id="pdd23" n={291}>
+                <P id="pdd23" n={293}>
                     Under the Department&rsquo;s own rule, OAR 736-001-0030, the officer who grants
                     or denies that waiver is the Director or her designee. The records are hers.
                     The fee on them is hers to lift. She is the subject of the request and the
                     person deciding whether the public sees the answer, and there is no one inside
                     the agency above her to decide otherwise.
                 </P>
-                <P id="pdd24" n={292}>
+                <P id="pdd24" n={294}>
                     Between the July afternoon he wished her well and the September afternoon they
                     priced her notes, fourteen months passed. He hauled gravel, took the caretaker
                     post, built the platform, walked the route, walked the trails, and wrote to
@@ -3393,31 +3421,31 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={293}>
+                <P id="pad01" n={295}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={294}>
+                <P id="pad02" n={296}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={295}>
+                <P id="pad03" n={297}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={296}>
+                <P id="pad04" n={298}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={297}>
+                <P id="pad05" n={299}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={298}>
+                <P id="pad06" n={300}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={299}>
+                <P id="pad07" n={301}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={300}>
+                <P id="pad08" n={302}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={301}>
+                <P id="pad09" n={303}>
                     The subject is closed again.
                 </P>
             </Part>
