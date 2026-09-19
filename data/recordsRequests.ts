@@ -36,11 +36,21 @@ export interface Officer {
     role?: string; // as signed or stated in the correspondence
 }
 
+// What the agency is charging to hand over the records. Shown at the top of
+// the card because it is the operative fact: a fee is how a request is
+// refused without anyone writing a denial. Omitted where no money has been
+// named.
+export interface FeeDemand {
+    total: string; // as quoted, a single figure or a range
+    note: string; // what it covers and where it came from
+}
+
 export interface AgencyRequests {
     slug: string; // register thread for the "full record" link
     agency: string;
     refs: string; // request reference numbers
     status: string; // one line, operator's characterization
+    demanded?: FeeDemand; // what the agency is charging, if it has named a figure
     officers: Officer[]; // the public officers named in the correspondence
     asked: string[];
     claims: string[]; // what the agency has said it holds, in sequence
@@ -93,6 +103,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         agency: "Oregon State Police",
         refs: "PR27478 · PR36445",
         status: "Produced. Not sufficient.",
+        demanded: {
+            total: "$16,315.00",
+            note: "Quoted August 11, 2026 under PR36445: approximately 27,000 letters issued since January 1, 2023, priced at 650 hours, with release 130 weeks after payment. PR27478 was produced on September 3 after $157.50, of which $95.00 was refunded.",
+        },
         officers: [
             { name: "Marni L. Carlson", role: "AS1, Central Records Section" },
             { name: "Micah Hubbard", role: "Records Request Unit Senior Admin" },
@@ -119,7 +133,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             {
                 item: "PR36445: the fee-and-exemption letter template, its versions, the instructions governing its use, and the letters issued on it",
                 basis: "fee",
-                detail: "Records identified August 11, held behind a fee of $16,315.00.00",
+                detail: "Records identified August 11, held behind a fee of $16,315.00.",
             },
             {
                 item: "The body-worn camera video of the March 24 contact",
@@ -263,6 +277,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026 · Sep 11 2026",
         status: "Acknowledged.",
+        demanded: {
+            total: "$1,680 – $1,808",
+            note: "Two invoices, both dated September 18, 2026. The September 5 request: fifty to fifty-four hours at $32 an hour, of which forty hours are for two people's own notes and calendar entries. The September 11 request: two and a half hours, $80. A fee waiver was requested under ORS 192.324(5) on September 5 and neither invoice grants it, denies it, or mentions it.",
+        },
         officers: [
             { name: "Katie Gauthier", role: "External Relations Manager" },
         ],
@@ -280,8 +298,20 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "May 4, 2026: the no-cost items produced, with a review of law-enforcement emails promised within the week. He closed all requests with the Department that evening.",
             "September 8, 2026, through ODOT: “We confirmed with Lisa Sumption there were no communications on ODOT devices and that any communications responsive to your request were on OPRD devices” — which places them inside this request.",
             "September 11, 2026: the request is under review, with an estimate for staff time and costs promised by September 22, citing OAR 736-001-0030.",
+            "September 18, 2026: two invoices, eight minutes apart. The September 5 request at fifty to fifty-four hours, $1,600 to $1,728, with forty of those hours on two people’s own notes and calendar entries. The September 11 request at two and a half hours, $80, with the version history log answered “This is not a record we have.” Neither invoice mentions the fee waiver.",
         ],
-        withheld: [],
+        withheld: [
+            {
+                item: "Director Sumption’s and Deputy Director Collier’s communications, notes and calendar entries about him",
+                basis: "fee",
+                detail: "Invoiced September 18, 2026 at fifty to fifty-four hours, $1,600 to $1,728. Forty of those hours are for two people’s own notes and calendar entries; six hours covers every message on every device belonging to the Director.",
+            },
+            {
+                item: "Every version and revision of the Timeline of Events produced to the Oregon State Police",
+                basis: "fee",
+                detail: "Invoiced September 18, 2026 at two and a half hours, $80. The version history log recording each save is answered “This is not a record we have,” on the same page that agrees to produce the SharePoint version histories of the same file.",
+            },
+        ],
         produced: [
             { label: "Volunteer policy VOL.010.000", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-VOL.010.000-1.pdf" },
             { label: "Volunteer Dismissal Guidance", href: "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-Volunteer-Dismissal-Guidance.pdf" },
@@ -291,22 +321,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         producedNote: "The no-cost items of May 4, 2026, retrieved from the Department's file-share September 9. Nothing has been produced on the September 5 request.",
         deadlines: [
             {
-                d: "2026-09-22",
-                date: "September 22, 2026",
-                who: "them",
-                what: "Deliver the promised estimate for staff time and costs: their own September 11 commitment",
-            },
-            {
                 d: "2026-09-29",
                 date: "September 29, 2026",
                 who: "them",
                 what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), fifteen business days",
-            },
-            {
-                d: "2026-09-18",
-                date: "September 18, 2026",
-                who: "them",
-                what: "Acknowledge the September 11 revisions request: ORS 192.324(2), five business days",
             },
             {
                 d: "2026-10-02",
@@ -331,6 +349,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-08", date: "September 8, 2026", event: "ODOT, after confirming with the Director personally: responsive communications live on OPRD devices; the statement forwarded to the Director for the record, undisputed" },
             { d: "2026-09-11", date: "September 11, 2026", event: "Acknowledged, four days inside the window: under review, an estimate for staff time and costs promised by September 22" },
             { d: "2026-09-11", date: "September 11, 2026", event: "His reply, fourteen minutes later: the acknowledgment is already on the public record, tracker linked, Director and Governor copied" },
+            { d: "2026-09-18", date: "September 18, 2026", event: "Both estimates arrive eight minutes apart: $1,600 to $1,728 on the September 5 request, $80 on the September 11 request. Neither answers the fee waiver" },
+            { d: "2026-09-18", date: "September 18, 2026", event: "Both disputed the same hour: he will not pay, will not narrow, and will not petition the Attorney General. Next step is a suit to compel under ORS 192.415" },
             { d: "2026-09-11", date: "September 11, 2026", event: "New request: every version and revision of the Timeline of Events document and of every source it cites, the version logs, and every email that transmitted any version" },
         ],
     },

@@ -56,6 +56,21 @@ export default function AgencyRequestCard({ a }: { a: AgencyRequests }) {
                 </div>
             </div>
 
+            {/* What it costs to read the agency's own conduct. The figure is
+                the point, so it is set at display size; the note under it is
+                what the figure buys. */}
+            {a.demanded && (
+                <div className="border-b border-red-200 bg-red-50 px-5 py-4 sm:px-6">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-red-700">
+                        The price of the records
+                    </div>
+                    <div className="mt-1 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 sm:text-4xl">
+                        {a.demanded.total}
+                    </div>
+                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-red-900/80">{a.demanded.note}</p>
+                </div>
+            )}
+
             {/* public officers named in the correspondence */}
             {a.officers.length > 0 && (
                 <div className="border-b border-gray-100 px-5 py-2.5 sm:px-6">
