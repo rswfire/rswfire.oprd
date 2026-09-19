@@ -1864,10 +1864,10 @@ export default function TestimonyDraft({
                     training from another ranger, and no one had arranged it.
                 </P>
                 <P id="p696cf" n={178}>
-                    His traces from that month put him on the beach. On February 25 he walked out to the
-                    South Jetty and stood at the water, and the next morning he was on the sand at
-                    Siltcoos, ground that would be his to keep two months after they threw him off.
-                    That afternoon he walked Beverly Beach.
+                    His traces from that month put him on the beach. On February 25 he walked out to <TraceCite ulid="01JMZ5SV00RFG2B8ZNA9SKJPK2">the South Jetty</TraceCite> and
+                    stood at the water, and the next morning he was on <TraceCite ulid="01JN1MR7Q89JR8NQJ60XF608T6">the sand at Siltcoos</TraceCite>,
+                    ground that would be his to keep two months after they threw him off. That
+                    afternoon he walked <TraceCite ulid="01JN23MZJRMBMNY5G84PA38A7J">Beverly Beach</TraceCite>.
                     What he was actually doing that month is on camera twice. On February 4 he
                     walked out past the day use area to where{" "}
                     <Moment ulid={DUNES} t="0:45">
@@ -2697,7 +2697,7 @@ export default function TestimonyDraft({
                     ).
                 </P>
                 <P id="pqf8hs" n={230}>
-                    He was at the ocean the next morning, April 5, on the sand at Siltcoos. It was the
+                    He was at the ocean the next morning, April 5, on <TraceCite ulid="01JR3AZKFRB1001CYVZB6F11QJ">the sand at Siltcoos</TraceCite>. It was the
                     first of the walks that have not stopped since: the twenty-third, the
                     twenty-fourth, the twenty-ninth while mapping the campsites at Driftwood, May
                     4, and three separate walks out on May 5 inside sixteen minutes.
@@ -3152,9 +3152,8 @@ export default function TestimonyDraft({
                 <P id="pdd02a" n={264}>
                     On August 3 the Forest Service gave him Tahkenitch Landing to run by himself,
                     the campground above the lake off Highway 101. He ran it alone and built through
-                    it. On his days off he walked to the ocean. On August 31 he took the Tahkenitch
-                    Creek trail out with a friend, three and a third miles, and stood at the
-                    water.
+                    it. On his days off he walked to the ocean. On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>
+                    out with a friend, three and a third miles, and stood at the water.
                 </P>
                 <P id="pdd02" n={265}>
                     He waited a month. Then he published{" "}
@@ -3235,8 +3234,8 @@ export default function TestimonyDraft({
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
                     he became the caretaker embedded on federal land behind a locked gate, a few
                     miles from the park that dismissed him. It was his second advancement in five
-                    months and he is still there. He reached the ocean on foot four times that October, the longest
-                    of them seven miles down the Tahkenitch Creek trail on the twenty-third.
+                    months and he is still there. He reached the ocean on foot four times that October, the longest of them <TraceCite ulid="01K89C4M90MSTDGD0C9E17C4YV">seven miles down the Tahkenitch Creek trail</TraceCite>
+                    on the twenty-third.
                 </P>
                 <P id="pdd03b" n={270}>
                     The public records request he had filed on August 22 was in its third month
@@ -3277,8 +3276,8 @@ export default function TestimonyDraft({
                     help, and a life structured to stay inside the corridor so that town was not
                     reachable. He walked instead. He had been at Siltcoos Beach on the second, the
                     day he wrote down the statute violation, and he was back at the water on the
-                    sixth, the ninth after seven and a half miles, the tenth after twelve and a
-                    half, the eleventh, and the fifteenth. Seven times that month he walked out to
+                    sixth, the ninth after seven and a half miles, <TraceCite ulid="01K9QKSX18NGC0TTX0XJ429TZN">the tenth after twelve and a half</TraceCite>,
+                    the eleventh, and the fifteenth. Seven times that month he walked out to
                     the ocean and back, in rain and after dark, far enough that a step counter put
                     him in the top three percent of everyone it tracks. On the sixth day he said it was the furthest he had made it
                     in thirty-two years.
@@ -3289,9 +3288,8 @@ export default function TestimonyDraft({
                     clustered the archive into groups that hold a stretch of time at once, and a
                     query totaling the runtime returned more than seven straight days of it. On the
                     eighteenth he gave the archive its own address and put every individual and what
-                    each of them did into it. In nine months no one had disputed a line of it. On the
-                    twenty-seventh he set out for the beach and turned back two and a half miles in
-                    because the trail was under water. It is the only time in these seven months
+                    each of them did into it. In nine months no one had disputed a line of it. On the twenty-seventh he <TraceCite ulid="01KDGCT0PR6G6KD4K15SQQAK05">set out for the beach and turned back</TraceCite>
+                    two and a half miles in because the trail was under water. It is the only time in these seven months
                     that he started for the ocean and did not reach it.
                 </P>
                 <P id="pdd04" n={276}>
@@ -3366,7 +3364,7 @@ export default function TestimonyDraft({
                     him holding the facts alone.
                 </P>
                 <P id="pdd08" n={282}>
-                    That morning he had walked five miles and stood at Waxmyrtle Beach at 12:21. The
+                    That morning he had <TraceCite ulid="01KHC942Q0J3SC46JF94B2FXM9">walked five miles and stood at Waxmyrtle Beach</TraceCite> at 12:21. The
                     letter came at 4:23 that afternoon. February 13, 2026 was the last time either
                     of them wrote to him.
                 </P>

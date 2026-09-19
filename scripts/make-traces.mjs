@@ -41,6 +41,22 @@ const WANTED = [
     { name: "Cape Sebastian with Chad", on: "2024-11-16" },
     { name: "First Visit to Honeyman State Park", on: "2025-01-04" },
     { name: "Fingerprinted for Forest Service", on: "2025-04-14" },
+
+    // February at Honeyman — the beach while the file was being written
+    { name: "Tuesday Morning Hiking", on: "2025-02-25" },    // South Jetty
+    { name: "Wednesday Morning Hiking", on: "2025-02-26" },  // Siltcoos Beach
+    { name: "Wednesday Lunch Hiking", on: "2025-02-26" },    // Beverly Beach
+
+    // Displaced — the first morning on the ground he still lives on
+    { name: "Saturday Morning Hiking", on: "2025-04-05" },   // Siltcoos Beach
+
+    // The Director and her Deputy
+    { name: "Tahkenitch Creek with Wendy", on: "2025-08-31" },
+    { name: "Thursday Lunch Activity", on: "2025-10-23" },   // Tahkenitch, seven miles
+    { name: "Monday Lunch Activity", on: "2025-11-10" },     // the longest of the November walks
+    { name: "Discovered Trail Flooded - Can't Get to Beach", on: "2025-12-27" },
+    { name: "Friday Lunch Hiking", on: "2026-02-13" },       // the last day either of them wrote
+
 ];
 
 // `--window 2024-10-01 2025-01-01` lists everything in a date range instead,
