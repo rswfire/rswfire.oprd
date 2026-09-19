@@ -3217,8 +3217,9 @@ export default function TestimonyDraft({
                         want to assure you that I take concerns about our volunteer program
                         seriously.
                     </Cite>{" "}
-                    He had written it in the open, where anyone could read it and where an answer
-                    would also be in the open. She avoided accountability. She did not say the
+                    He had published it on r/volunteer, where anyone could read it and where an
+                    answer would also be in the open. That community would later ban him for
+                    continuing to advocate for himself. She avoided accountability. She did not say the
                     claims were false and she did not say they were true, and by thanking him for
                     his perspective she spent the letter. An open letter works once. After her
                     reply it was useless to him. He knew she had done it while he was reading it,
