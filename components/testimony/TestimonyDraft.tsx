@@ -3217,10 +3217,13 @@ export default function TestimonyDraft({
                         want to assure you that I take concerns about our volunteer program
                         seriously.
                     </Cite>{" "}
-                    She did not say the claims were false. She did not say they were true. She
-                    converted them into a perspective she had heard, and he knew she had done it
-                    while he was reading it. He was impressed. He did not see a next move against
-                    it, so he waited until one came to him.
+                    He had written it in the open, where anyone could read it and where an answer
+                    would also be in the open. She avoided accountability. She did not say the
+                    claims were false and she did not say they were true, and by thanking him for
+                    his perspective she spent the letter. An open letter works once. After her
+                    reply it was useless to him. He knew she had done it while he was reading it,
+                    and he was impressed. He did not see a next move against it, so he waited until
+                    one came to him.
                 </P>
                 <P id="pdd04" n={272}>
                     In December he wrote to tell her what had happened to him since. He had gone
