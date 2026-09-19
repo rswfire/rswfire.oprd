@@ -3179,8 +3179,16 @@ export default function TestimonyDraft({
 
             <Part n="Thirteen" title="THE DIRECTOR AND HER DEPUTY">
                 <P id="pdd01" n={269}>
-                    In July 2025 he read a newspaper interview with the director of Oregon Parks
-                    and Recreation about her funding plan, and he wrote to her.{" "}
+                    On July 29, 2025 he was a campground host at Driftwood II, in the Siltcoos
+                    Recreation Area, four months after Oregon Parks and Recreation dismissed him.
+                    He was forty-eight. He lived in the RV. His days were laundry, cleaning the
+                    fire pits, paperwork, and two trips to the work center for gravel, four buckets
+                    of it, to level one side of his own fire ring. He had days off on Mondays and
+                    Tuesdays. He was congested and conserving a limited supply of pseudoephedrine.
+                    The night before, he had ended his YouTube channel, a decision he had been
+                    turning over for nearly half a year. That afternoon he read a newspaper
+                    interview with the director of Oregon Parks and Recreation about her funding
+                    plan, and he wrote to her.{" "}
                     <Cite ulid="01K1C14TXRFZCGXVNW27SACRF4">
                         I hope you are successful at finding an ethical and supportive way to keep
                         our state parks going.
@@ -3372,11 +3380,11 @@ export default function TestimonyDraft({
                     the agency above her to decide otherwise.
                 </P>
                 <P id="pdd24" n={292}>
-                    He wished her well in July 2025. Fourteen months later he was hiking a trail he
-                    walks every day, building a company, running a route for the Forest Service,
-                    and writing to two people who had stopped answering, about men with guns and a
-                    box of shells at his gate. They have said four things to him in all that time.
-                    What they said to each other about him is for sale.
+                    Between the July afternoon he wished her well and the September afternoon they
+                    priced her notes, fourteen months passed. He hauled gravel, ended a channel,
+                    started another, took the caretaker post, built the platform, walked the route,
+                    walked the trails, and wrote to them. They wrote back four times, and the last
+                    of the four was in February.
                 </P>
             </Part>
 
