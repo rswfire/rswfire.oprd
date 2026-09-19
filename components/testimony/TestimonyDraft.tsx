@@ -3185,9 +3185,7 @@ export default function TestimonyDraft({
                     fire pits, paperwork, and two trips to the work center for gravel, four buckets
                     of it, to level one side of his own fire ring. He had days off on Mondays and
                     Tuesdays. He was congested and conserving a limited supply of pseudoephedrine.
-                    The night before, he had ended his YouTube channel, a decision he had been
-                    turning over for nearly half a year. That afternoon he read a newspaper
-                    interview with the director of Oregon Parks and Recreation about her funding
+                    That afternoon he read a newspaper interview with the director of Oregon Parks and Recreation about her funding
                     plan, and he wrote to her.{" "}
                     <Cite ulid="01K1C14TXRFZCGXVNW27SACRF4">
                         I hope you are successful at finding an ethical and supportive way to keep
@@ -3381,9 +3379,9 @@ export default function TestimonyDraft({
                 </P>
                 <P id="pdd24" n={292}>
                     Between the July afternoon he wished her well and the September afternoon they
-                    priced her notes, fourteen months passed. He hauled gravel, ended a channel,
-                    started another, took the caretaker post, built the platform, walked the route,
-                    walked the trails, and wrote to them. They wrote back four times, and the last
+                    priced her notes, fourteen months passed. He hauled gravel, took the caretaker
+                    post, built the platform, walked the route, walked the trails, and wrote to
+                    them. They wrote back four times, and the last
                     of the four was in February.
                 </P>
             </Part>
