@@ -4813,6 +4813,22 @@ export const OPRD_THREAD: RecordsThreadData = {
             ],
             eml: "/records/oprd/eml/2026-09-18_1832_the-estimates-as-a-pdf.eml",
         },
+        {
+            id: "what-i-softened",
+            ulid: "01M2VPA710TYH54HFAQ7T3SFYM",
+            flagged: true,
+            date: "September 18, 2026",
+            d: "2026-09-18",
+            time: "7:00 PM",
+            from: "Robert Samuel White",
+            to: "Katie Gauthier, OPRD",
+            kind: "notice",
+            title: "What he softened, said plainly",
+            summary:
+                "He removes the softening from the end of the letter and states the terms without it. The Department releases the records in full or he sues for them, on a date he sets and no one else can anticipate. He names court as their arena and says he is not blind to what it is for. He then states what he is not bringing: when he sues, it will be for the records, and not for the case that remains available to him because the conduct is ongoing. Sent to the Director, the Commission's public comment address, and the Governor.",
+            docs: [{ label: "What he softened, said plainly", href: "/records/oprd/2026-09-18-what-i-softened.pdf" }],
+            eml: "/records/oprd/eml/2026-09-18_1900_what-i-softened.eml",
+        },
     ],
 };
 
