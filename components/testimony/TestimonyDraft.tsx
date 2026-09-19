@@ -3080,7 +3080,7 @@ export default function TestimonyDraft({
                 <figure className="mt-2 mb-6">
                     <img
                         src="/director-and-deputy.jpg"
-                        alt="Director Lisa Sumption and Deputy Director J.R. Collier in a kayak on the Willamette River, wearing life jackets."
+                        alt="Director Lisa Sumption and Deputy Director J.R. Collier in a canoe on the Willamette River, wearing life jackets."
                         className="w-full max-w-md rounded border border-gray-200"
                     />
                     <figcaption className="mt-2 max-w-md text-xs leading-relaxed text-gray-500">
