@@ -3311,7 +3311,7 @@ export default function TestimonyDraft({
                     written that further correspondence would lead nowhere. At 2:48 that afternoon
                     she wrote again, three words, the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
-                    It was a retort, and an unforced error. It told him the domain had landed.
+                    He laughed out loud.
                 </P>
                 <P id="pdd05b" n={275}>
                     Her answer recast a documented complaint as pain and closed the only channel that
