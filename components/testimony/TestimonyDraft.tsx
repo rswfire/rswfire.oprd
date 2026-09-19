@@ -3196,9 +3196,8 @@ export default function TestimonyDraft({
                     begins. He wished her well first.
                 </P>
                 <P id="pdd02" n={270}>
-                    A month later he published an Open Letter to her on r/volunteer, a community
-                    that would later ban him for continuing to advocate for himself. He wrote it
-                    there, he said, because{" "}
+                    A month later he published an Open Letter to her on r/volunteer. He wrote it there, he
+                    said, because{" "}
                     <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
                         private channels have been met with silence
                     </Cite>
