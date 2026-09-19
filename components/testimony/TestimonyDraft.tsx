@@ -3387,9 +3387,10 @@ export default function TestimonyDraft({
                         <Icon name="Globe" size={13} strokeWidth={2} className="translate-y-[2px]" />
                         ready for other people to use
                     </a>
-                    . Eighteen days after the Deputy Director&rsquo;s letter, and eleven weeks
-                    before that walk, an emergency manager inside the institution took his letters
-                    to an Oregon State Police captain and copied the Deputy Director on it.
+                    . Eighteen days after the Deputy Director told him to send everything to
+                    himself and to expect nothing from anyone else, an emergency manager inside the
+                    institution took his letters to an Oregon State Police captain. The Deputy
+                    Director was copied on it.
                 </P>
             </Part>
 
