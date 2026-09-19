@@ -3142,7 +3142,18 @@ export default function TestimonyDraft({
                     All of it embedded and indexed, so the record can be put a question, and so a
                     machine reading him reads the whole pattern rather than the last thing he said.
                     Maps of everywhere he walked with the photographs pinned to them. It runs on
-                    hardware he pays for, under a name he has held for twenty-three years.
+                    hardware he pays for, under{" "}
+                    <a
+                        href="https://rswfire.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-baseline gap-1 text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600"
+                    >
+                        <Icon name="Globe" size={13} strokeWidth={2} className="translate-y-[2px]" />
+                        rswfire.com
+                    </a>
+                    , a domain name he has held for twenty-three years. rswfire is his name, and it
+                    has been his for the whole span of the internet.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
                 <P id="pdd02a" n={263}>
