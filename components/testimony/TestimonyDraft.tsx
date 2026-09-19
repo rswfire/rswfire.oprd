@@ -3385,13 +3385,29 @@ export default function TestimonyDraft({
                 <P id="pdd08" n={281}>
                     That morning he had <TraceCite ulid="01KHC942Q0J3SC46JF94B2FXM9">walked five miles and stood at Waxmyrtle Beach</TraceCite> at 12:21. The
                     letter came at 4:23 that afternoon. February 13, 2026 was the last time either
-                    of them wrote to him. Thirty-nine days later, on the anniversary of the
-                    dismissal, the institution sent him something other than a letter.
+                    of them wrote to him.
+                </P>
+                <P id="pdd09" n={282}>
+                    What he was building toward was a launch. It came on May 18, on a walk from the
+                    RV down the Siltcoos River to the ocean, where he said the thing was finished,
+                    robust, and{" "}
+                    <a
+                        href="https://rswfire.com/library/signal/01KRXFA4G04GPAJCY3HDB9FY28"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-baseline gap-1 text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600"
+                    >
+                        <Icon name="Globe" size={13} strokeWidth={2} className="translate-y-[2px]" />
+                        ready for other people to use
+                    </a>
+                    . Eighteen days after the Deputy Director&rsquo;s letter, and eleven weeks
+                    before that walk, an emergency manager inside the institution took his letters
+                    to an Oregon State Police captain and copied the Deputy Director on it.
                 </P>
             </Part>
 
             <Part n="Thirteen" title="THREE MEN WITH GUNS">
-                <P id="pfbekq" n={282}>
+                <P id="pfbekq" n={283}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
                     and gave him twenty-four hours to vacate (
@@ -3418,7 +3434,7 @@ export default function TestimonyDraft({
                     <Moment ulid={ANNIVERSARY} t="3:02" />
                     ).
                 </P>
-                <P id="p9zswx" n={283}>
+                <P id="p9zswx" n={284}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
@@ -3428,14 +3444,14 @@ export default function TestimonyDraft({
                     order came back: &ldquo;Capt. Kennedy is requesting that a threat assessment be
                     conducted asap.&rdquo;
                 </P>
-                <P id="p8knha" n={284}>
+                <P id="p8knha" n={285}>
                     It went to the Major Crimes Section, and to a detective who is a task force
                     officer with the Portland FBI Joint Terrorism Task Force. That detective
                     forwarded his name to FBI personnel and pulled his DMV record through the task
                     force, and a Department of Justice fusion center analyst documented the
                     activity.
                 </P>
-                <P id="pgxwqf" n={285}>
+                <P id="pgxwqf" n={286}>
                     On March 6 that detective read this archive end to end and wrote down what he
                     found: <em>Based on the website nothing is standing out to me more than what
                     Parks and Rec sent you. Sounds like this person does have a grievance with the
@@ -3444,7 +3460,7 @@ export default function TestimonyDraft({
                     man who wrote it. There was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
-                <P id="pewtmp" n={286}>
+                <P id="pewtmp" n={287}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
                     him &ldquo;Suspect&rdquo;, and wrote the basis into it: sending &ldquo;concerning emails
                     to former supervisors in parks department and publicly airing grievances&rdquo;.
@@ -3453,7 +3469,7 @@ export default function TestimonyDraft({
                     Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was
                     inquiring about his whereabouts&rdquo;.
                 </P>
-                <P id="pqdfr8" n={287}>
+                <P id="pqdfr8" n={288}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
                     came through a locked federal gate, posted against public access (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:00" />), onto
                     restricted federal land, to the work center where he lives and works. Nobody
@@ -3466,13 +3482,13 @@ export default function TestimonyDraft({
                     off the vehicle while it was still in frame (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:17" />). The place is his home. He lives
                     there alone, in exchange for stewardship of that land.
                 </P>
-                <P id="pt7c8w" n={288}>
+                <P id="pt7c8w" n={289}>
                     The second detective&rsquo;s own report closes the question of what they had:
                     no direct threats, no &ldquo;leakage towards violence or violent behavior&rdquo;,
                     and &ldquo;no evidence White has committed any crimes&rdquo;. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
-                <P id="pwmw3z" n={289}>
+                <P id="pwmw3z" n={290}>
                     Two days after they came he walked to Waxmyrtle Beach and stood at the water. Three days later he filed a Siuslaw National Forest incident
                     report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
@@ -3483,7 +3499,7 @@ export default function TestimonyDraft({
                     where he lives, his schedule and his duties, his correspondence and his text
                     messages, and a promise to &ldquo;keep you up to date&rdquo;.
                 </P>
-                <P id="pn89s9" n={290}>
+                <P id="pn89s9" n={291}>
                     Four months later the Forest Service put its own role in writing: it did not
                     initiate the interview, its involvement was{" "}
                     <em>limited to assisting OSP by providing access and guiding them to the
@@ -3502,31 +3518,31 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={291}>
+                <P id="pad01" n={292}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={292}>
+                <P id="pad02" n={293}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={293}>
+                <P id="pad03" n={294}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={294}>
+                <P id="pad04" n={295}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={295}>
+                <P id="pad05" n={296}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={296}>
+                <P id="pad06" n={297}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={297}>
+                <P id="pad07" n={298}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={298}>
+                <P id="pad08" n={299}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={299}>
+                <P id="pad09" n={300}>
                     The subject is closed again.
                 </P>
             </Part>
