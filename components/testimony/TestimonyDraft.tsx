@@ -3308,8 +3308,8 @@ export default function TestimonyDraft({
                     receipt, and signed it with the domain underneath his name. There was nothing
                     on the site yet. She had ended the correspondence at 8:37 that morning, and by
                     the afternoon it had a permanent address that named the institution and what it
-                    had done. At 2:48
-                    that afternoon she sent three words, the last she would ever write to him.{" "}
+                    had done, sitting under his name in her inbox. At 2:48 she answered the domain
+                    with three words, the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     It was a retort, and an unforced error. It told him the domain had landed.
                 </P>
