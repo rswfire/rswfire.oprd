@@ -4739,6 +4739,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "estimate-on-the-september-5-request",
+            flagged: true,
             ulid: "01M2VE25T0WZXS6PE4BXJK0693",
             date: "September 18, 2026",
             d: "2026-09-18",
@@ -4757,6 +4758,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "estimate-on-the-september-11-request",
+            flagged: true,
             ulid: "01M2VEFTARQHQW029628GQA1Y7",
             date: "September 18, 2026",
             d: "2026-09-18",
@@ -4775,6 +4777,7 @@ export const OPRD_THREAD: RecordsThreadData = {
         },
         {
             id: "the-estimates",
+            flagged: true,
             ulid: "01M2VF2JXGC49DZZZDFKKMXS2J",
             date: "September 18, 2026",
             d: "2026-09-18",
