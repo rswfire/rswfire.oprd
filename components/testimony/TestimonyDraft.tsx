@@ -3152,9 +3152,8 @@ export default function TestimonyDraft({
                         <Icon name="Globe" size={13} strokeWidth={2} className="translate-y-[2px]" />
                         rswfire.com
                     </a>
-                    , a domain name he has held for twenty-three years. rswfire is his name:
-                    Robert Samuel White, plus the word fire, chosen as a teenager and never once
-                    changed.
+                    , a domain name he has held for twenty-three years. rswfire is his name, and it
+                    has been his for the whole span of the internet.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
                 <P id="pdd02a" n={263}>
