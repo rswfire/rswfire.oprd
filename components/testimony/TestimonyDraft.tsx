@@ -3217,8 +3217,10 @@ export default function TestimonyDraft({
                         want to assure you that I take concerns about our volunteer program
                         seriously.
                     </Cite>{" "}
-                    She did not say the claims were false. She did not say they were true. She said
-                    she could not respond to them here, and named no place where she could.
+                    She did not say the claims were false. She did not say they were true. She
+                    converted them into a perspective she had heard, and he knew she had done it
+                    while he was reading it. He was impressed. He did not see a next move against
+                    it, so he waited until one came to him.
                 </P>
                 <P id="pdd04" n={272}>
                     In December he wrote to tell her what had happened to him since. He had gone
