@@ -3184,7 +3184,7 @@ export default function TestimonyDraft({
                     He was forty-eight. He lived in the RV. His days were laundry, cleaning the
                     fire pits, paperwork, and two trips to the work center for gravel, four buckets
                     of it, to level one side of his own fire ring. He had days off on Mondays and
-                    Tuesdays. He was congested and conserving a limited supply of pseudoephedrine.
+                    Tuesdays.
                     That afternoon he read a newspaper interview with the director of Oregon Parks and Recreation about her funding
                     plan, and he wrote to her.{" "}
                     <Cite ulid="01K1C14TXRFZCGXVNW27SACRF4">
