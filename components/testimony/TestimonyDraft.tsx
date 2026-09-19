@@ -3129,15 +3129,22 @@ export default function TestimonyDraft({
                         <Icon name="Globe" size={13} strokeWidth={2} className="translate-y-[2px]" />
                         Autonomy Realms
                     </a>
-                    . A person gets a realm of their own and everything they have ever recorded
-                    goes into it as a signal: the video, the audio, the photographs, the documents,
-                    the routes walked. The system reads all of it and writes back, one reading for
-                    what happened and another for what it was, then draws the signals together by
-                    time and place and subject until a stretch of a life can be asked a question
-                    and answer it. Maps of where he went, the photographs pinned to them, an access
-                    layer the realmholder owns outright with the money going to their account and
-                    no one standing in between. He built it open so that anyone could run it on
-                    their own machine, for their own life, without asking him or anyone else.
+                    . A person gets a realm of their own, and anything they have ever recorded
+                    goes into it as a signal: video, audio, photographs, documents, conversations,
+                    a journal page photographed off a shelf after twenty years, the route of a
+                    walk. The system does not summarise them. It reads each one through several
+                    lenses at once, what happened and what it was and what it carries and what it
+                    says about the shape of the person, and one of those lenses is a mirror that
+                    hands him his own interior back in words he did not yet have for it. That
+                    mirror is the reason the rest of it exists. Then it reads across: a hundred
+                    signals out of one stretch of time taken together, so that a season of a life
+                    has its own arc and its own reflections instead of a hundred separate entries.
+                    All of it embedded and indexed, so the record can be put a question, and so a
+                    machine reading him reads the whole pattern rather than the last thing he said.
+                    Maps of everywhere he walked with the photographs pinned to them. An access
+                    layer the realmholder owns outright, the money going to their own account, no
+                    one standing in between. And he built it open, so anyone could run it on their
+                    own machine, for their own life, without asking him or anyone.
                 </P>
                 <P id="pdd01d" n={263}>
                     His reason is not a complaint about platforms. Almost every human being who has
