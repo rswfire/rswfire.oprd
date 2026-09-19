@@ -279,7 +279,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         status: "Acknowledged.",
         demanded: {
             total: "$1,680 – $1,808",
-            note: "Two invoices, both dated September 18, 2026. The September 5 request: fifty to fifty-four hours at $32 an hour, of which forty hours are for two people's own notes and calendar entries. The September 11 request: two and a half hours, $80. A fee waiver was requested under ORS 192.324(5) on September 5, and under the Department's own rule, OAR 736-001-0030, it is the Director or her designee who grants or denies it.",
+            note: "Two invoices, both dated September 18, 2026. The September 5 request: fifty to fifty-four hours at $32 an hour, of which forty hours are for two people's own notes and calendar entries. The September 11 request: two and a half hours, $80. A fee waiver was requested under ORS 192.324(5) on September 5. Under the Department's own rule, OAR 736-001-0030, the decision belongs to the Director. She is also the subject of the request: items 1 and 3 seek her own communications. The waiver is hers to grant.",
         },
         officers: [
             { name: "Katie Gauthier", role: "External Relations Manager" },
