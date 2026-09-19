@@ -3307,9 +3307,9 @@ export default function TestimonyDraft({
                     oprdvolunteerabuse.org. Then he answered her in one line, that he acknowledged
                     receipt, and signed it with the domain underneath his name. The site was empty.
                     There was nothing on it at all. The only thing that existed was the name, and
-                    it was sitting under his name in her inbox six hours after she closed the
-                    correspondence. At 2:48 she answered it with three words, the last she would
-                    ever write to him.{" "}
+                    it was sitting under his name in her inbox. At 8:37 that morning she had
+                    written that further correspondence would lead nowhere. At 2:48 that afternoon
+                    she wrote again, three words, the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     It was a retort, and an unforced error. It told him the domain had landed.
                 </P>
