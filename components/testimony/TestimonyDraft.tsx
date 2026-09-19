@@ -3348,12 +3348,10 @@ export default function TestimonyDraft({
                     </Cite>
                 </P>
                 <P id="pdd06b" n={278}>
-                    The order was the fourth act in the same pattern. Answer the public letter
-                    without answering it, hold the records past the statute, close the
-                    correspondence, then bar the correspondent from the staff and tell him to expect
-                    nothing. Not one of the four investigated anything. Each one removed a way for
-                    the facts to reach a person with the authority to act on them, and each one left
-                    him holding the facts alone.
+                    That is four replies in seven months. One answered a public letter without
+                    answering any of it. One closed the correspondence. One was three words. One
+                    barred him from the staff. Not one of them asked him a question, requested a
+                    document, or named a person who would look at any of it.
                 </P>
                 <P id="pdd06c" n={279}>
                     Nothing at that level is accidental. The Director and the Deputy Director are
