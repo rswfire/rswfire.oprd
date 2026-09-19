@@ -3303,16 +3303,18 @@ export default function TestimonyDraft({
                     again.
                 </P>
                 <P id="pdd05" n={277}>
-                    She answered at 8:37 the next morning.{" "}
-                    <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
-                        I can see that this has been deeply painful for you&hellip; I hear the
-                        frustration and hurt in your words.
-                    </Cite>{" "}
-                    Then:{" "}
+                    She answered at 8:37 the next morning in therapeutic language. She could see
+                    how painful this had been for him. She heard the frustration and the hurt in
+                    his words. She recognised the seriousness with which he had approached it.
+                    Every sentence was about his emotional state and not one was about a fact he
+                    had given her, and on that basis she closed the correspondence.{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         we&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
                     </Cite>{" "}
+                    Converting a documented complaint into a description of the complainant is the
+                    oldest instrument an institution has, and the program manager had already run
+                    it on him.
                     That day he went into town and put money in the bank so he could register the
                     domain. Then he answered her in one line, that he acknowledged receipt, and
                     signed it with the domain underneath his name. Nothing was on it yet. At 2:48
@@ -3338,10 +3340,13 @@ export default function TestimonyDraft({
                     framework he had never used.
                 </P>
                 <P id="pdd07" n={280}>
-                    In February the Deputy Director wrote the fourth and final reply, and it was a
-                    routing instruction. Messages he had sent to the program manager had been
-                    forwarded up. He wrote that the agency recognized he might file a legal action.
-                    Therefore, everything was to go to the Deputy Director from then on.{" "}
+                    In February the Deputy Director wrote the fourth and final reply. It was not
+                    an internal forward and it did not pretend to be. He wrote that the agency
+                    recognised he might be filing a legal action, and that when he did, his
+                    correspondence would go to their Department of Justice counsel. The matter had
+                    been in legal hands and he was being told so. What the letter did with that was
+                    close the agency to him: every inquiry to the Deputy Director, and to nobody
+                    else.{" "}
                     <Cite ulid="01KHCRFBDG3DMYZSSTGV5WC7E7">
                         Please do not communicate further with Ms. [Program Manager] or other OPRD
                         staff, and please do not expect any responses from them.
@@ -3363,15 +3368,32 @@ export default function TestimonyDraft({
                     the facts to reach a person with the authority to act on them, and each one left
                     him holding the facts alone.
                 </P>
-                <P id="pdd08" n={282}>
+                <P id="pdd06c" n={282}>
+                    Nothing at that level is accidental. The Director and the Deputy Director are
+                    the last two offices inside the institution. Above them sit a Commission and a
+                    Governor, and he had written to both. What reached their desks was not rumour
+                    or grievance: named staff, dated conduct, the documents, and recordings of the
+                    meetings themselves, offered to them again and again and never once asked for.
+                    A director&rsquo;s office exists so that a failure below it can be corrected,
+                    and the correction is the one thing that never came. She wrote that his
+                    concerns would be reviewed through the appropriate channels. She never named
+                    the channel, no review ever reached him, and across seven months neither of
+                    them opened an inquiry, referred the matter to anyone, or gave him a reason why
+                    not. The records law obliged them to answer and they let it run eighty-five
+                    days past. The volunteer program is hers. The staff are hers. The single
+                    operational act either of them took in all of it was her deputy instructing a
+                    citizen that the employees of a public agency would not be replying to him.
+                </P>
+                <P id="pdd08" n={283}>
                     That morning he had <TraceCite ulid="01KHC942Q0J3SC46JF94B2FXM9">walked five miles and stood at Waxmyrtle Beach</TraceCite> at 12:21. The
                     letter came at 4:23 that afternoon. February 13, 2026 was the last time either
-                    of them wrote to him.
+                    of them wrote to him. Thirty-nine days later, on the anniversary of the
+                    dismissal, the institution sent him something other than a letter.
                 </P>
             </Part>
 
             <Part n="Thirteen" title="THREE MEN WITH GUNS">
-                <P id="pfbekq" n={283}>
+                <P id="pfbekq" n={284}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
                     and gave him twenty-four hours to vacate (
@@ -3398,7 +3420,7 @@ export default function TestimonyDraft({
                     <Moment ulid={ANNIVERSARY} t="3:02" />
                     ).
                 </P>
-                <P id="p9zswx" n={284}>
+                <P id="p9zswx" n={285}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
@@ -3408,14 +3430,14 @@ export default function TestimonyDraft({
                     order came back: &ldquo;Capt. Kennedy is requesting that a threat assessment be
                     conducted asap.&rdquo;
                 </P>
-                <P id="p8knha" n={285}>
+                <P id="p8knha" n={286}>
                     It went to the Major Crimes Section, and to a detective who is a task force
                     officer with the Portland FBI Joint Terrorism Task Force. That detective
                     forwarded his name to FBI personnel and pulled his DMV record through the task
                     force, and a Department of Justice fusion center analyst documented the
                     activity.
                 </P>
-                <P id="pgxwqf" n={286}>
+                <P id="pgxwqf" n={287}>
                     On March 6 that detective read this archive end to end and wrote down what he
                     found: <em>Based on the website nothing is standing out to me more than what
                     Parks and Rec sent you. Sounds like this person does have a grievance with the
@@ -3424,7 +3446,7 @@ export default function TestimonyDraft({
                     man who wrote it. There was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
-                <P id="pewtmp" n={287}>
+                <P id="pewtmp" n={288}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
                     him &ldquo;Suspect&rdquo;, and wrote the basis into it: sending &ldquo;concerning emails
                     to former supervisors in parks department and publicly airing grievances&rdquo;.
@@ -3433,7 +3455,7 @@ export default function TestimonyDraft({
                     Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was
                     inquiring about his whereabouts&rdquo;.
                 </P>
-                <P id="pqdfr8" n={288}>
+                <P id="pqdfr8" n={289}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
                     came through a locked federal gate, posted against public access (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:00" />), onto
                     restricted federal land, to the work center where he lives and works. Nobody
@@ -3446,13 +3468,13 @@ export default function TestimonyDraft({
                     off the vehicle while it was still in frame (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:17" />). The place is his home. He lives
                     there alone, in exchange for stewardship of that land.
                 </P>
-                <P id="pt7c8w" n={289}>
+                <P id="pt7c8w" n={290}>
                     The second detective&rsquo;s own report closes the question of what they had:
                     no direct threats, no &ldquo;leakage towards violence or violent behavior&rdquo;,
                     and &ldquo;no evidence White has committed any crimes&rdquo;. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
-                <P id="pwmw3z" n={290}>
+                <P id="pwmw3z" n={291}>
                     Two days after they came he walked to Waxmyrtle Beach and stood at the water. Three days later he filed a Siuslaw National Forest incident
                     report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
@@ -3463,7 +3485,7 @@ export default function TestimonyDraft({
                     where he lives, his schedule and his duties, his correspondence and his text
                     messages, and a promise to &ldquo;keep you up to date&rdquo;.
                 </P>
-                <P id="pn89s9" n={291}>
+                <P id="pn89s9" n={292}>
                     Four months later the Forest Service put its own role in writing: it did not
                     initiate the interview, its involvement was{" "}
                     <em>limited to assisting OSP by providing access and guiding them to the
@@ -3482,31 +3504,31 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={292}>
+                <P id="pad01" n={293}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={293}>
+                <P id="pad02" n={294}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={294}>
+                <P id="pad03" n={295}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={295}>
+                <P id="pad04" n={296}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={296}>
+                <P id="pad05" n={297}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={297}>
+                <P id="pad06" n={298}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={298}>
+                <P id="pad07" n={299}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={299}>
+                <P id="pad08" n={300}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={300}>
+                <P id="pad09" n={301}>
                     The subject is closed again.
                 </P>
             </Part>
