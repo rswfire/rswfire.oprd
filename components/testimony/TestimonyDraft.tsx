@@ -3359,8 +3359,7 @@ export default function TestimonyDraft({
                 <P id="pddz2" n={279}>
                     What reached them was not rumour. Named staff, dated conduct, the documents, and
                     recordings of the meetings themselves, offered to them over and over and never
-                    once asked for. In seven months he wrote to those two more than he wrote to
-                    anyone else alive.
+                    once asked for.
                 </P>
                 <P id="pddz3" n={280}>
                     Four replies came back. One answered a public letter without answering any of
