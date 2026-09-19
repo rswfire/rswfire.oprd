@@ -3278,11 +3278,9 @@ export default function TestimonyDraft({
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
                 <P id="pdd05a" n={273}>
-                    By December the record had become something a stranger could query. He had
-                    clustered the archive into groups that hold a stretch of time at once, and a
-                    query totaling the runtime returned more than seven straight days of it. On the
-                    eighteenth he gave the archive its own address and put every individual and what
-                    each of them did into it. In nine months no one had disputed a line of it. On the twenty-seventh he <TraceCite ulid="01KDGCT0PR6G6KD4K15SQQAK05">set out for the beach and turned back</TraceCite>
+                    On December 18 the record got its own address. He put it at
+                    oprdvolunteerabuse.org, and in it he named every individual and what each of
+                    them did. In nine months no one disputed a line of it. On the twenty-seventh he <TraceCite ulid="01KDGCT0PR6G6KD4K15SQQAK05">set out for the beach and turned back</TraceCite>
                     two and a half miles in because the trail was under water. It is the only time in these seven months
                     that he started for the ocean and did not reach it.
                 </P>
