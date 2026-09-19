@@ -53,7 +53,14 @@ const WANTED = [
     // The Director and her Deputy
     { name: "Tahkenitch Creek with Wendy", on: "2025-08-31" },
     { name: "Thursday Lunch Activity", on: "2025-10-23" },   // Tahkenitch, seven miles
+    // November, every walk the chapter names. Dates are the UTC start, which
+    // is why the walk of the sixth keys on the seventh.
+    { name: "Sunday Lunch Hiking", on: "2025-11-02" },       // Siltcoos Beach
+    { name: "Thursday Afternoon Hiking", on: "2025-11-07" }, // the sixth, local
+    { name: "Sunday Lunch Activity", on: "2025-11-09" },
     { name: "Monday Lunch Activity", on: "2025-11-10" },     // the longest of the November walks
+    { name: "Tuesday Lunch Activity", on: "2025-11-11" },
+    { name: "Saturday Lunch Hiking", on: "2025-11-15" },
     { name: "Discovered Trail Flooded - Can't Get to Beach", on: "2025-12-27" },
     { name: "Friday Lunch Hiking", on: "2026-02-13" },       // the last day either of them wrote
 

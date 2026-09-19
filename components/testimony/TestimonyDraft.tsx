@@ -3271,10 +3271,7 @@ export default function TestimonyDraft({
                     He did the same to himself. On November 4 he put down nicotine, cold, after
                     thirty-two years of it, from the age of sixteen. He built the conditions to hold it: no fuel, no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
-                    reachable. He walked instead. He had been at Siltcoos Beach on the second, the
-                    day he wrote down the statute violation, and he was back at the water on the
-                    sixth, the ninth after seven and a half miles, <TraceCite ulid="01K9QKSX18NGC0TTX0XJ429TZN">the tenth after twelve and a half</TraceCite>,
-                    the eleventh, and the fifteenth. Seven times that month he walked out to
+                    reachable. He walked instead. He had been at <TraceCite ulid="01K934STC8619MERVPWB6BMP8T">Siltcoos Beach on the second</TraceCite>, the day he wrote down the statute violation, and he was back at the water on <TraceCite ulid="01K9DVE7PR8JY1CHNJ4EB4XYY0">the sixth</TraceCite>, <TraceCite ulid="01K9N19820VXG6QAZBBVX4AHSS">the ninth after seven and a half miles</TraceCite>, <TraceCite ulid="01K9QKSX18NGC0TTX0XJ429TZN">the tenth after twelve and a half</TraceCite>, <TraceCite ulid="01K9T5T2NGW95V9CRJ2M0WRF1X">the eleventh</TraceCite>, and <TraceCite ulid="01KA4G0DQ0H0WFW6WSSF7PRMJC">the fifteenth</TraceCite>. Seven times that month he walked out to
                     the ocean and back, in rain and after dark, far enough that a step counter put
                     him in the top three percent of everyone it tracks. On the sixth day he said it was the furthest he had made it
                     in thirty-two years.
