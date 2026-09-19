@@ -4794,6 +4794,25 @@ export const OPRD_THREAD: RecordsThreadData = {
             ],
             eml: "/records/oprd/eml/2026-09-18_1654_the-estimates.eml",
         },
+        {
+            id: "the-estimates-as-a-pdf",
+            ulid: "01M2VMP7Y86Z7WBP079M7NP6WZ",
+            flagged: true,
+            date: "September 18, 2026",
+            d: "2026-09-18",
+            time: "6:32 PM",
+            from: "Robert Samuel White",
+            to: "Katie Gauthier, OPRD",
+            kind: "notice",
+            title: "The same letter, as a PDF",
+            summary:
+                "The letter resent, in full, because the first transmission carried the Markdown source it is generated from rather than the rendered document. In full: “I mistakenly attached the MD file my PDF letter is generated from. Since the file format is probably unfamiliar to you, I have attached the PDF to this message.” Same distribution as the letter: the Director, the public records mailbox, the Commission's public comment address, and the Governor.",
+            docs: [
+                { label: "The same letter, as a PDF", href: "/records/oprd/2026-09-18-the-estimates-as-a-pdf.pdf" },
+                { label: "The letter", href: "/records/oprd/2026-09-18-the-estimates-letter.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-18_1832_the-estimates-as-a-pdf.eml",
+        },
     ],
 };
 
