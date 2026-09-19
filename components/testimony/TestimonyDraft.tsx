@@ -3181,9 +3181,13 @@ export default function TestimonyDraft({
                 <P id="pdd01" n={269}>
                     On March 24, 2026, three armed officers came to the locked gate of the federal
                     work center where he lives. It was the anniversary of his dismissal. He wrote
-                    to the Director and the Deputy Director about it that week, in their own names,
-                    and told them a phone call from inside their institution had put men with guns
-                    at the place where he sleeps.
+                    to the Director that evening, at 5:58, and copied the Deputy Director:{" "}
+                    <Cite ulid="01KMH80CG0VFEJHKTPW5PPF4TK">
+                        One year ago today you dismissed me from Honeyman State Park and gave me 24
+                        hours to leave. Today, on the anniversary, police arrived at a locked
+                        federal gate on federal land where I serve as a U.S. Forest Service
+                        caretaker. Three officers.
+                    </Cite>
                 </P>
                 <P id="pdd02" n={270}>
                     Nothing came back.
