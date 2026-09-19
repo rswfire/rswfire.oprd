@@ -3180,7 +3180,7 @@ export default function TestimonyDraft({
             <Part n="Thirteen" title="THE DIRECTOR AND HER DEPUTY">
                 <P id="pdd01" n={269}>
                     On July 29, 2025 he was a campground host at Driftwood II, in the Siltcoos
-                    Recreation Area, four months after Oregon Parks and Recreation dismissed him.
+                    corridor of the Oregon Dunes National Recreation Area, four months after Oregon Parks and Recreation dismissed him.
                     He was forty-eight. He lived in the RV. His days were laundry, cleaning the
                     fire pits, paperwork, and two trips to the work center for gravel, four buckets
                     of it, to level one side of his own fire ring. He had days off on Mondays and
