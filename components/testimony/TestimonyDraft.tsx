@@ -3290,16 +3290,19 @@ export default function TestimonyDraft({
                 <P id="pdd05" n={274}>
                     She answered at 8:37 the next morning in therapeutic language. She could see
                     how painful this had been for him. She heard the frustration and the hurt in
-                    his words. She recognised the seriousness with which he had approached it.
-                    Not one sentence in it addressed a fact he had given her, and on that basis
-                    she closed the correspondence.{" "}
+                    his words. The pain, the frustration and the hurt are her words. He had not
+                    used them. What he had put in front of her was nine months with the Forest
+                    Service, two advancements, a work truck and a twenty-five mile route, and the
+                    statement that he was never the problem. She answered a man she had assembled
+                    out of his letter, and not one sentence of it addressed a fact he had given
+                    her. On that basis she closed the correspondence.{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         we&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
                     </Cite>{" "}
-                    Converting a documented complaint into a description of the complainant is the
-                    oldest instrument an institution has, and the program manager had already run
-                    it on him.
+                    Answering a documented complaint by describing feelings the complainant never
+                    expressed is the oldest instrument an institution has, and the program manager
+                    had already run it on him.
                     That day he went into town and put money in the bank so he could register the
                     domain. Then he answered her in one line, that he acknowledged receipt, and
                     signed it with the domain underneath his name. Nothing was on it yet. At 2:48
