@@ -3333,10 +3333,7 @@ export default function TestimonyDraft({
                 <P id="pdd07" n={277}>
                     In February the Deputy Director wrote the fourth and final reply. He wrote that the agency
                     recognised he might be filing a legal action, and that when he did, his
-                    correspondence would go to their Department of Justice counsel. The matter had
-                    been in legal hands and he was being told so. What the letter did with that was
-                    close the agency to him: every inquiry to the Deputy Director, and to nobody
-                    else.{" "}
+                    correspondence would go to their Department of Justice counsel.{" "}
                     <Cite ulid="01KHCRFBDG3DMYZSSTGV5WC7E7">
                         Please do not communicate further with Ms. [Program Manager] or other OPRD
                         staff, and please do not expect any responses from them.
