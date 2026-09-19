@@ -3305,11 +3305,11 @@ export default function TestimonyDraft({
                     had already run it on him.
                     That day he went into town and put money in the bank so he could register
                     oprdvolunteerabuse.org. Then he answered her in one line, that he acknowledged
-                    receipt, and signed it with the domain underneath his name. There was nothing
-                    on the site yet. She had ended the correspondence at 8:37 that morning, and by
-                    the afternoon it had a permanent address that named the institution and what it
-                    had done, sitting under his name in her inbox. At 2:48 she answered the domain
-                    with three words, the last she would ever write to him.{" "}
+                    receipt, and signed it with the domain underneath his name. The site was empty.
+                    There was nothing on it at all. The only thing that existed was the name, and
+                    it was sitting under his name in her inbox six hours after she closed the
+                    correspondence. At 2:48 she answered it with three words, the last she would
+                    ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     It was a retort, and an unforced error. It told him the domain had landed.
                 </P>
