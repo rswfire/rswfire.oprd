@@ -3306,7 +3306,7 @@ export default function TestimonyDraft({
                     That day he went into town and put money in the bank so he could register the
                     domain. Then he answered her in one line, that he acknowledged receipt, and
                     signed it with the domain underneath his name. Nothing was on it yet. At 2:48
-                    that afternoon she sent four words, the last she would ever write to him.{" "}
+                    that afternoon she sent three words, the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     It was a retort, and an unforced error. It told him the domain had landed.
                 </P>
