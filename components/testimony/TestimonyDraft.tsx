@@ -3295,9 +3295,9 @@ export default function TestimonyDraft({
                     Service, two advancements, a work truck and a twenty-five mile route, and the
                     statement that he was never the problem. She answered a man she had assembled
                     out of his letter, and not one sentence of it addressed a fact he had given
-                    her. On that basis she closed the correspondence.{" "}
+                    her. Then she closed it:{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
-                        we&rsquo;ve reached a point where I don&rsquo;t believe further
+                        We&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
                     </Cite>{" "}
                     Answering a documented complaint by describing feelings the complainant never
