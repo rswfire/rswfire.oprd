@@ -3146,23 +3146,14 @@ export default function TestimonyDraft({
                     one standing in between. And he built it open, so anyone could run it on their
                     own machine, for their own life, without asking him or anyone.
                 </P>
-                <P id="pdd01d" n={263}>
-                    His reason is not a complaint about platforms. Almost every human being who has
-                    ever lived is gone without a trace, and the few who are remembered stopped being
-                    people and became symbols. He decided his own life was worth witnessing even if
-                    he turned out to be the only witness, and then he built the instrument that
-                    would hold it: permanent, queryable, and readable by whatever comes next,
-                    including machines, on terms he sets in advance rather than terms handed to him
-                    afterward.
-                </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
-                <P id="pdd02a" n={264}>
+                <P id="pdd02a" n={263}>
                     On August 3 the Forest Service gave him Tahkenitch Landing to run by himself,
                     the campground above the lake off Highway 101. He ran it alone and built through
                     it. On his days off he walked to the ocean. On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>
                     out with a friend, three and a third miles, and stood at the water.
                 </P>
-                <P id="pdd02" n={265}>
+                <P id="pdd02" n={264}>
                     He waited a month. Then he published{" "}
                     <a
                         href="https://www.reddit.com/r/volunteer/comments/1mzropa/an_open_letter_to_oregon_parks_recreation/"
@@ -3182,7 +3173,7 @@ export default function TestimonyDraft({
                     National Association of State Park Directors, an appointment to the National
                     Parks Service Advisory Board.
                 </P>
-                <P id="pdd02b" n={266}>
+                <P id="pdd02b" n={265}>
                     He named the manager telling
                     him to chew glass and swallow it, the admission that he was never given the
                     benefit of the doubt from day one, two months of pressure designed to force a
@@ -3202,7 +3193,7 @@ export default function TestimonyDraft({
                     </Link>
                     .
                 </P>
-                <P id="pdd02c" n={267}>
+                <P id="pdd02c" n={266}>
                     What he asked for was not for himself.{" "}
                     <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
                         I am not asking for apologies or personal remedies. I am asking for
@@ -3217,7 +3208,7 @@ export default function TestimonyDraft({
                     extraordinary, and that if it happened the whole thing became a story about an
                     institution learning something.
                 </P>
-                <P id="pdd03" n={268}>
+                <P id="pdd03" n={267}>
                     She answered the next afternoon.{" "}
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">
                         While I cannot respond here to the specific claims you have outlined, I
@@ -3237,14 +3228,14 @@ export default function TestimonyDraft({
                     She was sophisticated. He had no move against it, so he waited for one.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">Federal ground, and a system shipped<Hash id="hdd03" label="Federal ground, and a system shipped" /></h3>
-                <P id="pdd03a" n={269}>
+                <P id="pdd03a" n={268}>
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
                     he became the caretaker embedded on federal land behind a locked gate, a few
                     miles from the park that dismissed him. It was his second advancement in five
                     months and he is still there. He reached the ocean on foot four times that October, the longest of them <TraceCite ulid="01K89C4M90MSTDGD0C9E17C4YV">seven miles down the Tahkenitch Creek trail</TraceCite>
                     on the twenty-third.
                 </P>
-                <P id="pdd03b" n={270}>
+                <P id="pdd03b" n={269}>
                     The public records request he had filed on August 22 was in its third month
                     without an acknowledgment. Nobody had lost it. Her records officers had answered it to
                     a portal he had no account for and was never told existed, and left it there. He
@@ -3255,7 +3246,7 @@ export default function TestimonyDraft({
                     in the morning on the twentieth the access layer was finished, standing over
                     roughly eight hundred recordings going back to February 2024.
                 </P>
-                <P id="pdd03c" n={271}>
+                <P id="pdd03c" n={270}>
                     On October 26 he released the whole system as open source, about ninety percent
                     of it, holding back only the reflection layer, so that anyone could run on
                     their own machine the thing that held his record. He said around then that a
@@ -3263,20 +3254,20 @@ export default function TestimonyDraft({
                     he had started programming in the sixth grade without asking anyone.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
-                <P id="pdd04a" n={272}>
+                <P id="pdd04a" n={271}>
                     On November 15 he served the Director and the Deputy Director notice that his request
                     had been held for eighty-five days in violation of Oregon law. Six days later
                     he told them an archive of the whole matter existed and what was in it. The
                     request had been made to a public body that is required to answer, and answering
                     it would have put the record of what they did into his hands.
                 </P>
-                <P id="pdd04b" n={273}>
+                <P id="pdd04b" n={272}>
                     That month he took his own systems off other people&rsquo;s. He moved his
                     infrastructure from Amazon onto two servers he provisioned himself, and he ended
                     public distribution of his recordings entirely, putting them behind his own gate
                     on hardware he controlled.
                 </P>
-                <P id="pdd04c" n={274}>
+                <P id="pdd04c" n={273}>
                     He did the same to himself. On November 4 he put down nicotine, cold, after
                     thirty-two years of it, from the age of sixteen. He built the conditions to hold
                     it rather than trusting himself to hold it: no fuel, no willingness to ask for
@@ -3290,7 +3281,7 @@ export default function TestimonyDraft({
                     in thirty-two years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
-                <P id="pdd05a" n={275}>
+                <P id="pdd05a" n={274}>
                     By December the record had become something a stranger could query. He had
                     clustered the archive into groups that hold a stretch of time at once, and a
                     query totaling the runtime returned more than seven straight days of it. On the
@@ -3299,7 +3290,7 @@ export default function TestimonyDraft({
                     two and a half miles in because the trail was under water. It is the only time in these seven months
                     that he started for the ocean and did not reach it.
                 </P>
-                <P id="pdd04" n={276}>
+                <P id="pdd04" n={275}>
                     On December 7 he wrote to tell her what he had made of the nine months since.
                     He was two months into the caretaker post at the Siltcoos Work Center, on
                     federal ground a few miles from the park that dismissed him. Nine months with
@@ -3309,7 +3300,7 @@ export default function TestimonyDraft({
                     He told her she could still fix it, and that he would not reach out to her
                     again.
                 </P>
-                <P id="pdd05" n={277}>
+                <P id="pdd05" n={276}>
                     She answered at 8:37 the next morning in therapeutic language. She could see
                     how painful this had been for him. She heard the frustration and the hurt in
                     his words. She recognised the seriousness with which he had approached it.
@@ -3329,7 +3320,7 @@ export default function TestimonyDraft({
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     It was a retort, and an unforced error. It told him the domain had landed.
                 </P>
-                <P id="pdd05b" n={278}>
+                <P id="pdd05b" n={277}>
                     Her answer recast a documented complaint as pain and closed the only channel that
                     reached the officer with the authority to act on it. Closing it ended nothing. It
                     moved the matter out of her inbox and into a public archive she did not control, and he spent the rest of the month designing what would carry it: the
@@ -3337,7 +3328,7 @@ export default function TestimonyDraft({
                     photographs.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The notice, and an order to stop<Hash id="hdd06" label="The notice, and an order to stop" /></h3>
-                <P id="pdd06a" n={279}>
+                <P id="pdd06a" n={278}>
                     In January he served notice under 42 U.S.C. section 1983, and in February notice
                     that the constitutional violation was ongoing. In the same weeks he finished the
                     analysis layer and got the reflections working, registered the domain the
@@ -3346,7 +3337,7 @@ export default function TestimonyDraft({
                     he controlled. He collapsed his repositories into one and began the rebuild in a
                     framework he had never used.
                 </P>
-                <P id="pdd07" n={280}>
+                <P id="pdd07" n={279}>
                     In February the Deputy Director wrote the fourth and final reply. It was not
                     an internal forward and it did not pretend to be. He wrote that the agency
                     recognised he might be filing a legal action, and that when he did, his
@@ -3367,7 +3358,7 @@ export default function TestimonyDraft({
                         Don&rsquo;t confuse your internal routing procedures with authority over me.
                     </Cite>
                 </P>
-                <P id="pdd06b" n={281}>
+                <P id="pdd06b" n={280}>
                     The order was the fourth act in the same pattern. Answer the public letter
                     without answering it, hold the records past the statute, close the
                     correspondence, then bar the correspondent from the staff and tell him to expect
@@ -3375,7 +3366,7 @@ export default function TestimonyDraft({
                     the facts to reach a person with the authority to act on them, and each one left
                     him holding the facts alone.
                 </P>
-                <P id="pdd06c" n={282}>
+                <P id="pdd06c" n={281}>
                     Nothing at that level is accidental. The Director and the Deputy Director are
                     the last two offices inside the institution. Above them sit a Commission and a
                     Governor, and he had written to both. What reached their desks was not rumour
@@ -3391,7 +3382,7 @@ export default function TestimonyDraft({
                     operational act either of them took in all of it was her deputy instructing a
                     citizen that the employees of a public agency would not be replying to him.
                 </P>
-                <P id="pdd08" n={283}>
+                <P id="pdd08" n={282}>
                     That morning he had <TraceCite ulid="01KHC942Q0J3SC46JF94B2FXM9">walked five miles and stood at Waxmyrtle Beach</TraceCite> at 12:21. The
                     letter came at 4:23 that afternoon. February 13, 2026 was the last time either
                     of them wrote to him. Thirty-nine days later, on the anniversary of the
@@ -3400,7 +3391,7 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Thirteen" title="THREE MEN WITH GUNS">
-                <P id="pfbekq" n={284}>
+                <P id="pfbekq" n={283}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
                     and gave him twenty-four hours to vacate (
@@ -3427,7 +3418,7 @@ export default function TestimonyDraft({
                     <Moment ulid={ANNIVERSARY} t="3:02" />
                     ).
                 </P>
-                <P id="p9zswx" n={285}>
+                <P id="p9zswx" n={284}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
@@ -3437,14 +3428,14 @@ export default function TestimonyDraft({
                     order came back: &ldquo;Capt. Kennedy is requesting that a threat assessment be
                     conducted asap.&rdquo;
                 </P>
-                <P id="p8knha" n={286}>
+                <P id="p8knha" n={285}>
                     It went to the Major Crimes Section, and to a detective who is a task force
                     officer with the Portland FBI Joint Terrorism Task Force. That detective
                     forwarded his name to FBI personnel and pulled his DMV record through the task
                     force, and a Department of Justice fusion center analyst documented the
                     activity.
                 </P>
-                <P id="pgxwqf" n={287}>
+                <P id="pgxwqf" n={286}>
                     On March 6 that detective read this archive end to end and wrote down what he
                     found: <em>Based on the website nothing is standing out to me more than what
                     Parks and Rec sent you. Sounds like this person does have a grievance with the
@@ -3453,7 +3444,7 @@ export default function TestimonyDraft({
                     man who wrote it. There was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
-                <P id="pewtmp" n={288}>
+                <P id="pewtmp" n={287}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
                     him &ldquo;Suspect&rdquo;, and wrote the basis into it: sending &ldquo;concerning emails
                     to former supervisors in parks department and publicly airing grievances&rdquo;.
@@ -3462,7 +3453,7 @@ export default function TestimonyDraft({
                     Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was
                     inquiring about his whereabouts&rdquo;.
                 </P>
-                <P id="pqdfr8" n={289}>
+                <P id="pqdfr8" n={288}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
                     came through a locked federal gate, posted against public access (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:00" />), onto
                     restricted federal land, to the work center where he lives and works. Nobody
@@ -3475,13 +3466,13 @@ export default function TestimonyDraft({
                     off the vehicle while it was still in frame (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:17" />). The place is his home. He lives
                     there alone, in exchange for stewardship of that land.
                 </P>
-                <P id="pt7c8w" n={290}>
+                <P id="pt7c8w" n={289}>
                     The second detective&rsquo;s own report closes the question of what they had:
                     no direct threats, no &ldquo;leakage towards violence or violent behavior&rdquo;,
                     and &ldquo;no evidence White has committed any crimes&rdquo;. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
-                <P id="pwmw3z" n={291}>
+                <P id="pwmw3z" n={290}>
                     Two days after they came he walked to Waxmyrtle Beach and stood at the water. Three days later he filed a Siuslaw National Forest incident
                     report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
@@ -3492,7 +3483,7 @@ export default function TestimonyDraft({
                     where he lives, his schedule and his duties, his correspondence and his text
                     messages, and a promise to &ldquo;keep you up to date&rdquo;.
                 </P>
-                <P id="pn89s9" n={292}>
+                <P id="pn89s9" n={291}>
                     Four months later the Forest Service put its own role in writing: it did not
                     initiate the interview, its involvement was{" "}
                     <em>limited to assisting OSP by providing access and guiding them to the
@@ -3511,31 +3502,31 @@ export default function TestimonyDraft({
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={293}>
+                <P id="pad01" n={292}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={294}>
+                <P id="pad02" n={293}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={295}>
+                <P id="pad03" n={294}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={296}>
+                <P id="pad04" n={295}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={297}>
+                <P id="pad05" n={296}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={298}>
+                <P id="pad06" n={297}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={299}>
+                <P id="pad07" n={298}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={300}>
+                <P id="pad08" n={299}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={301}>
+                <P id="pad09" n={300}>
                     The subject is closed again.
                 </P>
             </Part>
