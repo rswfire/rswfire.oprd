@@ -3179,65 +3179,33 @@ export default function TestimonyDraft({
 
             <Part n="Thirteen" title="THE DIRECTOR AND HER DEPUTY">
                 <P id="pdd01" n={269}>
-                    On March 24, 2026, three armed officers came to the locked gate of the federal
-                    work center where he lives. It was the anniversary of his dismissal. He wrote
-                    to the Director that evening, at 5:58, and copied the Deputy Director:{" "}
-                    <Cite ulid="01KMH80CG0VFEJHKTPW5PPF4TK">
-                        One year ago today you dismissed me from Honeyman State Park and gave me 24
-                        hours to leave. Today, on the anniversary, police arrived at a locked
-                        federal gate on federal land where I serve as a U.S. Forest Service
-                        caretaker. Three officers.
-                    </Cite>
+                    In July 2025 he read a newspaper interview with the director of Oregon Parks
+                    and Recreation about her funding plan, and he wrote to her.{" "}
+                    <Cite ulid="01K1C14TXRFZCGXVNW27SACRF4">
+                        I hope you are successful at finding an ethical and supportive way to keep
+                        our state parks going.
+                    </Cite>{" "}
+                    Then he told her he had been one of her volunteers from January through March,
+                    and that it had been deeply rewarding. That is how his correspondence with her
+                    begins. He wished her well first.
                 </P>
                 <P id="pdd02" n={270}>
-                    Nothing came back.
+                    A month later he sent her an Open Letter, and he opened that one by naming what
+                    she had built: the first woman to lead the Department, millions in
+                    infrastructure, accessibility work, president of the national association of
+                    state park directors. He wrote it publicly, he said, because{" "}
+                    <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
+                        private channels have been met with silence
+                    </Cite>
+                    .
                 </P>
                 <P id="pdd03" n={271}>
-                    On May 3, 2026, he found a box in the road directly in front of that same gate.
-                    Bi-Mart branding. Inside it, spent twelve-gauge shotgun shells. The box and the
-                    ground under it were wet with urine, which told him it had been done recently
-                    and close by. He found it in daylight. He kept the box and what was in it.
-                </P>
-                <P id="pdd04" n={272}>
-                    He wrote to the Director the same afternoon, and to the Deputy Director, and to
-                    the Interim Director, and copied the Commission and the Governor. He did not
-                    accuse anyone.{" "}
-                    <Cite ulid="01KQR5YHJ80H5V45AYAGHT7ZXF">
-                        I make no claim as to who is responsible. I am creating a record. I will
-                        not be intimidated.
-                    </Cite>{" "}
-                    He told them he was installing cameras. Then he put the two events side by
-                    side for them:{" "}
-                    <Cite ulid="01KQR5YHJ80H5V45AYAGHT7ZXF">
-                        In response, your institution sent law enforcement to my federal residence
-                        over protected speech. Someone left a box of urine-soaked shotgun shells at
-                        my gate. The distance between those two things is the record.
-                    </Cite>
-                </P>
-                <P id="pdd05" n={273}>
-                    Nothing came back from either of them.
-                </P>
-                <P id="pdd06" n={274}>
-                    Those two people are the reason to ask. The Director and the Deputy Director
-                    sit above every person who did anything to him. The volunteer services lead
-                    reported to a park supervisor, the supervisor to a park manager, the manager to
-                    a program manager, and the program manager to them. Above them there is no one
-                    inside the agency. The Commission sets policy and the Governor appoints. Either
-                    of them could have ended it on any day of the nineteen months, and the record
-                    of what they did instead is the subject of this chapter.
-                </P>
-                <P id="pdd07" n={275}>
-                    Here is the whole of it. The register holds one hundred and seven documents in
-                    which the Director or the Deputy Director is a party. Four are from them.
-                </P>
-                <P id="pdd08" n={276}>
-                    The first came in August 2025, the day after he sent her an Open Letter that
-                    began by naming what she had built. She wrote back:{" "}
+                    She answered the next afternoon.{" "}
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">
                         I hear the depth of your concern, and I recognize the effort you have put
                         into documenting and expressing your experience.
                     </Cite>{" "}
-                    Then:{" "}
+                    And then:{" "}
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">
                         While I cannot respond here to the specific claims you have outlined, I
                         want to assure you that I take concerns about our volunteer program
@@ -3246,42 +3214,39 @@ export default function TestimonyDraft({
                     She did not say the claims were false. She did not say they were true. She said
                     she could not respond to them here, and named no place where she could.
                 </P>
-                <P id="pdd09" n={277}>
-                    The second came in December, after he wrote to tell her that the Forest Service
-                    next door had promoted him twice in nine months and given him a work truck and
-                    a twenty-five mile route.{" "}
+                <P id="pdd04" n={272}>
+                    In December he wrote to tell her what had happened to him since. He had gone
+                    next door to the United States Forest Service. Nine months. Promoted twice. A
+                    work truck and a twenty-five mile daily route.{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">Facts. I was never the problem</Cite>.
-                    She answered the next morning:{" "}
+                </P>
+                <P id="pdd05" n={273}>
+                    She answered at 8:37 the next morning.{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         I can see that this has been deeply painful for you&hellip; I hear the
                         frustration and hurt in your words.
                     </Cite>{" "}
-                    And then:{" "}
+                    Then:{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         we&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
-                    </Cite>
-                </P>
-                <P id="pdd10" n={278}>
-                    He replied in one line, that he acknowledged receipt. That afternoon she sent
-                    the third and last thing she would ever write to him. Four words.{" "}
+                    </Cite>{" "}
+                    He replied that he acknowledged receipt. That afternoon she sent four words,
+                    the last she would ever write to him.{" "}
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>
                 </P>
-                <P id="pdd11" n={279}>
-                    Three of the four replies are the same gesture performed three times. Each one
-                    acknowledges how he feels. Not one addresses a fact. He told her so, three days
-                    after the last of them:{" "}
-                    <Cite ulid="01KC7PCZNG90BT267JQFE1TNXA">
-                        You chose to characterize documented identity-based targeting as emotional
-                        processing. That choice is now documented.
-                    </Cite>
+                <P id="pdd06" n={274}>
+                    His own record says what he was doing that week. Hiking the Lagoon Trail.
+                    Photographing the days, one after another. Planning a React front end, and
+                    detailing the gallery and atlas architecture of the thing he was building.
+                    Carter Lake on Christmas. The resolution she did not believe further
+                    correspondence would lead to was not what he was spending his life on.
                 </P>
-                <P id="pdd12" n={280}>
-                    The fourth reply is the only operational decision either of them made about him
-                    in nineteen months, and it is not an answer either. In February 2026 the Deputy
-                    Director wrote to say that messages he had sent to the program manager had been
-                    forwarded up, that the Department recognized he might file a legal action, and
-                    that he was to send everything to the Deputy Director from then on.{" "}
+                <P id="pdd07" n={275}>
+                    In February the Deputy Director wrote the fourth and final reply, and it was a
+                    routing instruction. Messages he had sent to the program manager had been
+                    forwarded up. The Department recognized he might file a legal action.
+                    Therefore, everything was to go to the Deputy Director from then on.{" "}
                     <Cite ulid="01KHCRFBDG3DMYZSSTGV5WC7E7">
                         Please do not communicate further with Ms. [Program Manager] or other OPRD
                         staff, and please do not expect any responses from them.
@@ -3289,102 +3254,158 @@ export default function TestimonyDraft({
                     It investigated nothing. It closed every channel but one, and the one it left
                     open never answered him again.
                 </P>
+                <P id="pdd08" n={276}>
+                    That was the last time either of them wrote to him. February 13, 2026.
+                    Everything after this happened into silence.
+                </P>
+                <P id="pdd09" n={277}>
+                    What he was doing that month, by his own record: introducing himself on the Wax
+                    Myrtle Trail. Naming AI&rsquo;s automation of epistemic denial. Defining vibe
+                    coding through an analogy about writing a novel. Introducing Autonomy Realms
+                    and his own realm inside it. Recording a year-end update for the public
+                    channel. In March, walking the South Jetty with Wendy. Returning to the lagoon
+                    bench after finding work. Naming the compass as an operating principle. Naming
+                    unfairness at the fire.
+                </P>
+                <P id="pdd10" n={278}>
+                    On March 23, 2026 his record carries two entries. One is titled Marking
+                    One-Year Anniversary of OPRD Dismissal. The other is titled Betting Everything
+                    on Autonomy Realms.
+                </P>
+                <P id="pdd11" n={279}>
+                    The next entry, dated March 24, is titled Three Officers at the Work Center
+                    Gate.
+                </P>
+                <P id="pdd12" n={280}>
+                    He wrote to the Director that evening at 5:58, and copied the Deputy Director.{" "}
+                    <Cite ulid="01KMH80CG0VFEJHKTPW5PPF4TK">
+                        One year ago today you dismissed me from Honeyman State Park and gave me 24
+                        hours to leave. Today, on the anniversary, police arrived at a locked
+                        federal gate on federal land where I serve as a U.S. Forest Service
+                        caretaker. Three officers.
+                    </Cite>
+                </P>
                 <P id="pdd13" n={281}>
-                    So the police came in March, and the shells came in May, and both of those
-                    things happened after the only two officers who could stop any of it had
-                    stopped writing to him at all.
+                    Nothing came back.
                 </P>
                 <P id="pdd14" n={282}>
-                    He kept sending. Notice under 42 U.S.C. &sect; 1983. A notice of ongoing
-                    constitutional violation. A document titled &ldquo;The Only Path That
-                    Doesn&rsquo;t End in Federal Court.&rdquo; Day 339, Day 347, Day 365. Three
-                    versions of a document called &ldquo;The choices are still yours.&rdquo; Notice
-                    of intent to file under the Oregon Tort Claims Act, which exists to be answered
-                    before a claim is brought. A final statement in May 2026, after their own
-                    Volunteer Dismissal Guidance arrived in a records response and confirmed that
-                    the category they used on him did not exist:{" "}
+                    On May 1 his record begins a series he called Summer at Siltcoos. Day 1. Day 2.
+                    On May 3, Day 3, he found a box in the road directly in front of that same
+                    gate. Bi-Mart branding. Inside it, spent twelve-gauge shotgun shells. The box
+                    and the ground under it were wet with urine, which told him it had been done
+                    recently and close by. He found it in daylight. He kept it.
+                </P>
+                <P id="pdd15" n={283}>
+                    He wrote to the Director that afternoon, and to the Deputy Director, and copied
+                    the Commission and the Governor. He accused no one.{" "}
+                    <Cite ulid="01KQR5YHJ80H5V45AYAGHT7ZXF">
+                        I make no claim as to who is responsible. I am creating a record. I will
+                        not be intimidated.
+                    </Cite>{" "}
+                    Then he set the two things beside each other for them:{" "}
+                    <Cite ulid="01KQR5YHJ80H5V45AYAGHT7ZXF">
+                        In response, your institution sent law enforcement to my federal residence
+                        over protected speech. Someone left a box of urine-soaked shotgun shells at
+                        my gate. The distance between those two things is the record.
+                    </Cite>
+                </P>
+                <P id="pdd16" n={284}>
+                    Nothing came back. His record continues: Summer at Siltcoos, Day 4. Day 6. Day
+                    7. Day 8. Day 9. Day 10.
+                </P>
+                <P id="pdd17" n={285}>
+                    The register holds one hundred and seven documents in which the Director or the
+                    Deputy Director is a party. Four are from them. Three are about how he felt and
+                    one is about where to send the rest. Everything else in that pile went one
+                    direction.
+                </P>
+                <P id="pdd18" n={286}>
+                    Notice under 42 U.S.C. &sect; 1983. A notice of ongoing constitutional
+                    violation. A document titled &ldquo;The Only Path That Doesn&rsquo;t End in
+                    Federal Court.&rdquo; Day 339, Day 347, Day 365. Three versions of a document
+                    called &ldquo;The choices are still yours.&rdquo; Notice of intent to file
+                    under the Oregon Tort Claims Act, which exists to be answered before a claim is
+                    brought. A final statement in May, after their own Volunteer Dismissal Guidance
+                    reached him in a records response and confirmed that the category they had used
+                    on him did not exist:{" "}
                     <Cite ulid="01KQV3VJPGP9RDYAQZ3HZVXEYF">
                         when you couldn&rsquo;t manufacture a reason to dismiss me, you just did it
                         anyway and then went silent.
                     </Cite>
                 </P>
-                <P id="pdd15" n={283}>
-                    A reader can ask the obvious question. Where were they on March 24, when
-                    officers were dispatched to a locked federal gate over a website. Where were
-                    they on May 3. What did either of them do when those letters arrived, and who
-                    did they tell, and what instruction did they give about a man who kept writing.
+                <P id="pdd19" n={287}>
+                    So the question is available to anyone. Where were they on March 24, when
+                    officers were sent to a locked federal gate over a website. Where were they on
+                    May 3. What did either of them do when those letters arrived, who did they
+                    tell, and what instruction did they give about a man who would not stop writing
+                    to them.
                 </P>
-                <P id="pdd16" n={284}>
-                    Those answers exist. They are notes, calendar entries, and instructions, held
-                    by two people, on Department systems. On September 8, 2026, the Department of
+                <P id="pdd20" n={288}>
+                    The answers exist. They are notes, calendar entries, and instructions, held by
+                    two people, on Department systems. On September 8, 2026, the Department of
                     Transportation told him it had confirmed with the Director personally that
-                    anything responsive to his request was on Department devices. That is the one
+                    anything responsive to his request lived on Department devices. That is the one
                     documented instance of her personally handling a question about him since
                     December 2025. She answered it to another agency, about where her records were
                     kept, and not to him.
                 </P>
-                <P id="pdd17" n={285}>
+                <P id="pdd21" n={289}>
                     So he asked for them. Two custodians only. Their communications, their notes,
                     their memoranda, their calendar entries, and any instruction either of them
-                    gave about whether staff should respond to him. He asked for a fee waiver under
-                    ORS 192.324(5) and said in the request that everything produced would be
+                    gave about whether staff should respond to him. He requested a fee waiver under
+                    ORS 192.324(5), and said in the request that everything produced would be
                     published in full, for free, where anyone could read it.
                 </P>
-                <P id="pdd18" n={286}>
+                <P id="pdd22" n={290}>
                     On September 18, 2026 the Department priced the answer at one thousand six
-                    hundred to one thousand seven hundred twenty-eight dollars. Fifty to fifty-four
-                    hours. Six of those hours cover every message on every device belonging to the
-                    Director. Forty of them are for the notes and the calendar entries. The item
-                    asking for her instructions about him was not priced at all. It was folded into
-                    the forty.
+                    hundred to one thousand seven hundred twenty-eight dollars. Six hours to search
+                    every message on every device belonging to the Director. Forty hours for the
+                    notes and the calendar entries. The item asking for her instructions about him
+                    was not priced at all. It was folded into the forty. The waiver was not
+                    granted, not denied, and not mentioned.
                 </P>
-                <P id="pdd19" n={287}>
-                    The waiver was not granted. It was not denied. It was not mentioned.
-                </P>
-                <P id="pdd20" n={288}>
+                <P id="pdd23" n={291}>
                     Under the Department&rsquo;s own rule, OAR 736-001-0030, the officer who grants
-                    or denies that waiver is the Director or her designee. So the records are hers,
-                    the fee on them is hers to lift, and the decision about whether the public sees
-                    what she did belongs to her. There is no one inside the agency above her to
-                    decide otherwise.
+                    or denies that waiver is the Director or her designee. The records are hers.
+                    The fee on them is hers to lift. She is the subject of the request and the
+                    person deciding whether the public sees the answer, and there is no one inside
+                    the agency above her to decide otherwise.
                 </P>
-                <P id="pdd21" n={289}>
-                    That is the shape of it. One hundred and seven documents to the only two people
-                    with the power to end it, and four replies, three about his feelings and one
-                    telling him where to send the rest. Men with guns at his gate in March. A box
-                    of urine-soaked shells at the same gate in May. Silence from both of them
-                    through all of it. And the records that would say what they knew and what they
-                    ordered are available for one thousand seven hundred twenty-eight dollars,
-                    payable to the institution, at the discretion of the woman they are about.
+                <P id="pdd24" n={292}>
+                    He wished her well in July 2025. Fourteen months later he was hiking a trail he
+                    walks every day, building a company, running a route for the Forest Service,
+                    and writing to two people who had stopped answering, about men with guns and a
+                    box of shells at his gate. They have said four things to him in all that time.
+                    What they said to each other about him is for sale.
                 </P>
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={290}>
+                <P id="pad01" n={293}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={291}>
+                <P id="pad02" n={294}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={292}>
+                <P id="pad03" n={295}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={293}>
+                <P id="pad04" n={296}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={294}>
+                <P id="pad05" n={297}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={295}>
+                <P id="pad06" n={298}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={296}>
+                <P id="pad07" n={299}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={297}>
+                <P id="pad08" n={300}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={298}>
+                <P id="pad09" n={301}>
                     The subject is closed again.
                 </P>
             </Part>
