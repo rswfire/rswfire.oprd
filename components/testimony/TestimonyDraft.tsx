@@ -2996,9 +2996,6 @@ export default function TestimonyDraft({
                         We&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
                     </Cite>{" "}
-                    Answering a documented complaint by describing feelings the complainant never
-                    expressed is the oldest instrument an institution has, and the program manager
-                    had already run it on him.
                     That day he went into town and put money in the bank so he could register
                     oprdvolunteerabuse.org. Then he answered her in one line, that he acknowledged
                     receipt, and signed it with the domain underneath his name. The site was empty.
