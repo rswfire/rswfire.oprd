@@ -47,7 +47,7 @@ export default function WhatVolunteersDeserve() {
                     <li key={c} className="flex items-start gap-3 py-3">
                         <span
                             aria-hidden
-                            className="mt-0.5 h-4 w-4 shrink-0 rounded-[3px] border-2 border-gray-400 bg-white"
+                            className="mt-[4px] h-4 w-4 shrink-0 rounded-[3px] border-2 border-gray-400 bg-white"
                         />
                         <span className="sr-only">Not done.</span>
                         <span className="text-[15px] leading-relaxed text-gray-800">{c}</span>
@@ -66,7 +66,7 @@ export default function WhatVolunteersDeserve() {
                     The boxes have been empty since August 24, 2025. They are checked by the
                     Director, or they are not checked at all.
                 </p>
-                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[13px]">
+                <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px]">
                     <Link
                         href="/for-volunteers"
                         className="font-mono font-bold uppercase tracking-wide text-amber-800 underline decoration-amber-300 hover:text-amber-600"
