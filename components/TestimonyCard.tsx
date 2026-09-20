@@ -21,7 +21,6 @@ const CHAPTERS = [
     "NINETEEN DAYS",
     "THE WEEK HE TOLD IT",
     "DISPLACED",
-    "WHAT HE BUILT",
     "THE DIRECTOR AND HER DEPUTY",
     "THREE MEN WITH GUNS",
 ];
@@ -78,7 +77,7 @@ export default function TestimonyCard() {
                     ))}
                 </div>
                 <Link
-                    href="/testimony/#c14"
+                    href="/testimony/#c13"
                     className="group mt-2 block rounded-lg border-t border-emerald-100 px-2 pt-3 pb-1.5 text-center hover:bg-emerald-50 sm:col-span-2"
                 >
                     <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">

@@ -171,8 +171,8 @@ function titleCase(t: string): string {
 // numbers became the address keep resolving.
 const PART_NUMBERS: Record<string, number> = {
     One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
-    Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12, Thirteen: 13,
-    Addendum: 14,
+    Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12,
+    Addendum: 13,
 };
 
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
@@ -221,7 +221,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={88} recordings={157} moments={1517} />
+            <TestimonyMeta documents={84} recordings={145} moments={1406} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -2762,315 +2762,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Eleven" title="WHAT HE BUILT">
-                <P id="pfkd8j" n={235}>
-                    Two things ran at once from here and have never stopped running at once. He
-                    built a life on this coast, and he built the record of what was done to him on
-                    it. Neither waited for the other.
-                </P>
-                <P id="pk36ww" n={236}>
-                    Nineteen days after a state agency banned him from every park it runs, a
-                    federal one gave him a campground. He took a six-month term at{" "}
-                    <PlaceCite name="Driftwood II" />, then <PlaceCite name="Tahkenitch Landing" />,
-                    and in October 2025 moved into the Forest Service work center at{" "}
-                    <PlaceCite name="Siltcoos" />, behind a locked gate. That move was the
-                    promotion, and he had been working toward it (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:48" />). Campground host became{" "}
-                    <Moment ulid={CARETAKER} t="0:27">caretaker</Moment>: housing, power, water,
-                    laundry, a shower, a mile from the ocean, an agency truck (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="4:30" />), and a{" "}
-                    <Moment ulid={JEEP_DEADLINE} t="4:08">twenty mile route to run every day</Moment>.
-                    He does not live on a campground (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:38" />). He lives on restricted federal land behind a
-                    federal gate, and the distinction is one he enjoys.
-                </P>
-                <P id="p7pjz8" n={237}>
-                    The days are the point, and they are all on the record. He opens gates. He runs
-                    the route. His{" "}
-                    <Moment ulid={NICOTINE} t="0:00">days off are Mondays and Tuesdays</Moment>, and
-                    he spends them walking: the Siltcoos trails out to the ocean, the lake trail (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:00" />),
-                    Tahkenitch Creek, the South Jetty, Carter Lake, Wax Myrtle, Driftwood, the
-                    dunes. <Moment ulid={ONE_WEEK_OFF} t="1:38">Ten miles in a day is ordinary</Moment>,
-                    and fifteen is not unusual (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="1:55" />). By early 2026 the phone that counts it put him in
-                    the{" "}
-                    <Moment ulid={DELETE_YT} t="14:08">top two or three percent of everyone it measures</Moment>.
-                    The RV is small and after a year and a half it feels like containment (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="12:49" />), so he is
-                    outside. He goes out to the ocean at night. He greets it. He traces waves at the
-                    water line, which he has called his favourite thing in the world.
-                </P>
-                <P id="pcte9m" n={238}>
-                    On November 2, 2025 he ran out of vapes and did not replace them (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:02" />). Thirty-two
-                    years of nicotine, begun at sixteen (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:08" />), cigarettes until a year and a half earlier (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:12" />),
-                    and then nothing. He threw the supplies away and filmed the cutoff standing
-                    outside in the dark (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:31" />, <Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="3:43" />), because he had structured his life so that this would
-                    become possible. The{" "}
-                    <Moment ulid={NICOTINE} t="3:37">hold it had on him</Moment> he had been pattern
-                    matching for three decades (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="4:11" />), and he had the model for it: a dampener (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="4:36" />), then
-                    armour, and then{" "}
-                    <Moment ulid={NICOTINE} t="4:11">armour that had become a tether and a chain</Moment>.
-                    He had already come off tramadol and lorazepam on the way here (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="5:14" />). This one
-                    travelled with him everywhere (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="5:21" />). Not willpower and not a brave face (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="5:44" />), only{" "}
-                    <Moment ulid={NICOTINE} t="5:34">vigilance, and no self-judgement</Moment>. A week
-                    later he was at{" "}
-                    <Moment ulid={ONE_WEEK_OFF} t="0:00">the ocean with the camera in his hand</Moment>,
-                    ten miles behind him from the day before and about the same the day before that (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="1:53" />),
-                    and it had gone easier than he expected (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:45" />). He did not know why (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:58" />), and he did not
-                    invent a reason. Eighteen months earlier, on a trail at Barren River Lake in
-                    Kentucky, he had{" "}
-                    <Moment ulid={BARREN} t="5:54">laid out the step-down from cigarettes to vape to patches</Moment>{" "}
-                    as a plan rather than a wish. He finished it.
-                </P>
-                <P id="pv8ywz" n={239}>
-                    He built the platform in that corridor, on those days, in those conditions. The
-                    first working skeleton of Autonomy went up on GitHub on a Monday (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="1:22" />), and that night
-                    he was{" "}
-                    <Moment ulid={NICOTINE} t="1:03">outside near Siltcoos at half past ten</Moment>
-                    {" "}with rain coming off the trees and the Pacific audible from where he stood (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="0:39" />),
-                    deployable skeleton published, backend first, frontend later (<Moment ulid="01K96TB0S03GST5RNN4KWNJ03J" t="1:35" />). A week on, marking
-                    seven days without nicotine (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="0:04" />), he was already working out what came next: he had
-                    been GPS-tracking some walks and not others (<Moment ulid="01K9NA5ZCGXFGJKCFPZZVWCR8W" t="2:09" />), and the tracked routes would go
-                    into the atlas{" "}
-                    <Moment ulid={ONE_WEEK_OFF} t="2:04"><em>once he built that feature</em></Moment>.
-                    That was November 9, 2025.
-                </P>
-                <P id="pasfb6" n={240}>
-                    He built it. The first trace in his realm was recorded on{" "}
-                    <strong>March 24, 2026</strong> &mdash; the day three men with guns came
-                    through the locked gate. He had just finished the feature. The system that now
-                    holds the ground he has walked on this coast has its first line laid down on
-                    the same day the state came to his door, and he kept building. That August he
-                    was out on an ATV trail through the dunes past the edge of coverage,{" "}
-                    <Moment ulid={TRACE_NOTES} t="0:01">field-testing notes on traces</Moment>,
-                    correcting his own backend from memory mid-sentence and specifying the fix
-                    while he walked.
-                </P>
-                <P id="pc7ghf" n={241}>
-                    He tried to go back to work. Sixteen months after leaving programming he opened
-                    the freelance profiles again and started bidding (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:44" />), and found that the thing he
-                    was trying to re-enter was gone. He had once been ranked in the top ten
-                    programmers on one of those platforms (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:54" />). They collapsed under AI (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="3:07" />). The decade-long
-                    client relationship soured (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="2:59" />). A gas station owner in Florence strung him along
-                    for months and the job never materialised (<Moment ulid="01KRES921G0XN9DRF2RGR8MYFY" t="3:21" />), and{" "}
-                    <Moment ulid={JEEP_DEADLINE} t="2:44">the owner&rsquo;s son does not like gay people</Moment>.
-                    A{" "}
-                    <Moment ulid={JEEP_DEADLINE} t="3:14">painting job at a marina ended by text with no notice</Moment>.
-                    He worked the problem the way he works every problem, and the market he was
-                    working against no longer exists.
-                </P>
-                <P id="pv428w" n={242}>
-                    He built a life here that has people in it (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="8:32" />). A hiking companion twenty years
-                    older than him, until{" "}
-                    <Moment ulid={WENDY} t="0:01">she moved south for the winter</Moment>. A fellow
-                    volunteer he met at Honeyman. A neighbour in the corridor who fed him. Two
-                    friends he drove back down to <PlaceCite name="Cape Blanco" /> with, to see it
-                    again. His brother, after years of near-silence. A friend from when he was
-                    seventeen who found him again after thirty years. And a{" "}
-                    <Moment ulid={TWO_YEARS} t="2:21">woman in her seventies</Moment> who has read
-                    every one of his recordings since Kentucky and has never once crossed a line (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="2:53" />),
-                    who witnesses cleanly, which he holds as the one thing he ever needed from
-                    publishing and the only aligned contact two years of it produced (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="4:14" />). Most of the
-                    people in his life did not support him through that year. A few helped where
-                    they could. He is proceeding on his own.
-                </P>
-                <P id="pbsvr7" n={243}>
-                    On December 6, 2025 he was at the dump station with a hose running clean water
-                    through a tank that was already clear (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="1:01" />), because he wanted it extra sparkly (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="1:44" />), and
-                    the light was going and he had no flashlight (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="0:28" />). Two years living this way and more
-                    than a year fully autonomous from his family, marked in the same motion as the
-                    maintenance. He{" "}
-                    <Moment ulid={TWO_YEARS} t="1:48">first did those tanks at Land Between the Lakes</Moment>{" "}
-                    in Kentucky on the way west, was proud of it then (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="2:04" />), and has done them the same
-                    way ever since. He{" "}
-                    <Moment ulid={TWO_YEARS} t="9:03">ruptured his life completely and rebuilt it from the ground up</Moment>,
-                    and he is proud of himself for it (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="9:14" />). Then, to the camera for the first time, the
-                    thing he had only ever admitted to himself: he could have built the platform
-                    faster. He does not know why, may never know, and may not like the answer (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="7:40" />). What
-                    he offered instead was the{" "}
-                    <Moment ulid={TWO_YEARS} t="7:15">shape of a life spent on a computer from sixth grade to his mid-forties</Moment>,
-                    and a pendulum he can feel swinging back toward the tide and the trails (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="8:14" />). Then he
-                    turned the camera on the interior, on a{" "}
-                    <Moment ulid={TWO_YEARS} t="10:45">failing air mattress and a donated couch that smells of cigarette smoke</Moment>,
-                    and regretted none of it (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="11:46" />). Every level, everything overcome, is another brick (<Moment ulid="01KBRQPR2GSDV6C9CA5B5FGE93" t="12:26" />).
-                </P>
-                <P id="p3mqd7" n={244}>
-                    And then there is why the platform exists, which this archive is the proof of.
-                    Every place he had put his life belonged to someone else. In October 2025, hours
-                    before his connection was shut off, he set out what was wrong with the biggest
-                    of them: it{" "}
-                    <Moment ulid={SANCTUM_DEPART} t="2:01">flattens the person recording and the person watching</Moment>,
-                    rewards the shallowest possible engagement (<Moment ulid="01K6S5WER0EBJGNT9MY3GSBW00" t="2:26" />), and compresses a human being into a
-                    narrow character. He would not package himself, because he was not for sale. He
-                    had turned the comments off more than a year earlier and never turned them back
-                    on, and the reason was never trolls; it was that nothing came back. Two thousand
-                    people had watched him be expelled from a park and not one had done anything.
-                    And a state agency had looked at a man who wrote things down and decided the
-                    writing was the offence. So he built the exit.
-                </P>
-                <P id="p66paa" n={245}>
-                    On January 20, 2026 he deleted the channels outright. Nearly nine hundred
-                    videos,{" "}
-                    <Moment ulid={DELETE_YT} t="0:23">downloaded first and moved into his realm</Moment>,
-                    the embeds on his own pages and on this archive repointed at them before the
-                    deletion went through. Nothing was cut before its ground existed. He had kept
-                    the channel past the point of use for the transcripts and for an aligned audience
-                    that never formed, and{" "}
-                    <Moment ulid={DELETE_YT} t="1:31">he had felt unmet there</Moment>. He does not
-                    regret it even a little (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="1:31" />). The same day he threw away two weeks of work (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="8:04" />),{" "}
-                    <Moment ulid={DELETE_YT} t="5:57">collapsed the two repositories into one</Moment>,
-                    and started the rebuild in the tools of his own career, PHP and Laravel, because
-                    those are what he has always been (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="7:01" />).
-                </P>
-                <P id="pdpbyv" n={246}>
-                    What he was building is a realm: a{" "}
-                    <Moment ulid={DELETE_YT} t="15:42">system that takes a life in</Moment> as
-                    recordings, photographs, documents and ground, transcribes it, analyses it (<Moment ulid="01KGTPBX008JG59T12Z685G4AT" t="0:36" />),
-                    embeds it, and makes it answerable to a question (<Moment ulid="01KRPV4JW0JYMFR6MVCM9F6JVB" t="12:07" />). A year-old signal stays
-                    reachable because it is still relevant (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="3:53" />), which is the thing the platforms cannot
-                    do. The{" "}
-                    <Moment ulid={FIRST_SIGNAL} t="0:01">first signal went into it on February 7, 2026</Moment>,
-                    recorded from his bed at Siltcoos into the pipeline that ingested it the moment
-                    he stopped (<Moment ulid="01KGTPBX008JG59T12Z685G4AT" t="0:13" />). He{" "}
-                    <Moment ulid={LAUNCH} t="0:01">launched it in May</Moment>, walking to the ocean
-                    with the trace running on his phone (<Moment ulid="01KRPV4JW0JYMFR6MVCM9F6JVB" t="6:03" />), recording the announcement inside the thing
-                    he was announcing. Every recording cited on this page is served by it, and every
-                    timestamp on this page resolves through it.
-                </P>
-                <P id="ppscuz" n={247}>
-                    On May 19, 2026 he walked in from the dunes after several hours out, with
-                    Buddy, one of the camp hosts&rsquo; dogs from Driftwood, to a bench near{" "}
-                    <PlaceCite name="Lagoon" />, the one he had landed at after Honeyman. A year earlier he had sat on that bench and{" "}
-                    <Moment ulid={THE_BENCH} t="1:41">recorded the story of his life as a programmer, from the sixth grade forward</Moment>,
-                    for a freelance profile, powering the RV off the Jeep through an inverter he had
-                    driven back to Medford to retrieve (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="1:02" />). That work never came (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="2:05" />). The platforms are
-                    broken, and he marked the pathway closed. He noted a stork he had never seen
-                    there before, and then the measure of the year:{" "}
-                    <Moment ulid={THE_BENCH} t="2:10">he had launched his own platform the day before</Moment>.
-                    The same bench received him twice. He did not narrate the distance between the
-                    two arrivals. He was taking in the moment (<Moment ulid="01KS022FJ8E5J12F9GRTGEX4CA" t="2:43" />).
-                </P>
-                <P id="pyvmux" n={248}>
-                    He used every channel the state has, in order, and kept the answers.
-                </P>
-                <P id="p2a7nz" n={249}>
-                    What it cost him to keep asking is in the recordings alongside them. On June
-                    17, 2025, near midnight, the first thing in frame was his teeth (<Moment ulid="01JXYDAD88RTT8JN4K0825E6MD" t="3:26" />). The soft liner
-                    a Kentucky dentist had put in his bottom denture had disintegrated a month
-                    earlier, and he had kept the plate working himself: adhesive as a cushion until
-                    it cut his gums, trimming the plate down with no dentist involved, cloth
-                    strips, a temporary reline that peeled inside a day (
-                    <Moment ulid={JUNE} t="0:30" />
-                    ). He was not ashamed and never had been (<Moment ulid="01JXYDAD88RTT8JN4K0825E6MD" t="3:01" />). He put the visible thing first
-                    because a thing named cannot be handed back to you as a joke or a weapon (
-                    <Moment ulid={JUNE} t="2:44" />
-                    ).
-                </P>
-                <P id="p58b8n" n={250}>
-                    Two weeks without internet ended on the morning of August 19 (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="0:16" />), and the first
-                    thing he did with the connection was lay down the whole thread for three
-                    followers on a channel that was days old (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="0:26" />): the house in Kentucky (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="2:09" />), the career he
-                    taught himself starting in the sixth grade (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="2:17" />), the drive up the coast (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="6:23" />), the
-                    welcome center, the picnic table (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="17:44" />), the phone call (
-                    <Moment ulid={REINTRO} t="11:18" />
-                    ). He was not suing (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="25:03" />). He has never been that kind of person (<Moment ulid="01K30F9TJ8DVMJ7VB1ZECQBJCC" t="25:04" />), and he wanted
-                    ethical accountability instead (
-                    <Moment ulid={REINTRO} t="22:32" />
-                    ).
-                </P>
-                <P id="pbr4bx" n={251}>
-                    In{" "}
-                    <Cite ulid="01JVPH4Z7G0VBTE6PWCDVCRF5X">May 2025 he reminded them the record
-                    was public</Cite>. On{" "}
-                    <Moment ulid={TO_DIRECTOR_VID} t={0}>August 1 he wrote to the
-                    director</Moment> and told her he is not the threat (<Moment ulid="01K1HX7JH8JXFXVD4YVYQSYKDN" t="2:03" />), the truth is, and then set
-                    the thread down without closing it. On August 22 he filed{" "}
-                    <Cite ulid="01K399TM7GG3FNAXSR4BX9TB1X">a public records request for the
-                    volunteer program&rsquo;s operations and management</Cite>. Two days later he
-                    published{" "}
-                    <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">an open letter</Cite> to her, which
-                    opens by acknowledging what she had built in her tenure and an institution he
-                    says he had remarkable respect for and wanted to be part of.
-                </P>
-                <P id="pk67rd" n={252}>
-                    <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">She answered the next day</Cite>. The
-                    reply was sentiment: she wrote that she heard the depth of his concern, that she
-                    valued the contributions volunteers make, and that she could not respond to the
-                    specific claims he had outlined. One sentence in it was a commitment rather than
-                    a sentiment, that she would make sure his concerns were reviewed through the
-                    appropriate channels within the department. Nothing in the record since suggests
-                    that happened.
-                </P>
-                <P id="pg69p8" n={253}>
-                    The records request was not answered at all. On November 15, eighty-five days
-                    later, he sent{" "}
-                    <Cite ulid="01KA45NDXG8VA4XB2YG7M8G0F5">a notice of violation</Cite> quoting
-                    the statute back to them.
-                </P>
-                <P id="pysux4" n={254}>
-                    Then, on December 7, he wrote her the letter that explains what he had been
-                    asking for the entire year. After the dismissal he had{" "}
-                    <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">nowhere to go, removed at his most
-                    economically vulnerable moment, and he went directly next door to the United
-                    States Forest Service, where he had been nine months, promoted twice, and
-                    trusted with a work truck and a twenty-five mile daily route</Cite>. He had
-                    never been the problem. The people who ran that park were the liabilities she
-                    was protecting. And then the offer, in the plainest terms he had: no legal
-                    action, no media, nothing else. Only documentation. Documentation that would
-                    not need to exist if she had protected the people who came to serve her in good
-                    faith. She could still fix it internally, right now.
-                </P>
-                <P id="pajsbm" n={255}>
-                    <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">She answered at 8:37 the next
-                    morning</Cite> and ended the correspondence. She wrote that she did not believe
-                    continuing it would lead to the resolution he was seeking.
-                </P>
-                <P id="p8acgv" n={256}>
-                    An account of how a public agency treated an unpaid volunteer, supported at
-                    every point by documents that agency itself had written, came back to him as
-                    his own pain. Not one fact in it was engaged. Not one name in it was addressed.
-                    It was converted into feelings, given a wish for healing, and the door was
-                    closed. He answered it: I acknowledge receipt of your message. Beneath his
-                    name he put the domain he had just registered, oprdvolunteerabuse.org.{" "}
-                    <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours</Cite>, she wrote back that
-                    afternoon, to the message that carried it. That is the last thing the director
-                    of Oregon Parks and Recreation has ever said to him.
-                </P>
-                <P id="p57nx6" n={257}>
-                    This archive was born out of that reply. She had told him that further
-                    correspondence would not produce a resolution, so he stopped corresponding. Ten
-                    days later he turned on a camera and gave the thing its address out loud,
-                    oprdvolunteerabuse.org, into a channel that carries (
-                    <Moment ulid={NAMING} t="0:11" />
-                    ). Every individual is named in it, and what each of them did (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="1:33" />). Nine months, and
-                    not one word of it disputed (
-                    <Moment ulid={NAMING} t="1:21" />
-                    ). He had never wanted to make himself this visible to power (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:42" />). He decided to own
-                    it anyway. Two days after that he hiked out on a trail he walks all the time
-                    and recorded the entire account again from the beginning, uphill, without
-                    notes, because the first version had been made while he was still working out
-                    what empathy elicitation was and it showed (
-                    <Moment ulid={THE_ACCOUNT} t="0:00" />
-                    ). It runs twenty-one minutes and goes in order: the outage weekend (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="3:52" />), the
-                    withdrawn application, the hour and a half in the welcome center at night, his
-                    sexuality used against him (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="7:07" />), the picnic table, the unidentified man at the
-                    yurts, the expulsion by phone (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="15:07" />), and the written grounds citing his speech (
-                    <Moment ulid={THE_ACCOUNT} t="6:34" />,{" "}
-                    <Moment ulid={THE_ACCOUNT} t="13:54" />
-                    ). They had barred him permanently for recording a video about what was done to
-                    him. He recorded another one, standing next door to the park (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="19:35" />), on a route he
-                    drives daily for the agency that gave him the truck (<Moment ulid="01KCYZ8E1GTHBZCDNYA57AM2Q0" t="19:52" />).
-                </P>
-                <P id="p6x98k" n={258}>
-                    On March 4, 2026 he put her on notice, personally rather than institutionally,
-                    that he intended to file{" "}
-                    <Cite ulid="01KJWMK70R1GJJ7NYFN6EZCFER">a civil rights claim under 42 U.S.C.
-                    § 1983 naming her as an individual defendant</Cite>. The same night he wrote
-                    out{" "}
-                    <Cite ulid="01KJXAVPYRJ9WPYX4SWG3EQCP">the sixty-two minutes at the picnic
-                    table, minute by minute</Cite>, and sent it to her.
-                </P>
-                <P id="p5zcaj" n={259}>
-                    Twelve days later OPRD asked the Oregon State Police for a threat assessment.
-                </P>
-            </Part>
-
-            <Part n="Twelve" title="THE DIRECTOR AND HER DEPUTY">
+            <Part n="Eleven" title="THE DIRECTOR AND HER DEPUTY">
                 <figure className="mt-2 mb-6">
                     <img
                         src="/director-and-deputy.jpg"
@@ -3093,7 +2785,7 @@ export default function TestimonyBody({
                     </figcaption>
                 </figure>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he put in her hands<Hash id="hdd01" label="The letter he put in her hands" /></h3>
-                <P id="pdd01" n={260}>
+                <P id="pdd01" n={235}>
                     On July 29, 2025 he was a campground host at Driftwood II, in the Siltcoos
                     corridor of the Oregon Dunes National Recreation Area, four months after Oregon State Parks dismissed him.
                     That afternoon he read an interview with the director, and he wrote to her.{" "}
@@ -3104,7 +2796,7 @@ export default function TestimonyBody({
                     Then he told her he had been one of her volunteers from January through March,
                     and that it had been deeply rewarding.
                 </P>
-                <P id="pdd01b" n={261}>
+                <P id="pdd01b" n={236}>
                     Then he told her the truth of what had been done to him inside her institution.
                     He asked her for nothing. He named the staff by their positions, told her the institution was hers
                     and the people in it were her responsibility, and told her to sit with that. He
@@ -3112,7 +2804,7 @@ export default function TestimonyBody({
                     he was dismissed, and he wrote to her as one person telling another what her
                     institution had done.
                 </P>
-                <P id="pdd01c" n={262}>
+                <P id="pdd01c" n={237}>
                     He was a year into building{" "}
                     <a
                         href="https://autonomyrealms.com"
@@ -3150,13 +2842,13 @@ export default function TestimonyBody({
                     has been his for the whole span of the internet.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
-                <P id="pdd02a" n={263}>
+                <P id="pdd02a" n={238}>
                     On August 3 the Forest Service gave him Tahkenitch Landing to run by himself (<Moment ulid="01K5M437NRGMH20FSA8WFEX64M" t="0:35" />),
                     the campground above the lake off Highway 101 (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="1:53" />). He ran it alone and built through
                     it. On his days off he walked to the ocean (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="15:55" />). On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>{" "}
                     out with a friend, three and a third miles, and stood at the water.
                 </P>
-                <P id="pdd02" n={264}>
+                <P id="pdd02" n={239}>
                     He waited a month. Then he published{" "}
                     <a
                         href="https://www.reddit.com/r/volunteer/comments/1mzropa/an_open_letter_to_oregon_parks_recreation/"
@@ -3176,7 +2868,7 @@ export default function TestimonyBody({
                     National Association of State Park Directors, an appointment to the National
                     Parks Service Advisory Board.
                 </P>
-                <P id="pdd02b" n={265}>
+                <P id="pdd02b" n={240}>
                     He named the manager telling
                     him to chew glass and swallow it, the admission that he was never given the
                     benefit of the doubt from day one, two months of pressure designed to force a
@@ -3196,7 +2888,7 @@ export default function TestimonyBody({
                     </Link>
                     .
                 </P>
-                <P id="pdd02c" n={266}>
+                <P id="pdd02c" n={241}>
                     What he asked for was not for himself.{" "}
                     <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A">
                         I am not asking for apologies or personal remedies. I am asking for
@@ -3211,7 +2903,7 @@ export default function TestimonyBody({
                     extraordinary, and that if it happened the whole thing became a story about an
                     institution learning something.
                 </P>
-                <P id="pdd03" n={267}>
+                <P id="pdd03" n={242}>
                     She answered the next afternoon.{" "}
                     <Cite ulid="01K3HPAXBG8F4QZG4DJNDY5QY8">
                         While I cannot respond here to the specific claims you have outlined, I
@@ -3231,14 +2923,14 @@ export default function TestimonyBody({
                     She was sophisticated. He had no move against it, so he waited for one.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">Federal ground, and a system shipped<Hash id="hdd03" label="Federal ground, and a system shipped" /></h3>
-                <P id="pdd03a" n={268}>
+                <P id="pdd03a" n={243}>
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
                     he became the caretaker embedded on federal land behind a locked gate (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:38" />), a few
                     miles from the park that dismissed him. It was his second advancement in five
                     months and he is still there. He reached the ocean on foot four times that October, the longest of them <TraceCite ulid="01K89C4M90MSTDGD0C9E17C4YV">seven miles down the Tahkenitch Creek trail</TraceCite>{" "}
                     on the twenty-third.
                 </P>
-                <P id="pdd03b" n={269}>
+                <P id="pdd03b" n={244}>
                     The public records request he had filed on August 22 was in its third month
                     without an acknowledgment. Nobody had lost it. Her records officers had answered it to
                     a portal he had no account for and was never told existed, and left it there. On October 13 he got the
@@ -3249,20 +2941,20 @@ export default function TestimonyBody({
                     roughly eight hundred recordings going back to February 2024 (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:48" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
-                <P id="pdd04a" n={270}>
+                <P id="pdd04a" n={245}>
                     On November 15 he served the Director and the Deputy Director notice that his request
                     had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
                     he told them an archive of the whole matter existed and what was in it (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="8:32" />). The
                     request had been made to a public body that is required to answer (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:37" />), and answering
                     it would have put the record of what they did into his hands (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:43" />).
                 </P>
-                <P id="pdd04b" n={271}>
+                <P id="pdd04b" n={246}>
                     That month he took his own systems off other people&rsquo;s. He moved his
                     infrastructure from Amazon onto two servers he provisioned himself (<Moment ulid="01K9VVJQ70888RZ0XT6BZQ2NKX" t="1:50" />), and he ended
                     public distribution of his recordings entirely (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="3:08" />), putting them behind his own gate
                     on hardware he controlled.
                 </P>
-                <P id="pdd04c" n={272}>
+                <P id="pdd04c" n={247}>
                     He did the same to himself. On November 4 he put down nicotine, cold, after
                     thirty-two years of it, from the age of sixteen (<Moment ulid="01K9B75THRJY19ZNSR46V4A4M3" t="6:28" />). He built the conditions to hold it: no fuel (<Moment ulid="01K9DRBKERDPY709G3G6K4HV04" t="18:36" />), no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
@@ -3272,7 +2964,7 @@ export default function TestimonyBody({
                     in thirty-two years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
-                <P id="pdd04" n={273}>
+                <P id="pdd04" n={248}>
                     On December 7 he wrote to tell her what he had made of the nine months since.
                     He was two months into the caretaker post at the Siltcoos Work Center, on
                     federal ground a few miles from the park that dismissed him. Nine months with
@@ -3280,7 +2972,7 @@ export default function TestimonyBody({
                     trucks and a twenty-five mile daily route.{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">Facts. I was never the problem</Cite>.
                 </P>
-                <P id="pdd05" n={274}>
+                <P id="pdd05" n={249}>
                     She answered at 8:37 the next morning in therapeutic language. She could see
                     how painful this had been for him. She heard the frustration and the hurt in
                     his words. The pain, the frustration and the hurt are her words. He had not
@@ -3306,13 +2998,13 @@ export default function TestimonyBody({
                     <Cite ulid="01KBZZ00WRN29ERHYG1ANPRH8D">And I yours.</Cite>{" "}
                     He laughed out loud.
                 </P>
-                <P id="pdd05b" n={275}>
+                <P id="pdd05b" n={250}>
                     Her answer recast a documented complaint as pain and closed the only channel that
                     reached the officer with the authority to act on it. Closing it ended nothing. It
                     moved the matter out of her inbox and into a public archive she did not control (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:11" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The notice, and an order to stop<Hash id="hdd06" label="The notice, and an order to stop" /></h3>
-                <P id="pdd06a" n={276}>
+                <P id="pdd06a" n={251}>
                     In January he served notice under 42 U.S.C. section 1983, and in February notice
                     that the constitutional violation was ongoing. In the same weeks he finished the
                     analysis layer and got the reflections working (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="6:25" />), registered the domain the
@@ -3320,7 +3012,7 @@ export default function TestimonyBody({
                     nearly nine hundred recordings (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:32" />), after pulling every one of them down onto storage
                     he controlled.
                 </P>
-                <P id="pdd07" n={277}>
+                <P id="pdd07" n={252}>
                     In February the Deputy Director wrote the fourth and final reply. He wrote that the agency
                     recognised he might be filing a legal action, and that when he did, his
                     correspondence would go to their Department of Justice counsel.{" "}
@@ -3337,7 +3029,7 @@ export default function TestimonyBody({
                     </Cite>
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The Director and Her Deputy<Hash id="hdd07" label="The Director and Her Deputy" /></h3>
-                <P id="pddz1" n={278}>
+                <P id="pddz1" n={253}>
                     The Director and the Deputy Director are the last two offices inside the
                     institution. Everything the volunteer services lead did, and the park
                     supervisor, and the park manager, and the program manager, ran up to those two
@@ -3345,12 +3037,12 @@ export default function TestimonyBody({
                     written to both of those as well. A director&rsquo;s office exists so that a
                     failure underneath it can be corrected. That is the whole function.
                 </P>
-                <P id="pddz2" n={279}>
+                <P id="pddz2" n={254}>
                     What reached them was not rumour. Named staff, dated conduct, the documents, and
                     recordings of the meetings themselves, offered to them over and over and never
                     once asked for.
                 </P>
-                <P id="pddz3" n={280}>
+                <P id="pddz3" n={255}>
                     Four replies came back. One answered a public letter without answering any of
                     it. One closed the correspondence. One was three words. One barred him from the
                     staff and told him to expect nothing from them. Not one asked him a question,
@@ -3359,7 +3051,7 @@ export default function TestimonyBody({
                     The records law obliged them to answer and they let it run eighty-five days
                     past.
                 </P>
-                <P id="pddz4" n={281}>
+                <P id="pddz4" n={256}>
                     He spent those same seven months building. He put the reflection engine
                     together and ran his whole catalogue through it (<Moment ulid="01K7E57ESRR35WD3SPJKAE58Y2" t="1:31" />), moved his infrastructure onto
                     servers he owns, took his life off every platform that held it (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="2:42" />), set down
@@ -3368,7 +3060,7 @@ export default function TestimonyBody({
                     the water and said the thing was finished (<Moment ulid="01KRXFA4G04GPAJCY3HDB9FY28" t="5:18" />), robust, and ready for other people
                     to use.
                 </P>
-                <P id="pddz5" n={282}>
+                <P id="pddz5" n={257}>
                     The only operational decision either of them made in all of it was the order
                     closing the agency to him. Eighteen days after it, an emergency manager inside
                     the institution took his letters to a captain of the Oregon State Police. The
@@ -3376,8 +3068,8 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Thirteen" title="THREE MEN WITH GUNS">
-                <P id="pfbekq" n={283}>
+            <Part n="Twelve" title="THREE MEN WITH GUNS">
+                <P id="pfbekq" n={258}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
                     and gave him twenty-four hours to vacate (
@@ -3404,7 +3096,7 @@ export default function TestimonyBody({
                     <Moment ulid={ANNIVERSARY} t="3:02" />
                     ).
                 </P>
-                <P id="p9zswx" n={284}>
+                <P id="p9zswx" n={259}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
                     took his letters to the police. An OPRD emergency manager sent them to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
@@ -3414,14 +3106,14 @@ export default function TestimonyBody({
                     order came back: &ldquo;Capt. Kennedy is requesting that a threat assessment be
                     conducted asap.&rdquo;
                 </P>
-                <P id="p8knha" n={285}>
+                <P id="p8knha" n={260}>
                     It went to the Major Crimes Section, and to a detective who is a task force
                     officer with the Portland FBI Joint Terrorism Task Force. That detective
                     forwarded his name to FBI personnel and pulled his DMV record through the task
                     force, and a Department of Justice fusion center analyst documented the
                     activity.
                 </P>
-                <P id="pgxwqf" n={286}>
+                <P id="pgxwqf" n={261}>
                     On March 6 that detective read this archive end to end and wrote down what he
                     found: <em>Based on the website nothing is standing out to me more than what
                     Parks and Rec sent you. Sounds like this person does have a grievance with the
@@ -3430,7 +3122,7 @@ export default function TestimonyBody({
                     man who wrote it. There was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
-                <P id="pewtmp" n={287}>
+                <P id="pewtmp" n={262}>
                     They came anyway. On March 23 a second detective opened a dispatch event naming
                     him &ldquo;Suspect&rdquo;, and wrote the basis into it: sending &ldquo;concerning emails
                     to former supervisors in parks department and publicly airing grievances&rdquo;.
@@ -3439,7 +3131,7 @@ export default function TestimonyBody({
                     Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was
                     inquiring about his whereabouts&rdquo;.
                 </P>
-                <P id="pqdfr8" n={288}>
+                <P id="pqdfr8" n={263}>
                     On March 24, 2026, one year to the day after the dismissal, three men with guns
                     came through a locked federal gate, posted against public access (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:00" />), onto
                     restricted federal land, to the work center where he lives and works. Nobody
@@ -3452,13 +3144,13 @@ export default function TestimonyBody({
                     off the vehicle while it was still in frame (<Moment ulid="01KMFMJW809QNR8PVTXT8HAAG7" t="0:17" />). The place is his home. He lives
                     there alone, in exchange for stewardship of that land.
                 </P>
-                <P id="pt7c8w" n={289}>
+                <P id="pt7c8w" n={264}>
                     The second detective&rsquo;s own report closes the question of what they had:
                     no direct threats, no &ldquo;leakage towards violence or violent behavior&rdquo;,
                     and &ldquo;no evidence White has committed any crimes&rdquo;. The report refers to
                     body-worn camera video of the encounter. It has never been produced.
                 </P>
-                <P id="pwmw3z" n={290}>
+                <P id="pwmw3z" n={265}>
                     Two days after they came he walked to Waxmyrtle Beach and stood at the water. Three days later he filed a Siuslaw National Forest incident
                     report documenting
                     the visit as intimidation, with the date, the time, the location, a narrative,
@@ -3469,7 +3161,7 @@ export default function TestimonyBody({
                     where he lives, his schedule and his duties, his correspondence and his text
                     messages, and a promise to &ldquo;keep you up to date&rdquo;.
                 </P>
-                <P id="pn89s9" n={291}>
+                <P id="pn89s9" n={266}>
                     Four months later the Forest Service put its own role in writing: it did not
                     initiate the interview, its involvement was{" "}
                     <em>limited to assisting OSP by providing access and guiding them to the
@@ -3488,31 +3180,31 @@ export default function TestimonyBody({
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={292}>
+                <P id="pad01" n={267}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={293}>
+                <P id="pad02" n={268}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={294}>
+                <P id="pad03" n={269}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={295}>
+                <P id="pad04" n={270}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={296}>
+                <P id="pad05" n={271}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={297}>
+                <P id="pad06" n={272}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={298}>
+                <P id="pad07" n={273}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={299}>
+                <P id="pad08" n={274}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={300}>
+                <P id="pad09" n={275}>
                     The subject is closed again.
                 </P>
             </Part>
