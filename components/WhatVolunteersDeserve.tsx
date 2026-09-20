@@ -77,7 +77,7 @@ export default function WhatVolunteersDeserve() {
                         href="/testimony/#the-director-and-her-deputy"
                         className="font-mono font-bold uppercase tracking-wide text-amber-800 underline decoration-amber-300 hover:text-amber-600"
                     >
-                        The chapter that carries her
+                        The Director and Her Deputy
                     </Link>
                 </div>
             </div>
