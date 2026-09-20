@@ -20,7 +20,7 @@ export default function GovernorKotekPage() {
             title="GOVERNOR TINA KOTEK"
             subtitle="AN OPEN LETTER TO THE GOVERNOR"
             supplemental=""
-            previousPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            previousPage={{ href: "/testimony/#the-director-and-her-deputy", label: "The Director's Decisions" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
             <div className="mt-4 text-base leading-relaxed">

@@ -15,7 +15,7 @@ export default function RecordsPage() {
             title="THE RECORDS"
             subtitle="THE PUBLIC RECORD"
             previousPage={{ href: "/evidence/police", label: "Police Intimidation" }}
-            nextPage={{ href: "/lisa-sumption", label: "The Director's Decisions" }}
+            nextPage={{ href: "/testimony/#the-director-and-her-deputy", label: "The Director's Decisions" }}
         >
             <div className="mt-6 space-y-6">
                 {THREADS.map((t) => (
