@@ -9,6 +9,7 @@ import LegalFund from "@/components/LegalFund";
 import SunlightCard from "@/components/SunlightCard";
 import TestimonyCard from "@/components/TestimonyCard";
 import WhatVolunteersDeserve from "@/components/WhatVolunteersDeserve";
+import PriceOfTheRecord from "@/components/PriceOfTheRecord";
 import RecordIndexCard from "@/components/RecordIndexCard";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
@@ -59,6 +60,10 @@ export default function OverviewPage() {
 
             {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
             <WhatVolunteersDeserve />
+
+
+            {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
+            <PriceOfTheRecord />
 
 
             {/* TESTIMONY — his life, every chapter a door */}
