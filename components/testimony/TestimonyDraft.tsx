@@ -2989,9 +2989,8 @@ export default function TestimonyDraft({
                     his words. The pain, the frustration and the hurt are her words. He had not
                     used them. What he had put in front of her was nine months with the Forest
                     Service, two advancements, a work truck and a twenty-five mile route, and the
-                    statement that he was never the problem. She answered a man she had assembled
-                    out of his letter, and not one sentence of it addressed a fact he had given
-                    her. Then she closed it:{" "}
+                    statement that he was never the problem. Not one sentence of her reply addressed a fact he had
+                    given her. Then she closed it:{" "}
                     <Cite ulid="01KBZ9S95G2W5B44TTGT6HA69N">
                         We&rsquo;ve reached a point where I don&rsquo;t believe further
                         correspondence will lead to the resolution you&rsquo;re seeking.
