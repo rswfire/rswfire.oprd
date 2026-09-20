@@ -8,6 +8,7 @@ import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
 import SunlightCard from "@/components/SunlightCard";
 import TestimonyCard from "@/components/TestimonyCard";
+import WhatVolunteersDeserve from "@/components/WhatVolunteersDeserve";
 import RecordIndexCard from "@/components/RecordIndexCard";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
@@ -55,6 +56,10 @@ export default function OverviewPage() {
                     you. She is the one choosing not to.
                 </p>
             </div>
+
+            {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
+            <WhatVolunteersDeserve />
+
 
             {/* TESTIMONY — his life, every chapter a door */}
             <TestimonyCard />
