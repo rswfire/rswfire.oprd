@@ -2944,7 +2944,7 @@ export default function TestimonyBody({
                     in the morning on the twentieth the access layer was finished (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:18" />), standing over
                     roughly eight hundred recordings going back to February 2024 (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:48" />).
                 </P>
-                <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
+                <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency<Hash id="hdd04" label="November, and a thirty-two-year dependency" /></h3>
                 <P id="pdd04a" n={245}>
                     On November 15 he served the Director notice that his request
                     had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
