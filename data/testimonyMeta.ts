@@ -2,6 +2,6 @@
 export const TESTIMONY_META = {
     paragraphs: 300,
     documents: 88,
-    recordings: 158,
-    moments: 1519,
+    recordings: 157,
+    moments: 1517,
 };

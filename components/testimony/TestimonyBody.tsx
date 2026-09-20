@@ -221,7 +221,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={88} recordings={158} moments={1519} />
+            <TestimonyMeta documents={88} recordings={157} moments={1517} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -3279,8 +3279,6 @@ export default function TestimonyBody({
                     the United States Forest Service. Promoted twice. Trusted with their work
                     trucks and a twenty-five mile daily route.{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">Facts. I was never the problem</Cite>.
-                    He told her she could still fix it, and that he would not reach out to her
-                    again.
                 </P>
                 <P id="pdd05" n={274}>
                     She answered at 8:37 the next morning in therapeutic language. She could see
@@ -3311,9 +3309,7 @@ export default function TestimonyBody({
                 <P id="pdd05b" n={275}>
                     Her answer recast a documented complaint as pain and closed the only channel that
                     reached the officer with the authority to act on it. Closing it ended nothing. It
-                    moved the matter out of her inbox and into a public archive she did not control (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:11" />), and he spent the rest of the month designing what would carry it: the
-                    front end, the atlas that renders his routes as maps (<Moment ulid="01KD1VZY088WZPBSYKB9WM8AM8" t="5:25" />), the gallery that holds the
-                    photographs.
+                    moved the matter out of her inbox and into a public archive she did not control (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:11" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The notice, and an order to stop<Hash id="hdd06" label="The notice, and an order to stop" /></h3>
                 <P id="pdd06a" n={276}>
@@ -3322,8 +3318,7 @@ export default function TestimonyBody({
                     analysis layer and got the reflections working (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="6:25" />), registered the domain the
                     platform would run under, and on the twentieth deleted both of his channels (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:23" />),
                     nearly nine hundred recordings (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:32" />), after pulling every one of them down onto storage
-                    he controlled. He collapsed his repositories into one (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="6:38" />) and began the rebuild in a
-                    framework he had never used.
+                    he controlled.
                 </P>
                 <P id="pdd07" n={277}>
                     In February the Deputy Director wrote the fourth and final reply. He wrote that the agency
@@ -3332,8 +3327,7 @@ export default function TestimonyBody({
                     <Cite ulid="01KHCRFBDG3DMYZSSTGV5WC7E7">
                         Please do not communicate further with Ms. [Program Manager] or other OPRD
                         staff, and please do not expect any responses from them.
-                    </Cite>{" "}
-                    It investigated nothing. Five minutes later he answered it. He told the Deputy
+                    </Cite>{" "} Five minutes later he answered it. He told the Deputy
                     Director he had no authority to say who a citizen may contact inside a public
                     agency, that his structured process was an internal matter with no bearing on
                     what a citizen does, and that he would contact whoever he needed to contact,
