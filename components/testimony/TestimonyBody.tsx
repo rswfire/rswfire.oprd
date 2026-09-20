@@ -2946,9 +2946,9 @@ export default function TestimonyBody({
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
                 <P id="pdd04a" n={245}>
-                    On November 15 he served the Director and the Deputy Director notice that his request
+                    On November 15 he served the Director notice that his request
                     had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
-                    he told them an archive of the whole matter existed and what was in it (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="8:32" />). The
+                    he told her an archive of the whole matter existed and what was in it (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="8:32" />). The
                     request had been made to a public body that is required to answer (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:37" />), and answering
                     it would have put the record of what they did into his hands (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:43" />).
                 </P>

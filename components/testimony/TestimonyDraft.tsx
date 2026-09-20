@@ -2951,9 +2951,9 @@ export default function TestimonyDraft({
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
                 <P id="pdd04a" n={245}>
-                    On November 15 he served the Director and the Deputy Director notice that his request
+                    On November 15 he served the Director notice that his request
                     had been held for eighty-five days in violation of Oregon law. Six days later
-                    he told them an archive of the whole matter existed and what was in it. The
+                    he told her an archive of the whole matter existed and what was in it. The
                     request had been made to a public body that is required to answer, and answering
                     it would have put the record of what they did into his hands.
                 </P>
