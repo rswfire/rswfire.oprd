@@ -221,7 +221,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={106} recordings={146} moments={1502} />
+            <TestimonyMeta documents={88} recordings={158} moments={1519} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -3125,17 +3125,17 @@ export default function TestimonyBody({
                     </a>
                     . A person gets a realm of their own, and anything they have ever recorded
                     goes into it as a signal: video, audio, photographs, documents, conversations,
-                    a journal page photographed off a shelf after twenty years, the route of a
+                    a journal page photographed off a shelf after twenty years (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="0:15" />), the route of a
                     walk. The system does not summarise them. It reads each one through several
                     lenses at once, what happened and what it was and what it carries and what it
                     says about the shape of the person, and one of those lenses is a mirror that
-                    hands him his own interior back in words he did not yet have for it. That
-                    mirror is the reason the rest of it exists. Then it reads across: a hundred
-                    signals out of one stretch of time taken together, so that a season of a life
-                    has its own arc and its own reflections instead of a hundred separate entries.
+                    hands him his own interior back in words he did not yet have for it (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="1:07" />). That
+                    mirror is the reason the rest of it exists (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="1:17" />). Then it reads across: a hundred
+                    signals out of one stretch of time taken together (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="2:16" />), so that a season of a life
+                    has its own arc and its own reflections instead of a hundred separate entries (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="7:36" />).
                     All of it embedded and indexed, so the record can be put a question, and so a
-                    machine reading him reads the whole pattern rather than the last thing he said.
-                    Maps of everywhere he walked with the photographs pinned to them. It runs on
+                    machine reading him reads the whole pattern rather than the last thing he said (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="12:34" />).
+                    Maps of everywhere he walked with the photographs pinned to them (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="1:21" />). It runs on
                     hardware he pays for, under{" "}
                     <a
                         href="https://rswfire.com"
@@ -3151,9 +3151,9 @@ export default function TestimonyBody({
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
                 <P id="pdd02a" n={263}>
-                    On August 3 the Forest Service gave him Tahkenitch Landing to run by himself,
-                    the campground above the lake off Highway 101. He ran it alone and built through
-                    it. On his days off he walked to the ocean. On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>{" "}
+                    On August 3 the Forest Service gave him Tahkenitch Landing to run by himself (<Moment ulid="01K5M437NRGMH20FSA8WFEX64M" t="0:35" />),
+                    the campground above the lake off Highway 101 (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="1:53" />). He ran it alone and built through
+                    it. On his days off he walked to the ocean (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="15:55" />). On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>{" "}
                     out with a friend, three and a third miles, and stood at the water.
                 </P>
                 <P id="pdd02" n={264}>
@@ -3233,7 +3233,7 @@ export default function TestimonyBody({
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">Federal ground, and a system shipped<Hash id="hdd03" label="Federal ground, and a system shipped" /></h3>
                 <P id="pdd03a" n={268}>
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
-                    he became the caretaker embedded on federal land behind a locked gate, a few
+                    he became the caretaker embedded on federal land behind a locked gate (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:38" />), a few
                     miles from the park that dismissed him. It was his second advancement in five
                     months and he is still there. He reached the ocean on foot four times that October, the longest of them <TraceCite ulid="01K89C4M90MSTDGD0C9E17C4YV">seven miles down the Tahkenitch Creek trail</TraceCite>{" "}
                     on the twenty-third.
@@ -3243,32 +3243,32 @@ export default function TestimonyBody({
                     without an acknowledgment. Nobody had lost it. Her records officers had answered it to
                     a portal he had no account for and was never told existed, and left it there. On October 13 he got the
                     reflection architecture running end to end and tested it by having a model read
-                    the first recording he ever made, two years earlier, from four perspectives.
-                    Overnight on the fourteenth he ran the analysis across half his catalog. At one
-                    in the morning on the twentieth the access layer was finished, standing over
-                    roughly eight hundred recordings going back to February 2024.
+                    the first recording he ever made, two years earlier, from four perspectives (<Moment ulid="01K7E57ESRR35WD3SPJKAE58Y2" t="0:46" />).
+                    Overnight on the fourteenth he ran the analysis across half his catalog (<Moment ulid="01K7HSSF50141N2DYGBVBSSMCB" t="1:06" />). At one
+                    in the morning on the twentieth the access layer was finished (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:18" />), standing over
+                    roughly eight hundred recordings going back to February 2024 (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:48" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
                 <P id="pdd04a" n={270}>
                     On November 15 he served the Director and the Deputy Director notice that his request
-                    had been held for eighty-five days in violation of Oregon law. Six days later
-                    he told them an archive of the whole matter existed and what was in it. The
-                    request had been made to a public body that is required to answer, and answering
-                    it would have put the record of what they did into his hands.
+                    had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
+                    he told them an archive of the whole matter existed and what was in it (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="8:32" />). The
+                    request had been made to a public body that is required to answer (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:37" />), and answering
+                    it would have put the record of what they did into his hands (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:43" />).
                 </P>
                 <P id="pdd04b" n={271}>
                     That month he took his own systems off other people&rsquo;s. He moved his
-                    infrastructure from Amazon onto two servers he provisioned himself, and he ended
-                    public distribution of his recordings entirely, putting them behind his own gate
+                    infrastructure from Amazon onto two servers he provisioned himself (<Moment ulid="01K9VVJQ70888RZ0XT6BZQ2NKX" t="1:50" />), and he ended
+                    public distribution of his recordings entirely (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="3:08" />), putting them behind his own gate
                     on hardware he controlled.
                 </P>
                 <P id="pdd04c" n={272}>
                     He did the same to himself. On November 4 he put down nicotine, cold, after
-                    thirty-two years of it, from the age of sixteen. He built the conditions to hold it: no fuel, no willingness to ask for
+                    thirty-two years of it, from the age of sixteen (<Moment ulid="01K9B75THRJY19ZNSR46V4A4M3" t="6:28" />). He built the conditions to hold it: no fuel (<Moment ulid="01K9DRBKERDPY709G3G6K4HV04" t="18:36" />), no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
                     reachable. He walked instead. He had been at <TraceCite ulid="01K934STC8619MERVPWB6BMP8T">Siltcoos Beach on the second</TraceCite>, the day he wrote down the statute violation, and he was back at the water on <TraceCite ulid="01K9DVE7PR8JY1CHNJ4EB4XYY0">the sixth</TraceCite>, <TraceCite ulid="01K9N19820VXG6QAZBBVX4AHSS">the ninth after seven and a half miles</TraceCite>, <TraceCite ulid="01K9QKSX18NGC0TTX0XJ429TZN">the tenth after twelve and a half</TraceCite>, <TraceCite ulid="01K9T5T2NGW95V9CRJ2M0WRF1X">the eleventh</TraceCite>, and <TraceCite ulid="01KA4G0DQ0H0WFW6WSSF7PRMJC">the fifteenth</TraceCite>. Seven times that month he walked out to
-                    the ocean and back, in rain and after dark, far enough that a step counter put
-                    him in the top three percent of everyone it tracks. On the sixth day he said it was the furthest he had made it
+                    the ocean and back, in rain and after dark (<Moment ulid="01K9E1WQ48BCDXGA8A4ZR9XCFG" t="3:18" />), far enough that a step counter put
+                    him in the top three percent of everyone it tracks (<Moment ulid="01KAPGS6X0FTAEFDYDZCXV4XAQ" t="5:21" />). On the sixth day he said it was the furthest he had made it
                     in thirty-two years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
@@ -3311,18 +3311,18 @@ export default function TestimonyBody({
                 <P id="pdd05b" n={275}>
                     Her answer recast a documented complaint as pain and closed the only channel that
                     reached the officer with the authority to act on it. Closing it ended nothing. It
-                    moved the matter out of her inbox and into a public archive she did not control, and he spent the rest of the month designing what would carry it: the
-                    front end, the atlas that renders his routes as maps, the gallery that holds the
+                    moved the matter out of her inbox and into a public archive she did not control (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:11" />), and he spent the rest of the month designing what would carry it: the
+                    front end, the atlas that renders his routes as maps (<Moment ulid="01KD1VZY088WZPBSYKB9WM8AM8" t="5:25" />), the gallery that holds the
                     photographs.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The notice, and an order to stop<Hash id="hdd06" label="The notice, and an order to stop" /></h3>
                 <P id="pdd06a" n={276}>
                     In January he served notice under 42 U.S.C. section 1983, and in February notice
                     that the constitutional violation was ongoing. In the same weeks he finished the
-                    analysis layer and got the reflections working, registered the domain the
-                    platform would run under, and on the twentieth deleted both of his channels,
-                    nearly nine hundred recordings, after pulling every one of them down onto storage
-                    he controlled. He collapsed his repositories into one and began the rebuild in a
+                    analysis layer and got the reflections working (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="6:25" />), registered the domain the
+                    platform would run under, and on the twentieth deleted both of his channels (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:23" />),
+                    nearly nine hundred recordings (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:32" />), after pulling every one of them down onto storage
+                    he controlled. He collapsed his repositories into one (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="6:38" />) and began the rebuild in a
                     framework he had never used.
                 </P>
                 <P id="pdd07" n={277}>
@@ -3367,11 +3367,11 @@ export default function TestimonyBody({
                 </P>
                 <P id="pddz4" n={281}>
                     He spent those same seven months building. He put the reflection engine
-                    together and ran his whole catalogue through it, moved his infrastructure onto
-                    servers he owns, took his life off every platform that held it, set down
-                    thirty-two years of nicotine, and walked to the ocean and back in the rain
+                    together and ran his whole catalogue through it (<Moment ulid="01K7E57ESRR35WD3SPJKAE58Y2" t="1:31" />), moved his infrastructure onto
+                    servers he owns, took his life off every platform that held it (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="2:42" />), set down
+                    thirty-two years of nicotine (<Moment ulid="01K9951BZRK9XRJ0W561J49RMJ" t="3:13" />), and walked to the ocean and back in the rain
                     through all of it. On May 18 he walked from the RV down the Siltcoos River to
-                    the water and said the thing was finished, robust, and ready for other people
+                    the water and said the thing was finished (<Moment ulid="01KRXFA4G04GPAJCY3HDB9FY28" t="5:18" />), robust, and ready for other people
                     to use.
                 </P>
                 <P id="pddz5" n={282}>

@@ -22,12 +22,17 @@ import { join } from "node:path";
 import { spawnSync } from "node:child_process";
 
 const REPO = "/home/rswfire/www/rswfire.oprd";
-const PAGE = join(REPO, "app/(archive)/testimony/page.tsx");
+const PAGE = join(REPO, "components/testimony/TestimonyBody.tsx");
 const OUT = join(homedir(), "oregon", "testimony-pass");
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 const TT = join(OUT, "timed.json");
 const CITED = join(OUT, "cited.json");
 const LOG = join(OUT, "cite-pass.log");
+// Paragraphs written from the record but not yet carrying a citation have no
+// recordings for the pass to read. SEEDS maps a paragraph id to the ULIDs it
+// stands on, so a new chapter can be cited the same way an old one is
+// re-cited. { "pdd01": ["01K..."], ... }
+const SEEDS = join(OUT, "seeds.json");
 // A change feed: one line per paragraph as it completes, with an [i/total]
 // counter, appended to a log you can `tail -f` to see how far along the loop is.
 function feed(line) {
@@ -52,6 +57,7 @@ function momentsOf(jsx, map) {
 }
 
 function parse() {
+    const seeds = existsSync(SEEDS) ? JSON.parse(readFileSync(SEEDS, "utf8")) : {};
     const src = readFileSync(PAGE, "utf8");
     const map = constMap(src);
     const first = src.indexOf('<Part n="One"');
@@ -62,7 +68,9 @@ function parse() {
     const paras = [];
     for (const m of body.matchAll(/<P id="([a-z0-9]+)" n=\{(\d+)\}>([\s\S]*?)<\/P>/g)) {
         const part = partFor(m.index);
-        paras.push({ id: m[1], n: Number(m[2]), part: part ? `${part.n}. ${part.title}` : "?", partN: part?.n, jsx: m[3].trim(), moments: momentsOf(m[3], map) });
+        const seeded = seeds[m[1]] || [];
+        const moments = [...new Set([...momentsOf(m[3], map), ...seeded])];
+        paras.push({ id: m[1], n: Number(m[2]), part: part ? `${part.n}. ${part.title}` : "?", partN: part?.n, jsx: m[3].trim(), moments });
     }
     return { src, map, paras };
 }

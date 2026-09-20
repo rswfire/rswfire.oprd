@@ -23,7 +23,7 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 
 const REPO = "/home/rswfire/www/rswfire.oprd";
-const PAGE = join(REPO, "app/(archive)/testimony/page.tsx");
+const PAGE = join(REPO, "components/testimony/TestimonyBody.tsx");
 const OUT = join(homedir(), "oregon", "testimony-pass");
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 
