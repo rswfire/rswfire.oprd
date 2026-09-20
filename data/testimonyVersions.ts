@@ -22,6 +22,12 @@ export interface TestimonyVersion {
 
 export const TESTIMONY_VERSIONS: TestimonyVersion[] = [
     {
+        version: "1.7",
+        date: "September 19, 2026",
+        d: "2026-09-19",
+        note: "substantive changes",
+    },
+    {
         version: "1.6",
         date: "September 17, 2026",
         d: "2026-09-17",
