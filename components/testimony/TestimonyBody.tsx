@@ -185,6 +185,10 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                 {title}
                 <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
             </h2>
+            {/* The analysis is of the CURRENT text. A frozen version must not
+                carry this link: the signal it points at has moved on, and the
+                reading a reader reaches would not be of the words in front of
+                them. Stripped from versions/v*.tsx when a version is cut. */}
             {CHAPTER_SIGNALS[n] && (
                 <a
                     href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}

@@ -22,7 +22,6 @@ import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
 import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
-import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
 
 // ── The decision, Kentucky, February to April 2024 ──
 const FIRST_VIDEO = "01HQF22Q98F8S1ZF05BAZW0EV9";
@@ -187,18 +186,6 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
                 {title}
                 <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
             </h2>
-            {CHAPTER_SIGNALS[n] && (
-                <a
-                    href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                    className="mt-2 inline-flex flex-col items-center gap-1 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
-                >
-                    <Icon name="Bot" size={22} strokeWidth={1.75} className="shrink-0" />
-                    AI Analysis
-                </a>
-            )}
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
