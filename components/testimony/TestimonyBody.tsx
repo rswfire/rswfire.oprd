@@ -2944,7 +2944,7 @@ export default function TestimonyBody({
                     in the morning on the twentieth the access layer was finished (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:18" />), standing over
                     roughly eight hundred recordings going back to February 2024 (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:48" />).
                 </P>
-                <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency discarded<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
+                <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency<Hash id="hdd04" label="November, and a thirty-two-year chain" /></h3>
                 <P id="pdd04a" n={245}>
                     On November 15 he served the Director notice that his request
                     had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
@@ -3032,7 +3032,7 @@ export default function TestimonyBody({
                         Don&rsquo;t confuse your internal routing procedures with authority over me.
                     </Cite>
                 </P>
-                <h3 className="mt-8 mb-1 font-bold text-gray-900">The Director and Her Deputy<Hash id="hdd07" label="The Director and Her Deputy" /></h3>
+                <h3 className="mt-8 mb-1 font-bold text-gray-900">The director, and her deputy<Hash id="hdd07" label="The director, and her deputy" /></h3>
                 <P id="pddz1" n={253}>
                     The Director and the Deputy Director are the last two offices inside the
                     institution. Everything the volunteer services lead did, and the park
