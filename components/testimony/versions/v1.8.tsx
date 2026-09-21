@@ -7,6 +7,7 @@
 // he made at the time, the liferecord derived from them, and the emails as
 // they were sent. Roles, not names, for the four Honeyman staff.
 import Link from "next/link";
+import Icon from "@/components/Icon";
 import { TestimonyVersionProvider } from "@/components/testimony/versionContext";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
