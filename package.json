@@ -23,6 +23,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/check-register.mjs && next build && next-sitemap --config ./next-sitemap.mjs",
+    "testimony:pdf": "python3 scripts/make-testimony-pdf.py",
     "start": "next start"
   },
   "dependencies": {

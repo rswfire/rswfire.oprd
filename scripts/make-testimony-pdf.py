@@ -1,0 +1,390 @@
+#!/usr/bin/env python3
+"""Render the current testimony source as a complete, linked PDF.
+
+The TSX component remains the canonical text. This script extracts its opening,
+numbered paragraphs, chapter structure, and citations; builds a print-specific
+document; and refuses to publish the output unless structural checks pass.
+
+    npm run testimony:pdf
+
+Output: public/testimony-of-robert-samuel-white-v{current version}.pdf
+"""
+
+from __future__ import annotations
+
+import html
+import re
+import sys
+from datetime import date
+from pathlib import Path
+
+from pypdf import PdfReader
+from weasyprint import HTML
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE = ROOT / "components" / "testimony" / "TestimonyBody.tsx"
+VERSIONS = ROOT / "data" / "testimonyVersions.ts"
+THREADS = ROOT / "data" / "threads.ts"
+SITE = "https://oprdvolunteerabuse.org"
+CLUSTER = "https://rswfire.com/library/cluster/01M2SQAPRZHW6SFRSJBHKMXGWW"
+
+WORDS = {
+    "One": "1", "Two": "2", "Three": "3", "Four": "4", "Five": "5",
+    "Six": "6", "Seven": "7", "Eight": "8", "Nine": "9", "Ten": "10",
+    "Eleven": "11", "Twelve": "12", "Addendum": "13",
+}
+
+
+def prop(tag: str, name: str, constants: dict[str, str]) -> str | None:
+    quoted = re.search(rf'\b{name}="([^"]*)"', tag)
+    if quoted:
+        return quoted.group(1)
+    braced_string = re.search(rf'\b{name}=\{{"([^"]*)"\}}', tag)
+    if braced_string:
+        return braced_string.group(1)
+    braced = re.search(rf'\b{name}=\{{([A-Z][A-Z0-9_]*)\}}', tag)
+    if braced:
+        return constants.get(braced.group(1), braced.group(1))
+    number = re.search(rf'\b{name}=\{{(\d+(?:\.\d+)?)\}}', tag)
+    return number.group(1) if number else None
+
+
+def seconds(raw: str | None) -> int:
+    if not raw:
+        return 0
+    values = [int(float(piece)) for piece in raw.split(":")]
+    total = 0
+    for value in values:
+        total = total * 60 + value
+    return total
+
+
+def citation_threads(source: str) -> dict[str, str]:
+    positions = []
+    for name, slug in (
+        ("OPRD_THREAD", "oprd"), ("OSP_THREAD", "osp"), ("DAS_THREAD", "das"),
+        ("LEGISLATION_THREAD", "legislation"), ("USFS_THREAD", "usfs"),
+        ("GOVERNOR_THREAD", "governor"),
+    ):
+        match = re.search(rf"export const {name}\b", source)
+        if match:
+            positions.append((match.start(), slug))
+    positions.sort()
+    result = {}
+    for match in re.finditer(r'ulid:\s*"([0-9A-Z]{26})"', source):
+        prior = [slug for offset, slug in positions if offset < match.start()]
+        if prior:
+            result[match.group(1)] = prior[-1]
+    return result
+
+
+class InlineRenderer:
+    def __init__(self, constants: dict[str, str], threads: dict[str, str]):
+        self.constants = constants
+        self.threads = threads
+        self.tokens: list[str] = []
+
+    def token(self, value: str) -> str:
+        marker = f"\x02{len(self.tokens)}\x03"
+        self.tokens.append(value)
+        return marker
+
+    def link(self, label: str, url: str, kind: str) -> str:
+        return self.token(
+            f'<a class="cite {kind}" href="{html.escape(url, quote=True)}">{label}</a>'
+        )
+
+    def render(self, value: str) -> str:
+        self.tokens = []
+        value = re.sub(r"\{\s*/\*[\s\S]*?\*/\s*\}", "", value)
+        value = re.sub(r'\{"\s*"\}', " ", value)
+
+        # Paired citations are replaced repeatedly because they can be nested.
+        # The last character before the opening bracket may not be "/". Without
+        # this distinction, a self-closing Moment can consume everything up to
+        # the next labeled Moment.
+        paired = re.compile(r"<(Moment|Cite|SunCite|TraceCite|PhotoCite|PlaceCite|ClusterCite|Link)\b([^>]*?[^/\s])\s*>([\s\S]*?)</\1>")
+        while paired.search(value):
+            def paired_repl(match: re.Match[str]) -> str:
+                kind, attrs, body = match.groups()
+                label = self.render_fragment(body)
+                tag = f"<{kind}{attrs}>"
+                if kind == "Moment":
+                    ulid, stamp = prop(tag, "ulid", self.constants), prop(tag, "t", self.constants)
+                    return self.link(label, f"https://rswfire.com/library/signal/{ulid}?t={seconds(stamp)}", "recording")
+                if kind == "Cite":
+                    ulid = prop(tag, "ulid", self.constants) or ""
+                    slug = self.threads.get(ulid, "oprd")
+                    return self.link(label, f"{SITE}/record/{slug}/{ulid}", "document")
+                if kind == "SunCite":
+                    return self.link(label, f"{SITE}/sunlight/#{prop(tag, 'entry', self.constants)}", "their-document")
+                if kind == "TraceCite":
+                    return self.link(label, f"https://rswfire.com/rswfire/atlas?trace={prop(tag, 'ulid', self.constants)}", "trace")
+                if kind == "PhotoCite":
+                    signal = prop(tag, "signal", self.constants)
+                    photo = prop(tag, "photo", self.constants)
+                    return self.link(label, f"https://rswfire.com/media/{signal}/{photo}", "photo")
+                if kind == "PlaceCite":
+                    return self.token(f'<span class="cite place">{label}</span>')
+                if kind == "ClusterCite":
+                    return self.link(label, f"https://rswfire.com/library/cluster/{prop(tag, 'id', self.constants)}", "cluster")
+                href = prop(tag, "href", self.constants) or ""
+                return self.link(label, href if href.startswith("http") else SITE + href, "site-link")
+            value = paired.sub(paired_repl, value)
+
+        def moment_repl(match: re.Match[str]) -> str:
+            tag = match.group(0)
+            ulid, stamp = prop(tag, "ulid", self.constants), prop(tag, "t", self.constants)
+            label = html.escape(stamp or "0:00")
+            return self.link(label, f"https://rswfire.com/library/signal/{ulid}?t={seconds(stamp)}", "recording")
+
+        value = re.sub(r"<Moment\b[\s\S]*?/>", moment_repl, value)
+
+        def place_repl(match: re.Match[str]) -> str:
+            tag = match.group(0)
+            label = html.escape(prop(tag, "name", self.constants) or "")
+            return self.token(f'<span class="cite place">{label}</span>')
+
+        value = re.sub(r"<PlaceCite\b[\s\S]*?/>", place_repl, value)
+        value = re.sub(r"<Hash\b[^>]*/>", "", value)
+        value = re.sub(r"<br\s*/>", lambda _: self.token("<br>"), value)
+        value = re.sub(r"<em>([\s\S]*?)</em>", lambda m: self.token(f"<em>{self.render_fragment(m.group(1))}</em>"), value)
+        value = re.sub(r"<strong>([\s\S]*?)</strong>", lambda m: self.token(f"<strong>{self.render_fragment(m.group(1))}</strong>"), value)
+        value = re.sub(r"<[^>]+>", "", value)
+        value = re.sub(r"\{[^{}]*\}", "", value)
+        value = html.escape(html.unescape(value))
+        value = re.sub(r"\s+", " ", value).strip().replace("( ", "(").replace(" )", ")")
+        for index, replacement in enumerate(self.tokens):
+            value = value.replace(html.escape(f"\x02{index}\x03"), replacement)
+            value = value.replace(f"\x02{index}\x03", replacement)
+        return value
+
+    def render_fragment(self, value: str) -> str:
+        # Render nested content without discarding the outer token table.
+        outer = self.tokens
+        child = InlineRenderer(self.constants, self.threads)
+        rendered = child.render(value)
+        self.tokens = outer
+        return rendered
+
+
+def parse_source() -> tuple[dict, list[dict]]:
+    source = SOURCE.read_text()
+    constants = dict(re.findall(r'^const\s+([A-Z][A-Z0-9_]*)\s*=\s*"([^"]+)";', source, re.M))
+    threads = citation_threads(THREADS.read_text())
+    renderer = InlineRenderer(constants, threads)
+
+    current = re.search(r'version:\s*"([^"]+)"\s*,\s*date:\s*"([^"]+)"', VERSIONS.read_text())
+    if not current:
+        raise RuntimeError("current testimony version not found")
+    title = re.search(r'<SectionPage[\s\S]*?title="([^"]+)"', source).group(1)
+    subtitle = re.search(r'<SectionPage[\s\S]*?subtitle="([^"]+)"', source).group(1)
+    tagline = re.search(r'<SectionPage[\s\S]*?tagline="([^"]+)"', source).group(1)
+
+    first_part = source.index('<Part n="One"')
+    intro_area = source[source.index("<TestimonyMeta"):first_part]
+    intro = [renderer.render(m.group(1)) for m in re.finditer(r"<p>([\s\S]*?)</p>", intro_area)]
+
+    parts = []
+    part_pattern = re.compile(r'<Part n="([^"]+)" title="([^"]+)">([\s\S]*?)</Part>')
+    for word, chapter_title, body in part_pattern.findall(source):
+        paragraphs = []
+        for match in re.finditer(r'<P id="([^"]+)" n=\{(\d+)\}>([\s\S]*?)</P>', body):
+            paragraphs.append({"id": match.group(1), "number": int(match.group(2)), "html": renderer.render(match.group(3))})
+        parts.append({"word": word, "number": WORDS[word], "title": chapter_title, "paragraphs": paragraphs})
+
+    return {
+        "title": title, "subtitle": subtitle, "tagline": tagline,
+        "version": current.group(1), "published": current.group(2), "intro": intro,
+    }, parts
+
+
+def build_html(meta: dict, parts: list[dict]) -> str:
+    toc = "".join(
+        f'<li><a href="#chapter-{p["number"]}"><span class="toc-number">{p["number"]}</span>'
+        f'<span class="toc-title">{html.escape(p["title"].title())}</span></a></li>'
+        for p in parts
+    )
+    chapters = []
+    for part in parts:
+        paras = "".join(
+            f'<p id="{p["id"]}" class="numbered"><span class="para-number">{p["number"]}</span>{p["html"]}</p>'
+            for p in part["paragraphs"]
+        )
+        label = "Addendum" if part["word"] == "Addendum" else f'Chapter {part["word"]}'
+        chapters.append(f'''<section class="chapter" id="chapter-{part['number']}">
+          <div class="chapter-rule"></div>
+          <div class="chapter-label">{label}</div>
+          <h2>{html.escape(part['title'].title())}</h2>
+          <a class="analysis" href="https://rswfire.com/library/signal/{chapter_signal(part['word'])}">AI analysis of this chapter</a>
+          <div class="prose">{paras}</div>
+        </section>''')
+
+    intro = "".join(f"<p>{p}</p>" for p in meta["intro"])
+    generated = date.today().strftime("%B %-d, %Y")
+    return f'''<!doctype html><html><head><meta charset="utf-8"><style>
+      @page {{
+        size: letter; margin: 0.78in 0.82in 0.78in 0.94in;
+        @top-left {{ content: "THE TESTIMONY"; font: 600 7.5pt "Lato"; letter-spacing: 0.14em; color: #718096; }}
+        @top-right {{ content: string(chapter); font: 600 7.5pt "Lato"; letter-spacing: 0.08em; color: #718096; }}
+        @bottom-left {{ content: "OPRDVOLUNTEERABUSE.ORG"; font: 600 7pt "Lato"; letter-spacing: 0.12em; color: #94a3b8; }}
+        @bottom-right {{ content: counter(page); font: 600 8pt "Lato"; color: #64748b; }}
+      }}
+      @page cover {{ margin: 0; @top-left {{ content: none }} @top-right {{ content: none }} @bottom-left {{ content: none }} @bottom-right {{ content: none }} }}
+      @page front {{ @top-left {{ content: none }} @top-right {{ content: none }} }}
+      * {{ box-sizing: border-box; }}
+      html {{ font-size: 10.7pt; }}
+      body {{ margin: 0; color: #18252b; font-family: "DejaVu Serif", Georgia, serif; line-height: 1.55; }}
+      a {{ color: inherit; }}
+      .cover {{ page: cover; height: 11in; padding: 0.72in 0.78in; page-break-after: always; background: #102b2a; color: #f7f3e8; position: relative; }}
+      .cover-mark {{ width: 0.54in; height: 0.08in; margin-top: 0.18in; background: #42b883; }}
+      .cover-kicker {{ margin-top: 1.38in; font: 700 9pt "Lato"; letter-spacing: .25em; text-transform: uppercase; color: #9ad7bb; }}
+      .cover h1 {{ margin: .22in 0 0; max-width: 6.3in; font: 700 35pt/1.08 "DejaVu Serif"; letter-spacing: -.025em; }}
+      .cover-subtitle {{ margin-top: .25in; font: 600 11pt "Lato"; letter-spacing: .16em; text-transform: uppercase; color: #d6e6df; }}
+      .cover-tagline {{ margin-top: .08in; font: 500 8.5pt "Lato"; letter-spacing: .14em; text-transform: uppercase; color: #9fb8ae; }}
+      .cover-bottom {{ position: absolute; left: .78in; right: .78in; bottom: .64in; border-top: 1px solid #31514c; padding-top: .18in; display: grid; grid-template-columns: 1fr auto; gap: .35in; font-family: "Lato"; color: #b7cac2; }}
+      .cover-contact {{ font-size: 7.6pt; line-height: 1.5; letter-spacing: .055em; }}
+      .cover-contact strong {{ display: block; color: #f7f3e8; font-size: 8pt; letter-spacing: .1em; text-transform: uppercase; }}
+      .cover-contact .roles {{ color: #9fb8ae; }}
+      .cover-contact a {{ color: #c9e6d9; text-decoration: none; }}
+      .cover-edition {{ text-align: right; font-size: 7.5pt; line-height: 1.6; letter-spacing: .11em; text-transform: uppercase; color: #9fb8ae; }}
+      .cover-edition a {{ color: #c9e6d9; text-decoration: none; }}
+      .front {{ page: front; page-break-after: always; }}
+      .eyebrow, .chapter-label {{ font: 700 7.5pt "Lato"; letter-spacing: .2em; text-transform: uppercase; color: #23805e; }}
+      .statement {{ margin-top: .25in; padding: .28in .3in; background: #f0f7f3; border-left: 4px solid #42b883; }}
+      .statement p {{ margin: 0 0 .11in; font-size: 11.4pt; }}
+      .statement p:last-child {{ margin-bottom: 0; }}
+      .key {{ margin-top: .28in; padding-top: .18in; border-top: 1px solid #cbd5e1; }}
+      .key-grid {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: .08in .18in; margin-top: .12in; font: 600 8pt "Lato"; }}
+      .swatch {{ display: inline-block; width: .09in; height: .09in; margin-right: .06in; border-radius: 50%; }}
+      .document .swatch {{ background:#16709b }} .recording .swatch {{ background:#19785b }} .photo .swatch {{ background:#7652a4 }}
+      .place .swatch {{ background:#aa4760 }} .trace .swatch {{ background:#4656a8 }} .their-document .swatch {{ background:#b85b18 }}
+      .cluster-callout {{ display: block; width: fit-content; margin-top: .2in; padding: .1in .14in; border: 1px solid #98c9dd; border-radius: 5px; color: #176b8f; font: 700 7.5pt "Lato"; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }}
+      .contents {{ page: front; page-break-after: always; }}
+      .contents h2 {{ font-size: 24pt; margin: .12in 0 .3in; }}
+      .contents ol {{ list-style: none; margin: 0; padding: 0; }}
+      .contents li {{ border-bottom: 1px solid #dce4e7; }}
+      .contents a {{ display: grid; grid-template-columns: .45in 1fr auto; padding: .095in 0; text-decoration: none; font-family: "Lato"; }}
+      .toc-number {{ color: #23805e; font-weight: 700; }}
+      .contents a::after {{ content: leader('.') target-counter(attr(href), page); color: #7b8b91; }}
+      .chapter {{ page-break-before: always; }}
+      .chapter-rule {{ width: .48in; border-top: 5px solid #42b883; margin: .08in 0 .22in; }}
+      .chapter h2 {{ string-set: chapter content(); margin: .06in 0 .08in; max-width: 6in; font-size: 23pt; line-height: 1.12; letter-spacing: -.015em; color: #102b2a; }}
+      .analysis {{ display: inline-block; margin-bottom: .3in; color: #66509a; font: 700 7pt "Lato"; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }}
+      .prose {{ orphans: 3; widows: 3; }}
+      p.numbered {{ position: relative; margin: 0 0 .14in; text-align: left; }}
+      .para-number {{ position: absolute; right: calc(100% + .13in); top: .07em; width: .3in; color: #91a09f; font: 600 7pt "Lato"; text-align: right; }}
+      .cite {{ text-decoration: none; border-bottom: .7px solid currentColor; }}
+      .cite.document {{ color:#12678e }} .cite.recording {{ color:#156f54 }} .cite.photo {{ color:#6b4995 }}
+      .cite.place {{ color:#9a3e57 }} .cite.trace {{ color:#40509e }} .cite.their-document {{ color:#a95014 }}
+      .cite.cluster, .cite.site-link {{ color:#176b8f }}
+      em {{ color: #27373c; }}
+      .colophon {{ page-break-before: always; padding-top: .35in; }}
+      .colophon h2 {{ font-size: 20pt; color: #102b2a; }}
+      .colophon p {{ max-width: 5.8in; }}
+      .colophon .line {{ margin-top: .3in; border-top: 1px solid #ccd8d7; padding-top: .18in; font: 600 8pt "Lato"; letter-spacing: .06em; color: #627471; }}
+    </style></head><body>
+      <section class="cover">
+        <div class="cover-mark"></div>
+        <div class="cover-kicker">The public record</div>
+        <h1>{html.escape(meta['title'])}</h1>
+        <div class="cover-subtitle">{html.escape(meta['subtitle'])}</div>
+        <div class="cover-tagline">{html.escape(meta['tagline'])}</div>
+        <div class="cover-bottom">
+          <div class="cover-contact">
+            <strong>Robert Samuel White</strong>
+            <div class="roles">Former Oregon State Parks Volunteer · Current U.S. Forest Service Caretaker</div>
+            <div>P.O. Box 334 · Reedsport, Oregon 97467</div>
+            <div><a href="mailto:rsw@rswfire.com">rsw@rswfire.com</a></div>
+          </div>
+          <div class="cover-edition">
+            <div>Version {meta['version']}</div>
+            <a href="{SITE}/for-volunteers">For Volunteers</a>
+          </div>
+        </div>
+      </section>
+      <section class="front">
+        <div class="eyebrow">Statement</div>
+        <div class="statement">{intro}</div>
+        <div class="key"><div class="eyebrow">How to read a citation</div>
+          <div class="key-grid">
+            <span class="document"><i class="swatch"></i>Document</span><span class="recording"><i class="swatch"></i>Recording</span><span class="photo"><i class="swatch"></i>Photograph</span>
+            <span class="place"><i class="swatch"></i>Place</span><span class="trace"><i class="swatch"></i>Trace</span><span class="their-document"><i class="swatch"></i>Their document</span>
+          </div>
+          <p><em>Italics are his words, verbatim, from the cited source.</em></p>
+          <a class="cluster-callout" href="{CLUSTER}">AI analysis / testimony cluster</a>
+        </div>
+      </section>
+      <section class="contents"><div class="eyebrow">Navigation</div><h2>Contents</h2><ol>{toc}</ol></section>
+      {''.join(chapters)}
+      <section class="colophon"><div class="eyebrow">About this edition</div><h2>A document built from the record</h2>
+        <p>This PDF is generated from the same testimony source published at <a href="{SITE}/testimony">oprdvolunteerabuse.org/testimony</a>. Paragraph numbers and chapter structure are preserved. Colored citations are live links to the supporting record.</p>
+        <p>The testimony was built from the life record Robert Samuel White kept himself and generated by an AI using technology he created himself.</p>
+        <div class="line">Version {meta['version']} · Published {meta['published']} · PDF generated {generated} · {len(parts)} chapters · {sum(len(p['paragraphs']) for p in parts)} numbered paragraphs</div>
+      </section>
+    </body></html>'''
+
+
+def chapter_signal(word: str) -> str:
+    source = (ROOT / "data" / "testimonySignals.ts").read_text()
+    match = re.search(rf'{word}:\s*"([0-9A-Z]+)"', source)
+    return match.group(1) if match else ""
+
+
+def output_path(version: str) -> Path:
+    return ROOT / "public" / f"testimony-of-robert-samuel-white-v{version}.pdf"
+
+
+def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
+    reader = PdfReader(path)
+    texts = [page.extract_text() or "" for page in reader.pages]
+    joined = "\n".join(texts)
+    expected = [p for part in parts for p in part["paragraphs"]]
+    problems = []
+    cover_words = re.sub(r"\s+", " ", texts[0]).lower()
+    if not all(word in cover_words for word in ("testimony", "robert", "samuel", "white")):
+        problems.append("cover title missing")
+    if "Contents" not in joined:
+        problems.append("contents missing")
+    for part in parts:
+        if part["title"].title() not in joined:
+            problems.append(f"chapter missing: {part['title']}")
+    # Margin numbers can be concatenated to the neighboring text by PDF text
+    # extraction even though they are visibly separate. Confirm the complete
+    # sequence at source parse time, then spot-check its bounds in the PDF.
+    expected_numbers = [p["number"] for p in expected]
+    if expected_numbers != list(range(1, 276)):
+        problems.append("paragraph numbering is not continuous from 1 through 275")
+    if not re.search(r"(?:^|\D)1(?:\D|$)", joined) or not re.search(r"(?:^|\D)275(?:\D|$)", joined):
+        problems.append("first or last paragraph number missing from rendered PDF")
+    blank = [str(i + 1) for i, text in enumerate(texts) if len(text.strip()) < 20]
+    if blank:
+        problems.append("blank pages: " + ", ".join(blank))
+    link_count = sum(len(page.get("/Annots", [])) for page in reader.pages)
+    if link_count < 100:
+        problems.append(f"too few live links: {link_count}")
+    if problems:
+        raise RuntimeError("PDF audit failed:\n  " + "\n  ".join(problems))
+    return len(reader.pages), link_count
+
+
+def main() -> None:
+    meta, parts = parse_source()
+    if len(parts) != 13 or sum(len(p["paragraphs"]) for p in parts) != 275:
+        raise RuntimeError("source structure changed: expected 13 chapters and 275 paragraphs")
+    output = output_path(meta["version"])
+    temporary = output.with_suffix(".tmp.pdf")
+    HTML(string=build_html(meta, parts), base_url=str(ROOT)).write_pdf(temporary)
+    pages, links = audit(temporary, meta, parts)
+    temporary.replace(output)
+    print(f"{output} ({pages} pages, 13 chapters, 275 paragraphs, {links} live links) audit: clean")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as exc:
+        for temporary in (ROOT / "public").glob("testimony-of-robert-samuel-white-v*.tmp.pdf"):
+            temporary.unlink(missing_ok=True)
+        sys.exit(str(exc))
