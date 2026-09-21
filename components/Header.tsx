@@ -168,6 +168,9 @@ export default function Header() {
                         </Link>
                         <NewsletterSignup />
                         <Tracker />
+                        <div className="mt-2 border-b border-slate-200 bg-emerald-50 px-4 py-2.5">
+                            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Navigation</h2>
+                        </div>
                         <ul className="mt-2 space-y-0">
                             {archiveSections.map((section, index) => {
                                 if (section.separator) {

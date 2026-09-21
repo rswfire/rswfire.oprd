@@ -79,7 +79,7 @@ export default function PriceOfTheRecord() {
                     href="/records-requests"
                     className="font-mono text-[13px] font-bold uppercase tracking-wide text-red-800 underline decoration-red-300 hover:text-red-600"
                 >
-                    Every request, what they claim, and what they are holding
+                    The public records: Asked. Claimed. Withheld.
                 </Link>
             </div>
         </div>
