@@ -89,9 +89,6 @@ export default function TestimonyCard() {
                         v{CURRENT_VERSION.version}
                     </Link>
                 </div>
-                <div className="mt-4 flex justify-center">
-                    <TestimonyPdfButton />
-                </div>
             </div>
 
             {/* ── The chapters ── */}
@@ -124,6 +121,9 @@ export default function TestimonyCard() {
                         ADDENDUM: ON THE END OF THE WORLD
                     </span>
                 </Link>
+                <div className="mt-4 flex justify-center">
+                    <TestimonyPdfButton />
+                </div>
             </div>
         </div>
     );

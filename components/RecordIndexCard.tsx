@@ -57,7 +57,7 @@ export default function RecordIndexCard() {
                             Experimental
                         </span>
                     </div>
-                    <h2 className="mt-1 text-xl font-bold text-gray-900">The whole record, read as one</h2>
+                    <h2 className="mt-1 text-xl font-bold text-gray-900">The whole record, read as one.</h2>
                 </div>
                 <Link
                     href="/synthesis"

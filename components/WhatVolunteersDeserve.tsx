@@ -25,7 +25,7 @@ export default function WhatVolunteersDeserve() {
                 <div className="inline-flex items-center gap-2">
                     <Icon name="Shield" size={20} strokeWidth={2} className="shrink-0 text-amber-600" />
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-                        What every volunteer deserves
+                        What every volunteer deserves.
                     </h2>
                 </div>
                 <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">

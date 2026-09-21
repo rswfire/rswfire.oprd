@@ -19,12 +19,13 @@ export default function PriceOfTheRecord() {
                 <div className="inline-flex items-center gap-2">
                     <Icon name="FileText" size={20} strokeWidth={2} className="shrink-0 text-red-600" />
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-                        The price of the record
+                        The price of the record.
                     </h2>
                 </div>
                 <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">
                     Two agencies hold records about me. Neither has refused them outright. One
-                    named a price. The other named the documents itself and then did not send them.
+                    named a price. The other named a price, accepted a payment, named the documents
+                    itself, and then did not send them.
                 </p>
             </div>
 

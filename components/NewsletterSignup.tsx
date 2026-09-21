@@ -29,42 +29,46 @@ export default function NewsletterSignup() {
     }
 
     return (
-        <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
-            <h2 className="font-bold text-lg tracking-wide text-center">FOLLOW THE RECORD</h2>
-            <div className="mt-2 text-sm text-gray-600 text-center">
-                Occasional email updates when this archive gains a significant record.
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div className="border-b border-slate-200 bg-emerald-50 px-4 py-2.5">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Follow the Record</h2>
             </div>
-
-            {state === "done" ? (
-                <div className="mt-4 text-center text-sm font-semibold text-emerald-700">
-                    You&rsquo;re on the list.
+            <div className="p-5">
+                <div className="text-center text-sm text-gray-600">
+                    Occasional email updates when this archive gains a significant record.
                 </div>
-            ) : (
-                <form onSubmit={submit} className="mt-4 flex flex-col gap-2">
-                    <input
-                        type="email"
-                        required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your@email.address"
-                        className="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
-                    <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
-                    <button
-                        type="submit"
-                        disabled={state === "sending"}
-                        className="rounded-lg bg-emerald-700 hover:bg-emerald-800 disabled:opacity-60 disabled:cursor-wait transition-colors px-5 py-2.5 text-sm font-semibold uppercase tracking-widest text-white cursor-pointer"
-                    >
-                        {state === "sending" ? "Subscribing…" : "Subscribe"}
-                    </button>
-                </form>
-            )}
 
-            {state === "error" && (
-                <div className="mt-3 text-center text-sm text-red-700">
-                    That didn&rsquo;t go through. Try again in a minute.
-                </div>
-            )}
+                {state === "done" ? (
+                    <div className="mt-4 text-center text-sm font-semibold text-emerald-700">
+                        You&rsquo;re on the list.
+                    </div>
+                ) : (
+                    <form onSubmit={submit} className="mt-4 flex flex-col gap-2">
+                        <input
+                            type="email"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="your@email.address"
+                            className="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        />
+                        <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+                        <button
+                            type="submit"
+                            disabled={state === "sending"}
+                            className="rounded-lg bg-emerald-700 hover:bg-emerald-800 disabled:opacity-60 disabled:cursor-wait transition-colors px-5 py-2.5 text-sm font-semibold uppercase tracking-widest text-white cursor-pointer"
+                        >
+                            {state === "sending" ? "Subscribing…" : "Subscribe"}
+                        </button>
+                    </form>
+                )}
+
+                {state === "error" && (
+                    <div className="mt-3 text-center text-sm text-red-700">
+                        That didn&rsquo;t go through. Try again in a minute.
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

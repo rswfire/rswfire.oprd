@@ -166,8 +166,8 @@ export default function Header() {
                                 Director Lisa Sumption's Stewardship
                             </p>
                         </Link>
-                        <Tracker />
                         <NewsletterSignup />
+                        <Tracker />
                         <ul className="mt-2 space-y-0">
                             {archiveSections.map((section, index) => {
                                 if (section.separator) {
