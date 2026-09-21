@@ -271,7 +271,7 @@ def build_html(meta: dict, parts: list[dict]) -> str:
       .chapter h2 {{ string-set: chapter content(); margin: .06in 0 .08in; max-width: 6in; font-size: 23pt; line-height: 1.12; letter-spacing: -.015em; color: #102b2a; }}
       .prose {{ orphans: 3; widows: 3; }}
       .director-photo {{ margin: .22in 0 .28in; break-inside: avoid; }}
-      .director-photo img {{ display: block; width: 4.75in; max-height: 3.2in; object-fit: cover; border: 1px solid #d4dddf; }}
+      .director-photo img {{ display: block; width: 4.75in; height: auto; border: 1px solid #d4dddf; }}
       .director-photo figcaption {{ width: 4.75in; margin-top: .08in; color: #718085; font: 7.5pt/1.4 "Lato"; }}
       p.numbered {{ position: relative; margin: 0 0 .14in; text-align: left; }}
       .para-number {{ position: absolute; right: calc(100% + .13in); top: .07em; width: .3in; color: #91a09f; font: 600 7pt "Lato"; text-align: right; }}
