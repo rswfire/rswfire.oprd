@@ -20,7 +20,7 @@ const CONDITIONS = [
 
 export default function WhatVolunteersDeserve() {
     return (
-        <div className="mt-4 overflow-hidden rounded-2xl border border-amber-300 bg-white shadow-sm">
+        <div id="what-every-volunteer-deserves" className="mt-4 overflow-hidden rounded-2xl border border-amber-300 bg-white shadow-sm lg:scroll-mt-28">
             <div className="border-b border-amber-200 bg-amber-50 px-6 py-5 sm:px-8">
                 <div className="inline-flex items-center gap-2">
                     <Icon name="Shield" size={20} strokeWidth={2} className="shrink-0 text-amber-600" />

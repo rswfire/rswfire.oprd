@@ -70,7 +70,14 @@ export default function TestimonyCard() {
                             a letter
                         </a>{" "}
                         documenting her choices, past and future. She is the one who can protect
-                        you. She is the one choosing not to.
+                        you. She is the one{" "}
+                        <a
+                            href="/#what-every-volunteer-deserves"
+                            className="text-emerald-800 underline hover:text-emerald-600"
+                        >
+                            choosing not to
+                        </a>
+                        .
                     </p>
                 </div>
 
