@@ -27,20 +27,56 @@ const CHAPTERS = [
 
 export default function TestimonyCard() {
     return (
-        <div className="mt-4 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
-            {/* ── The head: one word ── */}
-            <div className="bg-gradient-to-b from-emerald-50/90 to-white px-6 pt-8 pb-6 sm:px-8">
-                <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-emerald-700">
-                    <Sprout size={14} strokeWidth={2} className="shrink-0" />
-                    The Testimony of Robert Samuel White
+        <div className="mb-4 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
+            <div className="px-6 pt-8 sm:px-8">
+                <div className="inline-flex flex-col items-start text-xs font-bold uppercase tracking-widest text-emerald-700">
+                    <Sprout size={24} strokeWidth={1.75} className="mb-2 text-emerald-600" aria-hidden />
+                    <span>Welcome</span>
                 </div>
+
                 <Link href="/testimony" className="mt-2 block">
-                    <h2 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                        Testimony<span className="text-emerald-600">.</span>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        The Testimony of Robert Samuel White.
                     </h2>
                 </Link>
 
-                <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-gray-600">
+                <div className="mt-6 space-y-4 text-lg leading-relaxed text-gray-800">
+                    <p>
+                        I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
+                        me ever since, and I brought that to a state park that claims to be the same
+                        thing. I was a volunteer park host for the Oregon Parks &amp; Recreation
+                        Department, and it is not that.
+                    </p>
+                    <p>
+                        This archive answers the question: <span className="font-semibold">what
+                        happens if something goes wrong?</span>{" "}
+                        The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
+                        is the only account, and there is no mechanism by which it can be questioned.
+                    </p>
+                    <p>
+                        Volunteers serve with no written standards, no notice, no hearing, no appeal,
+                        no protection from retaliation. There are characterizations. There are
+                        accusations never put in writing. There is a permanent statewide ban. And
+                        where there is contemporaneous documentation the institution cannot disappear,
+                        there is force: investigation, police at the door.
+                    </p>
+                    <p>
+                        Director Lisa Sumption has stewarded this agency for more than a decade.
+                        I wrote her{" "}
+                        <a
+                            href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N"
+                            target="_blank"
+                            rel="noopener"
+                            className="text-emerald-800 underline hover:text-emerald-600"
+                        >
+                            a letter
+                        </a>{" "}
+                        documenting her choices, past and future. She is the one who can protect
+                        you. She is the one choosing not to.
+                    </p>
+                </div>
+
+                <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-gray-200 pt-5 text-[13px] text-gray-600">
                     <span><span className="font-bold text-gray-900">{TESTIMONY_META.paragraphs}</span> numbered paragraphs</span>
                     <span><span className="font-bold text-gray-900">{TESTIMONY_META.documents}</span> documents</span>
                     <span><span className="font-bold text-gray-900">{TESTIMONY_META.recordings}</span> recordings</span>
@@ -55,7 +91,7 @@ export default function TestimonyCard() {
             </div>
 
             {/* ── The chapters ── */}
-            <div className="border-t border-emerald-100 px-6 py-6 sm:px-8">
+            <div className="mt-6 px-6 pb-6 sm:px-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-1 sm:grid-cols-2">
                     {[CHAPTERS.slice(0, 7), CHAPTERS.slice(7)].map((column, c) => (
                         <div key={c} className="space-y-1">
@@ -78,7 +114,7 @@ export default function TestimonyCard() {
                 </div>
                 <Link
                     href="/testimony/#c13"
-                    className="group mt-2 block rounded-lg border-t border-emerald-100 px-2 pt-3 pb-1.5 text-center hover:bg-emerald-50 sm:col-span-2"
+                    className="group mt-2 block rounded-lg px-2 py-1.5 text-center hover:bg-emerald-50 sm:col-span-2"
                 >
                     <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
                         ADDENDUM: ON THE END OF THE WORLD

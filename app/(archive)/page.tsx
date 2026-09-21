@@ -24,41 +24,7 @@ export default function OverviewPage() {
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
 
-            {/* THE QUESTION EVERY PROSPECTIVE HOST RESEARCHES */}
-            <div className="mb-4 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm">
-                <div className="mb-4 text-xs font-bold uppercase tracking-widest text-emerald-700">
-                    Welcome
-                </div>
-                <p className="text-lg leading-relaxed text-gray-800">
-                    I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
-                    me ever since, and I brought that to a state park that claims to be the same
-                    thing. I was a volunteer park host for the Oregon Parks &amp; Recreation
-                    Department, and it
-                    is not that.
-                </p>
-                <p className="mt-4 text-lg leading-relaxed text-gray-800">
-                    This archive answers the
-                    question: <span className="font-semibold">what happens if something goes
-                    wrong?</span>{" "}
-                    The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
-                    is the only account, and there is no mechanism by which it can be questioned.
-                </p>
-                <p className="mt-4 text-lg leading-relaxed text-gray-800">
-                    Volunteers serve with no written standards, no notice, no hearing, no appeal,
-                    no protection from retaliation. There are characterizations. There are
-                    accusations never put in writing. There is a permanent statewide ban. And
-                    where there is contemporaneous documentation the institution cannot disappear,
-                    there is force: investigation, police at the door.</p>
-                <p className="mt-4 text-lg leading-relaxed text-gray-800">
-                    Director Lisa Sumption has stewarded this agency for more than a decade.
-                    I wrote her{" "}
-                    <a href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N" target="_blank" rel="noopener" className="text-emerald-800 underline hover:text-emerald-600">a letter</a>{" "}
-                    documenting her choices, past and future. She is the one who can protect
-                    you. She is the one choosing not to.
-                </p>
-            </div>
-
-            {/* TESTIMONY — his life, every chapter a door */}
+            {/* WELCOME AND TESTIMONY — one introduction to the complete account */}
             <TestimonyCard />
 
 
