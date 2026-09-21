@@ -31,7 +31,7 @@ export default function OutreachNavigation({ homepage = false }: { homepage?: bo
                     <div className="flex flex-wrap items-end justify-between gap-3">
                         <div>
                             <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-sky-700">Institutional outreach</div>
-                            <h2 className="mt-1 text-xl font-bold text-slate-900">Making the record available to institutions</h2>
+                            <h2 className="mt-1 text-xl font-bold text-slate-900">Making the record available to institutions.</h2>
                         </div>
                         <Link href="/outreach/" className="text-sm font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">Open the correspondence tracker</Link>
                     </div>
