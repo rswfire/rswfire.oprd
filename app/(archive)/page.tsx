@@ -58,16 +58,16 @@ export default function OverviewPage() {
                 </p>
             </div>
 
-            {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
-            <WhatVolunteersDeserve />
+            {/* TESTIMONY — his life, every chapter a door */}
+            <TestimonyCard />
 
 
             {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
             <PriceOfTheRecord />
 
 
-            {/* TESTIMONY — his life, every chapter a door */}
-            <TestimonyCard />
+            {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
+            <WhatVolunteersDeserve />
 
 
             {/* THE CASE, IN THEIR DOCUMENTS */}

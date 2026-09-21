@@ -13,12 +13,6 @@ export default function PriceOfTheRecord() {
     const osp = RECORDS_REQUESTS.find((a) => a.agency === "Oregon State Police");
     if (!oprd || !osp) return null;
 
-    // Named in their own production and then not included: no exemption, no
-    // denial, no disposition at all.
-    const named = osp.withheld.filter((w) => w.basis === "silence");
-    const byStatute = osp.withheld.filter((w) => w.basis === "statute");
-    const byFee = osp.withheld.filter((w) => w.basis === "fee");
-
     return (
         <div className="mt-4 overflow-hidden rounded-2xl border border-red-200 bg-white shadow-sm">
             <div className="border-b border-red-200 bg-red-50 px-6 py-5 sm:px-8">
@@ -46,23 +40,17 @@ export default function PriceOfTheRecord() {
                                 {oprd.demanded.total}
                             </div>
                             <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
-                                {oprd.demanded.note}
+                                OPRD demands this amount to produce the Director&rsquo;s and Deputy
+                                Director&rsquo;s communications, notes and calendar entries, and every
+                                version of the Timeline of Events.
+                            </p>
+                            <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
+                                Under <span className="font-mono text-[13px]">OAR 736-001-0030</span>,
+                                the Director decides whether to waive the fee. The Director is also
+                                the subject of the request.
                             </p>
                         </>
                     )}
-                    <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
-                        <div className="text-[11px] font-bold uppercase tracking-widest text-gray-500">
-                            Whose records they are
-                        </div>
-                        <p className="mt-2 text-[15px] leading-relaxed text-gray-800">
-                            The request names two custodians: the Director and the Deputy Director.
-                            Under the Department&rsquo;s own rule,{" "}
-                            <span className="font-mono text-[13px]">OAR 736-001-0030</span>, the
-                            officer who grants or denies a fee waiver is the Director or her
-                            designee. She is the subject of the records and the person who decides
-                            whether the public pays to see them.
-                        </p>
-                    </div>
                 </div>
 
                 {/* ── OSP: the documents it named and did not send ── */}
@@ -70,43 +58,18 @@ export default function PriceOfTheRecord() {
                     <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
                         Oregon State Police
                     </div>
-                    {osp.demanded && (
-                        <>
-                            <div className="mt-2 font-mono text-4xl font-bold leading-none tracking-tight text-red-700">
-                                {osp.demanded.total}
-                            </div>
-                            <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
-                                {byFee[0]?.item}
-                            </p>
-                        </>
-                    )}
-                    <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
-                        <div className="text-[11px] font-bold uppercase tracking-widest text-gray-500">
-                            Named in their own production, not included
-                        </div>
-                        <ul className="mt-2 space-y-2">
-                            {named.map((w) => (
-                                <li key={w.item} className="flex items-start gap-2.5">
-                                    <span
-                                        aria-hidden
-                                        className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-red-500"
-                                    />
-                                    <span className="text-[15px] leading-relaxed text-gray-800">
-                                        {w.item}
-                                    </span>
-                                </li>
-                            ))}
-                        </ul>
-                        <p className="mt-3 text-[14px] leading-relaxed text-gray-600">
-                            No exemption cited, no denial, no disposition of any kind.
-                        </p>
+                    <div className="mt-2 font-mono text-4xl font-bold leading-none tracking-tight text-red-700">
+                        Unanswered
                     </div>
-                    {byStatute.map((w) => (
-                        <p key={w.item} className="mt-4 text-[15px] leading-relaxed text-gray-800">
-                            <span className="font-semibold">{w.item}</span> is withheld under{" "}
-                            {w.detail}
-                        </p>
-                    ))}
+                    <p className="mt-4 text-[15px] leading-relaxed text-gray-800">
+                        Records showing how the March 24 visit was planned, what information OSP
+                        gathered about me, what the involved personnel said by phone and text, and
+                        what happened during the contact remain undisclosed.
+                    </p>
+                    <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
+                        OSP has cited an exemption only for the body-camera video; for the rest, it
+                        has given no exemption or disposition.
+                    </p>
                 </div>
             </div>
 
