@@ -98,8 +98,6 @@ export default function TestimonyToc() {
         setOpen(false);
     }, []);
 
-    if (entries.length === 0) return null;
-
     return (
         <>
             {open && (
