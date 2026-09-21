@@ -17,11 +17,8 @@ const CHAPTERS = [
     "THE COAST",
     "WHY HE VOLUNTEERED",
     "HE WENT AND LOOKED AT HONEYMAN FIRST",
-    "FEBRUARY",
     "THE PICNIC TABLE",
-    "NINETEEN DAYS",
-    "THE WEEK HE TOLD IT",
-    "DISPLACED",
+    "DISPLACEMENT",
     "THE DIRECTOR AND HER DEPUTY",
     "THREE MEN WITH GUNS",
 ];
@@ -40,10 +37,6 @@ export default function TestimonyCard() {
                         The Testimony of Robert Samuel White.
                     </h2>
                 </Link>
-
-                <div className="mt-4">
-                    <TestimonyPdfButton variant="homepage" />
-                </div>
 
                 <div className="mt-6 space-y-4 text-lg leading-relaxed text-gray-800">
                     <p>
@@ -81,52 +74,52 @@ export default function TestimonyCard() {
                     </p>
                 </div>
 
-                <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-gray-200 pt-5 text-[13px] text-gray-600">
-                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.paragraphs}</span> numbered paragraphs</span>
-                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.documents}</span> documents</span>
-                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.recordings}</span> recordings</span>
-                    <span><span className="font-bold text-gray-900">{TESTIMONY_META.moments}</span> cited moments</span>
-                    <Link
-                        href="/testimony/#version-meta"
-                        className="font-mono text-gray-400 underline decoration-gray-300 underline-offset-2 hover:text-emerald-700"
-                    >
-                        v{CURRENT_VERSION.version}
-                    </Link>
+                <div className="mt-5 border-t border-gray-200 pt-5">
+                    <h3 className="text-center text-sm font-bold uppercase tracking-wide text-gray-900">My Testimony</h3>
+                    <div className="mt-2 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px] text-gray-600">
+                        <span><span className="font-bold text-gray-900">{TESTIMONY_META.paragraphs}</span> numbered paragraphs</span>
+                        <span><span className="font-bold text-gray-900">{TESTIMONY_META.documents}</span> documents</span>
+                        <span><span className="font-bold text-gray-900">{TESTIMONY_META.recordings}</span> recordings</span>
+                        <span><span className="font-bold text-gray-900">{TESTIMONY_META.moments}</span> cited moments</span>
+                        <Link
+                            href="/testimony/#version-meta"
+                            className="font-mono text-gray-400 underline decoration-gray-300 underline-offset-2 hover:text-emerald-700"
+                        >
+                            v{CURRENT_VERSION.version}
+                        </Link>
+                    </div>
                 </div>
             </div>
 
             {/* ── The chapters ── */}
             <div className="mt-6 px-6 pb-6 sm:px-8">
-                <div className="grid grid-cols-1 gap-x-8 gap-y-1 sm:grid-cols-2">
-                    {[CHAPTERS.slice(0, 7), CHAPTERS.slice(7)].map((column, c) => (
-                        <div key={c} className="space-y-1">
-                            {column.map((title, i) => (
-                                <Link
-                                    key={title}
-                                    href={`/testimony/#c${c * 7 + i + 1}`}
-                                    className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
-                                >
-                                    <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">
-                                        {String(c * 7 + i + 1).padStart(2, "0")}
-                                    </span>
-                                    <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
-                                        {title}
-                                    </span>
-                                </Link>
-                            ))}
-                            {c === 1 && (
-                                <Link
-                                    href="/testimony/#c13"
-                                    className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
-                                >
-                                    <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">13</span>
-                                    <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
-                                        ADDENDUM: ON THE END OF THE WORLD
-                                    </span>
-                                </Link>
-                            )}
-                        </div>
+                <div className="space-y-1">
+                    {CHAPTERS.map((title, i) => (
+                        <Link
+                            key={title}
+                            href={`/testimony/#c${i + 1}`}
+                            className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
+                        >
+                            <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">
+                                {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
+                                {title}
+                            </span>
+                        </Link>
                     ))}
+                    <Link
+                        href="/testimony/#c10"
+                        className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
+                    >
+                        <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">10</span>
+                        <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
+                            ADDENDUM: ON THE END OF THE WORLD
+                        </span>
+                    </Link>
+                </div>
+                <div className="mt-4 px-2">
+                    <TestimonyPdfButton variant="homepage" />
                 </div>
             </div>
         </div>

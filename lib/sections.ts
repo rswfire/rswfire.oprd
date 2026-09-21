@@ -18,22 +18,10 @@ export const archiveSections = [
     { href: "/testimony", label: "Testimony", icon: "Sprout" as const, iconClass: "text-violet-700" },
     { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
     {
-
         href: "/evidence",
         label: "Evidence",
         icon: "Gavel" as const,
         iconClass: "text-slate-600",
-        subsections: [
-            { href: "/evidence/origin", label: "1. Origin" },
-            { href: "/evidence/escalation", label: "2. Escalation" },
-            { href: "/evidence/trust", label: "3. Trust" },
-            { href: "/evidence/coercion", label: "4. Coercion" },
-            { href: "/evidence/surveillance", label: "5. Assessment" },
-            { href: "/evidence/dismissal", label: "6. Dismissal" },
-            { href: "/evidence/expulsion", label: "7. Retaliation" },
-            { href: "/evidence/containment", label: "8. Containment" },
-            { href: "/evidence/police", label: "9. Intimidation" }
-        ]
     },
     {
         href: "/key-individuals",

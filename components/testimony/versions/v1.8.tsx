@@ -1,4 +1,6 @@
-// app/(archive)/testimony/page.tsx
+// components/testimony/versions/v1.8.tsx
+//
+// Frozen. This is the testimony as it stood at v1.8.
 //
 // The testimony: a man on the Oregon coast, and the three months a state
 // agency spent inside that life. Built from his own record — the recordings
@@ -20,9 +22,7 @@ import ClusterCite from "@/components/reflections/ClusterCite";
 import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
-import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
-import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
 
 // ── The decision, Kentucky, February to April 2024 ──
 const FIRST_VIDEO = "01HQF22Q98F8S1ZF05BAZW0EV9";
@@ -173,7 +173,8 @@ function titleCase(t: string): string {
 // numbers became the address keep resolving.
 const PART_NUMBERS: Record<string, number> = {
     One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
-    Eight: 8, Nine: 9, Addendum: 10,
+    Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12,
+    Addendum: 13,
 };
 
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
@@ -182,24 +183,10 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
         <section id={c} data-part={title} data-toc={n === "Addendum" ? `ADDENDUM: ${title}` : title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
-            <div className="mt-1 flex items-center justify-between gap-4">
-                <h2 className="min-w-0 font-mono text-lg font-bold text-gray-900">
-                    {title}
-                    <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
-                </h2>
-                {CHAPTER_SIGNALS[n] && (
-                    <a
-                        href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                        className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
-                    >
-                        <Icon name="Bot" size={16} strokeWidth={1.75} className="shrink-0" />
-                        AI Analysis
-                    </a>
-                )}
-            </div>
+            <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
+                {title}
+                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+            </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
@@ -207,7 +194,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     );
 }
 
-export default function TestimonyBody({
+export default function TestimonyBodyV1_8({
     version,
     isCurrent,
 }: {
@@ -295,7 +282,7 @@ export default function TestimonyBody({
             </div>
 
             <div className="mt-4 flex items-stretch gap-2">
-                <TestimonyPdfButton />
+                <TestimonyPdfButton version="1.8" />
                 <ClusterCite id="01M2SQAPRZHW6SFRSJBHKMXGWW" variant="button">
                     <span>AI Analysis</span>
                     <span>Cluster</span>
@@ -1697,6 +1684,9 @@ export default function TestimonyBody({
                     ). He described it the way a person describes something already built. None of
                     this would come to be.
                 </P>
+            </Part>
+
+            <Part n="Six" title="FEBRUARY">
                 <P id="p6vcny" n={167}>
                     He arrived on January 31. That day started at four in the morning in a dark RV
                     with a flashlight, the tanks full of sanitizer since the day before, his own
@@ -1925,7 +1915,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Six" title="THE PICNIC TABLE">
+            <Part n="Seven" title="THE PICNIC TABLE">
                 <P id="pvfypv" n={181}>
                     Three days after he sent Trust., the park manager and the park supervisor sat
                     him down at a picnic table in the day use area and talked at him for
@@ -2228,6 +2218,9 @@ export default function TestimonyBody({
                     </PhotoCite>
                     ). The park manager called him the next afternoon.
                 </P>
+            </Part>
+
+            <Part n="Eight" title="NINETEEN DAYS">
                 <P id="pnqxwe" n={200}>
                     Between the picnic table and the dismissal he did the job and kept asking
                     about the next one. On March 6 he put himself forward to{" "}
@@ -2387,7 +2380,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Seven" title="DISPLACEMENT">
+            <Part n="Nine" title="THE WEEK HE TOLD IT">
                 <P id="ptt2f7" n={211}>
                     At 2:40, with the keys already gone, he wrote to the program manager:{" "}
                     <Cite ulid="01JQ51JFPRZVFQ28F1R1ASPWNE">dismissed one week before my scheduled
@@ -2647,6 +2640,9 @@ export default function TestimonyBody({
                     <Moment ulid={JOHN_TOUR} t="17:09" />
                     ).
                 </P>
+            </Part>
+
+            <Part n="Ten" title="DISPLACED">
                 <P id="p82469" n={227}>
                     The ban was statewide and immediate, so what followed was not a transition. It
                     was a month with nowhere to be.
@@ -2762,7 +2758,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Eight" title="THE DIRECTOR AND HER DEPUTY">
+            <Part n="Eleven" title="THE DIRECTOR AND HER DEPUTY">
                 <figure className="mt-2 mb-6">
                     <img
                         src="/director-and-deputy.jpg"
@@ -3064,7 +3060,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Nine" title="THREE MEN WITH GUNS">
+            <Part n="Twelve" title="THREE MEN WITH GUNS">
                 <P id="pfbekq" n={258}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
