@@ -166,8 +166,6 @@ export default function Header() {
                                 Director Lisa Sumption's Stewardship
                             </p>
                         </Link>
-                        <NewsletterSignup />
-                        <Tracker />
                         <div className="mt-2 border-b border-slate-200 bg-emerald-50 px-4 py-2.5">
                             <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Navigation</h2>
                         </div>
@@ -210,11 +208,14 @@ export default function Header() {
                                 );
                             })}
                         </ul>
+                        <div className="mt-3">
+                            <Tracker />
+                        </div>
 
                         {/* Sidebar content the desktop aside can't show on mobile.
                             Closes the menu when a link inside is tapped. */}
                         <div
-                            className="mt-2 border-t border-slate-200 pt-2"
+                            className="mt-3 space-y-3 border-t border-slate-200 pt-3"
                             onClick={(e) => {
                                 if ((e.target as HTMLElement).closest("a")) {
                                     setMobileMenuOpen(false);
@@ -223,6 +224,7 @@ export default function Header() {
                         >
                             <VolunteerShield />
                             <AccountabilityStatus />
+                            <NewsletterSignup />
                             <Permanence />
                         </div>
                     </nav>

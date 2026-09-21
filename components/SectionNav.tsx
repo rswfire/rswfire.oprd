@@ -23,8 +23,6 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
 
     return (
         <div className="space-y-3">
-            <NewsletterSignup />
-            <Tracker />
             <nav className="overflow-hidden rounded-2xl border border-slate-200 bg-white/90 text-sm shadow-sm backdrop-blur">
                 <div className="border-b border-slate-200 bg-emerald-50 px-4 py-2.5">
                     <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Navigation</h2>
@@ -101,7 +99,9 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                     })}
                 </ul>
             </nav>
+            <Tracker />
             <AccountabilityStatus />
+            <NewsletterSignup />
             <Permanence />
         </div>
     );

@@ -15,7 +15,7 @@ function GithubMark({ className }: { className?: string }) {
 // public git repo — forkable, cloneable, mirrored — not on any single host.
 export default function Permanence() {
     return (
-        <div className="mt-6 w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+        <div className="w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
             <div className="flex items-center gap-2 bg-emerald-50 px-4 py-2.5 border-b border-slate-200">
                 <GithubMark className="h-4 w-4 text-slate-700" />
                 <div className="text-sm font-bold uppercase tracking-wide text-slate-900">

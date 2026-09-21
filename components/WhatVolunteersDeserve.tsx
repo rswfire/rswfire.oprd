@@ -29,7 +29,7 @@ export default function WhatVolunteersDeserve() {
                     </h2>
                 </div>
                 <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">
-                    These five were asked for on August 24, 2025, in{" "}
+                    These five protections were requested for every Oregon State Parks volunteer in{" "}
                     <a
                         href="https://www.reddit.com/r/volunteer/comments/1mzropa/an_open_letter_to_oregon_parks_recreation/"
                         target="_blank"
@@ -38,7 +38,7 @@ export default function WhatVolunteersDeserve() {
                     >
                         an open letter
                     </a>{" "}
-                    to the Director of Oregon State Parks. Not one of them was asked for me.
+                    to the Director on August 24, 2025.
                 </p>
             </div>
 
@@ -57,14 +57,9 @@ export default function WhatVolunteersDeserve() {
 
             <div className="border-t border-gray-100 px-6 py-5 sm:px-8">
                 <p className="max-w-3xl text-[15px] leading-relaxed text-gray-800">
-                    None of these is a remedy. They are the conditions under which unpaid labour
-                    can be accepted at all. Their absence is not an oversight in one park. It is a
-                    structural failure of the institution, and every volunteer working in Oregon
-                    State Parks today is working without them.
-                </p>
-                <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-800">
-                    The boxes have been empty since August 24, 2025. They are checked by the
-                    Director, or they are not checked at all.
+                    Oregon State Parks provides none of these protections. Their absence is not an
+                    oversight in one park. It is a structural failure that reaches every volunteer
+                    in the institution.
                 </p>
                 <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px]">
                     <Link
