@@ -38,7 +38,9 @@ export default function WhatVolunteersDeserve() {
                     >
                         an open letter
                     </a>{" "}
-                    to the Director on August 24, 2025.
+                    to the Director on August 24, 2025. She claimed to take concerns about the
+                    volunteer program seriously. More than a year later, she has neither directly
+                    acknowledged nor implemented any of them.
                 </p>
             </div>
 
