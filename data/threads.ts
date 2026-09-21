@@ -13,11 +13,6 @@ export const OPRD_THREAD: RecordsThreadData = {
     agency: "Oregon Parks & Recreation Department",
     matter: "The originating agency",
     status: "Fully documented. Wholly unaccountable.",
-    redaction: [
-        "Most of the people who did this are not named here. Each redaction is a choice about what belongs on a permanent public record, made one person at a time.",
-        "[Volunteer Services Lead], [Park Supervisor], and [Park Manager] are not named. Their part was small.",
-        "And none of them are named because their liability traveled upward to their director, and her deputy.",
-    ],
     summary: [
         "Correspondence with the Oregon Parks and Recreation Department, the agency where this matter began.",
     ],
@@ -4748,8 +4743,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Robert Samuel White",
             kind: "response",
             title: "The September 5 request, priced at $1,728",
-            summary:
-                "An invoice for the request covering Director Sumption's and Deputy Director Collier's communications, notes and calendar entries. Fifty to fifty-four hours at thirty-two dollars an hour. Six hours to search every message on every device belonging to the Director; forty hours for the same two people's own notes and calendar entries, which is three quarters of the total. The fee waiver requested under ORS 192.324(5) is not granted, denied, or mentioned.",
+            summary: "Estimate of 50 to 54 hours to complete the September 5 request. The requested fee waiver is not addressed.",
             docs: [
                 { label: "The September 5 request, priced at $1,728", href: "/records/oprd/2026-09-18-estimate-on-the-september-5-request.pdf" },
                 { label: "The invoice", href: "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf" },
@@ -4767,8 +4761,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Robert Samuel White",
             kind: "response",
             title: "The Timeline version histories, priced at $80",
-            summary:
-                "An invoice for the request covering every version and revision of the Timeline of Events document produced to the Oregon State Police. Two and a half hours at thirty-two dollars an hour. Item 2, the version history log recording the date, time and account of each save, is answered “This is not a record we have,” on the same page where item 1 agrees to produce the SharePoint or OneDrive version histories of the same file.",
+            summary: "Estimate of $80 to produce the Timeline version histories. The invoice states that OPRD does not have a version history log.",
             docs: [
                 { label: "The Timeline version histories, priced at $80", href: "/records/oprd/2026-09-18-estimate-on-the-september-11-request.pdf" },
                 { label: "The invoice", href: "/records/oprd/attachments/01m2veftarqhqw029628gqa1y7-invoice-public-records-Robert-Samuel-White-request-09112026.pdf" },
@@ -4786,8 +4779,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Katie Gauthier, OPRD",
             kind: "notice",
             title: "Both estimates disputed, and neither will be paid",
-            summary:
-                "His answer to both invoices, ten minutes after the second one arrived. He does not pay for records he has a right to see, he will not narrow either request, and everything produced is published free, so the public pays nothing while the Department bills him for its own disclosure work. He states that the waiver is the custodian's to grant, that the custodian is the Director, and that the Director is the subject of the records. He rejects every hourly figure the Department has given him since 2025 on the ground that no basis has ever been shown for any of them. The next step is a suit to compel under ORS 192.415, on his timetable, with no petition to the Attorney General.",
+            summary: "Response disputing both estimates, declining to pay or narrow the requests, and requiring a written decision from the Director on the fee waiver.",
             docs: [
                 { label: "Both estimates disputed, and neither will be paid", href: "/records/oprd/2026-09-18-the-estimates-letter.pdf" },
                 { label: "The covering email", href: "/records/oprd/2026-09-18-the-estimates.pdf" },
@@ -4805,8 +4797,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Katie Gauthier, OPRD",
             kind: "notice",
             title: "The same letter, as a PDF",
-            summary:
-                "The letter resent, in full, because the first transmission carried the Markdown source it is generated from rather than the rendered document. In full: “I mistakenly attached the MD file my PDF letter is generated from. Since the file format is probably unfamiliar to you, I have attached the PDF to this message.” Same distribution as the letter: the Director, the public records mailbox, the Commission's public comment address, and the Governor.",
+            summary: "The same response resent as a PDF after the Markdown source was attached by mistake.",
             docs: [
                 { label: "The same letter, as a PDF", href: "/records/oprd/2026-09-18-the-estimates-as-a-pdf.pdf" },
                 { label: "The letter", href: "/records/oprd/2026-09-18-the-estimates-letter.pdf" },
@@ -4824,8 +4815,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Katie Gauthier, OPRD",
             kind: "notice",
             title: "What he softened, said plainly",
-            summary:
-                "He removes the softening from the end of the letter and states the terms without it. The Department releases the records in full or he sues for them, on a date he sets and no one else can anticipate. He names court as their arena and says he is not blind to what it is for. He then states what he is not bringing: when he sues, it will be for the records, and not for the case that remains available to him because the conduct is ongoing. Sent to the Director, the Commission's public comment address, and the Governor.",
+            summary: "Notice that he will sue for the records if OPRD does not release them in full.",
             docs: [{ label: "What he softened, said plainly", href: "/records/oprd/2026-09-18-what-i-softened.pdf" }],
             eml: "/records/oprd/eml/2026-09-18_1900_what-i-softened.eml",
         },
@@ -4840,8 +4830,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Director Lisa Sumption; Deputy Director JR Collier; OPRD Commissioners; Governor Kotek; [Kotek Campaign Chair]",
             kind: "notice",
             title: "The Director and Her Deputy, published",
-            summary:
-                "Notice that the testimony chapter “The Director and Her Deputy” was published. The message reproduces the chapter in full.",
+            summary: "Notice that the chapter was published, with the complete chapter in the message.",
             docs: [{ label: "The Director and Her Deputy, published", href: "/records/oprd/2026-09-19-published-the-director-and-her-deputy.pdf" }],
             eml: "/records/oprd/eml/2026-09-19_1829_published-the-director-and-her-deputy.eml",
         },
@@ -4856,25 +4845,9 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Director Lisa Sumption; Deputy Director JR Collier; OPRD Commissioners; Governor Kotek; [Kotek Campaign Chair]",
             kind: "notice",
             title: "Correction to The Director and Her Deputy",
-            summary:
-                "Correction to the chapter: the Deputy Director did not receive the November 15, 2025 notice. The corrected version removes him from that sentence and renumbers the chapters after consolidating redundant material.",
+            summary: "Correction removing the Deputy Director from the November 15 sentence and noting the chapter renumbering in v1.8.",
             docs: [{ label: "Correction to The Director and Her Deputy", href: "/records/oprd/2026-09-19-published-the-director-and-her-deputy-correction.pdf" }],
             eml: "/records/oprd/eml/2026-09-19_1921_published-the-director-and-her-deputy-correction.eml",
-        },
-        {
-            id: "request-records-march-11-characterization",
-            ulid: "01M30EACB8FXZB4SQ3TA1ED1N3",
-            date: "September 20, 2026",
-            d: "2026-09-20",
-            time: "3:17 PM",
-            from: "Robert Samuel White",
-            to: "Dianne Greenlee, Oregon Department of Justice; Director Lisa Sumption; OPRD Commissioners; Governor Kotek",
-            kind: "notice",
-            title: "Request for records concerning the March 11 characterization",
-            summary:
-                "Request to the author of the March 11 characterization that his correspondence bordered on harassment. He asks what she documented, where the records are maintained, who received them, and which office holds them.",
-            docs: [{ label: "Request for records concerning the March 11 characterization", href: "/records/oprd/2026-09-20-request-records-march-11-characterization.pdf" }],
-            eml: "/records/oprd/eml/2026-09-20_1517_request-records-march-11-characterization.eml",
         },
         {
             id: "conclusion-of-direct-correspondence",
@@ -4886,8 +4859,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             to: "Director Lisa Sumption; OPRD Commissioners; Governor Kotek",
             kind: "notice",
             title: "Notice of conclusion of direct correspondence",
-            summary:
-                "Notice that direct correspondence with OPRD has ended. Public-records business and responses to direct communication from the agency remain open.",
+            summary: "Notice ending direct correspondence with OPRD except public-records business and responses to the agency.",
             docs: [{ label: "Notice of conclusion of direct correspondence", href: "/records/oprd/2026-09-20-conclusion-of-direct-correspondence.pdf" }],
             eml: "/records/oprd/eml/2026-09-20_1553_conclusion-of-direct-correspondence.eml",
         },
@@ -6345,6 +6317,21 @@ export const OSP_THREAD: RecordsThreadData = {
                 "To the captain of Government and Media Relations who ordered the assessment asap: everything in the Department's file descends from that order, aimed from the press office at a publisher. It closes on the badge beside every OSP signature: does yours say integrity also.",
             docs: [{ label: "Your order is the first act of state power in that file", href: "/records/osp/2026-09-05-the-first-act-of-state-power.pdf" }],
             eml: "/records/osp/eml/2026-09-05_0909_the-first-act-of-state-power.eml",
+        },
+        {
+            id: "request-records-march-11-characterization",
+            flagged: true,
+            ulid: "01M30EACB8FXZB4SQ3TA1ED1N3",
+            date: "September 20, 2026",
+            d: "2026-09-20",
+            time: "3:17 PM",
+            from: "Robert Samuel White",
+            to: "Dianne Greenlee, Oregon Department of Justice; Director Lisa Sumption; OPRD Commissioners; Governor Kotek",
+            kind: "notice",
+            title: "Request for records concerning the March 11 characterization",
+            summary: "Request for the records behind Dianne Greenlee’s March 11 email, where they are maintained, and who received them.",
+            docs: [{ label: "Request for records concerning the March 11 characterization", href: "/records/osp/2026-09-20-request-records-march-11-characterization.pdf" }],
+            eml: "/records/osp/eml/2026-09-20_1517_request-records-march-11-characterization.eml",
         },
     ],
 };
