@@ -36,7 +36,7 @@ export default function PriceOfTheRecord() {
                     </div>
                     {oprd.demanded && (
                         <>
-                            <div className="mt-2 font-mono text-4xl font-bold leading-none tracking-tight text-red-700">
+                            <div className="mt-2 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 min-[400px]:text-4xl">
                                 {oprd.demanded.total}
                             </div>
                             <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
@@ -58,7 +58,7 @@ export default function PriceOfTheRecord() {
                     <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
                         Oregon State Police
                     </div>
-                    <div className="mt-2 font-mono text-4xl font-bold leading-none tracking-tight text-red-700">
+                    <div className="mt-2 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 min-[400px]:text-4xl">
                         Unanswered
                     </div>
                     <p className="mt-4 text-[15px] leading-relaxed text-gray-800">

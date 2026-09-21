@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Sprout } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
+import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -87,6 +88,9 @@ export default function TestimonyCard() {
                     >
                         v{CURRENT_VERSION.version}
                     </Link>
+                </div>
+                <div className="mt-4 flex justify-center">
+                    <TestimonyPdfButton />
                 </div>
             </div>
 

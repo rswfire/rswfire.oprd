@@ -32,7 +32,7 @@ export default function NewsletterSignup() {
         <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
             <h2 className="font-bold text-lg tracking-wide text-center">FOLLOW THE RECORD</h2>
             <div className="mt-2 text-sm text-gray-600 text-center">
-                Occasional email updates when this archive gains a significant record. Unsubscribe in one click, any time.
+                Occasional email updates when this archive gains a significant record.
             </div>
 
             {state === "done" ? (

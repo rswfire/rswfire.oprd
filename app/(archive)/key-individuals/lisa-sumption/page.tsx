@@ -1,4 +1,3 @@
-// app/(archive)/key-individuals/lisa-sumption/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";

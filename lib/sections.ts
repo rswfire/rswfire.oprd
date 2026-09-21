@@ -1,4 +1,3 @@
-// lib/sections.ts
 export const archiveSections = [
     { href: "/", label: "Home", icon: "TreeDeciduous" as const, iconClass: "text-emerald-700" },
     { href: "/ethics", label: "A Note About Ethics", icon: "Scale" as const, iconClass: "text-slate-600" },
@@ -45,11 +44,7 @@ export const archiveSections = [
     { href: "/timeline", label: "Timeline", icon: "ChartNoAxesGantt" as const, iconClass: "text-slate-600" },
     { href: "#separator-4", label: "", separator: true },
     {
-        // The Director's pages are shells now. What she did is told in the
-        // testimony, in the chapter that carries her, and that chapter is the
-        // authoritative account. The old addresses keep resolving from
-        // public/lisa-sumption/**, which bounce to the same anchor.
-        href: "/testimony/#the-director-and-her-deputy",
+        href: "/lisa-sumption",
         label: "The Director's Decisions",
         icon: "UserRound" as const,
         iconClass: "text-slate-600",

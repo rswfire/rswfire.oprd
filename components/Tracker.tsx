@@ -29,14 +29,8 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Permanent Statewide Ban from Oregon State Parks",
         date: "2025-03-27",
-        context: "Status: No investigation initiated.",
-        link: "/evidence/expulsion"
-    },
-    {
-        label: "Open Letter to Director",
-        date: "2025-08-25",
-        context: "Status: Communication closed by director.",
-        link: "/lisa-sumption/open-letter"
+        context: "Status: Director closed communication with no investigation initiated.",
+        link: "/lisa-sumption"
     }
 ];
 
@@ -71,38 +65,24 @@ export default function Tracker() {
 
     if (!mounted) {
         return (
-            <div className="mt-6 w-full p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div className="w-full p-4 rounded-2xl bg-slate-50 border border-slate-200">
                 <div className="text-center text-sm text-slate-500">Loading...</div>
             </div>
         );
     }
 
-    const today = new Date();
-    const formattedDate = today.toLocaleDateString('en-US', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-    });
-
     return (
-        <div className="mt-6 w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+        <div className="w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
 
             <div className="bg-emerald-50 px-4 py-2.5 border-b border-slate-200">
                 <div className="text-sm font-bold text-slate-900 uppercase tracking-wide">
-                    Accountability Tracker
-                </div>
-                <div className="text-xs text-slate-600 mt-0.5">
-                    Last Updated:<br />{formattedDate}
+                    Days Since
                 </div>
             </div>
 
             <div className="p-4 space-y-4">
 
-                {/* DAYS SINCE */}
                 <div>
-                    <h3 className="text-xs font-semibold text-slate-700 mb-2 uppercase tracking-wide">
-                        Days Since
-                    </h3>
                     <div className="space-y-2">
                         {SILENCE_EVENTS.map((event, index) => {
                             const days = calculateDaysSince(event.date);

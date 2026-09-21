@@ -166,6 +166,8 @@ export default function Header() {
                                 Director Lisa Sumption's Stewardship
                             </p>
                         </Link>
+                        <Tracker />
+                        <NewsletterSignup />
                         <ul className="mt-2 space-y-0">
                             {archiveSections.map((section, index) => {
                                 if (section.separator) {
@@ -217,8 +219,6 @@ export default function Header() {
                             }}
                         >
                             <VolunteerShield />
-                            <NewsletterSignup />
-                            <Tracker />
                             <AccountabilityStatus />
                             <Permanence />
                         </div>

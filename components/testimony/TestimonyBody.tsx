@@ -19,6 +19,7 @@ import CiteHow from "@/components/testimony/CiteHow";
 import ClusterCite from "@/components/reflections/ClusterCite";
 import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
+import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
 import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
@@ -297,16 +298,7 @@ export default function TestimonyBody({
             </div>
 
             <div className="mt-4 flex items-stretch gap-2">
-                <a
-                    href="/testimony-of-robert-samuel-white-v1.8.pdf"
-                    download
-                    title="Download the complete testimony as a PDF"
-                    className="inline-flex w-28 flex-col items-center gap-1 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.18em] text-emerald-700 hover:border-emerald-300 hover:bg-emerald-100"
-                >
-                    <Icon name="Download" size={22} strokeWidth={1.75} aria-hidden />
-                    <span>Download</span>
-                    <span>PDF</span>
-                </a>
+                <TestimonyPdfButton />
                 <ClusterCite id="01M2SQAPRZHW6SFRSJBHKMXGWW" variant="button">
                     <span>AI Analysis</span>
                     <span>Cluster</span>
