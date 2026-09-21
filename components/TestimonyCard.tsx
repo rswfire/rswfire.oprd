@@ -60,10 +60,10 @@ export default function TestimonyCard() {
                     </p>
                     <p>
                         Volunteers serve with no written standards, no notice, no hearing, no appeal,
-                        no protection from retaliation. There are characterizations. There are
-                        accusations never put in writing. There is a permanent statewide ban. And
+                        no protection from retaliation. There are accusations never put in writing.
+                        There are characterizations never substantiated with facts. There is a permanent statewide ban. And
                         where there is contemporaneous documentation the institution cannot disappear,
-                        there is force: investigation, police at the door.
+                        there is force: investigation, intimidation, police at the door.
                     </p>
                     <p>
                         Director Lisa Sumption has stewarded this agency for more than a decade.
