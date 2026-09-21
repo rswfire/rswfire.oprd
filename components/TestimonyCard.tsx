@@ -41,6 +41,10 @@ export default function TestimonyCard() {
                     </h2>
                 </Link>
 
+                <div className="mt-4">
+                    <TestimonyPdfButton variant="homepage" />
+                </div>
+
                 <div className="mt-6 space-y-4 text-lg leading-relaxed text-gray-800">
                     <p>
                         I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
@@ -110,19 +114,19 @@ export default function TestimonyCard() {
                                     </span>
                                 </Link>
                             ))}
+                            {c === 1 && (
+                                <Link
+                                    href="/testimony/#c13"
+                                    className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
+                                >
+                                    <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">13</span>
+                                    <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
+                                        ADDENDUM: ON THE END OF THE WORLD
+                                    </span>
+                                </Link>
+                            )}
                         </div>
                     ))}
-                </div>
-                <Link
-                    href="/testimony/#c13"
-                    className="group mt-2 block rounded-lg px-2 py-1.5 text-center hover:bg-emerald-50 sm:col-span-2"
-                >
-                    <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
-                        ADDENDUM: ON THE END OF THE WORLD
-                    </span>
-                </Link>
-                <div className="mt-4 flex justify-center">
-                    <TestimonyPdfButton />
                 </div>
             </div>
         </div>
