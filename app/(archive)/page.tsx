@@ -7,6 +7,7 @@ import PrimaryTransmission from "@/components/PrimaryTransmission";
 import DeadmanReveal from "@/components/DeadmanReveal";
 import LegalFund from "@/components/LegalFund";
 import SunlightCard from "@/components/SunlightCard";
+import OutreachNavigation from "@/components/OutreachNavigation";
 import TestimonyCard from "@/components/TestimonyCard";
 import WhatVolunteersDeserve from "@/components/WhatVolunteersDeserve";
 import PriceOfTheRecord from "@/components/PriceOfTheRecord";
@@ -42,6 +43,10 @@ export default function OverviewPage() {
 
             {/* SUNLIGHT — their words, next to the record */}
             <SunlightCard />
+
+
+            {/* INSTITUTIONAL OUTREACH — routes for the record */}
+            <OutreachNavigation homepage />
 
 
             {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}
