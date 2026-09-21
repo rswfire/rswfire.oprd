@@ -33,7 +33,7 @@ export default function PriceOfTheRecord() {
                 {/* ── OPRD: a number, and whose records they are ── */}
                 <div className="px-6 py-6 sm:px-8">
                     <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
-                        Oregon Parks &amp; Recreation
+                        Oregon State Parks
                     </div>
                     {oprd.demanded && (
                         <>
@@ -60,7 +60,7 @@ export default function PriceOfTheRecord() {
                         Oregon State Police
                     </div>
                     <div className="mt-2 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 min-[400px]:text-4xl">
-                        Unanswered
+                        Unanswered.
                     </div>
                     <p className="mt-4 text-[15px] leading-relaxed text-gray-800">
                         Records showing how the March 24 visit was planned, what information OSP
