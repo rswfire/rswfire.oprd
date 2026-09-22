@@ -6333,6 +6333,21 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Request for records concerning the March 11 characterization", href: "/records/osp/2026-09-20-request-records-march-11-characterization.pdf" }],
             eml: "/records/osp/eml/2026-09-20_1517_request-records-march-11-characterization.eml",
         },
+        {
+            id: "march-11-characterization-response-required",
+            ulid: "01M34REGP0WY727F9TQGS959Q7",
+            date: "September 22, 2026",
+            d: "2026-09-22",
+            time: "7:31 AM",
+            from: "Robert Samuel White",
+            to: "Dianne Greenlee, Oregon Department of Justice; OPRD Commissioners; Governor Kotek",
+            kind: "notice",
+            title: "A response is expected",
+            summary:
+                "Follow-up to Dianne Greenlee stating that the request was not a courtesy and requiring an explanation of the unethical behavior and correction of any false statements placed in state systems. An unsatisfactory response will result in a complaint to the Oregon Department of Justice.",
+            docs: [{ label: "A response is expected", href: "/records/osp/2026-09-22-march-11-characterization-response-required.pdf" }],
+            eml: "/records/osp/eml/2026-09-22_0731_march-11-characterization-response-required.eml",
+        },
     ],
 };
 
