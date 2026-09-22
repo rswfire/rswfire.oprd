@@ -24,7 +24,7 @@ function ExternalLink({ href, label }: { href: string; label: string }) {
 }
 
 function TrackingFields({ fields, tracking, status }: { fields: string[]; tracking?: OutreachTrackingField[]; status: string }) {
-    const rows = tracking ?? fields.map((label) => ({ label, value: "" }));
+    const rows: OutreachTrackingField[] = tracking ?? fields.map((label) => ({ label, value: "" }));
     return (
         <div className="mt-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70">
             {rows.map((field) => (
