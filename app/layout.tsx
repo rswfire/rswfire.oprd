@@ -64,7 +64,7 @@ export default function RootLayout({
             />
             {process.env.NODE_ENV === "production" && (
                 <Script
-                    src="https://analytics.rswfire.online/script.js"
+                    src="https://rswfire.com/script.js"
                     data-website-id="927ceff2-deef-49ad-8e3d-b33b999c2b92"
                     data-domains="oprdvolunteerabuse.org"
                     strategy="afterInteractive"
