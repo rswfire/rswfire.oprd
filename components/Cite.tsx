@@ -15,7 +15,7 @@ import Icon from "@/components/Icon";
 import { useDocViewer } from "@/components/DocViewerProvider";
 
 export type RegisterSlug =
-    | "oprd" | "osp" | "usfs" | "governor" | "das" | "lane-county" | "legislation";
+    | "oprd" | "osp" | "usfs" | "governor" | "das" | "lane-county" | "legislation" | "outreach";
 
 export default function Cite({
     ulid,

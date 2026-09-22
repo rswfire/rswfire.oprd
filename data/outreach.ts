@@ -11,7 +11,24 @@ export type OutreachEntry = {
     startingPoints: OutreachLink[];
     context?: string;
     fields: string[];
+    tracking?: OutreachTrackingField[];
+    dispatch?: OutreachDispatch;
     status: string;
+};
+
+export type OutreachTrackingField = {
+    label: string;
+    value: string;
+    href?: string;
+};
+
+export type OutreachDispatch = {
+    dateSent: string;
+    material: string;
+    correspondence?: OutreachLink[];
+    responseDate?: string;
+    response?: string;
+    nextAction?: string;
 };
 
 export type OutreachGroup = {
@@ -105,13 +122,27 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 id: "OR-08",
                 anchor: "or-sos-audits",
                 title: "Oregon Secretary of State, Audits Division",
-                audience: "Request consideration of whether OPRD's volunteer-program administration, complaint handling, recordkeeping, or use of public resources presents auditable control or governance questions. Identify the specific records and processes to examine.",
-                startingPoints: [
-                    { label: "Audits Division", href: "https://sos.oregon.gov/audits/Pages/default.aspx" },
-                    { label: "audits.sos@sos.oregon.gov", href: "mailto:audits.sos@sos.oregon.gov" },
+                audience: "Request performance audit consideration of the controls governing an OPRD volunteer complaint, the Director's promised departmental review, and OPRD's referral of the volunteer's correspondence to law enforcement. The letter asks about complaint procedure, records of promised reviews, referral standards and approvals, and the controls that apply when a referral results in a Major Crimes investigation and a visit to a volunteer's home and workplace.",
+                startingPoints: [],
+                fields: ["Recipient / contact", "Date sent", "Correspondence sent", "Material and version sent", "Specific audit question", "Response received / date", "Follow-up / date"],
+                tracking: [
+                    { label: "Recipient / contact", value: "Oregon Secretary of State, Audits Division", href: "https://sos.oregon.gov/audits/Pages/default.aspx" },
+                    { label: "Date sent", value: "September 21, 2026 · 8:30 PM" },
+                    { label: "Correspondence sent", value: "September 21, 2026 · Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls", href: "/record/outreach/01M33JN6E8NEE7XQSHSDRNNVJH/" },
+                    { label: "Material and version sent", value: "Request for performance audit consideration · Testimony v1.9" },
+                    { label: "Specific audit question", value: "Whether the controls governing volunteer complaints, promised departmental reviews, and referrals to law enforcement warrant examination." },
+                    { label: "Response received / date", value: "None received" },
+                    { label: "Follow-up / date", value: "None" },
                 ],
-                fields: ["Recipient / contact", "Date sent", "Material and version sent", "Specific audit question", "Response received / date", "Follow-up / date"],
-                status: "Not contacted",
+                dispatch: {
+                    dateSent: "September 21, 2026",
+                    material: "Audit request · Testimony v1.9",
+                    correspondence: [
+                        { label: "September 21, 2026 · Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls", href: "/record/outreach/01M33JN6E8NEE7XQSHSDRNNVJH/" },
+                    ],
+                    response: "None received",
+                },
+                status: "Sent · Awaiting response",
             },
             {
                 id: "OR-09",

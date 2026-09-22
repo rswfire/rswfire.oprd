@@ -7400,4 +7400,36 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
     ],
 };
 
-export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD, LANE_COUNTY_THREAD];
+export const OUTREACH_THREAD: RecordsThreadData = {
+    slug: "outreach",
+    title: "Outreach",
+    agency: "Institutional Outreach",
+    matter: "Correspondence making the public record available to institutions",
+    status: "N/A",
+    summary: [
+        "Correspondence and attachments sent to institutions asked to examine the public record.",
+    ],
+    filings: [
+        {
+            id: "performance-audit-consideration-oprd-volunteer-controls",
+            ulid: "01M33JN6E8NEE7XQSHSDRNNVJH",
+            date: "September 21, 2026",
+            d: "2026-09-21",
+            time: "8:30 PM",
+            from: "Robert Samuel White",
+            to: "Oregon Secretary of State, Audits Division; OPRD Commission; Governor Kotek",
+            kind: "notice",
+            title: "Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls",
+            summary:
+                "A request asking the Audits Division to consider whether controls governing OPRD volunteer complaints, promised departmental reviews, and referrals to law enforcement warrant examination. Sent with the request letter and Testimony v1.9.",
+            docs: [
+                { label: "Transmittal", href: "/records/outreach/2026-09-21-performance-audit-consideration-oprd-volunteer-controls.pdf" },
+                { label: "Request for performance audit consideration", href: "/records/outreach/attachments/01m33jn6e8nee7xqshsdrnnvjh-2026-09-21-oregon-secretary-of-state-audits.pdf" },
+                { label: "Testimony of Robert Samuel White, v1.9", href: "/records/outreach/attachments/01m33jn6e8nee7xqshsdrnnvjh-testimony-of-robert-samuel-white-v1-9.pdf" },
+            ],
+            eml: "/records/outreach/eml/2026-09-21_2030_performance-audit-consideration-oprd-volunteer-controls.eml",
+        },
+    ],
+};
+
+export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD, LANE_COUNTY_THREAD, OUTREACH_THREAD];

@@ -34,6 +34,7 @@ export const THREAD_LABEL: Record<string, string> = {
     osp: "OSP",
     das: "DAS",
     legislation: "LEGISLATURE",
+    outreach: "OUTREACH",
 };
 
 function fileExt(href: string): string {

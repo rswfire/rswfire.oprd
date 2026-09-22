@@ -7,6 +7,7 @@ import {
     OUTREACH_GROUPS,
     OUTREACH_SOURCES,
     type OutreachEntry,
+    type OutreachTrackingField,
 } from "@/data/outreach";
 
 export const metadata: Metadata = {
@@ -22,13 +23,20 @@ function ExternalLink({ href, label }: { href: string; label: string }) {
     );
 }
 
-function TrackingFields({ fields, status }: { fields: string[]; status: string }) {
+function TrackingFields({ fields, tracking, status }: { fields: string[]; tracking?: OutreachTrackingField[]; status: string }) {
+    const rows = tracking ?? fields.map((label) => ({ label, value: "" }));
     return (
         <div className="mt-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70">
-            {fields.map((field) => (
-                <div key={field} className="grid min-h-10 grid-cols-1 border-b border-slate-200 px-4 py-2.5 sm:grid-cols-[13rem_1fr] sm:gap-4">
-                    <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-500">{field}</div>
-                    <div className="mt-2 border-b border-dotted border-slate-300 sm:mt-0" aria-label={`${field}: blank`} />
+            {rows.map((field) => (
+                <div key={field.label} className="grid min-h-10 grid-cols-1 border-b border-slate-200 px-4 py-2.5 sm:grid-cols-[13rem_1fr] sm:gap-4">
+                    <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-500">{field.label}</div>
+                    {field.value ? (
+                        field.href
+                            ? <ExternalLink href={field.href} label={field.value} />
+                            : <div className="text-sm text-slate-800">{field.value}</div>
+                    ) : (
+                        <div className="mt-2 border-b border-dotted border-slate-300 sm:mt-0" aria-label={`${field.label}: blank`} />
+                    )}
                 </div>
             ))}
             <div className="grid grid-cols-1 px-4 py-3 sm:grid-cols-[13rem_1fr] sm:gap-4">
@@ -52,10 +60,12 @@ function InstitutionCard({ entry }: { entry: OutreachEntry }) {
             <div className="mt-4 text-[11px] font-bold uppercase tracking-widest text-slate-500">Audience</div>
             <p className="mt-1 leading-relaxed text-slate-800">{entry.audience}</p>
             {entry.context && <p className="mt-3 rounded-lg border-l-4 border-amber-400 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-slate-700">{entry.context}</p>}
-            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-600">
-                {entry.startingPoints.map((link) => <ExternalLink key={link.href} {...link} />)}
-            </div>
-            <TrackingFields fields={entry.fields} status={entry.status} />
+            {entry.startingPoints.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-600">
+                    {entry.startingPoints.map((link) => <ExternalLink key={link.href} {...link} />)}
+                </div>
+            )}
+            <TrackingFields fields={entry.fields} tracking={entry.tracking} status={entry.status} />
         </article>
     );
 }

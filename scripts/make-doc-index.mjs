@@ -43,44 +43,38 @@ function otherParty(list) {
         .join("; ");
 }
 
-const marks = [...src.matchAll(/^ {4}slug: "([a-z-]+)",$/gm)].map((m) => ({ i: m.index, slug: m[1] }));
-const slugAt = (i) => {
-    let slug = null;
-    for (const m of marks) if (m.i < i) slug = m.slug; else break;
-    return slug;
-};
-
 const index = {};
-let offset = 0;
-for (const block of src.split("\n        },")) {
-    const start = offset;
-    offset += block.length + "\n        },".length;
-    const ulid = block.match(/ulid: "([0-9A-HJKMNP-TV-Z]{26})"/)?.[1];
-    if (!ulid) continue;
-    const slug = slugAt(start);
-    if (!slug) continue;
+const threads = [...src.matchAll(/slug: "([a-z-]+)",.*?filings: \[(.*?)\n    \],\n\};/gs)];
+for (const thread of threads) {
+    const slug = thread[1];
+    const filings = [...thread[2].matchAll(/\{\n            id: ".*?\n        \},/gs)];
+    for (const filing of filings) {
+        const block = filing[0];
+        const ulid = block.match(/ulid: "([0-9A-HJKMNP-TV-Z]{26})"/)?.[1];
+        if (!ulid) continue;
 
-    const kind = field(block, "kind");
-    const to = field(block, "to");
-    const from = field(block, "from");
-    const sent = SENT.has(kind);
-    const who = otherParty(sent ? to : from) || otherParty(sent ? from : to);
+        const kind = field(block, "kind");
+        const to = field(block, "to");
+        const from = field(block, "from");
+        const sent = SENT.has(kind);
+        const who = otherParty(sent ? to : from) || otherParty(sent ? from : to);
 
-    const docs = [...block.matchAll(/\{\s*label: "((?:[^"\\]|\\.)*)",\s*href: "([^"]+)"\s*\}/g)]
-        .map((m) => ({ label: m[1].replace(/\\"/g, '"'), href: m[2] }));
+        const docs = [...block.matchAll(/\{\s*label: "((?:[^"\\]|\\.)*)",\s*href: "([^"]+)"\s*\}/g)]
+            .map((m) => ({ label: m[1].replace(/\\"/g, '"'), href: m[2] }));
 
-    index[ulid] = {
-        slug,
-        id: field(block, "id"),
-        title: field(block, "title"),
-        date: field(block, "date"),
-        time: field(block, "time") || undefined,
-        kindLabel: KIND_LABEL[kind] ?? "Record",
-        counterparty: who ? `${sent ? "To" : "From"} ${who}` : undefined,
-        ulid,
-        docs,
-        eml: field(block, "eml") || undefined,
-    };
+        index[ulid] = {
+            slug,
+            id: field(block, "id"),
+            title: field(block, "title"),
+            date: field(block, "date"),
+            time: field(block, "time") || undefined,
+            kindLabel: KIND_LABEL[kind] ?? "Record",
+            counterparty: who ? `${sent ? "To" : "From"} ${who}` : undefined,
+            ulid,
+            docs,
+            eml: field(block, "eml") || undefined,
+        };
+    }
 }
 
 const out = path.join(root, "public", "records", "index.json");
