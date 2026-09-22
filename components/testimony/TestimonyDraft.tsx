@@ -3198,8 +3198,8 @@ export default function TestimonyDraft({
                     of it should exist. It exists because a director and her deputy created the
                     circumstances for a manager to send an email to a captain and permanently
                     blemish his name by creating government files. Every individual who participated
-                    exceeded their authority and never thought twice about it. This is where the
-                    state showed what it is willing to do to a citizen who documents its behavior.
+                    exceeded their authority and never thought twice about it. This is what the
+                    state did to a citizen who kept the record.
                 </P>
             </Part>
 

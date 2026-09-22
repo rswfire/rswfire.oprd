@@ -21,7 +21,7 @@ const CHAPTERS = [
     "THE PICNIC TABLE",
     "DISPLACEMENT",
     "THE DIRECTOR AND HER DEPUTY",
-    "THREE MEN WITH GUNS",
+    "THE THREE MEN WITH GUNS",
 ];
 
 export default function TestimonyCard() {

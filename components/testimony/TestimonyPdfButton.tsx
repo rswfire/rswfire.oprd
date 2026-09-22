@@ -1,8 +1,9 @@
 import Icon from "@/components/Icon";
+import { CURRENT_VERSION } from "@/data/testimonyVersions";
 
 export default function TestimonyPdfButton({
     variant = "analysis",
-    version = "1.9",
+    version = CURRENT_VERSION.version,
 }: {
     variant?: "analysis" | "homepage";
     version?: string;

@@ -22,7 +22,6 @@ import TestimonyToc from "@/components/testimony/TestimonyToc";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
-import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
 
 // ── The decision, Kentucky, February to April 2024 ──
 const FIRST_VIDEO = "01HQF22Q98F8S1ZF05BAZW0EV9";
@@ -182,24 +181,10 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
         <section id={c} data-part={title} data-toc={n === "Addendum" ? `ADDENDUM: ${title}` : title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
-            <div className="mt-1 flex items-center justify-between gap-4">
-                <h2 className="min-w-0 font-mono text-lg font-bold text-gray-900">
-                    {title}
-                    <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
-                </h2>
-                {CHAPTER_SIGNALS[n] && (
-                    <a
-                        href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                        className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
-                    >
-                        <Icon name="Bot" size={16} strokeWidth={1.75} className="shrink-0" />
-                        AI Analysis
-                    </a>
-                )}
-            </div>
+            <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
+                {title}
+                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+            </h2>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
@@ -207,7 +192,7 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
     );
 }
 
-export default function TestimonyBody({
+export default function TestimonyBodyV1_9({
     version,
     isCurrent,
 }: {
@@ -224,7 +209,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={86} recordings={145} moments={1406} />
+            <TestimonyMeta documents={84} recordings={145} moments={1406} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -299,7 +284,7 @@ export default function TestimonyBody({
             </div>
 
             <div className="mt-4 flex items-stretch gap-2">
-                <TestimonyPdfButton />
+                <TestimonyPdfButton version="1.9" />
                 <ClusterCite id="01M2SQAPRZHW6SFRSJBHKMXGWW" variant="button">
                     <span>AI Analysis</span>
                     <span>Cluster</span>
@@ -3068,7 +3053,7 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
-            <Part n="Nine" title="THE THREE MEN WITH GUNS">
+            <Part n="Nine" title="THREE MEN WITH GUNS">
                 <P id="pfbekq" n={258}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
@@ -3177,53 +3162,34 @@ export default function TestimonyBody({
                     </Link>
                     .
                 </P>
-                <P id="pfiles" n={267}>
-                    The men left. The files did not. In September he found a Department of Justice
-                    official&rsquo;s March 11 characterization buried inside the OSP production. <Cite ulid="01M30EACB8FXZB4SQ3TA1ED1N3">He
-                    asked what exactly she had documented about him, in what systems those records
-                    were maintained, and who she had shared them with.</Cite> <Cite ulid="01M34REGP0WY727F9TQGS959Q7">Two
-                    days later he told her the problem plainly: she had placed characterizations
-                    into a file he could not see or correct, while those characterizations could be
-                    used against him without his knowing why, how, or for how long.</Cite>
-                </P>
-                <P id="pstate" n={268}>
-                    Their words and characterizations can follow him for the rest of his life, with
-                    no way for him to determine everything that was said, how far it spread, or how
-                    it may be used in the future, even in matters wholly unrelated to this one. None
-                    of it should exist. It exists because a director and her deputy created the
-                    circumstances for a manager to send an email to a captain and permanently
-                    blemish his name by creating government files. Every individual who participated
-                    exceeded their authority and never thought twice about it. This is what the
-                    state did to a citizen who kept the record.
-                </P>
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={269}>
+                <P id="pad01" n={267}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={270}>
+                <P id="pad02" n={268}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={271}>
+                <P id="pad03" n={269}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={272}>
+                <P id="pad04" n={270}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={273}>
+                <P id="pad05" n={271}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={274}>
+                <P id="pad06" n={272}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={275}>
+                <P id="pad07" n={273}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={276}>
+                <P id="pad08" n={274}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={277}>
+                <P id="pad09" n={275}>
                     The subject is closed again.
                 </P>
             </Part>

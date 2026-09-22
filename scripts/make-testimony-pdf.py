@@ -308,7 +308,7 @@ def build_html(meta: dict, parts: list[dict]) -> str:
           </div>
           <div class="cover-edition">
             <div>Version {meta['version']}</div>
-            <div>Published September 21, 2026</div>
+            <div>Published {meta['published']}</div>
           </div>
         </div>
       </section>
@@ -374,9 +374,10 @@ def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
     # extraction even though they are visibly separate. Confirm the complete
     # sequence at source parse time, then spot-check its bounds in the PDF.
     expected_numbers = [p["number"] for p in expected]
-    if expected_numbers != list(range(1, 276)):
-        problems.append("paragraph numbering is not continuous from 1 through 275")
-    if not re.search(r"(?:^|\D)1(?:\D|$)", joined) or not re.search(r"(?:^|\D)275(?:\D|$)", joined):
+    last_number = len(expected_numbers)
+    if expected_numbers != list(range(1, last_number + 1)):
+        problems.append(f"paragraph numbering is not continuous from 1 through {last_number}")
+    if not re.search(r"(?:^|\D)1(?:\D|$)", joined) or not re.search(rf"(?:^|\D){last_number}(?:\D|$)", joined):
         problems.append("first or last paragraph number missing from rendered PDF")
     blank = [str(i + 1) for i, text in enumerate(texts) if len(text.strip()) < 20]
     if blank:
@@ -391,14 +392,15 @@ def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
 
 def main() -> None:
     meta, parts = parse_source()
-    if len(parts) != 10 or sum(len(p["paragraphs"]) for p in parts) != 275:
-        raise RuntimeError("source structure changed: expected 9 chapters, an addendum, and 275 paragraphs")
+    paragraph_count = sum(len(p["paragraphs"]) for p in parts)
+    if len(parts) != 10 or paragraph_count == 0:
+        raise RuntimeError("source structure changed: expected 9 chapters, an addendum, and numbered paragraphs")
     output = output_path(meta["version"])
     temporary = output.with_suffix(".tmp.pdf")
     HTML(string=build_html(meta, parts), base_url=str(ROOT)).write_pdf(temporary)
     pages, links = audit(temporary, meta, parts)
     temporary.replace(output)
-    print(f"{output} ({pages} pages, {len(parts) - 1} chapters, 1 addendum, 275 paragraphs, {links} live links) audit: clean")
+    print(f"{output} ({pages} pages, {len(parts) - 1} chapters, 1 addendum, {paragraph_count} paragraphs, {links} live links) audit: clean")
 
 
 if __name__ == "__main__":
