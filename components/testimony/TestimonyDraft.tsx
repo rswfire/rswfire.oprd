@@ -21,8 +21,10 @@ import TraceCite from "@/components/traces/TraceCite";
 import TestimonyMeta from "@/components/testimony/TestimonyMeta";
 import Hash from "@/components/testimony/Hash";
 import CiteHow from "@/components/testimony/CiteHow";
+import ClusterCite from "@/components/reflections/ClusterCite";
 import { ChapterProvider } from "@/components/testimony/chapterContext";
 import TestimonyToc from "@/components/testimony/TestimonyToc";
+import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Icon from "@/components/Icon";
 import P from "@/components/testimony/P";
 import { CHAPTER_SIGNALS } from "@/data/testimonySignals";
@@ -176,8 +178,7 @@ function titleCase(t: string): string {
 // numbers became the address keep resolving.
 const PART_NUMBERS: Record<string, number> = {
     One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
-    Eight: 8, Nine: 9, Ten: 10, Eleven: 11, Twelve: 12,
-    Addendum: 13,
+    Eight: 8, Nine: 9, Addendum: 10,
 };
 
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
@@ -186,26 +187,24 @@ function Part({ n, title, children }: { n: string; title: string; children: Reac
         <section id={c} data-part={title} data-toc={n === "Addendum" ? `ADDENDUM: ${title}` : title} className="mt-12 scroll-mt-20 first:mt-8">
             <span id={partId(title)} aria-hidden className="scroll-mt-20" />
             <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">{n}</div>
-            <h2 className="mt-1 font-mono text-lg font-bold text-gray-900">
-                {title}
-                <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
-            </h2>
-            {/* The analysis is of the CURRENT text. A frozen version must not
-                carry this link: the signal it points at has moved on, and the
-                reading a reader reaches would not be of the words in front of
-                them. Stripped from versions/v*.tsx when a version is cut. */}
-            {CHAPTER_SIGNALS[n] && (
-                <a
-                    href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    title="The chapter as a signal in his realm, with the platform's analysis and reflections"
-                    className="mt-2 inline-flex flex-col items-center gap-1 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.18em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
-                >
-                    <Icon name="Bot" size={22} strokeWidth={1.75} className="shrink-0" />
-                    AI Analysis
-                </a>
-            )}
+            <div className="mt-1 flex items-center justify-between gap-4">
+                <h2 className="min-w-0 font-mono text-lg font-bold text-gray-900">
+                    {title}
+                    <Hash id={c} label={n === "Addendum" ? `Addendum, ${titleCase(title)}` : `Chapter ${n}, ${titleCase(title)}`} />
+                </h2>
+                {CHAPTER_SIGNALS[n] && (
+                    <a
+                        href={`https://rswfire.com/library/signal/${CHAPTER_SIGNALS[n]}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="The chapter as a signal in his realm, with the platform's analysis and reflections"
+                        className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-violet-700 hover:border-violet-300 hover:bg-violet-100"
+                    >
+                        <Icon name="Bot" size={16} strokeWidth={1.75} className="shrink-0" />
+                        AI Analysis
+                    </a>
+                )}
+            </div>
             <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-gray-800">
                 <ChapterProvider value={{ word: n, title: titleCase(title) }}>{children}</ChapterProvider>
             </div>
@@ -230,7 +229,7 @@ export default function TestimonyDraft({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={106} recordings={146} moments={1502} />
+            <TestimonyMeta documents={86} recordings={145} moments={1406} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -238,13 +237,11 @@ export default function TestimonyDraft({
                 </span>
                 <span className="text-[13px] leading-relaxed text-amber-900">
                     This testimony was built from the life record he kept himself and
-                    generated by an AI using technology he created himself. Fidelity to
-                    the record is near perfect. Errors remain possible, and they are
-                    corrected in public, through the versioning system on this page.
+                    generated by an AI using technology he created himself.
                 </span>
             </div>
 
-            <div id="opening" className="mt-4 scroll-mt-24 space-y-4 px-4 text-[15px] leading-relaxed text-gray-800">
+            <div id="opening" className="mt-8 scroll-mt-24 space-y-4 px-4 text-[15px] leading-relaxed text-gray-800">
                 <p>
                     <strong>This is the testimony of Robert Samuel White.</strong>
                 </p>
@@ -258,6 +255,10 @@ export default function TestimonyDraft({
                     They expelled him from every park in the state for saying so publicly.
                     <br />
                     He recorded all of it while it was happening, and he published it.
+                    <br />
+                    Then they sent police to his home and workplace.
+                    <br />
+                    He published that too.
                 </p>
                 <p>
                     This is that record.
@@ -300,6 +301,14 @@ export default function TestimonyDraft({
                     <em>Italics are his words, verbatim, from the cited source.</em>
                 </div>
                 <CiteHow />
+            </div>
+
+            <div className="mt-4 flex items-stretch gap-2">
+                <TestimonyPdfButton />
+                <ClusterCite id="01M2SQAPRZHW6SFRSJBHKMXGWW" variant="button">
+                    <span>AI Analysis</span>
+                    <span>Cluster</span>
+                </ClusterCite>
             </div>
 
             <Part n="One" title="THE SHEDDING">
@@ -1697,9 +1706,6 @@ export default function TestimonyDraft({
                     ). He described it the way a person describes something already built. None of
                     this would come to be.
                 </P>
-            </Part>
-
-            <Part n="Six" title="FEBRUARY">
                 <P id="p6vcny" n={167}>
                     He arrived on January 31. That day started at four in the morning in a dark RV
                     with a flashlight, the tanks full of sanitizer since the day before, his own
@@ -1928,7 +1934,7 @@ export default function TestimonyDraft({
                 </P>
             </Part>
 
-            <Part n="Seven" title="THE PICNIC TABLE">
+            <Part n="Six" title="THE PICNIC TABLE">
                 <P id="pvfypv" n={181}>
                     Three days after he sent Trust., the park manager and the park supervisor sat
                     him down at a picnic table in the day use area and talked at him for
@@ -2231,9 +2237,6 @@ export default function TestimonyDraft({
                     </PhotoCite>
                     ). The park manager called him the next afternoon.
                 </P>
-            </Part>
-
-            <Part n="Eight" title="NINETEEN DAYS">
                 <P id="pnqxwe" n={200}>
                     Between the picnic table and the dismissal he did the job and kept asking
                     about the next one. On March 6 he put himself forward to{" "}
@@ -2393,7 +2396,7 @@ export default function TestimonyDraft({
                 </P>
             </Part>
 
-            <Part n="Nine" title="THE WEEK HE TOLD IT">
+            <Part n="Seven" title="DISPLACEMENT">
                 <P id="ptt2f7" n={211}>
                     At 2:40, with the keys already gone, he wrote to the program manager:{" "}
                     <Cite ulid="01JQ51JFPRZVFQ28F1R1ASPWNE">dismissed one week before my scheduled
@@ -2653,9 +2656,6 @@ export default function TestimonyDraft({
                     <Moment ulid={JOHN_TOUR} t="17:09" />
                     ).
                 </P>
-            </Part>
-
-            <Part n="Ten" title="DISPLACED">
                 <P id="p82469" n={227}>
                     The ban was statewide and immediate, so what followed was not a transition. It
                     was a month with nowhere to be.
@@ -2771,7 +2771,7 @@ export default function TestimonyDraft({
                 </P>
             </Part>
 
-            <Part n="Eleven" title="THE DIRECTOR AND HER DEPUTY">
+            <Part n="Eight" title="THE DIRECTOR AND HER DEPUTY">
                 <figure className="mt-2 mb-6">
                     <img
                         src="/director-and-deputy.jpg"
@@ -2826,17 +2826,17 @@ export default function TestimonyDraft({
                     </a>
                     . A person gets a realm of their own, and anything they have ever recorded
                     goes into it as a signal: video, audio, photographs, documents, conversations,
-                    a journal page photographed off a shelf after twenty years, the route of a
+                    a journal page photographed off a shelf after twenty years (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="0:15" />), the route of a
                     walk. The system does not summarise them. It reads each one through several
                     lenses at once, what happened and what it was and what it carries and what it
                     says about the shape of the person, and one of those lenses is a mirror that
-                    hands him his own interior back in words he did not yet have for it. That
-                    mirror is the reason the rest of it exists. Then it reads across: a hundred
-                    signals out of one stretch of time taken together, so that a season of a life
-                    has its own arc and its own reflections instead of a hundred separate entries.
+                    hands him his own interior back in words he did not yet have for it (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="1:07" />). That
+                    mirror is the reason the rest of it exists (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="1:17" />). Then it reads across: a hundred
+                    signals out of one stretch of time taken together (<Moment ulid="01KE0KY6HR09RFSFSEC7ZT1HAB" t="2:16" />), so that a season of a life
+                    has its own arc and its own reflections instead of a hundred separate entries (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="7:36" />).
                     All of it embedded and indexed, so the record can be put a question, and so a
-                    machine reading him reads the whole pattern rather than the last thing he said.
-                    Maps of everywhere he walked with the photographs pinned to them. It runs on
+                    machine reading him reads the whole pattern rather than the last thing he said (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="12:34" />).
+                    Maps of everywhere he walked with the photographs pinned to them (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="1:21" />). It runs on
                     hardware he pays for, under{" "}
                     <a
                         href="https://rswfire.com"
@@ -2852,9 +2852,9 @@ export default function TestimonyDraft({
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The letter he made public<Hash id="hdd02" label="The letter he made public" /></h3>
                 <P id="pdd02a" n={238}>
-                    On August 3 the Forest Service gave him Tahkenitch Landing to run by himself,
-                    the campground above the lake off Highway 101. He ran it alone and built through
-                    it. On his days off he walked to the ocean. On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>{" "}
+                    On August 3 the Forest Service gave him Tahkenitch Landing to run by himself (<Moment ulid="01K5M437NRGMH20FSA8WFEX64M" t="0:35" />),
+                    the campground above the lake off Highway 101 (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="1:53" />). He ran it alone and built through
+                    it. On his days off he walked to the ocean (<Moment ulid="01K5WM7GQ0CAYBKF9FHJCBDENX" t="15:55" />). On August 31 he took <TraceCite ulid="01K40SMMNR1RHMS685WN8DR6CB">the Tahkenitch Creek trail</TraceCite>{" "}
                     out with a friend, three and a third miles, and stood at the water.
                 </P>
                 <P id="pdd02" n={239}>
@@ -2934,7 +2934,7 @@ export default function TestimonyDraft({
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">Federal ground, and a system shipped<Hash id="hdd03" label="Federal ground, and a system shipped" /></h3>
                 <P id="pdd03a" n={243}>
                     In October the Forest Service moved him again, to the Siltcoos Work Center, where
-                    he became the caretaker embedded on federal land behind a locked gate, a few
+                    he became the caretaker embedded on federal land behind a locked gate (<Moment ulid="01K78EK38RRSMEC3FF33STBMDQ" t="0:38" />), a few
                     miles from the park that dismissed him. It was his second advancement in five
                     months and he is still there. He reached the ocean on foot four times that October, the longest of them <TraceCite ulid="01K89C4M90MSTDGD0C9E17C4YV">seven miles down the Tahkenitch Creek trail</TraceCite>{" "}
                     on the twenty-third.
@@ -2944,32 +2944,32 @@ export default function TestimonyDraft({
                     without an acknowledgment. Nobody had lost it. Her records officers had answered it to
                     a portal he had no account for and was never told existed, and left it there. On October 13 he got the
                     reflection architecture running end to end and tested it by having a model read
-                    the first recording he ever made, two years earlier, from four perspectives.
-                    Overnight on the fourteenth he ran the analysis across half his catalog. At one
-                    in the morning on the twentieth the access layer was finished, standing over
-                    roughly eight hundred recordings going back to February 2024.
+                    the first recording he ever made, two years earlier, from four perspectives (<Moment ulid="01K7E57ESRR35WD3SPJKAE58Y2" t="0:46" />).
+                    Overnight on the fourteenth he ran the analysis across half his catalog (<Moment ulid="01K7HSSF50141N2DYGBVBSSMCB" t="1:06" />). At one
+                    in the morning on the twentieth the access layer was finished (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:18" />), standing over
+                    roughly eight hundred recordings going back to February 2024 (<Moment ulid="01K80AK64G20PEMZEZT1A07AH4" t="0:48" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">November, and a thirty-two-year dependency<Hash id="hdd04" label="November, and a thirty-two-year dependency" /></h3>
                 <P id="pdd04a" n={245}>
                     On November 15 he served the Director notice that his request
-                    had been held for eighty-five days in violation of Oregon law. Six days later
-                    he told her an archive of the whole matter existed and what was in it. The
-                    request had been made to a public body that is required to answer, and answering
-                    it would have put the record of what they did into his hands.
+                    had been held for eighty-five days in violation of Oregon law (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:32" />). Six days later
+                    he told her an archive of the whole matter existed and what was in it (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="8:32" />). The
+                    request had been made to a public body that is required to answer (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:37" />), and answering
+                    it would have put the record of what they did into his hands (<Moment ulid="01K9377YC8BCY530AWFGBA9BPQ" t="6:43" />).
                 </P>
                 <P id="pdd04b" n={246}>
                     That month he took his own systems off other people&rsquo;s. He moved his
-                    infrastructure from Amazon onto two servers he provisioned himself, and he ended
-                    public distribution of his recordings entirely, putting them behind his own gate
+                    infrastructure from Amazon onto two servers he provisioned himself (<Moment ulid="01K9VVJQ70888RZ0XT6BZQ2NKX" t="1:50" />), and he ended
+                    public distribution of his recordings entirely (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="3:08" />), putting them behind his own gate
                     on hardware he controlled.
                 </P>
                 <P id="pdd04c" n={247}>
                     He did the same to himself. On November 4 he put down nicotine, cold, after
-                    thirty-two years of it, from the age of sixteen. He built the conditions to hold it: no fuel, no willingness to ask for
+                    thirty-two years of it, from the age of sixteen (<Moment ulid="01K9B75THRJY19ZNSR46V4A4M3" t="6:28" />). He built the conditions to hold it: no fuel (<Moment ulid="01K9DRBKERDPY709G3G6K4HV04" t="18:36" />), no willingness to ask for
                     help, and a life structured to stay inside the corridor so that town was not
                     reachable. He walked instead. He had been at <TraceCite ulid="01K934STC8619MERVPWB6BMP8T">Siltcoos Beach on the second</TraceCite>, the day he wrote down the statute violation, and he was back at the water on <TraceCite ulid="01K9DVE7PR8JY1CHNJ4EB4XYY0">the sixth</TraceCite>, <TraceCite ulid="01K9N19820VXG6QAZBBVX4AHSS">the ninth after seven and a half miles</TraceCite>, <TraceCite ulid="01K9QKSX18NGC0TTX0XJ429TZN">the tenth after twelve and a half</TraceCite>, <TraceCite ulid="01K9T5T2NGW95V9CRJ2M0WRF1X">the eleventh</TraceCite>, and <TraceCite ulid="01KA4G0DQ0H0WFW6WSSF7PRMJC">the fifteenth</TraceCite>. Seven times that month he walked out to
-                    the ocean and back, in rain and after dark, far enough that a step counter put
-                    him in the top three percent of everyone it tracks. On the sixth day he said it was the furthest he had made it
+                    the ocean and back, in rain and after dark (<Moment ulid="01K9E1WQ48BCDXGA8A4ZR9XCFG" t="3:18" />), far enough that a step counter put
+                    him in the top three percent of everyone it tracks (<Moment ulid="01KAPGS6X0FTAEFDYDZCXV4XAQ" t="5:21" />). On the sixth day he said it was the furthest he had made it
                     in thirty-two years.
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">December, and the archive gets an address<Hash id="hdd05" label="December, and the archive gets an address" /></h3>
@@ -2980,8 +2980,6 @@ export default function TestimonyDraft({
                     the United States Forest Service. Promoted twice. Trusted with their work
                     trucks and a twenty-five mile daily route.{" "}
                     <Cite ulid="01KBY6KNMGEGV4MZ98QEK6R8JP">Facts. I was never the problem</Cite>.
-                    He told her she could still fix it, and that he would not reach out to her
-                    again.
                 </P>
                 <P id="pdd05" n={249}>
                     She answered at 8:37 the next morning in therapeutic language. She could see
@@ -3008,19 +3006,16 @@ export default function TestimonyDraft({
                 <P id="pdd05b" n={250}>
                     Her answer recast a documented complaint as pain and closed the only channel that
                     reached the officer with the authority to act on it. Closing it ended nothing. It
-                    moved the matter out of her inbox and into a public archive she did not control, and he spent the rest of the month designing what would carry it: the
-                    front end, the atlas that renders his routes as maps, the gallery that holds the
-                    photographs.
+                    moved the matter out of her inbox and into a public archive she did not control (<Moment ulid="01KCQD72FGGGSVKHQJJEWFAYK7" t="0:11" />).
                 </P>
                 <h3 className="mt-8 mb-1 font-bold text-gray-900">The notice, and an order to stop<Hash id="hdd06" label="The notice, and an order to stop" /></h3>
                 <P id="pdd06a" n={251}>
                     In January he served notice under 42 U.S.C. section 1983, and in February notice
                     that the constitutional violation was ongoing. In the same weeks he finished the
-                    analysis layer and got the reflections working, registered the domain the
-                    platform would run under, and on the twentieth deleted both of his channels,
-                    nearly nine hundred recordings, after pulling every one of them down onto storage
-                    he controlled. He collapsed his repositories into one and began the rebuild in a
-                    framework he had never used.
+                    analysis layer and got the reflections working (<Moment ulid="01KEHVVWC85T1BQBXPRNAVZ70C" t="6:25" />), registered the domain the
+                    platform would run under, and on the twentieth deleted both of his channels (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:23" />),
+                    nearly nine hundred recordings (<Moment ulid="01KFCB6Z006QQTXTFHRFBVR4T9" t="0:32" />), after pulling every one of them down onto storage
+                    he controlled.
                 </P>
                 <P id="pdd07" n={252}>
                     In February the Deputy Director wrote the fourth and final reply. He wrote that the agency
@@ -3029,8 +3024,7 @@ export default function TestimonyDraft({
                     <Cite ulid="01KHCRFBDG3DMYZSSTGV5WC7E7">
                         Please do not communicate further with Ms. [Program Manager] or other OPRD
                         staff, and please do not expect any responses from them.
-                    </Cite>{" "}
-                    It investigated nothing. Five minutes later he answered it. He told the Deputy
+                    </Cite>{" "} Five minutes later he answered it. He told the Deputy
                     Director he had no authority to say who a citizen may contact inside a public
                     agency, that his structured process was an internal matter with no bearing on
                     what a citizen does, and that he would contact whoever he needed to contact,
@@ -3064,11 +3058,11 @@ export default function TestimonyDraft({
                 </P>
                 <P id="pddz4" n={256}>
                     He spent those same seven months building. He put the reflection engine
-                    together and ran his whole catalogue through it, moved his infrastructure onto
-                    servers he owns, took his life off every platform that held it, set down
-                    thirty-two years of nicotine, and walked to the ocean and back in the rain
+                    together and ran his whole catalogue through it (<Moment ulid="01K7E57ESRR35WD3SPJKAE58Y2" t="1:31" />), moved his infrastructure onto
+                    servers he owns, took his life off every platform that held it (<Moment ulid="01K9TB89VR0CDD0PYC38QBP0RD" t="2:42" />), set down
+                    thirty-two years of nicotine (<Moment ulid="01K9951BZRK9XRJ0W561J49RMJ" t="3:13" />), and walked to the ocean and back in the rain
                     through all of it. On May 18 he walked from the RV down the Siltcoos River to
-                    the water and said the thing was finished, robust, and ready for other people
+                    the water and said the thing was finished (<Moment ulid="01KRXFA4G04GPAJCY3HDB9FY28" t="5:18" />), robust, and ready for other people
                     to use.
                 </P>
                 <P id="pddz5" n={257}>
@@ -3079,7 +3073,7 @@ export default function TestimonyDraft({
                 </P>
             </Part>
 
-            <Part n="Twelve" title="THREE MEN WITH GUNS">
+            <Part n="Nine" title="THE THREE MEN WITH GUNS">
                 <P id="pfbekq" n={258}>
                     The day before they came, he stood in front of his own camera and put his full legal
                     name on the record. One year since Oregon State Parks dismissed him from Honeyman
@@ -3188,34 +3182,53 @@ export default function TestimonyDraft({
                     </Link>
                     .
                 </P>
+                <P id="pfiles" n={267}>
+                    The men left. The files did not. In September he found a Department of Justice
+                    official&rsquo;s March 11 characterization buried inside the OSP production. <Cite ulid="01M30EACB8FXZB4SQ3TA1ED1N3">He
+                    asked what exactly she had documented about him, in what systems those records
+                    were maintained, and who she had shared them with.</Cite> <Cite ulid="01M34REGP0WY727F9TQGS959Q7">Two
+                    days later he told her the problem plainly: she had placed characterizations
+                    into a file he could not see or correct, while those characterizations could be
+                    used against him without his knowing why, how, or for how long.</Cite>
+                </P>
+                <P id="pstate" n={268}>
+                    Their words and characterizations can follow him for the rest of his life, with
+                    no way for him to determine everything that was said, how far it spread, or how
+                    it may be used in the future, even in matters wholly unrelated to this one. None
+                    of it should exist. It exists because a director and her deputy created the
+                    circumstances for a manager to send an email to a captain and permanently
+                    blemish his name by creating government files. Every individual who participated
+                    exceeded their authority and never thought twice about it. This is where the
+                    state showed what it is willing to do to a citizen who documents its behavior.
+                </P>
             </Part>
 
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={267}>
+                <P id="pad01" n={269}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={268}>
+                <P id="pad02" n={270}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={269}>
+                <P id="pad03" n={271}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={270}>
+                <P id="pad04" n={272}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={271}>
+                <P id="pad05" n={273}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={272}>
+                <P id="pad06" n={274}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={273}>
+                <P id="pad07" n={275}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={274}>
+                <P id="pad08" n={276}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={275}>
+                <P id="pad09" n={277}>
                     The subject is closed again.
                 </P>
             </Part>
