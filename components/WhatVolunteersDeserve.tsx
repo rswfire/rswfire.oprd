@@ -58,12 +58,7 @@ export default function WhatVolunteersDeserve() {
             </ul>
 
             <div className="border-t border-gray-100 px-6 py-5 sm:px-8">
-                <p className="max-w-3xl text-[15px] leading-relaxed text-gray-800">
-                    Oregon State Parks provides none of these protections. Their absence is not an
-                    oversight in one park. It is a structural failure that reaches every volunteer
-                    in the institution.
-                </p>
-                <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px]">
+                <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px]">
                     <Link
                         href="/for-volunteers"
                         className="font-mono font-bold uppercase tracking-wide text-amber-800 underline decoration-amber-300 hover:text-amber-600"

@@ -14,7 +14,7 @@ export const archiveSections = [
             { href: "/records/oprd", label: "Oregon Parks & Recreation Dept." },
         ]
     },
-    { href: "/outreach", label: "Outreach", icon: "Mail" as const, iconClass: "text-sky-700" },
+    { href: "/outreach", label: "Institutional Outreach", icon: "Landmark" as const, iconClass: "text-sky-700" },
     { href: "#separator-3", label: "", separator: true },
     { href: "/testimony", label: "Testimony", icon: "Sprout" as const, iconClass: "text-violet-700" },
     { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },

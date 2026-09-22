@@ -62,7 +62,7 @@ function InstitutionCard({ entry }: { entry: OutreachEntry }) {
 
 export default function OutreachPage() {
     return (
-        <SectionPage title="OUTREACH" subtitle="INSTITUTIONS AND CORRESPONDENCE" previousPage={{ href: "/", label: "Overview" }}>
+        <SectionPage title="INSTITUTIONAL OUTREACH" subtitle="INSTITUTIONS AND CORRESPONDENCE" previousPage={{ href: "/", label: "Overview" }}>
             <div className="space-y-10">
                 <section className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 sm:p-6">
                     <div className="grid gap-4 text-sm sm:grid-cols-[7rem_1fr]">

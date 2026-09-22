@@ -7,6 +7,7 @@
 
 import Link from "next/link";
 import { Sprout } from "lucide-react";
+import Icon from "@/components/Icon";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
@@ -46,8 +47,7 @@ export default function TestimonyCard() {
                         Department, and it is not that.
                     </p>
                     <p>
-                        This archive answers the question: <span className="font-semibold">what
-                        happens if something goes wrong?</span>{" "}
+                        This archive answers the question: what happens if something goes wrong?{" "}
                         The record&rsquo;s answer: there is no process. A supervisor&rsquo;s account
                         is the only account, and there is no mechanism by which it can be questioned.
                     </p>
@@ -60,16 +60,15 @@ export default function TestimonyCard() {
                     </p>
                     <p>
                         Director Lisa Sumption has stewarded this agency for more than a decade.
-                        I wrote her{" "}
+                        I wrote her a letter{" "}
                         <a
                             href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N"
                             target="_blank"
                             rel="noopener"
                             className="text-emerald-800 underline hover:text-emerald-600"
                         >
-                            a letter
-                        </a>{" "}
-                        documenting her choices, past and future. She is the one who can protect
+                            documenting her choices
+                        </a>, past and future. She is the one who can protect
                         you. She is the one{" "}
                         <a
                             href="/#what-every-volunteer-deserves"
@@ -125,8 +124,15 @@ export default function TestimonyCard() {
                         </span>
                     </Link>
                 </div>
-                <div className="mt-4 px-2">
+                <div className="mt-4 flex flex-wrap items-center gap-2 px-2">
                     <TestimonyPdfButton variant="homepage" />
+                    <Link
+                        href="/outreach"
+                        className="inline-flex items-center gap-2 rounded-md border border-sky-700 bg-sky-700 px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wide text-white shadow-sm transition-colors hover:border-sky-800 hover:bg-sky-800"
+                    >
+                        <Icon name="Landmark" size={14} strokeWidth={2} />
+                        Institutional Outreach
+                    </Link>
                 </div>
             </div>
         </div>

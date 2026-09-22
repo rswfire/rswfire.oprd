@@ -250,6 +250,10 @@ export default function TestimonyBody({
                     They expelled him from every park in the state for saying so publicly.
                     <br />
                     He recorded all of it while it was happening, and he published it.
+                    <br />
+                    Then they sent police to his home and workplace.
+                    <br />
+                    He published that too.
                 </p>
                 <p>
                     This is that record.

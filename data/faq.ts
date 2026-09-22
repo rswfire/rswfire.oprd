@@ -10,6 +10,7 @@ export interface FaqQuestion {
 
 export const FAQ_QUESTIONS: FaqQuestion[] = [
     { id: "sue", question: "Why haven't you sued them?" },
+    { id: "contact", question: "Why did you keep contacting them?" },
     { id: "target", question: "Why would they target you?" },
     { id: "leave", question: "Why didn't you leave?" },
     { id: "move-on", question: "Why not move on?" },

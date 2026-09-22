@@ -51,6 +51,18 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 2 */}
+                <div id="contact" className="scroll-mt-48">
+                    <h2 className="text-xl font-semibold mb-3">
+                        Why did you keep contacting them?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>{"This question implies it was wrong to contact public officials. It was not. That is your right under the Constitution. I was building a record and placing it in the inboxes where I felt that record belonged. It's that simple. I never needed nor sought their responses to those records. What they did with them is a different question, and one you'll have to ask them."}</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 3 */}
                 <div id="target" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why would they target you?
