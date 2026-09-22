@@ -130,7 +130,7 @@ export default function TestimonyCard() {
                         href="/outreach"
                         className="inline-flex items-center gap-2 rounded-md border border-sky-700 bg-sky-700 px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wide text-white shadow-sm transition-colors hover:border-sky-800 hover:bg-sky-800"
                     >
-                        <Icon name="Landmark" size={14} strokeWidth={2} />
+                        <Icon name="ScrollText" size={14} strokeWidth={2} />
                         Institutional Outreach
                     </Link>
                 </div>
