@@ -51,7 +51,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                                 >
                                     {s.icon ? (
                                         <span className="inline-flex items-center gap-2">
-                                            <Icon name={s.icon} size={15} strokeWidth={2} className={s.iconClass ?? "text-red-700"} />
+                                            <Icon name={s.icon} size={17} strokeWidth={2} className={s.iconClass ?? "text-red-700"} />
                                             {s.label}
                                         </span>
                                     ) : (

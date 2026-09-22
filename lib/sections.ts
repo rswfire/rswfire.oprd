@@ -15,6 +15,7 @@ export const archiveSections = [
         ]
     },
     { href: "/outreach", label: "Institutional Outreach", icon: "ScrollText" as const, iconClass: "text-sky-700" },
+    { href: "/records-requests", label: "Records Requests", icon: "HandPlatter" as const, iconClass: "text-sky-700" },
     { href: "#separator-3", label: "", separator: true },
     { href: "/testimony", label: "Testimony", icon: "Sprout" as const, iconClass: "text-violet-700" },
     { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
@@ -42,7 +43,6 @@ export const archiveSections = [
     { href: "/governor-kotek", label: "The Governor's Silence", icon: "GraduationCap" as const, iconClass: "text-purple-700" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/for-volunteers", label: "For Volunteers", icon: "Shield" as const },
-    { href: "/records-requests", label: "Records Requests", icon: "FileText" as const, iconClass: "text-sky-700" },
     { href: "/faq", label: "Frequently Asked Questions", icon: "Lighthouse" as const, iconClass: "text-cyan-700" },
     { href: "/displacement", label: "Displacement Framework", icon: "Eraser" as const, iconClass: "text-pink-700" },
     { href: "/synthesis", label: "The Synthesis", icon: "Combine" as const, iconClass: "text-fuchsia-700" },
