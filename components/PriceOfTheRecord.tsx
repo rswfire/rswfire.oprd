@@ -11,7 +11,8 @@ import { RECORDS_REQUESTS } from "@/data/recordsRequests";
 export default function PriceOfTheRecord() {
     const oprd = RECORDS_REQUESTS.find((a) => a.agency === "Oregon Parks & Recreation Department");
     const osp = RECORDS_REQUESTS.find((a) => a.agency === "Oregon State Police");
-    if (!oprd || !osp) return null;
+    const governor = RECORDS_REQUESTS.find((a) => a.agency === "Office of the Governor");
+    if (!oprd || !osp || !governor) return null;
 
     return (
         <div className="mt-4 overflow-hidden rounded-2xl border border-red-200 bg-white shadow-sm">
@@ -23,9 +24,10 @@ export default function PriceOfTheRecord() {
                     </h2>
                 </div>
                 <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">
-                    Two agencies hold records about me. Neither has refused them outright. One
-                    named a price. The other named a price, accepted a payment, named the documents
-                    itself, and then did not send them.
+                    Three institutions hold records about me. None has refused them outright.
+                    Oregon State Parks and the Governor&rsquo;s office named prices. Oregon State
+                    Police named a price, accepted a payment, named the documents itself, and then
+                    did not send them.
                 </p>
             </div>
 
@@ -72,6 +74,29 @@ export default function PriceOfTheRecord() {
                         has given no exemption or disposition.
                     </p>
                 </div>
+            </div>
+
+            <div className="border-t border-gray-200 px-6 py-6 sm:px-8">
+                <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
+                    Office of the Governor
+                </div>
+                {governor.demanded && (
+                    <>
+                        <div className="mt-2 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 min-[400px]:text-4xl">
+                            {governor.demanded.total}
+                        </div>
+                        <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                            The office demands this amount to collect, review and produce every
+                            record it holds about me, how it handled my correspondence, and its
+                            communications about me with other agencies.
+                        </p>
+                        <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                            It denied the fee waiver by calling the request personal and saying I
+                            had &ldquo;merely stated&rdquo; that I could publish the records on a
+                            website. My reply: &ldquo;I will pay it. Send the instructions.&rdquo;
+                        </p>
+                    </>
+                )}
             </div>
 
             <div className="border-t border-gray-100 px-6 py-5 text-center sm:px-8">
