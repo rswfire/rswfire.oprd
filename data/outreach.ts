@@ -315,7 +315,28 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 audience: "Formal complaint on the March 13, 2026 transfer: the authority for a task force officer's use of FBI resources in a matter he declared in writing was not an FBI case, what the FBI created and retains, and federal-side supervision of dual-role officers.",
                 startingPoints: [{ label: "DOJ OIG hotline", href: "https://oig.justice.gov/hotline" }],
                 fields: ["Recipient / office", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
-                status: "Complaint drafted.",
+                tracking: [
+                    { label: "Recipient / office", value: "Investigations Division, Office of the Inspector General, U.S. Department of Justice" },
+                    { label: "Contact / submission route", value: "Email to the OIG hotline, with the involved personnel and the accountability chain copied" },
+                    { label: "Date sent", value: "September 23, 2026" },
+                    { label: "Correspondence sent", value: "September 23, 2026 · Complaint to the Inspector General: the March 13 transfer", href: "/record/outreach/01M37MV4ZRW7F535J16WXD8TJ4/" },
+                    { label: "Material and version sent", value: "", links: [
+                        { label: "Complaint to the Inspector General", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-2026-09-23-doj-oig-complaint.pdf" },
+                        { label: "The March 13 transfer", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-2026-09-23-the-march-13-transfer.pdf" },
+                        { label: "Testimony v1.10", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-testimony-of-robert-samuel-white-v1-10.pdf" },
+                    ] },
+                    { label: "Specific request made", value: "Examine the authority for the March 13 transfer, what the FBI created and retains about him, and federal-side supervision of dual-role officers." },
+                    { label: "Response received / date", value: "None received" },
+                    { label: "Follow-up / date", value: "None" },
+                ],
+                dispatch: {
+                    dateSent: "September 23, 2026",
+                    material: "Complaint · The March 13 transfer · Testimony v1.10",
+                    correspondence: [
+                        { label: "September 23, 2026 · Complaint to the Inspector General: the March 13 transfer", href: "/record/outreach/01M37MV4ZRW7F535J16WXD8TJ4/" },
+                    ],
+                },
+                status: "Sent · Awaiting response",
             },
             {
                 id: "US-09",

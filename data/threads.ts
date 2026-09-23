@@ -7571,6 +7571,27 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             eml: "/records/outreach/eml/2026-09-23_0959_federal-task-force-resources-complaint.eml",
         },
         {
+            id: "doj-oig-complaint",
+            ulid: "01M37MV4ZRW7F535J16WXD8TJ4",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "10:26 AM",
+            from: "Robert Samuel White",
+            to: "Investigations Division, Office of the Inspector General, U.S. Department of Justice",
+            kind: "notice",
+            title: "Complaint to the Inspector General: the March 13 transfer",
+            summary:
+                "The formal complaint on the task force officer's use of FBI resources in a matter he declared was not an FBI case. The named personnel and the accountability chain copied. Testimony v1.10 attached.",
+            docs: [
+                { label: "Transmittal", href: "/records/outreach/2026-09-23-doj-oig-complaint.pdf" },
+                { label: "Complaint to the Inspector General", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-2026-09-23-doj-oig-complaint.pdf" },
+                { label: "The March 13 transfer", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-2026-09-23-the-march-13-transfer.pdf" },
+                { label: "Testimony of Robert Samuel White, v1.10", href: "/records/outreach/attachments/01m37mv4zrw7f535j16wxd8tj4-testimony-of-robert-samuel-white-v1-10.pdf" },
+            ],
+            eml: "/records/outreach/eml/2026-09-23_1026_doj-oig-complaint.eml",
+        },
+        {
             id: "joint-legislative-audits-response",
             ulid: "01M37F6ZBRRW96CRGD4JMJQSSY",
             date: "September 23, 2026",
