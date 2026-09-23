@@ -277,7 +277,11 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "lane-county",
         agency: "Lane County Sheriff's Office",
         refs: "#26-825; P015875-090926",
-        status: "Gathering records.",
+        status: "Closed while incomplete. Reopening demanded.",
+        demanded: {
+            total: "$71.91",
+            note: "Priced September 23, 2026 for the email search covering items 1 and 2. The fee waiver was denied in one sentence with no stated basis. Four minutes later the county declared all responsive records provided and closed the request.",
+        },
         officers: [
             { name: "[Lane County Deputy]" },
         ],
@@ -309,6 +313,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-09", date: "September 9, 2026", event: "Request filed through the county's records portal; receipt confirmed within minutes, reference P015875-090926" },
             { d: "2026-09-14", date: "September 14, 2026", event: "Request #26-825 submitted and acknowledged the same day; the county states it is processing for the Sheriff's Office and is custodian of at least some records, and sends a fee-waiver questionnaire" },
             { d: "2026-09-14", date: "September 14, 2026", event: "Response to the fee-waiver questionnaire: he is the subject of the records, no fee is warranted, produce in full and without delay" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "Items 1 and 2 priced at $71.91; fee waiver denied in one sentence, no basis stated; items 3 through 7 no records; item 8 released free" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "Four minutes later: \"All responsive records have been provided to you, and your request will be closed.\"" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "Reopen demanded: the waiver answered against every consideration the county's own questionnaire names" },
         ],
     },
     {
