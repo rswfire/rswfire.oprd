@@ -15,6 +15,7 @@ export default function OutreachNavigation({ homepage = false }: { homepage?: bo
                                 <a href={href(entry.anchor)} className="hover:text-emerald-700">
                                     <span className="mr-2 font-mono text-[10px] text-slate-400">{entry.id}</span>
                                     {entry.title}
+                                    {entry.dispatch && <span aria-label="dispatched" className="ml-1.5 font-bold text-emerald-600">✓</span>}
                                 </a>
                             </li>
                         ))}
