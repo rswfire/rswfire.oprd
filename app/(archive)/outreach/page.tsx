@@ -16,8 +16,11 @@ export const metadata: Metadata = {
 };
 
 function ExternalLink({ href, label }: { href: string; label: string }) {
+    // External sites and document files leave the page in a new tab; only
+    // navigation to another archive page stays in this one.
+    const newTab = href.startsWith("http") || /\.[a-z0-9]{2,4}$/i.test(href);
     return (
-        <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className="underline decoration-emerald-300 underline-offset-2 hover:text-emerald-700">
+        <a href={href} target={newTab ? "_blank" : undefined} rel={newTab ? "noopener noreferrer" : undefined} className="underline decoration-emerald-300 underline-offset-2 hover:text-emerald-700">
             {label}
         </a>
     );
