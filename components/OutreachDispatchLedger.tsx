@@ -44,7 +44,15 @@ export default function OutreachDispatchLedger({ homepage = false }: { homepage?
                                 </td>
                                 <td className="px-4 py-3">{entry.dispatch?.material}</td>
                                 <td className="px-4 py-3">{entry.dispatch?.responseDate}</td>
-                                <td className="px-4 py-3">{entry.dispatch?.response}</td>
+                                <td className="px-4 py-3">
+                                    {typeof entry.dispatch?.response === "string"
+                                        ? entry.dispatch.response
+                                        : entry.dispatch?.response && (
+                                            <Link href={entry.dispatch.response.href} className="text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">
+                                                {entry.dispatch.response.label}
+                                            </Link>
+                                        )}
+                                </td>
                                 <td className="px-4 py-3">{entry.dispatch?.nextAction}</td>
                                 <td className="px-4 py-3 text-xs font-semibold text-amber-800">{entry.status}</td>
                             </tr>

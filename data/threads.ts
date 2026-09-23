@@ -7549,6 +7549,42 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             ],
             eml: "/records/outreach/eml/2026-09-23_0030_audit-consideration-joint-committee-legislative-audits.eml",
         },
+        {
+            id: "federal-task-force-resources-complaint",
+            ulid: "01M37K9WT8ZHPBH432JWXH3TYV",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "9:59 AM",
+            from: "Robert Samuel White",
+            to: "Senator Wyden whistleblower intake; FBI Portland; DOJ Office of the Inspector General",
+            kind: "notice",
+            title: "Federal task force resources in a state matter with no criminal predicate",
+            summary:
+                "The March 13 transfer, placed before federal oversight: the letter and the statement, with every named party copied. Testimony v1.10 attached.",
+            docs: [
+                { label: "Transmittal", href: "/records/outreach/2026-09-23-federal-task-force-resources-complaint.pdf" },
+                { label: "Letter to Senator Wyden", href: "/records/outreach/attachments/01m37k9wt8zhpbh432jwxh3tyv-2026-09-23-senator-wyden-task-force-transfer.pdf" },
+                { label: "The March 13 transfer", href: "/records/outreach/attachments/01m37k9wt8zhpbh432jwxh3tyv-2026-09-23-the-march-13-transfer.pdf" },
+                { label: "Testimony of Robert Samuel White, v1.10", href: "/records/outreach/attachments/01m37k9wt8zhpbh432jwxh3tyv-testimony-of-robert-samuel-white-v1-10.pdf" },
+            ],
+            eml: "/records/outreach/eml/2026-09-23_0959_federal-task-force-resources-complaint.eml",
+        },
+        {
+            id: "joint-legislative-audits-response",
+            ulid: "01M37F6ZBRRW96CRGD4JMJQSSY",
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "8:47 AM",
+            from: "Office of Representative Tawna Sanchez",
+            to: "Robert Samuel White; Senator Kate Lieber; OPRD Commission; DAS Risk Management; Governor Kotek",
+            kind: "letter",
+            title: "Audit request directed to the Audits Division",
+            summary:
+                "Representative Sanchez's legislative director states that the Secretary of State's Audits Division decides whether to conduct an audit and that the Joint Committee on Legislative Audits reviews completed audits and recommends changes or remediation.",
+            docs: [{ label: "Response from Representative Sanchez's office", href: "/records/outreach/2026-09-23-joint-legislative-audits-response.pdf" }],
+            eml: "/records/outreach/eml/2026-09-23_0847_joint-legislative-audits-response.eml",
+        },
     ],
 };
 

@@ -1,0 +1,612 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from CH2PR14MB3641.namprd14.prod.outlook.com (2603:10b6:610:6b::20)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Wed, 23 Sep 2026
+ 15:47:50 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=racHMrK9bs3WglhNM8/5ETW/SeAKTxlwmNvwua+JbyFJczpdwukM+LqdVQs48peC8V3MQJ0CPzbskQLu7lP/07txba9ft6Tkg4KkLrz8MoxkpC7rT3lVc5NV4deE0pkydk4/uf8gdUCqKieqOHzrJUwSRIcMZUSS3gpsBdX90CFcog/gvc5UqQTKHVDI+26w38LXitrwJNU4P6P69kTosGrPDZkN6+MCv5svFZJJl0ERRdXMSG1zyNVhlPT0XutYzlhZLTC5V3eiZ6ufwXIOOBoAEI/SDpfwPw9t4rQ5s9AwSFAO1FaS/mcR+lHvZvA8CImohwv5LYtByv7hkXMa7g==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=9y4dAOINrH4GSb7wJvmuFvm6BDTn1SJhPqZj5HpGrO0=;
+ b=EZnfU+dJUicesSwHRJYbCfCJFHNnxKtmsCOJxu7KJ6tH47vA2/bDRJE2Ndnopxr9uRp5ZtMaBZ/Wu0kypvzQr5Vo/3ym+3aabrP9SyaQiTuFbaf232ctXkJO1GaEOFCtKHeEAG+D7gJIiuAaPYP434cgTrcWb6cH6OSK6ngmvvMfz82kQSWvfBBz1W1a0n+B77StisN1cYrNwDn3ZQXvZ2n/J38MnkgHF1HAwALhIcoGW95QRMZq9KumHJxTTF3gSuedH6iGKDWLlcAOEvvST2fwHQvhYwEdcbddrojtCWoeJk0cQzYHSMaXKLQakIl+O65qGrKlGkBo8vlLwnt18A==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c100::7) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oregonlegislature.gov; dmarc=pass (p=quarantine sp=none
+ pct=100) action=none header.from=oregonlegislature.gov; dkim=pass (signature
+ was verified) header.d=oregonlegislature.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oregonlegislature.gov]
+ dkim=[1,1,header.d=oregonlegislature.gov]
+ dmarc=[1,1,header.from=oregonlegislature.gov])
+Received: from SA1PR03CA0016.namprd03.prod.outlook.com (2603:10b6:806:2d3::18)
+ by CH2PR14MB3641.namprd14.prod.outlook.com (2603:10b6:610:6b::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.16; Wed, 23 Sep
+ 2026 15:47:46 +0000
+Received: from SA2PEPF00003F61.namprd04.prod.outlook.com
+ (2603:10b6:806:2d3:cafe::8e) by SA1PR03CA0016.outlook.office365.com
+ (2603:10b6:806:2d3::18) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.16 via Frontend Transport; Wed,
+ 23 Sep 2026 15:47:46 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c100::7)
+ smtp.mailfrom=Oregonlegislature.gov; dkim=pass (signature was verified)
+ header.d=oregonlegislature.gov;dmarc=pass action=none
+ header.from=Oregonlegislature.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of Oregonlegislature.gov
+ designates 2a01:111:f403:c100::7 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c100::7;
+ helo=BL0PR0901CU002.outbound.protection.outlook.com; pr=C
+Received: from BL0PR0901CU002.outbound.protection.outlook.com
+ (2a01:111:f403:c100::7) by SA2PEPF00003F61.mail.protection.outlook.com
+ (2603:10b6:80f:fc04::24) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.8 via Frontend Transport; Wed, 23
+ Sep 2026 15:47:45 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=eM0AJKYPQpqaLl1CJWHj+Ljeyci4qbaFk3nqTZdJbxstDS/vnBMR+1HnA0Ptngx2swMSrof/graUH8LPLaI/lFFHSukSkR8qiznH93LfEmK0xFa0vHXZijIYcH4ITgwTHF300iufakcU7oJfwWtIechu+50HudjOEcAQ6kkxMuajegiuAEdnZYXHntuILn++9otM5phe3vhYJkW3+yO8cwV7wpZo+yBYZ1TZjX/deqNFqwu/BPvv0HWWrLmUlT7Ft19Vk2sGqMUN1qbZSOPrJop6ps+8fHb1VcQ76RtU/VnnSLaHy3Z3TXug9js6t+wKJg99Oy8uiW/Wn5edsWaAlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=9y4dAOINrH4GSb7wJvmuFvm6BDTn1SJhPqZj5HpGrO0=;
+ b=QSV9laaWJy5sDilkjuL0zd2kq8JUtcnl3CR6QoxKZGJnyeu9MFZrMGbe8hyjaT98JiwHmO7Dkg26AzEchF6O7/7A8tCg4M4CxGWNhEgVh++5r0OBF4m+Nn/22fq3VGkpH8wfFl4Bn5GUOpZ/sBJbtkNYPFfW/VsWTPyVUIUUrKdFJbM2DJEofdLHw/aKPAVTASX5wTnoRV76RLUwySRLvNDscfBx9CXYXUdq8EfrYPwbPpb1a0gjLJf/97mh51+vi3BMEL5Lt5zye7C1TgiaP4tdyld28EQA7KN2ZiKXtI5etez5WXfDdyfPGyTwtTrXJw2NQHGVJwyu65p2xOBOog==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oregonlegislature.gov; dmarc=pass action=none
+ header.from=oregonlegislature.gov; dkim=pass header.d=oregonlegislature.gov;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregonlegislature.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=9y4dAOINrH4GSb7wJvmuFvm6BDTn1SJhPqZj5HpGrO0=;
+ b=hxJQf6fbQGq+z04BjS1jthiNsgUWT7tO16HxyS86lYUzCvd+yOU876ViWlCIrIisZi3RcEoC1l9Rro1ZnnD5dsjqi03Sg3tmXFtNWwDYYu0usWyi9Wpud0G9ZEjEqvfRBko33mlJVJFnXB0c+05p09ZSdst5+d86pW/8zeZTltg=
+Received: from SJ0PR09MB7373.namprd09.prod.outlook.com (2603:10b6:a03:259::22)
+ by PH8PR09MB9627.namprd09.prod.outlook.com (2603:10b6:510:17f::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.428.15; Wed, 23 Sep
+ 2026 15:47:39 +0000
+Received: from SJ0PR09MB7373.namprd09.prod.outlook.com
+ ([fe80::4e73:91f7:8784:6892]) by SJ0PR09MB7373.namprd09.prod.outlook.com
+ ([fe80::4e73:91f7:8784:6892%6]) with mapi id 15.21.0451.014; Wed, 23 Sep 2026
+ 15:47:39 +0000
+From: Rep Sanchez <Rep.TawnaSanchez@Oregonlegislature.gov>
+To: Robert Samuel White <rsw@rswfire.com>, Sen Lieber
+	<Sen.KateLieber@oregonlegislature.gov>
+CC: "oprc.publiccomment@oprd.oregon.gov" <oprc.publiccomment@oprd.oregon.gov>,
+	"risk.management@das.oregon.gov" <risk.management@das.oregon.gov>, "Governor
+ Kotek * GOV" <governor.kotek@oregon.gov>
+Subject: RE: Request for audit consideration: OPRD volunteer-program controls
+Thread-Topic: Request for audit consideration: OPRD volunteer-program controls
+Thread-Index: AQHdSy0vFykBNbQUk0KZc3SPtXVNJrbcTGnA
+Date: Wed, 23 Sep 2026 15:47:39 +0000
+Message-ID: 
+ <SJ0PR09MB73733A00BF9807AB3D1D3FA797822@SJ0PR09MB7373.namprd09.prod.outlook.com>
+References: 
+ <CH2PR14MB4181B207302FEE4491701BE2AD822@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: 
+ <CH2PR14MB4181B207302FEE4491701BE2AD822@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+msip_labels: 
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=Oregonlegislature.gov;
+x-ms-traffictypediagnostic: 
+ SJ0PR09MB7373:EE_|PH8PR09MB9627:EE_|SA2PEPF00003F61:EE_|CH2PR14MB3641:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: 34b4564b-35f4-49ff-4fed-08df198a0329
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: 
+ BCL:0;ARA:13230040|366016|23010399003|1800799024|10067099003|56012099006|22082099003|18002099003|8096899003|38070700021;
+X-Microsoft-Antispam-Message-Info-Original: 
+ jChEx/S+OkqtLLwI69eFAdMYliVlqflBFJQhLV8gsgjd+kxe2XJNpk0XYO5BHgG9/0r6Q/V4d67CpJnEz3O4roJZq/HpVmIJz6fEwxJzgCZ5iHDW/fySTRN8XOP5tiWtQpEQcn7hdA3mDUJhLw/khfl9lcLAowc6dcCIWnC2LupseB8VStAds6An5Rtt8RKrnLYdLhw1fu/Dqfr2I5F7hfhQAGjHdJ8eTjfD5Igzf66JRuCBx2jE2rd+bnKDlEvuXKLrlDkJ+Bgrvu4U5yOXURK9yMLBGg0Eg+nWldF23fhX5OdvScXLZ8loMT6BmZb6XQArWF9SF8vDj0Uv57fQoWKsOvAPg0XRBCA4OVx4WhtVk8XQul6pxdw0UM7FjkVP/d+/xghSkyehWPrMgfgxNHiMfrEA0ab6lyo1pJt6qvvq1oaHZz/35HQUOTbqVBIeXnVAtrBLQ0o1PD0RISXOjUAGjQbJQmMGJbyUE3tFzt0DYAofR8eBRiwW4VgyrI4XnfyBeEwA8i5a3dhX0TSLBnowjopcXh7BvcOymPAO4u2xogZyt5ZPnCDLvW+qVTqbDT5tBJ699HNSDszFx9AWFjle2E5NwklhUxLjurC3geP8WrxUU3XbJKde0FRuHaZOsDW/AjT9wL2tow1sxJPEVaWVuNleUCEmxRoPXwxFZOrrVCjpYPaXUYBJOg2ZVJbstNMrWWMV0M+L6rFvtJBZqhafliPGU4tIX2u4V1JDeCA=
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR09MB7373.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(23010399003)(1800799024)(10067099003)(56012099006)(22082099003)(18002099003)(8096899003)(38070700021);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ =?us-ascii?Q?irs15k4kBY92BiC3GOzWiiaGBOy5+0rugX9BA3o0FELejUY/wtf09FdW+i1X?=
+ =?us-ascii?Q?Hc8xXSZ7wXJqjVVwWxvIDIEfqf+m1AonQIWf2Q+aVfRO9LRVb+/T0MWJnTkt?=
+ =?us-ascii?Q?DTrxnmq/rQpPtrnimNtYZlKxnLWMZwN/EaOl6/hZPnQyxbDxmAH1LRzmDlKM?=
+ =?us-ascii?Q?1ejEx2B1pMqqFpg7hKUqFcrKajTFPGSyCfb3OK4gO77YN0s9YLIsjtww8OAw?=
+ =?us-ascii?Q?XCmj1hyq4KaNqSjiYxgo2hZclbvsdu+ijJ/uBFsXmeBn/hanYosivqC9qluM?=
+ =?us-ascii?Q?YVOxhDSPe9iF1oYtTreE9EIlCje9E3dIbaSjGZuSWTYtC7T6l6Fu8v2fptD3?=
+ =?us-ascii?Q?uoS9PeaguAJ3mAvoSa4zAr88CEG+GGxTivn8BObi+3a+OK+N8r6P/XYhQXJv?=
+ =?us-ascii?Q?J/mz6E98bbDe96emhVJJkpon82ngvGXEmQQjAxpJ9YKX+1wYe3CbwXE2qa03?=
+ =?us-ascii?Q?FoHdFH4w4A+SpqmGJgo0+vLzfiPuKPpUxialFEotGNzFmaWZDtYaYbFCNQT7?=
+ =?us-ascii?Q?tMdCZwGD3aWAIBI9mxH7mcLRi/Cg00cU1z3AgD8/qUlkKxCoQQrrcsJ1E2+H?=
+ =?us-ascii?Q?qKX0E+O9es3WgBRbZoThX0Lv+AqrGtMhxcTBw+EjhkDSgfIsNSbhijusbpEU?=
+ =?us-ascii?Q?1Wsxf5KDzTvzBB9THx9mzbcNlMJ1AmMQmiBxjsiimNEI91xWMrcauaQE9F0Y?=
+ =?us-ascii?Q?8P6+A3tEg3JRUU6GV77BqAFdEMvfUA2Yn6gCJfoU6Bebg0swoozU0jasjsM+?=
+ =?us-ascii?Q?U5yZ7pMR039uDQp4Lx0nsOGyDlwbMmE4h+CFWTuXr6PaygxFrDbrI+TJKYxU?=
+ =?us-ascii?Q?asfMdNOhRwc/Faj9S2w/TgoxnaU0uGCsHvWU0xVhlu3+gO9OsD8TI3NmM43A?=
+ =?us-ascii?Q?StzaX/HfODwEDq3FXorsiIxlt5QSHA7lhT5cmK3h6iKDPbincj147Ed7c819?=
+ =?us-ascii?Q?Mf7Q4CwnwwteBhLlC0r+aBE5/HlFU+vFbRUKwuK3VB6T2d7yyOaRvAlbda9f?=
+ =?us-ascii?Q?kvgV0NxrmBVgCLSCoc1EJhUbG06ljMiFbCWIo3qgWlLn3SdWaXEjsfqV8CR2?=
+ =?us-ascii?Q?+u5P1y/6aIgaDTX3/s+PYKNZA2j7xTSqVBs/x/DBrz3+jiELoWn+dZxdfH0f?=
+ =?us-ascii?Q?QHojslf8WfjqMqzsOM5LuOZlTylLlmxeIjVX4Ye+8dp/wTGWebbd3FTphi+l?=
+ =?us-ascii?Q?XD/iiB0jjQKVRSvDRQaiJHAh12KRIeYWjbntzVHn8q9w9Lf/3JU7gkT/pgfn?=
+ =?us-ascii?Q?0j6ZMujDQL9zZZW8TQ8/zNpZyLPmF6mgW0pu0wanbKPbJQ3BFImOMy8RPytJ?=
+ =?us-ascii?Q?utDGcpa6n9YmrRqaooTJh1v31apJ0Z/Y98wMZD0W/jBpaIqgu7AfwX/yfRFL?=
+ =?us-ascii?Q?VSZlq7pFFM5evrVDPkuxa5CvyMmvyrSw0q+xpT/WpbVlhLL4K9/fo9cY+0ji?=
+ =?us-ascii?Q?qqS/IMHHf+EasgR5fqWtU9B4dZIr0TKr6l1tt/BAcBTZbi5UaPH+xOrwdhH6?=
+ =?us-ascii?Q?4l+V5u/oDKqlWBAEi34G+Ml5btiNdPjc88BbPoF1SGh4uyCNU7p0nIIgtdYW?=
+ =?us-ascii?Q?TbbvvHpbYN3EV3rJgqM2yZCuShvdnRrqkiE9RS+Oji/OmJ7+ftNshsf834+K?=
+ =?us-ascii?Q?ZBerPIdCcC7VEExcS1YUZGEgpGLGANF8PQkyZLegtOAAB+0c72d4QzyltKeS?=
+ =?us-ascii?Q?nZDem3el9lSV9V4Atci4EJ5gdtyv6fvMvXo153sL/xTXTQliPQUwZ3Hjo1an?=
+ =?us-ascii?Q?jy/g5J0IMA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR09MB73733A00BF9807AB3D1D3FA797822SJ0PR09MB7373namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR09MB9627
+Return-Path: Rep.TawnaSanchez@Oregonlegislature.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Sep 2026 15:47:45.9120
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 34b4564b-35f4-49ff-4fed-08df198a0329
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ SA2PEPF00003F61.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ SA2PEPF00003F61.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ SA2PEPF00003F61.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ a10bcb41-e0ba-4cb0-7e99-08df1989ff20
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:0;ARA:13230040|704161511799003|35042699022|6113799003|6073799003|56012099006|5063699009|19002099009|10067099003|55112099003|16102099003|22082099003|18002099003|8096899003|13003099007;
+X-Forefront-Antispam-Report: 
+ CIP:2a01:111:f403:c100::7;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL0PR0901CU002.outbound.protection.outlook.com;PTR:mail-eastusazlp170100007.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(704161511799003)(35042699022)(6113799003)(6073799003)(56012099006)(5063699009)(19002099009)(10067099003)(55112099003)(16102099003)(22082099003)(18002099003)(8096899003)(13003099007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Sep 2026 15:47:45.7308
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 34b4564b-35f4-49ff-4fed-08df198a0329
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SA2PEPF00003F61.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR14MB3641
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2569277
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?Windows-1252?Q?uyK3kNvHHjzxf9Kv2iJnpD+Fm3gvF5b7MDQhv/X1+bo+M5TbQ6HPBjAU?=
+ =?Windows-1252?Q?/PJdZWPZyeM5wx+FOtTPrca3coDUsJArSleaHGqlL71rZqT+hP0Ui/RH?=
+ =?Windows-1252?Q?kQ0yUM85GuzpBefuqF8JbpxWX1d5tQs6cZUSdvrY1L/Of9jqd2ptx2UD?=
+ =?Windows-1252?Q?aHuFf8loVks0JYdbpjipFgQPkMCzLez5q5Hy+Gp3B/b0/d9UyJkUPML2?=
+ =?Windows-1252?Q?gbqcp/ioz4wX6YtaBm/nrIijsYzuo+qTKN6hoH6uLPMHI8DFpiJ2zdIB?=
+ =?Windows-1252?Q?Mi3q+EAUxvuzBWKYkonOD9O+hj1DwHGiGWzrBBw45GMiutVXD4j3JWSk?=
+ =?Windows-1252?Q?avrBiYyIXYo4zyK1KxjUQUlssfLLAPsVBOzd1a1+AivDE3X7+3vhwsXL?=
+ =?Windows-1252?Q?WTNCFc2YFrwZvND0h7YWGdqkawjrxu/2pVwLCuvx3mKZKkIiaWbQdpbk?=
+ =?Windows-1252?Q?lX9KXkeWG6YtI9hxBWhzdrQ0FozS8UjISashjkn4t2xRHTkM4NIcbhjR?=
+ =?Windows-1252?Q?UICKVibpKkJ6J3AAlorBZLMVAhe9/GBRnd53uT4O03PwO86rjUwfW5ol?=
+ =?Windows-1252?Q?AmZulJ80u3qlvMCifB3gYwKNEuXABv/vZxO6ERrZTD8iPMJ4LipDjo04?=
+ =?Windows-1252?Q?lWwem/8ddXuRFJdQcsga5Jtr+CwqfX+JEMSiFPvG6s8QDiBI7dcp0ZFc?=
+ =?Windows-1252?Q?+sJoWDapt6AYs2BQtH4a38OR4yyprp8gDToQJtac7H2llvKA9/FAFZ82?=
+ =?Windows-1252?Q?OGaY741J0krPTMwXLJ0ahVwUG8cuDysvlu6xwSpwfPfCUxF8x+dx2rHI?=
+ =?Windows-1252?Q?5e17O1erV9F01d5LqjSeckLFc1sJhfQ7+rUJUnosj6GoVkcWW4W2Bhv7?=
+ =?Windows-1252?Q?iwFw8Bf++TAD4uvHbWiPPpHPtvgUSrnG/LInYoow/11dZz4FDOy33xDd?=
+ =?Windows-1252?Q?/Ll0/QO2cxpy35AJZPM4+Fs2n8z1TqNtGczeUBeJTz+DQkE1NVVUU4ce?=
+ =?Windows-1252?Q?QjRfxxfTzeO/nURf6jz+JxJKrwtODWmglaGUNzWLHP0kcp/C561hmpKL?=
+ =?Windows-1252?Q?GKtuC990lsazOipGjZLJZXx8GYzgJeXJyWFlX3XhC4ExojSukQJfzrr1?=
+ =?Windows-1252?Q?fQYW8crehMV+l9Df3lJh6ySFaZrw9mcyOYB4lhRDW5s4izbZABC8qF7g?=
+ =?Windows-1252?Q?1yGYyIiRoCkg3XMWUGf76v7GiknkIly/KHCuz7DnSBmkzBl7XKVXWY10?=
+ =?Windows-1252?Q?JSyzHszrQ3VCHEBMd0+3elbGpP954mjZNmaonVuBsus870Af7CSZV7g3?=
+ =?Windows-1252?Q?HRKsrU/1lCDC88nwbE6t6kIxyEm0spuvVs3xyGNNl5Lvndd1M2A5D5iw?=
+ =?Windows-1252?Q?JSobIiCELXyRZr+nLANtY/VTtFOYEmC9BStemYNDJJRI34fS4VeoildX?=
+ =?Windows-1252?Q?pFCbwE+WpebpUGbnOx+EAqpf09HS/HhdlNLTX5wiPbLjwf8k2M1l/qzY?=
+ =?Windows-1252?Q?KtQaOKNe/7jz675V7d+KR/WLWotpT0HtqT/8O3bsSmywG46jGLelJ73+?=
+ =?Windows-1252?Q?GK9IL+CEpXKM9AwQJENtg6+xreWPlDcfzJwjwiFqXFVTM8RQG4cQIswI?=
+ =?Windows-1252?Q?flDoDQbpvyCvoP8qf6NwU5uVu2LUfXYoMYRPFmWwbdxC0IV+w+4RNp7E?=
+ =?Windows-1252?Q?sV4JxIXozsR1g2CKuM1URjU33+CLcK5bslsNs6k9Jo1Iveffzd5KlSwD?=
+ =?Windows-1252?Q?0BwF6oCNN5k87rN0gNpF8Vg4rMG1yLOO404LUoOpyiQLm5nwfdVCGWs7?=
+ =?Windows-1252?Q?4XX93spS9DLsWi/cdDlUhdPFhsb3I3i1zSUauUjkXRi6hAnhPrfmN97n?=
+ =?Windows-1252?Q?g6h6XwoAJdI6LcOy+m2SGHwCIhObT0drJvMCtAZRb7oE0Fo7hR3kVhJl?=
+ =?Windows-1252?Q?TyvkshbGGIPpaqitYaJOKXxVFeQBWk8u9Supw37ACGx6ufUqJcdhVnvN?=
+ =?Windows-1252?Q?50EliU7RdKt27EiLsUfW4GTCPfKg/rhRo736d4GRPV5TywdoFyIdIKYA?=
+ =?Windows-1252?Q?8bG2X4/qCsqnHub4Fkaoik/h7mrE19GDdPloPrOiNsUsEL/IjK4A08Jo?=
+ =?Windows-1252?Q?rod1dFmZKubQNqnEpnvISSvYARVL7X50kObd7Ws7LHnIXLD6H9MT1vwr?=
+ =?Windows-1252?Q?VQEpX5rn2Wceg4PEfNZHycXoBmC7GVTnbP2D6MpPqvjU81VXwzn2AkJc?=
+ =?Windows-1252?Q?eZw5pkLAK6fSzA13SLQCuVGV5aMuiukV5kXu8fZbPFohHNo5y8L3tDuw?=
+ =?Windows-1252?Q?mEDib0gwyqhbmhZbjkmMDTN8QgVG3BBqxCCSjWQ2ZY+KM/CkrgzbFnGX?=
+ =?Windows-1252?Q?daVjvPykLN1xFOpqS9xpQ8SjMePkWkyrnjhYLEd/awEj2x+2slAG6bEq?=
+ =?Windows-1252?Q?CQKoX/jCZTg5pKGTWILGBOGWaW9MWf9qQD3XjTaIeH6fsAMCWYsh8HCO?=
+ =?Windows-1252?Q?9P5lFNsjiFHshdQRbOHhjyNCYHjJBApgGueviMnT8lFgUGnnFho=3D?=
+MIME-Version: 1.0
+
+--_000_SJ0PR09MB73733A00BF9807AB3D1D3FA797822SJ0PR09MB7373namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good morning Mr. White,
+
+Thank you for reaching out to our office regarding this situation with OPRD=
+. In terms of how the process works regarding audit requests, those request=
+s go through the Secretary of State's Audit Division, and they determine if=
+ there is an adequate basis in order to conduct an audit based on a state a=
+gency's "waste, inefficiency or abuse of government resources."
+
+You can submit that request here: Report Waste, Inefficiency, or Abuse of S=
+tate Government Resources | Oregon Secretary of State | State of Oregon<htt=
+ps://sos.oregon.gov/audits/Pages/accountability.aspx>
+
+If the SOS's office determines that there is a basis for an audit, then the=
+ audit is set to begin based on the ability of the office to conduct it, an=
+d it is calendared and the process can take 1-2 years.
+
+At that point, the Joint Legislative Audit Committee (JLAC) reviews audits =
+from the SOS's Division of Audits, and the committee is responsible for sel=
+ecting audit reports for review and recommending changes or remediation.
+
+Thank you again for reaching out to us.
+
+Sincerely,
+
+Jon Pugsley
+Legislative Director
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Wednesday, September 23, 2026 12:30 AM
+To: Sen Lieber <Sen.KateLieber@oregonlegislature.gov>; Rep Sanchez <Rep.Taw=
+naSanchez@Oregonlegislature.gov>
+Cc: oprc.publiccomment@oprd.oregon.gov; risk.management@das.oregon.gov; Gov=
+ernor Kotek * GOV <governor.kotek@oregon.gov>
+Subject: Request for audit consideration: OPRD volunteer-program controls
+
+CAUTION: This email originated from outside the Legislature. Use caution cl=
+icking any links or attachments.
+
+Some people who received this message don't often get email from rsw@rswfir=
+e.com<mailto:rsw@rswfire.com>. Learn why this is important<https://aka.ms/L=
+earnAboutSenderIdentification>
+Attached is my letter to the committee, dated September 23, 2026, requestin=
+g that the committee recommend a performance audit of Oregon State Parks vo=
+lunteer-program controls. The same request has been before the Secretary of=
+ State's Audits Division since September 21, 2026.
+Please acknowledge receipt.
+Robert Samuel White
+
+
+--_000_SJ0PR09MB73733A00BF9807AB3D1D3FA797822SJ0PR09MB7373namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle21
+	{mso-style-type:personal-compose;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:826361574;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-259199766 -655211768 67698691 67698693 67698689 676=
+98691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Aptos;
+	mso-bidi-font-family:Aptos;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Good morning Mr. White, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for reaching out to our office regarding t=
+his situation with OPRD. In terms of how the process works regarding audit =
+requests, those requests go through the Secretary of State&#8217;s Audit Di=
+vision, and they determine if there is an
+ adequate basis in order to conduct an audit based on a state agency&#8217;=
+s &#8220;waste, inefficiency or abuse of government resources.&#8221;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">You can submit that request here: <a href=3D"https:/=
+/sos.oregon.gov/audits/Pages/accountability.aspx">
+Report Waste, Inefficiency, or Abuse of State Government Resources | Oregon=
+ Secretary of State | State of Oregon</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">If the SOS&#8217;s office determines that there is a=
+ basis for an audit, then the audit is set to begin based on the ability of=
+ the office to conduct it, and it is calendared and the process can take 1-=
+2 years.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">At that point, the Joint Legislative Audit Committee=
+ (JLAC) reviews audits from the SOS&#8217;s Division of Audits, and the com=
+mittee is responsible for selecting audit reports for review and recommendi=
+ng changes or remediation.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you again for reaching out to us. <o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Jon Pugsley<o:p></o:p></p>
+<p class=3D"MsoNormal">Legislative Director <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Wednesday, September 23, 2026 12:30 AM<br>
+<b>To:</b> Sen Lieber &lt;Sen.KateLieber@oregonlegislature.gov&gt;; Rep San=
+chez &lt;Rep.TawnaSanchez@Oregonlegislature.gov&gt;<br>
+<b>Cc:</b> oprc.publiccomment@oprd.oregon.gov; risk.management@das.oregon.g=
+ov; Governor Kotek * GOV &lt;governor.kotek@oregon.gov&gt;<br>
+<b>Subject:</b> Request for audit consideration: OPRD volunteer-program con=
+trols<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt" id=
+=3D"footer">
+<p class=3D"MsoNormal" style=3D"background:#FAEF06"><b><span style=3D"color=
+:black">CAUTION: This email originated from outside the Legislature. Use ca=
+ution clicking any links or attachments.</span></b><b><o:p></o:p></b></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%;aspect-ratio: re=
+vert !important;background:revert !important;block-size: revert !important;=
+border:revert !important;bottom: revert !important;color:revert !important;=
+color-scheme: revert !important;content-visibility: revert !important;curso=
+r:revert !important;direction:revert !important;display:revert !important;f=
+ont-size:revert !important;height:revert !important;hyphens: revert !import=
+ant;letter-spacing:revert !important;line-height:revert !important;margin:r=
+evert !important;opacity: revert !important;order: revert !important;outlin=
+e: revert !important;overflow:revert !important;padding:revert !important;p=
+osition:revert !important;resize: revert !important;rotate: revert !importa=
+nt;scale: revert !important;tab-size: revert !important;table-layout:revert=
+ !important;text-align:revert !important;text-indent:revert !important;text=
+-orientation: revert !important;text-overflow: revert !important;text-shado=
+w:revert !important;text-transform:revert !important;text-wrap: revert !imp=
+ortant;top:revert !important;transition: revert !important;user-select: rev=
+ert !important;vertical-align:revert !important;visibility:revert !importan=
+t;white-space:revert !important;width:revert !important;word-break:revert !=
+important;word-spacing:revert !important;writing-mode:revert !important;zoo=
+m: revert !important;cellpadding: 0 !important;cellspacing: 0 !important;di=
+splay:table !important;border-collapse:seperate !important;border-spacing: =
+0px 0px !important;float:none">
+<tbody>
+<tr style=3D"aspect-ratio: revert !important;background:revert !important;b=
+lock-size: revert !important;border:revert !important;bottom: revert !impor=
+tant;color:revert !important;color-scheme: revert !important;content-visibi=
+lity: revert !important;cursor:revert !important;direction:revert !importan=
+t;display:revert !important;font-size:revert !important;height:revert !impo=
+rtant;hyphens: revert !important;letter-spacing:revert !important;line-heig=
+ht:revert !important;margin:revert !important;opacity: revert !important;or=
+der: revert !important;outline: revert !important;overflow:revert !importan=
+t;padding:revert !important;position:revert !important;resize: revert !impo=
+rtant;rotate: revert !important;scale: revert !important;tab-size: revert !=
+important;table-layout:revert !important;text-align:revert !important;text-=
+indent:revert !important;text-orientation: revert !important;text-overflow:=
+ revert !important;text-shadow:revert !important;text-transform:revert !imp=
+ortant;text-wrap: revert !important;top:revert !important;transition: rever=
+t !important;user-select: revert !important;vertical-align:revert !importan=
+t;visibility:revert !important;white-space:revert !important;width:revert !=
+important;word-break:revert !important;word-spacing:revert !important;writi=
+ng-mode:revert !important;zoom: revert !important">
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt;aspect-ratio: revert !important;background:revert !important;=
+block-size: revert !important;border:revert !important;bottom: revert !impo=
+rtant;color:revert !important;color-scheme: revert !important;content-visib=
+ility: revert !important;cursor:revert !important;direction:revert !importa=
+nt;display:revert !important;font-size:revert !important;height:revert !imp=
+ortant;hyphens: revert !important;letter-spacing:revert !important;line-hei=
+ght:revert !important;margin:revert !important;opacity: revert !important;o=
+rder: revert !important;outline: revert !important;overflow:revert !importa=
+nt;padding:revert !important;position:revert !important;resize: revert !imp=
+ortant;rotate: revert !important;scale: revert !important;tab-size: revert =
+!important;table-layout:revert !important;text-align:revert !important;text=
+-indent:revert !important;text-orientation: revert !important;text-overflow=
+: revert !important;text-shadow:revert !important;text-transform:revert !im=
+portant;text-wrap: revert !important;top:revert !important;transition: reve=
+rt !important;user-select: revert !important;vertical-align:revert !importa=
+nt;visibility:revert !important;white-space:revert !important;width:revert =
+!important;word-break:revert !important;word-spacing:revert !important;writ=
+ing-mode:revert !important;zoom: revert !important;valign: middle !importan=
+t">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;visibility:revert !important;white-space:revert !important;width=
+:revert !important;word-break:revert !important;word-spacing:revert !import=
+ant;writing-mode:revert !important;zoom: revert !important">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;=
+color:#212121">Some people who received this message don't often get email =
+from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;visibility:revert !important;white-space:revert !important;width:r=
+evert !important;word-break:revert !important;word-spacing:revert !importan=
+t;writing-mode:revert !important;zoom: revert !important;align: left !impor=
+tant">
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Attached is my letter to=
+ the committee, dated September 23, 2026, requesting that the committee rec=
+ommend a performance audit of Oregon State Parks volunteer-program controls=
+. The same request has been before the
+ Secretary of State's Audits Division since September 21, 2026.<o:p></o:p><=
+/span></p>
+</div>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Please acknowledge recei=
+pt.<o:p></o:p></span></p>
+</div>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Robert Samuel White<o:p>=
+</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR09MB73733A00BF9807AB3D1D3FA797822SJ0PR09MB7373namp_--
+
