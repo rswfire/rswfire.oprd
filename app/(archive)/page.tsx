@@ -9,6 +9,7 @@ import LegalFund from "@/components/LegalFund";
 import SunlightCard from "@/components/SunlightCard";
 import OutreachNavigation from "@/components/OutreachNavigation";
 import TestimonyCard from "@/components/TestimonyCard";
+import AiCard from "@/components/AiCard";
 import WhatVolunteersDeserve from "@/components/WhatVolunteersDeserve";
 import PriceOfTheRecord from "@/components/PriceOfTheRecord";
 import RecordIndexCard from "@/components/RecordIndexCard";
@@ -28,6 +29,10 @@ export default function OverviewPage() {
 
             {/* WELCOME AND TESTIMONY — one introduction to the complete account */}
             <TestimonyCard />
+
+
+            {/* DOES THIS PROJECT USE AI — the question, answered directly */}
+            <AiCard />
 
 
             {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
