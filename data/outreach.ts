@@ -20,6 +20,7 @@ export type OutreachTrackingField = {
     label: string;
     value: string;
     href?: string;
+    links?: OutreachLink[]; // multiple documents, each on its own line
 };
 
 export type OutreachDispatch = {
@@ -82,7 +83,10 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                     { label: "Contact / submission route", value: "Email to the co-chairs' legislative offices" },
                     { label: "Date sent", value: "September 23, 2026" },
                     { label: "Correspondence sent", value: "September 23, 2026 · Request for audit consideration: OPRD volunteer-program controls", href: "/record/outreach/01M36JQV3RZHQCT4RRPP35JRJC/" },
-                    { label: "Material and version sent", value: "Audit-consideration letter · Testimony v1.10" },
+                    { label: "Material and version sent", value: "", links: [
+                        { label: "Request for audit consideration", href: "/records/outreach/attachments/01m36jqv3rzhqct4rrpp35jrjc-2026-09-23-joint-committee-legislative-audits.pdf" },
+                        { label: "Testimony v1.10", href: "/records/outreach/attachments/01m36jqv3rzhqct4rrpp35jrjc-testimony-of-robert-samuel-white-v1-10.pdf" },
+                    ] },
                     { label: "Specific request made", value: "Recommend the performance audit of OPRD volunteer-program controls now before the Audits Division." },
                     { label: "Response received / date", value: "None received" },
                     { label: "Follow-up / date", value: "None" },
@@ -146,7 +150,10 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                     { label: "Recipient / contact", value: "Oregon Secretary of State, Audits Division", href: "https://sos.oregon.gov/audits/Pages/default.aspx" },
                     { label: "Date sent", value: "September 21, 2026" },
                     { label: "Correspondence sent", value: "September 21, 2026 · Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls", href: "/record/outreach/01M33JN6E8NEE7XQSHSDRNNVJH/" },
-                    { label: "Material and version sent", value: "Request for performance audit consideration · Testimony v1.9" },
+                    { label: "Material and version sent", value: "", links: [
+                        { label: "Request for performance audit consideration", href: "/records/outreach/attachments/01m33jn6e8nee7xqshsdrnnvjh-2026-09-21-oregon-secretary-of-state-audits.pdf" },
+                        { label: "Testimony v1.9", href: "/records/outreach/attachments/01m33jn6e8nee7xqshsdrnnvjh-testimony-of-robert-samuel-white-v1-9.pdf" },
+                    ] },
                     { label: "Specific audit question", value: "Whether the controls governing volunteer complaints, promised departmental reviews, and referrals to law enforcement warrant examination." },
                     { label: "Response received / date", value: "None received" },
                     { label: "Follow-up / date", value: "None" },

@@ -30,7 +30,13 @@ function TrackingFields({ fields, tracking, status }: { fields: string[]; tracki
             {rows.map((field) => (
                 <div key={field.label} className="grid min-h-10 grid-cols-1 border-b border-slate-200 px-4 py-2.5 sm:grid-cols-[13rem_1fr] sm:gap-4">
                     <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-500">{field.label}</div>
-                    {field.value ? (
+                    {field.links ? (
+                        <div className="flex flex-col gap-1 text-sm text-slate-800">
+                            {field.links.map((doc) => (
+                                <div key={doc.href}><ExternalLink href={doc.href} label={doc.label} /></div>
+                            ))}
+                        </div>
+                    ) : field.value ? (
                         field.href
                             ? <ExternalLink href={field.href} label={field.value} />
                             : <div className="text-sm text-slate-800">{field.value}</div>
