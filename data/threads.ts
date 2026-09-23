@@ -7594,6 +7594,25 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             docs: [{ label: "The closure was an error; the waiver is denied again", href: "/records/lane-county/2026-09-23-26-825-closure-was-an-error-waiver-denied-again.pdf" }],
             eml: "/records/lane-county/eml/2026-09-23_1452_26-825-closure-was-an-error-waiver-denied-again.eml",
         },
+        {
+            id: "26-825-second-denial-states-no-basis",
+            ulid: "01M384P0Q0GFJFGT94YNYRKC90",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "3:02 PM",
+            from: "Robert Samuel White",
+            to: "Lane County Public Records",
+            kind: "notice",
+            title: "The second denial states no basis either",
+            summary:
+                "The closure correction accepted and closed. On the waiver: the county quoted the statute and stated the conclusion, and named none of the four factors its own questionnaire commits it to.",
+            docs: [
+                { label: "The second denial states no basis either", href: "/records/lane-county/attachments/01m384p0q0gfjfgt94ynyrkc90-2026-09-23-lane-county-second-denial.pdf" },
+                { label: "Transmittal", href: "/records/lane-county/2026-09-23-26-825-second-denial-states-no-basis.pdf" },
+            ],
+            eml: "/records/lane-county/eml/2026-09-23_1502_26-825-second-denial-states-no-basis.eml",
+        },
     ],
 };
 

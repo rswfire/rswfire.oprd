@@ -317,6 +317,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-23", date: "September 23, 2026", event: "Four minutes later: \"All responsive records have been provided to you, and your request will be closed.\"" },
             { d: "2026-09-23", date: "September 23, 2026", event: "Reopen demanded: the waiver answered against every consideration the county's own questionnaire names" },
             { d: "2026-09-23", date: "September 23, 2026", event: "The county retracts the closure as a template error; the waiver is denied a second time, again without naming a factor" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "Answered: the second denial names none of the four factors the county's own questionnaire commits it to" },
         ],
     },
     {
