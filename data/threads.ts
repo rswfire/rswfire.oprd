@@ -6356,9 +6356,9 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
     title: "Office of the Governor",
     agency: "Office of the Governor of Oregon",
     matter: "Direct correspondence with the Office of Governor Tina Kotek",
-    status: "Gathering records.",
+    status: "Fee waiver denied. He pays.",
     summary: [
-        "Letters addressed directly to the Office of the Governor, beginning November 18, 2025, and the office's responses to them. The first came September 8, 2026: the office is gathering records responsive to the public records request, with its Government Accountability Attorney as the point of contact. The letters themselves remain unanswered.",
+        "Letters addressed directly to the Office of the Governor, beginning November 18, 2025, and the office's responses to them. The first came September 8, 2026: the office is gathering records responsive to the public records request, with its Government Accountability Attorney as the point of contact. On September 22 the office estimated the fee at $572.50 and denied the fee waiver; he agreed to pay. The letters themselves remain unanswered.",
     ],
     filings: [
 
@@ -6618,6 +6618,39 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
                 "Notice to the records officers of all three offices that the pending public records requests are tracked on a single public page. Sent to Miles, Hubbard, Bolton, Gauthier, and OPRD Public Records; copied to the Director, the Commission, the Governor's office, and both Risk offices.",
             docs: [{ label: "Public records requests — now tracked publicly", href: "/records/governor/2026-09-09-requests-now-tracked-publicly.pdf" }],
             eml: "/records/governor/eml/2026-09-09_0958_requests-now-tracked-publicly.eml",
+        },
+        {
+            id: "fee-waiver-denied-572-50",
+            ulid: "01M35TPA3RXRP0HY3NM9JHDJ8F",
+            flagged: true,
+            date: "September 22, 2026",
+            d: "2026-09-22",
+            time: "5:29 PM",
+            from: "Office of the Governor",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The fee waiver is denied: $572.50",
+            summary:
+                "The office estimates the cost to collect, review, and produce the records at $572.50 and denies the fee waiver.",
+            docs: [
+                { label: "The fee waiver is denied: $572.50", href: "/records/governor/2026-09-22-fee-waiver-denied-572-50.pdf" },
+                { label: "PRR Waiver or Reduction Information Form", href: "/records/governor/attachments/01m35tpa3rxrp0hy3nm9jhdj8f-PRR-Waiver-or-Reduction-Information-Form.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-09-22_1729_fee-waiver-denied-572-50.eml",
+        },
+        {
+            id: "i-will-pay-it",
+            ulid: "01M35TT090PFYFTHZ1GFFA5MKA",
+            flagged: true,
+            date: "September 22, 2026",
+            d: "2026-09-22",
+            time: "5:31 PM",
+            from: "Robert Samuel White",
+            to: "Cameron D. Miles, Office of the Governor",
+            kind: "followup",
+            title: "I will pay it. Send the instructions.",
+            docs: [{ label: "I will pay it. Send the instructions.", href: "/records/governor/2026-09-22-i-will-pay-it.pdf" }],
+            eml: "/records/governor/eml/2026-09-22_1731_i-will-pay-it.eml",
         },
     ],
 };

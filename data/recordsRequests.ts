@@ -66,7 +66,11 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "governor",
         agency: "Office of the Governor",
         refs: "Request of September 5, 2026",
-        status: "Gathering records.",
+        status: "Fee waiver denied. He pays.",
+        demanded: {
+            total: "$572.50",
+            note: "Estimated September 22, 2026 to collect, review, and produce the records. The fee waiver was denied. He agreed to pay.",
+        },
         officers: [
             { name: "Yasmin Solorio", role: "Business Operations Coordinator and Executive Assistant" },
             { name: "Cameron Miles", role: "Government Accountability Attorney" },
@@ -82,6 +86,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
         claims: [
             "September 8, 2026: the office will begin gathering responsive records “to the extent records exist,” with the Government Accountability Attorney as point of contact.",
+            "September 22, 2026: the cost to collect, review, and produce is estimated at $572.50; the fee waiver is denied; the office will wait to hear from him before proceeding.",
         ],
         withheld: [],
         produced: [],
@@ -96,6 +101,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         timeline: [
             { d: "2026-09-05", date: "September 5, 2026", event: "Request filed, native format, fee waiver on public-interest grounds, litigation hold noted under claim P195403" },
             { d: "2026-09-08", date: "September 8, 2026", event: "The office responds: gathering records; Cameron Miles, Government Accountability Attorney, copied as contact" },
+            { d: "2026-09-22", date: "September 22, 2026", event: "Fee estimated at $572.50; fee waiver denied" },
+            { d: "2026-09-22", date: "September 22, 2026", event: "Reply: “I will pay it. Send the instructions.”" },
         ],
     },
     {
