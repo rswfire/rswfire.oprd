@@ -7271,7 +7271,7 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
     title: "Lane County Sheriff's Office",
     agency: "Lane County Sheriff's Office",
     matter: "The March 27, 2026 dissemination · [Lane County Deputy]",
-    status: "On notice. P015875-090926.",
+    status: "Withholding.",
     redaction: [
         "The deputy is not named on this register. The county has taken no position, it has never been openly antagonistic toward me, and I do not yet know the extent of its involvement. Redaction is what an open question looks like here.",
     ],
