@@ -277,7 +277,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "lane-county",
         agency: "Lane County Sheriff's Office",
         refs: "#26-825; P015875-090926",
-        status: "Reopened. Waiver denied with no basis.",
+        status: "Withholding.",
         demanded: {
             total: "$71.91",
             note: "Priced September 23, 2026 for the email search covering items 1 and 2. The county closed the request four minutes after pricing it, then retracted the closure as a template error. The fee waiver has been denied twice, both times without naming a factor.",
