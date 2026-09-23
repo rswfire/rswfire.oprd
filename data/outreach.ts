@@ -295,7 +295,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                         { label: "Testimony v1.10", href: "/records/outreach/attachments/01m37k9wt8zhpbh432jwxh3tyv-testimony-of-robert-samuel-white-v1-10.pdf" },
                     ] },
                     { label: "Specific request made", value: "Examine the March 13 transfer, what the FBI created and retains about him, and who audits dual-role officers across the state-federal seam." },
-                    { label: "Response received / date", value: "None received" },
+                    { label: "Response received / date", value: "September 23, 2026 · Forwarded to the appropriate staff for review", href: "/record/outreach/01M37MX2GGH83G886B89A9Y0H6/" },
                     { label: "Follow-up / date", value: "None" },
                 ],
                 dispatch: {
@@ -305,7 +305,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                         { label: "September 23, 2026 · Federal task force resources in a state matter with no criminal predicate", href: "/record/outreach/01M37K9WT8ZHPBH432JWXH3TYV/" },
                     ],
                 },
-                status: "Sent · Awaiting response",
+                status: "Response received",
             },
 
             {

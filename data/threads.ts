@@ -7592,6 +7592,21 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             eml: "/records/outreach/eml/2026-09-23_1026_doj-oig-complaint.eml",
         },
         {
+            id: "wyden-whistleblower-acknowledgment",
+            ulid: "01M37MX2GGH83G886B89A9Y0H6",
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "10:27 AM",
+            from: "Whistleblower intake, Office of Senator Wyden",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "Forwarded to the appropriate staff for review",
+            summary:
+                "The whistleblower office, twenty-eight minutes after the report: the information has been forwarded to the appropriate staff, who will follow up directly if they see a path forward.",
+            docs: [{ label: "Forwarded to the appropriate staff for review", href: "/records/outreach/2026-09-23-wyden-whistleblower-acknowledgment.pdf" }],
+            eml: "/records/outreach/eml/2026-09-23_1027_wyden-whistleblower-acknowledgment.eml",
+        },
+        {
             id: "joint-legislative-audits-response",
             ulid: "01M37F6ZBRRW96CRGD4JMJQSSY",
             date: "September 23, 2026",
