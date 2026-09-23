@@ -307,6 +307,25 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 },
                 status: "Sent · Awaiting response",
             },
+
+            {
+                id: "US-08",
+                anchor: "us-doj-oig",
+                title: "U.S. Department of Justice, Office of the Inspector General",
+                audience: "Formal complaint on the March 13, 2026 transfer: the authority for a task force officer's use of FBI resources in a matter he declared in writing was not an FBI case, what the FBI created and retains, and federal-side supervision of dual-role officers.",
+                startingPoints: [{ label: "DOJ OIG hotline", href: "https://oig.justice.gov/hotline" }],
+                fields: ["Recipient / office", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
+                status: "Complaint drafted.",
+            },
+            {
+                id: "US-09",
+                anchor: "us-fbi-tips",
+                title: "FBI tips intake",
+                audience: "Report of the March 13, 2026 transfer through the FBI's own intake: the conduct of a Portland JTTF task force officer, the records created and retained, and the audit of the state-federal seam.",
+                startingPoints: [{ label: "tips.fbi.gov", href: "https://tips.fbi.gov" }],
+                fields: ["Recipient / office", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
+                status: "Submission drafted.",
+            },
         ],
     },
 ];
