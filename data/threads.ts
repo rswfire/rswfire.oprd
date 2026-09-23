@@ -7578,6 +7578,22 @@ export const LANE_COUNTY_THREAD: RecordsThreadData = {
             docs: [{ label: "My position, plainly", href: "/records/lane-county/2026-09-23-26-825-position-stated.pdf" }],
             eml: "/records/lane-county/eml/2026-09-23_1340_26-825-position-stated.eml",
         },
+        {
+            id: "26-825-closure-was-an-error-waiver-denied-again",
+            ulid: "01M3842GP8SZXCDDPC9DY5RPTW",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "2:52 PM",
+            from: "Lane County Public Records",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The closure was an error; the waiver is denied again",
+            summary:
+                "The county retracts the closure: \"This was an error... Your request is not closed.\" On the waiver it quotes ORS 192.324(5) and states the conclusion, naming no factor. Sixty days to pay the $71.91.",
+            docs: [{ label: "The closure was an error; the waiver is denied again", href: "/records/lane-county/2026-09-23-26-825-closure-was-an-error-waiver-denied-again.pdf" }],
+            eml: "/records/lane-county/eml/2026-09-23_1452_26-825-closure-was-an-error-waiver-denied-again.eml",
+        },
     ],
 };
 

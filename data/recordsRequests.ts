@@ -277,10 +277,10 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "lane-county",
         agency: "Lane County Sheriff's Office",
         refs: "#26-825; P015875-090926",
-        status: "Closed while incomplete. Reopening demanded.",
+        status: "Reopened. Waiver denied with no basis.",
         demanded: {
             total: "$71.91",
-            note: "Priced September 23, 2026 for the email search covering items 1 and 2. The fee waiver was denied in one sentence with no stated basis. Four minutes later the county declared all responsive records provided and closed the request.",
+            note: "Priced September 23, 2026 for the email search covering items 1 and 2. The county closed the request four minutes after pricing it, then retracted the closure as a template error. The fee waiver has been denied twice, both times without naming a factor.",
         },
         officers: [
             { name: "[Lane County Deputy]" },
@@ -316,6 +316,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-23", date: "September 23, 2026", event: "Items 1 and 2 priced at $71.91; fee waiver denied in one sentence, no basis stated; items 3 through 7 no records; item 8 released free" },
             { d: "2026-09-23", date: "September 23, 2026", event: "Four minutes later: \"All responsive records have been provided to you, and your request will be closed.\"" },
             { d: "2026-09-23", date: "September 23, 2026", event: "Reopen demanded: the waiver answered against every consideration the county's own questionnaire names" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "The county retracts the closure as a template error; the waiver is denied a second time, again without naming a factor" },
         ],
     },
     {

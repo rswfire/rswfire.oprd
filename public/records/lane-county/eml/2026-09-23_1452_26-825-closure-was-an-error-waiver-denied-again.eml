@@ -1,0 +1,507 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BY5PR14MB4017.namprd14.prod.outlook.com (2603:10b6:a03:20f::12)
+ by BY5PR14MB4178.namprd14.prod.outlook.com with HTTPS; Wed, 23 Sep 2026
+ 21:52:18 +0000
+Received: from SJ0PR03CA0034.namprd03.prod.outlook.com (2603:10b6:a03:33e::9)
+ by BY5PR14MB4017.namprd14.prod.outlook.com (2603:10b6:a03:20f::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.17; Wed, 23 Sep
+ 2026 21:52:16 +0000
+Received: from CO1PEPF00012E63.namprd05.prod.outlook.com
+ (2603:10b6:a03:33e:cafe::19) by SJ0PR03CA0034.outlook.office365.com
+ (2603:10b6:a03:33e::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.17 via Frontend Transport; Wed,
+ 23 Sep 2026 21:52:16 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 50.31.156.113) smtp.mailfrom=pmbounces.nextrequest.com; dkim=pass (signature
+ was verified) header.d=pm.mtasv.net;dkim=pass (signature was verified)
+ header.d=nextrequest.com;dmarc=pass action=none
+ header.from=nextrequest.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ pmbounces.nextrequest.com designates 50.31.156.113 as permitted sender)
+ receiver=protection.outlook.com; client-ip=50.31.156.113;
+ helo=sc-ord-mta113.mtasv.net; pr=C
+Received: from sc-ord-mta113.mtasv.net (50.31.156.113) by
+ CO1PEPF00012E63.mail.protection.outlook.com (10.167.249.72) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.8
+ via Frontend Transport; Wed, 23 Sep 2026 21:52:15 +0000
+X-KumoRef: eyJfQF8iOiJcXF8vIiwicmVjaXBpZW50IjoicnN3QHJzd2ZpcmUuY29tIn0=
+DKIM-Signature: v=1; a=rsa-sha256; d=pm.mtasv.net; s=pm20250806; c=relaxed/relaxed;
+	bh=2MmNI5Yi5puLcXVo3QJMRxZdRywv4s2ac/G21zGou3s=;
+	h=from:to:subject:date:mime-version:content-type:sender:cc:date:message-id;
+	t=1790200334; x=1790805134;
+	b=Rls6bA9KhIC+2TzwoWxBvj6r+ixO2Jl2nwhtjBhJOuamV/r1fePjkeaIWBmxQ/0dentOCAxJU
+	cD3qNLT0JU56oTsZD6lroPG5pNbQrF7NG51cwT2BNWyqmLlPzY/UJTxWaSGNgt6vc2Z29c9V2JK
+	KobQ8vsqLdwX1XxkOuwYi/zAljFSFRzffYEEcHz9Aq6j7mWhVKWxpZokDoxOUdlmMpVIivoAs5G
+	hO2l6YwMlmcO41qTZFf2KzirsypgMcuackhq1pBjBdsBFJAr8Z8dnnxvgVfoUhUeJQoEZW3qxru
+	zZBChcnugIMFXKKBBZGkwEWgApoLOZGf1vUDn926B+sQ==;
+Received: from ip-172-26-23-237.us-east-2.compute.internal (172.26.23.237)
+  by production-pmta-useast2.internal.postmarkapp.com (KumoMTA 10.97.240.72) 
+  with ESMTP id 0941fd1cb79911f190b402ffe603568d for <rsw@rswfire.com>;
+  Wed, 23 Sep 2026 21:52:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=nextrequest.com; s=20161018195854pm;
+	c=relaxed/relaxed; i=messages@nextrequest.com; t=1790200333; x=1790373133;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=2MmNI5Yi5puLcXVo3QJMRxZdRywv4s2ac/G21zGou3s=;
+	b=V5FE6xYZQHbhdfCe4rRaJET/vBJ5KvLCFOCKRGSTzJ9emddjXu1XlI6Bc9NqjBOYdJqsfi7+3eY
+	DKnK4xqcDC0GidolxdKVV1VAmYDlRrQJUWaM6Mhhknmed6DTuUXMgPqphFjoXgKVpE2tkuBn9nful
+	9P1wLAMQkTnCB7dvrsc=
+From: Lane County Public Records <messages@nextrequest.com>
+Date: Wed, 23 Sep 2026 21:52:13 +0000
+Subject: [External Message Added] Lane County, OR public records request
+ #26-825
+Message-Id: <294d95a2-eb50-4f8e-bc26-4e3225e33baf@mtasv.net>
+Reply-To: lanecountyor_26-825-requester-notes@inbound.nextrequest.com
+To: rsw@rswfire.com
+Feedback-ID: s2404621-ZXh0ZXJuYWxfbWVzc2FnZV9hZGRlZA==:s2404621:a123637:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-Job: 123637_2404621
+X-PM-Message-Id: 294d95a2-eb50-4f8e-bc26-4e3225e33baf
+X-PM-Tag: external_message_added
+X-PM-RCPT: |bTB8MTIzNjM3fDI0MDQ2MjF8cnN3QHJzd2ZpcmUuY29t|
+X-PM-Message-Options: v1;1.cIQDo_vtYYVIhLvAZdTnDA.Nlm9H_6cWW9Ja5zSj3fhvSW1h8aMO0fDorYc7OIOmZ_BPjK6GJqQmJn8k9qcw-sQ650qb9D9QxO0PyvdeFoC0CtkNgCE0F-UYCnFOzSpce0FO-wzitHnhF52XoMJ1syBV7C4iuQKFmW-StpJQcMuOik8GwsxXlofCKbqdUi2UyYLz06tjcGdNJ7A4w2iqM7-
+X-virtual-MTA: ord-50-31-156-113
+X-PM-MTA-Pool: transactional-1
+Content-Type: multipart/alternative;
+	boundary=mk3-f090ba64f59242618925b490782f0dee; charset=UTF-8
+Return-Path: pm_bounces@pmbounces.nextrequest.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Sep 2026 21:52:15.5425
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: e269dd0a-e771-46e2-1a86-08df19bcee7a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CO1PEPF00012E63:EE_|BY5PR14MB4017:EE_|BY5PR14MB4178:EE_
+X-MS-Exchange-Organization-AuthSource: CO1PEPF00012E63.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: e269dd0a-e771-46e2-1a86-08df19bcee7a
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:13230040|260918215300599003|260918224100599003|3072899012|3092899012|5062899012|2092899012|1032899013|7049299003|3109299003|69100299015|7149299003|12012899012|13102899012|13012899012|10067099003|5063699009|56012099006|4113699003|3023799007|18003699003|19002099009|16102099003|55112099003|8096899003|2066899003|4076899003|13003099007;
+X-Forefront-Antispam-Report: CIP:50.31.156.113;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:sc-ord-mta113.mtasv.net;PTR:sc-ord-mta113.mtasv.net;CAT:NONE;SFS:(13230040)(260918215300599003)(260918224100599003)(3072899012)(3092899012)(5062899012)(2092899012)(1032899013)(7049299003)(3109299003)(69100299015)(7149299003)(12012899012)(13102899012)(13012899012)(10067099003)(5063699009)(56012099006)(4113699003)(3023799007)(18003699003)(19002099009)(16102099003)(55112099003)(8096899003)(2066899003)(4076899003)(13003099007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Sep 2026 21:52:15.2780
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e269dd0a-e771-46e2-1a86-08df19bcee7a
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: CO1PEPF00012E63.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR14MB4017
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3403130
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944490095)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZWFOd1BkdlZ3K3dpQlhkakpscXEyQnJCaHBCWVZJZk5KY1BndlVXY1U3Qmg5?=
+ =?utf-8?B?NnlybDJkQjNBUmFmVFRuWkZKMktwWUlYcm5hRzBvTTJwYjhUUC9mYVdEZTdE?=
+ =?utf-8?B?UVJxQVhRUGlVU05QcUhpREkxcjJPU0RCZTBtQTNFWjdCbGYyNDhRVmhRTTVq?=
+ =?utf-8?B?eGQwejQwc1hTRXZBaE9aQVljbk0zb2F4azh2MjZFTlUyblNQZmgwb1l4VDR1?=
+ =?utf-8?B?ZnQrNUFxYW9tUnNwSHU5bThWSzN6Y29kMUdHNktzNlpmdTBwSDFTTFZLWnV3?=
+ =?utf-8?B?QUFnZkIzZ0xDcElYSmNOSG4wd1d2Q2dyYWp2Y3Z5cDFUTGFJanVaQldscTgv?=
+ =?utf-8?B?aVAvN0VjWTMrclduaDhCTzFBenpHUy9DUktMUjArWjVkYmlBSGJpZFJuRHNn?=
+ =?utf-8?B?UGdyaFExaTdVVFA3WDV6Y1RBSUtBM0tmNXFUZk52ZUpwUVY0VHp3YUFyaW1U?=
+ =?utf-8?B?aXNqK1Y5S2hqelcvMGRrSC8wTC93OGgvVEVGYmVxOUlRazljaXNEQVZwZlh2?=
+ =?utf-8?B?SDhQNXdsRk1QQ2M5enBkWGdTQjhOZTJ5MlpFNFhEcWNJQ2FNa1dXdzRsVzBy?=
+ =?utf-8?B?OS8wWWdrKy9KaVJNeXBxTTlIeS9pcmk2K0FPSlRIYm4wRkdKM1lCeDlEbGVl?=
+ =?utf-8?B?aDNvUEwyYU1IYm91ZDRXVlRuMlUyVHpXY001aDZXUlFhQktGak5UNnhQN3l0?=
+ =?utf-8?B?a3dYQWlRQW0xOUdxZzNiM2NIUllESDBCNnExUnVOU2pKRXFvQ3N0bjRmWW1o?=
+ =?utf-8?B?eUJTT3hiSTlhSGJOMFc1MUxYblpibmZxKzR1WnNkTDMzQkdPNlRTR2NOZmFx?=
+ =?utf-8?B?MFd6VnlTVzdtTHFPOUpFUUhENGRkdWhwUmJSTjhIZitQLzMzUDBGZVFjZFFx?=
+ =?utf-8?B?Z0tmNDdCN1FGNHVFYTMvekoxVVRLYnNtUy8rVktweStkOWxFM2J1MUI4a1Jw?=
+ =?utf-8?B?bGxLL1lUU0duYTJub2FJeVlrY1lGMSt1QVpNL1ZTNjh1Yyt1TWN1dmZhallC?=
+ =?utf-8?B?ZXNJbG9aRStmcXhqUGcwZ2pKcno2M0pDRHJOdGYxR0M1a1JSOGExMUpHZDRF?=
+ =?utf-8?B?UWFkU1ZkRVFVbVlDL1Q2K0c2eHdtMGlmRFFjdEszdW5sL0dDaUU2eWZUYy9w?=
+ =?utf-8?B?NzR4TmxYeVpjRDBJd0tOWUdHRktRVklrejJvRHJwaGswb1ZxVFJBR2ZqWmtU?=
+ =?utf-8?B?SXFaVTR0eTMraUl5YXJtN2J5MEsvRFlBa2Vtekw0RHUzN3ZVemFLZlFPbktH?=
+ =?utf-8?B?a3l2Mi9YZ29TRWJRaWtkTmRHcEszTkxVRVJxNnhsWm1nTkc2Rlo1SGMrQ0U0?=
+ =?utf-8?B?Mnl6dml2YWJhTEt4aENqL2szU3lsNzlSVHlDaXpaNk5MRmttMDhkeXVjK0Rs?=
+ =?utf-8?B?N0RYRHlyZWtpczJqa2VkRzA2ajVoM3dsL0NGV1dHa1BmNGc1Vk91b3JWRWRP?=
+ =?utf-8?B?YnhPWVBTWktSbDdZQ1I1Z3RoeS90bVFzN1BkMUltVVhqZWk2RWI1RjV2SGJs?=
+ =?utf-8?B?WEtYUkJQRDNNaGdTU0NFL241VkE3SUgzdE1mTEM1aDE4QXVCeWJwMnFpdmdz?=
+ =?utf-8?B?dUU2K0NoenZrWlpDVW53NTNQVEllTFpPNUc0U3dkbEFSYk9GdlFYMVlXTyt5?=
+ =?utf-8?B?ZjFGRWtHdlRna1M2SVd1Z0dCRE50K210Ylgzb1VFTm9NdGt5ZHR4Yk5pVVd5?=
+ =?utf-8?B?TndHbFNES2E1NHF1VHdtU0FDWEh0UlVrQUZIamVsdUhMQXEzMitNcG45YWNI?=
+ =?utf-8?B?MDZxTlZtdVRGcE9iNU5GMGNZc2g4d0loWDFBZ3ArbXVnM0NWZHlrUDNTOE00?=
+ =?utf-8?B?eFdBcDg3RlNLZ3pwaFl6NE5CQmtPMlJsREFTMHRpbmo3RThuSjgwQ3djOWVV?=
+ =?utf-8?B?bWsrMk1QMkpDeGUrbStweU1pZ2pJdDFkTUdkTVhmNU5UZVFiN3d1UGVaV3NM?=
+ =?utf-8?B?VFZweGpLRkFsYXNWM3BFSzhTOTlnWFkyazJTZW1qZlF0aXpoOFN4TS9CUk1H?=
+ =?utf-8?B?Zk5HK3NFSHJwVnBFS3o4RGdjS3VScXU5bmlWUWJzUktCRHJpZTVHa3AyTXIz?=
+ =?utf-8?B?ZXc2ajEwdVNlb1FoRnViVmNndW5wa3FacWxTd0k5K0UwOGd2T3RzaUhVWFNG?=
+ =?utf-8?B?V1FETkMvK0xMMkNOYXVITnNtc1dhWEFDajBSYzNiaGsrajhPM0FlRHZSSWtW?=
+ =?utf-8?B?NDYyWjdHZzF4TW9DNXppT3ZBQ2JhcWk0RGw3cVdJSFI1QWh0Mzc1c2NGR3pm?=
+ =?utf-8?B?VWE5VUxhZWdLZ1F2YzdVN281QXd0bS9tUURFOVA3S2txRWgwZHI0RGpKWi9m?=
+ =?utf-8?B?NDh1cnNJNldNaFVDb2ZWb2t1UlUraGFhSnhsSjNnMmhrNS9Ja05hdDNLZlhP?=
+ =?utf-8?B?WlUwWUpZNEg2SDZUSlNyaWlWNE8vTUxYcVFLb0E3SUZieEF0NWxTMUlzbWxB?=
+ =?utf-8?B?cEFnOFZQMFdvZGFoWGttVjcyMnBuVGNPVnBxdUR5WHAwc3VSanlBVjBQTkpr?=
+ =?utf-8?B?bU9ERHFPcHFDbTRjU3o3NmU3dUVpeStDOVRYQkdtQUNQQmdWb0wwTTBsRWVM?=
+ =?utf-8?B?ZXNjNEpjdHNZWWZ4QUtabzcrL0IrU1BBdGsxUDRsYzF2RVp4WUpxWmZEMW00?=
+ =?utf-8?B?UEE4M25USTlPdFIzRkg0Q1prMnBLY0cyTG5NU0xIcHdWV2dvYUVzaFFLaG83?=
+ =?utf-8?B?akE5cnNzWkx4bEEvb2orMnR1czlscWFMTUFhNGN5SFEvY2xTN1lUZjNPTG9I?=
+ =?utf-8?B?ZXJqRW9wY24wL1pEcFBQTUtzTCtVL0ZqZGNJSmpGcTFuOXl3RjZlVExucHdl?=
+ =?utf-8?B?ZEFaeHNRb3g0RC81WmdMSnJmS2xlb1RKcTBiSXNIZk10S0ErcTMrTDlleFdY?=
+ =?utf-8?B?QkRmVHBUT2c4RkVicVExWEpOU1Y0R09CWmFob2M4Rll1YjM4MU9xVnVCK05x?=
+ =?utf-8?B?dTdDK2tzTkhXbWxvVEp6Q3NqOGZxbnh0aWFZZHd6WHM4NzBDOStGYW5uUWpB?=
+ =?utf-8?B?WUZlWnh3UUExd0xCNlUrTGNlTG5kSUhJTDJVKzROQjQvSU9SRnc5OHVkcWtC?=
+ =?utf-8?B?WHFWYUFZTkhIQUF2RFZDbWdEVmY2amo1SGMrRjh3WnJ6R0UxcmIzT3djN1RR?=
+ =?utf-8?B?Y0JZVElvRC91dUpaNm5Nc1lCZVA5QmVQanhEaVhUTzhHb2psWjBVN1FoTmtv?=
+ =?utf-8?B?bDNBTXlOMEVPekJVKzRIYTNJYlN4K3ZTRjU4V01yb1o4RjhMYUQyb0RCV3pz?=
+ =?utf-8?B?eWJweVVtazJXWmNPdTZUNzRZVkxWdHRYeHRaNkpxNUoxRkpoazVaYzY0Y1Bu?=
+ =?utf-8?B?TVBGc1dWZHVES2c4Tk1iTGJHQWdtTWl3NVNBbEdiZG5IWmRoQ0ZKVVdBTXJE?=
+ =?utf-8?B?bjgwNWhMbGZDOSttcUNXcGJvbzF2aGUzTHRsMXdRdmdFZzNBZ2hHS1BHOXFs?=
+ =?utf-8?B?TXlPMkdVZTFrbmlOOXRkdDcvNnlnMkRwbngxQ2RZUk0wVUJiMnNUY0czRzlP?=
+ =?utf-8?B?M2xSa2M4UUdhZ2ZmL3BqNnc9PQ==?=
+MIME-Version: 1.0
+
+--mk3-f090ba64f59242618925b490782f0dee
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Lane County, OR
+
+************************************************************************
+
+
+A message was sent to you regarding record request #26-825:
+
+Good afternoon,
+
+
+
+In response to your recent message:
+
+
+
+Regarding the message that accompanied the record we provided in response t=
+o #8 that said: =E2=80=9CAll responsive records have been provided to you, =
+and your request will be closed.=E2=80=9D:
+
+This was an error. There was boilerplate language in the template I was usi=
+ng and I neglected to delete the language that was not applicable to this r=
+equest. I apologize for the error. Your request is not closed. Your request=
+ is currently paused awaiting payment for the email search.
+
+
+
+Regarding your request for an explanation of the denial of your fee waiver:
+
+ORS 192.324(5) allows public bodies to =E2=80=9C=E2=80=A6furnish copies wit=
+hout charge or at a substantially reduced fee if the custodian determines t=
+hat the waiver or reduction of fees is in the public interest because makin=
+g the record available primarily benefits the general public.=E2=80=9D Lane=
+ County has reviewed your request for a fee waiver and has concluded that t=
+he disclosure of the records you have requested would not primarily benefit=
+ the general public. Therefore, your request for a fee waiver is denied. Yo=
+u may seek review of the County's determination pursuant to ORS 192.401, 19=
+2.411, 192.415, 192.418, 192.422, 192.427 and 192.431.&nbsp;
+
+
+
+We will keep this request open for 60 days. If we do not receive payment of=
+ the invoice within 60 days, we will close this request and you will need t=
+o make a new one. ORS 192.329(3)(b).
+
+
+
+Sincerely,
+
+Lane County Public Records
+
+
+
+
+
+
+
+
+
+
+************************************************************************   =
+                      =20
+<em>Questions about your request?</em> Reply to this email or sign in to co=
+ntact staff at Lane County, OR.<br><br><em>Technical support:</em> See our =
+<a href=3D"https://www.civicplus.help/nextrequest/docs/requesters">help pag=
+e</a>
+
+--mk3-f090ba64f59242618925b490782f0dee
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+>
+   =20
+    <title>[External Message Added] Lane County, OR public records request =
+#26-825</title>
+    <style type=3D"text/css" rel=3D"stylesheet" media=3D"all">@media only s=
+creen and (max-width: 600px) { .email-body_inner, .email-footer { width: 10=
+0% !important } }
+@media only screen and (max-width: 500px) { .button { width: 100% !importan=
+t } }</style>
+  </head>
+ =20
+  <body style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica=
+ Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; height: 100%; m=
+argin: 0; line-height: 1.4; background-color: #FBFBFB; -webkit-text-size-ad=
+just: none; width: 100% !important;">
+    <span style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helveti=
+ca Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+      <table class=3D"nextrequest-white" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" style=3D"font-family: &quot;Open Sans&quot;, =
+Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: borde=
+r-box; background-color: #FBFBFB;">
+        <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;He=
+lvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr>
+          <td align=3D"center" valign=3D"top" class=3D"mcnTextContent" styl=
+e=3D"padding: 9px 18px; font-family: &quot;Open Sans&quot;, Arial, &quot;He=
+lvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+            <p class=3D"sub preheader-reply-delimiter" align=3D"center" sty=
+le=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;=
+, Helvetica, sans-serif; box-sizing: border-box; line-height: 1.5em; text-a=
+lign: center; margin-top: 0; font-size: 10px; color: #1C1C41;">
+              -- Attach a non-image file and/or reply ABOVE THIS LINE with =
+a message, and it will be sent to staff on this request. --
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+    </span>
+    <table class=3D"email-wrapper" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvet=
+ica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; width: 100%;=
+ margin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; =
+-premailer-cellspacing: 0; background-color: #FFFFFF;">
+      <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helv=
+etica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr>
+        <td align=3D"center" style=3D"font-family: &quot;Open Sans&quot;, A=
+rial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border=
+-box;">
+          <table class=3D"email-content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;=
+Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; width:=
+ 100%; margin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpaddin=
+g: 0; -premailer-cellspacing: 0;">
+            <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quo=
+t;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr=
+>
+              <td class=3D"email-body" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, sans-ser=
+if; box-sizing: border-box; font-size: 16px; color: #1C1C41; width: 100%; m=
+argin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; -p=
+remailer-cellspacing: 0; background-color: #FBFBFB;">
+                <table class=3D"email-body_inner" align=3D"center" width=3D=
+"50" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: &quot;Open S=
+ans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-si=
+zing: border-box; width: 550px; margin: 92px auto 0; padding: 0; -premailer=
+-width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0;">
+                  <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial=
+, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box=
+;"><tr>
+                    <td align=3D"center" class=3D"t--title" style=3D"font-f=
+amily: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica,=
+ sans-serif; box-sizing: border-box; font-size: 20px; line-height: 1.6;">
+                      <div class=3D"shim-bottom-16px" style=3D"font-family:=
+ &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-=
+serif; box-sizing: border-box; margin-bottom: 16px;">
+                        Lane County, OR Public Records
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class=3D"white-background" style=3D"background-color:=
+ #FFFFFF;">
+                    <td class=3D"message-padding" style=3D"font-family: &qu=
+ot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 40px; border: 2px solid #0F1C70;">
+                      <div class=3D"t--subheader t--bold" style=3D"font-fam=
+ily: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, s=
+ans-serif; box-sizing: border-box; font-size: 24px; line-height: 36px; font=
+-weight: 600;">A message was sent to you regarding record request #26-825:<=
+/div>
+                      <div class=3D"shim1-top t--small t--primary message-c=
+ontent" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica=
+ Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; font-size: 16px=
+; line-height: 24px; color: #09090B; margin-top: 24px;">
+                        <p style=3D"font-family: &quot;Open Sans&quot;, Ari=
+al, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-b=
+ox; line-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px; m=
+argin-bottom: 0;">Good afternoon,</p><p style=3D"font-family: &quot;Open Sa=
+ns&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-siz=
+ing: border-box; line-height: 1.5em; text-align: left; margin-top: 0; font-=
+size: 16px; min-height: 16px; margin-bottom: 0;"></p><p style=3D"font-famil=
+y: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, san=
+s-serif; box-sizing: border-box; line-height: 1.5em; text-align: left; marg=
+in-top: 0; font-size: 16px; margin-bottom: 0;">In response to your recent m=
+essage:</p><p style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Hel=
+vetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; line-heig=
+ht: 1.5em; text-align: left; margin-top: 0; font-size: 16px; min-height: 16=
+px; margin-bottom: 0;"></p><p style=3D"font-family: &quot;Open Sans&quot;, =
+Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: borde=
+r-box; line-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px=
+; margin-bottom: 0;"><strong style=3D"font-family: &quot;Open Sans&quot;, A=
+rial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border=
+-box;">Regarding the message that accompanied the record we provided in res=
+ponse to #8 that said: =E2=80=9CAll responsive records have been provided t=
+o you, and your request will be closed.=E2=80=9D:</strong></p><p style=3D"f=
+ont-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helve=
+tica, sans-serif; box-sizing: border-box; line-height: 1.5em; text-align: l=
+eft; margin-top: 0; font-size: 16px; margin-bottom: 0;">This was an error. =
+There was boilerplate language in the template I was using and I neglected =
+to delete the language that was not applicable to this request. I apologize=
+ for the error. <strong style=3D"font-family: &quot;Open Sans&quot;, Arial,=
+ &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;=
+"><em style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica N=
+eue&quot;, Helvetica, sans-serif; box-sizing: border-box;">Your request is =
+not closed.</em></strong> Your request is currently paused awaiting payment=
+ for the email search.</p><p style=3D"font-family: &quot;Open Sans&quot;, A=
+rial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border=
+-box; line-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px;=
+ min-height: 16px; margin-bottom: 0;"></p><p style=3D"font-family: &quot;Op=
+en Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; bo=
+x-sizing: border-box; line-height: 1.5em; text-align: left; margin-top: 0; =
+font-size: 16px; margin-bottom: 0;"><strong style=3D"font-family: &quot;Ope=
+n Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box=
+-sizing: border-box;">Regarding your request for an explanation of the deni=
+al of your fee waiver:</strong></p><p style=3D"font-family: &quot;Open Sans=
+&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizin=
+g: border-box; line-height: 1.5em; text-align: left; margin-top: 0; font-si=
+ze: 16px; margin-bottom: 0;">ORS 192.324(5) allows public bodies to =E2=80=
+=9C=E2=80=A6furnish copies without charge or at a substantially reduced fee=
+ if the custodian determines that the waiver or reduction of fees is in the=
+ public interest because making the record available primarily benefits the=
+ general public.=E2=80=9D Lane County has reviewed your request for a fee w=
+aiver and has concluded that the disclosure of the records you have request=
+ed would not primarily benefit the general public. Therefore, your request =
+for a fee waiver is denied. You may seek review of the County's determinati=
+on pursuant to ORS 192.401, 192.411, 192.415, 192.418, 192.422, 192.427 and=
+ 192.431.&nbsp;</p><p style=3D"font-family: &quot;Open Sans&quot;, Arial, &=
+quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; l=
+ine-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px; min-he=
+ight: 16px; margin-bottom: 0;"></p><p style=3D"font-family: &quot;Open Sans=
+&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizin=
+g: border-box; line-height: 1.5em; text-align: left; margin-top: 0; font-si=
+ze: 16px; margin-bottom: 0;">We will keep this request open for 60 days. If=
+ we do not receive payment of the invoice within 60 days, we will close thi=
+s request and you will need to make a new one. ORS 192.329(3)(b).</p><p sty=
+le=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;=
+, Helvetica, sans-serif; box-sizing: border-box; line-height: 1.5em; text-a=
+lign: left; margin-top: 0; font-size: 16px; min-height: 16px; margin-bottom=
+: 0;"></p><p style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helv=
+etica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; line-heigh=
+t: 1.5em; text-align: left; margin-top: 0; font-size: 16px; margin-bottom: =
+0;">Sincerely,</p><p style=3D"font-family: &quot;Open Sans&quot;, Arial, &q=
+uot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; li=
+ne-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px; margin-=
+bottom: 0;">Lane County Public Records</p><p style=3D"font-family: &quot;Op=
+en Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; bo=
+x-sizing: border-box; line-height: 1.5em; text-align: left; margin-top: 0; =
+font-size: 16px; min-height: 16px; margin-bottom: 0;"></p>
+                       =20
+                      </div>
+                      <div class=3D"shim2andhalf-top" style=3D"font-family:=
+ &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-=
+serif; box-sizing: border-box; margin-top: 60px;">
+                        <p style=3D"font-family: &quot;Open Sans&quot;, Ari=
+al, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-b=
+ox; line-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px;">
+                          <a class=3D"button--default button--primary" href=
+=3D"https://lanecountyor.nextrequest.com/requests/26-825" style=3D"font-fam=
+ily: &quot;Open Sans&quot;, Arial, sans-serif; box-sizing: border-box; colo=
+r: #FBFBFB; background-color: #1B34FF; border-radius: 3px; display: inline-=
+block; font-size: 16px; font-weight: 600; height: 40px; line-height: 24px; =
+padding: 8px 24px; text-decoration: none; text-transform: none; white-space=
+: nowrap;"> View Request 26-825</a>
+                        </p>
+                      </div>
+                      <div class=3D"request-link" style=3D"font-family: &qu=
+ot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-seri=
+f; box-sizing: border-box; margin-top: -10px; margin-bottom: -10px; margin-=
+left: 1px; opacity: 0.65; font-size: 10px; color: #1B34FF;">https://lanecou=
+ntyor.nextrequest.com/requests/26-825</div>
+                      <br>
+                      <p class=3D"help-text" style=3D"font-family: &quot;Op=
+en Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; bo=
+x-sizing: border-box; line-height: 1.33; text-align: left; margin-top: 30px=
+; font-size: 12px; opacity: 0.65; color: #1C1C41;">
+                       =20
+                      </p>
+                    </td>
+                  </tr><tr>
+                </tr></tbody></table>
+              </td>=20
+            </tr>
+            <tr class=3D"nextrequest-white" style=3D"background-color: #FBF=
+BFB;">
+              <td style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot=
+;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+                <table class=3D"email-footer" align=3D"center" width=3D"570=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: &quot;Open Sans=
+&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizin=
+g: border-box; width: 570px; margin: 0 auto; padding: 0; -premailer-width: =
+570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; text-align: ce=
+nter; background-color: #FBFBFB;">
+                  <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial=
+, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box=
+;"><tr>
+                    <td class=3D"content-cell" align=3D"center" style=3D"fo=
+nt-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvet=
+ica, sans-serif; box-sizing: border-box; padding: 40px;">
+	<a href=3D"https://www.nextrequest.com/" aria-label=3D"NextRequest an Opti=
+mere brand" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helve=
+tica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; color: #4D7=
+5AE;">
+                      <img class=3D"footer-image" src=3D"https://nextreques=
+t-production-assets.s3.us-west-2.amazonaws.com/images/NextRequest-Logo.png"=
+ style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&q=
+uot;, Helvetica, sans-serif; box-sizing: border-box; border: none; width: 1=
+52px; margin-bottom: 10px;">
+					  </a>
+                      <p class=3D"sub align-center" style=3D"font-family: &=
+quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-se=
+rif; box-sizing: border-box; line-height: 1.5em; text-align: center; margin=
+-top: 0; font-size: 10px; color: #AEAEAE;"><em style=3D"font-family: &quot;=
+Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; =
+box-sizing: border-box;">Questions about your request?</em> Reply to this e=
+mail or sign in to contact staff at Lane County, OR.<br><br><em style=3D"fo=
+nt-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvet=
+ica, sans-serif; box-sizing: border-box;">Technical support:</em> See our <=
+a href=3D"https://www.civicplus.help/nextrequest/docs/requesters" style=3D"=
+font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helv=
+etica, sans-serif; box-sizing: border-box; color: #1B34FF;">help page</a></=
+p>
+                      <p class=3D"footer-bottom" style=3D"font-family: &quo=
+t;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif=
+; box-sizing: border-box; line-height: 1.5em; text-align: left; margin-top:=
+ 0; font-size: 16px; color: #AEAEAE; min-height: 16px;"></p>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+ =20
+
+<img src=3D"https://ea.pstmrk.it/open?m=3Dv3_1.z1mWdAnUMHZZHY2vGZ2IUg.qcsdI=
+4nOFH6TgiXZua-WSQkDYLjiQQ1PU30F-BDlnFINuWGKf-Nc09u3H_zokvZQjlyjMjBxHCD_Vw0E=
+oD6GfZXs05PXnje9OqV8egcms4e9OReuwchCPLAoUGudg08JadrnzdIh6JfyXsxIfAF8QkoTN6k=
+NluHHzMUC2EGkJ2xOcLPyi8vg1hK0q1WXauw5D-DkwOXU6vJ0XYuw27LXKyXXV5k1mEzzC2II6v=
+IIol0lUMoPimJw655kcrDM-8RpaSa6-WNLzHrmX1asm_xmo0yDsyi65N1JBb9LWYHNJ3RRGs0zs=
+9MSIN9Qmng1ExbIYxmbKr7PPaWuYITe9UZobet55tVAHhHpxiW3xVZxto8dcI_bb5lljWY9hJ-l=
+tI_siGo80i5wwsInSXhm8s2M6O-i60g8VtSEflDDGmOy2n13JTOXDiSpFYsnGkHiH7z4BdmQ6sr=
+mq0d9Ohd28Clpnq9sRTMtkzNxRuBIwoSRokhTpFIP8siqG1z6LWqXyV_kqp7KiZEIBkVcsf-NaB=
+69lafvNozot41g2XMzlAUgGKHINW6WFu2UMJ33R_1xoAjxZWkY1jhM77CoL2oZ_p4c0jCckD86x=
+dGJNpQl7ZxpHLA" width=3D"1" height=3D"1" border=3D"0" alt=3D""></body></htm=
+l>
+
+--mk3-f090ba64f59242618925b490782f0dee--
+
