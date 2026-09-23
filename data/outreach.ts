@@ -80,7 +80,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 tracking: [
                     { label: "Committee / recipient", value: "Senator Kate Lieber and Representative Tawna Sanchez, Co-Chairs" },
                     { label: "Contact / submission route", value: "Email to the co-chairs' legislative offices" },
-                    { label: "Date sent", value: "September 23, 2026 · 12:30 AM" },
+                    { label: "Date sent", value: "September 23, 2026" },
                     { label: "Correspondence sent", value: "September 23, 2026 · Request for audit consideration: OPRD volunteer-program controls", href: "/record/outreach/01M36JQV3RZHQCT4RRPP35JRJC/" },
                     { label: "Material and version sent", value: "Audit-consideration letter · Testimony v1.10" },
                     { label: "Specific request made", value: "Recommend the performance audit of OPRD volunteer-program controls now before the Audits Division." },
@@ -144,7 +144,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 fields: ["Recipient / contact", "Date sent", "Correspondence sent", "Material and version sent", "Specific audit question", "Response received / date", "Follow-up / date"],
                 tracking: [
                     { label: "Recipient / contact", value: "Oregon Secretary of State, Audits Division", href: "https://sos.oregon.gov/audits/Pages/default.aspx" },
-                    { label: "Date sent", value: "September 21, 2026 · 8:30 PM" },
+                    { label: "Date sent", value: "September 21, 2026" },
                     { label: "Correspondence sent", value: "September 21, 2026 · Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls", href: "/record/outreach/01M33JN6E8NEE7XQSHSDRNNVJH/" },
                     { label: "Material and version sent", value: "Request for performance audit consideration · Testimony v1.9" },
                     { label: "Specific audit question", value: "Whether the controls governing volunteer complaints, promised departmental reviews, and referrals to law enforcement warrant examination." },
