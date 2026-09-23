@@ -77,7 +77,24 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 audience: "Agency accountability and controls: how complaints about volunteer-program conduct are received, reviewed, documented, escalated, and audited; how agency referrals to law enforcement are governed and recorded.",
                 startingPoints: [{ label: "Oregon Legislative Information System", href: "https://olis.oregonlegislature.gov/" }],
                 fields: ["Committee / recipient", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
-                status: "Not contacted",
+                tracking: [
+                    { label: "Committee / recipient", value: "Senator Kate Lieber and Representative Tawna Sanchez, Co-Chairs" },
+                    { label: "Contact / submission route", value: "Email to the co-chairs' legislative offices" },
+                    { label: "Date sent", value: "September 23, 2026 · 12:30 AM" },
+                    { label: "Correspondence sent", value: "September 23, 2026 · Request for audit consideration: OPRD volunteer-program controls", href: "/record/outreach/01M36JQV3RZHQCT4RRPP35JRJC/" },
+                    { label: "Material and version sent", value: "Audit-consideration letter · Testimony v1.10" },
+                    { label: "Specific request made", value: "Recommend the performance audit of OPRD volunteer-program controls now before the Audits Division." },
+                    { label: "Response received / date", value: "None received" },
+                    { label: "Follow-up / date", value: "None" },
+                ],
+                dispatch: {
+                    dateSent: "September 23, 2026",
+                    material: "Audit-consideration letter · Testimony v1.10",
+                    correspondence: [
+                        { label: "September 23, 2026 · Request for audit consideration: OPRD volunteer-program controls", href: "/record/outreach/01M36JQV3RZHQCT4RRPP35JRJC/" },
+                    ],
+                },
+                status: "Sent · Awaiting response",
             },
             {
                 id: "OR-05",

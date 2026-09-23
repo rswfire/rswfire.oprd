@@ -6656,6 +6656,40 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
 };
 
 
+export const DOJ_THREAD: RecordsThreadData = {
+    slug: "doj",
+    title: "Oregon Department of Justice",
+    agency: "Oregon Department of Justice",
+    matter: "Public records request of September 23, 2026",
+    status: "Filed.",
+    summary: [
+        "The public records request of September 23, 2026 to the Oregon Department of Justice, and the institution's responses to it.",
+    ],
+    filings: [
+        {
+            id: "records-request-to-the-department-of-justice",
+            ulid: "01M36H37GR1NF6QE4JC7TEMVSE",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "12:01 AM",
+            from: "Robert Samuel White",
+            to: "Public Records Coordinator, Oregon Department of Justice",
+            kind: "request",
+            title: "Public records request to the Oregon Department of Justice",
+            summary:
+                "Nine numbered categories: everything the institution holds about him, from the fusion center to counsel's files, with every dissemination and every characterization. Fee waiver addressed factor by factor. Testimony v1.10 attached.",
+            docs: [
+                { label: "Public records request to the Oregon Department of Justice", href: "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-2026-09-23-oregon-doj-records-request.pdf" },
+                { label: "The Testimony of Robert Samuel White, v1.10", href: "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-testimony-of-robert-samuel-white-v1-10.pdf" },
+                { label: "Transmittal", href: "/records/doj/2026-09-23-records-request-to-the-department-of-justice.pdf" },
+            ],
+            eml: "/records/doj/eml/2026-09-23_0001_records-request-to-the-department-of-justice.eml",
+        },
+    ],
+};
+
+
 export const DAS_THREAD: RecordsThreadData = {
     slug: "das",
     title: "Department of Administrative Services",
@@ -7477,7 +7511,26 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             ],
             eml: "/records/outreach/eml/2026-09-21_2030_performance-audit-consideration-oprd-volunteer-controls.eml",
         },
+        {
+            id: "audit-consideration-joint-committee-legislative-audits",
+            ulid: "01M36JQV3RZHQCT4RRPP35JRJC",
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "12:30 AM",
+            from: "Robert Samuel White",
+            to: "Co-Chairs, Joint Committee on Legislative Audits",
+            kind: "notice",
+            title: "Request for audit consideration: OPRD volunteer-program controls",
+            summary:
+                "To the committee co-chairs: recommend the performance audit of OPRD volunteer-program controls now before the Audits Division. Sent with the letter and Testimony v1.10.",
+            docs: [
+                { label: "Transmittal", href: "/records/outreach/2026-09-23-audit-consideration-joint-committee-legislative-audits.pdf" },
+                { label: "Request for audit consideration", href: "/records/outreach/attachments/01m36jqv3rzhqct4rrpp35jrjc-2026-09-23-joint-committee-legislative-audits.pdf" },
+                { label: "Testimony of Robert Samuel White, v1.10", href: "/records/outreach/attachments/01m36jqv3rzhqct4rrpp35jrjc-testimony-of-robert-samuel-white-v1-10.pdf" },
+            ],
+            eml: "/records/outreach/eml/2026-09-23_0030_audit-consideration-joint-committee-legislative-audits.eml",
+        },
     ],
 };
 
-export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD, LANE_COUNTY_THREAD, OUTREACH_THREAD];
+export const THREADS: RecordsThreadData[] = [OPRD_THREAD, OSP_THREAD, GOVERNOR_THREAD, DOJ_THREAD, DAS_THREAD, LEGISLATION_THREAD, USFS_THREAD, LANE_COUNTY_THREAD, OUTREACH_THREAD];

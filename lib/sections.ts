@@ -9,6 +9,7 @@ export const archiveSections = [
         iconClass: "text-emerald-700",
         subsections: [
             { href: "/records/governor", label: "Office of the Governor" },
+            { href: "/records/doj", label: "Oregon Department of Justice" },
             { href: "/records/osp", label: "Oregon State Police" },
             { href: "/records/lane-county", label: "Lane County Sheriff’s Office" },
             { href: "/records/oprd", label: "Oregon Parks & Recreation Dept." },
@@ -17,6 +18,7 @@ export const archiveSections = [
     { href: "/outreach", label: "Institutional Outreach", icon: "ScrollText" as const, iconClass: "text-sky-700" },
     { href: "/records-requests", label: "Records Requests", icon: "HandPlatter" as const, iconClass: "text-sky-700" },
     { href: "#separator-3", label: "", separator: true },
+    { href: "/timeline", label: "Timeline", icon: "ChartNoAxesGantt" as const, iconClass: "text-blue-700" },
     { href: "/testimony", label: "Testimony", icon: "Sprout" as const, iconClass: "text-violet-700" },
     { href: "/sunlight", label: "Sunlight", icon: "Sun" as const, iconClass: "text-amber-500" },
     {
@@ -31,7 +33,6 @@ export const archiveSections = [
         icon: "Users" as const,
         iconClass: "text-teal-700",
     },
-    { href: "/timeline", label: "Timeline", icon: "ChartNoAxesGantt" as const, iconClass: "text-blue-700" },
     { href: "#separator-4", label: "", separator: true },
     {
         href: "/lisa-sumption",

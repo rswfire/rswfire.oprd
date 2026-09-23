@@ -106,6 +106,38 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
     },
     {
+        slug: "doj",
+        agency: "Oregon Department of Justice",
+        refs: "Request of September 23, 2026",
+        status: "Filed.",
+        officers: [],
+        asked: [
+            "All records concerning him in any division or function, including the Criminal Justice Division and the Oregon TITAN Fusion Center",
+            "Every record any officer, employee, analyst, or attorney created, entered, transmitted, or received concerning him, including the March 11, 2026 fusion-center email in native format",
+            "All records of any research the fusion center conducted, began, or considered concerning him",
+            "The systems that hold records about him and the retention schedule for each",
+            "Every dissemination of any record about him, with dates, recipients, and audit logs",
+            "Every assessment, classification, characterization, or designation of him, and the factual basis for each",
+            "Interagency communications concerning him, naming twelve individuals",
+            "Records concerning the archive, his requests, the tort claim, and claim P195403, with a privilege log",
+            "Counsel's files, including the correspondence routed to counsel by OPRD's February 14, 2026 instruction",
+        ],
+        claims: [],
+        withheld: [],
+        produced: [],
+        deadlines: [
+            {
+                d: "2026-09-30",
+                date: "September 30, 2026",
+                who: "them",
+                what: "Acknowledge the request: ORS 192.324, five business days from receipt",
+            },
+        ],
+        timeline: [
+            { d: "2026-09-23", date: "September 23, 2026", event: "Request filed: nine categories, fee waiver, litigation hold under claim P195403, testimony v1.10 attached" },
+        ],
+    },
+    {
         slug: "osp",
         agency: "Oregon State Police",
         refs: "PR27478 · PR36445",

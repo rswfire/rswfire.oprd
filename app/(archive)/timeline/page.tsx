@@ -114,25 +114,25 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">August 22, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/lisa-sumption/public-records-request" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/record/oprd/01K399TM7GG3FNAXSR4BX9TB1X" className="underline text-emerald-800 hover:text-emerald-600">
                             Submit comprehensive public records request
                         </Link>. OPRD remains silent for 90 days.
                     </div>
                 </li>
 
                 <li>
-                    <div className="font-semibold">August 25, 2025</div>
+                    <div className="font-semibold">August 24, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/lisa-sumption/open-letter" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/record/oprd/01K3FDT5P09S9N9QSZYWS9KN7A" className="underline text-emerald-800 hover:text-emerald-600">
                             Send open letter to Director Lisa Sumption
-                        </Link> with comprehensive documentation. She responds within 12 hours with procedural language, no commitments.
+                        </Link> with comprehensive documentation. She <Link href="/record/oprd/01K3HPAXBG8F4QZG4DJNDY5QY8" className="underline text-emerald-800 hover:text-emerald-600">responds within 12 hours</Link> with procedural language, no commitments.
                     </div>
                 </li>
 
                 <li>
                     <div className="font-semibold">November 15, 2025</div>
                     <div className="mt-2 text-sm">
-                        <Link href="/lisa-sumption/public-records-request" className="underline text-emerald-800 hover:text-emerald-600">
+                        <Link href="/record/oprd/01KA45NDXG8VA4XB2YG7M8G0F5" className="underline text-emerald-800 hover:text-emerald-600">
                             Issue Notice of Violation
                         </Link> for OPRD's failure to respond to public records request.
                     </div>
@@ -141,7 +141,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">November 18, 2025</div>
                     <div className="mt-2 text-sm">
-                        <PersonLink name="Tina Kotek" label="Governor Tina Kotek" />'s office <Link href="https://www.oprdvolunteerabuse.org/correspondence/complaints/governor-kotek-2025-11-18" className="underline text-emerald-800 hover:text-emerald-600">sent formal complaint</Link>.
+                        Send <Link href="/record/governor/01KACE2348G8VG3XPB3BGW3F1N" className="underline text-emerald-800 hover:text-emerald-600">formal complaint</Link> to <PersonLink name="Tina Kotek" label="Governor Tina Kotek" />'s office.
                     </div>
                 </li>
 
@@ -162,7 +162,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 7, 2025</div>
                     <div className="mt-2 text-sm">
-                        Send <Link href="/lisa-sumption/closure" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8 in therapeutic language and closes communication.
+                        Send <Link href="/record/oprd/01KBY6KNMGEGV4MZ98QEK6R8JP" className="underline text-emerald-800 hover:text-emerald-600">final message to Director Sumption</Link>, including supplemental surveillance evidence and video documentation. She responds December 8 in therapeutic language and closes communication.
                     </div>
                 </li>
 
@@ -183,7 +183,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">December 11, 2025</div>
                     <div className="mt-2 text-sm">
-                        Build dedicated section documenting <Link href="/lisa-sumption" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption's decisions</Link>. Send message: "I will continue my accountability work where it will have the greatest institutional effect."
+                        Build dedicated section documenting <Link href="/testimony/#the-director-and-her-deputy" className="underline text-emerald-800 hover:text-emerald-600">Director Lisa Sumption's decisions</Link>. Send message: "I will continue my accountability work where it will have the greatest institutional effect."
                     </div>
                 </li>
 
@@ -283,6 +283,49 @@ export default function TimelinePage() {
 
             <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
                 <li>
+                    <div className="font-semibold">March 3, 2026</div>
+                    <div className="mt-2 text-sm">
+                        OPRD Emergency Manager Jamen Lee <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">sends my letters to Captain Kyle Kennedy, OSP Government and Media Relations</Link>, copying Deputy Director J.R. Collier: &ldquo;Fyi &mdash; sharing for situational awareness since he is now including the Governor as well as our Director.&rdquo; His email closes: &ldquo;We can discuss more details if need be after our check-in with involved staff today.&rdquo; No crime alleged, no threat quoted. The entire chain below was unknown to me until OSP produced the file on September 3, 2026.
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 4, 2026</div>
+                    <div className="mt-2 text-sm">
+                        A threat assessment is ordered: the dispatch record reads &ldquo;Capt. Kennedy is requesting that a threat assessment be conducted asap.&rdquo; Kennedy <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">forwards Lee&rsquo;s email to Lieutenant Haley McQuillan</Link>, Criminal Investigations Division: &ldquo;Would you take a look at the info below?&rdquo;
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 6, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Lieutenant McQuillan <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">routes it to Detective Jake Hyde</Link>, OSP Portland, a Task Force Officer with the Portland FBI Joint Terrorism Task Force: &ldquo;some concerns in the Florence area.&rdquo; Before noon, Hyde forwards my name from his FBI account to FBI personnel Rebecca Long and Jared Russell: &ldquo;Name is Robert Samuel White out of Florence Oregon. But I don&rsquo;t have a DOB.&rdquo; At 1:14 PM Hyde reports back to McQuillan: &ldquo;Based on the website nothing is standing out to me more than what Parks and Rec sent you. Sounds like this person does have a grievance with the former employer.&rdquo; That afternoon Lee sends Hyde the documents &mdash; the dismissal letter, the Timeline of Events, a February 2026 email chain &mdash; copying Deputy Director Collier, and offers more: &ldquo;If your department would like to see any of the add&rsquo;l correspondence that&rsquo;s been directed to JR recently just let us know.&rdquo;
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 10, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Hyde <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">forwards the OPRD documents to Detective Jerred Nelson</Link>, Major Crimes Section: &ldquo;FYI for the guy in Florence. Give me a call later this week and we can talk about heading down there.&rdquo;
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 11, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Dianne Greenlee, Criminal Intelligence Analyst at the Oregon TITAN Fusion Center, Oregon Department of Justice, <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">writes to Hyde</Link>: &ldquo;Jamen Lee with OPRD shared the information about Mr. White&rsquo;s activities with the fusion center. I&rsquo;m documenting this activity for our internal awareness since Mr. White&rsquo;s actions border on harassment due to the volume of emails that he has forwarded to OPRD staff over the last year. However, I wanted to check with you to confirm that FBI/OSP is handling this and that OTFC does not need to conduct additional research on Mr. White.&rdquo; Hyde answers: &ldquo;Yes, that is correct. Just OSP it is not an FBI case.&rdquo; Her records sit in systems I cannot see or correct.
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 13, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Hyde sends Nelson my case: from his FBI account, <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">my DMV record and a report</Link> &mdash; &ldquo;WHITE,ROBERT SAMUEL DMV.pdf&rdquo; and &ldquo;ReportRobertWhite.pdf&rdquo; &mdash; &ldquo;still waiting from USFS guy to get back to me on the volunteer status.&rdquo;
+                    </div>
+                </li>
+                <li>
+                    <div className="font-semibold">March 17 — 22, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Hyde works with Forest Service Special Agent Matthew Oliver to locate me. On March 22 Oliver <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">delivers the reconnaissance</Link>: my volunteer schedule, my duties, my RV and Jeep, two screenshots from the onX Hunt hunting application with a waypoint pinned on the work center where I live, the gate and its lock, and the note that my Forest Service supervisor &ldquo;was told not to advise WHITE that FS LE was inquiring about his whereabouts.&rdquo;
+                    </div>
+                </li>
+
+                <li>
                     <div className="font-semibold">March 23, 2026</div>
                     <div className="mt-2 text-sm">
                         The eve of the anniversary of the dismissal.&nbsp;
@@ -290,6 +333,20 @@ export default function TimelinePage() {
                             Launch of Autonomy Realms
                         </Link> &mdash; a sovereign platform with Atlas mode, geotagged signals, and traces mapped to <Link href="https://rswfire.com/?mode=atlas&center=43.93035%2C-124.10868&zoom=15" target="_blank" className="underline text-emerald-800 hover:text-emerald-600">the exact ground where events occured</Link>.
                         Anniversary email sent with map screenshot showing signals linked to their park. Video recorded seeking legal representation. ACLU of Oregon intake submitted.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        At 2:21 PM Detective Nelson <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">opens the dispatch event naming me &ldquo;Suspect&rdquo;</Link>, with the basis: sending &ldquo;concerning emails to former supervisors in parks department and publicly airing grievances.&rdquo; At 2:33 PM he sends Sergeant Sean Henderson the &ldquo;Hasty Plan for Robert White knock and talk.&rdquo;
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">March 24, 2026 (morning)</div>
+                    <div className="mt-2 text-sm">
+                        Sergeant Henderson <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">notifies Lieutenant McQuillan</Link>: &ldquo;Just FYI, Jerred is going with Jake Hyde to Florence today in attempt to do a knock and talk with the guy who was upset with the state parks.&rdquo;
                     </div>
                 </li>
 
@@ -353,6 +410,13 @@ export default function TimelinePage() {
                         Ten days after the &ldquo;no records&rdquo; denial, and after I ask how the search was conducted, a <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">CAD dispatch record for the March 24 visit</Link> is printed inside OSP&rsquo;s Central Records Section. It is then withheld for three more months behind a fee I could not pay.
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">April 15, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Detective Nelson <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">closes the threat assessment</Link>: &ldquo;Ultimately White does not appear to be escalating on the pathway to violence&rdquo; and &ldquo;there is no evidence White has committed any crimes.&rdquo; The file remains: &ldquo;Case and assessment to be documented for information only at this time. Closed 4-15-26.&rdquo;
+                    </div>
+                </li>
             </ul>
 
             <hr className="my-6 border-t border-gray-300" />
@@ -405,6 +469,109 @@ The four named staff &mdash; the park manager, the park supervisor, the voluntee
                     <div className="font-semibold">July 27, 2026</div>
                     <div className="mt-2 text-sm">
 Oregon State Police <Link href="/evidence/police" className="underline text-emerald-800 hover:text-emerald-600">reopens PR27478</Link>, citing a &ldquo;thorough review&rdquo; that found &ldquo;additional records, not in our system at the time of the original request,&rdquo; with production estimated at three weeks. Second supplemental filed with the Attorney General.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">July 29, 2026</div>
+                    <div className="mt-2 text-sm">
+Phyllis Nelson, Oregon Department of Justice, issues the <Link href="/record/osp/01KYR0GMBRR83WH7FTFC90Y6DB" className="underline text-emerald-800 hover:text-emerald-600">Attorney General order, DOJ File No. 257001-GA0140-26</Link>, on the petition. Same day, I <Link href="/record/osp/01KYR9AFWRGCR1B546XC2YK3EP" className="underline text-emerald-800 hover:text-emerald-600">request the recorded video of the March 24 contact</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">July 30, 2026</div>
+                    <div className="mt-2 text-sm">
+Holly Bolton, OSP, answers the order by <Link href="/record/osp/01KYSZGF6GK4HMAJ6KRCDBAY46" className="underline text-emerald-800 hover:text-emerald-600">providing a fee letter as the exemption assertion</Link>. David Pitcher, Department of Justice, <Link href="/record/osp/01KYSZQ430YWS431STFM7QVWAD" className="underline text-emerald-800 hover:text-emerald-600">supplies the source of the exemption reference</Link>. I answer with <Link href="/record/osp/01KYT3WXB0SQYDSBMW57E9RFSA" className="underline text-emerald-800 hover:text-emerald-600">the checklist with one item</Link> and a <Link href="/record/osp/01KYTC9F30N5YX1ZNDM5A0563G" className="underline text-emerald-800 hover:text-emerald-600">records request on the fee letter itself</Link>, acknowledged as PR36445.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>AUGUST 2026</strong>: THE PRICE OF THE FILE</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">August 11, 2026</div>
+                    <div className="mt-2 text-sm">
+Micah Hubbard, OSP Central Records, identifies the PR27478 records and <Link href="/record/osp/01KZS0AAY88AYPJ32PDEZABW03" className="underline text-emerald-800 hover:text-emerald-600">names a fee</Link>. The same day he prices PR36445, the request about the fee letter itself, at <Link href="/record/osp/01KZS0AEV8KA95QQZVJBCKBQEM" className="underline text-emerald-800 hover:text-emerald-600">$16,315: approximately 27,000 letters, 650 hours, release 130 weeks after payment</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">August 14 &mdash; 29, 2026</div>
+                    <div className="mt-2 text-sm">
+I pay the PR27478 fee by money order. The payment crosses the state <Link href="/record/osp/01M0K3ECVRYYT8H5HSWTXV9475" className="underline text-emerald-800 hover:text-emerald-600">with a tracking number</Link>, is <Link href="/record/osp/01M0WVWBE0W125DD461TGHSTXG" className="underline text-emerald-800 hover:text-emerald-600">held at the post office</Link>, and <Link href="/record/osp/01M17CQRV0SHYB8VS0NYPP06B0" className="underline text-emerald-800 hover:text-emerald-600">USPS resolves the delivery</Link> on August 29.
+                    </div>
+                </li>
+            </ul>
+
+            <hr className="my-6 border-t border-gray-300" />
+
+            <h2 className="text-xl font-semibold"><strong>SEPTEMBER 2026</strong>: THE PRODUCTION, THE CLAIM, AND THE FEES</h2>
+
+            <ul className="space-y-6 border-l-2 border-emerald-600 ml-6 pl-6 mt-4">
+                <li>
+                    <div className="font-semibold">September 1, 2026</div>
+                    <div className="mt-2 text-sm">
+Chelsea Bradley, OSP Risk, <Link href="/record/osp/01M1EVZDA0BRTQTJ9JET9VCS8Y" className="underline text-emerald-800 hover:text-emerald-600">confirms preservation of the records, except item seven</Link>, which she calls beyond the scope of the process. I answer that <Link href="/record/osp/01M1EWKHV0WY1DBBNKH2RZVC0F" className="underline text-emerald-800 hover:text-emerald-600">item seven is a record</Link>. She <Link href="/record/osp/01M1EXBBJ0PB7VJXJA7FPVT6NZ" className="underline text-emerald-800 hover:text-emerald-600">forwards it to the CJIS team</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 3, 2026</div>
+                    <div className="mt-2 text-sm">
+Micah Hubbard <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">produces the PR27478 file</Link>. I publish it in full the same day. The production is the first sight of the March 3 email, the &ldquo;asap&rdquo; order, the task force distribution, the March 11 Department of Justice characterization, the &ldquo;Suspect&rdquo; dispatch event, and the &ldquo;Hasty Plan.&rdquo; The same day I <Link href="/record/osp/01M1M6H4RR51K8RXNASW5AB9RC" className="underline text-emerald-800 hover:text-emerald-600">state the production is not sufficient</Link>, serve <Link href="/record/osp/01M1N523F0WNM96C18DTDMK0NP" className="underline text-emerald-800 hover:text-emerald-600">formal notice of tort claim</Link>, and write to the Governor: <Link href="/record/governor/01M1MEQP4GVGV0ED9D555043P2" className="underline text-emerald-800 hover:text-emerald-600">your office was the reason</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 4, 2026</div>
+                    <div className="mt-2 text-sm">
+DAS Risk Management assigns <Link href="/record/osp/01M1PJ5NSR125CJQ606QX5ZXM1" className="underline text-emerald-800 hover:text-emerald-600">claim number P195403 and an adjuster</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 5, 2026</div>
+                    <div className="mt-2 text-sm">
+I file <Link href="/record/governor/01M1SQ1ZF04E04FHP6PEEXPVH2" className="underline text-emerald-800 hover:text-emerald-600">a public records request with the Office of the Governor</Link> and <Link href="/record/oprd/01M1SWHHM8QSPN71SK56Q97F8C" className="underline text-emerald-800 hover:text-emerald-600">one with OPRD for the Director&rsquo;s and Deputy Director&rsquo;s records</Link>, and write to <Link href="/record/oprd/01M1S53NH8C3YG644R0W1TG0DS" className="underline text-emerald-800 hover:text-emerald-600">the emergency manager</Link> and <Link href="/record/osp/01M1S5AS2G1PK98P6VYW8M9RSQ" className="underline text-emerald-800 hover:text-emerald-600">Captain Kennedy</Link> about what each set in motion.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 8, 2026</div>
+                    <div className="mt-2 text-sm">
+ODOT closes a records request as not the custodian, <Link href="/record/oprd/01M211VD50GEMFA0115K4FSWF6" className="underline text-emerald-800 hover:text-emerald-600">&ldquo;confirmed with Lisa Sumption&rdquo;</Link>. The Governor&rsquo;s office <Link href="/record/governor/01M2130110ZFY7MYKJHFN7X6RA" className="underline text-emerald-800 hover:text-emerald-600">begins gathering records</Link>, with its Government Accountability Attorney as contact.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 9, 2026</div>
+                    <div className="mt-2 text-sm">
+The <Link href="/record/lane-county/01M23T7F6GKVBM4NFTK7597P0Q" className="underline text-emerald-800 hover:text-emerald-600">Lane County request is filed</Link>, reference P015875-090926. Patrol Captain Felicia Sloan confirms the Forest Service officer&rsquo;s referral to the Office of Professional Responsibility is <Link href="/record/usfs/01M23VZK3887N5QPA6F01CSFH4" className="underline text-emerald-800 hover:text-emerald-600">an administrative investigation</Link>. I notify all records officers that <Link href="/record/osp/01M23HPNPR6XQVRBZHPF2F1HYD" className="underline text-emerald-800 hover:text-emerald-600">the requests are now tracked publicly</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 18, 2026</div>
+                    <div className="mt-2 text-sm">
+Katie Gauthier, OPRD, prices the September 5 request for the Director&rsquo;s and Deputy Director&rsquo;s records at <Link href="/record/oprd/01M2VE25T0WZXS6PE4BXJK0693" className="underline text-emerald-800 hover:text-emerald-600">$1,728</Link>, and the Timeline of Events version histories at <Link href="/record/oprd/01M2VEFTARQHQW029628GQA1Y7" className="underline text-emerald-800 hover:text-emerald-600">$80</Link>. Under OAR 736-001-0030 the fee waiver decision belongs to the Director, the subject of the request. I <Link href="/record/oprd/01M2VF2JXGC49DZZZDFKKMXS2J" className="underline text-emerald-800 hover:text-emerald-600">dispute both estimates; neither will be paid</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 20, 2026</div>
+                    <div className="mt-2 text-sm">
+I serve OPRD <Link href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710" className="underline text-emerald-800 hover:text-emerald-600">notice of conclusion of direct correspondence</Link>, and ask Dianne Greenlee <Link href="/record/osp/01M30EACB8FXZB4SQ3TA1ED1N3" className="underline text-emerald-800 hover:text-emerald-600">what exactly she documented about me, where it is maintained, and who received it</Link>.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 22, 2026</div>
+                    <div className="mt-2 text-sm">
+I tell Greenlee <Link href="/record/osp/01M34REGP0WY727F9TQGS959Q7" className="underline text-emerald-800 hover:text-emerald-600">a response is expected</Link>. The Governor&rsquo;s office estimates $572.50 for its records and <Link href="/record/governor/01M35TPA3RXRP0HY3NM9JHDJ8F" className="underline text-emerald-800 hover:text-emerald-600">denies the fee waiver</Link>, finding the request personal and the archive an undemonstrated means of dissemination. My answer, two minutes later, in full: <Link href="/record/governor/01M35TT090PFYFTHZ1GFFA5MKA" className="underline text-emerald-800 hover:text-emerald-600">&ldquo;I will pay it. Send the instructions.&rdquo;</Link>
                     </div>
                 </li>
             </ul>
