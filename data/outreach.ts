@@ -88,7 +88,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                         { label: "Testimony v1.10", href: "/records/outreach/attachments/01m36jqv3rzhqct4rrpp35jrjc-testimony-of-robert-samuel-white-v1-10.pdf" },
                     ] },
                     { label: "Specific request made", value: "Recommend the performance audit of OPRD volunteer-program controls now before the Audits Division." },
-                    { label: "Response received / date", value: "September 23, 2026 · Audit request directed to the Audits Division", href: "/record/outreach/01M37F6ZBRRW96CRGD4JMJQSSY/" },
+                    { label: "Response received / date", value: "September 23, 2026 · Both co-chairs answered: directed to the Audits Division", href: "/record/outreach/01M37F6ZBRRW96CRGD4JMJQSSY/" },
                     { label: "Follow-up / date", value: "None" },
                 ],
                 dispatch: {
@@ -345,7 +345,27 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 audience: "Complaint to the Special Agent in Charge about two men abusing the power and resources available to them: a JTTF task force officer who used FBI accounts, personnel, and data in a matter he stated in writing was not an FBI case, and a Forest Service special agent who mapped the requester's home, guided the visit, and spread his personal file to a county sheriff's office three days after the matter was found empty. Both are asked to be investigated.",
                 startingPoints: [{ label: "FBI Portland Field Office", href: "https://www.fbi.gov/contact-us/field-offices/portland" }, { label: "tips.fbi.gov", href: "https://tips.fbi.gov" }],
                 fields: ["Recipient / office", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
-                status: "Submission drafted.",
+                tracking: [
+                    { label: "Recipient / office", value: "Special Agent in Charge, FBI Portland Field Office" },
+                    { label: "Contact / submission route", value: "Email to the Portland field office, with the involved personnel and the accountability chain copied" },
+                    { label: "Date sent", value: "September 23, 2026" },
+                    { label: "Correspondence sent", value: "September 23, 2026 · Complaint to the FBI: the conduct of Task Force Officer Jake Hyde", href: "/record/outreach/01M382W278SJK9CDV86VW0PM2A/" },
+                    { label: "Material and version sent", value: "", links: [
+                        { label: "Complaint: Task Force Officer Jake Hyde", href: "/records/outreach/attachments/01m382w278sjk9cdv86vw0pm2a-2026-09-23-fbi-complaint-hyde.pdf" },
+                        { label: "Testimony v1.10", href: "/records/outreach/attachments/01m382w278sjk9cdv86vw0pm2a-testimony-of-robert-samuel-white-v1-10.pdf" },
+                    ] },
+                    { label: "Specific request made", value: "Investigate Hyde: the authority for each use of FBI accounts, personnel, and databases; what the FBI created and retains; and the supervision of a task force officer moving information between FBI and state systems." },
+                    { label: "Response received / date", value: "None received" },
+                    { label: "Follow-up / date", value: "None" },
+                ],
+                dispatch: {
+                    dateSent: "September 23, 2026",
+                    material: "Complaint · Testimony v1.10",
+                    correspondence: [
+                        { label: "September 23, 2026 · Complaint to the FBI: the conduct of Task Force Officer Jake Hyde", href: "/record/outreach/01M382W278SJK9CDV86VW0PM2A/" },
+                    ],
+                },
+                status: "Sent · Awaiting response",
             },
         ],
     },

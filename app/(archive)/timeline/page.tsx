@@ -569,6 +569,34 @@ I serve OPRD <Link href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710" className="und
                 </li>
 
                 <li>
+                    <div className="font-semibold">September 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        The March 13 transfer goes to federal oversight. I place it before <Link href="/record/outreach/01M37K9WT8ZHPBH432JWXH3TYV/" className="underline text-emerald-800 hover:text-emerald-600">Senator Wyden&rsquo;s whistleblower intake, the FBI, and the Department of Justice Inspector General</Link>, with every named officer copied; the Senator&rsquo;s office <Link href="/record/outreach/01M37MX2GGH83G886B89A9Y0H6/" className="underline text-emerald-800 hover:text-emerald-600">forwards it for review</Link> twenty-eight minutes later. I file the <Link href="/record/outreach/01M37MV4ZRW7F535J16WXD8TJ4/" className="underline text-emerald-800 hover:text-emerald-600">complaint with the Inspector General</Link>, and then the <Link href="/record/outreach/01M382W278SJK9CDV86VW0PM2A/" className="underline text-emerald-800 hover:text-emerald-600">complaint to the Special Agent in Charge of the FBI&rsquo;s Portland field office</Link> naming Task Force Officer Jake Hyde.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Oregon Department of Justice: I file <Link href="/record/doj/01M36H37GR1NF6QE4JC7TEMVSE/" className="underline text-emerald-800 hover:text-emerald-600">a public records request for everything the institution holds about me</Link>, nine categories, from the fusion center to counsel&rsquo;s files.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        The audit request reaches the legislature. I ask the co-chairs of the Joint Committee on Legislative Audits to <Link href="/record/outreach/01M36JQV3RZHQCT4RRPP35JRJC/" className="underline text-emerald-800 hover:text-emerald-600">recommend the audit of OPRD volunteer-program controls</Link>. Representative Sanchez&rsquo;s office answers in eight hours, <Link href="/record/outreach/01M37F6ZBRRW96CRGD4JMJQSSY/" className="underline text-emerald-800 hover:text-emerald-600">directing it to the Audits Division</Link>; Senator Lieber&rsquo;s office <Link href="/record/outreach/01M37Q8QD8TK4MTAZ78C320WMR/" className="underline text-emerald-800 hover:text-emerald-600">concurs</Link> three hours after that.
+                    </div>
+                </li>
+
+                <li>
+                    <div className="font-semibold">September 23, 2026</div>
+                    <div className="mt-2 text-sm">
+                        Lane County prices items 1 and 2 of request #26-825 at $71.91 and <Link href="/record/lane-county/01M37NEK20HHXERFEHAEVH42ZZ/" className="underline text-emerald-800 hover:text-emerald-600">denies the fee waiver in one sentence with no basis stated</Link>. Four minutes later it <Link href="/record/lane-county/01M37NN328BA8E4Y9FQQK8SV9V/" className="underline text-emerald-800 hover:text-emerald-600">declares all responsive records provided and closes the request</Link>. I <Link href="/record/lane-county/01M37PAPF8RQ085G4VT61QC15H/" className="underline text-emerald-800 hover:text-emerald-600">demand it be reopened</Link> and <Link href="/record/lane-county/01M38002VRNTCP2QPD6588EJSR/" className="underline text-emerald-800 hover:text-emerald-600">state my position plainly</Link>.
+                    </div>
+                </li>
+
+                <li>
                     <div className="font-semibold">September 22, 2026</div>
                     <div className="mt-2 text-sm">
 I tell Greenlee <Link href="/record/osp/01M34REGP0WY727F9TQGS959Q7" className="underline text-emerald-800 hover:text-emerald-600">a response is expected</Link>. The Governor&rsquo;s office estimates $572.50 for its records and <Link href="/record/governor/01M35TPA3RXRP0HY3NM9JHDJ8F" className="underline text-emerald-800 hover:text-emerald-600">denies the fee waiver</Link>, finding the request personal and the archive an undemonstrated means of dissemination. My answer, two minutes later, in full: <Link href="/record/governor/01M35TT090PFYFTHZ1GFFA5MKA" className="underline text-emerald-800 hover:text-emerald-600">&ldquo;I will pay it. Send the instructions.&rdquo;</Link>

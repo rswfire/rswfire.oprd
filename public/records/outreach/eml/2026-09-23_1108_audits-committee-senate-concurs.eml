@@ -1,0 +1,1075 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from IA1PR14MB6798.namprd14.prod.outlook.com (2603:10b6:208:3f2::9)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Wed, 23 Sep 2026
+ 18:08:38 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=BZ5by5GkzVNMuF86/ofMA/aUBUlZRNUSZlj26Bg22O31D2Jn7apLXax0BP3nMZyM1lnERxUe1XTfrDMXPhLbqliRUSYxKXWQT+4tpjx+auwl1nx74kMSOsmMJEsJZ554QHpBm9yGdQneHMBs2SJzJUWbUDW/o7cXptw0g1ltF8hyWInwgL4jnWbxDzbk8e6IvriXmpBH+9j6oaylwgjnDfFBbytBNcwhv8scN8qq6wdc7AWYCrsiDOc7BDXJo48rVsmsi0qgs2rUvW44BznN9+TmIlTDy94pOBnvX1fM/qsaOXkothsCZjYnuSrtDEGHzdC7PLBENHHDQSVRnXwmeQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=ZatK64Cnlz828EmdDVs8aV1b4huDm8acesm8dgYlAMg=;
+ b=aLoi3hohqI8O8IVfkh0X7Ga4HjRkcv/wz/DQlTRW9tE8aIzxiRSwXEEx2ve98rGC1NUrstPY5w2yjzUVR1hcSwLeHFHrXeoug2B9EyflGhJdkXt6TyYGLLapmjnijIpsUeREu8vjL5vhs4kSZFhyZKiYzhdNZioRtp6mj4uM29It3Xj1t5O8Xv4SbwMeg8Be7SpAZ8Yzr2UD+YK8d853C/PrsR39pJfgerFiTKBQI4kYIOO4d7Cc6KR+LqgrzdcUFaHwDeeNTK06tXvXOLjWRW3N2cftOcBqLWSpW2+BNpML4h+tottOhVY4jRc/WIjn0Xh9t/OB0Wz6hZkWF0TREw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c10e::1) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oregonlegislature.gov; dmarc=pass (p=quarantine sp=none
+ pct=100) action=none header.from=oregonlegislature.gov; dkim=pass (signature
+ was verified) header.d=oregonlegislature.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oregonlegislature.gov]
+ dkim=[1,1,header.d=oregonlegislature.gov]
+ dmarc=[1,1,header.from=oregonlegislature.gov])
+Received: from BN9PR03CA0068.namprd03.prod.outlook.com (2603:10b6:408:fc::13)
+ by IA1PR14MB6798.namprd14.prod.outlook.com (2603:10b6:208:3f2::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.14; Wed, 23 Sep
+ 2026 18:08:29 +0000
+Received: from BN3PEPF0000B06A.namprd21.prod.outlook.com
+ (2603:10b6:408:fc:cafe::49) by BN9PR03CA0068.outlook.office365.com
+ (2603:10b6:408:fc::13) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.14 via Frontend Transport; Wed,
+ 23 Sep 2026 18:08:29 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 2a01:111:f403:c10e::1) smtp.mailfrom=oregonlegislature.gov; dkim=pass
+ (signature was verified) header.d=oregonlegislature.gov;dmarc=pass
+ action=none header.from=oregonlegislature.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oregonlegislature.gov
+ designates 2a01:111:f403:c10e::1 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c10e::1;
+ helo=SA9PR09CU002.outbound.protection.outlook.com; pr=C
+Received: from SA9PR09CU002.outbound.protection.outlook.com
+ (2a01:111:f403:c10e::1) by BN3PEPF0000B06A.mail.protection.outlook.com
+ (2603:10b6:40f:fc02::105) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.0 via Frontend Transport; Wed, 23
+ Sep 2026 18:08:29 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=iqcCawpfKURppnm+OJPjRsbu9h8bywn6bnTRi37lUdRzBrk2+D7y3dH79B5C6uW1uc2ZlPL5SXZsfKGZYZ01FC2CRoaow3ATlzRH+ztugv/5lCeKhtzHt+EOkqZADvrSTjHFO8OYrv9QqG+CThiida+TcBPd7Okx/xGsDV1Udcj5RlqFbo1aYiTGTf4EX8WV/NmfqtD+8snyuFrDrzRFXPgNrv7MD2iWWkk8wFrloC+AqnwVOu/Mpvs5k65NlCFna5gXPyjkhqbrEwK2y7bfAizT1GYkCXtG3hGOM8O8My4K2H0UAgjAyDAs52WWsbO8JX8MG/9POMqypMDntcNBmA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=ZatK64Cnlz828EmdDVs8aV1b4huDm8acesm8dgYlAMg=;
+ b=NTSu2D1LIzQ3IicN6Yn20Cy+jhKRKEQFNXlOogaxf0L54R/X11PUdU9TZI+d6IkPfWxnTbtLjLgvcbm5htmu+yu60ybP3FoWlAKTzUP358+W47N+PKHhsKL+8XYJiI6H0VQKYfXkk9L/MP65m5f4eakO2mcVTDVb+saLnjQvMbrsGJFaCuuhKdzZ2KDsI69BWxRzRQ8Wam36BH4+nzb1rBPGAdAW2wYy9S6W6QkEphZiHshvIbgHWxGN+4/A/r8bZ4IYMG//JvzBYHwqqLsgX59lviIjf2I1WoVt5F6rRgpbZYLbwMFhMnMrk6XzEIA/dlCtwhvsAiE1q2Ii8t9uhg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oregonlegislature.gov; dmarc=pass action=none
+ header.from=oregonlegislature.gov; dkim=pass header.d=oregonlegislature.gov;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregonlegislature.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ZatK64Cnlz828EmdDVs8aV1b4huDm8acesm8dgYlAMg=;
+ b=SbdSR7icXVQyyf1n5Qy5+494TfauXm6nXK7h2hiZlRRXuVOvKJsiaKdWBUoZd/4VrCRTCdpzCzVI1Ss07RKuSlj90zW5J0pAGehk0Q5wca9sDZV4divGRIqN3XsMTREhw6tU936vMKLoTXC4IAYZiZJITb5KZtFt5JJm+qG7jAU=
+Received: from CO6PR09MB8024.namprd09.prod.outlook.com (2603:10b6:303:c9::7)
+ by BLAPR09MB6594.namprd09.prod.outlook.com (2603:10b6:208:2a5::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.17; Wed, 23 Sep
+ 2026 18:08:25 +0000
+Received: from CO6PR09MB8024.namprd09.prod.outlook.com
+ ([fe80::1c0a:926f:efff:c748]) by CO6PR09MB8024.namprd09.prod.outlook.com
+ ([fe80::1c0a:926f:efff:c748%3]) with mapi id 15.21.0451.014; Wed, 23 Sep 2026
+ 18:08:25 +0000
+From: Sen Lieber <Sen.KateLieber@oregonlegislature.gov>
+To: Rep Sanchez <Rep.TawnaSanchez@Oregonlegislature.gov>, Robert Samuel White
+	<rsw@rswfire.com>
+CC: "oprc.publiccomment@oprd.oregon.gov" <oprc.publiccomment@oprd.oregon.gov>,
+	"risk.management@das.oregon.gov" <risk.management@das.oregon.gov>, "Governor
+ Kotek * GOV" <governor.kotek@oregon.gov>
+Subject: RE: Request for audit consideration: OPRD volunteer-program controls
+Thread-Topic: Request for audit consideration: OPRD volunteer-program controls
+Thread-Index: AQHdSy0vFykBNbQUk0KZc3SPtXVNJrbcTGnAgAAp4xA=
+Date: Wed, 23 Sep 2026 18:08:25 +0000
+Message-ID: <CO6PR09MB80246880126898C12C897B3D83822@CO6PR09MB8024.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181B207302FEE4491701BE2AD822@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <SJ0PR09MB73733A00BF9807AB3D1D3FA797822@SJ0PR09MB7373.namprd09.prod.outlook.com>
+In-Reply-To: <SJ0PR09MB73733A00BF9807AB3D1D3FA797822@SJ0PR09MB7373.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oregonlegislature.gov;
+x-ms-traffictypediagnostic: CO6PR09MB8024:EE_|BLAPR09MB6594:EE_|BN3PEPF0000B06A:EE_|IA1PR14MB6798:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: d9f1cf6f-8a7b-4a83-4203-08df199dabe3
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|6049299003|1800799024|23010399003|366016|10067099003|56012099006|4143699003|38070700021|8096899003|22082099003|18002099003|4053099003|4013099003;
+X-Microsoft-Antispam-Message-Info-Original: O/cflb4wKgPlAcIdix6oeq5XItQnMfw3VjaBPJuiO+dh1LpFeeUDcAVq/uIcj9Ssmn/2VL4d5IJEHH4ityzxR+nlsgB4jmtE66wFBg18hJPq/D6+vU9CTNXp+cEoobQGQf3OVooDo8UfNjlY52WiSDYuTxC1VLyRA7nerLLgRJAHsDqPzMzeFMVYwdO6t/hciiJOQv2djJfAhT7PrwEhgbv522cOiGpWhmn+P5kkoFVHly3oVPfjxF2Ynt83lnfRBUVEHuDRmP5JuoJfxaw8H0UDMrWtyRoSuiaA0uhiRHkmA7QoKzDDO1x9CkSIm9nY88aAPmdrr1ZQ/wZQVEi19twmj+0xcs4hSbwoEdlQAAr45z7imU1LSujudAxBCx1XKo2cihjWNvTNj/xOYwLV5gJ7ppNpcOaJUUdiMy0VPixL3idUStFw913v1nm3OZr4Wb+jwc6vwODKwzXrQGOdQYzXriLvThrv5AIQWuV6f7rjv1s6pEQpJj2AwSUmZkper6PRi7S1Q2GreHF51KHNtWbC0Kl0ymA5iI785FsDh+cayZjn5wjo77Z2LwSfha9U5/qqjEU+8lKeBzavWgatE4oHL0iCBXWS0NnBqIoJ7GU8x/g3PCHcJO6kRzAFYNNGz1w9f7nhAWM7NlEJ8L4QZZoPg3rLeRXBPoCs3hzghA8XNduL58fHOWv2PPl1/15U+AI6slJBscKuENpO7keCA0WxP/5o22buc5Y1HVRHCJA=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB8024.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(6049299003)(1800799024)(23010399003)(366016)(10067099003)(56012099006)(4143699003)(38070700021)(8096899003)(22082099003)(18002099003)(4053099003)(4013099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?HeLL6v5GgEfrZPaMreymsJuHh2n5GyrlFgB2vp9AWZNKT/UE3zicFaMflW2z?=
+ =?us-ascii?Q?78mLQU0E94wV1cbEMsB4M7VNk9pxTiVkSNOOCrrK3jOIUrUmpwC3bTwy1iO9?=
+ =?us-ascii?Q?vodkD/LlfhKMH6GKz4K4jLc+hPYGSCA8NlbfU1RI+HhwH0yo2QPpW780sKaR?=
+ =?us-ascii?Q?qXyYoyKVxSvsNgJOjPkOwQD8rAzASDjpeBPngIxWLjtuWImGF0PQM8uuFYUv?=
+ =?us-ascii?Q?lunhdSxnkPiWuGw5qIW4nskCoNTP1usJDDLyYnvE/Y3yUcjpM5KvNp4WMd1b?=
+ =?us-ascii?Q?Bu9liwEcusKhWQ0CLRgEl8kmV69jLtw8CZonHRhFvdTuPcb4I9uxMXF559LT?=
+ =?us-ascii?Q?62+lE42rwgJdUg/bNvmE+q/XPMamPJrYSNZ8vMRWeafEqhapoCFY0yZ6CRs0?=
+ =?us-ascii?Q?Y7wbV592VgOx1Gl82jMI5t4Lg92DlEOW6aGGAjghcMpvQ3FQEvwwWBLUxSD6?=
+ =?us-ascii?Q?IUYmEq/nmwDKAuJDCrEfSu5my9auCKcdwZ3nikO2r6irCxDeSmi45CyVdiNo?=
+ =?us-ascii?Q?80zzxaXJzhHr78GXbsJs0o/ktoqOFSicAkHNJIovQgqmkR3yOPqBupbctC1t?=
+ =?us-ascii?Q?CjsnAGkSYCNOsoy5/hq3XA+vvNtowC9FPO6qjL0Yi8V2F+dhXdnKR1S3aTnv?=
+ =?us-ascii?Q?soA3OqY8zUfYiJKvyblEGXVAHMEncNT6a+GtmIV78GiOTeUcPpEjo9VVr//v?=
+ =?us-ascii?Q?J0eAbKw33KIvwb8pIktsIGkX914hcpU3RJ4WEWl/9GZD1A2Tv4Hw0dMVeWR/?=
+ =?us-ascii?Q?qfYDfHVMcW2/P+xr974OeLQPm/1eP34S0xd7vqeixYZfzUfQMCjxYAnRf0Oq?=
+ =?us-ascii?Q?w7GqiFxxvWzMd9UHLVADPLALyehJedRZt8hjAq0KrHbAJ1QaGYNN0F+vi0kF?=
+ =?us-ascii?Q?YtdVGMrBK/ewHPZDB27zhVia1qZPSDbA0F52IkeruHe1UbDsL5AixXf7RDDl?=
+ =?us-ascii?Q?pnrNhaRN9WyizXMBhLCCaq3umPi0ngKcN3/09CG84iUBb5fYS10BBwx11BC1?=
+ =?us-ascii?Q?xVu/IMcmTQs0KrawTenL4ys5g/hyX6uixlS5Rrwh0Ju8Hwa535/PGYX1Bqjb?=
+ =?us-ascii?Q?M7XeiP8U0SPFlrlffFXg4rDroAETe/0w21drUigfB4R+FWXrFakVyCqLVEGn?=
+ =?us-ascii?Q?lYRjAaHYr+dVU3EgexIPdDRH91GnpGXjLqm2fjMR6ipENEEzjDpqDgBghDTW?=
+ =?us-ascii?Q?eZz7jtQSmKmUzB4RavVLrdDx7mMZ5S9uFYwVENZliUGSa8zu5vlisq4c0Yy0?=
+ =?us-ascii?Q?Zd/q9o7/WmqYPERJ0mRSEuDP5UAz0rdBqGAz/fnVZHtN1JqjHIZRzqnXVQgS?=
+ =?us-ascii?Q?qCLjP/wfIuS1BB/SYWlP8bMEGb0+Ersk82lhdoWOhUMw1y54xWLKaCPrhoXQ?=
+ =?us-ascii?Q?k1g6hXtcE48NslFe3olwzHQ9L6rUfiGBcZmRv2yTgHQ6rwtu3vg1da7BcvJQ?=
+ =?us-ascii?Q?O2jFiR6Y7CxgfFJ25JjmMFwKzsAawnnvumK7pf/h1GHdpBYAaSY5bc/6L3eD?=
+ =?us-ascii?Q?OvMyiypEVsgByfEWRP2VUZYQ32NKpzkwqMFn98uXgFghij8g8HDMOIMmVunN?=
+ =?us-ascii?Q?E4hDtJ+YonHgHXgFJkQpv9OtEUQ/CG0ruQQiGDk5qqFaRv9vjO2NteOq87S8?=
+ =?us-ascii?Q?l7Wsh0kSw801j8zUbF7OcsFr1sxTy/zepMq7j422nQiWsAXNwfR+DEGkc9i+?=
+ =?us-ascii?Q?ht8F//KShTnmIJIrHAqtHzXQncf/sJER7tbTKlF2Dbq2YOXGOzSyMw1mQ2w3?=
+ =?us-ascii?Q?aMXms4yb+/e5jMPOn9aIBi1IGvo1CD0=3D?=
+Content-Type: multipart/related;
+	boundary="_004_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BLAPR09MB6594
+Return-Path: Sen.KateLieber@oregonlegislature.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Sep 2026 18:08:29.4257
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: d9f1cf6f-8a7b-4a83-4203-08df199dabe3
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BN3PEPF0000B06A.namprd21.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BN3PEPF0000B06A.namprd21.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BN3PEPF0000B06A.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 8318fe40-7960-4ff6-ef78-08df199da968
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Antispam-SubmissionContentType: Mail
+X-MS-Exchange-Antispam-SubmissionContentSubType: Msg
+X-MS-Exchange-Antispam-SubmissionIds: b9b61230-737a-426f-c44c-08df199daf4a
+X-MS-Exchange-Antispam-FeedDropEnabled: True
+X-MS-Exchange-Antispam-FeedCategory: 7801
+X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Antispam-FeedType: PHISH
+X-Original-X-MS-Exchange-Organization-Antispam-FeedCategory: 7801
+X-Original-X-MS-Exchange-Organization-Antispam-FeedType: PHISH
+X-MS-Exchange-Antispam-FeedbackProcessingScenario: ENT
+X-MS-Exchange-Antispam-SubmitterEmail: Sen.KateLieber@oregonlegislature.gov
+X-MS-Exchange-Antispam-SubmitterOrganizationId: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|7149299003|35042699022|6049299003|6073799003|6113799003|6133799003|16102099003|55112099003|22082099003|18002099003|13003099007|4053099003|4013099003|8096899003|4076899003|19002099009|8123199003|10067099003|5063699009|4143699003|56012099006;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c10e::1;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA9PR09CU002.outbound.protection.outlook.com;PTR:mail-southcentralusazlp170100001.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(7149299003)(35042699022)(6049299003)(6073799003)(6113799003)(6133799003)(16102099003)(55112099003)(22082099003)(18002099003)(13003099007)(4053099003)(4013099003)(8096899003)(4076899003)(19002099009)(8123199003)(10067099003)(5063699009)(4143699003)(56012099006);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Sep 2026 18:08:29.2828
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d9f1cf6f-8a7b-4a83-4203-08df199dabe3
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BN3PEPF0000B06A.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA1PR14MB6798
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:09.4089967
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?DnIOAPErRNAAumwOWCA06ipl+Y7fOIU1nsnYduZUCZ1O3axW1H0nq9jC?=
+ =?Windows-1252?Q?mzHzXAKvD/5062vXLRKs0pewGbgOA0WqJO2h5Ps1aeY3tWN1XzVmfklR?=
+ =?Windows-1252?Q?AgSLPHvvubM7L288x3SYoNNgBS3O1n8EMq5T3kmqaulhBo5NuO+8dvCx?=
+ =?Windows-1252?Q?iLVtEaDKhgkTrUJIJFa5Gxx+nduyExk3HkJYOPE6vjRb0Am6Ujm/F8sI?=
+ =?Windows-1252?Q?sVDsh/aifchotveqQqmaAvwBFmEj/clFk4oATN8CymVGc3NyLuQm+0qT?=
+ =?Windows-1252?Q?AvZGjqNt+1hSc6ZcEkSSFcNDFuS2PdRixGm6PmOtHPh7mo04+QwO+peM?=
+ =?Windows-1252?Q?jYyVQCLXdHK2oK/37p4yQYYXhcIXLAp7GeHWpSpV6Cy1qBJXG0J0zooH?=
+ =?Windows-1252?Q?4BduIJ+7s4XUBN5lL1PQ1ng8gQq3N/z2NWZL4ga81nFt2xsaAw8fSVcA?=
+ =?Windows-1252?Q?asQyEv/70DcOuOMXxzfuw0vc54rkC+Ar9wHgndaLwdaVpyFu2VdIAwLM?=
+ =?Windows-1252?Q?/VyUb6mObXN1z+0sejL7J2WDvOZH7NtjEJEss2ugfCvTQKkkwZSil9Wi?=
+ =?Windows-1252?Q?YBgc/2MuOE/Egq9/2Hyaqxs2zk85w4NPbcJIqmaaCNm7xXCoYH/rNaGT?=
+ =?Windows-1252?Q?49Gy58YG/WA7uFHKY/onnBDqNSxYTQlPN5QQwelXHnC89WXfX+o9S2q0?=
+ =?Windows-1252?Q?TeWHYtLVykoq/gOJS7yhjZFvq2kXtPUkf+y5XfBr8idx2KXQ2aUHV1gP?=
+ =?Windows-1252?Q?r42PMEm3sjLLLpDnLDcdBPrG6pMPtl34Rh3Lc8st/gZouH6GBIaRnX67?=
+ =?Windows-1252?Q?TXA6OLnYmIRpyTb7XDugWnk6hVNRpTaQmjTaPuwKWRKIMjP9T9BmjFs8?=
+ =?Windows-1252?Q?oz4egobSwbfR7n3G2pSJ34tFPSRynNT7fweCpWsarYT60AA/+ZRjgxeI?=
+ =?Windows-1252?Q?Vnfeh+oukL4zbSfD3WvKA+kdNVEyucg8rKfNDDk5Wx4132W7m0AZ90Ua?=
+ =?Windows-1252?Q?6qqNLVpw3nEJQpqlPRAHPpbJFCLHXvISIET9zsVvidCtu+/hDILmZBSs?=
+ =?Windows-1252?Q?4BrjqS4Jxkyl7SLNZWh14OXmCNaNmOJjZ4kxPNDVrWXdmrKFSkAdwZkU?=
+ =?Windows-1252?Q?fHA2cOV9vTwzZwmVFDXlvKPCI7ZeIhTZGitlHlN+9rX4Eu7YWTiCWmfn?=
+ =?Windows-1252?Q?9jr3s6XF52c0dzM3aYiYG+VFHbt/ZVZZwfubcrWFb3fW2MkZ9On+ykik?=
+ =?Windows-1252?Q?RIwbCBRetbcYLEFl0126zFBSF8vsSG6md1VGOR7HBaGckVuMyBFVFJQe?=
+ =?Windows-1252?Q?3oJq4tE3z715P7iEKNYKHk4xlq2Smx8B2TySxQTwzK4eDYlbjKk6kX2f?=
+ =?Windows-1252?Q?hXWMqf64may+O2G6kIyb8MUOVwNxCAPADDnAvHAyyzaCwApqLhxD4zf7?=
+ =?Windows-1252?Q?WlYPP/Z64aV3j1d4sjtwODyDyOi6TIdgtlQjQIg80nfVBwJl1TeokZdj?=
+ =?Windows-1252?Q?+nfVTi1XnyUEUDF2xjLck3shjzeKy9EFt0EDsxEwRuy5//m2KetjMwW0?=
+ =?Windows-1252?Q?SvgFIiiKfl3w6UMLzc1fCArHnWWEBdgPyQL9INb8Q4/0TFqiO+xRElow?=
+ =?Windows-1252?Q?mYpR8+XP1aTepJvKIubGYv8ACq9lNYK4JAC7RsH8GlWcG3yNBKUO3WF+?=
+ =?Windows-1252?Q?KIdns7xTXNYqBN3Hek8u3H/JTRpac1/VwIYG+UlrWilWFJEuLOE0cdB9?=
+ =?Windows-1252?Q?09VXC0uZaXZKIsHvl2tRf1/i0QVZ4PFq65yOEgC04f/vptlJ5kS+aaLQ?=
+ =?Windows-1252?Q?eDJVmPYdhuPPM2Aki8YBGSlVZSCQ5TbrCvEorPG4JphvhmUWOqVcBU4v?=
+ =?Windows-1252?Q?Cg1G7QUjfNlMwTzyTIUG/+UADVX8S3MtGhLjt6ww7gn1d0TEurHxQwwS?=
+ =?Windows-1252?Q?gP0vGtIs4SsjJTa38sPPW92NS/LhRj5UgMO+W53kFCF7F/0vnTSnFP6j?=
+ =?Windows-1252?Q?chAizMsQ4sT6hvyYhOkLf13vCArmDRh+lDBBuXGC4J7vZpEi1ERxdhK6?=
+ =?Windows-1252?Q?aIGs1CrIR3GagFvm6B+Xd10ph55fe9nVOUDU/Ll1ONp1hkrsrXeT7u9H?=
+ =?Windows-1252?Q?M6Z8FVAi5j0lrqCC/QXxTa8R3nXSnSsp2oivbiw5WxXc+lBvT+VifPQi?=
+ =?Windows-1252?Q?fVx8gi8zS/uAFPFiGIYrtaCTLTEEGgwWedwBdPQV+6F1VOyZjQnn0KvY?=
+ =?Windows-1252?Q?8gAaSTeMmHcFPXyWKOL3avJCcKvRB1jraBGlvzp2CCkhwvpiiVTGIbVt?=
+ =?Windows-1252?Q?u8g9pfoVmOfFsnjMpHr4dpJ/bxW3RAmM+OgwfQQQ9gseO1s+qkQHTW+L?=
+ =?Windows-1252?Q?9kL00HKywMtEHbDtXroa4TMIOqnhyuXSV2YOm9PHIlpo5BYesAjynpFq?=
+ =?Windows-1252?Q?QYbdlWpkVT33TLZHFStigN2LEX1nL+tkiLrOft8nYvlc58t8zhJAaZdK?=
+ =?Windows-1252?Q?CqazbRVeZ3H4Ya+XPSFxr38hEnNK3HJevh0wIknVYYCifZ/HbBtUbIS9?=
+ =?Windows-1252?Q?7rkKfwdnd7Tqp9aAvfapukyfS1zUghDnqq1IlMtaA16lGNpvppgcmrKp?=
+ =?Windows-1252?Q?I+R7y1CgFjEuMbHa/nS4y4jD6XQjUB3HTcYOd7GdTcYcmVXYboNCmH5Y?=
+ =?Windows-1252?Q?XGglP9S/D3db2P9sIgfv/OT62AS5miE62fJZQiTO/tAWgYVdSH1MPst+?=
+ =?Windows-1252?Q?adPWUr/ECzqWUD7SaE6u8rnTg5q1GDdaoOWIld/DjMeaAzL94ggKWTVa?=
+ =?Windows-1252?Q?cb3SeQ=3D=3D?=
+MIME-Version: 1.0
+
+--_004_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_"
+
+--_000_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Thank you for reaching out. Our office has seen your request and concur wit=
+h the information Jon shared.
+
+Thank you,
+Tatiana
+
+[A picture containing text  Description automatically generated]
+
+Tatiana Amrein
+Chief of Staff
+Office of Senator Kate Lieber, SD 14
+O: (503) 986-1714
+She/Her/Hers
+
+Please note that all emails sent to and from this email address may be subj=
+ect to disclosure under Oregon's public records laws.
+
+
+
+From: Rep Sanchez <Rep.TawnaSanchez@Oregonlegislature.gov>
+Sent: Wednesday, September 23, 2026 8:48 AM
+To: Robert Samuel White <rsw@rswfire.com>; Sen Lieber <Sen.KateLieber@orego=
+nlegislature.gov>
+Cc: oprc.publiccomment@oprd.oregon.gov; risk.management@das.oregon.gov; Gov=
+ernor Kotek * GOV <governor.kotek@oregon.gov>
+Subject: RE: Request for audit consideration: OPRD volunteer-program contro=
+ls
+
+Good morning Mr. White,
+
+Thank you for reaching out to our office regarding this situation with OPRD=
+. In terms of how the process works regarding audit requests, those request=
+s go through the Secretary of State's Audit Division, and they determine if=
+ there is an adequate basis in order to conduct an audit based on a state a=
+gency's "waste, inefficiency or abuse of government resources."
+
+You can submit that request here: Report Waste, Inefficiency, or Abuse of S=
+tate Government Resources | Oregon Secretary of State | State of Oregon<htt=
+ps://sos.oregon.gov/audits/Pages/accountability.aspx>
+
+If the SOS's office determines that there is a basis for an audit, then the=
+ audit is set to begin based on the ability of the office to conduct it, an=
+d it is calendared and the process can take 1-2 years.
+
+At that point, the Joint Legislative Audit Committee (JLAC) reviews audits =
+from the SOS's Division of Audits, and the committee is responsible for sel=
+ecting audit reports for review and recommending changes or remediation.
+
+Thank you again for reaching out to us.
+
+Sincerely,
+
+Jon Pugsley
+Legislative Director
+
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Wednesday, September 23, 2026 12:30 AM
+To: Sen Lieber <Sen.KateLieber@oregonlegislature.gov<mailto:Sen.KateLieber@=
+oregonlegislature.gov>>; Rep Sanchez <Rep.TawnaSanchez@Oregonlegislature.go=
+v<mailto:Rep.TawnaSanchez@Oregonlegislature.gov>>
+Cc: oprc.publiccomment@oprd.oregon.gov<mailto:oprc.publiccomment@oprd.orego=
+n.gov>; risk.management@das.oregon.gov<mailto:risk.management@das.oregon.go=
+v>; Governor Kotek * GOV <governor.kotek@oregon.gov<mailto:governor.kotek@o=
+regon.gov>>
+Subject: Request for audit consideration: OPRD volunteer-program controls
+
+CAUTION: This email originated from outside the Legislature. Use caution cl=
+icking any links or attachments.
+
+Some people who received this message don't often get email from rsw@rswfir=
+e.com<mailto:rsw@rswfire.com>. Learn why this is important<https://aka.ms/L=
+earnAboutSenderIdentification>
+Attached is my letter to the committee, dated September 23, 2026, requestin=
+g that the committee recommend a performance audit of Oregon State Parks vo=
+lunteer-program controls. The same request has been before the Secretary of=
+ State's Audits Division since September 21, 2026.
+Please acknowledge receipt.
+Robert Samuel White
+
+
+--_000_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for reaching out. Our office has seen your=
+ request and concur with the information Jon shared.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div>
+<p class=3D"MsoNormal" style=3D"background:white;vertical-align:baseline"><=
+span style=3D"color:#212121;mso-ligatures:standardcontextual">Thank you,</s=
+pan><span style=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white;vertical-align:baseline"><=
+span style=3D"color:#212121;mso-ligatures:standardcontextual">Tatiana</span=
+><span style=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">&nb=
+sp;<o:p></o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr style=3D"height:71.7pt">
+<td width=3D"108" style=3D"width:81.3pt;padding:.75pt 5.4pt .75pt 5.4pt;hei=
+ght:71.7pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;vertical=
+-align:baseline">
+<span style=3D"color:black;border:none windowtext 1.0pt;padding:0in"><img w=
+idth=3D"94" height=3D"106" style=3D"width:.9791in;height:1.1041in" id=3D"x_=
+_x005f_x0000_i1026" src=3D"cid:image001.png@01DD4B4B.D972C230" alt=3D"A pic=
+ture containing text=0A=
+=0A=
+Description automatically generated"></span><span style=3D"mso-ligatures:st=
+andardcontextual"><o:p></o:p></span></p>
+</td>
+<td width=3D"426" valign=3D"top" style=3D"width:319.2pt;padding:.75pt 5.4pt=
+ .75pt 5.4pt;height:71.7pt">
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><b><span style=3D"=
+color:black;mso-ligatures:standardcontextual">&nbsp;</span></b><span style=
+=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><b><span style=3D"=
+color:black;mso-ligatures:standardcontextual">Tatiana Amrein</span></b><spa=
+n style=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"col=
+or:black;mso-ligatures:standardcontextual">Chief of Staff</span><span style=
+=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"col=
+or:black;mso-ligatures:standardcontextual">Office of Senator Kate Lieber, S=
+D 14</span><span style=3D"mso-ligatures:standardcontextual"><o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"col=
+or:black;mso-ligatures:standardcontextual">O: (503) 986-1714</span><span st=
+yle=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><i><span style=3D"=
+color:black;mso-ligatures:standardcontextual">She/Her/Hers</span></i><span =
+style=3D"mso-ligatures:standardcontextual"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><i><span style=3D"color:black;mso-ligatures:standard=
+contextual">&nbsp;</span></i><span style=3D"mso-ligatures:standardcontextua=
+l"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:black;mso-ligatures:standard=
+contextual">Please note that all emails sent to and from this email address=
+ may be subject to disclosure under Oregon&#8217;s public records laws.</sp=
+an></i><span style=3D"mso-ligatures:standardcontextual"><o:p></o:p></span><=
+/p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Rep Sanchez &lt;Rep.TawnaSanch=
+ez@Oregonlegislature.gov&gt;
+<br>
+<b>Sent:</b> Wednesday, September 23, 2026 8:48 AM<br>
+<b>To:</b> Robert Samuel White &lt;rsw@rswfire.com&gt;; Sen Lieber &lt;Sen.=
+KateLieber@oregonlegislature.gov&gt;<br>
+<b>Cc:</b> oprc.publiccomment@oprd.oregon.gov; risk.management@das.oregon.g=
+ov; Governor Kotek * GOV &lt;governor.kotek@oregon.gov&gt;<br>
+<b>Subject:</b> RE: Request for audit consideration: OPRD volunteer-program=
+ controls<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Good morning Mr. White, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for reaching out to our office regarding t=
+his situation with OPRD. In terms of how the process works regarding audit =
+requests, those requests go through the Secretary of State&#8217;s Audit Di=
+vision, and they determine if there is an
+ adequate basis in order to conduct an audit based on a state agency&#8217;=
+s &#8220;waste, inefficiency or abuse of government resources.&#8221;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">You can submit that request here: <a href=3D"https:/=
+/sos.oregon.gov/audits/Pages/accountability.aspx">
+Report Waste, Inefficiency, or Abuse of State Government Resources | Oregon=
+ Secretary of State | State of Oregon</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">If the SOS&#8217;s office determines that there is a=
+ basis for an audit, then the audit is set to begin based on the ability of=
+ the office to conduct it, and it is calendared and the process can take 1-=
+2 years.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">At that point, the Joint Legislative Audit Committee=
+ (JLAC) reviews audits from the SOS&#8217;s Division of Audits, and the com=
+mittee is responsible for selecting audit reports for review and recommendi=
+ng changes or remediation.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you again for reaching out to us. <o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Jon Pugsley<o:p></o:p></p>
+<p class=3D"MsoNormal">Legislative Director <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;<a hre=
+f=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&gt;
+<br>
+<b>Sent:</b> Wednesday, September 23, 2026 12:30 AM<br>
+<b>To:</b> Sen Lieber &lt;<a href=3D"mailto:Sen.KateLieber@oregonlegislatur=
+e.gov">Sen.KateLieber@oregonlegislature.gov</a>&gt;; Rep Sanchez &lt;<a hre=
+f=3D"mailto:Rep.TawnaSanchez@Oregonlegislature.gov">Rep.TawnaSanchez@Oregon=
+legislature.gov</a>&gt;<br>
+<b>Cc:</b> <a href=3D"mailto:oprc.publiccomment@oprd.oregon.gov">oprc.publi=
+ccomment@oprd.oregon.gov</a>;
+<a href=3D"mailto:risk.management@das.oregon.gov">risk.management@das.orego=
+n.gov</a>; Governor Kotek * GOV &lt;<a href=3D"mailto:governor.kotek@oregon=
+.gov">governor.kotek@oregon.gov</a>&gt;<br>
+<b>Subject:</b> Request for audit consideration: OPRD volunteer-program con=
+trols<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt" id=
+=3D"footer">
+<p class=3D"MsoNormal" style=3D"background:#FAEF06"><b><span style=3D"color=
+:black">CAUTION: This email originated from outside the Legislature. Use ca=
+ution clicking any links or attachments.</span><o:p></o:p></b></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%;aspect-ratio: re=
+vert !important;background:revert !important;block-size: revert !important;=
+border:revert !important;bottom: revert !important;color:revert !important;=
+color-scheme: revert !important;content-visibility: revert !important;curso=
+r:revert !important;direction:revert !important;display:revert !important;f=
+ont-size:revert !important;height:revert !important;hyphens: revert !import=
+ant;letter-spacing:revert !important;line-height:revert !important;margin:r=
+evert !important;opacity: revert !important;order: revert !important;outlin=
+e: revert !important;overflow:revert !important;padding:revert !important;p=
+osition:revert !important;resize: revert !important;rotate: revert !importa=
+nt;scale: revert !important;tab-size: revert !important;table-layout:revert=
+ !important;text-align:revert !important;text-indent:revert !important;text=
+-orientation: revert !important;text-overflow: revert !important;text-shado=
+w:revert !important;text-transform:revert !important;text-wrap: revert !imp=
+ortant;top:revert !important;transition: revert !important;user-select: rev=
+ert !important;vertical-align:revert !important;visibility:revert !importan=
+t;white-space:revert !important;width:revert !important;word-break:revert !=
+important;word-spacing:revert !important;writing-mode:revert !important;zoo=
+m: revert !important;cellpadding: 0 !important;cellspacing: 0 !important;di=
+splay:table !important;border-collapse:seperate !important;border-spacing: =
+0px 0px !important;float:none">
+<tbody>
+<tr style=3D"aspect-ratio: revert !important;background:revert !important;b=
+lock-size: revert !important;border:revert !important;bottom: revert !impor=
+tant;color:revert !important;color-scheme: revert !important;content-visibi=
+lity: revert !important;cursor:revert !important;direction:revert !importan=
+t;display:revert !important;font-size:revert !important;height:revert !impo=
+rtant;hyphens: revert !important;letter-spacing:revert !important;line-heig=
+ht:revert !important;margin:revert !important;opacity: revert !important;or=
+der: revert !important;outline: revert !important;overflow:revert !importan=
+t;padding:revert !important;position:revert !important;resize: revert !impo=
+rtant;rotate: revert !important;scale: revert !important;tab-size: revert !=
+important;table-layout:revert !important;text-align:revert !important;text-=
+indent:revert !important;text-orientation: revert !important;text-overflow:=
+ revert !important;text-shadow:revert !important;text-transform:revert !imp=
+ortant;text-wrap: revert !important;top:revert !important;transition: rever=
+t !important;user-select: revert !important;vertical-align:revert !importan=
+t;visibility:revert !important;white-space:revert !important;width:revert !=
+important;word-break:revert !important;word-spacing:revert !important;writi=
+ng-mode:revert !important;zoom: revert !important">
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt;aspect-ratio: revert !important;background:revert !important;=
+block-size: revert !important;border:revert !important;bottom: revert !impo=
+rtant;color:revert !important;color-scheme: revert !important;content-visib=
+ility: revert !important;cursor:revert !important;direction:revert !importa=
+nt;display:revert !important;font-size:revert !important;height:revert !imp=
+ortant;hyphens: revert !important;letter-spacing:revert !important;line-hei=
+ght:revert !important;margin:revert !important;opacity: revert !important;o=
+rder: revert !important;outline: revert !important;overflow:revert !importa=
+nt;padding:revert !important;position:revert !important;resize: revert !imp=
+ortant;rotate: revert !important;scale: revert !important;tab-size: revert =
+!important;table-layout:revert !important;text-align:revert !important;text=
+-indent:revert !important;text-orientation: revert !important;text-overflow=
+: revert !important;text-shadow:revert !important;text-transform:revert !im=
+portant;text-wrap: revert !important;top:revert !important;transition: reve=
+rt !important;user-select: revert !important;vertical-align:revert !importa=
+nt;visibility:revert !important;white-space:revert !important;width:revert =
+!important;word-break:revert !important;word-spacing:revert !important;writ=
+ing-mode:revert !important;zoom: revert !important;valign: middle !importan=
+t">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;visibility:revert !important;white-space:revert !important;width=
+:revert !important;word-break:revert !important;word-spacing:revert !import=
+ant;writing-mode:revert !important;zoom: revert !important">
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;=
+color:#212121">Some people who received this message don't often get email =
+from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;visibility:revert !important;white-space:revert !important;width:r=
+evert !important;word-break:revert !important;word-spacing:revert !importan=
+t;writing-mode:revert !important;zoom: revert !important;align: left !impor=
+tant">
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Attached is my letter to=
+ the committee, dated September 23, 2026, requesting that the committee rec=
+ommend a performance audit of Oregon State Parks volunteer-program controls=
+. The same request has been before the
+ Secretary of State's Audits Division since September 21, 2026.<o:p></o:p><=
+/span></p>
+</div>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Please acknowledge recei=
+pt.<o:p></o:p></span></p>
+</div>
+<div style=3D"margin-top:12.0pt;margin-bottom:12.0pt">
+<p class=3D"MsoNormal"><span style=3D"color:black">Robert Samuel White<o:p>=
+</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_--
+
+--_004_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=22603;
+	creation-date="Wed, 23 Sep 2026 18:08:24 GMT";
+	modification-date="Wed, 23 Sep 2026 18:08:24 GMT"
+Content-ID: <image001.png@01DD4B4B.D972C230>
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_CO6PR09MB80246880126898C12C897B3D83822CO6PR09MB8024namp_--
+
