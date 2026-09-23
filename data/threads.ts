@@ -6652,6 +6652,25 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             docs: [{ label: "I will pay it. Send the instructions.", href: "/records/governor/2026-09-22-i-will-pay-it.pdf" }],
             eml: "/records/governor/eml/2026-09-22_1731_i-will-pay-it.eml",
         },
+        {
+            id: "you-named-a-price-and-i-accepted-it",
+            ulid: "01M37EHDX8XTVS3H3STMBSXZD8",
+            flagged: true,
+            date: "September 23, 2026",
+            d: "2026-09-23",
+            time: "8:35 AM",
+            from: "Robert Samuel White",
+            to: "Cameron D. Miles, Office of the Governor; OPRD Commissioners; Governor Kotek",
+            kind: "followup",
+            title: "You named a price, and I accepted it",
+            summary:
+                "The price was accepted before the letter was read. Its fee-waiver criteria were then used in the records request filed with the Oregon Department of Justice. The inquiry remains what the Governor knew.",
+            docs: [
+                { label: "You named a price, and I accepted it", href: "/records/governor/2026-09-23-you-named-a-price-and-i-accepted-it.pdf" },
+                { label: "Public records request to the Oregon Department of Justice", href: "/records/governor/attachments/01m37ehdx8xtvs3h3stmbsxzd8-2026-09-23-oregon-doj-records-request.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-09-23_0835_you-named-a-price-and-i-accepted-it.eml",
+        },
     ],
 };
 
