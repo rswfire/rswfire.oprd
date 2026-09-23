@@ -414,7 +414,7 @@ export default function TimelinePage() {
                 <li>
                     <div className="font-semibold">April 15, 2026</div>
                     <div className="mt-2 text-sm">
-                        Detective Nelson <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">closes the threat assessment</Link>: &ldquo;Ultimately White does not appear to be escalating on the pathway to violence&rdquo; and &ldquo;there is no evidence White has committed any crimes.&rdquo; The file remains: &ldquo;Case and assessment to be documented for information only at this time. Closed 4-15-26.&rdquo;
+                        Detective Nelson <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className="underline text-emerald-800 hover:text-emerald-600">closes the threat assessment</Link>: &ldquo;there is no evidence White has committed any crimes.&rdquo; The file remains: &ldquo;Case and assessment to be documented for information only at this time. Closed 4-15-26.&rdquo;
                     </div>
                 </li>
             </ul>
