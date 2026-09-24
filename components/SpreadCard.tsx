@@ -142,6 +142,25 @@ export default function SpreadCard() {
 
                 <Stem />
 
+                {/* ── The year in between ── */}
+                <div className="mx-auto max-w-md">
+                    <div className={`${NODE} border-slate-300`}>
+                        <div className={`${DATE} text-slate-500`}>May 2025 &ndash; February 2026</div>
+                        <div className="mt-1 text-base font-bold text-gray-900">
+                            I asked for a year.
+                        </div>
+                        <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
+                            In May I named the surveillance encounter to the program manager. In
+                            August I put it to the Director with three direct questions, and filed a
+                            public records request the same week. Nothing was answered, and the
+                            request sat for ninety days. So I published the record and started
+                            copying the Governor.
+                        </p>
+                    </div>
+                </div>
+
+                <Stem />
+
                 {/* ── The referral: where it leaves the agency ── */}
                 <Stage label="The referral" />
                 <Stem h={20} />
