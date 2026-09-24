@@ -30,4 +30,5 @@ export const archiveSections: ArchiveSection[] = [
     { href: "/governor-kotek", label: "The Governor's Silence", icon: "GraduationCap" as const, iconClass: "text-purple-700" },
     { href: "/faq", label: "Frequently Asked Questions", icon: "Ghost" as const, iconClass: "text-cyan-700" },
     { href: "/reading", label: "Selected Reading", icon: "BookOpenText" as const, iconClass: "text-amber-700" },
+    { href: "/contact", label: "Contact", icon: "Mail" as const, iconClass: "text-emerald-700" },
 ];
