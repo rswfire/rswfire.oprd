@@ -1,4 +1,4 @@
-// The testimony's door on the index page. One word with a period, the
+// The testimony's door on the index page. The welcome, the name, the
 // dimensions of the record under it, and every chapter reachable directly.
 //
 // The chapter list mirrors the Part headers in
@@ -28,18 +28,24 @@ export default function TestimonyCard() {
     return (
         <div className="mb-4 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
             <div className="px-6 pt-8 sm:px-8">
-                <div className="inline-flex flex-col items-start text-xs font-bold uppercase tracking-widest text-emerald-700">
+                <div className="flex flex-col items-center text-xs font-bold uppercase tracking-widest text-emerald-700">
                     <Sprout size={24} strokeWidth={1.75} className="mb-2 text-emerald-600" aria-hidden />
                     <span>Welcome</span>
                 </div>
 
-                <Link href="/testimony" className="mt-2 block">
+                <Link href="/testimony" className="mt-2 block text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        The Testimony of Robert Samuel White.
+                        The Testimony of
+                        <span className="block">Robert Samuel White</span>
                     </h2>
                 </Link>
 
-                <div className="mt-6 space-y-4 text-lg leading-relaxed text-gray-800">
+                <div
+                    aria-hidden
+                    className="mx-auto mt-7 h-[3px] w-20 rounded-full bg-gradient-to-r from-emerald-200 via-emerald-600 to-emerald-200"
+                />
+
+                <div className="mt-7 space-y-4 text-lg leading-relaxed text-gray-800">
                     <p>
                         I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
                         me ever since, and I brought that to a state park that claims to be the same
