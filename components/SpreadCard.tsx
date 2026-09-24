@@ -83,6 +83,10 @@ export default function SpreadCard() {
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                     How it spread.
                 </h2>
+                <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-gray-700 sm:text-base">
+                    There was no mechanism to stop any of it. Each institution took what the one
+                    before it sent and added to it.
+                </p>
             </div>
 
             <div className="px-4 py-8 sm:px-10">
@@ -95,7 +99,8 @@ export default function SpreadCard() {
                             It began with a misunderstanding.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
-                            This is where it went.
+                            A local disagreement at one state park, between one volunteer and one
+                            supervisor.
                         </p>
                     </div>
                 </div>
