@@ -4,6 +4,7 @@
 // afterward. Every node is dated and every date is in the register.
 
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 const NODE = "rounded-xl border bg-white px-4 py-3.5 shadow-sm";
 const DATE = "font-mono text-[10px] font-bold uppercase tracking-widest";
@@ -252,6 +253,26 @@ export default function SpreadCard() {
                 </div>
             </div>
 
+            {/* ── The door out: the same line the testimony PDF opens with ── */}
+            <Link
+                href="/volunteers"
+                className="group flex items-center gap-4 border-t border-red-200 bg-red-50 px-6 py-6 transition-colors hover:bg-red-100 sm:gap-5 sm:px-10 sm:py-7"
+            >
+                <span className="grid h-14 w-14 shrink-0 place-items-center rounded-xl bg-red-700 shadow-sm sm:h-16 sm:w-16">
+                    <Icon name="Shield" className="h-7 w-7 text-white sm:h-8 sm:w-8" size={32} strokeWidth={1.5} />
+                </span>
+                <div className="min-w-0">
+                    <div className="text-lg font-bold leading-snug text-gray-900 sm:text-xl">
+                        If this happened to you, it has a name.
+                    </div>
+                    <div className="mt-1 inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-red-800 transition-colors group-hover:text-red-600">
+                        For Volunteers
+                        <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
+                            &rarr;
+                        </span>
+                    </div>
+                </div>
+            </Link>
         </div>
     );
 }
