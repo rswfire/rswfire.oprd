@@ -7,7 +7,6 @@
 //
 // The boxes are empty on purpose and there is no way to check them from here.
 // They are checked by the Director, or they are not.
-import Link from "next/link";
 import Icon from "@/components/Icon";
 
 const CONDITIONS = [
@@ -57,22 +56,6 @@ export default function WhatVolunteersDeserve() {
                 ))}
             </ul>
 
-            <div className="border-t border-gray-100 px-6 py-5 sm:px-8">
-                <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px]">
-                    <Link
-                        href="/volunteers"
-                        className="font-mono font-bold uppercase tracking-wide text-amber-800 underline decoration-amber-300 hover:text-amber-600"
-                    >
-                        For volunteers
-                    </Link>
-                    <Link
-                        href="/testimony/#the-director-and-her-deputy"
-                        className="font-mono font-bold uppercase tracking-wide text-amber-800 underline decoration-amber-300 hover:text-amber-600"
-                    >
-                        The Director and Her Deputy
-                    </Link>
-                </div>
-            </div>
         </div>
     );
 }
