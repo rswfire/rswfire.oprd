@@ -6,7 +6,7 @@ import Icon from "@/components/Icon";
 export default function VolunteerShield() {
     return (
         <Link
-            href="/for-volunteers"
+            href="/volunteers"
             className="group flex w-full flex-col rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
         >
             <div className="flex w-full items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors py-5">

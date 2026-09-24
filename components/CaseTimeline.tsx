@@ -673,7 +673,7 @@ export default function CaseTimeline() {
                             <Link href="/evidence" className="text-[11px] font-semibold uppercase tracking-widest text-emerald-800 hover:text-emerald-600">
                                 The evidence pages →
                             </Link>
-                            <Link href="/for-volunteers" className="text-[11px] font-semibold uppercase tracking-widest text-red-700 hover:text-red-600">
+                            <Link href="/volunteers" className="text-[11px] font-semibold uppercase tracking-widest text-red-700 hover:text-red-600">
                                 For volunteers →
                             </Link>
                         </div>

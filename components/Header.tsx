@@ -70,7 +70,7 @@ export default function Header() {
 
                         {/* The shield, compact, routing every page to the reason for the archive */}
                         <Link
-                            href="/for-volunteers"
+                            href="/volunteers"
                             className="group flex items-center gap-3 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
                         >
                             <div className="flex h-14 w-12 items-center justify-center bg-red-700 group-hover:bg-red-800 transition-colors">
@@ -107,7 +107,7 @@ export default function Header() {
 
             {/* On phones the shield becomes a full-width bar under the header. */}
             <Link
-                href="/for-volunteers"
+                href="/volunteers"
                 className="md:hidden flex items-center gap-2 border-t border-red-200 bg-red-700 px-4 py-2 text-white active:bg-red-800"
             >
                 <Icon name="Shield" className="w-4 h-4 shrink-0" size={16} strokeWidth={1.75} />

@@ -24,7 +24,7 @@ export default function SelectedReadingPage() {
 
                 {/* WHAT IT MEANS TO VOLUNTEER — internal essay */}
                 <Link
-                    href="/for-volunteers/what-it-means"
+                    href="/volunteers/what-it-means"
                     className="group block border border-gray-200 rounded-lg p-6 bg-white transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-sm"
                 >
                     <div className="flex items-start justify-between">
