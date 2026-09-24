@@ -11,7 +11,6 @@ export const archiveSections = [
             { href: "/records/governor", label: "Office of the Governor" },
             { href: "/records/doj", label: "Oregon Department of Justice" },
             { href: "/records/osp", label: "Oregon State Police" },
-            { href: "/records/lane-county", label: "Lane County Sheriff’s Office" },
             { href: "/records/oprd", label: "Oregon Parks & Recreation Dept." },
         ]
     },

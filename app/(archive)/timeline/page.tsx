@@ -550,7 +550,7 @@ ODOT <Link href="/record/oprd/01M20YMVX0Y7FBDFVH6QPR70RQ/" className="underline 
                 <li>
                     <div className="font-semibold">September 9, 2026</div>
                     <div className="mt-2 text-sm">
-The <Link href="/record/lane-county/01M23T7F6GKVBM4NFTK7597P0Q" className="underline text-emerald-800 hover:text-emerald-600">Lane County request is filed</Link>, reference P015875-090926. Patrol Captain Felicia Sloan confirms the Forest Service officer&rsquo;s referral to the Office of Professional Responsibility is <Link href="/record/usfs/01M23VZK3887N5QPA6F01CSFH4" className="underline text-emerald-800 hover:text-emerald-600">an administrative investigation</Link>. I notify all records officers that <Link href="/record/osp/01M23HPNPR6XQVRBZHPF2F1HYD" className="underline text-emerald-800 hover:text-emerald-600">the requests are now tracked publicly</Link>. I <Link href="/record/usfs/01M23SJK7GFQVZK7TBD2XQSVTG/" className="underline text-emerald-800 hover:text-emerald-600">correct the record on Special Agent Oliver&rsquo;s March 27 email</Link> and <Link href="/record/lane-county/01M23Y8C6G9JH2APF7HJTSER4K/" className="underline text-emerald-800 hover:text-emerald-600">document my interactions with the Lane County deputy</Link>, including the June 30 remark about a rifle.
+Patrol Captain Felicia Sloan confirms the Forest Service officer&rsquo;s referral to the Office of Professional Responsibility is <Link href="/record/usfs/01M23VZK3887N5QPA6F01CSFH4" className="underline text-emerald-800 hover:text-emerald-600">an administrative investigation</Link>. I notify all records officers that <Link href="/record/osp/01M23HPNPR6XQVRBZHPF2F1HYD" className="underline text-emerald-800 hover:text-emerald-600">the requests are now tracked publicly</Link>. I <Link href="/record/usfs/01M23SJK7GFQVZK7TBD2XQSVTG/" className="underline text-emerald-800 hover:text-emerald-600">correct the record on Special Agent Oliver&rsquo;s March 27 email</Link>.
                     </div>
                 </li>
 
@@ -597,13 +597,6 @@ I serve OPRD <Link href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710" className="und
                 </li>
 
                 <li>
-                    <div className="font-semibold">September 23, 2026</div>
-                    <div className="mt-2 text-sm">
-                        Lane County prices items 1 and 2 of request #26-825 at $71.91 and <Link href="/record/lane-county/01M37NEK20HHXERFEHAEVH42ZZ/" className="underline text-emerald-800 hover:text-emerald-600">denies the fee waiver in one sentence with no basis stated</Link>. Four minutes later it <Link href="/record/lane-county/01M37NN328BA8E4Y9FQQK8SV9V/" className="underline text-emerald-800 hover:text-emerald-600">declares all responsive records provided and closes the request</Link>. I <Link href="/record/lane-county/01M37PAPF8RQ085G4VT61QC15H/" className="underline text-emerald-800 hover:text-emerald-600">demand it be reopened</Link> and <Link href="/record/lane-county/01M38002VRNTCP2QPD6588EJSR/" className="underline text-emerald-800 hover:text-emerald-600">state my position plainly</Link>. The county <Link href="/record/lane-county/01M3842GP8SZXCDDPC9DY5RPTW/" className="underline text-emerald-800 hover:text-emerald-600">retracts the closure as a template error</Link> and denies the waiver a second time, again without naming a factor. I <Link href="/record/lane-county/01M384P0Q0GFJFGT94YNYRKC90/" className="underline text-emerald-800 hover:text-emerald-600">answer that the denial names none of the four factors the county&rsquo;s own questionnaire commits it to</Link>.
-                    </div>
-                </li>
-
-                <li>
                     <div className="font-semibold">September 5 — 7, 2026</div>
                     <div className="mt-2 text-sm">
                         I write to OPRD that <Link href="/record/oprd/01M1SFPP5GMVGVEX6CR6G74FK1/" className="underline text-emerald-800 hover:text-emerald-600">the record says you lied</Link>, and send the Director <Link href="/record/oprd/01M1T0PHFRWQNERYJENF7MVRZV/" className="underline text-emerald-800 hover:text-emerald-600">The choices are still yours</Link>. The <Link href="/record/oprd/01M1YH9QSR0JAGXR04DGFYV7VD/" className="underline text-emerald-800 hover:text-emerald-600">final version goes on September 7</Link>: tell the truth, withdraw the bar, build a real process.
@@ -614,13 +607,6 @@ I serve OPRD <Link href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710" className="und
                     <div className="font-semibold">September 10 — 11, 2026</div>
                     <div className="mt-2 text-sm">
                         I send OSP <Link href="/record/osp/01M2670AB06W82K8B7XVZ9D5RW/" className="underline text-emerald-800 hover:text-emerald-600">Report SP26096984, and what all of you have been doing</Link>. On September 11 I publish <Link href="/record/oprd/01M29ZRKJ8KB38SPR38V64HH2C/" className="underline text-emerald-800 hover:text-emerald-600">sunlight: the collapse of the story you told the police and yourselves</Link>, OPRD&rsquo;s Timeline of Events answered claim by claim.
-                    </div>
-                </li>
-
-                <li>
-                    <div className="font-semibold">September 14, 2026</div>
-                    <div className="mt-2 text-sm">
-                        Lane County sends a fee-waiver questionnaire and I <Link href="/record/lane-county/01M2GWE3B0RA7M5REH1C904E46/" className="underline text-emerald-800 hover:text-emerald-600">answer it the same day</Link>: I am the subject of the records, the archive already publishes six institutions, and I decline to turn my own records into a means test. I <Link href="/record/lane-county/01M2H5D3X8ZVAS1BN84W0ZF3BY/" className="underline text-emerald-800 hover:text-emerald-600">give the county an email address for correspondence</Link>.
                     </div>
                 </li>
 

@@ -274,53 +274,6 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
     },
     {
-        slug: "lane-county",
-        agency: "Lane County Sheriff's Office",
-        refs: "#26-825; P015875-090926",
-        status: "Withholding.",
-        demanded: {
-            total: "$71.91",
-            note: "Priced September 23, 2026 for the email search covering items 1 and 2. The county closed the request four minutes after pricing it, then retracted the closure as a template error. The fee waiver has been denied twice, both times without naming a factor.",
-        },
-        officers: [
-            { name: "[Lane County Deputy]" },
-        ],
-        asked: [
-            "The March 27, 2026 email from SA Oliver to [Lane County Deputy], with all attachments, as held by the county",
-            "Every communication with the Forest Service, OSP, OPRD, the FBI or any task force, or any other agency concerning him, including every update after March 27",
-            "Every record in county systems indexed under his name, date of birth, driver's license number, email, the archive, or the Siltcoos Work Center: CAD, RMS, incident and case records, flags, alerts, advisories, bulletins, briefing notes, officer notes",
-            "Any patrol advisory or instruction concerning him or law-enforcement response at the Siltcoos Work Center",
-            "Everything [Lane County Deputy] authored, received, or holds concerning him, and his assignment and patrol area in March 2026",
-            "Any onward dissemination of his information by the county",
-        ],
-        claims: [
-            "September 9, 2026, minutes after filing: receipt confirmed, reference P015875-090926 assigned.",
-            "September 14, 2026: request #26-825 acknowledged the same day; the County states it is processing the request for the Lane County Sheriff's Office and is the custodian of at least some of the requested records; a fee estimate to follow.",
-        ],
-        withheld: [],
-        produced: [],
-        deadlines: [
-            {
-                d: "2026-10-05",
-                date: "October 5, 2026",
-                who: "them",
-                what: "Complete request #26-825 or provide a written estimated completion date and any fee: ORS 192.329(5), fifteen business days from the September 14 acknowledgment",
-            },
-        ],
-        timeline: [
-            { d: "2026-03-27", date: "March 27, 2026", event: "SA Oliver sends [Lane County Deputy] the file: name, date of birth, driver's license number, residence, schedule, correspondence, text messages; “will keep you up to date”" },
-            { d: "2026-09-09", date: "September 9, 2026", event: "Correction letter to SA Oliver, [Lane County Deputy] copied: the false characterizations corrected, preservation of the March 27 email demanded" },
-            { d: "2026-09-09", date: "September 9, 2026", event: "Request filed through the county's records portal; receipt confirmed within minutes, reference P015875-090926" },
-            { d: "2026-09-14", date: "September 14, 2026", event: "Request #26-825 submitted and acknowledged the same day; the county states it is processing for the Sheriff's Office and is custodian of at least some records, and sends a fee-waiver questionnaire" },
-            { d: "2026-09-14", date: "September 14, 2026", event: "Response to the fee-waiver questionnaire: he is the subject of the records, no fee is warranted, produce in full and without delay" },
-            { d: "2026-09-23", date: "September 23, 2026", event: "Items 1 and 2 priced at $71.91; fee waiver denied in one sentence, no basis stated; items 3 through 7 no records; item 8 released free" },
-            { d: "2026-09-23", date: "September 23, 2026", event: "Four minutes later: \"All responsive records have been provided to you, and your request will be closed.\"" },
-            { d: "2026-09-23", date: "September 23, 2026", event: "Reopen demanded: the waiver answered against every consideration the county's own questionnaire names" },
-            { d: "2026-09-23", date: "September 23, 2026", event: "The county retracts the closure as a template error; the waiver is denied a second time, again without naming a factor" },
-            { d: "2026-09-23", date: "September 23, 2026", event: "Answered: the second denial names none of the four factors the county's own questionnaire commits it to" },
-        ],
-    },
-    {
         slug: "oprd",
         agency: "Oregon Parks & Recreation Department",
         refs: "Aug 22 2025 · Apr 2 2026 · May 2 2026 · Sep 5 2026 · Sep 11 2026",
