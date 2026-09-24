@@ -224,7 +224,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={86} recordings={145} moments={1406} />
+            <TestimonyMeta documents={99} recordings={145} moments={1406} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -3198,32 +3198,41 @@ export default function TestimonyBody({
                 </P>
             </Part>
 
+            <Part n="Ten" title="THE GOVERNOR'S SILENCE">
+                <P id="ppz33f" n={269}>
+                    He contacted the Office of the Governor on <Cite ulid="01KACE2348G8VG3XPB3BGW3F1N" thread="governor">November 18, 2025</Cite>, <Cite ulid="01KC3GJ4WGZQ8V706APJ97YDN4" thread="governor">December 9, 2025</Cite>, <Cite ulid="01KC7PX85RSCWKVSWHK39K6YCG" thread="governor">December 11, 2025</Cite>, <Cite ulid="01KCS97W9RPP89CERDSEPDGR28" thread="governor">December 18, 2025</Cite>, <Cite ulid="01KEW3XK4G21P2KCPZYD405M5J" thread="governor">January 13, 2026</Cite>, <Cite ulid="01KEZK3DQ86AGV11TPVG7VXC6H" thread="governor">January 14, 2026</Cite>, <Cite ulid="01KHK1EBD8ZSWHRRWT7Y69NDA1" thread="governor">February 16, 2026</Cite>, <Cite ulid="01KJK3GSJ0AJV72GB8R6S6PBWH" thread="governor">February 28, 2026</Cite>, <Cite ulid="01KQR749JGPDKZ69Q95304PRFT" thread="governor">May 3, 2026</Cite> and <Cite ulid="01KQR7GK481B8YFD71RX75V5T0" thread="governor">again</Cite>, <Cite ulid="01KW8KH1N8VJXGXGERYEFA5YQJ" thread="governor">June 28, 2026</Cite>, <Cite ulid="01KXK7BACRB1PCMBBQQK47S8DQ" thread="governor">July 15, 2026</Cite>, and <Cite ulid="01M1MEQP4GVGV0ED9D555043P2" thread="governor">September 3, 2026</Cite>.
+                </P>
+                <P id="pzeujn" n={270}>
+                    The response has been silence.
+                </P>
+            </Part>
+
             <Part n="Addendum" title="ON THE END OF THE WORLD">
-                <P id="pad01" n={269}>
+                <P id="pad01" n={271}>
                     On February 16, 2025 he withdrew his ranger assistant application. <Cite ulid="01JM9193N021MEHRXWSR30NWT5">He wrote to the volunteer services lead at Honeyman</Cite> to say he had withdrawn it, and that it was not something he wanted to discuss. The subject was closed.
                 </P>
-                <P id="pad02" n={270}>
+                <P id="pad02" n={272}>
                     The night after that email he was on shift in the welcome center, which is a yurt. The lead came in and the two of them were alone in it. The lead started stretching. Then he explained the stretching, and said it is what the crew does under the park manager there. It felt intimate, and it made him uncomfortable. The lead talked about himself for ninety minutes and got nothing back. He did not raise the stretching. He did not offer anything about his own life. He let the man talk until he was finished, and then he let him walk out into the dark. He has never once told anyone what was said in that room.
                 </P>
-                <P id="pad03" n={271}>
+                <P id="pad03" n={273}>
                     A debt had been created that night, and he paid it the next afternoon, the way anyone pays it, by matching what he had been given. It was his day off. He walked a trail out onto the dunes across from his site with the lead. He was carrying a list in his head of what he meant to tell him, and there were three things on it.
                 </P>
-                <P id="pad04" n={272}>
+                <P id="pad04" n={274}>
                     The first came before anything else. He set a boundary and said the conversation was not romantic or sexual for him. The reaction was defensive anger, and it alarmed him. He thought it landed badly, but it needed to be said, and now it had been.
                 </P>
-                <P id="pad05" n={273}>
+                <P id="pad05" n={275}>
                     The second was why he was here. He told the man he was preparing for systemic failure he could see coming and could not date, that it could be a month, a year, or a decade. He told him what that means for a gay man, which is that in authoritarian contexts the mechanism through which queer people are targeted is institutional actors with authority, men in posts like his.
                 </P>
-                <P id="pad06" n={274}>
+                <P id="pad06" n={276}>
                     The third was why he had withdrawn the application. He had noticed a change in someone's behavior toward him, and he knew where the change had come from, which was the park supervisor. The lead had an excuse ready, and that was the tell that he was right.
                 </P>
-                <P id="pad07" n={275}>
+                <P id="pad07" n={277}>
                     <Cite ulid="01JMFB5TT8WYADV2FKJZEXC9AZ">The next morning he wrote to him</Cite>: “I appreciated yesterday a lot and I hope you won't be a stranger.”
                 </P>
-                <P id="pad08" n={276}>
+                <P id="pad08" n={278}>
                     That any institution would believe it has standing to judge the interior of a man's mind is absurd on its face. That the people who did it would weaponize what he told the lead is the most unethical act he has ever witnessed. That every level above them would repeat the same sin is the precise failure he was pointing at.
                 </P>
-                <P id="pad09" n={277}>
+                <P id="pad09" n={279}>
                     The subject is closed again.
                 </P>
             </Part>

@@ -393,8 +393,8 @@ def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
 def main() -> None:
     meta, parts = parse_source()
     paragraph_count = sum(len(p["paragraphs"]) for p in parts)
-    if len(parts) != 10 or paragraph_count == 0:
-        raise RuntimeError("source structure changed: expected 9 chapters, an addendum, and numbered paragraphs")
+    if len(parts) != 11 or paragraph_count == 0:
+        raise RuntimeError("source structure changed: expected 10 chapters, an addendum, and numbered paragraphs")
     output = output_path(meta["version"])
     temporary = output.with_suffix(".tmp.pdf")
     HTML(string=build_html(meta, parts), base_url=str(ROOT)).write_pdf(temporary)

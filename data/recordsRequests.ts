@@ -66,7 +66,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "governor",
         agency: "Office of the Governor",
         refs: "Request of September 5, 2026",
-        status: "Fee waiver denied. He pays.",
+        status: "Paid. Petition pending.",
         demanded: {
             total: "$572.50",
             note: "Estimated September 22, 2026 to collect, review, and produce the records. The fee waiver was denied. He agreed to pay.",
@@ -103,13 +103,17 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-08", date: "September 8, 2026", event: "The office responds: gathering records; Cameron Miles, Government Accountability Attorney, copied as contact" },
             { d: "2026-09-22", date: "September 22, 2026", event: "Fee estimated at $572.50; fee waiver denied" },
             { d: "2026-09-22", date: "September 22, 2026", event: "Reply: “I will pay it. Send the instructions.”" },
+            { d: "2026-09-23", date: "September 23, 2026", event: "The instructions asked for a second time" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Petition to the Attorney General under ORS 192.324(6) and ORS 192.411: the waiver denial, and the fee set without the means to pay it" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Payment instructions sent, two hours and two minutes after the petition: a check for $572.50 to the State of Oregon" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "The Attorney General’s office acknowledges the petition; orders generally issue within seven days" },
         ],
     },
     {
         slug: "doj",
         agency: "Oregon Department of Justice",
         refs: "Request of September 23, 2026",
-        status: "Filed.",
+        status: "Scope questioned.",
         officers: [],
         asked: [
             "All records concerning him in any division or function, including the Criminal Justice Division and the Oregon TITAN Fusion Center",
@@ -122,7 +126,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "Records concerning the archive, his requests, the tort claim, and claim P195403, with a privilege log",
             "Counsel's files, including the correspondence routed to counsel by OPRD's February 14, 2026 instruction",
         ],
-        claims: [],
+        claims: [
+            "September 24, 2026: the request is “very broad in scope” and “will likely require significant agency resources to process, resulting in a fee that will be costly given the scope of the request”; narrowing is invited, and a fee estimate offered if he proceeds as submitted.",
+        ],
         withheld: [],
         produced: [],
         deadlines: [
@@ -135,6 +141,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
         timeline: [
             { d: "2026-09-23", date: "September 23, 2026", event: "Request filed: nine categories, fee waiver, litigation hold under claim P195403, testimony v1.10 attached" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Acknowledged and called “very broad in scope”; narrowing invited, fee estimate offered" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Reply: which of the nine categories carry the burden, and how a request bounded by one person becomes very broad; fee estimate requested" },
         ],
     },
     {

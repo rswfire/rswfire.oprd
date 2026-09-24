@@ -1,0 +1,1210 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from DS0PR14MB5661.namprd14.prod.outlook.com (2603:10b6:8:c2::17) by
+ CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Thu, 24 Sep 2026 20:45:59
+ +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=tVG102TSvjrU/lCFwPbBQblKEDnMpouYFPQPJEx0pnhhJu2Lb1qrzs1BPs/yn8ZloSrZOOfpWiUj8tinJGFODJPNfHNq4LmNYt+21iRHmrXPxubSv/05xHpXfjhYtmgPhGK9rXUgU3yVhtkYTRPBS5VOT+MQh1BhDaKr6ii8Aok98+IqOzaYztYEvRLAOdpqNepT2TkR6BCWOp/nq+JTTsn9M7XDPOfKgftd06+bKG6BqxhkU1aluKTw+osLF5ybRJYDVEjQuJAzWLQ8GDvEzqZJdGnIQ3oV+5kEEFkSPR7WhAIq7aP2cj2cIJYpVdtIlrfEzhxMxBxYWzcIWF6uPQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=RuDiq51wwtqD3M8FxtPn2qDDC1nMslNDnONsjBM2/HI=;
+ b=uZRNH22LiMmO3FEoYqrgeCKf54BLTjkeNMiIgV0/B38oYNwqQ9+jEh7RFX3Z9uSKsGS6wMl3Qs4OMDUiWCUsVD+LAM4ffs56dKc40UzepZecdUMa+hFMwC85OgNopgX+SyRQeMOn4/Lah2LcvanVmPA6jUT6WtpUgriaXXBzSG6dLlZ/oXvtNXjcJducZchkKu+EZ8Bo+2phQF3PZsnsEe6ufGu9inCCvdxbx2wHoog5KPZfEB78HwB0GDarsTnHFxiWSa6QpDM7pJHfUysvbCpEgcENuJOXOdTpkoOckurX/ZQi6eQGrWyjS/ZkwGH7v4nQYrFmo9yD8F4QfPQvpw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c002::4) smtp.rcpttodomain=rswfire.com
+ smtp.mailfrom=oregon.gov; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=oregon.gov; dkim=pass (signature was verified)
+ header.d=oregon.gov; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=oregon.gov] dkim=[1,1,header.d=oregon.gov]
+ dmarc=[1,1,header.from=oregon.gov])
+Received: from MN0P223CA0025.NAMP223.PROD.OUTLOOK.COM (2603:10b6:208:52b::20)
+ by DS0PR14MB5661.namprd14.prod.outlook.com (2603:10b6:8:c2::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.18; Thu, 24 Sep
+ 2026 20:45:55 +0000
+Received: from BN1PEPF00004684.namprd03.prod.outlook.com
+ (2603:10b6:208:52b:cafe::aa) by MN0P223CA0025.outlook.office365.com
+ (2603:10b6:208:52b::20) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.14 via Frontend Transport; Thu,
+ 24 Sep 2026 20:45:55 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 2a01:111:f403:c002::4) smtp.mailfrom=oregon.gov; dkim=pass (signature was
+ verified) header.d=oregon.gov;dmarc=pass action=none
+ header.from=oregon.gov;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oregon.gov designates
+ 2a01:111:f403:c002::4 as permitted sender) receiver=protection.outlook.com;
+ client-ip=2a01:111:f403:c002::4;
+ helo=CO1PR09CU001.outbound.protection.outlook.com; pr=C
+Received: from CO1PR09CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c002::4) by BN1PEPF00004684.mail.protection.outlook.com
+ (2603:10b6:40f:fc02::11a) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.451.8 via Frontend Transport; Thu, 24
+ Sep 2026 20:45:54 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=e3noUgt1/32WK1Hx4jZZPROK9DdQ2Eykgs4nS48rMaW78qfKfWKMFhHZ219W1NavW56Tfxyqmz6EUj8s00QJaafSaPAoeBRrZXoef0sgm0BnhdYYUTYKpeqYL+SgTgKp+8Vl6/VxBTkbv0r2/fVSmTP/M8a092GlUDy0GGY/+gtzj2XuiM4+8wfVLGRijR8EfukJzxqVfKflc06MZDlo5oZ89Nbhn/bpC2QCNVu/cdCJ2tmftHVHo7q8zYwFkhb0XyL9PP5g6N2dlHGDcFvgWtv0DCssCI5fqI3QRr8DlKQoriumpZtEuS2KHsMYE5Cxsm/qfiXil2T3bWZ0EbuP4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=RuDiq51wwtqD3M8FxtPn2qDDC1nMslNDnONsjBM2/HI=;
+ b=rY1nsogXlbe38n7QiXQWs1wybX3GLoiXWDVTtQU6FILyqjzorSTCanstnBIYuqUBs4vkUYKg7ftTzOzjj/s+ys960wp/H9LMwgwWWFh8YH7tnoUWZz0YHNN3q/mCjv+x27bHDEerzG6dkBMmc70ATIy6E7f0WH1pRJZ3IA5lnorbQGNuKpONBdg/htNPWRhj7pLzyyEibWPDI1U+dsPvHAfR4CVhpA4K3iofx/UKJ3dEoKmYQycsKnrF09CSaXMGsp2nAbLuPQsYgYIGu4c0y8kWhppXE9fNcKJ3u9zdYf4TnZ+vfVfg4BE82WY0alPwi5wwdTn27gyErdn2w+6oOA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oregon.gov; dmarc=pass action=none header.from=oregon.gov;
+ dkim=pass header.d=oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=RuDiq51wwtqD3M8FxtPn2qDDC1nMslNDnONsjBM2/HI=;
+ b=F3gOshmFMlzzi8ykHe/Dzb/9TsDkH02/ke1XMLRSGdk2SaWXTkJO8xRCHIU5wjv/wFhoRKQUehFMfVDcYFnEySWVQ09UoD5xyVQemgdGYDOqjFpwRcK/fb2koIrUEXy3QlOvQqRw4W1amFM6ZK3xWeT9emTA6TKYwSgB6p2yAlX9WvUHjBmTq/I1NdRCmtgdwR+zaGqDS4c5zTl4DEf0jr7oOn768k1kP6YsThcLfWCH+LDJNBCu5DFCP8NV4hoHlhetyALd1DGZ36G7uvHPzUrKmGlkzGc4uAIwvRq33r7efzIiqG2znrPNJwGs8E7g0RcWt+8GA4DsxINXa21ykw==
+Received: from BY5PR09MB4724.namprd09.prod.outlook.com (2603:10b6:a03:240::21)
+ by DM6PR09MB4742.namprd09.prod.outlook.com (2603:10b6:5:26c::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.451.18; Thu, 24 Sep
+ 2026 20:45:51 +0000
+Received: from BY5PR09MB4724.namprd09.prod.outlook.com
+ ([fe80::c183:56c6:a993:f8ec]) by BY5PR09MB4724.namprd09.prod.outlook.com
+ ([fe80::c183:56c6:a993:f8ec%4]) with mapi id 15.21.0451.014; Thu, 24 Sep 2026
+ 20:45:51 +0000
+From: MILES Cameron D * GOV <cameron.d.miles@oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: Public records request under ORS 192.311 to 192.478
+Thread-Topic: Public records request under ORS 192.311 to 192.478
+Thread-Index: AQHdPXuCMpWW15l6OUS4zpXrqoZ3srbbZnRwgAAEXD+AAuVtIA==
+Date: Thu, 24 Sep 2026 20:45:51 +0000
+Message-ID: <BY5PR09MB47246EF046148FA4A92714F5D7812@BY5PR09MB4724.namprd09.prod.outlook.com>
+References: <CH2PR14MB4181530203BE1D12A280B492ADB42@CH2PR14MB4181.namprd14.prod.outlook.com>
+ <DM6PR09MB4725F1EC6D6004D85846A7C6D7822@DM6PR09MB4725.namprd09.prod.outlook.com>
+ <CH2PR14MB4181E02333FC24647872837CAD822@CH2PR14MB4181.namprd14.prod.outlook.com>
+In-Reply-To: <CH2PR14MB4181E02333FC24647872837CAD822@CH2PR14MB4181.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+Authentication-Results-Original: mx.microsoft.com 1; dkim=none (message not
+ signed) header.d=none;dmarc=none action=none header.from=oregon.gov;
+x-ms-traffictypediagnostic: BY5PR09MB4724:EE_|DM6PR09MB4742:EE_|BN1PEPF00004684:EE_|DS0PR14MB5661:EE_|CH2PR14MB4181:EE_
+X-MS-Office365-Filtering-Correlation-Id: dc1cbf57-b0be-4534-4fa3-08df1a7cd421
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|23010399003|366016|1800799024|13003099007|38070700021|3023799007|10067099003|56012099006|5023799004|4143699003|8096899003|18002099003|22082099003;
+X-Microsoft-Antispam-Message-Info-Original: /fiovsjgyWMudZoF/WqqBrawR5mzfjOdRFV9yk6GC5ine0YYTVv/miz6NyhgC40SpjZsDW6h5M5cWpVOhd5DbpxMkWPVDbIBgldg3PnkLxYXM5vpdzvxH1cvVtcqeFl+TSzhUULrXwT1dqI/ywcAPG619in6nRywKM5wIEPB7MRyTdqPgSZx8JwGSwut3vled/A76tvp03UmyI7mdnXkRC4B1QFmR+0oNOy0h79Kbu2Nc3mdgYeR02BxOGshjhViCK879XpcxfBDEQa8vGmZXebLrePbrGGxZUpbwGGfH7ycD07aDVexVD+VQNLTawFhjqOb92hGGU4pFFuZ+35mABGqu8LdDjxis5CWUIFWP3EdDPKMmd5vWJ1MUeJRZcSknVyGWzqkEarA6uyE3NoxPB9Y0weBsWyQY2UCnVUiA5p8MPc3k+05BuTMlbt8rxhTcBtMB1mHHxtmRrMkiPExqKJhu/Bf6dLV/oKb9WbygndMVTJWhOKLossOmxl8mHMsZfxbwEp6u9Rrm0bldzn+7WzmOIpy1gORNHgb9iu5d84iULMNVLzTGpRhxl4L4+934s74aJRAt+jWYkX69tqcIRmcCxpR0heBVItotJ7+ee5bTgVwVzH6/WcQhYG63qg/MBGm4rxzQCuAP71ERQ8kgIfEH3Er/djUZDDybNsGtBlcXvUqNLnqGMXtFCkO9rKcGNkXhsOBZHtoJcvQPMf+5sgtjwd6Z71rJSYdkahIMBVrb+m58J4ptZwW/UsUUTXDuapvoXXVpQzfA51wNp80xg==
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09MB4724.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(23010399003)(366016)(1800799024)(13003099007)(38070700021)(3023799007)(10067099003)(56012099006)(5023799004)(4143699003)(8096899003)(18002099003)(22082099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?mRjyNpJaO3rDRAXjripa99iCkEpnt7UlWvySZrX8iHw0qIZ08/zH3lu2rl57?=
+ =?us-ascii?Q?CGsg1YwJxrxnERxT0TtLD4Sscv7uEA47YWtK/Osi4QmSsXhhQ3lCeZt+aoIz?=
+ =?us-ascii?Q?i5K+SxtOb7InmffiMo4GbYFWIbAXI8OGCvmyq7Q85Y0CldImXUO4qLItZN28?=
+ =?us-ascii?Q?xqVYganJdoqwkMFUvst2KQAu0Ec3rbhWQliAFBREOtj6b88zFwjwDyWjLB1C?=
+ =?us-ascii?Q?5omHF9QiqNpTSsOd+CU92YH3oi3zqRogDt1Jgx2Fd4/sTRtIsVphna1Nrzfu?=
+ =?us-ascii?Q?xd/HgFfUE6haIekTA/N2fbQ0ZmJ8RahPyfCaYj6QTWwSWOAV0O+4VnEXxtyg?=
+ =?us-ascii?Q?2/2PSTG7NNQVwnnrzktFhUr8mc0rAwC6DyhC2W7S61FkjwmyfDarB1H6qGsK?=
+ =?us-ascii?Q?rFS0l4m0gQ8y2J4fe4cX4K+5HYdV+zUGXV2NCuO6LBrk8DVTAHldkJd00Syt?=
+ =?us-ascii?Q?Xf1D/FaJF4EJZ8f+jzQGXGa31WbehZpk3Ks1y4rxAFN6HIPSd7wElx4XzyUa?=
+ =?us-ascii?Q?bcQZBSqihuKslQ9Pqcicz0Arc+faLVxPlVJZlaAlPAqHBAblWP8sVzPQPrM9?=
+ =?us-ascii?Q?7I5d8D1a1e9ESKOWm7aDexLzBsmU4RbChjmhs+EGDw/NkRb7l/o2peB45k5S?=
+ =?us-ascii?Q?+PgSmEjSDqfuWqlB5GVvmYUdRzUQ2MKLtvtA5O+b3CdEyhuLFfbeL0dm0ZxY?=
+ =?us-ascii?Q?JVQZT/EcHlj9VSyFim8rropSoAMW+lbGr3sGNajoBMkEJEaicaE+h1CtDtKe?=
+ =?us-ascii?Q?ST+EMKxEPAjahxw567zzWjpmGI9KhL3CiRkjPZTk2VxbYzTMjReGPT504GXV?=
+ =?us-ascii?Q?lEfxu+QhOi9RYW2JTGJiFgO9VLl21V9fnVssD+CULGYWItbzVgFMgKJ1ida2?=
+ =?us-ascii?Q?0CYUYnHacyao7BZNzmynQVdTwRckffGpHyiKGWCv4bSKI1AYmT805hDWAire?=
+ =?us-ascii?Q?26OCnd8tywIVbzs/MatVh2XcveFmhYvdhh45LI9Btn8bQwo/UADLXiMyT+8b?=
+ =?us-ascii?Q?DIxaCzomSNG7/tc9mmP7AQ1BlB8JEXi139qhAVmkqCTF9CLxY43NdV/jp86t?=
+ =?us-ascii?Q?EDRL1qsUcfgqV93NWj+8JGXfVPTv3hBTuKHIZi86lxACLHV5mSPLONMRIKy8?=
+ =?us-ascii?Q?SnVpWr9QWXvQ9pAScTPLtK+d1j5sx8sU6/9QECMBLr4PldWUxLBz95pkz0M5?=
+ =?us-ascii?Q?nZ2kMgELr6DKk16wTpMX9fH9rl6UtnNjTLUgHTWVvhvi7NQTIM1rDqlpe5Iw?=
+ =?us-ascii?Q?U92gCePysbZswQe5RKAYw0wTaDJAXjjJafXtx6cgTh/G2BhTBxvmPCWuDH6S?=
+ =?us-ascii?Q?PKBl5HWNUWBkZgATrGvtShcDrn3SQ/T5ukJfQ9y0AqO1Hi+Pl5Km43bqFhVh?=
+ =?us-ascii?Q?RH+JahkYJrHK5qzHBbLQueKWUY3FgHNOQJNzO/sM4ipglcwGxz1DWCzzlFek?=
+ =?us-ascii?Q?sGvcLCdrmaEc37I23nisLA/Ug1ouVEhxPpNGW11ISFd44TE9rGXRT14YFTAO?=
+ =?us-ascii?Q?yY5svK4UWwyzcUpkUw9fDtJZfzrItGDLkT/x5Vj5xpVQhkf4CgEDHnrWckgM?=
+ =?us-ascii?Q?CpZMZecixC5j4cK39cx0Ya2c99rDYHUmV0QbjzwSt2ln7cjBH2AyRWY4WoBA?=
+ =?us-ascii?Q?d1uOyNx3vGHcs4fdQ/f5k6yknMNpPz/Mqk6XCFv+YPlTUfnn1sBLLyoNPZ8S?=
+ =?us-ascii?Q?nxVzfrxvoC/xYJqUeAkh07cWUELQyJCSHl+xzwhXFtq5athQYtwW1Q7dCnd7?=
+ =?us-ascii?Q?aGDM7WquEA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BY5PR09MB47246EF046148FA4A92714F5D7812BY5PR09MB4724namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR09MB4742
+Return-Path: cameron.d.miles@oregon.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Sep 2026 20:45:54.7119
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: dc1cbf57-b0be-4534-4fa3-08df1a7cd421
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BN1PEPF00004684.namprd03.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BN1PEPF00004684.namprd03.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: BN1PEPF00004684.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 82b837dd-e4fb-4baf-4122-08df1a7cd212
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|6113799003|6073799003|35042699022|16102099003|22082099003|18002099003|10067099003|55112099003|57112099003|8096899003|13003099007|3023799007|19002099009|5063699009|5023799004|4143699003;
+X-Forefront-Antispam-Report: CIP:2a01:111:f403:c002::4;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO1PR09CU001.outbound.protection.outlook.com;PTR:mail-westus2azlp170110004.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(6113799003)(6073799003)(35042699022)(16102099003)(22082099003)(18002099003)(10067099003)(55112099003)(57112099003)(8096899003)(13003099007)(3023799007)(19002099009)(5063699009)(5023799004)(4143699003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Sep 2026 20:45:54.4929
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: dc1cbf57-b0be-4534-4fa3-08df1a7cd421
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: BN1PEPF00004684.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR14MB5661
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0654019
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?gQqGmuK7Rb6fUk5WdqLLuacZFieUP9Jl+KTYgXb8CUmrr/v5cBYmXEWX?=
+ =?Windows-1252?Q?jVGf0SmBkbvc5TBaIWldkZXQTeo/cVUeQiIGvtJ4DOXdGIgVNrUSqJSZ?=
+ =?Windows-1252?Q?bU4fX/ZTgqJPn1U2VkK8HCotCnD73uiYTpqO/jDDcevoA5OJ8V7VZ7sX?=
+ =?Windows-1252?Q?Dy740oloTnKQ6DkbbJh1w8Ob664fqOu7XaYyK4CUn5ZVELR97jyuSh2O?=
+ =?Windows-1252?Q?NxwWFVrvAssx6tYQbk70ROXJ2z/e1u0dDIiPF/4IbTf9+xHn48wcL1Uk?=
+ =?Windows-1252?Q?jmiONjWiNzjQMVb4sTJRxmFBXGFHzdsqx6r5JNcZ+4MtfMQXNBp3J6Hk?=
+ =?Windows-1252?Q?wg6O8UFKGvn++b2qecnYl+KIbUWgHD+vsPWWZY+39L5ABVgU4i9ZxbGZ?=
+ =?Windows-1252?Q?QwC0GARZRyaDOQwdlEusxfxEsyHR/v3fJfmVW+SVwN1NgV+ZPO7P9dRh?=
+ =?Windows-1252?Q?6jKrlGqEF00NCTmHUV+F/A0sojZxXZa+JJaUuynGJDQr01NFOxNnqGGU?=
+ =?Windows-1252?Q?lGdMveI/dhoM+kiEP1G90aKdbsk8nOk0lMTFxgfVJEjpPLE0h1kkmpWy?=
+ =?Windows-1252?Q?Cd82eZ17C8Ao1kNz4yMfmtPaz3yq+T1IxmFd1KNwYOQ7yxKTlZSE5cyz?=
+ =?Windows-1252?Q?DIqPvAhiWPg1wmPGDnIXv69i+WKrYjj5IwN97wED4H+kPW0sTTwEB+4g?=
+ =?Windows-1252?Q?LivpT7KUQgBYvtActVxGI/CMLx5HoAmi0R0kaaZr7C3f/Iy4UXrPR0cX?=
+ =?Windows-1252?Q?ZFAWqY6b4nMLjVskhyTcsmDJ38bZr4W3QhypKHSHgTVEtRBX0YwtO9ue?=
+ =?Windows-1252?Q?iMlJpee0zI/vRaxAjGVZqIF7ekOF517608tqDVQ5agjEs/GhlJvQHdd+?=
+ =?Windows-1252?Q?ZvevgSWzAycQKX+5J95h23IeqDJxClktFv+VFUAxJb3pqJveHDJvB1P3?=
+ =?Windows-1252?Q?jycFj/SXzNabZjFOaDidwms3YRPhAT3iAFGgg3k/2ll+ZZuFlv9NhjPG?=
+ =?Windows-1252?Q?QEmV11Ji7fgtO/0PikfYeC/3c9TfRe/Raasm296UM3xuLTKUi8Z2km/m?=
+ =?Windows-1252?Q?wdyOnRIJTuGyHSOp/kNuOTxfeYaAsPOUQT80/fbWHsdBa7GIym4AofUf?=
+ =?Windows-1252?Q?QnxV5s183z+vBuXldzCDc5nSF88GYl5E4NP8u2+x9gwI3uIhdRpcXgP/?=
+ =?Windows-1252?Q?4Qg0a6M+4s3T6HlLHx3szAFvpY4XiGya480lHvlObIg4Ns7gdndsOm5r?=
+ =?Windows-1252?Q?rl5dPtap2mKR0VVow6j/dJMX/yHRkXwrJ1ojg9N6kt+4y5FXv8LNSfGH?=
+ =?Windows-1252?Q?65Vpqi9BULCtIg1doowIbMe8Bn4tc4hPXIBiBLpsJ0wCt8+QTXXNA6us?=
+ =?Windows-1252?Q?0QU+9KgApQodJxYDyHBskEnY+dsIC+5/9zvKi+cr5vDOzzL1CgjI+7nf?=
+ =?Windows-1252?Q?uFhhAie0FfZhKEC1tg6cndWgsPD0L3mOEzT2M5fSno9vo6wRZXLHF73H?=
+ =?Windows-1252?Q?/eCxoQvYo5PXAS39eWLHzzsPIJ1iVouhO3PI7gprWQf23r6tp6zC1xBV?=
+ =?Windows-1252?Q?gOetZJFWjoSWcz7fQkOJ+RGwFUUHFvwaYdVficMD4F/omilgAr8kEu1q?=
+ =?Windows-1252?Q?HOqUK33XivM95x8F72BQkjCoKORleWBDLBTwkAOVOdNBgR+QTtd6cUp5?=
+ =?Windows-1252?Q?8+VIs68+AwlKoxPXdTA2YXGd4lPXfEXUqWFVAvphp5dgbskJWRFbDa91?=
+ =?Windows-1252?Q?nFJ/Iu1z0IiDqr5D+E07NTxskZoW4Ou6r6zTFDlskYXIg/VORwGhrYV5?=
+ =?Windows-1252?Q?5ivYco0KScOhfccK7kQwp8W5Wklklk1d5PjFmkyYBMJTcyEC8kyFKk3C?=
+ =?Windows-1252?Q?LGYBMmHVShUxI8H86956N5hDio1YiD+ntpx2XD9hNx6Rb9HzjCsEK80V?=
+ =?Windows-1252?Q?ueTvnPL1nhkpx9L0Gg+Yj5CPiZtD5/vpkw2vSnr6zIfPkcG2v8IF8oCO?=
+ =?Windows-1252?Q?rYosjxmyL2GKkYehBuRJgw4nws3ULEWIb41HtiFCU+iAc2/fUl+dWFvv?=
+ =?Windows-1252?Q?Twtr5vpU85CRe8KzGrq3vdsDbhBFGQxKGOYR2zGrHze7+3OmOkaGgbyz?=
+ =?Windows-1252?Q?RPpGYZBYK1yOJQAMd58B2ferGQKQ6eqNXCqqAnVu2OYe6bwmXR7yqDn6?=
+ =?Windows-1252?Q?5dfq4rvDBntHEl577Wv7XbOocdHM5jy7W8lJ2brx13woJNdqSyG3M/b+?=
+ =?Windows-1252?Q?VjsL8Jb5XftwfnMIfjowTeTzoyT0TEL/rO+WSdI983wmsZhr7Hfget2K?=
+ =?Windows-1252?Q?s95MhjxR62yD4L9wTn8H+oJ3/dtoobeMdqgHBXV1Bu8PoZR5sMtLXpkg?=
+ =?Windows-1252?Q?pC2LH70Uo5D5BIlulRC1DHJ+jxZzyDFYd+/0mkx7diAp/tNOsbJpVrvV?=
+ =?Windows-1252?Q?efInkXX0g+R+aUt+YzkUkf6MyPz/7jH6k8aL6YfJJWYgFp0CmImFcSif?=
+ =?Windows-1252?Q?xrNwx1Y7?=
+MIME-Version: 1.0
+
+--_000_BY5PR09MB47246EF046148FA4A92714F5D7812BY5PR09MB4724namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Please send a check payable to "State of Oregon" in the amount of $572.50 t=
+o the following address. Please put "White - 9/5/26 PRR" in the memo line o=
+r in a cover letter. Please let us know if you have any questions.
+
+
+
+Attn: Cameron Miles
+
+Office of Governor Tina Kotek
+
+900 Court Street NE, Suite 254
+
+Salem, OR 97301
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, September 22, 2026 5:32 PM
+To: MILES Cameron D * GOV <cameron.d.miles@oregon.gov>
+Subject: Re: Public records request under ORS 192.311 to 192.478
+
+You don't often get email from rsw@rswfire.com<mailto:rsw@rswfire.com>. Lea=
+rn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+I will pay it. Send the instructions.
+
+________________________________
+From: MILES Cameron D * GOV <cameron.d.miles@oregon.gov<mailto:cameron.d.mi=
+les@oregon.gov>>
+Sent: Tuesday, 22 September 2026 17:29:47
+To: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Subject: RE: Public records request under ORS 192.311 to 192.478
+
+
+We estimate the cost to collect, review, and produce the records to be $572=
+.50.
+
+
+
+Fee Waiver Request Legal Standards
+
+In reviewing a public records request fee waiver, we follow DAS Policy 107-=
+001-030, the Attorney General's Public Records and Meetings Manual, and Ore=
+gon's public records law. DAS Policy 107-001-030 provides the following gui=
+dance:
+
+*         To adequately balance the State's obligation to be transparent an=
+d accessible with the obligation to prudently safeguard public funds and re=
+sources, fee-waivers and -reductions should be granted when the statutory s=
+tandard has been met - when disclosure will primarily benefit the general p=
+ublic.
+
+*         A request to waive or reduce fees related to a public records req=
+uest, that requires substantial agency resources to complete, may be denied=
+ if the interest of the general public would be better served by preserving=
+ agency resources.
+
+*         The public interest is not a fixed concept and the balance of pub=
+lic interest may change over time. It may shift as information becomes olde=
+r or in the light of issues of the day. The circumstances at the time of th=
+e request will be considered.
+
+*         A genuine public interest in the subject matter of a request is r=
+equired as the basis for granting a waiver. The public interest is not nece=
+ssarily the same as what interests the public. The fact that a topic has be=
+en discussed in the media does not automatically mean that there is a publi=
+c interest in disclosing the information that has been requested about it.
+
+
+
+ORS 192.324 (5) allows the custodian of a public record to waive or reduce =
+the fee associated with a public records request if disclosure of the recor=
+d at issue "... primarily benefits the general public." Waiving or reducing=
+ fees is in the public interest "when the furnishing of the record has util=
+ity - indeed, its greatest utility - to the community or society as a whole=
+." In Def. of Animals v. Or. Health Sciences Univ., 199 Or App 160, 189 (20=
+05). The custodian of the record may deny a request for a full or partial f=
+ee waiver even if disclosure would primarily benefit the public, provided t=
+hat the denial is reasonable under the totality of the circumstances. Id. a=
+t 189-90.
+
+Waiving or reducing fees in the public interest is distinct from situations=
+ where disclosure would primarily affect a concern or interest of a private=
+ individual. Id. at 188. Relevant factors to consider when determining whet=
+her a requester has established a sufficient public interest include: (1) t=
+he requester's identity, (2) the purpose for which the requester intends to=
+ use the information, (3) the character of the information, (4) whether the=
+ requested information is already in the public domain, and (5) whether the=
+ requester can demonstrate the ability to disseminate the information to th=
+e public. See State of Oregon, Department of Justice, Atty. Gen. Public Rec=
+ords and Meetings Manual, 19-20 (2024).
+
+Fee Waiver Request Analysis
+
+Applying the relevant factors helps us determine whether the PRR is in the =
+public interest. The requester has demonstrated that this request relates t=
+o a personal, rather than a public interest. Therefore, this factor does no=
+t weigh in favor of granting a fee waiver.
+
+
+
+The second factor is the purpose for which the requester intends to use the=
+ information. The requester has not demonstrated that this factor weighs in=
+ favor of granting a fee waiver as the use of records for a personal issue =
+does not weigh in favor of the request being in the public interest.
+
+
+
+The third factor is the character of the information. The requester has not=
+ demonstrated that this factor weighs in favor of granting a fee waiver as =
+the fee waiver request form does not explain how the release of records is =
+in the public interest other than by stating a general interest in transpar=
+ency.
+
+
+
+The fourth factor is whether the requested information is already in the pu=
+blic domain. The requester has not demonstrated that this factor weighs in =
+favor of granting a fee waiver.
+
+
+
+The final factor is whether the requester can demonstrate the ability to di=
+sseminate the information to the public. The requester has not demonstrated=
+ the ability to disseminate the public records but merely stated that he ca=
+n post it on a website.
+
+
+
+Finally, in evaluating a public records request fee waiver the public body =
+must consider whether, under the totality of the circumstances, a fee waive=
+r is also in the public interest. When weighing the public interest in disc=
+losure versus the public interest in preserving public funds, when none of =
+the prescribed factors weigh in favor of the grant of a fee waiver, the gra=
+nt of a fee waiver is not warranted. Consequently, your request for a fee w=
+aiver is denied.
+
+Fee Payment
+
+I will wait to hear from you prior to proceeding with the collection and re=
+view of these records. If you decide to pay the $572.50, we will send you i=
+nstructions on submitting payment. Let me know if you have any questions. I=
+f you would like to narrow your request (for example by using a shorter dat=
+e range, by searching only particular employee records, or by adding search=
+ terms), I would be happy to work with you.
+
+
+
+Thanks,
+
+
+
+Cameron D. Miles (he/him)
+
+Government Accountability Attorney
+
+Office of Governor Tina Kotek
+
+
+
+From: Robert Samuel White <rsw@rswfire.com<mailto:rsw@rswfire.com>>
+Sent: Saturday, September 5, 2026 2:20 PM
+To: MILES Cameron D * GOV <cameron.d.miles@oregon.gov<mailto:cameron.d.mile=
+s@oregon.gov>>
+Cc: Governor Kotek * GOV <governor.kotek@oregon.gov<mailto:governor.kotek@o=
+regon.gov>>; marissa@tinafororegon.com<mailto:marissa@tinafororegon.com>
+Subject: Public records request under ORS 192.311 to 192.478
+
+
+
+You don't often get email from rsw@rswfire.com<mailto:rsw@rswfire.com>. Lea=
+rn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+
+This is a request under the Oregon Public Records Law.
+
+
+
+I am Robert Samuel White, date of birth April 11, 1977. I served as an unpa=
+id volunteer with the Oregon Parks and Recreation Department at Jessie M. H=
+oneyman Memorial State Park. I was dismissed on March 24, 2025. The letter =
+permanently excluding me from all OPRD volunteer programs, citing my public=
+ comments about staff, is dated March 26, 2025. The Department's own report=
+ to Oregon State Police states that I was "dismissed from volunteering with=
+ OPRD on 3/25/25 and flagged as ineligible for future service" - a date one=
+ day earlier than the written notice I received, and a determination for wh=
+ich I was never given notice at all. I have written to the Office of the Go=
+vernor concerning that matter beginning November 18, 2025, and have been a =
+party to or subject of correspondence with that office on dozens of occasio=
+ns.
+
+
+
+On September 3, 2026, Oregon State Police produced its file on me under PR2=
+7478. That production shows that on March 3, 2026 an OPRD Emergency Manager=
+ notified Oregon State Police about me, and gave as the stated reason that =
+I was "now including the Governor as well as our Director." That email alle=
+ged no crime, described no threat, and quoted no statement of mine. A threa=
+t assessment was ordered the following morning by the captain of OSP Govern=
+ment and Media Relations. On March 24, 2026, one year to the day of that re=
+taliatory dismissal, two OSP detectives and a federal officer came to my re=
+sidence.
+
+
+
+Unless otherwise noted, the period requested is February 1, 2025 to the pre=
+sent.
+
+
+
+I request the following.
+
+
+
+1.  All records concerning me held by the Office of the Governor in any div=
+ision or function, including records indexed under Robert White, Robert Sam=
+uel White, Robert S. White, Sam White, rsw@rswfire.com<mailto:rsw@rswfire.c=
+om>, oprdvolunteerabuse.org, rswfire.com, or my date of birth.
+
+
+
+2.  All records reflecting the receipt, routing, logging, assignment, revie=
+w, or disposition of correspondence I sent to the Office of the Governor. T=
+his includes constituent services tracking system entries, case or ticket r=
+ecords, routing notes, assignment records, internal forwarding, and any rec=
+ord of a decision not to respond.
+
+
+
+3.  Any summary, briefing note, memorandum, talking point, or other interna=
+l document prepared about me or about the matter described in my correspond=
+ence, and any record identifying who prepared it and for whom.
+
+
+
+4.  All communications between the Office of the Governor and the Oregon Pa=
+rks and Recreation Department concerning me, including any communication wi=
+th Director Lisa Sumption, Deputy Director J.R. Collier, or any OPRD employ=
+ee.
+
+
+
+5.  All communications between the Office of the Governor and Oregon State =
+Police concerning me, including any communication concerning the March 24, =
+2026 contact at my residence, OSP case SP26096984, or CAD event SP26097765.
+
+
+
+6.  All communications between the Office of the Governor and the Oregon De=
+partment of Justice, the Department of Administrative Services, or any othe=
+r state or federal agency concerning me.
+
+
+
+7.  Any record reflecting that the Governor was personally informed of this=
+ matter, in any form, on any date, and any record reflecting a direction, i=
+nstruction, or decision given by the Governor or her staff concerning it.
+
+
+
+8.  Any record of a meeting, call, or briefing at which this matter, my cor=
+respondence, or I was discussed. This includes calendar entries, meeting in=
+vitations, agendas, notes taken during or after, and any record identifying=
+ who was present.
+
+
+
+9.  Any recurring or periodic briefing document produced for the Governor o=
+r her senior staff - daily or weekly issue summaries, constituent correspon=
+dence reports, agency issue reports, or equivalent - in which I, my corresp=
+ondence, the Oregon Parks and Recreation Department's handling of it, or th=
+e archive at oprdvolunteerabuse.org appears.
+
+
+
+10. All communications concerning me between any Office of the Governor emp=
+loyee and any person acting for the Kotek campaign, to the extent held on s=
+tate systems or by state employees.
+
+
+
+11. Any record described above held in a personal email account, personal d=
+evice, or non-state messaging application by an Office of the Governor empl=
+oyee, where the record concerns state business regarding me.
+
+
+
+12. Any record reflecting the disclosure of my personal information, includ=
+ing my date of birth, my residence, my correspondence, or my volunteer file=
+, by the Office of the Governor to any person or agency.
+
+
+
+13. All records concerning the archive at oprdvolunteerabuse.org, my public=
+ records requests, my notice of tort claim served September 3, 2026, DAS Ri=
+sk Management claim P195403, or the legal fund I have opened in this matter=
+.
+
+
+
+Administration
+
+
+
+Fee waiver. I request a waiver under ORS 192.324(5). Disclosure primarily b=
+enefits the general public. These records concern whether correspondence fr=
+om a citizen to his Governor was the stated basis for a state police threat=
+ assessment, and an intimidating "knock and talk" behind a locked gate on r=
+estricted federal land, and how that correspondence was handled by the offi=
+ce that received it. I have no commercial purpose. All records produced wil=
+l be published in full, at no charge, at oprdvolunteerabuse.org.
+
+
+
+Acknowledgment and timeline. ORS 192.324(2) requires acknowledgment or comp=
+letion within five business days, and ORS 192.329(5) requires a reasonable =
+estimated completion date where a response cannot be completed within fifte=
+en business days. I request both in writing.
+
+
+
+Fees. ORS 192.324(4) prohibits a fee exceeding $25 without prior written no=
+tice. If a fee is to be charged, I request that notice with an itemized bas=
+is before any work is performed, and the opportunity to narrow the request =
+rather than have it held pending payment.
+
+
+
+Format. Electronic delivery by email or secure link. I am specifying format=
+ at the time of this request, as your office's published policy requires: I=
+ request records in their native format with links, metadata, and attachmen=
+ts preserved and intact - not converted to PDF. Email should be produced in=
+ a format that retains full headers, recipients, timestamps, and attachment=
+s. I have no ability to receive or return printed forms.
+
+
+
+Preservation. Please treat all records responsive to this request as subjec=
+t to litigation hold. I have served a notice of tort claim on the State of =
+Oregon under ORS 30.275 concerning the conduct described above, and DAS Ris=
+k Management has opened claim P195403.
+
+
+
+Disposition. For each numbered item, please state whether responsive record=
+s exist, produce them, or cite the specific exemption claimed for each reco=
+rd or portion withheld, as ORS 192.329(2) requires. If the Office is not th=
+e custodian of a category, please identify the custodian rather than closin=
+g the request as to that category. ORS 192.311(2)(b).
+
+
+
+Robert Samuel White
+
+oprdvolunteerabuse.org
+
+--_000_BY5PR09MB47246EF046148FA4A92714F5D7812BY5PR09MB4724namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:DontUseAdvancedTypographyReadingMail/>
+<w:DontUseJustificationAdvancedTypographyReadingMail/>
+<w:DontUseHyphenationAdvancedTypographyReadingMail/>
+</w:WordDocument>
+</xml><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:wf_segoe-ui_normal;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle23
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+p.xxxxmsonormal, li.xxxxmsonormal, div.xxxxmsonormal
+	{mso-style-name:x_xxxmsonormal;
+	margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"xxxxmsonormal"><span style=3D"font-family:&quot;Times New Roman=
+&quot;,serif">Please send a check payable to &#8220;State of Oregon&#8221; =
+in the amount of $572.50 to the following address. Please put &quot;White &=
+#8211; 9/5/26 PRR&quot; in the memo line or in a cover letter.&nbsp;Please =
+let
+ us know if you have any questions. </span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal"><span style=3D"font-family:&quot;Times New Roman=
+&quot;,serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xxxxmsonormal" style=3D"margin-left:.5in"><span style=3D"font-f=
+amily:&quot;Times New Roman&quot;,serif">Attn: Cameron Miles</span><o:p></o=
+:p></p>
+<p class=3D"xxxxmsonormal" style=3D"margin-left:.5in"><span style=3D"font-f=
+amily:&quot;Times New Roman&quot;,serif">Office of Governor Tina Kotek</spa=
+n><o:p></o:p></p>
+<p class=3D"xxxxmsonormal" style=3D"margin-left:.5in"><span style=3D"font-f=
+amily:&quot;Times New Roman&quot;,serif">900 Court Street NE, Suite 254</sp=
+an><o:p></o:p></p>
+<p class=3D"xxxxmsonormal" style=3D"margin-left:.5in"><span style=3D"font-f=
+amily:&quot;Times New Roman&quot;,serif">Salem, OR 97301</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Tuesday, September 22, 2026 5:32 PM<br>
+<b>To:</b> MILES Cameron D * GOV &lt;cameron.d.miles@oregon.gov&gt;<br>
+<b>Subject:</b> Re: Public records request under ORS 192.311 to 192.478<o:p=
+></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;visibility:revert !important;white-space:revert !important;width=
+:revert !important;word-break:revert !important;word-spacing:revert !import=
+ant;writing-mode:revert !important;zoom: revert !important">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;wf_segoe-ui_normal&quot;,s=
+erif;color:#212121">You don't often get email from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;visibility:revert !important;white-space:revert !important;width:r=
+evert !important;word-break:revert !important;word-spacing:revert !importan=
+t;writing-mode:revert !important;zoom: revert !important;align: left !impor=
+tant">
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"color:#212121">I will pay it. Send th=
+e instructions.<o:p></o:p></span></p>
+<div id=3D"ms-outlook-mobile-body-separator-line">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> MILES =
+Cameron D * GOV &lt;<a href=3D"mailto:cameron.d.miles@oregon.gov">cameron.d=
+.miles@oregon.gov</a>&gt;<br>
+<b>Sent:</b> Tuesday, 22 September 2026 17:29:47<br>
+<b>To:</b> Robert Samuel White &lt;<a href=3D"mailto:rsw@rswfire.com">rsw@r=
+swfire.com</a>&gt;<br>
+<b>Subject:</b> RE: Public records request under ORS 192.311 to 192.478</sp=
+an> <o:p>
+</o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">We estimate the co=
+st to collect, review, and produce the records to be $572.50.</span><o:p></=
+o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><b><=
+span style=3D"font-size:13.0pt;line-height:105%;font-family:&quot;Calibri&q=
+uot;,sans-serif">Fee Waiver Request Legal Standards</span></b><o:p></o:p></=
+p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><spa=
+n style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calibri&quot=
+;,sans-serif">In reviewing a public records request fee waiver, we follow D=
+AS Policy 107-001-030, the
+<i>Attorney General&#8217;s Public Records and Meetings Manual</i>, and Ore=
+gon&#8217;s public records law. DAS Policy 107-001-030 provides the followi=
+ng guidance:</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;text-indent:-.25in=
+;line-height:105%">
+<span style=3D"font-size:11.0pt;line-height:105%;font-family:Symbol">&middo=
+t;</span><span style=3D"font-size:7.0pt;line-height:105%;font-family:&quot;=
+Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;
+</span><span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;C=
+alibri&quot;,sans-serif">To adequately balance the State's obligation to be=
+ transparent and accessible with the obligation to prudently safeguard publ=
+ic funds and resources, fee-waivers and -reductions
+ should be granted when the statutory standard has been met &#8211; when di=
+sclosure will primarily benefit the general public.
+</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;text-indent:-.25in=
+;line-height:105%">
+<span style=3D"font-size:11.0pt;line-height:105%;font-family:Symbol">&middo=
+t;</span><span style=3D"font-size:7.0pt;line-height:105%;font-family:&quot;=
+Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;
+</span><span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;C=
+alibri&quot;,sans-serif">A request to waive or reduce fees related to a pub=
+lic records request, that requires substantial agency resources to complete=
+, may be denied if the interest of the general
+ public would be better served by preserving agency resources. </span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;text-indent:-.25in=
+;line-height:105%">
+<span style=3D"font-size:11.0pt;line-height:105%;font-family:Symbol">&middo=
+t;</span><span style=3D"font-size:7.0pt;line-height:105%;font-family:&quot;=
+Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;
+</span><span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;C=
+alibri&quot;,sans-serif">The public interest is not a fixed concept and the=
+ balance of public interest may change over time. It may shift as informati=
+on becomes older or in the light of issues of
+ the day. The circumstances at the time of the request will be considered.<=
+/span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;text-indent:-.25in=
+;line-height:105%">
+<span style=3D"font-size:11.0pt;line-height:105%;font-family:Symbol">&middo=
+t;</span><span style=3D"font-size:7.0pt;line-height:105%;font-family:&quot;=
+Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;
+</span><span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;C=
+alibri&quot;,sans-serif">A genuine public interest in the subject matter of=
+ a request is required as the basis for granting a waiver. The public inter=
+est is not necessarily the same as what interests
+ the public. The fact that a topic has been discussed in the media does not=
+ automatically mean that there is a public interest in disclosing the infor=
+mation that has been requested about it.</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;line-height:105%">
+<span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calibri&=
+quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><spa=
+n style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calibri&quot=
+;,sans-serif">ORS 192.324 (5) allows the custodian of a public record to wa=
+ive or reduce the fee associated with a public records
+ request if disclosure of the record at issue &#8220;&#8230; primarily bene=
+fits the general public.&#8221; Waiving or reducing fees is in the public i=
+nterest &#8220;when the furnishing of the record has utility - indeed, its =
+greatest utility - to the community or society as a whole.&#8221;
+<i>In Def. of Animals v. Or. Health Sciences Univ.</i>, 199 Or App 160, 189=
+ (2005). The custodian of the record may deny a request for a full or parti=
+al fee waiver even if disclosure would primarily benefit the public, provid=
+ed that the denial is reasonable
+ under the totality of the circumstances.<i> Id.</i> at 189-90.</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><spa=
+n style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calibri&quot=
+;,sans-serif">Waiving or reducing fees in the public interest is distinct f=
+rom situations where disclosure would primarily
+ affect a concern or interest of a private individual.<i> Id.</i> at 188. R=
+elevant factors to consider when determining whether a requester has establ=
+ished a sufficient public interest include: (1) the requester&#8217;s ident=
+ity, (2) the purpose for which the requester
+ intends to use the information, (3) the character of the information, (4) =
+whether the requested information is already in the public domain, and (5) =
+whether the requester can demonstrate the ability to disseminate the inform=
+ation to the public.
+<i>See</i> <i>State of Oregon, Department of Justice,</i> <i>Atty. Gen. Pub=
+lic Records and Meetings Manual</i>, 19-20 (2024).</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><b><=
+span style=3D"font-size:13.0pt;line-height:105%;font-family:&quot;Calibri&q=
+uot;,sans-serif">Fee Waiver Request Analysis</span></b><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">Applying the relevant factors helps us determine w=
+hether the PRR is in the public interest. The requester has demonstrated th=
+at this request relates to a personal, rather
+ than a public interest. Therefore, this factor does not weigh in favor of =
+granting a fee waiver.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">The second factor is the purpose for which the req=
+uester intends to use the information. The requester has not demonstrated t=
+hat this factor weighs in favor of granting a
+ fee waiver as the use of records for a personal issue does not weigh in fa=
+vor of the request being in the public interest.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">The third factor is the character of the informati=
+on. The requester has not demonstrated that this factor weighs in favor of =
+granting a fee waiver as the fee waiver request
+ form does not explain how the release of records is in the public interest=
+ other than by stating a general interest in transparency.</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">The fourth factor is whether the requested informa=
+tion is already in the public domain. The requester has not demonstrated th=
+at this factor weighs in favor of granting a fee
+ waiver.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">The final factor is whether the requester can demo=
+nstrate the ability to disseminate the information to the public. The reque=
+ster has not demonstrated the ability to disseminate
+ the public records but merely stated that he can post it on a website.</sp=
+an><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt;font-family:&quot;C=
+alibri&quot;,sans-serif">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><spa=
+n style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calibri&quot=
+;,sans-serif">Finally, in evaluating a public records request fee waiver th=
+e public body must consider whether, under the totality
+ of the circumstances, a fee waiver is also in the public interest. When we=
+ighing the public interest in disclosure versus the public interest in pres=
+erving public funds, when none of the prescribed factors weigh in favor of =
+the grant of a fee waiver, the grant
+ of a fee waiver is not warranted. Consequently, your request for a fee wai=
+ver is denied.</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"margin-bottom:8.0pt;line-height:105%"><b><=
+span style=3D"font-size:13.0pt;line-height:105%;font-family:&quot;Calibri&q=
+uot;,sans-serif">Fee Payment</span></b><span style=3D"font-size:11.0pt;line=
+-height:105%">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">I will wait to hea=
+r from you prior to proceeding with the collection and review of these reco=
+rds. If you decide to pay the $572.50, we will send you instructions on sub=
+mitting payment.&nbsp;Let me know if you
+ have any questions. If you would like to narrow your request (for example =
+by using a shorter date range, by searching only particular employee record=
+s, or by adding search terms), I would be happy to work with you.</span><o:=
+p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Thanks,</span><o:p=
+></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Cameron D. Miles (=
+he/him)</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Government Account=
+ability Attorney</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Office of Governor=
+ Tina Kotek</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"xmsonormal"><b><span style=3D"font-size:11.0pt;font-family:&quo=
+t;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt=
+;font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;<a hr=
+ef=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>&gt;
+<br>
+<b>Sent:</b> Saturday, September 5, 2026 2:20 PM<br>
+<b>To:</b> MILES Cameron D * GOV &lt;<a href=3D"mailto:cameron.d.miles@oreg=
+on.gov">cameron.d.miles@oregon.gov</a>&gt;<br>
+<b>Cc:</b> Governor Kotek * GOV &lt;<a href=3D"mailto:governor.kotek@oregon=
+.gov">governor.kotek@oregon.gov</a>&gt;;
+<a href=3D"mailto:marissa@tinafororegon.com">marissa@tinafororegon.com</a><=
+br>
+<b>Subject:</b> Public records request under ORS 192.311 to 192.478</span><=
+o:p></o:p></p>
+</div>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;background:revert!important;border:revert!important;b=
+ottom:revert!important;color:revert!important;direction:revert!important;di=
+splay:revert!important;font-size:revert!important;height:revert!important;l=
+etter-spacing:revert!important;line-height:revert!important;margin:revert!i=
+mportant;opacity:revert!important;order:revert!important;outline:revert!imp=
+ortant;overflow:revert!important;padding:revert!important;position:revert!i=
+mportant;tab-size:revert!important;table-layout:revert!important;text-align=
+:revert!important;text-indent:revert!important;text-orientation:revert!impo=
+rtant;text-overflow:revert!important;text-transform:revert!important;top:re=
+vert!important;vertical-align:revert!important;visibility:revert!important;=
+white-space:revert!important;width:revert!important;word-break:revert!impor=
+tant;word-spacing:revert!important;writing-mode:revert!important;zoom:rever=
+t!important">
+<p class=3D"xmsonormal" style=3D"mso-element:frame;mso-element-frame-hspace=
+:2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-e=
+lement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;wf_segoe-ui_normal&quot;,s=
+erif;color:#212121">You don't often get email from
+</span><span style=3D"color:black"><a href=3D"mailto:rsw@rswfire.com"><span=
+ style=3D"font-size:9.0pt;font-family:&quot;wf_segoe-ui_normal&quot;,serif"=
+>rsw@rswfire.com</span></a></span><span style=3D"font-size:9.0pt;font-famil=
+y:&quot;wf_segoe-ui_normal&quot;,serif;color:#212121">.
+</span><span style=3D"color:black"><a href=3D"https://aka.ms/LearnAboutSend=
+erIdentification"><span style=3D"font-size:9.0pt;font-family:&quot;wf_segoe=
+-ui_normal&quot;,serif">Learn why this is important</span></a></span><span =
+style=3D"font-size:9.0pt;font-family:&quot;wf_segoe-ui_normal&quot;,serif;c=
+olor:#212121">
+</span><o:p></o:p></p>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;background:revert!important;border:revert!important;bot=
+tom:revert!important;color:revert!important;direction:revert!important;disp=
+lay:revert!important;font-size:revert!important;height:revert!important;let=
+ter-spacing:revert!important;line-height:revert!important;margin:revert!imp=
+ortant;opacity:revert!important;order:revert!important;outline:revert!impor=
+tant;overflow:revert!important;padding:revert!important;position:revert!imp=
+ortant;tab-size:revert!important;table-layout:revert!important;text-align:r=
+evert!important;text-indent:revert!important;text-orientation:revert!import=
+ant;text-overflow:revert!important;text-transform:revert!important;top:reve=
+rt!important;vertical-align:revert!important;visibility:revert!important;wh=
+ite-space:revert!important;width:revert!important;word-break:revert!importa=
+nt;word-spacing:revert!important;writing-mode:revert!important;zoom:revert!=
+important">
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"xmsonormal"><span style=3D"color:black">This is a request under=
+ the Oregon Public Records Law.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">I am Robert Samuel Whit=
+e, date of birth April 11, 1977. I served as an unpaid volunteer with the O=
+regon Parks and Recreation Department at Jessie M. Honeyman Memorial State =
+Park. I was dismissed on March 24, 2025.
+ The letter permanently excluding me from all OPRD volunteer programs, citi=
+ng my public comments about staff, is dated March 26, 2025. The Department'=
+s own report to Oregon State Police states that I was &quot;dismissed from =
+volunteering with OPRD on 3/25/25 and
+ flagged as ineligible for future service&quot; &#8212; a date one day earl=
+ier than the written notice I received, and a determination for which I was=
+ never given notice at all. I have written to the Office of the Governor co=
+ncerning that matter beginning November 18,
+ 2025, and have been a party to or subject of correspondence with that offi=
+ce on dozens of occasions.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">On September 3, 2026, O=
+regon State Police produced its file on me under PR27478. That production s=
+hows that on March 3, 2026 an OPRD Emergency Manager notified Oregon State =
+Police about me, and gave as the stated
+ reason that I was &quot;now including the Governor as well as our Director=
+.&quot; That email alleged no crime, described no threat, and quoted no sta=
+tement of mine. A threat assessment was ordered the following morning by th=
+e captain of OSP Government and Media Relations.
+ On March 24, 2026, one year to the day of that retaliatory dismissal, two =
+OSP detectives and a federal officer came to my residence.</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Unless otherwise noted,=
+ the period requested is February 1, 2025 to the present.</span><o:p></o:p>=
+</p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">I request the following=
+.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">1. &nbsp;All records co=
+ncerning me held by the Office of the Governor in any division or function,=
+ including records indexed under Robert White, Robert Samuel White, Robert =
+S. White, Sam White,
+</span><a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a><span style=3D=
+"color:black">, oprdvolunteerabuse.org, rswfire.com, or my date of birth.</=
+span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">2. &nbsp;All records re=
+flecting the receipt, routing, logging, assignment, review, or disposition =
+of correspondence I sent to the Office of the Governor. This includes const=
+ituent services tracking system entries,
+ case or ticket records, routing notes, assignment records, internal forwar=
+ding, and any record of a decision not to respond.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">3. &nbsp;Any summary, b=
+riefing note, memorandum, talking point, or other internal document prepare=
+d about me or about the matter described in my correspondence, and any reco=
+rd identifying who prepared it and for whom.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">4. &nbsp;All communicat=
+ions between the Office of the Governor and the Oregon Parks and Recreation=
+ Department concerning me, including any communication with Director Lisa S=
+umption, Deputy Director J.R. Collier, or
+ any OPRD employee.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">5. &nbsp;All communicat=
+ions between the Office of the Governor and Oregon State Police concerning =
+me, including any communication concerning the March 24, 2026 contact at my=
+ residence, OSP case SP26096984, or CAD event
+ SP26097765.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">6. &nbsp;All communicat=
+ions between the Office of the Governor and the Oregon Department of Justic=
+e, the Department of Administrative Services, or any other state or federal=
+ agency concerning me.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">7. &nbsp;Any record ref=
+lecting that the Governor was personally informed of this matter, in any fo=
+rm, on any date, and any record reflecting a direction, instruction, or dec=
+ision given by the Governor or her staff
+ concerning it.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">8. &nbsp;Any record of =
+a meeting, call, or briefing at which this matter, my correspondence, or I =
+was discussed. This includes calendar entries, meeting invitations, agendas=
+, notes taken during or after, and any record
+ identifying who was present.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">9. &nbsp;Any recurring =
+or periodic briefing document produced for the Governor or her senior staff=
+ &#8212; daily or weekly issue summaries, constituent correspondence report=
+s, agency issue reports, or equivalent &#8212; in which
+ I, my correspondence, the Oregon Parks and Recreation Department's handlin=
+g of it, or the archive at oprdvolunteerabuse.org appears.</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">10. All communications =
+concerning me between any Office of the Governor employee and any person ac=
+ting for the Kotek campaign, to the extent held on state systems or by stat=
+e employees.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">11. Any record describe=
+d above held in a personal email account, personal device, or non-state mes=
+saging application by an Office of the Governor employee, where the record =
+concerns state business regarding me.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">12. Any record reflecti=
+ng the disclosure of my personal information, including my date of birth, m=
+y residence, my correspondence, or my volunteer file, by the Office of the =
+Governor to any person or agency.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">13. All records concern=
+ing the archive at oprdvolunteerabuse.org, my public records requests, my n=
+otice of tort claim served September 3, 2026, DAS Risk Management claim P19=
+5403, or the legal fund I have opened
+ in this matter.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Administration</span><o=
+:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Fee waiver. I request a=
+ waiver under ORS 192.324(5). Disclosure primarily benefits the general pub=
+lic. These records concern whether correspondence from a citizen to his Gov=
+ernor was the stated basis for a state
+ police threat assessment, and an intimidating &quot;knock and talk&quot; b=
+ehind a locked gate on restricted federal land, and how that correspondence=
+ was handled by the office that received it. I have no commercial purpose. =
+All records produced will be published in
+ full, at no charge, at oprdvolunteerabuse.org.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Acknowledgment and time=
+line. ORS 192.324(2) requires acknowledgment or completion within five busi=
+ness days, and ORS 192.329(5) requires a reasonable estimated completion da=
+te where a response cannot be completed
+ within fifteen business days. I request both in writing.</span><o:p></o:p>=
+</p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Fees. ORS 192.324(4) pr=
+ohibits a fee exceeding $25 without prior written notice. If a fee is to be=
+ charged, I request that notice with an itemized basis before any work is p=
+erformed, and the opportunity to narrow
+ the request rather than have it held pending payment.</span><o:p></o:p></p=
+>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Format. Electronic deli=
+very by email or secure link. I am specifying format at the time of this re=
+quest, as your office's published policy requires: I request records in the=
+ir native format with links, metadata,
+ and attachments preserved and intact &#8212; not converted to PDF. Email s=
+hould be produced in a format that retains full headers, recipients, timest=
+amps, and attachments. I have no ability to receive or return printed forms=
+.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Preservation. Please tr=
+eat all records responsive to this request as subject to litigation hold. I=
+ have served a notice of tort claim on the State of Oregon under ORS 30.275=
+ concerning the conduct described above,
+ and DAS Risk Management has opened claim P195403.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Disposition. For each n=
+umbered item, please state whether responsive records exist, produce them, =
+or cite the specific exemption claimed for each record or portion withheld,=
+ as ORS 192.329(2) requires. If the
+ Office is not the custodian of a category, please identify the custodian r=
+ather than closing the request as to that category. ORS 192.311(2)(b).</spa=
+n><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">&nbsp;</span><o:p></o:p=
+></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">Robert Samuel White</sp=
+an><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"color:black">oprdvolunteerabuse.org<=
+/span><o:p></o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BY5PR09MB47246EF046148FA4A92714F5D7812BY5PR09MB4724namp_--
+

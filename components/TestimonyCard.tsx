@@ -21,6 +21,7 @@ const CHAPTERS = [
     "DISPLACEMENT",
     "THE DIRECTOR AND HER DEPUTY",
     "THE THREE MEN WITH GUNS",
+    "THE GOVERNOR'S SILENCE",
 ];
 
 export default function TestimonyCard() {
@@ -119,10 +120,10 @@ export default function TestimonyCard() {
                         </Link>
                     ))}
                     <Link
-                        href="/testimony/#c10"
+                        href="/testimony/#c11"
                         className="group flex items-baseline gap-3 rounded-lg px-2 py-1.5 hover:bg-emerald-50"
                     >
-                        <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">10</span>
+                        <span className="w-6 shrink-0 font-mono text-[11px] text-emerald-600">11</span>
                         <span className="font-mono text-[13px] font-bold text-emerald-800 underline decoration-emerald-300 underline-offset-2 group-hover:text-emerald-600">
                             ADDENDUM: ON THE END OF THE WORLD
                         </span>

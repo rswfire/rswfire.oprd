@@ -616,6 +616,13 @@ I serve OPRD <Link href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710" className="und
 I tell Greenlee <Link href="/record/osp/01M34REGP0WY727F9TQGS959Q7" className="underline text-emerald-800 hover:text-emerald-600">a response is expected</Link>. The Governor&rsquo;s office estimates $572.50 for its records and <Link href="/record/governor/01M35TPA3RXRP0HY3NM9JHDJ8F" className="underline text-emerald-800 hover:text-emerald-600">denies the fee waiver</Link>, finding the request personal and the archive an undemonstrated means of dissemination. My answer, two minutes later, in full: <Link href="/record/governor/01M35TT090PFYFTHZ1GFFA5MKA" className="underline text-emerald-800 hover:text-emerald-600">&ldquo;I will pay it. Send the instructions.&rdquo;</Link>
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">September 24, 2026</div>
+                    <div className="mt-2 text-sm">
+                        The instructions never come. I <Link href="/record/governor/01M3ABNN38T76YFJBZQ510DPD8/" className="underline text-emerald-800 hover:text-emerald-600">petition the Attorney General</Link> on two grounds: the waiver denial, and a fee set at $572.50 with the means to pay it withheld. The denial found I had not shown I could disseminate the records. That office&rsquo;s own letters were published here on the days it sent them. Two hours and two minutes later, <Link href="/record/governor/01M3AJNQ0RYYQSV41172KZJYDZ/" className="underline text-emerald-800 hover:text-emerald-600">the payment instructions arrive</Link>. The Attorney General&rsquo;s office <Link href="/record/governor/01M3AMJFBGZ3MHAAPFM82QTEFV/" className="underline text-emerald-800 hover:text-emerald-600">acknowledges the petition</Link> thirty-four minutes after that. The same afternoon, the Department of Justice <Link href="/record/doj/01M3APMQF8Z8NRH088RB9N765Z/" className="underline text-emerald-800 hover:text-emerald-600">calls my request for my own records very broad in scope</Link> and invites me to narrow it. I <Link href="/record/doj/01M3ARW6JRNP6YE36HCJ5A6CAC/" className="underline text-emerald-800 hover:text-emerald-600">ask which of the nine categories carry the burden</Link>, and how a request bounded by one person&rsquo;s name becomes very broad.
+                    </div>
+                </li>
             </ul>
 
         </SectionPage>
