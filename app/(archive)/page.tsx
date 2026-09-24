@@ -10,6 +10,7 @@ import SunlightCard from "@/components/SunlightCard";
 import OutreachNavigation from "@/components/OutreachNavigation";
 import TestimonyCard from "@/components/TestimonyCard";
 import AiCard from "@/components/AiCard";
+import SpreadCard from "@/components/SpreadCard";
 import WhatVolunteersDeserve from "@/components/WhatVolunteersDeserve";
 import PriceOfTheRecord from "@/components/PriceOfTheRecord";
 import RecordIndexCard from "@/components/RecordIndexCard";
@@ -41,6 +42,10 @@ export default function OverviewPage() {
 
             {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
             <WhatVolunteersDeserve />
+
+
+            {/* HOW IT SPREAD — a job application to nine institutions */}
+            <SpreadCard />
 
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
