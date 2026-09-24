@@ -74,18 +74,6 @@ const WORK: { lead: string; body: React.ReactNode }[] = [
         ),
     },
     {
-        lead: "I have it find what repeats.",
-        body: (
-            <>
-                Who acted, on what date, and what followed. That reading is what{" "}
-                <Link href="/timeline" className={link}>
-                    builds the timeline
-                </Link>
-                .
-            </>
-        ),
-    },
-    {
         lead: "I build this site with it.",
         body: (
             <>
@@ -240,7 +228,7 @@ export default function AiCard() {
             {/* ── The standing prohibitions ── */}
             <div className="border-t border-slate-800 bg-slate-900/60 px-6 py-7 sm:px-10 sm:py-9">
                 <h3 className="font-mono text-[11px] font-bold uppercase tracking-widest text-rose-400">
-                    What it is forbidden to do
+                    What it is forbidden to do.
                 </h3>
                 <div className="mt-5 max-w-3xl space-y-4">
                     {FORBIDDEN.map((f) => (
@@ -259,7 +247,7 @@ export default function AiCard() {
             {/* ── The same prohibitions, pointed at how they are written about ── */}
             <div className="border-t border-slate-800 bg-slate-900/60 px-6 py-7 sm:px-10 sm:py-9">
                 <h3 className="font-mono text-[11px] font-bold uppercase tracking-widest text-rose-400">
-                    I extend this to them too
+                    I extend this to them too.
                 </h3>
                 <div className="mt-5 max-w-3xl space-y-4">
                     {FORBIDDEN_OF_THEM.map((f) => (
@@ -275,14 +263,6 @@ export default function AiCard() {
                 </div>
             </div>
 
-            {/* ── The closing ── */}
-            <div className="bg-emerald-400 px-6 py-7 sm:px-10">
-                <p className="max-w-3xl text-[17px] font-medium leading-relaxed text-emerald-950 sm:text-xl">
-                    I am a systems thinker and a developer. The institution gave me no process, no
-                    hearing, and no record I was permitted to see.{" "}
-                    <span className="font-bold">I built what did not exist.</span>
-                </p>
-            </div>
         </div>
     );
 }

@@ -13,45 +13,59 @@ function Stem({ h = 28 }: { h?: number }) {
     return <div className={LINE} style={{ height: h }} aria-hidden />;
 }
 
-function Stage({ label }: { label: string }) {
+function Stage({ label, note }: { label: string; note?: string }) {
     return (
-        <div className="flex items-center justify-center gap-3 py-1">
-            <span className="h-px w-8 bg-rose-200" aria-hidden />
-            <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-rose-500">
-                {label}
-            </span>
-            <span className="h-px w-8 bg-rose-200" aria-hidden />
+        <div className="py-1">
+            <div className="flex items-center justify-center gap-3">
+                <span className="h-px w-8 bg-rose-200" aria-hidden />
+                <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-rose-500">
+                    {label}
+                </span>
+                <span className="h-px w-8 bg-rose-200" aria-hidden />
+            </div>
+            {note && (
+                <p className="mx-auto mt-2 max-w-lg text-center text-sm leading-relaxed text-gray-600">
+                    {note}
+                </p>
+            )}
         </div>
     );
 }
 
 const BRANCHES = [
     {
-        agency: "Oregon Department of Justice",
-        unit: "TITAN Fusion Center",
-        date: "March 11, 2026",
-        body: "An OPRD employee carries my activities to the fusion center. Its analyst writes that my actions “border on harassment due to the volume of emails.”",
-        href: "/records/doj",
+        agency: "Oregon State Police",
+        unit: "Criminal Investigations",
+        date: "March 4 – 24, 2026",
+        body: "A threat assessment is ordered on March 4 and handed down a captain, a lieutenant, a sergeant, to a detective. On March 23 a dispatch event names me a suspect for “concerning emails to former supervisors in parks department and publicly airing grievances.”",
+        href: "/records/osp",
     },
     {
         agency: "FBI",
         unit: "Task force officer",
-        date: "March 11 – 13, 2026",
-        body: "“Just OSP it is not an FBI case.” Two days later my DMV record and a report on me are sent from an fbi.gov address into the state file.",
+        date: "March 6 – 24, 2026",
+        body: "On the first day he has it, he forwards me to his fbi.gov address and asks FBI personnel for my date of birth. On March 11: “Just OSP it is not an FBI case.” On March 13 my DMV record and a report on me come back out of that address into the state file.",
         href: "/records/osp",
     },
     {
-        agency: "Oregon State Police",
-        unit: "Dispatch",
-        date: "March 23, 2026",
-        body: "A dispatch event names me a suspect. The basis it gives is “concerning emails to former supervisors in parks department and publicly airing grievances.”",
-        href: "/records/osp",
+        agency: "Oregon Department of Justice",
+        unit: "TITAN Fusion Center",
+        date: "March 2026",
+        body: "An OPRD employee shares my activities with the fusion center. Its analyst is “documenting this activity for our internal awareness” because my actions “border on harassment due to the volume of emails.”",
+        href: "/records/doj",
     },
     {
         agency: "U.S. Forest Service",
         unit: "Law enforcement",
-        date: "March 22, 2026",
-        body: "My schedule, duties, and vehicles are sent on, with two hunting-app screenshots showing a waypoint pinned on the work center where I live.",
+        date: "March 17 – 22, 2026",
+        body: "A special agent coordinates with the task force officer, then sends two hunting-app screenshots with a waypoint on where I live, plus my schedule, my duties, and my vehicles.",
+        href: "/records/usfs",
+    },
+    {
+        agency: "The knock and talk",
+        unit: "Planned together",
+        date: "March 23, 2026",
+        body: "Twelve minutes after the dispatch event opens: “Please see attached Hasty Plan for Robert White knock and talk.” The Forest Service special agent goes with them.",
         href: "/records/usfs",
     },
 ];
@@ -63,11 +77,10 @@ export default function SpreadCard() {
             {/* ── Title ── */}
             <div className="border-b border-slate-200 bg-gradient-to-b from-rose-50 to-white px-6 py-7 sm:px-10">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                    How it spread
+                    How it spread.
                 </h2>
                 <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-gray-700 sm:text-base">
-                    It began with a job application. Nothing below it began with a crime. The state&rsquo;s
-                    own report concludes there is no evidence I committed any.
+                    It began with a job application. This is where it went.
                 </p>
             </div>
 
@@ -77,7 +90,7 @@ export default function SpreadCard() {
                 <div className="mx-auto max-w-md">
                     <div className={`${NODE} border-emerald-300`}>
                         <div className={`${DATE} text-emerald-700`}>February 12, 2025</div>
-                        <div className="mt-1 text-base font-bold text-gray-900">A job application</div>
+                        <div className="mt-1 text-base font-bold text-gray-900">A job application.</div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
                             I applied to become a park ranger assistant, and then I withdrew the
                             application.
@@ -92,15 +105,16 @@ export default function SpreadCard() {
                     <div className={`${NODE} border-amber-300`}>
                         <div className={`${DATE} text-amber-700`}>Oregon Parks &amp; Recreation</div>
                         <div className="mt-1 text-base font-bold text-gray-900">
-                            A supervisor invented a reason for the withdrawal
+                            The supervisor&rsquo;s word is the only word.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
-                            It was written into an internal{" "}
+                            There are no written standards, no notice, no hearing, and no appeal.
+                            What a supervisor writes down becomes the account, and there is no
+                            mechanism by which it can be questioned. Everything below this{" "}
                             <Link href="/sunlight" className="font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">
-                                Timeline of Events
-                            </Link>{" "}
-                            as an entry dated 02/12/25, with quotations attributed to me, on a date
-                            that cannot be true. Ten months. Twenty-three revisions. Never shown to me.
+                                rests on that account
+                            </Link>
+                            .
                         </p>
                     </div>
                 </div>
@@ -112,12 +126,12 @@ export default function SpreadCard() {
                     <div className={`${NODE} border-amber-300`}>
                         <div className={`${DATE} text-amber-700`}>March 24 &ndash; 26, 2025</div>
                         <div className="mt-1 text-base font-bold text-gray-900">
-                            Dismissed, then permanently excluded
+                            Dismissed, then permanently excluded.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
                             Dismissed by phone six days before I completed my service, with
                             twenty-four hours to leave the park where I lived. Two days later,{" "}
-                            <Link href="/records/oprd" className="font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">
+                            <Link href="/record/oprd/01JQA2WM60RX7MSJQ5QPFD8AR2/" className="font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">
                                 excluded from every volunteer program the institution runs
                             </Link>
                             , for my public comments about staff.
@@ -132,33 +146,43 @@ export default function SpreadCard() {
                 <Stem h={20} />
 
                 <div className="mx-auto max-w-lg">
-                    <div className="rounded-xl border-2 border-rose-400 bg-rose-50 px-4 py-4 shadow-sm">
-                        <div className={`${DATE} text-rose-700`}>March 6, 2026</div>
+                    <Link
+                        href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/"
+                        className="block rounded-xl border-2 border-rose-400 bg-rose-50 px-4 py-4 shadow-sm transition-colors hover:bg-rose-100"
+                    >
+                        <div className={`${DATE} text-rose-700`}>March 3 &ndash; 4, 2026</div>
                         <div className="mt-1 text-base font-bold text-gray-900 sm:text-lg">
-                            The agency sent me to the police
+                            The agency sent the police my website.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-700">
-                            OPRD gave the Oregon State Police its Timeline and my dismissal letter.
-                            The substance of the referral was a document written about me over ten
-                            months and never shown to me. What I had done was write to them about it.
+                            OPRD&rsquo;s emergency manager emailed a link to this archive to the
+                            Oregon State Police captain for Government and Media Relations. The
+                            reason he gave: &ldquo;he is now including the Governor as well as our
+                            Director.&rdquo; The next afternoon that media relations captain asked
+                            that &ldquo;a threat assessment be conducted asap.&rdquo;
                         </p>
-                    </div>
+                    </Link>
                 </div>
 
                 <Stem h={20} />
 
                 {/* ── The fan ── */}
-                <Stage label="Where it went" />
-                <Stem h={16} />
-                <div className="mx-auto h-px w-2/3 bg-rose-300" aria-hidden />
+                <Stage
+                    label="The next three weeks"
+                    note="Four institutions went through my information and mapped where I live, preparing for the visit."
+                />
+                <Stem h={18} />
 
-                <div className="mt-0 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-                    {BRANCHES.map((b) => (
-                        <div key={b.agency + b.unit} className="flex flex-col items-center">
-                            <Stem h={18} />
+                {/* The five run in parallel over the same three weeks, and the
+                    grid wraps at every breakpoint. A panel groups them; drop
+                    lines into a wrapping grid cannot stay attached. */}
+                <div className="rounded-2xl border border-rose-200 bg-rose-50/40 p-3 sm:p-4">
+                    <div className="grid grid-cols-2 items-stretch gap-3 sm:gap-4 lg:grid-cols-3">
+                        {BRANCHES.map((b) => (
                             <Link
+                                key={b.agency + b.unit}
                                 href={b.href}
-                                className={`${NODE} block w-full border-rose-200 transition-colors hover:border-rose-400 hover:bg-rose-50`}
+                                className={`${NODE} flex h-full flex-col border-rose-200 transition-colors hover:border-rose-400 hover:bg-rose-50`}
                             >
                                 <div className={`${DATE} text-rose-600`}>{b.date}</div>
                                 <div className="mt-1 text-[13px] font-bold leading-snug text-gray-900 sm:text-sm">
@@ -171,12 +195,10 @@ export default function SpreadCard() {
                                     {b.body}
                                 </p>
                             </Link>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
 
-                <Stem h={18} />
-                <div className="mx-auto h-px w-2/3 bg-rose-300" aria-hidden />
                 <Stem h={18} />
 
                 {/* ── Arrival: where I live ── */}
@@ -190,23 +212,12 @@ export default function SpreadCard() {
                                 March 24, 2026 &middot; one year to the day
                             </div>
                             <div className="mt-1.5 text-lg font-bold text-white">
-                                Three armed officers at the door
+                                Three armed officers at the door.
                             </div>
                             <p className="mt-2 text-sm leading-relaxed text-slate-300">
                                 They came through a locked federal gate onto restricted federal land,
-                                to the Siltcoos Work Center. I said I would not speak without an
+                                to where I live and work. I said I would not speak without an
                                 attorney, said it a second time, and shut the door.
-                            </p>
-                        </div>
-                        <div className="border-t border-slate-800 bg-slate-900/70 px-5 py-4">
-                            <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-500">
-                                The square at the end of the line
-                            </div>
-                            <div className="mt-1 text-[15px] font-bold text-white">
-                                Me. Caretaker, Siltcoos Work Center.
-                            </div>
-                            <p className="mt-1 text-sm leading-relaxed text-slate-400">
-                                The gate they came through is the gate to where I live and work.
                             </p>
                         </div>
                     </div>
@@ -225,11 +236,11 @@ export default function SpreadCard() {
                     >
                         <div className={`${DATE} text-rose-700`}>March 27, 2026</div>
                         <div className="mt-1 text-base font-bold text-gray-900 sm:text-lg">
-                            My file went to the county where I live
+                            My file went to the county where I live.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-700">
                             Three days after being told I was not in trouble, a federal agent emailed
-                            a Lane County sheriff&rsquo;s deputy, copying two state police detectives,
+                            a sheriff&rsquo;s deputy, copying two state police detectives,
                             and sent my name, date of birth, driver&rsquo;s license number, residence,
                             work schedule, duties, correspondence, and text messages, with a
                             commitment to &ldquo;keep you up to date.&rdquo;
@@ -241,14 +252,6 @@ export default function SpreadCard() {
                 </div>
             </div>
 
-            {/* ── The floor ── */}
-            <div className="border-t border-slate-200 bg-slate-50 px-6 py-6 sm:px-10">
-                <p className="max-w-3xl text-[15px] leading-relaxed text-gray-700 sm:text-base">
-                    Nine institutions now hold records about me. Not one of them opened a file because
-                    I committed an offense. It started with a job application I withdrew, and a
-                    supervisor who wrote down a reason that was not true.
-                </p>
-            </div>
         </div>
     );
 }
