@@ -341,8 +341,8 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
             {
                 id: "US-09",
                 anchor: "us-fbi-complaint",
-                title: "FBI Portland Field Office: the conduct of two officers",
-                audience: "Complaint to the Special Agent in Charge about two men abusing the power and resources available to them: a JTTF task force officer who used FBI accounts, personnel, and data in a matter he stated in writing was not an FBI case, and a Forest Service special agent who mapped the requester's home, guided the visit, and spread his personal file to a county sheriff's office three days after the matter was found empty. Both are asked to be investigated.",
+                title: "FBI Portland Field Office: the conduct of a task force officer",
+                audience: "Complaint to the Special Agent in Charge about one man abusing the power and resources available to him: a JTTF task force officer who used FBI accounts, personnel, and data in a matter he stated in writing was not an FBI case. He is asked to be investigated.",
                 startingPoints: [{ label: "FBI Portland Field Office", href: "https://www.fbi.gov/contact-us/field-offices/portland" }, { label: "tips.fbi.gov", href: "https://tips.fbi.gov" }],
                 fields: ["Recipient / office", "Contact / submission route", "Date sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
                 tracking: [
