@@ -1,7 +1,10 @@
-// How it spread. One diagram, top to bottom: a job application, an invented
-// reason, a removal, the referral that carried it out of the agency, the four
-// institutions it reached, the door it arrived at, and the county it went to
-// afterward. Every node is dated and every date is in the register.
+// How it spread. One diagram, top to bottom: the misunderstanding, the
+// supervisor's word, the removal, the year of asking, the referral that
+// carried it out of the agency, the five institutions it reached, the door it
+// arrived at, the county it went to, and the day he stopped asking.
+//
+// Third person throughout, as the testimony is. Every node is dated and every
+// date is in the register.
 
 import Link from "next/link";
 import Icon from "@/components/Icon";
@@ -38,28 +41,28 @@ const BRANCHES = [
         agency: "Oregon State Police",
         unit: "Criminal Investigations",
         date: "March 4 – 24, 2026",
-        body: "A threat assessment is ordered on March 4 and handed down a captain, a lieutenant, a sergeant, to a detective. On March 23 a dispatch event names me a suspect for “concerning emails to former supervisors in parks department and publicly airing grievances.”",
+        body: "A threat assessment is ordered on March 4 and handed down a captain, a lieutenant, a sergeant, to a detective. On March 23 a dispatch event names him a suspect for “concerning emails to former supervisors in parks department and publicly airing grievances.”",
         href: "/records/osp",
     },
     {
         agency: "FBI",
         unit: "Task force officer",
         date: "March 6 – 24, 2026",
-        body: "On the first day he has it, he forwards me to his fbi.gov address and asks FBI personnel for my date of birth. On March 11: “Just OSP it is not an FBI case.” On March 13 my DMV record and a report on me come back out of that address into the state file.",
+        body: "On the first day he has it, the task force officer forwards it to his own fbi.gov address and asks FBI personnel for a date of birth. On March 11: “Just OSP it is not an FBI case.” On March 13 a DMV record and a report come back out of that address into the state file.",
         href: "/records/osp",
     },
     {
         agency: "Oregon Department of Justice",
         unit: "TITAN Fusion Center",
         date: "March 2026",
-        body: "An OPRD employee shares my activities with the fusion center. Its analyst is “documenting this activity for our internal awareness” because my actions “border on harassment due to the volume of emails.”",
+        body: "An OPRD employee shares his activities with the fusion center. Its analyst is “documenting this activity for our internal awareness” because his actions “border on harassment due to the volume of emails.”",
         href: "/records/doj",
     },
     {
         agency: "U.S. Forest Service",
         unit: "Law enforcement",
         date: "March 17 – 22, 2026",
-        body: "A special agent coordinates with the task force officer, then sends two hunting-app screenshots with a waypoint on where I live, plus my schedule, my duties, and my vehicles.",
+        body: "A special agent coordinates with the task force officer, then sends two hunting-app screenshots with a waypoint on where he lives, plus his schedule, his duties, and his vehicles.",
         href: "/records/usfs",
     },
     {
@@ -80,9 +83,6 @@ export default function SpreadCard() {
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                     How it spread.
                 </h2>
-                <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-gray-700 sm:text-base">
-                    It began with a job application. This is where it went.
-                </p>
             </div>
 
             <div className="px-4 py-8 sm:px-10">
@@ -90,11 +90,12 @@ export default function SpreadCard() {
                 {/* ── Origin ── */}
                 <div className="mx-auto max-w-md">
                     <div className={`${NODE} border-emerald-300`}>
-                        <div className={`${DATE} text-emerald-700`}>February 12, 2025</div>
-                        <div className="mt-1 text-base font-bold text-gray-900">A job application.</div>
+                        <div className={`${DATE} text-emerald-700`}>February 2025</div>
+                        <div className="mt-1 text-base font-bold text-gray-900">
+                            It began with a misunderstanding.
+                        </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
-                            I applied to become a park ranger assistant, and then I withdrew the
-                            application.
+                            This is where it went.
                         </p>
                     </div>
                 </div>
@@ -130,12 +131,12 @@ export default function SpreadCard() {
                             Dismissed, then permanently excluded.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
-                            Dismissed by phone six days before I completed my service, with
-                            twenty-four hours to leave the park where I lived. Two days later,{" "}
+                            He was dismissed by phone six days before he completed his service, with
+                            twenty-four hours to leave the park where he lived. Two days later he was{" "}
                             <Link href="/record/oprd/01JQA2WM60RX7MSJQ5QPFD8AR2/" className="font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">
                                 excluded from every volunteer program the institution runs
                             </Link>
-                            , for my public comments about staff.
+                            , for his public comments about staff.
                         </p>
                     </div>
                 </div>
@@ -147,13 +148,13 @@ export default function SpreadCard() {
                     <div className={`${NODE} border-slate-300`}>
                         <div className={`${DATE} text-slate-500`}>May 2025 &ndash; February 2026</div>
                         <div className="mt-1 text-base font-bold text-gray-900">
-                            I asked for a year.
+                            He asked for a year.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
-                            In May I named the surveillance encounter to the program manager. In
-                            August I put it to the Director with three direct questions, and filed a
+                            In May he named the surveillance encounter to the program manager. In
+                            August he put it to the Director with three direct questions, and filed a
                             public records request the same week. Nothing was answered, and the
-                            request sat for ninety days. So I published the record and started
+                            request sat for ninety days. So he published the record and started
                             copying the Governor.
                         </p>
                     </div>
@@ -172,12 +173,12 @@ export default function SpreadCard() {
                     >
                         <div className={`${DATE} text-rose-700`}>March 3 &ndash; 4, 2026</div>
                         <div className="mt-1 text-base font-bold text-gray-900 sm:text-lg">
-                            The agency sent the police my website.
+                            The agency sent the police his website.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-700">
                             OPRD&rsquo;s emergency manager emailed a link to this archive to the
                             Oregon State Police captain for Government and Media Relations. The
-                            reason he gave: &ldquo;he is now including the Governor as well as our
+                            reason given: &ldquo;he is now including the Governor as well as our
                             Director.&rdquo; The next afternoon that media relations captain asked
                             that &ldquo;a threat assessment be conducted asap.&rdquo;
                         </p>
@@ -189,7 +190,7 @@ export default function SpreadCard() {
                 {/* ── The fan ── */}
                 <Stage
                     label="The next three weeks"
-                    note="Four institutions went through my information and mapped where I live, preparing for the visit."
+                    note="Four institutions went through his information and mapped where he lives, preparing for the visit."
                 />
                 <Stem h={18} />
 
@@ -221,8 +222,8 @@ export default function SpreadCard() {
 
                 <Stem h={18} />
 
-                {/* ── Arrival: where I live ── */}
-                <Stage label="Where I live" />
+                {/* ── Arrival: where he lives ── */}
+                <Stage label="Where he lives" />
                 <Stem h={20} />
 
                 <div className="mx-auto max-w-lg">
@@ -236,7 +237,7 @@ export default function SpreadCard() {
                             </div>
                             <p className="mt-2 text-sm leading-relaxed text-slate-300">
                                 They came through a locked federal gate onto restricted federal land,
-                                to where I live and work. I said I would not speak without an
+                                to where he lives and works. He said he would not speak without an
                                 attorney, said it a second time, and shut the door.
                             </p>
                         </div>
@@ -256,17 +257,35 @@ export default function SpreadCard() {
                     >
                         <div className={`${DATE} text-rose-700`}>March 27, 2026</div>
                         <div className="mt-1 text-base font-bold text-gray-900 sm:text-lg">
-                            My file went to the county where I live.
+                            His file went to the county where he lives.
                         </div>
                         <p className="mt-1.5 text-sm leading-relaxed text-gray-700">
-                            Three days after being told I was not in trouble, a federal agent emailed
+                            Three days after being told he was not in trouble, a federal agent emailed
                             a sheriff&rsquo;s deputy, copying two state police detectives,
-                            and sent my name, date of birth, driver&rsquo;s license number, residence,
+                            and sent his name, date of birth, driver&rsquo;s license number, residence,
                             work schedule, duties, correspondence, and text messages, with a
                             commitment to &ldquo;keep you up to date.&rdquo;
                         </p>
                         <p className="mt-2 text-sm font-semibold leading-relaxed text-rose-900">
-                            Those are the deputies who patrol where I live.
+                            Those are the deputies who patrol where he lives.
+                        </p>
+                    </Link>
+                </div>
+
+                <Stem h={22} />
+
+                {/* ── The end of the chain ── */}
+                <div className="mx-auto max-w-lg">
+                    <Link
+                        href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710/"
+                        className="group block rounded-xl border-2 border-slate-800 bg-slate-950 px-5 py-6 text-center shadow-sm transition-colors hover:bg-slate-900"
+                    >
+                        <p className="text-lg font-bold leading-snug text-white sm:text-xl">
+                            He stopped asking on{" "}
+                            <span className="text-rose-300 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors group-hover:text-rose-200 group-hover:decoration-rose-300">
+                                September 20, 2026
+                            </span>
+                            .
                         </p>
                     </Link>
                 </div>
