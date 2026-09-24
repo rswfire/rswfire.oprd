@@ -43,7 +43,6 @@ export const PRIMARY_SIGNALS = [
 const PAGES = [
     { title: "The Displacement Framework", url: "/displacement", holds: "The nine-stage mechanism, named from the documented sequence." },
     { title: "Timeline", url: "/timeline", holds: "The case in date order." },
-    { title: "Key Individuals", url: "/key-individuals", holds: "Who acted, in what role." },
     { title: "The OPRD Record", url: "/synthesis", holds: "The ten primary evidentiary signals as one cluster, with the platform's synthesis and six analytical readings." },
     { title: "Frequently Asked Questions", url: "/faq", holds: "Why no lawsuit yet, what happens next, what an epistemic violation is." },
     { title: "What It Means to Volunteer", url: "/", holds: "On the homepage: the structural position of the public-agency volunteer." },

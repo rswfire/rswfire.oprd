@@ -14,7 +14,7 @@ export default function TimelinePage() {
         <SectionPage
             title="TIMELINE"
             subtitle="FEBRUARY 9, 2025 — ONGOING"
-            previousPage={{ href: "/key-individuals", label: "Key Individuals" }}
+            previousPage={{ href: "/records-requests", label: "Records Requests" }}
             nextPage={{ href: "/evidence", label: "Evidence" }}
         >
 
