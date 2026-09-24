@@ -9,14 +9,19 @@ export default function IfThisIsHappening({ headingId }: { headingId?: string })
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-                I built this because there was no one for me to turn to. There can be one for
-                you. If you recognize your situation in this record &mdash; whether it is
-                unfolding now or ended years ago &mdash; you can write to me directly. I am not
-                a lawyer and cannot give legal advice. What I can do is help you understand
-                what you are looking at, how to document it so it holds, and that you are not
-                imagining it and not alone. There is no cost, and nothing you send is
-                published without your word.
+                When this happened to me, the supervisor tried to isolate me and the manager
+                tried to gaslight me.{" "}
+                <a
+                    href="https://rswfire.com/library/signal/01JQ7VZB00NEQK4NYZMW5WYW04"
+                    target="_blank"
+                    rel="noopener"
+                    className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600"
+                >
+                    I held my shape
+                </a>
+                , and you can too. If you need support, you are welcome to reach out below.
             </p>
+
 
             <p className="text-base text-gray-700 mb-2">
                 <span className="font-semibold">Robert Samuel White</span>

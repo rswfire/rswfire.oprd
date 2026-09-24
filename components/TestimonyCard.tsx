@@ -7,7 +7,6 @@
 
 import Link from "next/link";
 import { Sprout } from "lucide-react";
-import Icon from "@/components/Icon";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
@@ -87,8 +86,7 @@ export default function TestimonyCard() {
                 </div>
 
                 <div className="mt-5 border-t border-gray-200 pt-5">
-                    <h3 className="text-center text-sm font-bold uppercase tracking-wide text-gray-900">My Testimony</h3>
-                    <div className="mt-2 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px] text-gray-600">
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[13px] text-gray-600">
                         <span><span className="font-bold text-gray-900">{TESTIMONY_META.paragraphs}</span> numbered paragraphs</span>
                         <span><span className="font-bold text-gray-900">{TESTIMONY_META.documents}</span> documents</span>
                         <span><span className="font-bold text-gray-900">{TESTIMONY_META.recordings}</span> recordings</span>
@@ -132,13 +130,6 @@ export default function TestimonyCard() {
                 </div>
                 <div className="mt-4 flex flex-wrap items-center gap-2 px-2">
                     <TestimonyPdfButton variant="homepage" />
-                    <Link
-                        href="/outreach"
-                        className="inline-flex items-center gap-2 rounded-md border border-sky-700 bg-sky-700 px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wide text-white shadow-sm transition-colors hover:border-sky-800 hover:bg-sky-800"
-                    >
-                        <Icon name="ScrollText" size={14} strokeWidth={2} />
-                        Institutional Outreach
-                    </Link>
                 </div>
             </div>
         </div>

@@ -13,6 +13,7 @@ export default function ContactForm() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [subscribe, setSubscribe] = useState(false);
     const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
 
     async function submit(e: React.FormEvent) {
@@ -23,7 +24,7 @@ export default function ContactForm() {
             const res = await fetch("https://rswfire.com/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({ name, email, message, website: "" }),
+                body: new URLSearchParams({ name, email, message, subscribe: subscribe ? "1" : "", website: "" }),
             });
             const json = await res.json();
             setState(json?.ok ? "done" : "error");
@@ -45,36 +46,34 @@ export default function ContactForm() {
 
     return (
         <form onSubmit={submit} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <label className="block">
-                    <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
-                        Your name, or a name to use
-                    </span>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
-                </label>
-                <label className="block">
-                    <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
-                        Email, so I can answer
-                    </span>
-                    <input
-                        type="email"
-                        required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your@email.address"
-                        className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
-                </label>
-            </div>
+            <label className="block">
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
+                    Name
+                </span>
+                <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+            </label>
 
             <label className="mt-4 block">
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
-                    What happened
+                    Email
+                </span>
+                <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+            </label>
+
+            <label className="mt-4 block">
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
+                    Message
                 </span>
                 <textarea
                     required
@@ -83,6 +82,18 @@ export default function ContactForm() {
                     onChange={(e) => setMessage(e.target.value)}
                     className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
+            </label>
+
+            <label className="mt-4 flex items-start gap-2.5">
+                <input
+                    type="checkbox"
+                    checked={subscribe}
+                    onChange={(e) => setSubscribe(e.target.checked)}
+                    className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-emerald-700 focus:ring-emerald-500"
+                />
+                <span className="text-sm text-gray-700">
+                    Add me to the mailing list.
+                </span>
             </label>
 
             {/* Honeypot: real people never fill this. */}
