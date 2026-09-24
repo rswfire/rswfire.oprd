@@ -33,10 +33,6 @@ export default function OverviewPage() {
 
 
 
-            {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
-            <PriceOfTheRecord />
-
-
             {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
             <WhatVolunteersDeserve />
 
@@ -47,6 +43,10 @@ export default function OverviewPage() {
 
             {/* THE CASE, IN THEIR DOCUMENTS */}
             <CaseTimeline />
+
+
+            {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
+            <PriceOfTheRecord />
 
 
             {/* SUNLIGHT — their words, next to the record */}
