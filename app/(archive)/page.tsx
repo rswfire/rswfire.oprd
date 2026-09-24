@@ -32,9 +32,6 @@ export default function OverviewPage() {
             <TestimonyCard />
 
 
-            {/* DOES THIS PROJECT USE AI — the question, answered directly */}
-            <AiCard />
-
 
             {/* THE PRICE OF THE RECORD — what each agency is holding, and how */}
             <PriceOfTheRecord />
@@ -82,6 +79,10 @@ export default function OverviewPage() {
                     </div>
                 </div>
             </div>
+
+
+            {/* DOES THIS PROJECT USE AI — the question, answered directly */}
+            <AiCard />
 
 
             {/* THE OPRD RECORD — door to the live cluster and its six readings */}
