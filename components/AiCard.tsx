@@ -103,7 +103,7 @@ const FORBIDDEN: { rule: string; body: React.ReactNode }[] = [
         body: (
             <>
                 It is not a lawyer, and my letters are not dressed as legal filings. A statute has a
-                number. A case is an argument about the law, and that is not its job.
+                number. A case is an argument about the law.
             </>
         ),
     },
@@ -261,6 +261,12 @@ export default function AiCard() {
                         </div>
                     ))}
                 </div>
+
+                <p className="mt-7 max-w-3xl border-t border-slate-800 pt-5 text-[15px] italic leading-relaxed text-slate-400">
+                    These are my ethics, written down. A state agency pointed the police at this
+                    archive looking for a pretext. The discipline above is why they did not find
+                    one.
+                </p>
             </div>
 
         </div>

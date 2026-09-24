@@ -1,7 +1,7 @@
 // How it spread. One diagram, top to bottom: the misunderstanding, the
 // supervisor's word, the removal, the year of asking, the referral that
 // carried it out of the agency, the five institutions it reached, the door it
-// arrived at, the county it went to, and the day he stopped asking.
+// arrived at, and the county it went to.
 //
 // Third person throughout, as the testimony is. Every node is dated and every
 // date is in the register.
@@ -292,23 +292,6 @@ export default function SpreadCard() {
                     </Link>
                 </div>
 
-                <Stem h={22} />
-
-                {/* ── The end of the chain ── */}
-                <div className="mx-auto max-w-lg">
-                    <Link
-                        href="/record/oprd/01M30GCBNRZCAEMX90B6T5D710/"
-                        className="group block rounded-xl border-2 border-slate-800 bg-slate-950 px-5 py-6 text-center shadow-sm transition-colors hover:bg-slate-900"
-                    >
-                        <p className="text-lg font-bold leading-snug text-white sm:text-xl">
-                            He stopped asking on{" "}
-                            <span className="text-rose-300 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors group-hover:text-rose-200 group-hover:decoration-rose-300">
-                                September 20, 2026
-                            </span>
-                            .
-                        </p>
-                    </Link>
-                </div>
             </div>
 
             {/* ── The door out: the same line the testimony PDF opens with ── */}
