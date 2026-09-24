@@ -43,7 +43,7 @@ export const archiveSections = [
     { href: "/governor-kotek", label: "The Governor's Silence", icon: "GraduationCap" as const, iconClass: "text-purple-700" },
     { href: "#separator-7", label: "", separator: true },
     { href: "/volunteers", label: "For Volunteers", icon: "Shield" as const },
-    { href: "/faq", label: "Frequently Asked Questions", icon: "Lighthouse" as const, iconClass: "text-cyan-700" },
+    { href: "/faq", label: "For Hostile Readers", icon: "Ghost" as const, iconClass: "text-cyan-700" },
     { href: "/displacement", label: "Displacement Framework", icon: "Eraser" as const, iconClass: "text-pink-700" },
     { href: "/synthesis", label: "The Synthesis", icon: "Combine" as const, iconClass: "text-fuchsia-700" },
     { href: "/reading", label: "Selected Reading", icon: "BookOpenText" as const, iconClass: "text-amber-700" },

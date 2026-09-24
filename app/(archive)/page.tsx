@@ -60,27 +60,6 @@ export default function OverviewPage() {
             {/* THE LEGAL FUND — announcement, thermometer, and door in one card */}
             <LegalFund />
 
-            {/* QUESTIONS */}
-            <div className="mt-4 rounded-xl border border-slate-200 bg-white p-6">
-                <h2 className="text-center text-lg font-bold tracking-wide">
-                    <Link href="/faq" className="text-emerald-900 transition-colors hover:text-emerald-700">COMMON QUESTIONS ANSWERED HERE</Link>
-                </h2>
-                <div className="mt-4 sm:pl-10">
-                    <div className="grid grid-cols-1 gap-y-2.5 text-base">
-                        {FAQ_QUESTIONS.map((q) => (
-                            <Link
-                                key={q.id}
-                                href={`/faq#${q.id}`}
-                                className="block text-emerald-700 underline decoration-emerald-200 transition-colors hover:text-emerald-600 hover:decoration-emerald-500"
-                            >
-                                {q.question}
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-
             {/* DOES THIS PROJECT USE AI — the question, answered directly */}
             <AiCard />
 
@@ -110,6 +89,23 @@ export default function OverviewPage() {
                 <div className="mt-4">It does not ask for apology.</div>
                 <div>It does not ask for repair.</div>
                 <div><Link href="/faq#epistemic" className="text-emerald-700 hover:underline hover:text-emerald-600">It exists so that the next distortion cannot pretend it was the first</Link>.</div>
+
+                <hr className="my-6 border-t border-emerald-200" />
+
+                <h2 className="text-lg font-bold tracking-wide">
+                    <Link href="/faq" className="text-emerald-900 transition-colors hover:text-emerald-700">FOR HOSTILE READERS</Link>
+                </h2>
+                <div className="mt-4 grid grid-cols-1 gap-y-2.5 text-base">
+                    {FAQ_QUESTIONS.map((q) => (
+                        <Link
+                            key={q.id}
+                            href={`/faq#${q.id}`}
+                            className="block text-emerald-700 underline decoration-emerald-200 transition-colors hover:text-emerald-600 hover:decoration-emerald-500"
+                        >
+                            {q.question}
+                        </Link>
+                    ))}
+                </div>
 
             </div>
 
