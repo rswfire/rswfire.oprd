@@ -315,7 +315,7 @@ def build_html(meta: dict, parts: list[dict]) -> str:
       <section class="volunteer">
         <svg viewBox="0 0 24 24" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"/></svg>
         <p>If this happened to you,<br>it has a name.</p>
-        <a href="{SITE}/for-volunteers">For Volunteers</a>
+        <a href="{SITE}/volunteers">For Volunteers</a>
       </section>
       <section class="contents"><div class="eyebrow">Navigation</div><h2>Contents</h2><ol>{toc}</ol></section>
       {''.join(chapters)}
