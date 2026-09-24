@@ -274,6 +274,26 @@ export default function SpreadCard() {
 
                 <Stem h={22} />
 
+                {/* ── What he did with it ── */}
+                <div className="mx-auto max-w-lg">
+                    <Link
+                        href="/records"
+                        className="block rounded-xl border-2 border-emerald-400 bg-emerald-50 px-4 py-4 shadow-sm transition-colors hover:bg-emerald-100"
+                    >
+                        <div className={`${DATE} text-emerald-700`}>March &ndash; September 2026</div>
+                        <div className="mt-1 text-base font-bold text-gray-900 sm:text-lg">
+                            He built the record that proves all of it.
+                        </div>
+                        <p className="mt-1.5 text-sm leading-relaxed text-gray-700">
+                            He filed public records requests with every institution in this diagram,
+                            and petitioned the Attorney General when the state police withheld. What
+                            they produced is published here in full.
+                        </p>
+                    </Link>
+                </div>
+
+                <Stem h={22} />
+
                 {/* ── The end of the chain ── */}
                 <div className="mx-auto max-w-lg">
                     <Link
