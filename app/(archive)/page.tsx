@@ -80,7 +80,9 @@ export default function OverviewPage() {
 
             <div className="mt-4 p-8 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm">
 
-                <div className="font-bold">This archive is not for revenge.</div>
+                <h2 className="text-lg font-bold tracking-wide text-emerald-900">
+                    THIS ARCHIVE IS NOT FOR REVENGE.
+                </h2>
 
                 <div className="mt-4">It is for those who have been told they imagined it.</div>
                 <div>It is for those about to walk into something similar.</div>
@@ -93,7 +95,7 @@ export default function OverviewPage() {
                 <hr className="my-6 border-t border-emerald-200" />
 
                 <h2 className="text-lg font-bold tracking-wide">
-                    <Link href="/faq" className="text-emerald-900 transition-colors hover:text-emerald-700">FOR HOSTILE READERS</Link>
+                    <Link href="/faq" className="text-emerald-900 transition-colors hover:text-emerald-700">FREQUENTLY ASKED QUESTIONS</Link>
                 </h2>
                 <div className="mt-4 grid grid-cols-1 gap-y-2.5 text-base">
                     {FAQ_QUESTIONS.map((q) => (
