@@ -4,10 +4,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Icon from "@/components/Icon";
-import AccountabilityStatus from "@/components/AccountabilityStatus";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import HostedOnGithub from "@/components/HostedOnGithub";
 import Tracker from "@/components/Tracker";
-import Permanence from "@/components/Permanence";
 
 type Section = {
     href: string;
@@ -96,10 +95,9 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
                     })}
                 </ul>
             </nav>
-            <Tracker />
-            <AccountabilityStatus />
             <NewsletterSignup />
-            <Permanence />
+            <Tracker />
+            <HostedOnGithub />
         </div>
     );
 }

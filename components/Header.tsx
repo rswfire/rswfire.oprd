@@ -3,11 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
-import AccountabilityStatus from "@/components/AccountabilityStatus";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import HostedOnGithub from "@/components/HostedOnGithub";
 import Tracker from "@/components/Tracker";
 import VolunteerShield from "@/components/VolunteerShield";
-import Permanence from "@/components/Permanence";
 import { archiveSections } from "@/lib/sections";
 
 export default function Header() {
@@ -205,10 +204,6 @@ export default function Header() {
                                 );
                             })}
                         </ul>
-                        <div className="mt-3">
-                            <Tracker />
-                        </div>
-
                         {/* Sidebar content the desktop aside can't show on mobile.
                             Closes the menu when a link inside is tapped. */}
                         <div
@@ -220,9 +215,9 @@ export default function Header() {
                             }}
                         >
                             <VolunteerShield />
-                            <AccountabilityStatus />
-                            <NewsletterSignup />
-                            <Permanence />
+                                            <NewsletterSignup />
+                            <Tracker />
+                            <HostedOnGithub />
                         </div>
                     </nav>
                 )}
