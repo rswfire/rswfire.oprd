@@ -66,11 +66,10 @@ export default function Footer() {
                         </div>
                         <div>It is not designed to <em>win attention</em>.</div>
                         <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
-                        <p className="pt-4 text-base text-gray-600">
-                            An epistemic violation is when someone narrates your interior, often
-                            inaccurately. They assume standing to do so. Most allow it, because we
-                            have normalized it in our society. But it is a form of theft. I did not
-                            consent.
+                        <p className="mt-5 max-w-prose border-t border-emerald-200 pt-4 text-sm font-semibold leading-relaxed text-gray-700">
+                            An epistemic violation is when someone colonizes your interior. They
+                            assume standing to do so. Most allow it, because we have normalized it
+                            in our society. But it is a form of theft, and I have never consented to it.
                         </p>
                     </div>
                 </div>

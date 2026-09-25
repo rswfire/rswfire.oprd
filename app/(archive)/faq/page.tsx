@@ -264,7 +264,7 @@ export default function FAQPage() {
                         What is an epistemic violation?
                     </h2>
                     <div className="space-y-4">
-                        <div>An epistemic violation is when someone narrates your interior, often inaccurately. They assume standing to do so. Most allow it, because we have normalized it in our society. But it is a form of theft. I did not consent.</div>
+                        <div>An epistemic violation is when someone colonizes your interior. They assume standing to do so. Most allow it, because we have normalized it in our society. But it is a form of theft, and I have never consented to it.</div>
                         <div>The institutional assertion of authority over what is considered real, even when it conflicts with lived experience.</div>
                         <div>An epistemic violation is when someone with institutional power attempts to overwrite your direct experience with their preferred narrative &mdash; and demands you accept their version.</div>
                         <div>It's not just lying. It's the insistence that <em>their</em> account has more authority than what actually happened to you. This is what the park manager meant <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">by &quot;chew glass and swallow it.&quot;</Link></div>
