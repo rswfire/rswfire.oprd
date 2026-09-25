@@ -1,3 +1,7 @@
+// A summary is one or two short sentences saying what the document is.
+// It never restates the title and it never makes the document's argument.
+// The argument is in the document.
+
 // data/threads.ts
 //
 // Accountability document registers. Each thread is one agency and one matter;
@@ -6788,7 +6792,7 @@ export const OSP_THREAD: RecordsThreadData = {
             to: "Oregon Department of Justice, Public Records Orders; Cameron D. Miles, Office of the Governor; Phyllis Nelson; Governor Kotek; Oregon Parks and Recreation Commission",
             kind: "petition",
             title: "Custody is not the test",
-            summary: "A new petition on the fee waiver. Custody is not the test.",
+            summary: "A new petition on the fee waiver, filed because the statute provides no mechanism for reconsideration.",
             docs: [
                 { label: "Custody is not the test", href: "/records/governor/attachments/01m3cp80c8cqthryggj0x91vbj-2026-09-25-attorney-general-second-petition.pdf" },
                 { label: "Transmittal Email", href: "/records/governor/2026-09-25-second-petition-to-the-attorney-general.pdf" },
