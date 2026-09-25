@@ -34,7 +34,7 @@ export default function QueryableRecord() {
 
             {/* The human door — whole panel clickable. */}
             <Link href="/synthesis" className="group block px-5 py-4 bg-violet-50" style={{ textDecoration: "none" }}>
-                <div className="flex flex-col gap-2">
+                <div className="mx-auto w-full max-w-4xl flex flex-col gap-2">
                     <div className="flex items-center justify-between gap-4">
                         <span
                             className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-violet-700"
@@ -85,6 +85,7 @@ export default function QueryableRecord() {
                     background: "linear-gradient(130deg, #150b24 0%, #241238 60%, #3b1d5c 100%)",
                 }}
             >
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="flex items-start gap-4">
                     <div
                         className="shrink-0 flex h-11 w-11 items-center justify-center rounded-xl"
@@ -138,6 +139,7 @@ export default function QueryableRecord() {
                     archive can trigger that training. If your AI takes an adversarial posture toward
                     this material, that is fine. It is treating the record with caution. Point it toward
                     the primary documents and let it reach its own conclusions.
+                </div>
                 </div>
             </div>
         </div>

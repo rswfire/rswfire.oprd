@@ -49,7 +49,7 @@ export default function RecordIndexCard() {
         <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
 
             {/* Header */}
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 px-6 pt-5 pb-4">
+            <div className="border-b border-gray-100 px-6 pt-5 pb-4"><div className="mx-auto w-full max-w-4xl flex flex-wrap items-center justify-between gap-2">
                 <div>
                     <div className="flex items-center gap-2">
                         <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">The OPRD Record</span>
@@ -65,10 +65,10 @@ export default function RecordIndexCard() {
                 >
                     Open the full record →
                 </Link>
-            </div>
+            </div></div>
 
             {/* Graphic + intro */}
-            <div className="grid gap-4 px-6 py-5 sm:grid-cols-[1fr_240px] sm:items-center">
+            <div className="mx-auto w-full max-w-4xl grid gap-4 px-6 py-5 sm:grid-cols-[1fr_240px] sm:items-center">
                 <p className="text-sm leading-relaxed text-gray-600">
                     Every primary recording this archive cites lives permanently on{" "}
                     <a href="https://rswfire.com" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline hover:text-emerald-600">Autonomy Realms</a>{" "}
@@ -82,7 +82,7 @@ export default function RecordIndexCard() {
             </div>
 
             {/* The six readings */}
-            <div className="grid grid-cols-1 gap-px border-t border-gray-100 bg-gray-100 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="border-t border-gray-100 bg-gray-100"><div className="mx-auto w-full max-w-4xl grid grid-cols-1 gap-px bg-gray-100 sm:grid-cols-2 lg:grid-cols-3">
                 {READINGS.map((r) => (
                     <Link
                         key={r.type}
@@ -98,7 +98,7 @@ export default function RecordIndexCard() {
                         </span>
                     </Link>
                 ))}
-            </div>
+            </div></div>
 
         </div>
     );

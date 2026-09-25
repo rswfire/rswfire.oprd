@@ -17,12 +17,14 @@ export default function SunlightCard() {
         >
             {/* ── The dark: where their story was written ── */}
             <div className="bg-slate-950 px-6 py-5 sm:px-8">
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
                     Written in the dark
                 </div>
                 <div className="mt-2 text-[15px] leading-relaxed text-slate-300">
                     The State of Oregon wrote a story about me. Ten months. Twenty-three revisions. 193 minutes of editing. It
                     was never shown to me. It was handed to the state police.
+                </div>
                 </div>
             </div>
 
@@ -31,6 +33,7 @@ export default function SunlightCard() {
 
             {/* ── The light: the record ── */}
             <div className="bg-gradient-to-b from-amber-50/80 to-white px-6 py-6 sm:px-8">
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                     <div className="min-w-0">
                         <div className="inline-flex items-center gap-2">
@@ -46,7 +49,7 @@ export default function SunlightCard() {
                     </span>
                 </div>
 
-                <div className="mt-4 max-w-2xl text-[15px] leading-relaxed text-gray-700">
+                <div className="mt-4 text-[15px] leading-relaxed text-gray-700">
                     Every entry of their document, exactly as written &mdash; and
                     beside each one, the record: the emails, the recordings, the timestamps opening the tapes where cited.
                 </div>
@@ -68,6 +71,7 @@ export default function SunlightCard() {
 
                 <div className="mt-5 text-sm font-medium text-gray-500">
                     Their story survives only in the dark. <span className="text-amber-700">This is sunlight.</span>
+                </div>
                 </div>
             </div>
         </Link>

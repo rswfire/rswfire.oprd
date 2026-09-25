@@ -29,7 +29,7 @@ export default function OutreachNavigation({ homepage = false }: { homepage?: bo
         return (
             <section className="mt-4 overflow-hidden rounded-2xl border border-sky-200 bg-white shadow-sm">
                 <div className="border-b border-sky-200 bg-sky-50 px-6 py-5 sm:px-8">
-                    <div className="flex flex-wrap items-end justify-between gap-3">
+                    <div className="mx-auto w-full max-w-4xl flex flex-wrap items-end justify-between gap-3">
                         <div>
                             <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-sky-700">Institutional outreach</div>
                             <h2 className="mt-1 text-xl font-bold text-slate-900">Making the record available to institutions.</h2>
@@ -37,7 +37,7 @@ export default function OutreachNavigation({ homepage = false }: { homepage?: bo
                         <Link href="/outreach/" className="text-sm font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-2 hover:text-emerald-600">Open the correspondence tracker</Link>
                     </div>
                 </div>
-                <div className="px-6 py-5 sm:px-8 sm:py-6">{navigation}</div>
+                <div className="px-6 py-5 sm:px-8 sm:py-6"><div className="mx-auto w-full max-w-4xl">{navigation}</div></div>
             </section>
         );
     }

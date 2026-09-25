@@ -80,16 +80,19 @@ export default function SpreadCard() {
 
             {/* ── Title ── */}
             <div className="border-b border-slate-200 bg-gradient-to-b from-rose-50 to-white px-6 py-7 sm:px-10">
+                <div className="mx-auto w-full max-w-4xl">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                     How it spread.
                 </h2>
-                <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-gray-700 sm:text-base">
+                <p className="mt-2 text-[15px] leading-relaxed text-gray-700 sm:text-base">
                     There was no mechanism to stop any of it. Each institution took what the one
                     before it sent and added to it.
                 </p>
+                </div>
             </div>
 
             <div className="px-4 py-8 sm:px-10">
+                <div className="mx-auto w-full max-w-4xl">
 
                 {/* ── Origin ── */}
                 <div className="mx-auto max-w-md">
@@ -297,13 +300,15 @@ export default function SpreadCard() {
                     </Link>
                 </div>
 
+                </div>
             </div>
 
             {/* ── The door out: the same line the testimony PDF opens with ── */}
             <Link
                 href="/volunteers"
-                className="group flex items-center gap-4 border-t border-red-200 bg-red-50 px-6 py-6 transition-colors hover:bg-red-100 sm:gap-5 sm:px-10 sm:py-7"
+                className="group block border-t border-red-200 bg-red-50 px-6 py-6 transition-colors hover:bg-red-100 sm:px-10 sm:py-7"
             >
+                <div className="mx-auto w-full max-w-4xl flex items-center gap-4 sm:gap-5">
                 <span className="grid h-14 w-14 shrink-0 place-items-center rounded-xl bg-red-700 shadow-sm sm:h-16 sm:w-16">
                     <Icon name="Shield" className="h-7 w-7 text-white sm:h-8 sm:w-8" size={32} strokeWidth={1.5} />
                 </span>
@@ -317,6 +322,7 @@ export default function SpreadCard() {
                             &rarr;
                         </span>
                     </div>
+                </div>
                 </div>
             </Link>
         </div>

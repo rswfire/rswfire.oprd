@@ -172,7 +172,7 @@ export default function AiCard() {
                     aria-hidden
                     className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-emerald-500/10 blur-3xl"
                 />
-                <div className="relative">
+                <div className="relative mx-auto w-full max-w-4xl">
                     <Bot
                         size={56}
                         strokeWidth={1.5}
@@ -187,7 +187,7 @@ export default function AiCard() {
                         Yes. Extensively.
                     </div>
 
-                    <div className="mt-6 max-w-2xl space-y-3 text-[15px] leading-relaxed text-slate-300 sm:text-lg">
+                    <div className="mt-6 space-y-3 text-[15px] leading-relaxed text-slate-300 sm:text-lg">
                         <p>
                             I have been{" "}
                             <a
@@ -208,11 +208,11 @@ export default function AiCard() {
             <div className="space-y-px bg-slate-800">
                 {WORK.map((w, i) => (
                     <div key={w.lead} className="bg-slate-950 px-6 py-5 sm:px-10 sm:py-6">
-                        <div className="flex gap-4 sm:gap-5">
+                        <div className="mx-auto flex w-full max-w-4xl gap-4 sm:gap-5">
                             <span className="w-6 shrink-0 pt-1 font-mono text-[11px] font-bold text-emerald-500">
                                 {String(i + 1).padStart(2, "0")}
                             </span>
-                            <div className="min-w-0 max-w-3xl">
+                            <div className="min-w-0">
                                 <div className="text-base font-bold text-white sm:text-lg">
                                     {w.lead}
                                 </div>
@@ -227,10 +227,11 @@ export default function AiCard() {
 
             {/* ── The standing prohibitions ── */}
             <div className="border-t border-slate-800 bg-slate-900/60 px-6 py-7 sm:px-10 sm:py-9">
+                <div className="mx-auto w-full max-w-4xl">
                 <h3 className="font-mono text-[11px] font-bold uppercase tracking-widest text-rose-400">
                     What it is forbidden to do.
                 </h3>
-                <div className="mt-5 max-w-3xl space-y-4">
+                <div className="mt-5 space-y-4">
                     {FORBIDDEN.map((f) => (
                         <div key={f.rule} className="flex gap-3.5">
                             <span aria-hidden className="shrink-0 pt-px font-bold text-rose-500">
@@ -242,14 +243,16 @@ export default function AiCard() {
                         </div>
                     ))}
                 </div>
+                </div>
             </div>
 
             {/* ── The same prohibitions, pointed at how they are written about ── */}
             <div className="border-t border-slate-800 bg-slate-900/60 px-6 py-7 sm:px-10 sm:py-9">
+                <div className="mx-auto w-full max-w-4xl">
                 <h3 className="font-mono text-[11px] font-bold uppercase tracking-widest text-rose-400">
                     I extend this to them too.
                 </h3>
-                <div className="mt-5 max-w-3xl space-y-4">
+                <div className="mt-5 space-y-4">
                     {FORBIDDEN_OF_THEM.map((f) => (
                         <div key={f.rule} className="flex gap-3.5">
                             <span aria-hidden className="shrink-0 pt-px font-bold text-rose-500">
@@ -262,11 +265,12 @@ export default function AiCard() {
                     ))}
                 </div>
 
-                <p className="mt-7 max-w-3xl border-t border-slate-800 pt-5 text-[15px] italic leading-relaxed text-slate-400">
+                <p className="mt-7 border-t border-slate-800 pt-5 text-[15px] italic leading-relaxed text-slate-400">
                     These are my ethics, written down. A state agency pointed the police at this
                     archive looking for a pretext. The discipline above is why they did not find
                     one.
                 </p>
+                </div>
             </div>
 
         </div>

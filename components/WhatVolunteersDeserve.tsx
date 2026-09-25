@@ -21,13 +21,14 @@ export default function WhatVolunteersDeserve() {
     return (
         <div id="what-every-volunteer-deserves" className="mt-4 overflow-hidden rounded-2xl border border-amber-300 bg-white shadow-sm lg:scroll-mt-28">
             <div className="border-b border-amber-200 bg-amber-50 px-6 py-5 sm:px-8">
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="inline-flex items-center gap-2">
                     <Icon name="Shield" size={20} strokeWidth={2} className="shrink-0 text-amber-600" />
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                         What every volunteer deserves.
                     </h2>
                 </div>
-                <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                <p className="mt-2 text-[15px] leading-relaxed text-gray-800">
                     These five protections were requested for every Oregon State Parks volunteer in{" "}
                     <a
                         href="https://www.reddit.com/r/volunteer/comments/1mzropa/an_open_letter_to_oregon_parks_recreation/"
@@ -41,9 +42,10 @@ export default function WhatVolunteersDeserve() {
                     volunteer program seriously. More than a year later, she has neither directly
                     acknowledged nor implemented any of them.
                 </p>
+                </div>
             </div>
 
-            <ul className="divide-y divide-gray-100 px-6 py-2 sm:px-8">
+            <ul className="mx-auto w-full max-w-4xl divide-y divide-gray-100 px-6 py-2 sm:px-8">
                 {CONDITIONS.map((c) => (
                     <li key={c} className="flex items-start gap-3 py-3">
                         <span

@@ -87,6 +87,7 @@ export default function OverviewPage() {
 
             <div className="mt-4 p-8 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm">
 
+                <div className="mx-auto w-full max-w-4xl">
                 <h2 className="text-lg font-bold tracking-wide">
                     <Link href="/faq" className="text-emerald-900 transition-colors hover:text-emerald-700">FREQUENTLY ASKED QUESTIONS</Link>
                 </h2>
@@ -114,6 +115,7 @@ export default function OverviewPage() {
 
                 <div className="mt-4">It does not ask for apology. It does not ask for repair.</div>
                 <div>It exists so that the next distortion cannot pretend it was the first.</div>
+                </div>
 
             </div>
 

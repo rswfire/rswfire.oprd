@@ -17,21 +17,23 @@ export default function PriceOfTheRecord() {
     return (
         <div className="mt-4 overflow-hidden rounded-2xl border border-red-200 bg-white shadow-sm">
             <div className="border-b border-red-200 bg-red-50 px-6 py-5 sm:px-8">
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="inline-flex items-center gap-2">
                     <Icon name="FileText" size={20} strokeWidth={2} className="shrink-0 text-red-600" />
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                         The price of the record.
                     </h2>
                 </div>
-                <p className="mt-2 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                <p className="mt-2 text-[15px] leading-relaxed text-gray-800">
                     Three institutions hold records about me. None has refused them outright.
                     Oregon State Parks and the Governor&rsquo;s office named prices. Oregon State
                     Police named a price, accepted a payment, named the documents itself, and then
                     did not send them.
                 </p>
+                </div>
             </div>
 
-            <div className="grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+            <div className="mx-auto w-full max-w-4xl grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
                 {/* ── OPRD: a number, and whose records they are ── */}
                 <div className="px-6 py-6 sm:px-8">
                     <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
@@ -77,6 +79,7 @@ export default function PriceOfTheRecord() {
             </div>
 
             <div className="border-t border-gray-200 px-6 py-6 sm:px-8">
+                <div className="mx-auto w-full max-w-4xl">
                 <div className="text-[11px] font-bold uppercase tracking-widest text-red-700">
                     Office of the Governor
                 </div>
@@ -85,18 +88,19 @@ export default function PriceOfTheRecord() {
                         <div className="mt-2 font-mono text-3xl font-bold leading-none tracking-tight text-red-700 min-[400px]:text-4xl">
                             {governor.demanded.total}
                         </div>
-                        <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                        <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
                             The office demands this amount to collect, review and produce every
                             record it holds about me, how it handled my correspondence, and its
                             communications about me with other agencies.
                         </p>
-                        <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-800">
+                        <p className="mt-3 text-[15px] leading-relaxed text-gray-800">
                             It denied the fee waiver by calling the request personal and saying I
                             had &ldquo;merely stated&rdquo; that I could publish the records on a
                             website. My reply: &ldquo;I will pay it. Send the instructions.&rdquo;
                         </p>
                     </>
                 )}
+                </div>
             </div>
 
             <div className="border-t border-gray-100 px-6 py-5 text-center sm:px-8">
