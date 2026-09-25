@@ -224,7 +224,7 @@ export default function TestimonyBody({
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/sunlight", label: "Sunlight" }}
         >
-            <TestimonyMeta documents={99} recordings={145} moments={1406} />
+            <TestimonyMeta documents={96} recordings={145} moments={1406} />
 
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
                 <span className="mr-2 text-[11px] font-bold uppercase tracking-widest text-amber-700">
@@ -3200,7 +3200,7 @@ export default function TestimonyBody({
 
             <Part n="Ten" title="THE GOVERNOR'S SILENCE">
                 <P id="ppz33f" n={269}>
-                    He contacted the Office of the Governor on <Cite ulid="01KACE2348G8VG3XPB3BGW3F1N" thread="governor">November 18, 2025</Cite>, <Cite ulid="01KC3GJ4WGZQ8V706APJ97YDN4" thread="governor">December 9, 2025</Cite>, <Cite ulid="01KC7PX85RSCWKVSWHK39K6YCG" thread="governor">December 11, 2025</Cite>, <Cite ulid="01KCS97W9RPP89CERDSEPDGR28" thread="governor">December 18, 2025</Cite>, <Cite ulid="01KEW3XK4G21P2KCPZYD405M5J" thread="governor">January 13, 2026</Cite>, <Cite ulid="01KEZK3DQ86AGV11TPVG7VXC6H" thread="governor">January 14, 2026</Cite>, <Cite ulid="01KHK1EBD8ZSWHRRWT7Y69NDA1" thread="governor">February 16, 2026</Cite>, <Cite ulid="01KJK3GSJ0AJV72GB8R6S6PBWH" thread="governor">February 28, 2026</Cite>, <Cite ulid="01KQR749JGPDKZ69Q95304PRFT" thread="governor">May 3, 2026</Cite> and <Cite ulid="01KQR7GK481B8YFD71RX75V5T0" thread="governor">again</Cite>, <Cite ulid="01KW8KH1N8VJXGXGERYEFA5YQJ" thread="governor">June 28, 2026</Cite>, <Cite ulid="01KXK7BACRB1PCMBBQQK47S8DQ" thread="governor">July 15, 2026</Cite>, and <Cite ulid="01M1MEQP4GVGV0ED9D555043P2" thread="governor">September 3, 2026</Cite>.
+                    He contacted the Office of the Governor on <Cite ulid="01KACE2348G8VG3XPB3BGW3F1N" thread="governor">November 18, 2025</Cite>, <Cite ulid="01KC3GJ4WGZQ8V706APJ97YDN4" thread="governor">December 9, 2025</Cite>, <Cite ulid="01KC7PX85RSCWKVSWHK39K6YCG" thread="governor">December 11, 2025</Cite>, <Cite ulid="01KCS97W9RPP89CERDSEPDGR28" thread="governor">December 18, 2025</Cite>, <Cite ulid="01KEZK3DQ86AGV11TPVG7VXC6H" thread="governor">January 14, 2026</Cite>, <Cite ulid="01KHK1EBD8ZSWHRRWT7Y69NDA1" thread="governor">February 16, 2026</Cite>, <Cite ulid="01KQR749JGPDKZ69Q95304PRFT" thread="governor">May 3, 2026</Cite>, <Cite ulid="01KW8KH1N8VJXGXGERYEFA5YQJ" thread="governor">June 28, 2026</Cite>, <Cite ulid="01KXK7BACRB1PCMBBQQK47S8DQ" thread="governor">July 15, 2026</Cite>, and <Cite ulid="01M1MEQP4GVGV0ED9D555043P2" thread="governor">September 3, 2026</Cite>.
                 </P>
                 <P id="pzeujn" n={270}>
                     The response has been silence.
