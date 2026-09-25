@@ -66,7 +66,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "governor",
         agency: "Office of the Governor",
         refs: "Request of September 5, 2026",
-        status: "Paid. Petition pending.",
+        status: "Paid. Petition dismissed.",
         demanded: {
             total: "$572.50",
             note: "Estimated September 22, 2026 to collect, review, and produce the records. The fee waiver was denied. He agreed to pay.",
@@ -105,8 +105,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-22", date: "September 22, 2026", event: "Reply: “I will pay it. Send the instructions.”" },
             { d: "2026-09-23", date: "September 23, 2026", event: "The instructions asked for a second time" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Petition to the Attorney General under ORS 192.324(6) and ORS 192.411: the waiver denial, and the fee set without the means to pay it" },
-            { d: "2026-09-24", date: "September 24, 2026", event: "Payment instructions sent, two hours and two minutes after the petition: a check for $572.50 to the State of Oregon" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Payment instructions sent: a check for $572.50 to the State of Oregon" },
             { d: "2026-09-24", date: "September 24, 2026", event: "The Attorney General’s office acknowledges the petition; orders generally issue within seven days" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "The petition is dismissed for lack of jurisdiction under ORS 192.427: the records are in the custody of an elected official" },
         ],
     },
     {

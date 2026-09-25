@@ -6702,7 +6702,7 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             kind: "response",
             title: "The payment instructions arrive",
             summary:
-                "Two hours and two minutes after the petition was filed, the instructions promised on September 22 are sent: a check payable to the State of Oregon for $572.50, mailed to the office in Salem.",
+                "The instructions promised on September 22: a check payable to the State of Oregon for $572.50, mailed to the office in Salem.",
             docs: [{ label: "The payment instructions arrive", href: "/records/governor/2026-09-24-payment-instructions.pdf" }],
             eml: "/records/governor/eml/2026-09-24_1345_payment-instructions.eml",
         },
@@ -6718,9 +6718,28 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             kind: "response",
             title: "The petition is acknowledged",
             summary:
-                "The Attorney General's office confirms receipt two hours and thirty-six minutes after filing, and states that orders granting or denying a petition are generally issued within seven days and sent to both the requester and the agency.",
+                "The Attorney General's office confirms receipt and states that orders granting or denying a petition are generally issued within seven days and sent to both the requester and the agency.",
             docs: [{ label: "The petition is acknowledged", href: "/records/governor/2026-09-24-ag-acknowledgment.pdf" }],
             eml: "/records/governor/eml/2026-09-24_1419_ag-acknowledgment.eml",
+        },
+        {
+            id: "ag-order",
+            ulid: "01M3AW7K3GZCPA4CD5YQ0FR2R6",
+            flagged: true,
+            date: "September 24, 2026",
+            d: "2026-09-24",
+            time: "4:32 PM",
+            from: "Phyllis Nelson, Oregon Department of Justice",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The petition is dismissed for lack of jurisdiction",
+            summary:
+                "Deputy Attorney General Benjamin Gutman dismisses the petition under ORS 192.427: the records sought are in the custody of the Governor, an elected official, so no petition to require disclosure may be filed with the Attorney General or considered by that office. DOJ File No. 121010-GA0187-26.",
+            docs: [
+                { label: "Petition for Public Records Disclosure Order: dismissed", href: "/records/governor/attachments/01m3aw7k3gzcpa4cd5yq0fr2r6-PRO-White-Robert-Samuel-09-24-26.pdf" },
+                { label: "Transmittal Email", href: "/records/governor/2026-09-24-ag-order.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-09-24_1632_ag-order.eml",
         },
     ],
 };
