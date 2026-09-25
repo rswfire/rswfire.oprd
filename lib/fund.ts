@@ -7,8 +7,8 @@
 
 export const GOAL = 25000;          // the whole column
 export const MATCH_CAP = 5000;      // matched dollar for dollar by a former client
-export const RAISED = 0;            // donations from others so far
-export const MATCH_RECEIVED = 300;  // money actually received from the matcher
+export const RAISED = 450;          // donations from others so far
+export const MATCH_RECEIVED = 450;  // money actually received from the matcher
 
 // Only money in hand is shown. The matcher's pledge covers the first
 // MATCH_CAP of donations; what he has already sent counts as match
