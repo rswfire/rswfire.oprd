@@ -164,7 +164,7 @@ const FORBIDDEN_OF_THEM: { rule: string; body: React.ReactNode }[] = [
 
 export default function AiCard() {
     return (
-        <div className="mt-4 overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-sm">
+        <div id="ai" className="mt-4 scroll-mt-24 overflow-hidden rounded-2xl border border-slate-900 bg-slate-950 shadow-sm">
 
             {/* ── The question, the answer, and who is asking it ── */}
             <div className="relative px-6 py-9 sm:px-10 sm:py-12">
