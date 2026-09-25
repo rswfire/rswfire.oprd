@@ -26,8 +26,6 @@ export const archiveSections: ArchiveSection[] = [
     { href: "/synthesis", label: "Synthesis", icon: "Combine" as const, iconClass: "text-fuchsia-700" },
     { href: "#separator-4", label: "", separator: true },
     { href: "/volunteers", label: "For Volunteers", icon: "Shield" as const },
-    { href: "/lisa-sumption", label: "The Director's Decisions", icon: "UserRound" as const, iconClass: "text-emerald-700" },
-    { href: "/governor-kotek", label: "The Governor's Silence", icon: "GraduationCap" as const, iconClass: "text-purple-700" },
     { href: "/faq", label: "Frequently Asked Questions", icon: "Ghost" as const, iconClass: "text-cyan-700" },
     { href: "/reading", label: "Selected Reading", icon: "BookOpenText" as const, iconClass: "text-amber-700" },
     { href: "/contact", label: "Contact", icon: "Mail" as const, iconClass: "text-emerald-700" },
