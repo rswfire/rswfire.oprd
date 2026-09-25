@@ -34,9 +34,25 @@ export default function Footer() {
                     <div><strong>This website is an independent public-interest documentation project</strong>.</div>
                     <div>It is not affiliated with, endorsed by, or operated by the State of Oregon, Oregon Parks &amp; Recreation Department (OPRD), or any other government entity.</div>
                     <div>All information presented reflects the creator’s firsthand experience, contemporaneous records, and evidence-based documentation.</div>
-                    <div>
-                        Public statements are made in one place:{" "}
-                        <a href="https://x.com/rswfire" target="_blank" rel="noopener noreferrer" className="underline text-emerald-800 hover:text-emerald-600">x.com/rswfire</a>.
+                    <div className="mt-1 flex items-center justify-center gap-2">
+                        <span
+                            aria-hidden
+                            className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white"
+                        >
+                            <Icon name="Flame" size={12} strokeWidth={2.25} />
+                        </span>
+                        <span>
+                            Public statements are made in one place:{" "}
+                            <a
+                                href="https://rswfire.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-semibold underline text-emerald-800 hover:text-emerald-600"
+                            >
+                                rswfire.com
+                            </a>{" "}
+                            &mdash; the best place to find me.
+                        </span>
                     </div>
                 </div>
 
