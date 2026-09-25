@@ -66,7 +66,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "governor",
         agency: "Office of the Governor",
         refs: "Request of September 5, 2026",
-        status: "Reconsideration requested.",
+        status: "Negotiating.",
         demanded: {
             total: "$572.50",
             note: "Estimated September 22, 2026 to collect, review, and produce the records. The fee waiver was denied. He agreed to pay.",
