@@ -33,6 +33,13 @@ export default function OverviewPage() {
 
 
 
+            {/* Everything from here down runs the full width of the page.
+                The sidebar column has ended by this point, so the cards
+                reach back across the 280px nav column and its 2rem gutter
+                rather than leaving that space empty. Desktop only; the
+                single-column layout below md is untouched. */}
+            <div className="md:-ml-[312px]">
+
             {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
             <WhatVolunteersDeserve />
 
@@ -107,6 +114,8 @@ export default function OverviewPage() {
 
                 <div className="mt-4">It does not ask for apology. It does not ask for repair.</div>
                 <div>It exists so that the next distortion cannot pretend it was the first.</div>
+
+            </div>
 
             </div>
 
