@@ -6788,8 +6788,7 @@ export const OSP_THREAD: RecordsThreadData = {
             to: "Oregon Department of Justice, Public Records Orders; Cameron D. Miles, Office of the Governor; Phyllis Nelson; Governor Kotek; Oregon Parks and Recreation Commission",
             kind: "petition",
             title: "Custody is not the test",
-            summary:
-                "A new petition on the fee waiver, filed because the statute provides no mechanism for reconsideration. The dismissal rested entirely on the records being in the custody of the Governor; the Attorney General\u2019s own manual states the rule applies \u201cregardless of whether the record in question is in the custody of the elected official\u201d and turns on an elected official claiming the right to withhold. No record has been withheld. On the merits, the manual instructs public bodies assessing a full waiver to determine whether a reduction is appropriate, and the DAS policy the office invoked requires it to state that the public is better served by preserving agency resources. Neither was done.",
+            summary: "A new petition on the fee waiver. Custody is not the test.",
             docs: [
                 { label: "Custody is not the test", href: "/records/governor/attachments/01m3cp80c8cqthryggj0x91vbj-2026-09-25-attorney-general-second-petition.pdf" },
                 { label: "Transmittal Email", href: "/records/governor/2026-09-25-second-petition-to-the-attorney-general.pdf" },
