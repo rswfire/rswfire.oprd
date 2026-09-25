@@ -6741,6 +6741,25 @@ export const GOVERNOR_THREAD: RecordsThreadData = {
             ],
             eml: "/records/governor/eml/2026-09-24_1632_ag-order.eml",
         },
+        {
+            id: "reconsideration",
+            ulid: "01M3AZD078K7HBZ71XR4Z0XJ9P",
+            flagged: true,
+            date: "September 24, 2026",
+            d: "2026-09-24",
+            time: "5:28 PM",
+            from: "Robert Samuel White",
+            to: "Oregon Department of Justice, Public Records Orders; Phyllis Nelson; Cameron D. Miles, Office of the Governor",
+            kind: "followup",
+            title: "No record has been denied",
+            summary:
+                "A request to reconsider the dismissal. Both ORS 192.411(1) and ORS 192.427 open on a person being denied the right to inspect or to receive a copy, and the Office of the Governor priced the records rather than withholding them. The words the order's ellipsis replaces are \u201cor district attorney after a claim of right to withhold disclosure by an elected official.\u201d The ground under ORS 192.324(6) is not reached by the order.",
+            docs: [
+                { label: "No record has been denied", href: "/records/governor/attachments/01m3azd078k7hbz71xr4z0xj9p-2026-09-24-attorney-general-reconsideration.pdf" },
+                { label: "Transmittal Email", href: "/records/governor/2026-09-24-reconsideration.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-09-24_1728_reconsideration.eml",
+        },
     ],
 };
 
