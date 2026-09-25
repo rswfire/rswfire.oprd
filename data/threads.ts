@@ -6348,10 +6348,27 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "A response is expected", href: "/records/osp/2026-09-22-march-11-characterization-response-required.pdf" }],
             eml: "/records/osp/eml/2026-09-22_0731_march-11-characterization-response-required.eml",
         },
+        {
+            id: "a-man-who-keeps-records",
+            ulid: "01M3BEJ1PR4JHJ2X3VRPT2Z9V5",
+            flagged: true,
+            date: "September 24, 2026",
+            d: "2026-09-24",
+            time: "9:53 PM",
+            from: "Robert Samuel White",
+            to: "Micah Hubbard and Holly Bolton, OSP Central Records; OPRD Commissioners; Governor Kotek",
+            kind: "notice",
+            title: "A man who keeps records",
+            summary:
+                "September 3 is named as the closest thing to integrity he has had from a state agency, limited but real. What was withheld is where the characterizations live: the body camera video, the knock-and-talk plan, the driver record and report, the texts, and the calls the produced emails set up. He asks for those beside what was produced, so the characterizations can be read against the evidence. The tort notice is stated as preservation of rights, not appetite for a dispute.",
+            docs: [
+                { label: "A man who keeps records", href: "/records/osp/attachments/01m3bej1pr4jhj2x3vrpt2z9v5-2026-09-25-osp-the-characterizations.pdf" },
+                { label: "Transmittal Email", href: "/records/osp/2026-09-24-a-man-who-keeps-records.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-24_2153_a-man-who-keeps-records.eml",
+        },
     ],
-};
-
-export const GOVERNOR_THREAD: RecordsThreadData = {
+};export const GOVERNOR_THREAD: RecordsThreadData = {
     slug: "governor",
     title: "Office of the Governor",
     agency: "Office of the Governor of Oregon",

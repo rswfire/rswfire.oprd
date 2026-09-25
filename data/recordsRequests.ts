@@ -281,6 +281,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-08-11", date: "August 11, 2026", event: "Records identified under both requests: $157.50 under PR27478, $16,315.00 under PR36445" },
             { d: "2026-09-03", date: "September 3, 2026", event: "Sixteen files produced under both case numbers; $95.00 refunded" },
             { d: "2026-09-03", date: "September 3, 2026", event: "The production reviewed and answered the same morning: not sufficient; ten categories stated as outstanding" },
+            { d: "2026-09-24", date: "September 24, 2026", event: "Letter: September 3 was the closest thing to integrity, and what was withheld is where the characterizations live" },
         ],
     },
     {
