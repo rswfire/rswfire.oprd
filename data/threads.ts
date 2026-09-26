@@ -4873,6 +4873,24 @@ export const OPRD_THREAD: RecordsThreadData = {
             docs: [{ label: "Notice of conclusion of direct correspondence", href: "/records/oprd/2026-09-20-conclusion-of-direct-correspondence.pdf" }],
             eml: "/records/oprd/eml/2026-09-20_1553_conclusion-of-direct-correspondence.eml",
         },
+        {
+            id: "follow-the-statute",
+            ulid: "01M3FDMFP0VRBZCTGXQRXJ7CM3",
+            flagged: true,
+            date: "September 26, 2026",
+            d: "2026-09-26",
+            time: "10:54 AM",
+            from: "Robert Samuel White",
+            to: "OPRD Public Records; Oregon State Police Central Records; Oregon Department of Justice, Public Records Orders; Cameron D. Miles, Office of the Governor; Katie Gauthier; David Pitcher; Phyllis Nelson; Governor Kotek; Oregon Parks and Recreation Commission",
+            kind: "letter",
+            title: "Follow the Statute.",
+            summary: "One letter to all four agencies, stating what each did in its own words, from the record, and what following the statute means for each.",
+            docs: [
+                { label: "Follow the Statute.", href: "/records/oprd/attachments/01m3fdmfp0vrbzctgxqrxj7cm3-2026-09-26-follow-the-statute.pdf" },
+                { label: "Transmittal Email", href: "/records/oprd/2026-09-26-follow-the-statute.pdf" },
+            ],
+            eml: "/records/oprd/eml/2026-09-26_1054_follow-the-statute.eml",
+        },
     ],
 };
 

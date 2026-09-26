@@ -630,6 +630,13 @@ I tell Greenlee <Link href="/record/osp/01M34REGP0WY727F9TQGS959Q7" className="u
                         The statute provides no mechanism for reconsideration, so I file <Link href="/record/governor/01M3CP80C8CQTHRYGGJ0X91VBJ/" className="underline text-emerald-800 hover:text-emerald-600">a second petition on the fee waiver: custody is not the test</Link>.
                     </div>
                 </li>
+
+                <li>
+                    <div className="font-semibold">September 26, 2026</div>
+                    <div className="mt-2 text-sm">
+                        I send all four agencies one letter: <Link href="/record/oprd/01M3FDMFP0VRBZCTGXQRXJ7CM3/" className="underline text-emerald-800 hover:text-emerald-600">Follow the Statute.</Link> What each did, in its own words, from the record, and what following the statute means for each.
+                    </div>
+                </li>
             </ul>
 
         </SectionPage>
