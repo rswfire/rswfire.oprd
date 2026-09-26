@@ -1,0 +1,397 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Received: from BN8PR14MB3458.namprd14.prod.outlook.com (2603:10b6:408:7d::8)
+ by CH2PR14MB4181.namprd14.prod.outlook.com with HTTPS; Tue, 25 Nov 2025
+ 16:17:15 +0000
+Received: from CH0PR03CA0022.namprd03.prod.outlook.com (2603:10b6:610:b0::27)
+ by BN8PR14MB3458.namprd14.prod.outlook.com (2603:10b6:408:7d::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9343.17; Tue, 25 Nov
+ 2025 16:17:13 +0000
+Received: from CH1PEPF0000AD74.namprd04.prod.outlook.com
+ (2603:10b6:610:b0:cafe::89) by CH0PR03CA0022.outlook.office365.com
+ (2603:10b6:610:b0::27) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9343.17 via Frontend Transport; Tue,
+ 25 Nov 2025 16:17:13 +0000
+Authentication-Results: spf=pass (sender IP is 50.31.156.120)
+ smtp.mailfrom=pmbounces.nextrequest.com; dkim=pass (signature was verified)
+ header.d=pm.mtasv.net;dkim=pass (signature was verified)
+ header.d=nextrequest.com;dmarc=pass action=none
+ header.from=nextrequest.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ pmbounces.nextrequest.com designates 50.31.156.120 as permitted sender)
+ receiver=protection.outlook.com; client-ip=50.31.156.120;
+ helo=sc-ord-mta120.mtasv.net; pr=C
+Received: from sc-ord-mta120.mtasv.net (50.31.156.120) by
+ CH1PEPF0000AD74.mail.protection.outlook.com (10.167.244.52) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9366.7
+ via Frontend Transport; Tue, 25 Nov 2025 16:17:12 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=pm20250324;
+ d=pm.mtasv.net;
+ h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:Date:
+ From:Message-ID:Reply-To:Sender:Subject:To:CC; t=1764087432; x=1764173832;
+ bh=+JsUx2ffnD3FPEYBGicLt8c111ZV6/Pr1LYp/uY5T84=;
+ b=aLBLnc/ajWnm7HwcxsWDSgT23p6XY3biUff7ygKxB5/1whBnuqAHjep/shbvtG4kog+mdEcayqQ0
+   3rUm59ZQGcRe3UsuZSeMfqiklRckXD6WWR6/nbp63vZnZM3q+VAE5LNtR+JFKZmwfqbBnL4PE1CV
+   wOiZ5aW6Cz041GofHlKJFqejj1vq3a2Gc2BobYKJtnJTABZceoWX6JcI2yxDd3CLvs+hRjEOJ1vl
+   mPR33E8IXhntfldEtOTOlJ63xKAo6lazQKHOyFGjwgclUgDKsD/ZPQd+MEbkI8yxOtNs5tZ0CNoc
+   NwrMeEeZ6CTLYd+ppMuzPaYrQhnqcJ8b24qjGA==
+Received: by sc-ord-mta120.mtasv.net id h4nb8g3b84k1 for <rsw@rswfire.com>;
+ Tue,
+ 25 Nov 2025 11:17:11 -0500 (envelope-from <pm_bounces@pmbounces.nextrequest.com>)
+X-PM-IP: 50.31.156.120
+X-IADB-IP: 50.31.156.120
+X-IADB-IP-REVERSE: 120.156.31.50
+DKIM-Signature: v=1; a=rsa-sha256; d=nextrequest.com; s=20161018195854pm;
+	c=relaxed/relaxed; i=messages@nextrequest.com; t=1764087431; x=1764260231;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=+JsUx2ffnD3FPEYBGicLt8c111ZV6/Pr1LYp/uY5T84=;
+	b=WMxXUE45nhfkUR5lBzm6S13/yVeyDDuDfufqAN2OjGHyE0U+C/xZlP0p4SazqnNwHpv9g9DBQC3
+	RcuHunY9+bpAvTNNpK5lf+fuYWrWHKOTyKkoWkEjF0Ea9T9QcDckZHtSYW39jXlFC0HObL+j4ZP/I
+	zl1+hbQrcwuaQyA7dnE=
+From: Oregon Parks and Recreation Dept <messages@nextrequest.com>
+Date: Tue, 25 Nov 2025 16:17:11 +0000
+Subject: Your Oregon Parks and Recreation Dept public records request #25-42
+ has been closed.
+Message-Id: <a8888791-d0ac-404e-9a8c-8f001be3bd3b@mtasv.net>
+Reply-To: oregonparksandrec_25-42-requester-notes@inbound.nextrequest.com
+To: rsw@rswfire.com
+Feedback-ID: 
+ s2404621-cmVxdWVzdGVyX3JlcXVlc3RfY2xvc2Vk:s2404621:a123637:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: a8888791-d0ac-404e-9a8c-8f001be3bd3b
+X-PM-Tag: requester_request_closed
+X-PM-RCPT: |bTB8MTIzNjM3fDI0MDQ2MjF8cnN3QHJzd2ZpcmUuY29t|
+X-PM-Message-Options: 
+ v1;1.dWSlbgDW6bOVKDu35aOikQ.oawPYrjRLlQrRWD0gcNvaK82qbhrbEo1FF2jviB00PJRAdKwaWdpbfoYW3B0fGhJzYwAE96kVxF-yDHteP7DqBrD076XfWo9Pe5XsiJfK96zmPCQzkggD8vdqLGwR9uskWW93FPatWDNS_q2TvYPHUDrbBUG31nIxLLfHDn_wjJRmfNkBkcqok0krHJPrExA
+X-PM-MTA-Pool: transactional-1
+Content-Type: multipart/alternative;
+	boundary=mk3-4fc1884249754dde97f222b1eca1ca9e; charset=UTF-8
+Return-Path: pm_bounces@pmbounces.nextrequest.com
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Nov 2025 16:17:12.7976
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ ab1443bb-87c5-456c-28a6-08de2c3e178e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH1PEPF0000AD74:EE_|BN8PR14MB3458:EE_|CH2PR14MB4181:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CH1PEPF0000AD74.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ab1443bb-87c5-456c-28a6-08de2c3e178e
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:2;ARA:13230040|5073199012|5063199012|4123199012|3072899012|3092899012|2092899012|1032899013|5062899012|69100299015|13102899012|12012899012|8096899003|13003099007|2066899003|4076899003|43540500003;
+X-Forefront-Antispam-Report: 
+ CIP:50.31.156.120;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:sc-ord-mta120.mtasv.net;PTR:sc-ord-mta120.mtasv.net;CAT:NONE;SFS:(13230040)(5073199012)(5063199012)(4123199012)(3072899012)(3092899012)(2092899012)(1032899013)(5062899012)(69100299015)(13102899012)(12012899012)(8096899003)(13003099007)(2066899003)(4076899003)(43540500003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Nov 2025 16:17:12.6329
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ ab1443bb-87c5-456c-28a6-08de2c3e178e
+X-MS-Exchange-CrossTenant-Id: 8c5c42e8-3a68-49d1-b5bd-bf8987a6469c
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH1PEPF0000AD74.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR14MB3458
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0416504
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9366.005
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4712097)(4714117)(4999163)(920097)(930097)(140003)(1310096);
+X-Microsoft-Antispam-Message-Info: 
+ =?utf-8?B?Y1Q5MTZweFFYaDNWaWdMQmdDOWVaK05tdXFsbGx6N3hYOXFLUTl1NUJCYjlW?=
+ =?utf-8?B?R0FwTldIT2s2RHNCL3BoL2xOQzVTSjF3cU42MjViRk1DZDM3QXlDYjVyM2JV?=
+ =?utf-8?B?T1pqVmRwNkwzZ2NiNTBXSUwyMjlnQjJyeEloR1ZwT0pXK3F3dFpEREV6ZU5B?=
+ =?utf-8?B?ZHRLSVl6aUEyZERYSlpybnQ2c1BuMGhBdDFQUXk4UGZsZFkrRXhXVk1vZ3lZ?=
+ =?utf-8?B?YXpnMHFEZ3VoYjNCVEFyUk1Md25nd1IvQzdHSVZ2UjZVRmlLL1lnOXV2bEpO?=
+ =?utf-8?B?cXA1K1NseUNMcEwzcXpEa292ZHBSRTIzTHNaL3MxL1hJbTY2dGZQZjZzTmZn?=
+ =?utf-8?B?Um1LRUhWMGYvblVYbWNRQkdEODJCUGxIeXdQVW5OZHE3byswYmdGWkw3M2VF?=
+ =?utf-8?B?MU43a3pjdEZLdFk4bGtFTGdtMmJ3ZmRJSjdLeTJWZ2MxWnJjWWRaQVhpald6?=
+ =?utf-8?B?bHYzYm9sS01lK2paK2N2Y1dwUFphcVIyQTZaeE85Q0NCRnhxOFF2bkF5OXN1?=
+ =?utf-8?B?ZGt2Mmg5TUd0U3o5MVZnL3JkelpaSjFOQUJvUVB3SUR0YmZWaUJ5eHpnTFpG?=
+ =?utf-8?B?dFZtQ0I0RjAvaUY5K1F3MFBuZUFkS0c5R3ZmTkZxSFpvU3lEOUtRcFBibzRO?=
+ =?utf-8?B?R0ZrbUluS3FFL09CYnRJVVhSQjZLTkVTVnpONC9Tb2RjYlI1K1pXcXRuVmR5?=
+ =?utf-8?B?MSswTzhWRHRtczZVbDY0cVdpVVN4Z1FRdlg5K0J1Q0tnVXZKNlZDMVM0MHJ1?=
+ =?utf-8?B?MCt6djZWWWdEejBadVduYjRFdHBEUDl2TWcvMUV0dFNMZkVMYnQzc1lRb0Vu?=
+ =?utf-8?B?N0ZlV1lnNi94c1hQclRrdVVlQ2tyb1NBWE4xZ0EwOEZoRDh1bUhhK2h2dExL?=
+ =?utf-8?B?UFgrSTJrS2xVYXFmTmJzaXZmYUxkbHNqODdlYmNjMzVVOHUvYU1nNmMxSnBO?=
+ =?utf-8?B?MkpabUV4ZmtwYXhVM1dkT3RKNXk0SFFmckQ0bksrL3BRTTgrbGlVQUJsa2JS?=
+ =?utf-8?B?WElURXdjTk1hS3VpVUJNeUMyK2hSTjVscEVxNWU0aXMxTUU4a1dLWUw4N3pH?=
+ =?utf-8?B?dWhheGdpUFpINFdZTy8vNXhvZkFKWk9HVlo4MzJaRWswc3VpR3JyTmF4UXpM?=
+ =?utf-8?B?U1RzR2xPU3B4YjVDbUdGRSt4RmIzQks2bWx4c0pyaDN1M1d0ZFd2V2NtVU9q?=
+ =?utf-8?B?bVhxTWQ3NVJGTEllU3Z6NHQ1aWRIc24vc2JOTXBOQ2pzd2Zyc0lQb1hBQkRt?=
+ =?utf-8?B?cUFzeE5pNjMrUUtBYjBQdHZGdk84WG01dmJQc0JkTEpNMmN2cElsZlQyeTQv?=
+ =?utf-8?B?Qm9DYnhpS21ocWc0MlR3SHNSbXdORDMrYTFPakVTdnR2ZXhTYTlTQ3Z2dS9m?=
+ =?utf-8?B?Y1NsMUoxTFRmV1RoaXNBWG9aVlZGV05YeE9PV2g4TUNGQlo5VENzaUU5OUlH?=
+ =?utf-8?B?Y2hVaitWU1daMmM0L25xMURhaHQ3a0xaK20wSEMxamdlbjA1ZEZhRjRYOWpv?=
+ =?utf-8?B?N3VZc2VXOVpJWDN5VU1oNVVOUUNWbzQvalFPcHZvYXVqNDhpV3pSZ3ZyOHo1?=
+ =?utf-8?B?UGZPSjFlN3NsbDd5THV0N2o1VTZmSmFrUDdrR0UwZlFDeGRxdXNwakd0S3JI?=
+ =?utf-8?B?TjU0akRIRFVHREY5dHdiNVdobDg3MDlDMWV3b1lBZ0hOWTRQQkZQT2JWaUNZ?=
+ =?utf-8?B?aHdMczFOWXNDRk8yZlNCdUUybVBCQW12VUxVRTJ4cUwvTWR4MG5pSlVnOFhM?=
+ =?utf-8?B?bkJMRmlKT21TT0hMcWk1NXVHYk9WWUo5aWhwNzFDeVdXTUF2UHp5SFhWNnZY?=
+ =?utf-8?B?dzZaYmVwWGpjTnBZN3djVGZNWmFGUTNPWDRpOG9CR0hydU5seEsrZDMwTnRx?=
+ =?utf-8?B?ZXg2NmJVZXFpcHRuT05LcTdRUi9ZTmk2VzlKMmt3cU9FdmttbjJPb1VhTUFZ?=
+ =?utf-8?B?TFBtbWpZQjNGaGRkQXJhaUdJb3N5bm9XWU5CYTdTNFRaNjNUK0FnSXkzdFRi?=
+ =?utf-8?B?UWZjRGZObDMvQmlHUHpWbVFXN0ZlcEdNdTQ0Z2I0NW53ZUxFdnJpMDlzb1FG?=
+ =?utf-8?B?ZTlORkp2aVZDRXdDdmg3dVN0N0RnZXdmL01PTXZITzZCTTV5UUtaTUxRaWla?=
+ =?utf-8?B?TXlJa3VOMmhKeGlpUnJCWE9YY2luMmdrNnhqekNUUDFPaVIwcFV6L3d3TXFs?=
+ =?utf-8?B?eEVJbmNjZjhGVXRaMldnRERqaHNiN2RXZVM2MkhXUVUwemVuVi9DMStvS2ZG?=
+ =?utf-8?B?OFl5clUzUEpoRDNWb3IyeS9qSmtITThsS0s1dldLa1AvYUtBSSt3OWxQTlFU?=
+ =?utf-8?B?SElpZnllSzhzNmplbGYyNmM2YnQzRElCMXgrbHZMRllwbjY0cUh3eXk2T3E0?=
+ =?utf-8?B?Ryt1ZTM5ckkrSTNxVkdYako5TFoyM0hBQWp1OEw5eGV0VDFRVWg3Q043YUdj?=
+ =?utf-8?B?Z2tkWHhTTFRDRjBVQkE4cHhDbDJ4M3NKNGJlVm11V0k5MjZMa3oyUEFUYU44?=
+ =?utf-8?B?cGwrR1BoZHM1NnNzWTJxN3IxUllKaC9VdmVKVkV1RXNCOFFMaVFuMDlPSFZI?=
+ =?utf-8?B?Z0N5SE02Mm4zajdHYndQYkNMLzErUWthQnE2WndkSGVkbmtsWGpKalpwMExT?=
+ =?utf-8?B?L0FmSFJpY3BrQTRUdXRvMjJUQlEzb1B6VFEwZmlyQTNvTndHMkVzMDdoNWwx?=
+ =?utf-8?B?dzNXZ3lJYjFOTllLWURrTFE2RU0xd25sbXJRVjVGNGVQVHQ1eERDS29VNDZr?=
+ =?utf-8?B?UUdRYVBUeXZETTJLb2RpYXd6UHNTczZoRVArNHYyUG1rZ1YxOTJvbElVOWtq?=
+ =?utf-8?B?UXJDU1BCYVJuOExjZFUxWTYwaytkeEt1QXhST3RhajBGem5pL0Ixc2VHbWNh?=
+ =?utf-8?B?eXVHYUtIUkFWU1o1dmh4aldyQzUwOXFyMGpIZ1lVMTFMVlJDa0R6dGtCOVlu?=
+ =?utf-8?B?Z1V3SHhjQ3JoUGttczIxZ05BOTE4M09VRzBQU0xTTTBLUXJKOGtJRENaTC9Q?=
+ =?utf-8?B?VTJSQTFmTm5mOW1nM0lQTlowYkJaN0xEUGNqTVU1eVlvcEFHOFBRYWZwYlZa?=
+ =?utf-8?B?TFNkUnljdlVxRW5ycGRMMktFNTRUS3BoelpnYUR1ZDBPc2ZrODZaS3dVZ1lK?=
+ =?utf-8?B?N2FhUExXQ1lkZHg2SlhFNDJlNXBqeEVUa2wvYmtGTlJRSHQxTzJGeGlvRkcx?=
+ =?utf-8?B?ZUV3czBWWXRKL0xmdDUwYXpkaU84VFpZbUlmdVdUV3dsRW90VkUvQ0Qrc203?=
+ =?utf-8?B?UWNodmRoMmI5c2ZFUGU0cnJZSlVLeHB2VjF6bG4wTEU1N0RiTnZXckQwREZL?=
+ =?utf-8?B?SGtSWjVZMHEwKzljMU9TWHNIUGpoWmtSUGV2VHMrc1NFbVE0S2dkQjZOZUNx?=
+ =?utf-8?B?VEJvNUJDZTdNZU11OUdJejIrdWRvMkg4MVY4S1lWTGRyNlE5ZmtWc05YUVZ4?=
+ =?utf-8?B?L2NYa2F2b3FGRWlRZkYyL3Q1RXNTRUFFZzk4ak4wQ2JseGtUNk8wTzBRbWw2?=
+ =?utf-8?B?SUFqNnJDU2VpbHdDZnprZDRZK2phNjFxZ3J0RDRGcjUxbjJ3K3I1WG5xOTVt?=
+ =?utf-8?Q?zLBo1PjkEuAyXS?=
+MIME-Version: 1.0
+
+--mk3-4fc1884249754dde97f222b1eca1ca9e
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Oregon Parks and Recreation Dept
+
+************************************************************************
+
+
+Record request #25-42 has been closed.
+
+
+
+
+
+
+
+
+************************************************************************   =
+                      =20
+<em>Questions about your request?</em> Reply to this email or sign in to co=
+ntact staff at Oregon Parks and Recreation Dept.<br><br><em>Technical suppo=
+rt:</em> See our <a href=3D"https://www.nextrequest.civicplus.help/hc/en-us=
+/categories/17720084172567-Requesters">help page</a>
+
+--mk3-4fc1884249754dde97f222b1eca1ca9e
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+>
+   =20
+    <title>Your Oregon Parks and Recreation Dept public records request #25=
+-42 has been closed.</title>
+    <style type=3D"text/css" rel=3D"stylesheet" media=3D"all">@media only s=
+creen and (max-width: 600px) { .email-body_inner, .email-footer { width: 10=
+0% !important } }
+@media only screen and (max-width: 500px) { .button { width: 100% !importan=
+t } }</style>
+  </head>
+ =20
+  <body style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica=
+ Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; height: 100%; m=
+argin: 0; line-height: 1.4; background-color: #FBFBFB; -webkit-text-size-ad=
+just: none; width: 100% !important;">
+    <span style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helveti=
+ca Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+      <table class=3D"nextrequest-white" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" style=3D"font-family: &quot;Open Sans&quot;, =
+Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: borde=
+r-box; background-color: #FBFBFB;">
+        <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;He=
+lvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr>
+          <td align=3D"center" valign=3D"top" class=3D"mcnTextContent" styl=
+e=3D"padding: 9px 18px; font-family: &quot;Open Sans&quot;, Arial, &quot;He=
+lvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+            <p class=3D"sub preheader-reply-delimiter" align=3D"center" sty=
+le=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;=
+, Helvetica, sans-serif; box-sizing: border-box; line-height: 1.5em; text-a=
+lign: center; margin-top: 0; font-size: 10px; color: #1C1C41;">
+              -- Attach a non-image file and/or reply ABOVE THIS LINE with =
+a message, and it will be sent to staff on this request. --
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+    </span>
+    <table class=3D"email-wrapper" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvet=
+ica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; width: 100%;=
+ margin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; =
+-premailer-cellspacing: 0; background-color: #FFFFFF;">
+      <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helv=
+etica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr>
+        <td align=3D"center" style=3D"font-family: &quot;Open Sans&quot;, A=
+rial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border=
+-box;">
+          <table class=3D"email-content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;=
+Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; width:=
+ 100%; margin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpaddin=
+g: 0; -premailer-cellspacing: 0;">
+            <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial, &quo=
+t;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;"><tr=
+>
+              <td class=3D"email-body" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"font-family: &quot;Open Sans&quot;, Arial, sans-ser=
+if; box-sizing: border-box; font-size: 16px; color: #1C1C41; width: 100%; m=
+argin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; -p=
+remailer-cellspacing: 0; background-color: #FBFBFB;">
+                <table class=3D"email-body_inner" align=3D"center" width=3D=
+"50" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: &quot;Open S=
+ans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-si=
+zing: border-box; width: 550px; margin: 92px auto 0; padding: 0; -premailer=
+-width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0;">
+                  <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial=
+, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box=
+;"><tr>
+                    <td align=3D"center" class=3D"t--title" style=3D"font-f=
+amily: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica,=
+ sans-serif; box-sizing: border-box; font-size: 20px; line-height: 1.6;">
+                      <div class=3D"shim-bottom-16px" style=3D"font-family:=
+ &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-=
+serif; box-sizing: border-box; margin-bottom: 16px;">
+                        Oregon Parks and Recreation Dept Public Records
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class=3D"white-background" style=3D"background-color:=
+ #FFFFFF;">
+                    <td class=3D"message-padding" style=3D"font-family: &qu=
+ot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 40px; border: 2px solid #0F1C70;">
+                      <div class=3D"t--subheader t--bold" style=3D"font-fam=
+ily: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, s=
+ans-serif; box-sizing: border-box; font-size: 24px; line-height: 36px; font=
+-weight: 600;">Record request #25-42 has been closed.</div>
+                      <div class=3D"shim1-top t--small t--primary message-c=
+ontent" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica=
+ Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; font-size: 16px=
+; line-height: 24px; color: #09090B; margin-top: 24px;">
+                       =20
+                       =20
+                      </div>
+                      <div class=3D"shim2andhalf-top" style=3D"font-family:=
+ &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-=
+serif; box-sizing: border-box; margin-top: 60px;">
+                        <p style=3D"font-family: &quot;Open Sans&quot;, Ari=
+al, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-b=
+ox; line-height: 1.5em; text-align: left; margin-top: 0; font-size: 16px;">
+                          <a class=3D"button--default button--primary" href=
+=3D"https://oregonparksandrec.nextrequest.com/requests/25-42" style=3D"font=
+-family: &quot;Open Sans&quot;, Arial, sans-serif; box-sizing: border-box; =
+color: #FBFBFB; background-color: #1B34FF; border-radius: 3px; display: inl=
+ine-block; font-size: 16px; font-weight: 600; height: 40px; line-height: 24=
+px; padding: 8px 24px; text-decoration: none; text-transform: none; white-s=
+pace: nowrap;"> View Request 25-42</a>
+                        </p>
+                      </div>
+                      <div class=3D"request-link" style=3D"font-family: &qu=
+ot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-seri=
+f; box-sizing: border-box; margin-top: -10px; margin-bottom: -10px; margin-=
+left: 1px; opacity: 0.65; font-size: 10px; color: #1B34FF;">https://oregonp=
+arksandrec.nextrequest.com/requests/25-42</div>
+                      <br>
+                      <p class=3D"help-text" style=3D"font-family: &quot;Op=
+en Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; bo=
+x-sizing: border-box; line-height: 1.33; text-align: left; margin-top: 30px=
+; font-size: 12px; opacity: 0.65; color: #1C1C41;">
+                       =20
+                      </p>
+                    </td>
+                  </tr><tr>
+                </tr></tbody></table>
+              </td>=20
+            </tr>
+            <tr class=3D"nextrequest-white" style=3D"background-color: #FBF=
+BFB;">
+              <td style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot=
+;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box;">
+                <table class=3D"email-footer" align=3D"center" width=3D"570=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: &quot;Open Sans=
+&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizin=
+g: border-box; width: 570px; margin: 0 auto; padding: 0; -premailer-width: =
+570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; text-align: ce=
+nter; background-color: #FBFBFB;">
+                  <tbody style=3D"font-family: &quot;Open Sans&quot;, Arial=
+, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box=
+;"><tr>
+                    <td class=3D"content-cell" align=3D"center" style=3D"fo=
+nt-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvet=
+ica, sans-serif; box-sizing: border-box; padding: 40px;">
+	<a href=3D"https://www.nextrequest.com/" aria-label=3D"NextRequest an Opti=
+mere brand" style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helve=
+tica Neue&quot;, Helvetica, sans-serif; box-sizing: border-box; color: #4D7=
+5AE;">
+                      <img class=3D"footer-image" src=3D"https://nextreques=
+t-production-assets.s3.us-west-2.amazonaws.com/images/NextRequest-Logo.png"=
+ style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&q=
+uot;, Helvetica, sans-serif; box-sizing: border-box; border: none; width: 1=
+52px; margin-bottom: 10px;">
+					  </a>
+                      <p class=3D"sub align-center" style=3D"font-family: &=
+quot;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-se=
+rif; box-sizing: border-box; line-height: 1.5em; text-align: center; margin=
+-top: 0; font-size: 10px; color: #AEAEAE;"><em style=3D"font-family: &quot;=
+Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; =
+box-sizing: border-box;">Questions about your request?</em> Reply to this e=
+mail or sign in to contact staff at Oregon Parks and Recreation Dept.<br><b=
+r><em style=3D"font-family: &quot;Open Sans&quot;, Arial, &quot;Helvetica N=
+eue&quot;, Helvetica, sans-serif; box-sizing: border-box;">Technical suppor=
+t:</em> See our <a href=3D"https://www.nextrequest.civicplus.help/hc/en-us/=
+categories/17720084172567-Requesters" style=3D"font-family: &quot;Open Sans=
+&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; box-sizin=
+g: border-box; color: #1B34FF;">help page</a></p>
+                      <p class=3D"footer-bottom" style=3D"font-family: &quo=
+t;Open Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif=
+; box-sizing: border-box; line-height: 1.5em; text-align: left; margin-top:=
+ 0; font-size: 16px; color: #AEAEAE; min-height: 16px;"></p>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+ =20
+
+<img src=3D"https://ea.pstmrk.it/open?m=3Dv3_1.suYheoe2MR4VkmyCjPKZGw.TowEj=
+oBypgoCM5frLDAFmaF_Mbo4PWXFr0mr163RIgxEQoUe7Q8LU-r2fyp2EowoVVP0jC87e-7jtZHG=
+y05NcU6y2ElTazWdc6w5O8D9wvk2FziWf9Qbdr0TJJ-t-InutMevfmPPnTr2Q0ZS5ChBEFyZzEa=
+xdzD_VzK_fcwfrQHe-6d6b8bvBqQtqk5cY4KPfBKpotIQPUjAEufdA3hsDlGxWLPmIbtJq_5Rp7=
+uxxpm6keQLYZhO2web5FEWzVOjG93Njv5FsEeejoXmzM3aJ8vCD8ZOibKKM_x9sKWfdQ8LSczC-=
+ToBPWOLqXdJJZdaXOz4CgQb6ssN2b9sxR-Z8SBebErtj56x04pDkJTjXlw2liV9GBnSo0-D687E=
+zuhLc9HDOHE8KlPSdtXJ108F2ZGTsGTNwMoF1seinV5zxYm5SFhdJ4Eouvi6sgo4dtC50ZKrxN2=
+HoBh4ZP8YmcqVc46mT6LrAxIgrxHP6HJma7tm2SdV_PoQk7G5C-l9D7vjXuUqiBfSEWchqo7UbI=
+LVTJlkWpdNB8RSKFEQ1286afu2fKl9gxvD_KgYKCJE87sEjgP5Wx6EzwIifuIpdM0pF0FE1VGOq=
+BClluemOBkGgKoYwb1Nb2Wc-Bb1a6ykXlt1" width=3D"1" height=3D"1" border=3D"0" =
+alt=3D""></body></html>
+
+--mk3-4fc1884249754dde97f222b1eca1ca9e--
+
