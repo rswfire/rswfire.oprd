@@ -6739,7 +6739,7 @@ export const OSP_THREAD: RecordsThreadData = {
             from: "Phyllis Nelson, Oregon Department of Justice",
             to: "Robert Samuel White",
             kind: "response",
-            title: "The office dismisses a petition it had jurisdiction to decide",
+            title: "The office refuses to decide the petition",
             summary: "Deputy Attorney General Benjamin Gutman dismisses the petition, writing that the records are in the Governor's custody. ORS 192.427 bars a petition only where an elected official claims the right to withhold a record. No record was withheld, and the Governor claimed nothing.",
             docs: [
                 { label: "Petition for Public Records Disclosure Order: dismissed", href: "/records/governor/attachments/01m3aw7k3gzcpa4cd5yq0fr2r6-PRO-White-Robert-Samuel-09-24-26.pdf" },
