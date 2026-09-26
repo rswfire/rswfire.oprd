@@ -44,7 +44,7 @@ export default function Footer() {
                         <span>
                             Public statements are made in one place:{" "}
                             <a
-                                href="https://rswfire.com/#timeline"
+                                href="https://rswfire.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="font-semibold underline text-emerald-800 hover:text-emerald-600"

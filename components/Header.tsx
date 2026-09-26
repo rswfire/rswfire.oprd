@@ -84,7 +84,7 @@ export default function Header() {
                         {/* The one place he makes public statements, and the one
                             place he can be found. Same weight as the shield. */}
                         <a
-                            href="https://rswfire.com/#timeline"
+                            href="https://rswfire.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group flex items-center gap-3 rounded-xl border border-slate-300 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
@@ -114,7 +114,7 @@ export default function Header() {
 
             {/* And the one place he speaks publicly, same treatment. */}
             <a
-                href="https://rswfire.com/#timeline"
+                href="https://rswfire.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="md:hidden flex items-center gap-2 border-t border-slate-700 bg-slate-900 px-4 py-2 text-white active:bg-black"
