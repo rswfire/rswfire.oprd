@@ -5246,7 +5246,7 @@ export const USFS_THREAD: RecordsThreadData = {
             to: "Robert Samuel White",
             kind: "response",
             title: "OPR: an administrative investigation",
-            summary: "Patrol Captain Sloan refers the complaint to the Office of Professional Responsibility, with the September 9 correction letter forwarded.",
+            summary: "The complaint referred to the Office of Professional Responsibility, with the September 9 correction letter forwarded.",
             docs: [{ label: "OPR: an administrative investigation", href: "/records/usfs/2026-09-09-opr-administrative-investigation.pdf" }],
             eml: "/records/usfs/eml/2026-09-09_1258_opr-administrative-investigation.eml",
         },
