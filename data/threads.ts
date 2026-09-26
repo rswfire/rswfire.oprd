@@ -3593,7 +3593,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             time: "10:21 AM",
             from: "Robert Samuel White",
             to: "Oregon Parks and Recreation Dept Public Records",
-            kind: "letter",
+            kind: "notice",
             title: "An audit from CivicPlus",
             summary: "The platform wrote for the first time, so something changed on the institution's end. He states he will request an audit of what changed and when.",
             docs: [{ label: "An audit from CivicPlus", href: "/records/oprd/2025-11-25-audit-from-civicplus.pdf" }],
@@ -4882,7 +4882,7 @@ export const OPRD_THREAD: RecordsThreadData = {
             time: "10:54 AM",
             from: "Robert Samuel White",
             to: "OPRD Public Records; Oregon State Police Central Records; Oregon Department of Justice, Public Records Orders; Cameron D. Miles, Office of the Governor; Katie Gauthier; David Pitcher; Phyllis Nelson; Governor Kotek; Oregon Parks and Recreation Commission",
-            kind: "letter",
+            kind: "notice",
             title: "Follow the Statute.",
             summary: "One letter to all four agencies, stating what each did in its own words, from the record, and what following the statute means for each.",
             docs: [
