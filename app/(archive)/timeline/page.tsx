@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function TimelinePage() {
     return (
         <SectionPage
+            emblem="ChartNoAxesGantt" tone="blue"
             title="TIMELINE"
             subtitle="FEBRUARY 9, 2025 — ONGOING"
             tagline={

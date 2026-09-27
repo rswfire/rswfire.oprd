@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function PoliceIntimidationPage() {
     return (
         <SectionPage
+            emblem="AlertTriangle" tone="rose"
             title="POLICE INTIMIDATION"
             subtitle="BEHIND A LOCKED FEDERAL GATE"
             previousPage={{ href: "/evidence/containment", label: "Institutional Containment" }}

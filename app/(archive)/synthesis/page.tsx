@@ -28,6 +28,7 @@ export default async function SynthesisPage() {
     const initialData = await getInitialCluster();
     return (
         <SectionPage
+            emblem="Combine" tone="fuchsia"
             title="THE SYNTHESIS"
             subtitle="THE WHOLE RECORD, READ AS ONE"
             previousPage={{ href: "/", label: "Overview" }}

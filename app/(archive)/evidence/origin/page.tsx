@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function ConfrontationPage() {
     return (
         <SectionPage
+            emblem="MessageSquare" tone="rose"
             title="THE ORIGIN EVENT"
             subtitle="PARK SUPERVISOR"
             previousPage={{ href: "/evidence", label: "Evidence" }}

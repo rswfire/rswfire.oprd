@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default function SurveillancePage() {
     return (
         <SectionPage
+            emblem="Eye" tone="rose"
             title="ASSESSMENT & SURVEILLANCE"
             subtitle="UNIDENTIFIED OPERATIVE"
             previousPage={{ href: "/evidence/coercion", label: "The Coercion Meeting" }}

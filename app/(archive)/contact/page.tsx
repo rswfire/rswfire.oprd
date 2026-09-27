@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
     return (
         <SectionPage
+            emblem="Mail" tone="emerald"
             title="CONTACT"
             subtitle="WRITE TO ME DIRECTLY"
             previousPage={{ href: "/reading", label: "Selected Reading" }}

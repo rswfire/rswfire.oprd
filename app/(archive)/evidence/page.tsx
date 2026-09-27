@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function EvidencePage() {
     return (
         <SectionPage
+            emblem="Gavel" tone="rose"
             title="EVIDENCE"
             subtitle="DOCUMENTED PROOF"
             previousPage={{ href: "/displacement", label: "The Displacement Framework" }}

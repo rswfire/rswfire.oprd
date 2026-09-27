@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function EthicsPage() {
     return (
         <SectionPage
+            emblem="Scale" tone="indigo"
             title="A NOTE ABOUT ETHICS"
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/displacement", label: "The Displacement Framework" }}

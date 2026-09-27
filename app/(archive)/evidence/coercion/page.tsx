@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default function CoercionPage() {
     return (
         <SectionPage
+            emblem="Mic" tone="rose"
             title="THE COERCION MEETING"
             subtitle="PARK MANAGER &amp; PARK SUPERVISOR"
             previousPage={{ href: "/evidence/trust", label: "Trust Recruitment" }}

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function CompliancePage() {
     return (
         <SectionPage
+            emblem="Flame" tone="rose"
             title="THE ESCALATION RESPONSE"
             subtitle="DEMONSTRATING INSTITUTIONAL CONFORMITY"
             previousPage={{ href: "/evidence/origin", label: "The Origin Event" }}

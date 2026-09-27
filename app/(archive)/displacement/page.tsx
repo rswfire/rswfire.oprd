@@ -23,6 +23,7 @@ const stages = [
 export default function DisplacementPage() {
     return (
         <SectionPage
+            emblem="Route" tone="violet"
             title="THE DISPLACEMENT FRAMEWORK"
             subtitle="THE MACHINE AND THE WEAPON"
             previousPage={{ href: "/ethics", label: "A Note About Ethics" }}

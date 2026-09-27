@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function TrustRecruitmentPage() {
     return (
         <SectionPage
+            emblem="UserRound" tone="rose"
             title="TRUST RECRUITMENT"
             subtitle="VOLUNTEER SERVICES LEAD"
             previousPage={{ href: "/evidence/escalation", label: "The Escalation Response" }}

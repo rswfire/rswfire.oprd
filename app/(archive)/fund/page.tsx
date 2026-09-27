@@ -21,6 +21,7 @@ function Tile({ label, value }: { label: string; value: string }) {
 export default function FundPage() {
     return (
         <SectionPage
+            emblem="Check" tone="teal"
             title="THE LEGAL FUND"
             subtitle="EVERY DOLLAR, ACCOUNTED FOR"
             previousPage={{ href: "/", label: "Overview" }}

@@ -112,6 +112,7 @@ function body(blocks: SunlightBlock[]): ReactNode[] {
 export default function SunlightPage() {
     return (
         <SectionPage
+            emblem="Sun" tone="amber"
             title="SUNLIGHT"
             subtitle="NOTHING THEY WROTE SURVIVES IT"
         >

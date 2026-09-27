@@ -26,6 +26,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
 
     return (
         <SectionPage
+            emblem="Newspaper" tone="emerald"
             title={thread.agency.toUpperCase()}
             subtitle={thread.matter.toUpperCase()}
             previousPage={{ href: "/records", label: "The Records" }}

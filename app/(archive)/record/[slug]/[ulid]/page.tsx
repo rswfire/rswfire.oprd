@@ -101,6 +101,7 @@ export default async function DocumentPage({
 
     return (
         <SectionPage
+            emblem="FileText" tone="emerald"
             title={filing.title.toUpperCase()}
             previousPage={
                 prev

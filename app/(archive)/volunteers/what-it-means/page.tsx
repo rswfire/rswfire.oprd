@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function WhatItMeansPage() {
     return (
         <SectionPage
+            emblem="Users" tone="emerald"
             title="WHAT IT MEANS TO VOLUNTEER"
             previousPage={{ href: "/volunteers", label: "For Volunteers" }}
             nextPage={{ href: "/reading", label: "Selected Reading" }}

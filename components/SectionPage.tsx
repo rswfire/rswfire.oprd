@@ -9,13 +9,39 @@ type SystemMapLink = {
     blurb?: string;
 };
 
+/**
+ * A page's colour, carried by its icon and its rule. The colours are the
+ * ones the nav already gives each section in lib/sections.ts, so a page
+ * header answers the nav item that reached it. Subpages take their
+ * parent's colour.
+ *
+ * The classes are written out rather than built from the key: Tailwind
+ * reads source text, so an interpolated class name produces no CSS.
+ */
+const TONES = {
+    emerald: { icon: "text-emerald-600", eyebrow: "text-emerald-700", rule: "from-emerald-200 via-emerald-600 to-emerald-200" },
+    indigo:  { icon: "text-indigo-600", eyebrow: "text-indigo-700",  rule: "from-indigo-200 via-indigo-600 to-indigo-200" },
+    sky:     { icon: "text-sky-600", eyebrow: "text-sky-700",     rule: "from-sky-200 via-sky-600 to-sky-200" },
+    blue:    { icon: "text-blue-600", eyebrow: "text-blue-700",    rule: "from-blue-200 via-blue-600 to-blue-200" },
+    amber:   { icon: "text-amber-500", eyebrow: "text-amber-700",   rule: "from-amber-200 via-amber-500 to-amber-200" },
+    rose:    { icon: "text-rose-600", eyebrow: "text-rose-700",    rule: "from-rose-200 via-rose-600 to-rose-200" },
+    fuchsia: { icon: "text-fuchsia-600", eyebrow: "text-fuchsia-700", rule: "from-fuchsia-200 via-fuchsia-600 to-fuchsia-200" },
+    cyan:    { icon: "text-cyan-600", eyebrow: "text-cyan-700",    rule: "from-cyan-200 via-cyan-600 to-cyan-200" },
+    violet:  { icon: "text-violet-600", eyebrow: "text-violet-700",  rule: "from-violet-200 via-violet-600 to-violet-200" },
+    teal:    { icon: "text-teal-600", eyebrow: "text-teal-700",    rule: "from-teal-200 via-teal-600 to-teal-200" },
+} as const;
+
+export type SectionTone = keyof typeof TONES;
+
 type SectionPageProps = {
     title?: string;
     subtitle?: string;
     supplemental?: string;
     summary?: string;
-    /** Lucide icon name, centered above the title. */
+    /** Lucide icon name, centered above the eyebrow. */
     emblem?: string;
+    /** The page's colour, carried by the icon and the rule under the title. */
+    tone?: SectionTone;
     /** A quieter third line under the subtitle. */
     tagline?: ReactNode;
     systemMap?: SystemMapLink | SystemMapLink[];
@@ -35,6 +61,7 @@ export default function SectionPage({
                                         subtitle,
                                         supplemental,
                                         emblem,
+                                        tone = "emerald",
                                         tagline,
                                         summary,
                                         systemMap,
@@ -43,6 +70,7 @@ export default function SectionPage({
                                         nextPage
                                     }: SectionPageProps) {
     const systemMapLinks = systemMap ? (Array.isArray(systemMap) ? systemMap : [systemMap]) : [];
+    const hue = TONES[tone] ?? TONES.emerald;
     const hasHeader = Boolean(title?.trim() || subtitle || supplemental || emblem);
     const hasNavigation = Boolean(previousPage || nextPage);
 
@@ -75,35 +103,34 @@ export default function SectionPage({
 
                 {hasHeader && (
                     <header className="pb-6">
-                        {emblem && (
-                            <div className="mb-3 flex justify-center">
-                                <Icon name={emblem as never} className="text-violet-700" size={30} strokeWidth={1.5} />
+                        {/* Icon, eyebrow, title: the testimony card's header, on
+                            every page. The subtitle is the eyebrow and sits above
+                            the title, so a page announces what it is before it
+                            announces its name. */}
+                        {(emblem || subtitle) && (
+                            <div className={`flex flex-col items-center text-xs font-bold uppercase tracking-widest ${hue.eyebrow}`}>
+                                {emblem && (
+                                    <Icon name={emblem as never} className={`mb-2 ${hue.icon}`} size={24} strokeWidth={1.75} aria-hidden />
+                                )}
+                                {subtitle && <span>{subtitle}</span>}
                             </div>
                         )}
 
                         {title?.trim() && (
-                            <h1
-                                className={
-                                    emblem
-                                        ? "mb-3 text-center text-xl font-light uppercase tracking-[0.14em] text-slate-900 sm:text-2xl lg:text-[26px] lg:tracking-[0.16em]"
-                                        : "text-3xl font-bold mb-2 text-center tracking-widest"
-                                }
-                            >
+                            <h1 className="mt-2 mb-0 text-3xl font-bold text-center tracking-widest text-gray-900">
                                 {title}
                             </h1>
                         )}
 
-                        {(subtitle || supplemental) && (
+                        {title?.trim() && (
                             <div
-                                className={
-                                    emblem
-                                        ? "text-center text-[13px] font-semibold uppercase tracking-[0.18em] text-slate-700 sm:text-sm"
-                                        : "text-gray-700 space-y-0 text-center"
-                                }
-                            >
-                                {subtitle && <div>{subtitle}</div>}
-                                {supplemental && <div>{supplemental}</div>}
-                            </div>
+                                aria-hidden
+                                className={`mx-auto mt-5 h-[3px] w-20 rounded-full bg-gradient-to-r ${hue.rule}`}
+                            />
+                        )}
+
+                        {supplemental && (
+                            <div className="mt-2 text-center text-gray-700">{supplemental}</div>
                         )}
 
                         {tagline && (

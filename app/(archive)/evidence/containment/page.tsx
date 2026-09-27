@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function ContainmentPage() {
     return (
         <SectionPage
+            emblem="Layers" tone="rose"
             title="INSTITUTIONAL CONTAINMENT"
             subtitle="LISA SUMPTION, DIRECTOR &amp; J.R. COLLIER, DEPUTY DIRECTOR"
             previousPage={{ href: "/evidence/expulsion", label: "Expulsion & Retaliation" }}

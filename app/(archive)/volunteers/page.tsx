@@ -63,6 +63,7 @@ const stages = [
 export default function ForVolunteersPage() {
     return (
         <SectionPage
+            emblem="Shield" tone="emerald"
             title="FOR VOLUNTEERS"
             subtitle="YOU'RE NOT ALONE"
             previousPage={{ href: "/faq", label: "Frequently Asked Questions" }}

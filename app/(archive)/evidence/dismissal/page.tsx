@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function DismissalPage() {
     return (
         <SectionPage
+            emblem="X" tone="rose"
             title="DISMISSAL WITHOUT PROCESS"
             subtitle="PARK MANAGER"
             previousPage={{ href: "/evidence/surveillance", label: "Assessment & Surveillance" }}

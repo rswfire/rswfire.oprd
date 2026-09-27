@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function ExpulsionPage() {
     return (
         <SectionPage
+            emblem="Eraser" tone="rose"
             title="EXPULSION & RETALIATION"
             subtitle="PROGRAM MANAGER"
             previousPage={{ href: "/evidence/dismissal", label: "Dismissal Without Process" }}

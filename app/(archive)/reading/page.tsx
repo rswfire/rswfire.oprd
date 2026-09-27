@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function SelectedReadingPage() {
     return (
         <SectionPage
+            emblem="BookOpenText" tone="amber"
             title="SELECTED READING"
         >
 

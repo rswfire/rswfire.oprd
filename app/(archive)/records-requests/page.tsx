@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 export default function RecordsRequestsPage() {
     return (
         <SectionPage
+            emblem="HandPlatter" tone="sky"
             title="RECORDS REQUESTS"
             subtitle="ASKED. CLAIMED. WITHHELD."
             previousPage={{ href: "/", label: "Overview" }}
