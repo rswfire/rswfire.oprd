@@ -45,7 +45,10 @@ export default function DocViewerProvider({ children }: { children: React.ReactN
 
     const load = useCallback(async () => {
         if (index.current) return index.current;
-        const res = await fetch(`${PREFIX}/records/index.json`);
+        // no-store: a cached index from before a deploy is missing every
+        // record added since, and the miss path navigates away instead of
+        // opening the viewer.
+        const res = await fetch(`${PREFIX}/records/index.json`, { cache: "no-store" });
         if (!res.ok) throw new Error(`index ${res.status}`);
         index.current = (await res.json()) as Record<string, ViewDoc>;
         return index.current;
@@ -87,6 +90,9 @@ export default function DocViewerProvider({ children }: { children: React.ReactN
             const anchor = (event.target as HTMLElement | null)?.closest?.("a");
             const href = anchor?.getAttribute("href");
             if (!href) return;
+            // A link that names the full page as its purpose is never
+            // intercepted: the ULID links exist to leave the viewer.
+            if (anchor?.dataset.fullpage !== undefined) return;
             let url: URL;
             try { url = new URL(href, window.location.origin); } catch { return; }
             if (url.origin !== window.location.origin) return;
