@@ -30,13 +30,12 @@ export default function TestimonyCard() {
             <div className="px-6 pt-8 sm:px-8">
                 <div className="flex flex-col items-center text-xs font-bold uppercase tracking-widest text-emerald-700">
                     <Sprout size={24} strokeWidth={1.75} className="mb-2 text-emerald-600" aria-hidden />
-                    <span>Welcome</span>
+                    <span>The Testimony of</span>
                 </div>
 
                 <Link href="/testimony" className="mt-2 block text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        The Testimony of
-                        <span className="block">Robert Samuel White</span>
+                        Robert Samuel White
                     </h2>
                 </Link>
 
