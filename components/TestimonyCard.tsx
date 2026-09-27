@@ -10,6 +10,7 @@ import { Sprout } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
+import Cite from "@/components/Cite";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -43,6 +44,36 @@ export default function TestimonyCard() {
                     aria-hidden
                     className="mx-auto mt-7 h-[3px] w-20 rounded-full bg-gradient-to-r from-emerald-200 via-emerald-600 to-emerald-200"
                 />
+
+                {/* The apparatus, counted, before he says a word. Small print,
+                    because the scale does the work. Every line is from the
+                    PR27478 production the Oregon State Police released. */}
+                <div className="mx-6 mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 sm:mx-10">
+                    <p className="font-bold">
+                        Thirteen officials, six agencies, against one unpaid volunteer who wrote
+                        letters.
+                    </p>
+                    <p>
+                        An OPRD manager and a deputy director. An Oregon State Police
+                        captain of the press office. A lieutenant of Criminal Investigations. A
+                        Major Crimes detective, a sergeant, and a second detective who is a task
+                        force officer on the Portland FBI Joint Terrorism Task Force, who pulled in
+                        two FBI personnel. A criminal intelligence analyst at the state&rsquo;s
+                        Department of Justice fusion center. A Forest Service special agent and a
+                        patrol captain. Later a sheriff&rsquo;s deputy.
+                    </p>
+                    <p>
+                        They ran
+                        his name through channels built for terrorism, pulled his driver&rsquo;s
+                        record, mapped the building he sleeps in from a hunting app, and told his
+                        supervisor to say nothing to him.
+                    </p>
+                    <p>
+                        <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">
+                            Every line of this is in their own file.
+                        </Cite>
+                    </p>
+                </div>
 
                 <div className="mt-7 space-y-4 text-lg leading-relaxed text-gray-800">
                     <p>
