@@ -26,7 +26,7 @@ const CHAPTERS = [
 
 export default function TestimonyCard() {
     return (
-        <div className="mb-4 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
+        <div className="mb-4 overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
             <div className="px-6 pt-8 sm:px-8">
                 <div className="flex flex-col items-center text-xs font-bold uppercase tracking-widest text-emerald-700">
                     <Sprout size={24} strokeWidth={1.75} className="mb-2 text-emerald-600" aria-hidden />

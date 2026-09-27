@@ -29,13 +29,8 @@ export default function OverviewPage() {
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
 
-            {/* THE TIMELINE — the major events, walked newest first */}
-            <TimelineWalker />
-
             {/* WELCOME AND TESTIMONY — one introduction to the complete account */}
             <TestimonyCard />
-
-
 
             {/* Everything from here down runs the full width of the page.
                 The sidebar column has ended by this point, so the cards
@@ -43,6 +38,10 @@ export default function OverviewPage() {
                 rather than leaving that space empty. Desktop only; the
                 single-column layout below md is untouched. */}
             <div className="md:-ml-[312px]">
+
+            {/* THE TIMELINE — the major events, walked newest first */}
+            <TimelineWalker />
+
 
             {/* WHAT EVERY VOLUNTEER DESERVES — five empty boxes */}
             <WhatVolunteersDeserve />
