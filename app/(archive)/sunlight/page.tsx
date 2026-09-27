@@ -15,7 +15,6 @@ import SectionPage from "@/components/SectionPage";
 import SunlightTabs from "@/components/SunlightTabs";
 import { SUNLIGHT_SECTIONS } from "@/data/sunlight";
 import type { SunlightBlock } from "@/data/sunlight";
-import { TIMELINE_CITED_SOURCES } from "@/data/recordsRequests";
 
 // The anchor a citation elsewhere in the archive points at. Must match
 // scripts/make-sunlight-index.mjs: change one and the links stop landing.
@@ -182,29 +181,6 @@ function TimelinePanel() {
                 ))}
             </div>
 
-            {/* ── Awaiting production ── */}
-            <div className="mt-14 border border-gray-200 rounded-lg p-6 bg-white">
-                <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold">Awaiting production</div>
-                <div className="mt-3 text-[15px] leading-relaxed text-gray-800">
-                    The Timeline cites its sources by filename. None have been produced. On September 11,
-                    2026, every one of them was requested — with every version and revision of each, and
-                    of the Timeline itself. The clocks run on the{" "}
-                    <Link href="/records-requests" className="text-emerald-800 underline decoration-emerald-300 hover:text-emerald-600">
-                        records page
-                    </Link>
-                    .
-                </div>
-                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 text-sm text-gray-600 font-mono">
-                    {TIMELINE_CITED_SOURCES.map((f) => (
-                        <li key={f}>{f}</li>
-                    ))}
-                </ul>
-                <div className="mt-4 text-sm text-gray-500">
-                    The filenames are reproduced exactly as the Timeline cites them, including the
-                    citations{"’"} own errors. What arrives will be placed here, next to the record. So
-                    will what does not.
-                </div>
-            </div>
         </>
     );
 }
