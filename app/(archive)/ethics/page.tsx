@@ -1,6 +1,7 @@
 // app/(archive)/ethics/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+import Cite from "@/components/Cite";
 
 export const metadata: Metadata = {
     title: "A Note About Ethics",
@@ -12,6 +13,7 @@ export default function EthicsPage() {
         <SectionPage
             emblem="Scale" tone="indigo"
             title="A NOTE ABOUT ETHICS"
+            subtitle="AN INTRODUCTION"
             previousPage={{ href: "/", label: "Home" }}
             nextPage={{ href: "/displacement", label: "The Displacement Framework" }}
         >
@@ -57,6 +59,21 @@ export default function EthicsPage() {
 
             <div className="mt-4">What follows is proof that they're not &mdash;</div>
             <div className="ml-4">and what happens when someone refuses to accept that corruption as normal.</div>
+
+            {/* The line has a date. He wrote it before he asked them for
+                anything, which is the fact worth keeping next to it. */}
+            <div className="mt-10 border-t border-gray-200 pt-5">
+                <div className="text-xs font-bold uppercase tracking-widest text-indigo-700">
+                    First written
+                </div>
+                <div className="mt-2 text-sm text-gray-600">
+                    August 17, 2025, on rswfire.com. Five days later I filed{" "}
+                    <Cite ulid="01K399TM7GG3FNAXSR4BX9TB1X" thread="oprd">my first public records request</Cite>.
+                    Seven days later I published{" "}
+                    <Cite ulid="01K3FDT5P09S9N9QSZYWS9KN7A" thread="oprd">an open letter to the Director</Cite>{" "}
+                    asking for five protections for every volunteer. I wrote this before I asked them for anything.
+                </div>
+            </div>
 
         </SectionPage>
     );
