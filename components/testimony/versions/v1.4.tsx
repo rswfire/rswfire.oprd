@@ -2010,7 +2010,7 @@ export default function TestimonyBodyV1_4({
                     sleeping</SunCite>, which he did, and the reason is in the same file: he had
                     asked for the gate, and he had it, and the gate is a ten o&rsquo;clock and a
                     seven o&rsquo;clock every day of the week. It logs{" "}
-                    <SunCite entry="02-26-25-patrick">that he worked with one of the
+                    <SunCite entry="02-26-25-the-ranger">that he worked with one of the
                     rangers</SunCite>,{" "}
                     <SunCite entry="02-27-25-the-poem">that he sent a poem and asked what they
                     thought of it</SunCite>,{" "}

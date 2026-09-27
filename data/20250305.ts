@@ -78,7 +78,7 @@ This is the moment I knew with certainty. This was not a support meeting. This w
         },
         {
             timestamp: "[3:52]",
-            commentary: `His first observation: that I had expressed dissatisfaction with multiple members of the crew. Himself. The park supervisor. The volunteer services lead. Leaf. Patrick.
+            commentary: `His first observation: that I had expressed dissatisfaction with multiple members of the crew. Himself. The park supervisor. The volunteer services lead. [Park Ranger 1]. [Park Ranger 2].
 
 I told him directly: I don't agree with that.
 
@@ -88,7 +88,7 @@ That is not a conversation. That is a verdict being read.`,
         },
         {
             timestamp: "[4:39]",
-            commentary: `I explained. I told him I had never criticized him. Never criticized Leaf.
+            commentary: `I explained. I told him I had never criticized him. Never criticized [Park Ranger 1].
 
 He stopped me: "You don't have to agree with it."
 
@@ -114,7 +114,7 @@ He stated this as fact. It was a fabrication. It is on tape.
 
 He then said I had requested a certain ranger not lead my orientation.
 
-That is not what happened. I spoke to the volunteer services lead. I told him Patrick was condescending toward me in every interaction. The volunteer services lead told me Leaf would train me. I took him at his word.
+That is not what happened. I spoke to the volunteer services lead. I told him [Park Ranger 2] was condescending toward me in every interaction. The volunteer services lead told me [Park Ranger 1] would train me. I took him at his word.
 
 I reported what the volunteer services lead told me. The park manager reframed that as me making demands.`,
         },
@@ -142,25 +142,25 @@ I say nothing. Because I'm not arguing. I already knew the tape would show exact
 
 He acknowledged I had done exactly what was asked of me. I attended the training. No issue. Great. Awesome.
 
-And then immediately pivoted to use my documentation of Patrick's condescension against me.
+And then immediately pivoted to use my documentation of [Park Ranger 2]'s condescension against me.
 
 "That's all we could ask for" lasted one breath.`,
         },
         {
             timestamp: "[6:59]",
-            commentary: `The park manager's evidence that I had a problem with Patrick: that Patrick had said "I'm here to support you" and repeated it multiple times over the course of an hour.
+            commentary: `The park manager's evidence that I had a problem with [Park Ranger 2]: that [Park Ranger 2] had said "I'm here to support you" and repeated it multiple times over the course of an hour.
 
-I told him directly — that wasn't the main point. I navigated Patrick. I didn't have an issue with Patrick. Patrick was easy to navigate.
+I told him directly — that wasn't the main point. I navigated [Park Ranger 2]. I didn't have an issue with [Park Ranger 2]. [Park Ranger 2] was easy to navigate.
 
 The problem was that the volunteer services lead lied to me. That is a fact.
 
-They came to that table with Patrick's name on a list. What they had was a ranger who over-explains. What they tried to build from it was evidence of a pattern. That is what they were doing. Making something out of nothing to fill a case that wasn't there.`,
+They came to that table with [Park Ranger 2]'s name on a list. What they had was a ranger who over-explains. What they tried to build from it was evidence of a pattern. That is what they were doing. Making something out of nothing to fill a case that wasn't there.`,
         },
         {
             timestamp: "[7:33]",
-            commentary: `The park manager's own account confirms it. Leaf was out sick. The volunteer services lead came to the park manager. The park manager told the volunteer services lead — regardless — Patrick was doing the orientation.
+            commentary: `The park manager's own account confirms it. [Park Ranger 1] was out sick. The volunteer services lead came to the park manager. The park manager told the volunteer services lead — regardless — [Park Ranger 2] was doing the orientation.
 
-The volunteer services lead knew. The volunteer services lead told me Leaf would train me.
+The volunteer services lead knew. The volunteer services lead told me [Park Ranger 1] would train me.
 
 The park manager is on tape confirming that the volunteer services lead made a commitment he had no authority to make and no intention of keeping. And then both of them used my response to that lie as evidence against me.
 
@@ -168,26 +168,26 @@ It is on tape. The park manager put it there himself.`,
         },
         {
             timestamp: "[8:13]",
-            commentary: `The park manager said he heard nothing from Patrick that suggested he was unsupportive. That Patrick was just offering help.
+            commentary: `The park manager said he heard nothing from [Park Ranger 2] that suggested he was unsupportive. That [Park Ranger 2] was just offering help.
 
-I said he was very polite. Because he was. I had no problem with Patrick.
+I said he was very polite. Because he was. I had no problem with [Park Ranger 2].
 
 That is on tape. The person they were using as evidence against me was someone I just described as very polite.`,
         },
         {
             timestamp: "[8:36]",
             quote: "Look, I don't know what you want me to say. I have already said — I navigate him. Like I do everybody.",
-            commentary: `There was nothing left to argue. I had described Patrick as polite. I had said I navigated him easily. I had explained exactly what I reported to the volunteer services lead and why. I had confirmed the volunteer services lead made the commitment. I had attended the training without complaint.
+            commentary: `There was nothing left to argue. I had described [Park Ranger 2] as polite. I had said I navigated him easily. I had explained exactly what I reported to the volunteer services lead and why. I had confirmed the volunteer services lead made the commitment. I had attended the training without complaint.
 
-There was no problem with Patrick. There never was. They brought him to that table anyway.`,
+There was no problem with [Park Ranger 2]. There never was. They brought him to that table anyway.`,
         },
         {
             timestamp: "[9:12]",
-            commentary: `Nine minutes in. The only thing we had discussed was Patrick.
+            commentary: `Nine minutes in. The only thing we had discussed was [Park Ranger 2].
 
 I had called him polite. I had said I navigate him like I do everybody. I had said I don't know what you want me to say. I had confirmed I attended the training without issue.
 
-And the park manager looked at all of that and said: "So I understand you have a conflict with Patrick."
+And the park manager looked at all of that and said: "So I understand you have a conflict with [Park Ranger 2]."
 
 He was not listening. He was not there to find out what was true. He had a narrative and he was going to deliver it regardless of what I said.
 
@@ -198,7 +198,7 @@ That is on tape. Nine minutes of it.`,
             quote: "It sounds like you have an understanding of maybe what some triggers are for you.",
             commentary: `My self-awareness — my ability to recognize a dynamic and navigate it professionally — reframed as a psychological liability. A trigger. Something to be managed.
 
-I disagreed. I told him I wouldn't call it a trigger. I recognize the way Patrick talks to me. I don't think he's conscious of it. I navigate it. That is not a trigger. That is a professional handling a situation.
+I disagreed. I told him I wouldn't call it a trigger. I recognize the way [Park Ranger 2] talks to me. I don't think he's conscious of it. I navigate it. That is not a trigger. That is a professional handling a situation.
 
 He heard that and said: "Fair enough."
 
@@ -206,13 +206,13 @@ Then kept going.`,
         },
         {
             timestamp: "[10:36]",
-            commentary: `I gave him the actual examples. "Don't get your hopes up" — said twice, about the schedule, unprompted. A guest situation I had to escalate, where I called everyone including Patrick, and when he arrived he described the entire call log back to me like I hadn't just done it myself.
+            commentary: `I gave him the actual examples. "Don't get your hopes up" — said twice, about the schedule, unprompted. A guest situation I had to escalate, where I called everyone including [Park Ranger 2], and when he arrived he described the entire call log back to me like I hadn't just done it myself.
 
 That is what condescending looks like. Not a conflict. Not a trigger. That.
 
-The park manager's response: that's just Patrick. Patrick loves communication. Patrick likes to overcommunicate.
+The park manager's response: that's just [Park Ranger 2]. [Park Ranger 2] loves communication. [Park Ranger 2] likes to overcommunicate.
 
-Ten minutes of my time at that table to arrive at: Patrick is being Patrick.
+Ten minutes of my time at that table to arrive at: [Park Ranger 2] is being [Park Ranger 2].
 
 I already knew that. I said that. I navigated it. That was never the point.
 
@@ -220,9 +220,9 @@ The point — the only point — was that the volunteer services lead lied to me
         },
         {
             timestamp: "[12:12]",
-            commentary: `The park manager told me I needed to handle Patrick differently. Have a conversation with him. Be more direct.
+            commentary: `The park manager told me I needed to handle [Park Ranger 2] differently. Have a conversation with him. Be more direct.
 
-I told him: I say "we're good, Patrick." That is direct. That is appropriate. That is exactly what you do when someone is overcommunicating and you need to close the loop.
+I told him: I say "we're good, [Park Ranger 2]." That is direct. That is appropriate. That is exactly what you do when someone is overcommunicating and you need to close the loop.
 
 His response: it's not what you say, it's how you say it.
 
@@ -232,21 +232,21 @@ And I named it directly: "You guys don't like it when I'm direct."
 
 He did not answer that. He pivoted to how I was saying it.
 
-They put the responsibility for Patrick's behavior on me. On tape.`,
+They put the responsibility for [Park Ranger 2]'s behavior on me. On tape.`,
         },
         {
             timestamp: "[12:52]",
             commentary: `To illustrate his point about tone, the park manager — a park manager, in a meeting with a volunteer — used the phrase "shut the fuck up."
 
-His example for how I should communicate with Patrick: the difference between telling a camper to shut the fuck up and introducing yourself politely.
+His example for how I should communicate with [Park Ranger 2]: the difference between telling a camper to shut the fuck up and introducing yourself politely.
 
-I had said "we're good, Patrick."
+I had said "we're good, [Park Ranger 2]."
 
 That is the comparison he made. On tape. Thirteen minutes in. Still discussing a non-issue with a ranger I called polite, navigated professionally, and never had a conflict with.`,
         },
         {
             timestamp: "[13:18]",
-            commentary: `I told him I had already been thinking about how to address it with Patrick myself. I had been working on it. Unprompted. On my own time.
+            commentary: `I told him I had already been thinking about how to address it with [Park Ranger 2] myself. I had been working on it. Unprompted. On my own time.
 
 That is who they were sitting across from at that table. Someone already doing the work they were pretending hadn't been done.`,
         },
@@ -256,17 +256,17 @@ That is who they were sitting across from at that table. Someone already doing t
 
 To a volunteer he had just called quick. Someone he said got it immediately.
 
-He was explaining basic communication technique to someone who didn't need it, in a meeting that had nothing to do with Patrick, fourteen minutes in.`,
+He was explaining basic communication technique to someone who didn't need it, in a meeting that had nothing to do with [Park Ranger 2], fourteen minutes in.`,
         },
         {
             timestamp: "[14:29]",
-            commentary: `I told him again. I have never had a confrontation with Patrick. Every interaction has been respectful.
+            commentary: `I told him again. I have never had a confrontation with [Park Ranger 2]. Every interaction has been respectful.
 
 He said: that's good.
 
 I said I was not his normal volunteer. I said it because I was trying to explain myself to someone who had already decided who I was. I was trying to find a way in. Any way in.
 
-There wasn't one. Fourteen minutes. Still Patrick.`,
+There wasn't one. Fourteen minutes. Still [Park Ranger 2].`,
         },
         {
             timestamp: "[15:11]",
@@ -372,7 +372,7 @@ I stopped him.
 
 I don't trust the volunteer services lead. He has not given me any reason to trust him. I have laid out why. And because of that I had to do something to make sure he could not ruin my future.
 
-That is why I sent the email. That is why I CCed the park supervisor. That is why I documented everything. Not because I was difficult. Not because I had triggers. Not because I couldn't navigate Patrick. Because the volunteer services lead had lied to me, betrayed my confidence, and I had to protect myself.
+That is why I sent the email. That is why I CCed the park supervisor. That is why I documented everything. Not because I was difficult. Not because I had triggers. Not because I couldn't navigate [Park Ranger 2]. Because the volunteer services lead had lied to me, betrayed my confidence, and I had to protect myself.
 
 I named it. Out loud. To their faces. Nineteen minutes in.
 
@@ -500,7 +500,7 @@ He had spent seven minutes telling me to assume positive intent. I told him I al
         },
         {
             timestamp: "[27:33]",
-            commentary: `I gave him the example he had been circling for half an hour. Patrick. I don't think Patrick is out to get me. He's just being himself. I understand that. I navigate it.
+            commentary: `I gave him the example he had been circling for half an hour. [Park Ranger 2]. I don't think [Park Ranger 2] is out to get me. He's just being himself. I understand that. I navigate it.
 
 That is positive intent. That is exactly what he had spent seven minutes asking me to demonstrate.
 
@@ -512,7 +512,7 @@ I had been demonstrating it the entire time.`,
 
 That landed. He felt it. Because the only reason we were at that table was that I had held the volunteer services lead to his word and the volunteer services lead hadn't kept it.
 
-So he scrambled. Suddenly I was fixating. Holding onto something. The the volunteer services lead-Patrick-Leaf training thing. Maybe that's what I was referring back to. Maybe I should be frustrated with the park manager instead of the volunteer services lead. He would take responsibility. It was fine.
+So he scrambled. Suddenly I was fixating. Holding onto something. The the volunteer services lead-[Park Ranger 2]-[Park Ranger 1] training thing. Maybe that's what I was referring back to. Maybe I should be frustrated with the park manager instead of the volunteer services lead. He would take responsibility. It was fine.
 
 He was protecting the volunteer services lead. He was also trying to reframe accountability as fixation. As if holding someone to a commitment they made was a character flaw that needed to be managed.
 
@@ -520,7 +520,7 @@ I had just demonstrated in four sentences exactly why I was at that table. He sp
         },
         {
             timestamp: "[28:49]",
-            commentary: `The park manager confirmed it himself. He told the volunteer services lead absolutely not — Patrick was doing the training.
+            commentary: `The park manager confirmed it himself. He told the volunteer services lead absolutely not — [Park Ranger 2] was doing the training.
 
 The park manager made that call. The park manager overrode it. And nobody told me.
 
@@ -865,9 +865,9 @@ She went back to the first of the month. The text message. She had been blindsid
 
 This is the incident. The one that started everything. The one that was supposed to be behind us. The one we reset. The one I put so far behind me I applied for a job there.
 
-Fifty minutes into this meeting — after Patrick, after the emails, after the poem, after the job application, after the glass — this is what she came back to. The only thing they ever had.
+Fifty minutes into this meeting — after [Park Ranger 2], after the emails, after the poem, after the job application, after the glass — this is what she came back to. The only thing they ever had.
 
-I told her I hadn't said anything about her. To anyone. She mentioned Leaf. Then I remembered. I owned it immediately because there was nothing wrong with it. Of course a volunteer who was navigating a situation with their supervisor would talk to a park ranger about it. That is professional and appropriate.
+I told her I hadn't said anything about her. To anyone. She mentioned [Park Ranger 1]. Then I remembered. I owned it immediately because there was nothing wrong with it. Of course a volunteer who was navigating a situation with their supervisor would talk to a park ranger about it. That is professional and appropriate.
 
 I told her: I really thought we put this to rest.
 

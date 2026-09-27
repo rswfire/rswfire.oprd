@@ -97,7 +97,7 @@ When I finally opened up to you about why I’m here, what I sacrificed to be he
 
 And then? You distanced yourself again.
 
-When I warned you—privately—to prevent a repeat of the [Park Supervisor] situation, you assured me Leaf would train me. That didn’t happen.
+When I warned you—privately—to prevent a repeat of the [Park Supervisor] situation, you assured me [Park Ranger 1] would train me. That didn’t happen.
 
 At every critical moment, you have failed to act with integrity.
 At every opportunity to lead, you have instead chosen avoidance.
