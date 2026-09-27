@@ -106,23 +106,14 @@ export default function TestimonyCard() {
                         >
                             documenting her choices
                         </a>, past and future. She is the one who can protect
-                        you. She is the one{" "}
+                        you. She is the only one{" "}
                         <a
                             href="/#what-every-volunteer-deserves"
                             className="text-emerald-800 underline hover:text-emerald-600"
                         >
-                            choosing not to
+                            who can
                         </a>
                         .
-                    </p>
-                    <p>
-                        <Link
-                            href="/volunteers"
-                            className="inline-flex items-center gap-2 text-red-800 underline decoration-red-300 underline-offset-2 hover:text-red-600"
-                        >
-                            <Icon name="Shield" size={18} strokeWidth={2} className="shrink-0 text-red-600" aria-hidden />
-                            If this happened to you, it has a name.
-                        </Link>
                     </p>
                 </div>
 
@@ -171,6 +162,15 @@ export default function TestimonyCard() {
                 </div>
                 <div className="mt-4 flex flex-wrap items-center gap-2 px-2">
                     <TestimonyPdfButton variant="homepage" />
+                </div>
+                <div className="mt-4 px-2">
+                    <Link
+                        href="/volunteers"
+                        className="inline-flex items-center gap-2 text-red-800 underline decoration-red-300 underline-offset-2 hover:text-red-600"
+                    >
+                        <Icon name="Shield" size={18} strokeWidth={2} className="shrink-0 text-red-600" aria-hidden />
+                        If this happened to you, it has a name.
+                    </Link>
                 </div>
             </div>
         </div>
