@@ -35,7 +35,7 @@ const SILENCE_EVENTS: TrackedEvent[] = [
     {
         label: "Oregon State Police Received the Email",
         date: "2026-03-03",
-        context: "Status: No accountability.",
+        context: "Status: Partial acknowledgment.",
         link: "/evidence/police"
     }
 ];
