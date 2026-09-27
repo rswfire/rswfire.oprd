@@ -776,12 +776,14 @@ export const TIMELINE: TimelineSection[] = [
                 ],
             },
             {
-                d: "2026-09-26", date: "September 26, 2026", major: true,
+                d: "2026-09-26", date: "September 26 and 27, 2026", major: true,
                 title: "Follow the Statute.",
                 body: [
                     "I send all four agencies one letter: ",
                     { doc: "01M3FDMFP0VRBZCTGXQRXJ7CM3", thread: "oprd", t: "Follow the Statute." },
-                    " What each did, in its own words, from the record, and what following the statute means for each.",
+                    " One section per agency, each built from that agency's own documents. The next day I write Captain Kyle Kennedy, OSP Government and Media Relations, copying Superintendent Casey Codding: ",
+                    { doc: "01M3GWDQSGQ34YBJFFKTMJYAF5", thread: "osp", t: "You converted a link into a threat assessment." },
+                    " Jamen Lee, OPRD Emergency Manager, sent Kennedy the link at 3:41 PM on March 3, 2026, and at 10:02 the next morning Kennedy forwarded it to the Criminal Investigations Division. “A problem about how a state agency looks arrived at your desk, and it left your desk as a criminal file on a citizen.”",
                 ],
             },
         ],
