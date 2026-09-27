@@ -11,6 +11,7 @@ import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
+import Icon from "@/components/Icon";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -113,6 +114,15 @@ export default function TestimonyCard() {
                             choosing not to
                         </a>
                         .
+                    </p>
+                    <p>
+                        <Link
+                            href="/volunteers"
+                            className="inline-flex items-center gap-2 text-red-800 underline decoration-red-300 underline-offset-2 hover:text-red-600"
+                        >
+                            <Icon name="Shield" size={18} strokeWidth={2} className="shrink-0 text-red-600" aria-hidden />
+                            If this happened to you, it has a name.
+                        </Link>
                     </p>
                 </div>
 

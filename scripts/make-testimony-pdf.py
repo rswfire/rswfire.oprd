@@ -262,6 +262,10 @@ def build_html(meta: dict, parts: list[dict]) -> str:
       .cover-contact a {{ color: #c9e6d9; text-decoration: none; }}
       .cover-edition {{ text-align: right; font-size: 7.5pt; line-height: 1.6; letter-spacing: .11em; text-transform: uppercase; color: #9fb8ae; }}
       .cover-edition a {{ color: #c9e6d9; text-decoration: none; }}
+      .apparatus {{ page: cover; height: 11in; page-break-after: always; padding: 3.05in 1.4in 0; font-style: italic; color: #4b5563; font-size: 10.5pt; line-height: 1.62; }}
+      .apparatus p {{ margin: 0 0 .17in; }}
+      .apparatus .count {{ font-weight: 700; color: #18252b; }}
+      .apparatus a {{ color: #12678e; text-decoration: none; border-bottom: .7px solid currentColor; }}
       .volunteer {{ page: cover; height: 11in; page-break-after: always; padding-top: 2.45in; text-align: center; color: #7f1d1d; }}
       .volunteer svg {{ display: block; width: .78in; height: .78in; margin: 0 auto .25in; fill: none; stroke: #b91c1c; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }}
       .volunteer p {{ margin: 0; font: 700 18pt/1.35 "DejaVu Serif"; color: #18252b; }}
@@ -312,6 +316,12 @@ def build_html(meta: dict, parts: list[dict]) -> str:
           </div>
         </div>
       </section>
+      <section class="apparatus">
+        <p class="count">Thirteen officials, six agencies, against one unpaid volunteer who wrote letters.</p>
+        <p>An OPRD manager and a deputy director. An Oregon State Police captain of the press office. A lieutenant of Criminal Investigations. A Major Crimes detective, a sergeant, and a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force, who pulled in two FBI personnel. A criminal intelligence analyst at the state&rsquo;s Department of Justice fusion center. A Forest Service special agent and a patrol captain. Later a sheriff&rsquo;s deputy.</p>
+        <p>They ran his name through channels built for terrorism, pulled his driver&rsquo;s record, mapped the building he sleeps in from a hunting app, and told his supervisor to say nothing to him.</p>
+        <p><a href="{SITE}/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/">Every line of this is in their own file.</a></p>
+      </section>
       <section class="volunteer">
         <svg viewBox="0 0 24 24" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"/></svg>
         <p>If this happened to you,<br>it has a name.</p>
@@ -349,9 +359,19 @@ def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
         problems.append("removed citation guide or cluster callout remains")
     if "A document built from the record" in joined:
         problems.append("removed colophon remains")
-    second_page = texts[1].lower() if len(texts) > 1 else ""
-    if "if this happened to you" not in second_page or "for volunteers" not in second_page:
-        problems.append("volunteer page missing from page 2")
+    # pypdf reads the italic subset as NUL-interleaved characters; the page
+    # is correct and pdftotext reads it cleanly. Compare on a flattened form
+    # so the audit checks the words rather than the encoding.
+    def flat(value: str) -> str:
+        return re.sub(r"\s+", "", value.replace("\x00", "")).lower()
+    second_page = flat(texts[1]) if len(texts) > 1 else ""
+    # "file" carries an fi ligature that pypdf cannot map back; match on a
+    # phrase without one.
+    if "thirteenofficials" not in second_page or "everylineofthis" not in second_page:
+        problems.append("apparatus page missing from page 2")
+    third_page = flat(texts[2]) if len(texts) > 2 else ""
+    if "ifthishappenedtoyou" not in third_page or "forvolunteers" not in third_page:
+        problems.append("volunteer page missing from page 3")
     if "ai analysis" in joined.lower():
         problems.append("chapter analysis controls remain in PDF")
     for part in parts:
