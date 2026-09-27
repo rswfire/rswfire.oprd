@@ -2,6 +2,7 @@
 import { LucideProps } from 'lucide-react';
 import {
     AlertTriangle,
+    CalendarDays,
     BookOpenText,
     Bot,
     ChartNoAxesGantt,
@@ -57,6 +58,7 @@ const iconMap = {
     ChartNoAxesGantt,
     ChevronDown,
     ChevronUp,
+    CalendarDays,
     CircleQuestionMark,
     Combine,
     Download,

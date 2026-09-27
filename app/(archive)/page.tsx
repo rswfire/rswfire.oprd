@@ -16,6 +16,7 @@ import PriceOfTheRecord from "@/components/PriceOfTheRecord";
 import RecordIndexCard from "@/components/RecordIndexCard";
 import QueryableRecord from "@/components/QueryableRecord";
 import CaseTimeline from "@/components/CaseTimeline";
+import TimelineWalker from "@/components/TimelineWalker";
 import { FAILURE_TRANSMISSION } from "@/data/20260405";
 import { LEGAL_FUND_TRANSMISSION } from "@/data/20260829";
 import { THREADS } from "@/data/threads";
@@ -27,6 +28,9 @@ export default function OverviewPage() {
 
             {/* DEADMAN RELEASE — renders nothing until the switch fires */}
             <DeadmanReveal />
+
+            {/* THE TIMELINE — the major events, walked newest first */}
+            <TimelineWalker />
 
             {/* WELCOME AND TESTIMONY — one introduction to the complete account */}
             <TestimonyCard />
