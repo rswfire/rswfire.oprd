@@ -112,6 +112,15 @@ export default function TimelineWalker() {
         if (nav?.type === "back_forward") card.current?.scrollIntoView({ block: "center" });
     }, [centerOn, last]);
 
+    // Clicking a neighbouring entry brings it to the centre. A click on a
+    // link inside the entry is the visitor going to the record, not
+    // choosing the card, so it passes through untouched.
+    const onSelect = (n: number) => (e: React.MouseEvent) => {
+        if (n === iRef.current) return;
+        if ((e.target as HTMLElement).closest("a")) return;
+        centerOn(n, true);
+    };
+
     const onKeyDown = (e: React.KeyboardEvent) => {
         if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
         e.preventDefault();
@@ -155,10 +164,11 @@ export default function TimelineWalker() {
                     <div
                         key={entry.d + entry.date}
                         data-walk-stop
+                        onClick={onSelect(n)}
                         className={`snap-center shrink-0 w-[86%] sm:w-[56%] lg:w-[32%] min-h-[13rem] flex flex-col rounded-xl border p-5 transition-[border-color,box-shadow,opacity] duration-300 ${
                             n === i
                                 ? "border-emerald-600 shadow-md opacity-100"
-                                : "border-gray-200 shadow-none opacity-60"
+                                : "border-gray-200 shadow-none opacity-60 cursor-pointer"
                         }`}
                     >
                         <div className="flex items-baseline justify-between gap-3">
