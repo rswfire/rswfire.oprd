@@ -1,7 +1,9 @@
 // app/(archive)/timeline/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import TimelineBody from "@/components/TimelineBody";
+import Icon from "@/components/Icon";
 import { TIMELINE } from "@/data/timeline";
 
 export const metadata: Metadata = {
@@ -14,6 +16,15 @@ export default function TimelinePage() {
         <SectionPage
             title="TIMELINE"
             subtitle="FEBRUARY 9, 2025 — ONGOING"
+            tagline={
+                <Link
+                    href="/sunlight"
+                    className="inline-flex items-center gap-1.5 text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-600"
+                >
+                    <Icon name="Sun" size={14} strokeWidth={2} className="text-orange-600" aria-hidden />
+                    Compare to their timeline
+                </Link>
+            }
             previousPage={{ href: "/records-requests", label: "Records Requests" }}
             nextPage={{ href: "/evidence", label: "Evidence" }}
         >

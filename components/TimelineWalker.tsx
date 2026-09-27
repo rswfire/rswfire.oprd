@@ -136,15 +136,24 @@ export default function TimelineWalker() {
 
     return (
         <div ref={card} className="mb-4 bg-white border border-gray-300 rounded-2xl shadow-sm overflow-hidden">
-            <div className="flex items-center justify-between gap-4 px-6 pt-6">
+            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-6 pt-6">
                 <div className="flex items-center gap-3">
                     <span className="rounded-lg bg-emerald-50 p-2 text-emerald-700">
                         <Icon name="CalendarDays" size={22} strokeWidth={1.75} />
                     </span>
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">The timeline.</h2>
                 </div>
-                <div className="text-xs uppercase tracking-wider text-gray-400 tabular-nums">
-                    {i + 1} / {MAJORS.length}
+                <div className="flex items-center gap-4">
+                    <Link
+                        href="/sunlight"
+                        className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-600"
+                    >
+                        <Icon name="Sun" size={14} strokeWidth={2} className="text-orange-600" aria-hidden />
+                        Compare to their timeline
+                    </Link>
+                    <div className="text-xs uppercase tracking-wider text-gray-400 tabular-nums">
+                        {i + 1} / {MAJORS.length}
+                    </div>
                 </div>
             </div>
 

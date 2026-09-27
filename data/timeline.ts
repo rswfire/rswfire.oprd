@@ -68,8 +68,7 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01JKMXJCF8D4M3JQHEH9G94SBP", thread: "oprd", t: "a follow-up email the same day" },
                     ". ",
                     { t: "The park manager speaks to me alone", href: "/evidence/escalation" },
-                    ", listing first-week mistakes. I try to reset. Their file logs the day as ",
-                    { sun: "02-09-25-the-power-outage", t: "“Sam then emails Ranger Supervisor [Park Supervisor] and Ranger [Volunteer Services Lead] expressing [Park Supervisor] made him feel small/not appreciated in her texts.”" },
+                    ", listing first-week mistakes. I try to reset.",
                 ],
             },
             {
@@ -78,8 +77,7 @@ export const TIMELINE: TimelineSection[] = [
                     { t: "I document the pattern in my working relationships", href: "/evidence/trust" },
                     " in the ",
                     { doc: "01JNBNSRN04NEM4MEZJG40Q3N5", thread: "oprd", t: "“Trust” email" },
-                    ". Their file quotes four sentences from the end of it and nothing else: ",
-                    { sun: "03-02-25-the-trust-email", t: "“You will ensure that my contributions are recognized appropriately in your system. I will not allow the dysfunction here to interfere with my larger trajectory. If there is any pushback on this, understand that I am fully prepared for it.”" },
+                    ".",
                 ],
             },
             {
@@ -87,9 +85,7 @@ export const TIMELINE: TimelineSection[] = [
                 title: "The picnic table.",
                 body: [
                     { rec: PICNIC, at: "0:00", t: "The park manager and the park supervisor hold me at a picnic table for sixty-two minutes" },
-                    ". I record it in full. Their file logs the meeting as held ",
-                    { sun: "03-05-25-the-meeting", t: "“to set clear expectations for behavior and actions needed from Sam to continue being a park host.”" },
-                    " On the recording: ",
+                    ". I record it in full. On the recording: ",
                     { rec: PICNIC, at: "15:45", t: "a handwritten sheet and no emails at the table" },
                     ", ",
                     { rec: PICNIC, at: "4:39", t: "“You don’t have to agree with it”" },
@@ -110,8 +106,7 @@ export const TIMELINE: TimelineSection[] = [
                 d: "2025-03-10", date: "March 10, 2025",
                 body: [
                     "The ", { person: "program manager" },
-                    " calls about the March 5 recording and tells me I was “acting as an agent of the state.” In a second call the same day: “get through my time.” Their file words it as ",
-                    { sun: "03-10-25-the-admonition", t: "“as a volunteer, Sam is an agent of the state and as such is held to a higher standard, so... he cannot record conversations without informing the other parties present.”" },
+                    " calls about the March 5 recording and tells me I was “acting as an agent of the state.” In a second call the same day: “get through my time.”",
                 ],
             },
             {
@@ -135,8 +130,7 @@ export const TIMELINE: TimelineSection[] = [
                     { rec: DISMISSAL, at: "16:27", t: "twenty-four hours to vacate the park where I live" },
                     ". The stated reason: a lost journal. An hour later he collects the keys at my RV and ",
                     { rec: DISMISSAL, at: 738, t: "states on camera that no formal documentation exists" },
-                    ". Their file logs the call as ",
-                    { sun: "03-24-25-the-dismissal", t: "“Sam kept talking over [Park Manager], and as the conversation was no longer productive...”" },
+                    ".",
                 ],
             },
             {

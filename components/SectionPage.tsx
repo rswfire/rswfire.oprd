@@ -17,7 +17,7 @@ type SectionPageProps = {
     /** Lucide icon name, centered above the title. */
     emblem?: string;
     /** A quieter third line under the subtitle. */
-    tagline?: string;
+    tagline?: ReactNode;
     systemMap?: SystemMapLink | SystemMapLink[];
     children: ReactNode;
     previousPage?: {
