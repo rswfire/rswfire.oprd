@@ -49,7 +49,7 @@ export default function TestimonyCard() {
                 {/* The apparatus, counted, before he says a word. Small print,
                     because the scale does the work. Every line is from the
                     PR27478 production the Oregon State Police released. */}
-                <div className="mx-6 mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 sm:mx-10">
+                <div className="mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 sm:mx-10">
                     <p className="font-bold">
                         Thirteen officials, six agencies, against one unpaid volunteer who wrote
                         letters.
