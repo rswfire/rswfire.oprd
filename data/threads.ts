@@ -6381,9 +6381,27 @@ export const OSP_THREAD: RecordsThreadData = {
             summary: "To the captain of Government and Media Relations. Jamen Lee sent the link on March 3, and Kennedy forwarded it to Criminal Investigations the next morning.",
             docs: [
                 { label: "You converted a link into a threat assessment", href: "/records/osp/attachments/01m3gwdqsgq34ybjffktmjyaf5-2026-09-27-osp-kennedy.pdf" },
-                { label: "Transmittal Email", href: "/records/osp/2026-09-27-osp.pdf" },
+                { label: "Transmittal Email", href: "/records/osp/2026-09-27-osp-kennedy.pdf" },
             ],
             eml: "/records/osp/eml/2026-09-27_0031_osp.eml",
+        },
+        {
+            id: "ors-181a250-the-file-you-hold",
+            ulid: "01M3H2RSV0H0XBHFNBH8GR8DCT",
+            flagged: true,
+            date: "September 27, 2026",
+            d: "2026-09-27",
+            time: "2:22 AM",
+            from: "Robert Samuel White",
+            to: "Oregon State Police; Governor Kotek; OPRD Commission",
+            kind: "notice",
+            title: "ORS 181A.250, and the file you hold on me",
+            summary: "The statute quoted in full to ten OSP addresses. Their file carries no crime and carries the characterizations instead.",
+            docs: [
+                { label: "You are maintaining a file the statute forbids", href: "/records/osp/attachments/01m3h2rsv0h0xbhfnbh8gr8dct-2026-09-27-osp-181a250.pdf" },
+                { label: "Transmittal Email", href: "/records/osp/2026-09-27-osp-181a250.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-27_0222_osp.eml",
         },
     ],
 };export const GOVERNOR_THREAD: RecordsThreadData = {

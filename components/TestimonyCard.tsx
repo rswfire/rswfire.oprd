@@ -66,7 +66,7 @@ export default function TestimonyCard() {
                     <p>
                         They ran
                         his name through channels built for terrorism, pulled his driver&rsquo;s
-                        record, mapped the building he sleeps in from a hunting app, and told his
+                        record, mapped his home, an RV on restricted forest land, from a hunting app, and told his
                         supervisor to say nothing to him.
                     </p>
                     <p>
