@@ -55,7 +55,7 @@ export default function TestimonyCard() {
                         letters.
                     </p>
                     <p>
-                        An OPRD manager and a deputy director. An Oregon State Police
+                        An Oregon State Parks manager and a deputy director. An Oregon State Police
                         captain of the press office. A lieutenant of Criminal Investigations. A
                         Major Crimes detective, a sergeant, and a second detective who is a task
                         force officer on the Portland FBI Joint Terrorism Task Force, who pulled in
