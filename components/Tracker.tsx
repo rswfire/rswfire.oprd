@@ -31,6 +31,12 @@ const SILENCE_EVENTS: TrackedEvent[] = [
         date: "2025-03-27",
         context: "Status: Director closed communication with no investigation initiated.",
         link: "/lisa-sumption"
+    },
+    {
+        label: "Oregon State Police Received the Email",
+        date: "2026-03-03",
+        context: "Status: no investigation initiated.",
+        link: "/evidence/police"
     }
 ];
 
