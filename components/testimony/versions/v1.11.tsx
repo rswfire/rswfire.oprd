@@ -173,7 +173,7 @@ function titleCase(t: string): string {
 // numbers became the address keep resolving.
 const PART_NUMBERS: Record<string, number> = {
     One: 1, Two: 2, Three: 3, Four: 4, Five: 5, Six: 6, Seven: 7,
-    Eight: 8, Nine: 9, Addendum: 10,
+    Eight: 8, Nine: 9, Ten: 10, Addendum: 11,
 };
 
 function Part({ n, title, children }: { n: string; title: string; children: React.ReactNode }) {
