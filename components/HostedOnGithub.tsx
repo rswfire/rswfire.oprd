@@ -1,6 +1,13 @@
 // The foot of the sidebar. Not a card: the archive is a public git
 // repository, and that fact sits under everything else without a frame.
+// Client component: the analytics label reads this browser's opt-out
+// flag so it offers the right direction, on or off.
 //
+"use client";
+
+import { useEffect, useState } from "react";
+import { ChartCandlestick } from "lucide-react";
+
 // lucide dropped its brand marks in 1.x, so the GitHub logo is inline here,
 // the same way the X logo is inline in the header.
 function GithubMark({ className }: { className?: string }) {
@@ -12,8 +19,13 @@ function GithubMark({ className }: { className?: string }) {
 }
 
 export default function HostedOnGithub() {
+    const [off, setOff] = useState(false);
+    useEffect(() => {
+        try { setOff(localStorage.getItem("umami.disabled") === "1"); } catch { /* counted */ }
+    }, []);
+
     return (
-        <div className="px-4 py-2 text-center">
+        <div className="flex items-center justify-center gap-2 px-4 py-2">
             <a
                 href="https://github.com/rswfire/rswfire.oprd"
                 target="_blank"
@@ -22,6 +34,14 @@ export default function HostedOnGithub() {
             >
                 <GithubMark className="h-3.5 w-3.5" />
                 Hosted on GitHub
+            </a>
+            <span className="text-xs leading-none text-slate-300">&middot;</span>
+            <a
+                href="/analytics"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
+            >
+                <ChartCandlestick className="h-3.5 w-3.5" />
+                {off ? "Turn on analytics." : "Turn off analytics."}
             </a>
         </div>
     );
