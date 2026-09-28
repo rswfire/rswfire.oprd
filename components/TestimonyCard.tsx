@@ -56,18 +56,20 @@ export default function TestimonyCard() {
                     </p>
                     <p>
                         An Oregon State Parks manager and a deputy director. An Oregon State Police
-                        captain of the press office. A lieutenant of Criminal Investigations. A
-                        Major Crimes detective, a sergeant, and a second detective who is a task
-                        force officer on the Portland FBI Joint Terrorism Task Force, who pulled in
-                        two FBI personnel. A criminal intelligence analyst at the state&rsquo;s
-                        Department of Justice fusion center. A Forest Service special agent and a
-                        patrol captain. Later a sheriff&rsquo;s deputy.
+                        press captain. A lieutenant of Criminal Investigations. A Major Crimes
+                        detective, a sergeant, and a second detective who is a task force officer on
+                        the Portland FBI Joint Terrorism Task Force, who pulled in two FBI
+                        personnel. A criminal intelligence analyst at the state&rsquo;s Department
+                        of Justice fusion center. A federal special agent and a patrol captain.
+                        Later a sheriff&rsquo;s deputy.
                     </p>
                     <p>
-                        They ran
-                        his name through channels built for terrorism, pulled his driver&rsquo;s
-                        record, mapped his home, an RV on restricted forest land, from a hunting app, and told his
-                        supervisor to say nothing to him.
+                        They ran his name through channels built for terrorism, mapped his home
+                        using a hunting app, and told his supervisor to say nothing to him. Then
+                        they arrived on the anniversary of his dismissal for a &ldquo;knock and
+                        talk&rdquo; to tell him he wasn&rsquo;t in trouble but they were concerned
+                        about what he was posting online. There was never a crime alleged. They
+                        drove sixty-eight minutes and exercised force anyway.
                     </p>
                     <p>
                         <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">
