@@ -795,7 +795,7 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01M3MJAZY0G31KFSSTRM6QBCNH", thread: "osp", t: "exemptions cited for the withheld documents" },
                     ". ",
                     { doc: "01M3MK45K8MHYBHSF43Y017G8J", thread: "osp", t: "My reply" },
-                    ", with sincere thanks to Hubbard for her time and effort: “We have both stated our positions at this point and that is where I will leave the matter for now.”",
+                    ", with sincere thanks for her time and effort: “We have both stated our positions at this point and that is where I will leave the matter for now.”",
                 ],
             },
         ],
