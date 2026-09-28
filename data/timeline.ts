@@ -787,6 +787,17 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01M3H2RSV0H0XBHFNBH8GR8DCT", thread: "osp", t: "ORS 181A.250, which bars a police file on what a citizen writes and who he writes to, without grounds to suspect a crime." },
                 ],
             },
+            {
+                d: "2026-09-28", date: "September 28, 2026", major: true,
+                title: "The first to answer.",
+                body: [
+                    "The day after the letters, Oregon State Police is the first to write: ",
+                    { doc: "01M3MJAZY0G31KFSSTRM6QBCNH", thread: "osp", t: "exemptions cited for the withheld documents" },
+                    ". ",
+                    { doc: "01M3MK45K8MHYBHSF43Y017G8J", thread: "osp", t: "My reply" },
+                    ", with sincere thanks to Hubbard for her time and effort: “We have both stated our positions at this point and that is where I will leave the matter for now.”",
+                ],
+            },
         ],
     },
 ];

@@ -5272,12 +5272,12 @@ export const OSP_THREAD: RecordsThreadData = {
     title: "Oregon State Police",
     agency: "Oregon State Police",
     matter: "Public Records Requests PR27478 and PR36445 · CAD event SP26097765",
-    status: "Produced, four records short.",
+    status: "Exemptions asserted.",
     redaction: [
         "No one is redacted on this register. Force is never anonymous, and they tried to be.",
     ],
     summary: [
-        "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it. The $157.50 production fee was delivered in August 2026; the agency has acknowledged a litigation hold over every record associated with the event. What remains is how the Department responds.",
+        "My public records request for the March 24, 2026 police visit to my residence on restricted federal land, and Oregon State Police’s responses to it. The $157.50 production fee was delivered in August 2026; the agency has acknowledged a litigation hold over every record associated with the event. On September 28, 2026 the institution cited exemptions for the withheld files, and both sides stated their positions.",
     ],
     filings: [
         {
@@ -6402,6 +6402,39 @@ export const OSP_THREAD: RecordsThreadData = {
                 { label: "Transmittal Email", href: "/records/osp/2026-09-27-osp-181a250.pdf" },
             ],
             eml: "/records/osp/eml/2026-09-27_0222_osp.eml",
+        },
+        {
+            id: "exemptions",
+            ulid: "01M3MJAZY0G31KFSSTRM6QBCNH",
+            date: "September 28, 2026",
+            d: "2026-09-28",
+            time: "10:52 AM",
+            from: "OSP Central Records",
+            to: "Robert White",
+            kind: "response",
+            title: "Exemptions cited for the withheld documents",
+            summary: "Statutes cited for the withheld files: the Hasty Form under ORS 192.345(23), the DMV record and ReportRobertWhite under ORS 192.355, the body-camera video under ORS 192.345(40). On the telephone records: “We do not have call logs. We did not locate any recorded phone calls.”",
+            docs: [
+                { label: "The exemptions letter, REF# PR27478", href: "/records/osp/attachments/01m3mjazy0g31kfsstrm6qbcnh-PR27478-Exemptions.pdf" },
+                { label: "Transmittal Email", href: "/records/osp/2026-09-28-exemptions.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-28_1052_exemptions.eml",
+        },
+        {
+            id: "positions-stated",
+            ulid: "01M3MK45K8MHYBHSF43Y017G8J",
+            date: "September 28, 2026",
+            d: "2026-09-28",
+            time: "11:06 AM",
+            from: "Robert Samuel White",
+            to: "OSP Central Records",
+            kind: "statement",
+            title: "Acknowledgment of the asserted privileges",
+            summary: "Reply thanking Hubbard for her time and for asserting positions on the remaining documents: “We have both stated our positions at this point and that is where I will leave the matter for now.”",
+            docs: [
+                { label: "Reply Email", href: "/records/osp/2026-09-28-positions-stated.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-09-28_1106_positions-stated.eml",
         },
     ],
 };export const GOVERNOR_THREAD: RecordsThreadData = {

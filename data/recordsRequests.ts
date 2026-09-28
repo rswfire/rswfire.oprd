@@ -151,7 +151,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "osp",
         agency: "Oregon State Police",
         refs: "PR27478 · PR36445",
-        status: "Produced. Not sufficient.",
+        status: "Partial acknowledgment, asserted privileges.",
         demanded: {
             total: "$16,315.00",
             note: "Quoted August 11, 2026 under PR36445: approximately 27,000 letters issued since January 1, 2023, priced at 650 hours, with release 130 weeks after payment. PR27478 was produced on September 3 after $157.50, of which $95.00 was refunded.",
@@ -177,6 +177,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "July 23, 2026, by mail: a litigation hold on the records and evidence for SP26-097765, requiring reconfirmation every six months.",
             "August 11, 2026: records identified under PR27478 behind a fee of $157.50, and under PR36445 behind a fee of $16,315.00.",
             "September 3, 2026, after the fee was paid: sixteen files under both case numbers — the Major Crimes Section threat-assessment report SP26096984, both CAD records, dispatch audio, and the Department's electronic communications — with a $95.00 refund.",
+            "September 28, 2026: exemptions cited for the withheld files, after the September 25 deadline. “We provided all located, responsive electronic communication records. We do not have call logs. We did not locate any recorded phone calls.”",
         ],
         withheld: [
             {
@@ -187,22 +188,27 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             {
                 item: "The body-worn camera video of the March 24 contact",
                 basis: "statute",
-                detail: "ORS 192.345(40), cited to the Attorney General and never to him; the produced report confirms the recording exists: “please see attached BWC”",
+                detail: "ORS 192.345(40), cited to the Attorney General July 29 and to him September 28; the produced report confirms the recording exists: “please see attached BWC”",
             },
             {
                 item: "“OSP Hasty Form Robert White.pdf” — the planning document for the visit, attached to the March 23 email arranging it",
-                basis: "silence",
-                detail: "Named in the production, not included; no disposition, no exemption cited",
+                basis: "statute",
+                detail: "Withheld September 28, 2026 under ORS 192.345(23), “relating to information that would reveal security measures, or weaknesses or potential weaknesses in security measures”",
             },
             {
-                item: "“WHITE,ROBERT SAMUEL DMV.pdf” and “ReportRobertWhite.pdf”, attached to the March 13 emails",
-                basis: "silence",
-                detail: "Named in the production, not included; no disposition, no exemption cited",
+                item: "“WHITE,ROBERT SAMUEL DMV.pdf”, attached to the March 13 emails",
+                basis: "statute",
+                detail: "Withheld September 28, 2026 under ORS 192.355(9), citing ORS 802.181, and ORS 192.355(8), citing 18 USC Section 2721, on release of DMV personal information",
+            },
+            {
+                item: "“ReportRobertWhite.pdf”, attached to the March 13 emails",
+                basis: "statute",
+                detail: "Withheld September 28, 2026 under ORS 192.355(8), citing 28 CFR Section 20, “regarding certain LEDS/NCIC generated material”",
             },
             {
                 item: "Records of the telephone calls the produced emails arrange or reference: call logs from state-issued phones, and any notes, memoranda, or summaries of what was discussed",
                 basis: "silence",
-                detail: "The production shows the calls occurred; no disposition, no exemption cited",
+                detail: "September 28, 2026: “We do not have call logs. We did not locate any recorded phone calls.” The notes, memoranda, or summaries of what was discussed remain without disposition",
             },
             {
                 item: "Text messages among the involved personnel concerning him, the visit, or its planning",
@@ -256,12 +262,6 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
         deadlines: [
             {
-                d: "2026-09-25",
-                date: "September 25, 2026",
-                who: "them",
-                what: "Answer the September 3 letter: for each outstanding category, produce the record, cite the exemption, or state in writing that no records exist (ORS 192.329; fifteen business days)",
-            },
-            {
                 d: "2027-01-23",
                 date: "January 23, 2027",
                 who: "me",
@@ -282,6 +282,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-03", date: "September 3, 2026", event: "Sixteen files produced under both case numbers; $95.00 refunded" },
             { d: "2026-09-03", date: "September 3, 2026", event: "The production reviewed and answered the same morning: not sufficient; ten categories stated as outstanding" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Letter: September 3 was the closest thing to integrity, and what was withheld is where the characterizations live" },
+            { d: "2026-09-28", date: "September 28, 2026", event: "Exemptions letter, after the September 25 deadline: ORS 192.345(23) for the Hasty Form, ORS 192.355 for the DMV record and ReportRobertWhite, ORS 192.345(40) for the body-worn camera video; “We do not have call logs. We did not locate any recorded phone calls.”" },
+            { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to Hubbard: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
         ],
     },
     {
