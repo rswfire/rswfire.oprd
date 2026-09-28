@@ -78,6 +78,40 @@ DNS NAME:  selector1._domainkey.osp.oregon.gov
 KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsVZfrhX0ROJTa08AEw2++YXc8YCVRyLaiQzXmM8CQhycFnaRdlhm4CEn/2AbtcZe84YWZevwQROBgWvJJxDuhFyrFzKYL/nHFCocjJr3hAPXld3MdBzmvcq0ufCSI9hSrQeM4rfUSh6tvm8s13ovbBw+3xvyXJyfbbV/PTu1ZChnepTD6Z9IvmqtcJ1qVRMH3UHElEXM4RE6mIH7s1m5BdWPoBnMgdCisVm3JSOBlK5iyYBXkuqhpUqMWR6nYiT4KyhOEpcgj6TgJp8ea5leyTIi4ZKrNfdUZIQSlJNifcejE+mHelvxJLMzYPbAn4ONOcKytlNOlHisYyYNm8lyAQIDAQAB;
 
 ------------------------------------------------------------------------------
+On 2026-09-28 the mail for rswfire.com, rswfire.email, and rswfire.net
+moved to self-hosted infrastructure: received, stored, and signed at
+mail.rswfire.com, on a server held by the domain owner. This is the date
+the author's email became sovereign. The key below was generated on that
+server on 2026-09-27 and signs all three domains from this date. No
+earlier DKIM selectors for these domains existed in DNS; before this
+date, mail from these addresses was signed, if at all, by the sending
+provider's own domain.
+
+------------------------------------------------------------------------------
+DOMAIN:    rswfire.com
+SELECTOR:  mail
+IN USE:    2026-09-28 onward
+RETRIEVED: 2026-09-28 04:20 UTC
+DNS NAME:  mail._domainkey.rswfire.com
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1IcEYo3q2qMUSmrvGjICWBsqf8qzWg/tH4WhQz5eUC7B4gvHuVQHLNNET6SEKpv7S62a/3tcMB5tbZjpPmgwh5lgGN+g+reXP7HIEye0ZH6IT+mtUEWQuIGJuFuIFBCn/3ls+r2c20IPf3SbD88ob4DIyycbOiTouwHOxtQTwScW+FI93xZGrKUs0L1mlcWzGl6YJD/ycti2tVX4QYWPhRSXj1gcLobf+cS8w6xXBSbZifEQG95r6mCp9kAmA4XaNARD1MakC9sqCsmbfbvafHKUTnbIm3NCGr+vm4HHXt41Dq5U9dUplUZLt2MLufkXUjFz0/hBKN8W3/jJz5h7lQIDAQAB
+
+------------------------------------------------------------------------------
+DOMAIN:    rswfire.email
+SELECTOR:  mail
+IN USE:    2026-09-28 onward
+RETRIEVED: 2026-09-28 04:20 UTC
+DNS NAME:  mail._domainkey.rswfire.email
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1IcEYo3q2qMUSmrvGjICWBsqf8qzWg/tH4WhQz5eUC7B4gvHuVQHLNNET6SEKpv7S62a/3tcMB5tbZjpPmgwh5lgGN+g+reXP7HIEye0ZH6IT+mtUEWQuIGJuFuIFBCn/3ls+r2c20IPf3SbD88ob4DIyycbOiTouwHOxtQTwScW+FI93xZGrKUs0L1mlcWzGl6YJD/ycti2tVX4QYWPhRSXj1gcLobf+cS8w6xXBSbZifEQG95r6mCp9kAmA4XaNARD1MakC9sqCsmbfbvafHKUTnbIm3NCGr+vm4HHXt41Dq5U9dUplUZLt2MLufkXUjFz0/hBKN8W3/jJz5h7lQIDAQAB
+
+------------------------------------------------------------------------------
+DOMAIN:    rswfire.net
+SELECTOR:  mail
+IN USE:    2026-09-28 onward
+RETRIEVED: 2026-09-28 04:20 UTC
+DNS NAME:  mail._domainkey.rswfire.net
+KEY:       v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1IcEYo3q2qMUSmrvGjICWBsqf8qzWg/tH4WhQz5eUC7B4gvHuVQHLNNET6SEKpv7S62a/3tcMB5tbZjpPmgwh5lgGN+g+reXP7HIEye0ZH6IT+mtUEWQuIGJuFuIFBCn/3ls+r2c20IPf3SbD88ob4DIyycbOiTouwHOxtQTwScW+FI93xZGrKUs0L1mlcWzGl6YJD/ycti2tVX4QYWPhRSXj1gcLobf+cS8w6xXBSbZifEQG95r6mCp9kAmA4XaNARD1MakC9sqCsmbfbvafHKUTnbIm3NCGr+vm4HHXt41Dq5U9dUplUZLt2MLufkXUjFz0/hBKN8W3/jJz5h7lQIDAQAB
+
+------------------------------------------------------------------------------
 DOMAIN:    usda.gov
 SELECTOR:  selector2
 IN USE:    2026-03-30 to 2026-07-27  (8 signed messages in this record)
