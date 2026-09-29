@@ -67,9 +67,9 @@ export default function TestimonyCard() {
                         They ran his name through channels built for terrorism, mapped his home
                         using a hunting app, and told his supervisor to say nothing to him. Then
                         they arrived on the anniversary of his dismissal for a &ldquo;knock and
-                        talk&rdquo; to tell him he wasn&rsquo;t in trouble but they were concerned
-                        about what he was posting online. There was never a crime alleged. They
-                        drove sixty-eight minutes and exercised force anyway.
+                        talk&rdquo; to tell him he was &ldquo;not in trouble.&rdquo; There was
+                        never a crime alleged. They drove sixty-eight minutes and exercised force
+                        anyway.
                     </p>
                     <p>
                         <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">

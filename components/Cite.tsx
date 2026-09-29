@@ -20,21 +20,50 @@ export type RegisterSlug =
 export default function Cite({
     ulid,
     thread = "oprd",
+    subtle = false,
     children,
 }: {
     ulid: string;
     thread?: RegisterSlug;
+    /**
+     * For a citation sitting inside small print that already carries a
+     * louder link. The quoted words stay in the surrounding voice and
+     * colour, and the document mark trails them at footnote size, so the
+     * paper is still one click away without competing for the eye.
+     */
+    subtle?: boolean;
     children: React.ReactNode;
 }) {
     const { openDoc } = useDocViewer();
 
+    const onClick = (e: React.MouseEvent) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        if (openDoc(ulid)) e.preventDefault();
+    };
+
+    if (subtle) {
+        return (
+            <Link
+                href={`/record/${thread}/${ulid}`}
+                onClick={onClick}
+                className="text-inherit no-underline hover:text-sky-700"
+            >
+                {children}
+                <Icon
+                    name="FileText"
+                    className="ml-0.5 inline-block -mt-1.5 align-super text-sky-700"
+                    size={9}
+                    strokeWidth={2}
+                    aria-hidden
+                />
+            </Link>
+        );
+    }
+
     return (
         <Link
             href={`/record/${thread}/${ulid}`}
-            onClick={(e) => {
-                if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
-                if (openDoc(ulid)) e.preventDefault();
-            }}
+            onClick={onClick}
             className="text-sky-800 underline decoration-sky-300 underline-offset-2 hover:text-sky-600"
         >
             <Icon
