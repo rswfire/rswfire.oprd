@@ -319,7 +319,7 @@ def build_html(meta: dict, parts: list[dict]) -> str:
       <section class="apparatus">
         <p class="count">Thirteen officials, six agencies, against one unpaid volunteer who wrote letters.</p>
         <p>An Oregon State Parks manager and a deputy director. An Oregon State Police press captain. A lieutenant of Criminal Investigations. A Major Crimes detective, a sergeant, and a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force, who pulled in two FBI personnel. A criminal intelligence analyst at the state&rsquo;s Department of Justice fusion center. A federal special agent and a patrol captain. Later a sheriff&rsquo;s deputy.</p>
-        <p>They ran his name through channels built for terrorism, mapped his home using a hunting app, and told his supervisor to say nothing to him. Then they arrived on the anniversary of his dismissal for a &ldquo;knock and talk&rdquo; to tell him he wasn&rsquo;t in trouble but they were concerned about what he was posting online. There was never a crime alleged. They drove sixty-eight minutes and exercised force anyway.</p>
+        <p>They ran his name through channels built for terrorism, mapped his home using a hunting app, and told his supervisor to say nothing to him. Then they arrived on the anniversary of his dismissal for a &ldquo;knock and talk&rdquo; to tell him he was &ldquo;not in trouble.&rdquo; There was never a crime alleged. They drove sixty-eight minutes to exercise power anyway.</p>
         <p><a href="{SITE}/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/">Every line of this is in their own file.</a></p>
       </section>
       <section class="volunteer">
