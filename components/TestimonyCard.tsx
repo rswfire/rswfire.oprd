@@ -68,7 +68,7 @@ export default function TestimonyCard() {
                         using a hunting app, and told his supervisor to say nothing to him. Then
                         they arrived on the anniversary of his dismissal for a &ldquo;knock and
                         talk&rdquo; to tell him he was &ldquo;not in trouble.&rdquo; There was
-                        never a crime alleged. They drove sixty-eight minutes and exercised force
+                        never a crime alleged. They drove sixty-eight minutes to exercise power
                         anyway.
                     </p>
                     <p>
