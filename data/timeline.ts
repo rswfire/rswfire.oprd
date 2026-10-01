@@ -800,13 +800,12 @@ export const TIMELINE: TimelineSection[] = [
             },
             {
                 d: "2026-10-01", date: "October 1, 2026", major: true,
-                title: "Dismissed again.",
+                title: "They swapped the words of the law.",
                 body: [
-                    "The Department of Justice ",
-                    { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "dismisses the second petition" },
-                    " on the same ground, now citing a 2014 order. The order does not say a record was denied. I answer: ",
-                    { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "ORS 192.427 applies only where a person is denied a record, and none was" },
-                    ". The next forum is Marion County Circuit Court.",
+                    "The Deputy Attorney General ",
+                    { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "throws out my petition" },
+                    ". The law allows him to do that only when someone has been denied a record. No one denied me anything. So he does not quote the law. He writes in a sentence from a ten-year-old order of his own office instead, and throws my petition out on that. I answer: ",
+                    { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "“Citing the section to a petition where nothing was withheld is not an application of the statute. It is cover for an event that never happened.”" },
                 ],
             },
         ],
