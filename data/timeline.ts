@@ -804,9 +804,9 @@ export const TIMELINE: TimelineSection[] = [
                 body: [
                     "The Department of Justice ",
                     { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "dismisses the second petition" },
-                    " on the same ground, now citing a 2014 order. The order does not say a record was denied. I answer: ",
+                    ", writing again that the records are “in the custody of the Governor, an elected official,” and now citing a 2014 order. The order does not say a record was denied. I answer: ",
                     { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "ORS 192.427 applies only where a person is denied a record, and none was" },
-                    ". The next forum is Marion County Circuit Court.",
+                    ".",
                 ],
             },
         ],

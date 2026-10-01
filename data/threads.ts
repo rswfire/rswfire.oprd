@@ -6863,7 +6863,7 @@ export const OSP_THREAD: RecordsThreadData = {
             to: "Robert Samuel White",
             kind: "response",
             title: "The second petition is dismissed",
-            summary: "Deputy Attorney General Benjamin Gutman dismisses the second petition on the same ground, now citing a 2014 order. The order does not state that any record was denied.",
+            summary: "Deputy Attorney General Benjamin Gutman dismisses the second petition, writing again that the records are \"in the custody of the Governor, an elected official,\" and now citing a 2014 order. The order does not state that any record was denied.",
             docs: [
                 { label: "Petition for Public Records Disclosure Order: dismissed", href: "/records/governor/attachments/01m3wah79ry4kvvhryvy9t726s-PRO-White-Robert-10-01-26.pdf" },
                 { label: "Transmittal Email", href: "/records/governor/2026-10-01-second-ag-order.pdf" },
@@ -6881,7 +6881,7 @@ export const OSP_THREAD: RecordsThreadData = {
             to: "Oregon Department of Justice, Public Records Orders; Cameron D. Miles, Office of the Governor",
             kind: "followup",
             title: "The condition is not met",
-            summary: "Reply to the second dismissal. ORS 192.427 applies only where a person is denied a record, and none was; the dispute goes to Marion County Circuit Court.",
+            summary: "Reply to the second dismissal. ORS 192.427 applies only where a person is denied a record, and none was.",
             docs: [{ label: "The condition is not met", href: "/records/governor/2026-10-01-the-condition-is-not-met.pdf" }],
             eml: "/records/governor/eml/2026-10-01_1449_the-condition-is-not-met.eml",
         },

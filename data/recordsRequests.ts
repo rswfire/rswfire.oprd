@@ -110,8 +110,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-24", date: "September 24, 2026", event: "The petition is dismissed for lack of jurisdiction under ORS 192.427: the records are in the custody of an elected official" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Reconsideration requested: no record was denied, the order’s ellipsis drops the statute’s condition, and the ORS 192.324(6) ground is unreached" },
             { d: "2026-09-25", date: "September 25, 2026", event: "Second petition filed on the fee waiver: custody is not the test" },
-            { d: "2026-10-01", date: "October 1, 2026", event: "The second petition is dismissed on the same ground: ORS 192.427, records in the custody of an elected official" },
-            { d: "2026-10-01", date: "October 1, 2026", event: "Reply: ORS 192.427 applies only where a person is denied a record, and none was; the next forum is Marion County Circuit Court" },
+            { d: "2026-10-01", date: "October 1, 2026", event: "The second petition is dismissed: “we lack jurisdiction to consider your appeal,” citing ORS 192.427 and a 2014 order" },
+            { d: "2026-10-01", date: "October 1, 2026", event: "Reply: ORS 192.427 applies only where a person is denied a record, and none was" },
         ],
     },
     {
