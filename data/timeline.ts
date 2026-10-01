@@ -798,6 +798,17 @@ export const TIMELINE: TimelineSection[] = [
                     ", with sincere thanks for her time and effort: “We have both stated our positions at this point and that is where I will leave the matter for now.”",
                 ],
             },
+            {
+                d: "2026-10-01", date: "October 1, 2026", major: true,
+                title: "Dismissed again.",
+                body: [
+                    "The Department of Justice ",
+                    { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "dismisses the second petition" },
+                    " on the same ground, now citing a 2014 order. The order does not say a record was denied. I answer: ",
+                    { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "ORS 192.427 applies only where a person is denied a record, and none was" },
+                    ". The next forum is Marion County Circuit Court.",
+                ],
+            },
         ],
     },
 ];
