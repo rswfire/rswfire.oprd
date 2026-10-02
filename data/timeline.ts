@@ -789,9 +789,9 @@ export const TIMELINE: TimelineSection[] = [
             },
             {
                 d: "2026-09-28", date: "September 28, 2026", major: true,
-                title: "The first to answer.",
+                title: "Oregon State Police respond to the demand letter.",
                 body: [
-                    "The day after the letters, Oregon State Police is the first to write: ",
+                    "Oregon State Police answers: ",
                     { doc: "01M3MJAZY0G31KFSSTRM6QBCNH", thread: "osp", t: "exemptions cited for the withheld documents" },
                     ". ",
                     { doc: "01M3MK45K8MHYBHSF43Y017G8J", thread: "osp", t: "My reply" },
@@ -800,11 +800,11 @@ export const TIMELINE: TimelineSection[] = [
             },
             {
                 d: "2026-10-01", date: "October 1, 2026", major: true,
-                title: "They swapped the words of the law.",
+                title: "The Department of Justice throws out the second petition.",
                 body: [
-                    "The Deputy Attorney General ",
-                    { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "throws out my petition" },
-                    ". The law allows him to do that only when someone has been denied a record. No one denied me anything. So he does not quote the law. He writes in a sentence from a ten-year-old order of his own office instead, and throws my petition out on that. I answer: ",
+                    "Deputy Attorney General Benjamin Gutman ",
+                    { doc: "01M3WAH79RY4KVVHRYVY9T726S", thread: "governor", t: "throws it out under ORS 192.427" },
+                    ". The law allows him to do that only when someone has been denied a record. No one denied me anything. I answer: ",
                     { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "“Citing the section to a petition where nothing was withheld is not an application of the statute. It is cover for an event that never happened.”" },
                 ],
             },
