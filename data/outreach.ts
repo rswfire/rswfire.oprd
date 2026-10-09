@@ -157,7 +157,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                         { label: "Testimony v1.9", href: "/records/outreach/attachments/01m33jn6e8nee7xqshsdrnnvjh-testimony-of-robert-samuel-white-v1-9.pdf" },
                     ] },
                     { label: "Specific audit question", value: "Whether the controls governing volunteer complaints, promised departmental reviews, and referrals to law enforcement warrant examination." },
-                    { label: "Response received / date", value: "None received" },
+                    { label: "Response received / date", value: "October 8, 2026 · Audits Division: “added the concerns you raised to our risk register”", href: "/record/outreach/01M4EKB5ZGKQM6SC3BT8GDYR4K/" },
                     { label: "Follow-up / date", value: "None" },
                 ],
                 dispatch: {
@@ -166,9 +166,9 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                     correspondence: [
                         { label: "September 21, 2026 · Request for Performance Audit Consideration: Oregon State Parks Volunteer-Program Controls", href: "/record/outreach/01M33JN6E8NEE7XQSHSDRNNVJH/" },
                     ],
-                    response: "None received",
+                    response: { label: "Audits Division: “added the concerns you raised to our risk register”", href: "/record/outreach/01M4EKB5ZGKQM6SC3BT8GDYR4K/" },
                 },
-                status: "Sent · Awaiting response",
+                status: "Response received",
             },
             {
                 id: "OR-09",

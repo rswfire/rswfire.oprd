@@ -7709,6 +7709,20 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             docs: [{ label: "Response from Representative Sanchez's office", href: "/records/outreach/2026-09-23-joint-legislative-audits-response.pdf" }],
             eml: "/records/outreach/eml/2026-09-23_0847_joint-legislative-audits-response.eml",
         },
+        {
+            id: "sos-audits-risk-register",
+            ulid: "01M4EKB5ZGKQM6SC3BT8GDYR4K",
+            date: "October 8, 2026",
+            d: "2026-10-08",
+            time: "1:30 PM",
+            from: "Oregon Secretary of State, Audits Division",
+            to: "Robert Samuel White",
+            kind: "letter",
+            title: "Audits Division: “added the concerns you raised to our risk register”",
+            summary: "The Audits Division writes that it \"added the concerns you raised to our risk register\" ahead of its Fiscal Year 2028 audit plan.",
+            docs: [{ label: "Response from the Audits Division", href: "/records/outreach/2026-10-08-sos-audits-risk-register.pdf" }],
+            eml: "/records/outreach/eml/2026-10-08_1330_sos-audits-risk-register.eml",
+        },
     ],
 };
 
