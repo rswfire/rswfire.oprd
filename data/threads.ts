@@ -6458,7 +6458,7 @@ export const OSP_THREAD: RecordsThreadData = {
     title: "Office of the Governor",
     agency: "Office of the Governor of Oregon",
     matter: "Direct correspondence with the Office of Governor Tina Kotek",
-    status: "Fee waiver denied. He pays.",
+    status: "Fee waiver denied.",
     summary: [
         "Letters addressed directly to the Office of the Governor, beginning November 18, 2025, and the office's responses to them. The first came September 8, 2026: the office is gathering records responsive to the public records request, with its Government Accountability Attorney as the point of contact. On September 22 the office estimated the fee at $572.50 and denied the fee waiver; he agreed to pay. The letters themselves remain unanswered.",
     ],
