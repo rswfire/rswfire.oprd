@@ -6953,6 +6953,20 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Publication of the October 1 order", href: "/records/governor/2026-10-08-publication-of-the-october-1-order.pdf" }],
             eml: "/records/governor/eml/2026-10-08_2113_publication-of-the-october-1-order.eml",
         },
+        {
+            id: "october-1-order-will-be-published",
+            ulid: "01M4GJ3SC0KRKXY18MBW7WXRTW",
+            date: "October 9, 2026",
+            d: "2026-10-09",
+            time: "7:47 AM",
+            from: "David Pitcher, Oregon Department of Justice",
+            to: "Robert Samuel White; Todd Albert, Public Records Advocate; Cameron D. Miles, Office of the Governor",
+            kind: "response",
+            title: "The October 1 order \"will be published\"",
+            summary: "David Pitcher writes that the 2014 order is in the Law Library collection and that the October 1 order \"will be published,\" with orders submitted \"in batches every couple of weeks.\"",
+            docs: [{ label: "Reply from David Pitcher", href: "/records/governor/2026-10-09-october-1-order-will-be-published.pdf" }],
+            eml: "/records/governor/eml/2026-10-09_0747_october-1-order-will-be-published.eml",
+        },
     ],
 };
 

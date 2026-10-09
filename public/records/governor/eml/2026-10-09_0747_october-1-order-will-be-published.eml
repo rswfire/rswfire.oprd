@@ -1,0 +1,369 @@
+Return-Path: <david.pitcher@doj.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id Mg1oCXn+yGoW8ywAjtW+MQ
+	(envelope-from <david.pitcher@doj.oregon.gov>)
+	for <rsw@rswfire.com>; Fri, 09 Oct 2026 14:47:21 +0000
+Received: from DM4PR09CU001.outbound.protection.outlook.com (mail-centralusazon11012001.outbound.protection.outlook.com [52.101.63.1])
+	by mail.rswfire.com (Postfix) with ESMTPS id E55A61F5E4
+	for <rsw@rswfire.com>; Fri,  9 Oct 2026 14:47:18 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=KEvxxtw00l/MicLULie0OjQa73AfPmDULpPi9aYe3XjtwIbdfg8hTktT+p/uMcSnDgcbYoOQipW+MknYAKa/luq0GmIVgyK3FYE4VAf0TM8FjAWgc6nQMf60MNGDJo7BDtwWazZwPvJ0la+MVKA+xV/bKU5t4ylvafqg9jSm/e5ym+NvCXzuS1B72NtezYi0YTcDESj98YD2g3Jd998qXCrM6Hykbb4OD9/zwVocAiHRSHmjL9eKOgfmy1pW4QrJN1hdbaXYG2Ge9EJTas28N3JoHRjnIucISIo2CrUoo3QEvP09q/N9Azo1zLWbCxQ51626ugBTSmLOQ5yxz5Ohgg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=jWxjCrEdynOVIMt2PVWt+3zCRHujx5racVrtw7Si+zw=;
+ b=Yf+hzsDhtMLPYqUIMO/IYVslMpx+uqmPiQm5t7wo2BkPuAgp/TXiK0p/ADaC/OCq7NOMhG4Lf+PcOmQZJaiBVOZlDmgOUntvg5j+n5Nw+/zgqKybBsf+ylOyFjL1zaPj7aS3dzpz5d+JU2TCyyalGyC6iXDJDpoQc6wQH2s5X2DWn+Z/e3yf8+NIWN0dBFRedruAgFKgfwcIC5M7xKjXiVifmkv7N/Czh7utggTdOPF1ehMx9ZCotla3q7cA+zzEFj5C3asvI+kq4HEgQJGHoOsR9pOPp01kaY4BAAkNiJwOZ9NA5jcMARGyBcJZnFBzihkX1kqVYm1BZmimR2nuqw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=doj.oregon.gov; dmarc=pass action=none
+ header.from=doj.oregon.gov; dkim=pass header.d=doj.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=doj.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=jWxjCrEdynOVIMt2PVWt+3zCRHujx5racVrtw7Si+zw=;
+ b=fofUA4s7aki+IJVRVrsaB4DWuJ5fuZWuWc4hwM0t0srqcKrP+NZSIB1URI/uQqqYWgneIJD1ZPx5LBL2jO0Hh86s9CvczlLgFsynxl2h1la+/e3lVAV1yjx+6xn6Qy/KcKLt4gtp8xcsomkG9eH4B4AlOcUuj9c4UqBcYGt+qyc=
+Received: from MW4PR09MB9075.namprd09.prod.outlook.com (2603:10b6:303:1fc::13)
+ by DM8PR09MB7400.namprd09.prod.outlook.com (2603:10b6:5:2e2::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.496.17; Fri, 9 Oct
+ 2026 14:47:13 +0000
+Received: from MW4PR09MB9075.namprd09.prod.outlook.com
+ ([fe80::221:3aa7:2458:d64c]) by MW4PR09MB9075.namprd09.prod.outlook.com
+ ([fe80::221:3aa7:2458:d64c%3]) with mapi id 15.21.0496.010; Fri, 9 Oct 2026
+ 14:47:13 +0000
+From: David Pitcher <david.pitcher@doj.oregon.gov>
+To: "'rsw@rswfire.com'" <rsw@rswfire.com>
+CC: ALBERT Todd * PRA <Todd.ALBERT@PRA.oregon.gov>, MILES Cameron D * GOV
+	<Cameron.D.MILES@oregon.gov>
+Subject: RE: Publication of the October 1, 2026 Public Records Order, DOJ File
+ No. 121010-GA0187-26
+Thread-Topic: Publication of the October 1, 2026 Public Records Order, DOJ
+ File No. 121010-GA0187-26
+Thread-Index: AQHdV6SLTb4fiScXAk+yL4iTlaMYIrb1ScBQ
+Date: Fri, 9 Oct 2026 14:47:12 +0000
+Message-ID:
+ <MW4PR09MB90758042B16F73AE91C6139EDA922@MW4PR09MB9075.namprd09.prod.outlook.com>
+References: <d1fb2e45-5259-4dae-86be-fbe643525bc6@rswfire.com>
+ <2d0cc929.AW4AAKhG6NAAAAAAAAAABD3ksukAAYKKucoAAAAAADb2LABqyGni@mailjet.com>
+In-Reply-To:
+ <2d0cc929.AW4AAKhG6NAAAAAAAAAABD3ksukAAYKKucoAAAAAADb2LABqyGni@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=doj.oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MW4PR09MB9075:EE_|DM8PR09MB7400:EE_
+x-ms-office365-filtering-correlation-id: 13ab341e-77ad-4c3d-bccf-08df2614345e
+x-ld-processed: 64079a47-cf62-4d12-bfd5-1e71dfde39c2,ExtAddr
+x-ms-exchange-atpmessageproperties: SA
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|1800799024|366016|23010399003|55112099003|22082099003|10067099003|8096899003|18002099003|4143699003|260925021311599003|260925022911599003|260925021911599003|38070700021|56012099006;
+x-microsoft-antispam-message-info:
+ R9gdPQz8AC+JUi+WhUaZeEKGMUmYcTlB5mJEBtIN9sipRuEO0yarFciWF6H9nqY3fJEtDGZqGWpqbld8SKq3uAtxJ4twBa79o4ugcj+Ub2nkMNWEHQoRRHU/+xinXohBbO/Hbxzli+n8w1Mv1hEMfb5v1MARZVmvewWz0t+wEjObYiyDekYikPLgcXQcc3IX9EFEg3rGKPvtwyLpMV/GdrA2VTStEblQyb9d2SuXA4JVzBGzF+Oa/DKW2lJexlYV0L92ZYqRAC+WpLBxD3sm1HG2G/xUJfrrtZEZgqWYt7J7Ts1xf98uO3XqcLGeIW4zZ/ChExzX4r4a+RnaGJp2igpop5vxaHLCWIbDVfNdHtMT6o1yU4ucm/visD7St59zuIfClpRMtZ4J/BWVRVt9T5wNuHJ0pAwxfQ+nQsyWt9kiih+ywXVFcgAgqDT8Y7YNRB1gKm2/8yIU0MaDBAjBI49fq98JgBkg6tAlXUcSb+kcmoXQnsdANCxBo5SYC7prcZzTMQPoW5Xjv38xlrLjPuspbhPRNntXSi18/wNmy3N8DycsIwrKHh8UFsXn6H4QKq9Jhj/8qNX8ZNsqG21YnWjUtLoeX+8UA4y6uq3ANbMROtma02PW13saklFNbZcvBlU0jHZ/tGW/1pDuEY5vAw//VM0EsF83uWc6pi2iZxY=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MW4PR09MB9075.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(23010399003)(55112099003)(22082099003)(10067099003)(8096899003)(18002099003)(4143699003)(260925021311599003)(260925022911599003)(260925021911599003)(38070700021)(56012099006);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?X2oOuJn6WBac0shrZDoxwcRe8xsBlEVsA1q+Td+EuMZAETKsiHI5RbUGipjQ?=
+ =?us-ascii?Q?4IYb9l1anzPC8ijRcZVRkVouTUimq46wlWrjyETx941wlUFv6KEddzmrhrgT?=
+ =?us-ascii?Q?h7gryW2v7woxlFpX0B6ySopeb7+CmVt6BSBTR5IKodprjyU+m2kC5LvWzNy0?=
+ =?us-ascii?Q?hjqSSemhfKrdnPFv7VEIMtWZ3WUJ93/VQEVYJSYvOKoq1PksLwD2WYWoAfSf?=
+ =?us-ascii?Q?zh33HdaJiJgFdvwaPFdk74D1T2KEU1aDA5VxmXmWL3Ll/8ZjSAqgWFsQyjh7?=
+ =?us-ascii?Q?xyfBl3Zjp7E4wFmsIUjIEyZvAHpDpqwWt9pOE2DQCVzlORGmwpRMYYx8LfuB?=
+ =?us-ascii?Q?pjmmcAyxcTTJCwiiaVN0aAuAbRvpecdBrqYch7IMLp2K87qqjAbPPFg983NE?=
+ =?us-ascii?Q?mQziNprk2we1nxQUIXw8Dh0w3Zw32fySe2kahKjI/qWUq3sQtDZslipJkVEq?=
+ =?us-ascii?Q?EbZwsPceKSsNeGuNalCVd5JWEw7WU2+4jSAxNzpTdh+qGt9XKpjU5AglXDy+?=
+ =?us-ascii?Q?4lknXI1gXecsT2mAqbaYwYUgHonInc4+T2jzWpMcV2B491uj8ADDvz3ScK1m?=
+ =?us-ascii?Q?+7pznvursJrSrfN5yr/bK8DohiYPZLO3kPirfYaF3OLdRf6CY4qCZibXRojf?=
+ =?us-ascii?Q?TeBaUiQo9jRn6aOXEXzHUPTbGY8eD8oscZ+BGTKq/JK3rfR0eOG1tR1vjIy3?=
+ =?us-ascii?Q?sPHwG8GB2ym9lEf4SVng+U0b7fi35lISB4V9o8GasnSyA9+rcLoma0QCpKzT?=
+ =?us-ascii?Q?QY+nHop8otXyIz9YcQCCvy2ZzjSgQ5QEIUREpuj60/akzes6WhAUX/9/rRGv?=
+ =?us-ascii?Q?s10DWBQj9pbk5yFSdJuRE2bmW+6VAcYEgEd8z/HXMg0KnwWPidxvYTfYgTfT?=
+ =?us-ascii?Q?rAEJ3cftCAYqepwj+IyNXlnyzW2DGXZeT9ytxY7HVdsztSuG4uJWy9DrkNBv?=
+ =?us-ascii?Q?sf/bbDER/txGtBsmvsxqgc6nNvGXP8PC72+uARGUtWv/bd5KL4POK35DwYtz?=
+ =?us-ascii?Q?ky/5bT5RT3uclq4BVTvnqsE/G6/VJvjCadbJVgHu9Vsyt4obrIb1qnK4akha?=
+ =?us-ascii?Q?jkMYt9Y9YXWGYOflljMQBxXCsHtPqFZAiVM9uxB1AL51ad7+6hOkBSKFRH7n?=
+ =?us-ascii?Q?mt6WD05tWlZ3vmk+aB0VB9MJaqkIpWgXfTmP2STu4NPHMYzwb5wZNXss89W+?=
+ =?us-ascii?Q?YKKqqd9t7+38PJVyj3KFY/CKXfk88jTPoZl1BByFTHtBMr8pOzEgDRYTTbn0?=
+ =?us-ascii?Q?qc2o7v3h4hY2ubBpraTfAndHTrptBfDSgRb/M2uO43L0anP5Mku0n4tbFrf9?=
+ =?us-ascii?Q?vniyEaNErpd3YnPcIYMX899VJHr9WW8EIjzKbb0/VNci5cePmWYH6jp5xvH1?=
+ =?us-ascii?Q?SmvK6DB7LzguT5UTZpUIkeLt9YzAwR+UCGZ2ebUQldq00idQyIbAhGZMoC1Y?=
+ =?us-ascii?Q?nd5cwJ0kBdpirb9KtQpiJaQ2MZzAzGH1huxiiW5VhKA6TqLH9Dae4hcQRQ0j?=
+ =?us-ascii?Q?CtiQ/9TUGqO+Nu0IiC0yTyfcIugRnK9gPZynZO+P8xrcgm+SrXk5xNlwnkjb?=
+ =?us-ascii?Q?d6E2g27f9HpyzZ799apBqXdDACMU0ve13HyMs87TZMdjNdmJrTBpzWLb18v3?=
+ =?us-ascii?Q?MfQ94Af68bFt9iLJtC1TMUUHErNJGW0N/jomB+6Q1pFb76hTYOe3+oNd9JTG?=
+ =?us-ascii?Q?eI6cMc6HEqwUi5ErypLAsGnjTXr0Xv9E6UW167ySdXtZTvzOOg5ikCWS4XYf?=
+ =?us-ascii?Q?UJiXbMuPMg=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_MW4PR09MB90758042B16F73AE91C6139EDA922MW4PR09MB9075namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: doj.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MW4PR09MB9075.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 13ab341e-77ad-4c3d-bccf-08df2614345e
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Oct 2026 14:47:12.9151
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 64079a47-cf62-4d12-bfd5-1e71dfde39c2
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM8PR09MB7400
+X-Spamd-Result: default: False [-1.00 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[doj.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 RCPT_COUNT_THREE(0.00)[3];
+	 R_SPF_ALLOW(-0.20)[+ip4:52.100.0.0/15];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[11];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_MATCH_ENVRCPT_SOME(0.00)[];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[doj.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[doj.oregon.gov,quarantine];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-1.00
+
+--_000_MW4PR09MB90758042B16F73AE91C6139EDA922MW4PR09MB9075namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good morning, Mr. White.  The Sebens order is publicly available on State o=
+f Oregon Law Library at the following link:
+
+Browse | Oregon Attorney General Public Records Orders | State of Oregon La=
+w Library Document Collections<https://cdm17027.contentdm.oclc.org/digital/=
+collection/p17027coll2/search>
+
+If you type the word "sebens" into the search box, you should locate it.  T=
+he October 1 order on your petition will be published.  We submit orders to=
+ the library in batches every couple of weeks.  So, there is a bit of lag b=
+etween the issuance date and the date posted.
+
+Regards,
+
+David Pitcher
+Oregon Department of Justice
+503.871.3731
+
+From: rsw@rswfire.com <rsw@rswfire.com>
+Sent: Thursday, October 8, 2026 9:13 PM
+To: Public Records Order <PublicRecordsOrder@doj.oregon.gov>
+Cc: ALBERT Todd * PRA <Todd.ALBERT@PRA.oregon.gov>; Attorney General <Attor=
+neyGeneral@doj.oregon.gov>; MILES Cameron D * GOV <Cameron.D.MILES@oregon.g=
+ov>; PublicRecordsAdvocate.PRC@pra.oregon.gov; governor.kotek@oregon.gov; P=
+hyllis Nelson <Phyllis.Nelson@doj.oregon.gov>
+Subject: Publication of the October 1, 2026 Public Records Order, DOJ File =
+No. 121010-GA0187-26
+
+*CAUTION EXTERNAL EMAIL* This email originated from outside of DOJ. Treat a=
+ttachments and links with caution. *CAUTION EXTERNAL EMAIL*
+
+To the Office of the Attorney General,
+
+The Attorney General issued two orders on my petitions concerning the Offic=
+e of the Governor, both under DOJ File No. 121010-GA0187-26.
+The order of September 24, 2026 appears in the public records order collect=
+ion maintained through the State of Oregon Law Library.
+
+The order of October 1, 2026 does not. That order dismissed my petition cha=
+llenging a fee waiver denial, citing ORS 192.427 and Public Records Order, =
+Oct 2, 2014, Sebens.
+
+Please tell me why the October 1 order has not been published, and whether =
+and when it will be. Also, the Sebens order no longer appears in the Law Li=
+brary collection. Please provide a copy of it.
+
+--
+Robert Samuel White
+Post Office Box 334, Reedsport, Oregon, 97467
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+
+
+***** CONFIDENTIALITY NOTICE ***** This e-mail may contain information that=
+ is privileged, confidential, or otherwise exempt from disclosure under app=
+licable law. If you are not the addressee or it appears from the context or=
+ otherwise that you have received this e-mail in error, please advise me im=
+mediately by reply e-mail, keep the contents confidential, and immediately =
+delete the message and any attachments from your system. ******************=
+******************
+
+--_000_MW4PR09MB90758042B16F73AE91C6139EDA922MW4PR09MB9075namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Good morning, Mr. White.&nbsp; The <i>Sebens</i> ord=
+er is publicly available on State of Oregon Law Library at the following li=
+nk:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://cdm17027.contentdm.oclc.org/digit=
+al/collection/p17027coll2/search">Browse | Oregon Attorney General Public R=
+ecords Orders | State of Oregon Law Library Document Collections</a><o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">If you type the word &#8220;sebens&#8221; into the s=
+earch box, you should locate it.&nbsp; The October 1 order on your petition=
+ will be published.&nbsp; We submit orders to the library in batches every =
+couple of weeks.&nbsp; So, there is a bit of lag between the
+ issuance date and the date posted.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Pa=
+latino Linotype&quot;,serif;color:#2F5496">David Pitcher<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Pa=
+latino Linotype&quot;,serif;color:#2F5496">Oregon Department of Justice<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Pa=
+latino Linotype&quot;,serif;color:#2F5496">503.871.3731</span><span style=
+=3D"font-size:11.0pt;mso-ligatures:standardcontextual"><o:p></o:p></span></=
+p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> rsw@rswfire.com &lt;rsw@rswfir=
+e.com&gt;
+<br>
+<b>Sent:</b> Thursday, October 8, 2026 9:13 PM<br>
+<b>To:</b> Public Records Order &lt;PublicRecordsOrder@doj.oregon.gov&gt;<b=
+r>
+<b>Cc:</b> ALBERT Todd * PRA &lt;Todd.ALBERT@PRA.oregon.gov&gt;; Attorney G=
+eneral &lt;AttorneyGeneral@doj.oregon.gov&gt;; MILES Cameron D * GOV &lt;Ca=
+meron.D.MILES@oregon.gov&gt;; PublicRecordsAdvocate.PRC@pra.oregon.gov; gov=
+ernor.kotek@oregon.gov; Phyllis Nelson &lt;Phyllis.Nelson@doj.oregon.gov&gt=
+;<br>
+<b>Subject:</b> Publication of the October 1, 2026 Public Records Order, DO=
+J File No. 121010-GA0187-26<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:solid #9C6500 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt;background:yellow"><b><s=
+pan style=3D"font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;co=
+lor:black">*CAUTION EXTERNAL EMAIL* This email originated from outside of D=
+OJ. Treat attachments and links with caution. *CAUTION
+ EXTERNAL EMAIL*</span></b><span style=3D"font-size:10.0pt;font-family:&quo=
+t;Calibri&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">To the Office of the Att=
+orney General,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">The Attorney General iss=
+ued two orders on my petitions concerning the Office of the Governor, both =
+under DOJ File No. 121010-GA0187-26.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">The order of September 2=
+4, 2026 appears in the public records order collection maintained through t=
+he State of Oregon Law Library.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">The order of October 1, =
+2026 does not. That order dismissed my petition challenging a fee waiver de=
+nial, citing ORS 192.427 and Public Records Order, Oct 2, 2014, Sebens.<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Please tell me why the O=
+ctober 1 order has not been published, and whether and when it will be. Als=
+o, the Sebens order no longer appears in the Law Library collection. Please=
+ provide a copy of it.<o:p></o:p></span></p>
+<div id=3D"mail-editor-reference-message-container">
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">--<br>
+<b>Robert Samuel White</b><br>
+Post Office Box 334, Reedsport, Oregon, 97467<br>
+</span><span style=3D"color:#C82613"><a href=3D"https://rswfire.com/" title=
+=3D"https://rswfire.com"><span style=3D"color:#C82613">rswfire.com</span></=
+a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C882A"><a href=3D"https://oprdvolunteerabuse.=
+org/" title=3D"https://oprdvolunteerabuse.org"><span style=3D"color:#0C882A=
+">oprdvolunteerabuse.org</span></a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C64C0"><a href=3D"https://autonomyrealms.com/=
+" title=3D"https://autonomyrealms.com"><span style=3D"color:#0C64C0">autono=
+myrealms.com</span></a></span><o:p></o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+***** CONFIDENTIALITY NOTICE ***** This e-mail may contain information that=
+ is privileged, confidential, or otherwise exempt from disclosure under app=
+licable law. If you are not the addressee or it appears from the context or=
+ otherwise that you have received
+ this e-mail in error, please advise me immediately by reply e-mail, keep t=
+he contents confidential, and immediately delete the message and any attach=
+ments from your system. ************************************
+<br>
+</body>
+</html>
+
+--_000_MW4PR09MB90758042B16F73AE91C6139EDA922MW4PR09MB9075namp_--
