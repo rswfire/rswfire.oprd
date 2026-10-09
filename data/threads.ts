@@ -6967,6 +6967,20 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Reply from David Pitcher", href: "/records/governor/2026-10-09-october-1-order-will-be-published.pdf" }],
             eml: "/records/governor/eml/2026-10-09_0747_october-1-order-will-be-published.eml",
         },
+        {
+            id: "one-paragraph-from-2014",
+            ulid: "01M4GMP81G9Q9AMNA8N7FQXBHJ",
+            date: "October 9, 2026",
+            d: "2026-10-09",
+            time: "8:32 AM",
+            from: "Robert Samuel White",
+            to: "David Pitcher, Oregon Department of Justice; Todd Albert, Public Records Advocate; Cameron D. Miles, Office of the Governor",
+            kind: "followup",
+            title: "One paragraph from 2014",
+            summary: "The 2014 order his petition was dismissed on: one paragraph of reasoning, and the only document a search for it returns.",
+            docs: [{ label: "One paragraph from 2014", href: "/records/governor/2026-10-09-one-paragraph-from-2014.pdf" }],
+            eml: "/records/governor/eml/2026-10-09_0832_one-paragraph-from-2014.eml",
+        },
     ],
 };
 
