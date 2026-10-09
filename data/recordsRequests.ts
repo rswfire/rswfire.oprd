@@ -112,6 +112,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-25", date: "September 25, 2026", event: "Second petition filed on the fee waiver: custody is not the test" },
             { d: "2026-10-01", date: "October 1, 2026", event: "The second petition is dismissed for lack of jurisdiction under ORS 192.427; the order does not quote the section" },
             { d: "2026-10-01", date: "October 1, 2026", event: "Reply: no record was denied; the order’s sentence on elected officials is copied from the Attorney General’s own 2014 order, not from the statute the Legislature wrote" },
+            { d: "2026-10-08", date: "October 8, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464(2)(b)" },
+            { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Public Records Advisory Council on the Attorney General's application of ORS 192.427 to fee waiver decisions" },
         ],
     },
     {

@@ -808,6 +808,17 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01M3WQ36JR70V7BP7VPYE3QEP0", thread: "governor", t: "“Citing the section to a petition where nothing was withheld is not an application of the statute. It is cover for an event that never happened.”" },
                 ],
             },
+            {
+                d: "2026-10-08", date: "October 8, 2026", major: true,
+                title: "The Attorney General’s reading of the law goes to the state’s public records oversight.",
+                body: [
+                    "I ",
+                    { doc: "01M4F73K98NTWTV9JZT5J5DB4Z", thread: "governor", t: "ask the Public Records Advocate for facilitated dispute resolution of the fee waiver" },
+                    ". I ",
+                    { doc: "01M4F76J0GRFH1GTAVJ2223G8W", thread: "governor", t: "ask the Public Records Advisory Council to consider the Attorney General's application of ORS 192.427" },
+                    ".",
+                ],
+            },
         ],
     },
 ];
