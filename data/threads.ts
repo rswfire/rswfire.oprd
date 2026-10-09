@@ -6436,6 +6436,22 @@ export const OSP_THREAD: RecordsThreadData = {
             ],
             eml: "/records/osp/eml/2026-09-28_1106_positions-stated.eml",
         },
+        {
+            id: "a-statement-about-record-keeping",
+            ulid: "01M4F03M9GV5SKCG9QXVB7MB3X",
+            date: "October 8, 2026",
+            d: "2026-10-08",
+            time: "5:13 PM",
+            from: "Robert Samuel White",
+            to: "Captain Kyle Kennedy, OSP Government and Media Relations; Superintendent Casey Codding; OPRD Commission; Governor Kotek",
+            kind: "notice",
+            title: "A statement about record keeping",
+            summary: "To the captain of Government and Media Relations. The 2015 Oregon Fusion Center threat assessment of Erious Johnson Jr., and the fusion center’s 2026 documentation of him.",
+            docs: [
+                { label: "A statement about record keeping", href: "/records/osp/2026-10-08-a-statement-about-record-keeping.pdf" },
+            ],
+            eml: "/records/osp/eml/2026-10-08_1713_a-statement-about-record-keeping.eml",
+        },
     ],
 };export const GOVERNOR_THREAD: RecordsThreadData = {
     slug: "governor",
