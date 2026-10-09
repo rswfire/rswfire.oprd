@@ -46,8 +46,9 @@ export default function Footer() {
                     <div className="flex flex-col sm:flex-row gap-6 items-start">
                         <img src="/oregon-state-flag.jpg" alt="Oregon State Flag" className="w-36 h-auto rounded shrink-0" />
                         <div className="space-y-3">
-                            <div className="text-sm"><strong>The State of Oregon can never again abuse a volunteer this way without documented precedent.</strong> When the Governor&apos;s office was directly notified and chose silence, this stopped being one agency&apos;s failure and became shared across the state structure.</div>
-                            <div className="text-sm pt-3 border-t border-gray-200"><Link href="/governor-kotek" className="underline text-emerald-800 hover:text-emerald-600">Governor Kotek</Link>, does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation? Yes or no?</div>
+                            <div className="text-sm">On October 8, 2026, the Governor, the Superintendent of State Police, the State Parks and Recreation Commission, and the captain who asked for a threat assessment &ldquo;asap&rdquo; received <Link href="/record/osp/01M4F03M9GV5SKCG9QXVB7MB3X/" className="underline text-emerald-800 hover:text-emerald-600">A Statement About Record Keeping</Link>.</div>
+                            <div className="text-sm">In 2015, an agent in the Oregon Fusion Center flagged tweets by the state&apos;s own civil rights director as threatening to the police, and his superiors approved a report titled &ldquo;Possible threats towards law enforcement by DOJ employee.&rdquo; An outside investigator examined it under the statute that is now ORS 181A.250 and wrote that it &ldquo;appears to have been an isolated incident.&rdquo; In 2026, the same fusion center documented me. Its analyst wrote that my actions &ldquo;border on harassment due to the volume of emails.&rdquo; In both cases, the state built a file on a person&apos;s speech that ORS 181A.250 forbids.</div>
+                            <div className="text-sm">It was written so the next person can say this was not an isolated incident, because someone documented the pattern before them.</div>
                         </div>
                     </div>
                 </div>
