@@ -135,6 +135,37 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 fields: ["Bill / hearing / committee", "Hearing date", "Submission window confirmed", "Date submitted", "Testimony link / exhibit number", "Response / subsequent action", "Follow-up / date"],
                 status: "Awaiting relevant hearing",
             },
+            {
+                id: "OR-12",
+                anchor: "or-public-records",
+                title: "Public records law as applied: Senate Interim Committee on Rules and the Legislature",
+                audience: "How state agencies and the Attorney General apply Oregon's public records law to requesters: review of fee waiver denials by elected officials' offices, review by the office that advises the agencies reviewed, exemptions stated without identifying a record, no-records responses that omit the search, fee waivers decided by the subject of the records, responses the requester cannot see, and unpublished Attorney General orders.",
+                startingPoints: [
+                    { label: "SB 1077 (2025) on OLIS", href: "https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/SB1077" },
+                ],
+                fields: ["Recipient / office", "Contact / submission route", "Date sent", "Correspondence sent", "Material and version sent", "Specific request made", "Response received / date", "Follow-up / date"],
+                tracking: [
+                    { label: "Recipient / office", value: "Senate Interim Committee on Rules (Chair Kayse Jama, Vice-Chair Bruce Starr, Senators Jeff Golden, James Manning Jr., Kim Thatcher); Joint Committee on Legislative Audits co-chairs; Senator Dick Anderson; Representative Boomer Wright" },
+                    { label: "Contact / submission route", value: "Email to each legislative office, with the Governor, the Attorney General, the Public Records Advocate, the Secretary of State Audits Division, the OPRD Commission, and the OSP Superintendent copied" },
+                    { label: "Date sent", value: "October 8, 2026" },
+                    { label: "Correspondence sent", value: "October 8, 2026 · Oregon's Public Records Law, As Applied", href: "/record/outreach/01M4FM01H0EPTKZH5YPZQ8F0PD/" },
+                    { label: "Material and version sent", value: "", links: [
+                        { label: "Oregon's Public Records Law, As Applied", href: "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf" },
+                    ] },
+                    { label: "Specific request made", value: "Take up seven gaps in the 2027 session, each with the change asked." },
+                    { label: "Response received / date", value: "None received" },
+                    { label: "Follow-up / date", value: "None" },
+                ],
+                dispatch: {
+                    dateSent: "October 8, 2026",
+                    material: "Letter · Testimony v1.11",
+                    correspondence: [
+                        { label: "October 8, 2026 · Oregon's Public Records Law, As Applied", href: "/record/outreach/01M4FM01H0EPTKZH5YPZQ8F0PD/" },
+                    ],
+                    response: "None received",
+                },
+                status: "Sent · Awaiting response",
+            },
         ],
     },
     {

@@ -7739,6 +7739,23 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             docs: [{ label: "Response from the Audits Division", href: "/records/outreach/2026-10-08-sos-audits-risk-register.pdf" }],
             eml: "/records/outreach/eml/2026-10-08_1330_sos-audits-risk-register.eml",
         },
+        {
+            id: "oregons-public-records-law-as-applied",
+            ulid: "01M4FM01H0EPTKZH5YPZQ8F0PD",
+            date: "October 8, 2026",
+            d: "2026-10-08",
+            time: "11:00 PM",
+            from: "Robert Samuel White",
+            to: "Senate Interim Committee on Rules; Joint Committee on Legislative Audits; Senator Dick Anderson; Representative Boomer Wright; Governor Kotek; Attorney General; Public Records Advocate; Secretary of State, Audits Division; OPRD Commission; Superintendent Casey Codding",
+            kind: "notice",
+            title: "Oregon's Public Records Law, As Applied",
+            summary: "To the Legislature: seven gaps in how the public records law is applied, each shown in this record, with the change asked for each.",
+            docs: [
+                { label: "Oregon's Public Records Law, As Applied", href: "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf" },
+                { label: "Transmittal", href: "/records/outreach/2026-10-08-oregons-public-records-law-as-applied.pdf" },
+            ],
+            eml: "/records/outreach/eml/2026-10-08_2300_oregons-public-records-law-as-applied.eml",
+        },
     ],
 };
 
