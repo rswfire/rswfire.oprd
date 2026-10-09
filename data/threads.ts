@@ -7742,6 +7742,7 @@ export const OUTREACH_THREAD: RecordsThreadData = {
         {
             id: "oregons-public-records-law-as-applied",
             ulid: "01M4FM01H0EPTKZH5YPZQ8F0PD",
+            flagged: true,
             date: "October 8, 2026",
             d: "2026-10-08",
             time: "11:00 PM",
