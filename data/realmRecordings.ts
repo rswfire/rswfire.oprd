@@ -5,7 +5,7 @@
 //   node scripts/sync-recordings.mjs
 //
 // ULID, date, title, duration in seconds. The bytes stream from the media
-// proxy at rswfire.com/media/{ULID}/video, which enforces the signal's own
+// proxy at rswfire.com/api/v1/media/{ULID}/video, which enforces the signal's own
 // visibility floor, so nothing here can expose a private recording.
 
 export interface RealmRecording {

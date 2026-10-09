@@ -24,7 +24,7 @@ export interface TransmissionData {
 
     // Video (optional — omit for audio-only or text transmissions).
     // The video streams through the Autonomy media proxy at
-    // /media/{signalId}/video (302 → lazily-signed URL). signalId
+    // /api/v1/media/{signalId}/video (302 → lazily-signed URL). signalId
     // defaults to `ulid` (they're the same value); set it explicitly
     // only if they ever diverge. s3Url is legacy and no longer used
     // for playback — the old /api/video-url endpoint was removed.
@@ -78,14 +78,14 @@ function MetadataTag({ label, value }: { label: string; value: string }) {
 }
 
 // Autonomy origin that hosts the media proxy. The proxy route is
-// /media/{signalId}/{item}; it enforces the signal's visibility floor
+// /api/v1/media/{signalId}/{item}; it enforces the signal's visibility floor
 // and 302s video/audio to a freshly-signed S3 URL on each load.
 // Configurable so dev can point at the local host (signals there live on
 // the dev box, not prod); defaults to the production realm origin.
 const MEDIA_ORIGIN = process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "https://rswfire.com";
 
 const mediaUrl = (signalId: string, item: "video" | "thumbnail") =>
-    `${MEDIA_ORIGIN}/media/${signalId}/${item}`;
+    `${MEDIA_ORIGIN}/api/v1/media/${signalId}/${item}`;
 
 // Resolve the signal id used for video playback. Returns undefined for
 // transmissions with no video (so the player isn't rendered). Prefers an

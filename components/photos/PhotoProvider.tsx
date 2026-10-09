@@ -30,7 +30,7 @@ export function usePhotos(): PhotoApi {
 }
 
 export function photoUrl(signal: string, photo: string): string {
-    return `${MEDIA_ORIGIN}/media/${signal}/${photo}`;
+    return `${MEDIA_ORIGIN}/api/v1/media/${signal}/${photo}`;
 }
 
 export default function PhotoProvider({ children }: { children: React.ReactNode }) {

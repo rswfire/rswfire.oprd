@@ -52,13 +52,15 @@ export function recordingByPage(pathname: string): Recording | undefined {
     return BY_PAGE.get(pathname.replace(/\/+$/, "") || "/");
 }
 
-// The Autonomy media proxy: /media/{ulid}/{item} enforces the signal's
+// The Autonomy media proxy: /api/v1/media/{ulid}/{item} enforces the signal's
 // visibility floor and 302s to a freshly-signed S3 URL on every load, so the
-// archive never holds a signed URL and never expires one.
+// archive never holds a signed URL and never expires one. The platform moved
+// it from /media/ to /api/v1/media/; the old path now returns the client's
+// index.html.
 const MEDIA_ORIGIN = process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "https://rswfire.com";
 
 export function mediaUrl(ulid: string, item: "video" | "thumbnail"): string {
-    return `${MEDIA_ORIGIN}/media/${ulid}/${item}`;
+    return `${MEDIA_ORIGIN}/api/v1/media/${ulid}/${item}`;
 }
 
 export function libraryUrl(ulid: string): string {

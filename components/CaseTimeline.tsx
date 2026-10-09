@@ -21,11 +21,11 @@ import { FAQ_QUESTIONS } from "@/data/faq";
 
 const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
 
-// Same media proxy the evidence pages stream from: /media/{signalId}/{item}
+// Same media proxy the evidence pages stream from: /api/v1/media/{signalId}/{item}
 // 302s to a freshly-signed URL and enforces the signal's visibility floor.
 const MEDIA_ORIGIN = process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "https://rswfire.com";
 const mediaUrl = (signalId: string, item: "video" | "thumbnail") =>
-    `${MEDIA_ORIGIN}/media/${signalId}/${item}`;
+    `${MEDIA_ORIGIN}/api/v1/media/${signalId}/${item}`;
 
 // The three authorship classes. The State of Oregon and the volunteer are
 // the parties; the Forest Service is a third party whose written account
