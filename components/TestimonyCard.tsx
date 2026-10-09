@@ -11,6 +11,7 @@ import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
+import { APPARATUS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
 
 const CHAPTERS = [
@@ -47,33 +48,16 @@ export default function TestimonyCard() {
                 />
 
                 {/* The apparatus, counted, before he says a word. Small print,
-                    because the scale does the work. Every line is from the
-                    PR27478 production the Oregon State Police released. */}
+                    because the scale does the work. The text is in
+                    data/apparatus.ts because page 2 of the testimony PDF
+                    prints the same block and cannot see this file. */}
                 <div className="mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 lg:mx-10">
-                    <p className="font-bold">
-                        Thirteen officials, six agencies, against one unpaid volunteer who wrote
-                        letters.
-                    </p>
+                    <p className="font-bold">{APPARATUS.count}</p>
+                    <p>{APPARATUS.roster}</p>
+                    <p>{APPARATUS.account}</p>
                     <p>
-                        An Oregon State Parks manager and a deputy director. An Oregon State Police
-                        press captain. A lieutenant of Criminal Investigations. A Major Crimes
-                        detective, a sergeant, and a second detective who is a task force officer on
-                        the Portland FBI Joint Terrorism Task Force, who pulled in two FBI
-                        personnel. A criminal intelligence analyst at the state&rsquo;s Department
-                        of Justice fusion center. A federal special agent and a patrol captain.
-                        Later a sheriff&rsquo;s deputy.
-                    </p>
-                    <p>
-                        They ran his name through channels built for terrorism, mapped his home
-                        using a hunting app, and told his supervisor to say nothing to him. Then
-                        they arrived on the anniversary of his dismissal for a &ldquo;knock and
-                        talk&rdquo; to tell him he was &ldquo;not in trouble.&rdquo; There was
-                        never a crime alleged. They drove sixty-eight minutes to exercise power
-                        anyway.
-                    </p>
-                    <p>
-                        <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">
-                            Every line of this is in their own file.
+                        <Cite ulid={APPARATUS.citationUlid} thread={APPARATUS.citationThread}>
+                            {APPARATUS.citation}
                         </Cite>
                     </p>
                 </div>

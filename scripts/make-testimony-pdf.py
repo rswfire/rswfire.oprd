@@ -198,6 +198,7 @@ def parse_source() -> tuple[dict, list[dict]]:
 
 
 def build_html(meta: dict, parts: list[dict]) -> str:
+    app = apparatus()
     def navigation_title(part: dict) -> str:
         prefix = "ADDENDUM: " if part["word"] == "Addendum" else ""
         return f'{prefix}{part["title"]}'.upper()
@@ -317,10 +318,10 @@ def build_html(meta: dict, parts: list[dict]) -> str:
         </div>
       </section>
       <section class="apparatus">
-        <p class="count">Thirteen officials, six agencies, against one unpaid volunteer who wrote letters.</p>
-        <p>An Oregon State Parks manager and a deputy director. An Oregon State Police press captain. A lieutenant of Criminal Investigations. A Major Crimes detective, a sergeant, and a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force, who pulled in two FBI personnel. A criminal intelligence analyst at the state&rsquo;s Department of Justice fusion center. A federal special agent and a patrol captain. Later a sheriff&rsquo;s deputy.</p>
-        <p>They ran his name through channels built for terrorism, mapped his home using a hunting app, and told his supervisor to say nothing to him. Then they arrived on the anniversary of his dismissal for a &ldquo;knock and talk&rdquo; to tell him he was &ldquo;not in trouble.&rdquo; There was never a crime alleged. They drove sixty-eight minutes to exercise power anyway.</p>
-        <p><a href="{SITE}/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/">Every line of this is in their own file.</a></p>
+        <p class="count">{app['count']}</p>
+        <p>{app['roster']}</p>
+        <p>{app['account']}</p>
+        <p><a href="{SITE}/record/{app['citationThread']}/{app['citationUlid']}/">{app['citation']}</a></p>
       </section>
       <section class="volunteer">
         <svg viewBox="0 0 24 24" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"/></svg>
@@ -330,6 +331,23 @@ def build_html(meta: dict, parts: list[dict]) -> str:
       <section class="contents"><div class="eyebrow">Navigation</div><h2>Contents</h2><ol>{toc}</ol></section>
       {''.join(chapters)}
     </body></html>'''
+
+
+def apparatus() -> dict[str, str]:
+    """The counted apparatus block, read from data/apparatus.ts.
+
+    The index page prints the same block from the same file, so the two
+    cannot drift. Values are single double-quoted strings on one line;
+    see the comment in that file.
+    """
+    source = (ROOT / "data" / "apparatus.ts").read_text()
+    out = {}
+    for key in ("count", "roster", "account", "citation", "citationUlid", "citationThread"):
+        match = re.search(rf'^\s*{key}:\s*"((?:[^"\\]|\\.)*)",?\s*$', source, re.M)
+        if not match:
+            raise SystemExit(f"apparatus.ts: no value for {key}")
+        out[key] = match.group(1).replace('\\"', '"')
+    return out
 
 
 def chapter_signal(word: str) -> str:
