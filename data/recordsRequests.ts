@@ -114,6 +114,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-01", date: "October 1, 2026", event: "Reply: no record was denied; the order’s sentence on elected officials is copied from the Attorney General’s own 2014 order, not from the statute the Legislature wrote" },
             { d: "2026-10-08", date: "October 8, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464(2)(b)" },
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Public Records Advisory Council on the Attorney General's application of ORS 192.427 to fee waiver decisions" },
+            { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Attorney General's office: the October 1 order is not in the public records order collection; a copy of the 2014 order it cites requested" },
         ],
     },
     {
@@ -144,6 +145,12 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
                 date: "September 30, 2026",
                 who: "them",
                 what: "Acknowledge the request: ORS 192.324, five business days from receipt",
+            },
+            {
+                d: "2026-10-14",
+                date: "October 14, 2026",
+                who: "them",
+                what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), ten business days after the September 30 acknowledgment deadline",
             },
         ],
         timeline: [
