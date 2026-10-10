@@ -6981,6 +6981,24 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "One paragraph from 2014", href: "/records/governor/2026-10-09-one-paragraph-from-2014.pdf" }],
             eml: "/records/governor/eml/2026-10-09_0832_one-paragraph-from-2014.eml",
         },
+        {
+            id: "correct-the-date-and-the-description",
+            ulid: "01M4J15MW0MSEVY31020497F6G",
+            date: "October 9, 2026",
+            d: "2026-10-09",
+            time: "9:29 PM",
+            from: "Robert Samuel White",
+            to: "David Pitcher, Oregon Department of Justice; Todd Albert, Public Records Advocate; Cameron D. Miles, Office of the Governor; Governor Kotek",
+            kind: "followup",
+            title: "Correct the date and the description",
+            summary: "The October 1 order appears in the Law Library collection listed under September 24, 2026 and described as \"Requesting that the AG order the Oregon Governor's Office to respond to a public records.\" Asks that the date and the description be corrected.",
+            docs: [
+                { label: "Correct the date and the description", href: "/records/governor/2026-10-09-correct-the-date-and-the-description.pdf" },
+                { label: "Law Library search for \"Sebens\"", href: "/records/governor/attachments/01m4j15mw0msevy31020497f6g-4133.jpg" },
+                { label: "Law Library listings dated September 24, 2026", href: "/records/governor/attachments/01m4j15mw0msevy31020497f6g-4135.jpg" },
+            ],
+            eml: "/records/governor/eml/2026-10-09_2129_correct-the-date-and-the-description.eml",
+        },
     ],
 };
 
