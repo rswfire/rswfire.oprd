@@ -386,7 +386,8 @@ def audit(path: Path, meta: dict, parts: list[dict]) -> tuple[int, int]:
     second_page = flat(texts[1]) if len(texts) > 1 else ""
     # "file" carries an fi ligature that pypdf cannot map back; match on a
     # phrase without one.
-    if "thirteenofficials" not in second_page or "everylineofthis" not in second_page:
+    opening = flat(" ".join(apparatus()["count"].split()[:2]))
+    if opening not in second_page or "everylineofthis" not in second_page:
         problems.append("apparatus page missing from page 2")
     third_page = flat(texts[2]) if len(texts) > 2 else ""
     if "ifthishappenedtoyou" not in third_page or "forvolunteers" not in third_page:
