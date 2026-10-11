@@ -18,7 +18,7 @@
 
 export const APPARATUS = {
     count: "Fifteen officials, seven agencies, against one unpaid volunteer who wrote letters.",
-    roster: "The Director of Oregon State Parks and the Governor of Oregon. An Oregon State Parks manager and a deputy director. An Oregon State Police press captain. A lieutenant of Criminal Investigations. A Major Crimes detective, a sergeant, and a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force, who pulled in two FBI personnel. A criminal intelligence analyst at the state’s Department of Justice fusion center. A federal special agent and a patrol captain. Later a sheriff’s deputy.",
+    roster: "An Oregon State Parks manager and a deputy director. An Oregon State Police press captain. A lieutenant of Criminal Investigations. A Major Crimes detective, a sergeant, and a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force, who pulled in two FBI personnel. A criminal intelligence analyst at the state’s Department of Justice fusion center. A federal special agent and a patrol captain. Later a sheriff’s deputy.",
     account: "They ran his name through channels built for terrorism, mapped his home using a hunting app, and told his supervisor to say nothing to him. Then they arrived on the anniversary of his dismissal for a “knock and talk” to tell him he was “not in trouble.” There was never a crime alleged. They drove sixty-eight minutes to exercise power anyway.",
     silence: "The email that sent his letters to the police gave one reason: “he is now including the Governor as well as our Director.” Neither Governor Kotek nor Director Sumption has written to him since.",
     citation: "Every line of this is in their own file.",
