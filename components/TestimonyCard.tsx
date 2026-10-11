@@ -55,6 +55,7 @@ export default function TestimonyCard() {
                     <p className="font-bold">{APPARATUS.count}</p>
                     <p>{APPARATUS.roster}</p>
                     <p>{APPARATUS.account}</p>
+                    <p>{APPARATUS.silence}</p>
                     <p>
                         <Cite ulid={APPARATUS.citationUlid} thread={APPARATUS.citationThread}>
                             {APPARATUS.citation}

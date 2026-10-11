@@ -321,6 +321,7 @@ def build_html(meta: dict, parts: list[dict]) -> str:
         <p class="count">{app['count']}</p>
         <p>{app['roster']}</p>
         <p>{app['account']}</p>
+        <p>{app['silence']}</p>
         <p><a href="{SITE}/record/{app['citationThread']}/{app['citationUlid']}/">{app['citation']}</a></p>
       </section>
       <section class="volunteer">
@@ -342,7 +343,7 @@ def apparatus() -> dict[str, str]:
     """
     source = (ROOT / "data" / "apparatus.ts").read_text()
     out = {}
-    for key in ("count", "roster", "account", "citation", "citationUlid", "citationThread"):
+    for key in ("count", "roster", "account", "silence", "citation", "citationUlid", "citationThread"):
         match = re.search(rf'^\s*{key}:\s*"((?:[^"\\]|\\.)*)",?\s*$', source, re.M)
         if not match:
             raise SystemExit(f"apparatus.ts: no value for {key}")
