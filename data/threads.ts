@@ -7013,6 +7013,25 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Reply from Todd Albert", href: "/records/governor/2026-10-13-the-advocate-can-take-a-look.pdf" }],
             eml: "/records/governor/eml/2026-10-13_1343_the-advocate-can-take-a-look.eml",
         },
+        {
+            id: "state-of-oregon",
+            ulid: "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+            flagged: true,
+            date: "October 14, 2026",
+            d: "2026-10-14",
+            time: "2:18 PM",
+            from: "Robert Samuel White",
+            to: "Office of the Public Records Advocate; Todd Albert; Yufeng Luo; OPRD Public Records; OPRD Commission; Oregon State Police Central Records; Office of the Governor; Governor Kotek; Oregon Department of Justice, Public Records",
+            kind: "petition",
+            title: "Request for facilitated dispute resolution: State of Oregon",
+            summary: "To the Public Records Advocate under ORS 192.464, with each of the four institutions: OPRD, Oregon State Police, the Office of the Governor, and the Department of Justice. Every request, estimate, denial, and silence since August 22, 2025, in order. Fifteen documents attached.",
+            docs: [
+                { label: "Request for Facilitated Dispute Resolution: State of Oregon", href: "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf" },
+                { label: "Attachments", href: "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate-attachments.pdf" },
+                { label: "Transmittal Email", href: "/records/governor/2026-10-14-state-of-oregon.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-10-14_1418_state-of-oregon.eml",
+        },
     ],
 };
 

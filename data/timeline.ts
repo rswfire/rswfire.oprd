@@ -825,6 +825,19 @@ export const TIMELINE: TimelineSection[] = [
                     ".",
                 ],
             },
+            {
+                d: "2026-10-14", date: "October 14, 2026", major: true,
+                title: "Facilitated dispute resolution requested with the State of Oregon.",
+                body: [
+                    "The Public Records Advocate ",
+                    { doc: "01M4VG3NVGMSVPH7TCES6W2SW8", thread: "governor", t: "writes that his office cannot compel the Governor's office, and asks for the request and the denial" },
+                    ". The Department of Justice ",
+                    { doc: "01M4XTMS38EGWH974M4GQDDG2X", thread: "doj", t: "gives October 28 as its new estimated completion date and answers none of the September 24 questions" },
+                    ". I ",
+                    { doc: "01M4Y4FN8RB5FDFQ1KSDG1E7Z9", thread: "governor", t: "request facilitated dispute resolution under ORS 192.464 with each of the four institutions: OPRD, Oregon State Police, the Office of the Governor, and the Department of Justice" },
+                    ", with every request, estimate, denial, and silence since August 22, 2025, in order, copying every public records officer in the record.",
+                ],
+            },
         ],
     },
 ];
