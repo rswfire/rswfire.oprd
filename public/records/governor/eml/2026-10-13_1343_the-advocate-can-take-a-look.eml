@@ -1,0 +1,426 @@
+Return-Path: <PublicRecordsAdvocate.PRC@pra.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id tgUEERWYzmo5ezQAjtW+MQ
+	(envelope-from <PublicRecordsAdvocate.PRC@pra.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 13 Oct 2026 20:44:05 +0000
+Received: from BL0PR0901CU002.outbound.protection.outlook.com (mail-eastusazon11010010.outbound.protection.outlook.com [52.101.51.10])
+	by mail.rswfire.com (Postfix) with ESMTPS id 078991F39E
+	for <rsw@rswfire.com>; Tue, 13 Oct 2026 20:43:57 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=Ke0xg9RK5lQXRZGzECkZlV7KJ+ETheSHziI+BvyTue0NCk7OgKp0kbhnZ90dCZfn9OyfTkLyvy85o/G2IvIsQkS8hjhBORnSQsKKi5BlKT8ieUfRSadlsuia9SPQh9hOxJJCIP7nu8Sk2X3kGqf15TluyrsX/Hq937Iwb1aT6s1/U62Fofnh3trOKRU5NklsvSNUe/g3tjzKu2U40J9k5tRY1LWCoBhLD9dPpn5kBDNUt73ht8iOMCccqiyDYjcb4mgvQVjo6fjRjOLJs4UNCXSf9q1LtcBX50+OMwqS+h2K7Mk66PAZWzStTbcNUJlFGaLdKxyvX4h8mEvSWEQg3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=+BjW+lt5GztKPX9QFVYt8IB/brxohs1OSeHNAxUTEmE=;
+ b=qXtPx3j+OJR/pTc/qxBx8U8Ng+mnYXWrt5MZvU4TsNe7mbWosuYc0nz/ld1rGW4ON7R4HVvHXM5nI8+xWCoxPdewssuOzKDXRIttAPZqoWP5wYl2ip7kmX02Od1qjIstlTFSs97UEfFToBJ6zdZ3QvrNLOq8Ww9kMs69r4paiqsCSg0y0ZDglrsDimlJ1dwQmBzp6rcYbfxWmExUcFXJPwlAj7K17NF8dfGsZfMWtiYVydMvbpa9mVZTm08mi1LGBNEmc7Gg+8i/fuUYRM8X4yI1rTVid1xxxUou5lhU+trnLrnB8W27dOhTThZYDMze2q/U+kMsEtNY5TUF9i1cLQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=pra.oregon.gov; dmarc=pass action=none
+ header.from=pra.oregon.gov; dkim=pass header.d=pra.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pra.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=+BjW+lt5GztKPX9QFVYt8IB/brxohs1OSeHNAxUTEmE=;
+ b=pFMaC7U6JoQiHTxMzmoUQzKHW8lCmGVVnNvClegc8mVrfzQBTe9LvaRkXkXh0VRN1rCTFlwzwOltnZx/JaRYXNDy/JMI7P62up4QfuiygHY2AkfLIbH3rRz0onHeaE/i885K7uhbON2E9pKjuhlwxWa9dBtTOw5ylqWCcnc/1YtAQfhXg/SqzZJS/CpY3Ys+ZKKehkLEn0l4MgeiLbmouPCxDAWP1D+9ueSW4L1LuqF7EoGb77YQSeukLDa4ACiQbfNdVUUfd7JfBw0Xf8ktTPZrvtjUVy+d1FDKtyaTDQF0X8IhJwyk25W7EM8ahQIYDlW+a+yPrb70HCBe39I6JQ==
+Received: from CO6PR09MB7703.namprd09.prod.outlook.com (2603:10b6:303:ca::17)
+ by SJ0PR09MB9061.namprd09.prod.outlook.com (2603:10b6:a03:46c::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.496.23; Tue, 13 Oct
+ 2026 20:43:50 +0000
+Received: from CO6PR09MB7703.namprd09.prod.outlook.com
+ ([fe80::5ab8:dc7a:4229:3bea]) by CO6PR09MB7703.namprd09.prod.outlook.com
+ ([fe80::5ab8:dc7a:4229:3bea%7]) with mapi id 15.21.0522.012; Tue, 13 Oct 2026
+ 20:43:50 +0000
+From: PRC PublicRecordsAdvocate * PRA
+	<PublicRecordsAdvocate.PRC@pra.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: Request for Facilitated Dispute Resolution: Office of the
+ Governor (request of September 5, 2026)
+Thread-Topic: Request for Facilitated Dispute Resolution: Office of the
+ Governor (request of September 5, 2026)
+Thread-Index: AQHdV5QvERl7+RiLWUCI74JHB3huErb79p/g
+Date: Tue, 13 Oct 2026 20:43:50 +0000
+Message-ID:
+ <CO6PR09MB7703AC90B48F037E6D309F96C09E2@CO6PR09MB7703.namprd09.prod.outlook.com>
+References:
+ <dd304817.AWYAAKnK_xIAAAAAAAAABD-YdowAAYKKucoAAAAAADb2LABqyE5P@mailjet.com>
+In-Reply-To:
+ <dd304817.AWYAAKnK_xIAAAAAAAAABD-YdowAAYKKucoAAAAAADb2LABqyE5P@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=pra.oregon.gov;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CO6PR09MB7703:EE_|SJ0PR09MB9061:EE_
+x-ms-office365-filtering-correlation-id: 84bcc924-9a5a-44e3-831f-08df296aafc1
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|10070799003|366016|1800799024|23010399003|260925021311599003|38070700021|56012099006|260925021911599003|10067099003|18002099003|22082099003|13003099007|260925022911599003|8096899003;
+x-microsoft-antispam-message-info:
+ 86BhryoZaHoQ6Lk64c2rqaJt5Ev/PabXDDgW9FAl0JcIhhj2OvdfZ44PfzIfoSweyBvysZv+35ldM/0szV9WmSciifuPXZoFpsKi13eca4n+afTp4FHjfvdhg2HRc75Jd3Y597Tip8ifd/xZdRUqots8zCgMVF69PnaDrqcFLtjdKOz17ohcN5RgxTTEwfga7G0ymyPDzQmFJZuHqF6m6SVfE6kH6IHVfNSJnPXuhpgU2KemHVFoF6SWYBRYZZjKQoJ7EFGpVPJpF78SVtNEgI38pE3EVN6SLd3O6865E8qgyPXPc1+imqkmhMqh9dpHhtJMY+wgX3cDoLOTFUbIDKtVC5xS+wQJyja3wGgq5vZ7xOMf8apjerfkioBDVFICHzaH7sZVwgCLdht6brcavpAsmO+sIdbcTDMyGbBAj3O5gjLEOrUN04pnGVR08Z4inoU6E8ikdhi7VRqbQqIiLklnSXRzXYbYhGa7/fhnqaNRBmqwkeG6ZqrfMVoNrv4yLZ+ftUT/02vY4sd5e2LUC0KcokkLXfEEt6MEhcyzC1CDiiUAPtU0AUeSs4uX+wMkpzASGk46c0bn/9DKDYKtm4SwZca3KOLZ/lfNvP3+//2OQ14oAVFcE4dqy/Db4xgyVmyNcGMrY0VRyLafj54p6rGNb967acBmI3d8oFVscpY=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB7703.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(10070799003)(366016)(1800799024)(23010399003)(260925021311599003)(38070700021)(56012099006)(260925021911599003)(10067099003)(18002099003)(22082099003)(13003099007)(260925022911599003)(8096899003);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 2
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?pdfD2/QvDO8b6dDCKGKUFLcTSqQIADjWTHxn20YFXdDAHAae4WKp1ReSDv25?=
+ =?us-ascii?Q?04ywq0fE3wJOm9x5glK0MP9wiWFt5VlAr2Arf7P1GpbdlfsWnC2NrAcy70aI?=
+ =?us-ascii?Q?/77Gxbk3gev74334Ju9RIfCHARprJlqvtP/WK3YfyXuWygGblj9NcWyruuoI?=
+ =?us-ascii?Q?xiGaxjAA/0FJMVvlAkhF5uKeRWzCN3uDnZ9SpwrqfkUxYdrBd5aC2u6JvWFl?=
+ =?us-ascii?Q?WCI14zMS8IROFS5H7LWLzRQEEilM4Ma5D9w4ZBRM9MAQwpCx8VOs9CL2bDAA?=
+ =?us-ascii?Q?ydvsBKuaPtS3tQErSAoxJsdmR3wQt7LbM7rVV/4mdh9z2YI9MGd/G4pMJFhW?=
+ =?us-ascii?Q?Ye9fxEJGkIOtfQMhRXqai+5DO8WYbApsxeu450ZhIa+jVfth9k7Wjz5BAkr9?=
+ =?us-ascii?Q?98we5mzMpOWZ30iz7ipUDkHRGGQkS+0Ufu96GvbqpGNFtGAU7GijUyVFf1Pr?=
+ =?us-ascii?Q?PzhlEZwOO3r2uJGag9qw+lRp8FSHPT9ZnKm9Fft0fCo9KB0gC+NpiSWbiXHS?=
+ =?us-ascii?Q?1vQDeCq0R8+BhJRvI0DrA3HKUadDmgxIGyFLocRb8Os0SNSjyimCjYvsKi4Z?=
+ =?us-ascii?Q?pIqDHqM+xoIOW+pCKd30fJ4B4IW6u4V0H4SD3UEcmXNH5zrEHEN70W2rV2pD?=
+ =?us-ascii?Q?9UUW1Abou7PfKVkgW+8t19W/vDrb8FqAPue4lzU2j4JKNlJIV/OYGXaADW3h?=
+ =?us-ascii?Q?yBltaRJ+SsGHfXFd5snWhgAXJ8VasWaWCHprVezrKfcqFvlnZGqt5688qjvz?=
+ =?us-ascii?Q?KF0zxq/n+4peY7CG3Z2O3OF1Jc7/asLPnD770obGAl2VnzKbrXtF8Jhbw3UT?=
+ =?us-ascii?Q?2/oSK0VIUcQwnlHC25IiGdXjgaW1jXCQb1HMnjg0EQnmq+uqqReVkSEvwta9?=
+ =?us-ascii?Q?cHANnrpEfL/e1FlQD0ZoO5dKbXatW91SadoRpZI/sEaeHTDQyQeLrtvpak8g?=
+ =?us-ascii?Q?hziLbnek7FNM/coKDuzqrTMZm+bWJOZn9uSzDd5bvBJvjtcpGSIeUG0dKLyR?=
+ =?us-ascii?Q?ZHkx4fa3ooaTi16KMgecEg/xcYmw+1RbtBqSwZRTx6i6OG+gnL356H9HM/xq?=
+ =?us-ascii?Q?vZnnOAYBgXK5frGNdMueuXA33FW3thqbAUthIsp3zefbKz4IFM39pc3I4ld/?=
+ =?us-ascii?Q?GpRpG0n3GUSF6X89kQ3EO5Fj9Xr9+voYV/kIG9bgw1kjgQ+FwOa9GIRHALSN?=
+ =?us-ascii?Q?icHStUWab8FWppsN/7MCYeI4CkQjvugnq9ozy8cCecG8jr5T7W0du3C1aDal?=
+ =?us-ascii?Q?9sQkBvDhXj5GQBdcdFBWiXLfOpzOWACXOemQyTX6kkP+y4FErDQQ8Ra7P0pJ?=
+ =?us-ascii?Q?AX2dcACQCxaHMFXGQfX+I3IIt3zNM1r4e+RXlF+qsoBOuYP/T+zNM5GPiZDJ?=
+ =?us-ascii?Q?lMIjir5elnBzL5gEg6diTaE89NnErgod5J0ixAZFRDzrpu/DyzWWQ+VcHEux?=
+ =?us-ascii?Q?DF762kj7+yCWuskQTRhMi9Ar+4YThbbhFo9g6Dwihkw7JMdrhx8Ir3knqcAP?=
+ =?us-ascii?Q?OTopVd1a/Y4Xq9upwCO0pvgHRO4hRw26M6u1QdGpi42v40qypw4YNWVdGGQK?=
+ =?us-ascii?Q?MOHKf/zzqi/kOhkWUKsfya/gnbg0K3wvHQDXWayaOSk+ZuDvvSAQefo0clyE?=
+ =?us-ascii?Q?19kSnAbFzvGO3WYBcPHmn5e3UnLdc2GVyYM7IzUCFDlGN1vXCQXkRirXCHAw?=
+ =?us-ascii?Q?DuQLxIH64iZWqB3f7sztJFdV8JvnmUQL+i8pPMNi1XK01NLzBKGnfUDMPaTu?=
+ =?us-ascii?Q?9eTxDRIA7F+EHIPTXt1WppuPchL11rxIDfJpUct16M+WLh9kb5Dhx9G+2E5N?=
+x-ms-exchange-antispam-messagedata-1: hKQVH+M6NdJJXquvWiCcsaUwmOq2GR/LbqU=
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB7703AC90B48F037E6D309F96C09E2CO6PR09MB7703namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: pra.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CO6PR09MB7703.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 84bcc924-9a5a-44e3-831f-08df296aafc1
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Oct 2026 20:43:50.0691
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB9061
+X-Spamd-Result: default: False [0.75 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[pra.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_DNSFAIL(0.00)[temporary DNS error];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[11];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 MANY_INVISIBLE_PARTS(0.05)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[pra.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[oregon.gov,quarantine];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1];
+	 HFILTER_FROMHOST_NORES_A_OR_MX(1.50)[pra.oregon.gov]
+X-Spam-Status: No, score=0.75
+
+--_000_CO6PR09MB7703AC90B48F037E6D309F96C09E2CO6PR09MB7703namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Mr. White,
+
+Because of the way the public records law is written, the Oregon Attorney G=
+eneral does not have the authority to adjudicate appeals related to actions=
+ taken by an elected state official, including the governor. Those matters =
+may only be appealed to the circuit court.
+
+Our office also does not have the authority to compel the governor's office=
+ to take action. We can, however, provide guidance and advice on the applic=
+ation of the public records law to individual requests.
+
+I can take a look at the matter and share my thoughts with you on them. If =
+the situation calls for it, I can share them with the governor's office as =
+well.
+
+To begin, please provide me with a copy of your request, including wherever=
+ you made your public interest fee waiver argument, and the response from t=
+he governor's office denying the request.
+
+Thanks,
+
+Todd
+
+Todd Albert
+Public Records Advocate
+Office of the Public Records Advocate
+mobile: (503) 871-9036
+www.oregon.gov/pra<http://www.oregon.gov/pra>
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Thursday, October 8, 2026 7:16 PM
+To: PRC PublicRecordsAdvocate * PRA <PublicRecordsAdvocate.PRC@pra.oregon.g=
+ov>
+Cc: ALBERT Todd * PRA <Todd.ALBERT@PRA.oregon.gov>; LUO Yufeng * PRA <Yufen=
+g.LUO@pra.oregon.gov>; PUBLICCOMMENT Oprc * OPRD <oprc.publiccomment@oprd.o=
+regon.gov>; Governor Kotek * GOV <governor.kotek@oregon.gov>; MILES Cameron=
+ D * GOV <cameron.d.miles@oregon.gov>; publicrecordsorder@doj.oregon.gov; P=
+hyllis Nelson <phyllis.nelson@doj.oregon.gov>
+Subject: Request for Facilitated Dispute Resolution: Office of the Governor=
+ (request of September 5, 2026)
+
+You don't often get email from rsw@rswfire.com<mailto:rsw@rswfire.com>. Lea=
+rn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+Mr. Albert:
+
+Please find my attached request for facilitated dispute resolution under OR=
+S 192.464(2)(b). It concerns the Office of the Governor's denial of my fee =
+waiver on September 22, 2026.
+
+--
+Robert Samuel White
+Post Office Box 334, Reedsport, Oregon, 97467
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+--_000_CO6PR09MB7703AC90B48F037E6D309F96C09E2CO6PR09MB7703namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:wf_segoe-ui_normal;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Mr. White,<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Because of the way =
+the public records law is written, the Oregon Attorney General does not hav=
+e the authority to adjudicate appeals related to actions taken by an electe=
+d state official, including the governor.
+ Those matters may only be appealed to the circuit court.<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Our office also doe=
+s not have the authority to compel the governor&#8217;s office to take acti=
+on. We can, however, provide guidance and advice on the application of the =
+public records law to individual requests.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I can take a look a=
+t the matter and share my thoughts with you on them. If the situation calls=
+ for it, I can share them with the governor&#8217;s office as well.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">To begin, please pr=
+ovide me with a copy of your request, including wherever you made your publ=
+ic interest fee waiver argument, and the response from the governor&#8217;s=
+ office denying the request.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thanks,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Todd<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:6.0pt"><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif">Todd Albert</span><span style=3D"fo=
+nt-size:11.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:6.0pt"><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif">Public Records Advocate</span><span=
+ style=3D"font-size:11.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:6.0pt"><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif">Office of the Public Records Advoca=
+te</span><span style=3D"font-size:11.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:6.0pt"><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif">mobile: (503) 871-9036<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:6.0pt"><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;,serif"><a href=3D"http://www.oregon.gov/pr=
+a">www.oregon.gov/pra</a>
+</span><span style=3D"font-size:11.0pt"><o:p></o:p></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Thursday, October 8, 2026 7:16 PM<br>
+<b>To:</b> PRC PublicRecordsAdvocate * PRA &lt;PublicRecordsAdvocate.PRC@pr=
+a.oregon.gov&gt;<br>
+<b>Cc:</b> ALBERT Todd * PRA &lt;Todd.ALBERT@PRA.oregon.gov&gt;; LUO Yufeng=
+ * PRA &lt;Yufeng.LUO@pra.oregon.gov&gt;; PUBLICCOMMENT Oprc * OPRD &lt;opr=
+c.publiccomment@oprd.oregon.gov&gt;; Governor Kotek * GOV &lt;governor.kote=
+k@oregon.gov&gt;; MILES Cameron D * GOV &lt;cameron.d.miles@oregon.gov&gt;;
+ publicrecordsorder@doj.oregon.gov; Phyllis Nelson &lt;phyllis.nelson@doj.o=
+regon.gov&gt;<br>
+<b>Subject:</b> Request for Facilitated Dispute Resolution: Office of the G=
+overnor (request of September 5, 2026)<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;visibility:revert !important;white-space:revert !important;width=
+:revert !important;word-break:revert !important;word-spacing:revert !import=
+ant;writing-mode:revert !important;zoom: revert !important">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;wf_segoe-ui_normal&quot;,s=
+erif;color:#212121">You don't often get email from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;visibility:revert !important;white-space:revert !important;width:r=
+evert !important;word-break:revert !important;word-spacing:revert !importan=
+t;writing-mode:revert !important;zoom: revert !important;align: left !impor=
+tant">
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"color:#1A1A1A">Mr. Albert:</span><spa=
+n style=3D"color:black"><br>
+<br>
+</span><span style=3D"color:#1A1A1A">Please find my attached request for fa=
+cilitated dispute resolution under ORS 192.464(2)(b). It concerns the Offic=
+e of the Governor's denial of my fee waiver on September 22, 2026.</span><s=
+pan style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">--<br>
+<b>Robert Samuel White</b><br>
+Post Office Box 334, Reedsport, Oregon, 97467<br>
+</span><span style=3D"color:#C82613"><a href=3D"https://rswfire.com/" targe=
+t=3D"_blank" title=3D"https://rswfire.com"><span style=3D"color:#C82613">rs=
+wfire.com</span></a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C882A"><a href=3D"https://oprdvolunteerabuse.=
+org/" target=3D"_blank" title=3D"https://oprdvolunteerabuse.org"><span styl=
+e=3D"color:#0C882A">oprdvolunteerabuse.org</span></a></span><span style=3D"=
+color:black"><br>
+</span><span style=3D"color:#0C64C0"><a href=3D"https://autonomyrealms.com/=
+" target=3D"_blank" title=3D"https://autonomyrealms.com"><span style=3D"col=
+or:#0C64C0">autonomyrealms.com</span></a></span><o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB7703AC90B48F037E6D309F96C09E2CO6PR09MB7703namp_--

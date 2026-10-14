@@ -115,6 +115,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-08", date: "October 8, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464(2)(b)" },
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Public Records Advisory Council on the Attorney General's application of ORS 192.427 to fee waiver decisions" },
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Attorney General's office: the October 1 order is not in the public records order collection; a copy of the 2014 order it cites requested" },
+            { d: "2026-10-13", date: "October 13, 2026", event: "The Public Records Advocate replies: his office cannot compel the Governor's office; he can review the matter and share his thoughts, with the Governor's office \u201cif the situation calls for it\u201d; he asks for the request, the fee waiver argument, and the denial" },
         ],
     },
     {

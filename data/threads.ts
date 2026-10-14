@@ -6999,6 +6999,20 @@ export const OSP_THREAD: RecordsThreadData = {
             ],
             eml: "/records/governor/eml/2026-10-09_2129_correct-the-date-and-the-description.eml",
         },
+        {
+            id: "the-advocate-can-take-a-look",
+            ulid: "01M4VG3NVGMSVPH7TCES6W2SW8",
+            date: "October 13, 2026",
+            d: "2026-10-13",
+            time: "1:43 PM",
+            from: "Todd Albert, Public Records Advocate",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The Advocate: \"I can take a look at the matter\"",
+            summary: "Todd Albert writes that his office \"does not have the authority to compel the governor's office to take action\" and can \"provide guidance and advice.\" He asks for the request, the fee waiver argument, and the denial.",
+            docs: [{ label: "Reply from Todd Albert", href: "/records/governor/2026-10-13-the-advocate-can-take-a-look.pdf" }],
+            eml: "/records/governor/eml/2026-10-13_1343_the-advocate-can-take-a-look.eml",
+        },
     ],
 };
 
