@@ -7076,6 +7076,20 @@ export const DOJ_THREAD: RecordsThreadData = {
             docs: [{ label: "Which categories carry the burden", href: "/records/doj/2026-09-24-what-makes-it-broad.pdf" }],
             eml: "/records/doj/eml/2026-09-24_1534_what-makes-it-broad.eml",
         },
+        {
+            id: "additional-time-october-28",
+            ulid: "01M4XTMS38EGWH974M4GQDDG2X",
+            date: "October 14, 2026",
+            d: "2026-10-14",
+            time: "11:26 AM",
+            from: "Shevaun M. Gutridge, Oregon Department of Justice",
+            to: "Robert Samuel White",
+            kind: "response",
+            title: "The estimated completion date is October 28, 2026",
+            summary: "Shevaun M. Gutridge writes that the institution needs \"additional time to process your request\" and gives October 28, 2026 as the new estimated completion date. The questions of September 24 and the fee estimate are not addressed.",
+            docs: [{ label: "Email from Shevaun M. Gutridge", href: "/records/doj/2026-10-14-additional-time-october-28.pdf" }],
+            eml: "/records/doj/eml/2026-10-14_1126_additional-time-october-28.eml",
+        },
     ],
 };
 

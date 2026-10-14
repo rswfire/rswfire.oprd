@@ -137,6 +137,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         ],
         claims: [
             "September 24, 2026: the request is “very broad in scope” and “will likely require significant agency resources to process, resulting in a fee that will be costly given the scope of the request”; narrowing is invited, and a fee estimate offered if he proceeds as submitted.",
+            "October 14, 2026: “It appears that we need additional time to process your request. The new estimated completion date is October 28, 2026.”",
         ],
         withheld: [],
         produced: [],
@@ -153,11 +154,18 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
                 who: "them",
                 what: "Complete the request or provide a written estimated completion date: ORS 192.329(5), ten business days after the September 30 acknowledgment deadline",
             },
+            {
+                d: "2026-10-28",
+                date: "October 28, 2026",
+                who: "them",
+                what: "The estimated completion date given October 14, 2026",
+            },
         ],
         timeline: [
             { d: "2026-09-23", date: "September 23, 2026", event: "Request filed: nine categories, fee waiver, litigation hold under claim P195403, testimony v1.10 attached" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Acknowledged and called “very broad in scope”; narrowing invited, fee estimate offered" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Reply: which of the nine categories carry the burden, and how a request bounded by one person becomes very broad; fee estimate requested" },
+            { d: "2026-10-14", date: "October 14, 2026", event: "Status update: \u201cadditional time\u201d needed; new estimated completion date October 28, 2026. The September 24 questions and the fee estimate are not addressed" },
         ],
     },
     {
