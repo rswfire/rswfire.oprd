@@ -116,6 +116,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Public Records Advisory Council on the Attorney General's application of ORS 192.427 to fee waiver decisions" },
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Attorney General's office: the October 1 order is not in the public records order collection; a copy of the 2014 order it cites requested" },
             { d: "2026-10-13", date: "October 13, 2026", event: "The Public Records Advocate replies: his office cannot compel the Governor's office; he can review the matter and share his thoughts, with the Governor's office \u201cif the situation calls for it\u201d; he asks for the request, the fee waiver argument, and the denial" },
+            { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
         ],
     },
     {
@@ -166,6 +167,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-24", date: "September 24, 2026", event: "Acknowledged and called “very broad in scope”; narrowing invited, fee estimate offered" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Reply: which of the nine categories carry the burden, and how a request bounded by one person becomes very broad; fee estimate requested" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Status update: \u201cadditional time\u201d needed; new estimated completion date October 28, 2026. The September 24 questions and the fee estimate are not addressed" },
+            { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
         ],
     },
     {
@@ -305,6 +307,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-24", date: "September 24, 2026", event: "Letter: September 3 was the closest thing to integrity, and what was withheld is where the characterizations live" },
             { d: "2026-09-28", date: "September 28, 2026", event: "Exemptions letter, after the September 25 deadline: ORS 192.345(23) for the Hasty Form, ORS 192.355 for the DMV record and ReportRobertWhite, ORS 192.345(40) for the body-worn camera video; “We do not have call logs. We did not locate any recorded phone calls.”" },
             { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to Hubbard: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
+            { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
         ],
     },
     {
@@ -387,6 +390,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-18", date: "September 18, 2026", event: "Both estimates arrive eight minutes apart: $1,600 to $1,728 on the September 5 request, $80 on the September 11 request. Neither answers the fee waiver" },
             { d: "2026-09-18", date: "September 18, 2026", event: "Both disputed the same hour: he will not pay, will not narrow, and will not petition the Attorney General. Next step is a suit to compel under ORS 192.415" },
             { d: "2026-09-11", date: "September 11, 2026", event: "New request: every version and revision of the Timeline of Events document and of every source it cites, the version logs, and every email that transmitted any version" },
+            { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
         ],
     },
 ];
