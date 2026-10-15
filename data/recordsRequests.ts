@@ -123,7 +123,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "doj",
         agency: "Oregon Department of Justice",
         refs: "Request of September 23, 2026",
-        status: "Scope questioned.",
+        status: "Fee waiver denied.",
         officers: [],
         asked: [
             "All records concerning him in any division or function, including the Criminal Justice Division and the Oregon TITAN Fusion Center",
@@ -139,6 +139,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         claims: [
             "September 24, 2026: the request is “very broad in scope” and “will likely require significant agency resources to process, resulting in a fee that will be costly given the scope of the request”; narrowing is invited, and a fee estimate offered if he proceeds as submitted.",
             "October 14, 2026: “It appears that we need additional time to process your request. The new estimated completion date is October 28, 2026.”",
+            "October 15, 2026: the fee waiver is denied; “We have conducted a preliminary electronic search and identified 1,350 potentially responsive records”; the estimate to review and produce them is $599: 13 hours of managerial time at $40 per hour and 1 hour of paralegal time at $79.00 per hour, by check or money order.",
         ],
         withheld: [],
         produced: [],
@@ -168,6 +169,8 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-24", date: "September 24, 2026", event: "Reply: which of the nine categories carry the burden, and how a request bounded by one person becomes very broad; fee estimate requested" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Status update: \u201cadditional time\u201d needed; new estimated completion date October 28, 2026. The September 24 questions and the fee estimate are not addressed" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
+            { d: "2026-10-15", date: "October 15, 2026", event: "Fee waiver denied; fee estimated at $599 for 1,350 potentially responsive records, by check or money order. The September 24 questions are not addressed" },
+            { d: "2026-10-15", date: "October 15, 2026", event: "The denial and the estimate forwarded to the Public Records Advocate" },
         ],
     },
     {

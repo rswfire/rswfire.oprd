@@ -838,6 +838,16 @@ export const TIMELINE: TimelineSection[] = [
                     ", with every request, estimate, denial, and silence since August 22, 2025, in order, copying every public records officer in the record.",
                 ],
             },
+            {
+                d: "2026-10-15", date: "October 15, 2026",
+                body: [
+                    "The Department of Justice ",
+                    { doc: "01M50S7NEG8CQV2R6TF6Y6BKXZ", thread: "doj", t: "denies the fee waiver and estimates $599 for 1,350 potentially responsive records" },
+                    ". I ",
+                    { doc: "01M50TFTKGHEE611CM0W7WBJB8", thread: "doj", t: "forward it to the Public Records Advocate" },
+                    ".",
+                ],
+            },
         ],
     },
 ];
