@@ -123,7 +123,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         slug: "doj",
         agency: "Oregon Department of Justice",
         refs: "Request of September 23, 2026",
-        status: "Fee waiver denied.",
+        status: "Fee waiver denied. Disputed.",
         officers: [],
         asked: [
             "All records concerning him in any division or function, including the Criminal Justice Division and the Oregon TITAN Fusion Center",
@@ -171,6 +171,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
             { d: "2026-10-15", date: "October 15, 2026", event: "Fee waiver denied; fee estimated at $599 for 1,350 potentially responsive records, by check or money order. The September 24 questions are not addressed" },
             { d: "2026-10-15", date: "October 15, 2026", event: "The denial and the estimate forwarded to the Public Records Advocate" },
+            { d: "2026-10-15", date: "October 15, 2026", event: "Response to the denial: one of five waiver grounds addressed, no reduction considered; a decision on all five, a decision on a reduction, the September 24 questions, and a breakdown of the 1,350 records demanded under ORS 192.324(5)" },
         ],
     },
     {

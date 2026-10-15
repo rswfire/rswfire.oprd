@@ -7138,6 +7138,24 @@ export const DOJ_THREAD: RecordsThreadData = {
             docs: [{ label: "Forwarded to the Public Records Advocate", href: "/records/doj/2026-10-15-forwarded-to-the-advocate.pdf" }],
             eml: "/records/doj/eml/2026-10-15_1521_forwarded-to-the-advocate.eml",
         },
+        {
+            id: "response-to-the-fee-waiver-denial",
+            ulid: "01M50VW1MR9QZF4C6CE021FEZ6",
+            flagged: true,
+            date: "October 15, 2026",
+            d: "2026-10-15",
+            time: "3:45 PM",
+            from: "Robert Samuel White",
+            to: "David Pitcher, Oregon Department of Justice; Phyllis Nelson, Oregon Department of Justice; Shevaun M. Gutridge, Oregon Department of Justice; Office of the Public Records Advocate; Todd Albert; Governor Kotek",
+            kind: "followup",
+            title: "Response to the fee waiver denial of October 15, 2026",
+            summary: "The denial addresses one of the five waiver grounds stated in the request and considers no reduction. Four demands under ORS 192.324(5): a decision on all five, a decision on a reduction, the two September 24 questions answered, and the 1,350 records broken down by category and division.",
+            docs: [
+                { label: "Response to the Fee Waiver Denial of October 15, 2026", href: "/records/doj/attachments/01m50vw1mr9qzf4c6ce021fez6-2026-10-15-department-of-justice.pdf" },
+                { label: "Transmittal Email", href: "/records/doj/2026-10-15-response-to-the-fee-waiver-denial.pdf" },
+            ],
+            eml: "/records/doj/eml/2026-10-15_1545_response-to-the-fee-waiver-denial.eml",
+        },
     ],
 };
 
