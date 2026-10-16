@@ -114,7 +114,7 @@ export default function TestimonyCard() {
                         is the only account, and there is no mechanism by which it can be questioned.
                     </p>
                     <p>
-                        <Link href="/volunteers" className={`whitespace-nowrap ${SEAT_LINK}`}>
+                        <Link href="/volunteers" className="whitespace-nowrap text-red-700 underline decoration-red-300 underline-offset-2 hover:text-red-800 hover:decoration-red-500">
                             <Icon name="Shield" className="mr-1 inline-block -mt-1 text-red-700" size={16} strokeWidth={2} aria-hidden />
                             Volunteers
                         </Link>{" "}
