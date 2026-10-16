@@ -5334,6 +5334,20 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M4VG3NVGMSVPH7TCES6W2SW8",
                 "t": "governor"
             }
+        },
+        {
+            "d": "2026-10-16",
+            "when": "October 16, 2026",
+            "text": "White sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page.",
+            "src": {
+                "u": "01M521DD08FR8RXZSAB8XZHECK",
+                "t": "governor"
+            },
+            "att": {
+                "label": "Key Individuals",
+                "href": "/records/governor/2026-10-16-key-individuals.pdf",
+                "from": "Robert Samuel White"
+            }
         }
     ]
 };
