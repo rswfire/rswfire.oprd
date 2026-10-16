@@ -5065,15 +5065,6 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-07-30",
-            "when": "July 30, 2026",
-            "text": "Asked what document the order’s exemption statement rests on, DOJ Public Records replies: “The reference to the body camera exemption comes from the exhibits attached to your petition.  Specifically, page 20/89”. On good faith: “Pursuant to statute, if a public body requests clarification ‘in good faith’ that suspends the processing deadlines.”",
-            "src": {
-                "u": "01KYSZQ430YWS431STFM7QVWAD",
-                "t": "osp"
-            }
-        },
-        {
             "d": "2026-09-24",
             "when": "September 24, 2026",
             "text": "DOJ Public Records acknowledges the petition concerning the Governor’s office: “Orders either granting or denying a petition are generally issued within seven days and will be sent to you and the agency.”",
@@ -5098,24 +5089,6 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3ARW6JRNP6YE36HCJ5A6CAC",
                 "t": "doj"
-            }
-        },
-        {
-            "d": "2026-10-09",
-            "when": "October 9, 2026",
-            "text": "Asked why the October 1 order was not in the public records order collection and for a copy of the 2014 order it cites, DOJ Public Records replies that the 2014 order is in the Law Library collection and: “The October 1 order on your petition will be published.  We submit orders to the library in batches every couple of weeks.”",
-            "src": {
-                "u": "01M4GJ3SC0KRKXY18MBW7WXRTW",
-                "t": "governor"
-            }
-        },
-        {
-            "d": "2026-10-09",
-            "when": "October 9, 2026",
-            "text": "Asked that evening to correct the Law Library listing of the October 1 order, which gives the date of the first order and describes it as “Requesting that the AG order the Oregon Governor’s Office to respond to a public records.” No reply as of October 15.",
-            "src": {
-                "u": "01M4J15MW0MSEVY31020497F6G",
-                "t": "governor"
             }
         },
         {
@@ -5342,6 +5315,53 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M521DD08FR8RXZSAB8XZHECK",
                 "t": "governor"
+            }
+        }
+    ],
+    "public-records-counsel": [
+        {
+            "d": "2026-07-30",
+            "when": "July 30, 2026",
+            "text": "On the order deciding the state police petition, DOJ File No. 257001-GA0140-26, David Pitcher writes that its body camera reference “comes from the exhibits attached to your petition. Specifically, page 20/89”. Of the order’s “good faith”: “Pursuant to statute, if a public body requests clarification ‘in good faith’ that suspends the processing deadlines.”",
+            "src": {
+                "u": "01KYSZQ430YWS431STFM7QVWAD",
+                "t": "osp"
+            }
+        },
+        {
+            "d": "2026-10-09",
+            "when": "October 9, 2026",
+            "text": "On the order deciding the Governor’s office petition, DOJ File No. 121010-GA0187-26, asked why it was not in the public records order collection and for the 2014 order it cites, David Pitcher writes that the 2014 order is in the Law Library collection and: “The October 1 order on your petition will be published. We submit orders to the library in batches every couple of weeks.”",
+            "src": {
+                "u": "01M4GJ3SC0KRKXY18MBW7WXRTW",
+                "t": "governor"
+            }
+        },
+        {
+            "d": "2026-10-09",
+            "when": "October 9, 2026",
+            "text": "Asked that evening to correct the Law Library listing of the October 1 order, which gives the date of the first order and describes it as “Requesting that the AG order the Oregon Governor’s Office to respond to a public records.” No reply as of October 15.",
+            "src": {
+                "u": "01M4J15MW0MSEVY31020497F6G",
+                "t": "governor"
+            }
+        },
+        {
+            "d": "2026-10-15",
+            "when": "October 15, 2026",
+            "text": "On the volunteer’s request for his department’s own records, David Pitcher denies the fee waiver: “While there is always a public interest in oversight of how a public body conducts its business, the records you seek pertain primarily to you and your private interests.  We have already spent more than one hour of staff time searching for responsive records.  Given the burden on our agency, we do not believe it would be reasonable to provide any additional waiver of our fees.”",
+            "src": {
+                "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
+                "t": "doj"
+            }
+        },
+        {
+            "d": "2026-10-15",
+            "when": "October 15, 2026",
+            "text": "In the same letter David Pitcher reports “1,350 potentially responsive records” and an estimate of “$599; this is based on the following breakdown: 13 hours of managerial time billed at $40 per hour and 1 hour of paralegal time billed at $79.00 per hour.” Payment by check or money order only: “we do not accept credit cards or digital/electronic forms of payment.”",
+            "src": {
+                "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
+                "t": "doj"
             }
         }
     ]

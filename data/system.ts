@@ -285,6 +285,16 @@ const RECORDS: Branch = {
             docs: [],
         },
         {
+            id: "public-records-counsel",
+            name: "David Pitcher",
+            title: "Senior Assistant Attorney General; Public Records Counsel",
+            inst: "Department of Justice",
+            note: { text: "His title, in his own signature: “Senior Assistant Attorney General | Public Records Counsel | General Counsel Division.”", src: { href: "https://www.doj.state.or.us/wp-content/uploads/2026/05/OSC_2026-05-20_Meeting_Agenda.pdf" } },
+            fn: "Public records counsel for the Department of Justice, in its General Counsel Division.",
+            real: "Answers for the Attorney General’s orders on the volunteer’s petitions, and denies the fee waiver on the volunteer’s request for his own department’s records about him.",
+            docs: [],
+        },
+        {
             id: "deputy-attorney-general",
             name: "Benjamin Gutman",
             title: "Deputy Attorney General",
