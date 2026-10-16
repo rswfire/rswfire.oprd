@@ -36,7 +36,7 @@ export interface Act {
 // ── The structure ────────────────────────────────────────────────────────────
 
 export interface Seat {
-    /** An office, not a person: the card shows a newspaper and calls its role the agency's. */
+    /** A public records office, not a person: the card shows a newspaper and calls its role the agency's. */
     office?: boolean;
     id: string;
     title: string;
@@ -238,7 +238,6 @@ const RECORDS: Branch = {
         },
         {
             id: "osp-risk",
-            office: true,
             title: "Risk Management",
             inst: "Oregon State Police",
             fn: "Preserves the records when a claim is coming.",
