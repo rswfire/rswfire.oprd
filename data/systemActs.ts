@@ -5342,11 +5342,6 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M521DD08FR8RXZSAB8XZHECK",
                 "t": "governor"
-            },
-            "att": {
-                "label": "Key Individuals",
-                "href": "/records/governor/2026-10-16-key-individuals.pdf",
-                "from": "Robert Samuel White"
             }
         }
     ]
