@@ -223,7 +223,10 @@ export default function Header() {
                             <VolunteerShield />
                                             <NewsletterSignup />
                             <Tracker />
-                            <HostedOnGithub />
+                            {/* The pair wraps inside the narrow column and sits left; shifted as a set to center under the cards. */}
+                            <div className="translate-x-5">
+                                <HostedOnGithub />
+                            </div>
                         </div>
                     </nav>
                 )}
