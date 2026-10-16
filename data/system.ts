@@ -484,7 +484,7 @@ export const RUNGS: Rung[] = [
                 id: "lead",
                 title: "Volunteer Services Lead",
                 fn: "The volunteer’s supervisor. The one a volunteer confides in, and their advocate inside the park.",
-                real: "Makes the volunteer’s sexuality the agency’s explanation for his complaints. He traded on his own youth and attractiveness and on the bond between them, carried what the volunteer told him to management, and the volunteer’s complaints came back as feelings for his male supervisor.",
+                real: "Serves as the agency’s lure. He traded on his youth, his attractiveness and the bond between them, and carried what the volunteer told him to management.",
                 docs: [
                     { who: "Park manager", when: "March 5, 2025", text: "“it’s not the volunteer services lead doing a dismissal. It’s the park supervisor or myself.”", src: { href: "/evidence/coercion/?t=29:52" } },
                     { who: "His letter to the volunteer services lead", when: "December 9, 2025", text: "“You took what I shared in confidence and disclosed it to management.”", src: { u: "01KC32EJP8NEFBWH0YGJKV3A4S" } },
