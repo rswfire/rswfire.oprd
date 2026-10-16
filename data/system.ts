@@ -290,7 +290,7 @@ const RECORDS: Branch = {
             title: "Public Records Counsel",
             inst: "Department of Justice",
             fn: "Holds the Department of Justice to the public records law. Supports the Oregon Sunshine Committee, whose work is to enhance transparency and speed the fulfillment of records requests.",
-            real: "Works both sides of the volunteer’s dispute. He answered for the Attorney General’s orders on the volunteer’s petitions, then denied the fee waiver on the volunteer’s request for his own department’s file on him: $599.",
+            real: "Guards his department’s file on the volunteer from both sides of the records law. He answered for the Attorney General’s orders on the volunteer’s petitions, then denied the fee waiver on the volunteer’s request for that file: $599.",
             docs: [],
         },
         {
