@@ -33,7 +33,7 @@ export default function NewsletterSignup() {
             <div className="border-b border-slate-200 bg-emerald-50 px-4 py-2.5">
                 <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Follow the Record</h2>
             </div>
-            <div className="p-5">
+            <div className="p-4">
                 <div className="text-center text-sm text-gray-600">
                     Occasional email updates when this archive gains a significant record.
                 </div>
