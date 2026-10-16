@@ -75,7 +75,7 @@ export default function TestimonyCard() {
                     because the scale does the work. The text is in
                     data/apparatus.ts because page 2 of the testimony PDF
                     prints the same block and cannot see this file. */}
-                <div className="mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 lg:mx-10">
+                <div className="mt-7 space-y-3 text-[13px] italic leading-loose text-gray-600 sm:leading-relaxed lg:mx-10">
                     <p className="font-bold">{APPARATUS.count}</p>
                     <p>{withSeats(APPARATUS.roster)}</p>
                     <p>{APPARATUS.account}</p>
