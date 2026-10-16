@@ -223,16 +223,6 @@ export default function Header() {
                             <VolunteerShield />
                                             <NewsletterSignup />
                             <Tracker />
-                        </div>
-                        {/* Outside the capped column, so the two links sit on one line, centered under the cards. */}
-                        <div
-                            className="mt-3"
-                            onClick={(e) => {
-                                if ((e.target as HTMLElement).closest("a")) {
-                                    setMobileMenuOpen(false);
-                                }
-                            }}
-                        >
                             <HostedOnGithub />
                         </div>
                     </nav>
