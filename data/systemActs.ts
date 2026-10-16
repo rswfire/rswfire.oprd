@@ -1808,7 +1808,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-08-25",
             "when": "August 25, 2025",
-            "text": "Answered White’s open letter: “While I cannot respond here to the specific claims you have outlined”, and that his concerns would be “reviewed through the appropriate channels within the department.”",
+            "text": "Answered the volunteer’s open letter: “While I cannot respond here to the specific claims you have outlined”, and that his concerns would be “reviewed through the appropriate channels within the department.”",
             "src": {
                 "u": "01K3HPAXBG8F4QZG4DJNDY5QY8",
                 "t": "oprd"
@@ -1837,7 +1837,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-12-08",
             "when": "December 8, 2025",
-            "text": "Answered White’s letter of December 7: “we’ve reached a point where I don’t believe further correspondence will lead to the resolution you’re seeking. While I respect your perspective, I must focus on the responsibilities I carry today and the work ahead for the organization and its people.”",
+            "text": "Answered the volunteer’s letter of December 7: “we’ve reached a point where I don’t believe further correspondence will lead to the resolution you’re seeking. While I respect your perspective, I must focus on the responsibilities I carry today and the work ahead for the organization and its people.”",
             "src": {
                 "u": "01KBZ9S95G2W5B44TTGT6HA69N",
                 "t": "oprd"
@@ -1846,7 +1846,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-12-08",
             "when": "December 8, 2025",
-            "text": "To White’s “I acknowledge receipt of your message,” replied: “And I yours.”",
+            "text": "To the volunteer’s “I acknowledge receipt of your message,” replied: “And I yours.”",
             "src": {
                 "u": "01KBZZ00WRN29ERHYG1ANPRH8D",
                 "t": "oprd"
@@ -2591,7 +2591,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-05",
             "when": "September 5, 2026",
-            "text": "Copied on White’s public records request for “All communications concerning me sent or received by Director Lisa Sumption” and the Deputy Director, February 1, 2025 to the present.",
+            "text": "Copied on the volunteer’s public records request for “All communications concerning me sent or received by Director Lisa Sumption” and the Deputy Director, February 1, 2025 to the present.",
             "src": {
                 "u": "01M1SWHHM8QSPN71SK56Q97F8C",
                 "t": "oprd"
@@ -2630,7 +2630,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-08",
             "when": "September 8, 2026",
-            "text": "White’s request to ODOT for records from her interim tenure there came back: “Any records relating to you were sent or received on OPRD devices, not ODOT devices.”",
+            "text": "The volunteer’s request to ODOT for records from her interim tenure there came back: “Any records relating to you were sent or received on OPRD devices, not ODOT devices.”",
             "src": {
                 "u": "01M20YMVX0Y7FBDFVH6QPR70RQ",
                 "t": "oprd"
@@ -2708,7 +2708,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-18",
             "when": "September 18, 2026",
-            "text": "White’s September 5 request for her records came back priced: “Approximately 50-54 hours at $32 per hour for a total of $1,600 to $1,728.” For her communications concerning White: “This will take an estimated 6 hours of staff time at a reduced rate of $32/ hour.”",
+            "text": "The volunteer’s September 5 request for her records came back priced: “Approximately 50-54 hours at $32 per hour for a total of $1,600 to $1,728.” For her communications concerning the volunteer: “This will take an estimated 6 hours of staff time at a reduced rate of $32/ hour.”",
             "src": {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
@@ -2745,7 +2745,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-02-13",
             "when": "February 13, 2026",
-            "text": "Wrote to White: “The messages you have recently sent to OPRD Statewide Programs Coordinator [Program Manager] have been forwarded to me.” And: “Effective immediately, please direct any inquiries or additional information exclusively to me”. And: “Please do not communicate further with Ms. [Program Manager] or other OPRD staff, and please do not expect any responses from them.”",
+            "text": "Wrote to the volunteer: “The messages you have recently sent to OPRD Statewide Programs Coordinator [Program Manager] have been forwarded to me.” And: “Effective immediately, please direct any inquiries or additional information exclusively to me”. And: “Please do not communicate further with Ms. [Program Manager] or other OPRD staff, and please do not expect any responses from them.”",
             "src": {
                 "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
                 "t": "oprd"
@@ -2823,7 +2823,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "Copied on the March 3, 2026 email that sent White’s letters to the state police press captain. Jamen Lee to Captain Kyle Kennedy, cc JR Collier: “since he is now including the Governor as well as our Director.” It reads that White “recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director JR Collier.”",
+            "text": "Copied on the March 3, 2026 email that sent the volunteer’s letters to the state police press captain. Jamen Lee to Captain Kyle Kennedy, cc JR Collier: “since he is now including the Governor as well as our Director.” It reads that the volunteer “recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director JR Collier.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3003,7 +3003,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-14",
             "when": "April 14, 2026",
-            "text": "Copied on the institution’s April 14, 2026 response to White’s April 2 public records request on the March 24, 2026 law enforcement visit.",
+            "text": "Copied on the institution’s April 14, 2026 response to the volunteer’s April 2 public records request on the March 24, 2026 law enforcement visit.",
             "src": {
                 "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
                 "t": "oprd"
@@ -3022,7 +3022,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-29",
             "when": "April 29, 2026",
-            "text": "Copied on Oregon State Parks Public Records’ acknowledgment of White’s follow-up on the April 14 records response.",
+            "text": "Copied on Oregon State Parks Public Records’ acknowledgment of the volunteer’s follow-up on the April 14 records response.",
             "src": {
                 "u": "01KQD0ZGER5TSSB9BTZJCK0KCF",
                 "t": "oprd"
@@ -3041,7 +3041,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-05-04",
             "when": "May 4, 2026",
-            "text": "Copied on Oregon State Parks Public Records’ production of the no-cost records under White’s April 2 request: “we are reviewing emails to see if there are any that meet your request around law enforcement.”",
+            "text": "Copied on Oregon State Parks Public Records’ production of the no-cost records under the volunteer’s April 2 request: “we are reviewing emails to see if there are any that meet your request around law enforcement.”",
             "src": {
                 "u": "01KQSWSYDGFCENFKKH5JHF0KW2",
                 "t": "oprd"
@@ -3050,7 +3050,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-05-04",
             "when": "May 4, 2026",
-            "text": "Copied on the acknowledgment of White’s records request “Agency Compliance and Executive Involvement in PRR Processing, January 1, 2023 to Present.”",
+            "text": "Copied on the acknowledgment of the volunteer’s records request “Agency Compliance and Executive Involvement in PRR Processing, January 1, 2023 to Present.”",
             "src": {
                 "u": "01KQTMJDC8982KJPBPN3ZT3WMH",
                 "t": "oprd"
@@ -3175,7 +3175,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-05",
             "when": "September 5, 2026",
-            "text": "Copied on White’s public records request for “All communications concerning me sent or received by Deputy Director J.R. Collier,” February 1, 2025 to the present.",
+            "text": "Copied on the volunteer’s public records request for “All communications concerning me sent or received by Deputy Director J.R. Collier,” February 1, 2025 to the present.",
             "src": {
                 "u": "01M1SWHHM8QSPN71SK56Q97F8C",
                 "t": "oprd"
@@ -3214,7 +3214,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-11",
             "when": "September 11, 2026",
-            "text": "Copied on the acknowledgment of White’s September 5, 2026 request for the Director’s and Deputy Director’s records.",
+            "text": "Copied on the acknowledgment of the volunteer’s September 5, 2026 request for the Director’s and Deputy Director’s records.",
             "src": {
                 "u": "01M28D2P6GKA8N9YJ81GZP0WF1",
                 "t": "oprd"
@@ -3263,7 +3263,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-18",
             "when": "September 18, 2026",
-            "text": "Copied on the estimate for White’s request for the Director’s and Deputy Director’s records: “$1,600 to $1,728.” For the Deputy Director’s communications concerning White: “This will take an estimated 2-4 hours of staff time at a reduced rate of $32/ hour.”",
+            "text": "Copied on the estimate for the volunteer’s request for the Director’s and Deputy Director’s records: “$1,600 to $1,728.” For the Deputy Director’s communications concerning the volunteer: “This will take an estimated 2-4 hours of staff time at a reduced rate of $32/ hour.”",
             "src": {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
@@ -3278,7 +3278,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-18",
             "when": "September 18, 2026",
-            "text": "Copied on the $80 estimate for White’s request for the version history of the “timeline of events”.",
+            "text": "Copied on the $80 estimate for the volunteer’s request for the version history of the “timeline of events”.",
             "src": {
                 "u": "01M2VEFTARQHQW029628GQA1Y7",
                 "t": "oprd"
@@ -3513,7 +3513,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "Lieutenant Haley McQuillan sends Detective Jake Hyde White’s name as listed on the website: “I unfortunately do not have a DOB”.",
+            "text": "Lieutenant Haley McQuillan sends Detective Jake Hyde the volunteer’s name as listed on the website: “I unfortunately do not have a DOB”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3658,7 +3658,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-23",
             "when": "March 23, 2026",
-            "text": "Detective Jerred Nelson adds White to the event as “Suspect”, with his date of birth and driver license. Disposition: “7 - Log Only”.",
+            "text": "Detective Jerred Nelson adds the volunteer to the event as “Suspect”, with his date of birth and driver license. Disposition: “7 - Log Only”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3711,7 +3711,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-15",
             "when": "April 15, 2026",
-            "text": "Detective Jerred Nelson enters report SP26096984: incident type “Threat Assessment”; White is classified “Suspect; Volunteer”. “Additionally, the individual was found to be posting some concerning things online.”",
+            "text": "Detective Jerred Nelson enters report SP26096984: incident type “Threat Assessment”; the volunteer is classified “Suspect; Volunteer”. “Additionally, the individual was found to be posting some concerning things online.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3741,7 +3741,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-15",
             "when": "April 15, 2026",
-            "text": "Detective Jerred Nelson adds Special Agent Oliver’s March 27 email and White’s text messages to the case file.",
+            "text": "Detective Jerred Nelson adds Special Agent Oliver’s March 27 email and the volunteer’s text messages to the case file.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3845,7 +3845,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "From his FBI account, Detective Jake Hyde sends the two FBI personnel White’s name: “Name is Robert Samuel White out of Florence Oregon. But I don’t have a DOB”.",
+            "text": "From his FBI account, Detective Jake Hyde sends the two FBI personnel the volunteer’s name: “Name is Robert Samuel White out of Florence Oregon. But I don’t have a DOB”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3965,7 +3965,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Detective Jake Hyde emails Special Agent Oliver, subject “Attempt to locate”, with White’s name and date of birth: “sounds like he is volunteering in the Florence area.”",
+            "text": "Detective Jake Hyde emails Special Agent Oliver, subject “Attempt to locate”, with the volunteer’s name and date of birth: “sounds like he is volunteering in the Florence area.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4010,7 +4010,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "A dispatch event opens on Detective Jake Hyde’s unit: “FOR THE FOREST SERVICE// FOLLOWUP INTERVIEW W/ ROBERT WHITE”. An NCIC request runs on White’s name and date of birth. The unit arrives at the “SILTCOOS WORK CENTER” at 9:50 AM. Disposition: “1 - No Action Taken”.",
+            "text": "A dispatch event opens on Detective Jake Hyde’s unit: “FOR THE FOREST SERVICE// FOLLOWUP INTERVIEW W/ ROBERT WHITE”. An NCIC request runs on the volunteer’s name and date of birth. The unit arrives at the “SILTCOOS WORK CENTER” at 9:50 AM. Disposition: “1 - No Action Taken”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4142,7 +4142,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-17",
             "when": "March 17, 2026",
-            "text": "Special Agent Matthew Oliver takes Detective Hyde’s request to confirm whether White “currently volunteers with the FS.”",
+            "text": "Special Agent Matthew Oliver takes Detective Hyde’s request to confirm whether the volunteer “currently volunteers with the FS.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4172,7 +4172,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Special Agent Matthew Oliver confirms through White’s Forest Service supervisor that White is “a current volunteer out of the Siltcoos Work Center”.",
+            "text": "Special Agent Matthew Oliver confirms through the volunteer’s Forest Service supervisor that he is “a current volunteer out of the Siltcoos Work Center”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4187,7 +4187,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-22",
             "when": "March 22, 2026",
-            "text": "Special Agent Matthew Oliver emails Detective Hyde White’s volunteer schedule, his duties, where he lives, his RV and his Jeep. Of White’s Forest Service supervisor: “She was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
+            "text": "Special Agent Matthew Oliver emails Detective Hyde his volunteer schedule, his duties, where he lives, his RV and his Jeep. Of the volunteer’s Forest Service supervisor: “She was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4240,7 +4240,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "Special Agent Matthew Oliver calls White by phone after the visit.",
+            "text": "Special Agent Matthew Oliver calls the volunteer by phone after the visit.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4255,7 +4255,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "On the phone, asked by White for the three officers’ information, Special Agent Matthew Oliver: “I gave him my name, badge number, and office area. I told him I did not have to provide him with OSP info.”",
+            "text": "On the phone, asked by the volunteer for the three officers’ information, Special Agent Matthew Oliver: “I gave him my name, badge number, and office area. I told him I did not have to provide him with OSP info.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4270,7 +4270,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "Special Agent Matthew Oliver emails [Lane County Deputy], copying Detectives Hyde and Nelson, with White’s date of birth, driver license number, schedule, duties and residence, and two attachments: “021426 Email Chain.pdf” and “Text message 3 27 1 of 2.PNG”. “I’m not sure were the FS will go with this but will keep you up to date.”",
+            "text": "Special Agent Matthew Oliver emails [Lane County Deputy], copying Detectives Hyde and Nelson, with the volunteer’s date of birth, driver license number, schedule, duties and residence, and two attachments: “021426 Email Chain.pdf” and “Text message 3 27 1 of 2.PNG”. “I’m not sure were the FS will go with this but will keep you up to date.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4300,7 +4300,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "In the same email, an account of why White was dismissed that no document in the record contains. White’s correction for the record went to every recipient of the email.",
+            "text": "In the same email, an account of why the volunteer was dismissed that no document in the record contains. The volunteer’s correction for the record went to every recipient of the email.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
@@ -4440,7 +4440,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-30",
             "when": "July 30, 2026",
-            "text": "OSP Central Records sends the April 13 fee letter to White and the Attorney General’s order desk: “Please find our attached fee letter which was provided on April 13th and exempts the body cam video.”",
+            "text": "OSP Central Records sends the April 13 fee letter to the volunteer and the Attorney General’s order desk: “Please find our attached fee letter which was provided on April 13th and exempts the body cam video.”",
             "src": {
                 "u": "01KYSZGF6GK4HMAJ6KRCDBAY46",
                 "t": "osp"
@@ -4523,7 +4523,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-23",
             "when": "July 23, 2026",
-            "text": "Headquarters writes: “OSP will apply a litigation hold to any associated record included in your preservation request.” It asks that White confirm “every six months.”",
+            "text": "Headquarters writes: “OSP will apply a litigation hold to any associated record included in your preservation request.” It asks that the volunteer confirm “every six months.”",
             "src": {
                 "u": "01KY85JKW045VWDEKXY25B0R3D",
                 "t": "osp"
@@ -4791,7 +4791,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-12-09",
             "when": "December 9, 2025",
-            "text": "White’s letter to OPRD staff, “For the Record — Supervisory Betrayal,” forwarded to Governor Kotek. No reply from the Governor.",
+            "text": "The volunteer’s letter to OPRD staff, “For the Record — Supervisory Betrayal,” forwarded to Governor Kotek. No reply from the Governor.",
             "src": {
                 "u": "01KC3GJ4WGZQ8V706APJ97YDN4",
                 "t": "governor"
@@ -4800,7 +4800,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-12-11",
             "when": "December 11, 2025",
-            "text": "White’s exchange with the OPRD Director, “There’s something you should know,” forwarded to Governor Kotek. No reply from the Governor.",
+            "text": "The volunteer’s exchange with the OPRD Director, “There’s something you should know,” forwarded to Governor Kotek. No reply from the Governor.",
             "src": {
                 "u": "01KC7PX85RSCWKVSWHK39K6YCG",
                 "t": "governor"
@@ -4809,7 +4809,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-12-18",
             "when": "December 18, 2025",
-            "text": "A letter to Governor Kotek stating that White’s November 18 complaint had received no response. No reply from the Governor.",
+            "text": "A letter to Governor Kotek stating that the volunteer’s November 18 complaint had received no response. No reply from the Governor.",
             "src": {
                 "u": "01KCS97W9RPP89CERDSEPDGR28",
                 "t": "governor"
@@ -4854,7 +4854,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-05-03",
             "when": "May 3, 2026",
-            "text": "A letter to Governor Kotek and the OPRD Commissioners on events at the federal work center where White lives, followed six minutes later by a revised version. No reply from the Governor to either.",
+            "text": "A letter to Governor Kotek and the OPRD Commissioners on events at the federal work center where the volunteer lives, followed six minutes later by a revised version. No reply from the Governor to either.",
             "src": {
                 "u": "01KQR749JGPDKZ69Q95304PRFT",
                 "t": "governor"
@@ -4872,7 +4872,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-15",
             "when": "July 15, 2026",
-            "text": "The day after Oregon State Police released its CAD record, White asks Governor Kotek again: “Does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation?” No reply from the Governor.",
+            "text": "The day after Oregon State Police released its CAD record, the volunteer asks Governor Kotek again: “Does a gay volunteer who documented retaliation and identity-based targeting by state employees deserve an independent investigation?” No reply from the Governor.",
             "src": {
                 "u": "01KXK7BACRB1PCMBBQQK47S8DQ",
                 "t": "governor"
@@ -4881,7 +4881,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-03",
             "when": "September 3, 2026",
-            "text": "A letter to Governor Kotek on the Oregon State Police production, which records White’s correspondence with her as the stated reason for OPRD’s referral to OSP, asking for an independent investigation. No reply from the Governor.",
+            "text": "A letter to Governor Kotek on the Oregon State Police production, which records the volunteer’s correspondence with her as the stated reason for OPRD’s referral to OSP, asking for an independent investigation. No reply from the Governor.",
             "src": {
                 "u": "01M1MEQP4GVGV0ED9D555043P2",
                 "t": "governor"
@@ -4890,7 +4890,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-26",
             "when": "September 26, 2026",
-            "text": "White’s letter Follow the Statute, addressed to Governor Kotek, her office, and three other agencies. No reply from the Governor.",
+            "text": "The volunteer’s letter Follow the Statute, addressed to Governor Kotek, her office, and three other agencies. No reply from the Governor.",
             "src": {
                 "u": "01M3FDMFP0VRBZCTGXQRXJ7CM3",
                 "t": "oprd"
@@ -4901,7 +4901,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-01",
             "when": "July 1, 2026",
-            "text": "The DAS portal records request R000879 for DAS’s own records about White and states: “the acknowledgement of this request will be sent within five business days of your request.”",
+            "text": "The DAS portal records request R000879 for DAS’s own records about the volunteer and states: “the acknowledgement of this request will be sent within five business days of your request.”",
             "src": {
                 "u": "01KWG11X6GHV02H0GESWRSQJFX",
                 "t": "das"
@@ -4937,7 +4937,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-07",
             "when": "July 7, 2026",
-            "text": "White served a preservation notice covering both requests on July 7, and asked again on July 17 to confirm its receipt and distribution and whether any record had been destroyed. No acknowledgment.",
+            "text": "The volunteer served a preservation notice covering both requests on July 7, and asked again on July 17 to confirm its receipt and distribution and whether any record had been destroyed. No acknowledgment.",
             "src": {
                 "u": "01KWZCVHP8F00X0TXAK0P4H1PA",
                 "t": "das"
@@ -4955,7 +4955,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-10",
             "when": "July 10, 2026",
-            "text": "DAS Public Records closes part of R000879, the records naming White in personnel, legal, risk or accountability matters: DAS “reviewed their files and did not locate records.” On DAS’s communications with OPRD and the Governor’s office: “DAS is still reviewing their records and will notify you if there are records as soon as possible.”",
+            "text": "DAS Public Records closes part of R000879, the records naming the volunteer in personnel, legal, risk or accountability matters: DAS “reviewed their files and did not locate records.” On DAS’s communications with OPRD and the Governor’s office: “DAS is still reviewing their records and will notify you if there are records as soon as possible.”",
             "src": {
                 "u": "01KX6H9018F0C5Z247YFT52JME",
                 "t": "das"
@@ -4973,7 +4973,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-26",
             "when": "July 26, 2026",
-            "text": "The DAS portal records request R000911, for any behavioral threat assessment concerning White and DAS’s violence-free workplace policy and training records.",
+            "text": "The DAS portal records request R000911, for any behavioral threat assessment concerning the volunteer and DAS’s violence-free workplace policy and training records.",
             "src": {
                 "u": "01KYFZTQMGFKXMXQV3CDZKJYGJ",
                 "t": "das"
@@ -5049,7 +5049,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-28",
             "when": "July 28, 2026",
-            "text": "DOJ Public Records acknowledges a petition without saying which: “The Attorney General’s Office has received your petition. Orders either granting or denying a petition are generally issued within seven days and will be sent to you and the agency.” White had two pending, against Oregon State Police and against DAS.",
+            "text": "DOJ Public Records acknowledges a petition without saying which: “The Attorney General’s Office has received your petition. Orders either granting or denying a petition are generally issued within seven days and will be sent to you and the agency.” The volunteer had two pending, against Oregon State Police and against DAS.",
             "src": {
                 "u": "01KYMTB4B0BMABYPBY3YMA5CW1",
                 "t": "das"
@@ -5058,7 +5058,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-28",
             "when": "July 28, 2026",
-            "text": "White thanks her and asks which of his two pending petitions the acknowledgment concerns and whether a DOJ file number has been assigned to each. One minute later DOJ Public Records replies, in full: “You’re welcome.” Neither question is answered.",
+            "text": "The volunteer thanks her and asks which of his two pending petitions the acknowledgment concerns and whether a DOJ file number has been assigned to each. One minute later DOJ Public Records replies, in full: “You’re welcome.” Neither question is answered.",
             "src": {
                 "u": "01KYMTKJV87YKYENZ3VK7MZ844",
                 "t": "das"
@@ -5138,7 +5138,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-29",
             "when": "July 29, 2026",
-            "text": "On timeliness the same order writes: “We find that OSP acted in good faith by requesting clarification from you concerning the basis for the fee waiver.” It writes that “OSP waived the fee associated with the nonexempt record it had located and produced it to you on July 17”; the release is dated July 14. On White’s requests that OSP state its retention and search: “we respectfully decline to order the relief you seek.”",
+            "text": "On timeliness the same order writes: “We find that OSP acted in good faith by requesting clarification from you concerning the basis for the fee waiver.” It writes that “OSP waived the fee associated with the nonexempt record it had located and produced it to you on July 17”; the release is dated July 14. On the volunteer’s requests that OSP state its retention and search: “we respectfully decline to order the relief you seek.”",
             "src": {
                 "u": "01KYR0GMBRR83WH7FTFC90Y6DB",
                 "t": "osp"
@@ -5267,7 +5267,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-24",
             "when": "September 24, 2026",
-            "text": "Two days after White wrote “I will pay it. Send the instructions.” and asked again on September 23, Cameron D. Miles sends them: “Please send a check payable to ‘State of Oregon’ in the amount of $572.50” to Miles’s attention in Salem. The petition to the Attorney General had been filed that morning.",
+            "text": "Two days after the volunteer wrote “I will pay it. Send the instructions.” and asked again on September 23, Cameron D. Miles sends them: “Please send a check payable to ‘State of Oregon’ in the amount of $572.50” to Miles’s attention in Salem. The petition to the Attorney General had been filed that morning.",
             "src": {
                 "u": "01M3AJNQ0RYYQSV41172KZJYDZ",
                 "t": "governor"
@@ -5311,7 +5311,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-16",
             "when": "October 16, 2026",
-            "text": "White sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page.",
+            "text": "The volunteer sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page.",
             "src": {
                 "u": "01M521DD08FR8RXZSAB8XZHECK",
                 "t": "governor"
