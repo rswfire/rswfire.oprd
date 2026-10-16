@@ -9,7 +9,7 @@
 // carries its implied role and its real one. A seat, a connection, or a
 // branch opens the documents behind it.
 import type { ReactNode } from "react";
-import { DoorClosed, Link as LinkIcon } from "lucide-react";
+import { DoorClosed, Link as LinkIcon, Newspaper } from "lucide-react";
 import NextLink from "next/link";
 import { RUNGS } from "@/data/system";
 import { ACTS } from "@/data/systemActs";
@@ -133,7 +133,11 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
             className={`group flex h-full w-full scroll-mt-24 flex-col rounded-2xl p-5 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 ${box}`}
         >
             <span className="flex items-start gap-3">
-                <Person tone={tone} />
+                {s.office ? (
+                    <Newspaper aria-hidden className={`h-9 w-8 shrink-0 ${tone === "light" ? "text-emerald-700" : "text-gray-400"}`} strokeWidth={1.75} />
+                ) : (
+                    <Person tone={tone} />
+                )}
                 <span className="min-w-0 pt-0.5">
                     {s.inst || n !== undefined ? (
                         <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>
@@ -147,7 +151,7 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
             </span>
             {s.fn ? (
                 <span className="mt-5 block">
-                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>Role</span>
+                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>{s.office ? "Agency" : "Role"}</span>
                     <span className={`mt-1 block text-[15px] leading-snug ${implied}`}>{s.fn}</span>
                 </span>
             ) : null}

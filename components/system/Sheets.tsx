@@ -27,7 +27,7 @@ function seatSheet(s: Seat, where?: string): SheetContent {
             <div className="grid gap-4">
                 {s.fn ? (
                     <div>
-                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">Role</div>
+                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">{s.office ? "Agency" : "Role"}</div>
                         <p className="m-0 mt-1.5 text-[15px] leading-relaxed text-gray-700">{s.fn}</p>
                     </div>
                 ) : null}

@@ -36,6 +36,8 @@ export interface Act {
 // ── The structure ────────────────────────────────────────────────────────────
 
 export interface Seat {
+    /** An office, not a person: the card shows a newspaper and calls its role the agency's. */
+    office?: boolean;
     id: string;
     title: string;
     /** The institution the seat sits in, where the rung or branch does not already say. */
@@ -218,6 +220,7 @@ const RECORDS: Branch = {
     seats: [
         {
             id: "oprd-pr",
+            office: true,
             title: "Public Records",
             inst: "Oregon State Parks",
             fn: "Finds the agency’s records and releases them as soon as practicable. The records belong to the public.",
@@ -226,6 +229,7 @@ const RECORDS: Branch = {
         },
         {
             id: "osp-cr",
+            office: true,
             title: "Central Records",
             inst: "Oregon State Police",
             fn: "Finds the agency’s records and releases them as soon as practicable.",
@@ -234,6 +238,7 @@ const RECORDS: Branch = {
         },
         {
             id: "osp-risk",
+            office: true,
             title: "Risk Management",
             inst: "Oregon State Police",
             fn: "Preserves the records when a claim is coming.",
@@ -242,6 +247,7 @@ const RECORDS: Branch = {
         },
         {
             id: "das-pr",
+            office: true,
             title: "Public Records",
             inst: "Administrative Services",
             fn: "Finds the agency’s records and releases them as soon as practicable.",
@@ -259,6 +265,7 @@ const RECORDS: Branch = {
         },
         {
             id: "doj-pr",
+            office: true,
             title: "Public Records",
             inst: "Department of Justice",
             fn: "Finds the department’s records and releases them as soon as practicable. Waives the fee when disclosure benefits the public.",
