@@ -117,12 +117,11 @@ export default function Header() {
                 href="https://rswfire.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden flex items-center gap-2 overflow-hidden whitespace-nowrap border-t border-slate-700 bg-slate-900 px-4 py-2 text-white active:bg-black"
+                className="md:hidden flex items-center gap-2 whitespace-nowrap border-t border-slate-700 bg-slate-900 px-4 py-2 text-white active:bg-black"
             >
                 <Icon name="Flame" className="w-3.5 h-3.5 shrink-0 text-white" size={14} strokeWidth={2} />
-                {/* One line at any phone width: the type scales with the screen, up to 11px. */}
-                <span className="shrink-0 text-[min(11px,2.4vw)] font-bold uppercase tracking-wider">Public Statements</span>
-                <span className="min-w-0 text-[min(11px,2.4vw)] text-slate-300">&mdash; rswfire.com, the best place to find me.</span>
+                <span className="text-[11px] font-bold uppercase tracking-widest">Public Statements</span>
+                <span className="text-[11px] text-slate-300">&mdash; find me at rswfire.com.</span>
             </a>
 
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -150,17 +149,20 @@ export default function Header() {
                         <Link
                             href="/"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block border-b border-slate-200 pb-3 pr-24 leading-tight"
+                            className="flex items-center gap-3 border-b border-slate-200 pb-3 pr-24"
                         >
-                            <h1 className="text-sm font-bold tracking-wide uppercase text-slate-900">
-                                OPRD Volunteer Abuse
-                            </h1>
-                            <h2 className="text-xs font-semibold tracking-tight text-slate-600">
-                                Oregon Parks &amp; Recreation Department
-                            </h2>
-                            <p className="text-xs tracking-tight text-slate-500">
-                                Director Lisa Sumption's Stewardship
-                            </p>
+                            <Icon name="Park" className="shrink-0 text-emerald-700 w-7 h-7" size={36} strokeWidth={1.5} />
+                            <div className="leading-tight">
+                                <h1 className="text-sm font-bold tracking-wide uppercase text-slate-900">
+                                    OPRD Volunteer Abuse
+                                </h1>
+                                <h2 className="text-xs font-semibold tracking-tight text-slate-600">
+                                    Oregon Parks &amp; Recreation Department
+                                </h2>
+                                <p className="text-xs tracking-tight text-slate-500">
+                                    Director Lisa Sumption's Stewardship
+                                </p>
+                            </div>
                         </Link>
                         <ul className="mt-2 space-y-0">
                             {archiveSections.map((section, index) => {
