@@ -223,6 +223,9 @@ export default function Header() {
                             <VolunteerShield />
                                             <NewsletterSignup />
                             <Tracker />
+                        </div>
+                        {/* Outside the capped column, so the two links sit on one line, centered under the cards. */}
+                        <div className="mt-3">
                             <HostedOnGithub />
                         </div>
                     </nav>
