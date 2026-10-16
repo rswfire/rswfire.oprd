@@ -9,6 +9,7 @@
 // load only when one is first asked for.
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import DocSheet from "@/components/system/DocSheet";
 import type { SheetContent } from "@/components/system/DocSheet";
 
@@ -40,7 +41,11 @@ export default function DrawerHost({ children }: { children: ReactNode }) {
     const [key, setKey] = useState<string | null>(null);
     const [sheets, setSheets] = useState<Sheets | null>(loaded);
     const pushed = useRef(false);
+    const pathname = usePathname();
 
+    // A page change inside the archive fires neither popstate nor
+    // hashchange, so the address is read again on every one: following a
+    // document out of the drawer closes it, and Back reopens it.
     useEffect(() => {
         const read = () => {
             const h = decodeURIComponent(window.location.hash.slice(1));
@@ -59,7 +64,7 @@ export default function DrawerHost({ children }: { children: ReactNode }) {
             window.removeEventListener("popstate", read);
             window.removeEventListener("hashchange", read);
         };
-    }, []);
+    }, [pathname]);
 
     const open = useCallback((k: string) => {
         if (window.location.hash !== `#${k}`) {
