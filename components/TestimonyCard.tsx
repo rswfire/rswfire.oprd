@@ -103,7 +103,7 @@ export default function TestimonyCard() {
 
                 <div className="mt-7 space-y-4 text-lg leading-relaxed text-gray-800">
                     <p>
-                        I&rsquo;m Sam. I was a Boy Scout in my youth. I have lived by what it taught
+                        I&rsquo;m <PersonLink name="Sam" seat="volunteer" />. I was a Boy Scout in my youth. I have lived by what it taught
                         me ever since, and I brought that to a state park that claims to be the same
                         thing. I was a volunteer park host for the Oregon Parks &amp; Recreation
                         Department, and it is not that.
@@ -114,7 +114,11 @@ export default function TestimonyCard() {
                         is the only account, and there is no mechanism by which it can be questioned.
                     </p>
                     <p>
-                        <PersonLink name="Volunteers" seat="volunteer" /> serve with no written standards, no notice, no hearing, no appeal,
+                        <Link href="/volunteers" className={`whitespace-nowrap ${SEAT_LINK}`}>
+                            <Icon name="Shield" className="mr-1 inline-block -mt-1 text-red-700" size={16} strokeWidth={2} aria-hidden />
+                            Volunteers
+                        </Link>{" "}
+                        serve with no written standards, no notice, no hearing, no appeal,
                         no protection from retaliation. There are accusations never put in writing.
                         There are characterizations never substantiated with facts. There is a permanent statewide ban. And
                         where there is contemporaneous documentation the institution cannot disappear,
