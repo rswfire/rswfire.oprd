@@ -94,7 +94,7 @@ export default function TestimonyCard() {
                         </span>
                         <span className="min-w-0 flex-1">
                             <span className="block text-[14px] font-semibold text-gray-900">Key Individuals</span>
-                            <span className="block text-[12px] text-gray-600">Everyone named above, seat by seat.</span>
+                            <span className="block text-[12px] text-gray-600">Everyone named above.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-emerald-700 transition-transform group-hover:translate-x-0.5" />
                     </Link>
