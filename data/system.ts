@@ -175,7 +175,7 @@ const POLICE: Branch = {
             title: "Detective; FBI Task Force Officer",
             inst: "Oregon State Police",
             fn: "Trusted with federal intelligence systems on the condition, set by the Attorney General’s Guidelines, that no one is investigated solely for exercising First Amendment rights. Also bound by ORS 181A.250.",
-            real: "Puts an armed officer at the volunteer’s door. He carried the agency’s account into federal hands, to FBI personnel and to a Forest Service agent he enlisted to find him, then drove sixty-nine minutes to stand there.",
+            real: "Puts an armed officer at the volunteer’s door. He read the archive and found no crime, eighteen days before he came. He carried the agency’s account into federal hands, to FBI personnel and to a Forest Service agent he enlisted to find him, and drove sixty-nine minutes to stand there.",
             docs: [
 
             ],
@@ -371,7 +371,7 @@ export const RUNGS: Rung[] = [
                 name: "Tina Kotek",
                 title: "Governor",
                 fn: "Chief executive of Oregon. Answers to the people for every state agency, and holds the power to correct any of them. Sworn to uphold the Constitution and the civil rights of every Oregonian.",
-                real: "Shields her agencies by staying out of it. She holds the authority to step in when one of them harms someone, and she does not use it.",
+                real: "Shields her agencies by staying out of it. She answered none of the volunteer’s letters. The email that sent him to the police gave her as its reason.",
                 docs: [
                     { who: "Office of the Governor", when: "November 18, 2025 to September 3, 2026", text: "Thirteen letters. Not one answered.", src: { u: "01KACE2348G8VG3XPB3BGW3F1N", t: "governor" } },
                 ],
@@ -394,11 +394,11 @@ export const RUNGS: Rung[] = [
         seats: [
             {
                 id: "director",
-                note: { text: "Used therapeutic language in both of her letters to dismiss the volunteer." },
+                note: { text: "She answered his facts with feelings he never wrote." },
                 name: "Lisa Sumption",
                 title: "Director",
                 fn: "Head of Oregon Parks and Recreation. Answers to the public for what its staff do. The last word on a complaint about them, and the one who corrects it.",
-                real: "Runs the parks on unpaid labor without the protections owed to it. Volunteers work with no written standards, no notice, no hearing, and no appeal. Asked in writing for basic protections, she put in none.",
+                real: "Ends the complaint at the top. Given named staff, dated conduct and the recordings, she asked no question, opened no inquiry, and answered none of the five protections the volunteer asked for. Then she closed the correspondence.",
                 docs: [
                     { who: "Director", when: "August 25, 2025", text: "“through the appropriate channels within the Department.” No channel is named. No review is reported.", src: { u: "01K3HPAXBG8F4QZG4DJNDY5QY8" } },
                     { who: "Director", when: "December 8, 2025", text: "“deeply painful”; “a sense of purpose and healing.”", src: { u: "01KBZ9S95G2W5B44TTGT6HA69N" } },
@@ -409,7 +409,7 @@ export const RUNGS: Rung[] = [
                 name: "JR Collier",
                 title: "Deputy Director",
                 fn: "Second in command of Oregon Parks and Recreation. Runs the agency’s operations, and its duty to the public it serves: fair treatment, due process, and the volunteer’s right to speak about it.",
-                real: "Closes the agency to the people it harms, and opens it to the police. Cuts the volunteer off from staff, routes all agency communication through himself.",
+                real: "Closes the agency to the volunteer. He barred him from writing to staff and told him to expect no answers from them. Eighteen days later the emergency manager sent the volunteer’s letters to a police captain, copying him.",
                 docs: [
                     { who: "Deputy director", when: "February 14, 2026", text: "Do not write to staff. Legal correspondence goes to Department of Justice counsel.", src: { u: "01KHFDVVV82TVEJPHPYAMAD3JH" } },
                     { who: "Oregon State Parks", when: "March 3, 2026", text: "Copied on the letters sent to the press captain.", src: { u: PRODUCTION, t: "osp" } },
@@ -484,7 +484,7 @@ export const RUNGS: Rung[] = [
                 id: "lead",
                 title: "Volunteer Services Lead",
                 fn: "The volunteer’s supervisor. The one a volunteer confides in, and their advocate inside the park.",
-                real: "Extracts the volunteer’s labor. The volunteer’s real supervisor, with none of a supervisor’s authority, the lead used the closeness of the role to take what they needed.",
+                real: "Reports the volunteer to management. He took what the volunteer told him to the park’s managers, escalated what he said about the supervisor, and promised him training no one arranged.",
                 docs: [
                     { who: "Park manager", when: "March 5, 2025", text: "“it’s not the volunteer services lead doing a dismissal. It’s the park supervisor or myself.”", src: { href: "/evidence/coercion/?t=29:52" } },
                     { who: "His letter to the volunteer services lead", when: "December 9, 2025", text: "“You took what I shared in confidence and disclosed it to management.”", src: { u: "01KC32EJP8NEFBWH0YGJKV3A4S" } },
