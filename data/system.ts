@@ -261,7 +261,7 @@ const RECORDS: Branch = {
             title: "Public Records",
             inst: "Department of Justice",
             fn: "Finds the department’s records and releases them as soon as practicable. Waives the fee when disclosure benefits the public.",
-            real: "Prices the volunteer’s own file. It counted 1,350 records about him, called them his “private interests,” and asked $599 before any work.",
+            real: "Charges the volunteer $599 to see his own file. It counted 1,350 records about him and called them his “private interests.”",
             docs: [],
         },
         {
@@ -404,7 +404,7 @@ export const RUNGS: Rung[] = [
         seats: [
             {
                 id: "program",
-                note: { text: "On July 8, 2026, the volunteer declined to pursue his 42 U.S.C. § 1983 claim against her personally. Her name is withheld from this archive despite the prominence of her role.", src: { u: "01KX28CF90H15CJVJRJWKXCP5N" } },
+                note: { text: "On July 8, 2026, the volunteer declined to pursue his 42 U.S.C. § 1983 claim against her personally.", src: { u: "01KX28CF90H15CJVJRJWKXCP5N" } },
                 title: "Program Manager",
                 fn: "Runs the volunteer program across every state park. The volunteer’s recourse when a park fails them: hears the complaint, protects the volunteer, holds the park to the standard.",
                 real: "Writes the agency’s file on the volunteer. She treated his recording as the violation, ratified the dismissal, and extended it statewide. Her “timeline of events” went to the police.",
