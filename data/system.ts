@@ -436,7 +436,7 @@ export const RUNGS: Rung[] = [
                 note: { text: "On July 8, 2026, the volunteer declined to pursue his 42 U.S.C. § 1983 claim against her personally.", src: { u: "01KX28CF90H15CJVJRJWKXCP5N" } },
                 title: "Program Manager",
                 fn: "Runs the volunteer program across every state park. The volunteer’s recourse when a park fails them: hears the complaint, protects the volunteer, holds the park to the standard.",
-                real: "Writes the agency’s file on the volunteer. She treated his recording as the violation, ratified the dismissal, and extended it statewide. Her “timeline of events” went to the police.",
+                real: "Writes the agency’s file on the volunteer. She treated his recording as the violation, ratified the dismissal, and extended it statewide. Her “timeline of events”, edited over ten months, went to the police.",
                 docs: [
                     { who: "Program manager", when: "March 10, 2025", text: "A call about the recording.", src: { href: "/sunlight/#03-10-25-the-admonition" } },
                     { who: "Program manager", when: "March 26, 2025", text: "Exclusion from every park in Oregon for “the disparaging public comments made about staff.”", src: { u: "01JQA2WM60RX7MSJQ5QPFD8AR2" }, att: { label: "Robert Samuel White Letter", href: "/records/oprd/attachments/01jqa2wm60rx7msjq5qpfd8ar2-Robert-Samuel-White-Letter.pdf", page: 1, from: "Oregon State Parks" } },
