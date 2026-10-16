@@ -5363,6 +5363,15 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
             }
+        },
+        {
+            "d": "2026-10-16",
+            "when": "October 16, 2026",
+            "text": "The volunteer writes to him that his title carries three trusts: to tell Oregon the truth about its records law, to apply that law to his own department as to any other, and to put his name to what he decides. Beside each he sets what the record shows him doing. Copied to the Deputy Attorney General, the OPRD Commissioners and Governor Kotek.",
+            "src": {
+                "u": "01M53BC0W0KQVDK57PD0WJ29EC",
+                "t": "doj"
+            }
         }
     ]
 };

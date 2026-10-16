@@ -7170,6 +7170,23 @@ export const DOJ_THREAD: RecordsThreadData = {
             ],
             eml: "/records/doj/eml/2026-10-15_1545_response-to-the-fee-waiver-denial.eml",
         },
+        {
+            id: "public-records-counsel",
+            ulid: "01M53BC0W0KQVDK57PD0WJ29EC",
+            date: "October 16, 2026",
+            d: "2026-10-16",
+            time: "2:54 PM",
+            from: "Robert Samuel White",
+            to: "David Pitcher, Public Records Counsel, Oregon Department of Justice; Benjamin Gutman, Deputy Attorney General; Oregon Parks and Recreation Commission; Governor Kotek; Phyllis Nelson, Oregon Department of Justice; Shevaun M. Gutridge, Oregon Department of Justice; Todd Albert, Public Records Advocate",
+            kind: "notice",
+            title: "Letter to the Public Records Counsel",
+            summary: "The three trusts his title carries, and beside each what he did: the October 15 denial, the orders on the petitions against other agencies, and a decision that carries no name.",
+            docs: [
+                { label: "Letter to David Pitcher, Public Records Counsel", href: "/records/doj/attachments/01m53bc0w0kqvdk57pd0wj29ec-2026-10-16-david-pitcher.pdf" },
+                { label: "Transmittal Email", href: "/records/doj/2026-10-16-public-records-counsel.pdf" },
+            ],
+            eml: "/records/doj/eml/2026-10-16_1454_public-records-counsel.eml",
+        },
     ],
 };
 
