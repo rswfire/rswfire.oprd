@@ -80,7 +80,7 @@ export default function TestimonyCard() {
                     <p>{withSeats(APPARATUS.roster)}</p>
                     <p>{APPARATUS.account}</p>
                     <p>{withSeats(APPARATUS.silence)}</p>
-                    <p>
+                    <p className="text-center sm:text-left">
                         <Cite ulid={APPARATUS.citationUlid} thread={APPARATUS.citationThread}>
                             {APPARATUS.citation}
                         </Cite>
