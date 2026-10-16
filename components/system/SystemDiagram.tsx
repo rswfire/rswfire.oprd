@@ -9,7 +9,7 @@
 // carries its implied role and its real one. A seat, a connection, or a
 // branch opens the documents behind it.
 import type { ReactNode } from "react";
-import { DoorClosed, Link as LinkIcon, Newspaper } from "lucide-react";
+import { Building2, DoorClosed, Link as LinkIcon, Newspaper } from "lucide-react";
 import NextLink from "next/link";
 import { RUNGS } from "@/data/system";
 import { ACTS } from "@/data/systemActs";
@@ -133,20 +133,31 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
             className={`group flex h-full w-full scroll-mt-24 flex-col rounded-2xl p-5 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 ${box}`}
         >
             <span className="flex items-start gap-3">
-                {s.office ? (
+                {s.building ? (
+                    <Building2 aria-hidden className={`h-9 w-8 shrink-0 ${tone === "light" ? "text-emerald-700" : "text-gray-400"}`} strokeWidth={1.75} />
+                ) : s.office ? (
                     <Newspaper aria-hidden className={`h-9 w-8 shrink-0 ${tone === "light" ? "text-emerald-700" : "text-gray-400"}`} strokeWidth={1.75} />
                 ) : (
                     <Person tone={tone} />
                 )}
                 <span className="min-w-0 pt-0.5">
-                    {s.inst || n !== undefined ? (
-                        <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>
-                            {n !== undefined ? <span className="mr-2">{String(n).padStart(2, "0")}</span> : null}
-                            {s.inst}
-                        </span>
-                    ) : null}
-                    <span className={`block text-[20px] font-semibold leading-tight tracking-tight ${title}`}>{s.name ?? s.title}</span>
-                    {s.name ? <span className={`mt-0.5 block text-[14px] leading-snug ${implied}`}>{s.title}</span> : null}
+                    {s.office ? (
+                        <>
+                            <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>{s.title}</span>
+                            <span className={`block text-[20px] font-semibold leading-tight tracking-tight ${title}`}>{s.agency ?? s.inst}</span>
+                        </>
+                    ) : (
+                        <>
+                            {s.inst || n !== undefined ? (
+                                <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>
+                                    {n !== undefined ? <span className="mr-2">{String(n).padStart(2, "0")}</span> : null}
+                                    {s.inst}
+                                </span>
+                            ) : null}
+                            <span className={`block text-[20px] font-semibold leading-tight tracking-tight ${title}`}>{s.name ?? s.title}</span>
+                            {s.name ? <span className={`mt-0.5 block text-[14px] leading-snug ${implied}`}>{s.title}</span> : null}
+                        </>
+                    )}
                 </span>
             </span>
             {s.fn ? (
@@ -259,10 +270,11 @@ function BranchBlock({ b, open }: { b: Branch; open: (key: string) => void }) {
                 <div className="space-y-6">
                     {groups(b.seats).map((g, gi) => (
                         <div key={gi}>
-                            {g.inst ? <div className="mb-2 font-mono text-[12px] font-bold uppercase tracking-widest text-slate-500">{g.inst}</div> : null}
+                            {/* An agency whose records office leads the group is named on that card. */}
+                            {g.inst && !g.seats[0].s.office ? <div className="mb-2 font-mono text-[12px] font-bold uppercase tracking-widest text-slate-500">{g.inst}</div> : null}
                             <ol className="m-0 grid list-none grid-cols-1 gap-2 p-0 @lg:grid-cols-2">
                                 {g.seats.map(({ s, i }) => (
-                                    <li key={s.id} className="m-0 p-0">
+                                    <li key={s.id} className={`m-0 p-0 ${s.office ? "@lg:col-span-2" : ""}`}>
                                         {s.id === "door" ? <DoorCard s={s} /> : <SeatCard s={{ ...s, inst: undefined }} onOpen={() => open(`seat-${s.id}`)} />}
                                     </li>
                                 ))}

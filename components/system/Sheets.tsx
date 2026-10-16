@@ -21,8 +21,10 @@ export function Arrow({ dir, className }: { dir: "up" | "down" | "right"; classN
 
 function seatSheet(s: Seat, where?: string): SheetContent {
     return {
-        eyebrow: Array.from(new Set([s.name ? s.title : undefined, s.inst ?? (where === "The agency" ? "Oregon State Parks" : where)].filter((l): l is string => Boolean(l)))),
-        title: s.name ?? s.title,
+        eyebrow: s.office
+            ? s.title
+            : Array.from(new Set([s.name ? s.title : undefined, s.inst ?? (where === "The agency" ? "Oregon State Parks" : where)].filter((l): l is string => Boolean(l)))),
+        title: s.office ? s.agency ?? s.inst ?? s.title : s.name ?? s.title,
         head: (
             <div className="grid gap-4">
                 {s.fn ? (
