@@ -99,6 +99,7 @@ const POLICE: Branch = {
     seats: [
         {
             id: "emergency-manager",
+            note: { text: "An agency facing a real threat does not email the press captain." },
             name: "Jamen Lee",
             title: "Emergency Manager",
             inst: "Oregon State Parks",
@@ -111,7 +112,7 @@ const POLICE: Branch = {
         },
         {
             id: "press-captain",
-            note: { text: "An agency facing a real threat does not email the press captain." },
+            note: { text: "A press captain doesn’t order a threat assessment on a member of the public." },
             name: "Kyle Kennedy",
             title: "Press Captain",
             inst: "Oregon State Police",
