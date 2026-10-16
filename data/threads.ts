@@ -7032,6 +7032,20 @@ export const OSP_THREAD: RecordsThreadData = {
             ],
             eml: "/records/governor/eml/2026-10-14_1418_state-of-oregon.eml",
         },
+        {
+            id: "key-individuals",
+            ulid: "01M521DD08FR8RXZSAB8XZHECK",
+            date: "October 16, 2026",
+            d: "2026-10-16",
+            time: "2:41 AM",
+            from: "Robert Samuel White",
+            to: "Todd Albert, Public Records Advocate",
+            kind: "notice",
+            title: "Key Individuals",
+            summary: "The archive's Key Individuals page, sent to the Public Records Advocate. His office's card is the last on the page.",
+            docs: [{ label: "Key Individuals", href: "/records/governor/2026-10-16-key-individuals.pdf" }],
+            eml: "/records/governor/eml/2026-10-16_0241_key-individuals.eml",
+        },
     ],
 };
 

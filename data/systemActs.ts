@@ -513,7 +513,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-02-12",
             "when": "February 12, 2025",
-            "text": "Email to the volunteer and the volunteer services lead, copying the park supervisor, answering the volunteer’s request for a reset: “I would consider that your concerns and questions have been addressed on my end.” And: “A reset sounds good to me.  Glad to hear you have future assignments scheduled with OPRD.”",
+            "text": "Email to the volunteer and the volunteer services lead, copying the park supervisor, answering the volunteer’s request for a reset: “A reset sounds good to me.”",
             "src": {
                 "u": "01JKXHEPAR0PEQMPJXJGG9GZJ4",
                 "t": "oprd"
@@ -554,15 +554,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says his role as park manager is to set people up for success, provide expectations, and help volunteers navigate.",
-            "src": {
-                "href": "/evidence/coercion/?t=1:49"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Reads from a single sheet of handwritten talking points. Says he has seen correspondence from the volunteer suggesting the volunteer feels unsupported, and things from the volunteer not supportive of the crew.",
+            "text": "Reads from a single sheet of handwritten talking points.",
             "src": {
                 "href": "/evidence/coercion/?t=2:53"
             }
@@ -570,7 +562,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "States that the volunteer has expressed dissatisfaction with multiple members of the crew: himself, the park supervisor, the volunteer services lead, [Park Ranger 1], [Park Ranger 2]. The volunteer disagrees.",
+            "text": "Names five staff, himself among them, and tells the volunteer he has expressed dissatisfaction with them. The volunteer disagrees.",
             "src": {
                 "href": "/evidence/coercion/?t=3:52"
             }
@@ -581,30 +573,6 @@ export const ACTS: Record<string, Act[]> = {
             "text": "To the volunteer’s disagreement: “You don’t have to agree with it.”",
             "src": {
                 "href": "/evidence/coercion/?t=4:39"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Describes his first conversation with the volunteer after the park supervisor’s text exchange as a normal conversation he would have with anybody, rectified through email.",
-            "src": {
-                "href": "/evidence/coercion/?t=5:11"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "States a trend: that when someone gives the volunteer guidance or feedback, he takes it as distrust. Says the volunteer asked that a certain ranger not lead his orientation.",
-            "src": {
-                "href": "/evidence/coercion/?t=5:33"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“My understanding with that is that [Volunteer Services Lead] was saying that he would look into it — it wasn’t like a guarantee.”",
-            "src": {
-                "href": "/evidence/coercion/?t=6:18"
             }
         },
         {
@@ -754,7 +722,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Speaks of eating glass, as something that made him stronger, more resilient, a better person.",
+            "text": "Tells the volunteer about eating glass, right after the fifteen years, the disciplinary processes and HR.",
             "src": {
                 "href": "/evidence/coercion/?t=23:17"
             }
@@ -970,7 +938,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says they agreed to a reset, but similar issues kept arising.",
+            "text": "Says they agreed to a reset.",
             "src": {
                 "href": "/evidence/coercion/?t=53:58"
             }
@@ -981,22 +949,6 @@ export const ACTS: Record<string, Act[]> = {
             "text": "Confirms non-work emails and texts as one of the issues, along with working with all staff.",
             "src": {
                 "href": "/evidence/coercion/?t=54:56"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says he appreciates the volunteer talking with them, that these conversations are hard, and that sometimes supervisors and employees disagree.",
-            "src": {
-                "href": "/evidence/coercion/?t=56:05"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Describes his role helping people succeed: rangers becoming directors, park hosts becoming ranger assistants.",
-            "src": {
-                "href": "/evidence/coercion/?t=57:57"
             }
         },
         {
@@ -1043,7 +995,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Speaks by phone with the program manager about his words “eat glass.” She enters his account in the “timeline of events”.",
+            "text": "Gives the program manager, by phone, his explanation of his words “eat glass.” She enters it in the file.",
             "src": {
                 "href": "/sunlight/#03-25-25-eat-glass"
             }
@@ -1053,7 +1005,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-10",
             "when": "March 10, 2025",
-            "text": "Phoned him about his recording of the March 5 meeting. Her “timeline of events” entry for the call: “Engagement Programs Manager [Program Manager] has a phone call discussion with Sam regarding the uninformed recording of the conversation with Park manager [Park Manager] and Ranger Supervisor [Park Supervisor]. She explains that as a volunteer, Sam is an agent of the state and as such is held to a higher standard, so as part of your volunteer service, he cannot record conversations without informing the other parties present.”",
+            "text": "Called him five days after the March 5 meeting. The subject was not what was said at that table but that he had recorded it. Her entry for the call in the “timeline of events” has her telling him he is “held to a higher standard”; his recording of the call shows she never said it.",
             "src": {
                 "href": "/sunlight/#03-10-25-the-admonition"
             }
@@ -1061,39 +1013,31 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-24",
             "when": "March 24, 2025",
-            "text": "Answered his request for review of the Honeyman dismissal: “I would like to schedule a time to talk with you regarding this dismissal and hear from you about your experience and the expectations as they were shared with you. I do also need to gather information from the park as well, so a phone call tomorrow would be best.”",
+            "text": "Answered his request for review of the dismissal by setting a call for the next morning.",
             "src": {
                 "u": "01JQ5940787F53DN2H5VCJGSP4",
                 "t": "oprd"
             }
         },
         {
-            "d": "2025-03-24",
-            "when": "March 24, 2025",
-            "text": "Set the call: “I will call you tomorrow at 9:00 am. Thank you.”",
-            "src": {
-                "u": "01JQ59NPM8M9MBGD5CFMVAQQTQ",
-                "t": "oprd"
-            }
-        },
-        {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Created the document “Timeline of Events: Robert Samuel White (Sam).” Its file properties list the program manager as author and last editor, creation at 7:02 AM Pacific on March 25, 2025, 23 revisions, and 193 minutes of editing time.",
+            "text": "Opened the “timeline of events” on him at 7:02 AM on March 25, 2025, before she called him. Its file properties show her as author and last editor: 23 revisions, 193 minutes of editing.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "att": {
-                "label": "Attachment — Timeline of Events (docx)",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Attachments-Timeline-of-Events.docx",
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 4,
                 "from": "Oregon State Police"
             }
         },
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Entered in the “timeline of events”, under 3/25/25, that she “goes to review the video Sam shared earlier, and a second public video was posted sharing more of his opinion of the dismissal at Honeyman. The second video was later removed and is not listed on Sam’s YouTube account.”",
+            "text": "Entered in the file, under 3/25/25, an account of his videos that he answers as false.",
             "src": {
                 "href": "/sunlight/#03-25-25-the-videos"
             }
@@ -1101,15 +1045,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Called him. Opened: “I read through your email. I watched the video you sent. I collected information regarding your dismissal from Honeyman State Park. Is there any additional information you believe is important to share regarding your experience and ultimate dismissal?”",
-            "src": {
-                "href": "/evidence/expulsion/?t=1:22"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "On the call: “That dismissal is still moving forward.” Of the reason: “[Park Manager] made the decision as park manager to end that volunteer assignment.” Then: “Just wanted to confirm that’s not going to be overturned.”",
+            "text": "Opened the call by telling him the park’s dismissal would stand: “Just wanted to confirm that’s not going to be overturned.”",
             "src": {
                 "href": "/evidence/expulsion/?t=2:27"
             }
@@ -1117,15 +1053,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Asked him: “Did you express dissatisfaction with a park host?”",
-            "src": {
-                "href": "/evidence/expulsion/?t=4:26"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "After his account of the March 24 phone call: “Okay so I’m glad I got that from your perspective.”",
+            "text": "Heard his account of the March 24 call. The file she wrote records the park manager’s version of it, which his account contradicts.",
             "src": {
                 "href": "/evidence/expulsion/?t=8:18"
             }
@@ -1133,7 +1061,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Puts to him what unnamed staff and a volunteer are said to have reported about his conversations. No one is named.",
+            "text": "Put to him what a park host and a staff member, neither of whom she named, had reported about his conversations.",
             "src": {
                 "href": "/evidence/expulsion/?t=8:30"
             }
@@ -1141,15 +1069,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "After he answered “I do not know what you’re talking about”: “I hear you. I’m just trying to go through what’s been reported by multiple folks.” Then asked: “How do you see the difference between your personal experience outside the volunteer service and your professional experience as a park host?”",
-            "src": {
-                "href": "/evidence/expulsion/?t=9:50"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Raised “the email where you sent a poem to [Volunteer Services Lead] for him to review” and “some personal narrative or maybe more poetry that was shared in like a book log.”",
+            "text": "Raised the poem he had sent the volunteer services lead, and what he had written in a book log.",
             "src": {
                 "href": "/evidence/expulsion/?t=11:19"
             }
@@ -1157,7 +1077,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "On the call: “I can see that there’s a lot of communication between you and specifically staff over at Honeyman. Either emails and text almost daily.”",
+            "text": "Raised his emails and texts to staff.",
             "src": {
                 "href": "/evidence/expulsion/?t=13:11"
             }
@@ -1165,23 +1085,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Of the [Park Supervisor]’s email: “she’s basically trying to say you don’t own this problem as volunteers don’t own any problems with the park. It’s not your responsibility as a volunteer.”",
-            "src": {
-                "href": "/evidence/expulsion/?t=16:52"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Asked him: “Do you understand that guest perception doesn’t change what your responsibility is as a volunteer?”",
-            "src": {
-                "href": "/evidence/expulsion/?t=17:52"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "On the call: “I do have other texts from [Park Ranger 1] about just kind of expressing that you’re either bored at the Visitor Center, wanting folks to stop by.”",
+            "text": "Cited texts about him from a ranger.",
             "src": {
                 "href": "/evidence/expulsion/?t=18:13"
             }
@@ -1189,7 +1093,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Raised Tugman: a ranger there “had talked with you about sending too many texts and emails to staff.”",
+            "text": "Raised Tugman, his placement a month before Honeyman. He answered: “I thought everything was fine at Tugman.”",
             "src": {
                 "href": "/evidence/expulsion/?t=19:19"
             }
@@ -1197,7 +1101,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Set out next steps: “we’ll make a determination on what does future service look like with Oregon State Parks.” And: “The latest you’ll hear from me would be Friday.”",
+            "text": "Told him he would hear from her by Friday. She ended his service at every park the next day.",
             "src": {
                 "href": "/evidence/expulsion/?t=27:42"
             }
@@ -1205,15 +1109,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Closed the call: “I’ll be reaching out as soon as we’re able to determine next steps. The absolute latest would be Friday the 28th.”",
-            "src": {
-                "href": "/evidence/expulsion/?t=30:08"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Entered her account of the call in the “timeline of events”, under 3/25/25.",
+            "text": "Entered an account of the call in the file that his recording of it contradicts. He named people and incidents; the file has him describing how situations made him feel.",
             "src": {
                 "href": "/sunlight/#03-25-25-the-program-manager-call"
             }
@@ -1221,7 +1117,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Entered in the “timeline of events”, under 3/25/25, a phone call with the park manager and his explanation of his words “eat glass.”",
+            "text": "Took the park manager’s explanation of “eat glass” by phone and entered it in the file. He said it to the volunteer twice, on the March 5 recording, which she had known about since March 10.",
             "src": {
                 "href": "/sunlight/#03-25-25-eat-glass"
             }
@@ -1229,15 +1125,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-26",
             "when": "March 26, 2025",
-            "text": "Entered in the “timeline of events”, under 3/26/25, that she “left a voicemail message with Robert Samuel White to request he call back for information regarding the status of his volunteer service.”",
-            "src": {
-                "href": "/sunlight/#03-26-25-the-letter"
-            }
-        },
-        {
-            "d": "2025-03-26",
-            "when": "March 26, 2025",
-            "text": "Dismissed him from volunteer service with OPRD by email: “we’ve identified that this volunteer relationship is no longer mutually beneficial.” Writing that “the public comments made about staff regarding your volunteer service, were not in line with expectations set forth in the agreement.” And: “As part of your dismissal, any future assignments you had scheduled will be cancelled.”",
+            "text": "Ended his volunteer service with Oregon State Parks, at every park, by email and signed letter, two days after Honeyman dismissed him.",
             "src": {
                 "u": "01JQA2WM60RX7MSJQ5QPFD8AR2",
                 "t": "oprd"
@@ -1246,22 +1134,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-26",
             "when": "March 26, 2025",
-            "text": "Signed the attached dismissal letter: “This letter serves as written notice of your dismissal from volunteer service as a park host with Oregon Parks and Recreation Department, as of March 26, 2025.” Writing that “the disparaging public comments made about staff regarding your volunteer service, were not in line with expectations set forth in this agreement.”",
-            "src": {
-                "u": "01JQA2WM60RX7MSJQ5QPFD8AR2",
-                "t": "oprd"
-            },
-            "att": {
-                "label": "Robert Samuel White Letter",
-                "href": "/records/oprd/attachments/01jqa2wm60rx7msjq5qpfd8ar2-Robert-Samuel-White-Letter.pdf",
-                "page": 1,
-                "from": "Oregon State Parks"
-            }
-        },
-        {
-            "d": "2025-03-26",
-            "when": "March 26, 2025",
-            "text": "Wrote the Determination in the “timeline of events” (undated there): “This is no longer a mutually beneficial relationship, and as is OPRD’s right outlined in Robert Samual White’s Volunteer Service Agreement, he will be dismissed from future service as a park host with the Oregon Parks and Recreation Department.” Its grounds include “the public statements made about park staff and the dismissal.”",
+            "text": "Wrote the file’s determination, writing that he shared his opinion “publicly rather than through the internal channels OPRD made available to him.” There were none, and there still are none.",
             "src": {
                 "href": "/sunlight/#the-determination"
             }
@@ -1269,7 +1142,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-26",
             "when": "March 26, 2025",
-            "text": "Added a note below the Determination (undated there): “There are numerous additional emails and texts sent to staff, primarily Rangers [Volunteer Services Lead] and Leif that are not included as a reference, but should be noted for excessive communication.”",
+            "text": "Added an undated note to the file about emails and texts to staff that the file does not include.",
             "src": {
                 "href": "/sunlight/#the-closing-note"
             }
@@ -1317,7 +1190,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-05-20",
             "when": "May 20, 2025",
-            "text": "Entered in the “timeline of events”, under 5/20/25: “Robert Samuel Smith has sent two follow up emails, one on 5/12/25 and another on 5/20/25 to [Program Manager]. Neither email requested a response. [Program Manager] went to look to see if this was related to a new YouTube Video posted on his channel, and found that almost all of his videos had been deleted, and only one remains as of this date discussing his experience with OPRD.”",
+            "text": "Two months after ending his service, entered in the file that after his two May emails she went to his YouTube channel. Neither email mentions a video. She recorded from it what she attributes to “multiple OPRD staff.”",
             "src": {
                 "href": "/sunlight/#05-20-25"
             }
@@ -1425,7 +1298,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-01-21",
             "when": "January 21, 2026",
-            "text": "The “timeline of events”, as of its last edit, dates to February 12, 2025 a quotation attributed to the volunteer that could not have happened that day.",
+            "text": "Dated to February 12, 2025, in the file, a quotation she attributes to him that could not have happened that day.",
             "src": {
                 "href": "/sunlight/#02-12-25-the-fabricated-quotation"
             }
@@ -1441,7 +1314,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-01-21",
             "when": "January 21, 2026",
-            "text": "Entered in the “timeline of events”, by its last edit: “1/6/26: Sam White sends an email threatening to sue [Program Manager].”",
+            "text": "Entered in the file an email of January 6, 2026. He has no record of anything sent that day. On January 16 he gave her notice under 42 U.S.C. § 1983.",
             "src": {
                 "href": "/sunlight/#01-06-26"
             }
@@ -1449,16 +1322,10 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-01-21",
             "when": "January 21, 2026",
-            "text": "Last edited the “timeline of events”. Its file properties: last modified by the program manager at 01:15 UTC on January 22, 2026 (5:15 PM Pacific, January 21).",
+            "text": "Made her last edit to the file at 5:15 PM Pacific on January 21, 2026, five days after his notice under 42 U.S.C. § 1983.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
-            },
-            "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
-                "page": 4,
-                "from": "Oregon State Police"
             }
         },
         {
@@ -1941,7 +1808,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-08-25",
             "when": "August 25, 2025",
-            "text": "Answered White’s open letter: “While I cannot respond here to the specific claims you have outlined, I want to assure you that I take concerns about our volunteer program seriously.” And: “I will make sure your concerns are reviewed through the appropriate channels within the department.”",
+            "text": "Answered White’s open letter: “While I cannot respond here to the specific claims you have outlined”, and that his concerns would be “reviewed through the appropriate channels within the department.”",
             "src": {
                 "u": "01K3HPAXBG8F4QZG4DJNDY5QY8",
                 "t": "oprd"
