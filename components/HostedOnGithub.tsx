@@ -25,7 +25,7 @@ export default function HostedOnGithub() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-2 text-center">
+        <div className="flex items-center justify-center gap-2 px-4 py-2">
             <a
                 href="https://github.com/rswfire/rswfire.oprd"
                 target="_blank"
@@ -35,6 +35,7 @@ export default function HostedOnGithub() {
                 <GithubMark className="h-3.5 w-3.5" />
                 Hosted on GitHub
             </a>
+            <span className="text-xs leading-none text-slate-300">&middot;</span>
             <a
                 href="/analytics"
                 className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
