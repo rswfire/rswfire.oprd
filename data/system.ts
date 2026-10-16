@@ -601,7 +601,7 @@ export const PATTERNS: Pattern[] = [
                 docs: [
                     { who: "Program manager", when: "January 2026", text: "The “timeline of events”, edited for ten months; the last edit five days after notice under 42 U.S.C. § 1983.", src: { href: "/sunlight/#01-06-26" } },
                     { who: "“timeline of events”", text: "A quotation dated to a day it could not have happened.", src: { href: "/sunlight/#02-12-25-the-fabricated-quotation" } },
-                    { who: "Detective", when: "March 6, 2026", text: "“Based on the website nothing is standing out to me more than what Parks and Rec sent you.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Electronic Communications", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf", page: 1, from: "Oregon State Police" } },
+                    { who: "Detective", when: "March 6, 2026", text: "“I wanted to update you on what I was able to learn from my end, it wasn’t much unfortunately.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Electronic Communications", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf", page: 1, from: "Oregon State Police" } },
                 ],
             },
             {

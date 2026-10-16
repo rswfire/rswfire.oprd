@@ -321,7 +321,7 @@ export const TIMELINE: TimelineSection[] = [
                 body: [
                     "Lieutenant McQuillan ",
                     { doc: "01M1M4WF78XJPEJJ48D1JZ4SJ8", thread: "osp", t: "routes it to Detective Jake Hyde" },
-                    ", OSP Portland, a Task Force Officer with the Portland FBI Joint Terrorism Task Force: “some concerns in the Florence area.” Before noon, Hyde forwards my name from his FBI account to FBI personnel: “Name is Robert Samuel White out of Florence Oregon. But I don't have a DOB.” At 1:14 PM Hyde reports back: “Based on the website nothing is standing out to me more than what Parks and Rec sent you. Sounds like this person does have a grievance with the former employer.” That afternoon Lee sends Hyde the dismissal letter, the Timeline of Events, and a February 2026 email chain, and offers more.",
+                    ", OSP Portland, a Task Force Officer with the Portland FBI Joint Terrorism Task Force: “some concerns in the Florence area.” Before noon, Hyde forwards my name from his FBI account to FBI personnel: “Name is Robert Samuel White out of Florence Oregon. But I don't have a DOB.” At 1:14 PM Hyde reports back: “I wanted to update you on what I was able to learn from my end, it wasn’t much unfortunately.” That afternoon Lee sends Hyde the dismissal letter, the Timeline of Events, and a February 2026 email chain, and offers more.",
                 ],
             },
             {

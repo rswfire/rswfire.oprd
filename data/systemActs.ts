@@ -3860,7 +3860,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "Detective Jake Hyde reports to Lieutenant McQuillan: “Based on the website nothing is standing out to me more than what Parks and Rec sent you.”",
+            "text": "Detective Jake Hyde reports to Lieutenant McQuillan: “I wanted to update you on what I was able to learn from my end, it wasn’t much unfortunately.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"

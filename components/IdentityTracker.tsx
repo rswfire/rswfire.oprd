@@ -13,7 +13,7 @@ const officers = [
     agency: "Oregon State Police — Task Force Officer, Portland FBI-JTTF",
     status: "confirmed" as const,
     confirmedBy: "OSP CAD record SP26097765, released July 14, 2026; report SP26096984, produced September 3, 2026",
-    notes: "Named as the primary unit in the state's dispatch record. The September 3 production shows he circulated my name to FBI personnel, obtained my DMV record through the task force, and wrote on March 6, after reviewing this archive: “nothing is standing out to me more than what Parks and Rec sent you.”"
+    notes: "Named as the primary unit in the state's dispatch record. The September 3 production shows he circulated my name to FBI personnel, obtained my DMV record through the task force, and reported back on March 6: “I wanted to update you on what I was able to learn from my end, it wasn’t much unfortunately.”"
   },
   {
     id: "nelson",

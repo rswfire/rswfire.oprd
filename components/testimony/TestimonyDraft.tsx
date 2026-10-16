@@ -3119,12 +3119,9 @@ export default function TestimonyDraft({
                     activity.
                 </P>
                 <P id="pgxwqf" n={261}>
-                    On March 6 that detective read this archive end to end and wrote down what he
-                    found: <em>Based on the website nothing is standing out to me more than what
-                    Parks and Rec sent you. Sounds like this person does have a grievance with the
-                    former employer.</em> Nothing in a public record of an agency&rsquo;s own
-                    conduct alarmed him more than the material the agency had handed over about the
-                    man who wrote it. There was no crime, and their own detective had found none
+                    On March 6 that detective reported back: <em>I wanted to update you on what I
+                    was able to learn from my end, it wasn&rsquo;t much unfortunately.</em> There
+                    was no crime, and their own detective had found none
                     eighteen days before anyone came.
                 </P>
                 <P id="pewtmp" n={262}>

@@ -131,10 +131,9 @@ export default function PoliceIntimidationPage() {
                 <p>
                     The case went to the Major Crimes Section and to Detective Jake Hyde, a task force officer with
                     the Portland FBI-JTTF, who forwarded my name to FBI personnel and obtained my DMV record. A DOJ
-                    fusion center analyst documented the activity. On March 6, after reviewing this archive, Hyde
-                    wrote: &ldquo;Based on the website nothing is standing out to me more than what Parks and Rec
-                    sent you. Sounds like this person does have a grievance with the former employer.&rdquo; They
-                    came anyway, eighteen days later.
+                    fusion center analyst documented the activity. On March 6 Hyde reported back: &ldquo;I wanted to
+                    update you on what I was able to learn from my end, it wasn&rsquo;t much unfortunately.&rdquo;
+                    They came anyway, eighteen days later.
                 </p>
                 <p>
                     On March 23, Detective Jerred Nelson opened CAD event SP26096984 naming me{" "}
