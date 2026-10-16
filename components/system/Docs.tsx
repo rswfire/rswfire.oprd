@@ -4,7 +4,7 @@
 // each linked to the document or recording it rests on.
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Link as LinkIcon, SquareArrowOutUpRight } from "lucide-react";
+import { Landmark, Link as LinkIcon, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
 import Cite from "@/components/Cite";
 import type { Act, Doc, Src } from "@/data/system";
 
@@ -30,11 +30,33 @@ export function Source({ src, stretch, children }: { src: Src; stretch?: boolean
     return <Cite ulid={src.u} thread={src.t ?? "oprd"} subtle noMark={stretch} className={stretch ? STRETCH : undefined}>{children}</Cite>;
 }
 
-/** Marks a line as a link to the document or recording behind it. */
-function LinkMark() {
+/** The evidence pages that are recordings; the others are written record. */
+const RECORDINGS = /^\/evidence\/(coercion|expulsion|dismissal|police)(?=[/?#]|$)/;
+
+type Kind = "video" | "sunlight" | "record" | "external";
+
+/** What the line opens: a recording, an answer in Sunlight, a record, or another site. */
+function kindOf(src: Src, att?: Act["att"]): Kind {
+    if (att || !("href" in src)) return "record";
+    if (RECORDINGS.test(src.href)) return "video";
+    if (src.href.startsWith("/sunlight")) return "sunlight";
+    if (/^https?:/.test(src.href)) return "external";
+    return "record";
+}
+
+const MARKS: Record<Kind, { icon: typeof Video; cls: string }> = {
+    video: { icon: Video, cls: "bg-rose-50 text-rose-700 ring-rose-200" },
+    sunlight: { icon: Sun, cls: "bg-amber-50 text-amber-600 ring-amber-200" },
+    record: { icon: Landmark, cls: "bg-emerald-50 text-emerald-700 ring-emerald-200" },
+    external: { icon: SquareArrowOutUpRight, cls: "bg-slate-50 text-slate-600 ring-slate-200" },
+};
+
+/** Marks a line by what it opens. */
+function LinkMark({ src, att }: { src: Src; att?: Act["att"] }) {
+    const { icon: I, cls } = MARKS[kindOf(src, att)];
     return (
-        <span aria-hidden className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200">
-            <SquareArrowOutUpRight size={15} strokeWidth={1.75} />
+        <span aria-hidden className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ring-1 ${cls}`}>
+            <I size={15} strokeWidth={1.75} />
         </span>
     );
 }
@@ -49,7 +71,7 @@ export function DocList({ docs }: { docs: Doc[] }) {
                         {d.when ? <div className="mt-0.5 text-[12px] font-medium uppercase tracking-wide text-gray-500">{d.when}</div> : null}
                     </div>
                     <div className="flex min-w-0 items-center gap-3 text-[16px] leading-relaxed text-slate-900">
-                        <LinkMark />
+                        <LinkMark src={d.src} att={d.att} />
                         <span className="min-w-0">
                             <Entry text={d.text} src={d.src} att={d.att} />
                         </span>
@@ -138,7 +160,7 @@ export function ActList({ acts }: { acts: Act[] }) {
                                 <li key={i} className={`m-0 grid grid-cols-1 gap-y-1 py-3 ${ROW}`}>
                                     <span className="text-[12px] font-medium uppercase tracking-wide text-gray-500">{a.when}</span>
                                     <span className="flex min-w-0 items-center gap-3 text-[15px] leading-relaxed text-slate-900">
-                                        <LinkMark />
+                                        <LinkMark src={a.src} att={a.att} />
                                         <span className="min-w-0">
                                             <Entry text={a.text} src={a.src} att={a.att} />
                                         </span>
@@ -161,7 +183,7 @@ export function ActList({ acts }: { acts: Act[] }) {
                             <li key={i} className={`m-0 grid grid-cols-1 gap-y-1 py-2.5 ${ROW}`}>
                                 <span className="text-[12px] font-medium uppercase tracking-wide text-gray-500">{a.when}</span>
                                 <span className="flex min-w-0 items-center gap-3 text-[14px] leading-snug text-slate-800">
-                                    <LinkMark />
+                                    <LinkMark src={a.src} att={a.att} />
                                     <span className="min-w-0"><Entry text={a.text} src={a.src} att={a.att} /></span>
                                 </span>
                             </li>
