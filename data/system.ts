@@ -484,7 +484,7 @@ export const RUNGS: Rung[] = [
                 id: "lead",
                 title: "Volunteer Services Lead",
                 fn: "The volunteer’s supervisor. The one a volunteer confides in, and their advocate inside the park.",
-                real: "Extracts the volunteer’s labor. The volunteer’s real supervisor, with none of a supervisor’s authority, the lead used the closeness of the role to take what they needed.",
+                real: "Betrays the volunteer to management. He made the volunteer’s trust a debt, then handed what it paid to the institution, which turned it into its case. He escalated what the volunteer told him about the supervisor instead of protecting him, and met his boundary with anger.",
                 docs: [
                     { who: "Park manager", when: "March 5, 2025", text: "“it’s not the volunteer services lead doing a dismissal. It’s the park supervisor or myself.”", src: { href: "/evidence/coercion/?t=29:52" } },
                     { who: "His letter to the volunteer services lead", when: "December 9, 2025", text: "“You took what I shared in confidence and disclosed it to management.”", src: { u: "01KC32EJP8NEFBWH0YGJKV3A4S" } },
