@@ -394,11 +394,11 @@ export const RUNGS: Rung[] = [
         seats: [
             {
                 id: "director",
-                note: { text: "She answered his facts with feelings he never wrote." },
+                note: { text: "Used therapeutic language in both of her letters to dismiss the volunteer." },
                 name: "Lisa Sumption",
                 title: "Director",
                 fn: "Head of Oregon Parks and Recreation. Answers to the public for what its staff do. The last word on a complaint about them, and the one who corrects it.",
-                real: "Ends the complaint at the top. Given named staff, dated conduct and the recordings, she asked no question, opened no inquiry, and answered none of the five protections the volunteer asked for. Then she closed the correspondence.",
+                real: "Runs the parks on unpaid labor without the protections owed to it. Volunteers work with no written standards, no notice, no hearing, and no appeal. Asked in writing for basic protections, she put in none.",
                 docs: [
                     { who: "Director", when: "August 25, 2025", text: "“through the appropriate channels within the Department.” No channel is named. No review is reported.", src: { u: "01K3HPAXBG8F4QZG4DJNDY5QY8" } },
                     { who: "Director", when: "December 8, 2025", text: "“deeply painful”; “a sense of purpose and healing.”", src: { u: "01KBZ9S95G2W5B44TTGT6HA69N" } },
@@ -409,7 +409,7 @@ export const RUNGS: Rung[] = [
                 name: "JR Collier",
                 title: "Deputy Director",
                 fn: "Second in command of Oregon Parks and Recreation. Runs the agency’s operations, and its duty to the public it serves: fair treatment, due process, and the volunteer’s right to speak about it.",
-                real: "Closes the agency to the volunteer. He barred him from writing to staff and told him to expect no answers from them. Eighteen days later the emergency manager sent the volunteer’s letters to a police captain, copying him.",
+                real: "Closes the agency to the people it harms, and opens it to the police. Cuts the volunteer off from staff, routes all agency communication through himself.",
                 docs: [
                     { who: "Deputy director", when: "February 14, 2026", text: "Do not write to staff. Legal correspondence goes to Department of Justice counsel.", src: { u: "01KHFDVVV82TVEJPHPYAMAD3JH" } },
                     { who: "Oregon State Parks", when: "March 3, 2026", text: "Copied on the letters sent to the press captain.", src: { u: PRODUCTION, t: "osp" } },
