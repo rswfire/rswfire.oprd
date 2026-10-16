@@ -14,7 +14,8 @@ import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
 import { APPARATUS, APPARATUS_SEATS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
-import { DrawerLink } from "@/components/system/DrawerHost";
+import { DrawerLink, SEAT_LINK } from "@/components/system/DrawerHost";
+import PersonLink from "@/components/PersonLink";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -41,7 +42,7 @@ function withSeats(text: string): ReactNode[] {
         if (h.at < i) continue;
         out.push(text.slice(i, h.at));
         out.push(
-            <DrawerLink key={h.seat} to={`seat-${h.seat}`} className="text-inherit underline decoration-gray-300 underline-offset-2 hover:text-emerald-800 hover:decoration-emerald-500">
+            <DrawerLink key={h.seat} to={`seat-${h.seat}`} className={SEAT_LINK}>
                 {h.phrase}
             </DrawerLink>,
         );
@@ -113,14 +114,14 @@ export default function TestimonyCard() {
                         is the only account, and there is no mechanism by which it can be questioned.
                     </p>
                     <p>
-                        Volunteers serve with no written standards, no notice, no hearing, no appeal,
+                        <PersonLink name="Volunteers" seat="volunteer" /> serve with no written standards, no notice, no hearing, no appeal,
                         no protection from retaliation. There are accusations never put in writing.
                         There are characterizations never substantiated with facts. There is a permanent statewide ban. And
                         where there is contemporaneous documentation the institution cannot disappear,
                         there is force: investigation, intimidation, police at the door.
                     </p>
                     <p>
-                        Director Lisa Sumption has stewarded this agency for more than a decade.
+                        <PersonLink name="Director Lisa Sumption" seat="director" /> has stewarded this agency for more than a decade.
                         I wrote her a letter{" "}
                         <a
                             href="https://rswfire.com/library/signal/01M1YH9QSRTJYYQCC4QKX81T7N"
