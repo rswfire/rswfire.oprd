@@ -183,8 +183,11 @@ export default function Header() {
                                         <Link
                                             href={section.href}
                                             onClick={() => setMobileMenuOpen(false)}
-                                            className="block px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                                            className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900"
                                         >
+                                            {section.icon ? (
+                                                <Icon name={section.icon} size={17} strokeWidth={2} className={`shrink-0 ${section.iconClass ?? "text-red-700"}`} />
+                                            ) : null}
                                             {section.label}
                                         </Link>
 
