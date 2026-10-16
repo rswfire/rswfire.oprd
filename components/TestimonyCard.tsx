@@ -14,6 +14,7 @@ import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
 import { APPARATUS, APPARATUS_SEATS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
+import { DrawerLink } from "@/components/system/DrawerHost";
 
 const CHAPTERS = [
     "THE SHEDDING",
@@ -28,7 +29,7 @@ const CHAPTERS = [
     "THE GOVERNOR'S SILENCE",
 ];
 
-/** The text with each named role linked to that person's drawer on Key Individuals. */
+/** The text with each named role opening that person's drawer, here on the page. */
 function withSeats(text: string): ReactNode[] {
     const hits = APPARATUS_SEATS
         .map(([phrase, seat]) => ({ phrase, seat, at: text.indexOf(phrase) }))
@@ -40,9 +41,9 @@ function withSeats(text: string): ReactNode[] {
         if (h.at < i) continue;
         out.push(text.slice(i, h.at));
         out.push(
-            <Link key={h.seat} href={`/key-individuals#seat-${h.seat}`} className="text-inherit underline decoration-gray-300 underline-offset-2 hover:text-emerald-800 hover:decoration-emerald-500">
+            <DrawerLink key={h.seat} to={`seat-${h.seat}`} className="text-inherit underline decoration-gray-300 underline-offset-2 hover:text-emerald-800 hover:decoration-emerald-500">
                 {h.phrase}
-            </Link>,
+            </DrawerLink>,
         );
         i = h.at + h.phrase.length;
     }

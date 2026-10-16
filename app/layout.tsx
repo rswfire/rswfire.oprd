@@ -6,6 +6,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PlayerProvider from "@/components/player/PlayerProvider";
+import DrawerHost from "@/components/system/DrawerHost";
 import DocViewerProvider from "@/components/DocViewerProvider";
 import SunlightProvider from "@/components/sunlight/SunlightProvider";
 import PhotoProvider from "@/components/photos/PhotoProvider";
@@ -80,11 +81,13 @@ export default function RootLayout({
                         <PlaceProvider>
                         <TraceProvider>
                         <ReflectionProvider>
+                        <DrawerHost>
                         <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900">
                             <Header />
                             <main className="flex-1">{children}</main>
                             <Footer />
                         </div>
+                        </DrawerHost>
                         </ReflectionProvider>
                         </TraceProvider>
                         </PlaceProvider>
