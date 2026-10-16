@@ -13,11 +13,11 @@ export default function Footer() {
             </div>
 
             <div className="flex justify-center font-bold text-lg">
-                <div className="text-emerald-700 rounded-lg px-4 py-2 text-left sm:text-center font-mono">
+                <Link href="/system" className="block text-emerald-700 rounded-lg px-4 py-2 text-left sm:text-center font-mono no-underline hover:text-emerald-600 hover:bg-emerald-50 transition-colors">
                     <span className="block sm:inline"><Icon name="Map" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE MAP.</span>
                     <span className="block sm:inline sm:ml-6"><Icon name="Repeat" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE PATTERN.</span>
                     <span className="block sm:inline sm:ml-6"><Icon name="Eye" className="inline-block mr-1.5 -mt-0.5" size={16} strokeWidth={2} />THIS IS THE MIRROR.</span>
-                </div>
+                </Link>
             </div>
 
             <div className="mt-6 max-w-6xl mx-auto px-4 space-y-2">

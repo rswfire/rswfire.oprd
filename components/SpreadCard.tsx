@@ -76,7 +76,7 @@ const BRANCHES = [
 
 export default function SpreadCard() {
     return (
-        <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div id="how-it-spread" className="mt-4 scroll-mt-24 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
 
             {/* ── Title ── */}
             <div className="border-b border-slate-200 bg-gradient-to-b from-rose-50 to-white px-6 py-7 sm:px-10">

@@ -21,6 +21,8 @@ export default function Cite({
     ulid,
     thread = "oprd",
     subtle = false,
+    className,
+    noMark = false,
     children,
 }: {
     ulid: string;
@@ -32,6 +34,10 @@ export default function Cite({
      * paper is still one click away without competing for the eye.
      */
     subtle?: boolean;
+    /** Extra classes for the link, for a caller that makes a whole row the link. */
+    className?: string;
+    /** Leave off the trailing document mark, where the row already shows one. */
+    noMark?: boolean;
     children: React.ReactNode;
 }) {
     const { openDoc } = useDocViewer();
@@ -46,16 +52,18 @@ export default function Cite({
             <Link
                 href={`/record/${thread}/${ulid}`}
                 onClick={onClick}
-                className="text-inherit no-underline hover:text-sky-700"
+                className={`text-inherit no-underline hover:text-sky-700 ${className ?? ""}`}
             >
                 {children}
-                <Icon
-                    name="FileText"
-                    className="ml-0.5 inline-block -mt-1.5 align-super text-sky-700"
-                    size={9}
-                    strokeWidth={2}
-                    aria-hidden
-                />
+                {noMark ? null : (
+                    <Icon
+                        name="FileText"
+                        className="ml-0.5 inline-block -mt-1.5 align-super text-sky-700"
+                        size={9}
+                        strokeWidth={2}
+                        aria-hidden
+                    />
+                )}
             </Link>
         );
     }

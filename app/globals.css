@@ -98,3 +98,45 @@ body {
     animation: sunlight-land 2.4s ease-out;
     border-radius: 0.5rem;
 }
+
+/* The Map: "For the next person." Words rise one at a time, the rule draws
+   across, the outline comes in last. Still for anyone who asks for less
+   motion. */
+@keyframes np-rise {
+    from { opacity: 0; transform: translateY(0.6em); filter: blur(6px); }
+    to   { opacity: 1; transform: none; filter: none; }
+}
+@keyframes np-draw {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+@keyframes np-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes np-breathe {
+    0%, 100% { opacity: 0.55; }
+    50%      { opacity: 1; }
+}
+.np-word { display: inline-block; }
+.np-rule { transform-origin: left; }
+/* Hidden only once the script has run, so the card reads without JS. */
+.np-armed .np-word, .np-armed .np-figure { opacity: 0; }
+.np-armed .np-rule { transform: scaleX(0); }
+.np-play .np-word { animation: np-rise 900ms cubic-bezier(.2,.7,.2,1) forwards; }
+.np-play .np-rule { animation: np-draw 1100ms cubic-bezier(.6,0,.2,1) forwards; }
+.np-play .np-figure { animation: np-fade 1400ms ease-out forwards, np-breathe 4s ease-in-out 3.2s infinite; }
+@media (prefers-reduced-motion: reduce) {
+    .np-armed .np-word, .np-armed .np-rule, .np-armed .np-figure,
+    .np-play .np-word, .np-play .np-rule, .np-play .np-figure { animation: none; opacity: 1; transform: none; filter: none; }
+}
+
+/* System: the document sheet rises from the bottom on a phone, slides in from the right above that. */
+@keyframes sys-up { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes sys-left { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+.sys-sheet { animation: sys-up 220ms cubic-bezier(.2,.7,.2,1); }
+@media (min-width: 640px) { .sys-sheet { animation-name: sys-left; } }
+@media (prefers-reduced-motion: reduce) { .sys-sheet { animation: none; } }
+
+/* Anything that can be pressed shows the hand. */
+button:not(:disabled), summary, [role="button"] { cursor: pointer; }
