@@ -289,7 +289,7 @@ const RECORDS: Branch = {
             name: "David Pitcher",
             title: "Public Records Counsel",
             inst: "Department of Justice",
-            fn: "The Department of Justice’s lawyer on the public records law. Sends out the agendas of the Oregon Sunshine Committee, which reviews what the state may withhold.",
+            fn: "Holds the Department of Justice to the public records law. Supports the Oregon Sunshine Committee, whose work is to enhance transparency and speed the fulfillment of records requests.",
             real: "Works both sides of the volunteer’s dispute. He answered for the Attorney General’s orders on the volunteer’s petitions, then denied the fee waiver on the volunteer’s request for his own department’s file on him: $599.",
             docs: [],
         },
