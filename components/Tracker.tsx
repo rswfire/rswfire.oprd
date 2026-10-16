@@ -86,42 +86,42 @@ export default function Tracker() {
                 </div>
             </div>
 
-            <div className="p-3 space-y-4">
+            <div className="p-4 space-y-4">
 
                 <div>
                     <div className="space-y-2">
                         {SILENCE_EVENTS.map((event, index) => {
                             const days = calculateDaysSince(event.date);
                             return (
-                                <div key={index} className="grid grid-cols-[1fr_auto] items-start gap-x-3 rounded bg-slate-50 px-3 py-2.5">
-                                    <div className="min-w-0">
+                                <div key={index} className="bg-slate-50 p-2.5 rounded">
+                                    <div className="flex justify-between items-center mb-1">
                                         {event.link ? (
                                             <Link
                                                 href={event.link}
-                                                className="block text-[13px] font-semibold leading-snug text-slate-900 hover:text-emerald-700"
+                                                className="text-sm font-medium text-slate-900 hover:text-emerald-700 underline"
                                             >
                                                 {event.label}
                                             </Link>
                                         ) : (
-                                            <div className="text-[13px] font-semibold leading-snug text-slate-900">
+                                            <div className="text-sm font-medium text-slate-900">
                                                 {event.label}
                                             </div>
                                         )}
-                                        {event.context && (
-                                            <div className="mt-0.5 text-xs leading-snug text-slate-600">
-                                                {event.context}
-                                            </div>
-                                        )}
-                                        <div className="mt-0.5 text-xs text-slate-500">
-                                            {new Date(event.date).toLocaleDateString('en-US', {
-                                                month: 'long',
-                                                day: 'numeric',
-                                                year: 'numeric'
-                                            })}
+                                        <div className="text-2xl font-bold text-slate-900 tabular-nums">
+                                            {days}
                                         </div>
                                     </div>
-                                    <div className="text-2xl font-bold leading-none tabular-nums text-slate-900">
-                                        {days}
+                                    {event.context && (
+                                        <div className="text-xs text-slate-600 leading-snug">
+                                            {event.context}
+                                        </div>
+                                    )}
+                                    <div className="text-xs text-slate-500 mt-1">
+                                        {new Date(event.date).toLocaleDateString('en-US', {
+                                            month: 'long',
+                                            day: 'numeric',
+                                            year: 'numeric'
+                                        })}
                                     </div>
                                 </div>
                             );

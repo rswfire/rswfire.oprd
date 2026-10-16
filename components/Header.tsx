@@ -6,6 +6,7 @@ import Icon from "@/components/Icon";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import HostedOnGithub from "@/components/HostedOnGithub";
 import Tracker from "@/components/Tracker";
+import VolunteerShield from "@/components/VolunteerShield";
 import { archiveSections } from "@/lib/sections";
 
 export default function Header() {
@@ -219,19 +220,8 @@ export default function Header() {
                                 }
                             }}
                         >
-                            <Link
-                                href="/volunteers"
-                                className="flex items-center gap-3 overflow-hidden rounded-xl border border-red-200 shadow-sm"
-                            >
-                                <span className="flex h-12 w-11 shrink-0 items-center justify-center bg-red-700">
-                                    <Icon name="Shield" className="text-white w-5 h-5" size={20} strokeWidth={1.75} />
-                                </span>
-                                <span className="py-1.5 pr-3 leading-tight">
-                                    <span className="block text-[11px] font-bold uppercase tracking-widest text-red-900">For Volunteers</span>
-                                    <span className="block text-[11px] text-gray-600">If this happened to you, it has a name.</span>
-                                </span>
-                            </Link>
-                            <NewsletterSignup />
+                            <VolunteerShield />
+                                            <NewsletterSignup />
                             <Tracker />
                             <HostedOnGithub />
                         </div>
