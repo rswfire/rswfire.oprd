@@ -851,19 +851,6 @@ export const TIMELINE: TimelineSection[] = [
                     ": the request stated five grounds for the waiver, the denial addresses one and considers no reduction, and the Department of Administrative Services wrote in July that it held no records on the same man and the same letters.",
                 ],
             },
-            {
-                d: "2026-10-16", date: "October 16, 2026", major: true,
-                title: "System and Key Individuals.",
-                body: [
-                    "I publish ",
-                    { t: "System", href: "/system" },
-                    ", the State of Oregon mapped as a system, and ",
-                    { t: "Key Individuals", href: "/key-individuals" },
-                    ": every seat in this record, by role and by actual function, with its complete record. I ",
-                    { doc: "01M521DD08FR8RXZSAB8XZHECK", thread: "governor", t: "send Key Individuals to the Public Records Advocate" },
-                    ".",
-                ],
-            },
         ],
     },
 ];
