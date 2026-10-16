@@ -30,7 +30,7 @@ export default function HostedOnGithub() {
                 href="https://github.com/rswfire/rswfire.oprd"
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-2 whitespace-nowrap text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
             >
                 <GithubMark className="h-3.5 w-3.5" />
                 Hosted on GitHub
@@ -38,7 +38,7 @@ export default function HostedOnGithub() {
             <span className="text-xs leading-none text-slate-300">&middot;</span>
             <a
                 href="/analytics"
-                className="inline-flex items-center gap-2 whitespace-nowrap text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 transition-colors hover:text-emerald-700"
             >
                 <ChartCandlestick className="h-3.5 w-3.5" />
                 {off ? "Turn on analytics." : "Turn off analytics."}
