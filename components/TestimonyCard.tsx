@@ -6,12 +6,13 @@
 // partId(). When a part is added or retitled there, update this list.
 
 import Link from "next/link";
-import { Sprout } from "lucide-react";
+import type { ReactNode } from "react";
+import { ChevronRight, Sprout, Users } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
-import { APPARATUS } from "@/data/apparatus";
+import { APPARATUS, APPARATUS_SEATS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
 
 const CHAPTERS = [
@@ -26,6 +27,28 @@ const CHAPTERS = [
     "THE THREE MEN WITH GUNS",
     "THE GOVERNOR'S SILENCE",
 ];
+
+/** The text with each named role linked to that person's drawer on Key Individuals. */
+function withSeats(text: string): ReactNode[] {
+    const hits = APPARATUS_SEATS
+        .map(([phrase, seat]) => ({ phrase, seat, at: text.indexOf(phrase) }))
+        .filter((h) => h.at >= 0)
+        .sort((a, b) => a.at - b.at);
+    const out: ReactNode[] = [];
+    let i = 0;
+    for (const h of hits) {
+        if (h.at < i) continue;
+        out.push(text.slice(i, h.at));
+        out.push(
+            <Link key={h.seat} href={`/key-individuals#seat-${h.seat}`} className="text-inherit underline decoration-gray-300 underline-offset-2 hover:text-emerald-800 hover:decoration-emerald-500">
+                {h.phrase}
+            </Link>,
+        );
+        i = h.at + h.phrase.length;
+    }
+    out.push(text.slice(i));
+    return out;
+}
 
 export default function TestimonyCard() {
     return (
@@ -53,14 +76,27 @@ export default function TestimonyCard() {
                     prints the same block and cannot see this file. */}
                 <div className="mt-7 space-y-3 text-[13px] italic leading-relaxed text-gray-600 lg:mx-10">
                     <p className="font-bold">{APPARATUS.count}</p>
-                    <p>{APPARATUS.roster}</p>
+                    <p>{withSeats(APPARATUS.roster)}</p>
                     <p>{APPARATUS.account}</p>
-                    <p>{APPARATUS.silence}</p>
+                    <p>{withSeats(APPARATUS.silence)}</p>
                     <p>
                         <Cite ulid={APPARATUS.citationUlid} thread={APPARATUS.citationThread}>
                             {APPARATUS.citation}
                         </Cite>
                     </p>
+                    <Link
+                        href="/key-individuals"
+                        className="not-italic group !mt-5 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50/60 px-4 py-3 no-underline transition-colors hover:border-emerald-300 hover:bg-emerald-50"
+                    >
+                        <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-emerald-700 ring-1 ring-emerald-200">
+                            <Users size={18} strokeWidth={1.75} />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                            <span className="block text-[14px] font-semibold text-gray-900">Key Individuals</span>
+                            <span className="block text-[12px] text-gray-600">Everyone named above, seat by seat.</span>
+                        </span>
+                        <ChevronRight aria-hidden size={18} className="shrink-0 text-emerald-700 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
                 </div>
 
                 <div className="mt-7 space-y-4 text-lg leading-relaxed text-gray-800">

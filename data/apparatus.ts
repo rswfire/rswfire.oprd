@@ -25,3 +25,23 @@ export const APPARATUS = {
     citationUlid: "01M1M4WF78XJPEJJ48D1JZ4SJ8",
     citationThread: "osp",
 } as const;
+
+/**
+ * Where each role named above has its seat on Key Individuals. The card
+ * links these phrases; the PDF prints the plain text. Each phrase must
+ * appear verbatim in roster or silence. The patrol captain, the sheriff's
+ * deputy and the two FBI personnel have no seat.
+ */
+export const APPARATUS_SEATS: [phrase: string, seat: string][] = [
+    ["An Oregon State Parks manager", "emergency-manager"],
+    ["a deputy director", "deputy"],
+    ["An Oregon State Police press captain", "press-captain"],
+    ["A lieutenant of Criminal Investigations", "lieutenant"],
+    ["A Major Crimes detective", "case-detective"],
+    ["a sergeant", "sergeant"],
+    ["a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force", "task-force-detective"],
+    ["A criminal intelligence analyst at the state’s Department of Justice fusion center", "fusion-center-analyst"],
+    ["A federal special agent", "forest-service-agent"],
+    ["Governor Kotek", "governor"],
+    ["Director Sumption", "director"],
+];
