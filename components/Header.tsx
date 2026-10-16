@@ -108,8 +108,10 @@ export default function Header() {
                 className="md:hidden flex items-center gap-2 border-t border-red-200 bg-red-700 px-4 py-2 text-white active:bg-red-800"
             >
                 <Icon name="Shield" className="w-4 h-4 shrink-0" size={16} strokeWidth={1.75} />
-                <span className="text-[11px] font-bold uppercase tracking-widest">For Volunteers</span>
-                <span className="text-[11px] text-red-100">&mdash; if this happened to you, it has a name.</span>
+                <span className="text-[11px]">
+                    <span className="font-bold uppercase tracking-widest">For Volunteers</span>{" "}
+                    <span className="text-red-100">&mdash; if this happened to you, it has a name.</span>
+                </span>
             </Link>
 
             {/* And the one place he speaks publicly, same treatment. */}
@@ -120,8 +122,10 @@ export default function Header() {
                 className="md:hidden flex items-center gap-2 whitespace-nowrap border-t border-slate-700 bg-slate-900 px-4 py-2 text-white active:bg-black"
             >
                 <Icon name="Flame" className="w-3.5 h-3.5 shrink-0 text-white" size={14} strokeWidth={2} />
-                <span className="text-[11px] font-bold uppercase tracking-widest">Public Statements</span>
-                <span className="text-[11px] text-slate-300">&mdash; find me at rswfire.com.</span>
+                <span className="text-[11px]">
+                    <span className="font-bold uppercase tracking-widest">Public Statements</span>{" "}
+                    <span className="text-slate-300">&mdash; find me at rswfire.com.</span>
+                </span>
             </a>
 
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
