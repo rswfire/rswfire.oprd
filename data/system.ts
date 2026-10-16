@@ -175,7 +175,7 @@ const POLICE: Branch = {
             title: "Detective; FBI Task Force Officer",
             inst: "Oregon State Police",
             fn: "Trusted with federal intelligence systems on the condition, set by the Attorney General’s Guidelines, that no one is investigated solely for exercising First Amendment rights. Also bound by ORS 181A.250.",
-            real: "Puts an armed officer at the volunteer’s door. He read the archive and found no crime, eighteen days before he came. He carried the agency’s account into federal hands, to FBI personnel and to a Forest Service agent he enlisted to find him, and drove sixty-nine minutes to stand there.",
+            real: "Puts an armed officer at the volunteer’s door. He read the archive and found no crime, eighteen days before he came. He carried the agency’s account into federal hands, to FBI personnel and to a Forest Service agent he enlisted to find him, and drove sixty-eight minutes to stand there.",
             docs: [
 
             ],
@@ -484,7 +484,7 @@ export const RUNGS: Rung[] = [
                 id: "lead",
                 title: "Volunteer Services Lead",
                 fn: "The volunteer’s supervisor. The one a volunteer confides in, and their advocate inside the park.",
-                real: "Reports the volunteer to management. He took what the volunteer told him to the park’s managers, escalated what he said about the supervisor, and promised him training no one arranged.",
+                real: "Discloses to management what the volunteer shares with him. He escalated what the volunteer told him about the supervisor instead of protecting him, and promised him a training the park manager had already ruled out.",
                 docs: [
                     { who: "Park manager", when: "March 5, 2025", text: "“it’s not the volunteer services lead doing a dismissal. It’s the park supervisor or myself.”", src: { href: "/evidence/coercion/?t=29:52" } },
                     { who: "His letter to the volunteer services lead", when: "December 9, 2025", text: "“You took what I shared in confidence and disclosed it to management.”", src: { u: "01KC32EJP8NEFBWH0YGJKV3A4S" } },
