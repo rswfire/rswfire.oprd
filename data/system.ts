@@ -287,11 +287,10 @@ const RECORDS: Branch = {
         {
             id: "public-records-counsel",
             name: "David Pitcher",
-            title: "Senior Assistant Attorney General; Public Records Counsel",
+            title: "Public Records Counsel",
             inst: "Department of Justice",
-            note: { text: "His title, in his own signature: “Senior Assistant Attorney General | Public Records Counsel | General Counsel Division.”", src: { href: "https://www.doj.state.or.us/wp-content/uploads/2026/05/OSC_2026-05-20_Meeting_Agenda.pdf" } },
-            fn: "Public records counsel for the Department of Justice, in its General Counsel Division.",
-            real: "Answers for the Attorney General’s orders on the volunteer’s petitions, and denies the fee waiver on the volunteer’s request for his own department’s records about him.",
+            fn: "The Department of Justice’s lawyer on the public records law. Runs the meetings of the Oregon Sunshine Committee, which reviews what the state may withhold.",
+            real: "Works both sides of the volunteer’s dispute. He answered for the Attorney General’s orders on the volunteer’s petitions, then denied the fee waiver on the volunteer’s request for his own department’s file on him: $599.",
             docs: [],
         },
         {
