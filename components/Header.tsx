@@ -213,7 +213,7 @@ export default function Header() {
                         {/* Sidebar content the desktop aside can't show on mobile.
                             Closes the menu when a link inside is tapped. */}
                         <div
-                            className="mt-3 space-y-3 border-t border-slate-200 px-8 pt-4"
+                            className="mx-auto mt-3 max-w-xs space-y-3 border-t border-slate-200 pt-3"
                             onClick={(e) => {
                                 if ((e.target as HTMLElement).closest("a")) {
                                     setMobileMenuOpen(false);
