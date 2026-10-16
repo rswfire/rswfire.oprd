@@ -105,6 +105,31 @@ export default function PlayerProvider({ children }: { children: React.ReactNode
     const minimize = useCallback(() => setMode((m) => (m === "theater" ? "mini" : m)), []);
     const expand = useCallback(() => setMode((m) => (m === "mini" ? "theater" : m)), []);
 
+    // Theater covers the page, so it takes a step in history: Back puts the
+    // recording in the corner, still playing, and leaves the page beneath
+    // exactly as it was. Leaving theater any other way takes the step back
+    // out, so the next Back goes where the reader expects. The state keeps
+    // Next's own keys; without them its router reloads the page on Back.
+    const stepped = useRef(false);
+    useEffect(() => {
+        if (mode === "theater" && !stepped.current) {
+            window.history.pushState({ ...window.history.state, __player: true }, "", window.location.href);
+            stepped.current = true;
+        } else if (mode !== "theater" && stepped.current) {
+            stepped.current = false;
+            if (window.history.state?.__player) window.history.back();
+        }
+    }, [mode]);
+    useEffect(() => {
+        const onPop = () => {
+            if (!stepped.current || window.history.state?.__player) return;
+            stepped.current = false;
+            setMode((m) => (m === "theater" ? "mini" : m));
+        };
+        window.addEventListener("popstate", onPop);
+        return () => window.removeEventListener("popstate", onPop);
+    }, []);
+
     // Restore after a full page load: same recording, same second, paused, in
     // the box it was in. A reader who followed an outside link back into the
     // archive does not lose their place.

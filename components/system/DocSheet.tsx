@@ -24,6 +24,28 @@ export interface SheetContent {
 
 export default function DocSheet({ content, onClose }: { content: SheetContent | null; onClose: () => void }) {
     const closeRef = useRef<HTMLButtonElement>(null);
+    const bodyRef = useRef<HTMLDivElement>(null);
+
+    // Where the reader was in the drawer is kept in this history entry, so
+    // Back from a document opens the drawer at the same line.
+    useEffect(() => {
+        const body = bodyRef.current;
+        if (!content || !body) return;
+        const top = window.history.state?.sheetScroll;
+        if (typeof top === "number") body.scrollTop = top;
+        let timer = 0;
+        const onScroll = () => {
+            window.clearTimeout(timer);
+            timer = window.setTimeout(() => {
+                window.history.replaceState({ ...window.history.state, sheetScroll: body.scrollTop }, "", window.location.href);
+            }, 150);
+        };
+        body.addEventListener("scroll", onScroll, { passive: true });
+        return () => {
+            window.clearTimeout(timer);
+            body.removeEventListener("scroll", onScroll);
+        };
+    }, [content]);
 
     useEffect(() => {
         if (!content) return;
@@ -80,7 +102,7 @@ export default function DocSheet({ content, onClose }: { content: SheetContent |
                         <Icon name="X" size={22} strokeWidth={2} aria-hidden />
                     </button>
                 </div>
-                <div className="overflow-y-auto overscroll-contain px-5 pb-10 pt-6 sm:px-7">
+                <div ref={bodyRef} className="overflow-y-auto overscroll-contain px-5 pb-10 pt-6 sm:px-7">
                     {content.head ? <div className="mb-8">{content.head}</div> : null}
                     {content.lead?.length ? <div className="mb-10"><DocList docs={content.lead} /></div> : null}
                     {content.acts?.length ? <ActList acts={content.acts} /> : <DocList docs={content.docs} />}

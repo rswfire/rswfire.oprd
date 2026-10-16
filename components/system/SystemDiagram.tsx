@@ -8,7 +8,7 @@
 // police, off the agency, and the records, off the volunteer. Each seat
 // carries its implied role and its real one. A seat, a connection, or a
 // branch opens the documents behind it.
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { DoorClosed, Link as LinkIcon } from "lucide-react";
 import NextLink from "next/link";
@@ -337,6 +337,13 @@ RUNGS.forEach((r) => {
     }
 });
 
+/** The current history state, less the drawer's scroll, so a new drawer opens at its top. */
+function withoutScroll() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { sheetScroll, ...rest } = window.history.state ?? {};
+    return rest;
+}
+
 export default function SystemDiagram() {
     // The open drawer lives in the address (#seat-…, #line-…, #branch-…), so
     // Back from a document returns to the same drawer at the same card, and
@@ -359,7 +366,7 @@ export default function SystemDiagram() {
     }, []);
     const open = useCallback((k: string) => {
         if (window.location.hash !== `#${k}`) {
-            window.history.pushState(window.history.state, "", `#${k}`);
+            window.history.pushState(withoutScroll(), "", `#${k}`);
             pushed.current = true;
         }
         setKey(k);
@@ -369,11 +376,12 @@ export default function SystemDiagram() {
             pushed.current = false;
             window.history.back();
         } else {
-            window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
+            window.history.replaceState(withoutScroll(), "", window.location.pathname + window.location.search);
         }
         setKey(null);
     }, []);
-    const sheet = key ? SHEETS.get(key)?.() ?? null : null;
+    // One object per drawer, so the sheet's effects run when it opens, not on every render.
+    const sheet = useMemo(() => (key ? SHEETS.get(key)?.() ?? null : null), [key]);
 
     const last = RUNGS.length - 1;
 
