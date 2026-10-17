@@ -5495,64 +5495,320 @@ export const ACTS: Record<string, Act[]> = {
     ],
     "public-records-counsel": [
         {
+            "d": "2026-03-11",
+            "when": "March 11, 2026",
+            "text": "A criminal intelligence analyst at the Oregon TITAN Fusion Center, inside the Department of Justice, wrote to a state police detective that she was documenting the volunteer, writing that his actions \"border on harassment due to the volume of emails that he has forwarded to OPRD staff over the last year.\" This is the file the volunteer later asked the Department of Justice for, and that the Public Records Counsel priced.",
+            "src": {
+                "u": "01M36H37GR1NF6QE4JC7TEMVSE",
+                "t": "doj"
+            },
+            "title": "The Department of Justice's fusion center documents him",
+            "att": {
+                "label": "Public records request to the Oregon Department of Justice",
+                "href": "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-2026-09-23-oregon-doj-records-request.pdf",
+                "page": 2,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-07-22",
+            "when": "July 22, 2026",
+            "text": "Oregon State Police had answered the volunteer's request for the records of the March 24, 2026 visit to his door with \"no records\", then listed one record for a fee. He petitioned the Attorney General. Five days later, Oregon State Police reopened the request.",
+            "src": {
+                "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
+                "t": "outreach"
+            },
+            "title": "Petition against Oregon State Police",
+            "att": {
+                "label": "Oregon's Public Records Law, As Applied",
+                "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
+                "page": 2,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-07-28",
+            "when": "July 28, 2026",
+            "text": "The Attorney General's office acknowledged \"your petition\" without saying which one. The volunteer had two pending, one against Oregon State Police and one against the Department of Administrative Services. This is where the Public Records Counsel enters the record.",
+            "src": {
+                "u": "01KYMTB4B0BMABYPBY3YMA5CW1",
+                "t": "das"
+            },
+            "title": "Petition acknowledged, without saying which"
+        },
+        {
+            "d": "2026-07-28",
+            "when": "July 28, 2026",
+            "text": "Four minutes later, the volunteer asked which of his two petitions the acknowledgment referred to, and whether each had been given a file number.",
+            "src": {
+                "u": "01KYMTJ9TRT8C1RKQ1ZA43W7V6",
+                "t": "das"
+            },
+            "title": "He asks which petition, and for file numbers"
+        },
+        {
+            "d": "2026-07-28",
+            "when": "July 28, 2026",
+            "text": "The reply came back a minute later and answered neither question. It did not say which petition had been received, and it gave no file number.",
+            "src": {
+                "u": "01KYMTKJV87YKYENZ3VK7MZ844",
+                "t": "das"
+            },
+            "title": "\"You're welcome\""
+        },
+        {
+            "d": "2026-07-29",
+            "when": "July 29, 2026",
+            "text": "The Attorney General's order wrote that Oregon State Police had responded by \"citing the exemption for body camera video\". The letter Oregon State Police had sent listed one record and no recording. The order dismissed the request for records as moot, writing that Oregon State Police had reopened the request after the petition was filed.",
+            "src": {
+                "u": "01KYR0GMBRR83WH7FTFC90Y6DB",
+                "t": "osp"
+            },
+            "title": "Order on Oregon State Police: exemption credited, petition dismissed",
+            "att": {
+                "label": "Attorney General Order",
+                "href": "/records/osp/attachments/01kyr0gmbrr83wh7ftfc90y6db-White-Robert-07-29-26.pdf",
+                "page": 1,
+                "from": "Department of Justice"
+            }
+        },
+        {
+            "d": "2026-07-29",
+            "when": "July 29, 2026",
+            "text": "The same order found that Oregon State Police \"acted in good faith\" when it sent the volunteer a fee waiver form, and that its duty to respond had been suspended from April 14 to July 9. It declined to order any statement about records retention or the scope of the search. Thirteen days later, Oregon State Police identified six kinds of records responsive to the request it had answered with \"no records\".",
+            "src": {
+                "u": "01KYR0GMBRR83WH7FTFC90Y6DB",
+                "t": "osp"
+            },
+            "title": "Delay found suspended, the rest declined",
+            "att": {
+                "label": "Attorney General Order",
+                "href": "/records/osp/attachments/01kyr0gmbrr83wh7ftfc90y6db-White-Robert-07-29-26.pdf",
+                "page": 2,
+                "from": "Department of Justice"
+            }
+        },
+        {
             "d": "2026-07-30",
             "when": "July 30, 2026",
-            "text": "On the order deciding the state police petition, DOJ File No. 257001-GA0140-26, David Pitcher writes that its body camera reference “comes from the exhibits attached to your petition. Specifically, page 20/89”. Of the order’s “good faith”: “Pursuant to statute, if a public body requests clarification ‘in good faith’ that suspends the processing deadlines.”",
+            "text": "The Public Records Counsel answered the volunteer's challenge to the order. He wrote that the order's body camera reference came from page 20 of the petition's exhibits, which is the April 13 fee letter, and that a good-faith request for clarification suspends the deadlines. He did not say whether a recording had been located.",
             "src": {
                 "u": "01KYSZQ430YWS431STFM7QVWAD",
                 "t": "osp"
             },
-            "title": "David Pitcher, Oregon Department of Justice, Explanation of Order, DOJ File No. 257001-GA0140-26"
+            "title": "Pitcher traces the exemption to the volunteer's own exhibit"
+        },
+        {
+            "d": "2026-07-30",
+            "when": "July 30, 2026",
+            "text": "Seven minutes later, the volunteer withdrew both of his points in writing and published the correction. He then set out that the fee letter quotes the statute without identifying any recording, gives no statement of review rights, and conflicts with the July 14 release letter's statement that no exempt material had been identified. He asked which of these was the case.",
+            "src": {
+                "u": "01KYT02Z00T93GK94BKWWGQG5S",
+                "t": "osp"
+            },
+            "title": "He corrects himself, and asks whether a recording exists"
+        },
+        {
+            "d": "2026-07-30",
+            "when": "July 30, 2026",
+            "text": "The volunteer wrote to the Public Records Counsel that the fee letter's checklist had one checked item and no line for body camera footage, and that four months on he had no itemized list of what the state held.",
+            "src": {
+                "u": "01KYT3WXB0SQYDSBMW57E9RFSA",
+                "t": "osp"
+            },
+            "noreply": true,
+            "title": "The checklist with one item"
+        },
+        {
+            "d": "2026-07-30",
+            "when": "July 30, 2026",
+            "text": "The volunteer filed a new public records request with Oregon State Police for the fee and exemption letter template, its versions, the instructions for its use, and the letters issued on it. He copied the Public Records Counsel and wrote why.",
+            "src": {
+                "u": "01KYTC9F30N5YX1ZNDM5A0563G",
+                "t": "osp"
+            },
+            "title": "Request for the form letter, copied to his office"
+        },
+        {
+            "d": "2026-08-04",
+            "when": "August 4, 2026",
+            "text": "The Attorney General denied the volunteer's petition against the Department of Administrative Services. That agency had closed his request for its communications about him by writing that it was \"not the custodian\". The order accepted that statement, and wrote that the law did not require the agency to describe its search or to address his preservation notice.",
+            "src": {
+                "u": "01KZ7BFZ2090R3D63P7YXCT68M",
+                "t": "das"
+            },
+            "title": "Order on the Department of Administrative Services: denied",
+            "att": {
+                "label": "Attorney General Order",
+                "href": "/records/das/attachments/01kz7bfz2090r3d63p7yxct68m-PRO-White-Robert-08-04-26.pdf",
+                "page": 1,
+                "from": "Department of Justice"
+            }
+        },
+        {
+            "d": "2026-09-23",
+            "when": "September 23, 2026",
+            "text": "The volunteer asked the Department of Justice for every record it holds on him. This included the fusion center's March 11 email, any research it did on him, every place the records are kept and everyone they went to, communications naming David Pitcher, and the complete files of both petitions. He asked for a fee waiver and addressed each of the five factors in the Department's own manual.",
+            "src": {
+                "u": "01M36H37GR1NF6QE4JC7TEMVSE",
+                "t": "doj"
+            },
+            "title": "Request for the Department of Justice's own file on him",
+            "att": {
+                "label": "Public records request to the Oregon Department of Justice",
+                "href": "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-2026-09-23-oregon-doj-records-request.pdf",
+                "page": 3,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-09-24",
+            "when": "September 24, 2026",
+            "text": "The Department of Justice's Public Records Coordinator wrote that the request was \"very broad in scope\" and invited him to narrow it. Within the hour, the volunteer offered to narrow it and asked two things: which of the nine categories carried the burden, and how a request limited to one person was very broad. He also asked for the fee estimate she had offered.",
+            "src": {
+                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+                "t": "governor"
+            },
+            "title": "\"Very broad in scope\"",
+            "att": {
+                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
+                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
+                "page": 6,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-09-24",
+            "when": "September 24, 2026",
+            "text": "The volunteer petitioned the Attorney General over the Governor's office's denial of his fee waiver and its $572.50 fee. That afternoon the Deputy Attorney General dismissed the petition, writing that the office lacked jurisdiction over records held by an elected official. The order quoted ORS 192.427 with its condition replaced by asterisks: \"after a claim of right to withhold disclosure by an elected official.\" No elected official had claimed a right to withhold anything.",
+            "src": {
+                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+                "t": "governor"
+            },
+            "title": "Petition on the Governor's office dismissed the same afternoon",
+            "att": {
+                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
+                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
+                "page": 5,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-10-01",
+            "when": "October 1, 2026",
+            "text": "The volunteer's second petition challenged only the fee waiver denial. The Attorney General dismissed it, writing that its authority over fee waivers did not reach \"decisions made by elected officials\", and citing ORS 192.427 and a 2014 order. No record had been withheld from him.",
+            "src": {
+                "u": "01M3WAH79RY4KVVHRYVY9T726S",
+                "t": "governor"
+            },
+            "title": "Second petition, on the fee waiver alone, dismissed",
+            "att": {
+                "label": "Petition for Public Records Disclosure Order: dismissed",
+                "href": "/records/governor/attachments/01m3wah79ry4kvvhryvy9t726s-PRO-White-Robert-10-01-26.pdf",
+                "page": 1,
+                "from": "Department of Justice"
+            }
+        },
+        {
+            "d": "2026-10-08",
+            "when": "October 8, 2026",
+            "text": "The volunteer asked the Legislature to close the gaps the Attorney General's orders rely on. He set out how the July 29 order credited Oregon State Police with \"citing the exemption\", drawing the reference from his own exhibit, and how the Governor's-office orders were reached. He had also asked the Attorney General's office why the October 1 order did not appear in the published collection.",
+            "src": {
+                "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
+                "t": "outreach"
+            },
+            "title": "He puts the orders before the Legislature",
+            "att": {
+                "label": "Oregon's Public Records Law, As Applied",
+                "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
+                "page": 4,
+                "from": "Robert Samuel White"
+            }
         },
         {
             "d": "2026-10-09",
             "when": "October 9, 2026",
-            "text": "On the order deciding the Governor’s office petition, DOJ File No. 121010-GA0187-26, asked why it was not in the public records order collection and for the 2014 order it cites, David Pitcher writes that the 2014 order is in the Law Library collection and: “The October 1 order on your petition will be published. We submit orders to the library in batches every couple of weeks.”",
+            "text": "The Public Records Counsel told the volunteer where to find the 2014 order and wrote that the October 1 order would be published, explaining that orders are sent to the library in batches.",
             "src": {
                 "u": "01M4GJ3SC0KRKXY18MBW7WXRTW",
                 "t": "governor"
             },
-            "title": "David Pitcher, Oregon Department of Justice, Reply re Publication of Order, DOJ File No. 121010-GA0187-26"
+            "title": "Pitcher: the order \"will be published\""
         },
         {
             "d": "2026-10-09",
             "when": "October 9, 2026",
-            "text": "Asked that evening to correct the Law Library listing of the October 1 order, which gives the date of the first order and describes it as “Requesting that the AG order the Oregon Governor’s Office to respond to a public records.” No reply as of October 15.",
+            "text": "The volunteer read the 2014 order and reported that its reasoning is one paragraph, that it is the only document a search for it returns, and that he could find no other order in twelve years that cites it.",
+            "src": {
+                "u": "01M4GMP81G9Q9AMNA8N7FQXBHJ",
+                "t": "governor"
+            },
+            "noreply": true,
+            "title": "One paragraph from 2014"
+        },
+        {
+            "d": "2026-10-09",
+            "when": "October 9, 2026",
+            "text": "The October 1 order appeared in the collection dated September 24 and described as a request to make the Governor's office respond. Neither petition asked for that. The volunteer asked the Public Records Counsel to correct both the date and the description.",
             "src": {
                 "u": "01M4J15MW0MSEVY31020497F6G",
                 "t": "governor"
             },
-            "title": "Correct the date and the description"
+            "noreply": true,
+            "title": "The published order is misdated and misdescribed"
+        },
+        {
+            "d": "2026-10-14",
+            "when": "October 14, 2026",
+            "text": "Twenty days after his two questions, the Department of Justice wrote only that it needed more time. The volunteer asked the Public Records Advocate to take four institutions into dispute resolution, the Department of Justice among them, because his request had been neither answered nor priced. He set out David Pitcher's July 30 explanation in the record.",
+            "src": {
+                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+                "t": "governor"
+            },
+            "title": "Request for facilitated dispute resolution",
+            "att": {
+                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
+                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
+                "page": 7,
+                "from": "Robert Samuel White"
+            }
         },
         {
             "d": "2026-10-15",
             "when": "October 15, 2026",
-            "text": "On the volunteer’s request for his department’s own records, David Pitcher denies the fee waiver: “While there is always a public interest in oversight of how a public body conducts its business, the records you seek pertain primarily to you and your private interests.  We have already spent more than one hour of staff time searching for responsive records.  Given the burden on our agency, we do not believe it would be reasonable to provide any additional waiver of our fees.”",
+            "text": "The day after the request reached the Advocate, the Public Records Counsel denied the fee waiver on his own department's file on the volunteer. He addressed one of the five factors the request set out, made no decision on reducing the fee, and counted the department's search time against the volunteer. He reported 1,350 potentially responsive records, priced them at $599 by check or money order only, and did not answer either question from September 24.",
             "src": {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
             },
-            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
+            "title": "Pitcher denies the waiver and prices his department's file at $599"
         },
         {
             "d": "2026-10-15",
             "when": "October 15, 2026",
-            "text": "In the same letter David Pitcher reports “1,350 potentially responsive records” and an estimate of “$599; this is based on the following breakdown: 13 hours of managerial time billed at $40 per hour and 1 hour of paralegal time billed at $79.00 per hour.” Payment by check or money order only: “we do not accept credit cards or digital/electronic forms of payment.”",
+            "text": "Within the hour the volunteer forwarded the denial to the Public Records Advocate and answered it. He asked for four things: a decision on all five stated facts, a decision on reducing the fee, answers to the September 24 questions, and a breakdown of the 1,350 records by category and division. He set the count against the Department of Administrative Services, which had found no records on him.",
             "src": {
-                "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
+                "u": "01M50VW1MR9QZF4C6CE021FEZ6",
                 "t": "doj"
             },
-            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
+            "noreply": true,
+            "title": "He answers the denial",
+            "att": {
+                "label": "Response to the Fee Waiver Denial of October 15, 2026",
+                "href": "/records/doj/attachments/01m50vw1mr9qzf4c6ce021fez6-2026-10-15-department-of-justice.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            }
         },
         {
             "d": "2026-10-16",
             "when": "October 16, 2026",
-            "text": "The volunteer writes to him that his title carries three trusts: to tell Oregon the truth about its records law, to apply that law to his own department as to any other, and to put his name to what he decides. Beside each he sets what the record shows him doing. Copied to the Deputy Attorney General, the OPRD Commissioners and Governor Kotek.",
+            "text": "The volunteer wrote to the Public Records Counsel and set the three duties of the title beside his record. His explanations carry his name with no title. His denial carries no name. The orders went out over the Deputy Attorney General's signature with the initials \"DEP:pjn\". The volunteer told him the function line the archive gives him and asked him to correct it in a signed letter if it is wrong.",
             "src": {
                 "u": "01M53BC0W0KQVDK57PD0WJ29EC",
                 "t": "doj"
             },
-            "title": "Letter to the Public Records Counsel"
+            "title": "Role and function, sent to him"
         }
     ]
 };
