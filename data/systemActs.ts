@@ -5502,7 +5502,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "The Department of Justice's fusion center documents him",
+            "title": "The Department of Justice's fusion center documents the volunteer",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -5538,7 +5538,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYMTJ9TRT8C1RKQ1ZA43W7V6",
                 "t": "das"
             },
-            "title": "He asks which petition, and for file numbers"
+            "title": "The volunteer asks which petition, and for file numbers"
         },
         {
             "d": "2026-07-28",
@@ -5600,7 +5600,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYT02Z00T93GK94BKWWGQG5S",
                 "t": "osp"
             },
-            "title": "He corrects himself, and asks whether a recording exists"
+            "title": "The volunteer corrects himself, and asks whether a recording exists"
         },
         {
             "d": "2026-07-30",
@@ -5620,7 +5620,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYTC9F30N5YX1ZNDM5A0563G",
                 "t": "osp"
             },
-            "title": "Request for the form letter, copied to his office"
+            "title": "Request for the form letter, copied to the Public Records Counsel"
         },
         {
             "d": "2026-08-04",
@@ -5646,7 +5646,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M36H37GR1NF6QE4JC7TEMVSE",
                 "t": "doj"
             },
-            "title": "Request for the Department of Justice's own file on him",
+            "title": "Request for the Department of Justice's own file on the volunteer",
             "att": {
                 "label": "Public records request to the Oregon Department of Justice",
                 "href": "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-2026-09-23-oregon-doj-records-request.pdf",
@@ -5659,31 +5659,25 @@ export const ACTS: Record<string, Act[]> = {
             "when": "September 24, 2026",
             "text": "The Department of Justice's Public Records Coordinator wrote that the request was \"very broad in scope\" and invited him to narrow it. Within the hour, the volunteer offered to narrow it and asked two things: which of the nine categories carried the burden, and how a request limited to one person was very broad. He also asked for the fee estimate she had offered.",
             "src": {
-                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
-                "t": "governor"
+                "u": "01M3APMQF8Z8NRH088RB9N765Z",
+                "t": "doj"
             },
-            "title": "\"Very broad in scope\"",
-            "att": {
-                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
-                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
-                "page": 6,
-                "from": "Robert Samuel White"
-            }
+            "title": "\"Very broad in scope\""
         },
         {
             "d": "2026-09-24",
             "when": "September 24, 2026",
             "text": "The volunteer petitioned the Attorney General over the Governor's office's denial of his fee waiver and its $572.50 fee. That afternoon the Deputy Attorney General dismissed the petition, writing that the office lacked jurisdiction over records held by an elected official. The order quoted ORS 192.427 with its condition replaced by asterisks: \"after a claim of right to withhold disclosure by an elected official.\" No elected official had claimed a right to withhold anything.",
             "src": {
-                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+                "u": "01M3AW7K3GZCPA4CD5YQ0FR2R6",
                 "t": "governor"
             },
             "title": "Petition on the Governor's office dismissed the same afternoon",
             "att": {
-                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
-                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
-                "page": 5,
-                "from": "Robert Samuel White"
+                "label": "Petition for Public Records Disclosure Order: dismissed",
+                "href": "/records/governor/attachments/01m3aw7k3gzcpa4cd5yq0fr2r6-PRO-White-Robert-Samuel-09-24-26.pdf",
+                "page": 1,
+                "from": "Department of Justice"
             }
         },
         {
@@ -5710,7 +5704,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
                 "t": "outreach"
             },
-            "title": "He puts the orders before the Legislature",
+            "title": "The volunteer puts the orders before the Legislature",
             "att": {
                 "label": "Oregon's Public Records Law, As Applied",
                 "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
@@ -5772,7 +5766,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
             },
-            "title": "Pitcher denies the waiver and prices his department's file at $599"
+            "title": "Pitcher denies the waiver and prices the Department of Justice's file at $599"
         },
         {
             "d": "2026-10-15",
@@ -5782,7 +5776,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M50VW1MR9QZF4C6CE021FEZ6",
                 "t": "doj"
             },
-            "title": "He answers the denial",
+            "title": "The volunteer answers the denial",
             "att": {
                 "label": "Response to the Fee Waiver Denial of October 15, 2026",
                 "href": "/records/doj/attachments/01m50vw1mr9qzf4c6ce021fez6-2026-10-15-department-of-justice.pdf",
@@ -5798,7 +5792,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M53BC0W0KQVDK57PD0WJ29EC",
                 "t": "doj"
             },
-            "title": "Role and function, sent to him"
+            "title": "Role and function, sent to the Public Records Counsel"
         }
     ]
 };
