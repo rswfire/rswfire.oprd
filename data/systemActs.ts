@@ -3301,17 +3301,52 @@ export const ACTS: Record<string, Act[]> = {
     ],
     "emergency-manager": [
         {
+            "d": "2025-03-24",
+            "when": "March 24, 2025",
+            "text": "The park manager dismissed the volunteer by phone. Within hours he put it in writing to the program manager: dismissed a week before his scheduled departure, with no paperwork and no documentation.",
+            "src": {
+                "href": "/testimony/#ptt2f7"
+            },
+            "title": "Dismissed with no paperwork"
+        },
+        {
+            "d": "2025-03-26",
+            "when": "March 26, 2025",
+            "text": "The institution's letter ended the volunteer's service at every park, for his public comments about his volunteer service, in the same sentence that granted he was \"able to share your opinion, perspective and experience as an individual.\"",
+            "src": {
+                "u": "01JQA2WM60RX7MSJQ5QPFD8AR2",
+                "t": "oprd"
+            },
+            "title": "Statewide exclusion letter names the volunteer's speech",
+            "att": {
+                "label": "Robert Samuel White Letter",
+                "href": "/records/oprd/attachments/01jqa2wm60rx7msjq5qpfd8ar2-Robert-Samuel-White-Letter.pdf",
+                "page": 1,
+                "from": "Oregon State Parks"
+            }
+        },
+        {
+            "d": "2025-11-18",
+            "when": "November 18, 2025",
+            "text": "The volunteer sent the Governor's office a formal complaint. He wrote again on December 18 and 19, January 9 and 14, and February 15, and twice on March 3, 2026.",
+            "src": {
+                "u": "01KACE2348G8VG3XPB3BGW3F1N",
+                "t": "governor"
+            },
+            "title": "The volunteer begins writing to the Governor"
+        },
+        {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "Jamen Lee emails Captain Kyle Kennedy, copying the deputy director, with a link to the archive’s key-individuals page: “since he is now including the Governor as well as our Director.”",
+            "text": "Lee sent a link to the volunteer's archive to the Oregon State Police captain of Government and Media Relations, copying the Deputy Director. The only reason he wrote down was that the volunteer was now writing to the Governor and the Director. He had been writing to the Governor for three and a half months. The email alleges no crime and quotes no threat.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Lee sends the volunteer's letters to the state police",
             "att": {
-                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
                 "page": 2,
                 "from": "Oregon State Police"
             }
@@ -3319,44 +3354,69 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "In the same email: “Website author was dismissed from volunteering with OPRD on 3/25/25 and flagged as ineligible for future service.”",
+            "text": "In the same email Lee told the police the volunteer was \"flagged as ineligible for future service\" and dated the dismissal March 25, 2025. The written letter is dated March 26. No notice to the volunteer had ever stated a flag.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Lee tells the police the volunteer is flagged",
             "att": {
-                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
-                "page": 2,
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 9,
                 "from": "Oregon State Police"
             }
         },
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "In the same email: “Has continued to email the OPRD staff (listed on his website) and recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director” and “We can discuss more details if need be after our check-in with involved staff today.”",
+            "text": "Lee told the captain the volunteer had \"recently escalated.\" What he pointed to was a count of days in the volunteer's emails to the Deputy Director, the same Deputy Director copied on this email. He named no threat and no act.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Lee calls the letters an escalation",
             "att": {
-                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
-                "page": 2,
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 3,
+                "from": "Oregon State Police"
+            }
+        },
+        {
+            "d": "2026-03-04",
+            "when": "March 4, 2026",
+            "text": "The next morning the captain sent Lee's email on to the Criminal Investigations Division, and the dispatch record logged his order.",
+            "src": {
+                "href": "/testimony/#p9zswx"
+            },
+            "title": "Captain orders a \"threat assessment\""
+        },
+        {
+            "d": "2026-03-06",
+            "when": "March 6, 2026",
+            "text": "Lee's referral reached a detective who is a task force officer with the Portland FBI Joint Terrorism Task Force. From his FBI account he sent the volunteer's name to FBI personnel. He read the volunteer's archive and reported to the lieutenant: \"I wanted to update you on what I was able to learn from my end, it wasn't much unfortunately.\"",
+            "src": {
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
+            },
+            "title": "Task force detective finds nothing",
+            "att": {
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 1,
                 "from": "Oregon State Police"
             }
         },
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "Jamen Lee emails Detective Jake Hyde, copying the deputy director: “As a follow up to our discussion here is some of the documentation related to it.” Attached: “021426 Email Chain.pdf”, “Dismissal Letter.pdf”, “Timeline of Events.docx”.",
+            "text": "That afternoon, \"as a follow up to our discussion\", Lee sent the detective the dismissal letter, the institution's \"timeline of events\" and a February 2026 email chain, copying the Deputy Director. He also offered the police the volunteer's other letters to the Deputy Director.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Lee sends the detective the institution's file",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3367,12 +3427,21 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "In the same email, Jamen Lee offers “any of the add’l correspondence that’s been directed to” the deputy director.",
+            "text": "The \"timeline of events\" Lee sent to the police was written by the program manager who expelled the volunteer. He has written that it quotes fragments of his emails and texts out of context, with her own descriptions attached, and that it was never shown to him.",
+            "src": {
+                "href": "/sunlight/"
+            },
+            "title": "A file the volunteer was never shown"
+        },
+        {
+            "d": "2026-03-10",
+            "when": "March 10, 2026",
+            "text": "The task force detective sent the documents Lee had provided to a Major Crimes detective.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Detectives plan a trip south",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3381,40 +3450,93 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-03-11",
-            "when": "March 11, 2026",
-            "text": "Dianne Greenlee writes: “Jamen Lee with OPRD shared the information about Mr. White’s activities with the fusion center.”",
+            "d": "2026-03-23",
+            "when": "March 23, 2026",
+            "text": "The Major Crimes detective opened a dispatch event naming the volunteer \"Suspect\". The basis he wrote is what Lee's email described: emails to the institution and publishing.",
+            "src": {
+                "href": "/testimony/#pewtmp"
+            },
+            "title": "Named \"Suspect\" for emails and publishing"
+        },
+        {
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "On the anniversary of his dismissal, three officers came through a locked federal gate to the work center where the volunteer lives. None of them named an agency. He recorded it.",
+            "src": {
+                "href": "/evidence/police/?t=0:00"
+            },
+            "title": "Officers come through a federal gate"
+        },
+        {
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "At his door they told him they were concerned about what he was posting about Oregon State Parks. And that he was not in trouble. He declined to speak without an attorney and closed the door.",
+            "src": {
+                "u": "01KMRG1SS08ZF35E4PGSZHBQW1",
+                "t": "usfs"
+            },
+            "title": "\"Not in trouble\""
+        },
+        {
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "He turned on his camera, filmed them leaving, and named what they had done: \"This is intimidation right here. This is completely wrong.\"",
+            "src": {
+                "href": "/evidence/police/?t=0:35"
+            },
+            "title": "Intimidation, named on camera"
+        },
+        {
+            "d": "2026-04-02",
+            "when": "April 2, 2026",
+            "text": "The volunteer asked the institution for every communication with law enforcement about him. The institution answered with an estimate that priced the law enforcement records at two to five hours of work.",
+            "src": {
+                "u": "01KN7XV0EGHERQPQTAG7K8H3HN",
+                "t": "oprd"
+            },
+            "title": "The volunteer asks the institution what it told the police"
+        },
+        {
+            "d": "2026-04-15",
+            "when": "April 15, 2026",
+            "text": "The Major Crimes detective's threat assessment report copies Lee's email in full as its referral. What it names is what the email named: the volunteer's emails to the institution, and his posting online.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "The report rests on Lee's email",
             "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
-                "page": 6,
+                "label": "Report SP26096984 — Threat Assessment",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
+                "page": 2,
                 "from": "Oregon State Police"
             }
         },
         {
             "d": "2026-09-05",
             "when": "September 5, 2026",
-            "text": "Jamen Lee is sent a letter about his March 3 email. No reply.",
+            "text": "The volunteer wrote to Lee directly, so the record would contain, in plain terms, what his March 3 email did. He asked Lee to dispute any word of it. Lee has not answered.",
             "src": {
                 "u": "01M1S53NH8C3YG644R0W1TG0DS",
                 "t": "oprd"
             },
-            "title": "Your March 3, 2026 email to Captain Kennedy"
+            "title": "The volunteer writes to Lee"
         },
         {
-            "d": "2026-09-05",
-            "when": "September 5, 2026",
-            "text": "Jamen Lee is sent the same letter as Captain Kennedy. No reply.",
+            "d": "2026-09-27",
+            "when": "September 27, 2026",
+            "text": "Writing to the captain, the volunteer set down that an emergency manager with a threat has dispatch, a 911 call, a detective and the agency's own security. Lee used none of them and wrote to the captain who handles the press and the legislature.",
             "src": {
-                "u": "01M1S5AS2G1PK98P6VYW8M9RSQ",
+                "u": "01M3GWDQSGQ34YBJFFKTMJYAF5",
                 "t": "osp"
             },
-            "title": "Your order is the first act of state power in that file"
+            "title": "The volunteer sets out the routes Lee did not use",
+            "att": {
+                "label": "You converted a link into a threat assessment",
+                "href": "/records/osp/attachments/01m3gwdqsgq34ybjffktmjyaf5-2026-09-27-osp-kennedy.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            }
         }
     ],
     "press-captain": [
@@ -5345,7 +5467,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-24",
             "when": "September 24, 2026",
-            "text": "Asked the same day to reconsider, given that no record had been denied and no elected official had claimed a right to withhold one; to state whether the ORS 192.324(6) ground was considered; and to state whether the office treats the custody of the Governor’s office as the custody of the Governor herself. No reply.",
+            "text": "Asked the same day to reconsider, given that no record had been denied and no elected official had claimed a right to withhold one; to state whether ORS 192.324(6) was considered; and to state whether the office treats the custody of the Governor’s office as the custody of the Governor herself. No reply.",
             "src": {
                 "u": "01M3AZD078K7HBZ71XR4Z0XJ9P",
                 "t": "governor"

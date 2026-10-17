@@ -4,4 +4,5 @@
 // listed, or listed as null, shows its review as pending.
 export const ACTS_REVIEW: Record<string, string | null> = {
     "public-records-counsel": "2026-10-16",
+    "emergency-manager": "2026-10-17",
 };
