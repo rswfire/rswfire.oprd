@@ -1,6 +1,6 @@
 // components/system/Sheets.tsx
 //
-// Every drawer in the archive, by its address: #seat-…, #line-…, #branch-….
+// Every drawer in the archive, by its address: #the-seat, #line-…, #branch-….
 // Built from the seats and acts on Key Individuals; opened anywhere by the
 // drawer host in the root layout.
 import { Bot, Link as LinkIcon, User } from "lucide-react";
@@ -91,7 +91,7 @@ function edgeSheet(e: Edge): SheetContent {
 export
 const SHEETS = new Map<string, () => SheetContent>();
 RUNGS.forEach((r) => {
-    r.seats.forEach((s) => SHEETS.set(`seat-${s.id}`, () => seatSheet(s, r.name, r.id)));
+    r.seats.forEach((s) => SHEETS.set(s.id, () => seatSheet(s, r.name, r.id)));
     if (r.below) {
         const e = r.below;
         SHEETS.set(`line-${e.id}`, () => edgeSheet(e));
@@ -99,7 +99,7 @@ RUNGS.forEach((r) => {
     if (r.branch) {
         const b = r.branch;
         SHEETS.set(`branch-${b.id}`, () => ({ eyebrow: b.name, title: b.out, docs: b.docs }));
-        b.seats.forEach((s) => SHEETS.set(`seat-${s.id}`, () => seatSheet(s, b.name)));
+        b.seats.forEach((s) => SHEETS.set(s.id, () => seatSheet(s, b.name)));
     }
 });
 

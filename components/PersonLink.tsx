@@ -23,5 +23,5 @@ interface PersonLinkProps {
 export default function PersonLink({ name, label, seat }: PersonLinkProps) {
     const to = seat ?? SEATS[name];
     if (!to) return <span>{label ?? name}</span>;
-    return <DrawerLink to={`seat-${to}`} className={SEAT_LINK}>{label ?? name}</DrawerLink>;
+    return <DrawerLink to={to} className={SEAT_LINK}>{label ?? name}</DrawerLink>;
 }

@@ -87,7 +87,7 @@ function DoorCard({ s }: { s: Seat }) {
     return (
         <NextLink
             href="/#how-it-spread"
-            id={`seat-${s.id}`}
+            id={s.id}
             className="group flex h-full w-full scroll-mt-24 flex-col justify-between gap-5 rounded-2xl border-2 border-emerald-700 bg-emerald-50 p-5 no-underline transition-colors hover:bg-emerald-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
         >
             <span className="flex items-start gap-4">
@@ -129,7 +129,7 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
                     onOpen();
                 }
             }}
-            id={`seat-${s.id}`}
+            id={s.id}
             data-toc={s.office ? s.agency ?? s.inst ?? s.title : s.title}
             data-toc-name={s.office ? s.title : s.name ?? ""}
             data-toc-face={s.building ? "building" : s.office ? "office" : "person"}
@@ -208,7 +208,7 @@ function RungBlock({ r, above, below, open }: { r: Rung; above: Line; below: Lin
             ) : null}
             <div className={`grid grid-cols-1 gap-2 ${COLS[r.seats.length] ?? ""}`}>
                 {r.seats.map((s) => (
-                    <SeatCard key={s.id} s={s} onOpen={() => open(`seat-${s.id}`)} />
+                    <SeatCard key={s.id} s={s} onOpen={() => open(s.id)} />
                 ))}
             </div>
         </OnTrunk>
@@ -278,7 +278,7 @@ function BranchBlock({ b, open }: { b: Branch; open: (key: string) => void }) {
                             <ol className="m-0 grid list-none grid-cols-1 gap-2 p-0 @lg:grid-cols-2">
                                 {g.seats.map(({ s, i }) => (
                                     <li key={s.id} className={`m-0 p-0 ${s.office ? "@lg:col-span-2" : ""}`}>
-                                        {s.id === "door" ? <DoorCard s={s} /> : <SeatCard s={{ ...s, inst: undefined }} onOpen={() => open(`seat-${s.id}`)} />}
+                                        {s.id === "door" ? <DoorCard s={s} /> : <SeatCard s={{ ...s, inst: undefined }} onOpen={() => open(s.id)} />}
                                     </li>
                                 ))}
                             </ol>

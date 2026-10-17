@@ -5914,7 +5914,13 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M53BC0W0KQVDK57PD0WJ29EC",
                 "t": "doj"
             },
-            "title": "Role and function, sent to the Public Records Counsel"
+            "title": "Role and function, sent to the Public Records Counsel",
+            "att": {
+                "label": "Letter to David Pitcher, Public Records Counsel",
+                "href": "/records/doj/attachments/01m53bc0w0kqvdk57pd0wj29ec-2026-10-16-david-pitcher.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            }
         }
     ]
 };

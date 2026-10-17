@@ -2,7 +2,7 @@
 
 // components/system/DrawerHost.tsx
 //
-// The drawer, for the whole archive. It lives in the address (#seat-…,
+// The drawer, for the whole archive. It lives in the address (#the-seat,
 // #line-…, #branch-…) on whatever page the reader is on, so a role named
 // anywhere opens its drawer in place, Back from a document returns to the
 // same drawer, and Back with a drawer open closes it. The drawers themselves
@@ -13,7 +13,9 @@ import { usePathname } from "next/navigation";
 import DocSheet from "@/components/system/DocSheet";
 import type { SheetContent } from "@/components/system/DocSheet";
 
-const ADDRESS = /^(seat|line|branch)-[a-z0-9-]+$/;
+/** A line or a branch; a seat's address is its bare id, known once the drawers load. */
+const ADDRESS = /^(line|branch)-[a-z0-9-]+$/;
+const SEAT = /^[a-z0-9-]+$/;
 
 type Sheets = Map<string, () => SheetContent>;
 let loaded: Sheets | null = null;
@@ -55,14 +57,27 @@ export default function DrawerHost({ children }: { children: ReactNode }) {
                 w.__docBack = false;
                 return;
             }
-            const h = decodeURIComponent(window.location.hash.slice(1));
-            if (!ADDRESS.test(h)) {
-                setKey(null);
-                pushed.current = false;
+            let h = decodeURIComponent(window.location.hash.slice(1));
+            // Links made before seats lost their prefix (#seat-…) still land.
+            if (h.startsWith("seat-")) {
+                h = h.slice(5);
+                window.history.replaceState(window.history.state, "", `${window.location.pathname}${window.location.search}#${h}`);
+            }
+            if (ADDRESS.test(h)) {
+                setKey(h);
+                void loadSheets().then(setSheets);
                 return;
             }
-            setKey(h);
-            void loadSheets().then(setSheets);
+            if (SEAT.test(h)) {
+                void loadSheets().then((s) => {
+                    setSheets(s);
+                    if (s.has(h)) setKey(h);
+                    else { setKey(null); pushed.current = false; }
+                });
+                return;
+            }
+            setKey(null);
+            pushed.current = false;
         };
         read();
         window.addEventListener("popstate", read);

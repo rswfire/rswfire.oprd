@@ -42,7 +42,7 @@ function withSeats(text: string): ReactNode[] {
         if (h.at < i) continue;
         out.push(text.slice(i, h.at));
         out.push(
-            <DrawerLink key={h.seat} to={`seat-${h.seat}`} className={SEAT_LINK}>
+            <DrawerLink key={h.seat} to={h.seat} className={SEAT_LINK}>
                 {h.phrase}
             </DrawerLink>,
         );
