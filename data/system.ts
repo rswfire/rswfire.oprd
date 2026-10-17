@@ -355,7 +355,7 @@ export const RUNGS: Rung[] = [
                 id: "none",
                 title: "No one",
                 fn: "Sees the whole: the park, the agency, the police, the records, and the volunteer inside them. Holds each seat to account for what the others do.",
-                real: "Leaves the volunteer without recourse. There is no appeal above the seats that harmed him, no one to answer for them, and no one to repair what allowed it.",
+                real: "Leaves the volunteer vulnerable to exploitation, with no protections, and no recourse when something goes wrong. There is no appeal above the seats that harmed him, no one to answer for them, and no one to repair what allowed it.",
                 empty: true,
                 docs: [
                     NO_STANDARDS,
