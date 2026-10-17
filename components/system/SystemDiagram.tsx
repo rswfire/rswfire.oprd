@@ -130,6 +130,9 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
                 }
             }}
             id={`seat-${s.id}`}
+            data-toc={s.office ? s.agency ?? s.inst ?? s.title : s.title}
+            data-toc-name={s.office ? s.title : s.name ?? ""}
+            data-toc-face={s.building ? "building" : s.office ? "office" : "person"}
             className={`group flex h-full w-full scroll-mt-24 flex-col rounded-2xl p-5 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 ${box}`}
         >
             <span className="flex items-start gap-3">
@@ -254,9 +257,9 @@ function groups(seats: Seat[]) {
     return out;
 }
 
-function SectionHead({ title }: { title: string }) {
+function SectionHead({ title, toc }: { title: string; toc?: string }) {
     return (
-        <h2 className="m-0 mb-6 flex items-center gap-4 text-[13px] font-bold uppercase tracking-[0.22em] text-emerald-800">
+        <h2 data-toc-section={toc} className="m-0 mb-6 flex items-center gap-4 text-[13px] font-bold uppercase tracking-[0.22em] text-emerald-800">
             <span className="shrink-0">{title}</span>
             <span aria-hidden className="h-px flex-1 bg-emerald-200" />
         </h2>
@@ -294,7 +297,7 @@ export default function SystemDiagram() {
 
     const last = RUNGS.length - 1;
 
-    const blocks: ReactNode[] = [<SectionHead key="h-trunk" title="The trunk" />];
+    const blocks: ReactNode[] = [<SectionHead key="h-trunk" title="The chain of command" toc="trunk" />];
     const branches: Branch[] = [];
     RUNGS.forEach((r, i) => {
         const above: Line = i === 0 ? "none" : i === 1 ? "dashed" : "solid";
@@ -314,7 +317,7 @@ export default function SystemDiagram() {
     branches.forEach((b) => {
         blocks.push(
             <div key={`h-${b.id}`} className="mt-16">
-                <SectionHead title={b.name} />
+                <SectionHead title={b.name} toc={b.id} />
                 <BranchBlock b={b} open={open} />
             </div>,
         );

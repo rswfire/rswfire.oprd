@@ -116,7 +116,7 @@ const POLICE: Branch = {
             title: "Emergency Manager",
             inst: "Oregon State Parks",
             fn: "Emergency management for the state’s parks: fires, storms, evacuations, threats to the public.",
-            real: "Gives the agency its cover for calling the police. He sent the volunteer’s website to the state police press captain, framed as a safety matter, “since he is now including the Governor as well as our Director.”",
+            real: "Gives the agency its cover for calling the police. He sent the volunteer’s website to the state police press captain, “since he is now including the Governor as well as our Director.”",
             docs: [
                 { who: "A man at Oregon State Parks", when: "March 3, 2026", text: "Sends the letters to the press captain: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
                 { who: "A man at Oregon State Parks", when: "March 6, 2026", text: "Sends the detective the dismissal letter and the “timeline of events”.", src: { u: PRODUCTION, t: "osp" } },

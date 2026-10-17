@@ -8,6 +8,7 @@ import Link from "next/link";
 import Icon from "@/components/Icon";
 import SectionPage from "@/components/SectionPage";
 import SystemDiagram from "@/components/system/SystemDiagram";
+import KeyIndividualsToc from "@/components/system/KeyIndividualsToc";
 
 export const metadata: Metadata = {
     title: "Key Individuals",
@@ -37,6 +38,7 @@ export default function Page() {
             <div className="not-prose">
                 <SystemDiagram />
             </div>
+            <KeyIndividualsToc />
         </SectionPage>
     );
 }
