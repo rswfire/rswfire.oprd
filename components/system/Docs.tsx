@@ -4,7 +4,7 @@
 // each linked to the document or recording it rests on.
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { FileText, Landmark, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
+import { FileText, Landmark, Sprout, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
 import Cite from "@/components/Cite";
 import type { Act, Doc, Src } from "@/data/system";
 
@@ -33,7 +33,7 @@ export function Source({ src, stretch, children }: { src: Src; stretch?: boolean
 /** The evidence pages that are recordings; the others are written record. */
 const RECORDINGS = /^\/evidence\/(coercion|expulsion|dismissal|police)(?=[/?#]|$)/;
 
-type Kind = "video" | "sunlight" | "document" | "record" | "external";
+type Kind = "video" | "sunlight" | "testimony" | "document" | "record" | "external";
 
 /** What the line opens: a recording, an answer in Sunlight, a file, a record, or another site. */
 function kindOf(src: Src, att?: Act["att"]): Kind {
@@ -42,6 +42,7 @@ function kindOf(src: Src, att?: Act["att"]): Kind {
     if (/\.pdf(?:[#?]|$)/i.test(src.href)) return "document";
     if (RECORDINGS.test(src.href)) return "video";
     if (src.href.startsWith("/sunlight")) return "sunlight";
+    if (src.href.startsWith("/testimony")) return "testimony";
     if (/^https?:/.test(src.href)) return "external";
     return "record";
 }
@@ -49,6 +50,7 @@ function kindOf(src: Src, att?: Act["att"]): Kind {
 const MARKS: Record<Kind, { icon: typeof Video; cls: string }> = {
     video: { icon: Video, cls: "bg-rose-50 text-rose-700 ring-rose-200" },
     sunlight: { icon: Sun, cls: "bg-amber-50 text-amber-600 ring-amber-200" },
+    testimony: { icon: Sprout, cls: "bg-violet-50 text-violet-700 ring-violet-200" },
     document: { icon: FileText, cls: "bg-sky-50 text-sky-700 ring-sky-200" },
     record: { icon: Landmark, cls: "bg-emerald-50 text-emerald-700 ring-emerald-200" },
     external: { icon: SquareArrowOutUpRight, cls: "bg-slate-50 text-slate-600 ring-slate-200" },

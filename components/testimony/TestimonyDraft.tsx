@@ -1833,9 +1833,9 @@ export default function TestimonyDraft({
                     believed the world was going to end</SunCite>.
                 </P>
                 <P id="p6yxxp" n={175}>
-                    What the file does not record is what those weeks did. On February 11, the day
-                    after the apology, the park manager came to the welcome center and spent an
-                    hour on his first-week mistakes. The next morning, at 8:22, he{" "}
+                    What the file does not record is what those weeks did. On February 9, the day
+                    of the power outage, the park manager came to the welcome center and spent an
+                    hour on his first-week mistakes. On February 12, at 8:22, he{" "}
                     <Cite ulid="01JKXC1M80V9A90EV4SX6BFJ35">wrote to all three of them</Cite> and
                     asked for a reset: I will conform, I will recalibrate, I will be a model
                     volunteer.{" "}

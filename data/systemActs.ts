@@ -217,7 +217,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-02-15",
             "when": "February 15, 2025",
-            "text": "Works on the fence at the welcome center with the park supervisor when she asks the volunteer about his summer plans.",
+            "text": "Works on the fence at the welcome center with the park supervisor when she asks him about his summer plans.",
             "src": {
                 "href": "/sunlight/#02-15-25-and-02-16-25-the-withdrawal"
             }
@@ -417,7 +417,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-02-09",
             "when": "February 9, 2025",
-            "text": "Answers by text the volunteer’s 6 a.m. text about the power outage.",
+            "text": "Answers by text his 6 a.m. text about the power outage. She writes to him only after he emails her and the volunteer services lead, and apologizes: “that was absolutely not my intent.”",
             "src": {
                 "href": "/sunlight/#02-09-25-the-power-outage"
             }
@@ -453,7 +453,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-02-15",
             "when": "February 15, 2025",
-            "text": "At the welcome center, working on the fence with the volunteer services lead, asks him what his plans are for the summer, after his application for a summer position at Honeyman had gone to her. Then: “What do you want, a job?”",
+            "text": "Invites him outside at the welcome center and asks what his plans are for the summer, with no mention of his application, which had gone directly to her as hiring manager for seasonal staff. She asks, “What do you want, a job?”",
             "src": {
                 "href": "/sunlight/#02-15-25-and-02-16-25-the-withdrawal"
             }
@@ -533,7 +533,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-02-09",
             "when": "February 9, 2025",
-            "text": "Speaks with the volunteer alone at the welcome center, without the volunteer services lead, about his first week.",
+            "text": "Confronts him alone at the welcome center, without his direct supervisor present, in response to his email to the park supervisor, and spends an hour cataloguing his first-week mistakes. Every one was already corrected.",
             "src": {
                 "href": "/evidence/escalation"
             }
@@ -785,15 +785,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-24",
             "when": "March 24, 2025",
-            "text": "Calls the volunteer to set an in-person meeting for Thursday. The volunteer asks why.",
+            "text": "Calls him that afternoon, while he is doing his job, to set up a third meeting, and turns a homeless veteran’s journal he had turned in into the pretext.",
             "src": {
-                "href": "/sunlight/#03-24-25-the-dismissal"
+                "href": "/testimony/#pv2vwz"
             }
         },
         {
             "d": "2025-03-24",
             "when": "March 24, 2025",
-            "text": "Dismisses the volunteer by phone, with his departure already set for March 31, and gives him twenty-four hours to leave the park.",
+            "text": "Dismisses him on the phone before a time or place for the meeting is settled, and gives him twenty-four hours to leave the park.",
             "src": {
                 "href": "/sunlight/#03-24-25-the-dismissal"
             }
@@ -819,7 +819,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Gives the program manager, by phone, his explanation of his words “eat glass.” She enters it in the file.",
+            "text": "Gives the program manager an explanation of “eat glass” for the file. He had said it to the volunteer twice, on tape, right after naming his fifteen years, the disciplinary processes and HR.",
             "src": {
                 "href": "/sunlight/#03-25-25-eat-glass"
             }
@@ -863,7 +863,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Entered in the file, under 3/25/25, an account of his videos that he answers as false.",
+            "text": "Entered in the file, under 3/25/25, a false account of his videos.",
             "src": {
                 "href": "/sunlight/#03-25-25-the-videos"
             }
@@ -871,7 +871,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-25",
             "when": "March 25, 2025",
-            "text": "Entered an account of the call in the file that his recording of it contradicts. He named people and incidents; the file has him describing how situations made him feel.",
+            "text": "Entered a false account of the call in the file. On the recording he names the people, the incidents and what was said to him; the file has him describing how situations made him feel.",
             "src": {
                 "href": "/sunlight/#03-25-25-the-program-manager-call"
             }
@@ -937,7 +937,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-26",
             "when": "March 26, 2025",
-            "text": "Added an undated note to the file about emails and texts to staff that the file does not include.",
+            "text": "Added an undated note to the file about emails and texts to staff that it does not include. The note is false.",
             "src": {
                 "href": "/sunlight/#the-closing-note"
             }
