@@ -162,12 +162,12 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
             </span>
             {s.fn ? (
                 <span className="mt-5 block">
-                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>{s.office ? "Agency" : "Role"}</span>
+                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>{s.office ? "Agency" : "The role the title promises"}</span>
                     <span className={`mt-1 block text-[15px] leading-snug ${implied}`}>{s.fn}</span>
                 </span>
             ) : null}
             <span className="mt-4 block">
-                <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${realLabel}`}>Actual function</span>
+                <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${realLabel}`}>The function the record shows</span>
                 <span className={`mt-1 block border-l-2 pl-3 text-[19px] font-semibold leading-snug ${real}`}>{s.real}</span>
             </span>
             {s.note ? (

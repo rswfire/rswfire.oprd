@@ -184,9 +184,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             note: "Quoted August 11, 2026 under PR36445: approximately 27,000 letters issued since January 1, 2023, priced at 650 hours, with release 130 weeks after payment. PR27478 was produced on September 3 after $157.50, of which $95.00 was refunded.",
         },
         officers: [
-            { name: "Marni L. Carlson", role: "AS1, Central Records Section" },
-            { name: "Micah Hubbard", role: "Records Request Unit Senior Admin" },
-            { name: "Holly Bolton", role: "Legal Compliance Specialist" },
+            { name: "[OSP Public Records 3]", role: "AS1, Central Records Section" },
+            { name: "[OSP Public Records 1]", role: "Records Request Unit Senior Admin" },
+            { name: "[OSP Public Records 2]", role: "Legal Compliance Specialist" },
         ],
         asked: [
             "The full names, badge numbers, and unit assignments of the two officers present at the March 24, 2026 visit",
@@ -310,7 +310,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-03", date: "September 3, 2026", event: "The production reviewed and answered the same morning: not sufficient; ten categories stated as outstanding" },
             { d: "2026-09-24", date: "September 24, 2026", event: "Letter: September 3 was the closest thing to integrity, and what was withheld is where the characterizations live" },
             { d: "2026-09-28", date: "September 28, 2026", event: "Exemptions letter, after the September 25 deadline: ORS 192.345(23) for the Hasty Form, ORS 192.355 for the DMV record and ReportRobertWhite, ORS 192.345(40) for the body-worn camera video; “We do not have call logs. We did not locate any recorded phone calls.”" },
-            { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to Hubbard: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
+            { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to [OSP Public Records 1]: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
         ],
     },
@@ -324,7 +324,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             note: "Two invoices, both dated September 18, 2026. The September 5 request: fifty to fifty-four hours at $32 an hour, of which forty hours are for two people's own notes and calendar entries. The September 11 request: two and a half hours, $80. A fee waiver was requested under ORS 192.324(5) on September 5. Under the Department's own rule, OAR 736-001-0030, the decision belongs to the Director. She is also the subject of the request: items 1 and 3 seek her own communications. The waiver is hers to grant.",
         },
         officers: [
-            { name: "Katie Gauthier", role: "External Relations Manager" },
+            { name: "[OPRD Public Records]", role: "External Relations Manager" },
         ],
         asked: [
             "August 22, 2025: thirty-three categories across volunteer program operations, Honeyman State Park operations, administrative communications, investigations, and his own employment applications",

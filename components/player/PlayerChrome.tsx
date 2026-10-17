@@ -7,7 +7,6 @@
 // only the classes around it change — so switching boxes never interrupts
 // playback or drops the buffer.
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import Icon from "@/components/Icon";
 import { usePlayer } from "@/components/player/PlayerProvider";
 import { formatTime, libraryUrl, longDate, mediaUrl } from "@/lib/recordings";
@@ -30,6 +29,9 @@ export default function PlayerChrome() {
     const [error, setError] = useState(false);
     const [nonce, setNonce] = useState(0);
     const [scrubbing, setScrubbing] = useState(false);
+    // Where the finger is while dragging. The bar follows it; the recording
+    // seeks once, on release, so a drag is never fought by a seek in flight.
+    const [scrubAt, setScrubAt] = useState<number | null>(null);
     const barRef = useRef<HTMLDivElement | null>(null);
 
     // The record over the video: chapters, analysis, reflections, fetched
@@ -40,6 +42,22 @@ export default function PlayerChrome() {
     const [sigError, setSigError] = useState<string | null>(null);
 
     const open = mode !== "closed" && !!recording;
+
+    // The chapter playing now, marked and kept in view in the phone's list.
+    const chaptersRef = useRef<HTMLDivElement | null>(null);
+    const chapters = sig && recording && sig.ulid === recording.ulid ? sig.chapters : [];
+    let activeChapter = -1;
+    for (let i = 0; i < chapters.length; i++) if (chapters[i].start <= time + 0.25) activeChapter = i;
+    useEffect(() => {
+        const box = chaptersRef.current;
+        if (!box || activeChapter < 0) return;
+        const el = box.querySelector<HTMLElement>(`[data-chapter="${activeChapter}"]`);
+        if (!el) return;
+        const top = Math.max(0, el.offsetTop - 8);
+        if (top < box.scrollTop || top + el.offsetHeight > box.scrollTop + box.clientHeight) {
+            box.scrollTo({ top, behavior: "smooth" });
+        }
+    }, [activeChapter]);
 
     // Element events → state. Bound once per mounted element; the element is
     // mounted for as long as the player is open, across page navigations.
@@ -94,7 +112,7 @@ export default function PlayerChrome() {
     // Lazy: fetch the signal's QP record the first time a panel is opened for
     // this recording, and reuse it across the three panels.
     useEffect(() => {
-        if (!panel || !recording) return;
+        if ((!panel && mode !== "theater") || !recording) return;
         if (sig && sig.ulid === recording.ulid) return;
         let cancelled = false;
         const controller = new AbortController();
@@ -115,7 +133,7 @@ export default function PlayerChrome() {
             }
         );
         return () => { cancelled = true; controller.abort(); };
-    }, [panel, recording, sig]);
+    }, [panel, mode, recording, sig]);
 
     const toggle = useCallback(() => {
         const video = videoRef.current;
@@ -137,27 +155,36 @@ export default function PlayerChrome() {
         setTime(video.currentTime);
     }, [videoRef]);
 
-    const fromPointer = useCallback((clientX: number) => {
+    const fromPointer = useCallback((clientX: number): number | null => {
         const bar = barRef.current;
         const video = videoRef.current;
-        if (!bar || !video || !video.duration) return;
+        if (!bar || !video || !video.duration) return null;
         const rect = bar.getBoundingClientRect();
         const ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-        seekTo(ratio * video.duration);
-    }, [seekTo, videoRef]);
+        return ratio * video.duration;
+    }, [videoRef]);
 
-    // Drag anywhere once the scrub starts, including off the bar.
-    useEffect(() => {
+    // The bar keeps the pointer for the whole drag, on or off it, and the
+    // page never takes the gesture for a scroll.
+    const onScrubDown = (e: React.PointerEvent<HTMLDivElement>) => {
+        const at = fromPointer(e.clientX);
+        if (at == null) return;
+        e.currentTarget.setPointerCapture(e.pointerId);
+        setScrubbing(true);
+        setScrubAt(at);
+    };
+    const onScrubMove = (e: React.PointerEvent<HTMLDivElement>) => {
         if (!scrubbing) return;
-        const move = (e: PointerEvent) => fromPointer(e.clientX);
-        const up = () => setScrubbing(false);
-        window.addEventListener("pointermove", move);
-        window.addEventListener("pointerup", up);
-        return () => {
-            window.removeEventListener("pointermove", move);
-            window.removeEventListener("pointerup", up);
-        };
-    }, [scrubbing, fromPointer]);
+        const at = fromPointer(e.clientX);
+        if (at != null) setScrubAt(at);
+    };
+    const onScrubEnd = (e: React.PointerEvent<HTMLDivElement>) => {
+        if (!scrubbing) return;
+        const at = e.type === "pointercancel" ? scrubAt : fromPointer(e.clientX) ?? scrubAt;
+        if (at != null) seekTo(at);
+        setScrubbing(false);
+        setScrubAt(null);
+    };
 
     // Keyboard, while the player owns the screen. Typing in a field is never
     // stolen; the archive has a newsletter input in the sidebar.
@@ -198,7 +225,8 @@ export default function PlayerChrome() {
 
     const theater = mode === "theater";
     const src = `${mediaUrl(recording.ulid, "video")}${nonce ? `?r=${nonce}` : ""}`;
-    const pct = duration ? (time / duration) * 100 : 0;
+    const shown = scrubAt ?? time;
+    const pct = duration ? (shown / duration) * 100 : 0;
     const bufferedPct = duration ? (buffered / duration) * 100 : 0;
     const long = duration >= 3600;
 
@@ -218,14 +246,14 @@ export default function PlayerChrome() {
             <div
                 className={
                     theater
-                        ? "fixed inset-x-0 bottom-0 top-auto z-[95] mx-auto w-full max-w-5xl px-0 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:px-4"
+                        ? "fixed inset-x-0 bottom-0 top-auto z-[95] mx-auto h-[88vh] w-full max-w-5xl px-0 sm:h-auto sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:px-4"
                         : "fixed bottom-3 right-3 z-[95] w-[min(92vw,22rem)]"
                 }
                 role="dialog"
                 aria-modal={theater}
                 aria-label={`Recording: ${recording.title}`}
             >
-                <div className="overflow-hidden rounded-t-2xl border border-slate-300 bg-white shadow-2xl sm:rounded-2xl">
+                <div className={`overflow-hidden rounded-t-2xl border border-slate-300 bg-white shadow-2xl sm:rounded-2xl ${theater ? "flex h-full flex-col sm:block sm:h-auto" : ""}`}>
 
                     {/* ── Header ── */}
                     <div className="flex items-start gap-3 border-b border-slate-200 bg-emerald-50/70 px-3 py-2 sm:px-4 sm:py-2.5">
@@ -342,8 +370,11 @@ export default function PlayerChrome() {
                         {/* Scrubber */}
                         <div
                             ref={barRef}
-                            onPointerDown={(e) => { setScrubbing(true); fromPointer(e.clientX); }}
-                            className="group relative h-4 cursor-pointer select-none"
+                            onPointerDown={onScrubDown}
+                            onPointerMove={onScrubMove}
+                            onPointerUp={onScrubEnd}
+                            onPointerCancel={onScrubEnd}
+                            className="group relative -my-1.5 h-7 cursor-pointer touch-none select-none"
                             role="slider"
                             aria-label="Seek"
                             aria-valuemin={0}
@@ -393,7 +424,7 @@ export default function PlayerChrome() {
                             </button>
 
                             <span className="ml-1 font-mono text-[11px] tabular-nums text-slate-600">
-                                {formatTime(time, long)}
+                                {formatTime(shown, long)}
                                 <span className="text-slate-400"> / {formatTime(duration, long)}</span>
                             </span>
 
@@ -464,25 +495,59 @@ export default function PlayerChrome() {
                         </div>
                     </div>
 
+                    {/* ── Chapters, on a phone: under the recording, behind the
+                        realm's own toggle, open. Wider screens keep them in the
+                        header panel. ── */}
+                    {theater && (
+                        <div ref={chaptersRef} className="relative min-h-0 flex-1 overflow-y-auto overscroll-contain border-t border-slate-200 bg-slate-50 px-3 pb-3 sm:hidden">
+                            {sigState === "loading" && <div className="py-6 text-center text-[13px] text-slate-400">Loading…</div>}
+                            {sig && sig.chapters.length > 0 && (
+                                <details key={`chapters-${recording.ulid}`} className="group mt-3" open>
+                                    <summary className="flex cursor-pointer list-none items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 [&::-webkit-details-marker]:hidden">
+                                        <span className="text-xs uppercase tracking-widest text-gray-500">Chapters</span>
+                                        <svg className="h-4 w-4 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </summary>
+                                    <ol className="mt-1 divide-y divide-gray-100 px-1">
+                                        {sig.chapters.map((c, i) => (
+                                            <li key={i} data-chapter={i}>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => { seekTo(c.start); void videoRef.current?.play().catch(() => {}); }}
+                                                    aria-current={i === activeChapter ? "true" : undefined}
+                                                    className={`group/chapter -mx-1 flex w-[calc(100%+0.5rem)] cursor-pointer gap-3 rounded-md px-1 py-3 text-left ${i === activeChapter ? "bg-sky-50" : ""}`}
+                                                >
+                                                    <span className={`shrink-0 pt-0.5 font-mono text-xs tabular-nums group-hover/chapter:text-sky-700 ${i === activeChapter ? "font-semibold text-sky-700" : "text-sky-600"}`}>{formatTime(c.start)}</span>
+                                                    <span className="min-w-0">
+                                                        <span className={`block text-sm font-medium group-hover/chapter:text-sky-700 ${i === activeChapter ? "text-sky-800" : "text-gray-900"}`}>{c.title}</span>
+                                                        {c.summary && <span className="mt-0.5 block text-sm text-gray-500">{c.summary}</span>}
+                                                    </span>
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </details>
+                            )}
+                        </div>
+                    )}
+
                     {/* ── Footer: where this recording lives ── */}
                     {theater && (
-                        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-slate-200 bg-slate-50 px-3 py-2 text-[11px] sm:px-4">
-                            {recording.page && (
-                                <Link
-                                    href={recording.page}
-                                    onClick={minimize}
-                                    className="font-semibold uppercase tracking-widest text-emerald-800 hover:underline"
-                                >
-                                    The page it belongs to
-                                </Link>
-                            )}
+                        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 bg-slate-50 px-3 py-3 text-[11px] sm:justify-start sm:px-4">
                             <a
                                 href={libraryUrl(recording.ulid)}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-semibold uppercase tracking-widest text-emerald-800 hover:underline"
+                                className="group inline-flex items-center gap-2.5 text-slate-900"
                             >
-                                The signal, with its transcript
+                                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-red-600 shadow-sm transition-colors group-hover:bg-red-700">
+                                    <Icon name="Flame" size={15} strokeWidth={2} className="text-white" />
+                                </span>
+                                <span className="leading-tight">
+                                    <span className="block text-[12px] font-semibold tracking-wide group-hover:text-red-700">rswfire.com</span>
+                                    <span className="block text-[12px] font-normal text-slate-500" style={{ fontFamily: "var(--font-open-sans-condensed)", fontStretch: "75%" }}>the full transcript and analysis</span>
+                                </span>
                             </a>
                             <span className="ml-auto hidden font-mono uppercase tracking-widest text-slate-400 sm:block">
                                 Space · &larr; &rarr; · Esc

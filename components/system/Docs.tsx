@@ -4,7 +4,7 @@
 // each linked to the document or recording it rests on.
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { FileText, Landmark, Link as LinkIcon, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
+import { FileText, Landmark, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
 import Cite from "@/components/Cite";
 import type { Act, Doc, Src } from "@/data/system";
 
@@ -68,16 +68,17 @@ export function DocList({ docs }: { docs: Doc[] }) {
     return (
         <ul className="m-0 list-none divide-y divide-slate-200 p-0">
             {docs.map((d, i) => (
-                <li key={i} className={`m-0 grid grid-cols-1 gap-x-6 gap-y-1 py-4 @xl:grid-cols-[11rem_1fr] ${ROW}`}>
-                    <div className="min-w-0">
-                        <div className="text-[13px] font-semibold leading-snug text-gray-800">{d.who}</div>
-                        {d.when ? <div className="mt-0.5 text-[12px] font-medium uppercase tracking-wide text-gray-500">{d.when}</div> : null}
-                    </div>
-                    <div className="flex min-w-0 items-center gap-3 text-[16px] leading-relaxed text-slate-900">
+                <li key={i} className={`m-0 grid grid-cols-1 gap-y-1.5 py-4 ${ROW}`}>
+                    <Header src={d.src} att={d.att} className="flex min-w-0 items-center gap-3">
                         <LinkMark src={d.src} att={d.att} />
                         <span className="min-w-0">
-                            <Entry text={d.text} src={d.src} att={d.att} />
+                            {d.when ? <span className="block text-[12px] font-medium uppercase tracking-wide text-gray-500">{d.when}</span> : null}
+                            <span className="block text-[13px] font-semibold leading-snug text-gray-800">{d.who}</span>
+                            <SourceLine src={d.src} att={d.att} />
                         </span>
+                    </Header>
+                    <div className="min-w-0 text-[16px] leading-relaxed text-slate-900">
+                        <Entry text={d.text} src={d.src} att={d.att} />
                     </div>
                 </li>
             ))}
@@ -85,36 +86,60 @@ export function DocList({ docs }: { docs: Doc[] }) {
     );
 }
 
-/** The file inside the record the words come from, opened at its page. */
-const PILL = "group/att relative z-10 mt-2.5 flex w-fit max-w-full items-center gap-2 rounded-full border border-gray-200 bg-white py-1.5 pl-3.5 pr-3 text-[12px] leading-none text-gray-700 no-underline shadow-sm transition-colors hover:border-emerald-300 hover:text-emerald-800";
+/** The email that carried the file, under the line's mark: quiet, gray, underlined. */
+function SourceLine({ src, att }: { src: Src; att?: Act["att"] }) {
+    if (!att || !("u" in src)) return null;
+    return (
+        <span className="mt-0.5 block text-[12px] leading-snug text-gray-400">
+            <span className="underline decoration-gray-300 underline-offset-2">Source: {att.from ?? "the email"}</span>
+            {att.page ? <span> · p.&nbsp;{att.page}</span> : null}
+        </span>
+    );
+}
 
-/** What each file is, in plain words: whose document, and which. */
-const FILE_NAMES: Record<string, string> = {
-    "Robert Samuel White Letter": "OPRD dismissal letter",
-    "Attachment — Timeline of Events (docx)": "OPRD \u201ctimeline of events\u201d",
-    "Electronic Communications": "OSP emails, as produced",
-    "From the RMS — Original email from State Parks, Honeyman State Park": "OPRD email to the state police",
-    "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer": "Forest Service agent\u2019s email",
-    "Report SP26096984 — Threat Assessment": "OSP report SP26096984",
-    "CAD Record SP26096984": "OSP dispatch record SP26096984",
-    "Attorney General Order": "Attorney General order",
-    "Petition for Public Records Disclosure Order: dismissed": "Attorney General order",
-    "Fee Letter": "OSP fee letter",
-    "PR36445": "OSP fee letter, PR36445",
-    "Release Letter PR27478, with envelope and request form": "OSP release letter, PR27478",
-    "Response Letter": "OSP no-records letter",
-    "The exemptions letter, REF# PR27478": "OSP exemptions letter",
-    "The invoice": "OPRD fee estimate",
-    "invoice public records Robert Samuel White": "OPRD fee estimate",
-    "invoice public records Robert Samuel White 5 4 update": "OPRD fee estimate, May 4 update",
-    "public records request response robert samuel white ": "OPRD records response",
-    "Letter to the Director": "His letter to the Director",
-    "Follow the Statute.": "His letter, \u201cFollow the Statute.\u201d",
-    "You converted a link into a threat assessment": "His letter, \u201cYou converted a link into a threat assessment\u201d",
-};
+/**
+ * A line's header. Where the words come from a file, the text opens the
+ * file and the whole header opens the record that carried it.
+ */
+function Header({ src, att, className, children }: { src: Src; att?: Act["att"]; className: string; children: ReactNode }) {
+    if (att && "u" in src) {
+        return (
+            <Cite ulid={src.u} thread={src.t ?? "oprd"} subtle noMark className={`relative z-10 ${className}`}>
+                {children}
+            </Cite>
+        );
+    }
+    return <span className={className}>{children}</span>;
+}
 
-function fileName(att: NonNullable<Act["att"]>) {
-    return FILE_NAMES[att.label] ?? att.label.replace(/^From the RMS — /, "").replace(/^Attachment — /, "");
+/** Words a title keeps in lower case unless they open it. */
+const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "nor", "of", "on", "or", "re", "the", "to", "via", "vs", "with"]);
+
+/** A record's title in title case; words already capitalized, such as acronyms and reference numbers, stay as written. */
+function titleCase(t: string) {
+    return t.split(/(\s+)/).map((w, i) => {
+        if (!/^[a-z]/.test(w)) return w;
+        if (i > 0 && SMALL.has(w.replace(/[^a-z]/g, ""))) return w;
+        return w[0].toUpperCase() + w.slice(1);
+    }).join("");
+}
+
+/** One act: the mark and the record's title on a line, the words beneath at full width. */
+function ActBody({ a, size }: { a: Act; size: string }) {
+    const when = <span className="block text-[12px] font-medium uppercase tracking-wide text-gray-500">{a.when}</span>;
+    return (
+        <>
+            <Header src={a.src} att={a.att} className="flex min-w-0 items-center gap-3">
+                <LinkMark src={a.src} att={a.att} />
+                <span className="min-w-0">
+                    {when}
+                    {a.title ? <span className="block text-[13px] font-semibold leading-snug text-gray-700">{titleCase(a.title)}</span> : null}
+                    <SourceLine src={a.src} att={a.att} />
+                </span>
+            </Header>
+            <span className={`mt-1.5 block min-w-0 ${size}`}><Entry text={a.text} src={a.src} att={a.att} /></span>
+        </>
+    );
 }
 
 /**
@@ -123,22 +148,18 @@ function fileName(att: NonNullable<Act["att"]>) {
  * carried it is a second link beneath.
  */
 function Entry({ text, src, att }: { text: string; src: Src; att?: Act["att"] }) {
-    if (!att) return <Source src={src} stretch>{text}</Source>;
+    if (!att) {
+        return (
+            <>
+                <Source src={src} stretch>{text}</Source>
+            </>
+        );
+    }
     return (
         <>
             <a href={att.page ? `${att.href}#page=${att.page}` : att.href} target="_blank" rel="noopener" className={`text-inherit no-underline hover:text-sky-700 ${STRETCH}`}>
                 {text}
             </a>
-            <span className="mt-1 block text-[12px] leading-snug text-gray-500">
-                {fileName(att)}
-                {att.page ? <span className="text-gray-400"> · p.&nbsp;{att.page}</span> : null}
-            </span>
-            {"u" in src ? (
-                <Cite ulid={src.u} thread={src.t ?? "oprd"} subtle noMark className={PILL}>
-                    <span className="font-medium">Source: {att.from ?? "the email"}</span>
-                    <LinkIcon aria-hidden size={15} strokeWidth={1.75} className="shrink-0 text-gray-400 transition-colors group-hover/att:text-emerald-700" />
-                </Cite>
-            ) : null}
         </>
     );
 }
@@ -161,13 +182,7 @@ export function ActList({ acts }: { acts: Act[] }) {
                             .filter((a) => a.d.slice(0, 4) === y)
                             .map((a, i) => (
                                 <li key={i} className={`m-0 grid grid-cols-1 gap-y-1 py-3 ${ROW}`}>
-                                    <span className="text-[12px] font-medium uppercase tracking-wide text-gray-500">{a.when}</span>
-                                    <span className="flex min-w-0 items-center gap-3 text-[15px] leading-relaxed text-slate-900">
-                                        <LinkMark src={a.src} att={a.att} />
-                                        <span className="min-w-0">
-                                            <Entry text={a.text} src={a.src} att={a.att} />
-                                        </span>
-                                    </span>
+                                    <ActBody a={a} size="text-[15px] leading-relaxed text-slate-900" />
                                 </li>
                             ))}
                     </ol>
@@ -184,11 +199,7 @@ export function ActList({ acts }: { acts: Act[] }) {
                     <ol className="m-0 list-none divide-y divide-slate-200 border-t border-slate-200 p-0 px-4">
                         {unanswered.map((a, i) => (
                             <li key={i} className={`m-0 grid grid-cols-1 gap-y-1 py-2.5 ${ROW}`}>
-                                <span className="text-[12px] font-medium uppercase tracking-wide text-gray-500">{a.when}</span>
-                                <span className="flex min-w-0 items-center gap-3 text-[14px] leading-snug text-slate-800">
-                                    <LinkMark src={a.src} att={a.att} />
-                                    <span className="min-w-0"><Entry text={a.text} src={a.src} att={a.att} /></span>
-                                </span>
+                                <ActBody a={a} size="text-[14px] leading-snug text-slate-800" />
                             </li>
                         ))}
                     </ol>

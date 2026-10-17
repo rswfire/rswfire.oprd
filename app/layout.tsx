@@ -21,6 +21,13 @@ const openSans = Open_Sans({
     variable: '--font-open-sans',
 })
 
+// The same face at its narrow widths, for the few lines set condensed.
+const openSansCondensed = Open_Sans({
+    subsets: ['latin'],
+    axes: ['wdth'],
+    variable: '--font-open-sans-condensed',
+})
+
 const dmMono = DM_Mono({
     weight: ['400', '500'],
     subsets: ['latin'],
@@ -50,7 +57,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`${openSans.variable} ${dmMono.variable}`}>
+        <html lang="en" className={`${openSans.variable} ${openSansCondensed.variable} ${dmMono.variable}`}>
         <head>
             {/* Deploy-window recovery. A deploy replaces every content-hashed
                 chunk; a viewer holding cached HTML (browser or Pages edge)

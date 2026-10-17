@@ -222,7 +222,7 @@ export const TIMELINE: TimelineSection[] = [
                 d: "2025-11-20", date: "November 20, 2025", major: true,
                 title: "“The response we provided.”",
                 body: [
-                    { doc: "01KAHTQ0ZG656XCF1G2Q9X15KY", thread: "oprd", t: "Katie Gauthier writes" },
+                    { doc: "01KAHTQ0ZG656XCF1G2Q9X15KY", thread: "oprd", t: "[OPRD Public Records] writes" },
                     ": “Below is an image of the response we provided to you on August 29, 2025.” Nothing had been sent to either address on the request. The response sat in a portal I had no access to, carrying estimates in the tens of thousands of dollars. I withdraw the request.",
                 ],
             },
@@ -561,7 +561,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-07-30", date: "July 30, 2026",
                 body: [
-                    "Holly Bolton, OSP, answers the order by ",
+                    "[OSP Public Records 2] answers the order by ",
                     { doc: "01KYSZGF6GK4HMAJ6KRCDBAY46", thread: "osp", t: "providing the fee letter as the exemption assertion" },
                     ". David Pitcher, Department of Justice, ",
                     { doc: "01KYSZQ430YWS431STFM7QVWAD", thread: "osp", t: "identifies page 20 of my own exhibits as the source of the exemption reference" },
@@ -583,7 +583,7 @@ export const TIMELINE: TimelineSection[] = [
                 d: "2026-08-11", date: "August 11, 2026", major: true,
                 title: "$16,315.",
                 body: [
-                    "Micah Hubbard, OSP Central Records, identifies the PR27478 records and ",
+                    "[OSP Public Records 1] identifies the PR27478 records and ",
                     { doc: "01KZS0AAY88AYPJ32PDEZABW03", thread: "osp", t: "names a fee" },
                     ". The same day he prices PR36445, the request about the fee letter itself, at ",
                     { doc: "01KZS0AEV8KA95QQZVJBCKBQEM", thread: "osp", t: "$16,315: approximately 27,000 letters, 650 hours, release 130 weeks after payment" },
@@ -606,7 +606,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-09-01", date: "September 1, 2026",
                 body: [
-                    "Chelsea Bradley, OSP Risk, ",
+                    "[OSP Risk Management] ",
                     { doc: "01M1EVZDA0BRTQTJ9JET9VCS8Y", thread: "osp", t: "confirms preservation of the records, except item seven" },
                     ", which she calls beyond the scope of the process. I answer that ",
                     { doc: "01M1EWKHV0WY1DBBNKH2RZVC0F", thread: "osp", t: "item seven is a record" },
@@ -617,7 +617,7 @@ export const TIMELINE: TimelineSection[] = [
                 d: "2026-09-03", date: "September 3, 2026", major: true,
                 title: "The production.",
                 body: [
-                    "Micah Hubbard ",
+                    "[OSP Public Records 1] ",
                     { doc: "01M1M4WF78XJPEJJ48D1JZ4SJ8", thread: "osp", t: "produces the PR27478 file" },
                     ". I publish it in full the same day: the first sight of the March 3 email, the “asap” order, the task force distribution, the March 11 Department of Justice characterization, the “Suspect” dispatch event, and the “Hasty Plan.” The same day I ",
                     { doc: "01M1M6H4RR51K8RXNASW5AB9RC", thread: "osp", t: "state the production is not sufficient" },
@@ -690,7 +690,7 @@ export const TIMELINE: TimelineSection[] = [
                 d: "2026-09-18", date: "September 18, 2026", major: true,
                 title: "$1,728, and $80 for the version histories.",
                 body: [
-                    "Katie Gauthier prices the September 5 request for the Director's and Deputy Director's records at ",
+                    "[OPRD Public Records] prices the September 5 request for the Director's and Deputy Director's records at ",
                     { doc: "01M2VE25T0WZXS6PE4BXJK0693", thread: "oprd", t: "$1,728" },
                     ", and the “Timeline of Events” version histories at ",
                     { doc: "01M2VEFTARQHQW029628GQA1Y7", thread: "oprd", t: "$80" },

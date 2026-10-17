@@ -47,9 +47,12 @@ export default function DocViewer({
     onClose,
     onPrev,
     onNext,
+    onLeave,
 }: {
     doc: ViewDoc | null;
     onClose: () => void;
+    /** Closing because the reader is going to the document's own page. */
+    onLeave?: () => void;
     onPrev?: () => void;
     onNext?: () => void;
 }) {
@@ -97,13 +100,14 @@ export default function DocViewer({
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-stretch justify-center bg-black/50 sm:items-center sm:p-6"
+            className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 sm:items-center sm:p-6"
             onClick={onClose}
         >
-            {/* Full screen on a phone; a fixed 90vh panel above that, so the
+            {/* On a phone it rises from the bottom to the same height as the
+                Key Individuals drawer; a fixed 90vh panel above that, so the
                 document does not resize the window as you page through. */}
             <div
-                className="w-full h-full flex flex-col bg-white sm:h-[90vh] sm:max-w-3xl sm:rounded-2xl sm:border sm:border-gray-300 overflow-hidden"
+                className="w-full h-[88vh] flex flex-col bg-white rounded-t-2xl sm:h-[90vh] sm:max-w-3xl sm:rounded-2xl sm:border sm:border-gray-300 overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* header */}
@@ -193,7 +197,7 @@ export default function DocViewer({
 
                 {/* footer */}
                 <div className="px-5 py-3 border-t border-gray-200 bg-white flex items-center gap-3">
-                    <div className="ml-auto flex items-center gap-2">
+                    <div className="mx-auto flex items-center gap-2 sm:mr-0 sm:ml-auto">
                         <button
                             type="button"
                             onClick={onPrev}
@@ -208,7 +212,7 @@ export default function DocViewer({
                         <Link
                             href={`/record/${doc.slug}/${doc.ulid}`}
                             data-fullpage
-                            onClick={onClose}
+                            onClick={onLeave ?? onClose}
                             title="This document, on its own page"
                             className="block min-w-0 truncate font-mono text-[10px] tracking-widest text-gray-400 hover:text-emerald-700 transition-colors"
                         >

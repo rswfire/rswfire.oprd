@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ["oprdvolunteerabuse.local"],
+  allowedDevOrigins: ["oprdvolunteerabuse.local", "192.168.1.149"],
   output: "export",
   reactCompiler: true,
   images: {

@@ -11,7 +11,7 @@ import { CASE_CARDS } from "@/data/case";
 import type { RecordsThreadData } from "@/components/RecordsThread";
 
 const ORIGIN = "https://oprdvolunteerabuse.org";
-const QP_SIGNAL = "https://rswfire.com/qp/signal/";
+const QP_SIGNAL = "https://rswfire.com/api/v1/qp/signal/";
 const QP_CLUSTER = "https://rswfire.com/qp/cluster/";
 
 const abs = (href: string) => (href.startsWith("http") ? href : `${ORIGIN}${href}`);

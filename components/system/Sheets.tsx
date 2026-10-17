@@ -29,7 +29,7 @@ function seatSheet(s: Seat, where?: string): SheetContent {
             <div className="grid gap-4">
                 {s.fn ? (
                     <div>
-                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">{s.office ? "Agency" : "Role"}</div>
+                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">{s.office ? "Agency" : "The role the title promises"}</div>
                         <p className="m-0 mt-1.5 text-[15px] leading-relaxed text-gray-700">{s.fn}</p>
                     </div>
                 ) : null}
@@ -40,7 +40,7 @@ function seatSheet(s: Seat, where?: string): SheetContent {
                     </div>
                 ) : null}
                 <div className="rounded-xl border-l-4 border-emerald-600 bg-emerald-50 px-4 py-3.5">
-                    <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-emerald-800">Actual function</div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-emerald-800">The function the record shows</div>
                     <p className="m-0 mt-1 text-[18px] font-semibold leading-snug text-gray-900">{s.real}</p>
                 </div>
             </div>

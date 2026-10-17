@@ -29,6 +29,8 @@ export interface Act {
     text: string;
     src: Src;
     noreply?: boolean;
+    /** The title of the cited record, as the register names it. */
+    title?: string;
     /** The file inside the cited record the words come from. */
     att?: { label: string; href: string; page?: number; from?: string };
 }
@@ -240,7 +242,7 @@ const RECORDS: Branch = {
             id: "osp-cr",
             office: true,
             agency: "Oregon State Police",
-            title: "Central Records",
+            title: "Public Records",
             inst: "Oregon State Police",
             fn: "Finds the agency’s records and releases them as soon as practicable.",
             real: "Hides the police file from the volunteer. It told him there were no records while it held the file on the armed visit to his door, then charged him for it in pieces, and kept back the body-camera video and the FBI report on him.",

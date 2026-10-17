@@ -13,7 +13,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JGQABXJ0XRX6YJ9Z5QHGGM7B",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Store/Visitor Center Host position at Honeyman"
         },
         {
             "d": "2025-01-08",
@@ -22,7 +23,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JH3R3XER5WWFMXXZGGC756HP",
                 "t": "oprd"
-            }
+            },
+            "title": "Hosting at Honeyman State Park"
         },
         {
             "d": "2025-01-16",
@@ -31,7 +33,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JHRR1R1RXZWN2F8K2V7QGZFM",
                 "t": "oprd"
-            }
+            },
+            "title": "Incoming Background Check"
         },
         {
             "d": "2025-01-16",
@@ -40,7 +43,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JHRR68JR8G6SG5ARMNGHSY70",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Incoming Background Check"
         },
         {
             "d": "2025-01-16",
@@ -49,7 +53,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JHRRPN00RTD1B827MRJ6TGE4",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Incoming Background Check"
         },
         {
             "d": "2025-01-20",
@@ -58,7 +63,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JJ2RQWQ8TFH22MX75ABEAA4X",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Hosting at Honeyman State Park"
         },
         {
             "d": "2025-01-20",
@@ -67,7 +73,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JJ344YBRAGZDTMF4RJJ7VFPA",
                 "t": "oprd"
-            }
+            },
+            "title": "Honeyman State Park Hosting for February 2025"
         },
         {
             "d": "2025-01-23",
@@ -76,7 +83,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JJAAASCREH0BTQRD3K67YE5X",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Hosting at Honeyman State Park"
         },
         {
             "d": "2025-02-03",
@@ -85,7 +93,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JK6BY1XRCTK23R4QGQEZ81YD",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Quick Reflection from Today"
         },
         {
             "d": "2025-02-03",
@@ -94,7 +103,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JK6C24S813VTZ3RF1A5B87G4",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Gate"
         },
         {
             "d": "2025-02-03",
@@ -103,7 +113,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JK6P9N887ND9TH4NSHYQ2R6G",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Gate"
         },
         {
             "d": "2025-02-05",
@@ -112,7 +123,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKC0QEQRRFBDW1HKRKZ9JPXX",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Questions"
         },
         {
             "d": "2025-02-05",
@@ -121,7 +133,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKC2XFYG66W9M4YWVKJA63QN",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Gate"
         },
         {
             "d": "2025-02-05",
@@ -130,7 +143,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKC3H0YGAQZCR2YDH5545AD7",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Questions"
         },
         {
             "d": "2025-02-05",
@@ -139,7 +153,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKC3XV3G4MZ5G8G25E72P1RK",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Cash Transactions"
         },
         {
             "d": "2025-02-07",
@@ -148,7 +163,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKHF3VZG8MX8JSS437E6PV5E",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Questions"
         },
         {
             "d": "2025-02-10",
@@ -157,7 +173,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JNBNSRN04NEM4MEZJG40Q3N5",
                 "t": "oprd"
-            }
+            },
+            "title": "Trust."
         },
         {
             "d": "2025-02-11",
@@ -166,7 +183,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKVNCGJ8QJYXYB8B9JCFWHN2",
                 "t": "oprd"
-            }
+            },
+            "title": "Jessie M. Honeyman State Park Hosting for March 2025"
         },
         {
             "d": "2025-02-11",
@@ -175,7 +193,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKVPV5QGRE6MQG894GQ3SBEN",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Honeyman State Park Hosting for February 2025"
         },
         {
             "d": "2025-02-12",
@@ -184,7 +203,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKXK0TTG40XVP5V8VAN6N2H8",
                 "t": "oprd"
-            }
+            },
+            "title": "Re: Gate Duty"
         },
         {
             "d": "2025-02-12",
@@ -209,7 +229,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JNBNSRN04NEM4MEZJG40Q3N5",
                 "t": "oprd"
-            }
+            },
+            "title": "Trust."
         },
         {
             "d": "2025-02-19",
@@ -218,7 +239,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMG1T8ER0SP5S4F37KP2XS9T",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Question"
         },
         {
             "d": "2025-02-19",
@@ -227,7 +249,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMG1XWNGPJZ1Z2JS08T2TGDT",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Question"
         },
         {
             "d": "2025-02-19",
@@ -236,7 +259,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JNBNSRN04NEM4MEZJG40Q3N5",
                 "t": "oprd"
-            }
+            },
+            "title": "Trust."
         },
         {
             "d": "2025-02-19",
@@ -245,7 +269,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KC32EJP8NEFBWH0YGJKV3A4S",
                 "t": "oprd"
-            }
+            },
+            "title": "For the Record — Supervisory Betrayal"
         },
         {
             "d": "2025-02-21",
@@ -254,7 +279,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMNF6DF82FHFGT5JNXBBBVYF",
                 "t": "oprd"
-            }
+            },
+            "title": "End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-24",
@@ -263,7 +289,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMWQTHCGG6T7JBHF4S76FX23",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-24",
@@ -272,7 +299,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMWRGZ581KYFF4P7CHYW0FSM",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Beverly Beach"
         },
         {
             "d": "2025-02-24",
@@ -281,7 +309,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMWSH3FGA8WSWCK42W91J8JY",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-24",
@@ -290,7 +319,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMX35WB0KC8GXAKX1BEWBYHN",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Beverly Beach"
         },
         {
             "d": "2025-02-24",
@@ -299,7 +329,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMX3E03GDXKCXBYYZMNXXNNH",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-25",
@@ -308,7 +339,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMZQ6AKRMRZ6EWQ213YXXCW0",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-25",
@@ -317,7 +349,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMZR692G0MWSRF8DRY41G56M",
                 "t": "oprd"
-            }
+            },
+            "title": "Honeyman Hosting March Schedule and Orientation Times"
         },
         {
             "d": "2025-02-25",
@@ -326,7 +359,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JMZRDSA0DM24A2MQVV4GQTAE",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: End of the Month (Friday 28th) Schedule Change"
         },
         {
             "d": "2025-02-26",
@@ -335,7 +369,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JN1RGAG0HCWR4157QQXD2C0S",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: FYI"
         },
         {
             "d": "2025-02-26",
@@ -344,7 +379,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JN1RKD481J8PPQS2TGR6C97W",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Honeyman Hosting March Schedule and Orientation Times"
         },
         {
             "d": "2025-02-26",
@@ -353,7 +389,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JNBNSRN04NEM4MEZJG40Q3N5",
                 "t": "oprd"
-            }
+            },
+            "title": "Trust."
         },
         {
             "d": "2025-03-03",
@@ -362,7 +399,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JNF7PCJR51S531Z3YW37Z3VP",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Work Schedule"
         },
         {
             "d": "2025-03-14",
@@ -371,7 +409,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JPB69WN8ZN24M2GXDGEZNFDG",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: March 31"
         }
     ],
     "supervisor": [
@@ -390,7 +429,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKRMYTC8KZCWWMCGCWFZH2MA",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Following Up on the Power Outage"
         },
         {
             "d": "2025-02-12",
@@ -401,9 +441,19 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
+            "d": "2025-02-12",
+            "when": "February 12, 2025",
+            "text": "His application for the paid Seasonal Park Ranger Assistant position at Honeyman goes to her, the hiring manager for seasonal staff.",
+            "src": {
+                "u": "01JKYSTM48Y0QK5CM8QSD0QC6X",
+                "t": "oprd"
+            },
+            "title": "Application Status for REQ-173916 Seasonal Park Ranger Assistant - Jessie M. Honeyman Memorial State Park (Evergreen) (Open)"
+        },
+        {
             "d": "2025-02-15",
             "when": "February 15, 2025",
-            "text": "At the welcome center, working on the fence with the volunteer services lead, asks the volunteer what his plans are for the summer, after his application for a summer position at Honeyman had gone to her. The volunteer’s account in the annotated Timeline: She asked, “What do you want, a job?”",
+            "text": "At the welcome center, working on the fence with the volunteer services lead, asks him what his plans are for the summer, after his application for a summer position at Honeyman had gone to her. Then: “What do you want, a job?”",
             "src": {
                 "href": "/sunlight/#02-15-25-and-02-16-25-the-withdrawal"
             }
@@ -411,7 +461,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Meets the volunteer with the park manager at a picnic table in the day use area. Sixty-two minutes. The volunteer records it.",
+            "text": "Holds him at a picnic table in the day use area with the park manager for sixty-two minutes. He records it.",
             "src": {
                 "href": "/evidence/coercion/?t=0:00"
             }
@@ -427,7 +477,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Speaks for the second time in the meeting: “I interpreted that… something that I said to you in that interaction, you decided to [rescind] your application because I asked you maybe what you were doing for the summer”",
+            "text": "Speaks for the second time in forty-six minutes, to say she took his withdrawal as being about her question.",
             "src": {
                 "href": "/evidence/coercion/?t=46:32"
             }
@@ -435,7 +485,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "The volunteer says he gave no reason in that email and never made it an issue with her, and asks, “Right?” She says, “Yeah”.",
+            "text": "Agrees that he gave no reason in the email and never made it an issue with her.",
             "src": {
                 "href": "/evidence/coercion/?t=46:58"
             }
@@ -443,25 +493,9 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "The volunteer tells her he has completely let it go, and, “I like you.” She says, “Okay”.",
+            "text": "Told he has let it go and that he likes her, says okay.",
             "src": {
                 "href": "/evidence/coercion/?t=48:37"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Returns to the text exchange from the first week of February, and names [Park Ranger 1]. The volunteer says he thought they had put it to rest; she says they did, twice.",
-            "src": {
-                "href": "/evidence/coercion/?t=50:35"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“I thought it was great that you applied.”",
-            "src": {
-                "href": "/evidence/coercion/?t=53:27"
             }
         },
         {
@@ -471,7 +505,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JPGDP05GKCM3V8YVF1368EE6",
                 "t": "oprd"
-            }
+            },
+            "title": "Re: Golf Cart"
         },
         {
             "d": "2025-03-18",
@@ -480,7 +515,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JPNX0J88PQE161MCS09FZA6C",
                 "t": "oprd"
-            }
+            },
+            "title": "Re: Question About Unidentified Visitor"
         },
         {
             "d": "2025-03-20",
@@ -489,7 +525,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JPTVM380TK5VF35A8TSM9EGJ",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Question About Unidentified Visitor"
         }
     ],
     "manager": [
@@ -508,7 +545,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JQ8HA5JRRCWX12W7B52YRVAT",
                 "t": "oprd"
-            }
+            },
+            "title": "Follow-Up on Our March 25 Call"
         },
         {
             "d": "2025-02-12",
@@ -517,12 +555,13 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JKXHEPAR0PEQMPJXJGG9GZJ4",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Jessie M. Honeyman State Park Hosting for March 2025"
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Meets the volunteer with the park supervisor at a picnic table in the day use area. Sixty-two minutes. The volunteer records it.",
+            "text": "Holds him at a picnic table in the day use area with the park supervisor for sixty-two minutes. He records it.",
             "src": {
                 "href": "/evidence/coercion/?t=0:00"
             }
@@ -530,7 +569,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Opens: “You’ve been doing a great job at the Welcome Center.”",
+            "text": "Opens with praise: a great job at the welcome center, the lost and found handled correctly, procedures followed.",
             "src": {
                 "href": "/evidence/coercion/?t=0:00"
             }
@@ -538,23 +577,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "The volunteer says, “I care about this place.” He answers: “That’s good. That’s what I mean. I think all of us do.”",
+            "text": "Frames the meeting as a support structure, his role being to set people up for success.",
             "src": {
-                "href": "/evidence/coercion/?t=0:44"
+                "href": "/evidence/coercion/?t=1:49"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Asks the volunteer whether there is anything he wants to discuss before he begins.",
-            "src": {
-                "href": "/evidence/coercion/?t=1:24"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Reads from a single sheet of handwritten talking points.",
+            "text": "Says he has read his correspondence and come to believe he felt unsupported, and in the same breath that he was not supportive of the crew.",
             "src": {
                 "href": "/evidence/coercion/?t=2:53"
             }
@@ -562,7 +593,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Names five staff, himself among them, and tells the volunteer he has expressed dissatisfaction with them. The volunteer disagrees.",
+            "text": "Works from a single handwritten sheet on the table: a month of emails and texts, read, interpreted and written down as conduct.",
+            "src": {
+                "href": "/evidence/coercion/?t=4:19"
+            }
+        },
+        {
+            "d": "2025-03-05",
+            "when": "March 5, 2025",
+            "text": "Reads the first item off the sheet: dissatisfaction with multiple members of the crew. The list names himself, the park supervisor, the volunteer services lead and two rangers.",
             "src": {
                 "href": "/evidence/coercion/?t=3:52"
             }
@@ -570,7 +609,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "To the volunteer’s disagreement: “You don’t have to agree with it.”",
+            "text": "Tells him he does not have to agree with it. Nothing is struck from the list.",
             "src": {
                 "href": "/evidence/coercion/?t=4:39"
             }
@@ -578,23 +617,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says “this isn’t an argument,” twice.",
+            "text": "Reads the second item: a trend, that he pushed back when given guidance.",
             "src": {
-                "href": "/evidence/coercion/?t=6:26"
+                "href": "/evidence/coercion/?t=5:33"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "On the volunteer attending the training: “That’s all we could ask for.”",
-            "src": {
-                "href": "/evidence/coercion/?t=6:38"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "States that with [Park Ranger 1] out sick, the volunteer services lead came to him, and he told the volunteer services lead [Park Ranger 2] was doing the orientation regardless.",
+            "text": "Confirms that the volunteer services lead knew otherwise when he told him [Park Ranger 1] would run his orientation.",
             "src": {
                 "href": "/evidence/coercion/?t=7:33"
             }
@@ -602,31 +633,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "After the volunteer calls [Park Ranger 2] very polite and says he navigates him like everybody: “So I understand you have a conflict with [Park Ranger 2].”",
-            "src": {
-                "href": "/evidence/coercion/?t=9:12"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“It sounds like you have an understanding of maybe what some triggers are for you.” The volunteer disagrees; he answers, “Fair enough.”",
-            "src": {
-                "href": "/evidence/coercion/?t=9:22"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says [Park Ranger 2] loves communication and likes to overcommunicate.",
-            "src": {
-                "href": "/evidence/coercion/?t=10:36"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Tells the volunteer to handle [Park Ranger 2] differently and be more direct; says it is how he says it, not what he says.",
+            "text": "Instructs him to handle [Park Ranger 2] differently and be more direct.",
             "src": {
                 "href": "/evidence/coercion/?t=12:12"
             }
@@ -634,23 +641,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Gives as his example of tone the difference between introducing yourself politely and telling a camper to “shut the fuck up”.",
-            "src": {
-                "href": "/evidence/coercion/?t=12:52"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Explains paraphrasing to the volunteer.",
-            "src": {
-                "href": "/evidence/coercion/?t=13:51"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says the emails are not the issue and communication is healthy. The volunteer asks, “Do you really mean this?” He says he does.",
+            "text": "Says the emails are not the issue, and that communication is good and healthy.",
             "src": {
                 "href": "/evidence/coercion/?t=15:20"
             }
@@ -658,7 +649,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says the volunteer’s emails show distrust of the volunteer services lead: “I believe that word was used in regards to the volunteer services lead and being able to trust him.” The volunteer says it is not in there. He says “Fair enough.” No email is produced.",
+            "text": "Charges that his emails show the volunteer services lead lost his trust by sharing information with the manager and the supervisor. No such thing is in them, and he moves to the next thing.",
             "src": {
                 "href": "/evidence/coercion/?t=15:45"
             }
@@ -666,15 +657,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Reads the volunteer’s copy to the park supervisor as: “I know I can’t trust you with information the volunteer services lead, so I’m going to give it to the people who are going to see it anyway.”",
-            "src": {
-                "href": "/evidence/coercion/?t=16:29"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says words have inflection, and gives bolded text and twenty-five exclamation points as examples of tone that could be perceived as negative or threatening.",
+            "text": "Says bolded text has inflection. Tone. Threatening tone. Twenty-five exclamation points.",
             "src": {
                 "href": "/evidence/coercion/?t=18:59"
             }
@@ -682,31 +665,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Raises whether the volunteer thought he had a future with the volunteer services lead. The volunteer answers no, twice.",
+            "text": "Asks him to agree that bolding a word is evidence of a threatening tone.",
             "src": {
-                "href": "/evidence/coercion/?t=19:49"
+                "href": "/evidence/coercion/?t=20:30"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer he holds the highest responsibility for making sure the disruption to his future does not happen, and that it is not about the volunteer services lead at all.",
-            "src": {
-                "href": "/evidence/coercion/?t=20:07"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Instructs the volunteer to have only conversations with park staff that do not result in threats or demands.",
-            "src": {
-                "href": "/evidence/coercion/?t=21:15"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Lists as examples a request for help getting a job somewhere else, “I am prepared to fight this.” and “I will not let you stand in my way.” The volunteer says he never made a demand. No email is produced.",
+            "text": "Gives the list of what was read that way. It includes asking for help getting a job somewhere else.",
             "src": {
                 "href": "/evidence/coercion/?t=21:31"
             }
@@ -714,7 +681,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer he is the park manager, fifteen years in the agency, half of it in management, and that he knows the disciplinary processes and HR.",
+            "text": "Makes his power explicit: park manager, fifteen years in the agency, half of it in management, disciplinary processes, HR.",
             "src": {
                 "href": "/evidence/coercion/?t=22:40"
             }
@@ -722,47 +689,23 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer about eating glass, right after the fifteen years, the disciplinary processes and HR.",
+            "text": "Tells him to chew glass and swallow it, offered as wisdom.",
             "src": {
-                "href": "/evidence/coercion/?t=23:17"
+                "href": "/evidence/coercion/?t=23:53"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells a story about a camper with a dented, spray-painted Ford Ranger, on positive intent.",
+            "text": "Asks him, over and over, to assume positive intent about everyone else at the park.",
             "src": {
-                "href": "/evidence/coercion/?t=24:38"
+                "href": "/evidence/coercion/?t=24:30"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Sets out the rule “assume positive intent until proven otherwise,” using the park supervisor as his example: something in her eye, cussing under her breath.",
-            "src": {
-                "href": "/evidence/coercion/?t=26:31"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Asks the volunteer to take them at their word. Says he would take responsibility for the training matter.",
-            "src": {
-                "href": "/evidence/coercion/?t=27:54"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "States that he told the volunteer services lead absolutely not: [Park Ranger 2] was doing the training.",
-            "src": {
-                "href": "/evidence/coercion/?t=28:49"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Asks the volunteer to stop sending follow-up emails, keep communications professional and work related, and bring employee issues directly to him.",
+            "text": "Asks him to stop sending follow-up emails and keep communications work-related.",
             "src": {
                 "href": "/evidence/coercion/?t=29:16"
             }
@@ -770,7 +713,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer the volunteer services lead has no supervisory authority, and: “If we do dismissal — it’s not the volunteer services lead doing a dismissal. It’s the park supervisor or myself”.",
+            "text": "Corrects the org chart: the volunteer services lead has no supervisory authority over him at all.",
             "src": {
                 "href": "/evidence/coercion/?t=29:52"
             }
@@ -778,39 +721,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says the volunteer services lead handles day-to-day operations and scheduling.",
-            "src": {
-                "href": "/evidence/coercion/?t=30:28"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says the volunteer has reasons to distrust the volunteer services lead, and asks him to let it go.",
-            "src": {
-                "href": "/evidence/coercion/?t=32:41"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Sets the expectation of professional, cordial, respectful interactions with all staff. The volunteer says he has been professional every time.",
-            "src": {
-                "href": "/evidence/coercion/?t=33:48"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Raises the red book at the welcome center: keep it work related.",
-            "src": {
-                "href": "/evidence/coercion/?t=34:32"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Raises non-work emails and texts to park staff, and the poem sent to the volunteer services lead. The volunteer offers to explain; he says he does not need an explanation.",
+            "text": "Takes off the paper the non-work emails and texts to park staff, the red book he had brought to them himself, and the poem about the ocean he had sent the volunteer services lead.",
             "src": {
                 "href": "/evidence/coercion/?t=36:20"
             }
@@ -818,55 +729,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer the volunteer services lead does not do that kind of thing, contacting other coordinators about placements.",
+            "text": "Calls it a pattern, an instance every other week. Asked for the instances, he produces two: the incident with the park supervisor, and his own visit the same day about the same thing.",
             "src": {
-                "href": "/evidence/coercion/?t=37:46"
+                "href": "/evidence/coercion/?t=44:20"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Tells the volunteer the best way to get future placements is to do a kickass job where he is. Asked whether asking other coordinators for help is inappropriate, says no, it is related to work.",
-            "src": {
-                "href": "/evidence/coercion/?t=39:13"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“It’s kind of that eating glass a little bit.”",
-            "src": {
-                "href": "/evidence/coercion/?t=42:05"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "The volunteer says, “I think you don’t want to actually say what you’re about to.” He answers, “I’m not following you.” “I don’t know what you mean.”",
-            "src": {
-                "href": "/evidence/coercion/?t=42:18"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says a poem sent to a supervisor without context could be read differently from a professional workplace lens.",
-            "src": {
-                "href": "/evidence/coercion/?t=43:04"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Gives as examples of a pattern, every other week, the park supervisor’s text exchange in the first week and his own visit to the volunteer the same day.",
-            "src": {
-                "href": "/evidence/coercion/?t=44:42"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Describes the volunteer as believing the park supervisor “purposely asked you what your plans were because she knew that you applied for the job,” and calls it “absolutely false… the most false thing I’ve ever heard, ever”.",
+            "text": "Puts to him a claim he never made, that the park supervisor asked his summer plans only because she knew he had applied, and calls it the most false thing he has ever heard.",
             "src": {
                 "href": "/evidence/coercion/?t=46:01"
             }
@@ -874,15 +745,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "The volunteer says it is not in any email or text. He answers: “I’m letting you know that’s how it was received.”",
-            "src": {
-                "href": "/evidence/coercion/?t=46:23"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“[Park Supervisor] could talk about it probably”",
+            "text": "Asked where the claim came from, points to the park supervisor.",
             "src": {
                 "href": "/evidence/coercion/?t=46:29"
             }
@@ -890,23 +753,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says words have meaning and get interpreted. Asks whether the way the volunteer is feeling is sometimes the same way they are feeling.",
+            "text": "Tells him words have meaning and get interpreted.",
             "src": {
-                "href": "/evidence/coercion/?t=47:27"
+                "href": "/evidence/coercion/?t=47:38"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says words get interpreted in ways that were not intended, and applies the same to the volunteer’s interactions with park rangers.",
-            "src": {
-                "href": "/evidence/coercion/?t=48:48"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "“I may not be able to help you with that. All I can do is provide feedback of how it’s feeling from our perspective.”",
+            "text": "Asked for the benefit of the doubt he has been telling him to extend: “I see where you’re coming from. I may not be able to help you with that.”",
             "src": {
                 "href": "/evidence/coercion/?t=50:35"
             }
@@ -914,49 +769,17 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "The volunteer says, “I’m not getting that benefit of the doubt”. He answers, “I may not be able to help you with that”.",
+            "text": "Says the month started out being proven otherwise, and it is hard to put that to rest.",
             "src": {
-                "href": "/evidence/coercion/?t=50:39"
+                "href": "/evidence/coercion/?t=52:36"
             }
         },
         {
             "d": "2025-03-05",
             "when": "March 5, 2025",
-            "text": "Says there was no positive intent from the volunteer’s side, and that he had been proven otherwise since the first of the month.",
+            "text": "Tells him four times in the last two minutes that he should not feel obligated to stay.",
             "src": {
-                "href": "/evidence/coercion/?t=51:09"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Asked for examples of the pattern, says he has provided them: lots of emails and texts. None are produced.",
-            "src": {
-                "href": "/evidence/coercion/?t=52:42"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Says they agreed to a reset.",
-            "src": {
-                "href": "/evidence/coercion/?t=53:58"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Confirms non-work emails and texts as one of the issues, along with working with all staff.",
-            "src": {
-                "href": "/evidence/coercion/?t=54:56"
-            }
-        },
-        {
-            "d": "2025-03-05",
-            "when": "March 5, 2025",
-            "text": "Tells the volunteer four times in the final minutes that he is not obligated to stay: “you don’t have to feel obligated to stay”; “I would never expect you or want you to stay in a situation like that”; “don’t feel obligated”; “don’t feel that you are required or obligated to stay in any way”.",
-            "src": {
-                "href": "/evidence/coercion/?t=59:32"
+                "href": "/evidence/coercion/?t=59:31"
             }
         },
         {
@@ -982,7 +805,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KEK5MQNRVQK9HPE1AB1N2PPE",
                 "t": "oprd"
-            }
+            },
+            "title": "Saved You for Last"
         },
         {
             "d": "2025-03-24",
@@ -1017,7 +841,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01JQ5940787F53DN2H5VCJGSP4",
                 "t": "oprd"
-            }
+            },
+            "title": "[Program Manager], Reply to Request for Review of Dismissal"
         },
         {
             "d": "2025-03-25",
@@ -1027,6 +852,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -1040,70 +866,6 @@ export const ACTS: Record<string, Act[]> = {
             "text": "Entered in the file, under 3/25/25, an account of his videos that he answers as false.",
             "src": {
                 "href": "/sunlight/#03-25-25-the-videos"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Opened the call by telling him the park’s dismissal would stand: “Just wanted to confirm that’s not going to be overturned.”",
-            "src": {
-                "href": "/evidence/expulsion/?t=2:27"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Heard his account of the March 24 call. The file she wrote records the park manager’s version of it, which his account contradicts.",
-            "src": {
-                "href": "/evidence/expulsion/?t=8:18"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Put to him what a park host and a staff member, neither of whom she named, had reported about his conversations.",
-            "src": {
-                "href": "/evidence/expulsion/?t=8:30"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Raised the poem he had sent the volunteer services lead, and what he had written in a book log.",
-            "src": {
-                "href": "/evidence/expulsion/?t=11:19"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Raised his emails and texts to staff.",
-            "src": {
-                "href": "/evidence/expulsion/?t=13:11"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Cited texts about him from a ranger.",
-            "src": {
-                "href": "/evidence/expulsion/?t=18:13"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Raised Tugman, his placement a month before Honeyman. He answered: “I thought everything was fine at Tugman.”",
-            "src": {
-                "href": "/evidence/expulsion/?t=19:19"
-            }
-        },
-        {
-            "d": "2025-03-25",
-            "when": "March 25, 2025",
-            "text": "Told him he would hear from her by Friday. She ended his service at every park the next day.",
-            "src": {
-                "href": "/evidence/expulsion/?t=27:42"
             }
         },
         {
@@ -1123,13 +885,46 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
+            "d": "2025-03-25",
+            "when": "March 25, 2025",
+            "text": "Told him inside four minutes that the dismissal would not be overturned. The review she had told him she was conducting was decided before the call began.",
+            "src": {
+                "href": "/evidence/expulsion/?t=2:30"
+            }
+        },
+        {
+            "d": "2025-03-25",
+            "when": "March 25, 2025",
+            "text": "Built the reasons out of material he was hearing for the first time: unnamed sources, a host and a staff member said to have reported dissatisfaction with the rangers, a report that he had been talking about the end of the world, and an attributed claim, routed through the volunteer services lead from a volunteer no one would name, that he had said a staff member would be used to kill him when the world ended.",
+            "src": {
+                "href": "/evidence/expulsion/?t=8:18"
+            }
+        },
+        {
+            "d": "2025-03-25",
+            "when": "March 25, 2025",
+            "text": "Filed his documented account as his perspective three times, while secondhand report was treated as fact.",
+            "src": {
+                "href": "/evidence/expulsion/"
+            }
+        },
+        {
+            "d": "2025-03-25",
+            "when": "March 25, 2025",
+            "text": "Promised a determination by Friday the twenty-eighth. The letter ending his service arrived on Wednesday the twenty-sixth.",
+            "src": {
+                "href": "/evidence/expulsion/?t=27:38"
+            }
+        },
+        {
             "d": "2025-03-26",
             "when": "March 26, 2025",
             "text": "Ended his volunteer service with Oregon State Parks, at every park, by email and signed letter, two days after Honeyman dismissed him.",
             "src": {
                 "u": "01JQA2WM60RX7MSJQ5QPFD8AR2",
                 "t": "oprd"
-            }
+            },
+            "title": "[Program Manager], Oregon Parks and Recreation Department, Letter of Dismissal and Exclusion"
         },
         {
             "d": "2025-03-26",
@@ -1155,7 +950,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JQA8N4FGQ6VXMRA09D8RZE62",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Volunteering with Oregon Parks and Recreation Department"
         },
         {
             "d": "2025-04-04",
@@ -1165,7 +961,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JR1BNRB0RCNX1WG6KBZBWGNA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: Welcome to the \"Host-volunteers-urgent-park-needs\" mailing list"
         },
         {
             "d": "2025-05-09",
@@ -1175,7 +972,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JTW5KP2G3YRHJCP9QCFDX1T4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Follow-Up on Our March 25 Call"
         },
         {
             "d": "2025-05-20",
@@ -1185,7 +983,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JVPH4Z7G0VBTE6PWCDVCRF5X",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Public Record Reminder + Documentation Disclosure"
         },
         {
             "d": "2025-05-20",
@@ -1203,7 +1002,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JW7QYBXRQ096VC43S9EQJC94",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record - March 20 Field Encounter"
         },
         {
             "d": "2025-05-27",
@@ -1213,7 +1013,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JW9WVW38VHEKAGZVCX7554C8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Public Record Notice — March 5 Recording Now Published"
         },
         {
             "d": "2025-05-28",
@@ -1223,7 +1024,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JWD8TGXREFCNYNDDH3XJ7VN5",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Story of Honeyman"
         },
         {
             "d": "2025-08-13",
@@ -1233,7 +1035,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01K2KG44Z0WBPSK9QJY141X2C7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record — You Wounded Me Too"
         },
         {
             "d": "2025-12-07",
@@ -1243,7 +1046,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KBXXZVF0E4Z925RZNJJDJ00B",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2025-12-09",
@@ -1253,7 +1057,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KC32EJP8NEFBWH0YGJKV3A4S",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record — Supervisory Betrayal"
         },
         {
             "d": "2025-12-19",
@@ -1263,7 +1068,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KCW58AYR8F09QY561CPNAY9F",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record: The Email You Never Investigated"
         },
         {
             "d": "2025-12-20",
@@ -1273,7 +1079,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KCZ2WXJRKX65W45N6QCEWGTX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The whole story."
         },
         {
             "d": "2026-01-09",
@@ -1283,7 +1090,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KEK5MQNRVQK9HPE1AB1N2PPE",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Saved You for Last"
         },
         {
             "d": "2026-01-16",
@@ -1293,7 +1101,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KF3KC3AR9KFMTRD44ZFFMZ2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983"
         },
         {
             "d": "2026-01-21",
@@ -1326,7 +1135,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
-            }
+            },
+            "title": "Oregon State Police, Second Production, PR27478"
         },
         {
             "d": "2026-01-29",
@@ -1336,7 +1146,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KG6SCW58M76VGADGAPRVVK0J",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Legal Counsel"
         },
         {
             "d": "2026-01-30",
@@ -1346,7 +1157,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KG94Y0SGCMPA7J3DZASWTM13",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Legal Counsel"
         },
         {
             "d": "2026-02-02",
@@ -1356,7 +1168,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGG1DYTRWRPXZ3CA94YT0AV7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: March 31"
         },
         {
             "d": "2026-02-03",
@@ -1366,7 +1179,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGJDNF98R4SNG4Z967DX4BMD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of Ongoing Constitutional Violation"
         },
         {
             "d": "2026-02-09",
@@ -1376,7 +1190,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KH32THCG9NNRQCG0B07353AR",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Harm"
         },
         {
             "d": "2026-02-13",
@@ -1386,7 +1201,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHCSSG1R6K4ND7DMJFM05S5T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-14",
@@ -1396,7 +1212,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHF926VGF7ANVHQA2C4SDW0M",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-28",
@@ -1406,7 +1223,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJHP4RQ09SJ1ZFJGJ2W3MQZA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Day 339."
         },
         {
             "d": "2026-03-01",
@@ -1416,7 +1234,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJNC0B4R3M5N5RRRKF8743AC",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-02",
@@ -1426,7 +1245,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJQDEGT8P4E89985MZV7MT13",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-03",
@@ -1436,7 +1256,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJSVTBSG3RMXCXR0BP4S4JHH",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-04",
@@ -1446,7 +1267,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJY8B76RSJAHYG2QJ86P9P8C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "March 5, 2025"
         },
         {
             "d": "2026-03-05",
@@ -1456,7 +1278,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK0DDFQ8A7B4NQVJ86TD9RWW",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Stormchaser’s Soliloquy"
         },
         {
             "d": "2026-03-06",
@@ -1466,6 +1289,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -1481,7 +1305,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK1X892GRW341DJA9M1CCXAW",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "March 25"
         },
         {
             "d": "2026-03-07",
@@ -1491,7 +1316,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK4NXTTRRME1WPSJ7DE572KX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Oregon State Parks"
         },
         {
             "d": "2026-03-08",
@@ -1501,7 +1327,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK8B5CMG9XBX0BY777FA679Q",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Day 347."
         },
         {
             "d": "2026-03-09",
@@ -1511,7 +1338,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK90783RS19PM0GKP68CP0X8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: March 5, 2025"
         },
         {
             "d": "2026-03-10",
@@ -1521,7 +1349,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKCCBTCR2M2YHBZZEDARADSF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Your Legacy"
         },
         {
             "d": "2026-03-11",
@@ -1531,7 +1360,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKF8RTDGFGKTV4AAFKYH07G8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2026-03-23",
@@ -1541,7 +1371,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMD3XES0G4CM7R5P3KS0C6VZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "rswfire.com"
         },
         {
             "d": "2026-03-24",
@@ -1551,7 +1382,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMGD6CE83C2D9CFEYK9DER69",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Honeyman, I Just Found My Voice"
         },
         {
             "d": "2026-03-25",
@@ -1561,7 +1393,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMKNMSF8YZJ7C5DZWBC08KVT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Evidence Page 10 — Police Intimidation"
         },
         {
             "d": "2026-03-26",
@@ -1571,7 +1404,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMN7AHHGW4F8VVEHM7D793SA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Day 365."
         },
         {
             "d": "2026-03-28",
@@ -1581,7 +1415,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMTJ21JGSSD4W0BTW6HP1E05",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land"
         },
         {
             "d": "2026-03-29",
@@ -1591,7 +1426,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMXRH298KKDJSR9XJKXRH9VT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Firestorm You Created"
         },
         {
             "d": "2026-04-16",
@@ -1601,7 +1437,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KPCBQSA008GPWGK7RA4AEKGA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record"
         },
         {
             "d": "2026-05-04",
@@ -1611,7 +1448,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQTEA748SAZ42H5TWBV9VACP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025"
         },
         {
             "d": "2026-07-08",
@@ -1621,7 +1459,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KX28CF90H15CJVJRJWKXCP5N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Withdrawal of individual capacity claim"
         },
         {
             "d": "2026-07-14",
@@ -1631,7 +1470,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KXH1JXW0057G6VGF9J2H1BX6",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The released record, provided to the agency"
         },
         {
             "d": "2026-07-21",
@@ -1641,7 +1481,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KY364AE0Z5ZVT070RT0DGMED",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "A request for accountability"
         },
         {
             "d": "2026-07-26",
@@ -1651,7 +1492,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYFD2008A7KZJWT8TH1DRM7R",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "What Integrity Looks Like"
         },
         {
             "d": "2026-07-28",
@@ -1661,7 +1503,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYNW8BW8S89DC71CFK0AYG51",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of publication — OPRD record complete"
         },
         {
             "d": "2026-08-13",
@@ -1671,7 +1514,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KZZ5VDBG9FR4BRN1KBMRH28B",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Document Notification"
         },
         {
             "d": "2026-08-29",
@@ -1681,7 +1525,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M17VSB00XE0RQ32RJKZ79P7S",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of legal fund"
         },
         {
             "d": "2026-09-03",
@@ -1691,7 +1536,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1MESFR8QGCRQZBDJMH3HN1Z",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Governor letter, forwarded"
         },
         {
             "d": "2026-09-05",
@@ -1701,7 +1547,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1SFPP5GMVGVEX6CR6G74FK1",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The record says you lied"
         },
         {
             "d": "2026-09-06",
@@ -1711,7 +1558,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1WJ78ZGYR5J2TTD7SKXRA2N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.1"
         },
         {
             "d": "2026-09-07",
@@ -1721,7 +1569,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1YH9QSR0JAGXR04DGFYV7VD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.2 -- Final"
         },
         {
             "d": "2026-09-11",
@@ -1731,7 +1580,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M29ZRKJ8KB38SPR38V64HH2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-12",
@@ -1741,7 +1591,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2AX024GFJ98QPY7VYNNY7M8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-15",
@@ -1751,7 +1602,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2K9KFV8EWG311Y8KGCW0D2T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The complete testimony, sent to OPRD leadership"
         },
         {
             "d": "2026-09-17",
@@ -1761,7 +1613,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2RPE3B0PGSNC3BQ8RCFS9RZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice that the testimony will keep changing"
         }
     ],
     "director": [
@@ -1773,7 +1626,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01K1C14TXRFZCGXVNW27SACRF4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Honeyman"
         },
         {
             "d": "2025-08-13",
@@ -1783,7 +1637,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01K2KG44Z0WBPSK9QJY141X2C7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record — You Wounded Me Too"
         },
         {
             "d": "2025-08-15",
@@ -1793,7 +1648,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01K2QNT3G0QP8S42VBMG49CD7Y",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Setup You Now Own"
         },
         {
             "d": "2025-08-17",
@@ -1803,7 +1659,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01K2WQS8TGKPXK4WBG513H7C0J",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2025-08-25",
@@ -1812,7 +1669,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01K3HPAXBG8F4QZG4DJNDY5QY8",
                 "t": "oprd"
-            }
+            },
+            "title": "Director Lisa Sumption, Reply to Open Letter"
         },
         {
             "d": "2025-11-21",
@@ -1822,7 +1680,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KAKN2SH8QCE65HHZJYWV5E9F",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Final Record of OPRD Leadership Response: Archive Notification"
         },
         {
             "d": "2025-12-07",
@@ -1832,7 +1691,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KBXXZVF0E4Z925RZNJJDJ00B",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2025-12-08",
@@ -1841,7 +1701,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KBZ9S95G2W5B44TTGT6HA69N",
                 "t": "oprd"
-            }
+            },
+            "title": "Director Lisa Sumption, Closing Letter"
         },
         {
             "d": "2025-12-08",
@@ -1850,7 +1711,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KBZZ00WRN29ERHYG1ANPRH8D",
                 "t": "oprd"
-            }
+            },
+            "title": "Director Lisa Sumption, Final Reply"
         },
         {
             "d": "2025-12-09",
@@ -1860,7 +1722,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KC32EJP8NEFBWH0YGJKV3A4S",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record — Supervisory Betrayal"
         },
         {
             "d": "2025-12-11",
@@ -1870,7 +1733,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KC7PCZNG90BT267JQFE1TNXA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: There's something you should know."
         },
         {
             "d": "2025-12-19",
@@ -1880,7 +1744,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KCW58AYR8F09QY561CPNAY9F",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record: The Email You Never Investigated"
         },
         {
             "d": "2025-12-20",
@@ -1890,7 +1755,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KCZ2WXJRKX65W45N6QCEWGTX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The whole story."
         },
         {
             "d": "2025-12-22",
@@ -1900,7 +1766,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KD3ZWMC07VA32FHSFVSFVS1X",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Close of Record"
         },
         {
             "d": "2026-01-09",
@@ -1910,7 +1777,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KEK5MQNRVQK9HPE1AB1N2PPE",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Saved You for Last"
         },
         {
             "d": "2026-01-09",
@@ -1920,7 +1788,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KEK9CFPRHMQV7HDWRJ2HSE0D",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Independent Evidentiary Record — Oregon State Parks Volunteer Abuse"
         },
         {
             "d": "2026-01-10",
@@ -1930,7 +1799,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KENNZP60RAM23B3SPASM3JJT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "What I should have told you."
         },
         {
             "d": "2026-01-13",
@@ -1940,7 +1810,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KEVQNCBGSY003FM6NJDR72H5",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "[Park Supervisor]"
         },
         {
             "d": "2026-01-13",
@@ -1950,7 +1821,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KEVQNCBGSY003FM6NJDR72H5",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "[Park Supervisor]"
         },
         {
             "d": "2026-01-16",
@@ -1960,7 +1832,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KF3KC3AR9KFMTRD44ZFFMZ2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983"
         },
         {
             "d": "2026-01-16",
@@ -1970,7 +1843,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KF3KC3AR9KFMTRD44ZFFMZ2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983"
         },
         {
             "d": "2026-01-29",
@@ -1980,7 +1854,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KG6SCW58M76VGADGAPRVVK0J",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Legal Counsel"
         },
         {
             "d": "2026-02-02",
@@ -1990,7 +1865,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGG1DYTRWRPXZ3CA94YT0AV7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: March 31"
         },
         {
             "d": "2026-02-02",
@@ -2000,7 +1876,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGG1DYTRWRPXZ3CA94YT0AV7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: March 31"
         },
         {
             "d": "2026-02-03",
@@ -2010,7 +1887,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGJDNF98R4SNG4Z967DX4BMD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of Ongoing Constitutional Violation"
         },
         {
             "d": "2026-02-03",
@@ -2020,7 +1898,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KGJDNF98R4SNG4Z967DX4BMD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of Ongoing Constitutional Violation"
         },
         {
             "d": "2026-02-14",
@@ -2030,7 +1909,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHF926VGF7ANVHQA2C4SDW0M",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-14",
@@ -2040,7 +1920,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHF926VGF7ANVHQA2C4SDW0M",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-15",
@@ -2050,7 +1931,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHH17T9GYSWDCZP6C6NA7PK4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You inherited this."
         },
         {
             "d": "2026-02-15",
@@ -2060,7 +1942,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHH17T9GYSWDCZP6C6NA7PK4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You inherited this."
         },
         {
             "d": "2026-02-17",
@@ -2070,7 +1953,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHNNQ770849BDD90KJGM4QXP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-17",
@@ -2080,7 +1964,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHNNQ770849BDD90KJGM4QXP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-03-01",
@@ -2090,7 +1975,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJNC0B4R3M5N5RRRKF8743AC",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-01",
@@ -2100,7 +1986,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJNC0B4R3M5N5RRRKF8743AC",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-02",
@@ -2110,7 +1997,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJQDEGT8P4E89985MZV7MT13",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-02",
@@ -2120,7 +2008,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJQDEGT8P4E89985MZV7MT13",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-03",
@@ -2130,7 +2019,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJSVTBSG3RMXCXR0BP4S4JHH",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-03",
@@ -2140,7 +2030,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJSVTBSG3RMXCXR0BP4S4JHH",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-04",
@@ -2150,7 +2041,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJWMK70R1GJJ7NYFN6EZCFER",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983 — Director Lisa Sumption"
         },
         {
             "d": "2026-03-04",
@@ -2160,7 +2052,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJWMK70R1GJJ7NYFN6EZCFER",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983 — Director Lisa Sumption"
         },
         {
             "d": "2026-03-05",
@@ -2170,7 +2063,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK0DDFQ8A7B4NQVJ86TD9RWW",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Stormchaser’s Soliloquy"
         },
         {
             "d": "2026-03-05",
@@ -2180,7 +2074,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK0DDFQ8A7B4NQVJ86TD9RWW",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Stormchaser’s Soliloquy"
         },
         {
             "d": "2026-03-07",
@@ -2190,7 +2085,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK4NXTTRRME1WPSJ7DE572KX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Oregon State Parks"
         },
         {
             "d": "2026-03-07",
@@ -2200,7 +2096,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK4NXTTRRME1WPSJ7DE572KX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Oregon State Parks"
         },
         {
             "d": "2026-03-08",
@@ -2210,7 +2107,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK8EK97RE49MF0ZRDN22QN2T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: Day 347."
         },
         {
             "d": "2026-03-09",
@@ -2220,7 +2118,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK90783RS19PM0GKP68CP0X8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: March 5, 2025"
         },
         {
             "d": "2026-03-09",
@@ -2230,7 +2129,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK90783RS19PM0GKP68CP0X8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: March 5, 2025"
         },
         {
             "d": "2026-03-10",
@@ -2240,7 +2140,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKCB4Y88E0CXX4HZ9W3Y6ZQ7",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: What My Resolve Is Built From"
         },
         {
             "d": "2026-03-10",
@@ -2250,7 +2151,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKCCBTCR2M2YHBZZEDARADSF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Your Legacy"
         },
         {
             "d": "2026-03-11",
@@ -2260,7 +2162,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKF8RTDGFGKTV4AAFKYH07G8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2026-03-11",
@@ -2270,7 +2173,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKF8RTDGFGKTV4AAFKYH07G8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2026-03-23",
@@ -2280,7 +2184,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMD3XES0G4CM7R5P3KS0C6VZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "rswfire.com"
         },
         {
             "d": "2026-03-23",
@@ -2290,7 +2195,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMD3XES0G4CM7R5P3KS0C6VZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "rswfire.com"
         },
         {
             "d": "2026-03-24",
@@ -2300,7 +2206,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMGD6CE83C2D9CFEYK9DER69",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Honeyman, I Just Found My Voice"
         },
         {
             "d": "2026-03-24",
@@ -2310,7 +2217,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMGD6CE83C2D9CFEYK9DER69",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Honeyman, I Just Found My Voice"
         },
         {
             "d": "2026-03-25",
@@ -2320,7 +2228,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMKNMSF8YZJ7C5DZWBC08KVT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Evidence Page 10 — Police Intimidation"
         },
         {
             "d": "2026-03-25",
@@ -2330,7 +2239,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMKNMSF8YZJ7C5DZWBC08KVT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Evidence Page 10 — Police Intimidation"
         },
         {
             "d": "2026-03-26",
@@ -2340,7 +2250,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMN7AHHGW4F8VVEHM7D793SA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Day 365."
         },
         {
             "d": "2026-03-26",
@@ -2350,7 +2261,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMNS17ARGNDTA67FS5SPW8N4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Armed Officers"
         },
         {
             "d": "2026-03-27",
@@ -2360,7 +2272,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMRN64J8S55C59VVPTFF2K6N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Incident report transmittal"
         },
         {
             "d": "2026-03-27",
@@ -2370,7 +2283,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMRN64J8S55C59VVPTFF2K6N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Incident report transmittal"
         },
         {
             "d": "2026-03-28",
@@ -2380,7 +2294,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMTJ21JGSSD4W0BTW6HP1E05",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land"
         },
         {
             "d": "2026-03-28",
@@ -2390,7 +2305,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMTJ21JGSSD4W0BTW6HP1E05",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land"
         },
         {
             "d": "2026-03-29",
@@ -2400,7 +2316,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMXRH298KKDJSR9XJKXRH9VT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Firestorm You Created"
         },
         {
             "d": "2026-03-29",
@@ -2410,7 +2327,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMXRH298KKDJSR9XJKXRH9VT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Firestorm You Created"
         },
         {
             "d": "2026-04-16",
@@ -2420,7 +2338,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KPCBQSA008GPWGK7RA4AEKGA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record"
         },
         {
             "d": "2026-04-16",
@@ -2430,7 +2349,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KPCBQSA008GPWGK7RA4AEKGA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record"
         },
         {
             "d": "2026-05-03",
@@ -2440,7 +2360,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQR5YHJ80H5V45AYAGHT7ZXF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Documented Incident — May 3, 2026 — Siltcoos Work Center"
         },
         {
             "d": "2026-05-03",
@@ -2450,7 +2371,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQR5YHJ80H5V45AYAGHT7ZXF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Documented Incident — May 3, 2026 — Siltcoos Work Center"
         },
         {
             "d": "2026-05-04",
@@ -2460,7 +2382,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQTEA748SAZ42H5TWBV9VACP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025"
         },
         {
             "d": "2026-05-04",
@@ -2470,7 +2393,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQTEA748SAZ42H5TWBV9VACP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025"
         },
         {
             "d": "2026-07-14",
@@ -2480,7 +2404,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KXH1JXW0057G6VGF9J2H1BX6",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The released record, provided to the agency"
         },
         {
             "d": "2026-07-21",
@@ -2490,7 +2415,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KY364AE0Z5ZVT070RT0DGMED",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "A request for accountability"
         },
         {
             "d": "2026-07-24",
@@ -2500,7 +2426,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYAS8P3R05PDFPEPQ5WC9G4G",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Supplemental filing forwarded to OPRD leadership"
         },
         {
             "d": "2026-07-26",
@@ -2510,7 +2437,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYFD2008A7KZJWT8TH1DRM7R",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "What Integrity Looks Like"
         },
         {
             "d": "2026-07-28",
@@ -2520,7 +2448,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYN0J6EREDJN6024KZJYJCFF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of publication"
         },
         {
             "d": "2026-08-01",
@@ -2531,6 +2460,7 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "oprd"
             },
             "noreply": true,
+            "title": "Statewide HR Policy 50.010.02, Violence-Free Workplace, and its application to me",
             "att": {
                 "label": "Letter to the Director",
                 "href": "/records/oprd/attachments/01kyy2c05rz76jbtekhe0eeb59-2026-07-31-letter-director-deputy-violence-free-workplace.pdf",
@@ -2546,7 +2476,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KZS7F758483G54YAYE1MYDJ5",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: PR27478 - Public Records Request"
         },
         {
             "d": "2026-08-13",
@@ -2556,7 +2487,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KZZ5VDBG9FR4BRN1KBMRH28B",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Document Notification"
         },
         {
             "d": "2026-08-26",
@@ -2566,7 +2498,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M0ZDW890T961AYRFE3QY1END",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Accountability"
         },
         {
             "d": "2026-08-29",
@@ -2576,7 +2509,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M17VSB00XE0RQ32RJKZ79P7S",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of legal fund"
         },
         {
             "d": "2026-09-03",
@@ -2586,7 +2520,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1MESFR8QGCRQZBDJMH3HN1Z",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Governor letter, forwarded"
         },
         {
             "d": "2026-09-05",
@@ -2595,7 +2530,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1SWHHM8QSPN71SK56Q97F8C",
                 "t": "oprd"
-            }
+            },
+            "title": "Public records request: the Director and the Deputy Director"
         },
         {
             "d": "2026-09-05",
@@ -2605,7 +2541,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1SFPP5GMVGVEX6CR6G74FK1",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The record says you lied"
         },
         {
             "d": "2026-09-06",
@@ -2615,7 +2552,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1WJ78ZGYR5J2TTD7SKXRA2N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.1"
         },
         {
             "d": "2026-09-07",
@@ -2625,7 +2563,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1YH9QSR0JAGXR04DGFYV7VD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.2 -- Final"
         },
         {
             "d": "2026-09-08",
@@ -2634,7 +2573,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M20YMVX0Y7FBDFVH6QPR70RQ",
                 "t": "oprd"
-            }
+            },
+            "title": "ODOT Public Records, No-Records Response, R027904"
         },
         {
             "d": "2026-09-08",
@@ -2643,7 +2583,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M211VD50GEMFA0115K4FSWF6",
                 "t": "oprd"
-            }
+            },
+            "title": "ODOT Public Records, Confirmation with Lisa Sumption, R027904"
         },
         {
             "d": "2026-09-08",
@@ -2653,7 +2594,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M21706K0KZKPM48E0E14936B",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the record: ODOT's statement attributed to you"
         },
         {
             "d": "2026-09-11",
@@ -2663,7 +2605,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M29ZRKJ8KB38SPR38V64HH2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-12",
@@ -2673,7 +2616,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2AX024GFJ98QPY7VYNNY7M8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-13",
@@ -2683,7 +2627,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2DRZJGRM705954TP93CYBYC",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "To Director Sumption"
         },
         {
             "d": "2026-09-15",
@@ -2693,7 +2638,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2K9KFV8EWG311Y8KGCW0D2T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The complete testimony, sent to OPRD leadership"
         },
         {
             "d": "2026-09-17",
@@ -2703,7 +2649,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2RPE3B0PGSNC3BQ8RCFS9RZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice that the testimony will keep changing"
         },
         {
             "d": "2026-09-18",
@@ -2713,6 +2660,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Fee Estimate of $1,728, September 5 Request",
             "att": {
                 "label": "The invoice",
                 "href": "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf",
@@ -2728,7 +2676,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2Y6X0GGCJYN4Q63HEM55MVM",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Director and Her Deputy, published"
         },
         {
             "d": "2026-09-20",
@@ -2738,7 +2687,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M30GCBNRZCAEMX90B6T5D710",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of conclusion of direct correspondence"
         }
     ],
     "deputy": [
@@ -2749,7 +2699,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
                 "t": "oprd"
-            }
+            },
+            "title": "Deputy Director JR Collier, Contact Directive"
         },
         {
             "d": "2026-02-13",
@@ -2758,7 +2709,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
                 "t": "oprd"
-            }
+            },
+            "title": "Deputy Director JR Collier, Contact Directive"
         },
         {
             "d": "2026-02-13",
@@ -2768,7 +2720,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHCRSGKR77V1HW6QB6B2W1T2",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-14",
@@ -2778,7 +2731,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHF926VGF7ANVHQA2C4SDW0M",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-17",
@@ -2788,7 +2742,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KHNNQ770849BDD90KJGM4QXP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Oregon Parks and Recreation Contact Information"
         },
         {
             "d": "2026-02-28",
@@ -2798,7 +2753,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJHP4RQ09SJ1ZFJGJ2W3MQZA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Day 339."
         },
         {
             "d": "2026-03-01",
@@ -2808,7 +2764,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJNC0B4R3M5N5RRRKF8743AC",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-02",
@@ -2818,7 +2775,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJQDEGT8P4E89985MZV7MT13",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-03",
@@ -2828,6 +2786,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -2843,7 +2802,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJSVTBSG3RMXCXR0BP4S4JHH",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Day 339."
         },
         {
             "d": "2026-03-04",
@@ -2853,7 +2813,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KJWMK70R1GJJ7NYFN6EZCFER",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "42 U.S.C. § 1983 — Director Lisa Sumption"
         },
         {
             "d": "2026-03-05",
@@ -2863,7 +2824,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK0DDFQ8A7B4NQVJ86TD9RWW",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Stormchaser’s Soliloquy"
         },
         {
             "d": "2026-03-06",
@@ -2873,6 +2835,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -2888,7 +2851,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK4NXTTRRME1WPSJ7DE572KX",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Oregon State Parks"
         },
         {
             "d": "2026-03-08",
@@ -2898,7 +2862,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK8EK97RE49MF0ZRDN22QN2T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: Day 347."
         },
         {
             "d": "2026-03-09",
@@ -2908,7 +2873,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KK90783RS19PM0GKP68CP0X8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "RE: March 5, 2025"
         },
         {
             "d": "2026-03-10",
@@ -2918,7 +2884,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKCCBTCR2M2YHBZZEDARADSF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Your Legacy"
         },
         {
             "d": "2026-03-11",
@@ -2928,7 +2895,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KKF8RTDGFGKTV4AAFKYH07G8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: The Setup You Now Own"
         },
         {
             "d": "2026-03-23",
@@ -2938,7 +2906,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMD3XES0G4CM7R5P3KS0C6VZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "rswfire.com"
         },
         {
             "d": "2026-03-24",
@@ -2948,7 +2917,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMGD6CE83C2D9CFEYK9DER69",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Honeyman, I Just Found My Voice"
         },
         {
             "d": "2026-03-25",
@@ -2958,7 +2928,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMKNMSF8YZJ7C5DZWBC08KVT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: Evidence Page 10 — Police Intimidation"
         },
         {
             "d": "2026-03-26",
@@ -2968,7 +2939,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMNS17ARGNDTA67FS5SPW8N4",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Armed Officers"
         },
         {
             "d": "2026-03-27",
@@ -2978,7 +2950,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMRN64J8S55C59VVPTFF2K6N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Incident report transmittal"
         },
         {
             "d": "2026-03-28",
@@ -2988,7 +2961,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMTJ21JGSSD4W0BTW6HP1E05",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land"
         },
         {
             "d": "2026-03-29",
@@ -2998,7 +2972,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KMXRH298KKDJSR9XJKXRH9VT",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Firestorm You Created"
         },
         {
             "d": "2026-04-14",
@@ -3007,7 +2982,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Response to Records Request of April 2, 2026"
         },
         {
             "d": "2026-04-16",
@@ -3017,7 +2993,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KPCBQSA008GPWGK7RA4AEKGA",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "For the Record"
         },
         {
             "d": "2026-04-29",
@@ -3026,7 +3003,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQD0ZGER5TSSB9BTZJCK0KCF",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Reply to Follow-Up on April 14 Response"
         },
         {
             "d": "2026-05-03",
@@ -3036,7 +3014,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQR5YHJ80H5V45AYAGHT7ZXF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Documented Incident — May 3, 2026 — Siltcoos Work Center"
         },
         {
             "d": "2026-05-04",
@@ -3045,7 +3024,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQSWSYDGFCENFKKH5JHF0KW2",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Forward of Follow-Up on April 14 Response"
         },
         {
             "d": "2026-05-04",
@@ -3054,7 +3034,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQTMJDC8982KJPBPN3ZT3WMH",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Response to Records Request (Agency Compliance and Executive Involvement)"
         },
         {
             "d": "2026-05-04",
@@ -3064,7 +3045,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQTEA748SAZ42H5TWBV9VACP",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025"
         },
         {
             "d": "2026-07-14",
@@ -3074,7 +3056,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KXH1JXW0057G6VGF9J2H1BX6",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The released record, provided to the agency"
         },
         {
             "d": "2026-07-21",
@@ -3084,7 +3067,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KY364AE0Z5ZVT070RT0DGMED",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "A request for accountability"
         },
         {
             "d": "2026-07-24",
@@ -3094,7 +3078,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYAS8P3R05PDFPEPQ5WC9G4G",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Supplemental filing forwarded to OPRD leadership"
         },
         {
             "d": "2026-07-26",
@@ -3104,7 +3089,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYFD2008A7KZJWT8TH1DRM7R",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "What Integrity Looks Like"
         },
         {
             "d": "2026-07-28",
@@ -3114,7 +3100,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYN0J6EREDJN6024KZJYJCFF",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of publication"
         },
         {
             "d": "2026-08-01",
@@ -3125,6 +3112,7 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "oprd"
             },
             "noreply": true,
+            "title": "Statewide HR Policy 50.010.02, Violence-Free Workplace, and its application to me",
             "att": {
                 "label": "Letter to the Director",
                 "href": "/records/oprd/attachments/01kyy2c05rz76jbtekhe0eeb59-2026-07-31-letter-director-deputy-violence-free-workplace.pdf",
@@ -3140,7 +3128,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KZS7F758483G54YAYE1MYDJ5",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Fw: PR27478 - Public Records Request"
         },
         {
             "d": "2026-08-26",
@@ -3150,7 +3139,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M0ZDW890T961AYRFE3QY1END",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Accountability"
         },
         {
             "d": "2026-08-29",
@@ -3160,7 +3150,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M17VSB00XE0RQ32RJKZ79P7S",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice of legal fund"
         },
         {
             "d": "2026-09-03",
@@ -3170,7 +3161,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1MESFR8QGCRQZBDJMH3HN1Z",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Governor letter, forwarded"
         },
         {
             "d": "2026-09-05",
@@ -3179,7 +3171,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1SWHHM8QSPN71SK56Q97F8C",
                 "t": "oprd"
-            }
+            },
+            "title": "Public records request: the Director and the Deputy Director"
         },
         {
             "d": "2026-09-05",
@@ -3189,7 +3182,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1SFPP5GMVGVEX6CR6G74FK1",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The record says you lied"
         },
         {
             "d": "2026-09-06",
@@ -3199,7 +3193,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1WJ78ZGYR5J2TTD7SKXRA2N",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.1"
         },
         {
             "d": "2026-09-07",
@@ -3209,7 +3204,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1YH9QSR0JAGXR04DGFYV7VD",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The choices are still yours, v1.2 -- Final"
         },
         {
             "d": "2026-09-11",
@@ -3218,7 +3214,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M28D2P6GKA8N9YJ81GZP0WF1",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Acknowledgment of September 5 Request"
         },
         {
             "d": "2026-09-11",
@@ -3228,7 +3225,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M29ZRKJ8KB38SPR38V64HH2C",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-12",
@@ -3238,7 +3236,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2AX024GFJ98QPY7VYNNY7M8",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Re: sunlight: the collapse of the story you told the police and yourselves"
         },
         {
             "d": "2026-09-15",
@@ -3248,7 +3247,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2K9KFV8EWG311Y8KGCW0D2T",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The complete testimony, sent to OPRD leadership"
         },
         {
             "d": "2026-09-17",
@@ -3258,7 +3258,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2RPE3B0PGSNC3BQ8RCFS9RZ",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "Notice that the testimony will keep changing"
         },
         {
             "d": "2026-09-18",
@@ -3268,6 +3269,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Fee Estimate of $1,728, September 5 Request",
             "att": {
                 "label": "The invoice",
                 "href": "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf",
@@ -3282,7 +3284,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2VEFTARQHQW029628GQA1Y7",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Fee Estimate of $80, Timeline Version Histories"
         },
         {
             "d": "2026-09-19",
@@ -3292,7 +3295,8 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2Y6X0GGCJYN4Q63HEM55MVM",
                 "t": "oprd"
             },
-            "noreply": true
+            "noreply": true,
+            "title": "The Director and Her Deputy, published"
         }
     ],
     "emergency-manager": [
@@ -3304,6 +3308,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3319,6 +3324,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3334,6 +3340,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3349,6 +3356,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3364,6 +3372,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3379,6 +3388,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3393,7 +3403,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1S53NH8C3YG644R0W1TG0DS",
                 "t": "oprd"
-            }
+            },
+            "title": "Your March 3, 2026 email to Captain Kennedy"
         },
         {
             "d": "2026-09-05",
@@ -3402,7 +3413,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1S5AS2G1PK98P6VYW8M9RSQ",
                 "t": "osp"
-            }
+            },
+            "title": "Your order is the first act of state power in that file"
         }
     ],
     "press-captain": [
@@ -3414,6 +3426,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3429,6 +3442,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3443,7 +3457,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1S5AS2G1PK98P6VYW8M9RSQ",
                 "t": "osp"
-            }
+            },
+            "title": "Your order is the first act of state power in that file"
         },
         {
             "d": "2026-09-27",
@@ -3453,6 +3468,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M3GWDQSGQ34YBJFFKTMJYAF5",
                 "t": "osp"
             },
+            "title": "You converted a link into a threat assessment",
             "att": {
                 "label": "You converted a link into a threat assessment",
                 "href": "/records/osp/attachments/01m3gwdqsgq34ybjffktmjyaf5-2026-09-27-osp-kennedy.pdf",
@@ -3467,7 +3483,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3H2RSV0H0XBHFNBH8GR8DCT",
                 "t": "osp"
-            }
+            },
+            "title": "ORS 181A.250, and the file you hold on me"
         },
         {
             "d": "2026-10-08",
@@ -3476,7 +3493,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4F03M9GV5SKCG9QXVB7MB3X",
                 "t": "osp"
-            }
+            },
+            "title": "A statement about record keeping"
         }
     ],
     "lieutenant": [
@@ -3488,6 +3506,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3503,6 +3522,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3518,6 +3538,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3532,7 +3553,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"
-            }
+            },
+            "title": "Report SP26096984, and what all of you have been doing"
         },
         {
             "d": "2026-09-27",
@@ -3541,7 +3563,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3H2RSV0H0XBHFNBH8GR8DCT",
                 "t": "osp"
-            }
+            },
+            "title": "ORS 181A.250, and the file you hold on me"
         }
     ],
     "sergeant": [
@@ -3553,6 +3576,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3568,6 +3592,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3583,6 +3608,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3598,6 +3624,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -3612,7 +3639,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"
-            }
+            },
+            "title": "Report SP26096984, and what all of you have been doing"
         },
         {
             "d": "2026-09-27",
@@ -3621,7 +3649,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3H2RSV0H0XBHFNBH8GR8DCT",
                 "t": "osp"
-            }
+            },
+            "title": "ORS 181A.250, and the file you hold on me"
         }
     ],
     "case-detective": [
@@ -3633,6 +3662,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3648,6 +3678,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "CAD Record SP26096984",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26096984-CAD.pdf",
@@ -3663,6 +3694,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "CAD Record SP26096984",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26096984-CAD.pdf",
@@ -3678,6 +3710,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3701,6 +3734,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3716,6 +3750,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -3731,6 +3766,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3746,6 +3782,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3761,6 +3798,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -3775,7 +3813,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
-            }
+            },
+            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
         },
         {
             "d": "2026-09-10",
@@ -3784,7 +3823,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"
-            }
+            },
+            "title": "Report SP26096984, and what all of you have been doing"
         },
         {
             "d": "2026-09-27",
@@ -3793,7 +3833,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3H2RSV0H0XBHFNBH8GR8DCT",
                 "t": "osp"
-            }
+            },
+            "title": "ORS 181A.250, and the file you hold on me"
         }
     ],
     "task-force-detective": [
@@ -3805,6 +3846,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3820,6 +3862,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3835,6 +3878,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3850,6 +3894,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3865,6 +3910,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3880,6 +3926,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3895,6 +3942,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3910,6 +3958,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3925,6 +3974,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3940,6 +3990,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3955,6 +4006,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3970,6 +4022,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -3985,6 +4038,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4000,6 +4054,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4015,6 +4070,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4038,6 +4094,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Report SP26096984 — Threat Assessment",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
@@ -4052,7 +4109,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
-            }
+            },
+            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
         },
         {
             "d": "2026-09-10",
@@ -4061,7 +4119,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"
-            }
+            },
+            "title": "Report SP26096984, and what all of you have been doing"
         },
         {
             "d": "2026-09-27",
@@ -4070,7 +4129,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3H2RSV0H0XBHFNBH8GR8DCT",
                 "t": "osp"
-            }
+            },
+            "title": "ORS 181A.250, and the file you hold on me"
         }
     ],
     "fusion-center-analyst": [
@@ -4082,6 +4142,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4097,6 +4158,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4112,6 +4174,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Original email from State Parks, Honeyman State Park",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
@@ -4126,7 +4189,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M30EACB8FXZB4SQ3TA1ED1N3",
                 "t": "osp"
-            }
+            },
+            "title": "Request for records concerning the March 11 characterization"
         },
         {
             "d": "2026-09-22",
@@ -4135,7 +4199,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M34REGP0WY727F9TQGS959Q7",
                 "t": "osp"
-            }
+            },
+            "title": "A response is expected"
         }
     ],
     "forest-service-agent": [
@@ -4147,6 +4212,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4162,6 +4228,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4177,6 +4244,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4192,6 +4260,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4207,6 +4276,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4222,6 +4292,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4245,6 +4316,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4260,6 +4332,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4275,6 +4348,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4290,6 +4364,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
@@ -4304,7 +4379,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
-            }
+            },
+            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
         },
         {
             "d": "2026-03-27",
@@ -4313,7 +4389,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KMRG1SS08ZF35E4PGSZHBQW1",
                 "t": "usfs"
-            }
+            },
+            "title": "Host/Caretaker Incident Report"
         },
         {
             "d": "2026-07-24",
@@ -4322,7 +4399,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYAG3J7GMK1RV66MTGQ2VFN8",
                 "t": "usfs"
-            }
+            },
+            "title": "District Ranger Michele Holman, Forest Service Statement"
         },
         {
             "d": "2026-07-27",
@@ -4331,7 +4409,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYJZQ628C7J1RXN90DR7N0MA",
                 "t": "usfs"
-            }
+            },
+            "title": "Patrol Captain Felicia Sloan, Referral to the Office of Professional Responsibility"
         },
         {
             "d": "2026-09-09",
@@ -4340,7 +4419,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
-            }
+            },
+            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
         },
         {
             "d": "2026-09-10",
@@ -4349,7 +4429,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"
-            }
+            },
+            "title": "Report SP26096984, and what all of you have been doing"
         }
     ],
     "osp-cr": [
@@ -4360,25 +4441,28 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KN80JH7GDQPV64DRX6QAEDDS",
                 "t": "osp"
-            }
+            },
+            "title": "OSP Public Records, Referral to Request Form"
         },
         {
             "d": "2026-04-03",
             "when": "April 3, 2026",
-            "text": "Central Records acknowledges the request as PR27478: “A search will be conducted to determine if OSP is the custodian of the requested record(s).”",
+            "text": "OSP Public Records acknowledges the request as PR27478: “A search will be conducted to determine if OSP is the custodian of the requested record(s).”",
             "src": {
                 "u": "01KNA5AMHRFX5YBQNX0A4AE6YX",
                 "t": "osp"
-            }
+            },
+            "title": "OSP Public Records, Acknowledgment, PR27478"
         },
         {
             "d": "2026-04-03",
             "when": "April 3, 2026",
-            "text": "OSP Central Records answers the same day: “The Department has conducted a search which identified no records responsive to your request.”",
+            "text": "OSP Public Records answers the same day: “The Department has conducted a search which identified no records responsive to your request.”",
             "src": {
                 "u": "01KNAV7K70M1CKA57ZJW6M6X1R",
                 "t": "osp"
             },
+            "title": "[OSP Public Records 3], No-Records Response, PR27478",
             "att": {
                 "label": "Response Letter",
                 "href": "/records/osp/attachments/01knav7k70m1cka57zjw6m6x1r-Response-Letter.pdf",
@@ -4389,11 +4473,12 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-13",
             "when": "April 13, 2026",
-            "text": "OSP Central Records writes: “Upon further review, OSP has identified the following responsive records:” one item, “CAD”, $12.50. “The body cam is exempt from disclosure.” “Only check and money order are accepted.”",
+            "text": "OSP Public Records writes: “Upon further review, OSP has identified the following responsive records:” one item, “CAD”, $12.50. “The body cam is exempt from disclosure.” “Only check and money order are accepted.”",
             "src": {
                 "u": "01KP4N822RW0N8WZ47YG8MG4W8",
                 "t": "osp"
             },
+            "title": "[OSP Public Records 3], Fee Letter, PR27478",
             "att": {
                 "label": "Fee Letter",
                 "href": "/records/osp/attachments/01kp4n822rw0n8wz47yg8mg4w8-Fee-Letter.pdf",
@@ -4404,74 +4489,82 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-14",
             "when": "April 14, 2026",
-            "text": "OSP Central Records answers the fee waiver request: “Attached you will find a fee waiver.” The waiver is never granted and never denied.",
+            "text": "OSP Public Records answers the fee waiver request: “Attached you will find a fee waiver.” The waiver is never granted and never denied.",
             "src": {
                 "u": "01KP69QF9G4R2E53N9EZMQCXEM",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 3], Fee Waiver Form, PR27478"
         },
         {
             "d": "2026-07-14",
             "when": "July 14, 2026",
-            "text": "OSP Central Records releases one record, “Incident CAD”, writing that the request was “received on 04/13/2026” and that it “has been reviewed for exempt material, with none being identified.”",
+            "text": "OSP Public Records releases one record, “Incident CAD”, writing that the request was “received on 04/13/2026” and that it “has been reviewed for exempt material, with none being identified.”",
             "src": {
                 "u": "01KXGXZNCREXD3GRQ2PJ4MGAP0",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 1], First Production, PR27478"
         },
         {
             "d": "2026-07-14",
             "when": "July 14, 2026",
-            "text": "OSP Central Records follows up: “Please let me know if this production is sufficient, or I will happily mail the records.”",
+            "text": "OSP Public Records follows up: “Please let me know if this production is sufficient, or I will happily mail the records.”",
             "src": {
                 "u": "01KXGY48VGSFPRVD22M7QGWXGZ",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 1], Confirmation of First Production, PR27478"
         },
         {
             "d": "2026-07-27",
             "when": "July 27, 2026",
-            "text": "OSP Central Records reopens PR27478: “A thorough review of your request has resulted in the finding of additional records, not in our system at the time of the original request.”",
+            "text": "OSP Public Records reopens PR27478: “A thorough review of your request has resulted in the finding of additional records, not in our system at the time of the original request.”",
             "src": {
                 "u": "01KYJM548RW64XYRSCMJM9F6T9",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 1], Reopening Notice, PR27478"
         },
         {
             "d": "2026-07-30",
             "when": "July 30, 2026",
-            "text": "OSP Central Records sends the April 13 fee letter to the volunteer and the Attorney General’s order desk: “Please find our attached fee letter which was provided on April 13th and exempts the body cam video.”",
+            "text": "OSP Public Records sends the April 13 fee letter to the volunteer and the Attorney General’s order desk: “Please find our attached fee letter which was provided on April 13th and exempts the body cam video.”",
             "src": {
                 "u": "01KYSZGF6GK4HMAJ6KRCDBAY46",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 2], Response to Order, DOJ File No. 257001-GA0140-26"
         },
         {
             "d": "2026-07-30",
             "when": "July 30, 2026",
-            "text": "Central Records acknowledges a second request, about the fee and exemption letter, as PR36445.",
+            "text": "OSP Public Records acknowledges a second request, about the fee and exemption letter, as PR36445.",
             "src": {
                 "u": "01KYTCMMGGQKYA5FB7AZMQB4Z7",
                 "t": "osp"
-            }
+            },
+            "title": "OSP Public Records, Acknowledgment, PR36445"
         },
         {
             "d": "2026-08-11",
             "when": "August 11, 2026",
-            "text": "OSP Central Records lists the PR27478 records the institution holds, among them “Officer Notes” and “Body Cam Video — Body Cam video will be withheld pursuant to ORS 192.345(40).” “TOTAL DUE: $157.50”.",
+            "text": "OSP Public Records lists the PR27478 records the institution holds, among them “Officer Notes” and “Body Cam Video — Body Cam video will be withheld pursuant to ORS 192.345(40).” “TOTAL DUE: $157.50”.",
             "src": {
                 "u": "01KZS0AAY88AYPJ32PDEZABW03",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Public Records 1], Records Identified and Fee, PR27478"
         },
         {
             "d": "2026-08-11",
             "when": "August 11, 2026",
-            "text": "OSP Central Records prices PR36445 at “TOTAL DUE: $16,315.00”, with one category released “within 130 weeks, or 30 months from receipt of payment.” “Central Records provides records in response to public records request, in accordance with applicable statutes, but is not able to answer specific questions.”",
+            "text": "OSP Public Records prices PR36445 at “TOTAL DUE: $16,315.00”, with one category released “within 130 weeks, or 30 months from receipt of payment.” “Central Records provides records in response to public records request, in accordance with applicable statutes, but is not able to answer specific questions.”",
             "src": {
                 "u": "01KZS0AEV8KA95QQZVJBCKBQEM",
                 "t": "osp"
             },
+            "title": "[OSP Public Records 1], Records Identified and Fee Estimate, PR36445",
             "att": {
                 "label": "PR36445",
                 "href": "/records/osp/attachments/01kzs0aev8ka95qqzvjbckbqem-PR36445.pdf",
@@ -4486,16 +4579,18 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M0X7G1Z04DAKZDHMX1VX4WXJ",
                 "t": "osp"
-            }
+            },
+            "title": "Attempted delivery during business hours"
         },
         {
             "d": "2026-09-03",
             "when": "September 3, 2026",
-            "text": "OSP Central Records produces sixteen files under both case numbers, with redactions under three exemptions and “a refund check in the amount of $95.00”. Four documents the produced records reference as attached are not among them.",
+            "text": "OSP Public Records produces sixteen files under both case numbers, with redactions under three exemptions and “a refund check in the amount of $95.00”. Four documents the produced records reference as attached are not among them.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
+            "title": "Oregon State Police, Second Production, PR27478",
             "att": {
                 "label": "Release Letter PR27478, with envelope and request form",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-PR27478.pdf",
@@ -4506,11 +4601,12 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-28",
             "when": "September 28, 2026",
-            "text": "OSP Central Records cites the exemptions for the withheld files: “OSP Hasty Form Robert White”, ORS 192.345(23); “WHITE, ROBERT SAMUEL DMV”, ORS 192.355(9); “ReportRobertWhite”, ORS 192.355(8); the body camera video, ORS 192.345(40). “We provided all located, responsive electronic communication records. We do not have call logs. We did not locate any recorded phone calls.”",
+            "text": "OSP Public Records cites the exemptions for the withheld files: “OSP Hasty Form Robert White”, ORS 192.345(23); “WHITE, ROBERT SAMUEL DMV”, ORS 192.355(9); “ReportRobertWhite”, ORS 192.355(8); the body camera video, ORS 192.345(40). “We provided all located, responsive electronic communication records. We do not have call logs. We did not locate any recorded phone calls.”",
             "src": {
                 "u": "01M3MJAZY0G31KFSSTRM6QBCNH",
                 "t": "osp"
             },
+            "title": "OSP Public Records, Exemption Letter, PR27478",
             "att": {
                 "label": "The exemptions letter, REF# PR27478",
                 "href": "/records/osp/attachments/01m3mjazy0g31kfsstrm6qbcnh-PR27478-Exemptions.pdf",
@@ -4527,7 +4623,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KY85JKW045VWDEKXY25B0R3D",
                 "t": "osp"
-            }
+            },
+            "title": "OSP Risk Management, Litigation Hold, SP26-097765"
         },
         {
             "d": "2026-09-01",
@@ -4536,7 +4633,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1EVZDA0BRTQTJ9JET9VCS8Y",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Risk Management], Preservation Confirmation, SP26-097765"
         },
         {
             "d": "2026-09-01",
@@ -4545,7 +4643,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1EXBBJ0PB7VJXJA7FPVT6NZ",
                 "t": "osp"
-            }
+            },
+            "title": "[OSP Risk Management], Referral to CJIS"
         }
     ],
     "oprd-pr": [
@@ -4556,7 +4655,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01K399TYZ8FH0KXZQCG7QW03T5",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD Public Records, Acknowledgment of Records Request (Volunteer Program Operations)"
         },
         {
             "d": "2025-08-28",
@@ -4565,7 +4665,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KA45NDXG8VA4XB2YG7M8G0F5",
                 "t": "oprd"
-            }
+            },
+            "title": "Notice of Violation - Failure to Respond to Public Records Request (Submitted August 22, 2025)"
         },
         {
             "d": "2025-11-15",
@@ -4574,7 +4675,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KA45NDXG8VA4XB2YG7M8G0F5",
                 "t": "oprd"
-            }
+            },
+            "title": "Notice of Violation - Failure to Respond to Public Records Request (Submitted August 22, 2025)"
         },
         {
             "d": "2025-11-20",
@@ -4583,7 +4685,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KAHTQ0ZG656XCF1G2Q9X15KY",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Reply to Notice of Violation"
         },
         {
             "d": "2025-11-20",
@@ -4593,6 +4696,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KAHTQ0ZG656XCF1G2Q9X15KY",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Reply to Notice of Violation",
             "att": {
                 "label": "public records request response robert samuel white ",
                 "href": "/records/oprd/attachments/01kahtq0zg656xcf1g2q9x15ky-public-records-request-response-robert-samuel-white-.pdf",
@@ -4607,7 +4711,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KAY09GQ05E6NJGGSARDNA1AC",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD NextRequest, Closure Notice, Request #25-42"
         },
         {
             "d": "2025-12-20",
@@ -4616,7 +4721,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KCZ2X7B82YMD614H8DTFQPGR",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD Public Records, Reply re \"The Whole Story\""
         },
         {
             "d": "2026-04-02",
@@ -4625,7 +4731,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KN7XVA7050DGJA5MM1DFQGJ7",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD Public Records, Acknowledgment of Records Request (Law Enforcement Visit of March 24, 2026)"
         },
         {
             "d": "2026-04-14",
@@ -4634,7 +4741,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Response to Records Request of April 2, 2026"
         },
         {
             "d": "2026-04-14",
@@ -4644,6 +4752,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Response to Records Request of April 2, 2026",
             "att": {
                 "label": "invoice public records Robert Samuel White",
                 "href": "/records/oprd/attachments/01kp78bz8rtq3sj3rxkj4m1ggt-invoice-public-records-Robert-Samuel-White.pdf",
@@ -4658,7 +4767,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KP79KZHGGJ2XH73FXBDJGG2G",
                 "t": "oprd"
-            }
+            },
+            "title": "RE: Records Request response- 4/2/2026"
         },
         {
             "d": "2026-04-29",
@@ -4667,7 +4777,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQD0ZGER5TSSB9BTZJCK0KCF",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Reply to Follow-Up on April 14 Response"
         },
         {
             "d": "2026-04-29",
@@ -4676,7 +4787,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQD0ZKCGA2GY0QAFC9PE1CYF",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD Public Records, Ticket Receipt"
         },
         {
             "d": "2026-05-01",
@@ -4685,7 +4797,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQK560J8F9Y07V7K7JCBJTBN",
                 "t": "oprd"
-            }
+            },
+            "title": "Re: Follow-Up: Public Records Request Response – April 14, 2026 Letter"
         },
         {
             "d": "2026-05-02",
@@ -4694,7 +4807,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQNQGN58GP7BH2EGCT8MKEYY",
                 "t": "oprd"
-            }
+            },
+            "title": "OPRD Public Records, Acknowledgment of Records Request (Agency Compliance and Executive Involvement)"
         },
         {
             "d": "2026-05-04",
@@ -4704,6 +4818,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KQSWSYDGFCENFKKH5JHF0KW2",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Forward of Follow-Up on April 14 Response",
             "att": {
                 "label": "invoice public records Robert Samuel White 5 4 update",
                 "href": "/records/oprd/attachments/01kqswsydgfcenfkkh5jhf0kw2-invoice-public-records-Robert-Samuel-White-5-4-update.pdf",
@@ -4718,7 +4833,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQSWSYDGFCENFKKH5JHF0KW2",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Forward of Follow-Up on April 14 Response"
         },
         {
             "d": "2026-05-04",
@@ -4727,7 +4843,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQTMJDC8982KJPBPN3ZT3WMH",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Response to Records Request (Agency Compliance and Executive Involvement)"
         },
         {
             "d": "2026-09-11",
@@ -4736,7 +4853,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M28D2P6GKA8N9YJ81GZP0WF1",
                 "t": "oprd"
-            }
+            },
+            "title": "[OPRD Public Records], Acknowledgment of September 5 Request"
         },
         {
             "d": "2026-09-18",
@@ -4746,6 +4864,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Fee Estimate of $1,728, September 5 Request",
             "att": {
                 "label": "The invoice",
                 "href": "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf",
@@ -4761,6 +4880,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M2VEFTARQHQW029628GQA1Y7",
                 "t": "oprd"
             },
+            "title": "[OPRD Public Records], Fee Estimate of $80, Timeline Version Histories",
             "att": {
                 "label": "The invoice",
                 "href": "/records/oprd/attachments/01m2veftarqhqw029628gqa1y7-invoice-public-records-Robert-Samuel-White-request-09112026.pdf",
@@ -4775,7 +4895,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2VF2JXGC49DZZZDFKKMXS2J",
                 "t": "oprd"
-            }
+            },
+            "title": "Both estimates disputed, and neither will be paid"
         }
     ],
     "governor": [
@@ -4786,7 +4907,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KACE2348G8VG3XPB3BGW3F1N",
                 "t": "governor"
-            }
+            },
+            "title": "Formal Complaint — Documented Institutional Abuse, Retaliation for Protected Speech, and Ongoing Violation of Oregon Public Records Law"
         },
         {
             "d": "2025-12-09",
@@ -4795,7 +4917,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KC3GJ4WGZQ8V706APJ97YDN4",
                 "t": "governor"
-            }
+            },
+            "title": "Fw: For the Record — Supervisory Betrayal"
         },
         {
             "d": "2025-12-11",
@@ -4804,7 +4927,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KC7PX85RSCWKVSWHK39K6YCG",
                 "t": "governor"
-            }
+            },
+            "title": "Fw: There's something you should know."
         },
         {
             "d": "2025-12-18",
@@ -4813,7 +4937,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KCS97W9RPP89CERDSEPDGR28",
                 "t": "governor"
-            }
+            },
+            "title": "Documented LGBTQ+ Retaliation + Gubernatorial Silence"
         },
         {
             "d": "2026-01-13",
@@ -4822,7 +4947,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KEW3XK4G21P2KCPZYD405M5J",
                 "t": "governor"
-            }
+            },
+            "title": "Re: [Park Supervisor]"
         },
         {
             "d": "2026-01-14",
@@ -4831,7 +4957,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KEZK3DQ86AGV11TPVG7VXC6H",
                 "t": "governor"
-            }
+            },
+            "title": "An Open Letter to Governor Kotek"
         },
         {
             "d": "2026-02-16",
@@ -4840,7 +4967,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KHK1EBD8ZSWHRRWT7Y69NDA1",
                 "t": "governor"
-            }
+            },
+            "title": "Defining Abuse"
         },
         {
             "d": "2026-02-28",
@@ -4849,7 +4977,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KJK3GSJ0AJV72GB8R6S6PBWH",
                 "t": "governor"
-            }
+            },
+            "title": "Fw: Day 339."
         },
         {
             "d": "2026-05-03",
@@ -4858,7 +4987,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KQR749JGPDKZ69Q95304PRFT",
                 "t": "governor"
-            }
+            },
+            "title": "Escalating Retaliation at a Federal Work Center — May 4, 2026"
         },
         {
             "d": "2026-06-28",
@@ -4867,7 +4997,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KW8KH1N8VJXGXGERYEFA5YQJ",
                 "t": "governor"
-            }
+            },
+            "title": "Formal notice and request for an independent investigation"
         },
         {
             "d": "2026-07-15",
@@ -4876,7 +5007,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KXK7BACRB1PCMBBQQK47S8DQ",
                 "t": "governor"
-            }
+            },
+            "title": "PR27478, and my question to the Governor"
         },
         {
             "d": "2026-09-03",
@@ -4885,7 +5017,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M1MEQP4GVGV0ED9D555043P2",
                 "t": "governor"
-            }
+            },
+            "title": "Governor, your office was the reason"
         },
         {
             "d": "2026-09-26",
@@ -4894,7 +5027,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3FDMFP0VRBZCTGXQRXJ7CM3",
                 "t": "oprd"
-            }
+            },
+            "title": "Follow the Statute."
         }
     ],
     "das-pr": [
@@ -4905,7 +5039,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KWG11X6GHV02H0GESWRSQJFX",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Submission Receipt, R000879"
         },
         {
             "d": "2026-07-06",
@@ -4914,7 +5049,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KWWCTCW09VNDMKKGABWBSKHT",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Closure Notice, R000879"
         },
         {
             "d": "2026-07-07",
@@ -4923,7 +5059,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KWZ5JNHGDEMWZVJ6JKNMC756",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Reopening Notice, R000879"
         },
         {
             "d": "2026-07-07",
@@ -4932,7 +5069,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KWZD7KE0ZKRR01Y4VFWKBNR6",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Submission Receipt, R000885"
         },
         {
             "d": "2026-07-07",
@@ -4941,7 +5079,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KWZCVHP8F00X0TXAK0P4H1PA",
                 "t": "das"
-            }
+            },
+            "title": "Correspondence channel and preservation notice"
         },
         {
             "d": "2026-07-08",
@@ -4950,7 +5089,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KX2023V030NZ9F1W5A6XEERB",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Acknowledgment, R000885"
         },
         {
             "d": "2026-07-10",
@@ -4959,7 +5099,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KX6H9018F0C5Z247YFT52JME",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Partial Response, R000879"
         },
         {
             "d": "2026-07-10",
@@ -4968,7 +5109,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KX6NGF001WN65P3N29Z0EBY5",
                 "t": "das"
-            }
+            },
+            "title": "Request to document the search"
         },
         {
             "d": "2026-07-26",
@@ -4977,7 +5119,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYFZTQMGFKXMXQV3CDZKJYGJ",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Acknowledgment, R000911"
         },
         {
             "d": "2026-07-27",
@@ -4986,7 +5129,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYJXBM38DF8Q0GJ3KSKXGKXK",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Second Closure Notice, R000879"
         },
         {
             "d": "2026-07-27",
@@ -4995,7 +5139,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYJZ4KB0YJ0DCQ1D70KMHA52",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Response, R000885"
         },
         {
             "d": "2026-08-03",
@@ -5004,7 +5149,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KZ4716ZRNZA84TVJ2AR3QABX",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Custodial Response, R000911"
         },
         {
             "d": "2026-08-06",
@@ -5013,7 +5159,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KZCEJR18649JM73SC3BYCVRK",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Final Response, R000911"
         },
         {
             "d": "2026-08-06",
@@ -5022,7 +5169,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KZCEJR18649JM73SC3BYCVRK",
                 "t": "das"
-            }
+            },
+            "title": "DAS Public Records, Final Response, R000911"
         }
     ],
     "das-communications-director": [
@@ -5033,7 +5181,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KXRYEANRJTKDD59D58S8N278",
                 "t": "das"
-            }
+            },
+            "title": "DAS Communications Director, Response re Records Function"
         },
         {
             "d": "2026-07-17",
@@ -5042,7 +5191,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KXSJDWG0RQNG5ZV9ZM8T35TR",
                 "t": "das"
-            }
+            },
+            "title": "Inquiry to the Communications Director"
         }
     ],
     "doj-pr": [
@@ -5053,7 +5203,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYMTB4B0BMABYPBY3YMA5CW1",
                 "t": "das"
-            }
+            },
+            "title": "Acknowledgment from the Attorney General's Office"
         },
         {
             "d": "2026-07-28",
@@ -5062,7 +5213,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYMTKJV87YKYENZ3VK7MZ844",
                 "t": "das"
-            }
+            },
+            "title": "Reply from the Attorney General's Office"
         },
         {
             "d": "2026-09-24",
@@ -5071,7 +5223,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3AMJFBGZ3MHAAPFM82QTEFV",
                 "t": "governor"
-            }
+            },
+            "title": "Oregon Department of Justice, Acknowledgment of Petition, DOJ File No. 121010-GA0187-26"
         },
         {
             "d": "2026-09-24",
@@ -5080,7 +5233,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3APMQF8Z8NRH088RB9N765Z",
                 "t": "doj"
-            }
+            },
+            "title": "[DOJ Public Records], Acknowledgment of Records Request"
         },
         {
             "d": "2026-09-24",
@@ -5089,7 +5243,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3ARW6JRNP6YE36HCJ5A6CAC",
                 "t": "doj"
-            }
+            },
+            "title": "Which categories carry the burden"
         },
         {
             "d": "2026-10-14",
@@ -5098,7 +5253,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4XTMS38EGWH974M4GQDDG2X",
                 "t": "doj"
-            }
+            },
+            "title": "[DOJ Public Records], Extension Notice"
         },
         {
             "d": "2026-10-15",
@@ -5107,7 +5263,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
         },
         {
             "d": "2026-10-15",
@@ -5116,7 +5273,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
         }
     ],
     "deputy-attorney-general": [
@@ -5128,6 +5286,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYR0GMBRR83WH7FTFC90Y6DB",
                 "t": "osp"
             },
+            "title": "Deputy Attorney General Benjamin Gutman, Order on Petition, DOJ File No. 257001-GA0140-26",
             "att": {
                 "label": "Attorney General Order",
                 "href": "/records/osp/attachments/01kyr0gmbrr83wh7ftfc90y6db-White-Robert-07-29-26.pdf",
@@ -5143,6 +5302,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYR0GMBRR83WH7FTFC90Y6DB",
                 "t": "osp"
             },
+            "title": "Deputy Attorney General Benjamin Gutman, Order on Petition, DOJ File No. 257001-GA0140-26",
             "att": {
                 "label": "Attorney General Order",
                 "href": "/records/osp/attachments/01kyr0gmbrr83wh7ftfc90y6db-White-Robert-07-29-26.pdf",
@@ -5158,6 +5318,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KZ7BFZ2090R3D63P7YXCT68M",
                 "t": "das"
             },
+            "title": "Deputy Attorney General Benjamin Gutman, Order on Petition, DOJ File No. 107062-GA0144-26",
             "att": {
                 "label": "Attorney General Order",
                 "href": "/records/das/attachments/01kz7bfz2090r3d63p7yxct68m-PRO-White-Robert-08-04-26.pdf",
@@ -5173,6 +5334,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M3AW7K3GZCPA4CD5YQ0FR2R6",
                 "t": "governor"
             },
+            "title": "Deputy Attorney General Benjamin Gutman, Order on Petition, DOJ File No. 121010-GA0187-26",
             "att": {
                 "label": "Petition for Public Records Disclosure Order: dismissed",
                 "href": "/records/governor/attachments/01m3aw7k3gzcpa4cd5yq0fr2r6-PRO-White-Robert-Samuel-09-24-26.pdf",
@@ -5187,7 +5349,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3AZD078K7HBZ71XR4Z0XJ9P",
                 "t": "governor"
-            }
+            },
+            "title": "No record has been denied"
         },
         {
             "d": "2026-10-01",
@@ -5197,6 +5360,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M3WAH79RY4KVVHRYVY9T726S",
                 "t": "governor"
             },
+            "title": "Deputy Attorney General Benjamin Gutman, Order on Second Petition, DOJ File No. 121010-GA0187-26",
             "att": {
                 "label": "Petition for Public Records Disclosure Order: dismissed",
                 "href": "/records/governor/attachments/01m3wah79ry4kvvhryvy9t726s-PRO-White-Robert-10-01-26.pdf",
@@ -5213,7 +5377,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M20YMVX0Y7FBDFVH6QPR70RQ",
                 "t": "oprd"
-            }
+            },
+            "title": "ODOT Public Records, No-Records Response, R027904"
         },
         {
             "d": "2026-09-08",
@@ -5222,7 +5387,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M211VD50GEMFA0115K4FSWF6",
                 "t": "oprd"
-            }
+            },
+            "title": "ODOT Public Records, Confirmation with Lisa Sumption, R027904"
         }
     ],
     "gov-pr": [
@@ -5233,7 +5399,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M2130110ZFY7MYKJHFN7X6RA",
                 "t": "governor"
-            }
+            },
+            "title": "Office of the Governor, Acknowledgment of Records Request"
         }
     ],
     "government-accountability-attorney": [
@@ -5244,7 +5411,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M35TPA3RXRP0HY3NM9JHDJ8F",
                 "t": "governor"
-            }
+            },
+            "title": "Office of the Governor, Fee Estimate and Waiver Denial"
         },
         {
             "d": "2026-09-22",
@@ -5253,7 +5421,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M35TPA3RXRP0HY3NM9JHDJ8F",
                 "t": "governor"
-            }
+            },
+            "title": "Office of the Governor, Fee Estimate and Waiver Denial"
         },
         {
             "d": "2026-09-22",
@@ -5262,7 +5431,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M35TPA3RXRP0HY3NM9JHDJ8F",
                 "t": "governor"
-            }
+            },
+            "title": "Office of the Governor, Fee Estimate and Waiver Denial"
         },
         {
             "d": "2026-09-24",
@@ -5271,7 +5441,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M3AJNQ0RYYQSV41172KZJYDZ",
                 "t": "governor"
-            }
+            },
+            "title": "Cameron D. Miles, Office of the Governor, Payment Instructions"
         },
         {
             "d": "2026-09-26",
@@ -5281,6 +5452,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M3FDMFP0VRBZCTGXQRXJ7CM3",
                 "t": "oprd"
             },
+            "title": "Follow the Statute.",
             "att": {
                 "label": "Follow the Statute.",
                 "href": "/records/oprd/attachments/01m3fdmfp0vrbzctgxqrxj7cm3-2026-09-26-follow-the-statute.pdf",
@@ -5297,7 +5469,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4VG3NVGMSVPH7TCES6W2SW8",
                 "t": "governor"
-            }
+            },
+            "title": "Todd Albert, Public Records Advocate, Reply re Office of the Governor"
         },
         {
             "d": "2026-10-13",
@@ -5306,7 +5479,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4VG3NVGMSVPH7TCES6W2SW8",
                 "t": "governor"
-            }
+            },
+            "title": "Todd Albert, Public Records Advocate, Reply re Office of the Governor"
         },
         {
             "d": "2026-10-16",
@@ -5315,7 +5489,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M521DD08FR8RXZSAB8XZHECK",
                 "t": "governor"
-            }
+            },
+            "title": "Key Individuals"
         }
     ],
     "public-records-counsel": [
@@ -5326,7 +5501,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01KYSZQ430YWS431STFM7QVWAD",
                 "t": "osp"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Explanation of Order, DOJ File No. 257001-GA0140-26"
         },
         {
             "d": "2026-10-09",
@@ -5335,7 +5511,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4GJ3SC0KRKXY18MBW7WXRTW",
                 "t": "governor"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Reply re Publication of Order, DOJ File No. 121010-GA0187-26"
         },
         {
             "d": "2026-10-09",
@@ -5344,7 +5521,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M4J15MW0MSEVY31020497F6G",
                 "t": "governor"
-            }
+            },
+            "title": "Correct the date and the description"
         },
         {
             "d": "2026-10-15",
@@ -5353,7 +5531,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
         },
         {
             "d": "2026-10-15",
@@ -5362,7 +5541,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M50S7NEG8CQV2R6TF6Y6BKXZ",
                 "t": "doj"
-            }
+            },
+            "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
         },
         {
             "d": "2026-10-16",
@@ -5371,7 +5551,8 @@ export const ACTS: Record<string, Act[]> = {
             "src": {
                 "u": "01M53BC0W0KQVDK57PD0WJ29EC",
                 "t": "doj"
-            }
+            },
+            "title": "Letter to the Public Records Counsel"
         }
     ]
 };

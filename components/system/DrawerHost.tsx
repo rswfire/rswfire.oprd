@@ -47,7 +47,14 @@ export default function DrawerHost({ children }: { children: ReactNode }) {
     // hashchange, so the address is read again on every one: following a
     // document out of the drawer closes it, and Back reopens it.
     useEffect(() => {
-        const read = () => {
+        const read = (e?: Event) => {
+            // The Back the document viewer takes to close itself is not the
+            // reader's: the drawer under it stays as it is.
+            const w = window as { __docBack?: boolean };
+            if (e?.type === "popstate" && w.__docBack) {
+                w.__docBack = false;
+                return;
+            }
             const h = decodeURIComponent(window.location.hash.slice(1));
             if (!ADDRESS.test(h)) {
                 setKey(null);

@@ -122,16 +122,54 @@ function Blocks({ blocks }: { blocks: SunlightBlockData[] }) {
 
 export default function SunlightProvider({ children }: { children: React.ReactNode }) {
     const [entry, setEntry] = useState<SunlightEntry | null>(null);
-    const [inline, setInline] = useState(false);
+    const inline = true;
     const index = useRef<Record<string, SunlightEntry> | null>(null);
     const pending = useRef<string | null>(null);
 
+    // The overlay opens on every screen. Opening it adds a history step, so
+    // Back closes it and leaves the page, and any drawer, as it was.
+    const token = useRef<string | null>(null);
+    const show = useCallback((e: SunlightEntry) => {
+        if (!token.current) {
+            token.current = Math.random().toString(36).slice(2);
+            window.history.pushState({ ...(window.history.state ?? {}), __sun: token.current }, "");
+        }
+        setEntry(e);
+    }, []);
+    const hide = useCallback(() => {
+        pending.current = null;
+        setEntry(null);
+        const t = token.current;
+        token.current = null;
+        if (t && (window.history.state as { __sun?: string } | null)?.__sun === t) {
+            (window as { __docBack?: boolean }).__docBack = true;
+            window.history.back();
+        }
+    }, []);
+    // Closing because the reader is going to the entry in the document: the
+    // overlay's history step is dropped in place, not stepped back over, so
+    // the navigation is not undone.
+    const leave = useCallback(() => {
+        pending.current = null;
+        setEntry(null);
+        token.current = null;
+        const st = window.history.state as { __sun?: string } | null;
+        if (st?.__sun) {
+            const rest = { ...st };
+            delete rest.__sun;
+            window.history.replaceState(rest, "");
+        }
+    }, []);
     useEffect(() => {
-        const mq = window.matchMedia("(min-width: 768px)");
-        const sync = () => setInline(mq.matches);
-        sync();
-        mq.addEventListener("change", sync);
-        return () => mq.removeEventListener("change", sync);
+        const onPop = () => {
+            if (!(window.history.state as { __sun?: string } | null)?.__sun) {
+                pending.current = null;
+                token.current = null;
+                setEntry(null);
+            }
+        };
+        window.addEventListener("popstate", onPop);
+        return () => window.removeEventListener("popstate", onPop);
     }, []);
 
     const load = useCallback(async () => {
@@ -146,7 +184,7 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
         if (!inline) return false;
         const hit = index.current?.[id];
         if (hit) {
-            setEntry(hit);
+            show(hit);
             return true;
         }
         pending.current = id;
@@ -154,24 +192,45 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
             .then((idx) => {
                 if (pending.current !== id) return;
                 const found = idx[id];
-                if (found) setEntry(found);
+                if (found) show(found);
                 else window.location.href = `/sunlight/#${id}`;
             })
             .catch(() => {
                 if (pending.current === id) window.location.href = `/sunlight/#${id}`;
             });
         return true;
-    }, [inline, load]);
+    }, [inline, load, show]);
+
+    // A link anywhere to an entry of Sunlight opens it here: the drawers'
+    // lines, the testimony, any page. Capture phase, ahead of Next's <Link>.
+    useEffect(() => {
+        const onClick = (event: MouseEvent) => {
+            if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            const anchor = (event.target as HTMLElement | null)?.closest?.("a");
+            const href = anchor?.getAttribute("href");
+            if (!href || anchor?.dataset.fullpage !== undefined) return;
+            let url: URL;
+            try { url = new URL(href, window.location.origin); } catch { return; }
+            if (url.origin !== window.location.origin || !/^\/sunlight\/?$/.test(url.pathname) || !url.hash) return;
+            if (window.location.pathname.replace(/\/$/, "") === "/sunlight") return;
+            if (openEntry(decodeURIComponent(url.hash.slice(1)))) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        };
+        document.addEventListener("click", onClick, true);
+        return () => document.removeEventListener("click", onClick, true);
+    }, [openEntry]);
 
     // Escape closes, like the other overlays.
     useEffect(() => {
         if (!entry) return;
         const onKey = (e: KeyboardEvent) => {
-            if (e.key === "Escape") { e.preventDefault(); setEntry(null); }
+            if (e.key === "Escape") { e.preventDefault(); hide(); }
         };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [entry]);
+    }, [entry, hide]);
 
     const api = useMemo(() => ({ openEntry, inline }), [openEntry, inline]);
 
@@ -182,7 +241,7 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
                 <>
                     <div
                         className="fixed inset-0 z-[80] bg-slate-900/60 backdrop-blur-sm"
-                        onClick={() => setEntry(null)}
+                        onClick={hide}
                         aria-hidden
                     />
                     <div
@@ -191,7 +250,7 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
                         aria-modal
                         aria-label={`Sunlight: ${entry.heading}`}
                     >
-                        <div className="max-h-[85vh] overflow-y-auto rounded-t-2xl border border-slate-300 bg-white shadow-2xl sm:rounded-2xl">
+                        <div className="h-[88vh] overflow-y-auto rounded-t-2xl border border-slate-300 bg-white shadow-2xl sm:h-auto sm:max-h-[85vh] sm:rounded-2xl">
                             <div className="sticky top-0 flex items-start gap-3 border-b border-amber-200 bg-amber-50 px-4 py-3">
                                 <Icon name="Sun" className="mt-0.5 shrink-0 text-amber-500" size={18} strokeWidth={2} />
                                 <div className="min-w-0 flex-1">
@@ -201,7 +260,7 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
                                     <div className="truncate font-mono text-sm font-bold text-gray-900">{entry.heading}</div>
                                 </div>
                                 <button
-                                    onClick={() => setEntry(null)}
+                                    onClick={hide}
                                     aria-label="Close"
                                     className="rounded-md p-1.5 text-slate-500 hover:bg-white hover:text-slate-900"
                                 >
@@ -210,10 +269,11 @@ export default function SunlightProvider({ children }: { children: React.ReactNo
                             </div>
                             <div className="px-4 py-4">
                                 <Blocks blocks={entry.blocks} />
-                                <div className="mt-5 border-t border-slate-200 pt-3 text-[11px]">
+                                <div className="mt-5 border-t border-slate-200 pt-3 text-center text-[11px] sm:text-left">
                                     <Link
                                         href={`/sunlight/#${entry.id}`}
-                                        onClick={() => setEntry(null)}
+                                        data-fullpage
+                                        onClick={leave}
                                         className="font-semibold uppercase tracking-widest text-amber-700 hover:underline"
                                     >
                                         Open this entry in the document

@@ -136,8 +136,9 @@ export function mapPayload(ulid: string, payload: Record<string, unknown>): Sign
         dominantLanguage: strings(meta.dominant_language),
         symbolicElements: strings(meta.symbolic_elements),
         entities,
-        chapters: Array.isArray(payload.chapters)
-            ? (payload.chapters as Record<string, unknown>[])
+        // Chapters belong to each transmission; the player plays the first.
+        chapters: Array.isArray((payload.transmissions as Record<string, unknown>[] | undefined)?.[0]?.chapters)
+            ? ((payload.transmissions as Record<string, unknown>[])[0].chapters as Record<string, unknown>[])
                   .filter((c) => typeof c?.title === "string" && typeof c?.start === "number")
                   .map((c) => ({
                       start: c.start as number,
@@ -280,13 +281,13 @@ export async function fetchCluster(ulid: string, signal?: AbortSignal): Promise<
 }
 
 export async function fetchSignal(ulid: string, signal?: AbortSignal): Promise<SignalRecord> {
-    const res = await fetch(`${QP_ORIGIN}/qp/signal/${ulid}`, {
+    const res = await fetch(`${QP_ORIGIN}/api/v1/qp/signal/${ulid}`, {
         signal,
         credentials: "omit",
         headers: { Accept: "application/json" },
     });
     if (!res.ok) throw new Error(`qp ${res.status}`);
-    return mapPayload(ulid, await res.json());
+    return mapPayload(ulid, ((await res.json()) as { data: Record<string, unknown> }).data);
 }
 
 /** True when the record carries enough to fill the analysis panel. */

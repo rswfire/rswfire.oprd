@@ -29,18 +29,53 @@ export function useDocViewer(): DocViewerApi {
 
 export default function DocViewerProvider({ children }: { children: React.ReactNode }) {
     const [doc, setDoc] = useState<ViewDoc | null>(null);
-    const [inline, setInline] = useState(false);
+    const inline = true;
     const index = useRef<Record<string, ViewDoc> | null>(null);
     const pending = useRef<string | null>(null);
 
-    // Desktop and tablet get the modal; phones keep the link. Tracked live so
-    // a rotation or a resized window changes behaviour without a reload.
+    // The viewer opens over the page on every screen; on a phone it fills it.
+    // Opening it adds a history step, so Back closes it and keeps the page.
+    // The step carries a token: the viewer only ever steps back over its own
+    // entry, and the drawer is told to ignore that one Back.
+    const token = useRef<string | null>(null);
+    const open = useCallback((d: ViewDoc) => {
+        if (!token.current) {
+            token.current = Math.random().toString(36).slice(2);
+            window.history.pushState({ ...(window.history.state ?? {}), __doc: token.current }, "");
+        }
+        setDoc(d);
+    }, []);
+    const close = useCallback(() => {
+        pending.current = null;
+        setDoc(null);
+        const t = token.current;
+        token.current = null;
+        if (t && (window.history.state as { __doc?: string } | null)?.__doc === t) {
+            (window as { __docBack?: boolean }).__docBack = true;
+            window.history.back();
+        }
+    }, []);
+    const leave = useCallback(() => {
+        pending.current = null;
+        setDoc(null);
+        token.current = null;
+        const st = window.history.state as { __doc?: boolean } | null;
+        if (st?.__doc) {
+            const rest = { ...st };
+            delete rest.__doc;
+            window.history.replaceState(rest, "");
+        }
+    }, []);
     useEffect(() => {
-        const mq = window.matchMedia("(min-width: 768px)");
-        const sync = () => setInline(mq.matches);
-        sync();
-        mq.addEventListener("change", sync);
-        return () => mq.removeEventListener("change", sync);
+        const onPop = () => {
+            if (!(window.history.state as { __doc?: string } | null)?.__doc) {
+                pending.current = null;
+                token.current = null;
+                setDoc(null);
+            }
+        };
+        window.addEventListener("popstate", onPop);
+        return () => window.removeEventListener("popstate", onPop);
     }, []);
 
     const load = useCallback(async () => {
@@ -58,7 +93,7 @@ export default function DocViewerProvider({ children }: { children: React.ReactN
         if (!inline) return false;
         const hit = index.current?.[ulid];
         if (hit) {
-            setDoc(hit);
+            open(hit);
             return true;
         }
         // First citation clicked on this page load: fetch the index, then
@@ -69,14 +104,14 @@ export default function DocViewerProvider({ children }: { children: React.ReactN
             .then((idx) => {
                 if (pending.current !== ulid) return;
                 const found = idx[ulid];
-                if (found) setDoc(found);
+                if (found) open(found);
                 else window.location.href = `/record/oprd/${ulid}`;
             })
             .catch(() => {
                 if (pending.current === ulid) window.location.href = `/record/oprd/${ulid}`;
             });
         return true;
-    }, [inline, load]);
+    }, [inline, load, open]);
 
     // Every record link already written into the archive, upgraded in place:
     // the generated citations in the sunlight document, the evidence pages,
@@ -112,7 +147,7 @@ export default function DocViewerProvider({ children }: { children: React.ReactN
     return (
         <Ctx.Provider value={api}>
             {children}
-            <DocViewer doc={doc} onClose={() => { pending.current = null; setDoc(null); }} />
+            <DocViewer doc={doc} onClose={close} onLeave={leave} />
         </Ctx.Provider>
     );
 }
