@@ -19,17 +19,20 @@ export function Arrow({ dir, className }: { dir: "up" | "down" | "right"; classN
     );
 }
 
-function seatSheet(s: Seat, where?: string): SheetContent {
+/** The rungs that are Oregon State Parks: their seats carry the agency's name. */
+const OPRD_RUNGS = new Set(["agency", "program", "park"]);
+
+function seatSheet(s: Seat, where?: string, rung?: string): SheetContent {
     return {
         eyebrow: s.office
             ? s.title
-            : Array.from(new Set([s.name ? s.title : undefined, s.inst ?? (where === "The agency" ? "Oregon State Parks" : where)].filter((l): l is string => Boolean(l)))),
+            : Array.from(new Set([s.name ? s.title : undefined, s.inst ?? (rung && OPRD_RUNGS.has(rung) ? "Oregon State Parks" : where)].filter((l): l is string => Boolean(l)))),
         title: s.office ? s.agency ?? s.inst ?? s.title : s.name ?? s.title,
         head: (
             <div className="grid gap-4">
                 {s.fn ? (
                     <div>
-                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">{s.office ? "Agency" : "The role the title promises"}</div>
+                        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">The role the title promises</div>
                         <p className="m-0 mt-1.5 text-[15px] leading-relaxed text-gray-700">{s.fn}</p>
                     </div>
                 ) : null}
@@ -69,7 +72,7 @@ function edgeSheet(e: Edge): SheetContent {
 export
 const SHEETS = new Map<string, () => SheetContent>();
 RUNGS.forEach((r) => {
-    r.seats.forEach((s) => SHEETS.set(`seat-${s.id}`, () => seatSheet(s, r.name)));
+    r.seats.forEach((s) => SHEETS.set(`seat-${s.id}`, () => seatSheet(s, r.name, r.id)));
     if (r.below) {
         const e = r.below;
         SHEETS.set(`line-${e.id}`, () => edgeSheet(e));

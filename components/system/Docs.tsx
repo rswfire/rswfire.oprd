@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { FileText, Landmark, Sprout, SquareArrowOutUpRight, Sun, Video } from "lucide-react";
 import Cite from "@/components/Cite";
+import RecordingLink from "@/components/system/RecordingLink";
 import type { Act, Doc, Src } from "@/data/system";
 
 /** A row whose whole area is the link: the link's box stretches over it. */
@@ -13,6 +14,13 @@ const STRETCH = "after:absolute after:inset-0 after:content-['']";
 const ROW = "relative -mx-3 rounded-lg px-3 transition-colors hover:bg-emerald-50/70";
 
 export function Source({ src, stretch, children }: { src: Src; stretch?: boolean; children: ReactNode }) {
+    if ("href" in src && kindOf(src) === "video") {
+        return (
+            <RecordingLink href={src.href} className={`text-inherit no-underline decoration-slate-300 underline-offset-2 hover:text-sky-700 ${stretch ? STRETCH : "hover:underline"}`}>
+                {children}
+            </RecordingLink>
+        );
+    }
     if ("href" in src && /^https?:/.test(src.href)) {
         return (
             <a href={src.href} target="_blank" rel="noopener" className={`text-inherit no-underline decoration-slate-300 underline-offset-2 hover:text-sky-700 ${stretch ? STRETCH : "hover:underline"}`}>
@@ -30,8 +38,8 @@ export function Source({ src, stretch, children }: { src: Src; stretch?: boolean
     return <Cite ulid={src.u} thread={src.t ?? "oprd"} subtle noMark={stretch} className={stretch ? STRETCH : undefined}>{children}</Cite>;
 }
 
-/** The evidence pages that are recordings; the others are written record. */
-const RECORDINGS = /^\/evidence\/(coercion|expulsion|dismissal|police)(?=[/?#]|$)/;
+/** The evidence pages that are recordings, and the realm's own recordings; the others are written record. */
+const RECORDINGS = /^(\/evidence\/(coercion|expulsion|dismissal|police|surveillance)|https:\/\/rswfire\.com\/library\/signal\/)(?=[/?#0-9A-Z]|$)/;
 
 type Kind = "video" | "sunlight" | "testimony" | "document" | "record" | "external";
 

@@ -154,15 +154,15 @@ function SeatCard({ s, n, onOpen }: { s: Seat; n?: number; onOpen: () => void })
                                     {s.inst}
                                 </span>
                             ) : null}
-                            <span className={`block text-[20px] font-semibold leading-tight tracking-tight ${title}`}>{s.name ?? s.title}</span>
-                            {s.name ? <span className={`mt-0.5 block text-[14px] leading-snug ${implied}`}>{s.title}</span> : null}
+                            <span className={`block text-[20px] font-semibold leading-tight tracking-tight ${title}`}>{s.title}</span>
+                            {s.name ? <span className={`mt-0.5 block text-[14px] leading-snug ${implied}`}>{s.name}</span> : null}
                         </>
                     )}
                 </span>
             </span>
             {s.fn ? (
                 <span className="mt-5 block">
-                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>{s.office ? "Agency" : "The role the title promises"}</span>
+                    <span className={`block font-mono text-[11px] font-bold uppercase tracking-widest ${meta}`}>The role the title promises</span>
                     <span className={`mt-1 block text-[15px] leading-snug ${implied}`}>{s.fn}</span>
                 </span>
             ) : null}
