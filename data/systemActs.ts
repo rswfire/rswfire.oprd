@@ -5499,15 +5499,15 @@ export const ACTS: Record<string, Act[]> = {
             "when": "March 11, 2026",
             "text": "A criminal intelligence analyst at the Oregon TITAN Fusion Center, inside the Department of Justice, wrote to a state police detective that she was documenting the volunteer, writing that his actions \"border on harassment due to the volume of emails that he has forwarded to OPRD staff over the last year.\" This is the file the volunteer later asked the Department of Justice for, and that the Public Records Counsel priced.",
             "src": {
-                "u": "01M36H37GR1NF6QE4JC7TEMVSE",
-                "t": "doj"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
             "title": "The Department of Justice's fusion center documents him",
             "att": {
-                "label": "Public records request to the Oregon Department of Justice",
-                "href": "/records/doj/attachments/01m36h37gr1nf6qe4jc7temvse-2026-09-23-oregon-doj-records-request.pdf",
-                "page": 2,
-                "from": "Robert Samuel White"
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 6,
+                "from": "Oregon State Police"
             }
         },
         {
@@ -5515,16 +5515,10 @@ export const ACTS: Record<string, Act[]> = {
             "when": "July 22, 2026",
             "text": "Oregon State Police had answered the volunteer's request for the records of the March 24, 2026 visit to his door with \"no records\", then listed one record for a fee. He petitioned the Attorney General. Five days later, Oregon State Police reopened the request.",
             "src": {
-                "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
-                "t": "outreach"
+                "u": "01KY60646RADM37YNZ40W07Z47",
+                "t": "osp"
             },
-            "title": "Petition against Oregon State Police",
-            "att": {
-                "label": "Oregon's Public Records Law, As Applied",
-                "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
-                "page": 2,
-                "from": "Robert Samuel White"
-            }
+            "title": "Petition against Oregon State Police"
         },
         {
             "d": "2026-07-28",

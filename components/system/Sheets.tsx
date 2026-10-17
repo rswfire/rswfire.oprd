@@ -3,7 +3,7 @@
 // Every drawer in the archive, by its address: #seat-…, #line-…, #branch-….
 // Built from the seats and acts on Key Individuals; opened anywhere by the
 // drawer host in the root layout.
-import { Bot, Link as LinkIcon } from "lucide-react";
+import { Bot, Link as LinkIcon, User } from "lucide-react";
 import { ACTS_REVIEW } from "@/data/actsReview";
 import { RUNGS } from "@/data/system";
 import { ACTS } from "@/data/systemActs";
@@ -23,19 +23,18 @@ export function Arrow({ dir, className }: { dir: "up" | "down" | "right"; classN
 /** The rungs that are Oregon State Parks: their seats carry the agency's name. */
 const OPRD_RUNGS = new Set(["agency", "program", "park"]);
 
-/** A record built by the experimental process, and when he last reviewed it. */
+/** A panel built by the experimental process, and whether he has reviewed it. */
 function Experimental({ reviewed }: { reviewed: string | null }) {
-    const when = reviewed
-        ? `${reviewed.slice(5, 7)}/${reviewed.slice(8, 10)}/${reviewed.slice(2, 4)}`
-        : "Pending";
+
     return (
         <div className="flex items-center gap-2.5 whitespace-nowrap">
             <span className="flex shrink-0 items-center gap-1.5 rounded-md bg-violet-50 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-violet-700 ring-1 ring-violet-200">
                 <Bot aria-hidden size={13} strokeWidth={2} />
                 Experimental
             </span>
-            <span className="ml-auto min-w-0 truncate text-[13px] uppercase tracking-wide text-gray-500 sm:ml-0" style={{ fontFamily: "var(--font-open-sans-condensed)", fontStretch: "75%" }}>
-                Last human review: <span className="font-semibold text-gray-700">{when}</span>
+            <span className="ml-auto flex min-w-0 items-center gap-1 truncate text-[13px] uppercase tracking-wide text-gray-500 sm:ml-0" style={{ fontFamily: "var(--font-open-sans-condensed)", fontStretch: "75%" }}>
+                <User aria-hidden size={13} strokeWidth={2} className="shrink-0" />
+                Human review: <span className="font-semibold text-gray-700">{reviewed ? "Completed" : "Pending"}</span>
             </span>
         </div>
     );
