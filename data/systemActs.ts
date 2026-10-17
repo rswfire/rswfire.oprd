@@ -5616,7 +5616,6 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01KYT3WXB0SQYDSBMW57E9RFSA",
                 "t": "osp"
             },
-            "noreply": true,
             "title": "The checklist with one item"
         },
         {
@@ -5743,7 +5742,6 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M4GMP81G9Q9AMNA8N7FQXBHJ",
                 "t": "governor"
             },
-            "noreply": true,
             "title": "One paragraph from 2014"
         },
         {
@@ -5754,7 +5752,6 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M4J15MW0MSEVY31020497F6G",
                 "t": "governor"
             },
-            "noreply": true,
             "title": "The published order is misdated and misdescribed"
         },
         {
@@ -5791,7 +5788,6 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M50VW1MR9QZF4C6CE021FEZ6",
                 "t": "doj"
             },
-            "noreply": true,
             "title": "He answers the denial",
             "att": {
                 "label": "Response to the Fee Waiver Denial of October 15, 2026",
