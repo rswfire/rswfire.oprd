@@ -28,9 +28,9 @@ const EVENTS: { day: number; date: string; from: number; to: number; label: stri
     { day: 10, date: "March 11", from: 0, to: 3, label: "The analyst: “Jamen Lee with OPRD shared the information … with the fusion center”" },
     { day: 10, date: "March 11", from: 3, to: 1, label: "Greenlee: “border on harassment”" },
     { day: 12, date: "March 13", from: 2, to: 1, label: "Driver’s record and “ReportRobertWhite” to Nelson" },
-    { day: 21, date: "March 22", from: 4, to: 1, label: "Oliver: schedule, duties, vehicles, onX Hunt waypoint" },
+    { day: 21, date: "March 22", from: 4, to: 1, label: "USFS Special Agent: schedule, duties, vehicles, onX Hunt waypoint" },
     { day: 22, date: "March 23", from: 1, to: 1, label: "“Suspect”: “publicly airing grievances”" },
-    { day: 23, date: "March 24", from: 1, to: 5, label: "Nelson, Hyde, and Oliver at the gate" },
+    { day: 23, date: "March 24", from: 1, to: 5, label: "Nelson, Hyde, and the USFS Special Agent at the gate" },
     { day: 45, date: "April 15", from: 1, to: 1, label: "“to be documented for information only at this time”" },
 ];
 

@@ -197,7 +197,6 @@ const POLICE: Branch = {
         },
         {
             id: "forest-service-agent",
-            name: "Matthew Oliver",
             title: "Special Agent",
             inst: "U.S. Forest Service",
             fn: "Law enforcement on national forest land. Protects the people who live and work there, volunteers among them.",

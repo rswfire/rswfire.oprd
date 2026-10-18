@@ -3748,8 +3748,8 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -3899,7 +3899,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-15",
             "when": "April 15, 2026",
-            "text": "Detective Jerred Nelson adds Special Agent Oliver’s March 27 email and the volunteer’s text messages to the case file.",
+            "text": "Detective Jerred Nelson adds the USFS Special Agent’s March 27 email and the volunteer’s text messages to the case file.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3931,7 +3931,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-09",
             "when": "September 9, 2026",
-            "text": "Detective Jerred Nelson receives a copy of the corrections to Special Agent Oliver’s March 27 email. No reply.",
+            "text": "Detective Jerred Nelson receives a copy of the corrections to the USFS Special Agent’s March 27 email. No reply.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
@@ -4123,7 +4123,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-17",
             "when": "March 17, 2026",
-            "text": "Detective Jake Hyde calls Special Agent Matthew Oliver “about the person we are looking for.”",
+            "text": "Detective Jake Hyde calls the USFS Special Agent “about the person we are looking for.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4139,7 +4139,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Detective Jake Hyde emails Special Agent Oliver, subject “Attempt to locate”, with the volunteer’s name and date of birth: “sounds like he is volunteering in the Florence area.”",
+            "text": "Detective Jake Hyde emails the USFS Special Agent, subject “Attempt to locate”, with the volunteer’s name and date of birth: “sounds like he is volunteering in the Florence area.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4155,7 +4155,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Detective Jake Hyde replies to Special Agent Oliver: “Gotcha! Thank you for the update.”",
+            "text": "Detective Jake Hyde replies to the USFS Special Agent: “Gotcha! Thank you for the update.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4171,7 +4171,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-23",
             "when": "March 23, 2026",
-            "text": "Detective Jake Hyde forwards Special Agent Oliver’s email and screenshots to Detective Jerred Nelson: “See attached and below”.",
+            "text": "Detective Jake Hyde forwards the USFS Special Agent’s email and screenshots to Detective Jerred Nelson: “See attached and below”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4194,8 +4194,8 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4227,7 +4227,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-09",
             "when": "September 9, 2026",
-            "text": "Detective Jake Hyde receives a copy of the corrections to Special Agent Oliver’s March 27 email. No reply.",
+            "text": "Detective Jake Hyde receives a copy of the corrections to the USFS Special Agent’s March 27 email. No reply.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
@@ -4329,15 +4329,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-17",
             "when": "March 17, 2026",
-            "text": "Special Agent Matthew Oliver takes Detective Hyde’s request to confirm whether the volunteer “currently volunteers with the FS.”",
+            "text": "The USFS Special Agent takes Detective Hyde’s request to confirm whether the volunteer “currently volunteers with the FS.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4345,7 +4345,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Special Agent Matthew Oliver emails Detective Hyde: “So far have not been able to confirm he is or was a volunteer. Still waiting on a few call backs”.",
+            "text": "The USFS Special Agent emails Detective Hyde: “So far have not been able to confirm he is or was a volunteer. Still waiting on a few call backs”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4361,15 +4361,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-18",
             "when": "March 18, 2026",
-            "text": "Special Agent Matthew Oliver confirms through the volunteer’s Forest Service supervisor that he is “a current volunteer out of the Siltcoos Work Center”.",
+            "text": "The USFS Special Agent confirms through the volunteer’s Forest Service supervisor that he is “a current volunteer out of the Siltcoos Work Center”.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4377,7 +4377,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-22",
             "when": "March 22, 2026",
-            "text": "Special Agent Matthew Oliver emails Detective Hyde his volunteer schedule, his duties, where he lives, his RV and his Jeep. Of the volunteer’s Forest Service supervisor: “She was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
+            "text": "The USFS Special Agent emails Detective Hyde his volunteer schedule, his duties, where he lives, his RV and his Jeep. Of the volunteer’s Forest Service supervisor: “She was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4433,15 +4433,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "Special Agent Matthew Oliver calls the volunteer by phone after the visit.",
+            "text": "The USFS Special Agent calls the volunteer by phone after the visit.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4449,15 +4449,15 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "On the phone, asked by the volunteer for the three officers’ information, Special Agent Matthew Oliver: “I gave him my name, badge number, and office area. I told him I did not have to provide him with OSP info.”",
+            "text": "On the phone, asked by the volunteer for the three officers’ information, the USFS Special Agent: “I gave him my name, badge number, and office area. I told him I did not have to provide him with OSP info.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4465,7 +4465,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "Special Agent Matthew Oliver emails [Lane County Deputy], copying Detectives Hyde and Nelson, with the volunteer’s date of birth, driver license number, schedule, duties and residence, and two attachments: “021426 Email Chain.pdf” and “Text message 3 27 1 of 2.PNG”. “I’m not sure were the FS will go with this but will keep you up to date.”",
+            "text": "The USFS Special Agent emails [Lane County Deputy], copying Detectives Hyde and Nelson, with the volunteer’s date of birth, driver license number, schedule, duties and residence, and two attachments: “021426 Email Chain.pdf” and “Text message 3 27 1 of 2.PNG”. “I’m not sure were the FS will go with this but will keep you up to date.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4488,8 +4488,8 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "From the RMS — Email from FS SA Oliver, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Oliver-Siltcoos-WC-Volunteer.pdf",
+                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
             }
@@ -4527,7 +4527,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-27",
             "when": "July 27, 2026",
-            "text": "The Patrol Captain refers the complaint about Special Agent Matthew Oliver to the Office of Professional Responsibility for administrative investigation.",
+            "text": "The Patrol Captain refers the complaint about the USFS Special Agent to the Office of Professional Responsibility for administrative investigation.",
             "src": {
                 "u": "01KYJZQ628C7J1RXN90DR7N0MA",
                 "t": "usfs"
@@ -4537,7 +4537,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-09",
             "when": "September 9, 2026",
-            "text": "Special Agent Matthew Oliver is sent four corrections to his March 27 email. No reply from him; the Patrol Captain forwards the letter to the Office of Professional Responsibility.",
+            "text": "The USFS Special Agent is sent four corrections to his March 27 email. No reply from him; the Patrol Captain forwards the letter to the Office of Professional Responsibility.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
@@ -4547,7 +4547,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-10",
             "when": "September 10, 2026",
-            "text": "Special Agent Matthew Oliver is copied on the letter to Detective Nelson on report SP26096984. No reply.",
+            "text": "The USFS Special Agent is copied on the letter to Detective Nelson on report SP26096984. No reply.",
             "src": {
                 "u": "01M2670AB06W82K8B7XVZ9D5RW",
                 "t": "osp"

@@ -1,11 +1,11 @@
 const officers = [
   {
     id: "oliver",
-    name: "Special Agent Matthew Oliver",
+    name: "USFS Special Agent",
     agency: "U.S. Forest Service — Law Enforcement & Investigations",
     forests: "Willamette and Siuslaw National Forests",
     status: "participated" as const,
-    notes: "On July 24, the Forest Service stated its role: it did not initiate the interview, its involvement was “limited to assisting OSP by providing access and guiding them to the Siltcoos Work Center,” and its officer “accompanied them solely to facilitate entry and ensure they reached the correct location.”\n\nOn March 27, hours after I asked Oliver himself to identify the men he brought to my door, he sent a Lane County deputy a file on me: name, date of birth, driver's license number, where I live, my schedule and my duties, my correspondence and my text messages, and a promise to “keep you up to date.”\n\nThe Forest Service unlocked a gate. Everything after that is his. The agency referred him to Law Enforcement & Investigations' Office of Professional Responsibility."
+    notes: "On July 24, the Forest Service stated its role: it did not initiate the interview, its involvement was “limited to assisting OSP by providing access and guiding them to the Siltcoos Work Center,” and its officer “accompanied them solely to facilitate entry and ensure they reached the correct location.”\n\nOn March 27, hours after I asked the USFS Special Agent himself to identify the men he brought to my door, he sent a Lane County deputy a file on me: name, date of birth, driver's license number, where I live, my schedule and my duties, my correspondence and my text messages, and a promise to “keep you up to date.”\n\nThe Forest Service unlocked a gate. Everything after that is his. The agency referred him to Law Enforcement & Investigations' Office of Professional Responsibility."
   },
   {
     id: "hyde",

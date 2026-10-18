@@ -351,7 +351,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-03-22", date: "March 17 — 22, 2026",
                 body: [
-                    "Hyde works with Forest Service Special Agent Matthew Oliver to locate me. On March 22 Oliver ",
+                    "Hyde works with the USFS Special Agent to locate me. On March 22 the USFS Special Agent ",
                     { doc: "01M1M4WF78XJPEJJ48D1JZ4SJ8", thread: "osp", t: "delivers the reconnaissance" },
                     ": my volunteer schedule, my duties, my RV and Jeep, two screenshots from the onX Hunt hunting application with a waypoint pinned on the work center where I live, the gate and its lock, and the note that my Forest Service supervisor “was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
                 ],
@@ -384,7 +384,7 @@ export const TIMELINE: TimelineSection[] = [
                     { t: "Three men with guns arrive at a locked federal gate", href: "/evidence/police" },
                     " on federal land where I serve as a volunteer caretaker. They state they are concerned about what I am posting online. I decline to speak without an attorney and shut the door. ",
                     { rec: "01KMFMJW809QNR8PVTXT8HAAG7", at: 0, t: "I record them leaving" },
-                    ". Twenty minutes later a man identifying himself as Forest Service calls and tells me this isn't going away. He is later confirmed as Special Agent Matthew Oliver, Law Enforcement & Investigations.",
+                    ". Twenty minutes later a man identifying himself as Forest Service calls and tells me this isn't going away. He is later confirmed as the USFS Special Agent, Law Enforcement & Investigations.",
                 ],
             },
             {
@@ -392,7 +392,7 @@ export const TIMELINE: TimelineSection[] = [
                 title: "The transfer to a deputy.",
                 body: [
                     "Three days after I was told at my door that I was not in trouble, ",
-                    { doc: "01M23SJK7GFQVZK7TBD2XQSVTG", thread: "usfs", t: "Special Agent Oliver emails a Lane County deputy" },
+                    { doc: "01M23SJK7GFQVZK7TBD2XQSVTG", thread: "usfs", t: "The USFS Special Agent emails a Lane County deputy" },
                     ": my name, date of birth, driver's license number, residence, work schedule, duties, correspondence, and text messages, with the words “multiple veil threats” and a commitment to “keep you up to date.” The same day I file the ",
                     { t: "Siuslaw National Forest incident report", href: "/evidence/police" },
                     " on the March 24 visit, with the license plate of one vehicle: 731 QRV.",
@@ -401,7 +401,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-03-30", date: "March 30, 2026",
                 body: [
-                    { doc: "01KMZX2130HZT1EXN359G5EKFJ", thread: "usfs", t: "Patrol Captain Felicia Sloan confirms Special Agent Oliver is employed by USFS Law Enforcement & Investigations" },
+                    { doc: "01KMZX2130HZT1EXN359G5EKFJ", thread: "usfs", t: "Patrol Captain Felicia Sloan confirms the USFS Special Agent is employed by USFS Law Enforcement & Investigations" },
                     " and does not need to coordinate with local law enforcement. Asked who authorized the visit and its purpose, ",
                     { doc: "01KMZZ4ZNGEDGDCH6EQ3E3644G", thread: "usfs", t: "she directs me to FOIA" },
                     ".",
@@ -428,7 +428,7 @@ export const TIMELINE: TimelineSection[] = [
                 body: [
                     "I file ",
                     { doc: "01KNABETW098C3GP2NN7D3JR33", thread: "osp", t: "a public records request with Oregon State Police" },
-                    " for all records related to the March 24 visit, including all coordination with Special Agent Oliver or any OPRD employee. ",
+                    " for all records related to the March 24 visit, including all coordination with the USFS Special Agent or any OPRD employee. ",
                     { doc: "01KNAV7K70M1CKA57ZJW6M6X1R", thread: "osp", t: "OSP answers the same day" },
                     ": a search “identified no records responsive to your request.” ",
                     { t: "The chaptered record", href: "/evidence/police" },
@@ -485,7 +485,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-06-30", date: "June 30, 2026",
                 body: [
-                    "A Lane County deputy jokes to my face about access to a high-powered rifle stored overnight at the work center. I turn my camera on, address it, and publish the video the same afternoon. On September 3 I learn the deputy's office had been holding Special Agent Oliver's March 27 email for three months.",
+                    "A Lane County deputy jokes to my face about access to a high-powered rifle stored overnight at the work center. I turn my camera on, address it, and publish the video the same afternoon. On September 3 I learn the deputy's office had been holding the USFS Special Agent's March 27 email for three months.",
                 ],
             },
         ],
@@ -678,7 +678,7 @@ export const TIMELINE: TimelineSection[] = [
                     ". I notify all records officers that ",
                     { doc: "01M23HPNPR6XQVRBZHPF2F1HYD", thread: "osp", t: "the requests are now tracked publicly" },
                     ", ",
-                    { doc: "01M23SJK7GFQVZK7TBD2XQSVTG", thread: "usfs", t: "correct the record on Special Agent Oliver's March 27 email" },
+                    { doc: "01M23SJK7GFQVZK7TBD2XQSVTG", thread: "usfs", t: "correct the record on the USFS Special Agent's March 27 email" },
                     ", send OSP ",
                     { doc: "01M2670AB06W82K8B7XVZ9D5RW", thread: "osp", t: "Report SP26096984, and what all of you have been doing" },
                     ", and on September 11 publish ",
