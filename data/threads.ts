@@ -5264,6 +5264,20 @@ export const USFS_THREAD: RecordsThreadData = {
             docs: [{ label: "Internal routing is your business", href: "/records/usfs/2026-09-09-internal-routing-is-your-business.pdf" }],
             eml: "/records/usfs/eml/2026-09-09_1313_internal-routing-is-your-business.eml",
         },
+        {
+            id: "the-sigil-we-share",
+            ulid: "01M56AMVC0F0QYJ8TBFZR23TYE",
+            date: "October 17, 2026",
+            d: "2026-10-17",
+            time: "6:40 PM",
+            from: "Robert Samuel White",
+            to: "[USFS Special Agent]",
+            kind: "notice",
+            title: "The Sigil We Share 🐻",
+            summary: "Letter to the USFS Special Agent on the March 24 visit, the call after it, and the March 27 email. Notice that the archive no longer names him.",
+            docs: [{ label: "The Sigil We Share", href: "/records/usfs/2026-10-17-the-sigil-we-share.pdf" }],
+            eml: "/records/usfs/eml/2026-10-17_1840_the-sigil-we-share.eml",
+        },
     ],
 };
 

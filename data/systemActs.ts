@@ -4327,30 +4327,39 @@ export const ACTS: Record<string, Act[]> = {
     ],
     "forest-service-agent": [
         {
-            "d": "2026-03-17",
-            "when": "March 17, 2026",
-            "text": "The USFS Special Agent takes Detective Hyde’s request to confirm whether the volunteer “currently volunteers with the FS.”",
+            "d": "2026-03-03",
+            "when": "March 3, 2026",
+            "text": "An emergency manager at the institution sent the volunteer's letters to an Oregon State Police captain, with the deputy director copied. The only reason he wrote was that the volunteer was \"now including the Governor as well as our Director.\" The next morning the captain ordered a \"threat assessment\".",
             "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
+                "href": "/testimony/#p9zswx"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Volunteer's letters sent to the state police"
+        },
+        {
+            "d": "2026-03-06",
+            "when": "March 6, 2026",
+            "text": "The detective assigned the matter, an Oregon State Police detective serving as a Portland FBI-JTTF task force officer, read the volunteer's archive. He wrote that nothing in it stood out beyond what the institution had sent, and that the volunteer had a grievance with a former employer.",
+            "src": {
+                "u": "01M382W278SJK9CDV86VW0PM2A",
+                "t": "outreach"
+            },
+            "title": "Task force detective finds only a grievance",
             "att": {
-                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
+                "label": "Complaint: Task Force Officer Jake Hyde",
+                "href": "/records/outreach/attachments/01m382w278sjk9cdv86vw0pm2a-2026-09-23-fbi-complaint-hyde.pdf",
                 "page": 1,
-                "from": "Oregon State Police"
+                "from": "Robert Samuel White"
             }
         },
         {
-            "d": "2026-03-18",
-            "when": "March 18, 2026",
-            "text": "The USFS Special Agent emails Detective Hyde: “So far have not been able to confirm he is or was a volunteer. Still waiting on a few call backs”.",
+            "d": "2026-03-17",
+            "when": "March 17, 2026",
+            "text": "The task force detective called the Special Agent. The next morning he sent him the volunteer's name and date of birth under the subject \"Attempt to locate\". The Special Agent wrote back that he had not yet confirmed the volunteer was a Forest Service volunteer and was \"Still waiting on a few call backs\".",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Special Agent takes up an \"Attempt to locate\"",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4359,30 +4368,14 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-03-18",
-            "when": "March 18, 2026",
-            "text": "The USFS Special Agent confirms through the volunteer’s Forest Service supervisor that he is “a current volunteer out of the Siltcoos Work Center”.",
-            "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
-            },
-            "title": "Oregon State Police, Second Production, PR27478",
-            "att": {
-                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
-                "page": 1,
-                "from": "Oregon State Police"
-            }
-        },
-        {
             "d": "2026-03-22",
             "when": "March 22, 2026",
-            "text": "The USFS Special Agent emails Detective Hyde his volunteer schedule, his duties, where he lives, his RV and his Jeep. Of the volunteer’s Forest Service supervisor: “She was told not to advise WHITE that FS LE was inquiring about his whereabouts.”",
+            "text": "The Special Agent sent the detective the volunteer's volunteer schedule and duties, his RV and his Jeep, and two screenshots of the work center where he lives. He gave directions to the gate posted \"do not enter\" and \"FS Only\", and wrote that the detective could \"just walk the 50 feet past the gate\". He wrote that the volunteer's own Forest Service supervisor had been told not to tell him that Forest Service law enforcement was asking where he was. He asked the detective to confirm \"for Tuesday\". That Tuesday was March 24, one year to the day after the volunteer's dismissal.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Special Agent sends the volunteer's schedule, home and gate",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4391,168 +4384,254 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-03-22",
-            "when": "March 22, 2026",
-            "text": "In the same email: “Attached are two screenshots of the Siltcoos Workcenter location”. On the gate: “The gate is sometimes closed and secured with a Yale Lock.” And: “you can either just walk the 50 feet past the gate”.",
+            "d": "2026-03-23",
+            "when": "March 23, 2026",
+            "text": "The task force detective forwarded the Special Agent's email to a second detective. That detective opened a dispatch event naming the volunteer \"Suspect\". The basis he wrote was emails and publishing. The same day he sent his sergeant the \"Hasty Plan for Robert White knock and talk\".",
             "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
+                "href": "/testimony/#pewtmp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
-            "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
-                "page": 11,
-                "from": "Oregon State Police"
-            }
+            "title": "Volunteer named \"Suspect\" for publishing"
         },
         {
-            "d": "2026-03-22",
-            "when": "March 22, 2026",
-            "text": "In the same email: “Shoot me a text or call Monday to confirm for Tuesday.”",
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "The state police dispatch event for the visit was created before any unit left, and its comment put the visit on the Forest Service as a \"FOLLOWUP INTERVIEW\". The state police had no earlier contact with the volunteer to follow up on.",
             "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "u": "01KYR9AFWRGCR1B546XC2YK3EP",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Dispatch records the visit \"FOR THE FOREST SERVICE\"",
             "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
-                "page": 11,
-                "from": "Oregon State Police"
+                "label": "Request for Recorded Video",
+                "href": "/records/osp/attachments/01kyr9afwrgcr1b546xc2yk3ep-2026-07-29-osp-video-request.pdf",
+                "page": 4,
+                "from": "Robert Samuel White"
             }
         },
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "Three men with guns at a locked federal gate.",
+            "text": "The Special Agent brought the two state detectives through the locked federal gate, which is posted against public access, to the work center where the volunteer lives and works. No agency identified itself. They said their concern was what he publishes online, and that he was not in trouble. He declined to speak without an attorney and closed the door. He then recorded them leaving, with a plate in frame.",
             "src": {
-                "href": "/evidence/police"
-            }
+                "href": "/testimony/#pqdfr8"
+            },
+            "title": "Special Agent brings armed officers through the locked gate"
         },
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "The USFS Special Agent calls the volunteer by phone after the visit.",
+            "text": "After the officers left, the Special Agent phoned the volunteer. He told him the matter was not going away and that the state police wanted to talk to him. He did not give the state officers' names, then or later.",
             "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
+                "u": "01KN044VW8021NXNBG8WDHV2TE",
+                "t": "usfs"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
-            "att": {
-                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
-                "page": 1,
-                "from": "Oregon State Police"
-            }
+            "title": "Special Agent calls: \"not going away\""
+        },
+        {
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "The same day the volunteer wrote to his Forest Service district that the Forest Service officer who came with the state police had called him afterward and acknowledged the visit could have been handled differently, and that he did not need to make an issue of it. The state had brought its visit to him through his federal post.",
+            "src": {
+                "u": "01KMH9811RKXHA60ZVPKDE53P6",
+                "t": "usfs"
+            },
+            "title": "Volunteer records the acknowledgment and leaves it there"
         },
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "On the phone, asked by the volunteer for the three officers’ information, the USFS Special Agent: “I gave him my name, badge number, and office area. I told him I did not have to provide him with OSP info.”",
+            "text": "The volunteer called the Special Agent and asked for the names and contact information of all three officers. The Special Agent gave his own name, badge number and station, and refused the other two. He said the restricted federal land was not restricted. The volunteer cited the federal statute, and the Special Agent hung up.",
             "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
+                "u": "01KMXRH298KKDJSR9XJKXRH9VT",
+                "t": "oprd"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
-            "att": {
-                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
-                "page": 1,
-                "from": "Oregon State Police"
-            }
+            "title": "Special Agent refuses the officers' names and hangs up"
         },
         {
             "d": "2026-03-27",
             "when": "March 27, 2026",
-            "text": "The USFS Special Agent emails [Lane County Deputy], copying Detectives Hyde and Nelson, with the volunteer’s date of birth, driver license number, schedule, duties and residence, and two attachments: “021426 Email Chain.pdf” and “Text message 3 27 1 of 2.PNG”. “I’m not sure were the FS will go with this but will keep you up to date.”",
+            "text": "Hours after refusing the volunteer the officers' names, the Special Agent sent a Lane County deputy a file on him, with both detectives copied: his date of birth, his driver's licence number, where he lives, his schedule and duties, his correspondence and his text messages. He promised to \"keep you up to date\".",
+            "src": {
+                "href": "/testimony/#pwmw3z"
+            },
+            "title": "Special Agent sends a file on the volunteer to a county deputy"
+        },
+        {
+            "d": "2026-03-27",
+            "when": "March 27, 2026",
+            "text": "The volunteer filed a Siuslaw National Forest Host/Caretaker Incident Report on the visit. It records the Special Agent's follow-up call, his refusal that day to name the other officers, and the plate. He asked that the local Forest Service officer meet with him, because he needed to know who the officers were.",
+            "src": {
+                "u": "01KMRG1SS08ZF35E4PGSZHBQW1",
+                "t": "usfs"
+            },
+            "title": "Volunteer files a Forest Service incident report"
+        },
+        {
+            "d": "2026-03-29",
+            "when": "March 29, 2026",
+            "text": "The volunteer wrote to the Forest Service to ask whether the Special Agent was employed there and how to reach his supervisor, so that he could document the visit through the proper channels.",
+            "src": {
+                "u": "01KMWRGVW0X2DZ1HXB1ACMS87T",
+                "t": "usfs"
+            },
+            "title": "Volunteer asks the Forest Service to confirm the Special Agent"
+        },
+        {
+            "d": "2026-03-30",
+            "when": "March 30, 2026",
+            "text": "The Patrol Captain confirmed that the Special Agent is employed in the Forest Service's investigative branch and assigned to the Willamette and Siuslaw National Forests. She sent the link to the Office of Professional Responsibility complaint form.",
+            "src": {
+                "u": "01KMZX2130HZT1EXN359G5EKFJ",
+                "t": "usfs"
+            },
+            "title": "Patrol Captain confirms the Special Agent's role"
+        },
+        {
+            "d": "2026-03-30",
+            "when": "March 30, 2026",
+            "text": "The volunteer asked the Patrol Captain who authorized the Special Agent's visit and what its stated purpose was. He also asked for the names of the two state officers the Special Agent had refused to give him.",
+            "src": {
+                "u": "01KMZXP9H06HFJ3DYX6AF98ZGX",
+                "t": "usfs"
+            },
+            "title": "Volunteer asks who authorized the visit and why"
+        },
+        {
+            "d": "2026-03-30",
+            "when": "March 30, 2026",
+            "text": "The Patrol Captain answered with a FOIA link and sent the same line again minutes later. She did not say who authorized the Special Agent's visit, what it was for, or who the state officers were.",
+            "src": {
+                "u": "01KMZYY7V8PVRRP5G4F0V7JCR5",
+                "t": "usfs"
+            },
+            "title": "Both questions sent to FOIA"
+        },
+        {
+            "d": "2026-03-30",
+            "when": "March 30, 2026",
+            "text": "The volunteer wrote to the District Ranger that he had asked who sent the Special Agent and the officers to his door, and why, and had been redirected to FOIA both times.",
+            "src": {
+                "u": "01KN09TT4RDBZ9SXBHF1QMXGWT",
+                "t": "usfs"
+            },
+            "title": "Volunteer reports the unanswered questions to the District Ranger"
+        },
+        {
+            "d": "2026-04-02",
+            "when": "April 2, 2026",
+            "text": "The District Ranger answers the volunteer and tells him what she knows: the two officers who came with the Special Agent were state police.",
+            "src": {
+                "u": "01KN7PN12G63BJCNSM82RG839X",
+                "t": "usfs"
+            },
+            "title": "District Ranger confirms state police, gives no names"
+        },
+        {
+            "d": "2026-04-02",
+            "when": "April 2, 2026",
+            "text": "The volunteer asked the institution for all of its communications with the Special Agent or anyone else at the Forest Service, and with the state police, about him.",
+            "src": {
+                "u": "01KN7XV0EGHERQPQTAG7K8H3HN",
+                "t": "oprd"
+            },
+            "title": "Volunteer asks the institution for its communications with the Special Agent"
+        },
+        {
+            "d": "2026-04-03",
+            "when": "April 3, 2026",
+            "text": "The volunteer asked the state police for every record of the visit, including all communications with the Special Agent. They answered the same day that a search had found no responsive records. Their file held the Special Agent's emails of March 18 and March 22 and his March 27 email.",
+            "src": {
+                "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
+                "t": "outreach"
+            },
+            "title": "State police answer \"no records\"",
+            "att": {
+                "label": "Oregon's Public Records Law, As Applied",
+                "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-04-03",
+            "when": "April 3, 2026",
+            "text": "The volunteer wrote to the District Ranger that the Special Agent's act had complicated his place at the work center. He asked her to help make sure he was not displaced a second time.",
+            "src": {
+                "u": "01KNAS4YD0EFX1EQJMTVAFRW8J",
+                "t": "usfs"
+            },
+            "title": "Volunteer asks the District Ranger not to be displaced"
+        },
+        {
+            "d": "2026-04-14",
+            "when": "April 14, 2026",
+            "text": "The institution answered the request for its communications with the Special Agent, the state police and the sheriff with an estimate of staff hours at an hourly rate, in place of the records.",
+            "src": {
+                "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
+                "t": "oprd"
+            },
+            "title": "Institution prices its communications with the Special Agent",
+            "att": {
+                "label": "invoice public records Robert Samuel White",
+                "href": "/records/oprd/attachments/01kp78bz8rtq3sj3rxkj4m1ggt-invoice-public-records-Robert-Samuel-White.pdf",
+                "page": 7,
+                "from": "Oregon State Parks"
+            }
+        },
+        {
+            "d": "2026-04-15",
+            "when": "April 15, 2026",
+            "text": "The case detective wrote his report three weeks after the visit and thirteen days after the volunteer's preservation notice. He added to the case file the Special Agent's emailed summary and the volunteer's text messages to the Special Agent. The report concludes \"there is no evidence White has committed any crimes\" and closes the case for information only.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "Case closes with \"no evidence\" of any crime",
             "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "label": "Report SP26096984 — Threat Assessment",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 4,
                 "from": "Oregon State Police"
             }
         },
         {
-            "d": "2026-03-27",
-            "when": "March 27, 2026",
-            "text": "In the same email, to the deputy: “multiple veil threats.” The email quotes no threat.",
-            "src": {
-                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
-                "t": "osp"
-            },
-            "title": "Oregon State Police, Second Production, PR27478",
-            "att": {
-                "label": "From the RMS — Email from the USFS Special Agent, Siltcoos WC Volunteer",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
-                "page": 1,
-                "from": "Oregon State Police"
-            }
-        },
-        {
-            "d": "2026-03-27",
-            "when": "March 27, 2026",
-            "text": "In the same email, an account of why the volunteer was dismissed that no document in the record contains. The volunteer’s correction for the record went to every recipient of the email.",
-            "src": {
-                "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
-                "t": "usfs"
-            },
-            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
-        },
-        {
-            "d": "2026-03-27",
-            "when": "March 27, 2026",
-            "text": "The volunteer files a Host/Caretaker Incident Report with the Siuslaw National Forest on the March 24 visit, with the license plate of one vehicle.",
-            "src": {
-                "u": "01KMRG1SS08ZF35E4PGSZHBQW1",
-                "t": "usfs"
-            },
-            "title": "Host/Caretaker Incident Report"
-        },
-        {
             "d": "2026-07-24",
             "when": "July 24, 2026",
-            "text": "The District Ranger writes that the Forest Service did not initiate the March 24 interview, and only unlocked the gate for the state police, which “does not have keys to Forest Service gates.”",
+            "text": "The Forest Service wrote that it did not initiate the interview and that its officer came only to provide access and guide the state police to the work center. The state dispatch record says the visit was \"FOR THE FOREST SERVICE\". The Forest Service referred the Special Agent to Law Enforcement and Investigations' Office of Professional Responsibility.",
             "src": {
-                "u": "01KYAG3J7GMK1RV66MTGQ2VFN8",
-                "t": "usfs"
+                "href": "/testimony/#pn89s9"
             },
-            "title": "District Ranger Michele Holman, Forest Service Statement"
+            "title": "Forest Service: it initiated nothing; officer referred"
         },
         {
-            "d": "2026-07-27",
-            "when": "July 27, 2026",
-            "text": "The Patrol Captain refers the complaint about the USFS Special Agent to the Office of Professional Responsibility for administrative investigation.",
+            "d": "2026-09-03",
+            "when": "September 3, 2026",
+            "text": "The state police production put the Special Agent's emails in the volunteer's hands. He asked the state police for the calls and texts between the Special Agent and the detectives. He set the Special Agent's \"multiple veil threats\" against the task force detective's March 6 finding and the case report's closing, and asked whether any statement of his had ever been identified as a threat.",
             "src": {
-                "u": "01KYJZQ628C7J1RXN90DR7N0MA",
-                "t": "usfs"
+                "u": "01M1M6H4RR51K8RXNASW5AB9RC",
+                "t": "osp"
             },
-            "title": "Patrol Captain Felicia Sloan, Referral to the Office of Professional Responsibility"
+            "title": "Volunteer asks for the \"veiled threat\""
         },
         {
             "d": "2026-09-09",
             "when": "September 9, 2026",
-            "text": "The USFS Special Agent is sent four corrections to his March 27 email. No reply from him; the Patrol Captain forwards the letter to the Office of Professional Responsibility.",
+            "text": "The volunteer wrote to the Special Agent, the county deputy and every recipient of the March 27 email, correcting it line by line. The dismissal letter states its basis as \"the disparaging public comments made about staff\". His service ended March 24, 2025. He had said the visit was intimidation, not that he felt intimidated. No statement of his has ever been produced as a veiled threat. He asked the Special Agent to produce any record supporting his account or to correct it with the deputy, and to dispute the letter in writing if he disputed it.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
             },
-            "title": "Correction for the record: the March 27 email to [Lane County Deputy]"
+            "title": "Volunteer corrects the Special Agent's email"
         },
         {
-            "d": "2026-09-10",
-            "when": "September 10, 2026",
-            "text": "The USFS Special Agent is copied on the letter to Detective Nelson on report SP26096984. No reply.",
+            "d": "2026-10-17",
+            "when": "October 17, 2026",
+            "text": "The volunteer wrote to the Special Agent that he had been brought in at the end of a plan made by others. He set out what the Special Agent had done: delivered the state's message by phone and sent his information to the county deputy he shares the work center with. He told him he had chosen to withhold the Special Agent's name in the archive, and that he required no response.",
             "src": {
-                "u": "01M2670AB06W82K8B7XVZ9D5RW",
-                "t": "osp"
+                "u": "01M56AMVC0F0QYJ8TBFZR23TYE",
+                "t": "usfs"
             },
-            "title": "Report SP26096984, and what all of you have been doing"
+            "title": "Volunteer writes to the Special Agent directly"
         }
     ],
     "osp-cr": [
