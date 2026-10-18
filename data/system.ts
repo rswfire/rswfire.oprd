@@ -197,7 +197,7 @@ const POLICE: Branch = {
         },
         {
             id: "forest-service-agent",
-            title: "Special Agent",
+            title: "USFS Special Agent",
             inst: "U.S. Forest Service",
             fn: "Law enforcement on national forest land. Protects the people who live and work there, volunteers among them.",
             real: "Turns his own agency against its volunteer. A Forest Service special agent with the keys, he unlocked the federal gate for the state police, stood at the volunteer’s door, called afterward to tell him it wasn’t going away, and refused to give him the officers’ names.",
