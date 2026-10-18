@@ -4329,7 +4329,17 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "On March 3 the volunteer wrote to the Deputy Director that he was volunteering for the Forest Service and working two jobs, that he meant to secure the funds to sue the institution for barring him from participating in civic government, and that there was still time. He ended: “You will not bury this.” That same day the institution’s emergency manager, who had never met or written to the volunteer, wrote to the press captain at Oregon State Police, copying the Deputy Director. He alleged no crime and no threat. He sent a link to the archive, writing that the volunteer “is now including the Governor as well as our Director.” The next day the press captain ordered a threat assessment: his sergeant wrote that “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
+            "text": "The volunteer wrote to the Deputy Director that he had not sued yet because he meant to do it once and do it right, that he was working two jobs and volunteering for the Forest Service, and that there was still time. He ended: “You will not bury this.”",
+            "src": {
+                "u": "01KJT9T6V8Q8PATA3JMZ8DD1ZW",
+                "t": "oprd"
+            },
+            "title": "Letter to the Deputy Director: “You will not bury this”"
+        },
+        {
+            "d": "2026-03-03",
+            "when": "March 3, 2026",
+            "text": "That same day the institution’s emergency manager, who had never met or written to the volunteer, wrote to the press captain at Oregon State Police, copying the Deputy Director. He alleged no crime and no threat. He sent a link to the archive, writing that the volunteer “is now including the Governor as well as our Director.” The next day the press captain ordered a threat assessment: his sergeant wrote that “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
