@@ -4329,23 +4329,23 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "An emergency manager at the institution sent the volunteer's letters to an Oregon State Police captain, with the deputy director copied. The only reason he wrote was that the volunteer was \"now including the Governor as well as our Director.\" The next morning the captain ordered a \"threat assessment\".",
+            "text": "On March 3 the volunteer wrote to the Deputy Director that he was volunteering for the Forest Service and working two jobs, that he meant to secure the funds to sue the institution for barring him from participating in civic government, and that there was still time. He ended: “You will not bury this.” That same day the institution’s emergency manager, who had never met or written to the volunteer, wrote to the press captain at Oregon State Police, copying the Deputy Director. He alleged no crime and no threat. He sent a link to the archive, writing that the volunteer “is now including the Governor as well as our Director.” The next day the press captain ordered a threat assessment: his sergeant wrote that “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Volunteer's letters sent to the state police",
+            "title": "The volunteer’s letter goes to the press captain",
             "att": {
-                "label": "Electronic Communications",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
-                "page": 2,
+                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
+                "page": 1,
                 "from": "Oregon State Police"
             }
         },
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
-            "text": "The detective assigned the matter, an Oregon State Police detective serving as a Portland FBI-JTTF task force officer, read the volunteer's archive. He wrote that nothing in it stood out beyond what the institution had sent, and that the volunteer had a grievance with a former employer.",
+            "text": "The detective assigned the matter, an Oregon State Police detective serving as a Portland FBI-JTTF task force officer, read the volunteer’s archive and reported back: “it wasn’t much unfortunately. Based on the website nothing is standing out to me more than what Parks and Rec sent you.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
