@@ -4331,24 +4331,31 @@ export const ACTS: Record<string, Act[]> = {
             "when": "March 3, 2026",
             "text": "An emergency manager at the institution sent the volunteer's letters to an Oregon State Police captain, with the deputy director copied. The only reason he wrote was that the volunteer was \"now including the Governor as well as our Director.\" The next morning the captain ordered a \"threat assessment\".",
             "src": {
-                "href": "/testimony/#p9zswx"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
-            "title": "Volunteer's letters sent to the state police"
+            "title": "Volunteer's letters sent to the state police",
+            "att": {
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 2,
+                "from": "Oregon State Police"
+            }
         },
         {
             "d": "2026-03-06",
             "when": "March 6, 2026",
             "text": "The detective assigned the matter, an Oregon State Police detective serving as a Portland FBI-JTTF task force officer, read the volunteer's archive. He wrote that nothing in it stood out beyond what the institution had sent, and that the volunteer had a grievance with a former employer.",
             "src": {
-                "u": "01M382W278SJK9CDV86VW0PM2A",
-                "t": "outreach"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
             "title": "Task force detective finds only a grievance",
             "att": {
-                "label": "Complaint: Task Force Officer Jake Hyde",
-                "href": "/records/outreach/attachments/01m382w278sjk9cdv86vw0pm2a-2026-09-23-fbi-complaint-hyde.pdf",
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
                 "page": 1,
-                "from": "Robert Samuel White"
+                "from": "Oregon State Police"
             }
         },
         {
@@ -4388,32 +4395,39 @@ export const ACTS: Record<string, Act[]> = {
             "when": "March 23, 2026",
             "text": "The task force detective forwarded the Special Agent's email to a second detective. That detective opened a dispatch event naming the volunteer \"Suspect\". The basis he wrote was emails and publishing. The same day he sent his sergeant the \"Hasty Plan for Robert White knock and talk\".",
             "src": {
-                "href": "/testimony/#pewtmp"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
-            "title": "Volunteer named \"Suspect\" for publishing"
+            "title": "Volunteer named \"Suspect\" for publishing",
+            "att": {
+                "label": "CAD Record SP26096984",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26096984-CAD.pdf",
+                "page": 2,
+                "from": "Oregon State Police"
+            }
         },
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
             "text": "The state police dispatch event for the visit was created before any unit left, and its comment put the visit on the Forest Service as a \"FOLLOWUP INTERVIEW\". The state police had no earlier contact with the volunteer to follow up on.",
             "src": {
-                "u": "01KYR9AFWRGCR1B546XC2YK3EP",
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "Dispatch records the visit \"FOR THE FOREST SERVICE\"",
             "att": {
-                "label": "Request for Recorded Video",
-                "href": "/records/osp/attachments/01kyr9afwrgcr1b546xc2yk3ep-2026-07-29-osp-video-request.pdf",
-                "page": 4,
-                "from": "Robert Samuel White"
+                "label": "CAD Record SP26097765",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26097765-CAD.pdf",
+                "page": 1,
+                "from": "Oregon State Police"
             }
         },
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "The Special Agent brought the two state detectives through the locked federal gate, which is posted against public access, to the work center where the volunteer lives and works. No agency identified itself. They said their concern was what he publishes online, and that he was not in trouble. He declined to speak without an attorney and closed the door. He then recorded them leaving, with a plate in frame.",
+            "text": "The Special Agent brought two state detectives through the locked federal gate to the work center where the volunteer lives and works. None of them identified their agency. They told him they were concerned about what he was posting online, and that he was not in trouble. He recorded their vehicle as they left.",
             "src": {
-                "href": "/testimony/#pqdfr8"
+                "href": "/evidence/police/?t=0:00"
             },
             "title": "Special Agent brings armed officers through the locked gate"
         },
@@ -4452,9 +4466,16 @@ export const ACTS: Record<string, Act[]> = {
             "when": "March 27, 2026",
             "text": "Hours after refusing the volunteer the officers' names, the Special Agent sent a Lane County deputy a file on him, with both detectives copied: his date of birth, his driver's licence number, where he lives, his schedule and duties, his correspondence and his text messages. He promised to \"keep you up to date\".",
             "src": {
-                "href": "/testimony/#pwmw3z"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
-            "title": "Special Agent sends a file on the volunteer to a county deputy"
+            "title": "Special Agent sends a file on the volunteer to a county deputy",
+            "att": {
+                "label": "From the RMS — Email from FS SA, Siltcoos WC Volunteer",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-email-from-FS-SA-Siltcoos-WC-Volunteer.pdf",
+                "page": 1,
+                "from": "Oregon State Police"
+            }
         },
         {
             "d": "2026-03-27",
@@ -4541,15 +4562,15 @@ export const ACTS: Record<string, Act[]> = {
             "when": "April 3, 2026",
             "text": "The volunteer asked the state police for every record of the visit, including all communications with the Special Agent. They answered the same day that a search had found no responsive records. Their file held the Special Agent's emails of March 18 and March 22 and his March 27 email.",
             "src": {
-                "u": "01M4FM01H0EPTKZH5YPZQ8F0PD",
-                "t": "outreach"
+                "u": "01KNAV7K70M1CKA57ZJW6M6X1R",
+                "t": "osp"
             },
             "title": "State police answer \"no records\"",
             "att": {
-                "label": "Oregon's Public Records Law, As Applied",
-                "href": "/records/outreach/attachments/01m4fm01h0eptkzh5ypzq8f0pd-2026-10-08-oregons-public-records-law-as-applied.pdf",
-                "page": 1,
-                "from": "Robert Samuel White"
+                "label": "Response Letter",
+                "href": "/records/osp/attachments/01knav7k70m1cka57zjw6m6x1r-Response-Letter.pdf",
+                "page": 2,
+                "from": "Oregon State Police"
             }
         },
         {
@@ -4597,11 +4618,12 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-24",
             "when": "July 24, 2026",
-            "text": "The Forest Service wrote that it did not initiate the interview and that its officer came only to provide access and guide the state police to the work center. The state dispatch record says the visit was \"FOR THE FOREST SERVICE\". The Forest Service referred the Special Agent to Law Enforcement and Investigations' Office of Professional Responsibility.",
+            "text": "The District Ranger wrote that the Forest Service did not initiate the interview, and that its officer came only to give the state police access and guide them to the work center. The state dispatch record says the visit was \"FOR THE FOREST SERVICE\".",
             "src": {
-                "href": "/testimony/#pn89s9"
+                "u": "01KYAG3J7GMK1RV66MTGQ2VFN8",
+                "t": "usfs"
             },
-            "title": "Forest Service: it initiated nothing; officer referred"
+            "title": "Forest Service: it initiated nothing"
         },
         {
             "d": "2026-09-03",
