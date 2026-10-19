@@ -5716,6 +5716,22 @@ export const ACTS: Record<string, Act[]> = {
             "title": "Todd Albert, Public Records Advocate, Reply re Office of the Governor"
         },
         {
+            "d": "2026-10-14",
+            "when": "October 14, 2026",
+            "text": "The volunteer asks him for facilitated dispute resolution under ORS 192.464 with the four institutions he has open requests with: the Oregon Parks and Recreation Department, the Oregon State Police, the Office of the Governor and the Department of Justice. The request sets out every request, estimate, denial and silence since August 22, 2025, in order, with fifteen documents attached: “I was met with every plain act a government can engage in to prevent me from seeing those records. That is not how public records are supposed to work, and I am asking the Public Records Advocate to do something about that.”",
+            "src": {
+                "u": "01M4Y4FN8RB5FDFQ1KSDG1E7Z9",
+                "t": "governor"
+            },
+            "att": {
+                "label": "Request for Facilitated Dispute Resolution: State of Oregon",
+                "href": "/records/governor/attachments/01m4y4fn8rb5fdfq1ksdg1e7z9-2026-10-14-public-records-advocate.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            },
+            "title": "Request for facilitated dispute resolution"
+        },
+        {
             "d": "2026-10-16",
             "when": "October 16, 2026",
             "text": "The volunteer sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page. The volunteer closes: “I am sorry it falls to you to stand at the end of something that grew from the smallest of origins. And I look forward to your next response, with nothing decided about it in advance.”",
