@@ -401,7 +401,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-03-30", date: "March 30, 2026",
                 body: [
-                    { doc: "01KMZX2130HZT1EXN359G5EKFJ", thread: "usfs", t: "Patrol Captain Felicia Sloan confirms the USFS Special Agent is employed by USFS Law Enforcement & Investigations" },
+                    { doc: "01KMZX2130HZT1EXN359G5EKFJ", thread: "usfs", t: "The USFS Patrol Captain confirms the USFS Special Agent is employed by USFS Law Enforcement & Investigations" },
                     " and does not need to coordinate with local law enforcement. Asked who authorized the visit and its purpose, ",
                     { doc: "01KMZZ4ZNGEDGDCH6EQ3E3644G", thread: "usfs", t: "she directs me to FOIA" },
                     ".",
@@ -673,7 +673,7 @@ export const TIMELINE: TimelineSection[] = [
             {
                 d: "2026-09-09", date: "September 9 — 11, 2026",
                 body: [
-                    "Patrol Captain Sloan confirms the referral of my complaint is ",
+                    "The USFS Patrol Captain confirms the referral of my complaint is ",
                     { doc: "01M23VZK3887N5QPA6F01CSFH4", thread: "usfs", t: "an administrative investigation" },
                     ". I notify all records officers that ",
                     { doc: "01M23HPNPR6XQVRBZHPF2F1HYD", thread: "osp", t: "the requests are now tracked publicly" },
