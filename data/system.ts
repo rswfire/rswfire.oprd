@@ -200,7 +200,7 @@ const POLICE: Branch = {
             title: "USFS Special Agent",
             inst: "U.S. Forest Service",
             fn: "Law enforcement on national forest land. Protects the people who live and work there, volunteers among them.",
-            real: "Turns his own agency against its volunteer. A Forest Service special agent with the keys, he unlocked the federal gate for the state police, stood at the volunteer’s door, called afterward to tell him it wasn’t going away, and refused to give him the officers’ names.",
+            real: "Turns his own agency against its volunteer. A Forest Service special agent with the keys, he unlocked the federal gate for the state police, stood at the volunteer’s door, called afterward to tell him it wasn’t going away, refused to give him the officers’ names, and sent his personal information to the county deputy who shares the work center where he lives.",
             docs: [
                 { who: "Forest Service agent", when: "March 22, 2026", text: "His schedule, his duties, his vehicles, and a hunting-app waypoint on the work center where he lives. His supervisor “was told not to advise WHITE that FS LE was inquiring about his whereabouts.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Electronic Communications", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf", page: 11, from: "Oregon State Police" } },
             ],
