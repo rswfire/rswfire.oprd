@@ -5718,7 +5718,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-16",
             "when": "October 16, 2026",
-            "text": "The volunteer sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page.",
+            "text": "The volunteer sends him the Key Individuals page, copying his office, the OPRD Commissioners and Governor Kotek. His office’s card is the last on the page. The volunteer closes: “I am sorry it falls to you to stand at the end of something that grew from the smallest of origins. And I look forward to your next response, with nothing decided about it in advance.”",
             "src": {
                 "u": "01M521DD08FR8RXZSAB8XZHECK",
                 "t": "governor"
