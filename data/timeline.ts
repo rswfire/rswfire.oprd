@@ -853,6 +853,19 @@ export const TIMELINE: TimelineSection[] = [
                     ": the three trusts his title carries, and what he did with each.",
                 ],
             },
+            {
+                d: "2026-10-17", date: "October 17, 2026", major: true,
+                title: "The USFS Special Agent, held to account by role.",
+                body: [
+                    "I ",
+                    { doc: "01M56D4SZ0RB3GC2A9EA42YQP7", thread: "usfs", t: "write to the USFS Special Agent" },
+                    ", copying the Patrol Captain and the District Ranger, and withhold his name from the archive. On the Forest Service side I hold him alone to account, by his role. Everyone else there, me included, was drawn into this by the state. The District Ranger\u2019s ",
+                    { doc: "01KYAG3J7GMK1RV66MTGQ2VFN8", thread: "usfs", t: "July 24 letter" },
+                    " bounded the agency\u2019s part at \u201cassisting OSP by providing access and guiding them.\u201d Three days later the Patrol Captain ",
+                    { doc: "01KYJZQ628C7J1RXN90DR7N0MA", thread: "usfs", t: "referred him to the Office of Professional Responsibility" },
+                    ". I write this from inside the agency\u2019s discretion. I still live at the work center. I am still its caretaker and still a volunteer, here because the District Ranger allows it. The Forest Service kept me and referred its officer, and that is the only accountability found anywhere in this record.",
+                ],
+            },
         ],
     },
 ];
