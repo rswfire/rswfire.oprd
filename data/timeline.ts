@@ -863,7 +863,7 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01KYAG3J7GMK1RV66MTGQ2VFN8", thread: "usfs", t: "July 24 letter" },
                     " bounded the agency\u2019s part at \u201cassisting OSP by providing access and guiding them.\u201d Three days later the Patrol Captain ",
                     { doc: "01KYJZQ628C7J1RXN90DR7N0MA", thread: "usfs", t: "referred him to the Office of Professional Responsibility" },
-                    ". I write this from inside the agency\u2019s discretion. I still live at the work center. I am still its caretaker and still a volunteer, here because the District Ranger allows it. The Forest Service kept me and referred its officer, and that is the only accountability found anywhere in this record.",
+                    ". The Forest Service kept me and referred its officer, and that is the only accountability found anywhere in this record.",
                 ],
             },
         ],
