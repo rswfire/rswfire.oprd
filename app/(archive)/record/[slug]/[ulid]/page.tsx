@@ -94,7 +94,7 @@ export default async function DocumentPage({
     const { slug, ulid } = await params;
     const hit = find(slug, ulid);
     if (!hit) return null;
-    const { thread, filing, prev, next } = hit;
+    const { thread, filing } = hit;
     const html = filing.eml ? body(slug, filing.id) : null;
     const attachments = (filing.docs ?? []).filter((d) => d.href.includes("/attachments/"));
     const renderings = (filing.docs ?? []).filter((d) => !d.href.includes("/attachments/"));
@@ -103,16 +103,6 @@ export default async function DocumentPage({
         <SectionPage
             emblem="FileText" tone="emerald"
             title={filing.title.toUpperCase()}
-            previousPage={
-                prev
-                    ? { href: `/record/${slug}/${prev.ulid}`, label: "Previous document" }
-                    : { href: `/records/${slug}`, label: thread.title }
-            }
-            nextPage={
-                next
-                    ? { href: `/record/${slug}/${next.ulid}`, label: "Next document" }
-                    : { href: "/records", label: "The Records" }
-            }
         >
             <div className="mt-2 text-sm text-gray-600">
                 <Link href={`/records/${slug}`} className="text-emerald-700 hover:underline">
