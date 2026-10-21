@@ -119,7 +119,7 @@ Sam
             <Email
                 from="Robert Samuel White"
                 to="[Volunteer Services Lead]"
-                cc="[Park Supervisor], [Park Manager], [Program Manager], Lisa Sumption"
+                cc="[Park Supervisor], [Park Manager], Allison Watson, Lisa Sumption"
                 date="December 10, 2025"
                 subject="For the Record: Supervisory Betrayal"
             >
@@ -135,13 +135,13 @@ During our walk at Honeyman, I shared why I had moved into an RV and relocated t
 
 Before that conversation, I set a clear boundary: I told you explicitly this was not romantic for me.
 
-You took what I shared in confidence and disclosed it to management. That information was then weaponized by [Program Manager] to pathologize my character during dismissal proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about identity-based targeting as evidence of instability.
+You took what I shared in confidence and disclosed it to management. That information was then weaponized by Allison Watson to pathologize my character during dismissal proceedings—reframing reasoned analysis as "apocalyptic thinking" and using my fears about identity-based targeting as evidence of instability.
 
 By now you have seen the videos. You know how they used what I told you. You know the harm that followed.
 
 THE DISTORTION
 
-[Program Manager] claimed I told you "I was worried you would kill me." That is a deliberate distortion.
+Allison Watson claimed I told you "I was worried you would kill me." That is a deliberate distortion.
 
 What I actually said was that in authoritarian contexts, people like you—institutional actors with authority—would be the mechanism through which targeting of queer people would occur.
 
@@ -161,13 +161,13 @@ That is not supervision. That is betrayal.
 
 THE ENABLING
 
-Your disclosures gave [Park Manager], [Park Supervisor], and [Program Manager] the ammunition they needed to justify what they had already decided to do.
+Your disclosures gave [Park Manager], [Park Supervisor], and Allison Watson the ammunition they needed to justify what they had already decided to do.
 
 [Park Manager] used it to mock me at the day-use meeting—suggesting I "thought I had a future with you"—weaponizing my sexuality and distorting ordinary human connection into something inappropriate.
 
 I am certain that insinuation entered the narrative with your consent.
 
-[Park Supervisor] and [Program Manager] used your disclosures to construct a psychological profile justifying my permanent dismissal—reframing vulnerability as instability, analysis as extremism, and identity-based fears as concerning behavior.
+[Park Supervisor] and Allison used your disclosures to construct a psychological profile justifying my permanent dismissal—reframing vulnerability as instability, analysis as extremism, and identity-based fears as concerning behavior.
 
 You enabled that. Actively. With full knowledge of what they were doing.
 

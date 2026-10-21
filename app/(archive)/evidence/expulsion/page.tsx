@@ -73,7 +73,7 @@ export default function ExpulsionPage() {
             </div>
 
             <Email
-                from="[Program Manager]"
+                from="Allison Watson"
                 to="Sam White"
                 date="March 26, 2025"
             >
@@ -88,7 +88,7 @@ As part of your dismissal, any future assignments you had scheduled will be canc
 Thank you for the time you did dedicate to support our state park system and state park properties. I wish you the best in any other volunteer opportunities you may pursue with other organizations. Please find an official letter of dismissal and your volunteer agreement attached to this email.
 
 Respectfully,
-[Program Manager]`}</pre>
+Allison Watson`}</pre>
             </Email>
 
             <div className="mt-4">

@@ -435,6 +435,7 @@ export const RUNGS: Rung[] = [
             {
                 id: "program",
                 note: { text: "On July 8, 2026, the volunteer declined to pursue his 42 U.S.C. § 1983 claim against her personally.", src: { u: "01KX28CF90H15CJVJRJWKXCP5N" } },
+                name: "Allison Watson",
                 title: "Program Manager",
                 fn: "Runs the volunteer program across every state park. The volunteer’s recourse when a park fails them: hears the complaint, protects the volunteer, holds the park to the standard.",
                 real: "Writes the agency’s file on the volunteer. She treated his recording as the violation, ratified the dismissal, and extended it statewide. Her “timeline of events”, 193 minutes of editing across 23 revisions, went to the police.",

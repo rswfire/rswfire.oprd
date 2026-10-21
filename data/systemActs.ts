@@ -842,7 +842,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JQ5940787F53DN2H5VCJGSP4",
                 "t": "oprd"
             },
-            "title": "[Program Manager], Reply to Request for Review of Dismissal"
+            "title": "Allison Watson, Reply to Request for Review of Dismissal"
         },
         {
             "d": "2025-03-25",
@@ -924,7 +924,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01JQA2WM60RX7MSJQ5QPFD8AR2",
                 "t": "oprd"
             },
-            "title": "[Program Manager], Oregon Parks and Recreation Department, Letter of Dismissal and Exclusion"
+            "title": "Allison Watson, Oregon Parks and Recreation Department, Letter of Dismissal and Exclusion"
         },
         {
             "d": "2025-03-26",
@@ -1115,7 +1115,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-01-21",
             "when": "January 21, 2026",
-            "text": "Entered in the “timeline of events”, by its last edit: “08/2025 – 01/2026: Additional email received from Sam White to [Program Manager], Honeyman staff, and Lisa Sumption. Most are informative form Sam as to his experience and expectations and do not request a response.”",
+            "text": "Entered in the “timeline of events”, by its last edit: “08/2025 – 01/2026: Additional email received from Sam White to Allison Watson, Honeyman staff, and Lisa Sumption. Most are informative form Sam as to his experience and expectations and do not request a response.”",
             "src": {
                 "href": "/sunlight/#08-2025-01-2026"
             }
@@ -2695,7 +2695,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-02-13",
             "when": "February 13, 2026",
-            "text": "Wrote to the volunteer: “The messages you have recently sent to OPRD Statewide Programs Coordinator [Program Manager] have been forwarded to me.” And: “Effective immediately, please direct any inquiries or additional information exclusively to me”. And: “Please do not communicate further with Ms. [Program Manager] or other OPRD staff, and please do not expect any responses from them.”",
+            "text": "Wrote to the volunteer: “The messages you have recently sent to OPRD Statewide Programs Coordinator Allison Watson have been forwarded to me.” And: “Effective immediately, please direct any inquiries or additional information exclusively to me”. And: “Please do not communicate further with Ms. Watson or other OPRD staff, and please do not expect any responses from them.”",
             "src": {
                 "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
                 "t": "oprd"

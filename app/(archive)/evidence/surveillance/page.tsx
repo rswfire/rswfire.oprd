@@ -198,11 +198,11 @@ Have a great afternoon!
 
             <Email
                 from="Robert Samuel White"
-                to="[Program Manager]"
+                to="Allison Watson"
                 date="May 26, 2025 7:08 PM"
                 subject="For the Record - March 20 Field Encounter"
             >
-<pre className="whitespace-pre-wrap">{`[Program Manager],
+<pre className="whitespace-pre-wrap">{`Allison,
 
 This email chain may appear mundane on the surface.
 It is not.
@@ -311,7 +311,7 @@ Something I endured for two months. I just wanted to get through my time there s
 This is what [Park Supervisor] did to someone who was doing his job.
 Unpaid. Alone. Professional.
 
-And this is what [Program Manager] did in response: nothing.
+And this is what Allison did in response: nothing.
 No inquiry. No accountability. Just silence.
 
 That silence is now part of the record.
@@ -358,7 +358,7 @@ https://rswfire.com/honeyman
 
             <Email
                 from="Robert Samuel White"
-                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
+                to="[Park Supervisor], [Park Manager], Allison Watson, [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 2, 2026 10:18 AM"
                 subject="Fw: The Setup You Now Own"
@@ -385,7 +385,7 @@ I assume he's told you about the encounter. If he hasn't, you might want to ask 
 
             <Email
                 from="Robert Samuel White"
-                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
+                to="[Park Supervisor], [Park Manager], Allison Watson, [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 2, 2026 12:29 PM"
                 subject="Re: The Setup You Now Own"
@@ -416,14 +416,14 @@ But now I know who he is.
 
             <Email
                 from="Robert Samuel White"
-                to="[Park Supervisor], [Park Manager], [Program Manager], [Volunteer Services Lead]"
+                to="[Park Supervisor], [Park Manager], Allison Watson, [Volunteer Services Lead]"
                 cc="JR Collier, Stefanie Coons, OPRC Public Comment, Tina for Oregon, Lisa Sumption"
                 date="March 11, 2026"
                 subject="Re: The Setup You Now Own"
             >
 <pre className="whitespace-pre-wrap">{`Your man lost something sacred by participating in what you asked of him. He lost access to something he loved.
 
-Because just like [Park Manager], just like [Program Manager], just like Lisa, just like JR, just like Stefanie, they walked into something they didn't understand.
+Because just like [Park Manager], just like Allison, just like Lisa, just like JR, just like Stefanie, they walked into something they didn't understand.
 
 Because they took one lying supervisor's word over actual evidence that proved it was a lie.
 

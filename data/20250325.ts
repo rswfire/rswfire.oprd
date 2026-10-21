@@ -28,7 +28,7 @@ export const EXPULSION_TRANSMISSION: TransmissionData = {
         },
         {
             timestamp: "[0:58 — 1:08]",
-            quote: "Hello Sam. / Hi Samuel, this is [Program Manager] calling from Oregon Parks. Hi [Program Manager], thank you for taking the time to speak with me today.",
+            quote: "Hello Sam. / Hi Samuel, this is Allison calling from Oregon Parks. Hi Allison, thank you for taking the time to speak with me today.",
             commentary: "The call begins with professional courtesy on both sides. He thanks her for taking the time to speak with him. He means it. He is nervous and hopeful and he is choosing to lead with respect.",
         },
         {

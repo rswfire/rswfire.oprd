@@ -54,7 +54,7 @@ export const STRUCTURAL_GAP_TRANSMISSION: TransmissionData = {
         },
         {
             timestamp: "[4:25 — 5:35]",
-            quote: "The regional coordinator, her name is [Program Manager], she signed a letter stating the reason that I was expelled from all of Oregon State Parks is because of protected speech. It's in writing. She gave no other reasons... she tried to characterize me as paranoid and delusional for 30 minutes, but she couldn't use any of it cuz I'm obviously not. So, she didn't put it in the letter. She put the real reason.",
+            quote: "The regional coordinator, her name is Allison Watson, she signed a letter stating the reason that I was expelled from all of Oregon State Parks is because of protected speech. It's in writing. She gave no other reasons... she tried to characterize me as paranoid and delusional for 30 minutes, but she couldn't use any of it cuz I'm obviously not. So, she didn't put it in the letter. She put the real reason.",
             commentary: "He walks through the logic of his own case on a trail in the rain. The program manager tried to build a narrative of instability. She couldn't sustain it. So the letter says what it says. That is the case. He knows it cold.",
         },
         {

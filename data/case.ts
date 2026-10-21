@@ -158,7 +158,7 @@ export const CASE_CARDS: CaseCard[] = [
         typeLabel: "Letter",
         title: "The deputy director tries to isolate me.",
         body: "In January, I sent the agency formal notice of First Amendment retaliation: dismissal and statewide exclusion for protected speech. Three weeks later the Deputy Director answered without addressing a word of it. He instructed me to stop writing to agency staff. I refused the same day. No official has authority over what a citizen may say to his own government.",
-        quote: "Please do not communicate further with [Program Manager] or other OPRD staff, and please do not expect any responses from them.",
+        quote: "Please do not communicate further with Ms. Watson or other OPRD staff, and please do not expect any responses from them.",
         ulid: "01KHCRFBDG3DMYZSSTGV5WC7E7",
         href: "/evidence/containment",
         hrefLabel: "Evidence: Containment",

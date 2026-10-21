@@ -128,9 +128,9 @@ export default function ContainmentPage() {
             >
 <pre className="whitespace-pre-wrap">{`Dear Mr. White (rsw@rswfire.com),
 
-The messages you have recently sent to [Program Manager] have been forwarded to me.  We understand you are not satisfied with the decision to end your volunteer service with OPRD.  The agency also recognizes that you may be filing a legal action.
+The messages you have recently sent to OPRD Statewide Programs Coordinator Allison Watson have been forwarded to me.  We understand you are not satisfied with the decision to end your volunteer service with OPRD.  The agency also recognizes that you may be filing a legal action.
 
-In light of this, OPRD is implementing a structured process for correspondence related to this matter. Effective immediately, please direct any inquiries or additional information exclusively to me,  @ jr.collier@oprd.oregon.gov .  Please do not communicate further with [Program Manager] or other OPRD staff, and please do not expect any responses from them.
+In light of this, OPRD is implementing a structured process for correspondence related to this matter. Effective immediately, please direct any inquiries or additional information exclusively to me,  @ jr.collier@oprd.oregon.gov .  Please do not communicate further with Ms. Watson or other OPRD staff, and please do not expect any responses from them.
 When and if you decide to file any legal action, your correspondence will be forwarded to our Department of Justice counsel.
 
 Sincerely,

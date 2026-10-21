@@ -110,7 +110,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
             },
             {
                 "t": "record",
-                "md": "False, and the date is impossible. [I applied for the position the night of February 12.](https://oprdvolunteerabuse.org/record/oprd/01JKYSTM48Y0QK5CM8QSD0QC6X/) [I did not withdraw it until February 16.](https://oprdvolunteerabuse.org/record/oprd/01JM9193N021MEHRXWSR30NWT5/) The first time I raised the withdrawal with the volunteer services lead was February 19, when [I emailed him](https://oprdvolunteerabuse.org/record/oprd/01JMFWR8VREQS149ZWH8ENVVM3/): \"could you stop by my campsite? There’s something I’d like to talk to you about. I will tell you why I withdrew my application.\"\n\nI asked him because of the night before. He came to the welcome center and spent ninety minutes on himself. [I named the exchange to him later](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"You elicited trust through reciprocal vulnerability. You spent 90 minutes talking about yourself—your background, your concerns, your perspectives. The following day, I reciprocated. That is how trust-building works.\"\n\nBecause of that night, before the walk, I told him explicitly that our relationship was not romantic. [I did this because I have had to navigate the distortions of straight men my entire life.](https://oprdvolunteerabuse.org/record/oprd/01KQV3VJPGP9RDYAQZ3HZVXEYF/)\n\nOn the walk I told him why I was there. [What he did with that](https://oprdvolunteerabuse.org/record/oprd/01JNBNSRN04NEM4MEZJG40Q3N5/): \"When I finally opened up to you about why I’m here, what I sacrificed to be here, and why this matters to me, you responded by trying to manage my perception instead of actually listening.\" [What I actually said](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"in authoritarian contexts, people like you—institutional actors with authority—would be the mechanism through which targeting of queer people would occur.\"\n\nHe took a private disclosure from a queer volunteer under his authority and turned it into a fabricated psychological profile used to justify my removal. [I named it to him](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"You took what I shared in confidence and disclosed it to management. That information was then weaponized by [Program Manager] to pathologize my character during dismissal proceedings.\"\n\nI refuted it to the program manager on the recorded March 25 call: \"I have never said the world is ending. What I see is instability in our system\" ([8:54](https://oprdvolunteerabuse.org/evidence/expulsion/?t=8:54)). That night [I wrote to her about the welcome center](https://oprdvolunteerabuse.org/record/oprd/01JQ8HA5JRRCWX12W7B52YRVAT/): \"[Volunteer Services Lead]’s behavior, including doing stretches in front of me during a long shift at the Welcome Center, created discomfort and blurred boundaries.\"\n\nThe program manager kept the fabricated quotation in this document for another ten months, and it went to the Oregon State Police."
+                "md": "False, and the date is impossible. [I applied for the position the night of February 12.](https://oprdvolunteerabuse.org/record/oprd/01JKYSTM48Y0QK5CM8QSD0QC6X/) [I did not withdraw it until February 16.](https://oprdvolunteerabuse.org/record/oprd/01JM9193N021MEHRXWSR30NWT5/) The first time I raised the withdrawal with the volunteer services lead was February 19, when [I emailed him](https://oprdvolunteerabuse.org/record/oprd/01JMFWR8VREQS149ZWH8ENVVM3/): \"could you stop by my campsite? There’s something I’d like to talk to you about. I will tell you why I withdrew my application.\"\n\nI asked him because of the night before. He came to the welcome center and spent ninety minutes on himself. [I named the exchange to him later](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"You elicited trust through reciprocal vulnerability. You spent 90 minutes talking about yourself—your background, your concerns, your perspectives. The following day, I reciprocated. That is how trust-building works.\"\n\nBecause of that night, before the walk, I told him explicitly that our relationship was not romantic. [I did this because I have had to navigate the distortions of straight men my entire life.](https://oprdvolunteerabuse.org/record/oprd/01KQV3VJPGP9RDYAQZ3HZVXEYF/)\n\nOn the walk I told him why I was there. [What he did with that](https://oprdvolunteerabuse.org/record/oprd/01JNBNSRN04NEM4MEZJG40Q3N5/): \"When I finally opened up to you about why I’m here, what I sacrificed to be here, and why this matters to me, you responded by trying to manage my perception instead of actually listening.\" [What I actually said](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"in authoritarian contexts, people like you—institutional actors with authority—would be the mechanism through which targeting of queer people would occur.\"\n\nHe took a private disclosure from a queer volunteer under his authority and turned it into a fabricated psychological profile used to justify my removal. [I named it to him](https://oprdvolunteerabuse.org/record/oprd/01KC32EJP8NEFBWH0YGJKV3A4S/): \"You took what I shared in confidence and disclosed it to management. That information was then weaponized by Allison Watson to pathologize my character during dismissal proceedings.\"\n\nI refuted it to the program manager on the recorded March 25 call: \"I have never said the world is ending. What I see is instability in our system\" ([8:54](https://oprdvolunteerabuse.org/evidence/expulsion/?t=8:54)). That night [I wrote to her about the welcome center](https://oprdvolunteerabuse.org/record/oprd/01JQ8HA5JRRCWX12W7B52YRVAT/): \"[Volunteer Services Lead]’s behavior, including doing stretches in front of me during a long shift at the Welcome Center, created discomfort and blurred boundaries.\"\n\nThe program manager kept the fabricated quotation in this document for another ten months, and it went to the Oregon State Police."
             }
         ]
     },
@@ -305,7 +305,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "that [Program Manager] called me about \"the uninformed recording\" and explained that \"as a volunteer, Sam is an agent of the state and as such is held to a higher standard, so... he cannot record conversations without informing the other parties present.\""
+                "md": "that Allison Watson called me about \"the uninformed recording\" and explained that \"as a volunteer, Sam is an agent of the state and as such is held to a higher standard, so... he cannot record conversations without informing the other parties present.\""
             },
             {
                 "t": "record",
@@ -357,7 +357,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "that my email to [Program Manager] included \"a link to a public YouTube video that details his opinions of park staff, including their names,\" titled \"I Was Dismissed Without Cause: My Experience at Honeyman State Park, Oregon (OPRD).\""
+                "md": "that my email to Watson included \"a link to a public YouTube video that details his opinions of park staff, including their names,\" titled \"I Was Dismissed Without Cause: My Experience at Honeyman State Park, Oregon (OPRD).\""
             },
             {
                 "t": "record",
@@ -383,7 +383,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"[Program Manager] goes to review the video Sam shared earlier, and a second public video was posted sharing more of his opinion of the dismissal at Honeyman. The second video was later removed and is not listed on Sam's YouTube account.\""
+                "md": "\"Allison Watson goes to review the video Sam shared earlier, and a second public video was posted sharing more of his opinion of the dismissal at Honeyman. The second video was later removed and is not listed on Sam's YouTube account.\""
             },
             {
                 "t": "record",
@@ -392,11 +392,11 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         ]
     },
     {
-        "heading": "03/25/25 \u2014 the [Program Manager] call",
+        "heading": "03/25/25 \u2014 the Allison Watson call",
         "blocks": [
             {
                 "t": "says",
-                "md": "\"Engagement Programs Manager [Program Manager] has a phone call with Sam. Topics that were attempted to be addressed directly included: inappropriate conversation about the end of the world with staff and volunteers, having him explain where he sees the line between personal experience and professional experience as a park host, confirming the dismissal form Honeyman and sharing what next steps would be to determine his eligibility for the park host program. While Sam was able to express how these situations mad him feel, when pressed for the specific examples that lead him to feeling this way, it was difficult for him to provide detailed grounded references to situations, or confirm behavior that had been reported by multiple sources.\""
+                "md": "\"Engagement Programs Manager Allison Watson has a phone call with Sam. Topics that were attempted to be addressed directly included: inappropriate conversation about the end of the world with staff and volunteers, having him explain where he sees the line between personal experience and professional experience as a park host, confirming the dismissal form Honeyman and sharing what next steps would be to determine his eligibility for the park host program. While Sam was able to express how these situations mad him feel, when pressed for the specific examples that lead him to feeling this way, it was difficult for him to provide detailed grounded references to situations, or confirm behavior that had been reported by multiple sources.\""
             },
             {
                 "t": "record",
@@ -409,7 +409,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"Following the conversation with [Program Manager], Sam posts another video sharing his opinion on the phone call, 'If I'm kicked out, it will be for being me.'\""
+                "md": "\"Following the conversation with Allison Watson, Sam posts another video sharing his opinion on the phone call, 'If I'm kicked out, it will be for being me.'\""
             },
             {
                 "t": "record",
@@ -422,7 +422,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"In a phone call between [Program Manager] and Park Manager [Park Manager] confirms that he did not tell Sam to 'eat glass' in a derogatory way, but was using it as an analogy to say that feedback can be hard to accept at first, but in the long run, it makes us stronger \u2013 like eating glass.\""
+                "md": "\"In a phone call between Allison Watson and Park Manager [Park Manager] confirms that he did not tell Sam to 'eat glass' in a derogatory way, but was using it as an analogy to say that feedback can be hard to accept at first, but in the long run, it makes us stronger \u2013 like eating glass.\""
             },
             {
                 "t": "record",
@@ -435,7 +435,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "that my follow-up email to [Program Manager] made \"claims,\" and lists them: that [Park Manager] said I could leave, said eat glass aggressively, and had not given me the benefit of the doubt; that [Volunteer Services Lead] promised training that didn't happen; the [Park Supervisor] text; and that \"Management's response to him was due to him putting complaints in writing.\""
+                "md": "that my follow-up email to Watson made \"claims,\" and lists them: that [Park Manager] said I could leave, said eat glass aggressively, and had not given me the benefit of the doubt; that [Volunteer Services Lead] promised training that didn't happen; the [Park Supervisor] text; and that \"Management's response to him was due to him putting complaints in writing.\""
             },
             {
                 "t": "record",
@@ -448,7 +448,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "that [Program Manager] sent \"notification of Sam's dismissal from Volunteer Service, including a copy of the formal letter.\""
+                "md": "that Watson sent \"notification of Sam's dismissal from Volunteer Service, including a copy of the formal letter.\""
             },
             {
                 "t": "record",
@@ -487,7 +487,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"Robert Samuel Smith has sent two follow up emails... Neither email requested a response. [Program Manager] went to look to see if this was related to a new YouTube Video posted on his channel, and found that almost all of his videos had been deleted... To document what had been observed on the videos by multiple OPRD staff, the previous videos posted included negative remarks about Honeyman park staff, [Park Supervisor], [Park Manager], and [Volunteer Services Lead], as well remarks about [Program Manager].\""
+                "md": "\"Robert Samuel Smith has sent two follow up emails... Neither email requested a response. Allison went to look to see if this was related to a new YouTube Video posted on his channel, and found that almost all of his videos had been deleted... To document what had been observed on the videos by multiple OPRD staff, the previous videos posted included negative remarks about Honeyman park staff, [Park Supervisor], [Park Manager], and [Volunteer Services Lead], as well remarks about Allison Watson.\""
             },
             {
                 "t": "record",
@@ -500,7 +500,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"Additional email received from Sam White to [Program Manager], Honeyman staff, and Lisa Sumption. Most are informative form Sam as to his experience and expectations and do not request a response.\""
+                "md": "\"Additional email received from Sam White to Allison Watson, Honeyman staff, and Lisa Sumption. Most are informative form Sam as to his experience and expectations and do not request a response.\""
             },
             {
                 "t": "record",
@@ -513,7 +513,7 @@ export const SUNLIGHT_SECTIONS: SunlightSection[] = [
         "blocks": [
             {
                 "t": "says",
-                "md": "\"Sam White sends an email threatening to sue [Program Manager].\""
+                "md": "\"Sam White sends an email threatening to sue Allison Watson.\""
             },
             {
                 "t": "record",
