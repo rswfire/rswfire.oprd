@@ -21,6 +21,7 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|follow-up on our march 25 call": "/records/oprd/threads/follow-up-on-our-march-25-call.pdf",
     "oprd|follow-up: public records request response \u2013 april 14, 2026 letter": "/records/oprd/threads/follow-up-public-records-request-response-april-14-2026-lett.pdf",
     "oprd|following up on the power outage": "/records/oprd/threads/following-up-on-the-power-outage.pdf",
+    "oprd|for the record": "/records/oprd/threads/for-the-record.pdf",
     "oprd|fw-march-31-2026": "/records/oprd/threads/march-31.pdf",
     "oprd|fyi": "/records/oprd/threads/fyi.pdf",
     "oprd|gate": "/records/oprd/threads/gate.pdf",

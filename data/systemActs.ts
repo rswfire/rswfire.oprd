@@ -1615,6 +1615,16 @@ export const ACTS: Record<string, Act[]> = {
             },
             "noreply": true,
             "title": "Notice that the testimony will keep changing"
+        },
+        {
+            "d": "2026-10-21",
+            "when": "October 21, 2026",
+            "text": "The volunteer returns her name to Key Individuals, copying the OPRD Commissioners and Governor Kotek.",
+            "src": {
+                "u": "01M5GEGNYGQPAMZHC1BQG6EX9T",
+                "t": "oprd"
+            },
+            "title": "For the Record"
         }
     ],
     "director": [
@@ -4846,6 +4856,16 @@ export const ACTS: Record<string, Act[]> = {
                 "page": 1,
                 "from": "Oregon State Police"
             }
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer sends Key Individuals to the public records officers of four agencies, this office among them.",
+            "src": {
+                "u": "01M5AS0FMRV637ZSFKFAQPC8RE",
+                "t": "osp"
+            },
+            "title": "Key Individuals"
         }
     ],
     "osp-risk": [
@@ -5130,6 +5150,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "oprd"
             },
             "title": "Both estimates disputed, and neither will be paid"
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer sends Key Individuals to the public records officers of four agencies, this office among them.",
+            "src": {
+                "u": "01M5AS0FMR8MWJ4QMCCY3FBC1H",
+                "t": "oprd"
+            },
+            "title": "Key Individuals"
         }
     ],
     "governor": [
@@ -5404,6 +5434,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "das"
             },
             "title": "DAS Public Records, Final Response, R000911"
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer sends Key Individuals to the public records officers of four agencies, this office among them.",
+            "src": {
+                "u": "01M5AS0FMR0QEBWS5W4CEAS9V6",
+                "t": "das"
+            },
+            "title": "Key Individuals"
         }
     ],
     "das-communications-director": [
@@ -5508,6 +5548,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "doj"
             },
             "title": "David Pitcher, Oregon Department of Justice, Fee Waiver Denial and Estimate"
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer sends Key Individuals to the public records officers of four agencies, this office among them.",
+            "src": {
+                "u": "01M5AS0FMRVPPPKS00CK2BS7KM",
+                "t": "doj"
+            },
+            "title": "Key Individuals"
         }
     ],
     "deputy-attorney-general": [
@@ -5740,6 +5790,26 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "governor"
             },
             "title": "Key Individuals"
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer copies his office on Key Individuals, sent to the public records officers of four agencies.",
+            "src": {
+                "u": "01M5AS0FMRVPPPKS00CK2BS7KM",
+                "t": "doj"
+            },
+            "title": "Key Individuals"
+        },
+        {
+            "d": "2026-10-21",
+            "when": "October 21, 2026",
+            "text": "Todd Albert writes that the requests are with four state agencies, “Parks, State Police, DOJ, and the Governor’s office”: “As a two person agency with limited resources, I can only offer assistance with one request at a time. With whom would you like me to follow up with first?”",
+            "src": {
+                "u": "01M5G1X2X8EEZJZ8R1ZNQRF8CX",
+                "t": "governor"
+            },
+            "title": "Todd Albert, Public Records Advocate, Reply re Four Agencies"
         }
     ],
     "public-records-counsel": [

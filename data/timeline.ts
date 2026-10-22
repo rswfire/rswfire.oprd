@@ -866,6 +866,22 @@ export const TIMELINE: TimelineSection[] = [
                     ". The Forest Service kept me and referred its officer, and that is the only accountability found anywhere in this record.",
                 ],
             },
+            {
+                d: "2026-10-19", date: "October 19, 2026",
+                body: [
+                    "I ",
+                    { doc: "01M5AS0FMR8MWJ4QMCCY3FBC1H", thread: "oprd", t: "send Key Individuals to the public records officers of four agencies" },
+                    ", copying the Public Records Advocate.",
+                ],
+            },
+            {
+                d: "2026-10-21", date: "October 21, 2026",
+                body: [
+                    "I ",
+                    { doc: "01M5GEGNYGQPAMZHC1BQG6EX9T", thread: "oprd", t: "return Allison Watson’s name to Key Individuals" },
+                    ", copying the OPRD Commissioners and Governor Kotek.",
+                ],
+            },
         ],
     },
 ];
