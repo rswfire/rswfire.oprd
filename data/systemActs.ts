@@ -3627,6 +3627,51 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "osp"
             },
             "title": "A statement about record keeping"
+        },
+        {
+            "d": "2026-10-21",
+            "when": "October 21, 2026",
+            "text": "Captain Kyle Kennedy is sent a letter, copying Governor Kotek: “How is what you did different from swatting someone?” No reply.",
+            "src": {
+                "u": "01M5GV66GG1MZ43HTE85PGVVE6",
+                "t": "osp"
+            },
+            "title": "Question"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "Captain Kyle Kennedy is sent a letter, copying Superintendent Casey Codding and Governor Kotek: “Did you know a knock and talk is lawful only when an officer comes to the door the same way any member of the public could?” No reply.",
+            "src": {
+                "u": "01M5JCS5Q0B9H45WHDSX8BYT1X",
+                "t": "osp"
+            },
+            "title": "No member of the public could have reached my door"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "Captain Kyle Kennedy is sent “I await your answer,” with a photograph of the signs: “U.S. Forest Service Restricted Access Area, AUTHORIZED ENTRY ONLY.” No reply.",
+            "src": {
+                "u": "01M5JE6VM85QM8G61A66ABKQ0N",
+                "t": "osp"
+            },
+            "title": "I await your answer",
+            "att": {
+                "label": "Photograph of the signs",
+                "href": "/records/osp/attachments/01m5je6vm85qm8g61a66abkq0n-5022.jpg",
+                "from": "Robert Samuel White"
+            }
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "Captain Kyle Kennedy is copied on public records request PR44279: every threat assessment requested by or routed through the Government and Media Relations section since January 1, 2023.",
+            "src": {
+                "u": "01M5JGN4GGQX1SS6GYNYG0NGA5",
+                "t": "osp"
+            },
+            "title": "Public records request, PR44279"
         }
     ],
     "lieutenant": [
@@ -4866,6 +4911,26 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "osp"
             },
             "title": "Key Individuals"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "OSP Public Records acknowledges the request as PR44279: “A search will be conducted to determine if OSP is the custodian of the requested record(s).”",
+            "src": {
+                "u": "01M5JGHV1GQWQ4DDQ1AH2M7B5B",
+                "t": "osp"
+            },
+            "title": "OSP Public Records, Acknowledgment, PR44279"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "The volunteer sends the request to Central Records in full: “The automated acknowledgement does not include the contents of the request so I am reproducing it below.”",
+            "src": {
+                "u": "01M5JGN4GGQX1SS6GYNYG0NGA5",
+                "t": "osp"
+            },
+            "title": "Public records request, PR44279"
         }
     ],
     "osp-risk": [
@@ -5810,6 +5875,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "governor"
             },
             "title": "Todd Albert, Public Records Advocate, Reply re Four Agencies"
+        },
+        {
+            "d": "2026-10-21",
+            "when": "October 21, 2026",
+            "text": "The volunteer answers that ORS 192.464(7) requires facilitated dispute resolution to be completed within 21 days, by November 4, and sets three conditions for agreeing to an extension: each matter proceeds under ORS 192.464 by name, a written schedule for each, and each public body’s agreement in writing.",
+            "src": {
+                "u": "01M5GXGHDGA7KGQC495EXNDXZT",
+                "t": "governor"
+            },
+            "title": "Conditions for an extension"
         }
     ],
     "public-records-counsel": [

@@ -177,7 +177,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
     {
         slug: "osp",
         agency: "Oregon State Police",
-        refs: "PR27478 · PR36445",
+        refs: "PR27478 · PR36445 · PR44279",
         status: "Partial acknowledgment, asserted privileges.",
         demanded: {
             total: "$16,315.00",
@@ -197,6 +197,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "July 19: the recorded communications for March 24 — dispatch audio, radio traffic among the responding units, and any mobile data terminal messaging between them",
             "July 29: any video or audio recording of event SP26097765 — the travel to the Siltcoos Work Center, the contact at the gate, the travel away from it, and any recording made by the occupants of either vehicle",
             "PR36445: the fee-and-exemption letter template, its versions, the instructions governing its use, and the letters issued on it",
+            "PR44279: every threat assessment requested by or routed through the Government and Media Relations section since January 1, 2023, every dispatch event opened at its request, every referral it sent on to the Criminal Investigations Division, and the policies governing threat assessments and knock and talk contacts",
         ],
         claims: [
             "April 3, 2026, same day as the request: “The Department has conducted a search which identified no records responsive to your request.”",
@@ -312,6 +313,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-28", date: "September 28, 2026", event: "Exemptions letter, after the September 25 deadline: ORS 192.345(23) for the Hasty Form, ORS 192.355 for the DMV record and ReportRobertWhite, ORS 192.345(40) for the body-worn camera video; “We do not have call logs. We did not locate any recorded phone calls.”" },
             { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to [OSP Public Records 1]: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
+            { d: "2026-10-22", date: "October 22, 2026", event: "PR44279 filed on the Department's form, with a full fee waiver request; acknowledged the same day" },
         ],
     },
     {

@@ -5,6 +5,7 @@
 
 export const CHAIN_PDFS: Record<string, string> = {
     "governor|escalating-retaliation-2026": "/records/governor/threads/escalating-retaliation-at-a-federal-work-center-may-4-2026.pdf",
+    "governor|pra-extension-2026": "/records/governor/threads/todd-albert-public-records-advocate-reply-re-four-agencies.pdf",
     "oprd|42 u.s.c. \u00a7 1983": "/records/oprd/threads/42-u-s-c-1983.pdf",
     "oprd|[oprd-host-volunteers-needed] april welcome center host(s) -\tbeverly beach state park": "/records/oprd/threads/oprd-host-volunteers-needed-april-welcome-center-host-s-beve.pdf",
     "oprd|[tugman volunteer services lead], reply re tugman campground host posting": "/records/oprd/threads/tugman-volunteer-services-lead-reply-re-tugman-campground-ho.pdf",
@@ -65,4 +66,6 @@ export const CHAIN_PDFS: Record<string, string> = {
     "oprd|what my resolve is built from": "/records/oprd/threads/what-my-resolve-is-built-from.pdf",
     "oprd|work schedule": "/records/oprd/threads/work-schedule.pdf",
     "oprd|you made this possible...": "/records/oprd/threads/you-made-this-possible.pdf",
+    "osp|kennedy-question-2026": "/records/osp/threads/question.pdf",
+    "osp|pr44279-2026": "/records/osp/threads/osp-public-records-acknowledgment-pr44279.pdf",
 };

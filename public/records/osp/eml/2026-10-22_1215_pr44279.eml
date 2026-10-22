@@ -1,0 +1,283 @@
+Return-Path: <rsw@rswfire.com>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id Moy2EO1g2moRwwMAjtW+MQ
+	(envelope-from <rsw@rswfire.com>)
+	for <rsw@rswfire.com>; Thu, 22 Oct 2026 19:15:57 +0000
+Received: from [IPV6:2605:59ca:35e9:2a08:4c09:3bd7:2b70:e075] (unknown [IPv6:2605:59ca:35e9:2a08:4c09:3bd7:2b70:e075])
+	by mail.rswfire.com (Postfix) with ESMTPSA id 179891F762;
+	Thu, 22 Oct 2026 19:15:56 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rswfire.com; s=mail;
+	t=1792696556;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:cc:mime-version:mime-version:content-type:content-type;
+	bh=XNrZV74sa9FG2N+NpqFitMSmUjZJRkCPUOk9n4hh6oc=;
+	b=p8kEdcX6Erufexya9aPZBxLn0wKsYXeC6ZrEUYCCnxU41M2dIOnPpyVJ2Ftq4UOv8XcsZP
+	hYhrsuxKhYCLsRYaxLBWqku7sgn+csEuGZYFWU3X6cNwQYkErNpufoAo92DBcsKeAoFmCJ
+	AkQ7f6S2wfnnxl4TvJX2AUkGW7UTC+1R21AfUVaxWY9FPT3DO0u4TXDS/nDoX+nedzaFMq
+	+35AHiIeOR6/h8EpEn90HkdQ2jtCJAmUuamhevSSkj35VwlWrD6ovE21PUCBHnN6dkibH4
+	KTzRlIqSrqL626reFUMQ+a4zGVN1zDHPm67IofPWfzNKUMHPnc4Cfs84aI5i3w==
+Content-Type: multipart/alternative;
+ boundary="------------GWoG4bo0oBKWHPw42LYLjUBt"
+Message-ID: <7fa20e7d-cc32-4518-9fa2-a522fb654272@rswfire.com>
+Date: Thu, 22 Oct 2026 12:15:54 -0700
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: central.records@osp.oregon.gov
+Cc: kyle.kennedy@osp.oregon.gov, casey.codding@osp.oregon.gov,
+ governor.kotek@oregon.gov
+From: Robert Samuel White <rsw@rswfire.com>
+Subject: PR44279
+
+This is a multi-part message in MIME format.
+--------------GWoG4bo0oBKWHPw42LYLjUBt
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+I submitted the following public records request through your 
+forms.osp.oregon.gov system. The automated acknowledgement does not 
+include the contents of the request so I am reproducing it below.
+
+*Robert Samuel White*
+rswfire.com <https://rswfire.com/>
+oprdvolunteerabuse.org <https://oprdvolunteerabuse.org/>
+autonomyrealms.com <https://autonomyrealms.com/>
+
+
+To the Public Records Unit, Oregon State Police:
+
+This is a request under the Oregon Public Records Law, ORS 192.314. The 
+period for items 1 through 4 is January 1, 2023 to the present.
+
+I request the following.
+
+ 1. Every request for a threat assessment made by, or routed through,
+    the Government and Media Relations section, with its date, the
+    agency or person it came from, and the unit or officer it was
+    assigned to.
+ 2. Every computer-aided dispatch (CAD) event opened at the request of,
+    or after a referral from, the Government and Media Relations
+    section, with its date and event type.
+ 3. Every referral from another state agency to the Government and Media
+    Relations section that the section sent on to the Criminal
+    Investigations Division, with its date, the referring agency, and
+    the unit or officer it was assigned to.
+ 4. In the alternative to items 1 through 3, any existing record,
+    report, log, or tracking system that counts or lists them.
+ 5. Every policy, directive, general order, procedure, and training
+    material in effect at any time since January 1, 2023 that governs:
+    (a) when the Government and Media Relations section may refer a
+    matter to the Criminal Investigations Division or request a threat
+    assessment;
+    (b) threat assessments of members of the public;
+    (c) “knock and talk” contacts, including any guidance on approaching
+    a residence behind a locked gate, on posted property, or on
+    restricted federal land, or with another agency’s help to gain access.
+
+
+I request records in their native electronic format with metadata 
+intact, delivered electronically. Rolling production is welcome.
+
+For each record withheld or redacted, identify the record, cite the 
+specific exemption relied on, and state whether the public interest 
+balancing that the exemption requires was performed.
+
+*Fee waiver.*I request a full waiver under ORS 192.324(5). Making these 
+records available primarily benefits the general public.
+
+ 1. *Identity of the requester.* I publish oprdvolunteerabuse.org, a
+    public archive of government records. Every production I receive is
+    published there in full, as produced, each document at its own
+    permanent address, open to anyone without an account or a fee. This
+    request is not for my own file. It is for the State Police’s
+    practice: every instance of it since January 1, 2023.
+ 2. *Purpose.* The purpose is publication. Every record produced will be
+    published in full, unedited, the day it is received. Anyone will be
+    able to see which agencies refer members of the public to the State
+    Police’s public relations office, what those people were accused of,
+    what officers did next, and how each matter ended.
+ 3. *Character of the information.* The Government and Media Relations
+    section is the State Police’s press and government relations office.
+    It is not an investigative unit. These records show whether state
+    agencies use that office to send criminal investigators and threat
+    assessments toward members of the public, how often, and against
+    whom. They show whether officers came to those people’s homes, and
+    how many of those matters ended with no crime charged. Item 5 is the
+    written rule for a warrantless approach to a home: when officers may
+    cross a locked gate or posted property, enter restricted federal
+    land, or use another agency to gain access. Every resident of Oregon
+    is subject to these rules.
+ 4. *Whether the information is already public.* It is not. No public
+    source reports a single instance of the Government and Media
+    Relations section requesting a threat assessment or referring a
+    member of the public to the Criminal Investigations Division. The
+    instances exist only in the State Police’s own files. If any policy
+    requested under item 5 is already published, identify where, and I
+    will withdraw that part of the request.
+ 5. *Ability to disseminate.* The State Police production under PR27478
+    was published in full on September 3, 2026, the day it was received,
+    at
+    https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/,
+    where it can be read today. Every prior production in my matters has
+    been published the same way.
+
+If any part of the fee is not waived, reduce it as ORS 192.324(5) 
+provides, state in writing for each of these five factors why it does or 
+does not weigh in favor of a waiver, and give an itemized estimate by 
+task and hourly rate before any work begins.
+
+Robert Samuel White
+P.O. Box 334, Reedsport, Oregon 97467
+rswfire.com
+oprdvolunteerabuse.org
+autonomyrealms.com
+
+
+--------------GWoG4bo0oBKWHPw42LYLjUBt
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p>I submitted the following public records request through your
+      forms.osp.oregon.gov system. The automated acknowledgement does
+      not include the contents of the request so I am reproducing it
+      below.</p>
+    <p><span style="color: rgb(0, 0, 0);"><b>Robert Samuel White</b><br>
+      </span><span style="color: rgb(200, 38, 19);"><a
+          href="https://rswfire.com/"
+          id="OWAcf37c3e2-6874-f58a-6376-01a2b4c8e973"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://rswfire.com" rel="noopener noreferrer"
+          data-linkindex="0" style="color: rgb(200, 38, 19);">rswfire.com</a></span><span
+        style="color: rgb(0, 0, 0);"><br>
+      </span><span style="color: rgb(12, 136, 42);"><a
+          href="https://oprdvolunteerabuse.org/"
+          id="OWAd48abf07-7b68-8e77-a053-4244fa5e6a31"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://oprdvolunteerabuse.org"
+          rel="noopener noreferrer" data-linkindex="1"
+          style="color: rgb(12, 136, 42);">oprdvolunteerabuse.org</a></span><span
+        style="color: rgb(0, 0, 0);"><br>
+      </span><span style="color: rgb(12, 100, 192);"><a
+          href="https://autonomyrealms.com/"
+          id="OWAcd586e02-76c3-ca71-96be-ee5a7b8c7525"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://autonomyrealms.com" rel="noopener noreferrer"
+          data-linkindex="2" style="color: rgb(12, 100, 192);">autonomyrealms.com</a></span></p>
+    <p><br>
+    </p>
+    <p>To the Public Records Unit, Oregon State Police:</p>
+    <p>This is a request under the Oregon Public Records Law, ORS
+      192.314. The period for items 1 through 4 is January 1, 2023 to
+      the present.</p>
+    <p>I request the following.</p>
+    <ol>
+      <li>Every request for a threat assessment made by, or routed
+        through, the Government and Media Relations section, with its
+        date, the agency or person it came from, and the unit or officer
+        it was assigned to.</li>
+      <li>Every computer-aided dispatch (CAD) event opened at the
+        request of, or after a referral from, the Government and Media
+        Relations section, with its date and event type.</li>
+      <li>Every referral from another state agency to the Government and
+        Media Relations section that the section sent on to the Criminal
+        Investigations Division, with its date, the referring agency,
+        and the unit or officer it was assigned to.</li>
+      <li>In the alternative to items 1 through 3, any existing record,
+        report, log, or tracking system that counts or lists them.</li>
+      <li>Every policy, directive, general order, procedure, and
+        training material in effect at any time since January 1, 2023
+        that governs:<br>
+        (a) when the Government and Media Relations section may refer a
+        matter to the Criminal Investigations Division or request a
+        threat assessment;<br>
+        (b) threat assessments of members of the public;<br>
+        (c) “knock and talk” contacts, including any guidance on
+        approaching a residence behind a locked gate, on posted
+        property, or on restricted federal land, or with another
+        agency’s help to gain access.</li>
+    </ol>
+    <div><br>
+    </div>
+    <p>I request records in their native electronic format with metadata
+      intact, delivered electronically. Rolling production is welcome.</p>
+    <p>For each record withheld or redacted, identify the record, cite
+      the specific exemption relied on, and state whether the public
+      interest balancing that the exemption requires was performed.</p>
+    <div>
+      <p><strong><span>Fee waiver.</span></strong><span> I request a
+          full waiver under ORS </span><span>192.324(5). Making these
+          records available primarily </span><span>benefits the general
+          public.</span></p>
+      <ol>
+        <li><strong>Identity of the requester.</strong> I publish
+          oprdvolunteerabuse.org, a public archive of government <span>records.
+            Every production I receive is published there in </span><span>full,
+            as produced, each document at its own permanent address, </span><span>open
+            to anyone without an account or a fee. This request is not </span><span>for
+            my own file. It is for the State Police’s practice: every </span><span>instance
+            of it since January 1, 2023.</span></li>
+        <li><strong>Purpose.</strong> The purpose is publication. Every
+          record produced will be published in full, unedited, the day
+          it is received. Anyone will be able to see which agencies
+          refer members of the public to the State Police’s public
+          relations office, what those people were accused of, what
+          officers did next, and how each matter ended.</li>
+        <li><strong>Character of the information.</strong> The
+          Government and Media Relations section is the State Police’s
+          press and government relations office. It is not an
+          investigative unit. These records show whether state agencies
+          use that office to send criminal investigators and threat
+          assessments toward members of the public, how often, and
+          against whom. They show whether officers came to those
+          people’s homes, and how many of <span>those matters ended
+            with no crime charged. Item 5 is the written </span><span>rule
+            for a warrantless approach to a home: when officers may </span><span>cross
+            a locked gate or posted property, enter restricted federal </span><span>land,
+            or use another agency to gain access. Every resident of </span><span>Oregon
+            is subject to these rules.</span></li>
+        <li><strong>Whether the information is already public.</strong>
+          It is not. No public source reports a single instance of the
+          Government and Media Relations section requesting a threat
+          assessment or <span>referring a member of the public to the
+            Criminal Investigation</span><span>s Division. The instances
+            exist only in the State Police’s </span><span>own files. If
+            any policy requested under item 5 is already </span><span>published,
+            identify where, and I will withdraw that part of </span><span>the
+            request.</span></li>
+        <li><strong>Ability to disseminate.</strong> The State Police
+          production under PR27478 was published <span>in full on
+            September 3, 2026, the day it was received, at </span><span><a
+href="https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/"
+              target="_blank" class="moz-txt-link-freetext">https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/</a></span><span>,
+            where it can be read today. Every </span><span>prior
+            production in my matters has been published the same </span><span>way.</span></li>
+        <br>
+      </ol>
+    </div>
+    <div>
+      <p>If any part of the fee is not waived, reduce it as ORS
+        192.324(5) provides, state in writing for each of these five
+        factors why it does or does not weigh in favor of a waiver, and
+        <span>give an itemized </span><span>estimate by task and </span><span>hourly
+          rate before any </span><span>work begins.</span></p>
+    </div>
+    <p>Robert Samuel White<br>
+      P.O. Box 334, Reedsport, Oregon 97467<br>
+      rswfire.com<br>
+      oprdvolunteerabuse.org<br>
+      autonomyrealms.com</p>
+    <p><br>
+    </p>
+  </body>
+</html>
+
+--------------GWoG4bo0oBKWHPw42LYLjUBt--

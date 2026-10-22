@@ -1,0 +1,142 @@
+Return-Path: <Central.Records@osp.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id QINAFotg2mqdwgMAjtW+MQ
+	(envelope-from <Central.Records@osp.oregon.gov>)
+	for <rsw@rswfire.com>; Thu, 22 Oct 2026 19:14:19 +0000
+Received: from BL0PR0901CU002.outbound.protection.outlook.com (mail-eastusazlp170100007.outbound.protection.outlook.com [IPv6:2a01:111:f403:c100::7])
+	by mail.rswfire.com (Postfix) with ESMTPS id 73B271F762
+	for <oregon.gov@rswfire.email>; Thu, 22 Oct 2026 19:14:13 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=R/GUIvNv84dKyabPR3rwhDiOsahaZqYNFJQzERM7FcSOUnxvkHJz0ntjK4TArDwQ0k3sRiTpprnQjd1hlrmJw1ekZGOgOnTquPgpgG7fv4XAJoXu7goLTCekZRLMdC4E/sWRZYUIgAzhFY8yrzprWhHW9ELRmdmcXQruGvmbjYTeRRuNbwccZ+Ielfv+o1v2r6V9zX1+SBb6+yLu8KzpY8b9kiPJ5XuG2WSiIeQD9o97PccRsDHF9e2Qa1YPV4Istr7DZvw7oGOWJwuER25vH6v+Iu44XaNR6QwC0MxHI1vcpQuChw9VhhtkTiDDk6lkxYDwl3OsbuZJB9CX1f+LkQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=/8Eu8ItIDfQTGhBXDU9Tho95DGF0dc0fh9++M+vP7u4=;
+ b=U0bqEAwY+hMFhPR+kFexpEka7XESIp6mDa6fR5JE1vUToW0Z7xIVZBXh+Ozqv5nUD0Z+Soxbi3rhzMwy3OC7sxR1/DvkR0+LlOnXWF3mrDwd8ic5f7UYl9J2UdtEoSCzGw+sySQDHjYjT3FYByIpHdYQenrT0Cks617df6A4j/XA1gnGPqotowjC6u2sDrhaxMyi1GOcSbRb4udLLlJ0cvcxq0lYV70Sl01X7R7x7n4qrfBISYyM4Vy831Kst2g4wlJLtm0DqLFTZi7R1CkYLgX3/nUDCab2f3kCZbL0T1pf8e5L0tlFOjSY/itOCLs+qXNMJ9ikJ+vqZmknZN8iIw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 159.121.206.187) smtp.rcpttodomain=rswfire.email
+ smtp.mailfrom=osp.oregon.gov; dmarc=pass (p=none sp=none pct=100) action=none
+ header.from=osp.oregon.gov; dkim=none (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=osp.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=/8Eu8ItIDfQTGhBXDU9Tho95DGF0dc0fh9++M+vP7u4=;
+ b=pFaYAxiVtEwREQB+VSmBrBmctf+9FrMd8BUewdD5MnRxuMWt30gDlOBd6YoNLaxEG7sJ93StzzGCNT0m0Cp6IjiIy/1P7oFQQS8QWT902WU/1s6co1MgCQ1UsuatE49ClyJzlrRWOrJ7nPxqSZ8EaS7RncYRZ2CsvvQv5R6/NQzpvUuuSu/FvuO4XjVZCkEkOfYEibc9fTDj1lauAq8QF3V3w1LD/JAhB9aMsKemy8GNttE9GyM6Fo4LV4Xl9ilzQe1JZpvV1q1rP+ubj0vDNdqoSCoNSSok2Zj2WM4WJf8/V5P4lTwH9P2/mFSwE2Han5W02DmczfbnQ1AZrNh12g==
+Received: from BL0PR0901CA0010.namprd09.prod.outlook.com
+ (2603:10b6:208:1c0::20) by SA1PR09MB10473.namprd09.prod.outlook.com
+ (2603:10b6:806:368::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.16; Thu, 22 Oct
+ 2026 19:14:08 +0000
+Received: from BN7PEPF00000099.namprd09.prod.outlook.com
+ (2603:10b6:208:1c0:cafe::29) by BL0PR0901CA0010.outlook.office365.com
+ (2603:10b6:208:1c0::20) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.17 via Frontend Transport; Thu,
+ 22 Oct 2026 19:14:08 +0000
+X-MS-Exchange-Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP
+ is 159.121.206.187) smtp.mailfrom=osp.oregon.gov; dkim=none (message not
+ signed) header.d=none;dmarc=pass action=none header.from=osp.oregon.gov;
+Received-SPF: Pass (protection.outlook.com: domain of osp.oregon.gov
+ designates 159.121.206.187 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.206.187;
+ helo=mailhub.osp.state.or.us; pr=C
+Received: from mailhub.osp.state.or.us (159.121.206.187) by
+ BN7PEPF00000099.mail.protection.outlook.com (10.167.243.197) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.21.546.15 via Frontend Transport; Thu, 22 Oct 2026 19:14:07 +0000
+Received: from WPOSPEXCL08.osp.pvt (10.45.7.149) by WPOSPEXCL08.osp.pvt
+ (10.45.7.149) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.2562.46; Thu, 22 Oct
+ 2026 12:14:06 -0700
+Received: from WPOSPAPPL27 (10.45.7.111) by WPOSPEXCL08.osp.pvt (10.45.7.149)
+ with Microsoft SMTP Server id 15.2.2562.46 via Frontend Transport; Thu, 22
+ Oct 2026 12:14:06 -0700
+MIME-Version: 1.0
+From: <central.records@osp.oregon.gov>
+To: <oregon.gov@rswfire.email>
+Date: Thu, 22 Oct 2026 12:14:06 -0700
+Subject: Public Records Request Confirmation Receipt
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+Message-ID: <3a1e9aae-04cd-4825-95d2-e7aa6248ddfb@WPOSPEXCL08.osp.pvt>
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN7PEPF00000099:EE_|SA1PR09MB10473:EE_
+X-MS-Office365-Filtering-Correlation-Id: 685309d0-0f88-47c0-8e5b-08df3070a532
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|1800799024|36860700016|82310400026|23010399003|18002099003|261022105027099003|8096899003|261022075727099003|3613699012|11063799006|261021135927099003|10067099003|260925022911599003|260925021911599003|260925021311599003|56012099006;
+X-Microsoft-Antispam-Message-Info:
+	KWZiJdon+2Y6peRNBbDs1dLfIrJiEL9WjZuPRaImEMhLvXhWe87I5Buy4veGfrMF1mXY963NGrJtG94mP7xk+cdqfAAE5O8giV96M79CXMOUNcyn8lTDwCCyt+BnigHL0B300+pA/2La+KUggLuU5OiAndnzFDUH2MUyUa6m0c7zOj9ieipWqhuSGHRw5xwxJk/FlsMvZU8Z2tCKktqliUb5kUSi5G4+jEqiUceX3zGQnAy4ugpDk93fJmHLzwdJwfz0TaB5TtLzjBqYYuSCvTIsdVGmgbUkuU+1snME/tmmQLhIf6Gr6jzbTf5f7GwPvB4SDpGhSXhbbOTnekAzL86g3di2o3iog9NcItRWEoD7N16fvPDseA3LipiiRazO7daDiuzkuKaxS6UPzhiD4CRDAubMm/cAcfxePB5e9xcC/4YzAuepLwphPW4A5esWGbN5r8gd3BPFLKkKXixYqCHNbEmqmySwrZltmvsdB4NDAy+UvSXrZByNNOk1S1UYzKeFGPcOf5PGh3sl7oTrccIstkEJ9chKYQ8KqUcUbV90Q1HQBOyliH0eG7fBPbkhH6G+rjezrG9Uw/EfunwuqRm/HrBF2fregHbTJUlpiQWLncc7Y8ik7IcUj+xznKPHxxZiLWNCM2G90WDMnx1X83z4O8PTc3KjRErYpRwUX8leM7w3YA0vucpTFuLHQzj+5zuLR4zJozsD94kbW4SlOBYKgcDeYQEpZr+GS3P+mplAjPASqf/nNYz6/Yzkp/Gm
+X-Forefront-Antispam-Report:
+	CIP:159.121.206.187;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mailhub.osp.state.or.us;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(1800799024)(36860700016)(82310400026)(23010399003)(18002099003)(261022105027099003)(8096899003)(261022075727099003)(3613699012)(11063799006)(261021135927099003)(10067099003)(260925022911599003)(260925021911599003)(260925021311599003)(56012099006);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	DIA3myG9qeIOcMOC/krJN1EDMSnbDqjXaTN2ivB9XlL6um371j7ihZR0JiF5rOkCU7rXNPuaRDrZ9uXNh0WUf7+cRn8GtbZSXC9DNK9ja+xAxBEksLU62f+QQgsZiIF3T6AIStxS5W61kDQ5bE0kkeXGFqawhjTbp/Lnn6py7yMHxTiRkh6HvEINTaAlHDYwut0M48yywYqksuH9E24i4zZcIiZcgz72pfZ8Bs/FzVNbRUlh3oBrTDuvEtcCbg3p0khYm9GRXQgDFXRNso+mqT8Fg6sNGa4W5s6rX8B1oJIeCFL0V+QMkKxmxG3JjJBVXkVKYvzSyUY+TkdgEXQXzBZdwMdwrmtfp9aDvih2CYcSa1/vhER9vQk5M5gwCM/cSza6hbAlxDT7E2tmzjbjutiJWmDqBF18gODST0YZ/sdGRjcI/ysIaydS/ZM7CuP3
+X-OriginatorOrg: osp.oregon.gov
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2026 19:14:07.4319
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 685309d0-0f88-47c0-8e5b-08df3070a532
+X-MS-Exchange-CrossTenant-Id: 776738eb-4f9b-444f-bc33-4dd4e8e1a9b5
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=776738eb-4f9b-444f-bc33-4dd4e8e1a9b5;Ip=[159.121.206.187];Helo=[mailhub.osp.state.or.us]
+X-MS-Exchange-CrossTenant-AuthSource:
+	BN7PEPF00000099.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR09MB10473
+X-Spamd-Result: default: False [-0.40 / 15.00];
+	 RCVD_COUNT_FIVE(0.00)[6];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip6:2a01:111:f403:c000::/51];
+	 TO_DN_NONE(0.00)[];
+	 MIME_BASE64_TEXT_BOGUS(1.00)[];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 DKIM_TRACE(0.00)[osp.oregon.gov:?];
+	 MIME_BASE64_TEXT(0.10)[];
+	 FROM_NO_DN(0.00)[];
+	 MIME_HTML_ONLY(0.20)[];
+	 DMARC_POLICY_ALLOW(-0.50)[osp.oregon.gov,none];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:2a01:111:f000::/36, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1];
+	 R_DKIM_TEMPFAIL(0.00)[osp.oregon.gov:s=selector1]
+X-Spam-Status: No, score=-0.40
+
+PGRpdj48Zm9udCBzaXplPSIzIj5EZXBhcnRtZW50IG9mIFN0YXRlIFBvbGljZTwvZm9u
+dD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPkNlbnRyYWwgUmVjb3JkcyBTZWN0aW9u
+PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+MzU2NSBUcmVsc3RhZCBBdmUg
+U0U8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5TYWxlbSwgT1IgOTczMTc8
+L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj4oNTAzKSAzNzgtMzcyNSB4NDQ0
+NDQ8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5GQVggKDUwMykgMzc4LTYz
+MDA8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj48YnI+PC9mb250PjwvZGl2
+PjxkaXY+PGZvbnQgc2l6ZT0iMyI+PGJyPjwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNp
+emU9IjMiPjEwLzIyLzIwMjY8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj48
+YnI+PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+Uk9CRVJUIFNBTVVFTCBX
+SElURTwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPjwvZm9udD48L2Rpdj48
+ZGl2Pjxmb250IHNpemU9IjMiPlBPU1QgT0ZGSUNFIEJPWCAzMzQ8L2ZvbnQ+PC9kaXY+
+PGRpdj48Zm9udCBzaXplPSIzIj5SRUVEU1BPUlQgT1IgOTc0Njc8L2ZvbnQ+PC9kaXY+
+PGRpdj48Zm9udCBzaXplPSIzIj48YnI+PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6
+ZT0iMyI+UkVGIzogUFI0NDI3OTwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMi
+Pjxicj48L2ZvbnQ+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj5Zb3VyIHJlY29yZHMg
+cmVxdWVzdCB3YXMgcmVjZWl2ZWQgb24gMTAvMjIvMjAyNi4mbmJzcDsgQSBzZWFyY2gg
+d2lsbCBiZSBjb25kdWN0ZWQgdG8gZGV0ZXJtaW5lIGlmIE9TUCBpcyB0aGUgY3VzdG9k
+aWFuIG9mIHRoZSByZXF1ZXN0ZWQgcmVjb3JkKHMpLiZuYnNwOyBZb3Ugd2lsbCByZWNl
+aXZlIGFuIGFwcHJvcHJpYXRlIHJlc3BvbnNlIG9yIGFuIGVzdGltYXRlIG9mIGZlZXMg
+YXMgc29vbiBhcyBwcmFjdGljYWJsZS4mbmJzcDs8L2ZvbnQ+PC9kaXY+PGRpdj48Zm9u
+dCBzaXplPSIzIj48YnI+PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+VGhl
+IGF2ZXJhZ2UgcHJvY2Vzc2luZyB0aW1lIGlzIHR3byB0byB0aHJlZSB3ZWVrcy4gUGxl
+YXNlIERPIE5PVCBzdWJtaXQgYSBzZWNvbmQgcmVxdWVzdCBmb3IgdGhlIHNhbWUgcmVj
+b3JkKHMpLiZuYnNwOyBJZiB5b3UgaGF2ZSBxdWVzdGlvbnMgcmVnYXJkaW5nIHlvdXIg
+cmVxdWVzdCwgeW91IG1heSBlbWFpbCB1cyBhdCBjZW50cmFsLnJlY29yZHNAb3NwLm9y
+ZWdvbi5nb3YuPC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+PGJyPjwvZm9u
+dD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPlBsZWFzZSBpbmNsdWRlIHRoZSBSRUYg
+IyBsaXN0ZWQgYWJvdmUgaW4gYWxsIGNvbW11bmljYXRpb25zIHJlZ2FyZGluZyB5b3Vy
+IHJlcXVlc3QuJm5ic3A7PC9mb250PjwvZGl2PjxkaXY+PGZvbnQgc2l6ZT0iMyI+PGJy
+PjwvZm9udD48L2Rpdj48ZGl2Pjxmb250IHNpemU9IjMiPlNpbmNlcmVseSw8L2ZvbnQ+
+PC9kaXY+PGRpdj48Zm9udCBzaXplPSIzIj48YnI+PC9mb250PjwvZGl2PjxkaXY+PGZv
+bnQgc2l6ZT0iMyI+Q2VudHJhbCBSZWNvcmRzIFNlY3Rpb248L2ZvbnQ+PC9kaXY+
+
