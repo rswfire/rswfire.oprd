@@ -6586,7 +6586,7 @@ export const OSP_THREAD: RecordsThreadData = {
             to: "OSP Central Records; Captain Kyle Kennedy, OSP Government and Media Relations; Superintendent Casey Codding; Governor Kotek",
             kind: "request",
             title: "Public records request, PR44279",
-            summary: "Every “threat assessment” requested by or routed through the Government and Media Relations section since January 1, 2023, every referral it sent on to the Criminal Investigations Division, and the policies governing “threat assessments” and knock and talk contacts. With a full fee waiver request under ORS 192.324(5).",
+            summary: "Every “threat assessment” requested by or routed through the Government and Media Relations section since January 1, 2023, every referral it sent on to the Criminal Investigations Division, and the policies governing “threat assessments” and “knock and talk” contacts. With a full fee waiver request under ORS 192.324(5).",
             docs: [{ label: "Public records request, PR44279", href: "/records/osp/2026-10-22-pr44279.pdf" }],
             eml: "/records/osp/eml/2026-10-22_1215_pr44279.eml",
         },
