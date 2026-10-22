@@ -197,7 +197,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "July 19: the recorded communications for March 24 — dispatch audio, radio traffic among the responding units, and any mobile data terminal messaging between them",
             "July 29: any video or audio recording of event SP26097765 — the travel to the Siltcoos Work Center, the contact at the gate, the travel away from it, and any recording made by the occupants of either vehicle",
             "PR36445: the fee-and-exemption letter template, its versions, the instructions governing its use, and the letters issued on it",
-            "PR44279: every threat assessment requested by or routed through the Government and Media Relations section since January 1, 2023, every dispatch event opened at its request, every referral it sent on to the Criminal Investigations Division, and the policies governing threat assessments and knock and talk contacts",
+            "PR44279: every “threat assessment” requested by or routed through the Government and Media Relations section since January 1, 2023, every dispatch event opened at its request, every referral it sent on to the Criminal Investigations Division, and the policies governing “threat assessments” and knock and talk contacts",
         ],
         claims: [
             "April 3, 2026, same day as the request: “The Department has conducted a search which identified no records responsive to your request.”",

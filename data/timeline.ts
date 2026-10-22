@@ -868,7 +868,7 @@ export const TIMELINE: TimelineSection[] = [
             },
             {
                 d: "2026-10-19", date: "October 19 to 22, 2026", major: true,
-                title: "Allison Watson named, and every threat assessment since 2023 requested.",
+                title: "Allison Watson named, and every “threat assessment” since 2023 requested.",
                 body: [
                     "I ",
                     { doc: "01M5AS0FMR8MWJ4QMCCY3FBC1H", thread: "oprd", t: "send Key Individuals to the public records officers of four agencies" },
@@ -882,7 +882,7 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01M5JCS5Q0B9H45WHDSX8BYT1X", thread: "osp", t: "“Did you know a knock and talk is lawful only when an officer comes to the door the same way any member of the public could?”" },
                     " No member of the public could have reached my door. It sits behind a locked federal gate, posted against public access. I file ",
                     { doc: "01M5JGN4GGQX1SS6GYNYG0NGA5", thread: "osp", t: "public records request PR44279" },
-                    ": every threat assessment requested by or routed through his section since January 1, 2023, every referral it sent on to the Criminal Investigations Division, and the written rules for a knock and talk behind a locked gate.",
+                    ": every “threat assessment” requested by or routed through his section since January 1, 2023, every referral it sent on to the Criminal Investigations Division, and the written rules for a knock and talk behind a locked gate.",
                 ],
             },
         ],

@@ -3666,7 +3666,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-22",
             "when": "October 22, 2026",
-            "text": "Captain Kyle Kennedy is copied on public records request PR44279: every threat assessment requested by or routed through the Government and Media Relations section since January 1, 2023.",
+            "text": "Captain Kyle Kennedy is copied on public records request PR44279: every “threat assessment” requested by or routed through the Government and Media Relations section since January 1, 2023.",
             "src": {
                 "u": "01M5JGN4GGQX1SS6GYNYG0NGA5",
                 "t": "osp"
