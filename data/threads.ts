@@ -7228,6 +7228,25 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Reply to the Public Records Advocate", href: "/records/governor/2026-10-23-the-last-door.pdf" }],
             eml: "/records/governor/eml/2026-10-23_0929_the-last-door.eml",
         },
+        {
+            id: "records-request-to-the-advocate",
+            ulid: "01M5MY5KGGS0A14FDNM7PZBH5K",
+            chain: "pra-extension-2026",
+            flagged: true,
+            date: "October 23, 2026",
+            d: "2026-10-23",
+            time: "10:50 AM",
+            from: "Robert Samuel White",
+            to: "Todd Albert, Public Records Advocate; Office of the Public Records Advocate; Governor Kotek",
+            kind: "request",
+            title: "Public records request to the Public Records Advocate",
+            summary: "Records showing how many requests for assistance the office took to facilitated dispute resolution under ORS 192.464, how many it handled as informal mediation, and how many it declined, since January 1, 2023, with its policies on the choice. “You have written to me three times, and each time you have steered this matter informally. I would like to know whether that is how your office carries out its statutory duties.”",
+            docs: [
+                { label: "Public records request", href: "/records/governor/attachments/01m5my5kggs0a14fdnm7pzbh5k-2026-10-23-pra-records-request.pdf" },
+                { label: "Transmittal", href: "/records/governor/2026-10-23-records-request-to-the-advocate.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-10-23_1050_records-request-to-the-advocate.eml",
+        },
     ],
 };
 
