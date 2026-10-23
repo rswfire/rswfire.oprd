@@ -51,7 +51,7 @@ export default function PoliceIntimidationPage() {
                     A note on how I describe them
                 </div>
                 <p className="mt-2">
-                    Three weeks. A captain&rsquo;s order for a threat assessment. A Major Crimes
+                    Three weeks. A captain&rsquo;s order for a “threat assessment”. A Major Crimes
                     detective on an FBI task force who pulled my DMV record and sent my name to
                     the Bureau. A fusion center analyst logging the file. This archive read end
                     to end. They found no crime, and their own detective wrote it down on
@@ -137,7 +137,7 @@ export default function PoliceIntimidationPage() {
                 </p>
                 <p>
                     On March 23, Detective Jerred Nelson opened CAD event SP26096984 naming me{" "}
-                    <em>Suspect</em>, with a narrative stating the basis: sending &ldquo;concerning emails to former
+                    &ldquo;Suspect&rdquo;, with a narrative stating the basis: sending &ldquo;concerning emails to former
                     supervisors in parks department and publicly airing grievances.&rdquo; The same day he sent his
                     sergeant the &ldquo;Hasty Plan for Robert White knock and talk.&rdquo; My Forest Service
                     supervisor &ldquo;was told not to advise WHITE that FS LE was inquiring about his

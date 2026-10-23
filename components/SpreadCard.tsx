@@ -41,7 +41,7 @@ const BRANCHES = [
         agency: "Oregon State Police",
         unit: "Criminal Investigations",
         date: "March 4 – 24, 2026",
-        body: "A threat assessment is ordered on March 4 and handed down a captain, a lieutenant, a sergeant, to a detective. On March 23 a dispatch event names him a suspect for “concerning emails to former supervisors in parks department and publicly airing grievances.”",
+        body: "A “threat assessment” is ordered on March 4 and handed down a captain, a lieutenant, a sergeant, to a detective. On March 23 a dispatch event names him “Suspect” for “concerning emails to former supervisors in parks department and publicly airing grievances.”",
         href: "/records/osp",
     },
     {
@@ -66,7 +66,7 @@ const BRANCHES = [
         href: "/records/usfs",
     },
     {
-        agency: "The knock and talk",
+        agency: "The “knock and talk”",
         unit: "Planned together",
         date: "March 23, 2026",
         body: "Twelve minutes after the dispatch event opens: “Please see attached Hasty Plan for Robert White knock and talk.” The Forest Service special agent goes with them.",

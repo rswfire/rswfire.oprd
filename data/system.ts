@@ -124,7 +124,7 @@ const POLICE: Branch = {
         },
         {
             id: "press-captain",
-            note: { text: "A press captain doesn’t order a threat assessment on a member of the public." },
+            note: { text: "A press captain doesn’t order a “threat assessment” on a member of the public." },
             name: "Kyle Kennedy",
             title: "Press Captain",
             inst: "Oregon State Police",
@@ -167,7 +167,7 @@ const POLICE: Branch = {
             docs: [
                 { who: "Detective", when: "March 6, 2026", text: "Sends his name to FBI personnel from an FBI account.", src: { u: PRODUCTION, t: "osp" } },
                 { who: "Detective", when: "March 23, 2026", text: "“Suspect”: “concerning emails to former supervisors in parks department and publicly airing grievances.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "CAD Record SP26096984", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Dispatch-SP26096984-CAD.pdf", page: 1, from: "Oregon State Police" } },
-                { who: "Detective", when: "April 15, 2026", text: "“Case and assessment to be documented for information only at this time.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Report SP26096984 — Threat Assessment", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf", page: 4, from: "Oregon State Police" } },
+                { who: "Detective", when: "April 15, 2026", text: "“Case and assessment to be documented for information only at this time.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Report SP26096984 — “Threat Assessment”", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf", page: 4, from: "Oregon State Police" } },
             ],
         },
         {
@@ -621,7 +621,7 @@ export const PATTERNS: Pattern[] = [
                 docs: [
                     { who: "Forest Service agent", when: "March 22, 2026", text: "His supervisor “was told not to advise WHITE that FS LE was inquiring about his whereabouts.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Electronic Communications", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf", page: 11, from: "Oregon State Police" } },
                     { who: "March 24, 2026", text: "Three men with guns at a locked federal gate.", src: { href: "/evidence/police" } },
-                    { who: "Detective", when: "April 15, 2026", text: "“Case and assessment to be documented for information only at this time.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Report SP26096984 — Threat Assessment", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf", page: 4, from: "Oregon State Police" } },
+                    { who: "Detective", when: "April 15, 2026", text: "“Case and assessment to be documented for information only at this time.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "Report SP26096984 — “Threat Assessment”", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf", page: 4, from: "Oregon State Police" } },
                 ],
             },
         ],
@@ -632,7 +632,7 @@ export const PATTERNS: Pattern[] = [
         groups: [
             {
                 docs: [
-                    { who: "Oregon State Parks → state police", when: "March 3 → March 4, 2026", text: "Letters to the press captain; a threat assessment requested “asap” the next afternoon.", src: { u: PRODUCTION, t: "osp" } },
+                    { who: "Oregon State Parks → state police", when: "March 3 → March 4, 2026", text: "Letters to the press captain; a “threat assessment” requested “asap” the next afternoon.", src: { u: PRODUCTION, t: "osp" } },
                     { who: "Park manager → program manager", when: "March 24 → March 26, 2025", text: "Dismissal; statewide exclusion two days later.", src: { u: "01JQA2WM60RX7MSJQ5QPFD8AR2" } },
                     { who: "Oregon State Police", when: "July 22 → July 27, 2026", text: "A petition to the Attorney General; five days later, “additional records, not in our system at the time of the original request.”", src: { u: "01KYJM548RW64XYRSCMJM9F6T9", t: "osp" } },
                 ],

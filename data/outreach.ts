@@ -302,7 +302,7 @@ export const OUTREACH_GROUPS: OutreachGroup[] = [
                 id: "US-04",
                 anchor: "us-doj",
                 title: "U.S. Department of Justice, Civil Rights Division",
-                audience: "The documented sequence of public criticism, OPRD referral, police threat assessment, investigative coordination, and visit to the volunteer's home; submitted for review of possible deprivation of rights or retaliation under applicable federal law. The submission links the OSP email chain and the other primary police records.",
+                audience: "The documented sequence of public criticism, OPRD referral, police “threat assessment”, investigative coordination, and visit to the volunteer's home; submitted for review of possible deprivation of rights or retaliation under applicable federal law. The submission links the OSP email chain and the other primary police records.",
                 startingPoints: [{ label: "Civil Rights Division intake", href: "https://civilrights.justice.gov/" }],
                 fields: ["Report reference / recipient", "Date submitted", "Specific conduct identified", "Material and version sent", "Response received / date", "Follow-up / date"],
                 status: "Not submitted",

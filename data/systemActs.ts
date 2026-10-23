@@ -3509,14 +3509,14 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-04-15",
             "when": "April 15, 2026",
-            "text": "The Major Crimes detective's threat assessment report copies Lee's email in full as its referral. What it names is what the email named: the volunteer's emails to the institution, and his posting online.",
+            "text": "The Major Crimes detective's “threat assessment” report copies Lee's email in full as its referral. What it names is what the email named: the volunteer's emails to the institution, and his posting online.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
             "title": "The report rests on Lee's email",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 2,
                 "from": "Oregon State Police"
@@ -3542,7 +3542,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "The volunteer sets out the routes Lee did not use",
             "att": {
-                "label": "You converted a link into a threat assessment",
+                "label": "You converted a link into a “threat assessment”",
                 "href": "/records/osp/attachments/01m3gwdqsgq34ybjffktmjyaf5-2026-09-27-osp-kennedy.pdf",
                 "page": 1,
                 "from": "Robert Samuel White"
@@ -3600,9 +3600,9 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M3GWDQSGQ34YBJFFKTMJYAF5",
                 "t": "osp"
             },
-            "title": "You converted a link into a threat assessment",
+            "title": "You converted a link into a “threat assessment”",
             "att": {
-                "label": "You converted a link into a threat assessment",
+                "label": "You converted a link into a “threat assessment”",
                 "href": "/records/osp/attachments/01m3gwdqsgq34ybjffktmjyaf5-2026-09-27-osp-kennedy.pdf",
                 "page": 1,
                 "from": "Robert Samuel White"
@@ -3672,6 +3672,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "osp"
             },
             "title": "Public records request, PR44279"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "Captain Kyle Kennedy is copied as section 4 of PR44279 is withdrawn: “Is the press office a back channel for agencies to dump their problems? The public deserves to know. Your response is the answer.”",
+            "src": {
+                "u": "01M5K5VMDR3S4GQ822KRNTQVMR",
+                "t": "osp"
+            },
+            "title": "Section 4 withdrawn"
         }
     ],
     "lieutenant": [
@@ -3771,7 +3781,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 2,
                 "from": "Oregon State Police"
@@ -3841,7 +3851,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 2,
                 "from": "Oregon State Police"
@@ -3913,7 +3923,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 3,
                 "from": "Oregon State Police"
@@ -3945,7 +3955,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 3,
                 "from": "Oregon State Police"
@@ -3961,7 +3971,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 4,
                 "from": "Oregon State Police"
@@ -3977,7 +3987,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 4,
                 "from": "Oregon State Police"
@@ -4273,7 +4283,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Oregon State Police, Second Production, PR27478",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 1,
                 "from": "Oregon State Police"
@@ -4394,7 +4404,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "That same day the institution’s emergency manager, who had never met or written to the volunteer, wrote to the press captain at Oregon State Police, copying the Deputy Director. He alleged no crime and no threat. He sent a link to the archive, writing that the volunteer “is now including the Governor as well as our Director.” The next day the press captain ordered a threat assessment: his sergeant wrote that “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
+            "text": "That same day the institution’s emergency manager, who had never met or written to the volunteer, wrote to the press captain at Oregon State Police, copying the Deputy Director. He alleged no crime and no threat. He sent a link to the archive, writing that the volunteer “is now including the Governor as well as our Director.” The next day the press captain ordered a “threat assessment”: his sergeant wrote that “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -4415,7 +4425,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Task force detective finds only a grievance",
+            "title": "Task force detective finds only a “grievance”",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -4674,7 +4684,7 @@ export const ACTS: Record<string, Act[]> = {
             },
             "title": "Case closes with \"no evidence\" of any crime",
             "att": {
-                "label": "Report SP26096984 — Threat Assessment",
+                "label": "Report SP26096984 — “Threat Assessment”",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
                 "page": 4,
                 "from": "Oregon State Police"
@@ -4703,7 +4713,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-09-09",
             "when": "September 9, 2026",
-            "text": "The volunteer wrote to the Special Agent, the county deputy and every recipient of the March 27 email, correcting it line by line. The dismissal letter states its basis as \"the disparaging public comments made about staff\". His service ended March 24, 2025. He had said the visit was intimidation, not that he felt intimidated. No statement of his has ever been produced as a veiled threat. He asked the Special Agent to produce any record supporting his account or to correct it with the deputy, and to dispute the letter in writing if he disputed it.",
+            "text": "The volunteer wrote to the Special Agent, the county deputy and every recipient of the March 27 email, correcting it line by line. The dismissal letter states its basis as \"the disparaging public comments made about staff\". His service ended March 24, 2025. He had said the visit was intimidation, not that he felt intimidated. No statement of his has ever been produced as a “veiled threat.” He asked the Special Agent to produce any record supporting his account or to correct it with the deputy, and to dispute the letter in writing if he disputed it.",
             "src": {
                 "u": "01M23SJK7GFQVZK7TBD2XQSVTG",
                 "t": "usfs"
@@ -4931,6 +4941,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "osp"
             },
             "title": "Public records request, PR44279"
+        },
+        {
+            "d": "2026-10-22",
+            "when": "October 22, 2026",
+            "text": "The volunteer withdraws section 4 of PR44279: “I ask that this public records request be fulfilled in good faith without a clause that allows for substitution.”",
+            "src": {
+                "u": "01M5K5VMDR3S4GQ822KRNTQVMR",
+                "t": "osp"
+            },
+            "title": "Section 4 withdrawn"
         }
     ],
     "osp-risk": [
@@ -5443,7 +5463,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-07-26",
             "when": "July 26, 2026",
-            "text": "The DAS portal records request R000911, for any behavioral threat assessment concerning the volunteer and DAS’s violence-free workplace policy and training records.",
+            "text": "The DAS portal records request R000911, for any “behavioral threat assessment” concerning the volunteer and DAS’s violence-free workplace policy and training records.",
             "src": {
                 "u": "01KYFZTQMGFKXMXQV3CDZKJYGJ",
                 "t": "das"
@@ -5483,7 +5503,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-08-06",
             "when": "August 6, 2026",
-            "text": "DAS Public Records answers R000911. On each of items 1 to 4: “An extensive search has been conducted and no records exist.” On item 5: “no records exist other than your public records requests.” The two statewide policies and the toolkit are attached “as a courtesy.” On agency safety plans: “Agencies maintain their own internal safety plans and must be requested directly from each agency.” On OPRD’s administration of the policy: “DAS does not possess any information nor is it the custodian of records about how the OPRD administers the DAS policy and how they delegate authority.” On aggregate threat assessment counts: “DAS does not collect information and/or maintain this information.” And: “No records are being withheld.”",
+            "text": "DAS Public Records answers R000911. On each of items 1 to 4: “An extensive search has been conducted and no records exist.” On item 5: “no records exist other than your public records requests.” The two statewide policies and the toolkit are attached “as a courtesy.” On agency safety plans: “Agencies maintain their own internal safety plans and must be requested directly from each agency.” On OPRD’s administration of the policy: “DAS does not possess any information nor is it the custodian of records about how the OPRD administers the DAS policy and how they delegate authority.” On aggregate “threat assessment” counts: “DAS does not collect information and/or maintain this information.” And: “No records are being withheld.”",
             "src": {
                 "u": "01KZCEJR18649JM73SC3BYCVRK",
                 "t": "das"

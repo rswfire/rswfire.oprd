@@ -21,7 +21,7 @@ const officers = [
     agency: "Oregon State Police — Major Crimes Section",
     status: "confirmed" as const,
     confirmedBy: "OSP report SP26096984, produced September 3, 2026",
-    notes: "Case lead. Opened CAD event SP26096984 on March 23 naming me Suspect, authored the “Hasty Plan for Robert White knock and talk,” and wrote the report concluding I made no threats and committed no crimes. Identity withheld for 163 days."
+    notes: "Case lead. Opened CAD event SP26096984 on March 23 naming me “Suspect,” authored the “Hasty Plan for Robert White knock and talk,” and wrote the report concluding I made no threats and committed no crimes. Identity withheld for 163 days."
   }
 ]
 

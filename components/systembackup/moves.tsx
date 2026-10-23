@@ -189,7 +189,7 @@ export const MOVES: Move[] = [
         behind: (
             <>
                 The records are a police file built on letters to the Governor, a fusion center entry calling them
-                harassment, and a waypoint on where a citizen sleeps. Personal, or private, is the word each denial
+                &ldquo;harassment,&rdquo; and a waypoint on where a citizen sleeps. Personal, or private, is the word each denial
                 uses for them. The statute provides for a waiver or a substantially reduced fee; no denial in this
                 record considers a reduction. The website that &ldquo;merely&rdquo; posts the records{" "}
                 <C u={PRODUCTION} t="osp">published the state police production in full the day it arrived</C>.

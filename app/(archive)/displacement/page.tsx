@@ -277,7 +277,7 @@ export default function DisplacementPage() {
                 <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                     <p>When silence fails — when the documentation is public, the archive is growing, and the institution has exhausted every internal mechanism of containment — the system reaches beyond its own walls.</p>
                     <p>It does not reach toward accountability. It reaches toward force.</p>
-                    <p>Law enforcement arrives. Not with a warrant. Not with a complaint. Not with any legal instrument that would create a record the institution would have to answer for. Just men with guns at the door, citing concern about what someone is posting online.</p>
+                    <p>Law enforcement arrives. Not with a warrant. Not with a complaint. Not with any legal instrument that would create a record the institution would have to answer for. Just men with guns at the door, citing &ldquo;concern&rdquo; about what someone is posting online.</p>
                     <p>The location matters. Not a public sidewalk. Not a shared space. A locked federal gate on federal land — a place that requires authorization to access. The timing matters. Not a random Tuesday. The anniversary of the dismissal. One year to the day.</p>
                     <p>The message is not in what the men say. The message is in the fact that they are there at all. That the system can send people with badges and weapons to the place where you live, behind a gate that is supposed to protect you, on the day that means the most — and call it concern.</p>
                     <p>This is what the system does when documentation cannot be contained, silence cannot be enforced, and the archive will not disappear.</p>

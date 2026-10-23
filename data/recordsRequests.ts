@@ -204,7 +204,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             "July 14, 2026: the CAD record for SP26097765, released in full, reviewed for exempt material “with none being identified.”",
             "July 23, 2026, by mail: a litigation hold on the records and evidence for SP26-097765, requiring reconfirmation every six months.",
             "August 11, 2026: records identified under PR27478 behind a fee of $157.50, and under PR36445 behind a fee of $16,315.00.",
-            "September 3, 2026, after the fee was paid: sixteen files under both case numbers — the Major Crimes Section threat-assessment report SP26096984, both CAD records, dispatch audio, and the Department's electronic communications — with a $95.00 refund.",
+            "September 3, 2026, after the fee was paid: sixteen files under both case numbers — the Major Crimes Section “threat assessment” report SP26096984, both CAD records, dispatch audio, and the Department's electronic communications — with a $95.00 refund.",
             "September 28, 2026: exemptions cited for the withheld files, after the September 25 deadline. “We provided all located, responsive electronic communication records. We do not have call logs. We did not locate any recorded phone calls.”",
         ],
         withheld: [
@@ -272,7 +272,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
         produced: [
             { label: "CAD record SP26097765, released in full July 14, 2026", href: "/osp-cad-record-sp26097765.pdf" },
             { label: "Release letter for the September 3, 2026 production", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-PR27478.pdf" },
-            { label: "Threat-assessment report SP26096984, Major Crimes Section", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf" },
+            { label: "“Threat assessment” report SP26096984, Major Crimes Section", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf" },
             { label: "Report attachment: the February 14 email chain", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-021426-Email-Chain.pdf" },
             { label: "Report attachment: the original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf" },
             { label: "Report attachment: CAD SP26096984", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984-CAD.pdf" },
@@ -314,6 +314,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-09-28", date: "September 28, 2026", event: "Reply, with sincere thanks to [OSP Public Records 1]: “We have both stated our positions at this point and that is where I will leave the matter for now”" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
             { d: "2026-10-22", date: "October 22, 2026", event: "PR44279 filed on the Department's form, with a full fee waiver request; acknowledged the same day" },
+            { d: "2026-10-22", date: "October 22, 2026", event: "PR44279 section 4 withdrawn: “I ask that this public records request be fulfilled in good faith without a clause that allows for substitution.”" },
         ],
     },
     {

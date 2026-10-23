@@ -55,8 +55,8 @@ const LADDER: {
     },
     {
         move: "Force",
-        tell: "Actual state power, and only ever last. A threat assessment. Surveillance. Officers at your door. It arrives when everything cheaper has failed to make you stop, and its own file will show there was never a predicate for it.",
-        record: "A press captain's threat-assessment order; a criminal unit; satellite-view map screenshots of the residence; men with guns at a locked gate.",
+        tell: "Actual state power, and only ever last. A “threat assessment”. Surveillance. Officers at your door. It arrives when everything cheaper has failed to make you stop, and its own file will show there was never a predicate for it.",
+        record: "A press captain's “threat assessment” order; a criminal unit; satellite-view map screenshots of the residence; men with guns at a locked gate.",
         href: "/evidence/police",
         tone: "border-red-700 bg-red-100/70",
     },
@@ -78,7 +78,7 @@ const DICTIONARY: { word: string; means: string }[] = [
 // ─── 3. The network ──────────────────────────────────────────────────────────
 const CHAIN: { node: string; role: string; via: string }[] = [
     { node: "The soft agency", role: "Volunteers, parks, public goodwill. No union, no HR, no grievance path. Its working currency is image, so it has no machinery to answer a complaint — only to manage how the complaint looks.", via: "routes a publicity problem, not a safety concern, to …" },
-    { node: "The press office", role: "Government & Media Relations. Its job is reputation, not investigation. A safety concern would go to dispatch or a detective. This did not.", via: "orders a threat assessment “asap,” supplying no predicate, to …" },
+    { node: "The press office", role: "Government & Media Relations. Its job is reputation, not investigation. A safety concern would go to dispatch or a detective. This did not.", via: "orders a “threat assessment” “asap,” supplying no predicate, to …" },
     { node: "Major Crimes", role: "A criminal unit now assigned a citizen with no crime. It reviews, finds nothing, and executes anyway — because the order, not the evidence, is what it answers to.", via: "pulls in, to build a file it was told to build …" },
     { node: "The federal layer", role: "An FBI task-force officer and a state fusion center. A name, a DMV record, a residence — circulated through channels built for terrorism, against a person who wrote letters.", via: "arrives as …" },
     { node: "Force, at the door", role: "The end of the ladder. Its own paperwork will later prove there was nothing at the start of it.", via: "" },
