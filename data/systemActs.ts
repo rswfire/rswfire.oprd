@@ -2705,147 +2705,130 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-02-13",
             "when": "February 13, 2026",
-            "text": "Wrote to the volunteer: “The messages you have recently sent to OPRD Statewide Programs Coordinator Allison Watson have been forwarded to me.” And: “Effective immediately, please direct any inquiries or additional information exclusively to me”. And: “Please do not communicate further with Ms. Watson or other OPRD staff, and please do not expect any responses from them.”",
+            "text": "The deputy director wrote that all correspondence was to go to him alone, that the volunteer was not to write to the program manager or any other staff, and that he should expect no responses from them. He added that if the volunteer filed any legal action, the correspondence would go to the institution's Department of Justice counsel.",
             "src": {
                 "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
                 "t": "oprd"
             },
-            "title": "Deputy Director JR Collier, Contact Directive"
+            "title": "Deputy director orders all correspondence routed to him"
         },
         {
             "d": "2026-02-13",
             "when": "February 13, 2026",
-            "text": "In the same letter: “When and if you decide to file any legal action, your correspondence will be forwarded to our Department of Justice counsel.”",
-            "src": {
-                "u": "01KHCRFBDG3DMYZSSTGV5WC7E7",
-                "t": "oprd"
-            },
-            "title": "Deputy Director JR Collier, Contact Directive"
-        },
-        {
-            "d": "2026-02-13",
-            "when": "February 13, 2026",
-            "text": "No reply to the letter of February 13, 2026, “Re: Oregon Parks and Recreation Contact Information”.",
+            "text": "Five minutes later the volunteer refused it. He wrote that the deputy director had no authority to tell a citizen whom he may contact inside a public agency, that the institution had violated his constitutional rights for 324 days, and that he would contact whoever he needed to.",
             "src": {
                 "u": "01KHCRSGKR77V1HW6QB6B2W1T2",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Re: Oregon Parks and Recreation Contact Information"
+            "title": "The volunteer refuses the directive"
         },
         {
             "d": "2026-02-14",
             "when": "February 14, 2026",
-            "text": "No reply to the letters of February 14, 2026: “Re: Oregon Parks and Recreation Contact Information”; “Re: Oregon Parks and Recreation Contact Information”.",
+            "text": "The next day the volunteer wrote back to the deputy director, copying the director, the interim director and the Governor, and named what had been done to him: told to chew glass and swallow it, told he was never given the benefit of the doubt, his sexuality attacked, a man with no identification sent to question him while staff were away, and a public records request held behind a portal for ninety days. He named it abuse, and wrote that the deputy director was contributing to it.",
             "src": {
-                "u": "01KHF926VGF7ANVHQA2C4SDW0M",
+                "u": "01KHFDVVV82TVEJPHPYAMAD3JH",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Re: Oregon Parks and Recreation Contact Information"
+            "title": "The volunteer sets out what was done, copying the Governor"
+        },
+        {
+            "d": "2026-02-15",
+            "when": "February 15, 2026",
+            "text": "The volunteer wrote to the interim director that the deputy director had tried to intimidate him with positional authority instead of addressing the documented abuse or pursuing any resolution. He listed what she was now responsible for: 326 days of constitutional violation, no investigation into the documented abuse, and no accountability for his expulsion.",
+            "src": {
+                "u": "01KHH17T9GYSWDCZP6C6NA7PK4",
+                "t": "oprd"
+            },
+            "title": "The volunteer reports the directive to the interim director"
         },
         {
             "d": "2026-02-17",
             "when": "February 17, 2026",
-            "text": "No reply to the letter of February 17, 2026, “Re: Oregon Parks and Recreation Contact Information”.",
+            "text": "The volunteer told the deputy director that his letter was now published in the archive, in a new evidence section titled “Containment”, and that he would continue pursuing accountability for as long as it takes.",
             "src": {
                 "u": "01KHNNQ770849BDD90KJGM4QXP",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Re: Oregon Parks and Recreation Contact Information"
+            "title": "The directive is published in the archive"
         },
         {
             "d": "2026-02-28",
             "when": "February 28, 2026",
-            "text": "No reply to the letter of February 28, 2026, “Day 339.”",
+            "text": "The volunteer wrote to the four staff, copying the deputy director. He set out what was done to him: two months of punishment for naming a supervisor's tone, his housing taken, a permanent ban from public lands, lies about who he is and what he said, a man sent to question him alone, and retaliation put in writing on government letterhead. He committed to pursuing it until the truth is fully acknowledged.",
             "src": {
                 "u": "01KJHP4RQ09SJ1ZFJGJ2W3MQZA",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Day 339."
-        },
-        {
-            "d": "2026-03-01",
-            "when": "March 1, 2026",
-            "text": "No reply to the letter of March 1, 2026, “Re: Day 339.”",
-            "src": {
-                "u": "01KJNC0B4R3M5N5RRRKF8743AC",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Re: Day 339."
-        },
-        {
-            "d": "2026-03-02",
-            "when": "March 2, 2026",
-            "text": "No reply to the letters of March 2, 2026: “Re: Day 339.”; “Have you considered?”; “Re: Have you considered?”; “Fw: The Setup You Now Own”; “Re: The Setup You Now Own”; “Re: The Setup You Now Own”.",
-            "src": {
-                "u": "01KJQDEGT8P4E89985MZV7MT13",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Re: Day 339."
+            "title": "The volunteer sets out what was done to him, copying the deputy director"
         },
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "Copied on the March 3, 2026 email that sent a link to the volunteer’s archive to the state police press captain. Jamen Lee to Captain Kyle Kennedy, cc JR Collier: “since he is now including the Governor as well as our Director.” It reads that the volunteer “recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director JR Collier.”",
+            "text": "That morning the volunteer wrote to the deputy director that he was preparing his case against the institution, and that there was still time for the deputy director to choose differently. He closed: “You will not bury this.”",
+            "src": {
+                "u": "01KJT9T6V8Q8PATA3JMZ8DD1ZW",
+                "t": "oprd"
+            },
+            "title": "The volunteer offers the deputy director a chance to choose differently"
+        },
+        {
+            "d": "2026-03-03",
+            "when": "March 3, 2026",
+            "text": "Hours later the institution's emergency manager, a stranger to the volunteer, wrote to the captain of state police Government and Media Relations with the deputy director copied. The title carried the email: it named no crime and no threat, linked the archive, and gave the Director and the Governor as its reason.",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "The deputy director's agency turns to the state police",
             "att": {
-                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
-                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
-                "page": 2,
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 9,
                 "from": "Oregon State Police"
             }
         },
         {
-            "d": "2026-03-03",
-            "when": "March 3, 2026",
-            "text": "No reply to the letters of March 3, 2026: “Re: Day 339.”; “Re: The Setup You Now Own”; “Re: Oregon Parks and Recreation Contact Information”; “The day after tomorrow.”",
-            "src": {
-                "u": "01KJSVTBSG3RMXCXR0BP4S4JHH",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Re: Day 339."
-        },
-        {
             "d": "2026-03-04",
             "when": "March 4, 2026",
-            "text": "No reply to the letters of March 4, 2026: “42 U.S.C. § 1983 — Director Lisa Sumption”; “March 5, 2025”.",
-            "src": {
-                "u": "01KJWMK70R1GJJ7NYFN6EZCFER",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "42 U.S.C. § 1983 — Director Lisa Sumption"
-        },
-        {
-            "d": "2026-03-05",
-            "when": "March 5, 2026",
-            "text": "No reply to the letter of March 5, 2026, “Stormchaser’s Soliloquy”.",
-            "src": {
-                "u": "01KK0DDFQ8A7B4NQVJ86TD9RWW",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Stormchaser’s Soliloquy"
-        },
-        {
-            "d": "2026-03-06",
-            "when": "March 6, 2026",
-            "text": "Copied on Jamen Lee’s March 6, 2026 email to OSP Detective Jake Hyde: “As a follow up to our discussion here is some of the documentation related to it. If your department would like to see any of the add’l correspondence that’s been directed to JR recently just let us know.” The detective’s March 10 forward lists the attachments as “021426 Email Chain.pdf; Dismissal Letter.pdf; Timeline of Events.docx.”",
+            "text": "The next morning the captain forwarded the referral to a lieutenant in the Criminal Investigations Division. That afternoon a sergeant passed it to a detective and asked him to look into the email and the website: “Capt. Kennedy is requesting that a threat assessment be conducted asap.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Oregon State Police, Second Production, PR27478",
+            "title": "A “threat assessment” is ordered",
+            "att": {
+                "label": "From the RMS — Original email from State Parks, Honeyman State Park",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf",
+                "page": 1,
+                "from": "Oregon State Police"
+            }
+        },
+        {
+            "d": "2026-03-06",
+            "when": "March 6, 2026",
+            "text": "That morning the assigned detective, a state police officer on the Portland FBI Joint Terrorism Task Force, asked for the volunteer's name and date of birth. That afternoon he reported back on the archive: “it wasn't much unfortunately.”",
+            "src": {
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
+            },
+            "title": "The detective finds nothing, “unfortunately”",
+            "att": {
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 1,
+                "from": "Oregon State Police"
+            }
+        },
+        {
+            "d": "2026-03-06",
+            "when": "March 6, 2026",
+            "text": "That afternoon the emergency manager, again copying the deputy director, sent the detective three documents: the dismissal letter, the program manager's “timeline of events”, and the February email chain.",
+            "src": {
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
+            },
+            "title": "Emergency manager sends the file to the detective, deputy director copied",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
@@ -2854,432 +2837,180 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-03-07",
-            "when": "March 7, 2026",
-            "text": "No reply to the letter of March 7, 2026, “Oregon State Parks”.",
-            "src": {
-                "u": "01KK4NXTTRRME1WPSJ7DE572KX",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Oregon State Parks"
-        },
-        {
-            "d": "2026-03-08",
-            "when": "March 8, 2026",
-            "text": "No reply to the letter of March 8, 2026, “RE: Day 347.”",
-            "src": {
-                "u": "01KK8EK97RE49MF0ZRDN22QN2T",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "RE: Day 347."
-        },
-        {
-            "d": "2026-03-09",
-            "when": "March 9, 2026",
-            "text": "No reply to the letters of March 9, 2026: “RE: March 5, 2025”; “March 10, 2025.”; “The Only Path That Doesn’t End in Federal Court”.",
-            "src": {
-                "u": "01KK90783RS19PM0GKP68CP0X8",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "RE: March 5, 2025"
-        },
-        {
             "d": "2026-03-10",
             "when": "March 10, 2026",
-            "text": "No reply to the letters of March 10, 2026: “Your Legacy”; “The Only Path Back”.",
+            "text": "The detective forwarded the email chain, the dismissal letter and the “timeline of events” to a second detective and proposed going down to see the volunteer.",
             "src": {
-                "u": "01KKCCBTCR2M2YHBZZEDARADSF",
-                "t": "oprd"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
-            "noreply": true,
-            "title": "Your Legacy"
-        },
-        {
-            "d": "2026-03-11",
-            "when": "March 11, 2026",
-            "text": "No reply to the letter of March 11, 2026, “Re: The Setup You Now Own”.",
-            "src": {
-                "u": "01KKF8RTDGFGKTV4AAFKYH07G8",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Re: The Setup You Now Own"
-        },
-        {
-            "d": "2026-03-23",
-            "when": "March 23, 2026",
-            "text": "No reply to the letters of March 23, 2026: “rswfire.com”; “Honeyman, I Just Found My Voice”.",
-            "src": {
-                "u": "01KMD3XES0G4CM7R5P3KS0C6VZ",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "rswfire.com"
+            "title": "Detective forwards the file and plans the trip",
+            "att": {
+                "label": "Electronic Communications",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",
+                "page": 4,
+                "from": "Oregon State Police"
+            }
         },
         {
             "d": "2026-03-24",
             "when": "March 24, 2026",
-            "text": "No reply to the letters of March 24, 2026: “Re: Honeyman, I Just Found My Voice”; “Evidence Page 10 — Police Intimidation”.",
+            "text": "On the anniversary of his dismissal, three officers came through a locked federal gate to the work center where the volunteer lives. None of them named an agency. He recorded it.",
             "src": {
-                "u": "01KMGD6CE83C2D9CFEYK9DER69",
-                "t": "oprd"
+                "href": "/evidence/police/?t=0:00"
             },
-            "noreply": true,
-            "title": "Re: Honeyman, I Just Found My Voice"
+            "title": "Officers come through a federal gate"
         },
         {
-            "d": "2026-03-25",
-            "when": "March 25, 2026",
-            "text": "No reply to the letter of March 25, 2026, “Re: Evidence Page 10 — Police Intimidation”.",
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "At his door they told him they were “concerned” about what he was posting about Oregon State Parks, and that he was “not in trouble.” He declined to speak without an attorney and closed the door.",
             "src": {
-                "u": "01KMKNMSF8YZJ7C5DZWBC08KVT",
-                "t": "oprd"
+                "u": "01KMRG1SS08ZF35E4PGSZHBQW1",
+                "t": "usfs"
             },
-            "noreply": true,
-            "title": "Re: Evidence Page 10 — Police Intimidation"
+            "title": "“Not in trouble”"
+        },
+        {
+            "d": "2026-03-24",
+            "when": "March 24, 2026",
+            "text": "He turned on his camera, filmed them leaving, and named what they had done: “This is intimidation right here. This is completely wrong.”",
+            "src": {
+                "href": "/evidence/police/?t=0:35"
+            },
+            "title": "Intimidation, named on camera"
         },
         {
             "d": "2026-03-26",
             "when": "March 26, 2026",
-            "text": "No reply to the letters of March 26, 2026: “Armed Officers”; “Armed Officers, All Parties”.",
+            "text": "Two days after the visit, the volunteer wrote to the deputy director, the director, the interim director, the commissioners and the Governor that state officers had come to his home and workplace on restricted federal land over protected speech, and that no one had acknowledged it. He asked for a written acknowledgment of what happened on March 24 and of the steps being taken so it would not happen again. He addressed the deputy director as the point of contact the deputy director had made himself.",
             "src": {
-                "u": "01KMNS17ARGNDTA67FS5SPW8N4",
+                "u": "01KMPVMD0R8M4W5C8A3D2MG3DG",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Armed Officers"
+            "title": "The volunteer asks leadership to acknowledge the visit"
         },
         {
-            "d": "2026-03-27",
-            "when": "March 27, 2026",
-            "text": "No reply to the letter of March 27, 2026, “Incident report transmittal”.",
+            "d": "2026-04-02",
+            "when": "April 2, 2026",
+            "text": "Nine days after the visit, the volunteer asked the state police for every record of it: the officers' names, who initiated it, and every communication with any other agency, Oregon State Parks included. He served notice to preserve all of it.",
             "src": {
-                "u": "01KMRN64J8S55C59VVPTFF2K6N",
-                "t": "oprd"
+                "u": "01KN7YAKF8GGCFERYQPMA6CM75",
+                "t": "osp"
             },
-            "noreply": true,
-            "title": "Incident report transmittal"
+            "title": "The volunteer requests the records of the visit and serves notice to preserve them"
         },
         {
-            "d": "2026-03-28",
-            "when": "March 28, 2026",
-            "text": "No reply to the letter of March 28, 2026, “You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land”.",
+            "d": "2026-04-15",
+            "when": "April 15, 2026",
+            "text": "Two weeks after the volunteer's records request and preservation notice, and three weeks after the officers came to his door, the detective wrote the “threat assessment”. It names no crime and no threat.",
             "src": {
-                "u": "01KMTJ21JGSSD4W0BTW6HP1E05",
-                "t": "oprd"
+                "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
+                "t": "osp"
             },
-            "noreply": true,
-            "title": "You Sent Police to My Door, Behind a Locked Gate, on Restricted Federal Land"
-        },
-        {
-            "d": "2026-03-29",
-            "when": "March 29, 2026",
-            "text": "No reply to the letters of March 29, 2026: “The Firestorm You Created”; “Re: The Firestorm You Created”.",
-            "src": {
-                "u": "01KMXRH298KKDJSR9XJKXRH9VT",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "The Firestorm You Created"
-        },
-        {
-            "d": "2026-04-14",
-            "when": "April 14, 2026",
-            "text": "Copied on the institution’s April 14, 2026 response to the volunteer’s April 2 public records request on the March 24, 2026 law enforcement visit.",
-            "src": {
-                "u": "01KP78BZ8RTQ3SJ3RXKJ4M1GGT",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Response to Records Request of April 2, 2026"
-        },
-        {
-            "d": "2026-04-16",
-            "when": "April 16, 2026",
-            "text": "No reply to the letter of April 16, 2026, “For the Record”.",
-            "src": {
-                "u": "01KPCBQSA008GPWGK7RA4AEKGA",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "For the Record"
-        },
-        {
-            "d": "2026-04-29",
-            "when": "April 29, 2026",
-            "text": "Copied on Oregon State Parks Public Records’ acknowledgment of the volunteer’s follow-up on the April 14 records response.",
-            "src": {
-                "u": "01KQD0ZGER5TSSB9BTZJCK0KCF",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Reply to Follow-Up on April 14 Response"
+            "title": "The “threat assessment” is written after the records request",
+            "att": {
+                "label": "Report SP26096984 — “Threat Assessment”",
+                "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-SP26096984.pdf",
+                "page": 3,
+                "from": "Oregon State Police"
+            }
         },
         {
             "d": "2026-05-03",
             "when": "May 3, 2026",
-            "text": "No reply to the letter of May 3, 2026, “Documented Incident — May 3, 2026 — Siltcoos Work Center”.",
+            "text": "Six weeks after the visit, a box of spent 12-gauge shotgun shells, wet with urine, was left in the road in front of the volunteer's gate. He documented it to the deputy director, the interim director and the director, kept the box as evidence, and refused to be intimidated.",
             "src": {
                 "u": "01KQR5YHJ80H5V45AYAGHT7ZXF",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Documented Incident — May 3, 2026 — Siltcoos Work Center"
-        },
-        {
-            "d": "2026-05-04",
-            "when": "May 4, 2026",
-            "text": "Copied on Oregon State Parks Public Records’ production of the no-cost records under the volunteer’s April 2 request: “we are reviewing emails to see if there are any that meet your request around law enforcement.”",
-            "src": {
-                "u": "01KQSWSYDGFCENFKKH5JHF0KW2",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Forward of Follow-Up on April 14 Response"
-        },
-        {
-            "d": "2026-05-04",
-            "when": "May 4, 2026",
-            "text": "Copied on the acknowledgment of the volunteer’s records request “Agency Compliance and Executive Involvement in PRR Processing, January 1, 2023 to Present.”",
-            "src": {
-                "u": "01KQTMJDC8982KJPBPN3ZT3WMH",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Response to Records Request (Agency Compliance and Executive Involvement)"
-        },
-        {
-            "d": "2026-05-04",
-            "when": "May 4, 2026",
-            "text": "No reply to the letters of May 4, 2026: “Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025”; “Request for Written Justification — Dismissal Procedure — March 24, 2025”; “A Final Statement to the Oregon Parks and Recreation Department”.",
-            "src": {
-                "u": "01KQTEA748SAZ42H5TWBV9VACP",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Request for Written Justification — Volunteer Dismissal Classification and Procedure — March 24-26, 2025"
+            "title": "Spent shotgun shells are left at the volunteer's gate"
         },
         {
             "d": "2026-07-14",
             "when": "July 14, 2026",
-            "text": "No reply to the letter of July 14, 2026, “The released record, provided to the agency”.",
+            "text": "The day the state police released its dispatch record of the visit, the volunteer sent the deputy director his public statement on it. It answers every explanation the state had offered with the state's own record, and names what is left: “for the Forest Service” was a cover, and three armed officers came to his door on the anniversary of his dismissal because of what he had written. He called it intimidation.",
             "src": {
                 "u": "01KXH1JXW0057G6VGF9J2H1BX6",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "The released record, provided to the agency"
-        },
-        {
-            "d": "2026-07-21",
-            "when": "July 21, 2026",
-            "text": "No reply to the letter of July 21, 2026, “A request for accountability”.",
-            "src": {
-                "u": "01KY364AE0Z5ZVT070RT0DGMED",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "A request for accountability"
+            "title": "The volunteer's statement on the state's record of the visit"
         },
         {
             "d": "2026-07-24",
             "when": "July 24, 2026",
-            "text": "No reply to the letter of July 24, 2026, “Supplemental filing forwarded to OPRD leadership”.",
+            "text": "The volunteer sent the deputy director and the director the District Ranger's written statement, filed that day with the Attorney General: the Forest Service did not initiate the visit. The “FOR THE FOREST SERVICE” in the state's dispatch record was false. He told them the visit followed from their own agency's actions.",
             "src": {
                 "u": "01KYAS8P3R05PDFPEPQ5WC9G4G",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Supplemental filing forwarded to OPRD leadership"
-        },
-        {
-            "d": "2026-07-26",
-            "when": "July 26, 2026",
-            "text": "No reply to the letters of July 26, 2026: “What Integrity Looks Like”; “Notice of intent to file under the Oregon Tort Claims Act”.",
-            "src": {
-                "u": "01KYFD2008A7KZJWT8TH1DRM7R",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "What Integrity Looks Like"
-        },
-        {
-            "d": "2026-07-28",
-            "when": "July 28, 2026",
-            "text": "No reply to the letters of July 28, 2026: “Notice of publication”; “Notice of publication — OPRD record complete”; “Re: Notice of publication — OPRD record complete”.",
-            "src": {
-                "u": "01KYN0J6EREDJN6024KZJYJCFF",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Notice of publication"
-        },
-        {
-            "d": "2026-08-01",
-            "when": "August 1, 2026",
-            "text": "No reply to the letter of August 1, 2026, “Statewide HR Policy 50.010.02, Violence-Free Workplace, and its application to me”.",
-            "src": {
-                "u": "01KYY2C05RZ76JBTEKHE0EEB59",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Statewide HR Policy 50.010.02, Violence-Free Workplace, and its application to me",
-            "att": {
-                "label": "Letter to the Director",
-                "href": "/records/oprd/attachments/01kyy2c05rz76jbtekhe0eeb59-2026-07-31-letter-director-deputy-violence-free-workplace.pdf",
-                "page": 1,
-                "from": "Robert Samuel White"
-            }
+            "title": "The Forest Service confirms the dispatch record's stated purpose is false"
         },
         {
             "d": "2026-08-11",
             "when": "August 11, 2026",
-            "text": "No reply to the letters of August 11, 2026: “Fw: PR27478 - Public Records Request”; “The case, in their documents”.",
+            "text": "Forwarding correspondence on his state police records request, the volunteer asked the deputy director whether the police's “electronic communications” involved him. The production three weeks later showed him copied on both emails from the institution to the police.",
             "src": {
                 "u": "01KZS7F758483G54YAYE1MYDJ5",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "Fw: PR27478 - Public Records Request"
-        },
-        {
-            "d": "2026-08-26",
-            "when": "August 26, 2026",
-            "text": "No reply to the letter of August 26, 2026, “Accountability”.",
-            "src": {
-                "u": "01M0ZDW890T961AYRFE3QY1END",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Accountability"
-        },
-        {
-            "d": "2026-08-29",
-            "when": "August 29, 2026",
-            "text": "No reply to the letters of August 29, 2026: “Notice of legal fund”; “Notice: the record is now queryable”.",
-            "src": {
-                "u": "01M17VSB00XE0RQ32RJKZ79P7S",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Notice of legal fund"
+            "title": "The volunteer asks whether the police emails involve the deputy director"
         },
         {
             "d": "2026-09-03",
             "when": "September 3, 2026",
-            "text": "No reply to the letter of September 3, 2026, “The Governor letter, forwarded”.",
+            "text": "The day the state police produced its file, the volunteer published it in full and wrote to the Governor, copying the deputy director. The referral the deputy director was copied on gave the Governor as its reason, and the press office ordered the “threat assessment” the next morning. He named the four records the production left out: the body camera video, the plan for the “knock and talk”, the DMV record pulled through the FBI task force, and a report on him.",
             "src": {
-                "u": "01M1MESFR8QGCRQZBDJMH3HN1Z",
-                "t": "oprd"
+                "u": "01M1MEQP4GVGV0ED9D555043P2",
+                "t": "governor"
             },
-            "noreply": true,
-            "title": "The Governor letter, forwarded"
+            "title": "The volunteer tells the Governor her office was the reason"
+        },
+        {
+            "d": "2026-09-03",
+            "when": "September 3, 2026",
+            "text": "The volunteer served notice of a tort claim against the deputy director in his individual capacity, for First Amendment retaliation and for keeping a permanent bar on him without notice or hearing.",
+            "src": {
+                "u": "01M1N523F0WNM96C18DTDMK0NP",
+                "t": "osp"
+            },
+            "title": "The deputy director is named in the tort claim",
+            "att": {
+                "label": "Notice of Tort Claim",
+                "href": "/records/osp/attachments/01m1n523f0wnm96c18dtdmk0np-2026-09-03-tort-claim-notice.pdf",
+                "page": 5,
+                "from": "Robert Samuel White"
+            }
         },
         {
             "d": "2026-09-05",
             "when": "September 5, 2026",
-            "text": "Copied on the volunteer’s public records request for “All communications concerning me sent or received by Deputy Director J.R. Collier,” February 1, 2025 to the present.",
+            "text": "The volunteer filed a narrow records request covering only the director and the deputy director. It asked for their communications about him and any instruction on whether or how staff should respond to his correspondence.",
             "src": {
                 "u": "01M1SWHHM8QSPN71SK56Q97F8C",
                 "t": "oprd"
             },
-            "title": "Public records request: the Director and the Deputy Director"
-        },
-        {
-            "d": "2026-09-05",
-            "when": "September 5, 2026",
-            "text": "No reply to the letters of September 5, 2026: “The record says you lied”; “The ODOT request, forwarded to the Director”; “The choices are still yours”.",
-            "src": {
-                "u": "01M1SFPP5GMVGVEX6CR6G74FK1",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "The record says you lied"
-        },
-        {
-            "d": "2026-09-06",
-            "when": "September 6, 2026",
-            "text": "No reply to the letter of September 6, 2026, “The choices are still yours, v1.1”.",
-            "src": {
-                "u": "01M1WJ78ZGYR5J2TTD7SKXRA2N",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "The choices are still yours, v1.1"
-        },
-        {
-            "d": "2026-09-07",
-            "when": "September 7, 2026",
-            "text": "No reply to the letter of September 7, 2026, “The choices are still yours, v1.2 -- Final”.",
-            "src": {
-                "u": "01M1YH9QSR0JAGXR04DGFYV7VD",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "The choices are still yours, v1.2 -- Final"
+            "title": "The volunteer requests the deputy director's records about him"
         },
         {
             "d": "2026-09-11",
             "when": "September 11, 2026",
-            "text": "Copied on the acknowledgment of the volunteer’s September 5, 2026 request for the Director’s and Deputy Director’s records.",
-            "src": {
-                "u": "01M28D2P6GKA8N9YJ81GZP0WF1",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Acknowledgment of September 5 Request"
-        },
-        {
-            "d": "2026-09-11",
-            "when": "September 11, 2026",
-            "text": "No reply to the letter of September 11, 2026, “sunlight: the collapse of the story you told the police and yourselves”.",
+            "text": "The volunteer sent the deputy director and the staff the “timeline of events” the emergency manager gave the police with the deputy director copied, every claim answered in order against the record. One entry was enough to break it: it dated a conversation about withdrawing his job application to the day he applied.",
             "src": {
                 "u": "01M29ZRKJ8KB38SPR38V64HH2C",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "sunlight: the collapse of the story you told the police and yourselves"
-        },
-        {
-            "d": "2026-09-12",
-            "when": "September 12, 2026",
-            "text": "No reply to the letters of September 12, 2026: “Re: sunlight: the collapse of the story you told the police and yourselves”; “Re: sunlight — the standing notice”; “Revision Notification”.",
-            "src": {
-                "u": "01M2AX024GFJ98QPY7VYNNY7M8",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Re: sunlight: the collapse of the story you told the police and yourselves"
-        },
-        {
-            "d": "2026-09-15",
-            "when": "September 15, 2026",
-            "text": "No reply to the letter of September 15, 2026, “The complete testimony, sent to OPRD leadership”.",
-            "src": {
-                "u": "01M2K9KFV8EWG311Y8KGCW0D2T",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "The complete testimony, sent to OPRD leadership"
-        },
-        {
-            "d": "2026-09-17",
-            "when": "September 17, 2026",
-            "text": "No reply to the letters of September 17, 2026: “Notice that the testimony will keep changing”; “On the End of the World”.",
-            "src": {
-                "u": "01M2RPE3B0PGSNC3BQ8RCFS9RZ",
-                "t": "oprd"
-            },
-            "noreply": true,
-            "title": "Notice that the testimony will keep changing"
+            "title": "The volunteer answers the “timeline of events” given to the police"
         },
         {
             "d": "2026-09-18",
             "when": "September 18, 2026",
-            "text": "Copied on the estimate for the volunteer’s request for the Director’s and Deputy Director’s records: “$1,600 to $1,728.” For the Deputy Director’s communications concerning the volunteer: “This will take an estimated 2-4 hours of staff time at a reduced rate of $32/ hour.”",
+            "text": "The institution answered the request for the deputy director's communications about the volunteer with a price and copied the deputy director: $1,728 for the whole request, and no records.",
             "src": {
                 "u": "01M2VE25T0WZXS6PE4BXJK0693",
                 "t": "oprd"
             },
-            "title": "[OPRD Public Records], Fee Estimate of $1,728, September 5 Request",
+            "title": "The deputy director's records are priced at $1,728",
             "att": {
                 "label": "The invoice",
                 "href": "/records/oprd/attachments/01m2ve25t0wzxs6pe4bxjk0693-invoice-public-records-Robert-Samuel-White-request-09052026.pdf",
@@ -3288,25 +3019,24 @@ export const ACTS: Record<string, Act[]> = {
             }
         },
         {
-            "d": "2026-09-18",
-            "when": "September 18, 2026",
-            "text": "Copied on the $80 estimate for the volunteer’s request for the version history of the “timeline of events”.",
-            "src": {
-                "u": "01M2VEFTARQHQW029628GQA1Y7",
-                "t": "oprd"
-            },
-            "title": "[OPRD Public Records], Fee Estimate of $80, Timeline Version Histories"
-        },
-        {
             "d": "2026-09-19",
             "when": "September 19, 2026",
-            "text": "No reply to the letters of September 19, 2026: “The Director and Her Deputy, published”; “Correction to The Director and Her Deputy”.",
+            "text": "The volunteer published the chapter of his testimony on the director and the deputy director, the record of what each of them did in his matter, and sent it to them both.",
             "src": {
                 "u": "01M2Y6X0GGCJYN4Q63HEM55MVM",
                 "t": "oprd"
             },
-            "noreply": true,
-            "title": "The Director and Her Deputy, published"
+            "title": "The volunteer publishes The Director and Her Deputy"
+        },
+        {
+            "d": "2026-10-19",
+            "when": "October 19, 2026",
+            "text": "The volunteer wrote to the state's public records officers that on March 3 he had held a last door open for the deputy director, and that within hours the deputy director's agency sent a link to his archive to the press captain of the state police, copying the deputy director. From that moment, he wrote, he became a target of the state's police power.",
+            "src": {
+                "u": "01M5AS0FMR0QEBWS5W4CEAS9V6",
+                "t": "das"
+            },
+            "title": "The volunteer sets out the sequence for the records officers"
         }
     ],
     "emergency-manager": [

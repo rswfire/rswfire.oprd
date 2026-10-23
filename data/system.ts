@@ -33,6 +33,8 @@ export interface Act {
     title?: string;
     /** The file inside the cited record the words come from. */
     att?: { label: string; href: string; page?: number; from?: string };
+    /** The words from the source the entry rests on, exactly as they appear there. */
+    quote?: string;
 }
 
 // ── The structure ────────────────────────────────────────────────────────────

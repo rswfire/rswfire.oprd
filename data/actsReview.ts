@@ -7,4 +7,5 @@ export const ACTS_REVIEW: Record<string, string | null> = {
     "emergency-manager": "2026-10-17",
     "forest-service-agent": "2026-10-17",
     "public-records-advocate": "2026-10-18",
+    "deputy": "2026-10-23",
 };

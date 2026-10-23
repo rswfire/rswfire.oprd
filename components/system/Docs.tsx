@@ -125,9 +125,14 @@ function Header({ src, att, className, children }: { src: Src; att?: Act["att"];
 /** Words a title keeps in lower case unless they open it. */
 const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "nor", "of", "on", "or", "re", "the", "to", "via", "vs", "with"]);
 
-/** A record's title in title case; words already capitalized, such as acronyms and reference numbers, stay as written. */
+/** A record's title in title case; words already capitalized, such as acronyms and reference numbers, stay as written, and quoted words stay exactly as quoted. */
 function titleCase(t: string) {
+    let quoted = false;
     return t.split(/(\s+)/).map((w, i) => {
+        const opens = !quoted && /^["“]/.test(w);
+        const inside = quoted || opens;
+        if ((w.match(/["“”]/g) ?? []).length % 2 === 1) quoted = !quoted;
+        if (inside) return w;
         if (!/^[a-z]/.test(w)) return w;
         if (i > 0 && SMALL.has(w.replace(/[^a-z]/g, ""))) return w;
         return w[0].toUpperCase() + w.slice(1);
@@ -148,6 +153,9 @@ function ActBody({ a, size }: { a: Act; size: string }) {
                 </span>
             </Header>
             <span className={`mt-1.5 block min-w-0 ${size}`}><Entry text={a.text} src={a.src} att={a.att} /></span>
+            {a.quote ? (
+                <span className="mt-2 block border-l-2 border-gray-300 pl-3 text-[14px] italic leading-relaxed text-gray-600">{a.quote}</span>
+            ) : null}
         </>
     );
 }
