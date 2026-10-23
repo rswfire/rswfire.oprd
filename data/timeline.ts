@@ -867,12 +867,19 @@ export const TIMELINE: TimelineSection[] = [
                 ],
             },
             {
-                d: "2026-10-19", date: "October 19 to 22, 2026", major: true,
-                title: "Allison Watson named, and Captain Kennedy asked.",
+                d: "2026-10-19", date: "October 19, 2026", major: true,
+                title: "Key Individuals, to the public records officers.",
                 body: [
                     "I ",
                     { doc: "01M5AS0FMR8MWJ4QMCCY3FBC1H", thread: "oprd", t: "send Key Individuals to the public records officers of four agencies" },
-                    ", copying the Public Records Advocate. Two days later I ",
+                    ", copying the Governor and the Public Records Advocate. I tell them I asked for the public records of what was done to me, and that every channel the government created to repair it “pointed at containment and away from public disclosure or accountability.” The matter sits before the Public Records Advocate “as the final test of what this state government does when it harms someone.” Key Individuals names dozens of individuals and offices. Public records officers should be held to the highest possible standard, and every one of them has failed to meet it. I redact their names anyway. The record is focused on “anyone who wields power unethically and unaccountably, and that is not you.”",
+                ],
+            },
+            {
+                d: "2026-10-21", date: "October 21 and 22, 2026", major: true,
+                title: "Allison Watson named, and Captain Kennedy asked.",
+                body: [
+                    "I ",
                     { doc: "01M5GEGNYGQPAMZHC1BQG6EX9T", thread: "oprd", t: "return Allison Watson’s name to the record" },
                     ". She is the program manager, and her name had been redacted with the local staff: “You are responsible for the conditions volunteers serve under.” That night I ",
                     { doc: "01M5GXGHDGA7KGQC495EXNDXZT", thread: "governor", t: "answer the Public Records Advocate" },
