@@ -3068,7 +3068,7 @@ export default function TestimonyDraft({
                 <P id="pddz5" n={257}>
                     The only operational decision either of them made in all of it was the order
                     closing the agency to him. Eighteen days after it, an emergency manager inside
-                    the institution took his letters to a captain of the Oregon State Police. The
+                    the institution took his archive to a captain of the Oregon State Police. The
                     Deputy Director was copied on it.
                 </P>
             </Part>

@@ -304,7 +304,7 @@ export const TIMELINE: TimelineSection[] = [
                 title: "The referral to the police.",
                 body: [
                     "OPRD Emergency Manager Jamen Lee ",
-                    { doc: "01M1M4WF78XJPEJJ48D1JZ4SJ8", thread: "osp", t: "sends my letters to Captain Kyle Kennedy, OSP Government and Media Relations" },
+                    { doc: "01M1M4WF78XJPEJJ48D1JZ4SJ8", thread: "osp", t: "sends a link to my archive to Captain Kyle Kennedy, OSP Government and Media Relations" },
                     ", copying Deputy Director J.R. Collier: “Fyi — sharing for situational awareness since he is now including the Governor as well as our Director.” No crime alleged, no threat quoted. The entire chain below was unknown to me until OSP produced the file on September 3, 2026.",
                 ],
             },

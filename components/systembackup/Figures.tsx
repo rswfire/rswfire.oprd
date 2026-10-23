@@ -20,7 +20,7 @@ const LANES = [
 
 // day = days after March 1, 2026. from/to index LANES.
 const EVENTS: { day: number; date: string; from: number; to: number; label: string }[] = [
-    { day: 2, date: "March 3", from: 0, to: 1, label: "Lee sends the letters to Captain Kennedy" },
+    { day: 2, date: "March 3", from: 0, to: 1, label: "Lee sends the archive to Captain Kennedy" },
     { day: 3, date: "March 4", from: 1, to: 1, label: "“threat assessment be conducted asap”" },
     { day: 5, date: "March 6", from: 1, to: 2, label: "Hyde sends the name to FBI personnel from his FBI account" },
     { day: 5, date: "March 6", from: 0, to: 1, label: "Lee sends the dismissal letter and the Timeline of Events to Hyde" },

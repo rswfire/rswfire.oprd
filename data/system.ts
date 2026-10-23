@@ -104,9 +104,9 @@ const NO_STANDARDS: Doc = {
 const POLICE: Branch = {
     id: "police",
     name: "The police",
-    out: "His letters, sent to the state police",
+    out: "His archive, sent to the state police",
     docs: [
-        { who: "Oregon State Parks", when: "March 3, 2026", text: "Sends his letters to the state police press captain: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
+        { who: "Oregon State Parks", when: "March 3, 2026", text: "Sends a link to his archive to the state police press captain: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
     ],
     seats: [
         {
@@ -118,7 +118,7 @@ const POLICE: Branch = {
             fn: "Emergency management for the state’s parks: fires, storms, evacuations, threats to the public.",
             real: "Gives the agency its cover for calling the police. He sent the volunteer’s website to the state police press captain, “since he is now including the Governor as well as our Director.”",
             docs: [
-                { who: "A man at Oregon State Parks", when: "March 3, 2026", text: "Sends the letters to the press captain: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
+                { who: "A man at Oregon State Parks", when: "March 3, 2026", text: "Sends a link to his archive to the press captain: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
                 { who: "A man at Oregon State Parks", when: "March 6, 2026", text: "Sends the detective the dismissal letter and the “timeline of events”.", src: { u: PRODUCTION, t: "osp" } },
             ],
         },
@@ -383,7 +383,7 @@ export const RUNGS: Rung[] = [
             up: "Thirteen letters",
             down: "No reply",
             docs: [
-                { who: "Oregon State Parks, to the state police press captain", when: "March 3, 2026", text: "Sends his letters to the state police press captain, copying the deputy director: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
+                { who: "Oregon State Parks, to the state police press captain", when: "March 3, 2026", text: "Sends a link to his archive to the state police press captain, copying the deputy director: “since he is now including the Governor as well as our Director.”", src: { u: PRODUCTION, t: "osp" }, att: { label: "From the RMS — Original email from State Parks, Honeyman State Park", href: "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Report-and-Attachements-from-Niche-RMS-Original-email-from-State-Parks-Honeyman-State-Park.pdf", page: 2, from: "Oregon State Police" } },
             ],
             acts: "governor",
             until: "2026-09-03",
@@ -413,7 +413,7 @@ export const RUNGS: Rung[] = [
                 real: "Closes the agency to the people it harms, and opens it to the police. Cuts the volunteer off from staff, routes all agency communication through himself.",
                 docs: [
                     { who: "Deputy director", when: "February 14, 2026", text: "Do not write to staff. Legal correspondence goes to Department of Justice counsel.", src: { u: "01KHFDVVV82TVEJPHPYAMAD3JH" } },
-                    { who: "Oregon State Parks", when: "March 3, 2026", text: "Copied on the letters sent to the press captain.", src: { u: PRODUCTION, t: "osp" } },
+                    { who: "Oregon State Parks", when: "March 3, 2026", text: "Copied on the link to his archive sent to the press captain.", src: { u: PRODUCTION, t: "osp" } },
                 ],
             },
         ],
@@ -632,7 +632,7 @@ export const PATTERNS: Pattern[] = [
         groups: [
             {
                 docs: [
-                    { who: "Oregon State Parks → state police", when: "March 3 → March 4, 2026", text: "Letters to the press captain; a “threat assessment” requested “asap” the next afternoon.", src: { u: PRODUCTION, t: "osp" } },
+                    { who: "Oregon State Parks → state police", when: "March 3 → March 4, 2026", text: "A link to his archive to the press captain; a “threat assessment” requested “asap” the next afternoon.", src: { u: PRODUCTION, t: "osp" } },
                     { who: "Park manager → program manager", when: "March 24 → March 26, 2025", text: "Dismissal; statewide exclusion two days later.", src: { u: "01JQA2WM60RX7MSJQ5QPFD8AR2" } },
                     { who: "Oregon State Police", when: "July 22 → July 27, 2026", text: "A petition to the Attorney General; five days later, “additional records, not in our system at the time of the original request.”", src: { u: "01KYJM548RW64XYRSCMJM9F6T9", t: "osp" } },
                 ],
@@ -735,7 +735,7 @@ export const SPREAD_LANES = [
 
 /** day = days after March 1, 2026; from and to index SPREAD_LANES. */
 export const SPREAD: { day: number; date: string; from: number; to: number; text: string; src: Src }[] = [
-    { day: 2, date: "March 3", from: 0, to: 1, text: "A man at Oregon State Parks sends the letters to the press captain.", src: { u: PRODUCTION, t: "osp" } },
+    { day: 2, date: "March 3", from: 0, to: 1, text: "A man at Oregon State Parks sends a link to his archive to the press captain.", src: { u: PRODUCTION, t: "osp" } },
     { day: 3, date: "March 4", from: 1, to: 1, text: "“threat assessment be conducted asap”", src: { u: PRODUCTION, t: "osp" } },
     { day: 5, date: "March 6", from: 1, to: 2, text: "A detective sends his name to FBI personnel from an FBI account.", src: { u: PRODUCTION, t: "osp" } },
     { day: 5, date: "March 6", from: 0, to: 1, text: "The dismissal letter and the “timeline of events”, to the detective.", src: { u: PRODUCTION, t: "osp" } },

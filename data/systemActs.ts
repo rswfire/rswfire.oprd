@@ -2791,7 +2791,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-03-03",
             "when": "March 3, 2026",
-            "text": "Copied on the March 3, 2026 email that sent the volunteer’s letters to the state police press captain. Jamen Lee to Captain Kyle Kennedy, cc JR Collier: “since he is now including the Governor as well as our Director.” It reads that the volunteer “recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director JR Collier.”",
+            "text": "Copied on the March 3, 2026 email that sent a link to the volunteer’s archive to the state police press captain. Jamen Lee to Captain Kyle Kennedy, cc JR Collier: “since he is now including the Governor as well as our Director.” It reads that the volunteer “recently escalated to including a countdown to the one-year anniversary of his dismissal in his emails to OPRD’s Deputy Director JR Collier.”",
             "src": {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
@@ -3353,7 +3353,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M1M4WF78XJPEJJ48D1JZ4SJ8",
                 "t": "osp"
             },
-            "title": "Lee sends the volunteer's letters to the state police",
+            "title": "Lee sends the volunteer's archive to the state police",
             "att": {
                 "label": "Electronic Communications",
                 "href": "/records/osp/attachments/01m1m4wf78xjpejj48d1jz4sj8-Electronic-Communications-Electronic-Communications.pdf",

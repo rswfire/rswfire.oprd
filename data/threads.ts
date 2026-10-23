@@ -8129,7 +8129,7 @@ export const OUTREACH_THREAD: RecordsThreadData = {
             to: "Senate Interim Committee on Judiciary; House Interim Committee on Judiciary; Senator Dick Anderson; Representative Boomer Wright; Governor Kotek; Attorney General; Superintendent Casey Codding; OPRD Commission",
             kind: "notice",
             title: "ORS 181A.250, As Applied",
-            summary: "To the Legislature: how one agency email about his letters became a “threat assessment”, a police file, and three officers at his door, with no crime alleged, and five gaps for the Legislature to close.",
+            summary: "To the Legislature: how one agency email about his archive became a “threat assessment”, a police file, and three officers at his door, with no crime alleged, and five gaps for the Legislature to close.",
             docs: [
                 { label: "ORS 181A.250, As Applied", href: "/records/outreach/attachments/01m4fs4d9gahhtxymqp0b8cd90-2026-10-09-ors-181a250-as-applied-16.pdf" },
                 { label: "Transmittal", href: "/records/outreach/2026-10-09-ors-181a250-as-applied.pdf" },

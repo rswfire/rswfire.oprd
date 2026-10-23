@@ -30,7 +30,7 @@ const EDGES: E[] = [
     { from: "oprd", to: "citizen", tone: "grey", label: "“through the appropriate channels”; channels never named", move: "channels", href: "/record/oprd/01K3HPAXBG8F4QZG4DJNDY5QY8", bend: 40 },
     { from: "citizen", to: "gov", tone: "grey", label: "thirteen letters", move: "silence", href: "/records/governor", bend: -40 },
     { from: "gov", to: "citizen", tone: "grey", label: "no answer, 294 days", move: "silence", href: "/record/governor/01KACE2348G8VG3XPB3BGW3F1N", bend: 40 },
-    { from: "oprd", to: "osp", tone: "red", label: "the letters: “sharing for situational awareness” → “threat assessment be conducted asap”", move: "police", href: `/record/osp/${PRODUCTION}` },
+    { from: "oprd", to: "osp", tone: "red", label: "the archive: “sharing for situational awareness” → “threat assessment be conducted asap”", move: "police", href: `/record/osp/${PRODUCTION}` },
     { from: "oprd", to: "doj", tone: "red", label: "“shared the information about Mr. White’s activities with the fusion center”", move: "police", href: `/record/osp/${PRODUCTION}`, bend: 120 },
     { from: "doj", to: "osp", tone: "red", label: "“documenting this activity … border on harassment”", move: "police", href: `/record/osp/${PRODUCTION}`, bend: -60 },
     { from: "osp", to: "fbi", tone: "red", label: "the name, from an FBI account: “But I don’t have a DOB”", move: "police", href: `/record/osp/${PRODUCTION}`, bend: -30 },

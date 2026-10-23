@@ -50,8 +50,8 @@ export const MOVES: Move[] = [
         ),
         next: (
             <>
-                The letters went to the police. On March 3, 2026, the agency&rsquo;s emergency manager{" "}
-                <C u={PRODUCTION} t="osp">sent them to the state police press captain</C>: &ldquo;sharing for
+                The archive went to the police. On March 3, 2026, the agency&rsquo;s emergency manager{" "}
+                <C u={PRODUCTION} t="osp">sent a link to it to the state police press captain</C>: &ldquo;sharing for
                 situational awareness since he is now including the Governor as well as our Director.&rdquo;
             </>
         ),
