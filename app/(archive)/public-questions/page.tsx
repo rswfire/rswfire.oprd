@@ -22,7 +22,7 @@ export default function PublicQuestionsPage() {
         <SectionPage
             emblem="MailQuestionMark" tone="sky"
             title="PUBLIC QUESTIONS"
-            subtitle="QUESTION 1"
+            subtitle="PUBLIC RELATIONS OFFICE"
             previousPage={{ href: "/records-requests", label: "Records Requests" }}
         >
             <h2 className="mb-8 text-2xl sm:text-3xl font-semibold leading-snug text-gray-900">
