@@ -50,7 +50,7 @@ export default function PublicQuestionsPage() {
                     <Link href="/record/public-question-1/01M5JGN4GGQX1SS6GYNYG0NGA5" className={link}>every “threat assessment” that went through the captain’s office</Link>{" "}
                     since January 1, 2023, and I am asking every state agency in Oregon for its correspondence with
                     the public relations office over the same period. Together, their answers will show how agencies use it. The
-                    public should know when contacting a state agency makes them a police matter.
+                    public should know when documenting a state agency makes them a police matter.
                 </div>
                 <div>
                     Every denial, cost imposed, and/or production is published here in full.
