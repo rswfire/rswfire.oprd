@@ -1,0 +1,433 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Return-Path: <rsw@rswfire.com>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id vPqvB9rv2mpgeQQAjtW+MQ
+	(envelope-from <rsw@rswfire.com>)
+	for <rsw@rswfire.com>; Fri, 23 Oct 2026 05:25:46 +0000
+Received: from [IPV6:2605:59ca:35e9:2a08:4c09:3bd7:2b70:e075] (unknown [IPv6:2605:59ca:35e9:2a08:4c09:3bd7:2b70:e075])
+	by mail.rswfire.com (Postfix) with ESMTPSA id CD9BA1F762;
+	Fri, 23 Oct 2026 05:25:44 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rswfire.com; s=mail;
+	t=1792733145;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:cc:mime-version:mime-version:content-type:content-type:
+	 in-reply-to:in-reply-to:references:references;
+	bh=jEdqkSDJNCBrJj8u2wKPiV6MsZ3eYV/VWh+BrYSpdUw=;
+	b=I+eGkEJl0je3HTRn+nxgc5ngAA5saGjQeO/kv19SA3M+AEipuxEpD1GMCRQcbdWFtb6C8N
+	zy/oSxQpSfhkX14npm7W6ACbG1+V8+Eik9SQzlLxqVpbeHdCb2rdcL4UIToYg4YOE2xnrw
+	jRrFcEfkMrFwwKyqEPKx0F8bKvxrkxJIjvREMKKs9pfgzAKsePf06nsFu/CCJuveqXng5u
+	TQ2RyjLLKp6ff198rc5O1H7mVe4Kvr9g0P+YKRSzj832Vt3Evr1PX1+PWYKO/+eUKibLcW
+	HvislK54VJPz3Ub99TjvlQGP+a1P1AcFqTVLjJqdSLgIe8aJtMMsUfE8PHQqmw==
+Content-Type: multipart/alternative;
+ boundary="------------rjzqvPppleHQCITvYhmUwDwZ"
+Message-ID: <e1166597-db1b-4837-957e-f0641a7351eb@rswfire.com>
+Date: Thu, 22 Oct 2026 22:25:43 -0700
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Subject: Re: PR44279
+From: Robert Samuel White <rsw@rswfire.com>
+To: "central.records@osp.oregon.gov" <central.records@osp.oregon.gov>
+Cc: "kyle.kennedy@osp.oregon.gov" <kyle.kennedy@osp.oregon.gov>,
+ "casey.codding@osp.oregon.gov" <casey.codding@osp.oregon.gov>,
+ "governor.kotek@oregon.gov" <governor.kotek@oregon.gov>
+References: <7fa20e7d-cc32-4518-9fa2-a522fb654272@rswfire.com>
+ <4131D940-2745-7D42-9FD6-2943234F8DDA@hxcore.ol>
+Content-Language: en-US
+In-Reply-To: <4131D940-2745-7D42-9FD6-2943234F8DDA@hxcore.ol>
+
+This is a multi-part message in MIME format.
+--------------rjzqvPppleHQCITvYhmUwDwZ
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+This is notification that I have turned the question into 
+infrastructure, and I will be asking it of every agency in the State of 
+Oregon.
+
+https://oprdvolunteerabuse.org/public-questions/
+
+*Robert Samuel White*
+rswfire.com <https://rswfire.com/>
+oprdvolunteerabuse.org <https://oprdvolunteerabuse.org/>
+autonomyrealms.com <https://autonomyrealms.com/>
+
+On 10/22/26 18:26, Robert Samuel White wrote:
+> After some thought, I am withdrawing section 4 of my request. It is 
+> too easily exploited. Sections 1 through 3 are valid records within 
+> your systems, subject to public scrutiny. I ask that this public 
+> records request be fulfilled in good faith without a clause that 
+> allows for substitution. Is the press office a back channel for 
+> agencies to dump their problems? The public deserves to know. Your 
+> response is the answer.
+>
+> *Robert Samuel White*
+> rswfire.com <https://rswfire.com/>
+> oprdvolunteerabuse.org <https://oprdvolunteerabuse.org/>
+> autonomyrealms.com <https://autonomyrealms.com/>
+>
+> ------------------------------------------------------------------------
+> *From:* Robert Samuel White <rsw@rswfire.com>
+> *Sent:* Thursday, October 22, 2026 12:15:57 PM
+> *To:* central.records@osp.oregon.gov <central.records@osp.oregon.gov>
+> *Cc:* kyle.kennedy@osp.oregon.gov <kyle.kennedy@osp.oregon.gov>; 
+> casey.codding@osp.oregon.gov <casey.codding@osp.oregon.gov>; 
+> governor.kotek@oregon.gov <governor.kotek@oregon.gov>
+> *Subject:* PR44279
+>
+> I submitted the following public records request through your 
+> forms.osp.oregon.gov system. The automated acknowledgement does not 
+> include the contents of the request so I am reproducing it below.
+>
+> *Robert Samuel White*
+> rswfire.com <https://rswfire.com/>
+> oprdvolunteerabuse.org <https://oprdvolunteerabuse.org/>
+> autonomyrealms.com <https://autonomyrealms.com/>
+>
+>
+> To the Public Records Unit, Oregon State Police:
+>
+> This is a request under the Oregon Public Records Law, ORS 192.314. 
+> The period for items 1 through 4 is January 1, 2023 to the present.
+>
+> I request the following.
+>
+>  1. Every request for a threat assessment made by, or routed through,
+>     the Government and Media Relations section, with its date, the
+>     agency or person it came from, and the unit or officer it was
+>     assigned to.
+>  2. Every computer-aided dispatch (CAD) event opened at the request
+>     of, or after a referral from, the Government and Media Relations
+>     section, with its date and event type.
+>  3. Every referral from another state agency to the Government and
+>     Media Relations section that the section sent on to the Criminal
+>     Investigations Division, with its date, the referring agency, and
+>     the unit or officer it was assigned to.
+>  4. In the alternative to items 1 through 3, any existing record,
+>     report, log, or tracking system that counts or lists them.
+>  5. Every policy, directive, general order, procedure, and training
+>     material in effect at any time since January 1, 2023 that governs:
+>     (a) when the Government and Media Relations section may refer a
+>     matter to the Criminal Investigations Division or request a threat
+>     assessment;
+>     (b) threat assessments of members of the public;
+>     (c) “knock and talk” contacts, including any guidance on
+>     approaching a residence behind a locked gate, on posted property,
+>     or on restricted federal land, or with another agency’s help to
+>     gain access.
+>
+>
+> I request records in their native electronic format with metadata 
+> intact, delivered electronically. Rolling production is welcome.
+>
+> For each record withheld or redacted, identify the record, cite the 
+> specific exemption relied on, and state whether the public interest 
+> balancing that the exemption requires was performed.
+>
+> *Fee waiver.* I request a full waiver under ORS 192.324(5). Making 
+> these records available primarily benefits the general public.
+>
+>  1. *Identity of the requester.* I publish oprdvolunteerabuse.org, a
+>     public archive of government records. Every production I receive
+>     is published there in full, as produced, each document at its own
+>     permanent address, open to anyone without an account or a fee.
+>     This request is not for my own file. It is for the State Police’s
+>     practice: every instance of it since January 1, 2023.
+>  2. *Purpose.* The purpose is publication. Every record produced will
+>     be published in full, unedited, the day it is received. Anyone
+>     will be able to see which agencies refer members of the public to
+>     the State Police’s public relations office, what those people were
+>     accused of, what officers did next, and how each matter ended.
+>  3. *Character of the information.* The Government and Media Relations
+>     section is the State Police’s press and government relations
+>     office. It is not an investigative unit. These records show
+>     whether state agencies use that office to send criminal
+>     investigators and threat assessments toward members of the public,
+>     how often, and against whom. They show whether officers came to
+>     those people’s homes, and how many of those matters ended with no
+>     crime charged. Item 5 is the written rule for a warrantless
+>     approach to a home: when officers may cross a locked gate or
+>     posted property, enter restricted federal land, or use another
+>     agency to gain access. Every resident of Oregon is subject to
+>     these rules.
+>  4. *Whether the information is already public.* It is not. No public
+>     source reports a single instance of the Government and Media
+>     Relations section requesting a threat assessment or referring a
+>     member of the public to the Criminal Investigations Division. The
+>     instances exist only in the State Police’s own files. If any
+>     policy requested under item 5 is already published, identify
+>     where, and I will withdraw that part of the request.
+>  5. *Ability to disseminate.* The State Police production under
+>     PR27478 was published in full on September 3, 2026, the day it was
+>     received, at
+>     https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/,
+>     where it can be read today. Every prior production in my matters
+>     has been published the same way.
+>
+>
+> If any part of the fee is not waived, reduce it as ORS 192.324(5) 
+> provides, state in writing for each of these five factors why it does 
+> or does not weigh in favor of a waiver, and give an itemized estimate 
+> by task and hourly rate before any work begins.
+>
+> Robert Samuel White
+> P.O. Box 334, Reedsport, Oregon 97467
+> rswfire.com
+> oprdvolunteerabuse.org
+> autonomyrealms.com
+>
+>
+>
+-- 
+*Robert Samuel White*
+Post Office Box 334, Reedsport, Oregon, 97467
+rswfire.com <https://rswfire.com>
+oprdvolunteerabuse.org <https://oprdvolunteerabuse.org>
+autonomyrealms.com <https://autonomyrealms.com>
+--------------rjzqvPppleHQCITvYhmUwDwZ
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p>This is notification that I have turned the question into
+      infrastructure, and I will be asking it of every agency in the
+      State of Oregon.</p>
+    <p><a moz-do-not-send="true"
+        href="https://oprdvolunteerabuse.org/public-questions/"
+        class="moz-txt-link-freetext">https://oprdvolunteerabuse.org/public-questions/</a></p>
+    <p><span style="color: rgb(0, 0, 0);"><b>Robert Samuel White</b><br>
+      </span><span style="color: rgb(200, 38, 19);"><a
+          href="https://rswfire.com/"
+          id="OWAcf37c3e2-6874-f58a-6376-01a2b4c8e973"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://rswfire.com" rel="noopener noreferrer"
+          data-linkindex="0" style="color: rgb(200, 38, 19);">rswfire.com</a></span><span
+        style="color: rgb(0, 0, 0);"><br>
+      </span><span style="color: rgb(12, 136, 42);"><a
+          href="https://oprdvolunteerabuse.org/"
+          id="OWAd48abf07-7b68-8e77-a053-4244fa5e6a31"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://oprdvolunteerabuse.org"
+          rel="noopener noreferrer" data-linkindex="1"
+          style="color: rgb(12, 136, 42);">oprdvolunteerabuse.org</a></span><span
+        style="color: rgb(0, 0, 0);"><br>
+      </span><span style="color: rgb(12, 100, 192);"><a
+          href="https://autonomyrealms.com/"
+          id="OWAcd586e02-76c3-ca71-96be-ee5a7b8c7525"
+          class="x_x_OWAAutoLink outlook-break-word-in-links"
+          title="https://autonomyrealms.com" rel="noopener noreferrer"
+          data-linkindex="2" style="color: rgb(12, 100, 192);">autonomyrealms.com</a></span></p>
+    <div class="moz-cite-prefix">On 10/22/26 18:26, Robert Samuel White
+      wrote:<br>
+    </div>
+    <blockquote type="cite"
+      cite="mid:4131D940-2745-7D42-9FD6-2943234F8DDA@hxcore.ol">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <div dir="auto"
+style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);">After
+        some thought, I am withdrawing section 4 of my request. It is
+        too easily exploited. Sections 1 through 3 are valid records
+        within your systems, subject to public scrutiny. I ask that this
+        public records request be fulfilled in good faith without a
+        clause that allows for substitution. Is the press office a back
+        channel for agencies to dump their problems? The public deserves
+        to know. Your response is the answer.</div>
+      <div
+style="font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);"
+        id="ms-outlook-mobile-signature" dir="auto">
+        <div dir="auto"
+style="font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(33, 33, 33);"><span
+            style="color: rgb(0, 0, 0);"><br>
+            <b>Robert Samuel White</b><br>
+          </span><span style="color: rgb(200, 38, 19);"><a
+              href="https://rswfire.com/"
+              id="OWAcf37c3e2-6874-f58a-6376-01a2b4c8e973"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://rswfire.com" rel="noopener noreferrer"
+              data-linkindex="0" style="color: rgb(200, 38, 19);"
+              moz-do-not-send="true">rswfire.com</a></span><span
+            style="color: rgb(0, 0, 0);"><br>
+          </span><span style="color: rgb(12, 136, 42);"><a
+              href="https://oprdvolunteerabuse.org/"
+              id="OWAd48abf07-7b68-8e77-a053-4244fa5e6a31"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://oprdvolunteerabuse.org"
+              rel="noopener noreferrer" data-linkindex="1"
+              style="color: rgb(12, 136, 42);" moz-do-not-send="true">oprdvolunteerabuse.org</a></span><span
+            style="color: rgb(0, 0, 0);"><br>
+          </span><span style="color: rgb(12, 100, 192);"><a
+              href="https://autonomyrealms.com/"
+              id="OWAcd586e02-76c3-ca71-96be-ee5a7b8c7525"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://autonomyrealms.com"
+              rel="noopener noreferrer" data-linkindex="2"
+              style="color: rgb(12, 100, 192);" moz-do-not-send="true">autonomyrealms.com</a></span></div>
+      </div>
+      <div dir="auto" id="mail-editor-reference-message-container"><br>
+        <hr style="display: inline-block; width: 98%;">
+        <div id="divRplyFwdMsg" style="font-size: 11pt;" dir="auto"><b>From:</b>
+          Robert Samuel White <a class="moz-txt-link-rfc2396E" href="mailto:rsw@rswfire.com">&lt;rsw@rswfire.com&gt;</a><br>
+          <b>Sent:</b> Thursday, October 22, 2026 12:15:57 PM<br>
+          <b>To:</b> <a class="moz-txt-link-abbreviated" href="mailto:central.records@osp.oregon.gov">central.records@osp.oregon.gov</a>
+          <a class="moz-txt-link-rfc2396E" href="mailto:central.records@osp.oregon.gov">&lt;central.records@osp.oregon.gov&gt;</a><br>
+          <b>Cc:</b> <a class="moz-txt-link-abbreviated" href="mailto:kyle.kennedy@osp.oregon.gov">kyle.kennedy@osp.oregon.gov</a>
+          <a class="moz-txt-link-rfc2396E" href="mailto:kyle.kennedy@osp.oregon.gov">&lt;kyle.kennedy@osp.oregon.gov&gt;</a>;
+          <a class="moz-txt-link-abbreviated" href="mailto:casey.codding@osp.oregon.gov">casey.codding@osp.oregon.gov</a>
+          <a class="moz-txt-link-rfc2396E" href="mailto:casey.codding@osp.oregon.gov">&lt;casey.codding@osp.oregon.gov&gt;</a>;
+          <a class="moz-txt-link-abbreviated" href="mailto:governor.kotek@oregon.gov">governor.kotek@oregon.gov</a> <a class="moz-txt-link-rfc2396E" href="mailto:governor.kotek@oregon.gov">&lt;governor.kotek@oregon.gov&gt;</a><br>
+          <b>Subject:</b> PR44279<br>
+        </div>
+        <br>
+        <p>I submitted the following public records request through your
+          forms.osp.oregon.gov system. The automated acknowledgement
+          does not include the contents of the request so I am
+          reproducing it below.</p>
+        <p><span style="color: rgb(0, 0, 0);"><b>Robert Samuel White</b><br>
+          </span><span style="color: rgb(200, 38, 19);"><a
+              href="https://rswfire.com/"
+              id="OWAcf37c3e2-6874-f58a-6376-01a2b4c8e973"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://rswfire.com" rel="noopener noreferrer"
+style="color: rgb(200, 38, 19); margin-top: 0px; margin-bottom: 0px;"
+              moz-do-not-send="true">rswfire.com</a></span><span
+            style="color: rgb(0, 0, 0);"><br>
+          </span><span style="color: rgb(12, 136, 42);"><a
+              href="https://oprdvolunteerabuse.org/"
+              id="OWAd48abf07-7b68-8e77-a053-4244fa5e6a31"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://oprdvolunteerabuse.org"
+              rel="noopener noreferrer"
+style="color: rgb(12, 136, 42); margin-top: 0px; margin-bottom: 0px;"
+              moz-do-not-send="true">oprdvolunteerabuse.org</a></span><span
+            style="color: rgb(0, 0, 0);"><br>
+          </span><span style="color: rgb(12, 100, 192);"><a
+              href="https://autonomyrealms.com/"
+              id="OWAcd586e02-76c3-ca71-96be-ee5a7b8c7525"
+              class="x_x_OWAAutoLink outlook-break-word-in-links"
+              title="https://autonomyrealms.com"
+              rel="noopener noreferrer"
+style="color: rgb(12, 100, 192); margin-top: 0px; margin-bottom: 0px;"
+              moz-do-not-send="true">autonomyrealms.com</a></span></p>
+        <p><br>
+        </p>
+        <p>To the Public Records Unit, Oregon State Police:</p>
+        <p>This is a request under the Oregon Public Records Law, ORS
+          192.314. The period for items 1 through 4 is January 1, 2023
+          to the present.</p>
+        <p>I request the following.</p>
+        <ol start="1">
+          <li>Every request for a threat assessment made by, or routed
+            through, the Government and Media Relations section, with
+            its date, the agency or person it came from, and the unit or
+            officer it was assigned to.</li>
+          <li>Every computer-aided dispatch (CAD) event opened at the
+            request of, or after a referral from, the Government and
+            Media Relations section, with its date and event type.</li>
+          <li>Every referral from another state agency to the Government
+            and Media Relations section that the section sent on to the
+            Criminal Investigations Division, with its date, the
+            referring agency, and the unit or officer it was assigned
+            to.</li>
+          <li>In the alternative to items 1 through 3, any existing
+            record, report, log, or tracking system that counts or lists
+            them.</li>
+          <li>Every policy, directive, general order, procedure, and
+            training material in effect at any time since January 1,
+            2023 that governs:<br>
+            (a) when the Government and Media Relations section may
+            refer a matter to the Criminal Investigations Division or
+            request a threat assessment;<br>
+            (b) threat assessments of members of the public;<br>
+            (c) “knock and talk” contacts, including any guidance on
+            approaching a residence behind a locked gate, on posted
+            property, or on restricted federal land, or with another
+            agency’s help to gain access.</li>
+        </ol>
+        <div dir="auto"><br>
+        </div>
+        <p>I request records in their native electronic format with
+          metadata intact, delivered electronically. Rolling production
+          is welcome.</p>
+        <p>For each record withheld or redacted, identify the record,
+          cite the specific exemption relied on, and state whether the
+          public interest balancing that the exemption requires was
+          performed.</p>
+        <p><b>Fee waiver.</b> I request a full waiver under ORS
+          192.324(5). Making these records available primarily benefits
+          the general public.</p>
+        <ol start="1">
+          <li><b>Identity of the requester.</b> I publish
+            oprdvolunteerabuse.org, a public archive of government
+            records. Every production I receive is published there in
+            full, as produced, each document at its own permanent
+            address, open to anyone without an account or a fee. This
+            request is not for my own file. It is for the State Police’s
+            practice: every instance of it since January 1, 2023.</li>
+          <li><b>Purpose.</b> The purpose is publication. Every record
+            produced will be published in full, unedited, the day it is
+            received. Anyone will be able to see which agencies refer
+            members of the public to the State Police’s public relations
+            office, what those people were accused of, what officers did
+            next, and how each matter ended.</li>
+          <li><b>Character of the information.</b> The Government and
+            Media Relations section is the State Police’s press and
+            government relations office. It is not an investigative
+            unit. These records show whether state agencies use that
+            office to send criminal investigators and threat assessments
+            toward members of the public, how often, and against whom.
+            They show whether officers came to those people’s homes, and
+            how many of those matters ended with no crime charged. Item
+            5 is the written rule for a warrantless approach to a home:
+            when officers may cross a locked gate or posted property,
+            enter restricted federal land, or use another agency to gain
+            access. Every resident of Oregon is subject to these rules.</li>
+          <li><b>Whether the information is already public.</b> It is
+            not. No public source reports a single instance of the
+            Government and Media Relations section requesting a threat
+            assessment or referring a member of the public to the
+            Criminal Investigations Division. The instances exist only
+            in the State Police’s own files. If any policy requested
+            under item 5 is already published, identify where, and I
+            will withdraw that part of the request.</li>
+          <li><b>Ability to disseminate.</b> The State Police production
+            under PR27478 was published in full on September 3, 2026,
+            the day it was received, at <a
+href="https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/"
+              class="moz-txt-link-freetext" moz-do-not-send="true">https://oprdvolunteerabuse.org/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8/</a>,
+            where it can be read today. Every prior production in my
+            matters has been published the same way.</li>
+        </ol>
+        <br>
+        <p>If any part of the fee is not waived, reduce it as ORS
+          192.324(5) provides, state in writing for each of these five
+          factors why it does or does not weigh in favor of a waiver,
+          and give an itemized estimate by task and hourly rate before
+          any work begins.</p>
+        <p>Robert Samuel White<br>
+          P.O. Box 334, Reedsport, Oregon 97467<br>
+          rswfire.com<br>
+          oprdvolunteerabuse.org<br>
+          autonomyrealms.com</p>
+        <p><br>
+        </p>
+        <br>
+      </div>
+    </blockquote>
+    <div class="moz-signature">-- <br>
+      <b>Robert Samuel White</b><br>
+      Post Office Box 334, Reedsport, Oregon, 97467<br>
+      <a href="https://rswfire.com">rswfire.com</a><br>
+      <a href="https://oprdvolunteerabuse.org">oprdvolunteerabuse.org</a><br>
+      <a href="https://autonomyrealms.com">autonomyrealms.com</a></div>
+  </body>
+</html>
+
+--------------rjzqvPppleHQCITvYhmUwDwZ--
+
