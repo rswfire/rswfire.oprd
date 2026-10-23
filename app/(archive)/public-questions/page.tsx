@@ -33,13 +33,13 @@ export default function PublicQuestionsPage() {
                 <div>
                     On March 3, 2026,{" "}
                     <PersonLink name="deputy director" seat="deputy" label="a state agency" />{" "}
-                    forwarded a member of the public to{" "}
+                    forwarded this archive to{" "}
                     <PersonLink name="press captain" seat="press-captain" label="the captain of Government and Media Relations" />{" "}
                     at Oregon State Police. No crime
-                    was alleged. The next day a “threat assessment” was ordered. Three weeks later, behind a locked gate on restricted federal land, that member of the public was confronted by three men who had traveled sixty-eight minutes to tell him he was “not in trouble.”
+                    was alleged. The next day a “threat assessment” was ordered. Three weeks later, behind a locked gate on restricted federal land, the man who keeps it was confronted by three men who had traveled sixty-eight minutes to tell him he was “not in trouble.”
                 </div>
                 <div>
-                    The member of the public{" "}
+                    That man{" "}
                     <PersonLink name="me" seat="volunteer" label="was me" />.
                     Those records came out of{" "}
                     <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className={link}>Oregon State Police</Link>,

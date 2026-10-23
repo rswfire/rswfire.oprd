@@ -3098,7 +3098,7 @@ export default function TestimonyBody({
                 </P>
                 <P id="p9zswx" n={259}>
                     On March 3, 2026, the institution he had spent a year asking for accountability
-                    took his letters to the police. An OPRD emergency manager sent them to an
+                    took his archive to the police. An OPRD emergency manager sent a link to it to an
                     Oregon State Police captain, copying the deputy director, and gave the reason
                     in one line: &ldquo;Fyi &mdash; sharing for situational awareness since he is now
                     including the Governor as well as our Director.&rdquo; The trigger was not
