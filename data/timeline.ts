@@ -876,8 +876,7 @@ export const TIMELINE: TimelineSection[] = [
                 ],
             },
             {
-                d: "2026-10-21", date: "October 21 and 22, 2026", major: true,
-                title: "Allison Watson named, and Captain Kennedy asked.",
+                d: "2026-10-21", date: "October 21 and 22, 2026",
                 body: [
                     "I ",
                     { doc: "01M5GEGNYGQPAMZHC1BQG6EX9T", thread: "oprd", t: "return Allison Watson’s name to the record" },

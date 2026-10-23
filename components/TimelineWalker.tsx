@@ -46,8 +46,12 @@ export default function TimelineWalker() {
             const el = els[clamped];
             if (!el) return;
             const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            // Measured from the strip's own edge. offsetLeft counts from the
+            // nearest positioned ancestor, which is not the strip, so on a wide
+            // page it overshoots by the page's left margin.
+            const at = s.scrollLeft + el.getBoundingClientRect().left - s.getBoundingClientRect().left;
             s.scrollTo({
-                left: el.offsetLeft - (s.clientWidth - el.offsetWidth) / 2,
+                left: at - (s.clientWidth - el.offsetWidth) / 2,
                 behavior: smooth && !reduced ? "smooth" : "auto",
             });
         },
@@ -66,10 +70,12 @@ export default function TimelineWalker() {
         if (s.scrollLeft <= 1) best = 0;
         else if (s.scrollLeft >= max - 1) best = els.length - 1;
         else {
-            const mid = s.scrollLeft + s.clientWidth / 2;
+            const box = s.getBoundingClientRect();
+            const mid = box.left + s.clientWidth / 2;
             let bestDist = Infinity;
             els.forEach((el, n) => {
-                const dist = Math.abs(el.offsetLeft + el.offsetWidth / 2 - mid);
+                const r = el.getBoundingClientRect();
+                const dist = Math.abs(r.left + r.width / 2 - mid);
                 if (dist < bestDist) {
                     bestDist = dist;
                     best = n;
