@@ -910,6 +910,17 @@ export const TIMELINE: TimelineSection[] = [
                     " to answer that question: one public records request for every state agency, each one tracked from the day it is sent to the day it is answered, and every answer published.",
                 ],
             },
+            {
+                d: "2026-10-23", date: "October 23, 2026", major: true,
+                title: "The last door.",
+                body: [
+                    "The Public Records Advocate ",
+                    { doc: "01M5MN2F3G7610PG7DJJGQR8KH", thread: "governor", t: "makes facilitated dispute resolution, which the law says he shall provide, conditional on terms the law does not contain" },
+                    ", and tells me that if I refuse them, his office is done with me. I ",
+                    { doc: "01M5MSH4H8PYRFGB4FJWFYDVQS", thread: "governor", t: "answer him" },
+                    ". I am the one who needs equitable access: four institutions have met my requests with thousands of dollars in fees, denied waivers and withheld records, and every document he could need is public. I name his terms for what they are, a pretext that records his refusal as mine. Every channel the state built to repair what was done to me has pointed at containment. His is the last one, and I put the choice where it belongs: “You can be the advocate your office is named for, or you can be the last door that closed.”",
+                ],
+            },
         ],
     },
 ];
