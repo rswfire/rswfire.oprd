@@ -687,6 +687,14 @@ export const TIMELINE: TimelineSection[] = [
                 ],
             },
             {
+                d: "2026-09-10", date: "September 10, 2026",
+                body: [
+                    "DAS Risk Management ",
+                    { doc: "01M26B1TW0B0DX3GDKK73QA0Z1", thread: "das", t: "acknowledges the notice of tort claim by letter, under claim L19540301" },
+                    ": “We are currently conducting a review through the Oregon Parks & Recreation Department and Oregon State Police.”",
+                ],
+            },
+            {
                 d: "2026-09-18", date: "September 18, 2026", major: true,
                 title: "$1,728, and $80 for the version histories.",
                 body: [

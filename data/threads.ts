@@ -7915,6 +7915,18 @@ export const DAS_THREAD: RecordsThreadData = {
             docs: [{ label: "Key Individuals", href: "/records/das/2026-10-19-key-individuals.pdf" }],
             eml: "/records/das/eml/2026-10-19_1207_key-individuals.eml",
         },
+        {
+            id: "claim-acknowledgment-l19540301",
+            ulid: "01M26B1TW0B0DX3GDKK73QA0Z1",
+            date: "September 10, 2026",
+            d: "2026-09-10",
+            from: "DAS Risk Management",
+            to: "Robert Samuel White",
+            kind: "letter",
+            title: "DAS Risk Management, Claim Acknowledgment, L19540301",
+            summary: "Letter acknowledging the September 3 notice under claim L19540301, writing that it is “conducting a review through the Oregon Parks & Recreation Department and Oregon State Police.” Received by mail October 22.",
+            docs: [{ label: "Claim Acknowledgment, L19540301", href: "/records/das/2026-09-10-claim-acknowledgment-l19540301.pdf" }],
+        },
     ],
 };
 
