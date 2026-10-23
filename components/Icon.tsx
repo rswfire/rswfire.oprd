@@ -49,6 +49,7 @@ import {
     Route,
     Check,
     Globe,
+    MailQuestionMark,
 } from 'lucide-react';
 
 const iconMap = {
@@ -100,6 +101,7 @@ const iconMap = {
     Route,
     Check,
     Globe,
+    MailQuestionMark,
 } as const;
 
 export type IconName = keyof typeof iconMap;

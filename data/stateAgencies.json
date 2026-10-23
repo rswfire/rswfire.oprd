@@ -1,0 +1,994 @@
+{
+ "source": "https://www.oregon.gov/pages/agencies.aspx",
+ "list": "Agencies and Entities, Entity Type = State Agency",
+ "retrieved": "2026-10-22",
+ "agencies": [
+  {
+   "slug": "advisory-committee-on-physician-credentialing-information",
+   "name": "Advisory Committee on Physician Credentialing Information",
+   "abbr": "OHA ACPCI",
+   "url": "https://www.oregon.gov/oha/hpa/ohit-acpci"
+  },
+  {
+   "slug": "advisory-council-on-hearing-aids",
+   "name": "Advisory Council on Hearing Aids",
+   "abbr": "OHA HLO ACHA",
+   "url": "https://www.oregon.gov/oha/PH/HLO/Pages/Board-Advisory-Council-Hearing-Aids-License.aspx"
+  },
+  {
+   "slug": "appraiser-certification-and-licensure-board",
+   "name": "Appraiser Certification and Licensure Board",
+   "abbr": "ACLB",
+   "url": "http://public.orlicensing.oregon.gov/ACLBPortal"
+  },
+  {
+   "slug": "audits-division",
+   "name": "Audits Division",
+   "abbr": "SOS AD",
+   "url": "http://sos.oregon.gov/audits"
+  },
+  {
+   "slug": "board-of-accountancy",
+   "name": "Board of Accountancy",
+   "abbr": "ASB",
+   "url": "https://www.oregon.gov/boa"
+  },
+  {
+   "slug": "board-of-athletic-trainers",
+   "name": "Board of Athletic Trainers",
+   "abbr": "OHA HLO BAT",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Athletic-Trainer.aspx"
+  },
+  {
+   "slug": "board-of-cosmetology",
+   "name": "Board of Cosmetology",
+   "abbr": "OHA HLO COS",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Cosmetology.aspx"
+  },
+  {
+   "slug": "board-of-dentistry",
+   "name": "Board of Dentistry",
+   "abbr": "DENTISTRY",
+   "url": "https://www.oregon.gov/dentistry"
+  },
+  {
+   "slug": "board-of-denture-technology",
+   "name": "Board of Denture Technology",
+   "abbr": "OHA HLO BDT",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Denture-Technology.aspx"
+  },
+  {
+   "slug": "board-of-direct-entry-midwifery",
+   "name": "Board of Direct Entry Midwifery",
+   "abbr": "OHA HLO DEM",
+   "url": "https://www.oregon.gov/oha/PH/HLO/Pages/Board-Direct-Entry-Midwifery-Information.aspx"
+  },
+  {
+   "slug": "board-of-electrologists-and-body-art-practitioners",
+   "name": "Board of Electrologists and Body Art Practitioners",
+   "abbr": "OHA HLO BBAPBP",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Body-Art-Practitioners.aspx"
+  },
+  {
+   "slug": "board-of-examiners-for-engineering-and-land-surveying",
+   "name": "Board of Examiners for Engineering and Land Surveying",
+   "abbr": "OSBEELS",
+   "url": "https://www.oregon.gov/osbeels"
+  },
+  {
+   "slug": "board-of-examiners-for-speech-language-pathology-and-audiology",
+   "name": "Board of Examiners for Speech-Language Pathology and Audiology",
+   "abbr": "BSPA",
+   "url": "https://www.oregon.gov/bspa"
+  },
+  {
+   "slug": "board-of-licensed-dietitians",
+   "name": "Board of Licensed Dietitians",
+   "abbr": "OHA HLO LD",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Licensed-Dietitians.aspx"
+  },
+  {
+   "slug": "board-of-licensed-professional-counselors-and-therapists",
+   "name": "Board of Licensed Professional Counselors and Therapists",
+   "abbr": "OBLPCT",
+   "url": "https://www.oregon.gov/oblpct"
+  },
+  {
+   "slug": "board-of-licensed-social-workers",
+   "name": "Board of Licensed Social Workers",
+   "abbr": "BLSW",
+   "url": "https://www.oregon.gov/blsw"
+  },
+  {
+   "slug": "board-of-parole-and-post-prison-supervision",
+   "name": "Board of Parole and Post-Prison Supervision",
+   "abbr": "BOPPPS",
+   "url": "https://www.oregon.gov/boppps"
+  },
+  {
+   "slug": "building-codes-division",
+   "name": "Building Codes Division",
+   "abbr": "BCD",
+   "url": "https://www.oregon.gov/bcd"
+  },
+  {
+   "slug": "bureau-of-labor-and-industries",
+   "name": "Bureau of Labor and Industries",
+   "abbr": "BOLI",
+   "url": "https://www.oregon.gov/boli"
+  },
+  {
+   "slug": "business-oregon",
+   "name": "Business Oregon",
+   "abbr": "OREGON4BIZ",
+   "url": "https://www.oregon.gov/biz/Pages/default.aspx",
+   "article": false
+  },
+  {
+   "slug": "business-services-division",
+   "name": "Business Services Division",
+   "abbr": "SOS F",
+   "url": "https://sos.oregon.gov/business"
+  },
+  {
+   "slug": "columbia-river-gorge-commission",
+   "name": "Columbia River Gorge Commission",
+   "abbr": "CRGC",
+   "url": "http://www.gorgecommission.org"
+  },
+  {
+   "slug": "commission-on-hispanic-affairs",
+   "name": "Commission on Hispanic Affairs",
+   "abbr": "HISPANIC",
+   "url": "https://www.oregon.gov/oac/ocha"
+  },
+  {
+   "slug": "commission-on-judicial-fitness-and-disability",
+   "name": "Commission on Judicial Fitness and Disability",
+   "abbr": "COURTS CJFD",
+   "url": "https://www.courts.oregon.gov/programs/cjfd/pages/default.aspx"
+  },
+  {
+   "slug": "construction-contractors-board",
+   "name": "Construction Contractors Board",
+   "abbr": "CCB",
+   "url": "https://www.oregon.gov/ccb"
+  },
+  {
+   "slug": "council-on-court-procedures",
+   "name": "Council on Court Procedures",
+   "abbr": "CCP",
+   "url": "http://www.counciloncourtprocedures.org"
+  },
+  {
+   "slug": "court-of-appeals",
+   "name": "Court of Appeals",
+   "abbr": "COURTOFAPPEALS",
+   "url": "http://www.courts.oregon.gov/coa/Pages/index.aspx"
+  },
+  {
+   "slug": "criminal-justice-commission",
+   "name": "Criminal Justice Commission",
+   "abbr": "CJC",
+   "url": "https://www.oregon.gov/cjc"
+  },
+  {
+   "slug": "department-of-administrative-services",
+   "name": "Department of Administrative Services",
+   "abbr": "DAS",
+   "url": "https://www.oregon.gov/das"
+  },
+  {
+   "slug": "department-of-aviation",
+   "name": "Department of Aviation",
+   "abbr": "AVIATION",
+   "url": "https://www.oregon.gov/aviation"
+  },
+  {
+   "slug": "department-of-consumer-and-business-services",
+   "name": "Department of Consumer and Business Services",
+   "abbr": "DCBS",
+   "url": "https://www.oregon.gov/dcbs"
+  },
+  {
+   "slug": "department-of-corrections",
+   "name": "Department of Corrections",
+   "abbr": "DOC",
+   "url": "https://www.oregon.gov/doc"
+  },
+  {
+   "slug": "department-of-emergency-management",
+   "name": "Department of Emergency Management",
+   "abbr": "OEM",
+   "url": "https://www.oregon.gov/oem"
+  },
+  {
+   "slug": "department-of-energy",
+   "name": "Department of Energy",
+   "abbr": "DOE",
+   "url": "https://www.oregon.gov/energy"
+  },
+  {
+   "slug": "department-of-environmental-quality",
+   "name": "Department of Environmental Quality",
+   "abbr": "DEQ",
+   "url": "https://www.oregon.gov/deq"
+  },
+  {
+   "slug": "department-of-geology-and-mineral-industries",
+   "name": "Department of Geology and Mineral Industries",
+   "abbr": "DOGAMI",
+   "url": "https://www.oregon.gov/dogami"
+  },
+  {
+   "slug": "department-of-justice",
+   "name": "Department of Justice",
+   "abbr": "DOJ",
+   "url": "https://www.doj.state.or.us/"
+  },
+  {
+   "slug": "department-of-land-conservation-and-development",
+   "name": "Department of Land Conservation and Development",
+   "abbr": "LCD",
+   "url": "https://www.oregon.gov/lcd"
+  },
+  {
+   "slug": "department-of-public-safety-standards-and-training",
+   "name": "Department of Public Safety Standards and Training",
+   "abbr": "DPSST",
+   "url": "https://www.oregon.gov/dpsst"
+  },
+  {
+   "slug": "department-of-revenue",
+   "name": "Department of Revenue",
+   "abbr": "DOR",
+   "url": "https://www.oregon.gov/dor"
+  },
+  {
+   "slug": "department-of-state-lands",
+   "name": "Department of State Lands",
+   "abbr": "DSL",
+   "url": "https://www.oregon.gov/dsl"
+  },
+  {
+   "slug": "division-of-financial-regulation",
+   "name": "Division of Financial Regulation",
+   "abbr": "DFR",
+   "url": "http://dfr.oregon.gov"
+  },
+  {
+   "slug": "elections-division",
+   "name": "Elections Division",
+   "abbr": "VOTE",
+   "url": "http://www.oregonvotes.org"
+  },
+  {
+   "slug": "electronic-portal-advisory-board",
+   "name": "Electronic Portal Advisory Board",
+   "abbr": "EPAB",
+   "url": "https://www.oregon.gov/epab"
+  },
+  {
+   "slug": "employment-department",
+   "name": "Employment Department",
+   "abbr": "EMPLOY",
+   "url": "https://www.oregon.gov/employ"
+  },
+  {
+   "slug": "employment-relations-board",
+   "name": "Employment Relations Board",
+   "abbr": "ERB",
+   "url": "https://www.oregon.gov/erb"
+  },
+  {
+   "slug": "enterprise-information-services",
+   "name": "Enterprise Information Services",
+   "abbr": "EIS",
+   "url": "https://www.oregon.gov/eis"
+  },
+  {
+   "slug": "environmental-health-registration-board",
+   "name": "Environmental Health Registration Board",
+   "abbr": "OHA HLO EHRB",
+   "url": "https://www.oregon.gov/oha/PH/HLO/Pages/Board-EHRB-Environmental-Health-License.aspx"
+  },
+  {
+   "slug": "governor-of-oregon",
+   "name": "Governor of Oregon",
+   "abbr": "GOV",
+   "url": "https://www.oregon.gov/gov"
+  },
+  {
+   "slug": "health-evidence-review-commission",
+   "name": "Health Evidence Review Commission",
+   "abbr": "OHA HPA HERC",
+   "url": "https://www.oregon.gov/oha/hpa/dsi-herc"
+  },
+  {
+   "slug": "health-licensing-office",
+   "name": "Health Licensing Office",
+   "abbr": "OHA PH HLO",
+   "url": "https://www.oregon.gov/oha/ph/hlo"
+  },
+  {
+   "slug": "health-policy-and-analytics-division",
+   "name": "Health Policy and Analytics Division",
+   "abbr": "OHA HPA",
+   "url": "https://www.oregon.gov/oha/hpa"
+  },
+  {
+   "slug": "healthcare-acquired-infection-advisory-committee",
+   "name": "Healthcare Acquired Infection Advisory Committee",
+   "abbr": "OHA PH HAIAC",
+   "url": "https://oregon.gov/oha/PH/DISEASESCONDITIONS/COMMUNICABLEDISEASE/HAI"
+  },
+  {
+   "slug": "higher-education-coordinating-commission",
+   "name": "Higher Education Coordinating Commission",
+   "abbr": "HIGHERED",
+   "url": "https://www.oregon.gov/highered/Pages/index.aspx"
+  },
+  {
+   "slug": "land-use-board-of-appeals",
+   "name": "Land Use Board of Appeals",
+   "abbr": "LUBA",
+   "url": "https://www.oregon.gov/luba"
+  },
+  {
+   "slug": "landscape-contractors-board",
+   "name": "Landscape Contractors Board",
+   "abbr": "LCB",
+   "url": "https://www.oregon.gov/lcb"
+  },
+  {
+   "slug": "legislative-administration-committee",
+   "name": "Legislative Administration Committee",
+   "abbr": "LEGISLATURE LA",
+   "url": "https://www.oregonlegislature.gov/la"
+  },
+  {
+   "slug": "legislative-commission-on-indian-services",
+   "name": "Legislative Commission on Indian Services",
+   "abbr": "LEGISLATURE CIS",
+   "url": "https://www.oregonlegislature.gov/cis"
+  },
+  {
+   "slug": "legislative-fiscal-office",
+   "name": "Legislative Fiscal Office",
+   "abbr": "LEGISLATURE LFO",
+   "url": "https://www.oregonlegislature.gov/lfo"
+  },
+  {
+   "slug": "legislative-revenue-office",
+   "name": "Legislative Revenue Office",
+   "abbr": "LEGISLATURE LRO",
+   "url": "https://www.oregonlegislature.gov/lro"
+  },
+  {
+   "slug": "long-term-care-administrators-board",
+   "name": "Long Term Care Administrators Board",
+   "abbr": "OHA HLO LTCAB",
+   "url": "https://www.oregon.gov/oha/PH/HLO/Pages/Board-Nursing-Home-Administrators-License.aspx"
+  },
+  {
+   "slug": "long-term-care-ombudsman",
+   "name": "Long-Term Care Ombudsman",
+   "abbr": "LTCO",
+   "url": "https://www.oregon.gov/ltco"
+  },
+  {
+   "slug": "medicaid-advisory-committee",
+   "name": "Medicaid Advisory Committee",
+   "abbr": "OHA HPA MAC",
+   "url": "https://www.oregon.gov/oha/hpa/hp-mac"
+  },
+  {
+   "slug": "northwest-power-and-conservation-council",
+   "name": "Northwest Power and Conservation Council",
+   "abbr": "NWCOUNCIL",
+   "url": "http://www.nwcouncil.org"
+  },
+  {
+   "slug": "occupational-therapy-licensing-board",
+   "name": "Occupational Therapy Licensing Board",
+   "abbr": "OTLB",
+   "url": "https://www.oregon.gov/otlb"
+  },
+  {
+   "slug": "office-of-administrative-hearings",
+   "name": "Office of Administrative Hearings",
+   "abbr": "OAH",
+   "url": "https://www.oregon.gov/oah"
+  },
+  {
+   "slug": "office-of-economic-analysis",
+   "name": "Office of Economic Analysis",
+   "abbr": "OEA",
+   "url": "https://www.oregon.gov/das/oea"
+  },
+  {
+   "slug": "office-of-health-policy",
+   "name": "Office of Health Policy",
+   "abbr": "OHA HPA HP",
+   "url": "https://www.oregon.gov/oha/hpa/hp"
+  },
+  {
+   "slug": "office-of-legislative-counsel",
+   "name": "Office of Legislative Counsel",
+   "abbr": "LEGISLATURE LC",
+   "url": "https://www.oregonlegislature.gov/lc"
+  },
+  {
+   "slug": "office-of-small-business-assistance",
+   "name": "Office of Small Business Assistance",
+   "abbr": "OSBA",
+   "url": "https://www.oregon.gov/smallbusiness/Pages/default.aspx"
+  },
+  {
+   "slug": "office-of-the-chief-operating-officer",
+   "name": "Office of the Chief Operating Officer",
+   "abbr": "DAS COO",
+   "url": "https://www.oregon.gov/das/pages/coo.aspx"
+  },
+  {
+   "slug": "oregon-advocacy-commissions-office",
+   "name": "Oregon Advocacy Commissions Office",
+   "abbr": "OACO",
+   "url": "https://www.oregon.gov/OAC"
+  },
+  {
+   "slug": "oregon-arts-commission",
+   "name": "Oregon Arts Commission",
+   "abbr": "OAC",
+   "url": "http://www.oregonartscommission.org"
+  },
+  {
+   "slug": "oregon-board-of-chiropractic-examiners",
+   "name": "Oregon Board of Chiropractic Examiners",
+   "abbr": "OBCE",
+   "url": "https://www.oregon.gov/obce"
+  },
+  {
+   "slug": "oregon-board-of-massage-therapists",
+   "name": "Oregon Board of Massage Therapists",
+   "abbr": "OBMT",
+   "url": "https://www.oregon.gov/obmt"
+  },
+  {
+   "slug": "oregon-board-of-medical-imaging",
+   "name": "Oregon Board of Medical Imaging",
+   "abbr": "OBMI",
+   "url": "https://www.oregon.gov/obmi"
+  },
+  {
+   "slug": "oregon-board-of-naturopathic-medicine",
+   "name": "Oregon Board of Naturopathic Medicine",
+   "abbr": "OBNM",
+   "url": "https://www.oregon.gov/obnm"
+  },
+  {
+   "slug": "oregon-board-of-optometry",
+   "name": "Oregon Board of Optometry",
+   "abbr": "OBO",
+   "url": "https://www.oregon.gov/obo"
+  },
+  {
+   "slug": "oregon-board-of-psychology",
+   "name": "Oregon Board of Psychology",
+   "abbr": "OBOP",
+   "url": "https://www.oregon.gov/obpe"
+  },
+  {
+   "slug": "oregon-board-of-tax-practitioner",
+   "name": "Oregon Board of Tax Practitioner",
+   "abbr": "OBTP",
+   "url": "https://www.oregon.gov/obtp"
+  },
+  {
+   "slug": "oregon-commission-for-the-blind",
+   "name": "Oregon Commission for the Blind",
+   "abbr": "BLIND",
+   "url": "https://www.oregon.gov/blind"
+  },
+  {
+   "slug": "oregon-commission-for-women",
+   "name": "Oregon Commission for Women",
+   "abbr": "WOMEN",
+   "url": "https://www.oregon.gov/oac/ocfw/Pages/index.aspx"
+  },
+  {
+   "slug": "oregon-commission-on-asian-and-pacific-islander-affairs",
+   "name": "Oregon Commission on Asian and Pacific Islander Affairs",
+   "abbr": "OCAPIA",
+   "url": "https://www.oregon.gov/ocapia"
+  },
+  {
+   "slug": "oregon-commission-on-black-affairs",
+   "name": "Oregon Commission on Black Affairs",
+   "abbr": "OCBA",
+   "url": "https://www.oregon.gov/ocba"
+  },
+  {
+   "slug": "oregon-corrections-enterprises",
+   "name": "Oregon Corrections Enterprises",
+   "abbr": "OCE",
+   "url": "http://oce.oregon.gov"
+  },
+  {
+   "slug": "oregon-cultural-trust",
+   "name": "Oregon Cultural Trust",
+   "abbr": "OCT",
+   "url": "http://www.culturaltrust.org"
+  },
+  {
+   "slug": "oregon-department-of-agriculture",
+   "name": "Oregon Department of Agriculture",
+   "abbr": "ODA",
+   "url": "https://www.oregon.gov/oda"
+  },
+  {
+   "slug": "oregon-department-of-early-learning-and-care",
+   "name": "Oregon Department of Early Learning and Care",
+   "abbr": "DELC",
+   "url": "https://www.oregon.gov/delc/Pages/default.aspx"
+  },
+  {
+   "slug": "oregon-department-of-education",
+   "name": "Oregon Department of Education",
+   "abbr": "ODE",
+   "url": "https://www.oregon.gov/ode"
+  },
+  {
+   "slug": "oregon-department-of-fish-and-wildlife",
+   "name": "Oregon Department of Fish and Wildlife",
+   "abbr": "ODFW",
+   "url": "http://www.dfw.state.or.us"
+  },
+  {
+   "slug": "oregon-department-of-forestry",
+   "name": "Oregon Department of Forestry",
+   "abbr": "ODF",
+   "url": "https://www.oregon.gov/odf"
+  },
+  {
+   "slug": "oregon-department-of-human-services",
+   "name": "Oregon Department of Human Services",
+   "abbr": "ODHS",
+   "url": "https://www.oregon.gov/dhs"
+  },
+  {
+   "slug": "oregon-department-of-transportation",
+   "name": "Oregon Department of Transportation",
+   "abbr": "ODOT",
+   "url": "https://www.oregon.gov/odot"
+  },
+  {
+   "slug": "oregon-department-of-veterans-affairs",
+   "name": "Oregon Department of Veterans' Affairs",
+   "abbr": "ODVA",
+   "url": "https://www.oregon.gov/odva"
+  },
+  {
+   "slug": "oregon-driver-and-motor-vehicle-services",
+   "name": "Oregon Driver and Motor Vehicle Services",
+   "abbr": "DMV",
+   "url": "https://www.oregon.gov/odot/dmv"
+  },
+  {
+   "slug": "oregon-educators-benefit-board",
+   "name": "Oregon Educators Benefit Board",
+   "abbr": "DAS OEBB",
+   "url": "https://www.oregon.gov/oha/oebb"
+  },
+  {
+   "slug": "oregon-film-office",
+   "name": "Oregon Film Office",
+   "abbr": "FILM",
+   "url": "http://oregonfilm.org"
+  },
+  {
+   "slug": "oregon-government-ethics-commission",
+   "name": "Oregon Government Ethics Commission",
+   "abbr": "OGEC",
+   "url": "https://www.oregon.gov/ogec"
+  },
+  {
+   "slug": "oregon-health-authority",
+   "name": "Oregon Health Authority",
+   "abbr": "OHA",
+   "url": "https://www.oregon.gov/oha"
+  },
+  {
+   "slug": "oregon-health-insurance-marketplace",
+   "name": "Oregon Health Insurance Marketplace",
+   "abbr": "OHIM",
+   "url": "http://oregonhealthcare.gov"
+  },
+  {
+   "slug": "oregon-housing-and-community-services",
+   "name": "Oregon Housing and Community Services",
+   "abbr": "OHCS",
+   "url": "https://www.oregon.gov/ohcs"
+  },
+  {
+   "slug": "oregon-invasive-species-council",
+   "name": "Oregon Invasive Species Council",
+   "abbr": "OISC",
+   "url": "https://www.oregoninvasivespeciescouncil.org/"
+  },
+  {
+   "slug": "oregon-judicial-department",
+   "name": "Oregon Judicial Department",
+   "abbr": "COURTS OJD",
+   "url": "https://courts.oregon.gov"
+  },
+  {
+   "slug": "oregon-liquor-and-cannabis-commission",
+   "name": "Oregon Liquor and Cannabis Commission",
+   "abbr": "OLCC",
+   "url": "https://www.oregon.gov/olcc"
+  },
+  {
+   "slug": "oregon-medical-board",
+   "name": "Oregon Medical Board",
+   "abbr": "OMB",
+   "url": "https://www.oregon.gov/omb"
+  },
+  {
+   "slug": "oregon-military-department",
+   "name": "Oregon Military Department",
+   "abbr": "OMD",
+   "url": "https://www.oregon.gov/omd"
+  },
+  {
+   "slug": "oregon-mortuary-and-cemetery-board",
+   "name": "Oregon Mortuary and Cemetery Board",
+   "abbr": "MORTCEM",
+   "url": "https://www.oregon.gov/omcb"
+  },
+  {
+   "slug": "oregon-occupational-safety-and-health-division",
+   "name": "Oregon Occupational Safety and Health Division",
+   "abbr": "OROSHA",
+   "url": "http://osha.oregon.gov"
+  },
+  {
+   "slug": "oregon-pain-management-commission",
+   "name": "Oregon Pain Management Commission",
+   "abbr": "OHPR",
+   "url": "https://www.oregon.gov/oha/hpa/dsi-pmc"
+  },
+  {
+   "slug": "oregon-parks-and-recreation",
+   "name": "Oregon Parks and Recreation",
+   "abbr": "PARKSREC",
+   "url": "https://www.oregon.gov/oprd"
+  },
+  {
+   "slug": "oregon-patient-safety-commission",
+   "name": "Oregon Patient Safety Commission",
+   "abbr": "PSC",
+   "url": "http://oregonpatientsafety.org"
+  },
+  {
+   "slug": "oregon-plan-for-salmon-and-watersheds",
+   "name": "Oregon Plan for Salmon and Watersheds",
+   "abbr": "OPSW",
+   "url": "https://www.oregon.gov/opsw"
+  },
+  {
+   "slug": "oregon-prescription-drug-program",
+   "name": "Oregon Prescription Drug Program",
+   "abbr": "OHA OPDP",
+   "url": "https://www.oregon.gov/oha/hpa/dsi-opdp/"
+  },
+  {
+   "slug": "oregon-public-defense-commission",
+   "name": "Oregon Public Defense Commission",
+   "abbr": "OPDS",
+   "url": "https://www.oregon.gov/opds"
+  },
+  {
+   "slug": "oregon-racing-commission",
+   "name": "Oregon Racing Commission",
+   "abbr": "ORC",
+   "url": "https://www.oregon.gov/racing"
+  },
+  {
+   "slug": "oregon-real-estate-agency",
+   "name": "Oregon Real Estate Agency",
+   "abbr": "REA",
+   "url": "https://www.oregon.gov/rea"
+  },
+  {
+   "slug": "oregon-school-boards-association",
+   "name": "Oregon School Boards Association",
+   "abbr": "OSBA",
+   "url": "http://www.osba.org/"
+  },
+  {
+   "slug": "oregon-state-archives",
+   "name": "Oregon State Archives",
+   "abbr": "SOS ARCHIVES",
+   "url": "http://sos.oregon.gov/archives"
+  },
+  {
+   "slug": "oregon-state-bar",
+   "name": "Oregon State Bar",
+   "abbr": "OSB",
+   "url": "http://www.osbar.org"
+  },
+  {
+   "slug": "oregon-state-board-of-architect-examiners",
+   "name": "Oregon State Board of Architect Examiners",
+   "abbr": "ORBAE",
+   "url": "https://public.orlicensing.oregon.gov/orbaeportal"
+  },
+  {
+   "slug": "oregon-state-board-of-geologist-examiners",
+   "name": "Oregon State Board of Geologist Examiners",
+   "abbr": "OSBGE",
+   "url": "https://www.oregon.gov/osbge"
+  },
+  {
+   "slug": "oregon-state-board-of-nursing",
+   "name": "Oregon State Board of Nursing",
+   "abbr": "OSBN",
+   "url": "https://www.oregon.gov/osbn"
+  },
+  {
+   "slug": "oregon-state-board-of-pharmacy",
+   "name": "Oregon State Board of Pharmacy",
+   "abbr": "RX",
+   "url": "https://www.oregon.gov/pharmacy"
+  },
+  {
+   "slug": "oregon-state-fair",
+   "name": "Oregon State Fair",
+   "abbr": "OSF",
+   "url": "https://oregonstatefair.org"
+  },
+  {
+   "slug": "oregon-state-fair-council",
+   "name": "Oregon State Fair Council",
+   "abbr": "OSFC",
+   "url": "http://oregonstatefaircouncil.org/"
+  },
+  {
+   "slug": "oregon-state-fire-marshal",
+   "name": "Oregon State Fire Marshal",
+   "abbr": "OSFM",
+   "url": "https://www.oregon.gov/osfm/pages/default.aspx"
+  },
+  {
+   "slug": "oregon-state-landscape-architect-board",
+   "name": "Oregon State Landscape Architect Board",
+   "abbr": "OSLAB",
+   "url": "https://www.oregon.gov/landarch"
+  },
+  {
+   "slug": "oregon-state-legislature",
+   "name": "Oregon State Legislature",
+   "abbr": "LEGISLATURE",
+   "url": "https://www.oregonlegislature.gov/"
+  },
+  {
+   "slug": "oregon-state-lottery",
+   "name": "Oregon State Lottery",
+   "abbr": "LOTTERY",
+   "url": "http://oregonlottery.org"
+  },
+  {
+   "slug": "oregon-state-marine-board",
+   "name": "Oregon State Marine Board",
+   "abbr": "OSMB",
+   "url": "https://www.oregon.gov/osmb"
+  },
+  {
+   "slug": "oregon-state-police",
+   "name": "Oregon State Police",
+   "abbr": "OSP",
+   "url": "https://www.oregon.gov/osp"
+  },
+  {
+   "slug": "oregon-state-treasurer",
+   "name": "Oregon State Treasurer",
+   "abbr": "OST",
+   "url": "https://www.oregon.gov/treasury"
+  },
+  {
+   "slug": "oregon-supreme-court",
+   "name": "Oregon Supreme Court",
+   "abbr": "SUPREMECOURT",
+   "url": "http://www.courts.oregon.gov/supreme/Pages/index.aspx"
+  },
+  {
+   "slug": "oregon-watershed-enhancement-board",
+   "name": "Oregon Watershed Enhancement Board",
+   "abbr": "OWEB",
+   "url": "https://www.oregon.gov/oweb"
+  },
+  {
+   "slug": "oregon-wine-board",
+   "name": "Oregon Wine Board",
+   "abbr": "WINE",
+   "url": "http://www.oregonwine.org"
+  },
+  {
+   "slug": "oregon-youth-authority",
+   "name": "Oregon Youth Authority",
+   "abbr": "OYA",
+   "url": "https://www.oregon.gov/oya"
+  },
+  {
+   "slug": "pacific-states-marine-fisheries-commission",
+   "name": "Pacific States Marine Fisheries Commission",
+   "abbr": "PSMFC",
+   "url": "http://www.psmfc.org"
+  },
+  {
+   "slug": "performance-reporting-information-system",
+   "name": "Performance Reporting Information System",
+   "abbr": "PRISM",
+   "url": "https://www.qualityinfo.org/pm"
+  },
+  {
+   "slug": "physical-therapist-licensing-board",
+   "name": "Physical Therapist Licensing Board",
+   "abbr": "PTBRD",
+   "url": "https://www.oregon.gov/pt"
+  },
+  {
+   "slug": "psychiatric-security-review-board",
+   "name": "Psychiatric Security Review Board",
+   "abbr": "PRB",
+   "url": "https://www.oregon.gov/prb"
+  },
+  {
+   "slug": "public-employees-retirement-system",
+   "name": "Public Employees Retirement System",
+   "abbr": "PERS",
+   "url": "https://www.oregon.gov/pers"
+  },
+  {
+   "slug": "public-employees-benefits-board",
+   "name": "Public Employees' Benefits Board",
+   "abbr": "PEBB",
+   "url": "https://www.oregon.gov/OHA/PEBB/Pages/index.aspx"
+  },
+  {
+   "slug": "public-health-division",
+   "name": "Public Health Division",
+   "abbr": "PHD",
+   "url": "https://public.health.oregon.gov"
+  },
+  {
+   "slug": "public-utility-commission-of-oregon",
+   "name": "Public Utility Commission of Oregon",
+   "abbr": "PUC",
+   "url": "https://www.oregon.gov/puc"
+  },
+  {
+   "slug": "respiratory-therapist-and-polysomnographic-technologist-licensing-board",
+   "name": "Respiratory Therapist and Polysomnographic Technologist Licensing Board",
+   "abbr": "RTPT",
+   "url": "https://www.oregon.gov/oha/PH/HLO/Pages/Board-RTPT.aspx"
+  },
+  {
+   "slug": "secretary-of-state",
+   "name": "Secretary of State",
+   "abbr": "SOS",
+   "url": "http://sos.oregon.gov"
+  },
+  {
+   "slug": "senior-health-insurance-benefits-assistance-program",
+   "name": "Senior Health Insurance Benefits Assistance Program",
+   "abbr": "SHIBA",
+   "url": "http://shiba.oregon.gov"
+  },
+  {
+   "slug": "sex-offender-treatment-board",
+   "name": "Sex Offender Treatment Board",
+   "abbr": "SOTB",
+   "url": "https://www.oregon.gov/OHA/PH/HLO/Pages/Board-Sex-Offender-Treatment.aspx"
+  },
+  {
+   "slug": "special-districts-association-of-oregon",
+   "name": "Special Districts Association of Oregon",
+   "abbr": "SDAO",
+   "url": "https://www.sdao.com"
+  },
+  {
+   "slug": "state-independent-living-council",
+   "name": "State Independent Living Council",
+   "abbr": "DHS SILC",
+   "url": "https://oregon.gov/dhs/seniors-disabilities/silc"
+  },
+  {
+   "slug": "state-interoperability-executive-council",
+   "name": "State Interoperability Executive Council",
+   "abbr": "SIEC",
+   "url": "https://www.oregon.gov/siec"
+  },
+  {
+   "slug": "state-library-of-oregon",
+   "name": "State Library of Oregon",
+   "abbr": "OSL",
+   "url": "https://www.oregon.gov/library"
+  },
+  {
+   "slug": "state-medical-examiner",
+   "name": "State Medical Examiner",
+   "abbr": "OSP SME",
+   "url": "https://www.oregon.gov/osp/programs/pages/med.aspx"
+  },
+  {
+   "slug": "state-of-oregon-law-library",
+   "name": "State of Oregon Law Library",
+   "abbr": "SOLL",
+   "url": "http://soll.libguides.com"
+  },
+  {
+   "slug": "tax-court",
+   "name": "Tax Court",
+   "abbr": "TAXCOURT",
+   "url": "http://www.courts.oregon.gov/Tax/Pages/index.aspx"
+  },
+  {
+   "slug": "teacher-standards-and-practices-commission",
+   "name": "Teacher Standards and Practices Commission",
+   "abbr": "TSPC",
+   "url": "https://www.oregon.gov/tspc"
+  },
+  {
+   "slug": "travel-information-council",
+   "name": "Travel Information Council",
+   "abbr": "OTE",
+   "url": "http://oregontic.com"
+  },
+  {
+   "slug": "travel-oregon",
+   "name": "Travel Oregon",
+   "abbr": "TRAVELOREGON",
+   "url": "https://traveloregon.com",
+   "article": false
+  },
+  {
+   "slug": "veterinary-medical-examining-board",
+   "name": "Veterinary Medical Examining Board",
+   "abbr": "OVMEB",
+   "url": "https://www.oregon.gov/ovmeb"
+  },
+  {
+   "slug": "water-resources-department",
+   "name": "Water Resources Department",
+   "abbr": "OWRD",
+   "url": "https://www.oregon.gov/owrd"
+  },
+  {
+   "slug": "workers-compensation-board",
+   "name": "Workers' Compensation Board",
+   "abbr": "WCB",
+   "url": "https://www.oregon.gov/wcb"
+  },
+  {
+   "slug": "workers-compensation-division",
+   "name": "Workers' Compensation Division",
+   "abbr": "WCD",
+   "url": "http://wcd.oregon.gov"
+  },
+  {
+   "slug": "workforce-and-talent-development-board",
+   "name": "Workforce and Talent Development Board",
+   "abbr": "OWIB",
+   "url": "https://oregon.gov/workforceboard"
+  },
+  {
+   "slug": "worksource-oregon",
+   "name": "Worksource Oregon",
+   "abbr": "WO",
+   "url": "http://www.worksourceoregon.org",
+   "article": false
+  }
+ ]
+}

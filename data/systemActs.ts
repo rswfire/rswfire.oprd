@@ -3669,7 +3669,7 @@ export const ACTS: Record<string, Act[]> = {
             "text": "Captain Kyle Kennedy is copied on public records request PR44279: every “threat assessment” requested by or routed through the Government and Media Relations section since January 1, 2023.",
             "src": {
                 "u": "01M5JGN4GGQX1SS6GYNYG0NGA5",
-                "t": "osp"
+                "t": "public-question-1"
             },
             "title": "Public records request, PR44279"
         },
@@ -3679,7 +3679,7 @@ export const ACTS: Record<string, Act[]> = {
             "text": "Captain Kyle Kennedy is copied as section 4 of PR44279 is withdrawn: “Is the press office a back channel for agencies to dump their problems? The public deserves to know. Your response is the answer.”",
             "src": {
                 "u": "01M5K5VMDR3S4GQ822KRNTQVMR",
-                "t": "osp"
+                "t": "public-question-1"
             },
             "title": "Section 4 withdrawn"
         }
@@ -4928,7 +4928,7 @@ export const ACTS: Record<string, Act[]> = {
             "text": "OSP Public Records acknowledges the request as PR44279: “A search will be conducted to determine if OSP is the custodian of the requested record(s).”",
             "src": {
                 "u": "01M5JGHV1GQWQ4DDQ1AH2M7B5B",
-                "t": "osp"
+                "t": "public-question-1"
             },
             "title": "OSP Public Records, Acknowledgment, PR44279"
         },
@@ -4938,7 +4938,7 @@ export const ACTS: Record<string, Act[]> = {
             "text": "The volunteer sends the request to Central Records in full: “The automated acknowledgement does not include the contents of the request so I am reproducing it below.”",
             "src": {
                 "u": "01M5JGN4GGQX1SS6GYNYG0NGA5",
-                "t": "osp"
+                "t": "public-question-1"
             },
             "title": "Public records request, PR44279"
         },
@@ -4948,7 +4948,7 @@ export const ACTS: Record<string, Act[]> = {
             "text": "The volunteer withdraws section 4 of PR44279: “I ask that this public records request be fulfilled in good faith without a clause that allows for substitution.”",
             "src": {
                 "u": "01M5K5VMDR3S4GQ822KRNTQVMR",
-                "t": "osp"
+                "t": "public-question-1"
             },
             "title": "Section 4 withdrawn"
         }

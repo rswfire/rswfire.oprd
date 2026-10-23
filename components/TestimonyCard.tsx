@@ -7,7 +7,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ChevronRight, Sprout, Users } from "lucide-react";
+import { ChevronRight, Sprout, MailQuestionMark, Users } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
@@ -98,6 +98,19 @@ export default function TestimonyCard() {
                             <span className="block text-[12px] text-gray-600">Everyone named above.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-emerald-700 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                    <Link
+                        href="/public-questions"
+                        className="not-italic group !mt-3 flex items-center gap-3 rounded-xl border border-sky-200 bg-sky-50/60 px-4 py-3 no-underline transition-colors hover:border-sky-300 hover:bg-sky-50"
+                    >
+                        <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-sky-700 ring-1 ring-sky-200">
+                            <MailQuestionMark size={18} strokeWidth={1.75} />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                            <span className="block text-[14px] font-semibold text-gray-900">Public Questions</span>
+                            <span className="block text-[12px] text-gray-600">One question, asked of every state agency.</span>
+                        </span>
+                        <ChevronRight aria-hidden size={18} className="shrink-0 text-sky-700 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                 </div>
 
