@@ -319,6 +319,17 @@ export default function StormchasersSoliloquyPage() {
             emblem="Lighthouse" tone="indigo"
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
+            tagline={
+                <a
+                    href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-600"
+                >
+                    <Icon name="Flame" size={14} strokeWidth={2} className="text-orange-600" aria-hidden />
+                    rswfire.com: signal analysis
+                </a>
+            }
         >
             <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
@@ -379,18 +390,6 @@ export default function StormchasersSoliloquyPage() {
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
                     third part an escalation is weaponizing it a third time. It&rsquo;s still just a poem.
                 </p>
-            </div>
-
-            <div className="mt-8 flex justify-start">
-                <a
-                    href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded border border-orange-300 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800 hover:bg-orange-100"
-                >
-                    <Icon name="Flame" size={14} aria-hidden />
-                    rswfire.com: signal analysis
-                </a>
             </div>
 
             {movements.map((movement) => (
