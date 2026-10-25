@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
+import Icon from "@/components/Icon";
 import PersonLink from "@/components/PersonLink";
 import Moment from "@/components/player/Moment";
 
@@ -319,6 +320,18 @@ export default function StormchasersSoliloquyPage() {
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
         >
+            <div className="mb-8 flex justify-center">
+                <a
+                    href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-orange-300 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800 hover:bg-orange-100"
+                >
+                    <Icon name="Flame" size={14} aria-hidden />
+                    rswfire.com: signal analysis
+                </a>
+            </div>
+
             <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
                     I first shared this poem, when it was only the first part, on February 27, 2025. I{" "}
