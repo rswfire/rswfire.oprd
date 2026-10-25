@@ -317,7 +317,7 @@ export default function StormchasersSoliloquyPage() {
             {movements.map((movement, i) => (
                 <section key={movement.number} className={i === 0 ? "" : "mt-16 border-t border-gray-200 pt-10"}>
                     <div className="mb-8">
-                        <div className="text-xs font-bold uppercase tracking-widest text-indigo-700">
+                        <div className="text-xs font-bold uppercase tracking-widest text-emerald-700">
                             {movement.number}
                         </div>
                         <div className="mt-1 text-lg font-semibold">{movement.date}</div>
