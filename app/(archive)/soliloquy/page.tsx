@@ -361,13 +361,22 @@ export default function StormchasersSoliloquyPage() {
                     I did not know what had happened two days before.
                 </p>
                 <p>
-                    On March 3,{" "}
-                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, Emergency Manager, using a title meant to
-                    carry the entire act,{" "}
-                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
-                    <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, copying
-                    Deputy Director <PersonLink name="Collier" seat="deputy" />, &ldquo;since he is now including the
-                    Governor as well as our Director.&rdquo; On March 4 the press captain handed it to criminal investigations, and{" "}
+                    On March 3, 2026, I <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
+                    <PersonLink name="J.R. Collier" seat="deputy" /> of Oregon Parks and Recreation Department. I told
+                    him I was working two jobs and volunteering for the US Forest Service. I told him I intended to
+                    secure the funds to sue his agency for barring me from participating in civic government. And I
+                    told him there was still time to prevent it. It was the last door I was holding open for the man
+                    and I told him as much. I ended with refusal: &ldquo;You will not bury this.&rdquo;
+                </p>
+                <p>He reached for borrowed power.</p>
+                <p>
+                    Within hours, a man I have never met or corresponded with, using a title meant to carry the entire
+                    act, Oregon State Parks&rsquo; Emergency Manager{" "}
+                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, copying Deputy Director J.R. Collier,{" "}
+                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
+                    <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
+                    allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
+                    our Governor as justification. On March 4 the press captain handed it to criminal investigations, and{" "}
                     <PersonLink name="a sergeant" seat="sergeant" /> wrote to a detective: &ldquo;Capt. Kennedy is
                     requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the second
                     part, it reached <PersonLink name="a detective" seat="task-force-detective" /> who is a task force
