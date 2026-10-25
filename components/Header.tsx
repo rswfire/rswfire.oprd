@@ -154,7 +154,7 @@ export default function Header() {
                         <Link
                             href="/"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex items-center gap-3 border-b border-slate-200 pb-3 pr-24"
+                            className="flex items-center gap-3 border-b border-slate-200 pb-3"
                         >
                             <Icon name="Park" className="shrink-0 text-emerald-700 w-7 h-7" size={36} strokeWidth={1.5} />
                             <div className="leading-tight">
