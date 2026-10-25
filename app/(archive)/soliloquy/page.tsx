@@ -375,14 +375,8 @@ export default function StormchasersSoliloquyPage() {
                     the state government&rsquo;s police power</Link>.
                 </p>
                 <p>
-                    The third part is dated October 24, 2026. The State of Oregon has already been through this
-                    archive with a press captain, its Criminal Investigations Division, a detective on the FBI Joint
-                    Terrorism Task Force, an analyst at the state fusion center, and a Major Crimes detective. The task
-                    force detective reported back: &ldquo;I wanted to update you on what I was able to learn from my
-                    end, it wasn&rsquo;t much unfortunately.&rdquo; Then{" "}
-                    <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">three men with
-                    guns came through a locked federal gate</Link> to tell me I was &ldquo;not in trouble.&rdquo; Every
-                    line of the third part is written where they can read it, signed with my own name.
+                    The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
+                    third part an escalation is weaponizing it a third time.
                 </p>
             </div>
 
