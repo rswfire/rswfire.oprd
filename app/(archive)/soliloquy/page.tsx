@@ -311,8 +311,7 @@ export default function StormchasersSoliloquyPage() {
             emblem="Lighthouse" tone="indigo"
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
-            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
-            nextPage={{ href: "/displacement", label: "The Displacement Framework" }}
+            previousPage={{ href: "/", label: "Home" }}
         >
             {movements.map((movement, i) => (
                 <section key={movement.number} className={i === 0 ? "" : "mt-16 border-t border-gray-200 pt-10"}>

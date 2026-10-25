@@ -15,7 +15,7 @@ export default function EthicsPage() {
             title="A NOTE ABOUT ETHICS"
             subtitle="AN INTRODUCTION"
             previousPage={{ href: "/", label: "Home" }}
-            nextPage={{ href: "/soliloquy", label: "Stormchaser's Soliloquy" }}
+            nextPage={{ href: "/displacement", label: "The Displacement Framework" }}
         >
 
                 <div className="mb-6 p-6 border-l-4 border-black rounded-r-lg">

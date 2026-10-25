@@ -26,7 +26,7 @@ export default function DisplacementPage() {
             emblem="Route" tone="violet"
             title="THE DISPLACEMENT FRAMEWORK"
             subtitle="THE MACHINE AND THE WEAPON"
-            previousPage={{ href: "/soliloquy", label: "Stormchaser's Soliloquy" }}
+            previousPage={{ href: "/ethics", label: "A Note About Ethics" }}
             nextPage={{ href: "/faq", label: "Frequently Asked Questions" }}
         >
 
