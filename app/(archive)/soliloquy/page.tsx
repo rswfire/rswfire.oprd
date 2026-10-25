@@ -1,5 +1,6 @@
 // app/(archive)/soliloquy/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
 import PersonLink from "@/components/PersonLink";
@@ -370,8 +371,9 @@ export default function StormchasersSoliloquyPage() {
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
                     allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
-                    our Governor as justification. From then on, I became a target of the state government&rsquo;s police
-                    power.
+                    our Governor as justification. From then on, I became{" "}
+                    <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
+                    the state government&rsquo;s police power</Link>.
                 </p>
                 <p>
                     The third part is dated October 24, 2026. These are the things it says I do: &ldquo;I release
