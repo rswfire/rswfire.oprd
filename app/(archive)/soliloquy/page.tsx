@@ -373,12 +373,7 @@ export default function StormchasersSoliloquyPage() {
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
                     allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
-                    our Governor as justification. On March 4 the press captain handed it to criminal investigations, and{" "}
-                    <PersonLink name="a sergeant" seat="sergeant" /> wrote to a detective: &ldquo;Capt. Kennedy is
-                    requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the second
-                    part, it reached <PersonLink name="a detective" seat="task-force-detective" /> who is a task force
-                    officer with the Portland FBI Joint Terrorism Task Force. I learned all of it on September 3, 2026, when the State Police produced the
-                    file.
+                    our Governor as justification.
                 </p>
                 <p>
                     The third part is dated October 24, 2026. These are the things it says I do: &ldquo;I release
