@@ -337,9 +337,16 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
-                    <PersonLink name="program manager" label="Allison Watson" /> used it again{" "}
-                    (<Moment ulid={CALL} t="11:19" />). I told her again what it was for{" "}
-                    (<Moment ulid={CALL} t="12:09" />).
+                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling me my dismissal was
+                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she used the poem to
+                    say I could not separate the personal from the professional (<Moment ulid={CALL} t="11:19" />). I
+                    told her it had context, that I had explained it at the picnic table, and that I had stopped when
+                    they told me to (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
+                    (<Moment ulid={CALL} t="11:57" />). I told her what it was for: I wanted the volunteer services lead
+                    to understand how much it meant to me to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo;{" "}
+                    (<Moment ulid={CALL} t="12:09" />). The next day she{" "}
+                    <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded me permanently from every state parks volunteer
+                    program</Cite>.
                 </p>
                 <p>
                     When I wrote the second part, I{" "}
