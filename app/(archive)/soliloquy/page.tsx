@@ -330,7 +330,10 @@ export default function StormchasersSoliloquyPage() {
                     (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). I scoffed: no. Then no
                     again, as the implication registered. When I offered to explain the poem: &ldquo;I don&rsquo;t
                     necessarily need explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). I explained it
-                    anyway: &ldquo;that poem is about what brought me here&rdquo; (<Moment ulid={PICNIC} t="38:22" />).
+                    anyway (<Moment ulid={PICNIC} t="37:52" />): I loved my time in the welcome center, I was trying to
+                    find the same work at other parks on the coast, I had asked the volunteer services lead to contact
+                    them for me, and I wanted him to know how much it meant to me to be on the coast. &ldquo;That poem is
+                    about what brought me here.&rdquo;
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
