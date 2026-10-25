@@ -284,22 +284,6 @@ const movements: { number: string; date: string; place: string; stanzas: string[
                 "because I will not."
             ],
             [
-                "I am a stormchaser.",
-                "I have gone to the edge my whole life",
-                "to stand in weather that was not mine.",
-                "This one is.",
-                "I will go out to meet it.",
-                "Not watching from the shoulder of the 101.",
-                "Not in a parking lot.",
-                "In it.",
-                "A stormchaser,",
-                "in his own storm,",
-                "and the ocean's,",
-                "which were never two things.",
-                "That is where I have been going",
-                "since before I had words for it."
-            ],
-            [
                 "And yes.",
                 "I still want the man",
                 "with eyes like embers.",
