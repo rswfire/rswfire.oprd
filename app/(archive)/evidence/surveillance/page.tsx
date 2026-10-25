@@ -223,7 +223,7 @@ It was covert assessment, masked as operations.
 
 And I see now what it was meant to be:
 A pretext. A setup.
-An attempt to provoke a misstep that could justify my removal.
+An attempt to provoke a misstep that could justify the removal.
 It didn't work. I didn't take the bait.
 
 This email chain remains — a quiet record of that moment.
