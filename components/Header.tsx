@@ -29,8 +29,9 @@ export default function Header() {
         };
     }, [mobileMenuOpen]);
 
+    // The open menu rises over the contents bars (z-70), under the viewers (z-80 and up).
     return (
-        <header className="relative z-20 border-b border-stone-200 bg-white lg:sticky lg:top-0">
+        <header className={`relative ${mobileMenuOpen ? "z-[75]" : "z-20"} border-b border-stone-200 bg-white lg:sticky lg:top-0`}>
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4">
                 <div className="flex items-center justify-between gap-4">
 
@@ -135,7 +136,7 @@ export default function Header() {
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label="Toggle menu"
-                        className="md:hidden fixed top-3 right-3 z-50 flex flex-col items-center gap-0.5 rounded-xl border border-stone-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur hover:shadow-lg transition-shadow"
+                        className="md:hidden fixed top-3 right-3 z-[76] flex flex-col items-center gap-0.5 rounded-xl border border-stone-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur hover:shadow-lg transition-shadow"
                     >
                         <Icon
                             name={mobileMenuOpen ? "X" : "TreeDeciduous"}
@@ -149,7 +150,7 @@ export default function Header() {
                 )}
 
                 {mounted && mobileMenuOpen && (
-                    <nav className="md:hidden fixed inset-0 z-40 overflow-y-auto bg-white px-4 pt-4 pb-8">
+                    <nav className="md:hidden fixed inset-0 z-[75] overflow-y-auto bg-white px-4 pt-4 pb-8">
                         <Link
                             href="/"
                             onClick={() => setMobileMenuOpen(false)}
