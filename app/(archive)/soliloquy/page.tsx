@@ -335,8 +335,8 @@ export default function StormchasersSoliloquyPage() {
                     (<Moment ulid={CALL} t="12:09" />): he wanted the volunteer services lead to understand how much it
                     meant to him to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo; (<Moment ulid={CALL} t="13:01" />).
                     Ten seconds of silence, as she regained her footing, then a return to his emails. The next day she{" "}
-                    <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded him permanently from every state parks volunteer
-                    program</Cite>.
+                    <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded him permanently</Cite> from every state parks
+                    volunteer program.
                 </p>
                 <p>
                     On March 5, 2026, he <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
@@ -358,9 +358,9 @@ export default function StormchasersSoliloquyPage() {
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. Lee did not
                     allege a crime or a threat. He sent the other man a link to this archive and invoked his
-                    Director and the Governor as justification. That email made him{" "}
-                    <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
-                    the state government&rsquo;s police power</Link>.
+                    Director and the Governor as justification. That email{" "}
+                    <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">made him a
+                    target</Link> of the state government&rsquo;s police power.
                 </p>
                 <p>
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
