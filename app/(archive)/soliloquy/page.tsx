@@ -6,6 +6,7 @@ import Cite from "@/components/Cite";
 import Icon from "@/components/Icon";
 import PersonLink from "@/components/PersonLink";
 import Moment from "@/components/player/Moment";
+import SoliloquyToc from "@/components/SoliloquyToc";
 
 const PICNIC = "01JNK2TKG01JTERAMB7J6AKPK1";
 const CALL = "01JQ59R3S0SHQ18E23BC0BM696";
@@ -320,7 +321,7 @@ export default function StormchasersSoliloquyPage() {
             title="STORMCHASER'S SOLILOQUY"
             subtitle="IN THREE PARTS"
         >
-            <div className="space-y-4 text-base text-gray-700 leading-relaxed">
+            <div id="preamble" data-toc="Preamble" className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
                     I first shared this poem, when it was only the first part, on February 27, 2025. I{" "}
                     <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the <PersonLink name="volunteer services lead" />{" "}
@@ -384,7 +385,13 @@ export default function StormchasersSoliloquyPage() {
             </div>
 
             {movements.map((movement) => (
-                <section key={movement.number} className="mt-16 border-t border-gray-200 pt-10">
+                <section
+                    key={movement.number}
+                    id={`part-${movement.number}`}
+                    data-toc={`${movement.date} · ${movement.place}`}
+                    data-toc-num={movement.number}
+                    className="mt-16 border-t border-gray-200 pt-10"
+                >
                     <div className="mb-8">
                         <div className="text-2xl font-bold uppercase tracking-widest text-emerald-700">
                             {movement.number}
@@ -412,6 +419,7 @@ export default function StormchasersSoliloquyPage() {
                     rswfire.com: signal analysis
                 </a>
             </div>
+            <SoliloquyToc />
         </SectionPage>
     );
 }
