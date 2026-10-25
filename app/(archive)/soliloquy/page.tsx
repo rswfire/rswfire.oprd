@@ -321,7 +321,7 @@ export default function StormchasersSoliloquyPage() {
             <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
                     I first shared this poem, when it was only the first part, on February 27, 2025. I{" "}
-                    <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it to the <PersonLink name="volunteer services lead" /></Cite>{" "}
+                    <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the <PersonLink name="volunteer services lead" />{" "}
                     with a request: help me find welcome center placements at other parks on the coast.
                 </p>
                 <p>
