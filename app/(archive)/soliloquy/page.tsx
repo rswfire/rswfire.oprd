@@ -376,10 +376,9 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
-                    third part an escalation is weaponizing it a third time. The poem has changed. I have
-                    not: &ldquo;Sovereign at Cape Blanco. Sovereign in the Oregon Dunes. Sovereign here and now.&rdquo;
-                    The storms I carried in my pocket, I release. And I still want the man with eyes like embers:
-                    &ldquo;More now, not less.&rdquo;
+                    third part an escalation is weaponizing it a third time. The storm in it does not go
+                    to anyone. It sends them inside, &ldquo;To their own reckoning. In their own hand. At their own
+                    time.&rdquo; The only one it takes into the storm is me.
                 </p>
             </div>
 
