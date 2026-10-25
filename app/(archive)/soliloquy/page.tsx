@@ -1,6 +1,12 @@
 // app/(archive)/soliloquy/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+import Cite from "@/components/Cite";
+import PersonLink from "@/components/PersonLink";
+import Moment from "@/components/player/Moment";
+
+const PICNIC = "01JNK2TKG01JTERAMB7J6AKPK1";
+const CALL = "01JQ59R3S0SHQ18E23BC0BM696";
 
 export const metadata: Metadata = {
     title: "Stormchaser's Soliloquy",
@@ -312,8 +318,66 @@ export default function StormchasersSoliloquyPage() {
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
         >
-            {movements.map((movement, i) => (
-                <section key={movement.number} className={i === 0 ? "" : "mt-16 border-t border-gray-200 pt-10"}>
+            <div className="space-y-4 text-base text-gray-700 leading-relaxed">
+                <p>
+                    I first shared this poem, when it was only the first part, on February 27, 2025. I{" "}
+                    <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it to the <PersonLink name="volunteer services lead" /></Cite>{" "}
+                    with a request: help me find welcome center placements at other parks on the coast.
+                </p>
+                <p>
+                    Six days later the park manager brought it to the picnic table. He called it &ldquo;kind of an
+                    inappropriate thing to do&rdquo; and spoke of &ldquo;a supervisor type role&rdquo;{" "}
+                    (<Moment ulid={PICNIC} t="36:20" />). Earlier in the same meeting he had told me &ldquo;you believe
+                    that [Volunteer Services Lead] is part of your future&rdquo; (<Moment ulid={PICNIC} t="19:49" />).
+                    I answered no, twice. When I offered to explain the poem: &ldquo;I don&rsquo;t necessarily need
+                    explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). I explained it anyway:
+                    &ldquo;that poem is about what brought me here&rdquo; (<Moment ulid={PICNIC} t="38:22" />).
+                </p>
+                <p>
+                    Twenty days after that, on the recorded call of March 25,{" "}
+                    <PersonLink name="program manager" label="Allison Watson" /> brought it back: &ldquo;the email
+                    where you sent a poem to [Volunteer Services Lead] for him to review&rdquo;{" "}
+                    (<Moment ulid={CALL} t="11:19" />). I told her again what it was for{" "}
+                    (<Moment ulid={CALL} t="12:09" />).
+                </p>
+                <p>
+                    When I wrote the second part, I{" "}
+                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part to everyone again</Cite>, on March 5,
+                    2026: the volunteer services lead, the park supervisor, the park manager, Allison Watson, Director
+                    Lisa Sumption, Deputy Director J.R. Collier, Interim Director Stefanie Coons, the OPRD
+                    Commissioners, and Governor Kotek. The first part only. I was reclaiming my poem from the way they
+                    sullied it.
+                </p>
+                <p>
+                    I did not know what had happened two days before. On March 3, OPRD Emergency Manager Jamen Lee{" "}
+                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to Captain
+                    Kyle Kennedy of the Oregon State Police, copying Deputy Director Collier, &ldquo;sharing for
+                    situational awareness.&rdquo; On March 4 the dispatch record reads that Kennedy was
+                    &ldquo;requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the
+                    second part, my name went to a detective on the Portland FBI Joint Terrorism Task Force. No crime
+                    was alleged. No threat was quoted. I learned all of it on September 3, 2026, when the State Police
+                    produced the file.
+                </p>
+                <p>
+                    The third part is dated October 24, 2026. These are the things it says I do: &ldquo;I release
+                    them,&rdquo; the storms. &ldquo;I built everything in the open. I signed it with my own name.&rdquo;
+                    &ldquo;I named their inverted ethics, and put a mirror in front of them and asked them to peer into
+                    it.&rdquo; &ldquo;My truths are as sharp as sea glass. From my palm, I built them a cage.&rdquo;
+                    And of the storm: &ldquo;I will go out to meet it.&rdquo;
+                </p>
+                <p>
+                    Its storms &ldquo;sweep away the fog&rdquo; and &ldquo;nourish the earth.&rdquo; It asks the
+                    institution to &ldquo;yield.&rdquo; What I have asked of the institution is{" "}
+                    <Cite ulid="01KF3KC3AR9KFMTRD44ZFFMZ2C">on paper</Cite>: &ldquo;Reverse the expulsion in writing.
+                    Initiate independent investigation. Acknowledge the constitutional violation.&rdquo;
+                </p>
+                <p>
+                    Whoever finds a threat in this poem can quote the line. In March 2026, no one did.
+                </p>
+            </div>
+
+            {movements.map((movement) => (
+                <section key={movement.number} className="mt-16 border-t border-gray-200 pt-10">
                     <div className="mb-8">
                         <div className="text-2xl font-bold uppercase tracking-widest text-emerald-700">
                             {movement.number}
