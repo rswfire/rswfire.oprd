@@ -365,8 +365,8 @@ export default function StormchasersSoliloquyPage() {
                 <p>
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
                     third part an escalation is weaponizing it a third time. He knows the label waiting for the word: &ldquo;sovereign citizen.&rdquo;
-                    Nothing he has ever said points at that, and attaching that meaning to his words is the precise act
-                    they have performed twice already. His means self-possession, and nothing else. He is the one asking them to follow the law.
+                    Nothing he has ever said points there.
+                    Attaching that meaning to his words is the act they have already performed twice. His means self-possession, and nothing else. He is the one asking them to follow the law.
                 </p>
                 <p>And it&rsquo;s still just a poem.
                 </p>
