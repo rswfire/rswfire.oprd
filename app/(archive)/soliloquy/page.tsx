@@ -341,8 +341,7 @@ export default function StormchasersSoliloquyPage() {
                     &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she took up my emails to staff
                     as &ldquo;personal versus professional,&rdquo; and put the poem in with them{" "}
                     (<Moment ulid={CALL} t="11:19" />). I told her the poem had context, and that I had explained it at
-                    the picnic table. On the emails, I told her I had stopped when they told me to{" "}
-                    (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
+                    the picnic table (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
                     (<Moment ulid={CALL} t="11:57" />). I told her what the poem was for: I wanted the volunteer services lead
                     to understand how much it meant to me to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo;{" "}
                     (<Moment ulid={CALL} t="12:09" />). The next day she{" "}
