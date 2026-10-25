@@ -240,18 +240,19 @@ export default function Header() {
                         {/* Sidebar content the desktop aside can't show on mobile.
                             Closes the menu when a link inside is tapped. */}
                         <div
-                            className="mx-auto mt-3 max-w-[17rem] space-y-3 border-t border-slate-200 pt-3"
+                            className="mt-3 grid grid-cols-2 gap-3 border-t border-slate-200 pt-3"
                             onClick={(e) => {
                                 if ((e.target as HTMLElement).closest("a")) {
                                     setMobileMenuOpen(false);
                                 }
                             }}
                         >
-                            <VolunteerShield />
-                                            <NewsletterSignup />
-                            <Tracker />
-                            {/* The pair wraps inside the narrow column and sits left; shifted as a set to center under the cards. */}
-                            <div className="translate-x-5">
+                            <VolunteerShield compact />
+                            <NewsletterSignup compact />
+                            <div className="col-span-2">
+                                <Tracker compact />
+                            </div>
+                            <div className="col-span-2">
                                 <HostedOnGithub />
                             </div>
                         </div>

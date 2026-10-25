@@ -62,7 +62,7 @@ function calculateDaysUntil(dateString: string): number {
     return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
-export default function Tracker() {
+export default function Tracker({ compact = false }: { compact?: boolean }) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -73,6 +73,45 @@ export default function Tracker() {
         return (
             <div className="w-full p-4 rounded-2xl bg-slate-50 border border-slate-200">
                 <div className="text-center text-sm text-slate-500">Loading...</div>
+            </div>
+        );
+    }
+
+    if (compact) {
+        // The mobile menu's width: the counts side by side, each its number over its event.
+        return (
+            <div className="w-full rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+                <div className="bg-emerald-50 px-3 py-2 border-b border-slate-200">
+                    <div className="text-[11px] font-bold text-slate-900 uppercase tracking-wide">Days Since</div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 p-2">
+                    {SILENCE_EVENTS.map((event, index) => {
+                        const days = calculateDaysSince(event.date);
+                        const label = event.link ? (
+                            <Link href={event.link} className="underline hover:text-emerald-700">
+                                {event.label}
+                            </Link>
+                        ) : (
+                            event.label
+                        );
+                        return (
+                            <div key={index} className="flex flex-col rounded bg-slate-50 p-2.5">
+                                <div className="text-3xl font-bold leading-none text-slate-900 tabular-nums">{days}</div>
+                                <div className="mt-2 text-xs font-medium leading-snug text-slate-900">{label}</div>
+                                {event.context && (
+                                    <div className="mt-1 text-[11px] leading-snug text-slate-600">{event.context}</div>
+                                )}
+                                <div className="mt-auto pt-1.5 text-[11px] text-slate-500">
+                                    {new Date(event.date).toLocaleDateString("en-US", {
+                                        month: "long",
+                                        day: "numeric",
+                                        year: "numeric",
+                                    })}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         );
     }
