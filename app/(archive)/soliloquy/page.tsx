@@ -320,7 +320,7 @@ export default function StormchasersSoliloquyPage() {
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
         >
-            <div className="mb-8 flex justify-end">
+            <div className="mb-8 flex justify-start">
                 <a
                     href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
                     target="_blank"
