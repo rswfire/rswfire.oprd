@@ -325,8 +325,7 @@ export default function StormchasersSoliloquyPage() {
                     with a request: help me find welcome center placements at other parks on the coast.
                 </p>
                 <p>
-                    Six days later <PersonLink name="park manager" label="the park manager" /> brought it to the picnic table. He called it &ldquo;kind of an
-                    inappropriate thing to do&rdquo; and spoke of &ldquo;a supervisor type role&rdquo;{" "}
+                    Six days later <PersonLink name="park manager" label="the park manager" /> brought it to the picnic table{" "}
                     (<Moment ulid={PICNIC} t="36:20" />). Earlier in the same meeting he had told me &ldquo;you believe
                     that [Volunteer Services Lead] is part of your future&rdquo; (<Moment ulid={PICNIC} t="19:49" />).
                     I scoffed: no. Then no again, as the implication registered. When I offered to explain the poem: &ldquo;I don&rsquo;t necessarily need
@@ -335,8 +334,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
-                    <PersonLink name="program manager" label="Allison Watson" /> brought it back: &ldquo;the email
-                    where you sent a poem to [Volunteer Services Lead] for him to review&rdquo;{" "}
+                    <PersonLink name="program manager" label="Allison Watson" /> brought it back{" "}
                     (<Moment ulid={CALL} t="11:19" />). I told her again what it was for{" "}
                     (<Moment ulid={CALL} t="12:09" />).
                 </p>
