@@ -319,17 +319,6 @@ export default function StormchasersSoliloquyPage() {
             emblem="Lighthouse" tone="indigo"
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
-            tagline={
-                <a
-                    href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-600"
-                >
-                    <Icon name="Flame" size={14} strokeWidth={2} className="text-orange-600" aria-hidden />
-                    rswfire.com: signal analysis
-                </a>
-            }
         >
             <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
@@ -410,6 +399,17 @@ export default function StormchasersSoliloquyPage() {
                     ))}
                 </section>
             ))}
+            <div className="mt-16 border-t border-gray-200 pt-5">
+                <a
+                    href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-600"
+                >
+                    <Icon name="Flame" size={14} strokeWidth={2} className="text-orange-600" aria-hidden />
+                    rswfire.com: signal analysis
+                </a>
+            </div>
         </SectionPage>
     );
 }
