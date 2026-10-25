@@ -369,7 +369,7 @@ export default function StormchasersSoliloquyPage() {
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
-                    allege a crime. He sent the other man a link to my archive and invoked his Director and
+                    allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
                     our Governor as justification. That email made me{" "}
                     <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
                     the state government&rsquo;s police power</Link>.
