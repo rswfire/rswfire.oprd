@@ -355,8 +355,7 @@ export default function StormchasersSoliloquyPage() {
                     the <PersonLink name="park manager" />, <PersonLink name="program manager" label="Allison Watson" />,
                     Director <PersonLink name="Lisa Sumption" />, Deputy Director{" "}
                     <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, the OPRD
-                    Commissioners, and Governor <PersonLink name="Kotek" seat="governor" />. I reclaimed it on the day they first used
-                    it, one year later.
+                    Commissioners, and Governor <PersonLink name="Kotek" seat="governor" />. I was reclaiming it from them, on the anniversary of when they first used it against me.
                 </p>
                 <p>
                     I did not know what had happened two days before. On March 3,{" "}
