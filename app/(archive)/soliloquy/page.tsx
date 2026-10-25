@@ -307,56 +307,58 @@ export default function StormchasersSoliloquyPage() {
         >
             <div id="preamble" data-toc="Preamble" className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
-                    I first shared this poem, when it was only the first part, on February 27, 2025. I{" "}
-                    <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the <PersonLink name="volunteer services lead" />{" "}
-                    with a request: help me find welcome center placements at other parks on the coast.
+                    Robert Samuel White first shared this poem, when it was only the first part, on February 27, 2025.
+                    He <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the{" "}
+                    <PersonLink name="volunteer services lead" /> with a request: help him find welcome center
+                    placements at other parks on the coast.
                 </p>
                 <p>
                     Six days later <PersonLink name="park manager" label="the park manager" /> used it at the picnic
-                    table to imply I had feelings for the volunteer services lead, my male supervisor{" "}
-                    (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). I scoffed: no. Then no
-                    again, as the implication registered. When I offered to explain the poem: &ldquo;I don&rsquo;t
-                    necessarily need explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). I explained it
-                    anyway (<Moment ulid={PICNIC} t="37:52" />): I loved my time in the welcome center, I was trying to
-                    find the same work at other parks on the coast, I had asked the volunteer services lead to contact
-                    them for me, and I wanted him to know how much it meant to me to be on the coast. &ldquo;That poem is
+                    table to imply White had feelings for the volunteer services lead, his male supervisor{" "}
+                    (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). He scoffed: no. Then no
+                    again, as the implication registered. When he offered to explain the poem: &ldquo;I don&rsquo;t
+                    necessarily need explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). He explained it
+                    anyway (<Moment ulid={PICNIC} t="37:52" />): he loved his time in the welcome center, he was trying
+                    to find the same work at other parks on the coast, he had asked the volunteer services lead to
+                    contact them for him, and he wanted the volunteer services lead to know how much it meant to him to
+                    be on the coast. &ldquo;That poem is
                     about what brought me here.&rdquo;
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
-                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling me the dismissal was
-                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she took up my emails to staff
+                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling him the dismissal was
+                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she took up his emails to staff
                     as &ldquo;personal versus professional,&rdquo; and put the poem in with them{" "}
-                    (<Moment ulid={CALL} t="11:19" />). I told her the poem had context, and that I had explained it at
-                    the picnic table (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
-                    (<Moment ulid={CALL} t="11:57" />). I told her what the poem was for{" "}
-                    (<Moment ulid={CALL} t="12:09" />): I wanted the volunteer services lead to understand how much it
-                    meant to me to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo; (<Moment ulid={CALL} t="13:01" />).
-                    Ten seconds of silence, as she regained her footing, then a return to my emails. The next day she{" "}
-                    <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded me permanently from every state parks volunteer
+                    (<Moment ulid={CALL} t="11:19" />). He told her the poem had context, and that he had explained it at
+                    the picnic table (<Moment ulid={CALL} t="11:46" />). She asked him the same question again{" "}
+                    (<Moment ulid={CALL} t="11:57" />). He told her what the poem was for{" "}
+                    (<Moment ulid={CALL} t="12:09" />): he wanted the volunteer services lead to understand how much it
+                    meant to him to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo; (<Moment ulid={CALL} t="13:01" />).
+                    Ten seconds of silence, as she regained her footing, then a return to his emails. The next day she{" "}
+                    <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded him permanently from every state parks volunteer
                     program</Cite>.
                 </p>
                 <p>
-                    On March 5, 2026, I <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
+                    On March 5, 2026, he <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
                     the <PersonLink name="park manager" />, <PersonLink name="program manager" label="Allison Watson" />,
                     Director <PersonLink name="Lisa Sumption" />, Deputy Director{" "}
                     <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, the OPRD
-                    Commissioners, and <PersonLink name="Governor Kotek" seat="governor" />. I reclaimed it from them, on the anniversary of when they first used it against me.
+                    Commissioners, and <PersonLink name="Governor Kotek" seat="governor" />. He reclaimed it from them, on the anniversary of when they first used it against him.
                 </p>
                 <p>
-                    Little did I know what they had set in motion two days prior.
+                    Little did he know what they had set in motion two days prior.
                 </p>
                 <p>
-                    On March 3, 2026, I <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
-                    <PersonLink name="J.R. Collier" seat="deputy" />. It was the last door I was holding open for the man
-                    and I told him as much. I ended with refusal: &ldquo;You will not bury this.&rdquo; His response was to reach for borrowed
-                    power. Within hours, a man I have never met or corresponded with, using a title meant to smuggle the entire
+                    On March 3, 2026, he <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
+                    <PersonLink name="J.R. Collier" seat="deputy" />. It was the last door he was holding open for the man
+                    and he told him as much. He ended with refusal: &ldquo;You will not bury this.&rdquo; Collier&rsquo;s response was to reach for borrowed
+                    power. Within hours, a man White has never met or corresponded with, using a title meant to smuggle the entire
                     act, Oregon State Parks&rsquo; Emergency Manager{" "}
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
-                    <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
-                    allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
-                    our Governor as justification. That email made me{" "}
+                    <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. Lee did not
+                    allege a crime or a threat. He sent the other man a link to White&rsquo;s archive and invoked his
+                    Director and the Governor as justification. That email made White{" "}
                     <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
                     the state government&rsquo;s police power</Link>.
                 </p>
