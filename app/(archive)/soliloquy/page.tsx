@@ -359,17 +359,16 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     I did not know what had happened two days before. On March 3,{" "}
-                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, using the title &ldquo;Emergency
-                    Manager&rdquo; to carry the entire act,{" "}
-                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
-                    <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, copying
-                    Deputy Director <PersonLink name="Collier" seat="deputy" />, &ldquo;since he is now including the Governor as well as our
-                    Director.&rdquo; On March 4 the press captain handed it to criminal investigations, and{" "}
+                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, the institution&rsquo;s emergency manager,
+                    a stranger to me, <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
+                    <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, with Deputy
+                    Director <PersonLink name="Collier" seat="deputy" /> copied. The title carried the email: it named
+                    no crime and no threat, linked this archive, and gave the Director and the Governor as its reason,
+                    &ldquo;since he is now including the Governor as well as our Director.&rdquo; On March 4 the press captain handed it to criminal investigations, and{" "}
                     <PersonLink name="a sergeant" seat="sergeant" /> wrote to a detective: &ldquo;Capt. Kennedy is
                     requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the second
                     part, it reached <PersonLink name="a detective" seat="task-force-detective" /> who is a task force
-                    officer with the Portland FBI Joint Terrorism Task Force. Lee&rsquo;s email alleges no crime and
-                    quotes no threat. I learned all of it on September 3, 2026, when the State Police produced the
+                    officer with the Portland FBI Joint Terrorism Task Force. I learned all of it on September 3, 2026, when the State Police produced the
                     file.
                 </p>
                 <p>
