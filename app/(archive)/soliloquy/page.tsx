@@ -378,7 +378,7 @@ export default function StormchasersSoliloquyPage() {
                     The third part is dated October 24, 2026. It names the act that was done to the first part twice,
                     and to me my whole life: &ldquo;I spent a lifetime being misrecognized by those who
                     trespass.&rdquo; Whoever reads a threat in it will be doing that act again, in front of the poem
-                    that names it. &ldquo;I am exactly what I said I was.&rdquo;
+                    that names it.
                 </p>
             </div>
 
