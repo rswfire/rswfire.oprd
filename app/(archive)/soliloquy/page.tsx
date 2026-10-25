@@ -338,10 +338,10 @@ export default function StormchasersSoliloquyPage() {
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
                     <PersonLink name="program manager" label="Allison Watson" /> opened by telling me my dismissal was
-                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she used the poem to
-                    say I could not separate the personal from the professional (<Moment ulid={CALL} t="11:19" />). I
-                    told her it had context, that I had explained it at the picnic table, and that I had stopped when
-                    they told me to (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
+                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she put the poem in with my
+                    emails, as &ldquo;personal versus professional&rdquo; (<Moment ulid={CALL} t="11:19" />). I told her
+                    the poem had context and I had explained it at the picnic table. I told her, separately, that I had
+                    not sent an email like that since they told me not to (<Moment ulid={CALL} t="11:46" />). She asked me the same question again{" "}
                     (<Moment ulid={CALL} t="11:57" />). I told her what it was for: I wanted the volunteer services lead
                     to understand how much it meant to me to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo;{" "}
                     (<Moment ulid={CALL} t="12:09" />). The next day she{" "}
