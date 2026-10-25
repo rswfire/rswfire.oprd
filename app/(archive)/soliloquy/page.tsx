@@ -366,7 +366,9 @@ export default function StormchasersSoliloquyPage() {
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
                     third part an escalation is weaponizing it a third time. He knows the label waiting for the word: &ldquo;sovereign citizen.&rdquo;
                     Nothing he has ever said points there.
-                    Attaching that meaning to his words is the act they have already performed twice. His means self-possession, and nothing else. He is the one asking them to follow the law.
+                    Attaching that meaning to his words is the act they have already performed twice. Sovereignty, for him, is not a position on the law. It is the plain fact that no
+                    one else speaks to his interior: not to what he feels, not to what he means, not to what he intends.
+                    Each time they have tried, the record shows it. He is the one asking them to follow the law.
                 </p>
                 <p>And it&rsquo;s still just a poem.
                 </p>
