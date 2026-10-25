@@ -367,7 +367,7 @@ export default function StormchasersSoliloquyPage() {
                     third part an escalation is weaponizing it a third time. He knows the label waiting for the word: &ldquo;sovereign citizen.&rdquo;
                     Like everything he says, his means the plain thing. He is the one asking them to follow the law.
                 </p>
-                <p>It&rsquo;s still just a poem.
+                <p>And it&rsquo;s still just a poem.
                 </p>
             </div>
 
