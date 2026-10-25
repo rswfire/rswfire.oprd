@@ -364,12 +364,9 @@ export default function StormchasersSoliloquyPage() {
                     On March 3, 2026, I <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
                     <PersonLink name="J.R. Collier" seat="deputy" /> of Oregon Parks and Recreation Department. It was the last door I was holding open for the man
                     and I told him as much. I ended with refusal: &ldquo;You will not bury this.&rdquo; His response was to reach for borrowed
-                    power.
-                </p>
-                <p>
-                    Within hours, a man I have never met or corresponded with, using a title meant to smuggle the entire
+                    power. Within hours, a man I have never met or corresponded with, using a title meant to smuggle the entire
                     act, Oregon State Parks&rsquo; Emergency Manager{" "}
-                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, copying Deputy Director J.R. Collier,{" "}
+                    <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
                     allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
