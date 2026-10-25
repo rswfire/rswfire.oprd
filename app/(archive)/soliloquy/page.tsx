@@ -329,7 +329,7 @@ export default function StormchasersSoliloquyPage() {
                     inappropriate thing to do&rdquo; and spoke of &ldquo;a supervisor type role&rdquo;{" "}
                     (<Moment ulid={PICNIC} t="36:20" />). Earlier in the same meeting he had told me &ldquo;you believe
                     that [Volunteer Services Lead] is part of your future&rdquo; (<Moment ulid={PICNIC} t="19:49" />).
-                    I answered no, twice. When I offered to explain the poem: &ldquo;I don&rsquo;t necessarily need
+                    I scoffed: no. Then no again. When I offered to explain the poem: &ldquo;I don&rsquo;t necessarily need
                     explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). I explained it anyway:
                     &ldquo;that poem is about what brought me here&rdquo; (<Moment ulid={PICNIC} t="38:22" />).
                 </p>
