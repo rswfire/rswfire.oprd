@@ -325,7 +325,7 @@ export default function StormchasersSoliloquyPage() {
                     with a request: help me find welcome center placements at other parks on the coast.
                 </p>
                 <p>
-                    Six days later the park manager brought it to the picnic table. He called it &ldquo;kind of an
+                    Six days later <PersonLink name="park manager" label="the park manager" /> brought it to the picnic table. He called it &ldquo;kind of an
                     inappropriate thing to do&rdquo; and spoke of &ldquo;a supervisor type role&rdquo;{" "}
                     (<Moment ulid={PICNIC} t="36:20" />). Earlier in the same meeting he had told me &ldquo;you believe
                     that [Volunteer Services Lead] is part of your future&rdquo; (<Moment ulid={PICNIC} t="19:49" />).
@@ -343,9 +343,11 @@ export default function StormchasersSoliloquyPage() {
                 <p>
                     When I wrote the second part, I{" "}
                     <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part to everyone again</Cite>, on March 5,
-                    2026: the volunteer services lead, the park supervisor, the park manager, Allison Watson, Director
-                    Lisa Sumption, Deputy Director J.R. Collier, Interim Director Stefanie Coons, the OPRD
-                    Commissioners, and Governor Kotek. The first part only. I was reclaiming my poem from the way they
+                    2026: the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
+                    the <PersonLink name="park manager" />, <PersonLink name="program manager" label="Allison Watson" />,
+                    Director <PersonLink name="Lisa Sumption" />, Deputy Director{" "}
+                    <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, the OPRD
+                    Commissioners, and Governor <PersonLink name="Kotek" seat="governor" />. The first part only. I was reclaiming my poem from the way they
                     sullied it.
                 </p>
                 <p>
@@ -353,7 +355,7 @@ export default function StormchasersSoliloquyPage() {
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />, Emergency Manager at Oregon State Parks,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
                     <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, copying
-                    Deputy Director Collier, &ldquo;since he is now including the Governor as well as our
+                    Deputy Director <PersonLink name="Collier" seat="deputy" />, &ldquo;since he is now including the Governor as well as our
                     Director.&rdquo; On March 4 the press captain handed it to criminal investigations, and{" "}
                     <PersonLink name="a sergeant" seat="sergeant" /> wrote to a detective: &ldquo;Capt. Kennedy is
                     requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the second
