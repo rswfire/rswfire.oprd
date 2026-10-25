@@ -307,14 +307,14 @@ export default function StormchasersSoliloquyPage() {
         >
             <div id="preamble" data-toc="Preamble" className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
-                    Robert Samuel White first shared this poem, when it was only the first part, on February 27, 2025.
+                    He first shared this poem, when it was only the first part, on February 27, 2025.
                     He <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the{" "}
                     <PersonLink name="volunteer services lead" /> with a request: help him find welcome center
                     placements at other parks on the coast.
                 </p>
                 <p>
                     Six days later <PersonLink name="park manager" label="the park manager" /> used it at the picnic
-                    table to imply White had feelings for the volunteer services lead, his male supervisor{" "}
+                    table to imply he had feelings for the volunteer services lead, his male supervisor{" "}
                     (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). He scoffed: no. Then no
                     again, as the implication registered. When he offered to explain the poem: &ldquo;I don&rsquo;t
                     necessarily need explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). He explained it
@@ -352,13 +352,13 @@ export default function StormchasersSoliloquyPage() {
                     On March 3, 2026, he <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
                     <PersonLink name="J.R. Collier" seat="deputy" />. It was the last door he was holding open for the man
                     and he told him as much. He ended with refusal: &ldquo;You will not bury this.&rdquo; Collier&rsquo;s response was to reach for borrowed
-                    power. Within hours, a man White has never met or corresponded with, using a title meant to smuggle the entire
+                    power. Within hours, a man he has never met or corresponded with, using a title meant to smuggle the entire
                     act, Oregon State Parks&rsquo; Emergency Manager{" "}
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. Lee did not
-                    allege a crime or a threat. He sent the other man a link to White&rsquo;s archive and invoked his
-                    Director and the Governor as justification. That email made White{" "}
+                    allege a crime or a threat. He sent the other man a link to this archive and invoked his
+                    Director and the Governor as justification. That email made him{" "}
                     <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
                     the state government&rsquo;s police power</Link>.
                 </p>
