@@ -362,7 +362,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     On March 3, 2026, I <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
-                    <PersonLink name="J.R. Collier" seat="deputy" /> of Oregon Parks and Recreation Department. It was the last door I was holding open for the man
+                    <PersonLink name="J.R. Collier" seat="deputy" />. It was the last door I was holding open for the man
                     and I told him as much. I ended with refusal: &ldquo;You will not bury this.&rdquo; His response was to reach for borrowed
                     power. Within hours, a man I have never met or corresponded with, using a title meant to smuggle the entire
                     act, Oregon State Parks&rsquo; Emergency Manager{" "}
