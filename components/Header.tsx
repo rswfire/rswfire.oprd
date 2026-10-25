@@ -154,7 +154,7 @@ export default function Header() {
                         <Link
                             href="/"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="flex items-center gap-3 border-b border-slate-200 pb-3"
+                            className="flex items-center gap-3 pb-4"
                         >
                             <Icon name="Park" className="shrink-0 text-emerald-700 w-7 h-7" size={36} strokeWidth={1.5} />
                             <div className="leading-tight">
@@ -174,7 +174,7 @@ export default function Header() {
                             <Link
                                 href="/volunteers"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="flex items-center gap-2 bg-red-700 px-4 py-2 text-white active:bg-red-800"
+                                className="flex items-center gap-2 border-t border-red-200 bg-red-700 px-4 py-2 text-white active:bg-red-800"
                             >
                                 <Icon name="Shield" className="w-4 h-4 shrink-0" size={16} strokeWidth={1.75} />
                                 <span className="text-[11px]">
