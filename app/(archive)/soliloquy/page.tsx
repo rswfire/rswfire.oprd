@@ -367,7 +367,7 @@ export default function StormchasersSoliloquyPage() {
                     power.
                 </p>
                 <p>
-                    Within hours, a man I have never met or corresponded with, using a title meant to carry the entire
+                    Within hours, a man I have never met or corresponded with, using a title meant to smuggle the entire
                     act, Oregon State Parks&rsquo; Emergency Manager{" "}
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />, copying Deputy Director J.R. Collier,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
