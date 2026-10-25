@@ -375,10 +375,8 @@ export default function StormchasersSoliloquyPage() {
                     the state government&rsquo;s police power</Link>.
                 </p>
                 <p>
-                    The third part is dated October 24, 2026. It names the act that was done to the first part twice:
-                    &ldquo;I spent a lifetime being misrecognized by those who trespass.&rdquo; And it says what that act
-                    could no longer reach: &ldquo;By the time you met me it was too late to harm me. I was already free.
-                    I was already sovereign.&rdquo;
+                    The third part is dated October 24, 2026. Whoever sends it to the police will be reaching for
+                    borrowed power, the way the Deputy Director did on March 3.
                 </p>
             </div>
 
