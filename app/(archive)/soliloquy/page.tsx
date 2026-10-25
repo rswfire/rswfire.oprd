@@ -358,7 +358,10 @@ export default function StormchasersSoliloquyPage() {
                     Commissioners, and Governor <PersonLink name="Kotek" seat="governor" />. I reclaimed it from them, on the anniversary of when they first used it against me.
                 </p>
                 <p>
-                    I did not know what had happened two days before. On March 3,{" "}
+                    I did not know what had happened two days before.
+                </p>
+                <p>
+                    On March 3,{" "}
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />, Emergency Manager, using a title meant to
                     carry the entire act,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
