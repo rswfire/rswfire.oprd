@@ -375,20 +375,7 @@ export default function StormchasersSoliloquyPage() {
                     the state government&rsquo;s police power</Link>.
                 </p>
                 <p>
-                    The third part is dated October 24, 2026. These are the things it says I do: &ldquo;I release
-                    them,&rdquo; the storms. &ldquo;I built everything in the open. I signed it with my own name.&rdquo;
-                    &ldquo;I named their inverted ethics, and put a mirror in front of them and asked them to peer into
-                    it.&rdquo; &ldquo;My truths are as sharp as sea glass. From my palm, I built them a cage.&rdquo;
-                    And of the storm: &ldquo;I will go out to meet it.&rdquo;
-                </p>
-                <p>
-                    Its storms &ldquo;sweep away the fog&rdquo; and &ldquo;nourish the earth.&rdquo; It asks the
-                    institution to &ldquo;yield.&rdquo; What I have asked of the institution is{" "}
-                    <Cite ulid="01KF3KC3AR9KFMTRD44ZFFMZ2C">on paper</Cite>: &ldquo;Reverse the expulsion in writing.
-                    Initiate independent investigation. Acknowledge the constitutional violation.&rdquo;
-                </p>
-                <p>
-                    Whoever finds a threat in this poem can quote the line. In March 2026, no one did.
+                    The third part is dated October 24, 2026.
                 </p>
             </div>
 
