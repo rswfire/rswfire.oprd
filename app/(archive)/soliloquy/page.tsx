@@ -376,7 +376,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
-                    third part an escalation is weaponizing it a third time.
+                    third part an escalation is weaponizing it a third time. It&rsquo;s still just a poem.
                 </p>
             </div>
 
