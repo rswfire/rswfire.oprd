@@ -342,8 +342,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     When I wrote the second part, I{" "}
-                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part to everyone again</Cite>, on March 5,
-                    2026: the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
+                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> on March 5, 2026 to the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
                     the <PersonLink name="park manager" />, <PersonLink name="program manager" label="Allison Watson" />,
                     Director <PersonLink name="Lisa Sumption" />, Deputy Director{" "}
                     <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, the OPRD
