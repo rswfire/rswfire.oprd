@@ -376,9 +376,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
-                    third part an escalation is weaponizing it a third time. The storm in it does not go
-                    to anyone. It sends them inside, &ldquo;To their own reckoning. In their own hand. At their own
-                    time.&rdquo; The only one it takes into the storm is me.
+                    third part an escalation is weaponizing it a third time.
                 </p>
             </div>
 
