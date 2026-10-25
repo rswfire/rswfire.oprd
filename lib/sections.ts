@@ -15,6 +15,7 @@ export const archiveSections: ArchiveSection[] = [
     { href: "/", label: "Home", icon: "TreeDeciduous" as const, iconClass: "text-emerald-700" },
     { href: "#separator-accountability", label: "", separator: true },
     { href: "/ethics", label: "Ethics: An Introduction", icon: "Scale" as const, iconClass: "text-indigo-700" },
+    { href: "/soliloquy", label: "Stormchaser's Soliloquy", icon: "Lighthouse" as const, iconClass: "text-indigo-700" },
     { href: "/records", label: "Public Records", icon: "Landmark" as const, iconClass: "text-emerald-700" },
     { href: "/outreach", label: "Institutional Outreach", icon: "ScrollText" as const, iconClass: "text-sky-700" },
     { href: "/records-requests", label: "Records Requests", icon: "HandPlatter" as const, iconClass: "text-sky-700" },

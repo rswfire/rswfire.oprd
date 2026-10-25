@@ -1,4 +1,4 @@
-// app/(archive)/ethics/stormchasers-soliloquy/page.tsx
+// app/(archive)/soliloquy/page.tsx
 import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 
