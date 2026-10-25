@@ -338,7 +338,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
-                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling me my dismissal was
+                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling me the dismissal was
                     &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she took up my emails to staff
                     as &ldquo;personal versus professional,&rdquo; and put the poem in with them{" "}
                     (<Moment ulid={CALL} t="11:19" />). I told her the poem had context, and that I had explained it at
