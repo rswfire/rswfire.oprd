@@ -369,16 +369,16 @@ export default function StormchasersSoliloquyPage() {
                     <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">wrote</Cite> to{" "}
                     <PersonLink name="the press captain" seat="press-captain" /> at Oregon State Police. He did not
-                    allege a crime or a threat. He sent the other man a link to my archive and invoked his Director and
+                    allege a crime. He sent the other man a link to my archive and invoked his Director and
                     our Governor as justification. That email made me{" "}
                     <Link href="/evidence/police" className="text-sky-700 underline hover:text-sky-600">a target of
                     the state government&rsquo;s police power</Link>.
                 </p>
                 <p>
-                    The third part is dated October 24, 2026. It names the act that was done to the first part twice,
-                    and to me my whole life: &ldquo;I spent a lifetime being misrecognized by those who
-                    trespass.&rdquo; Whoever reads a threat in it will be doing that act again, in front of the poem
-                    that names it.
+                    The third part is dated October 24, 2026. It names the act that was done to the first part twice:
+                    &ldquo;I spent a lifetime being misrecognized by those who trespass.&rdquo; And it says what that act
+                    could no longer reach: &ldquo;By the time you met me it was too late to harm me. I was already free.
+                    I was already sovereign.&rdquo;
                 </p>
             </div>
 
