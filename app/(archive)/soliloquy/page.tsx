@@ -320,12 +320,12 @@ export default function StormchasersSoliloquyPage() {
             title="STORMCHASER'S SOLILOQUY"
             subtitle="A POEM IN THREE PARTS"
         >
-            <div className="mb-8 flex justify-center">
+            <div className="mb-8 flex justify-end">
                 <a
                     href="https://rswfire.com/signal/01M5RD140R12PRJZH8S9NZBGRJ"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-full border border-orange-300 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800 hover:bg-orange-100"
+                    className="inline-flex items-center gap-1.5 rounded border border-orange-300 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800 hover:bg-orange-100"
                 >
                     <Icon name="Flame" size={14} aria-hidden />
                     rswfire.com: signal analysis
