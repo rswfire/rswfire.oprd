@@ -318,7 +318,7 @@ export default function StormchasersSoliloquyPage() {
         <SectionPage
             emblem="Lighthouse" tone="indigo"
             title="STORMCHASER'S SOLILOQUY"
-            subtitle="A POEM IN THREE PARTS"
+            subtitle="IN THREE PARTS"
         >
             <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <p>
