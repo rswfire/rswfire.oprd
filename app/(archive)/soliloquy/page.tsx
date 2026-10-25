@@ -349,14 +349,18 @@ export default function StormchasersSoliloquyPage() {
                     sullied it.
                 </p>
                 <p>
-                    I did not know what had happened two days before. On March 3, OPRD Emergency Manager Jamen Lee{" "}
-                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to Captain
-                    Kyle Kennedy of the Oregon State Police, copying Deputy Director Collier, &ldquo;sharing for
-                    situational awareness.&rdquo; On March 4 the dispatch record reads that Kennedy was
-                    &ldquo;requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the
-                    second part, my name went to a detective on the Portland FBI Joint Terrorism Task Force. No crime
-                    was alleged. No threat was quoted. I learned all of it on September 3, 2026, when the State Police
-                    produced the file.
+                    I did not know what had happened two days before. On March 3,{" "}
+                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, Emergency Manager at Oregon State Parks,{" "}
+                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
+                    <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, copying
+                    Deputy Director Collier, &ldquo;since he is now including the Governor as well as our
+                    Director.&rdquo; On March 4 the press captain handed it to criminal investigations, and{" "}
+                    <PersonLink name="a sergeant" seat="sergeant" /> wrote to a detective: &ldquo;Capt. Kennedy is
+                    requesting that a threat assessment be conducted asap.&rdquo; On March 6, the date of the second
+                    part, it reached <PersonLink name="a detective" seat="task-force-detective" /> who is a task force
+                    officer with the Portland FBI Joint Terrorism Task Force. Lee&rsquo;s email alleges no crime and
+                    quotes no threat. I learned all of it on September 3, 2026, when the State Police produced the
+                    file.
                 </p>
                 <p>
                     The third part is dated October 24, 2026. These are the things it says I do: &ldquo;I release
