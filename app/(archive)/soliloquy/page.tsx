@@ -358,7 +358,7 @@ export default function StormchasersSoliloquyPage() {
                     Commissioners, and <PersonLink name="Governor Kotek" seat="governor" />. I reclaimed it from them, on the anniversary of when they first used it against me.
                 </p>
                 <p>
-                    I did not know what had happened two days before.
+                    Little did I know what they had set in motion two days prior.
                 </p>
                 <p>
                     On March 3, 2026, I <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
