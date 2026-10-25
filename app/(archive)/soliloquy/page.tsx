@@ -358,8 +358,9 @@ export default function StormchasersSoliloquyPage() {
                     Commissioners, and Governor <PersonLink name="Kotek" seat="governor" />. I reclaimed it from them, on the anniversary of when they first used it against me.
                 </p>
                 <p>
-                    I did not know what had happened two days before. On March 3, a man at Oregon State Parks,{" "}
-                    <PersonLink name="Jamen Lee" seat="emergency-manager" />,{" "}
+                    I did not know what had happened two days before. On March 3,{" "}
+                    <PersonLink name="Jamen Lee" seat="emergency-manager" />, using the title &ldquo;Emergency
+                    Manager&rdquo; to carry the entire act,{" "}
                     <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">sent a link to this archive</Cite> to{" "}
                     <PersonLink name="Kyle Kennedy" seat="press-captain" />, the state police press captain, copying
                     Deputy Director <PersonLink name="Collier" seat="deputy" />, &ldquo;since he is now including the Governor as well as our
