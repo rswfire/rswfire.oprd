@@ -350,7 +350,8 @@ export default function StormchasersSoliloquyPage() {
                     colonized it with a false narrative, both to his face and{" "}
                     <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link> he had
                     not seen. The act was a reclamation, and it was what led him to write the second part,
-                    which he kept private until after he had written and posted all three parts together.
+                    which he kept private. That was the end of it, until the third part came seven months later and made
+                    the three a triptych. Only then did he release the second.
                 </p>
                 <p>
                     Little did he know what they had set in motion two days prior.
