@@ -384,9 +384,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     He is the one asking them to follow the law. Whoever calls the third part an escalation is
-                    weaponizing it a third time.
-                </p>
-                <p>And still it&rsquo;s just a poem.
+                    weaponizing it a third time. And still it&rsquo;s just a poem.
                 </p>
             </div>
 
