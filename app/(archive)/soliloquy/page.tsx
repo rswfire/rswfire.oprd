@@ -315,7 +315,7 @@ export default function StormchasersSoliloquyPage() {
                 <p>
                     Six days later <PersonLink name="park manager" label="the park manager" /> used it at the picnic
                     table to imply he had feelings for the volunteer services lead, his male supervisor{" "}
-                    (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). He scoffed: no. Then no
+                    (<Moment ulid={PICNIC} t="19:49" />, <Moment ulid={PICNIC} t="36:20" />). He said no. Then, with a half laugh, no
                     again, as the implication registered. When he offered to explain the poem: &ldquo;I don&rsquo;t
                     necessarily need explanation for that&rdquo; (<Moment ulid={PICNIC} t="37:41" />). He explained it
                     anyway (<Moment ulid={PICNIC} t="37:52" />): he loved his time in the welcome center, he was trying
