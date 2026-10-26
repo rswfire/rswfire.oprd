@@ -309,7 +309,7 @@ export default function StormchasersSoliloquyPage() {
                 <p>
                     He first shared this poem, when it was only the first part, on February 27, 2025.
                     He <Cite ulid="01JN5AXYC0SD3DEBEQ8TYBCQ99">sent it</Cite> to the{" "}
-                    <PersonLink name="volunteer services lead" /> with a request: help him find welcome center
+                    <PersonLink name="volunteer services lead" /> with a request to help him find welcome center
                     placements at other parks on the coast.
                 </p>
                 <p>
