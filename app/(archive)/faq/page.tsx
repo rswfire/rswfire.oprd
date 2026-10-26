@@ -285,34 +285,6 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
-                {/* Question 13 */}
-                <div id="egregious" className="scroll-mt-48">
-                    <h2 className="text-xl font-semibold mb-3">
-                        What made this case particularly egregious?
-                    </h2>
-                    <div className="space-y-4">
-                        <div className="italic">Their actions were designed to deliberately distort the public record: institutional accusations were preserved while the evidence needed to contest them was excluded. A public agency did this to one of its own people. This lives at the <span className="not-italic">heart of identity-based targeting</span>.</div>
-                        <div>They tried to dismiss and expel me with a story I could not correct.</div>
-                        <div>The park manager <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">dismissed me by phone with a fabricated pretext</Link>. No documentation. No formal process. Just his word against mine.</div>
-                        <div>The program manager <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">formalized the expulsion in writing</Link>, citing my protected speech &mdash; but <Link href="/evidence/trust" className="text-emerald-700 underline hover:text-emerald-600">framing it through the volunteer services lead's betrayed disclosures</Link> and their own institutional interpretation of my motives, my psychology, my reality.</div>
-                        <div>If I had not <Link href="/evidence/coercion" className="text-emerald-700 underline hover:text-emerald-600">recorded the March 5th meeting</Link>, the park manager's abuse would have been my word against his and the park supervisor's institutional authority.</div>
-                        <div>If I had not <Link href="/evidence/dismissal" className="text-emerald-700 underline hover:text-emerald-600">recorded the dismissal</Link>, there would be no evidence that the park manager admitted he had no documentation for what he was doing.</div>
-                        <div>If I had not <Link href="/evidence/expulsion" className="text-emerald-700 underline hover:text-emerald-600">recorded the program manager's calls</Link> and preserved her written correspondence, the retaliation would exist only as my account &mdash; which carries no institutional weight against her documented authority.</div>
-                        <div>They were constructing a reality where <em>they</em> held all the evidence, <em>they</em> controlled the narrative, and <em>I</em> had no proof of what actually happened.</div>
-                        <div>That is the deepest form of epistemic violation: the systematic erasure of someone's capacity to prove their own experience.</div>
-                        <div>It's not just asserting a false narrative. It's ensuring the target has no way to demonstrate the truth.</div>
-                        <div>This archive exists because I refused that erasure.</div>
-                        <div>I documented in real time. I preserved everything. I made the record they didn't want to exist.</div>
-                        <div>And now their preferred story &mdash; the one where I'm the problem and they acted appropriately &mdash; cannot stand unchallenged.</div>
-                        <div>Because the evidence proves otherwise.</div>
-                        <div>That's what makes an epistemic violation intolerable: it's an attempt to strip someone of their ability to be believed about their own life.</div>
-                        <div>And in institutional contexts, where power is already asymmetric, it's an abuse of that power to ensure the abuse itself cannot be proven.</div>
-                        <div>I will not accept that. I will not live in their fiction. And this documented pattern now exists so the next person doesn't have to be the first to prove it.</div>
-                    </div>
-                </div>
-
-                <hr className="border-t border-gray-300" />
-
                 {/* Question 14 */}
                 <div id="next" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
