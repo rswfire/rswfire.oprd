@@ -304,10 +304,6 @@ export default function FAQPage() {
                         <div><strong>No collection on speech without suspicion.</strong> ORS 181A.250 already forbids Oregon police to collect information on a person&rsquo;s political or social views or activities without reasonable grounds to suspect a crime. Those grounds are written down before anything is collected. No visit to a person&rsquo;s home or workplace without a stated, articulable threat. A case closed &ldquo;for information only&rdquo; is purged, and the person is told.</div>
                         <div><strong>Protections for volunteers.</strong> Written standards before service begins. Written notice of any concern, and a chance to answer it. A hearing before dismissal and an appeal after it. No dismissal or exclusion for reporting misconduct or for speaking about service.</div>
                         <div><strong>Remedy and daylight.</strong> A right to correction, damages and fees for anyone these rules were broken against, and an annual public audit of referrals and unsourced statements about people&rsquo;s interiors.</div>
-                        <div>Each rule closes a step this archive documents. The first two close the timeline kept on me for a year and never shown to me. The third closes a link sent to a press captain &ldquo;since he is now including the Governor as well as our Director.&rdquo; The fourth closes &ldquo;Suspect&rdquo; for &ldquo;publicly airing grievances,&rdquo; and the door. The fifth closes the picnic table and the exclusion.</div>
-                        <div>The <Link href="/records" className="text-emerald-700 underline hover:text-emerald-600">correspondence section</Link> will keep recording each response, refusal, production and correction until then.</div>
-                        <div>What happens next is partly their choice. Whether their choice is preserved in public is mine.</div>
-                        <div>If that matters to you, ask <em>them</em> this question.</div>
                     </div>
                 </div>
 
