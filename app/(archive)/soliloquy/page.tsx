@@ -347,9 +347,9 @@ export default function StormchasersSoliloquyPage() {
                     <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, Director{" "}
                     <PersonLink name="Lisa Sumption" />, the OPRD Commissioners, and{" "}
                     <PersonLink name="Governor Kotek" seat="governor" />. They had trespassed onto his interior and
-                    colonized it with a false narrative &mdash; also{" "}
-                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link>, which
-                    he had not seen yet. The act was a reclamation, and it was what led him to write the second part,
+                    colonized it with a false narrative, both to his face and{" "}
+                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link> he had
+                    not seen. The act was a reclamation, and it was what led him to write the second part,
                     which he kept private until after he had written and posted all three parts together.
                 </p>
                 <p>
