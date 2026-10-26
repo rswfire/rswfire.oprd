@@ -367,7 +367,9 @@ export default function StormchasersSoliloquyPage() {
                     has ever said points there. Attaching that meaning to his words is the act they have already
                     performed twice. Sovereignty, for him, is not a position on the law. It is the plain fact that no
                     one else speaks to his interior: not to what he feels, not to what he means, not to what he intends.
-                    Each time they have tried, the record shows it. He is the one asking them to follow the law.
+                    Each time they have tried, the record shows it, and it is this precise boundary they{" "}
+                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">continue to
+                    trespass</Link>. He is the one asking them to follow the law.
                     Whoever calls the third part an escalation is weaponizing it a third time.
                 </p>
                 <p>And still it&rsquo;s just a poem.
