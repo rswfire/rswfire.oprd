@@ -15,8 +15,6 @@ export default function FAQPage() {
         <SectionPage
             emblem="Ghost" tone="cyan"
             title="FREQUENTLY ASKED QUESTIONS"
-            previousPage={{ href: "/displacement", label: "The Displacement Framework" }}
-            nextPage={{ href: "/volunteers", label: "For Volunteers" }}
         >
             <div className="mt-8 space-y-8">
 
