@@ -363,14 +363,14 @@ export default function StormchasersSoliloquyPage() {
                     target</Link> of the state government&rsquo;s police power.
                 </p>
                 <p>
-                    The third part is dated October 24, 2026. They weaponized the first part twice. Whoever calls the
-                    third part an escalation is weaponizing it a third time. He knows the label waiting for the word: &ldquo;sovereign citizen.&rdquo;
-                    Nothing he has ever said points there.
-                    Attaching that meaning to his words is the act they have already performed twice. Sovereignty, for him, is not a position on the law. It is the plain fact that no
+                    He knows the label waiting for the word sovereignty: &ldquo;sovereign citizen.&rdquo; Nothing he
+                    has ever said points there. Attaching that meaning to his words is the act they have already
+                    performed twice. Sovereignty, for him, is not a position on the law. It is the plain fact that no
                     one else speaks to his interior: not to what he feels, not to what he means, not to what he intends.
                     Each time they have tried, the record shows it. He is the one asking them to follow the law.
+                    Whoever calls the third part an escalation is weaponizing it a third time.
                 </p>
-                <p>And it&rsquo;s still just a poem.
+                <p>And still it&rsquo;s just a poem.
                 </p>
             </div>
 
