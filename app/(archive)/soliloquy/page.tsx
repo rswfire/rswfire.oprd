@@ -335,7 +335,7 @@ export default function StormchasersSoliloquyPage() {
                     (<Moment ulid={CALL} t="11:57" />). He told her again what it was for{" "}
                     (<Moment ulid={CALL} t="12:09" />): he wanted the volunteer services lead to understand how much it
                     meant to him to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo; (<Moment ulid={CALL} t="13:01" />).
-                    Ten seconds of silence, as she regained her footing, then a turn to his emails. The next day she{" "}
+                    Ten seconds of silence, as she regained her footing. The next day she{" "}
                     <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded him permanently</Cite> from every state parks
                     volunteer program.
                 </p>
