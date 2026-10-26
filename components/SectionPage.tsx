@@ -25,6 +25,7 @@ const TONES = {
     blue:    { icon: "text-blue-600", eyebrow: "text-blue-700",    rule: "from-blue-200 via-blue-600 to-blue-200" },
     amber:   { icon: "text-amber-500", eyebrow: "text-amber-700",   rule: "from-amber-200 via-amber-500 to-amber-200" },
     rose:    { icon: "text-rose-600", eyebrow: "text-rose-700",    rule: "from-rose-200 via-rose-600 to-rose-200" },
+    red:     { icon: "text-red-600", eyebrow: "text-red-700",     rule: "from-red-200 via-red-600 to-red-200" },
     fuchsia: { icon: "text-fuchsia-600", eyebrow: "text-fuchsia-700", rule: "from-fuchsia-200 via-fuchsia-600 to-fuchsia-200" },
     cyan:    { icon: "text-cyan-600", eyebrow: "text-cyan-700",    rule: "from-cyan-200 via-cyan-600 to-cyan-200" },
     violet:  { icon: "text-violet-600", eyebrow: "text-violet-700",  rule: "from-violet-200 via-violet-600 to-violet-200" },

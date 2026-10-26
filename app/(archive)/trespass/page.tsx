@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TrespassPage() {
     return (
         <SectionPage
-            emblem="Footprints" tone="indigo"
+            emblem="Footprints" tone="red"
             title="TRESPASS"
             subtitle="WHAT IS AN EPISTEMIC VIOLATION?"
         >
