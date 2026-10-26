@@ -14,9 +14,10 @@ export default function TrespassPage() {
         <SectionPage
             emblem="Footprints" tone="red"
             title="TRESPASS"
-            subtitle="WHAT IS AN EPISTEMIC VIOLATION?"
+            subtitle="NAMING THE HARM"
         >
             <div className="mt-8 space-y-4 text-base text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3">What is an epistemic violation?</h2>
             <div><em>An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</em></div>
             <div>It is the act of deciding what is inside another person &mdash; what they feel, what they believe, what they intend &mdash; and writing it down as fact. The institution then acts on the person it wrote, and the real one pays for it.</div>
             <div>Here is the person they wrote.</div>
