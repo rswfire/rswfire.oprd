@@ -349,9 +349,9 @@ export default function StormchasersSoliloquyPage() {
                     <PersonLink name="Lisa Sumption" />, the OPRD Commissioners, and{" "}
                     <PersonLink name="Governor Kotek" seat="governor" />. They had trespassed onto his interior and
                     colonized it with a false narrative, both directly and{" "}
-                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link> the
-                    Program Manager spent a year privately editing, and that he would not see until Oregon State Police
-                    produced a copy of it. The act was a reclamation, and it was what led him to write the second part,
+                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link>: a Word
+                    document the Program Manager spent a year privately editing, making dozens of revisions over hours
+                    of writing, which he would not see until Oregon State Police produced a copy of it. The act was a reclamation, and it was what led him to write the second part,
                     which he kept private. That was the end of it, until the third part came seven months later and made
                     the three a triptych. Only then did he release the second.
                 </p>
