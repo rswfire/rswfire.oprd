@@ -35,7 +35,7 @@ export default function Footer() {
                         <div>It is designed to <em className="font-bold">outlast denial</em>.</div>
                         <p className="mt-5 max-w-prose border-t border-gray-200 pt-4 text-sm font-semibold leading-relaxed text-gray-700">
                             An epistemic violation is when someone colonizes your interior. They
-                            assume standing to do so. It is a form of theft, and I do not consent to it.
+                            use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.
                         </p>
                     </div>
                 </div>
