@@ -4,6 +4,7 @@ import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
+import PersonLink from "@/components/PersonLink";
 import { FAQ_QUESTIONS } from "@/data/faq";
 
 export const metadata: Metadata = {
@@ -255,8 +256,8 @@ export default function FAQPage() {
                         <div>And it costs you the truth of what is done to you. Every step stood on the one before it, and none of them stood on anything I did. A link became a police file. A belief assigned to me in a Word document became a reason to search my words. A search that found nothing became armed men at my door. That falsity is the cost: once your interior is theirs, they can act against it without evidence, because the evidence is what they wrote.</div>
                         <div>It costs whoever comes next. An institution that gives itself standing over one person&rsquo;s interior has given itself standing over every volunteer&rsquo;s.</div>
                         <div>This archive puts their sentences next to the record. It does not argue with them. It shows who wrote them.</div>
-                        <div>There is one counterexample in the record, and it comes from the park manager.</div>
-                        <div>After the origin event and their first escalation, I asked for a reset. He answered in writing, and he kept both of our accounts intact: &ldquo;Thanks for sharing your perspective, my hope it you are able to believe what I am sharing about mine.&rdquo; He did not tell me what I meant. He told me what he meant, and left mine as mine. &ldquo;A reset sounds good to me&rdquo; (<Cite ulid="01JKXHEPAR0PEQMPJXJGG9GZJ4">February 12, 2025</Cite>).</div>
+                        <div>There is one counterexample in the record, and it comes from the <PersonLink name="park manager" />.</div>
+                        <div>After the <Link href="/evidence/origin/" className="text-emerald-700 underline hover:text-emerald-600">origin event</Link> and their <Link href="/evidence/escalation/" className="text-emerald-700 underline hover:text-emerald-600">first escalation</Link>, I <Cite ulid="01JKXC1M80V9A90EV4SX6BFJ35">asked for a reset</Cite>. He answered in writing, and he kept both of our accounts intact: &ldquo;Thanks for sharing your perspective, my hope it you are able to believe what I am sharing about mine.&rdquo; He did not tell me what I meant. He told me what he meant, and left mine as mine. &ldquo;A reset sounds good to me&rdquo; (<Cite ulid="01JKXHEPAR0PEQMPJXJGG9GZJ4">February 12, 2025</Cite>).</div>
                         <div>I respected him immensely for it, and I told him so at the picnic table: &ldquo;your email changed my opinion&hellip; it was a big deal to me&rdquo; (<Link href="/evidence/coercion?t=58:01" className="text-emerald-700 underline hover:text-emerald-600">58:01</Link>). By then he had spent most of an hour doing the opposite, telling me what I believed and what I wanted. The respect I gave him for keeping my interior intact went when he stopped keeping it.</div>
                         <div>That email proves they can do it. Any one of them could have left my account as mine and set theirs beside it. One of them did, once. Everything else in this record was done by people capable of not doing it.</div>
                         <div>This is my whole dispute with them. Not the dismissal, not the exclusion, not the police. It is that they would not leave my interior as mine. They replaced it with a fictional one, in official records, and then went silent, or escalated because I would not. That is the harm I have been pointing at. It is a theft, and I do not consent.</div>
