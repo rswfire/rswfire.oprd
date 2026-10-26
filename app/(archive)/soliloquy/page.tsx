@@ -411,7 +411,7 @@ export default function StormchasersSoliloquyPage() {
                     rswfire.com: signal analysis
                 </a>
             </div>
-            <PageToc title="Stormchaser's Soliloquy" icon="Lighthouse" />
+            <PageToc title="Stormchaser's Soliloquy" icon="Lighthouse" iconClass="text-indigo-700" />
         </SectionPage>
     );
 }

@@ -16,7 +16,7 @@ interface Entry {
     num: string;
 }
 
-export default function PageToc({ title, icon }: { title: string; icon: IconName }) {
+export default function PageToc({ title, icon, iconClass }: { title: string; icon: IconName; /** The page's own colour for its icon, as the sidebar shows it. */ iconClass: string }) {
     const [entries, setEntries] = useState<Entry[]>([]);
     const [active, setActive] = useState<number | null>(null);
     const [open, setOpen] = useState(false);
@@ -116,7 +116,7 @@ export default function PageToc({ title, icon }: { title: string; icon: IconName
                         aria-expanded={open}
                         aria-label="Contents"
                     >
-                        <Icon name={icon} className="shrink-0 text-emerald-700" size={16} strokeWidth={2} />
+                        <Icon name={icon} className={`shrink-0 ${iconClass}`} size={16} strokeWidth={2} />
                         <span className="min-w-0 flex-1">
                             <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
                                 {current ? title : "Contents"}

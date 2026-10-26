@@ -141,7 +141,7 @@ export default function SunlightPage() {
                     },
                 ]}
             />
-            <PageToc title="Sunlight" icon="Sun" />
+            <PageToc title="Sunlight" icon="Sun" iconClass="text-amber-500" />
         </SectionPage>
     );
 }
