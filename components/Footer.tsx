@@ -26,7 +26,7 @@ export default function Footer() {
                     <div className="pl-4 border-l-4 border-emerald-700 text-left text-lg leading-relaxed text-gray-700 space-y-1">
                         <div>
                             <strong>Why I built this archive</strong>: to correct an{" "}
-                            <Link href="/faq/#epistemic" className="text-emerald-700 underline hover:text-emerald-600">
+                            <Link href="/trespass/" className="text-emerald-700 underline hover:text-emerald-600">
                                 <em>epistemic violation</em>
                             </Link>
                             .

@@ -379,7 +379,7 @@ export default function StormchasersSoliloquyPage() {
                     performed twice. Sovereignty, for him, is not a position on the law. It is the plain fact that no
                     one else speaks to his interior: not to what he feels, not to what he means, not to what he intends.
                     Each time they have tried, the record shows it, and it is this precise boundary they{" "}
-                    <Link href="/faq/#epistemic" className="text-sky-700 underline hover:text-sky-600">continue to
+                    <Link href="/trespass/" className="text-sky-700 underline hover:text-sky-600">continue to
                     trespass</Link>.
                 </p>
                 <p>
