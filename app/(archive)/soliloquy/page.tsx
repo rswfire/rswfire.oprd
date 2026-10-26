@@ -6,7 +6,7 @@ import Cite from "@/components/Cite";
 import Icon from "@/components/Icon";
 import PersonLink from "@/components/PersonLink";
 import Moment from "@/components/player/Moment";
-import SoliloquyToc from "@/components/SoliloquyToc";
+import PageToc from "@/components/PageToc";
 
 const PICNIC = "01JNK2TKG01JTERAMB7J6AKPK1";
 const CALL = "01JQ59R3S0SHQ18E23BC0BM696";
@@ -411,7 +411,7 @@ export default function StormchasersSoliloquyPage() {
                     rswfire.com: signal analysis
                 </a>
             </div>
-            <SoliloquyToc />
+            <PageToc title="Stormchaser's Soliloquy" icon="Lighthouse" />
         </SectionPage>
     );
 }

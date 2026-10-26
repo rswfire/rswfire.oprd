@@ -1,21 +1,22 @@
 "use client";
 
-// components/SoliloquyToc.tsx
+// components/PageToc.tsx
 //
-// The Key Individuals contents bar, for the poem: the preamble and its three
-// parts, read off the page, with the part the reader is at shown in the bar.
-// Opening the list jumps to one.
+// The Key Individuals contents bar, for any page: every element carrying
+// data-toc (and data-toc-num, a part's number), read off the page in order,
+// with the one the reader is at shown in the bar. Opening the list jumps to
+// one. Used by the poem's preamble and parts, and by sunlight's entries.
 import { useCallback, useEffect, useRef, useState } from "react";
-import Icon from "@/components/Icon";
+import Icon, { type IconName } from "@/components/Icon";
 
 interface Entry {
     id: string;
     label: string;
-    /** A part's number; the preamble has none. */
+    /** A part's number; an entry without one has none. */
     num: string;
 }
 
-export default function SoliloquyToc() {
+export default function PageToc({ title, icon }: { title: string; icon: IconName }) {
     const [entries, setEntries] = useState<Entry[]>([]);
     const [active, setActive] = useState<number | null>(null);
     const [open, setOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function SoliloquyToc() {
         setEntries(out);
     }, []);
 
-    // The part the reader is at: the last one whose top has passed the middle of the screen.
+    // The entry the reader is at: the last one whose top has passed the middle of the screen.
     useEffect(() => {
         if (entries.length === 0) return;
         let raf = 0;
@@ -59,7 +60,7 @@ export default function SoliloquyToc() {
         return () => { document.body.style.overflow = overflow; };
     }, [open]);
 
-    // Keep the open list scrolled to the part the reader is at.
+    // Keep the open list scrolled to the entry the reader is at.
     useEffect(() => {
         if (!open || !listRef.current) return;
         const row = listRef.current.querySelector<HTMLElement>(`[data-i="${active ?? 0}"]`);
@@ -115,13 +116,13 @@ export default function SoliloquyToc() {
                         aria-expanded={open}
                         aria-label="Contents"
                     >
-                        <Icon name="Lighthouse" className="shrink-0 text-emerald-700" size={16} strokeWidth={2} />
+                        <Icon name={icon} className="shrink-0 text-emerald-700" size={16} strokeWidth={2} />
                         <span className="min-w-0 flex-1">
                             <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                                {current ? "Stormchaser's Soliloquy" : "Contents"}
+                                {current ? title : "Contents"}
                             </span>
                             <span className="block truncate font-mono text-[13px] text-slate-900">
-                                {current ? (current.num ? `${current.num} · ${current.label}` : current.label.toUpperCase()) : "STORMCHASER'S SOLILOQUY"}
+                                {current ? (current.num ? `${current.num} · ${current.label}` : current.label.toUpperCase()) : title.toUpperCase()}
                             </span>
                         </span>
                         <Icon name={open ? "ChevronDown" : "ChevronUp"} className="shrink-0 text-slate-500" size={18} strokeWidth={2} />

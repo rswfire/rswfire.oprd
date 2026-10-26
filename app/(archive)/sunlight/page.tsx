@@ -13,6 +13,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import SunlightTabs from "@/components/SunlightTabs";
+import PageToc from "@/components/PageToc";
 import { SUNLIGHT_SECTIONS } from "@/data/sunlight";
 import type { SunlightBlock } from "@/data/sunlight";
 
@@ -140,6 +141,7 @@ export default function SunlightPage() {
                     },
                 ]}
             />
+            <PageToc title="Sunlight" icon="Sun" />
         </SectionPage>
     );
 }
@@ -157,7 +159,7 @@ function TimelinePanel() {
 
             <div className="mt-10 space-y-10">
                 {SUNLIGHT_SECTIONS.map((section) => (
-                    <section key={section.heading} id={anchorFor(section.heading)} className="scroll-mt-24">
+                    <section key={section.heading} id={anchorFor(section.heading)} data-toc={section.heading} className="scroll-mt-24">
                         <h2 className="text-lg font-mono font-bold text-gray-900">{section.heading}</h2>
                         <div className="mt-3 space-y-4">
                             {group(section.blocks).map((seg, i) => {
