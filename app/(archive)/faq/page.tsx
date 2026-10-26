@@ -40,7 +40,7 @@ export default function FAQPage() {
                         Why haven't you sued them?
                     </h2>
                     <div className="space-y-4">
-                        <div>Because a court decides what becomes part of the record. I wanted the whole record, so I built it myself.</div>
+                        <div>Because a court decides what becomes part of the record. I wanted the whole record, so I built it myself from primary sources, one public records request at a time.</div>
                     </div>
                 </div>
 
