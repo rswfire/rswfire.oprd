@@ -326,15 +326,14 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     Twenty days after that, on the recorded call of March 25,{" "}
-                    <PersonLink name="program manager" label="Allison Watson" /> opened by telling him the dismissal was
-                    &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />). Then she took up his emails to staff
-                    as &ldquo;personal versus professional,&rdquo; and put the poem in with them{" "}
-                    (<Moment ulid={CALL} t="11:19" />). He told her the poem had context, and that he had explained it at
-                    the picnic table (<Moment ulid={CALL} t="11:46" />). She asked him the same question again{" "}
-                    (<Moment ulid={CALL} t="11:57" />). He told her what the poem was for{" "}
+                    <PersonLink name="program manager" label="Allison Watson" /> used it again. She opened by telling
+                    him the dismissal was &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />).
+                    Then she brought up the poem (<Moment ulid={CALL} t="11:19" />). He told her it had context, and
+                    that he had explained it at the picnic table (<Moment ulid={CALL} t="11:46" />). She asked again{" "}
+                    (<Moment ulid={CALL} t="11:57" />). He told her again what it was for{" "}
                     (<Moment ulid={CALL} t="12:09" />): he wanted the volunteer services lead to understand how much it
                     meant to him to be on the coast. &ldquo;It&rsquo;s just a poem&rdquo; (<Moment ulid={CALL} t="13:01" />).
-                    Ten seconds of silence, as she regained her footing, then a return to his emails. The next day she{" "}
+                    Ten seconds of silence, as she regained her footing, then a turn to his emails. The next day she{" "}
                     <Cite ulid="01JQA2WM60RX7MSJQ5QPFD8AR2">excluded him permanently</Cite> from every state parks
                     volunteer program.
                 </p>
