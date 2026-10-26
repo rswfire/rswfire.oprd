@@ -339,11 +339,18 @@ export default function StormchasersSoliloquyPage() {
                     volunteer program.
                 </p>
                 <p>
-                    On March 5, 2026, he <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />,
-                    the <PersonLink name="park manager" />, <PersonLink name="program manager" label="Allison Watson" />,
-                    Director <PersonLink name="Lisa Sumption" />, Deputy Director{" "}
-                    <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, the OPRD
-                    Commissioners, and <PersonLink name="Governor Kotek" seat="governor" />. He reclaimed it from them, on the anniversary of when they first used it against him.
+                    On March 5, 2026, the anniversary of the picnic table meeting, he{" "}
+                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the{" "}
+                    <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />, the{" "}
+                    <PersonLink name="park manager" />, Program Manager{" "}
+                    <PersonLink name="program manager" label="Allison Watson" />, Deputy Director{" "}
+                    <PersonLink name="J.R. Collier" seat="deputy" />, Interim Director Stefanie Coons, Director{" "}
+                    <PersonLink name="Lisa Sumption" />, the OPRD Commissioners, and{" "}
+                    <PersonLink name="Governor Kotek" seat="governor" />. They had trespassed onto his interior and
+                    colonized it with a false narrative,{" "}
+                    <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in writing</Link> he
+                    had not yet seen. The act was a reclamation. It is what led him to write the second part, which he
+                    kept private until all three parts were written and posted together.
                 </p>
                 <p>
                     Little did he know what they had set in motion two days prior.
