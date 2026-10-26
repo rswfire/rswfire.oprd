@@ -53,9 +53,7 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>This question implies I did something to justify what happened.</div>
                         <div>Ask yourself this instead: what could I have done that justifies sustained psychological pressure over two months, dismissal without cause, a permanent statewide ban from volunteer service, three men with guns at my home and workplace one year later, and the institution&rsquo;s continuing refusal to account for any of it?</div>
-                        <div>The answer is nothing.</div>
-                        <div>Because the question itself is backwards.</div>
-                        <div>The issue isn't what I did &mdash; the issue is what <em>they did</em> when someone documented their behavior and refused to accept their behavior as normal.</div>
+                        <div>The answer is nothing, because the question itself is backwards. The issue isn't what I did &mdash; the issue is what <em>they did</em> when someone documented their behavior and refused to accept their behavior as normal.</div>
                     </div>
                 </div>
 
