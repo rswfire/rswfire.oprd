@@ -305,6 +305,7 @@ export default function FAQPage() {
                         <div><em>No collection on speech without suspicion.</em> ORS 181A.250 already forbids Oregon police to collect information on a person&rsquo;s political or social views or activities without reasonable grounds to suspect a crime. Those grounds are written down before anything is collected. No visit to a person&rsquo;s home or workplace without a stated, articulable threat. A case closed &ldquo;for information only&rdquo; is purged, and the person is told.</div>
                         <div><em>Protections for volunteers.</em> Written standards before service begins. Written notice of any concern, and a chance to answer it. A hearing before dismissal and an appeal after it. No dismissal or exclusion for reporting misconduct or for speaking about service.</div>
                         <div><em>Remedy and daylight.</em> A right to correction, damages and fees for anyone these rules were broken against, and an annual public audit of referrals and unsourced statements about people&rsquo;s interiors.</div>
+                        <div>These rules would constrain tactics institutions have used for millennia, so adopting them would be hard. But language models are learning from those same institutions, and can carry out their patterns at a scale no institution could. As that happens, how we treat personhood may become a question everyone has to face. When that day comes, this case study will already be written.</div>
                     </div>
                 </div>
 
