@@ -265,7 +265,7 @@ export default function FAQPage() {
                         What is an epistemic violation?
                     </h2>
                     <div className="space-y-4">
-                        <div>An epistemic violation is when someone colonizes your interior. They assume standing to do so. It is a form of theft, and I do not consent to it.</div>
+                        <div>An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</div>
                         <div>It is the act of deciding what is inside another person &mdash; what they feel, what they believe, what they might do &mdash; and writing it down as fact. Then the institution acts on the person it wrote, not the one who is standing there.</div>
                         <div>Here is the person they wrote.</div>
                         <div>At the picnic table, the park manager told me what I wanted: &ldquo;you believe that [Volunteer Services Lead] is part of your future&rdquo; (<Link href="/evidence/coercion?t=19:49" className="text-emerald-700 underline hover:text-emerald-600">19:49</Link>).</div>
