@@ -7,7 +7,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ChevronRight, Sprout, MailQuestionMark, Users } from "lucide-react";
+import { ChevronRight, Sprout, MailQuestionMark, Users, Footprints } from "lucide-react";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 import { TESTIMONY_META } from "@/data/testimonyMeta";
 import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
@@ -111,6 +111,19 @@ export default function TestimonyCard() {
                             <span className="block text-[12px] text-gray-600">One question, asked of every state agency.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-sky-700 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                    <Link
+                        href="/trespass"
+                        className="not-italic group !mt-3 flex items-center gap-3 rounded-xl border border-red-200 bg-red-50/60 px-4 py-3 no-underline transition-colors hover:border-red-300 hover:bg-red-50"
+                    >
+                        <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-red-700 ring-1 ring-red-200">
+                            <Footprints size={18} strokeWidth={1.75} />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                            <span className="block text-[14px] font-semibold text-gray-900">Trespass</span>
+                            <span className="block text-[12px] text-gray-600">Naming the harm.</span>
+                        </span>
+                        <ChevronRight aria-hidden size={18} className="shrink-0 text-red-700 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                 </div>
 
