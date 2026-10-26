@@ -247,11 +247,11 @@ export default function Header() {
                                 }
                             }}
                         >
-                            <VolunteerShield compact />
-                            <NewsletterSignup compact />
                             <div className="col-span-2">
                                 <Tracker compact />
                             </div>
+                            <VolunteerShield compact />
+                            <NewsletterSignup compact />
                             <div className="col-span-2">
                                 <HostedOnGithub />
                             </div>
