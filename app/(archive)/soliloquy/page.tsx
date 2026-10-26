@@ -328,7 +328,9 @@ export default function StormchasersSoliloquyPage() {
                     Twenty days after that, on the recorded call of March 25, Program Manager{" "}
                     <PersonLink name="program manager" label="Allison Watson" /> used it again. She opened by telling
                     him the dismissal was &ldquo;not going to be overturned&rdquo; (<Moment ulid={CALL} t="2:38" />).
-                    Then she brought up the poem (<Moment ulid={CALL} t="11:19" />). He told her it had context, and
+                    Then she <Cite ulid="01M5GEGNYGQPAMZHC1BQG6EX9T">ambushed him</Cite>: nine minutes of claims from
+                    unnamed sources (<Moment ulid={CALL} t="4:26" />, <Moment ulid={CALL} t="6:54" />,{" "}
+                    <Moment ulid={CALL} t="8:18" />), and then the poem (<Moment ulid={CALL} t="11:19" />). He told her it had context, and
                     that he had explained it at the picnic table (<Moment ulid={CALL} t="11:46" />). She asked again{" "}
                     (<Moment ulid={CALL} t="11:57" />). He told her again what it was for{" "}
                     (<Moment ulid={CALL} t="12:09" />): he wanted the volunteer services lead to understand how much it
