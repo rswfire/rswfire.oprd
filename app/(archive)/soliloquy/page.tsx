@@ -356,7 +356,7 @@ export default function StormchasersSoliloquyPage() {
                     the three a triptych. Only then did he release the second.
                 </p>
                 <p>
-                    Little did he know, as he sent the poem, what they had set in motion two days before.
+                    Little did he know, as he sent the poem, what they had set in motion two days prior.
                 </p>
                 <p>
                     On March 3, 2026, he <Cite ulid="01KJT9T6V8Q8PATA3JMZ8DD1ZW">wrote</Cite> Deputy Director{" "}
