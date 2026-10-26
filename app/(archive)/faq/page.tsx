@@ -291,6 +291,18 @@ export default function FAQPage() {
 
                 <hr className="border-t border-gray-300" />
 
+                {/* Question 13 */}
+                <div id="sue" className="scroll-mt-48">
+                    <h2 className="text-xl font-semibold mb-3">
+                        Why haven&rsquo;t you sued them?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>Because what matters to me is building the complete public record, and I did not need court when I could do it myself.</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
                 {/* Question 14 */}
                 <div id="next" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">

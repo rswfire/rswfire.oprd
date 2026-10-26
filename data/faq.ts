@@ -23,5 +23,6 @@ export const FAQ_QUESTIONS: FaqQuestion[] = [
     { id: "silence", question: "What does their silence mean?" },
     { id: "tone", question: "Why is your tone so direct?" },
     { id: "epistemic", question: "What is an epistemic violation?" },
+    { id: "sue", question: "Why haven't you sued them?" },
     { id: "next", question: "What happens next?" },
 ];
