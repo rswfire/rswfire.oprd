@@ -41,11 +41,7 @@ export default function FAQPage() {
                         Why haven't you sued them?
                     </h2>
                     <div className="space-y-4">
-                        <div>Because I chose to establish the public record first. Litigation can limit what becomes public and end in a settlement with an NDA. I will not sign one.</div>
-                        <div>But I will sue. OPRD&rsquo;s statewide exclusion remains in force. It is an ongoing prohibition on volunteer service imposed in writing for public speech. I have a claim under 42 U.S.C. &sect; 1983 against Director Lisa Sumption.</div>
-                        <div>I also intend to sue over the police operation of March 24, 2026, when three men with guns came through a locked federal gate to my home and workplace because of what I published about OPRD. I served <Link href="/record/oprd/01KYFER0GR6CQHWMTVNTBJV58S" className="text-emerald-700 underline hover:text-emerald-600">notice under the Oregon Tort Claims Act</Link>. Once the records identify who initiated the operation, I expect the &sect; 1983 claim to include that person.</div>
-                        <div>The public-records dispute with Oregon State Police is separate. Oregon State Police confirmed that it holds incident reports and attachments, officer notes, dispatch records, electronic communications, and body-camera footage of the March 24 police operation. I paid its $157.50 production fee for the records it agreed to process. If the agency redacts those records or claims that any record covered by my payment is exempt, I will file a public-records action against Oregon State Police. The agency is already withholding the body-camera footage. I will challenge that withholding in court. The <Link href="/records/osp" className="text-emerald-700 underline hover:text-emerald-600">complete records process</Link> is public.</div>
-                        <div>The record came first. Litigation comes next.</div>
+                        <div>Because what matters to me is building the complete public record, and I did not need court when I could do it myself.</div>
                     </div>
                 </div>
 
@@ -286,18 +282,6 @@ export default function FAQPage() {
                         <div>I respected him immensely for it, and I told him so at the picnic table: &ldquo;your email changed my opinion&hellip; it was a big deal to me&rdquo; (<Link href="/evidence/coercion?t=58:01" className="text-emerald-700 underline hover:text-emerald-600">58:01</Link>). By then he had spent most of an hour doing the opposite, telling me what I believed and what I wanted. The respect I gave him for keeping my interior intact went when he stopped keeping it.</div>
                         <div>That email proves they can do it. Any one of them could have left my account as mine and set theirs beside it. One of them did, once. Everything else in this record was done by people capable of not doing it.</div>
                         <div>This is my whole dispute with them. Not the dismissal, not the exclusion, not the police. It is that they would not leave my interior as mine. They replaced it with a fictional one, in official records, and then went silent, or escalated because I would not. That is the harm I have been pointing at. It is a theft, and I do not consent.</div>
-                    </div>
-                </div>
-
-                <hr className="border-t border-gray-300" />
-
-                {/* Question 13 */}
-                <div id="sue" className="scroll-mt-48">
-                    <h2 className="text-xl font-semibold mb-3">
-                        Why haven&rsquo;t you sued them?
-                    </h2>
-                    <div className="space-y-4">
-                        <div>Because what matters to me is building the complete public record, and I did not need court when I could do it myself.</div>
                     </div>
                 </div>
 
