@@ -53,7 +53,7 @@ export default function FAQPage() {
                     <div className="space-y-4">
                         <div>This question implies I did something to justify what happened.</div>
                         <div>Ask yourself this instead: what could I have done that justifies sustained psychological pressure over two months, dismissal without cause, a permanent statewide ban from volunteer service, three men with guns at my home and workplace one year later, and the institution&rsquo;s continuing refusal to account for any of it?</div>
-                        <div>The answer is nothing, because the question itself is backwards. The issue isn't what I did &mdash; the issue is what <em>they did</em> when someone documented their behavior and refused to accept their behavior as normal.</div>
+                        <div>The answer is nothing. Because the question itself is backwards. The issue isn't what I did &mdash; the issue is what <em>they did</em> when someone documented their behavior and refused to accept their behavior as normal.</div>
                     </div>
                 </div>
 
@@ -212,25 +212,6 @@ export default function FAQPage() {
                         <div>But here's the better question: why shouldn't I document in public?</div>
                         <div>Who are we protecting by keeping institutional abuse private? The answer is the institution &mdash; not the people it harms.</div>
                         <div>And I know this is shocking, but institutions don't have to harm people.</div>
-                    </div>
-                </div>
-
-                <hr className="border-t border-gray-300" />
-
-                {/* Question 10 */}
-                <div id="silence" className="scroll-mt-48">
-                    <h2 className="text-xl font-semibold mb-3">
-                        What does their silence mean?
-                    </h2>
-                    <div className="space-y-4">
-                        <div>Their silence is a choice.</div>
-                        <div>Director Lisa Sumption <Link href="/lisa-sumption/open-letter" className="text-emerald-700 underline hover:text-emerald-600">received comprehensive evidence</Link> in August 2025 &mdash; audio recordings, video documentation, written proof of retaliation. She responded with procedural language and took no action.</div>
-                        <div>Governor Kotek's office has been notified repeatedly and copied on the later interagency record. There has been no response and no acknowledgment of receipt.</div>
-                        <div>OPRD&rsquo;s silence rests on a judgment about standing. In the institution&rsquo;s view of itself, a former volunteer it expelled has no recognized position from which to require an answer: no employment relationship, no grievance right, no place inside the institution. It treats the removal as if it also removed its obligation to account for what it did.</div>
-                        <div>That is an inversion of what a public institution is.</div>
-                        <div>A public institution does not decide who has standing to question its use of public power. Its authority comes from the public. I do not need an ongoing role inside OPRD, or OPRD&rsquo;s recognition of me, to require it to answer for the conduct of its officials.</div>
-                        <div>If expelling someone also extinguishes the institution&rsquo;s obligation to answer them, removal becomes a mechanism for escaping accountability. The institution could create its own silence by first excluding the person to whom it owes an answer.</div>
-                        <div>This is not standing in the technical sense required by a court. It is the relationship between a public institution and the public from which its authority derives. OPRD answers to the public. The public does not answer to OPRD.</div>
                     </div>
                 </div>
 

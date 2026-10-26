@@ -20,7 +20,6 @@ export const FAQ_QUESTIONS: FaqQuestion[] = [
     { id: "accountability", question: "What do you want to happen?" },
     { id: "retaliation", question: "Aren't you worried about retaliation?" },
     { id: "proper-channels", question: "Why make this public instead of going through proper channels?" },
-    { id: "silence", question: "What does their silence mean?" },
     { id: "tone", question: "Why is your tone so direct?" },
     { id: "epistemic", question: "What is an epistemic violation?" },
     { id: "next", question: "What happens next?" },
