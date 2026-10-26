@@ -22,10 +22,10 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     <Link href="/displacement" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
                         The Displacement Framework
                     </Link>
-                    <Link href="/displacement#requires" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
+                    <Link href="/displacement/#requires" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
                         What It Requires
                     </Link>
-                    <Link href="/displacement#breaks" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
+                    <Link href="/displacement/#breaks" className="text-xs font-mono border border-red-700 text-red-700 px-3 py-1.5 hover:bg-red-700 hover:text-white transition-colors">
                         What Breaks It
                     </Link>
                 </div>
@@ -47,7 +47,7 @@ export default function DisplacementStage({ stage }: { stage: string }) {
                     <Link href="/volunteers" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         For Volunteers
                     </Link>
-                    <Link href="/volunteers#you-should-know" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
+                    <Link href="/volunteers/#you-should-know" className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
                         You Should Know
                     </Link>
                     <Link href={`/volunteers#stage-${entry.stage.split('.')[0]}`} className="text-xs font-mono border border-gray-300 text-gray-600 px-3 py-1.5 hover:border-red-700 hover:text-red-700 transition-colors">
