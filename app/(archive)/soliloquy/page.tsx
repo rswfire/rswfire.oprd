@@ -341,7 +341,7 @@ export default function StormchasersSoliloquyPage() {
                 </p>
                 <p>
                     On March 5, 2026, the anniversary of the picnic table meeting, he{" "}
-                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent the first part</Cite> to the{" "}
+                    <Cite ulid="01KK0DDFQ8A7B4NQVJ86TD9RWW">sent</Cite> the first part to the{" "}
                     <PersonLink name="volunteer services lead" />, the <PersonLink name="park supervisor" />, the{" "}
                     <PersonLink name="park manager" />, Program Manager{" "}
                     <PersonLink name="program manager" label="Allison Watson" />, Deputy Director{" "}
@@ -351,7 +351,8 @@ export default function StormchasersSoliloquyPage() {
                     colonized it with a false narrative, both directly and{" "}
                     <Link href="/sunlight" className="text-sky-700 underline hover:text-sky-600">in a Word
                     document</Link> the program manager spent a year privately editing, making dozens of revisions over hours
-                    of writing, which he would not see until Oregon State Police produced a copy of it. The act was a reclamation, and it was what led him to write the second part,
+                    of writing, which he would not see until Oregon State Police{" "}
+                    <Cite ulid="01M1M4WF78XJPEJJ48D1JZ4SJ8" thread="osp">produced a copy of it</Cite>. The act was a reclamation, and it was what led him to write the second part,
                     which he kept private. That was the end of it, until the third part came seven months later and made
                     the three a triptych. Only then did he release the second.
                 </p>
