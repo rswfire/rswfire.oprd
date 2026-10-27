@@ -1,0 +1,440 @@
+Return-Path: <Erin.C.ZYSETT@oem.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id vsbyI/D+4GprogwAjtW+MQ
+	(envelope-from <Erin.C.ZYSETT@oem.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:43:44 +0000
+Received: from BL0PR0901CU002.outbound.protection.outlook.com (mail-eastusazon11010061.outbound.protection.outlook.com [52.101.51.61])
+	by mail.rswfire.com (Postfix) with ESMTPS id 77E5D2511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:43:42 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=vB+wXZTUHayB0ONZHij713hBWG5q2KfwZ8BO+rRoX1kxHMmOVs/a6TfAZJDdJ/DXQYh/3sM8nOYbZ6vst4ERGcAZ45Fxf0iia0l94IHHToB2/imbCBNrAJE+KidR0XmaTo1a9rLC0cRvNKMaRaR16m+3lBaAyIMzVq/oM6DKWR4IY6NO8fY/HKHFx/kaj92WiL9eLdjNYh2mYM+eeS7g/zWeGpYWqPYnbcWu0+qCpd5LrBf/PD/yiKCQXuJziH2P++TuBaSB8H5HjNauXXP590Et7goWBr5Y7GW3+qMvg0OIixtP3PjRLVk7ALDJfbxzR66AUy4MafS21zZcCesWJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zRM1N9oQyPSc9YVKjEgkkdwGa1od5gpcrxG3nvDDAjo=;
+ b=B2qA5jT5UtSWVjLHIWN1C6XWdJIgbLc4VU3kj5F0cUGxEhPiCw2bgWkaFKSkR0qOyQfHfwSxKFxi2aLqPDk0iNRHcc2sRviTU31CPr1wrBB4O3CZ2wX7ydNHT/K0EKGzfaUOngNfQ7IxDDdkALWjas0QMPjFa72cczDO2J4Q6G2CkeheqHVXkiItHJvvS1IpVTe5bBYOkyKviId9ALV3Cnh9497cVz8pcT7/JGwDNjJzE2hNOWf23aEm+7licpD5rhg+4251dn0dNMPPeTTsNwhND6rPcUcswgTf9cmcHqtfSINbvDTLfZNKod/XcYdrAPQ1IB1I2LMK0FJuNP7CnA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oem.oregon.gov; dmarc=pass action=none
+ header.from=oem.oregon.gov; dkim=pass header.d=oem.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oem.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=zRM1N9oQyPSc9YVKjEgkkdwGa1od5gpcrxG3nvDDAjo=;
+ b=P6ZDUUmp4d3SqkL/DNqrk2rrMQ+hWB1M1pcWFm08B6tTTVgiSNXTX8roB/iuhPtuL/fGFbXeX/3AHUuj3N3iN2lgrWSfhxPphCON/pBgCG4iB8ocGHv7YEUPTQL6t1y/HigsKm7HMuBt3Yp5cO5HBfclbkytgkTDNABviFBnyxvscwtXKICnLwc67qhUJ56EWQ5eMWbtIWKseBAvV3iYTWLSGSTtRx6Ob3jIFk2/yhvr+I6BmSjtlZaVNRzZLkvXUjyXknRWwlwtqgdZbilks8YoB9ai/URQoWX2hSpO21sjr+MYTg6JagkOT5EMKAiSetLdd1/Tekk4JGrEHgEUug==
+Received: from MW4PR09MB9718.namprd09.prod.outlook.com (2603:10b6:303:1f7::20)
+ by SJ0PR09MB7261.namprd09.prod.outlook.com (2603:10b6:a03:268::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 19:43:36 +0000
+Received: from MW4PR09MB9718.namprd09.prod.outlook.com
+ ([fe80::b98f:d6fb:398c:6e31]) by MW4PR09MB9718.namprd09.prod.outlook.com
+ ([fe80::b98f:d6fb:398c:6e31%6]) with mapi id 15.21.0546.021; Tue, 27 Oct 2026
+ 19:43:35 +0000
+From: ZYSETT Erin C * OEM <Erin.C.ZYSETT@oem.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>, OEM_PublicInfo
+	<OEM_PublicInfo@oem.oregon.gov>
+Subject: RE: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZkqEUVT4kTjx20KZ7CIzEWRBWbcRycXA
+Date: Tue, 27 Oct 2026 19:43:35 +0000
+Message-ID:
+ <MW4PR09MB971861BD9B0AEF3CB01F893A9B602@MW4PR09MB9718.namprd09.prod.outlook.com>
+References:
+ <9bd4be32.AWQAAKo3Jf8AAAAAAAAABEP6APEAAYKKucoAAAAAADb2LABq4PwU@mailjet.com>
+In-Reply-To:
+ <9bd4be32.AWQAAKo3Jf8AAAAAAAAABEP6APEAAYKKucoAAAAAADb2LABq4PwU@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oem.oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MW4PR09MB9718:EE_|SJ0PR09MB7261:EE_
+x-ms-office365-filtering-correlation-id: d82d6901-a83e-486d-4e3e-08df34629716
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|23010399003|1800799024|366016|22082099003|261026121527099003|18002099003|13003099007|8096899003|56012099006|10067099003|261022105027099003|261026140227099003|260925022911599003|260925021311599003|260925021911599003|38070700021;
+x-microsoft-antispam-message-info:
+ lqGcEXZ8/TXUKA+mx9LA0lR/PIeybBOvocDxX4+IDWlBiY7jC1Xn1VjUemTB/1pAEli0qX/LxtY7rg0s4BPBzAHIHckmNYEdapkrg57BprGuY1Fj+WQRBZ8+PSkxXOFDTv+We6GdlSzesGKHiuERM3VKGSiW/90UYvRVf8R5fEMGqeF4SIV5luD7JsUN9ZsQHZo9MOiM2DTrlOFnbYQxeXjryVTXBoAy+lSzbcWmBUgbv+EgQRNteYoxNP2yLmh8adix5dlafqEQAGlhxGAnQbkSbnj5qZYsL4oZxqLpS5ZlLKv1E1vBhGL99Fy0shXEJmjKIa5dUWBwwSqHwsACIgPnapGdJpMZ2iERcN0tjn8jTgrrUrlm/UsvFTYr8W1K8rq/20ZHbyRVSr1IKlGrtrjg+F7ZMolk+uAOBIAYnl86OVUL1QNIOJt7hzWyvHjlqB7RmBVijUzR8RR1gE7lh8KUC1N7bTRojeHeY+ZkKYo9qJiMvliItbu64p6VjCVueKgGjdGgDI65Qp3ggMntPtfVxdEstLzYoWLcc/oW0OuBoZeKYGJ5Vj76XGOARrGEFhAsyZnih5/2173xFAqwCmz9hzkhxkrqmKbjVFYhjr+LXMtlgBScIP7pmQAVG+7Gx9rp2tpNIrrkqNvxGw/1H5ejcD6Y1P2WoIauFW+/kFM=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MW4PR09MB9718.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(23010399003)(1800799024)(366016)(22082099003)(261026121527099003)(18002099003)(13003099007)(8096899003)(56012099006)(10067099003)(261022105027099003)(261026140227099003)(260925022911599003)(260925021311599003)(260925021911599003)(38070700021);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?6v75prdDHTSqRk26rSIIZwTffK8IpV+5v7hphioY9XK1nBSzOwPtCKEXvpxt?=
+ =?us-ascii?Q?D+d2v9kMpzJcO5gp083MYBCjIPIuIoy8zXeLNLy5gpAa97OQJBVdy0lE+n6Q?=
+ =?us-ascii?Q?Q67HYf91AJJCAgVQ5eAJLDEYNBCxEpCHO0A/CwoRU4Ud43r0sAned/bQOy1N?=
+ =?us-ascii?Q?lnKcwoH9OsUTaKz8uNchjuJ9gtF0j93/xfdtYjjz9cXRwZIz3Ag+bSYm2663?=
+ =?us-ascii?Q?CAEFcdQohvLo9i4UgRbcHDWhFz3JitMpWYsw2JuPredT6m3t1u7A5Pqy+rpO?=
+ =?us-ascii?Q?R95wsz7/1EW7u8L9kP30NNhJXPOwmCPnl0Zut7mSn8TAJWZOIj+GKb2uWEQD?=
+ =?us-ascii?Q?8djwiPu0tJcBhv1DBiPj0x+/sOJp0qoLgcApRB4T2t+PLgsspS/4dtVAlZv1?=
+ =?us-ascii?Q?0mRUkGJVP7zAaZnRv7wyjWIDgvWyqYC9JH0v8HsLBQ7uogh5TRtP0/wlEYnm?=
+ =?us-ascii?Q?PzU4tIa6v45zH40+V3i8EOFxg/bu5xFyZ/KV5s77nYugdYlUVGcg5xFpeZnj?=
+ =?us-ascii?Q?cuLtPq8vb3Tm7FnZjKlCekSDzODxRcfaMq7B92xgK053MkjYzehA4/HY7qzT?=
+ =?us-ascii?Q?P1uBpsGCZD7y7ozpkkYkbFA/jo2xWYrRj03jymR7MZQt62HwKLIJeY26SVMh?=
+ =?us-ascii?Q?vqEgL5fTshPH8zAc4odHPtWWgZoGLvUwcAxK5omTY8+ATQib8jlRo6kUXFP3?=
+ =?us-ascii?Q?CFAFRvDQGa62R9VoERBPYP7v4DEhYHdFieYto+ASKbzm737zcxT/W0k88d9r?=
+ =?us-ascii?Q?fBhEOdi7Xnl9xxwhj8T56gQAMbvmjah4SjPcVbqUy1vqtZDo9XQ/5gcpPjuw?=
+ =?us-ascii?Q?2p51QLZT/XFMxP2ZuzMQGudJj+02Reh+AIoj4PJdVDe4OdRxu2vKeM4IarGb?=
+ =?us-ascii?Q?s+9xzJeelTDIn59c1NSg/OfM8G+YvyVGCPB3/t8KCCc5FNM213qQfVfjNW0i?=
+ =?us-ascii?Q?W80aTsQiMAWpke0qsIHXGH5XBxeW3qMLH6OQKOON59G9sfOPBEoOm5wOF1WL?=
+ =?us-ascii?Q?g9B0zJs+PUj1bLw21mEJ3wVW43pWdw1y5SGTkdP4+kwIMiNgD0aZEMpTPGIZ?=
+ =?us-ascii?Q?0MUw/o/46Eomv/ZxI5pLmU5IePYlbPb9sjHL8L3S4iZM1ZNeub/NiVgX9fhb?=
+ =?us-ascii?Q?HU4UGUO0KJISrWrRDgnkOEyIsxt+HIQ/R6Q6eGENwlMqaBu+eyoXS6hoS/zw?=
+ =?us-ascii?Q?EhSEpGMPZ7IQx7qXUfq/wTHYWGz15ZHtWM9eoDkDI6mcech8iF/7O1QThvXl?=
+ =?us-ascii?Q?ybmR7yIzAAvt1msUbbuGsz2oWW8bqAaMyePv/w/TgHo7wmt2SvFCufwc49I+?=
+ =?us-ascii?Q?7UBprsiGrCGFieRsdeFToMizmB0TtI6uzEjistz+bFD+oVDF5MdyxeMrrmqg?=
+ =?us-ascii?Q?kesbtw0WD/esRw/CFoIgGGDaguHjtinb2mnaIH42JZOwEXQcA9fiQwUlK3Bi?=
+ =?us-ascii?Q?r8x3KQ51pnDmZ/cviOtGkDZ6v9oajwK7/3KqsKaiTtLKnYyhQ5IRxjShnE7T?=
+ =?us-ascii?Q?z90lA6ckDbP7R9jSJ/umQS/yQBIAFGTZS4mYD5TlykYXBIKMn12f4qXrM57J?=
+ =?us-ascii?Q?tJ/QVI08UFD4ScSQMyLhWnHwaaHPLwQnsKrVpyT8m1tOnck9+sYxD/yocJF6?=
+ =?us-ascii?Q?P1wqI1nUyrFyDA1Ry37Uj60qkXl+JC9NjsqwSk0i4uUQammchxfGfPhNRMtG?=
+ =?us-ascii?Q?KvEu18wJT5E1fLAmpSaJs1BimA7zMn1j3PAKYhZrLhn7Rdp6ha49Boz8xYXT?=
+ =?us-ascii?Q?KVHlfITfafjG/vsJb1uKGAQulLa4ICA=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_MW4PR09MB971861BD9B0AEF3CB01F893A9B602MW4PR09MB9718namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: oem.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MW4PR09MB9718.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: d82d6901-a83e-486d-4e3e-08df34629716
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 19:43:35.6116
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB7261
+X-Spamd-Result: default: False [-0.95 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[oem.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:52.100.0.0/15];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[15];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_MATCH_ENVRCPT_SOME(0.00)[];
+	 TO_DN_ALL(0.00)[];
+	 MANY_INVISIBLE_PARTS(0.05)[1];
+	 RCPT_COUNT_TWO(0.00)[2];
+	 DMARC_POLICY_ALLOW(-0.50)[oem.oregon.gov,none];
+	 DKIM_TRACE(0.00)[oem.oregon.gov:+];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-0.95
+
+--_000_MW4PR09MB971861BD9B0AEF3CB01F893A9B602MW4PR09MB9718namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Samuel, we don't maintain records for the Oregon Sate police. You will need=
+ to reach out to them: Oregon State Police : Public Records Requests : Prog=
+rams : State of Oregon<https://www.oregon.gov/osp/programs/Pages/Public-Rec=
+ords-Requests.aspx>
+
+Also, we still ask in the future that you fill out our intake form so you a=
+re logged in our spread sheet properly. If we need attachments from you we =
+will ask.
+
+Erin Zysett (she/her) | OEM Public Information Officer
+Cell 971-304-5450 | erin.c.zysett@oem.oregon.gov<mailto:erin.c.zysett@oem.o=
+regon.gov>
+If it urgent, call the media line (no texting): 503-934-3310.
+How'd we do? Take our Customer Satisfaction Survey<https://forms.office.com=
+/pages/responsepage.aspx?id=3DMmk_qnz6tEegzqWYytFhzzNXvL41g75Orn5UfgWYg3RUN=
+FYzRTJQRzAyRlI4OVk3SFhKTEhMVlhGNS4u>.
+
+
+
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, October 27, 2026 12:31 PM
+To: OEM_PublicInfo <OEM_PublicInfo@oem.oregon.gov>
+Subject: Public Records Request
+
+Some people who received this message don't often get email from rsw@rswfir=
+e.com<mailto:rsw@rswfire.com>. Learn why this is important<https://aka.ms/L=
+earnAboutSenderIdentification>
+
+To Whom It Concerns:
+
+Please see my attached public records request.
+
+I did not submit your web form because it does not allow pdf attachments.
+
+Background on this matter is available here:
+https://oprdvolunteerabuse.org/public-questions/
+
+Thank you for your service.
+
+Robert Samuel White
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+
+
+
+
+
+
+--_000_MW4PR09MB971861BD9B0AEF3CB01F893A9B602MW4PR09MB9718namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:wf_segoe-ui_normal;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Samuel, we don&#8217;t maintain records for the Oreg=
+on Sate police. You will need to reach out to them:
+<a href=3D"https://www.oregon.gov/osp/programs/Pages/Public-Records-Request=
+s.aspx">
+Oregon State Police : Public Records Requests : Programs : State of Oregon<=
+/a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Also, we still ask in the future that you fill out o=
+ur intake form so you are logged in our spread sheet properly. If we need a=
+ttachments from you we will ask.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:1.0pt"><b><span style=3D"font=
+-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">Erin Zysett (she/h=
+er) | OEM Public Information Officer</span></b><span style=3D"font-size:11.=
+0pt;font-family:&quot;Calibri&quot;,sans-serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:1.0pt;line-height:115%"><b><s=
+pan style=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&qu=
+ot;,sans-serif">Cell</span></b><span style=3D"font-size:11.0pt;line-height:=
+115%;font-family:&quot;Calibri&quot;,sans-serif"> 971-304-5450
+ | <u><span style=3D"color:#3762AF"><a href=3D"mailto:erin.c.zysett@oem.ore=
+gon.gov"><span style=3D"color:#3762AF">erin.c.zysett@oem.oregon.gov</span><=
+/a></span></u><br>
+</span><b><span style=3D"font-size:10.0pt;line-height:115%;font-family:&quo=
+t;Calibri&quot;,sans-serif">If it urgent, call the media line (no texting):
+</span></b><span style=3D"font-size:10.0pt;line-height:115%;font-family:&qu=
+ot;Calibri&quot;,sans-serif">503-934-3310</span><span style=3D"font-size:11=
+.0pt;line-height:115%;font-family:&quot;Calibri&quot;,sans-serif">.<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:1.0pt;line-height:115%"><i><s=
+pan style=3D"font-size:10.0pt;line-height:115%;font-family:&quot;Calibri&qu=
+ot;,sans-serif">How&#8217;d we do? Take our
+</span></i><span style=3D"font-size:10.0pt;line-height:115%;font-family:&qu=
+ot;Calibri&quot;,sans-serif"><a href=3D"https://forms.office.com/pages/resp=
+onsepage.aspx?id=3DMmk_qnz6tEegzqWYytFhzzNXvL41g75Orn5UfgWYg3RUNFYzRTJQRzAy=
+RlI4OVk3SFhKTEhMVlhGNS4u"><i><span style=3D"color:#467886">Customer
+ Satisfaction Survey</span></i></a><i>.</i><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:1.0pt;line-height:115%"><span=
+ style=3D"font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;=
+,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:1.0pt"><b><span style=3D"font=
+-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">&nbsp;</span></b><=
+span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:standardcontextual">&nb=
+sp;<o:p></o:p></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Tuesday, October 27, 2026 12:31 PM<br>
+<b>To:</b> OEM_PublicInfo &lt;OEM_PublicInfo@oem.oregon.gov&gt;<br>
+<b>Subject:</b> Public Records Request<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"0" style=3D"width:.3pt;background:#A6A6A6;padding:5.25pt 1.5pt=
+ 5.25pt 1.5pt">
+</td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt;aspect-ratio: revert !important;background:revert !im=
+portant;block-size: revert !important;border:revert !important;bottom: reve=
+rt !important;color:revert !important;color-scheme: revert !important;conte=
+nt-visibility: revert !important;cursor:revert !important;direction:revert =
+!important;display:revert !important;font-size:revert !important;height:rev=
+ert !important;hyphens: revert !important;letter-spacing:revert !important;=
+line-height:revert !important;margin:revert !important;opacity: revert !imp=
+ortant;order: revert !important;outline: revert !important;overflow:revert =
+!important;padding:revert !important;position:revert !important;resize: rev=
+ert !important;rotate: revert !important;scale: revert !important;tab-size:=
+ revert !important;table-layout:revert !important;text-align:revert !import=
+ant;text-indent:revert !important;text-orientation: revert !important;text-=
+overflow: revert !important;text-shadow:revert !important;text-transform:re=
+vert !important;text-wrap: revert !important;top:revert !important;transiti=
+on: revert !important;user-select: revert !important;vertical-align:revert =
+!important;white-space:revert !important;width:revert !important;word-break=
+:revert !important;word-spacing:revert !important;writing-mode:revert !impo=
+rtant;zoom: revert !important;visibility:visible">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:wf_segoe-ui_normal;color:#212121=
+">Some people who received this message don't often get email from
+<a href=3D"mailto:rsw@rswfire.com">rsw@rswfire.com</a>. <a href=3D"https://=
+aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a> <o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;aspect-ratio: revert !important;background:revert !impo=
+rtant;block-size: revert !important;border:revert !important;bottom: revert=
+ !important;color:revert !important;color-scheme: revert !important;content=
+-visibility: revert !important;cursor:revert !important;direction:revert !i=
+mportant;display:revert !important;font-size:revert !important;height:rever=
+t !important;hyphens: revert !important;letter-spacing:revert !important;li=
+ne-height:revert !important;margin:revert !important;opacity: revert !impor=
+tant;order: revert !important;outline: revert !important;overflow:revert !i=
+mportant;padding:revert !important;position:revert !important;resize: rever=
+t !important;rotate: revert !important;scale: revert !important;tab-size: r=
+evert !important;table-layout:revert !important;text-align:revert !importan=
+t;text-indent:revert !important;text-orientation: revert !important;text-ov=
+erflow: revert !important;text-shadow:revert !important;text-transform:reve=
+rt !important;text-wrap: revert !important;top:revert !important;transition=
+: revert !important;user-select: revert !important;vertical-align:revert !i=
+mportant;white-space:revert !important;width:revert !important;word-break:r=
+evert !important;word-spacing:revert !important;writing-mode:revert !import=
+ant;zoom: revert !important;align: left !important;visibility:visible">
+</td>
+</tr>
+</tbody>
+</table>
+<p>To Whom It Concerns:<o:p></o:p></p>
+<p>Please see my attached public records request.<o:p></o:p></p>
+<p>I did not submit your web form because it does not allow pdf attachments=
+.<o:p></o:p></p>
+<p>Background on this matter is available here:<br>
+<a href=3D"https://oprdvolunteerabuse.org/public-questions/">https://oprdvo=
+lunteerabuse.org/public-questions/</a><o:p></o:p></p>
+<p>Thank you for your service.<o:p></o:p></p>
+<p><b><span style=3D"color:black">Robert Samuel White</span></b><span style=
+=3D"color:black"><br>
+</span><span style=3D"color:#C82613"><a href=3D"https://rswfire.com/" title=
+=3D"https://rswfire.com"><span style=3D"color:#C82613">rswfire.com</span></=
+a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C882A"><a href=3D"https://oprdvolunteerabuse.=
+org/" title=3D"https://oprdvolunteerabuse.org"><span style=3D"color:#0C882A=
+">oprdvolunteerabuse.org</span></a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C64C0"><a href=3D"https://autonomyrealms.com/=
+" title=3D"https://autonomyrealms.com"><span style=3D"color:#0C64C0">autono=
+myrealms.com</span></a></span><o:p></o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_MW4PR09MB971861BD9B0AEF3CB01F893A9B602MW4PR09MB9718namp_--

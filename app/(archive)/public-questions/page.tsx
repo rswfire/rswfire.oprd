@@ -7,7 +7,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
-import TrackerTable from "@/components/TrackerTable";
+import TrackerTable, { type Letter } from "@/components/TrackerTable";
+import { PUBLIC_QUESTION_1_THREAD } from "@/data/threads";
 import { AGENCIES, QUESTION, TRACKER_SOURCE } from "@/data/tracker";
 
 export const metadata: Metadata = {
@@ -16,6 +17,22 @@ export const metadata: Metadata = {
 };
 
 const link = "underline text-emerald-800 hover:text-emerald-600";
+
+// Each agency's exchange, resolved from the register: the request, the
+// acknowledgment, and every message after, oldest first. A ULID is its time,
+// so sorting the ids sorts the messages.
+const FILINGS = new Map(PUBLIC_QUESTION_1_THREAD.filings.map((f) => [f.ulid, f]));
+const ROWS = AGENCIES.map((a) => {
+    const e = a.entry;
+    const ids = [e.sent?.doc?.ulid, e.acknowledged?.doc?.ulid, ...(e.correspondence ?? [])]
+        .filter((u): u is string => !!u);
+    const letters: Letter[] = [...new Set(ids)].sort().map((u) => {
+        const f = FILINGS.get(u);
+        if (!f) throw new Error(`public questions: ${a.slug} cites ${u}, not in the register`);
+        return { ulid: f.ulid, d: f.d, date: f.date, time: f.time, kind: f.kind, from: f.from, to: f.to, title: f.title, summary: f.summary };
+    });
+    return { ...a, letters };
+});
 
 export default function PublicQuestionsPage() {
     return (
@@ -57,7 +74,7 @@ export default function PublicQuestionsPage() {
                 </div>
             </div>
 
-            <TrackerTable rows={AGENCIES} />
+            <TrackerTable rows={ROWS} />
 
             <p className="mt-6 text-xs text-gray-500">
                 Agency list: State of Oregon,{" "}

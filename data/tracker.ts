@@ -37,6 +37,11 @@ export interface TrackerEntry {
     ref?: string; // the agency's request number
     sent?: TrackerStep;
     acknowledged?: TrackerStep;
+    // Every other message in the exchange, from either side, as register
+    // ULIDs in the public-question-1 thread. The request and the
+    // acknowledgment are counted with them; the list is sorted by ULID, which
+    // is time.
+    correspondence?: string[];
     status: TrackerStatus;
     statusStep?: TrackerStep; // the document that set the current status
     production?: { label: string; href: string };
@@ -64,6 +69,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
         ref: "PR44279",
         sent: { d: "2026-10-22", date: "October 22, 2026", doc: { thread: "public-question-1", ulid: "01M5JGN4GGQX1SS6GYNYG0NGA5" } },
         acknowledged: { d: "2026-10-22", date: "October 22, 2026", doc: { thread: "public-question-1", ulid: "01M5JGHV1GQWQ4DDQ1AH2M7B5B" } },
+        correspondence: ["01M5K5VMDR3S4GQ822KRNTQVMR"],
         status: "acknowledged",
     },
     "department-of-energy": {
@@ -85,11 +91,13 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-administrative-services": {
         ref: "R001045-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZC1P4FQ3WH3V9ZGAN87V1Z" } },
+        correspondence: ["01M5ZC1P4GHZ1373M65XF3MVE5"],
         status: "sent",
     },
     "department-of-aviation": {
         ref: "1510431709",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZCJTZ0KTEW1TRFHB7CG6W8" } },
+        correspondence: ["01M5ZCJBB0S5NKNHF1RH2KA7SN", "01M5ZCJCA8W0GMWFZMC6THFMTH"],
         status: "sent",
     },
     "department-of-consumer-and-business-services": {
@@ -99,16 +107,21 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-corrections": {
         ref: "R004132-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZD8V288D2C9K615MN5EQJH" } },
+        correspondence: ["01M5ZD85JRX3SPFAPG3JYSXRNT"],
         status: "sent",
     },
     "department-of-emergency-management": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDH6MRZ6NSF4GYN60W6AY5" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE7DJRF0AE9G1VQ1WK6Y8P" } },
+        correspondence: ["01M5ZEC3Z81DRZWN6A9S4H18NF"],
+        status: "acknowledged",
     },
     "department-of-environmental-quality": {
         ref: "R003485-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDRMXQC6WBWV02ZB71ZCZX" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDRMXRT1ZQH7X92EQXDFKA" } },
+        correspondence: ["01M5ZDRMXRT1ZQH7X92EQXDFKA"],
+        status: "acknowledged",
     },
     "department-of-geology-and-mineral-industries": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE073R2C9Q0SVK7P7M9XC5" } },
