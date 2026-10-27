@@ -23,7 +23,7 @@ export default function TrespassPage() {
             subtitle="NAMING THE HARM"
         >
             <div className="mt-8 space-y-4 text-base text-gray-700 leading-relaxed">
-                <div>If you asked the institution, it would tell you I have a grievance with it. That would not be true. In making the claim, it would be committing the very act this page describes.</div>
+                <div>If you ask the institution, it will tell you I have a grievance with it. That is not true. In making the claim, it is committing the very act this page describes.</div>
                 <div>Early in the history of this archive, before this domain existed, while I was still building the record, the homepage carried the reason for its existence:</div>
                 <blockquote className="pl-4 border-l-4 border-gray-300 space-y-1 not-italic">
                     <div>Why I built this archive: to correct an epistemic violation.</div>
