@@ -296,7 +296,8 @@
    "slug": "governor-of-oregon",
    "name": "Governor of Oregon",
    "abbr": "GOV",
-   "url": "https://www.oregon.gov/gov"
+   "url": "https://www.oregon.gov/gov",
+   "display": "Office of the Governor"
   },
   {
    "slug": "health-evidence-review-commission",
@@ -662,7 +663,8 @@
    "slug": "oregon-parks-and-recreation",
    "name": "Oregon Parks and Recreation",
    "abbr": "PARKSREC",
-   "url": "https://www.oregon.gov/oprd"
+   "url": "https://www.oregon.gov/oprd",
+   "display": "Oregon Parks and Recreation Department"
   },
   {
    "slug": "oregon-patient-safety-commission",

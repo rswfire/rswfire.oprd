@@ -1,0 +1,125 @@
+Return-Path: <oed_no_email@employ.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id 9J/IMSYL4WpptwwAjtW+MQ
+	(envelope-from <oed_no_email@employ.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:35:50 +0000
+Received: from PH0PR09CU001.outbound.protection.outlook.com (mail-westus3azon11013013.outbound.protection.outlook.com [40.107.210.13])
+	by mail.rswfire.com (Postfix) with ESMTPS id 39FD62511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:35:49 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=XaQj/2PgyzBHccL4/2oUe5sKU/MtNEKboivRngl/m2cCBZQuE/LFqco38XGkUbh+dSHCfH96s9/nDlAFJ6kzoirNwlafbfOfifz3YcNJBGLRUsL0JhtqxwPDq6AK90aJyYeIhAH0gi8HcMzcOAMt71zg5dFDYRsXmUJWj2Swddf+8VVnSjkLzYAju61qMoqHm1mxIbsYhRtlBDRzczm1JSKMioCNk7N6N6p2XAXERnDsD+rF1MXN1ZOWVJ0Q2VnU+o3mA7uWdZNMtVAdOyNNAkjiiCG/Ww4JrSRqjoJAF0Eklnpvaf5GBCvsOgKGQ9ziefzWo5T36RXkBEeURh/ohA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Xs96wb9uw5tR3hcDp4WwNm4wJHMtNuBEgRHwclUfF2o=;
+ b=Sv0z5nhpbBacVd6Z51L2qqm1de4Of3VbAMpX3CbH1eexarz3+o7ulEMVs/QbZ4RHwZBvFQtvAIqQJ1cl8ePFoVwTe78MHZ3gAjwY5j/mXYGMtDaWmYfRuStgNPgr+hRyPM4F+VgELDcb/eTMWtuJVtKQWv3KWHlgVAspWtpD6m1VccFmREjcEofhKp7PU1cAWS9zc8RtcSOm1T601sIsvOmckXZLYJmJWZPBzW5aOKoX4nqCldExg+0eMBlZ17/bSCCc/MxoGs8mko1TAv7XE1HSbcD5aUjGwuIXpz0C+XXmSulKN8+GfxyIowciaqCvGPuXjpTagGYUi0ci3HdPVw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 159.121.206.33) smtp.rcpttodomain=employ.oregon.gov
+ smtp.mailfrom=employ.oregon.gov; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=employ.oregon.gov; dkim=none (message not signed);
+ arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=employ.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Xs96wb9uw5tR3hcDp4WwNm4wJHMtNuBEgRHwclUfF2o=;
+ b=kXKbX3oIX3oVrljZEmwS6ezHA+Ord7LUyHQ7q37f1nKC9LmkcuZZUfzrzSlbNZBwFM06P8kHNvbfOcA/rOj9QBMZwZVq05hirpDNeu1Szbgt1z00Kx1DS08mM0nN/4xOn+o8YovPxhYvGE19aP7hmVRraatKU4reb7FTdzIHJwhFiMWKA9kaefP3sFhuOvOVtTbhgfP8Y4s2ZS/sWOaeBMOZsZUQzBtb9j2VqKPcRs/00ZTdkT55j+sRj+nI/REvupvL3R7VWX9IqeTU6liRbsGM4Q8aAzd0hBHmFITDzqrWm1+5JVp2GpSoycjPunTG9P4HtI1SxnbJijZNKYzIzQ==
+Received: from CY5PR09CA0001.namprd09.prod.outlook.com (2603:10b6:930:1::12)
+ by SA1PR09MB11593.namprd09.prod.outlook.com (2603:10b6:806:364::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 20:35:47 +0000
+Received: from BN7PEPF00000099.namprd09.prod.outlook.com
+ (2603:10b6:930:1:cafe::8e) by CY5PR09CA0001.outlook.office365.com
+ (2603:10b6:930:1::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.22 via Frontend Transport; Tue,
+ 27 Oct 2026 20:35:46 +0000
+X-MS-Exchange-Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP
+ is 159.121.206.33) smtp.mailfrom=employ.oregon.gov; dkim=none (message not
+ signed) header.d=none;dmarc=pass action=none header.from=employ.oregon.gov;
+Received-SPF: Pass (protection.outlook.com: domain of employ.oregon.gov
+ designates 159.121.206.33 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.121.206.33;
+ helo=WPOEDWEBL30.oed.state; pr=C
+Received: from WPOEDWEBL30.oed.state (159.121.206.33) by
+ BN7PEPF00000099.mail.protection.outlook.com (10.167.243.197) with Microsoft
+ SMTP Server id 15.21.569.4 via Frontend Transport; Tue, 27 Oct 2026 20:35:46
+ +0000
+Date: Tue, 27 Oct 2026 13:35:46 -0700 (PDT)
+From: oed_no_email@employ.oregon.gov
+Reply-To: oregon.gov@rswfire.email
+To: oed_prrs@employ.oregon.gov
+Cc: rsw@rswfire.com, oregon.gov@rswfire.email
+Message-ID: <77241672.48.1793133346279@mail.employ.oregon.gov>
+Subject: Public Records Request
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mailer: ColdFusion 2025 Application Server
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN7PEPF00000099:EE_|SA1PR09MB11593:EE_
+X-MS-Office365-Filtering-Correlation-Id: 79121d64-3604-4d80-96ea-08df3469e164
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|82310400026|36860700016|23010399003|1800799024|6133799003|18002099003|261026121527099003|56012099006|10067099003|261009223027099003|11063799006|261022105027099003|261021121427099003|261026140227099003;
+X-Microsoft-Antispam-Message-Info:
+	2k0+wmL5EBbfDjEt6sBNaJ2KPN+p3gK/9l7hRO6SSMNESV6bC6/AvrFiiA6VawYOsw0UWSpAI/wi29abC5DEWJoCsq0Diz/LQ6RWbvvWHh8oG9jcJF6Lz2Mr7Dukofq3VGM4KXVrVnN9tS73dRSvbJg/0g88WuCIlRQUNkvsPtXHY+sF+UhS6jkOBaVhl0Hqy9dO+HrofkzBbCmoeAZ016tVEW55O+Rr4nuM5m2sOGvcDApR6gqXlNdJu/jeIz3VHr+W5HoEvJ7axwmtKj6s+vh1bSQbcByMh6NasAIP9qR6G+Oaxu1Y8dxCtKFd+qcA1KN5t9B3n8YRmb8pNQm+rhGv+lf1LiylnjPCE0+1WVjbCtu2HeHZlfbkB6JIN2XZgBjke/TgOh0IJo7tdcydNiKe/ozg4zkUyOX5+pUr9Mx+cLpJJluEAvLKW5iZfUro3fV+nFMubaSw7Mt2yBq+6BUcHFR6uSRD459bffMWqUbRy+Ij8QSGlMePjBorqziQnUvcJ4jpGvAl0GjEsf9BAZElPinnsarY7nQ/bSkfeUZv/hhguyczpvRbkiEPS797rBHFjUkPjiEj0g9Pp+fsmjuVHU5thkKzpmxSXUQEE3BwHriBuYXXhEzh6fr21wDLL7YoUbyvsYd8pyFQZGYsKjn5qBIbyKmNAaK2NpPhk9HmCeeC575Ab0Mgji6MfNC6fItKWz7O5PDsTrWoyA0oKw==
+X-Forefront-Antispam-Report:
+	CIP:159.121.206.33;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:WPOEDWEBL30.oed.state;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(82310400026)(36860700016)(23010399003)(1800799024)(6133799003)(18002099003)(261026121527099003)(56012099006)(10067099003)(261009223027099003)(11063799006)(261022105027099003)(261021121427099003)(261026140227099003);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	G9glKXkzubr90dCjYQ4whkqBss416NzEelrajjmgr545iqPJP015sb+G6kh/47NAOOiQzcMHk46+8i2QHHRZVbYuEUkQG4XGQFt8IYt2aJ1slvbKOepxnCMV306/jD/nnksh9AbjgACbx7ME60yyxz+RKTp5rzT8WcdRjcDF3i4x69Ci9otSxsga/XTFXNUKmCL9o1M5+IkjyPbRGLnGaORy8wGe2Dg5vzaOzq7J5LNyx9F/Z8M0WoReQH3im1paQp+amRdcb2rfWCwdH8tqsqsq9T6xLRiZMYmi24NNO+KrtPVlxWN80fTUat740SIG2lulMQ3AcDHji2Q2rH1tHHbJVk0sKLJRUJwrOFOiJorvcyBYNmyxlBcYd0NrhUEQEt3FmU4QRWwpbKbYaTDa28n+xmgfVpEIYnJqxy9lQ94DPfykOTVoapiEJqzrOYym
+X-OriginatorOrg: employ.oregon.gov
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Oct 2026 20:35:46.3750
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 79121d64-3604-4d80-96ea-08df3469e164
+X-MS-Exchange-CrossTenant-Id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=aa3f6932-fa7c-47b4-a0ce-a598cad161cf;Ip=[159.121.206.33];Helo=[WPOEDWEBL30.oed.state]
+X-MS-Exchange-CrossTenant-AuthSource:
+	BN7PEPF00000099.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR09MB11593
+X-Spamd-Result: default: False [-2.00 / 15.00];
+	 HAS_REPLYTO(0.00)[oregon.gov@rswfire.email];
+	 R_DKIM_ALLOW(-0.20)[employ.oregon.gov:s=selector1];
+	 RCPT_COUNT_THREE(0.00)[3];
+	 R_SPF_ALLOW(-0.20)[+ip4:40.107.0.0/16];
+	 REPLYTO_DN_EQ_FROM_DN(0.00)[];
+	 MIME_GOOD(-0.10)[text/plain];
+	 TO_DN_NONE(0.00)[];
+	 REPLYTO_DOM_NEQ_FROM_DOM(0.00)[];
+	 RCVD_COUNT_THREE(0.00)[4];
+	 TO_MATCH_ENVRCPT_SOME(0.00)[];
+	 MID_RHS_MATCH_FROMTLD(0.00)[];
+	 DKIM_TRACE(0.00)[employ.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[employ.oregon.gov,none];
+	 FROM_NO_DN(0.00)[];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:40.104.0.0/14, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[40.107.210.13:from]
+X-Spam-Status: No, score=-2.00
+
+
+You have a new public records request.
+
+ Requester : Robert Samuel White, 
+
+   Details : Please see the attached document.
+
+IP Address : 98.97.48.79
+   Browser : Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0 
+Attachment : 2026-10-27-employment-department_20261027_133537226.pdf
+PLEASE NOTE: * Attachment will be available on EDweb within 15 minutes. *
+
+
+
+To view this issue, please go to:
+  EDweb | My Admin Tools | PRRS | click ID 1885
+   or set search filter for Request # 1885 

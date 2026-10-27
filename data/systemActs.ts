@@ -5107,6 +5107,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "oprd"
             },
             "title": "Follow the Statute."
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer sends the Governor the request every state agency receives under Public Question 1: the Office of the Governor’s emails with the captain of Government and Media Relations and the State Police public information office since January 1, 2023, excluding any record concerning him.",
+            "src": {
+                "u": "01M5ZHW2ZGEQDZBFYKJ42Y78SM",
+                "t": "public-question-1"
+            },
+            "title": "Public Question 1, sent to the Governor"
         }
     ],
     "das-pr": [
@@ -5567,6 +5577,16 @@ export const ACTS: Record<string, Act[]> = {
                 "page": 3,
                 "from": "Robert Samuel White"
             }
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer sends the Government Accountability Attorney the request every state agency receives under Public Question 1: the Office of the Governor’s emails with the captain of Government and Media Relations and the State Police public information office since January 1, 2023, excluding any record concerning him.",
+            "src": {
+                "u": "01M5ZHW2ZGEQDZBFYKJ42Y78SM",
+                "t": "public-question-1"
+            },
+            "title": "Public Question 1, sent to the Government Accountability Attorney"
         }
     ],
     "public-records-advocate": [

@@ -51,6 +51,7 @@ export interface TrackerEntry {
 export interface StateAgency {
     slug: string;
     name: string;
+    display?: string; // the name the letter uses, where the state's list differs
     abbr: string;
     url: string;
 }
@@ -127,16 +128,81 @@ const ENTRIES: Record<string, TrackerEntry> = {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE073R2C9Q0SVK7P7M9XC5" } },
         status: "sent",
     },
+    "department-of-land-conservation-and-development": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGCHG081MFQWZH0AGXBHRS" } },
+        correspondence: ["01M5ZGP728HKYYZFN726PSRG7C"],
+        status: "sent",
+    },
+    "department-of-public-safety-standards-and-training": {
+        ref: "P000705-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGHSF0QPJSXY9R1RZQV824" } },
+        correspondence: ["01M5ZGJC0R5WA70W158WTWDRP6"],
+        status: "sent",
+    },
+    "department-of-revenue": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGRFAREEGKTM3EWBCC3GMV" } },
+        correspondence: ["01M5ZH2GM0964BWX9TJ4483AHS"],
+        status: "sent",
+    },
+    "department-of-state-lands": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGYZB0KTSVHAMDHSWAZS1Y" } },
+        status: "sent",
+    },
+    "division-of-financial-regulation": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZH2ARGZ7KXSXQ5QYR69CVE" } },
+        status: "sent",
+    },
+    "employment-department": {
+        ref: "1885",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZH6PMA80FMGTE07X9TKZ75" } },
+        correspondence: ["01M5ZH6Z6GQP0RGHC5NVW3DFZ6"],
+        status: "sent",
+    },
+    "employment-relations-board": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHA3S84THGC29V7FEMH9F1" } },
+        status: "sent",
+    },
+    "governor-of-oregon": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHW2ZGEQDZBFYKJ42Y78SM" } },
+        status: "sent",
+    },
+    "oregon-parks-and-recreation": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJH9P8E3D6007K2BMQCBDG" } },
+        status: "sent",
+    },
+    "oregon-department-of-fish-and-wildlife": {
+        ref: "R000173-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJYDKRZ7VXKGFVG7PBQDW3" } },
+        correspondence: ["01M5ZK0MX0021W0Y7G8JA83JHP"],
+        status: "sent",
+    },
+    "oregon-department-of-forestry": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZK2T7R4YF26F3AQ18GEWRS" } },
+        status: "sent",
+    },
     "department-of-justice": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE443RBB9078F1GRXEHT7Y" } },
         status: "sent",
     },
 };
 
-export const AGENCIES: (StateAgency & { entry: TrackerEntry })[] = (STATE.agencies as StateAgency[]).map((a) => ({
-    ...a,
-    entry: ENTRIES[a.slug] ?? { status: "not-sent" },
-}));
+// Every agency on the list is Oregon's, so the table drops a leading "Oregon"
+// where what is left is still the agency's name: "Oregon Department of
+// Forestry" reads "Department of Forestry". Where "Oregon" is part of the
+// name itself (Oregon State Police, Oregon Health Authority), it stays.
+const GENERIC = /^(Department of |Board of |State Board of |Commission for |Commission on |Driver and Motor Vehicle Services$)/;
+const shortName = (n: string) => {
+    const rest = n.startsWith("Oregon ") ? n.slice("Oregon ".length) : n;
+    return rest !== n && GENERIC.test(rest) ? rest : n;
+};
+
+export const AGENCIES: (StateAgency & { entry: TrackerEntry })[] = (STATE.agencies as StateAgency[])
+    .map((a) => ({
+        ...a,
+        name: shortName(a.display ?? a.name),
+        entry: ENTRIES[a.slug] ?? { status: "not-sent" },
+    }))
+    .sort((x, y) => x.name.localeCompare(y.name));
 
 for (const slug of Object.keys(ENTRIES)) {
     if (!AGENCIES.some((a) => a.slug === slug)) throw new Error(`tracker: unknown agency ${slug}`);

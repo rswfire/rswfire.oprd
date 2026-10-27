@@ -1,0 +1,144 @@
+Return-Path: <>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id 4JK+JQEJ4Wo3swwAjtW+MQ
+	(envelope-from <>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:26:41 +0000
+Received: from DM4PR09CU001.outbound.protection.outlook.com (mail-centralusazhn15012041.outbound.protection.outlook.com [52.102.139.41])
+	by mail.rswfire.com (Postfix) with ESMTPS id 44E592511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:26:39 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=xZI8rEc2u2RUW4eOCtC/Oo5JVoMpp+KqfdeX+efmkZD9EQoCVbwZLoOAn1m3QqUyYlI1kDWl/+FN+F6Z6iqNxN3bFLXfaSz+Y8+9wBgppSl7orlXnfJqszHL6BVUN32DcnwLA1wBW4yIpwaWl6fnS0CU+0WQDBL2HbP/1WUesHCvk9iDz3uhsOC5U82vEnicbk5ReL4avuCBNMM5gFj72myeTEdd2mtS4BT6fXtMryDYsqhprCMs/EEeNPuGOy7xiTAqEhgs+xBfqIH3xHu7YVRB3LTnaA5FTFp5MvROUQERJupscxDAUEeZvZgJ0IJj0jdXr/aN55NnA6EhW7VfJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=cWU6fg8+3PxkL/VJQKD0oCoV78kozH8c4Tym8bJ35WY=;
+ b=Do4x4BMHTr0U4Aqn2hrRU+LjL7SlQTH80vxFFGfW1FaYXzoZkswRjfpAbuXKqoNQPFZxtfj7suzFb4NYZ5xBdYEEVIAStgNnVTJD0IyPKYcDb4VobpEz+4D/bAnr1/Z5K2ce/H8nnZEsF4uu4y0HnZxxWgiCGhOH05rmEM8NscrSby/GWo2bs2MA8x6dRLC8sOqrafVaPQq2ZF+Z6NEWc3SAGkTLTcdFnfezYv3O+u4REvtsCJ3UnStutMbzlwsYYx/qpUvgDzxkf2vdXzZyQBQDvoYCuzspezFz1wuBxjlRnwvTB/raP3Y6nSOM5yEY++1cq6WrtdB1y9am/Ix/Dg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=dlcd.oregon.gov; dkim=pass header.d=dlcd.oregon.gov;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dlcd.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=cWU6fg8+3PxkL/VJQKD0oCoV78kozH8c4Tym8bJ35WY=;
+ b=00OLijpfkUjO0RyW1oFQ/7H752+IjNMhj6BJnphoU/H622haZBEbZNi8WbOTSSmg5PC5YFXHw6+pmLdSJR+HR2mjCOSvqhuBpXfqgja6vTKZWPtLaFuQXBvPLn9fCUEKAATGmG6OWPeLHYsK93bDd9unwejy4Uzbuknxy/LlQqGUOuo+89e32SfOqaHXpE2gJeSwPwrRLNdyqFZNuNxBtHguzZvtXfotWS3w87MxDq6RVMTOiHcxS4EpC7zpNMcnOWgAV6tEstixhqSOpYH6Id4cQVsIs4yCZ65hsmp+Vzyijy8VBrlx85Qs4cPNxGsGhHiR+nxwDrGm46wn+u9QeA==
+Received: from SA1PR09MB8366.namprd09.prod.outlook.com (2603:10b6:806:17f::6)
+ by BY5PR09MB4675.namprd09.prod.outlook.com (2603:10b6:a03:251::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 20:26:37 +0000
+Received: from SA1PR09MB8366.namprd09.prod.outlook.com ([::1]) by
+ SA1PR09MB8366.namprd09.prod.outlook.com ([fe80::4f7a:f4fa:6dfb:93cd%5]) with
+ Microsoft SMTP Server id 15.21.0546.019; Tue, 27 Oct 2026 20:26:37 +0000
+From: INFO DLCD * DLCD <dlcd.info@dlcd.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Automatic reply: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZlF2uQz2j7544EGJgv0jK4k9ArcR1ks8
+Date: Tue, 27 Oct 2026 20:26:37 +0000
+Message-ID:
+ <463a12bbf5ee43dca912f78d6d546b2d@SA1PR09MB8366.namprd09.prod.outlook.com>
+References:
+ <2a3166dc.AU8AAKfpX6IAAAAAAAAABEP7sV0AAYKKucoAAAAAADb2LABq4QfF@mailjet.com>
+In-Reply-To:
+ <2a3166dc.AU8AAKfpX6IAAAAAAAAABEP7sV0AAYKKucoAAAAAADb2LABq4QfF@mailjet.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: dlcd.info@dlcd.oregon.gov
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=dlcd.oregon.gov;
+x-ms-exchange-parent-message-id:
+ <2a3166dc.AU8AAKfpX6IAAAAAAAAABEP7sV0AAYKKucoAAAAAADb2LABq4QfF@mailjet.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA1PR09MB8366:EE_|BY5PR09MB4675:EE_
+x-ms-office365-filtering-correlation-id: d89b178a-fa0b-48b1-97d7-08df346899b8
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|10070799003|366016|1800799024|261022105027099003|10067099003|56012099006|8096899003|12063799003|5133699003|22082099003|18002099003|261026140227099003|80100003;
+x-microsoft-antispam-message-info:
+ 0A6U4mP5JSzUxfm/HPQMPH+dU/I1N3msYPcb027pkKq8TA6Dh6Zen1yIxaBEUzkTVVIn0X+sLqZcLPSgcJdOrT84a1xB0YpTUf8ozOaaS81KXQZcJTBCCsa372kaHfl8k97YTHPYt8vmLNNRmXKN94xK+AYl3JxlRtMIiuKvPyLKDZWtUfm7Bx29q5EMgkp11xq4ysfbhueVV6Od0aLj4MZlmeR2bapTk85FzFwD7LVvQ9a39Y3GvXrW+Kl/oNk5F7mbnVjFUoAgjtffoisI7GI/VCjlE/VNDvUNhaY0sb/LMekvm0cZSYmAi16jIzJ80hn/IZCyB4lXI1QdQUYeuXyQ0I1SblVtNguThx4+JQhvNGlLFFns1e8nfMg37qeNUzzv6fFd0T0VBDuWJgNtLRrw/W9MuOhDPRsTRgsQVS/IzOwOvTUAAruQdMnFznVn73p9UkLJBgk4JP3ykIqKkt/lT2eQSvV9f38RwaSNCJzerUqfRAipiPirvj5CPJxG8C/WF9l/17t8At4OrM6Io19qe4+dkNo00d51UcGtEwCsS9QovooYyasJJkrOKGbf75ahV02cr9FLtr2/LkVVooXXF+UTVaQHI/BoP1mVgGNnGW3wVPN9tAa60uWuaK5+SCpHsaTxszZyyej0szrf+TQoSkh/QS0bLftO66ZgRFM=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA1PR09MB8366.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(10070799003)(366016)(1800799024)(261022105027099003)(10067099003)(56012099006)(8096899003)(12063799003)(5133699003)(22082099003)(18002099003)(261026140227099003)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ Qb3h0zBu0S6/QJpvcVIIMb5Q7lM4XnsegdLqj+GyM6G7dnJ9eqjbHZoqpq2nJp79UzuQKsj3IoKaRxS7hXsmLT84bXBG56uDzGvwGEXP9rTASNILtOdXHXvY8iGZRL/eT+Qm3uQ6PLzDN1GADrat/IGKVp4XJwjhlJUX0MrdnwFRER69cme0eanXJegxAZ92BTXf2VdliOBrRNoee6Ljm01Ms27BqMKBnv9KsfHyJIPWF3EPFnZXpartpaI/IHEVqsIvwdw8cbNuyRody0eBX6p9P0xj+TKElG3KiBomof7YOe3J9rUszQgOff4GctqY6AxWX0ia4/6K/NfkRAtxp7ckQ70EdPlRP8G6hQQh/DdW2VjWO9R7TTyuNQAzzR/y5W8wkkXd7i5Uhy3phlYt5EgUJGIUbU8OATnX8ytasl+E1Hhm6FuRVltUXsBRI3qg
+Content-Type: multipart/alternative;
+	boundary="_000_463a12bbf5ee43dca912f78d6d546b2dSA1PR09MB8366namprd09pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: dlcd.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA1PR09MB8366.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: d89b178a-fa0b-48b1-97d7-08df346899b8
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 20:26:36.9744
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR09MB4675
+X-Spamd-Result: default: False [-1.80 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[dlcd.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 DNSWL_BLOCKED(0.00)[2603:10b6:806:17f::6:received,52.102.139.41:from];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[dlcd.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[dlcd.oregon.gov,none];
+	 R_SPF_NA(0.00)[no SPF record];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.102.139.41:from];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-1.80
+
+--_000_463a12bbf5ee43dca912f78d6d546b2dSA1PR09MB8366namprd09pr_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for taking the time to contact the Department of Land Conservatio=
+n and Development. If your email is related to the Farm Stand Rulemaking it=
+ has been forwarded to staff for consideration and inclusion in the rulemak=
+ing record. Please note that at Governor Kotek=92s direction, DLCD is pausi=
+ng this rulemaking to evaluate next steps.  For additional information on t=
+his and other rulemaking projects please see DLCD=92s rulemaking webpage<ht=
+tps://www.oregon.gov/lcd/LAR/Pages/Rulemaking.aspx>.  To sign-up to receive=
+ notifications on this and other rulemaking projects subscribe here<https:/=
+/public.govdelivery.com/accounts/ORDLCD/subscriber/new?topic_id=3DORDLCD_75=
+>.
+
+--_000_463a12bbf5ee43dca912f78d6d546b2dSA1PR09MB8366namprd09pr_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<p><span style=3D"font-size:11pt">Thank you for taking the time to contact =
+the Department of Land Conservation and Development. If your email is relat=
+ed to the Farm Stand Rulemaking it has been forwarded to staff for consider=
+ation and inclusion in the rulemaking
+ record. Please note that at Governor Kotek=92s direction, DLCD is pausing =
+this rulemaking to evaluate next steps. &nbsp;For additional information on=
+ this and other rulemaking projects please see
+<a href=3D"https://www.oregon.gov/lcd/LAR/Pages/Rulemaking.aspx" target=3D"=
+_blank" title=3D"https://www.oregon.gov/lcd/lar/pages/rulemaking.aspx" id=
+=3D"isPasted">
+DLCD=92s rulemaking webpage</a>. &nbsp;To sign-up to receive notifications =
+on this and other rulemaking projects
+<a href=3D"https://public.govdelivery.com/accounts/ORDLCD/subscriber/new?to=
+pic_id=3DORDLCD_75">
+subscribe here</a>.</span></p>
+</body>
+</html>
+
+--_000_463a12bbf5ee43dca912f78d6d546b2dSA1PR09MB8366namprd09pr_--

@@ -67,20 +67,26 @@ const short = (d: string) => {
 };
 
 function Step({ step, brief }: { step?: TrackerStep; brief?: boolean }) {
+    const { openDoc } = useDocViewer();
     if (!step) return <span className="text-gray-300">—</span>;
     const label = brief ? short(step.d) : step.date;
-    return step.doc ? (
-        <Link href={`/record/${step.doc.thread}/${step.doc.ulid}`} className="whitespace-nowrap underline text-emerald-800 hover:text-emerald-600">
+    const doc = step.doc;
+    return doc ? (
+        <a
+            href={`/record/${doc.thread}/${doc.ulid}`}
+            onClick={(e) => {
+                if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                if (openDoc(doc.ulid)) e.preventDefault();
+            }}
+            className="whitespace-nowrap underline text-emerald-800 hover:text-emerald-600"
+        >
             {label}
-        </Link>
+        </a>
     ) : (
         <span className="whitespace-nowrap">{label}</span>
     );
 }
 
-// Where the request stands, in one cell: two columns, each label over its
-// value. Sent and acknowledged on the left; the messages and the production
-// on the right.
 function Grid({ r, onOpen, brief }: { r: Row; onOpen: (r: Row) => void; brief?: boolean }) {
     const label = "text-[10px] font-semibold uppercase tracking-wider text-gray-400";
     return (
@@ -298,8 +304,18 @@ function Overlay({ r, onClose }: { r: Row | null; onClose: () => void }) {
 }
 
 function Status({ e }: { e: TrackerEntry }) {
-    return e.statusStep?.doc ? (
-        <Link href={`/record/${e.statusStep.doc.thread}/${e.statusStep.doc.ulid}`}><Badge status={e.status} small /></Link>
+    const { openDoc } = useDocViewer();
+    const doc = e.statusStep?.doc;
+    return doc ? (
+        <a
+            href={`/record/${doc.thread}/${doc.ulid}`}
+            onClick={(ev) => {
+                if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
+                if (openDoc(doc.ulid)) ev.preventDefault();
+            }}
+        >
+            <Badge status={e.status} small />
+        </a>
     ) : (
         <Badge status={e.status} small />
     );

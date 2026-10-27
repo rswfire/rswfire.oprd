@@ -1,0 +1,145 @@
+Return-Path: <>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id SFlvA5UK4Wo3tgwAjtW+MQ
+	(envelope-from <>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:33:25 +0000
+Received: from BL0PR0901CU002.outbound.protection.outlook.com (mail-eastusazhn15010002.outbound.protection.outlook.com [52.102.159.2])
+	by mail.rswfire.com (Postfix) with ESMTPS id EDF252511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:33:22 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=HiD4EiRbSTcggZqi8J3BXkLUJpunhUHbT//Sbu6YXcFlTC6V3PRRMSe4iHnWY3+t62aoY4W668J0e3IahfIWOtvPeGL+cFjkwJmbGB36v8MukPUb97R+K/PcYMXBasxGPVXNggnuoMOXErN8G2MirOeZFY3hCYGaDdeywkfV0gD4XKdwpJLuczBGRkW968Jl9AIRkNyRK/qaRdrph20MF1azNv+zC3QR4EL2sO4BMgOc2jNla4bkVffU5KvhJyOwC8oNf7wvirLq4Ar2KU5BSIibtrxOk0Nlhkr3PPxQXwbdTWgmD3xKaB70sYe7Suxo39/PLhkBzLudNiFwivRUeg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=KJTu18/fIoF6Nxcww5r7JnAChveZrp4i3sqxCgdBxxE=;
+ b=do8lZsT9HDo0HI8V97pqLjMbKuh+2swUykuATv6hCvw04c4XDeDKBpvQC6SDxq85SFKk8wdWfTIrTpVGpn31jzmPbAOLnQjczUGbxbvXHv8g+SSvvfX6rsVl56eFwKVOcqNDNpDndlu+S9G+ezw7ZG+mcCOYJydAluhL0MK3u6DJImGVnzVCrt5BYU3JImgZWQGT79ue+Su+KeNoLRte0by4GhOT15CDtW0sMpitJwxKa+BywIKadO11ypED6Z9sClqh3Lc3X4Y8B0njfb3GXd3dGF6L25SmYpVsKVmlmgjHDFeqXK2HCHr+UdXCpE+Yizp1ELWkB964a3Ixpenk0w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=dor.oregon.gov; dkim=pass header.d=dor.oregon.gov;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dor.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=KJTu18/fIoF6Nxcww5r7JnAChveZrp4i3sqxCgdBxxE=;
+ b=RSsQUIRxhtfDnPJ4B2mGJYR/hDS4/M9sWKDq2dJq5XvcJ03ztDR6EOHa0uFm3F4SyQ/XoNP9h3/bOMeD5qHj0pbTl9WxnsVRiD8ek/rczbVVBAOO3nAkeWj8D8CwDV8O26gG7wIkTabKDhaXFx609FH/5FHnpAvtS5K17HpuImAiRIcelfKjaVcdCSFtYp6z630YqdKa54hQ85IeyPTAoXTJs63aPyFvKPpuK7fK0gv91n0M9FbGPVBK48lFMZMrm5zx8altrXLp/O2rkBzpwJho87n6BqCJoHl/OVmNMeraJkH+6+BEDnmk/ztL4llBn3k5FdNIZZVAJ4NvSS6cog==
+Received: from SA1PR09MB7773.namprd09.prod.outlook.com (2603:10b6:806:177::21)
+ by BLAPR09MB6306.namprd09.prod.outlook.com (2603:10b6:208:2a4::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 20:33:20 +0000
+Received: from SA1PR09MB7773.namprd09.prod.outlook.com ([::1]) by
+ SA1PR09MB7773.namprd09.prod.outlook.com ([fe80::2413:b3b6:ac20:1bae%5]) with
+ Microsoft SMTP Server id 15.21.0546.021; Tue, 27 Oct 2026 20:33:20 +0000
+From: Questions * DOR <Questions.dor@dor.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Automatic reply: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZlJnGY4vi4fo/0qISFno3hDJlLcR2CrI
+Date: Tue, 27 Oct 2026 20:33:20 +0000
+Message-ID:
+ <1e8ede368f8645e3b49c394d6c452e82@SA1PR09MB7773.namprd09.prod.outlook.com>
+References:
+ <0f397fc4.AVoAAKfT9aQAAAAAAAAABEP7sjAAAYKKucoAAAAAADb2LABq4QlL@mailjet.com>
+In-Reply-To:
+ <0f397fc4.AVoAAKfT9aQAAAAAAAAABEP7sjAAAYKKucoAAAAAADb2LABq4QlL@mailjet.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: Questions.dor@dor.oregon.gov
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=dor.oregon.gov;
+x-ms-exchange-parent-message-id:
+ <0f397fc4.AVoAAKfT9aQAAAAAAAAABEP7sjAAAYKKucoAAAAAADb2LABq4QlL@mailjet.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA1PR09MB7773:EE_|BLAPR09MB6306:EE_
+x-ms-office365-filtering-correlation-id: 6c462a0e-699f-4e2e-80d9-08df34698a1b
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|10070799003|366016|1800799024|56012099006|261022105027099003|261022075727099003|10067099003|18002099003|22082099003|12063799003|261026140227099003|8096899003|5133699003|80100003;
+x-microsoft-antispam-message-info:
+ AECLcLmPcjbaDryED9H0HYRxZqTf0OxW5jO5gIKEYkudgZh9GMcj3mNkU1wqok1OhL1HgrFPd5+d9tRBIIT753etFdqmXxYnA+P4QfNrnXP33UjSOP+CSZWaiG8lzsR+nQ5CKp7vKPjN1t1hB/DyHtpaE62Z9B98knIllGQwnJxds0X1s4Lp+gIHaZbPylO3KBwuVHoor7O1UWqfv8/JSj2cxjVw4DS9D3MnGrcYJ76owcdOlbeDehxa/RYSykFpcaIhIIxbLX8ilLIGVickSqnAD25WYzxhdyWYbqb/4T4nzDMRyztmUudVZNITYg9VQVAbJzend00ogYLXPQRddp5Kpmyx9GVgVuAjfnmCRcBarNx7eIgbxxKROsbrndGM4AX9bOnmcA5pvtjyG+nZ5Ezls5NI5nalSOcm5/kUf0J/MsY/pmlOOeWk2z0dHOvoIw3mU5ZHI7ey0EduTL7UigFXyx/74t+ackoMAX5MrNRKc3UW/FHU3+kKPwC2JQePpVWOjB1YXcdBKNCacH/ClJxy1Rzy5AIVhh1azdcR6plcZAVsyS+cWOUXKImPI58kSvo8QhbJCzpYaiPNw7J0FOfmdYugVUq3tNxGc5ubq4OomrsNBs/Fsyj7T+sZQ9APvC/4+pZ6zErDXzWVnWdjTNoT9+lxENGsj+TlEo4RmwY=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA1PR09MB7773.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(10070799003)(366016)(1800799024)(56012099006)(261022105027099003)(261022075727099003)(10067099003)(18002099003)(22082099003)(12063799003)(261026140227099003)(8096899003)(5133699003)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ 6H2vRtezBSIdaEF+zy0xRBCWuTIMHrs/oz8ZwIqLCgbkXcyuTlmO+ppqjuQD1cO17r4idFunhzlqolSO8OAH+d3cG1fBphjYmg7kIHpB2tuIQKItgAKeLhJOuS4Qist8IhwR1nXCEkYXRg35V4YvDWuYdjgcfKBTHQ07YnK3ig5IyPTOiOWmpLJTt1/gi2NFu2e18X9SSuFn5LOjQcKxKR5EZEqPYb/v/XIi5G+fAYdb1hlYbRAssUZbpXlevv3u+vuZM+1PLHryXB9yT63FRT/XM0rVc+qGCjZoChBV9K2UXgcHGLgaMJ7YGNY5hP6RblFiGhL2z1eprRMcWLjBamyogPAdTnnkB3XiWOBUBmM0r4Z4CSwU5qRFROagIHfkO9FjdOMldWGfpqFzrQOCTYnCRLYEM+W3n6iAtsnmXwDWho3/ROgj1v2l//h1Abgf
+Content-Type: multipart/alternative;
+	boundary="_000_1e8ede368f8645e3b49c394d6c452e82SA1PR09MB7773namprd09pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: dor.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA1PR09MB7773.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6c462a0e-699f-4e2e-80d9-08df34698a1b
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 20:33:20.2769
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BLAPR09MB6306
+X-Spamd-Result: default: False [-1.80 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[dor.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[dor.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[dor.oregon.gov,none];
+	 R_SPF_NA(0.00)[no SPF record];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.102.159.2:from];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-1.80
+
+--_000_1e8ede368f8645e3b49c394d6c452e82SA1PR09MB7773namprd09pr_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Due to the high volume of emails we are currently receiving, please allow a=
+pproximately 2 business days for a response. We appreciate your patience.
+
+Many of your questions can be answered on our website. For specific program=
+ questions, use the emails listed on our Contact Us<https://www.oregon.gov/=
+dor/contact/Pages/default.aspx> page.
+
+
+--_000_1e8ede368f8645e3b49c394d6c452e82SA1PR09MB7773namprd09pr_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<p><span style=3D"font-family:Calibri,sans-serif; font-size:14.6667px; colo=
+r:rgb(0,0,0); background-color:rgb(255,255,255)">Due to the high volume of =
+emails we are currently receiving, please allow approximately 2 business da=
+ys for a response. We appreciate your
+ patience.</span></p>
+<p style=3D"text-align:left; text-indent:0px; line-height:normal; margin-to=
+p:20px; margin-bottom:10px; padding-top:20px; border-top:2px solid rgb(0,0,=
+0)">
+<span style=3D"font-family:Calibri,sans-serif; font-size:14.6667px; color:r=
+gb(0,0,0)">Many&nbsp;of your questions can be answered on our website. For =
+specific program questions, use the emails listed on our
+<a href=3D"https://www.oregon.gov/dor/contact/Pages/default.aspx" target=3D=
+"_blank" class=3D"ContentPasted1" title=3D"https://www.oregon.gov/dor/conta=
+ct/pages/default.aspx" rel=3D"noreferrer noopener" style=3D"margin-top:0px;=
+ margin-bottom:0px">
+Contact Us</a>&nbsp;page.</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+<br>
+</div>
+</body>
+</html>
+
+--_000_1e8ede368f8645e3b49c394d6c452e82SA1PR09MB7773namprd09pr_--
