@@ -104,16 +104,12 @@ export default function SectionPage({
 
                 {hasHeader && (
                     <header className="pb-6">
-                        {/* Icon, eyebrow, title: the testimony card's header, on
-                            every page. The subtitle is the eyebrow and sits above
-                            the title, so a page announces what it is before it
-                            announces its name. */}
-                        {(emblem || subtitle) && (
-                            <div className={`flex flex-col items-center text-xs font-bold uppercase tracking-widest ${hue.eyebrow}`}>
-                                {emblem && (
-                                    <Icon name={emblem as never} className={`mb-2 ${hue.icon}`} size={24} strokeWidth={1.75} aria-hidden />
-                                )}
-                                {subtitle && <span>{subtitle}</span>}
+                        {/* Icon, title, subtitle: the testimony card's header, on
+                            every page. The subtitle sits under the title, so a
+                            page announces its name before it says what it is. */}
+                        {emblem && (
+                            <div className="flex justify-center">
+                                <Icon name={emblem as never} className={hue.icon} size={24} strokeWidth={1.75} aria-hidden />
                             </div>
                         )}
 
@@ -121,6 +117,12 @@ export default function SectionPage({
                             <h1 className="mt-2 mb-0 text-3xl font-bold text-center tracking-widest text-gray-900">
                                 {title}
                             </h1>
+                        )}
+
+                        {subtitle && (
+                            <div className={`mt-3 text-center text-xs font-bold uppercase tracking-widest ${hue.eyebrow}`}>
+                                {subtitle}
+                            </div>
                         )}
 
                         {title?.trim() && (
