@@ -1,0 +1,133 @@
+Return-Path: <bounces+6900556-f498-rsw=rswfire.com@appmail.formstack.com>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id TTQcNR744GoXlAwAjtW+MQ
+	(envelope-from <bounces+6900556-f498-rsw=rswfire.com@appmail.formstack.com>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:14:38 +0000
+Received: from o24.ptr3525.appmail.formstack.com (o24.ptr3525.appmail.formstack.com [159.183.9.139])
+	by mail.rswfire.com (Postfix) with ESMTPS id 683EF2511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:14:37 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=formstack.com;
+	h=mime-version:from:subject:content-type:reply-to:date:to:cc:
+	content-type:date:from:subject:to;
+	s=s1; t=1793128476;
+	bh=MydvBdAHuuF/f/kBsm4u0/1+upE9UiZSJXOWkuMhA4c=;
+	b=Enoqz5jQeUm5vlkIopypkhr5NXXlOPyOL3t9AUV+CFoXMgMbh+lkl++dS4MUgsENaL75
+	aN0/BvEwtEZII4g7GEA9LtQZoOYhmFErWDRtQA+qBSMTfgoPnbS8IKTQwDGYG7vrJnQkn+
+	Nu23bPcBL4krPS9wuKDyRt3w44DnopbEdLSSMI85oxhhDdmJzMnCve8CwW3pzGzxd8QPQo
+	RsbQ6l53Ph0+Yv+C8BvWYRub9OMsWYsJFmn45qhZx4xCkL8WcFfyrsC+1ncTZkBYUctrY9
+	y8H032vskC04PalWzeLpMBVSVnFiHAdHh5QdSubBiUjng6s1Phzln20ViJ/3GIrQ==
+Received: by recvd-8497f7b588-hflkd with SMTP id recvd-8497f7b588-hflkd-1-6AE0F81C-33
+	2026-10-27 19:14:36.265946603 +0000 UTC m=+2427259.472834139
+Received: from localhost (unknown)
+	by geopod-ismtpd-6 (SG) with ESMTP
+	id qbR7qqalRuK2nFPuqIUu0A
+	for <rsw@rswfire.com>;
+	Tue, 27 Oct 2026 19:14:36.180 +0000 (UTC)
+MIME-Version: 1.0
+From: "requests@aviation.state.or.us"
+	<noreply+c8ade82891fbcb5d@formstack.com>
+Subject: Public Records Request Delivered
+Content-Type: multipart/alternative;
+ boundary="=_111aee838940d14a24ed4b55b5664988"
+Message-ID: <qbR7qqalRuK2nFPuqIUu0A@geopod-ismtpd-6>
+Reply-To: requests@aviation.state.or.us
+Date: Tue, 27 Oct 2026 19:14:36 +0000 (UTC)
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EwlTfrDjHgMKbvMisaj6rOixwmgET5meYUmUVcBrDkdjbk3JbcSAG9+QLu?=
+ =?us-ascii?Q?9Hq6Z1+2DIHja4EOS4cEPmnyZ8bNMNHBG94qfTB?=
+ =?us-ascii?Q?sDyr7mJQr620wF9s9lc4CrVX+kDLenwHDGpgUlX?=
+ =?us-ascii?Q?w17+PeB2BHTzJ=2Fjb1kiqHxtwQSyiYparpfVDJK1?=
+ =?us-ascii?Q?R1aGWIeGv6NEg29rU7ohHG+VofI+lwvc=2FsWOPXf?=
+ =?us-ascii?Q?pGVPgtU+1jkeSXsHESl9oflILWAU5+b0BUI0EYC?=
+ =?us-ascii?Q?9V0WZid9sVr3QqHrsEfDIVYu5B=2FFFfPLggcgtn4?=
+ =?us-ascii?Q?=2FYWkkbnc=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprBw7gPzE2=2FmSPDIK?=
+ =?us-ascii?Q?iGYXH6VX7ur5pTlsKP9CWwaM=2FTEgjDVMGTi=2FAWK?=
+ =?us-ascii?Q?OcpONzCp9ut7AQ=2FwKulmO7QlxX=2Ff6QwJbtvWIhf?=
+ =?us-ascii?Q?crJm2NUMGGnDncDD8czhiE5qruBVedPJu1CgmGP?=
+ =?us-ascii?Q?AhDCHeCYnj6KMtto0l2E2CvJ=2F=2FuXlXwWYhpW7yr?=
+ =?us-ascii?Q?2gWv8u8hNsm0HvZvqKUZTyMp3N0K1BgaP=2FlUryH?=
+ =?us-ascii?Q?Uwu+nAbTlSmzURCjJWLW6+lF2kiFLMFP20A4SeO?=
+ =?us-ascii?Q?XcR04nWGVSE7DVPsvzINoJYWfVzbb2hBCBbDlq5?=
+ =?us-ascii?Q?JInsntRmlt5UYIiMtJ+rq0ZxlMKhHFMcQsPGtjg?=
+ =?us-ascii?Q?BOhSXhKIqGGyJZD0LqHCpyG6OY6bZtpBcvwvpfk?=
+ =?us-ascii?Q?wfNxR4OKXTzHECrAGn0hMnZgTwI5asw1uSx=2FzEQ?= =?us-ascii?Q?C?=
+To: rsw@rswfire.com
+X-Entity-ID: u001.i81okLrLJA15DnUKr3a0NQ==
+X-Spamd-Result: default: False [3.80 / 15.00];
+	 HAS_REPLYTO(0.00)[requests@aviation.state.or.us];
+	 ARC_NA(0.00)[];
+	 FROM_NEQ_DISPLAY_NAME(4.00)[formstack.com,aviation.state.or.us];
+	 R_DKIM_ALLOW(-0.20)[formstack.com:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:159.183.0.0/16];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 REPLYTO_DOM_NEQ_FROM_DOM(0.00)[];
+	 PREVIOUSLY_DELIVERED(0.00)[rsw@rswfire.com];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 TO_DN_NONE(0.00)[];
+	 DKIM_TRACE(0.00)[formstack.com:+];
+	 DMARC_POLICY_ALLOW(-0.50)[formstack.com,none];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 FORGED_SENDER(0.30)[noreply@formstack.com,bounces@appmail.formstack.com];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:159.183.0.0/19, country:US];
+	 TAGGED_FROM(0.00)[6900556-f498-rsw=rswfire.com,c8ade82891fbcb5d];
+	 FROM_NEQ_ENVFROM(0.00)[noreply@formstack.com,bounces@appmail.formstack.com];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=3.80
+
+--=_111aee838940d14a24ed4b55b5664988
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=us-ascii
+
+
+
+	Hello&#160; Robert Samuel White, 
+
+	Thank you for working with the Oregon Department of Aviation for your
+Public Records Request. 
+
+	Your request has been marked as&#160;  on&#160;&#160; by Electronic
+delivery method to&#160; Robert Samiuel White. 
+
+	Please let us know if you have any questions. 
+
+	Best, 
+
+	Oregon Department of Aviation
+3040 25th Street SE
+Salem, OR 97302
+--=_111aee838940d14a24ed4b55b5664988
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+
+<html><body><p>Hello&#160; Robert Samuel White,</p>
+<p>Thank you for working with the Oregon Department of Aviation for your Pu=
+blic Records Request.</p>
+<p>Your request has been marked as&#160;  on&#160;&#160; by Electronic deli=
+very method to&#160; Robert Samiuel White.</p>
+<p>Please let us know if you have any questions.</p>
+<p>Best,</p>
+<p>Oregon Department of Aviation<br />3040 25th Street SE<br />Salem, OR 97=
+302</p><img src=3D"http://mailtrack.formstack.com/wf/open?upn=3Du001.h3EN9j=
+RrVtTuLI-2FpKregpaF3pb25dG7v2oXU5CnYhypZY1yHCUqIxVIFhTcShZu6oeQICm6cn6QFFfi=
+DK2wxV7e8KSCsNtowaeuJA93kbfD-2FqMnNYxQXlp-2FujmJ7RnVTqbNj1L8KnUIoavFt8d4Yc8=
+EzxYYHxDVwuO5GQFvT4Hopf0iQVxjEhSTRNegU4Lwany1SQlrwhOJOSc-2FEVUHFlNUIHKiwSBf=
+hobVrXDd3lLZ514GgouESZMs7j7SeGraRgW-2BfRNGWzLL8COzcNVHUm6ZeFNws79X1T-2FYg-2=
+FkTL7qfGVp3ep-2BERmvo2xG-2FDmQkOwXrxze3-2BzvfVQJcQ-2BSqIoGMrzBk3yWH3iZ-2F0c=
+UYD2th-2F6bTWsdcLIUO-2BAUHkZS1CQQiEOgr7-2BB6XfeZyPKdh2KHN815KA53J9z49ek87n3=
+ckuzQXpFlSnQDX6oi5gnKN6hUXicE6fNWGaW4hy0BpdViH7LcnvUgxEWW4SS9cInwsh-2FJ3HD2=
+cgVXuvIws1rwJ5Z3h7EBP0Lu5sqTyyInHt9BxfvUrl95nQYvDq11KoV2jAe-2FrVnGC5MZCHIDD=
+-2BKntOEsDaIW14Lnb75iLzBQiqQ-3D-3D" alt=3D"" width=3D"1" height=3D"1" borde=
+r=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 =
+!important;margin-top:0 !important;margin-bottom:0 !important;margin-right:=
+0 !important;margin-left:0 !important;padding-top:0 !important;padding-bott=
+om:0 !important;padding-right:0 !important;padding-left:0 !important;"/></b=
+ody></html>
+--=_111aee838940d14a24ed4b55b5664988--

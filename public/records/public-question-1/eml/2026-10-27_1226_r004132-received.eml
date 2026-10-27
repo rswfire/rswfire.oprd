@@ -1,0 +1,121 @@
+Return-Path: <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id A5nIKen64Gq/mQwAjtW+MQ
+	(envelope-from <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:26:33 +0000
+Received: from o2.sgmail.govqa.us (o2.sgmail.govqa.us [168.245.107.68])
+	by mail.rswfire.com (Postfix) with ESMTPS id A74662511B
+	for <oregon.gov@rswfire.email>; Tue, 27 Oct 2026 19:26:32 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1793129191;
+	bh=BlAQ5z4kW37pUtOpbiesou/v2UanRslZHpDtjTBFRRM=;
+	b=W/TH86jpM/CnlVrzva7iYRcKO3Eq8ZQKC7Z+N/6mwGKcK3+pqENu75OEHlUy0m7Os2Uu
+	B4oqqmYQaiJmLvddnxyRVHyD+1DWvyh4EzJwu30Cr59gOMMEJIW3ditERJ05ucmmVw5B3c
+	XWxtrCvyd5veCpLS2i6PyA89K68DwqXapyc7847pbJVArX7xAa8iRBRiXDO+DeGkJ4izZG
+	ewt0l2c5MYF+5JMoyj3kXJE8EVn5THTJNaBB7fz7fuZ8GiLPp4e2TWE3ls0aepECv84mgt
+	A/TgSJO1vh9jeqyPbR69PDVRFPhdTtfCCQ32PGB0EcV6bzlPaseKloJT6rJXMYrw==
+Received: by recvd-5468cb74f5-r99gj with SMTP id recvd-5468cb74f5-r99gj-1-6AE0FAE7-8C
+	2026-10-27 19:26:31.733824649 +0000 UTC m=+7479.384912714
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-94 (SG) with HTTP
+	id LtC6ArHJRbGmXpTNg_MexA
+	Tue, 27 Oct 2026 19:26:31.731 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Tue, 27 Oct 2026 19:26:31 +0000 (UTC)
+From: Oregon DOC Public Records Center <oregondoc@govqa.us>
+Mime-Version: 1.0
+Message-ID: <LtC6ArHJRbGmXpTNg_MexA@geopod-ismtpd-94>
+Subject: Public Records Request :: R004132-102726
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EBmP+l4yh5fnkHRi7pInmE4Y8lvQWR5aAkiq7tTJl1=2FO2WuITrGnGDZGSO?=
+ =?us-ascii?Q?q4arIXD41kZ4MPnqZ6SuByxj+qCCFLOe2SRCt4H?=
+ =?us-ascii?Q?ddUDAqMLqAHl9nMuB4xefpo6ekzLEt9W2DVjN+Y?=
+ =?us-ascii?Q?btqlkDkXkhVNsUrchobyDvYy4gSMrm4BVmR8gM0?=
+ =?us-ascii?Q?eHfNXLx2XgWJr0SrkbwANx59ebj5qwSerRk3Asy?=
+ =?us-ascii?Q?ayOtoLZvWn8VPNLYt3B1AB0EKqFk9=2Fv47RZudTf?=
+ =?us-ascii?Q?pINB9r8+TluUTCV2XMQqnH=2FkPQ=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdeyjbnIesg5=2FXZlrJ61DuqT7di8lbAgtG?=
+ =?us-ascii?Q?CjOBorTn+1NImMCnkuuntq0W5R2KHNyAC1eWBS1?=
+ =?us-ascii?Q?Iz0GKuX1pfeyIa+y89YRkeTAPZdCD0BSt99YhKv?=
+ =?us-ascii?Q?izB0ugFeMoOUVetwBh?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+X-Spamd-Result: default: False [0.60 / 15.00];
+	 ARC_NA(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[govqa.us:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:168.245.107.68:c];
+	 MV_CASE(0.50)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 DKIM_TRACE(0.00)[govqa.us:+];
+	 DMARC_POLICY_ALLOW(-0.50)[govqa.us,none];
+	 MIME_HTML_ONLY(0.20)[];
+	 TO_DN_EQ_ADDR_ALL(0.00)[];
+	 FORGED_SENDER(0.30)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[168.245.107.68:from];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:168.245.96.0/19, country:US];
+	 TAGGED_FROM(0.00)[8387778-54c2-oregon.gov=rswfire.email];
+	 FROM_NEQ_ENVFROM(0.00)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=0.60
+
+<html><body><br><br><div style=3D"align: center; padding: 10px; border: 3px=
+ solid #808080; border-radius: 5px;">
+<div><span style=3D"font-family: 'MS Sans Serif'; font-size: 16px;"><strong=
+><span style=3D"color: #000000;"><img alt=3D"" src=3D"https://uploads.govqa=
+.us/OREGONDOC/NEW Email Header Image.png" width=3D"544" height=3D"91" /></s=
+pan></strong></span></div>
+<div><hr />
+</div>
+<div><span style=3D"font-family: 'MS Sans Serif'; font-size: 16px;">Dear Ro=
+bert Samuel White:<br />
+<br />
+Thank you for your interest in public records of the Oregon Department of C=
+orrections. Your public records request has been received in our system and=
+ assigned Ref No. R004132-102726 for tracking purposes. We will respond to =
+your request in accordance with ORS 192.324(2).&nbsp;<br />
+<br />
+<strong>Records Requested:</strong> Please see the attached document.<br />
+<br />
+You can monitor the progress of your request at the link below. <br />
+<br />
+Oregon Department of Corrections</span></div>
+<hr />
+<div style=3D"text-align: left;"><span style=3D"font-family: 'MS Sans Serif=
+'; font-size: 16px;">To monitor the progress or update this request please =
+log into the&nbsp;<a title=3D"Public Records Center" href=3D"https://u83877=
+78.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXas-2FPDZBKUbGOQ=
+xTxtXG1l4DScHBtbuKYkXg14WG3xPZbHRb56ZEiB8MeiI8xNHlq-2FI-2BOS5VpsXkmnAKCFfkA=
+XQ-3Dg_YB_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv=
+-2B2wtqlhMEYBy7X9FetC20meC11vJRWl1Dtnb22ZINZ8cTbiCbZT9WxAoQ9Q2KbnArTHO2-2BF=
+D8A7d9NHdmf5a17eNPFmo-2FutPPy64A9XG8tMgLZaQmwznv5tRwtxPu5nxC0vuvFN-2BdaehDK=
+7JXqe6VbkmJvsyVkib5pWGXPGCochGXlCj-2B3MOEoCAOcBYZZkEBmAhn14AYFFyrCPYhNKNqik=
+-2FnE0pByODTS9MHJ4H0GJgTu5-2BzN2BNPug2xizyRm6uocV94BHwBiTo8gRQiyUddWUfuk4jg=
+5byhatuEF6e0U4-3D" target=3D"_blank">Public Records Center</a></span></div>
+<div><span style=3D"font-family: 'MS Sans Serif'; font-size: 16px;"><center=
+><br />
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo" /></center></span></div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J=
+7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV8MLNOz5IU0sGzPx0X=
+ELnqYZL3CPYDUyHz-2BC4Q5LJIVARa8YgeNCWURQVPC7MyDFxR9jfgyPulbi2cM3GV-2Fndl2NT=
+A7KY1WO5ZC-2BHqZk47LbZ917Pe1FncJiIWMB-2BUZfG7gAzX-2FdrsgG7ekIHE63Ea8o6aXLEx=
+Kn52R3U99LTtDXuHdzoY8pJhs4sWTM1sdO6lhwDripLtSBBnYBvzVEPNCmpWpgxh-2FF2ZUQcMY=
+AfLSJZcZTK-2BZB33nBn0NK9Iem-2Bn3oR-2FU6bG4OFBquZcJ9yP604QSXcj1nOzN7b-2FN-2B=
+lNRShELwSqkFZHEw97DnMv7bqy" alt=3D"" width=3D"1" height=3D"1" border=3D"0" =
+style=3D"height:1px !important;width:1px !important;border-width:0 !importa=
+nt;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !impor=
+tant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !im=
+portant;padding-right:0 !important;padding-left:0 !important;"/></body></ht=
+ml>

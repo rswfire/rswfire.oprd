@@ -70,6 +70,54 @@ const ENTRIES: Record<string, TrackerEntry> = {
         sent: { d: "2026-10-22", date: "October 22, 2026", doc: { thread: "public-question-1", ulid: "01M5KHDN80AJYRJNPQ24P9TZBY" } },
         status: "sent",
     },
+    "board-of-accountancy": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZB1268QV3NWNHA3VXP52Y8" } },
+        status: "sent",
+    },
+    "columbia-river-gorge-commission": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZB8S8G8YCYCEH8GHBGZS6Y" } },
+        status: "sent",
+    },
+    "criminal-justice-commission": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZBJXFGPH0GY3KBAMQ4NE2G" } },
+        status: "sent",
+    },
+    "department-of-administrative-services": {
+        ref: "R001045-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZC1P4FQ3WH3V9ZGAN87V1Z" } },
+        status: "sent",
+    },
+    "department-of-aviation": {
+        ref: "1510431709",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZCJTZ0KTEW1TRFHB7CG6W8" } },
+        status: "sent",
+    },
+    "department-of-consumer-and-business-services": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZCYC3GN6KAN6BDMZBCPJC9" } },
+        status: "sent",
+    },
+    "department-of-corrections": {
+        ref: "R004132-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZD8V288D2C9K615MN5EQJH" } },
+        status: "sent",
+    },
+    "department-of-emergency-management": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDH6MRZ6NSF4GYN60W6AY5" } },
+        status: "sent",
+    },
+    "department-of-environmental-quality": {
+        ref: "R003485-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDRMXQC6WBWV02ZB71ZCZX" } },
+        status: "sent",
+    },
+    "department-of-geology-and-mineral-industries": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE073R2C9Q0SVK7P7M9XC5" } },
+        status: "sent",
+    },
+    "department-of-justice": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE443RBB9078F1GRXEHT7Y" } },
+        status: "sent",
+    },
 };
 
 export const AGENCIES: (StateAgency & { entry: TrackerEntry })[] = (STATE.agencies as StateAgency[]).map((a) => ({

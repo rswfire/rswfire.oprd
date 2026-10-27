@@ -44,7 +44,7 @@ function otherParty(list) {
 }
 
 const index = {};
-const threads = [...src.matchAll(/slug: "([a-z-]+)",.*?filings: \[(.*?)\n    \],\n\};/gs)];
+const threads = [...src.matchAll(/slug: "([a-z0-9-]+)",.*?filings: \[(.*?)\n    \],\n\};/gs)];
 for (const thread of threads) {
     const slug = thread[1];
     const filings = [...thread[2].matchAll(/\{\n            id: ".*?\n        \},/gs)];

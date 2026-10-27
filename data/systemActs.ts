@@ -5373,6 +5373,16 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "doj"
             },
             "title": "Key Individuals"
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer sends the Department of Justice the request every state agency receives under Public Question 1: its emails with the captain of Government and Media Relations and the State Police public information office since January 1, 2023, excluding any record concerning him.",
+            "src": {
+                "u": "01M5ZE443RBB9078F1GRXEHT7Y",
+                "t": "public-question-1"
+            },
+            "title": "Public Question 1, sent to DOJ Public Records"
         }
     ],
     "deputy-attorney-general": [
@@ -5943,6 +5953,16 @@ export const ACTS: Record<string, Act[]> = {
                 "page": 1,
                 "from": "Robert Samuel White"
             }
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer copies the Public Records Counsel on the request every state agency receives under Public Question 1: the Department of Justice’s emails with the captain of Government and Media Relations and the State Police public information office since January 1, 2023, excluding any record concerning him.",
+            "src": {
+                "u": "01M5ZE443RBB9078F1GRXEHT7Y",
+                "t": "public-question-1"
+            },
+            "title": "Public Question 1, copied to the Public Records Counsel"
         }
     ]
 };
