@@ -36,7 +36,7 @@ export default function TrespassPage() {
                 <blockquote className="pl-4 border-l-4 border-gray-300 italic text-gray-800">An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</blockquote>
                 <div>That is dense too, and I encourage you to sit with it. A plainer version, which flattens it:</div>
                 <blockquote className="pl-4 border-l-4 border-gray-200 bg-white italic text-gray-800">It is the act of deciding what is inside another person: what they feel, what they believe, what they intend. And then using that fictional account against them.</blockquote>
-                <div>This was done to me repeatedly at Honeyman, and then at every level of government after it. The easy answer is that they knew, because how else could they exploit it so effectively? The honest answer is that some of them know, and most of them do not.</div>
+                <div>This was done to me repeatedly at Honeyman, and then at every level of government after it. The easy answer is that they know, because how else could they exploit it so effectively? The honest answer is that some of them know, and most of them do not.</div>
                 <div>The problem is systemic, and probably ancient. That does not erase the harm, and that is why I keep the record. If you want to understand the harm, you will not find it here, because the harm itself prevents me from disclosing it without the disclosure becoming part of the harm. The third-person account below is my closest approximation.</div>
 
                 <h2 className={H}>How they did it.</h2>
