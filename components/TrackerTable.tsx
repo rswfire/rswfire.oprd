@@ -51,9 +51,10 @@ const FILTERS: { key: Filter; label: string; test: (r: Row) => boolean }[] = [
     { key: "produced", label: "Productions", test: (r) => r.entry.status === "produced" },
 ];
 
-function Badge({ status }: { status: TrackerStatus }) {
+function Badge({ status, small }: { status: TrackerStatus; small?: boolean }) {
+    const size = small ? "px-1.5 py-px text-[9px] uppercase tracking-wider" : "px-2 py-0.5 text-[11px]";
     return (
-        <span className={`inline-flex items-center whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${TONE[status]}`}>
+        <span className={`inline-flex items-center whitespace-nowrap rounded-full font-semibold ring-1 ring-inset ${size} ${TONE[status]}`}>
             {STATUS_LABEL[status]}
         </span>
     );
@@ -88,18 +89,37 @@ function Grid({ r, onOpen, brief }: { r: Row; onOpen: (r: Row) => void; brief?: 
                 <div className={label}>Sent</div>
                 <Step step={r.entry.sent} brief={brief} />
             </div>
-            <div>
-                <div className={label}>Communication</div>
+            <div className="flex items-center">
                 <Count r={r} onOpen={onOpen} />
             </div>
-            <div>
-                <div className={label}>Acknowledged</div>
-                <Step step={r.entry.acknowledged} brief={brief} />
-            </div>
+            {r.entry.acknowledged && (
+                <div className="col-start-1">
+                    <div className={label}>Acknowledged</div>
+                    <Step step={r.entry.acknowledged} brief={brief} />
+                </div>
+            )}
             {r.entry.production && (
-                <div>
+                <div className="col-start-2">
                     <div className={label}>Productions</div>
                     <Production e={r.entry} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+function Dates({ e, brief }: { e: TrackerEntry; brief?: boolean }) {
+    const label = "text-[10px] font-semibold uppercase tracking-wider text-gray-400";
+    return (
+        <div className="space-y-2">
+            <div>
+                <div className={label}>Sent</div>
+                <Step step={e.sent} brief={brief} />
+            </div>
+            {e.acknowledged && (
+                <div>
+                    <div className={label}>Acknowledged</div>
+                    <Step step={e.acknowledged} brief={brief} />
                 </div>
             )}
         </div>
@@ -277,6 +297,14 @@ function Overlay({ r, onClose }: { r: Row | null; onClose: () => void }) {
     );
 }
 
+function Status({ e }: { e: TrackerEntry }) {
+    return e.statusStep?.doc ? (
+        <Link href={`/record/${e.statusStep.doc.thread}/${e.statusStep.doc.ulid}`}><Badge status={e.status} small /></Link>
+    ) : (
+        <Badge status={e.status} small />
+    );
+}
+
 function AgencyName({ r }: { r: Row }) {
     return (
         <a href={r.url} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-emerald-700">
@@ -347,29 +375,28 @@ export default function TrackerTable({ rows }: { rows: Row[] }) {
 
             {/* wide screens */}
             <div className="hidden lg:block overflow-x-auto rounded-xl border border-gray-200">
-                <table className="w-full text-sm">
+                <table className="w-full table-fixed text-sm">
                     <thead className="bg-gray-50 text-left text-[10px] font-bold uppercase tracking-widest text-gray-500">
                         <tr>
                             <th className="px-4 py-2.5">Agency</th>
-                            <th className="px-3 py-2.5">Request</th>
-                            <th className="px-4 py-2.5">Status</th>
+                            <th className="w-36 px-3 py-2.5">Timestamp</th>
+                            <th className="w-20 px-4 py-2.5"><span className="sr-only">Communication</span></th>
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
                         {shown.map((r) => (
                             <tr key={r.slug} className={r.entry.status === "not-sent" ? "text-gray-500" : ""}>
                                 <td className="px-4 py-3 align-top">
-                                    <div className={r.entry.status === "not-sent" ? "" : "font-semibold text-gray-900"}><AgencyName r={r} /></div>
+                                    <div className={r.entry.status === "not-sent" ? "" : "font-semibold text-gray-900"}>
+                                        <AgencyName r={r} /><span className="ml-2 inline-block align-[2px]"><Status e={r.entry} /></span>
+                                    </div>
                                     {r.entry.ref && <div className="mt-0.5 font-mono text-[11px] text-gray-500">{r.entry.ref}</div>}
                                     {r.entry.note && <div className="mt-0.5 text-xs text-gray-500">{r.entry.note}</div>}
                                 </td>
-                                <td className="px-3 py-3 align-top w-[22rem]"><Grid r={r} onOpen={setOpen} brief /></td>
-                                <td className="px-4 py-3 align-top">
-                                    {r.entry.statusStep?.doc ? (
-                                        <Link href={`/record/${r.entry.statusStep.doc.thread}/${r.entry.statusStep.doc.ulid}`}><Badge status={r.entry.status} /></Link>
-                                    ) : (
-                                        <Badge status={r.entry.status} />
-                                    )}
+                                <td className="w-36 px-3 py-3 align-top"><Dates e={r.entry} brief /></td>
+                                <td className="w-20 px-4 py-3 align-middle text-right">
+                                    <Count r={r} onOpen={setOpen} />
+                                    {r.entry.production && <div className="mt-2 text-xs"><Production e={r.entry} /></div>}
                                 </td>
                             </tr>
                         ))}
@@ -381,13 +408,12 @@ export default function TrackerTable({ rows }: { rows: Row[] }) {
             <ul className="lg:hidden divide-y divide-gray-100 rounded-xl border border-gray-200">
                 {shown.map((r) => (
                     <li key={r.slug} className="px-4 py-3">
-                        <div className="flex items-start justify-between gap-3">
-                            <div className={`min-w-0 text-sm ${r.entry.status === "not-sent" ? "text-gray-500" : "font-semibold text-gray-900"}`}><AgencyName r={r} /></div>
-                            <Badge status={r.entry.status} />
+                        <div className={`min-w-0 text-sm ${r.entry.status === "not-sent" ? "text-gray-500" : "font-semibold text-gray-900"}`}>
+                            <AgencyName r={r} /><span className="ml-2 inline-block align-[1px]"><Status e={r.entry} /></span>
                         </div>
+                        {r.entry.ref && <div className="mt-0.5 font-mono text-[11px] text-gray-500">{r.entry.ref}</div>}
                         {r.entry.status !== "not-sent" && (
-                            <div className="mt-2 text-xs">
-                                {r.entry.ref && <div className="mb-2 font-mono text-gray-500">{r.entry.ref}</div>}
+                            <div className="mt-2.5 text-xs">
                                 <Grid r={r} onOpen={setOpen} />
                             </div>
                         )}
