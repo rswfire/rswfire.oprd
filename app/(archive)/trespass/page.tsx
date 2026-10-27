@@ -25,7 +25,7 @@ export default function TrespassPage() {
             <div className="mt-8 space-y-4 text-base text-gray-700 leading-relaxed">
                 <div>If you ask the institution, it will tell you I have a grievance with it. That is not true. In making the claim, it is committing the very act this page describes.</div>
                 <div>Early in the history of this archive, before this domain existed, while I was still building the record, the homepage carried the reason for its existence:</div>
-                <blockquote className="rounded-lg bg-gray-100 px-5 py-4 space-y-1 italic text-gray-800">
+                <blockquote className="pl-4 border-l-4 border-gray-400 space-y-1 italic text-gray-800">
                     <div>Why I built this archive: to correct an epistemic violation.</div>
                     <div>It is not designed to win attention.</div>
                     <div>It is designed to outlast denial.</div>
@@ -33,9 +33,9 @@ export default function TrespassPage() {
                 <div>I wrote it knowing it was dense, and I did not expect most people to understand it. I half-believed it would be legible to the institution, though.</div>
                 <div>Finding the language for what was done to me was difficult. We don&rsquo;t have the words for it, or the ones we have can be inverted and weaponized. That is a pattern I have run into again and again, and I don&rsquo;t believe it is coincidental.</div>
                 <div>I settled on <em>epistemic violation</em>. Here is what it is:</div>
-                <blockquote className="rounded-lg bg-gray-100 px-5 py-4 italic text-gray-800">An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</blockquote>
+                <blockquote className="pl-4 border-l-4 border-gray-400 italic text-gray-800">An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</blockquote>
                 <div>That is dense too, and I encourage you to sit with it. A plainer version, which flattens it:</div>
-                <blockquote className="rounded-lg border border-gray-300 bg-white px-5 py-4 italic text-gray-800">It is the act of deciding what is inside another person: what they feel, what they believe, what they intend. And then using that fictional account against them.</blockquote>
+                <blockquote className="pl-4 border-l-4 border-gray-200 italic text-gray-800">It is the act of deciding what is inside another person: what they feel, what they believe, what they intend. And then using that fictional account against them.</blockquote>
                 <div>This was done to me repeatedly at Honeyman, and then at every level of government after it. The easy answer is that they knew, because how else could they exploit it so effectively? The honest answer is that some of them know, and most of them do not.</div>
                 <div>The problem is systemic, and probably ancient. That does not erase the harm, and that is why I keep the record. If you want to understand the harm, you will not find it here, because the harm itself prevents me from disclosing it without the disclosure becoming part of the harm. The third-person account below is my closest approximation.</div>
 
