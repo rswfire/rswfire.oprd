@@ -1,0 +1,272 @@
+Return-Path: <>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id NF89Aq4Z4WrX1wwAjtW+MQ
+	(envelope-from <>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 21:37:50 +0000
+Received: from PH0PR09CU001.outbound.protection.outlook.com (mail-westus3azhn15013044.outbound.protection.outlook.com [52.102.149.44])
+	by mail.rswfire.com (Postfix) with ESMTPS id 9107F2511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 21:37:47 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=u82RhZS6E+vr7t8WauoBRjQorhd/V4RuQQzi1up0ksyMk+o8AAFnMr2m3V2QZA/eiMF8t8MB4EZjdpmyWQGyEoZ0riF8lNuXlm2Q6b0dT8oGVJqPS2bDxvPM5KlxHuZX00eaHvtqibfiecJzmbyV99s+80urF08I17FkfQZoPfvrztlJ4342Oq4lkJtnzsINbCJaKTAPAwjZ9w1VQzP87QvlW2y9EGzJNMmyw5JhDpgJ25dWMWpGjacqIgHWYRDUZm6l3YenKoWnB0aHiRC+1o/vAaS9AVmeSUOS0wR7kPSrSYzoHXGi5hfPhl7RhC00qwH5oUxnomrsBfqjHH4BoA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=RL+JQ2cw5oZOq+Ditg1VIORIO+pZ+u6jTK9LTEP85e0=;
+ b=ghGbcSITRIw8nezws8kaX6J/Tc2gY1HEtzlb/roijFbiKcWCN/7HGeai2t1yfqlt+ghLi1DUbqzAeBqHjFjPJ8vCNcoxIzyrTDJz0l3QPB3qPhKesa3BhQ6KYrynac9wudeQ3Ak6R04/XifKe/NcsTz7FfVQ7v8HDvzpHGOSD08mYaBlLk6oUPKjZN8AWaRY3DcMTuzHPuDLqpmZ6gLgUPdu1G0+YwB0Iyb6K8dEb/NXs2b18CxParGM/Kiia9zAlffcKCUJFdF2YWZ651vk69kJocnGbLrzBd1mk9O1bAd9naZuA4jmUldJyo8SlQdymva0tDiG8De9Hf1Exy+8pg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=odhsoha.oregon.gov; dkim=pass
+ header.d=odhsoha.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=odhsoha.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=RL+JQ2cw5oZOq+Ditg1VIORIO+pZ+u6jTK9LTEP85e0=;
+ b=eaqlxyrmF7QY900x1dSD8DWjmSUaQXJUchRwUzssHFs+sxHKAUBTEiNJ1P3RWJ3yAmWUpPgpHWDz2+lJJmZ5kTk1IZVSbY18s5/IJ/4ONnavWNdieWk14airjwaOsoRbADCIEyeAGkFfJ6w4tBip8TMm40Up8d72sTuJj4ev+v4FKHpIBIkcOqPjmeh/4HFLNEAh263Ute6QeBHQQHnxTzTou3LyyCDGpqZNLzgzN6TiVzd9H8U2hfCVPkTmmZrGFF44ZSeOQR1Gp+DZAW7ltvWQjbNGLU+LRtQVuUmpA4fXiXVGdEmTadl9CfcyJ8Pmm0C4ZNCpl7hKkW48bnTOGA==
+Received: from SA9PR09MB4720.namprd09.prod.outlook.com (2603:10b6:806:47::15)
+ by SJ0PR09MB9587.namprd09.prod.outlook.com (2603:10b6:a03:46d::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 21:37:41 +0000
+Received: from SA9PR09MB4720.namprd09.prod.outlook.com ([::1]) by
+ SA9PR09MB4720.namprd09.prod.outlook.com ([fe80::9f25:2bfc:53f9:235f%4]) with
+ Microsoft SMTP Server id 15.21.0546.021; Tue, 27 Oct 2026 21:37:41 +0000
+From: DHS Records Request <DHS.RecordsRequest@odhsoha.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Automatic reply: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZltkJTYU/NTwwEmLLUN2MdFrWrcR6hIl
+Date: Tue, 27 Oct 2026 21:37:41 +0000
+Message-ID:
+ <d4d310307fef4f099d45aaa394e39d15@SA9PR09MB4720.namprd09.prod.outlook.com>
+References:
+ <b72b2aba.AV0AAKaSQ3sAAAAAAAAABEP9K10AAYKKucoAAAAAADb2LABq4Rhi@mailjet.com>
+In-Reply-To:
+ <b72b2aba.AV0AAKaSQ3sAAAAAAAAABEP9K10AAYKKucoAAAAAADb2LABq4Rhi@mailjet.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: dhs.recordsrequest@odhsoha.oregon.gov
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=odhsoha.oregon.gov;
+x-ms-exchange-parent-message-id:
+ <b72b2aba.AV0AAKaSQ3sAAAAAAAAABEP9K10AAYKKucoAAAAAADb2LABq4Rhi@mailjet.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA9PR09MB4720:EE_|SJ0PR09MB9587:EE_
+x-ms-office365-filtering-correlation-id: c7510a10-45f3-43d2-0dbe-08df3472875a
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|366016|1800799024|10070799003|22082099003|18002099003|5133699003|261026121527099003|8096899003|12063799003|56012099006|10067099003|261022105027099003|261021135927099003|260925022911599003|260925021911599003|260925021311599003|261026140227099003|80100003;
+x-microsoft-antispam-message-info:
+ A2pVtAYXHcq4LrK2Y37/wXmoiYmi6sTK34Aj4eMS5PuLj0jFaPN9NNm9uMb72s5ja2Rj0EkAmK524C2afmiWsyJXc6KGY4Oe7BYDH2pzgD2LhQNLmaTRLWRidtTByfNtj6dzkQtfA6WR6x77zoVtuJ2j1FpEcJ0XbMuRDS7UMZPc7zJV7spvdgIJyTYIrdvdYMSYB1vQrwpVH25E42KzwxQ5TfEL2WAA799gee33LZjS9/O8SXXmwr3JOuNvAsQhr2UQsBTVmkQC8jrdaq4kyfE/KS+2hJ0PbW7UJ1TpeoJMtXc+L3acPrxguxANeRkxnxWtQyDBcdICRodciN0llSi9iaDIwOQz4voyaE78ulhBXyqT9jMiIDzYn9GZTkOFJpdiW9AGzpmml0nqH5T9lXD4gOVYpk21uainN/5DaND+fYdp+DYkeDbeyf8jCHtMrvj/a1LGen2S2wLOiLXEVVCI2icCka4HLuXnIDhP4vJK+Uq9mcQCxCONfaIdJmlHvL1PALhqyl+6mJE47gI+Ms2I4Cgyc1yFIhTiBgk3xt72ONW/pgUhvrWRvbS+hxGEu1roQl6Q/qqNmebVoiNDHX1fEE0dbFLpJfa9pOFI8u8=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA9PR09MB4720.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(366016)(1800799024)(10070799003)(22082099003)(18002099003)(5133699003)(261026121527099003)(8096899003)(12063799003)(56012099006)(10067099003)(261022105027099003)(261021135927099003)(260925022911599003)(260925021911599003)(260925021311599003)(261026140227099003)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ hJGcsEY1kCbMQ5l97pibTrzUVg0RZ2BKgYJ+dxqyn8WseZTMqorFwwzLH1Ad/K/toZsRNzQ2AOkTwXmlQxxVf0daHP6B33JinKOMbE0eDISFaeAi+pUNukVHIS/hIt4w80tJybL5c3rWDQ3tpzsXnVVSa5vvHhF+RSR/D2ssrNBDD7d0KlmxbLkS2Soa7gBlmW1DDRZUo/2TTndb3O7XbGsjwvRXhw/NOURt27/XpQnILoHOFMrdFv2cuKYVgS6ceckmSLNKMC/d337J+N9wUIzQLx+3Pzhc4X4b5sE53fVoCTvutgB4fI+MfEzZ9oGMwYMXsbO63U9gqIg5CJeh0JhaSpD8X1rw9UHzFEQhtC+St9+3Fq7/iF9gF2UDe7B/KNiebsiaOWxFWBEt9aS0ZylD964+mUX7DUMJIoykh0BeM4JP/X1+DE5i/x/7/2gm
+Content-Type: multipart/alternative;
+	boundary="_000_d4d310307fef4f099d45aaa394e39d15SA9PR09MB4720namprd09pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: odhsoha.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA9PR09MB4720.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: c7510a10-45f3-43d2-0dbe-08df3472875a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 21:37:41.1285
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 658e63e8-8d39-499c-8f48-13adc9452f4c
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB9587
+X-Spamd-Result: default: False [-0.80 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[odhsoha.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[7];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[odhsoha.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[odhsoha.oregon.gov,reject];
+	 R_SPF_NA(0.00)[no SPF record];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.102.149.44:from];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-0.80
+
+--_000_d4d310307fef4f099d45aaa394e39d15SA9PR09MB4720namprd09pr_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for reaching out to the Oregon Department of Human Services (ODHS=
+) Public Records Unit. We have received your email and appreciate you conta=
+cting us.
+
+To request ODHS public records, personal records, or make a media records r=
+equest, please complete the ODHS Online Records Request Form<https://www.or=
+egon.gov/odhs/pages/records-requests.aspx>.
+
+To request records of major life events for Oregonians such as births, deat=
+hs, marriages, divorces, registered domestic partnerships, and more, please=
+ contact the Oregon Vital Records Office<https://www.oregon.gov/oha/PH/BIRT=
+HDEATHCERTIFICATES/Pages/index.aspx>.
+
+If you are a current or past recipient of ODHS services and need documentat=
+ion, please contact your local ODHS office<https://www.oregon.gov/odhs/page=
+s/office-finder.aspx?utm_source=3DodHS&utm_medium=3Degov_redirect&utm_campa=
+ign=3Dhttps%3A%2F%2Fwww.oregon.gov%2Fdhs%2Foffices%2Fpages%2Findex.aspx%5C&=
+serviceid=3D25> for verification requests.
+
+For Out of State Child Welfare Agencies, please email your request on agenc=
+y letterhead to recreq.orchildhot@odhs.oregon.gov.<mailto:recreq.orchildhot=
+@odhs.oregon.gov>
+
+For all other inquiries, a member of our team will review your message and =
+follow up with you. Our current response time is three to four business day=
+s.
+
+Thank you,
+
+Public Records Unit
+Oregon Department of Human Services
+Message Line: 503-945-5617
+
+--_000_d4d310307fef4f099d45aaa394e39d15SA9PR09MB4720namprd09pr_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">Thank=
+ you for reaching out to the Oregon Department of Human Services (ODHS) Pub=
+lic Records Unit. We have received your email and appreciate you contacting=
+ us.&nbsp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">&nbsp=
+;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">To re=
+quest ODHS public records, personal records, or make a media records reques=
+t, please complete the
+</span><span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt=
+; color:rgb(70,120,134)"><u><a href=3D"https://www.oregon.gov/odhs/pages/re=
+cords-requests.aspx" target=3D"_blank" class=3D"Hyperlink SCXW180784125 BCX=
+8" rel=3D"noreferrer noopener" style=3D"color:rgb(70,120,134); margin:0px">=
+ODHS
+ Online Records Request Form</a></u></span><span style=3D"font-family:Verda=
+na,Geneva,sans-serif; font-size:12pt">.&nbsp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">&nbsp=
+;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">To re=
+quest records of major life events for Oregonians such as births, deaths, m=
+arriages, divorces, registered domestic partnerships, and more, please cont=
+act the
+</span><span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt=
+; color:rgb(70,120,134)"><u><a href=3D"https://www.oregon.gov/oha/PH/BIRTHD=
+EATHCERTIFICATES/Pages/index.aspx" target=3D"_blank" class=3D"Hyperlink SCX=
+W180784125 BCX8" rel=3D"noreferrer noopener" style=3D"color:rgb(70,120,134)=
+; margin:0px">Oregon
+ Vital Records Office</a></u></span><span style=3D"font-family:Verdana,Gene=
+va,sans-serif; font-size:12pt">.&nbsp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">&nbsp=
+;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">If yo=
+u are a current or past recipient of ODHS services and need documentation, =
+please contact
+</span><span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt=
+; color:rgb(70,120,134)"><u><a href=3D"https://www.oregon.gov/odhs/pages/of=
+fice-finder.aspx?utm_source=3DodHS&amp;utm_medium=3Degov_redirect&amp;utm_c=
+ampaign=3Dhttps%3A%2F%2Fwww.oregon.gov%2Fdhs%2Foffices%2Fpages%2Findex.aspx=
+%5C&amp;serviceid=3D25" target=3D"_blank" class=3D"Hyperlink SCXW180784125 =
+BCX8" rel=3D"noreferrer noopener" style=3D"color:rgb(70,120,134); margin:0p=
+x">your
+ local ODHS office</a></u></span><span style=3D"font-family:Verdana,Geneva,=
+sans-serif; font-size:12pt"> for verification requests.&nbsp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">&nbsp=
+;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">For O=
+ut of State Child Welfare Agencies, please email your request on agency let=
+terhead to
+</span><span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt=
+; color:rgb(70,120,134)"><u><a href=3D"mailto:recreq.orchildhot@odhs.oregon=
+.gov" target=3D"_blank" class=3D"Hyperlink SCXW180784125 BCX8" rel=3D"noref=
+errer noopener" style=3D"color:rgb(70,120,134); margin:0px">recreq.orchildh=
+ot@odhs.oregon.gov.</a></u></span><span style=3D"font-family:Verdana,Geneva=
+,sans-serif; font-size:12pt">&nbsp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">&nbsp=
+;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">For a=
+ll other inquiries, a member of our team will review your message and follo=
+w up with you. Our current response time is three to four business days.&nb=
+sp;</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; margin:0px; =
+font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,=
+sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt"><br>
+</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; white-space:=
+pre-wrap; margin:0px; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontServ=
+ice,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">Thank=
+ you,</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; margin:0px; =
+font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,=
+sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt"><br>
+</span></div>
+<div style=3D"direction:ltr; text-align:left; text-indent:0px; margin:0in; =
+font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,=
+sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">Publi=
+c Records Unit</span></div>
+<div style=3D"margin:0in; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFont=
+Service,Calibri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">Orego=
+n Department of Human Services</span></div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif; color:rgb(0,0,0)">
+<span style=3D"font-family:Verdana,Geneva,sans-serif; font-size:12pt">Messa=
+ge Line: 503-945-5617</span></div>
+</body>
+</html>
+
+--_000_d4d310307fef4f099d45aaa394e39d15SA9PR09MB4720namprd09pr_--

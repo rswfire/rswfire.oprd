@@ -160,7 +160,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "employment-relations-board": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHA3S84THGC29V7FEMH9F1" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMSTZG2CY6QT8SJTNGPSQW" } },
+        correspondence: ["01M5ZMSTZG2CY6QT8SJTNGPSQW"],
+        status: "acknowledged",
     },
     "governor-of-oregon": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHW2ZGEQDZBFYKJ42Y78SM" } },
@@ -200,6 +202,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "oregon-department-of-human-services": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMEBSGVMA0R17ASKCXYNXY" } },
+        correspondence: ["01M5ZMRB48SKZ10YCY1KWATTFE"],
         status: "sent",
     },
     "oregon-department-of-veterans-affairs": {
