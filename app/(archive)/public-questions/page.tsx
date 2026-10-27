@@ -53,7 +53,7 @@ export default function PublicQuestionsPage() {
                     forwarded this archive to{" "}
                     <PersonLink name="press captain" seat="press-captain" label="the captain of Government and Media Relations" />{" "}
                     at Oregon State Police. No crime
-                    was alleged. The next day a “threat assessment” was ordered. Three weeks later, behind a locked gate on restricted federal land, the man who keeps it was confronted by three men who had traveled sixty-eight minutes to tell him he was “not in trouble.”
+                    was alleged. The next day a “threat assessment” was ordered. Three weeks later, behind a locked gate, at a restricted federal facility, posted against public access, the man who keeps it was confronted by three men who had traveled sixty-eight minutes to tell him he was “not in trouble.”
                 </div>
                 <div>
                     That man{" "}
