@@ -94,7 +94,7 @@ export default function TestimonyCard() {
                             <Footprints size={18} strokeWidth={1.75} />
                         </span>
                         <span className="min-w-0 flex-1">
-                            <span className="block text-[14px] font-semibold text-gray-900">Trespass</span>
+                            <span className="block text-[14px] font-semibold text-gray-900">Trespass.</span>
                             <span className="block text-[12px] text-gray-600">Naming the harm.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-red-700 transition-transform group-hover:translate-x-0.5" />
@@ -107,7 +107,7 @@ export default function TestimonyCard() {
                             <Users size={18} strokeWidth={1.75} />
                         </span>
                         <span className="min-w-0 flex-1">
-                            <span className="block text-[14px] font-semibold text-gray-900">Key Individuals</span>
+                            <span className="block text-[14px] font-semibold text-gray-900">Key Individuals.</span>
                             <span className="block text-[12px] text-gray-600">Everyone named above.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-emerald-700 transition-transform group-hover:translate-x-0.5" />
@@ -120,7 +120,7 @@ export default function TestimonyCard() {
                             <MailQuestionMark size={18} strokeWidth={1.75} />
                         </span>
                         <span className="min-w-0 flex-1">
-                            <span className="block text-[14px] font-semibold text-gray-900">Public Questions</span>
+                            <span className="block text-[14px] font-semibold text-gray-900">Public Questions.</span>
                             <span className="block text-[12px] text-gray-600">One question for every agency.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-sky-700 transition-transform group-hover:translate-x-0.5" />
