@@ -13,7 +13,7 @@ export default function WhatItMeansPage() {
             emblem="Users" tone="emerald"
             title="WHAT IT MEANS TO VOLUNTEER"
             previousPage={{ href: "/volunteers", label: "For Volunteers" }}
-            nextPage={{ href: "/reading", label: "Selected Reading" }}
+            nextPage={{ href: "/contact", label: "Contact" }}
         >
             <div className="mt-8 space-y-4 text-base leading-relaxed text-gray-800">
 <div className="space-y-4">

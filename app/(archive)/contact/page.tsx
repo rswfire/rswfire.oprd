@@ -15,7 +15,7 @@ export default function ContactPage() {
             emblem="Mail" tone="emerald"
             title="CONTACT"
             subtitle="WRITE TO ME DIRECTLY"
-            previousPage={{ href: "/reading", label: "Selected Reading" }}
+            previousPage={{ href: "/volunteers", label: "For Volunteers" }}
         >
             <div className="mt-8">
                 <IfThisIsHappening />

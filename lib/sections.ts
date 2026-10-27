@@ -19,8 +19,8 @@ export const archiveSections: ArchiveSection[] = [
     { href: "/outreach", label: "Institutional Outreach", icon: "ScrollText" as const, iconClass: "text-sky-700" },
     { href: "/records-requests", label: "Records Requests", icon: "HandPlatter" as const, iconClass: "text-sky-700" },
     { href: "/public-questions", label: "Public Questions", icon: "MailQuestionMark" as const, iconClass: "text-sky-700" },
-    { href: "/trespass", label: "Trespass: Naming the Harm", icon: "Footprints" as const, iconClass: "text-red-700" },
     { href: "/soliloquy", label: "Stormchaser's Soliloquy", icon: "Lighthouse" as const, iconClass: "text-emerald-700" },
+    { href: "/trespass", label: "Trespass: Naming the Harm", icon: "Footprints" as const, iconClass: "text-red-700" },
     { href: "#separator-3", label: "", separator: true },
     { href: "/system", label: "System", icon: "Map" as const, iconClass: "text-emerald-700" },
     { href: "/key-individuals", label: "Key Individuals", icon: "Users" as const, iconClass: "text-emerald-700" },
@@ -32,6 +32,5 @@ export const archiveSections: ArchiveSection[] = [
     { href: "#separator-4", label: "", separator: true },
     { href: "/volunteers", label: "For Volunteers", icon: "Shield" as const },
     { href: "/faq", label: "Frequently Asked Questions", icon: "Ghost" as const, iconClass: "text-cyan-700" },
-    { href: "/reading", label: "Selected Reading", icon: "BookOpenText" as const, iconClass: "text-amber-700" },
     { href: "/contact", label: "Contact", icon: "Mail" as const, iconClass: "text-emerald-700" },
 ];

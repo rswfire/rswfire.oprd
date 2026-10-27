@@ -67,7 +67,7 @@ export default function ForVolunteersPage() {
             title="FOR VOLUNTEERS"
             subtitle="YOU'RE NOT ALONE"
             previousPage={{ href: "/faq", label: "Frequently Asked Questions" }}
-            nextPage={{ href: "/reading", label: "Selected Reading" }}
+            nextPage={{ href: "/contact", label: "Contact" }}
         >
 
             <VolunteersHero />
