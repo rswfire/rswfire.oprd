@@ -180,6 +180,32 @@ const ENTRIES: Record<string, TrackerEntry> = {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZK2T7R4YF26F3AQ18GEWRS" } },
         status: "sent",
     },
+    "oregon-department-of-transportation": {
+        ref: "R029530-102726",
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZKVYXRBXWV4CFNWCV53311" } },
+        correspondence: ["01M5ZKTQVRSFW7R31FFAX5W54P"],
+        status: "sent",
+    },
+    "oregon-department-of-agriculture": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZM2MSGQSR737G3VP3EPNXJ" } },
+        status: "sent",
+    },
+    "oregon-department-of-early-learning-and-care": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZM6QN0H3FHXSF5J8MB8V68" } },
+        status: "sent",
+    },
+    "oregon-department-of-education": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZM98PRF2RJ1CKXHGP1PCQW" } },
+        status: "sent",
+    },
+    "oregon-department-of-human-services": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMEBSGVMA0R17ASKCXYNXY" } },
+        status: "sent",
+    },
+    "oregon-department-of-veterans-affairs": {
+        sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMH3P0W75E2QP3T4YTH9XF" } },
+        status: "sent",
+    },
     "department-of-justice": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE443RBB9078F1GRXEHT7Y" } },
         status: "sent",
