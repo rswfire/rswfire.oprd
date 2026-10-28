@@ -1,38 +1,32 @@
 // app/(archive)/public-questions/page.tsx
 //
-// One question, put to every state agency on the State of Oregon's own list.
-// The table follows each request from the day it is sent to its production.
+// The public questions: one at a time, put to the State of Oregon in public
+// records requests. Each has its own register and its own page.
 
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
-import PersonLink from "@/components/PersonLink";
-import TrackerTable, { type Letter } from "@/components/TrackerTable";
-import { PUBLIC_QUESTION_1_THREAD } from "@/data/threads";
-import { AGENCIES, QUESTION, TRACKER_SOURCE } from "@/data/tracker";
+import { QUESTIONS } from "@/data/questions";
+import { AGENCIES } from "@/data/tracker";
+import { QUESTION_2_AGENCIES } from "@/data/questions";
 
 export const metadata: Metadata = {
     title: "Public Questions",
-    description: QUESTION,
+    description: "Questions put to the State of Oregon in public records requests, each tracked from the day it is sent to the day it is answered.",
 };
 
-const link = "underline text-emerald-800 hover:text-emerald-600";
+const CLOSED = new Set(["no-records", "denied", "produced"]);
 
-// Each agency's exchange, resolved from the register: the request, the
-// acknowledgment, and every message after, oldest first. A ULID is its time,
-// so sorting the ids sorts the messages.
-const FILINGS = new Map(PUBLIC_QUESTION_1_THREAD.filings.map((f) => [f.ulid, f]));
-const ROWS = AGENCIES.map((a) => {
-    const e = a.entry;
-    const ids = [e.sent?.doc?.ulid, e.acknowledged?.doc?.ulid, ...(e.correspondence ?? [])]
-        .filter((u): u is string => !!u);
-    const letters: Letter[] = [...new Set(ids)].sort().map((u) => {
-        const f = FILINGS.get(u);
-        if (!f) throw new Error(`public questions: ${a.slug} cites ${u}, not in the register`);
-        return { ulid: f.ulid, d: f.d, date: f.date, time: f.time, kind: f.kind, from: f.from, to: f.to, title: f.title, summary: f.summary };
-    });
-    return { ...a, letters };
-});
+function Count({ n }: { n: number }) {
+    const rows = n === 1 ? AGENCIES : QUESTION_2_AGENCIES;
+    const sent = rows.filter((a) => a.entry.status !== "not-sent").length;
+    const answered = rows.filter((a) => CLOSED.has(a.entry.status)).length;
+    return (
+        <span className="tabular-nums">
+            {sent} {sent === 1 ? "request" : "requests"} sent · {answered} answered
+        </span>
+    );
+}
 
 export default function PublicQuestionsPage() {
     return (
@@ -42,45 +36,31 @@ export default function PublicQuestionsPage() {
             subtitle="RECORDS REQUESTS"
             previousPage={{ href: "/records-requests", label: "Records Requests" }}
         >
-            <h2 className="mb-8 text-2xl sm:text-3xl font-semibold leading-snug text-gray-900">
-                {QUESTION}
-            </h2>
-
-            <div className="mb-10 space-y-4 text-base">
-                <div>
-                    On March 3, 2026,{" "}
-                    <PersonLink name="deputy director" seat="deputy" label="a state agency" />{" "}
-                    forwarded this archive to{" "}
-                    <PersonLink name="press captain" seat="press-captain" label="the captain of Government and Media Relations" />{" "}
-                    at Oregon State Police. No crime
-                    was alleged. The next day a “threat assessment” was ordered. Three weeks later, behind a locked gate, at a restricted federal facility, posted against public access, the man who keeps it was confronted by three men who had traveled sixty-eight minutes to tell him he was “not in trouble.”
-                </div>
-                <div>
-                    That man{" "}
-                    <PersonLink name="me" seat="volunteer" label="was me" />.
-                    Those records came out of{" "}
-                    <Link href="/record/osp/01M1M4WF78XJPEJJ48D1JZ4SJ8" className={link}>Oregon State Police</Link>,
-                    and no public record shows how often it happens to anyone else.
-                </div>
-                <div>
-                    On October 22, 2026, I asked Oregon State Police for{" "}
-                    <Link href="/record/public-question-1/01M5JGN4GGQX1SS6GYNYG0NGA5" className={link}>every “threat assessment” that went through the captain’s office</Link>{" "}
-                    since January 1, 2023, and I am asking every state agency in Oregon for its correspondence with
-                    the public relations office over the same period. Together, their answers will show how agencies use it. The
-                    public should know when documenting a state agency makes them a police matter.
-                </div>
-                <div>
-                    Every denial, cost imposed, and/or production is published here in full.
-                </div>
+            <div className="mb-8 text-base">
+                A question is asked of the State of Oregon in public records requests, and every answer is published: the acknowledgment, the estimate, the denial, the production, or the silence. One register per question.
             </div>
 
-            <TrackerTable rows={ROWS} />
-
-            <p className="mt-6 text-xs text-gray-500">
-                Agency list: State of Oregon,{" "}
-                <a href={TRACKER_SOURCE.href} className={link} target="_blank" rel="noopener noreferrer">Find an Oregon Agency</a>,
-                as published on {new Date(TRACKER_SOURCE.retrieved + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}.
-            </p>
+            <ol className="not-prose space-y-5">
+                {QUESTIONS.map((q) => (
+                    <li key={q.n}>
+                        <Link
+                            href={q.href}
+                            className="group block rounded-2xl border border-gray-300 bg-white p-6 transition-colors hover:border-sky-400 hover:bg-sky-50/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600"
+                        >
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-sky-700">Public Question {q.n}</div>
+                            <h2 className="mt-2 text-xl sm:text-2xl font-semibold leading-snug text-gray-900 group-hover:text-emerald-800">
+                                {q.question}
+                            </h2>
+                            <p className="mt-3 text-sm leading-relaxed text-gray-700">{q.asked}</p>
+                            <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500">
+                                <span>Opened {q.opened}</span>
+                                <Count n={q.n} />
+                                <span className="ml-auto font-semibold text-emerald-800 group-hover:underline">The question →</span>
+                            </div>
+                        </Link>
+                    </li>
+                ))}
+            </ol>
         </SectionPage>
     );
 }

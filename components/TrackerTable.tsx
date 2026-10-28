@@ -27,6 +27,9 @@ export interface Letter {
 
 type Row = StateAgency & { entry: TrackerEntry; letters: Letter[] };
 
+// The register the rows cite: its slug and the name it goes by.
+export interface Register { slug: string; label: string }
+
 const TONE: Record<TrackerStatus, string> = {
     "not-sent": "bg-gray-100 text-gray-500 ring-gray-200",
     sent: "bg-sky-50 text-sky-800 ring-sky-200",
@@ -176,7 +179,7 @@ const KIND: Record<string, string> = {
 // Every message in one agency's exchange, oldest first, on a rail: his on
 // the left in green, theirs in blue. A title opens the letter in the
 // archive's document viewer, over this panel.
-function Overlay({ r, onClose }: { r: Row | null; onClose: () => void }) {
+function Overlay({ r, onClose, register }: { r: Row | null; onClose: () => void; register: Register }) {
     const closeRef = useRef<HTMLButtonElement>(null);
     const { openDoc } = useDocViewer();
     useEffect(() => {
@@ -273,7 +276,7 @@ function Overlay({ r, onClose }: { r: Row | null; onClose: () => void }) {
                                         {l.time && <span className="text-xs tabular-nums text-gray-500">{l.time}</span>}
                                     </div>
                                     <a
-                                        href={`/record/public-question-1/${l.ulid}`}
+                                        href={`/record/${register.slug}/${l.ulid}`}
                                         onClick={(e) => view(e, l.ulid)}
                                         className="group mt-1 flex items-start gap-1.5 font-semibold leading-snug text-gray-900 hover:text-emerald-800"
                                     >
@@ -296,7 +299,7 @@ function Overlay({ r, onClose }: { r: Row | null; onClose: () => void }) {
 
                 <footer className="border-t border-gray-200 bg-gray-50 px-6 py-3 text-xs text-gray-500">
                     Every message is published in full in the{" "}
-                    <Link href="/records/public-question-1" className="underline text-emerald-800 hover:text-emerald-600">Public Question 1 register</Link>.
+                    <Link href={`/records/${register.slug}`} className="underline text-emerald-800 hover:text-emerald-600">{register.label} register</Link>.
                 </footer>
             </div>
         </div>
@@ -338,7 +341,7 @@ function Production({ e }: { e: TrackerEntry }) {
     );
 }
 
-export default function TrackerTable({ rows }: { rows: Row[] }) {
+export default function TrackerTable({ rows, register = { slug: "public-question-1", label: "Public Question 1" } }: { rows: Row[]; register?: Register }) {
     const [q, setQ] = useState("");
     const [filter, setFilter] = useState<Filter>("sent");
     const [open, setOpen] = useState<Row | null>(null);
@@ -440,7 +443,7 @@ export default function TrackerTable({ rows }: { rows: Row[] }) {
 
             {shown.length === 0 && <p className="mt-4 text-sm text-gray-500">No agency matches.</p>}
 
-            <Overlay r={open} onClose={close} />
+            <Overlay r={open} onClose={close} register={register} />
         </div>
     );
 }

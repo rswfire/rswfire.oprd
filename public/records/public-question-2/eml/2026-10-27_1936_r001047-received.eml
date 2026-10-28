@@ -1,0 +1,144 @@
+Return-Path: <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id MWzaOLBf4WrNVw0AjtW+MQ
+	(envelope-from <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>)
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 02:36:32 +0000
+Received: from o2.sgmail.govqa.us (o2.sgmail.govqa.us [168.245.107.68])
+	by mail.rswfire.com (Postfix) with ESMTPS id 64ACE2015F
+	for <oregon.gov@rswfire.email>; Wed, 28 Oct 2026 02:36:31 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1793154990;
+	bh=IkbE3RxbeBN6IiKmK9J+hZPQWf8/QlsAPfs9IL+SGKM=;
+	b=obZ8ULhUyqX+3YTeuEcfFDQe4CqbTBxBev+jomYJYPeFmKD6TD8VbY/eMULsywfS6fyw
+	0geBdh7UZB4rKZ1HyLTyIJSwKfG/THBarmf2BrDeSgkTCGBL94DosFKJzBywgWBevJU8Ts
+	mm3MTleqF6raRfKdLPnLJjNnWdA1dU0coLI/1bHzyIzD2W1X8tneau2S8PH7ARVcS3pUQh
+	83iBfrnY/CsWx3Pt+QAbeLLI5tBj7CxBhoPYJLJmYgWoOP9exmEzsAwb/4HXrJT8XxR1RM
+	e+jusmBTMz63J6Ty8Gmc62v91iy5xmCE7DShgDKoSufS7mt3KeeHBYfH+Z6X94YA==
+Received: by recvd-657b68658c-7kq48 with SMTP id recvd-657b68658c-7kq48-1-6AE15FAE-10
+	2026-10-28 02:36:30.189134762 +0000 UTC m=+2453743.622568141
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-49 (SG) with HTTP
+	id KubSqhkuT1G4puxs51_k2w
+	Wed, 28 Oct 2026 02:36:30.179 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Wed, 28 Oct 2026 02:36:30 +0000 (UTC)
+From: OREGONDAS Support <oregondas@govqa.us>
+Mime-Version: 1.0
+Message-ID: <KubSqhkuT1G4puxs51_k2w@geopod-ismtpd-49>
+Subject: Public Records Request :: R001047-102726
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EBEOnyYN91QnqAv3BY9pmP=2FQ60Ob+GwA7Wb0qxYI4r8B+ZksGxTJ7tr0uV?=
+ =?us-ascii?Q?qNtEVt1D5UX9+mFUO2ur4ulNCLQoXR23cLCd0Dd?=
+ =?us-ascii?Q?nnd8qyeuX=2F=2FxVm0i0Ciw6pOh6F9KH2MviI5tUXu?=
+ =?us-ascii?Q?Z=2FQp64DrpXnu3hshxb4ofuVPqXuQlUz8s6uR22D?=
+ =?us-ascii?Q?zd=2FewktRU5popTjvthYBMdgElpegOa9TKDQkfEc?=
+ =?us-ascii?Q?IKZsKcYbzLfG+qMBOyr9FWJCy3wRT9dt4ltfsN9?= =?us-ascii?Q?s=2F45?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdGTt8aQiwn8LlIkf=2F6EaBNuCZRz4GG=2FEN?=
+ =?us-ascii?Q?S2BEaWz0wtjIfGGQ5juuaEo8ngVkpfAdCt2S8q7?=
+ =?us-ascii?Q?MqmW3R1Yqg8CTtFcOdKj3G=2FeZtfWQ0TJ85CzaMD?=
+ =?us-ascii?Q?jHGhPBpIH8osSF8rC3?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+X-Spamd-Result: default: False [2.60 / 15.00];
+	 ARC_NA(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[govqa.us:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:168.245.107.68:c];
+	 HTML_SHORT_LINK_IMG_1(2.00)[];
+	 MV_CASE(0.50)[];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[govqa.us:+];
+	 DMARC_POLICY_ALLOW(-0.50)[govqa.us,none];
+	 MIME_HTML_ONLY(0.20)[];
+	 TO_DN_EQ_ADDR_ALL(0.00)[];
+	 FORGED_SENDER(0.30)[oregondas@govqa.us,bounces@em9851.govqa.us];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[168.245.107.68:from];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:168.245.96.0/19, country:US];
+	 TAGGED_FROM(0.00)[8387778-54c2-oregon.gov=rswfire.email];
+	 FROM_NEQ_ENVFROM(0.00)[oregondas@govqa.us,bounces@em9851.govqa.us];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=2.60
+
+<html><body><br><br><div style=3D"align: center; padding: 10px; border: 3px=
+ solid #808080; border-radius: 5px;">
+<div><strong><span style=3D"color: #000000;"><a href=3D"https://u8387778.ct=
+.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXVCD8huxYJjKG4V447gY2=
+u0ihzgTZnu3r15Izuef1eFhOUG3ETghQzqTWyb3Z9titxKx7uXf21M8l3c4D5Zmono-3DnmGc_0=
+GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BtKiyjrsj=
+KUu5SbyQnm6ZXlTVBgIt6PlHHuya5lWfUry3xrlbLJ8mdrSmNWMvC4gEtEeizm9s4MUC8zhPRwf=
+ncULkn5oeBzU07sm8Wi7V2VmunfioDRAfhoys-2B705jL5TXbeOmXcwwkSoU6tE0QN7kN3lFHqg=
+5NTgpe8HdtiJmsmJR-2Bhfvg-2BM71Cg1VwYCDdrzEOsHoKKeQKukQM08NP7g-2Bz7Zh4YPGKVg=
+65Mwz-2Btn-2BTtr7OTNKCIpBNpMm7bVKSDyluErtrUzt8lbQJrfbORgZ45eOBCTJV49SilHP-2=
+F7fUw-3D"><img alt=3D"" src=3D"https://uploads.govqa.us/OREGONDAS/Screensho=
+t%202024-10-30%20125205.png" style=3D"width: 700px; height: 116px;" /></a><=
+/span></strong></div>
+<div><hr />
+</div>
+<div>Dear Robert Samuel White:<br />
+<br />
+The Oregon Department of Administrative Services has received your public r=
+ecords request for:&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; Please see the attached public records req=
+uest.<br />
+<br />
+In accordance with ORS 192.324(2), the acknowledgement of this request will=
+ be sent within five business days of your request.&nbsp;</div>
+<div>&nbsp;</div>
+<div>PLEASE NOTE: The Oregon Public Records Law does not require a public b=
+ody to create new information, perform legal research, or to answer questio=
+ns. In addition, state and federal law prohibits disclosure of certain reco=
+rds and permits certain public records be withheld from disclosure.&nbsp; &=
+nbsp;<br />
+To monitor the progress or update your request, log in to the <a href=3D"ht=
+tps://u8387778.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2=
+B8l1b7S-2BQf6AVAAD4hy6Wdx7KCjG-2FuKfw4vv1GMo7IpKwltyXAjfjKeT2mM0oAfw-3D-3Dp=
+saP_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BtKi=
+yjrsjKUu5SbyQnm6ZXlTVBgIt6PlHHuya5lWfUry3xrlbLJ8mdrSmNWMvC4gEtEeizm9s4MUC8z=
+hPRwfncULkn5oeBzU07sm8Wi7V2VmunfioDRAfhoys-2B705jL5TXbeOmXcwwkSoU6tE0QN7kN3=
+lFHqg5NTgpe8HdtiJmsllCF2pmUnvoOc1CEW5OUUdrLdxnKaVoMg9AAERAhPI2KDZ7KSsHdh-2B=
+LfHiAIVOgvnd06dwEG5J2pXnnO6muLiCCWtdFQhWcwA6dCWf4vpDIivCOnUDIIPCDRglm9uLddc=
+-3D" target=3D"_blank">Public Records Center</a> to access your records cen=
+ter.</div>
+<div>&nbsp;</div>
+<div>Thank you,&nbsp;<br />
+Oregon Department of Administrative Services<br />
+<div>&nbsp;</div>
+</div>
+<hr />
+<div style=3D"text-align: left;">To monitor the progress or update this req=
+uest please log into the&nbsp;<a title=3D"Public Records Center" href=3D"ht=
+tps://u8387778.ct.sendgrid.net/ls/click?upn=3Du001.VEsWrlMiJDg0mXafq1mEXf-2=
+B8l1b7S-2BQf6AVAAD4hy6Wdx7KCjG-2FuKfw4vv1GMo7IpKwltyXAjfjKeT2mM0oAfw-3D-3DF=
+vZr_0GMYb285Q7ANw-2BFhpRsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2BtKi=
+yjrsjKUu5SbyQnm6ZXlTVBgIt6PlHHuya5lWfUry3xrlbLJ8mdrSmNWMvC4gEtEeizm9s4MUC8z=
+hPRwfncULkn5oeBzU07sm8Wi7V2VmunfioDRAfhoys-2B705jL5TXbeOmXcwwkSoU6tE0QN7kN3=
+lFHqg5NTgpe8HdtiJmslDfu-2ByU-2BFjxC76end-2Fe-2FjelD1hhIJIUsJUOvf3YtQxxyzP5N=
+YC60YPZGZLgOB6DQqi1WurIbfIZsB0BkXxDEJrIUfkAESnia2N9UTkFsXXdWLlSG1bmc3xXSVPY=
+Ly9I4k-3D" target=3D"_blank">Public Records Center</a></div>
+<div><center><br />
+<img title=3D"GovQA logo" src=3D"https://uploads.mycusthelp.com/WEBQASUPPOR=
+T/PoweredByGovQALogo.png" alt=3D"GovQA logo" /></center></div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J=
+7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV8Ovjt-2BQNE3YviX-=
+2B7UaxDKdI0tQGSlpgJ5CJoAXDhrOHoZYjV8ltr9YP9fGaEQxcdaglZ-2B-2FlY69v7mRlZm-2B=
+F7hSwxfQkFvjbwiMo0nPJpBwwL36x1fWkI9tnbPdnMstvkpJdW6gU15d8rjaPZorYNCA1cPC8-2=
+BUEuq91mE3eDGXAFp5K9Jy-2ByujXes1ADuVyWS-2FvIQLUBl-2BpQJvfZR8C8gU5vVggBWE2N8=
+2mxmKfQHlAOSxLb81KQi1uLXc4h4MqIlAqIKkqSkVhe4h0nD9MRPm23iwKzY-2Fa-2FSaHu35Xn=
+BAw0jsyqk465001b-2FiJjK3EsCA" alt=3D"" width=3D"1" height=3D"1" border=3D"0=
+" style=3D"height:1px !important;width:1px !important;border-width:0 !impor=
+tant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !imp=
+ortant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !=
+important;padding-right:0 !important;padding-left:0 !important;"/></body></=
+html>

@@ -6039,6 +6039,22 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "public-question-1"
             },
             "title": "Public Question 1, copied to the Public Records Counsel"
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer copies the Public Records Counsel on a public records request to the Department: what it tells Oregon’s public bodies about searching email for a records request, in the manual, in training, and in advice; the Department’s own procedure for searching its email; and whether it has used Microsoft 365 eDiscovery or asked Enterprise Information Services to. “The statute does not require you to describe your search. I am asking because the search is the answer, and I would rather publish yours than my guess at it.”",
+            "src": {
+                "u": "01M606SRNGCZCQEYTQ9XH2NP7Q",
+                "t": "public-question-2"
+            },
+            "att": {
+                "label": "Public records request",
+                "href": "/records/public-question-2/attachments/01m606srngczcqeytq9xh2np7q-2026-10-27-doj-email-search-guidance.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            },
+            "title": "Public records request, guidance to public bodies on searching email"
         }
     ]
 };
