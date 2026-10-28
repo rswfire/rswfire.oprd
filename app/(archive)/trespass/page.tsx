@@ -73,7 +73,7 @@ export default function TrespassPage() {
                 <hr className="!mt-10 border-t border-gray-300" />
                 <div className="!mt-8 pl-4 border-l-4 border-red-700 text-lg leading-relaxed text-gray-800 space-y-4">
                     <p>This is his whole dispute with them. Not the park manager dismissing him, not the program manager expelling him, not the police.</p>
-                    <p>It is that they would not leave his interior as his. They replaced it with a fictional one, in official records, and then went silent, or escalated because he would not.</p>
+                    <p>It is that they would not leave his interior as his. They replaced it with a fictional one, in official records, and then went silent. When he would not, they sent the police.</p>
                     <p>That is the harm he has been pointing at. It is a theft, and he does not consent.</p>
                 </div>
             </div>
