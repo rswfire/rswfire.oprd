@@ -138,7 +138,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-public-safety-standards-and-training": {
         ref: "P000705-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGHSF0QPJSXY9R1RZQV824" } },
-        correspondence: ["01M5ZGJC0R5WA70W158WTWDRP6"],
+        correspondence: ["01M5ZGJC0R5WA70W158WTWDRP6", "01M61EYJXR8DXKJZAYZWCQJV9K"],
         status: "sent",
     },
     "department-of-revenue": {
@@ -179,7 +179,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "oregon-department-of-fish-and-wildlife": {
         ref: "R000173-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJYDKRZ7VXKGFVG7PBQDW3" } },
-        correspondence: ["01M5ZK0MX0021W0Y7G8JA83JHP"],
+        correspondence: ["01M5ZK0MX0021W0Y7G8JA83JHP", "01M61CH3E0EM6E0XNEJSKA5E1R"],
         status: "sent",
     },
     "oregon-department-of-forestry": {
@@ -207,8 +207,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
         status: "sent",
     },
     "oregon-department-of-human-services": {
+        ref: "MWVFW7N",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMEBSGVMA0R17ASKCXYNXY" } },
-        correspondence: ["01M5ZMRB48SKZ10YCY1KWATTFE"],
+        correspondence: ["01M5ZMRB48SKZ10YCY1KWATTFE", "01M61F49HGT7A456362DZVXXMQ"],
         status: "sent",
     },
     "oregon-department-of-veterans-affairs": {
