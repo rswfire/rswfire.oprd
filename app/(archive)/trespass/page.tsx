@@ -30,9 +30,7 @@ export default function TrespassPage() {
                     <div>It is not designed to win attention.</div>
                     <div>It is designed to outlast denial.</div>
                 </blockquote>
-                <div>I wrote it knowing it was dense, and I did not expect most people to understand it. I half-believed it would be legible to the institution, though.</div>
-                <div>Finding the language for what was done to me was difficult. We don&rsquo;t have the words for it, or the ones we have can be inverted and weaponized. That is a pattern I have run into again and again, and I don&rsquo;t believe it is coincidental.</div>
-                <div>I settled on <em>epistemic violation</em>. Here is what it is:</div>
+                <div>There is no word for what was done to me, and that is not an accident. The words that exist belong to them. Grievance. Concern. Perspective. Dispute. Each one turns what they did into something I am doing, and hands it to them to dismiss. The missing word is part of the act. So I did the naming myself. I call it an <em>epistemic violation</em>. Here is what it is:</div>
                 <blockquote className="pl-4 border-l-4 border-gray-300 italic text-gray-800">An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</blockquote>
                 <div>That is dense too, and I encourage you to sit with it. A plainer version, which flattens it:</div>
                 <blockquote className="rounded-lg border border-gray-300 bg-gray-50 px-5 py-4 italic text-gray-800">It is the act of deciding what is inside another person: what they feel, what they believe, what they intend. And then using that fictional account against them.</blockquote>
