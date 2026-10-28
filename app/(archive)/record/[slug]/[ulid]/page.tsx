@@ -110,11 +110,6 @@ export default async function DocumentPage({
                 </Link>
             </div>
 
-            {filing.flagged && filing.summary && (
-                <div className="mt-6 border-l-4 border-emerald-600 bg-emerald-50/60 px-5 py-4 text-base leading-relaxed text-gray-800">
-                    {filing.summary}
-                </div>
-            )}
 
             {html ? (
                 <div
