@@ -10,6 +10,7 @@
 // photograph, ground, a walk, or a period. Every provider these need is
 // mounted at the root layout, so both surfaces work unchanged.
 import Link from "next/link";
+import PersonLink from "@/components/PersonLink";
 import type { TimelineSegment } from "@/data/timeline";
 import Cite from "@/components/Cite";
 import Moment from "@/components/player/Moment";
@@ -53,6 +54,13 @@ export default function TimelineBody({ body }: { body: TimelineSegment[] }) {
                     return <ClusterCite key={i} id={seg.cluster}>{seg.t}</ClusterCite>;
                 }
 
+                // A link into Key Individuals opens that seat's drawer here, over
+                // the timeline, the way every other person link does; a page
+                // change to a hash can land at the top on a slow phone.
+                const seat = seg.href.match(/^\/key-individuals\/?#([a-z0-9-]+)$/)?.[1];
+                if (seat) {
+                    return <PersonLink key={i} name={seg.t} seat={seat} />;
+                }
                 if (seg.external) {
                     return (
                         <a key={i} href={seg.href} target="_blank" rel="noopener"
