@@ -32,7 +32,7 @@ export default function TrespassPage() {
                 </blockquote>
                 <div>There is no word for what was done to me, and that is not an accident. The words that exist belong to them. Grievance. Concern. Perspective. Dispute. Each one turns what they did into something I am doing, and hands it to them to dismiss. The missing word is part of the act. So I did the naming myself. I call it an <em>epistemic violation</em>. Here is what it is:</div>
                 <blockquote className="pl-4 border-l-4 border-gray-300 italic text-gray-800">An epistemic violation is when someone colonizes your interior. They use their standing to trespass where they have none. It is a form of theft, and I do not consent to it.</blockquote>
-                <div>That is dense too, and I encourage you to sit with it. A plainer version, which flattens it:</div>
+                <div>Plainly:</div>
                 <blockquote className="rounded-lg border border-gray-300 bg-gray-50 px-5 py-4 italic text-gray-800">It is the act of deciding what is inside another person: what they feel, what they believe, what they intend. And then using that fictional account against them.</blockquote>
                 <div>This was done to me repeatedly at Honeyman, and then at every level of government after it. The easy answer is that they know, because how else could they exploit it so effectively? The honest answer is that some of them know, and most of them do not.</div>
                 <div>The problem is systemic, and probably ancient. That does not erase the harm, and that is why I keep the record.</div>
