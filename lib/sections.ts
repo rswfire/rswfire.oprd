@@ -30,7 +30,7 @@ export const archiveSections: ArchiveSection[] = [
     { href: "/ethics", label: "Ethics: An Introduction", icon: "Scale" as const, iconClass: "text-indigo-700" },
     { href: "/volunteers", label: "For Volunteers", icon: "Shield" as const },
     { href: "/faq", label: "Frequently Asked Questions", icon: "Ghost" as const, iconClass: "text-cyan-700" },
-    { href: "/soliloquy", label: "Stormchaser's Soliloquy", icon: "Lighthouse" as const, iconClass: "text-emerald-700" },
     { href: "/trespass", label: "Trespass: Naming the Harm", icon: "Footprints" as const, iconClass: "text-red-700" },
+    { href: "/soliloquy", label: "Stormchaser's Soliloquy", icon: "Lighthouse" as const, iconClass: "text-emerald-700" },
     { href: "/contact", label: "Contact", icon: "Mail" as const, iconClass: "text-emerald-700" },
 ];

@@ -27,8 +27,6 @@ export default function PublicQuestion1Page() {
             emblem="MailQuestionMark" tone="sky"
             title="PUBLIC QUESTION 1"
             subtitle="RECORDS REQUESTS"
-            previousPage={{ href: "/public-questions", label: "Public Questions" }}
-            nextPage={{ href: "/public-questions/2", label: "Public Question 2" }}
         >
             <QuestionNav n={1} />
             <h2 className="mb-8 text-2xl sm:text-3xl font-semibold leading-snug text-gray-900">
