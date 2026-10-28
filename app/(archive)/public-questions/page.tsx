@@ -10,34 +10,43 @@ import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
     title: "Public Questions",
-    description: "Questions put to the State of Oregon in public records requests, every answer published. Now at openrecordsoregon.org.",
+    description: "Questions put to the State of Oregon in public records requests, every answer published. Now at OpenRecordsOregon.org.",
 };
 
 const SITE = "https://openrecordsoregon.org";
+
+/** The site's name as it renders itself: OpenRecordsOregon.org, Records in sky blue, .org light. */
+function SiteName({ bold = true }: { bold?: boolean }) {
+    const w = bold ? "font-bold" : "";
+    return (
+        <span className="whitespace-nowrap">
+            <span className={`${w} text-gray-900`}>Open</span><span className={`${w} text-sky-700`}>Records</span><span className={`${w} text-gray-900`}>Oregon</span><span className="font-light text-slate-500">.org</span>
+        </span>
+    );
+}
 
 export default function PublicQuestionsPage() {
     return (
         <SectionPage
             emblem="MailQuestionMark" tone="sky"
             title="PUBLIC QUESTIONS"
-            subtitle="RECORDS REQUESTS"
         >
             <a
                 href={SITE}
                 className="not-prose group block rounded-2xl border border-sky-300 bg-gradient-to-br from-sky-50 to-white p-6 sm:p-8 shadow-sm transition-shadow hover:shadow-md"
             >
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-sky-700 text-white">
                         <Icon name="LibraryBig" size={28} strokeWidth={1.75} aria-hidden />
                     </div>
                     <div className="min-w-0">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-sky-700">Now at its own address</div>
-                        <div className="mt-1 text-2xl font-semibold leading-tight text-gray-900 group-hover:text-sky-800">openrecordsoregon.org</div>
+                        <div className="mt-1 whitespace-nowrap text-xl sm:text-2xl leading-tight text-gray-900"><SiteName /></div>
                         <p className="mt-3 text-sm leading-relaxed text-gray-700">
-                            The questions are not about one volunteer. They are about how the state answers anyone, and they have outgrown this archive. Every question, its tracker, and its register now live there, with the case for reform coming soon.
+                            The questions are not about one volunteer. They are about how the state answers anyone, and they have outgrown this archive. The case for reform is coming.
                         </p>
                         <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-sky-800 group-hover:underline">
-                            Go to Open Records Oregon
+                            Go to <SiteName bold={false} />
                             <Icon name="ChevronDown" size={16} className="-rotate-90" aria-hidden />
                         </div>
                     </div>

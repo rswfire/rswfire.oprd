@@ -140,3 +140,23 @@ body {
 
 /* Anything that can be pressed shows the hand. */
 button:not(:disabled), summary, [role="button"] { cursor: pointer; }
+
+/* A register document, as the render tool writes it: structure under .doc,
+   styled here. Georgia for the document; the site's link colour; the ULID
+   smaller on a phone so it never breaks. */
+.doc { font-family: Georgia, "Times New Roman", serif; color: #111827; line-height: 1.5; }
+.doc a { color: #047857; text-decoration: underline; }
+.doc-header { border-bottom: 1px solid #d1d5db; padding-bottom: 10px; margin-bottom: 14px; }
+.doc-row { display: flex; gap: 12px; padding: 3px 0; font-size: 14px; }
+.doc-label { width: 84px; flex: none; color: #6b7280; font-variant: small-caps; }
+.doc-value { min-width: 0; }
+.doc-row-subject .doc-value { font-weight: 600; }
+.doc-row-document { align-items: center; }
+.doc-row-document .doc-value { white-space: nowrap; }
+@media (max-width: 639px) { .doc-row-document .doc-value { font-size: 11px; letter-spacing: 0.01em; } }
+.doc-body { white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; font-size: 15px; margin: 0; }
+.doc-authored { line-height: 1.55; }
+.doc-authored .doc-body { white-space: normal; font-size: 15.5px; }
+.doc-meta { margin: 2px 0; }
+.doc-meta-label { color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin-right: 8px; }
+.doc-photo { max-width: 100%; border: 1px solid #d1d5db; border-radius: 4px; margin-top: 14px; }

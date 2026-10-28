@@ -143,7 +143,7 @@ export default function DocViewer({
                     )}
                     {html !== null && (
                         <div
-                            className="bg-white border border-gray-200 rounded-lg p-5 sm:p-7"
+                            className="bg-white border border-gray-200 rounded-lg p-5 sm:p-7 "
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                     )}
