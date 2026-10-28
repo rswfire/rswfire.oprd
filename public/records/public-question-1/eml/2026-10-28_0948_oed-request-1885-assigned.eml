@@ -1,0 +1,430 @@
+Return-Path: <James.P.FRANCIS@employ.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id XUVGFHcn4mpcXQ4AjtW+MQ
+	(envelope-from <James.P.FRANCIS@employ.oregon.gov>)
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 16:48:55 +0000
+Received: from PH0PR09CU001.outbound.protection.outlook.com (mail-westus3azlp170130005.outbound.protection.outlook.com [IPv6:2a01:111:f403:c107::5])
+	by mail.rswfire.com (Postfix) with ESMTPS id 3A4A61F752
+	for <oregon.gov@rswfire.email>; Wed, 28 Oct 2026 16:48:54 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=Wa+gR3FgMxxwDHkt/RxOPWFeEsyfz2x4DHimqdWjbHSRqQaK2DNyecLo7b7INMMNEpVGVsz0yrF6voW7Fc3LUj4g3cVuzjhVF6eTV/RUa78jmTBfv2qsKKDwoQEW5NbPt/bD8CWzKZnKcd5xpGy/Uo7IstxNsZ1jq1+Lmq+s+Wes6aGmTp611TYzZ54f9m7ftP5JYMfzO57kp7Wo3GEOh0pyGDi7G296fSZYfVMNWRnrRxIQMf5n7ikM+0LhN1sJzaC1Dr2/XllktcFNQ+Uz0RhyVd9evZjjKeVql+yzOQE5Blej9vFzT1rwSLJL/qG00QBzvlAoI/KcDSrL4fG9Og==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=aV30trDvCFUIa8KSKxO204IJUYZFX7+X7i+2m03YpI8=;
+ b=EjbkUywqCSxdebFnw8045mOXNZp8XwL+pyy2/4w8svk1m4vwlPFKIGlGYLwpqxyF2xq3Mipu24k5U1il6yeCC5X51zSt2JsPsTNOe6ttgAravRoDBQLOerz6bH+dsCtqIPeRSYWp//uD0v/0APPMfeDQ9ElR9L+u5V6b1E0HQPYaCDH+uNk007HdTNBR91pRjj7INRWOAjrJzHqw+8Yvul371QazhKletP3r9x1eD+fwPS9q/OxCX0yxthLhD4vU42dg0KZ11xgdKarh8Ti6uEyDSCfG81Ghb7gAEOdRr6f1Qf2xjV16nLfgOvB/sk3NXL5QQv+neMfepQViLGoqFw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=employ.oregon.gov; dmarc=pass action=none
+ header.from=employ.oregon.gov; dkim=pass header.d=employ.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=employ.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=aV30trDvCFUIa8KSKxO204IJUYZFX7+X7i+2m03YpI8=;
+ b=ZqUytW1PGnDFtMgDmRnHH8FWYsopjKkiIK4haRRKZ3UApKQ9FKOG79nrdwH2QbK4D0vqH7Zh36atophxgiSP9ccxjgVCSnBOC5o4lSXnWCtPrM1YGADedftQNTQcvfQjsBXU/qirl5QaUSoHC4Gxe0rQfz6c/vVotvQ7V8MuMpZ//cDJbmedxhuhs/j9ZYeF7/dtwx41G5YoiJv+b34LkUBQJtZ9bkoIyRwv7KE0ftqAU3xrKQJFMSWn5HFpVyOqzwyxSIoVaO8ObuSW26RMSX0dP1uol12tdiWSLfIz+ntICBlfpnxW9nUpvUPLJe3tNnCYVhBQYeqDuOGYFydeUQ==
+Received: from BY5PR09MB5907.namprd09.prod.outlook.com (2603:10b6:a03:246::16)
+ by PH8PR09MB10223.namprd09.prod.outlook.com (2603:10b6:510:18e::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.569.8; Wed, 28 Oct
+ 2026 16:48:49 +0000
+Received: from BY5PR09MB5907.namprd09.prod.outlook.com
+ ([fe80::7b09:9c1a:6e50:bc5e]) by BY5PR09MB5907.namprd09.prod.outlook.com
+ ([fe80::7b09:9c1a:6e50:bc5e%6]) with mapi id 15.21.0569.007; Wed, 28 Oct 2026
+ 16:48:49 +0000
+From: FRANCIS James P * OED <James.P.FRANCIS@employ.oregon.gov>
+To: OED_PRRS * OED <oed_prrs@employ.oregon.gov>, "oregon.gov@rswfire.email"
+	<oregon.gov@rswfire.email>
+CC: "rsw@rswfire.com" <rsw@rswfire.com>
+Subject: Re: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZlLAAtywWV0OwEKCmlB5BwsbtbcTJPFt
+Date: Wed, 28 Oct 2026 16:48:48 +0000
+Message-ID:
+ <BY5PR09MB5907A163C651E95C6F21C7B8FA6F2@BY5PR09MB5907.namprd09.prod.outlook.com>
+References: <77241672.48.1793133346279@mail.employ.oregon.gov>
+In-Reply-To: <77241672.48.1793133346279@mail.employ.oregon.gov>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=employ.oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BY5PR09MB5907:EE_|PH8PR09MB10223:EE_
+x-ms-office365-filtering-correlation-id: d5b18659-73d8-4b60-9fed-08df35135700
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|366016|1800799024|23010399003|6049299003|6133799003|22082099003|18002099003|8096899003|4013099003|4053099003|13003099007|56012099006|261021121427099003|261026121527099003|261026140227099003|10067099003|261021123027099003|261009223027099003|261022105027099003|38070700021|261028144727099003;
+x-microsoft-antispam-message-info:
+ YOIPLS8pqgScxVUdFAB5U+R7pjbyxOjlbSkyGOAHuOdRN53/cSsDSJv5MQmRHKnaKMNBjMNltN/vn1w/1A4tzSY89/urEyPKd1/crVkyWPnumDbjtzE2Y+FI2AovtNdqPXck8vLPSp630qsi+ZGdvw3NYzh0odFyNiciOaRAzOKG3182m9Df4JcT15FEidZvmVH4ckK8Pqafflzwp7KrRg1iEKwAzIOXM9UtNgfa0QCeyu0jve6DVNkQVJOOxEccPRVjSdp4N2GvCZ48VTOdWZt8abYVwqmQa/Q3xspi1liCI/AJ+gAjGMWJEexbx4Yp3aMwheLD7j1AjH7Ame3s6qf4BB6RXRtgfPNy2plxylyniyORUbJRcMcxWb4VicOS+M9bi9DQ5q8zoKkznzlNIWanREFf0eth1osJo6us94OSDlE0zNxZeWFwqId72CsvJHOWy+QRwewhfvBGFbjuPvHLzMaMuCYUkXQ0d6go7+4ep0nyDd50wmqIuzQqJzlguCmh3QSMF1FwgJSIo2r8vZImugAbGpweQSt8DnHLAIdvpXhpsa1LTOL5ojv5KPM4L+ps2gk9p5jK+DA3Aa44yPE+puv9+JNKCOLXVUw/OSHEqj3A425T4USxrDvdJneMaAN52n57NsvCAK62ZN+15ZpOztJYQrt58qvWLN7EsaUVUDOSr8jervCAGeZrHZl2sz0uIyvBfLNz/NAD5Cp9uh6kWf3Pkv2Z2Ql6XVvl8HU=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR09MB5907.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(23010399003)(6049299003)(6133799003)(22082099003)(18002099003)(8096899003)(4013099003)(4053099003)(13003099007)(56012099006)(261021121427099003)(261026121527099003)(261026140227099003)(10067099003)(261021123027099003)(261009223027099003)(261022105027099003)(38070700021)(261028144727099003);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?YAY6/Qe5Ty7L2xTa8TwgA6aLa4J98MBoI69Bi73VkI7U7Fq2jI3+C04khw?=
+ =?iso-8859-1?Q?NWlEYM/pQKGRczCdIaNodxculWNUC79Z0fMF1Yf9KD5tEMcsp2Xad1z5Bo?=
+ =?iso-8859-1?Q?GsZwSi+Liar+BaJofR6Y0FB86zm4FNLLW2HjlNlV3hlccvTkNR/+VbcDP6?=
+ =?iso-8859-1?Q?lUgOVPcfyrqJTYHNUmmcOcCmw5u6MHJaCYUiBgc9ubp/xDOUXxMq4ovIOw?=
+ =?iso-8859-1?Q?Si5DKKyj0fQNpujh3E3IizQjP/20BnjwrQFzKsGJuuwshMD1ai/pUNFZ/G?=
+ =?iso-8859-1?Q?i8/Dr9oSBiMK6uRZb1zOj6oCniJmdejg5jjxWfph1f0HRUc57xhR3Xp4OZ?=
+ =?iso-8859-1?Q?wvC749Og2WFLA7zY7SM2i0seSJDqQg68iTkcK6YTV4qaXlSz8UgMYNwd9I?=
+ =?iso-8859-1?Q?SK4lSBBBks5K4xjpiYoePv7h2+IQ2Xg2VOB31FBYrZDFj2U8zG2ulkSqX3?=
+ =?iso-8859-1?Q?mpDac9CUs+gpIMhE0OR4+YiLFkZhS6CtouiGna5zT9DWL9MnJOSoX4ADVs?=
+ =?iso-8859-1?Q?qEVUyoCZPvrEuswFfJfpE6gzfUKtRQt0mUg6fWkD6ltEwEMfOkCpv7jzts?=
+ =?iso-8859-1?Q?pOiKN4WGn4k0XscwxM3bd41XCQOa41oGWx3BaXMZteiikXE1akgCXfFfiW?=
+ =?iso-8859-1?Q?8x5HVVXhS3fQ5bpL5mKQbJ+KW2LSJRrb3BNBSmCqsCgDDl7F5CL7MovmBi?=
+ =?iso-8859-1?Q?EMmPeUvQou+KpXKndr8G79RFZb6kwejgR/t1XuA1em8lqcuWRtbtwD6+UV?=
+ =?iso-8859-1?Q?+NyJkxq2c605SK6GAYI6vWFYJ8vJEY7XGj+eNzT+PA9Ooy0fHRz2kHL3fE?=
+ =?iso-8859-1?Q?O0w98PX4hmG0k4cVY0FU4Kc4xab6oWKTzvKYDfsPGFwWjsfbs6TRp3N6/+?=
+ =?iso-8859-1?Q?tbBOhKTuA282vosXzSkLmA27E3wTKy7gNQ2lbE5hK7h2LACTuocZnbuTBq?=
+ =?iso-8859-1?Q?n6t23seAsk+pnv1efseqcdqmBsmNG8cFYyUj5fmGrsK2/jYdUSTnjkajIV?=
+ =?iso-8859-1?Q?OvJP2kyv/O0XMJtrAIFjiEcHOqOWkWn9V7wB5QeT1poTTbhlqieH9CacmJ?=
+ =?iso-8859-1?Q?wJDWg6aevgWQaiczrJ/Wh+8rE3GnJlsVgPQFaXyjmhJnpnR9b5zeIivKay?=
+ =?iso-8859-1?Q?e3jpQUxcAEfQAq0W3aeX19Y63Kzp6jMAgjGFa+3+rPIsTOy9BE6GQqZXPv?=
+ =?iso-8859-1?Q?9zV6VB0Lvx2l8+tZdCaulhppfB7aBD17SN8CXNX/zR/pP4qC0JnVzRlsnU?=
+ =?iso-8859-1?Q?DyYNVLpqthptNguRdu8uGLVHNsnlP8Qo0WTdpH/CfCySxryHUZPBzj26ec?=
+ =?iso-8859-1?Q?NVlKGnEp5Q01ChyG4Bumc7mf4qyWNvH8R3XUfcMBDIv/PGZueuku3ySI0m?=
+ =?iso-8859-1?Q?Nf9ISBXL+lfSoauY/Edd4IWb6i227gC+AI4cwNZkRnyGzzdLQMUmvIBLYZ?=
+ =?iso-8859-1?Q?bHi0/5beyn8J80rRKCKGJgXsztqrhCyn0VDE5Zl8VGjWT5Nmf5XFOY3kdz?=
+ =?iso-8859-1?Q?t56ATS6VgruOl6UdLo3csKgmqLMhDONepOFx6uyMyIN87r+9CI/+YhS754?=
+ =?iso-8859-1?Q?TolRFOy3ZIVZaIvooQJd6pOq7B8PTUK/PhGWnOrG1QDO4ko/ICA9hFWecv?=
+ =?iso-8859-1?Q?DhoFn9JTeCxsXC4bYAJBsdGj0TXyUMvm9rkqFqzWosGJBqkq7PRMeCf7B4?=
+ =?iso-8859-1?Q?WyQ+P9YTYzSbH4C9Bw/acfpHGNTbOd5jin8TjPsN8JBBJy9s21BWIwuAyD?=
+ =?iso-8859-1?Q?k5R1Pd3H4urHGFSZj/csLhBFbEUKdzKdR5J9ab76l24WAgnuCk4kIN1A9T?=
+ =?iso-8859-1?Q?uAc2QmhVGvlimTKt62mfl9dU2BMES/g=3D?=
+Content-Type: multipart/related;
+	boundary="_004_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: employ.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BY5PR09MB5907.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: d5b18659-73d8-4b60-9fed-08df35135700
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Oct 2026 16:48:48.9584
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR09MB10223
+X-Spamd-Result: default: False [0.00 / 15.00];
+	 TO_DN_EQ_ADDR_SOME(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[employ.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 RCPT_COUNT_THREE(0.00)[3];
+	 R_SPF_ALLOW(-0.20)[+ip6:2a01:111:f403:c000::/51:c];
+	 MIME_GOOD(-0.10)[multipart/related,multipart/alternative,text/plain];
+	 TO_DN_SOME(0.00)[];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_MATCH_ENVRCPT_SOME(0.00)[];
+	 DKIM_TRACE(0.00)[employ.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[employ.oregon.gov,none];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:+,3:~,4:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:2a01:111:f000::/36, country:US];
+	 INTRODUCTION(2.00)[];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=0.00
+
+--_004_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_
+Content-Type: multipart/alternative;
+	boundary="_000_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_"
+
+--_000_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Good morning Mr. White,
+
+My name is James Francis and I handle the public records requests for the O=
+regon Employment Department (OED). I wanted to acknowledge your request and=
+ let you know that we've assigned it #1885. In order to fulfill your reques=
+t, OED's IT department will need to search through all staff emails, and th=
+is requires various levels of approval. Despite that, I hope to have more i=
+nformation about what records we have and any potential fees to you by the =
+end of next week (11/6/2026).
+
+Thank you for your patience while we investigate your request. In the meant=
+ime, please feel free to reach out to me with any questions.
+
+
+James P. Francis (pronouns: he/him)  | Information Management Analyst
+
+Oregon Employment Department |
+
+james.p.francis@employ.oregon.gov<mailto:james.p.francis@employ.oregon.gov>
+
+
+
+[cid:7556bb94-f608-4025-b34e-2dfedb7dbafd]
+
+CONFIDENTIALITY NOTICE* This email may contain information that is confiden=
+tial or other=ADwise exempt from disclosure under applicable law. If you ar=
+e not the addressee or it appears from the context or otherwise that you ha=
+ve received this email in error, please advise me immediately by reply emai=
+l, keep the contents confidential, and immediately delete the message and a=
+ny attachments from your system.
+
+
+
+________________________________
+From: oed_no_email@employ.oregon.gov <oed_no_email@employ.oregon.gov>
+Sent: Tuesday, October 27, 2026 1:35 PM
+To: OED_PRRS * OED <oed_prrs@employ.oregon.gov>
+Cc: rsw@rswfire.com <rsw@rswfire.com>; oregon.gov@rswfire.email <oregon.gov=
+@rswfire.email>
+Subject: Public Records Request
+
+[You don't often get email from oed_no_email@employ.oregon.gov. Learn why t=
+his is important at https://aka.ms/LearnAboutSenderIdentification ]
+
+You have a new public records request.
+
+ Requester : Robert Samuel White,
+
+   Details : Please see the attached document.
+
+IP Address : 98.97.48.79
+   Browser : Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/201001=
+01 Firefox/157.0
+Attachment : 2026-10-27-employment-department_20261027_133537226.pdf
+PLEASE NOTE: * Attachment will be available on EDweb within 15 minutes. *
+
+
+
+To view this issue, please go to:
+  EDweb | My Admin Tools | PRRS | click ID 1885
+   or set search filter for Request # 1885
+
+--_000_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Good morning Mr. White,&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+My name is James Francis and I handle the public records requests for the O=
+regon Employment Department (OED). I wanted to acknowledge your request and=
+ let you know that we've assigned it #1885. In order to fulfill your reques=
+t, OED's IT department will need
+ to search through all staff emails, and this requires various levels of ap=
+proval. Despite that, I hope to have more information about what records we=
+ have and any potential fees to you by the end of next week (11/6/2026).</d=
+iv>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Thank you for your patience while we investigate your request. In the meant=
+ime, please feel free to reach out to me with any questions.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div id=3D"Signature">
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+"><span style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: rgb=
+(47, 84, 150);"><b>James P. Francis
+</b>(pronouns: he/him)&nbsp; |&nbsp;Information Management Analyst</span></=
+p>
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+"><span style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: rgb=
+(47, 83, 149);"><b>Oregon Employment Department</b>&nbsp;|</span></p>
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+"><span style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: blu=
+e;"><a href=3D"mailto:james.p.francis@employ.oregon.gov" style=3D"color: bl=
+ue; margin-top: 0px; margin-bottom: 0px;"><u>james.p.francis@employ.oregon.=
+gov</u></a></span><span style=3D"font-family: Arial, sans-serif; font-size:=
+ 9pt; color: rgb(47, 84, 150);">
+</span></p>
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+"><span style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: rgb=
+(47, 84, 150);">&nbsp;</span></p>
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+"><span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: bl=
+ack;"><img width=3D"190" height=3D"57" style=3D"width: 1.989in; height: 0.6=
+04in; margin-top: 0px; margin-bottom: 0px;" data-outlook-trace=3D"F:1|T:1" =
+src=3D"cid:7556bb94-f608-4025-b34e-2dfedb7dbafd"></span></p>
+<p style=3D"line-height: 12.05pt; margin: 0in; font-family: Calibri, sans-s=
+erif; font-size: 11pt;">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 8pt; color: black=
+;">CONFIDENTIALITY NOTICE*</span><span style=3D"font-family: &quot;Calisto =
+MT&quot;, serif; font-size: 8pt; color: rgb(31, 73, 125);">
+</span><span style=3D"font-family: Aptos, sans-serif; font-size: 8pt; color=
+: black;">This email may contain information that is confidential or other=
+=ADwise exempt from disclosure under applicable law. If you are not the add=
+ressee or it appears from the context
+ or otherwise that you have received this email in error, please advise me =
+immediately by reply email, keep the contents confidential, and immediately=
+ delete the message and any attachments from your system.</span></p>
+<p style=3D"margin: 0in; font-family: Calibri, sans-serif; font-size: 11pt;=
+">&nbsp;</p>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> oed_no_email@employ.o=
+regon.gov &lt;oed_no_email@employ.oregon.gov&gt;<br>
+<b>Sent:</b> Tuesday, October 27, 2026 1:35 PM<br>
+<b>To:</b> OED_PRRS * OED &lt;oed_prrs@employ.oregon.gov&gt;<br>
+<b>Cc:</b> rsw@rswfire.com &lt;rsw@rswfire.com&gt;; oregon.gov@rswfire.emai=
+l &lt;oregon.gov@rswfire.email&gt;<br>
+<b>Subject:</b> Public Records Request</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">[You don't often get email from oed_no_email@emplo=
+y.oregon.gov. Learn why this is important at
+<a href=3D"https://aka.ms/LearnAboutSenderIdentification">https://aka.ms/Le=
+arnAboutSenderIdentification</a> ]<br>
+<br>
+You have a new public records request.<br>
+<br>
+&nbsp;Requester : Robert Samuel White,<br>
+<br>
+&nbsp;&nbsp; Details : Please see the attached document.<br>
+<br>
+IP Address : 98.97.48.79<br>
+&nbsp;&nbsp; Browser : Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Ge=
+cko/20100101 Firefox/157.0<br>
+Attachment : 2026-10-27-employment-department_20261027_133537226.pdf<br>
+PLEASE NOTE: * Attachment will be available on EDweb within 15 minutes. *<b=
+r>
+<br>
+<br>
+<br>
+To view this issue, please go to:<br>
+&nbsp; EDweb | My Admin Tools | PRRS | click ID 1885<br>
+&nbsp;&nbsp; or set search filter for Request # 1885<br>
+</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_--
+
+--_004_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_
+Content-Type: image/jpg; name="Outlook-fstp1ows"
+Content-Description: Outlook-fstp1ows
+Content-Disposition: inline; filename="Outlook-fstp1ows"; size=5028;
+	creation-date="Wed, 28 Oct 2026 16:48:48 GMT";
+	modification-date="Wed, 28 Oct 2026 16:48:48 GMT"
+Content-ID: <7556bb94-f608-4025-b34e-2dfedb7dbafd>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAkACQAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABXAR8DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiii
+gAooqOaeK2haWeRY40GWZjgCgCSiuL1b4hwxM0elxecRx50nC/gOp/SsuFvFfiH545J44W/iB8pP
+w7mtFTb1ehzzxCWkVd+R6RRXAp4A1OT5p9UUN7Fm/UkVOvhDXbH5rHWMsP4SzLn+Yq/ZQ/nMfrNd
+b0nb1R29Fcdb+J9T0adbfxFany2OBcIP8OD+HNdbDNHcQpLC6vG4yrKcgionTlDfY3o4iFa6jo1u
+nuSUUUVmbhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+UF7eQ6fZTXV04SGFSzsfSgCvrGs2mh2LXV4+B0VB95z6AV5dqOt6n4t1JIVVmDN+6to+g9z6/U1m
+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
+08UAcj9itJPjROsltAwbRlkw0YOW84/N9feu7rH1fwrpWuX1te3sDm6tuI5Y5WjYDOcEqRkZ7Gti
+gAryn4y+BJdXt11/S4i91bptuY1HLxjow9SP5fSvVqKAPjOu98FfFfWPDEUdlOo1DT04WKRsPGPR
+W9PY5/CvRvGXwb03X5pL3SZF069clnULmKQ+pA+6fcflXm118JPFemyn/iXrdIDw9vKrA/gcH9KA
+PU7D4yeHrqMGeK9tn7q0W4D8VNWpfitoCqTCLuZuwWHH8yK8mtPAniXIB0W8B91A/rXR6b8MfEFy
+V8+KG0Q95ZAT+S5piNnUvile3SlNMtUtVP8Ay0kO9/y6D9au+G7zxb4gdZPtphswfmnaFefZRjk/
+pWnonw103TSst87X0w5ww2xg/wC73/GuwVVRQqKFUDAAGAKd0Tyt7hGpSNVLM5AwWbqfenUUVJYU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAf//Z
+
+--_004_BY5PR09MB5907A163C651E95C6F21C7B8FA6F2BY5PR09MB5907namp_--

@@ -1,0 +1,368 @@
+Return-Path: <cameron.d.miles@oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id 2cyeAVw94mrydw4AjtW+MQ
+	(envelope-from <cameron.d.miles@oregon.gov>)
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 18:22:20 +0000
+Received: from DM4PR09CU001.outbound.protection.outlook.com (mail-centralusazon11012057.outbound.protection.outlook.com [52.101.63.57])
+	by mail.rswfire.com (Postfix) with ESMTPS id 98E251F751
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 18:22:18 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=C2m2ANL58GlPBm3jeEfn12mcdykuyRab4G0aDbFQCHwbcIoZtDiQuU1NBtxvuvcwDe1JpoRLAD6D+3OPuIl6gkocw1i0uiy4mR2TWOghrfNsEx/JiVNvGV9HkWKUE1sWu89PxUGKQGAYY5VtEPCuyKJEmXhka6R68YHcZ8oZYqgTDdA/FkaL2cE5ihp1KYP1OZHwRYaHqbTDzNKcPN/y/oXvLuNaU4b4DJEumTxvQBIoLeBOkjhIM9F87ow0EWKofjrEk2Rp+06cKImg8cxdGod0gKvwaojcrBz9BX+gKsgij/LP86SXgH9T90XxID7vm4cdL9u/nxOCpZTyBqvy1w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=yhcm17wUIkpSRgqRURALMzfja3LAcdtvkZe3CZChleQ=;
+ b=QAUl28rHxIx9svGOpb72y+PTYLNAupNhg8EqZ4Qr56VlXVKLQHoj/UO3tMQD4xLfyUFKGKjEELSAWMS8w+uYzj4elCaJd7ytXwG33fiN78adEHzi98DnnAsx1nZwiYlL+O8AFh87ugWjQl8uEN5SP7OYtmAuFysAfG+9FjuLu75ri5R+IHMTFiFEXCeS6jvSZ+tFY1UeTItq+w8LLgd5htbRXmzrFJOjifZpPpshRVMxkXtvmFKucD36pXybxHt/x4Gv0tC3IncagK6JdO7nXbncicslc1GSd1no2gweBBekJApObc/Vx94g+2iGyO7tJRCBBonQHjXBtlkxOhD+1g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=oregon.gov; dmarc=pass action=none header.from=oregon.gov;
+ dkim=pass header.d=oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yhcm17wUIkpSRgqRURALMzfja3LAcdtvkZe3CZChleQ=;
+ b=vsqUuDz6A6euioKvgyyFkzAuU1AwIM0mWwKdIarMGltiA21Mmgc+KxVbvk7PzsNYC7x2ivDZk/8lQmYDs68q5m9W5bHne4tf9bQuVaqnde/+U4xTZQkEiZASg0TJczPFxxAbsm3kcoquGSbZEsMb1j6eMc0f1Of7yDpfqg30w8O4FqqrLta37O0a/ZXeQeMPZv90xN/sYfJTehPGlgCbMjdcVpjykyKjBii8IxB0/mDbdBZZBU1OpbIKCTA4PTNiWCCq1T0cKQEV0nYiFFzx9kwyFR6tgF/FNc3/v6EiR9eEWDjQA3wwi8TSWEvOqigNzvZM6hNCqwcBQXU6UXaVww==
+Received: from DM6PR09MB4725.namprd09.prod.outlook.com (2603:10b6:5:26a::12)
+ by DS3PR09MB12597.namprd09.prod.outlook.com (2603:10b6:8:543::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Wed, 28 Oct
+ 2026 18:22:16 +0000
+Received: from DM6PR09MB4725.namprd09.prod.outlook.com
+ ([fe80::594c:386:bcd:e788]) by DM6PR09MB4725.namprd09.prod.outlook.com
+ ([fe80::594c:386:bcd:e788%6]) with mapi id 15.21.0569.007; Wed, 28 Oct 2026
+ 18:22:16 +0000
+From: MILES Cameron D * GOV <cameron.d.miles@oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: RE: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZlR0p0Lrp0NXPUq3BpzlIme4ibcTRLlg
+Date: Wed, 28 Oct 2026 18:22:16 +0000
+Message-ID:
+ <DM6PR09MB4725852D969B9EB1DEBAD40CD76F2@DM6PR09MB4725.namprd09.prod.outlook.com>
+References:
+ <6acacccd.AUsAAKfRtYQAAAAAAAAABD3ksugAAYKKucoAAAAAADb2LABq4Q3b@mailjet.com>
+In-Reply-To:
+ <6acacccd.AUsAAKfRtYQAAAAAAAAABD3ksugAAYKKucoAAAAAADb2LABq4Q3b@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: DM6PR09MB4725:EE_|DS3PR09MB12597:EE_
+x-ms-office365-filtering-correlation-id: 2e45ed6b-e3f3-482f-c219-08df3520652c
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|1800799024|366016|23010399003|261026140227099003|261028144727099003|56012099006|10067099003|261022105027099003|261022075727099003|22082099003|18002099003|13003099007|8096899003|38070700021;
+x-microsoft-antispam-message-info:
+ K7Ewi9yVtv89soTR1PBAZnl++dGDxuKGDk2HhwU4mfg/ZTUFS/W8rY/hOCqwgt/gmr/1S7+/mCM+sj0ZmOBMFGZIC06Q14zMis08JfFlUA/KOf2aViFSJkdZJp0gD+clPgPzJmnQ/biUMmHAs+4gHun3ivpxkl1xMO0R6cJRObZ+kyKvxwBpPqzsvFugLU28b2hACLWQeSObCAq+z2fF5/q6g8lq2EVdPJoN43XEZASlcNBA0YifZv/G+k2ASCojBteNkzOl2QFTL6B6aLfwLA+IyqnPzOO4SNOAamA0XNkTObJJP7hK4WUElCwbDyhhmSglSTXUR8aI1BL9yKAUC6wGLCC5X2EDMVkmc8qScV3wRh3prDmZ/9Cupeji/BzIK/wjJQOTTll4xUHs9GMAcOk9qjIHqUpNZz6O1QDo+W7xACVtrbtytkD43jfzDilZu4GfOo9tmlHKle/q3TJpKghnRry4EdS8ItH7lxWsml7QjQmY4ba3HTOVsjoRPzYxQMs3+nQMGqnxQlswe5qAdEO+Qi9963ReItanqofHWJcRoZCEX1sSyrKU5Ay2rAEoFx4ieP/BxRluqo8Hzh5/isWgtKNAix2UALYpUiaQV1UAiwcsq+KANppJcrvDE47cg5GW12+bjOWr525zkf43g87yVKxUZOt6yS522OMDpSE=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR09MB4725.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(23010399003)(261026140227099003)(261028144727099003)(56012099006)(10067099003)(261022105027099003)(261022075727099003)(22082099003)(18002099003)(13003099007)(8096899003)(38070700021);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?4lsqi9v4825n61YDOiIEFQtueiIKaOSwJnp8YbR29Wt9MLJmJ4P+pkWJhMCH?=
+ =?us-ascii?Q?oPTr8LN1wEdKXgSYd3lrThFcIpjA49b9BGS/CxNnOjbfoE0gKKBsIrB6v2xW?=
+ =?us-ascii?Q?G88CeFOktThdrg5UFKKvXkNpZ1Gx9xxWUhrHpTmzRmltJUdkQH3Nrp2cu4xe?=
+ =?us-ascii?Q?mX2sQ6mRqz6R7jhoqVUteg7BXB5Cee57gJNCmFW4zbYV6AZC83eFP4Es3B79?=
+ =?us-ascii?Q?N24r2QVxOnrAIlhqIEjsjT5AytBye3FzLVz/OMtM/q0Xx6S3BgSYKPfQwvVH?=
+ =?us-ascii?Q?CQTYGLqQDxKeZUQEt5iX6+p3PeiMBEFoZxiRqNNg9DtSVHAU7BtTbZf9kLPF?=
+ =?us-ascii?Q?noV8P098DW9QGQtsEC7E8FX58BrSH+wOeb5jX/4vVHvoX5UJS6cJXZZ7Y8qq?=
+ =?us-ascii?Q?ppfUCbGxyxiU98e7KuMUDKMMXQ9RZpSd0zeX/aH1ml0cWnz0yI9gM5IlP7y6?=
+ =?us-ascii?Q?fwC4BVByhx9wjavCd+hBbqp2wR8ZyDZBALAWFuhX9avEECrbidHwSvuKSUSg?=
+ =?us-ascii?Q?JhgizNaoI54LrEN0F9vT5iGRaicU9TkbqxZd1qa7WpbmgDcjOHi2UBmvyZDF?=
+ =?us-ascii?Q?beJPlAOpB5f1sv4Lk8zICo1wgO0HWinyX4sNSAT6sB12ksPcpWC5qSk8r1/d?=
+ =?us-ascii?Q?38I4I0UYAaYAkuQ6EfXtqtfQGLtvNV9lcwV8eUrzVCUDe0lj2RGZnTyky+Q9?=
+ =?us-ascii?Q?48gK45jw5IpETvKzV4L8H68SX2YWAhJW78/vpYFHprP2DTrxl0PYl1VoOS8T?=
+ =?us-ascii?Q?wjgR0TJi+zNK+T8Xlb1pHiEVRD2M2CdFZnONgZdd5GfcS+yWO1/e0HplrbH1?=
+ =?us-ascii?Q?ngm0lOK9i/9WQkE3jPm5rAbm+1SuIi7Blw+L+AvRS+RhpqmL8ZYRW9rdkDt4?=
+ =?us-ascii?Q?fNH3HfjqnwWw8C2SCGyTFSMb0m8Zg+deTTx4NViq1+1Ct1YaTY1jZ2bzHgwT?=
+ =?us-ascii?Q?QRYrnF7nZ9gbSlI+cDBn3GNS2wXcPo7f3XxxMiFXgwgLHmVJuhaUhygMkOxL?=
+ =?us-ascii?Q?oJOAoP2E8tGOEZ1Ay/jJvbXi7HRQv2/8gXG0i9GFzLNiaGusjtPAbTMf86PK?=
+ =?us-ascii?Q?txHxgcU0nbDg/nqjWy16QwOsgJcXtGivrKpdlfzKLChGsWykOrxGY2d5Z6e9?=
+ =?us-ascii?Q?PHvfqCBJQnzo3EeAIwl6L2K+nbFqgLdzDsepBis30D3nxRU8ASuyaitkbc+k?=
+ =?us-ascii?Q?45lX1yf2n88DLOoO6G64HhmHYQWDAu+hAJnGeJ0Lk1lwvWd2axdGUVmJ5wHK?=
+ =?us-ascii?Q?/BRG5k0Vu3AKggio6azL6HC5NCdN4w0sUb/ZxRajl605NS+ykCYQBEP1pQBE?=
+ =?us-ascii?Q?0Jhgkqw/rEoIaRVFspkfaG6RODizak/eqIS35Q0LZQAahzpXDBY2m2zIqPQ+?=
+ =?us-ascii?Q?HjSvRL+np7hjpuzzZ/zoHT3zFHFZKa05xbPN260RBJhTXDAhE8Y0zc59iCFP?=
+ =?us-ascii?Q?KGEx4vhYPcuvAucR+J5Wyn8sDH9B98OAxCTa0Xbc/YNSHHTZ+q6qiGucSbHE?=
+ =?us-ascii?Q?eg1gqdkecz982gx8MGjrGRmElBXT5whVrsj+J7TNGhAOMTsXxo2ttE1Onrle?=
+ =?us-ascii?Q?ycIofZ7zMzCQY0+T0rgKYhkc2K4CmU+GaXhsM6560q/R9Vb8ns3G6PBF/M5X?=
+ =?us-ascii?Q?uu5rEnAZQ6FJEvibBYoJsLRgIrjCc0CH6DthSB9e+Pu0wU4n2rt0FfFDVstp?=
+ =?us-ascii?Q?TJH9XGYPyT6P15a+ifRHvajjqMQoVEwJA8ZRAgH56tngZI5BvkuLodREFCbA?=
+ =?us-ascii?Q?FtGiGACwig=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR09MB4725852D969B9EB1DEBAD40CD76F2DM6PR09MB4725namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DM6PR09MB4725.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2e45ed6b-e3f3-482f-c219-08df3520652c
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Oct 2026 18:22:16.2256
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS3PR09MB12597
+X-Spamd-Result: default: False [-1.00 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:52.100.0.0/15];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[9];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[oregon.gov,quarantine];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-1.00
+
+--_000_DM6PR09MB4725852D969B9EB1DEBAD40CD76F2DM6PR09MB4725namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+The Office of the Governor has received your October 25, 2026, public recor=
+ds request, which states:
+
+Records requested. All emails, including attachments and replies, sent to o=
+r received from either of these Oregon State Police addresses:
+Captain Kyle Kennedy, Government and Media Relations (kyle.kennedy@osp.oreg=
+on.gov)
+OSP Public Information Officer (osppio@osp.oregon.gov<mailto:osppio@osp.ore=
+gon.gov>)
+
+that contain any of these terms:
+"threat assessment"
+"situational awareness"
+"welfare check"
+"knock and talk"
+"grievance"
+
+Date range: January 1, 2023, to the date of search.
+
+We will begin gathering records responsive to your request, to the extent r=
+ecords exist, and will be in touch.
+
+Thanks,
+
+Cameron D. Miles (he/him)
+Government Accountability Attorney
+Office of Governor Tina Kotek
+Scheduler: meghan.rogers-czarnecki@oregon.gov<mailto:meghan.rogers-czarneck=
+i@oregon.gov>
+
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, October 27, 2026 1:47 PM
+To: Governor Kotek * GOV <governor.kotek@oregon.gov>; MILES Cameron D * GOV=
+ <cameron.d.miles@oregon.gov>; SOLORIO Yasmin * GOV <yasmin.solorio@oregon.=
+gov>
+Subject: Public Records Request
+
+
+To the Office of the Governor:
+
+Please see my attached public records request.
+
+Background on this matter is available here:
+https://oprdvolunteerabuse.org/public-questions/
+
+Thank you for your service.
+
+Robert Samuel White
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+
+
+
+
+
+
+
+--_000_DM6PR09MB4725852D969B9EB1DEBAD40CD76F2DM6PR09MB4725namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-compose;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">The Office of the Governor has received your October 25, 2026=
+, public records request, which states:
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;mso-ligatures:sta=
+ndardcontextual">Records requested.</span></b><span style=3D"font-size:11.0=
+pt;mso-ligatures:standardcontextual"> All emails, including attachments and=
+ replies, sent to or received from either
+ of these Oregon State Police addresses:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">Captain Kyle Kennedy, Government and Media Relations (kyle.ke=
+nnedy@osp.oregon.gov)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">OSP Public Information Officer (<a href=3D"mailto:osppio@osp.=
+oregon.gov">osppio@osp.oregon.gov</a>)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">that contain any of these terms:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&#8220;threat assessment&#8221;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&#8220;situational awareness&#8221;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&#8220;welfare check&#8221;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&#8220;knock and talk&#8221;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">&#8220;grievance&#8221;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">Date range: January 1, 2023, to the date of search.&nbsp;<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;mso-ligatures:standa=
+rdcontextual">We will begin gathering records responsive to your request, t=
+o the extent records exist, and will be in touch.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thanks,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Cameron D. Miles (h=
+e/him)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Government Accounta=
+bility Attorney<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Office of Governor =
+Tina Kotek</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Scheduler: <a href=
+=3D"mailto:meghan.rogers-czarnecki@oregon.gov">
+<span style=3D"color:#467886">meghan.rogers-czarnecki@oregon.gov</span></a>=
+</span><o:p></o:p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span><span =
+style=3D"font-size:11.0pt"><o:p></o:p></span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Robert Samuel White &lt;rsw@rs=
+wfire.com&gt;
+<br>
+<b>Sent:</b> Tuesday, October 27, 2026 1:47 PM<br>
+<b>To:</b> Governor Kotek * GOV &lt;governor.kotek@oregon.gov&gt;; MILES Ca=
+meron D * GOV &lt;cameron.d.miles@oregon.gov&gt;; SOLORIO Yasmin * GOV &lt;=
+yasmin.solorio@oregon.gov&gt;<br>
+<b>Subject:</b> Public Records Request<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p>To the Office of the Governor:<o:p></o:p></p>
+<p>Please see my attached public records request.<o:p></o:p></p>
+<p>Background on this matter is available here:<br>
+<a href=3D"https://oprdvolunteerabuse.org/public-questions/">https://oprdvo=
+lunteerabuse.org/public-questions/</a><o:p></o:p></p>
+<p>Thank you for your service.<o:p></o:p></p>
+<p><b><span style=3D"color:black">Robert Samuel White</span></b><span style=
+=3D"color:black"><br>
+</span><a href=3D"https://rswfire.com/" title=3D"https://rswfire.com"><span=
+ style=3D"color:#C82613">rswfire.com</span></a><span style=3D"color:black">=
+<br>
+</span><a href=3D"https://oprdvolunteerabuse.org/" title=3D"https://oprdvol=
+unteerabuse.org"><span style=3D"color:#0C882A">oprdvolunteerabuse.org</span=
+></a><span style=3D"color:black"><br>
+</span><a href=3D"https://autonomyrealms.com/" title=3D"https://autonomyrea=
+lms.com"><span style=3D"color:#0C64C0">autonomyrealms.com</span></a><o:p></=
+o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DM6PR09MB4725852D969B9EB1DEBAD40CD76F2DM6PR09MB4725namp_--

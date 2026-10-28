@@ -1,0 +1,140 @@
+Return-Path: <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id dB7iBqg04mpnbQ4AjtW+MQ
+	(envelope-from <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>)
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 17:45:12 +0000
+Received: from o2.sgmail.govqa.us (o2.sgmail.govqa.us [168.245.107.68])
+	by mail.rswfire.com (Postfix) with ESMTPS id BD6E51F751
+	for <oregon.gov@rswfire.email>; Wed, 28 Oct 2026 17:45:10 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1793209509;
+	bh=zyyaKAooun0q+QcJc5NHMKauRGTdHRAtPDOQGeM1Rbo=;
+	b=PVxU6NDHCsbnOJWL4TMTXlplCPSw1AxeYyA/E0R7ZXPyxWNQXoeopi5nVGgTrhbqFSDx
+	CbkiJgesUJsKlVhbouQtxdHNE4RP8CyW1KD41GDnkyDhzerZGl7nsvjg+GLCdup3S+nu/X
+	Q+Z7MwWWXcMrWmrazYQVn63oIaCjNE8ZdUGJuvuAbAyvFk+CL43JRPaRe/ooaj9InuMD5B
+	YX7wTVhjFAivPB2fYm+viH8+LXRA2gnuJvpi6Pn1NOD33Gv+r5dF7FKZms85q7RjErgNZa
+	dHzoRhneoLdC1j1235b36FTskGUgGtKeK7bMYTrOHu7kasIe0bV1tMzjf8TgT4XA==
+Received: by recvd-7dd44dbfb-4pctm with SMTP id recvd-7dd44dbfb-4pctm-1-6AE234A4-2EA
+	2026-10-28 17:45:08.80683515 +0000 UTC m=+2508280.857870962
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-88 (SG) with HTTP
+	id 4c67Ch1nQs6ulRwIcEf8NQ
+	Wed, 28 Oct 2026 17:45:08.746 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Wed, 28 Oct 2026 17:45:09 +0000 (UTC)
+From: Oregon DOC Public Records Center <oregondoc@govqa.us>
+Mime-Version: 1.0
+Message-ID: <4c67Ch1nQs6ulRwIcEf8NQ@geopod-ismtpd-88>
+Subject: ODOC Public Records Center :: R004132-102726
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EBmP+l4yh5fnkHRi7pInmE4Y8lvQWR5aAkiq7tTJl1=2FO2WuITrGnGDZGSO?=
+ =?us-ascii?Q?q4arIXD41kZ4MPnqZ6SuByxj+qCCFLOe2SRCt4H?=
+ =?us-ascii?Q?ddUDAqMLqAGXbaFs9JXWsF3c=2FHBEcaNyeDdRZ1D?=
+ =?us-ascii?Q?xOXxSRhaxA3C0etZmXRYeKj=2FHCbZCIcQl2xvuoL?=
+ =?us-ascii?Q?HMsALKZFkBUtq8CMaa+KYB+JbNbA6OEtY7ovDB8?=
+ =?us-ascii?Q?uJFDXaeih24sNl8mN86zxCLDdjBKZmVVoJV1uvA?=
+ =?us-ascii?Q?MDd34ZRHeMVuKASY+ZaR3wKSpg=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdHuSDkXkNR8IljQJpK=2FoAuylxuZQfRx1Z?=
+ =?us-ascii?Q?1rkqDezMNbUefG=2FMY5lpdplM8CvwS4mEzLhZaPB?=
+ =?us-ascii?Q?nHUwGrZuoRVulIA6Cca1pWaeKWe=2F4pCkvmOZHgf?=
+ =?us-ascii?Q?q5StTElrwYVenSOfAR?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+X-Spamd-Result: default: False [0.60 / 15.00];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 ARC_NA(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[govqa.us:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 MV_CASE(0.50)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:168.245.107.68];
+	 DNSWL_BLOCKED(0.00)[168.245.107.68:from];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 DKIM_TRACE(0.00)[govqa.us:+];
+	 DMARC_POLICY_ALLOW(-0.50)[govqa.us,none];
+	 MIME_HTML_ONLY(0.20)[];
+	 TO_DN_EQ_ADDR_ALL(0.00)[];
+	 FORGED_SENDER(0.30)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[168.245.107.68:from];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:168.245.96.0/19, country:US];
+	 TAGGED_FROM(0.00)[8387778-54c2-oregon.gov=rswfire.email];
+	 FROM_NEQ_ENVFROM(0.00)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=0.60
+
+<html><body><br><br>--- Please respond above this line ---<br><br><div styl=
+e=3D"align: center; padding: 10px; border: 3px solid #808080; border-radius=
+: 5px;">
+<img alt=3D"" src=3D"https://uploads.govqa.us/OREGONDOC/NEW Email Header Im=
+age.png" width=3D"544" height=3D"91" />
+<div><strong><span style=3D"color: #000000;"></span></strong></div>
+<div><hr />
+<strong><span style=3D"color: #000000;"><br />
+</span></strong></div>
+<div><span style=3D"font-size: 12px; font-family: 'MS Sans Serif';"><div st=
+yle=3D"margin-top: 0px; margin-bottom: 0px;">&nbsp;</div><div style=3D"marg=
+in-top: 0px; margin-bottom: 0px;"><span style=3D"font-size: 12px; font-fami=
+ly: Arial;">Dear Robert Samuel White:</span></div><div style=3D"margin-top:=
+ 0px; margin-bottom: 0px;"><p><span style=3D"font-size: 12px; font-family: =
+Arial;">In accordance with ORS 192.324(2), this acknowledges our receipt of=
+ your October 27, 2026, request for the following Department of Corrections=
+ records Reference No. R004132-102726:</span></p><ul style=3D"list-style-ty=
+pe: disc;">    <li><span style=3D"font-size: 12px; font-family: Arial;">Ple=
+ase see the attached document.</span></li>    <li><span style=3D"font-size:=
+ 12px; font-family: Arial;">Date Range: 01/01/2023&nbsp;</span></li></ul><p=
+><span style=3D"font-size: 12px; font-family: Arial;">Having reviewed your =
+request, we are able to inform you:</span></p><ul style=3D"list-style-type:=
+ disc;">    <li><span style=3D"font-size: 12px; font-family: Arial;">Depart=
+ment of Corrections is uncertain whether it is in possession or the custodi=
+an of the requested record(s). The department will complete its processing =
+of your request as soon as practicable and without unreasonable delay.</spa=
+n></li></ul><p><span style=3D"font-size: 12px; font-family: Arial;"></span>=
+</p><p><span style=3D"font-size: 12px; font-family: Arial;">The Department =
+of Corrections is experiencing limited staffing, a high volume of public re=
+cords requests, and increased request complexity. As a result, our next upd=
+ate may take up to 28 business days. Thank you for your patience.</span></p=
+><p><span style=3D"font-size: 12px; font-family: Arial;">Sincerely,</span><=
+/p><p><span style=3D"background: white; font-size: 12px; line-height: 115%;=
+ font-family: Arial; color: #212529;">Laura Sterling</span></p><div><span s=
+tyle=3D"background: white; font-size: 12px; line-height: 115%; font-family:=
+ Arial; color: #212529;">Public Records Analyst</span><span style=3D"font-s=
+ize: 12px; font-family: Arial;"><br /></span></div><div>&nbsp;</div></div><=
+/span></div>
+<hr />
+<span style=3D"font-size: 18px;"></span>
+<span style=3D"font-family: 'MS Sans Serif';">
+</span>
+<div style=3D"text-align: left;"><span style=3D"font-size: 12px; font-famil=
+y: 'MS Sans Serif';">To monitor the progress or update this request please =
+log into the&nbsp;</span><a href=3D"https://u8387778.ct.sendgrid.net/ls/cli=
+ck?upn=3Du001.VEsWrlMiJDg0mXafq1mEXas-2FPDZBKUbGOQxTxtXG1l5YOAoXOekNOTuiTMZ=
+SKWeqk35X3MoMOUz458aRTm1xyvTqA5iZg15ewEda0P96SbU-3DCBN3_0GMYb285Q7ANw-2BFhp=
+RsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2B2wtqlhMEYBy7X9FetC20mYAM2D=
+SAwTKgxFFI20ur-2BY5JlbwuSnQa6fWjV615AoODiXbR8SnKP-2BsraGTOqya9vbJ-2Fa-2FTuj=
+qo-2F0Awv-2FFH0lNWqWkXoVtAPFqwVOHnxckXIxZuZwN-2FtXa4GKRRVXfunfrD-2BhL-2FEoA=
+tiiyIP4VEkm2egOZttyt8wcfjUgWskhKi0zRx2pumVRTAkGF0-2B3WTIg6DG7l8LoloBCW2uifm=
+jAvV-2FdIgNGNF3YcwFsAUiAJiATivlWqUN1zfKr4narbpge7bkshYkL7y-2Bt1K-2FCZevx5U-=
+3D" target=3D"_blank" title=3D"Public Records Center" style=3D"font-size: 1=
+2px; font-family: 'MS Sans Serif';">Public Records Center</a></div>
+<div><center><br />
+</center></div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J=
+7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV8MLNOz5IU0sGzPx0X=
+ELnqYUG-2FYPU0JIW75D3HVakIQ6u5ltqo248b-2FR3GX8SlUbhy8tNMjs55oyODcLqFyCpmjGn=
+gvYxG1MgCnixEm4-2Fe6MbTWyF4o6ZhF0PSgvNgEkbpJaOOhCJ7denQyTGe8HrTdthhSdafMR6z=
+7DB8D0O3PXT3gXILlIYhuwMIfn-2BalkRbCJMYbIRiQpBDwaOsEl2FfDDO7-2FcOqzUslL3fXtB=
+GxHEtxVAhkKlHsEgV5sUnZBnEYzCCIhQYceNCqSOgyPtd2-2Bfay-2BDYJSkJgWbwIsuICECt3E=
+OmGngb0p6psZdrJm7R" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D=
+"height:1px !important;width:1px !important;border-width:0 !important;margi=
+n-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;mar=
+gin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;=
+padding-right:0 !important;padding-left:0 !important;"/></body></html>

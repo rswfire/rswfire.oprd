@@ -1,0 +1,219 @@
+Return-Path: <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id kL3KOEg64mo3dA4AjtW+MQ
+	(envelope-from <bounces+8387778-54c2-oregon.gov=rswfire.email@em9851.govqa.us>)
+	for <rsw@rswfire.com>; Wed, 28 Oct 2026 18:09:12 +0000
+Received: from o2.sgmail.govqa.us (o2.sgmail.govqa.us [168.245.107.68])
+	by mail.rswfire.com (Postfix) with ESMTPS id 5923A1F751
+	for <oregon.gov@rswfire.email>; Wed, 28 Oct 2026 18:09:11 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1793210950;
+	bh=pSv9oxuwlW4YE52UJG7EVppR72ZCsTdiyXgybpn0Gpk=;
+	b=mtt5RtkhJYyJF39KZt7ReV19Vcr4D1y4ScQFb5L7IxddgoDHT8VdXZmOghrrqyJG5BRu
+	r/Mk/hLnvOxWWjk/yBPXoXv5BSefy8uvJyNR4oD19vMErBY3gW7u4MsDONk7LlriVCRCv3
+	gBdqCxSXbZ7coL4zKFOvD8+jCRDg7HWy4rrOlYBDlX1EbebhvUmaYdqh7Smd13JN5nMEYc
+	z6sG4NGAHc+YtSa65aZAsx5W/pdPqWDBe5fme4doWdp7bN2xR0AVwxv/ZXUB/dtPt9xW+s
+	VL3Cvu0O4CS33T9459D6taKl+a67TjiPfalUiokhT0vdJ8TMN1jevffGYxghaqXw==
+Received: by recvd-cf945f54c-j6wpk with SMTP id recvd-cf945f54c-j6wpk-1-6AE23A45-1A7
+	2026-10-28 18:09:09.984350034 +0000 UTC m=+2509706.033822980
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-79 (SG) with HTTP
+	id vqS6_hzbRiitMC_X8PXw0w
+	Wed, 28 Oct 2026 18:09:09.969 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Wed, 28 Oct 2026 18:09:10 +0000 (UTC)
+From: Oregon DOC Public Records Center <oregondoc@govqa.us>
+Mime-Version: 1.0
+Message-ID: <vqS6_hzbRiitMC_X8PXw0w@geopod-ismtpd-79>
+Subject: ODOC Public Records Center :: R004132-102726
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EBmP+l4yh5fnkHRi7pInmE4Y8lvQWR5aAkiq7tTJl1=2FO2WuITrGnGDZGSO?=
+ =?us-ascii?Q?q4arIXD41kZ4MPnqZ6SuByxj+qCCFLOe2SRCt4H?=
+ =?us-ascii?Q?ddUDAqMLqAEJcdWMfzVTUZXV9v3oAsy3qAYUzMs?=
+ =?us-ascii?Q?vIOSnOTc5aFc8TsTIjLO=2FU5ZSKC4FAKEvMR8+Wi?=
+ =?us-ascii?Q?+aW2vQwEmYcMXK0KD2zQdvCI4AunNQc1Tdh7=2FEW?=
+ =?us-ascii?Q?MV4DkhpNHRhKXUEBUlTqCmOAOZOt0wRUKdmyAIX?=
+ =?us-ascii?Q?qjLhR1w9Xg2JmKmUTRwRDnueLg=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdhNyVwXEjkuFJkHbj=2Fs2OZGSGzHG11csN?=
+ =?us-ascii?Q?hbi0Ta19gse9cDnslSeGbPoUyE6ssdKywTcn7+m?=
+ =?us-ascii?Q?fgDdPbSKbA54sSe91DKxhgEKYnYyWBJr0HPj3vH?=
+ =?us-ascii?Q?IQGSOC411jxYBmynZ1?=
+To: "oregon.gov@rswfire.email" <oregon.gov@rswfire.email>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+X-Spamd-Result: default: False [0.60 / 15.00];
+	 ARC_NA(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[govqa.us:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:168.245.107.68:c];
+	 MV_CASE(0.50)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 DKIM_TRACE(0.00)[govqa.us:+];
+	 DMARC_POLICY_ALLOW(-0.50)[govqa.us,none];
+	 MIME_HTML_ONLY(0.20)[];
+	 TO_DN_EQ_ADDR_ALL(0.00)[];
+	 FORGED_SENDER(0.30)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[168.245.107.68:from];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:168.245.96.0/19, country:US];
+	 TAGGED_FROM(0.00)[8387778-54c2-oregon.gov=rswfire.email];
+	 FROM_NEQ_ENVFROM(0.00)[oregondoc@govqa.us,bounces@em9851.govqa.us];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=0.60
+
+<html><body><br><br>--- Please respond above this line ---<br><br><div styl=
+e=3D"align: center; padding: 10px; border: 3px solid #808080; border-radius=
+: 5px;">
+<img alt=3D"" src=3D"https://uploads.govqa.us/OREGONDOC/NEW Email Header Im=
+age.png" width=3D"544" height=3D"91" />
+<div><strong><span style=3D"color: #000000;"></span></strong></div>
+<div><hr />
+<strong><span style=3D"color: #000000;"><br />
+</span></strong></div>
+<div><span style=3D"font-size: 12px; font-family: 'MS Sans Serif';"><p styl=
+e=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"font-family: Ari=
+al; font-size: 12px;">Dear Robert Samuel White:</span></p><p style=3D"margi=
+n-top: 0px; margin-bottom: 10px;"><span style=3D"font-family: Arial; font-s=
+ize: 12px;">The Oregon Department of Corrections received a request from yo=
+u Reference No. R004132-102726 on October 27, 2026. You requested the below=
+:</span></p><ul>    <li><span style=3D"font-family: Arial; font-size: 12px;=
+">Please see the attached document.</span></li>    <li><span style=3D"font-=
+family: Arial; font-size: 12px;">Date Range: &nbsp;01/01/2023&nbsp;</span><=
+/li></ul><p style=3D"margin-top: 0px; margin-bottom: 10px;"><span style=3D"=
+font-family: Arial; font-size: 12px;">We respectfully request the following=
+ clarification/information in order to process your request.&nbsp;&nbsp;</s=
+pan></p><p style=3D"margin-top: 0px; margin-bottom: 10px; margin-left: 40px=
+;"><span style=3D"font-family: Arial; font-size: 12px;">You have requested =
+a search of electronic communications (emails).  Please confirm the below q=
+uery parameters:</span></p><div style=3D"margin-top: 0px; margin-bottom: 10=
+px; margin-left: 40px;">&nbsp;</div><div style=3D"margin-top: 0px; margin-b=
+ottom: 10px; margin-left: 40px;"><span style=3D"font-family: Arial; font-si=
+ze: 12px;"></span><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> =
+   <tbody>        <tr>            <td colspan=3D"2" valign=3D"top" style=3D=
+"border:1pt solid;width: 467pt; padding: 0in 5.4pt;    text-align: left;"> =
+           <p style=3D"line-height: normal;"><span style=3D"font-family: Ar=
+ial; font-size: 12px;">R004132-102726</span></p>            </td>        </=
+tr>        <tr>            <td valign=3D"top" style=3D"width: 102.85pt; pad=
+ding: 0in 5.4pt; border-width: medium 1pt 1pt; border-style: none solid sol=
+id; border-color: initial; text-align: left;">            <p style=3D"line-=
+height: normal;"><span style=3D"font-family: Arial; font-size: 12px;">Platf=
+orm</span></p>            </td>            <td valign=3D"top" style=3D"widt=
+h: 364.15pt; padding: 0in 5.4pt; border-width: medium 1pt 1pt medium; borde=
+r-style: none solid solid none; border-color: initial; text-align: left;"> =
+           <p style=3D"line-height: normal;"><span style=3D"font-family: Ar=
+ial; font-size: 12px;">Email [<span style=3D"background: yellow;">X</span> =
+]&nbsp;</span></p>            </td>        </tr>        <tr>            <td=
+ valign=3D"top" style=3D"width: 102.85pt; padding: 0in 5.4pt; border-width:=
+ medium 1pt 1pt; border-style: none solid solid; border-color: initial; tex=
+t-align: left;">            <p style=3D"line-height: normal;"><span style=
+=3D"font-family: Arial; font-size: 12px;">Date Range</span></p>            =
+</td>            <td valign=3D"top" style=3D"width: 364.15pt; padding: 0in =
+5.4pt; border-width: medium 1pt 1pt medium; border-style: none solid solid =
+none; border-color: initial; text-align: left;">            <p style=3D"lin=
+e-height: normal;"><span style=3D"font-family: Arial; font-size: 12px;">Fro=
+m:<span style=3D"color: #172126;"> </span>January 1, 2023</span></p>       =
+     <p style=3D"line-height: normal;"><span style=3D"font-family: Arial; f=
+ont-size: 12px;">To: October 27, 2026 (date request submitted)</span></p>  =
+          </td>        </tr>        <tr>            <td valign=3D"top" styl=
+e=3D"width: 102.85pt; padding: 0in 5.4pt; border-width: medium 1pt 1pt; bor=
+der-style: none solid solid; border-color: initial; text-align: left;">    =
+        <p style=3D"line-height: normal;"><span style=3D"font-family: Arial=
+; font-size: 12px;">Custodians</span></p>            </td>            <td v=
+align=3D"top" style=3D"width: 364.15pt; padding: 0in 5.4pt; border-width: m=
+edium 1pt 1pt medium; border-style: none solid solid none; border-color: in=
+itial; text-align: left;">            <p style=3D"line-height: normal;"><sp=
+an style=3D"font-family: Arial; font-size: 12px;">To [ <span style=3D"backg=
+round: yellow;">X</span> ] From [<span style=3D"background: yellow;">X</spa=
+n> ]</span></p>            <p style=3D"line-height: normal;"><span style=3D=
+"font-family: Arial; font-size: 12px;"><strong>ODOC:&nbsp;</strong></span><=
+span style=3D"font-family: Arial; font-size: 12px;">All Staff [</span><span=
+ style=3D"font-family: Arial; font-size: 12px; background: yellow;">X</span=
+><span style=3D"font-family: Arial; font-size: 12px;"> ]</span></p>        =
+    <p style=3D"line-height: normal;"><span style=3D"font-family: Arial; fo=
+nt-size: 12px;">&hellip;&hellip;&hellip;&hellip;.</span></p>            <p =
+style=3D"line-height: normal;"><span style=3D"font-family: Arial; font-size=
+: 12px;">To [ </span><span style=3D"font-family: Arial; font-size: 12px; ba=
+ckground: yellow;">X</span><span style=3D"font-family: Arial; font-size: 12=
+px;"> ] From [</span><span style=3D"font-family: Arial; font-size: 12px; ba=
+ckground: yellow;">X</span><span style=3D"font-family: Arial; font-size: 12=
+px;"> ]</span></p>            <p style=3D"line-height: normal;"><span style=
+=3D"font-family: Arial; font-size: 12px;"><strong>Oregon State Police:&nbsp=
+;</strong></span><span style=3D"font-family: Arial; font-size: 12px;">Indiv=
+idual(s): </span><a href=3D"mailto:kyle.kennedy@osp.oregon.gov" style=3D"fo=
+nt-family: Arial; font-size: 12px;">kyle.kennedy@osp.oregon.gov</a><span st=
+yle=3D"font-family: Arial; font-size: 12px;"> and </span><a href=3D"mailto:=
+osppio@osp.oregon.gov" style=3D"font-family: Arial; font-size: 12px;">osppi=
+o@osp.oregon.gov</a></p>            </td>        </tr>        <tr>         =
+   <td valign=3D"top" style=3D"width: 102.85pt; padding: 0in 5.4pt; border-=
+width: medium 1pt 1pt; border-style: none solid solid; border-color: initia=
+l; text-align: left;">            <p style=3D"line-height: normal;"><span s=
+tyle=3D"font-family: Arial; font-size: 12px;">Search Terms</span></p>      =
+      </td>            <td valign=3D"top" style=3D"width: 364.15pt; padding=
+: 0in 5.4pt; border-width: medium 1pt 1pt medium; border-style: none solid =
+solid none; border-color: initial; text-align: left;">            <p style=
+=3D"line-height: normal;"><span style=3D"font-family: Arial; font-size: 12p=
+x;">&ldquo;threat assessment&rdquo;</span></p>            <p style=3D"line-=
+height: normal;"><span style=3D"font-family: Arial; font-size: 12px;">&ldqu=
+o;situational awareness&rdquo;</span></p>            <p style=3D"line-heigh=
+t: normal;"><span style=3D"font-family: Arial; font-size: 12px;">&ldquo;wel=
+fare check&rdquo;</span></p>            <p style=3D"line-height: normal;"><=
+span style=3D"font-family: Arial; font-size: 12px;">&ldquo;knock and talk&r=
+dquo;</span></p>            <p style=3D"line-height: normal;"><span style=
+=3D"font-family: Arial; font-size: 12px;">&ldquo;grievance&rdquo;</span></p=
+>            </td>        </tr>    </tbody></table></div><p style=3D"margin=
+-top: 0px; margin-bottom: 0px;"><span style=3D"font-family: Arial; font-siz=
+e: 12px;">Please respond to this email with the details requested above.</s=
+pan></p><p style=3D"margin-top: 0px; margin-bottom: 0px;"><span style=3D"fo=
+nt-family: Arial; font-size: 12px;">&nbsp;</span></p><p style=3D"margin-top=
+: 0px; margin-bottom: 0px;"><span style=3D"font-family: Arial; font-size: 1=
+2px;">Once we receive clarification, we will review your request and provid=
+e you with an updated response.&nbsp;</span><span style=3D"font-family: Ari=
+al; font-size: 12px;">If we do not receive the requested clarification from=
+ you, we will close this request in 60 days.</span></p><p style=3D"margin-t=
+op: 0px; margin-bottom: 0px;"><span style=3D"font-family: Arial; font-size:=
+ 12px;"><br /></span></p><p style=3D"margin-top: 0px; margin-bottom: 0px;">=
+<span style=3D"font-family: Arial; font-size: 12px;">Sincerely,</span></p><=
+div style=3D"margin-top: 0px; margin-bottom: 0px;"><span style=3D"font-fami=
+ly: Arial; font-size: 12px;">&nbsp;</span></div><div style=3D"margin-top: 0=
+px; margin-bottom: 0px;"><span style=3D"font-family: Arial; font-size: 12px=
+;">Laura Sterling</span></div><div style=3D"margin-top: 0px; margin-bottom:=
+ 0px;"><span style=3D"font-family: Arial; font-size: 12px;">Public Records =
+Analyst</span></div></span></div>
+<hr />
+<span style=3D"font-size: 18px;"></span>
+<span style=3D"font-family: 'MS Sans Serif';">
+</span>
+<div style=3D"text-align: left;"><span style=3D"font-size: 12px; font-famil=
+y: 'MS Sans Serif';">To monitor the progress or update this request please =
+log into the&nbsp;</span><a href=3D"https://u8387778.ct.sendgrid.net/ls/cli=
+ck?upn=3Du001.VEsWrlMiJDg0mXafq1mEXas-2FPDZBKUbGOQxTxtXG1l5YOAoXOekNOTuiTMZ=
+SKWeqk35X3MoMOUz458aRTm1xyvTqA5iZg15ewEda0P96SbU-3Dci-2_0GMYb285Q7ANw-2BFhp=
+RsBxTcZL2NSl1YhjkXKIqm3pNTofkr54CkBp9VfY6Mhlxv-2B2wtqlhMEYBy7X9FetC20mYu6hY=
+-2F176y20vjPHMWE8h3piW61SD-2BZmhFTP61vjtT-2BsdoEbgI-2B9Htn-2B2QaZFfMoxHIMUn=
+Hs9g9hWiQVl7X1pxEAM5NahXzI9M6sy2SRE6YHAXTCa6LAMYvVVZx2ZdTVe64wW0XcGGncs2dK9=
+jBrCFi5h93NfuMWiJaz6yf2nJmOEJvggHb8S4x-2FMLoel4gCvUUZdByrAjqux5AxScr7XllIdm=
+7Roy7kd5BBKD14tm-2FGKFHg0671S91txTSMb7Cn0TZvlJzoHCXqL9-2F3QS8njw-3D" target=
+=3D"_blank" title=3D"Public Records Center" style=3D"font-size: 12px; font-=
+family: 'MS Sans Serif';">Public Records Center</a></div>
+<div><center><br />
+</center></div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.Dj74J=
+7JFRtrSZDjZbS0Fz8qZ0NQbVgFwZqwI56K6aifrMXVy4N1JRtFd5t8uUMV8MLNOz5IU0sGzPx0X=
+ELnqYSrjdJdi1mPqif56zVHV-2F0Oy8DesrPjp29XB84itXj2kF2psHnZfhndIKkf4XLHq7HMnv=
+1JQTCD2Wt0ELeAUY0VeeQaPb-2FA9Nrov9NzoODTdpqVXR3BZ1r8EBGz-2Fq7aX7BgziaqsJcrQ=
+rHv7aPjUeuSNTvqXYKGOntrZgUGpZxmWVtJd-2FkCtxiDwBIIa2PJCU6vdmNYL6dFFjYYxrrnF-=
+2FsCKpYJMbgdp5MD6ReC0AbyR8Z73rR7KC-2Fs9zvaxRNu9HM46CgZOG6Ik91qJKvxlJa6MK-2F=
+fCJAUYTulSaT7q39ll" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D=
+"height:1px !important;width:1px !important;border-width:0 !important;margi=
+n-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;mar=
+gin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;=
+padding-right:0 !important;padding-left:0 !important;"/></body></html>

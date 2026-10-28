@@ -99,8 +99,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-aviation": {
         ref: "1510431709",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZCJTZ0KTEW1TRFHB7CG6W8" } },
+        acknowledged: { d: "2026-10-28", date: "October 28, 2026", doc: { thread: "public-question-1", ulid: "01M61KMHR86AQP30KKG355D83J" } },
         correspondence: ["01M5ZCJBB0S5NKNHF1RH2KA7SN", "01M5ZCJCA8W0GMWFZMC6THFMTH"],
-        status: "sent",
+        status: "acknowledged",
     },
     "department-of-consumer-and-business-services": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZCYC3GN6KAN6BDMZBCPJC9" } },
@@ -109,8 +110,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-corrections": {
         ref: "R004132-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZD8V288D2C9K615MN5EQJH" } },
-        correspondence: ["01M5ZD85JRX3SPFAPG3JYSXRNT"],
-        status: "sent",
+        acknowledged: { d: "2026-10-28", date: "October 28, 2026", doc: { thread: "public-question-1", ulid: "01M61SV948SX4VPC0S7G4B03YV" } },
+        correspondence: ["01M5ZD85JRX3SPFAPG3JYSXRNT", "01M61V78BGWMC2KAZ3HWQGSTCX"],
+        status: "acknowledged",
     },
     "department-of-emergency-management": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDH6MRZ6NSF4GYN60W6AY5" } },
@@ -157,8 +159,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "employment-department": {
         ref: "1885",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZH6PMA80FMGTE07X9TKZ75" } },
+        acknowledged: { d: "2026-10-28", date: "October 28, 2026", doc: { thread: "public-question-1", ulid: "01M61PM3C08Q8FHT303JF1FDMG" } },
         correspondence: ["01M5ZH6Z6GQP0RGHC5NVW3DFZ6"],
-        status: "sent",
+        status: "acknowledged",
     },
     "employment-relations-board": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHA3S84THGC29V7FEMH9F1" } },
@@ -168,7 +171,8 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "governor-of-oregon": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZHW2ZGEQDZBFYKJ42Y78SM" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-28", date: "October 28, 2026", doc: { thread: "public-question-1", ulid: "01M61VZ7Y06A78CXN7WJKT34ZR" } },
+        status: "acknowledged",
     },
     "oregon-parks-and-recreation": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJH9P8E3D6007K2BMQCBDG" } },

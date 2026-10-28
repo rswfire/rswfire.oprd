@@ -4,6 +4,7 @@ import {
     AlertTriangle,
     CalendarDays,
     BookOpenText,
+    BookOpenCheck,
     Bot,
     ChartNoAxesGantt,
     ChevronDown,
@@ -56,6 +57,7 @@ import {
 const iconMap = {
     AlertTriangle,
     BookOpenText,
+    BookOpenCheck,
     Bot,
     ChartNoAxesGantt,
     ChevronDown,
