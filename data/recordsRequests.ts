@@ -120,6 +120,7 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-23", date: "October 23, 2026", event: "Public records request to the Public Records Advocate: how many requests for assistance his office took to facilitated dispute resolution, handled informally, or declined since 2023, and the policies on the choice" },
             { d: "2026-10-27", date: "October 27, 2026", event: "The Advocate answers: eleven reports to the Public Records Advisory Council and two spreadsheets naming every requester; no records of declining facilitated dispute resolution; no policy on the choice beyond ORS 192 and his administrative rule" },
             { d: "2026-10-27", date: "October 27, 2026", event: "Thanks to the Advocate for “such a timely and substantive response,” the Governor copied" },
+            { d: "2026-10-27", date: "October 27, 2026", event: "Both requests for facilitated dispute resolution withdrawn: “What I brought you does not fit the room you have.” The Advocate’s function marked Honorable" },
         ],
     },
     {

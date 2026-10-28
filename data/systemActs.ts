@@ -5721,6 +5721,22 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "governor"
             },
             "title": "Thanks to the Public Records Advocate"
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer withdraws both requests for facilitated dispute resolution, Governor Kotek copied: “What I brought you does not fit the room you have. Four institutions. Nineteen months. A referral to the police, a visit to my home, a file at a fusion center, and nineteen thousand dollars in fee estimates. Your office is two people and a statute written for a requester and a public body who disagree about a document.” “You answered my public records request in four days, with nothing withheld and no fee. In nineteen months, no other office of the State of Oregon has done that. I have marked your office’s function on Key Individuals as Honorable.”",
+            "src": {
+                "u": "01M60K3K6RQXZXJ1EBMM222M8F",
+                "t": "governor"
+            },
+            "att": {
+                "label": "Withdrawal of the requests for facilitated dispute resolution",
+                "href": "/records/governor/attachments/01m60k3k6rqxzxj1ebmm222m8f-2026-10-27-withdrawal-to-the-advocate.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            },
+            "title": "Withdrawal of the requests for facilitated dispute resolution"
         }
     ],
     "public-records-counsel": [

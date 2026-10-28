@@ -7289,6 +7289,25 @@ export const OSP_THREAD: RecordsThreadData = {
             docs: [{ label: "Thanks to the Public Records Advocate", href: "/records/governor/2026-10-27-thanks-to-the-advocate.pdf" }],
             eml: "/records/governor/eml/2026-10-27_1750_thanks-to-the-advocate.eml",
         },
+        {
+            id: "withdrawal-to-the-advocate",
+            ulid: "01M60K3K6RQXZXJ1EBMM222M8F",
+            chain: "pra-extension-2026",
+            flagged: true,
+            date: "October 27, 2026",
+            d: "2026-10-27",
+            time: "11:28 PM",
+            from: "Robert Samuel White",
+            to: "Todd Albert, Public Records Advocate; Office of the Public Records Advocate; Governor Kotek",
+            kind: "notice",
+            title: "Withdrawal of the requests for facilitated dispute resolution",
+            summary: "Both requests for facilitated dispute resolution, October 8 and October 14, withdrawn. “What I brought you does not fit the room you have. Four institutions. Nineteen months. A referral to the police, a visit to my home, a file at a fusion center, and nineteen thousand dollars in fee estimates. Your office is two people and a statute written for a requester and a public body who disagree about a document.” “In nineteen months, no other office of the State of Oregon has done that. I have marked your office’s function on Key Individuals as Honorable.”",
+            docs: [
+                { label: "Withdrawal", href: "/records/governor/attachments/01m60k3k6rqxzxj1ebmm222m8f-2026-10-27-withdrawal-to-the-advocate.pdf" },
+                { label: "Transmittal", href: "/records/governor/2026-10-27-withdrawal-to-the-advocate.pdf" },
+            ],
+            eml: "/records/governor/eml/2026-10-27_2328_withdrawal-to-the-advocate.eml",
+        },
     ],
 };
 

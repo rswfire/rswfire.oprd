@@ -339,7 +339,7 @@ const RECORDS: Branch = {
             title: "Public Records Advocate",
             inst: "Public Records Advocate",
             fn: "Mediates public records disputes between the public and the agencies.",
-            real: "To be determined.",
+            real: "Honorable.",
             docs: [
                 { who: "Public Records Advocate", when: "October 13, 2026", d: "2026-10-13", text: "“does not have the authority to compel the governor’s office to take action.”", src: { u: "01M4VG3NVGMSVPH7TCES6W2SW8", t: "governor" } },
                 { who: "Public Records Advocate", when: "October 27, 2026", d: "2026-10-27", text: "“No records have been withheld in full or in part as confidential. There are no fees associated with your request.”", src: { u: "01M5ZTYWMR1EM9C7R3S815Z4FG", t: "governor" } },
