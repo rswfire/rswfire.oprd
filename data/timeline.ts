@@ -933,7 +933,7 @@ export const TIMELINE: TimelineSection[] = [
                     { doc: "01M5ZZT1FR0ZXTEK0Z9CBY1QPN", thread: "governor", t: "thank him" },
                     ", the Governor copied: “I want to personally thank you for such a timely and substantive response to my public records request.” The spreadsheets and the appendix name every person who asked his office for help. I will not publish them. It is the first production in this archive I have withheld in any part. That night I ",
                     { doc: "01M60K3K6RQXZXJ1EBMM222M8F", thread: "governor", t: "withdraw both requests for facilitated dispute resolution" },
-                    ": “What I brought you does not fit the room you have. Four institutions. Nineteen months. A referral to the police, a visit to my home, a file at a fusion center, and nineteen thousand dollars in fee estimates.” I mark his office’s function on Key Individuals as ",
+                    ": “You answered my public records request in four days, with nothing withheld and no fee. In nineteen months, no other office of the State of Oregon has done that.” I mark his office’s function on Key Individuals as ",
                     { t: "Honorable", href: "/key-individuals#public-records-advocate" },
                     ".",
                 ],
