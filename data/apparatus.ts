@@ -33,15 +33,15 @@ export const APPARATUS = {
  * deputy and the two FBI personnel have no seat.
  */
 export const APPARATUS_SEATS: [phrase: string, seat: string][] = [
-    ["An Oregon State Parks manager", "emergency-manager"],
-    ["a deputy director", "deputy"],
-    ["An Oregon State Police press captain", "press-captain"],
-    ["A lieutenant of Criminal Investigations", "lieutenant"],
-    ["A Major Crimes detective", "case-detective"],
-    ["a sergeant", "sergeant"],
-    ["a second detective who is a task force officer on the Portland FBI Joint Terrorism Task Force", "task-force-detective"],
-    ["A criminal intelligence analyst at the state’s Department of Justice fusion center", "fusion-center-analyst"],
-    ["A federal special agent", "forest-service-agent"],
+    ["manager", "emergency-manager"],
+    ["deputy director", "deputy"],
+    ["press captain", "press-captain"],
+    ["lieutenant", "lieutenant"],
+    ["Major Crimes detective", "case-detective"],
+    ["sergeant", "sergeant"],
+    ["second detective", "task-force-detective"],
+    ["criminal intelligence analyst", "fusion-center-analyst"],
+    ["special agent", "forest-service-agent"],
     ["Governor Kotek", "governor"],
     ["Director Sumption", "director"],
 ];

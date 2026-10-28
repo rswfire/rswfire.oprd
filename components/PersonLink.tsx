@@ -40,7 +40,7 @@ export default function PersonLink({ name, label, seat }: PersonLinkProps) {
     if (!to) return <span>{label ?? name}</span>;
     const I = ICON[FACES[to] ?? "person"];
     return (
-        <DrawerLink to={to} className={`${SEAT_LINK} inline-flex items-baseline gap-1 whitespace-nowrap`}>
+        <DrawerLink to={to} className={`${SEAT_LINK} inline-flex items-baseline gap-1`}>
             <I aria-hidden size={13} strokeWidth={2.25} className="relative top-[1.5px] shrink-0 text-emerald-700" />
             <span>{label ?? name}</span>
         </DrawerLink>
