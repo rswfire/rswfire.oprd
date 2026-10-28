@@ -14,8 +14,6 @@ import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
 import { APPARATUS, APPARATUS_SEATS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
-import { DrawerLink } from "@/components/system/DrawerHost";
-import { SEAT_LINK } from "@/lib/seatLink";
 import PersonLink from "@/components/PersonLink";
 
 const CHAPTERS = [
@@ -42,11 +40,7 @@ function withSeats(text: string): ReactNode[] {
     for (const h of hits) {
         if (h.at < i) continue;
         out.push(text.slice(i, h.at));
-        out.push(
-            <DrawerLink key={h.seat} to={h.seat} className={SEAT_LINK}>
-                {h.phrase}
-            </DrawerLink>,
-        );
+        out.push(<PersonLink key={h.seat} name={h.phrase} seat={h.seat} />);
         i = h.at + h.phrase.length;
     }
     out.push(text.slice(i));
@@ -122,7 +116,7 @@ export default function TestimonyCard() {
                         </span>
                         <span className="min-w-0 flex-1">
                             <span className="block text-[14px] font-semibold text-gray-900">Public Questions.</span>
-                            <span className="block text-[12px] text-gray-600">One question for every agency.</span>
+                            <span className="block text-[12px] text-gray-600">One question at a time, put to the state.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-sky-700 transition-transform group-hover:translate-x-0.5" />
                     </Link>

@@ -47,6 +47,21 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 2 */}
+                <div id="tone" className="scroll-mt-48">
+                    <h2 className="text-xl font-semibold mb-3">
+                        Why is your tone so direct?
+                    </h2>
+                    <div className="space-y-4">
+                        <div>Because I am direct. There is nothing wrong with that.</div>
+                        <div>Direct communication is not misconduct. It does not justify coercion, surveillance, dismissal, expulsion, retaliation, or any other treatment documented in this archive.</div>
+                        <div>My tone does not alter the recordings, the correspondence, the dates, or the agency&rsquo;s own documents. The evidence either supports what I say or it does not.</div>
+                        <div>Using my directness to explain or excuse what happened would invert responsibility: it would make my manner of describing institutional conduct more important than the conduct itself.</div>
+                    </div>
+                </div>
+
+                <hr className="border-t border-gray-300" />
+
+                {/* Question 14 */}
                 <div id="target" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         Why would they target you?
@@ -219,21 +234,6 @@ export default function FAQPage() {
                 <hr className="border-t border-gray-300" />
 
                 {/* Question 11 */}
-                <div id="tone" className="scroll-mt-48">
-                    <h2 className="text-xl font-semibold mb-3">
-                        Why is your tone so direct?
-                    </h2>
-                    <div className="space-y-4">
-                        <div>Because I am direct. There is nothing wrong with that.</div>
-                        <div>Direct communication is not misconduct. It does not justify coercion, surveillance, dismissal, expulsion, retaliation, or any other treatment documented in this archive.</div>
-                        <div>My tone does not alter the recordings, the correspondence, the dates, or the agency&rsquo;s own documents. The evidence either supports what I say or it does not.</div>
-                        <div>Using my directness to explain or excuse what happened would invert responsibility: it would make my manner of describing institutional conduct more important than the conduct itself.</div>
-                    </div>
-                </div>
-
-                <hr className="border-t border-gray-300" />
-
-                {/* Question 14 */}
                 <div id="next" className="scroll-mt-48">
                     <h2 className="text-xl font-semibold mb-3">
                         What happens next?
