@@ -1,0 +1,202 @@
+Return-Path: <bounces+us.1.1155212.389907-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id 0HrWKaUQ4WqdwwwAjtW+MQ
+	(envelope-from <bounces+us.1.1155212.389907-OPRD.publicrecords=oprd.oregon.gov@fwdkim1.oprd.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:59:17 +0000
+Received: from mail-usn148.freshemail.io (mail-usn148.freshemail.io [44.192.35.147])
+	by mail.rswfire.com (Postfix) with ESMTPS id F36D02511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:59:11 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1793134752;
+	s=to66a; d=oprd.oregon.gov;
+	h=MIME-Version:Date:From:Reply-To:To:Message-ID:In-Reply-To:References:Subject:Content-Type:Content-Transfer-Encoding;
+	bh=Isxb06pVSyUmHfiTjoFRw6HB1RuJd54tvCk4tQMeJW0=;
+	b=aZl0p06esM2Km1qNVLL1c8lmCoSeRuqG4lZ3NT8+J0ty5zJtxXxLKHE0wp0RfBza
+	IFi3u+9QUOaW3LiCk3rOaJ/HaCjCRMVcpjT3yBGnllohbofh+avHJH2my65Xu/LrLhU
+	hFcTXcKtmRFT8noDaaq2eRFkiz3A/YYNUqYN0+KzN8D6wFCFGvydiYhy4XAcxtEKGaj
+	WM8NgD2X5mVYfQDF0wh6xux5VSBXiRnzdaxhYhYIyDt7Z36IyKAdmTUGWCRt5D6XkBx
+	vxRZMwicK9GXOzU5jTHp3ZTKA2igi5hwjECveMCbm2i70vYkmHoGkc7M30GuGPOGRWp
+	Y2/sp5UlnA==
+MIME-Version: 1.0
+X-Received: from ip-172-16-181-179.ec2.internal (EHLO freshdesk.com) ([172.16.181.179])
+          by smtpout.freshdesk.com (Freshworks SMTP Server) with ESMTPA ID e3d0a34f.7
+          for <rsw@rswfire.com>;
+          Tue, 27 Oct 2026 20:59:09 +0000 (UTC)
+Date: Tue, 27 Oct 2026 20:59:09 +0000
+From: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+Reply-To: Public Information Requests <OPRD.publicrecords@oprd.oregon.gov>
+To: rsw@rswfire.com
+Message-ID: <6ae1109d53f25_25e21c703112f3.sidekiq-realtime-fd-poduseast1-main3-green-7fc7498785-m5n92@automation.freshdesk.com>
+In-Reply-To: <ce779d3c.AVMAAKhU3vwAAAAAAAAABEDDkwgAAYKKucoAAAAAADb2LABq4RCS@mailjet.com>
+References: <ce779d3c.AVMAAKhU3vwAAAAAAAAABEDDkwgAAYKKucoAAAAAADb2LABq4RCS@mailjet.com>,
+ <6ae1109d53f25_25e21c703112f3.sidekiq-realtime-fd-poduseast1-main3-green-7fc7498785-m5n92@automation.freshdesk.com>
+Subject: Re: Public Records Request
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6ae1109d742d9_25e21c7031132";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+sent-on: 2026-10-27 13:59:09 -0700
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: DR, RN, OOF, AutoReply
+X-FUP-PRIORITY: 5
+X-SDS-INFO: 0cuUhLnIUKFbWO0tvHaEt47H3wTYWEbko8kWjc3gjoubzye4r1ihGm5xlhj6_KWYqp50TRtsEDzadpu7Xe4s-HUwd4r3SRue_LrtL4OLLrw067d9ZHGsS7IaMhb8XTgarWVFGZJA2T8fYWHtj2An0kKsUmYDD_9-2eMA0lSAQcDQTpDcQulXHDktDPtC05PFDf_7GqISW0zvQi1q5ltP3w
+X-MESSAGEID: LZM9anrQQzpntlLdFy8yE2q0bjdIG+c4fDz7AaGcYaiVUuyh1kx9SRraj575+d738/QCh5S9DdoDWoDiSq2c0GuKVWNgkCIpjHMW0Tp2LL1UVWEGmjKPPs4wXo7vEdK4cyucQSmVx4DHkrDqZlYU78DxVilobqEnjSDCJnBXhc8=
+X-Spamd-Result: default: False [-0.35 / 15.00];
+	 HAS_REPLYTO(0.00)[OPRD.publicrecords@oprd.oregon.gov];
+	 ARC_NA(0.00)[];
+	 REPLYTO_EQ_FROM(0.00)[];
+	 FROM_HAS_DN(0.00)[];
+	 ZERO_FONT(0.10)[1];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 TO_DN_NONE(0.00)[];
+	 DNSWL_BLOCKED(0.00)[44.192.35.147:from];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 URIBL_BLOCKED(0.00)[oprdvolunteerabuse.org:url,rswfire.com:url,rswfire.com:email,autonomyrealms.com:url];
+	 MANY_INVISIBLE_PARTS(0.05)[1];
+	 R_SPF_ALLOW(-0.20)[+ip4:44.192.35.0/24];
+	 DKIM_TRACE(0.00)[oprd.oregon.gov:?];
+	 DMARC_POLICY_ALLOW(-0.50)[oprd.oregon.gov,none];
+	 FORGED_SENDER(0.30)[OPRD.publicrecords@oprd.oregon.gov,bounces@fwdkim1.oprd.oregon.gov];
+	 RCVD_COUNT_ZERO(0.00)[0];
+	 R_DKIM_TEMPFAIL(0.00)[oprd.oregon.gov:s=to66a];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RWL_MAILSPIKE_VERYGOOD(0.00)[44.192.35.147:from];
+	 ASN(0.00)[asn:14618, ipnet:44.192.0.0/11, country:US];
+	 TAGGED_FROM(0.00)[us.1.1155212.389907-OPRD.publicrecords=oprd.oregon.gov];
+	 FROM_NEQ_ENVFROM(0.00)[OPRD.publicrecords@oprd.oregon.gov,bounces@fwdkim1.oprd.oregon.gov]
+X-Spam-Status: No, score=-0.35
+
+
+----==_mimepart_6ae1109d742d9_25e21c7031132
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+  Thank you for submitting your public records request to the Oregon Park=
+s and Recreation Department (OPRD).  =C2=A0  Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.       OPRD is currently relocating their central office alon=
+g with physical records. There may be a delay in accessing certain record=
+s. We will respond with additional information if it is applicable to you=
+r request. =C2=A0=C2=A0 =C2=A0  Thank you,  Oregon Parks and Recreation D=
+epartment =C2=A0    =0D
+                           =0D
+                            On=0D
+                            Tue, 27 Oct at  1:59 PM=0D
+                            ,  Robert Samuel White <rsw@rswfire.com>  wro=
+te:=0D
+                           =0D
+                           =0D
+                             To Whom It Concerns: =0D
+     Please see my attached public records request. =0D
+     Background on this matter is available here: =0D
+      https://oprdvolunteerabuse.org/public-questions/=0D
+ =0D
+     Thank you for your service. =0D
+     =0D
+Robert Samuel White =0D
+      rswfire.com =0D
+      oprdvolunteerabuse.org =0D
+      autonomyrealms.com=0D
+ =0D
+     =0D
+ =0D
+     =0D
+     =0D
+ =0D
+     =0D
+     =0D
+     =0D
+ =0D
+     =0D
+  =0D
+=0D
+=0D
+                           =0D
+                         =0D
+=0D
+=0D
+
+----==_mimepart_6ae1109d742d9_25e21c7031132
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div style=3D"font-family:verdana, arial, sans-serif; font-size:15px;">
+	<div><span dir=3D"ltr"><div>Thank you for submitting your public records=
+ request to the Oregon Parks and Recreation Department (<span class=3D"ca=
+ps">OPRD</span>).</div><div>&nbsp;</div><div>Expect to hear back from us =
+in about 10 business days with any records that match your request or, fo=
+r larger requests, with an estimate for staff time and costs to gather th=
+e documents.</div><div><br></div><p><span><span style=3D"font-family: -ap=
+ple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, system-ui, &quot;Ap=
+ple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Web&quo=
+t;, sans-serif; font-size: 14px; white-space: pre-wrap;"><div><span class=
+=3D"caps">OPRD</span> is currently relocating their central office along =
+with physical records. There may be a delay in accessing certain records.=
+ We will respond with additional information if it is applicable to your =
+request.</div>&nbsp;</span></span>&nbsp;<div>&nbsp;</div><div>Thank you,<=
+/div><div>Oregon Parks and Recreation Department &nbsp;</div></span></div=
+></p><div class=3D"freshdesk_quote">
+                          <div class=3D"freshdesk_attr">
+                            On
+                            Tue, 27 Oct at  1:59 PM
+                            <span class=3D"separator" />,  Robert Samuel =
+White &lt;rsw@rswfire.com&gt;  wrote:
+                          </div>
+                          <blockquote class=3D"freshdesk_quote" style=3D"=
+margin:0 0 0 .8ex;border-left:1px solid #ccc;padding-left:1ex">
+                            <div>To Whom It Concerns:</div>
+    <div>Please see my attached public records request.</div>
+    <div>Background on this matter is available here:<br>
+      <a href=3D"https://oprdvolunteerabuse.org/public-questions/" class=3D=
+"moz-txt-link-freetext" rel=3D"noreferrer">https://oprdvolunteerabuse.org=
+/public-questions/</a>
+</div>
+    <div>Thank you for your service.</div>
+    <div>
+<span style=3D"color:black"><b>Robert Samuel White</b><br>
+      </span><span style=3D"color:#C82613"><a href=3D"https://rswfire.com=
+/" title=3D"https://rswfire.com" rel=3D"noreferrer"><span style=3D"color:=
+#C82613">rswfire.com</span></a></span><span style=3D"color:black"><br>
+      </span><span style=3D"color:#0C882A"><a href=3D"https://oprdvolunte=
+erabuse.org/" title=3D"https://oprdvolunteerabuse.org" rel=3D"noreferrer"=
+><span style=3D"color:#0C882A">oprdvolunteerabuse.org</span></a></span><s=
+pan style=3D"color:black"><br>
+      </span><span style=3D"color:#0C64C0"><a href=3D"https://autonomyrea=
+lms.com/" title=3D"https://autonomyrealms.com" rel=3D"noreferrer"><span s=
+tyle=3D"color:#0C64C0">autonomyrealms.com</span></a></span>
+</div>
+    <div>
+<br>
+    </div>
+    <div>
+<br>
+    </div>
+    <br>
+    <div>
+<br>
+    </div>
+  =
+
+
+
+                          </blockquote>
+                        </div>
+<br/>
+
+
+
+
+
+
+<span title=3D"fd_tkt_identifier" style=3D'font-size:0px; font-family:"fd=
+tktid"; min-height:0px; height:0px; opacity:0; max-height:0px; line-heigh=
+t:0px; color:#ffffff'>389907:1155212</span>
+
+</div>=
+
+----==_mimepart_6ae1109d742d9_25e21c7031132--

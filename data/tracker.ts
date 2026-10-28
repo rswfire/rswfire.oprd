@@ -87,6 +87,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "criminal-justice-commission": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZBJXFGPH0GY3KBAMQ4NE2G" } },
+        correspondence: ["01M5ZPM4707PVFX83P8ZVRQATM"],
         status: "sent",
     },
     "department-of-administrative-services": {
@@ -114,7 +115,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     "department-of-emergency-management": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZDH6MRZ6NSF4GYN60W6AY5" } },
         acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE7DJRF0AE9G1VQ1WK6Y8P" } },
-        correspondence: ["01M5ZEC3Z81DRZWN6A9S4H18NF"],
+        correspondence: ["01M5ZEC3Z81DRZWN6A9S4H18NF", "01M5ZPMTNRMPG3CRR9XYTPXM0H"],
         status: "acknowledged",
     },
     "department-of-environmental-quality": {
@@ -126,6 +127,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "department-of-geology-and-mineral-industries": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZE073R2C9Q0SVK7P7M9XC5" } },
+        correspondence: ["01M5ZE9ZKRZ476QK6J77ZV1X4R", "01M5ZFFTHR5716GEWAHRGMV96D"],
         status: "sent",
     },
     "department-of-land-conservation-and-development": {
@@ -141,7 +143,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "department-of-revenue": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZGRFAREEGKTM3EWBCC3GMV" } },
-        correspondence: ["01M5ZH2GM0964BWX9TJ4483AHS"],
+        correspondence: ["01M5ZH2GM0964BWX9TJ4483AHS", "01M5ZWAYSRAX4D7KJQFRW60X47"],
         status: "sent",
     },
     "department-of-state-lands": {
@@ -170,7 +172,9 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "oregon-parks-and-recreation": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJH9P8E3D6007K2BMQCBDG" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZJHSA8HJ4GR318G35B48D6" } },
+        correspondence: ["01M5ZJHSA8HJ4GR318G35B48D6"],
+        status: "acknowledged",
     },
     "oregon-department-of-fish-and-wildlife": {
         ref: "R000173-102726",
@@ -179,13 +183,15 @@ const ENTRIES: Record<string, TrackerEntry> = {
         status: "sent",
     },
     "oregon-department-of-forestry": {
+        ref: "PRR2941",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZK2T7R4YF26F3AQ18GEWRS" } },
-        status: "sent",
+        acknowledged: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZW1MYG169Q18TVMEDV2381" } },
+        status: "acknowledged",
     },
     "oregon-department-of-transportation": {
         ref: "R029530-102726",
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZKVYXRBXWV4CFNWCV53311" } },
-        correspondence: ["01M5ZKTQVRSFW7R31FFAX5W54P"],
+        correspondence: ["01M5ZKTQVRSFW7R31FFAX5W54P", "01M5ZM218G4RAP20AFJSY1TQFK"],
         status: "sent",
     },
     "oregon-department-of-agriculture": {
@@ -207,6 +213,7 @@ const ENTRIES: Record<string, TrackerEntry> = {
     },
     "oregon-department-of-veterans-affairs": {
         sent: { d: "2026-10-27", date: "October 27, 2026", doc: { thread: "public-question-1", ulid: "01M5ZMH3P0W75E2QP3T4YTH9XF" } },
+        correspondence: ["01M5ZQNY80YFTJFFN1RX8CCREZ"],
         status: "sent",
     },
     "department-of-justice": {

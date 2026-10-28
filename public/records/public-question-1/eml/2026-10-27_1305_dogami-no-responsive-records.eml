@@ -1,0 +1,488 @@
+Return-Path: <Brianna.WEAVER@dogami.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id SvzVAhgE4WpTqgwAjtW+MQ
+	(envelope-from <Brianna.WEAVER@dogami.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:05:44 +0000
+Received: from CO1PR09CU001.outbound.protection.outlook.com (mail-westus2azon11011015.outbound.protection.outlook.com [52.101.47.15])
+	by mail.rswfire.com (Postfix) with ESMTPS id A0E292511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 20:05:42 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=TJYxNXttAZ60x0847c9uhr53iGYCrSXyWGMHXDsKQEb1nJdE3LDDDASeVI80A61JhrgzdqrNKFclIRWhdJ5B0uTRk1zrTX8FkWczaT113jt8ElV5kH3iz9rGtlfG0ot7XVHHL25ImUVQQgAdN8aIC69ZOTtwfarW7RJTZ5fv05Ic35l/OhMg+oStVtQESlfb5DEBI94jl1SRkGINxfzucsHCPeajjoI0h6zoUr5l6NKCLCc17CAhpij/Pnt9WCUE2nt8HtmqOio2HhrpJsdxN8838Z3HTVJL6vtn8K52CEL8LjB3WqBZ7UrJkF3SzBBV+BZ2s9xWOfrUCMoU3EHDdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=lewbinfNC+Kw5erkZ3F63aNO+O3KgK7QeX03KjgRUzg=;
+ b=NK0ci3Tze4IYN3cmdeRtW8Van19tjZhw2E00Fw1b1cIZkQGOcWXzXmBCP1ZYGCQYQCGaLmomYQ3oyN63we/NoPGILHGAmT/+ySvNkHY3HGynL6wrXpUs5VTjfLdfuw9525x76XWU8n0MbPMTWABxZEvyZVia7KlW8bdlAzRlKNkyv0VJD7LYOAKBhzRfnoyhkFIU0pZwq3sZCKNkgtqj2cPNJqEPE1Q4Kxlmit52V58NecbgxPbweAvYtFKebR1SDVA+F4sMSMAjaccXSX/796pKBvu254SUib4uoMg/bvb1XNPxsuXLMKUO1uzGkKEr+OU8qzfWsACNKeKpoZt2ew==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=dogami.oregon.gov; dmarc=pass action=none
+ header.from=dogami.oregon.gov; dkim=pass header.d=dogami.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dogami.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=lewbinfNC+Kw5erkZ3F63aNO+O3KgK7QeX03KjgRUzg=;
+ b=OMOmemLF+iPQARRheo6rkMcTOl3WbjkRoXAEswJFWUo14TuQq6Q1lKfooN4u9cd9EkfoIy1thydFNUJ2J+Dwx9iF6GBGY+CC+RNZbgSHkbWWgdjscV47VXPVTNH3WnwGEQqIfqkdTMGbuA28tTfUpMWwIgBixadx/Swz2E7pBx3d/7PBG58R7TVn2u7GNWkIYby5pWJN0YdN54KobPkTT8uq+MF6QM/oAFekphF3lwa5OHeR3dYt9UmiwHsWWGYbnjLcwBMRE7jzM/3lr25ooEoAjczvPqXAc9iegtVw4689m+6zuL2Z7nqJB4IPSxvfF9iyGxrBrEKXjogz1IYv7Q==
+Received: from SJ0PR09MB7152.namprd09.prod.outlook.com (2603:10b6:a03:26b::8)
+ by SJ0PR09MB9238.namprd09.prod.outlook.com (2603:10b6:a03:447::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 20:05:40 +0000
+Received: from SJ0PR09MB7152.namprd09.prod.outlook.com
+ ([fe80::b1ec:5ff5:4c6f:425e]) by SJ0PR09MB7152.namprd09.prod.outlook.com
+ ([fe80::b1ec:5ff5:4c6f:425e%3]) with mapi id 15.21.0546.021; Tue, 27 Oct 2026
+ 20:05:39 +0000
+From: WEAVER Brianna * DGMI <Brianna.WEAVER@dogami.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Re: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZksCQLbQvWSwdUyk2o3vyzn+CLcRz61b
+Date: Tue, 27 Oct 2026 20:05:39 +0000
+Message-ID:
+ <SJ0PR09MB7152104792E0950995466195D6602@SJ0PR09MB7152.namprd09.prod.outlook.com>
+References:
+ <2fc1f0b5.AUwAAKiYc-8AAAAAAAAABEP6DrsAAYKKucoAAAAAADb2LABq4P4A@mailjet.com>
+In-Reply-To:
+ <2fc1f0b5.AUwAAKiYc-8AAAAAAAAABEP6DrsAAYKKucoAAAAAADb2LABq4P4A@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=dogami.oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ0PR09MB7152:EE_|SJ0PR09MB9238:EE_
+x-ms-office365-filtering-correlation-id: e4438772-d3a3-4f87-6bec-08df3465ac06
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|366016|23010399003|1800799024|22082099003|18002099003|261026121527099003|13003099007|8096899003|56012099006|261022113327099003|10067099003|261022105027099003|261009223027099003|261021135927099003|261022075727099003|260925022911599003|260925021911599003|261026140227099003|260925021311599003|38070700021;
+x-microsoft-antispam-message-info:
+ rd7PHudWaL3EGFrfxGW1DDp5c9bsjK6iLYFFJru+hcd4XfMAGreU5BxYueMRgwUtt/D/ey5xQkQSmftQtc/peSMo9JNM/sEa8owJM/u09Tw0+EeAsfq1iq6N+gy1ZT9TZNuS/c+noqMcoPxXc7UNyNEHWt+jZETtafg62iuGSEviI3PLa+VNovP3I5zyet2VTUD0ZSggMDXKOYLjPcsj14WGeI1r27EmdOrP+abODHHKn+snxSVbqgsOXd3BFJjEvjJOV++LaFmwkxjQh8F0IRYO2eMqBc3AbgCOghrOAXJufMkhdwLfw9YbLIY5/3CVlz1oYv6UdJw3S+b2A63xRAT64PBSkD3QrmyTzrHM6Hsh+qw1AztM8sUXLj8uGwJyuYjspSSS9BsE2x/d9ePRwoAU5w9RziTlBusmGMwDfPQe21WGmEoGBsI+hwB2nbPPdE0K0vdAa+ZrlQPwqYXaeowvzKx7uaEY7GQjUOREt9VWkoI+0IISjGwLr9cZVCIdwiyTpMdyMp+TCMfY9xr5nQtYy1ux9AmyTJHrEkiaq/cuSVmnnq1Yv3xTBZ+4Eh5uL+Z0RC2aQw8a1A2/xjdI68c0YzJGUUPUr8NsipsYKo4IYxY0tlxoJ8xw2BDOZizkmIfoHOQUTMyV/9UpMzXZYGnq3eQgRYKZSWVKBLYNX84=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR09MB7152.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(23010399003)(1800799024)(22082099003)(18002099003)(261026121527099003)(13003099007)(8096899003)(56012099006)(261022113327099003)(10067099003)(261022105027099003)(261009223027099003)(261021135927099003)(261022075727099003)(260925022911599003)(260925021911599003)(261026140227099003)(260925021311599003)(38070700021);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?JSVtCEPA/YZhjn9pba4uG5EmKaOct3QTd7wyrL1QC9+AOIte+oHmw4+R?=
+ =?Windows-1252?Q?vbrfvzgYvCEmk01XeittwK78XGIGtz0eogFh1r8q+yA4eb8KUXZXWBej?=
+ =?Windows-1252?Q?JU9kcwawTq4E7Nh3QhOrVKYM86dBGnfR8vSmmTF6kXVEeX6e4+kF/+5f?=
+ =?Windows-1252?Q?NfzMWF78Olv4yAuF9gE4VaHM0Lq0++EzHIsY0UT9BU4eZLg/Ba94p+as?=
+ =?Windows-1252?Q?e5GKIkcbaVKqX93V5EzOloP6cuMkzOfSlyylZWRdTa9qvVX5+EMPjRCN?=
+ =?Windows-1252?Q?5FPApJZOzr6uHCxKTv6IiglqKnlKAdm4APCVEpwKrCPHfWbQLiRIP7Mv?=
+ =?Windows-1252?Q?CMQbh3bbUCBgbpKvKoMpP4S/bUg4I4/3HpzUDKCrjoHI/nMa8ueVMfLD?=
+ =?Windows-1252?Q?LcmdpVuhWRGuXktJguw6k0xKuoEecZ7A4fQ3skEDtGeceAaZ42GPpg9g?=
+ =?Windows-1252?Q?UUxqKcHu4jxl3ShsV5Jlb8zUQmI6MwqQtpMqs8WSEsMmIzXj8CUtR4UM?=
+ =?Windows-1252?Q?IZ3/QFEkyyoMPcA4ljVt//hsdCJ7/BUSU2+RYNM9aRqCFUBuNDZbSx4F?=
+ =?Windows-1252?Q?R4Cno6qTkxIJH/STcfekLmpS/zOO+i3DAwLdxWrLRUb9aAT9VTw5E154?=
+ =?Windows-1252?Q?hOkZOjUEmwe/9WuvU9kspkaArR105sd3JsWMgNeGOuktERze5/X92b9d?=
+ =?Windows-1252?Q?Mmvl3cuw6HfznkLWU91mKrbbIFIWKgxhTsVKtJ98dov3M0tZqoypiHC/?=
+ =?Windows-1252?Q?rd7ZntINzQrGytVZcIS8m26hcOcZVB535QyVZUg+SdUtqhXPUSqiZa9a?=
+ =?Windows-1252?Q?TsrclPcNhXATGOAIjzNuK2jn+Zmsj1KrPmcERY48JosIjYTUGg6d6y07?=
+ =?Windows-1252?Q?8bFINjxkgg2WLFPToBfXpfhqB6knTIfd9gadu4cRTwO/4JkKpDUi/KA/?=
+ =?Windows-1252?Q?5kSxOEw7KDWqgIrI3VgTDuzf0+XD7UutHjWogDYz7ZZ8OgGimKtWOFnY?=
+ =?Windows-1252?Q?Tum+GpXoqhl6L37t4Uf5HgTLYLNW0er4m5D8M5tW9C1Z6GnvOwGnKU+w?=
+ =?Windows-1252?Q?4ZaIEeaOZZQZ+EzLdS/kChcHfE/Okv2l8Gu5Yyhl2/UO5eJ+QQa2v6Fi?=
+ =?Windows-1252?Q?91hv9IuCpgVM4p0CM7WP3P9k4jGqHHyOiVjst+PNbCFSTd+EIaghLHPA?=
+ =?Windows-1252?Q?x4iUvS/lO04mH/eEjQNVAh/PrPM0jNaAWaElZBFR6hppvOFzu49gCQoe?=
+ =?Windows-1252?Q?VvI+B3nX7nQkKeAgypd29zIXTcNS6ymzTU4YUemdHj7EmlVh5j+VXWx/?=
+ =?Windows-1252?Q?eRqnh8dSGzY1jbj8eVxykjXBlqj9iPpCf9l1NJul+w8hUwIFMtsvLBGk?=
+ =?Windows-1252?Q?NkDde4TDTvVKMg2vKXmnhYnJMOzt3IgoUj+9cTuoybNTJ9LYR4+/wGfF?=
+ =?Windows-1252?Q?Kt9ASoCqO45IqN93CSDGoerQBIFDT/N61eakGpNYzN/Dj/BMV7sQm9px?=
+ =?Windows-1252?Q?oyBT6ovdfGInE/wBL+dEtYiLkca7PjSv5T6NkHFRJLNA+a+cjytVA0rA?=
+ =?Windows-1252?Q?OBujNcI7pEB1k2pyT0heYDTACpuPAW7fs1oqnpUkrR/wNChrl2D1XiIp?=
+ =?Windows-1252?Q?wSRNVrBgrNapqQGCyQZdYgCcwMcprhffeL0kFKU5KomvyFqnDO1CRcaO?=
+ =?Windows-1252?Q?XMBGeuMesaLXwmIJljzbENmRSNCmLfZy/QfhMzQWcqKSCfjtx5NSC0dU?=
+ =?Windows-1252?Q?v2hD6/eaCp5Rf329B5tYK+MEKuAzSsFydPM7Nt3MLU9twxLGuIoEjAa+?=
+ =?Windows-1252?Q?rPztvfZtThF//0XSt9OPkwbXNwpvV+z1dRihxl7G6P4O0ac3MWUhUxfD?=
+ =?Windows-1252?Q?uUUq2sue09gPUVk62EtrgfCRSFp1N1YAAKs=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR09MB7152104792E0950995466195D6602SJ0PR09MB7152namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: dogami.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ0PR09MB7152.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: e4438772-d3a3-4f87-6bec-08df3465ac06
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 20:05:39.2032
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB9238
+X-Spamd-Result: default: False [-0.95 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[dogami.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:52.100.0.0/15];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 URI_COUNT_ODD(1.00)[15];
+	 MANY_INVISIBLE_PARTS(0.05)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[dogami.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[dogami.oregon.gov,none];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.101.47.15:from]
+X-Spam-Status: No, score=-0.95
+
+--_000_SJ0PR09MB7152104792E0950995466195D6602SJ0PR09MB7152namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Robert,
+
+Thank you for submitting your request for records. To my knowledge the Oreg=
+on Department of Geology and Mineral Industries does not have records respo=
+nsive to your request.
+
+Respectfully,
+
+Brianna Weaver | Office Operations Assistant
+
+Oregon Department of Geology and Mineral Industries
+
+229 Broadalbin St SW Albany, OR 97321-2246
+
+Cell: (541) 801-1127 | Fax: (541) 967-2075
+
+Brianna.Weaver@dogami.oregon.gov<mailto:Brianna.Weaver@dogami.oregon.gov>| =
+www.oregon.gov/dogami<http://www.oregon.gov/dogami>
+
+
+Beginning Monday, October 26, 2026, the Department will temporarily pause i=
+ts acceptance of new and amended permit and certificate applications, trans=
+fer of permit applications, and requests for closure. This pause is being i=
+mplemented in support of the transition to the Department=92s new electroni=
+c permitting system, DEPS. The pause is expected to remain in effect until =
+the applicable DEPS modules launch early 2027. Applicants are encouraged to=
+ prepare their materials in advance for submission through DEPS. For more i=
+nformation, visit the MLRR website<https://www.oregon.gov/dogami/mlrr/Pages=
+/default.aspx> or the DEPS webpage<https://www.oregon.gov/dogami/mlrr/Pages=
+/deps.aspx>.
+
+
+________________________________
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, October 27, 2026 12:39 PM
+To: DOGAMI-INFO <dogami-info@dogami.oregon.gov>; DGMI_DL_publicrecordsreque=
+st <DGMI_DL_publicrecordsrequest@dogami.oregon.gov>
+Subject: Public Records Request
+
+Some people who received this message don't often get email from rsw@rswfir=
+e.com. Learn why this is important<https://aka.ms/LearnAboutSenderIdentific=
+ation>
+
+To Whom It Concerns:
+
+Please see my attached public records request.
+
+Background on this matter is available here:
+https://oprdvolunteerabuse.org/public-questions/
+
+Thank you for your service.
+
+Robert Samuel White
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+
+
+
+--_000_SJ0PR09MB7152104792E0950995466195D6602SJ0PR09MB7152namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Robert,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Thank you for submitting your request for records. To my knowledge the Oreg=
+on Department of Geology and Mineral Industries does not have records respo=
+nsive to your request.&nbsp;</div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: rgb(255, 255, 255); margin: 0px; font-fam=
+ily: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sa=
+ns-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Respectfully,&nbsp;</div>
+<div id=3D"x_x_Signature" class=3D"elementToProof" style=3D"background-colo=
+r: rgb(255, 255, 255); margin: 0px;">
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West =
+European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif; font-size: 15px; color: rgb(31, 73, 125);"><b>Bria=
+nna Weaver | Office Operations Assistant</b></span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West =
+European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif; font-size: 10pt; color: rgb(31, 73, 125);"><b>Oreg=
+on Department of Geology and Mineral Industries</b></span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West =
+European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif; font-size: 10pt; color: rgb(31, 73, 125);">229 Bro=
+adalbin St SW Albany, OR 97321-2246</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West =
+European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif; font-size: 10pt; color: rgb(31, 73, 125);">Cell: (=
+541) 801-1127 | Fax: (541) 967-2075</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West =
+European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif; font-size: 10pt; color: rgb(31, 73, 125);"><a href=
+=3D"mailto:Brianna.Weaver@dogami.oregon.gov" id=3D"OWAc6b9180b-ee39-2cbe-f2=
+e5-985302f53bc8" class=3D"x_x_x_x_x_x_OWAAutoLink" title=3D"mailto:Brianna.=
+Weaver@dogami.oregon.gov" style=3D"margin: 0px;">Brianna.Weaver@dogami.oreg=
+on.gov</a>|
+</span><span style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web=
+ (West European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;He=
+lvetica Neue&quot;, sans-serif; font-size: 10pt; color: rgb(36, 36, 36);"><=
+a href=3D"http://www.oregon.gov/dogami" id=3D"OWA4fea0942-de95-2529-1595-d5=
+ed99195b69" class=3D"x_x_x_x_x_x_OWAAutoLink" title=3D"Original URL: http:/=
+/www.oregon.gov/dogami. Click or tap if you trust this link." style=3D"marg=
+in: 0px;">www.oregon.gov/dogami</a></span></p>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+background-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helve=
+tica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; li=
+ne-height: 1.38; background-color: rgb(255, 255, 255); margin: 0in 0in 8pt;=
+">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 11pt; color: rgb(=
+0, 0, 0);">Beginning Monday, October 26, 2026, the Department will
+<u>temporarily pause its acceptance of new and amended permit and certifica=
+te applications, transfer of permit applications, and requests for closure<=
+/u>. This pause is being implemented in support of the transition to the De=
+partment=92s new electronic permitting
+ system, DEPS. The pause is expected to remain in effect until the applicab=
+le DEPS modules launch early 2027. Applicants are encouraged to prepare the=
+ir materials in advance for submission through DEPS. For more information, =
+visit the
+</span><span style=3D"font-family: Aptos, sans-serif; font-size: 11pt; colo=
+r: rgb(70, 120, 134);"><a href=3D"https://www.oregon.gov/dogami/mlrr/Pages/=
+default.aspx" title=3D"https://www.oregon.gov/dogami/mlrr/Pages/default.asp=
+x" style=3D"color: rgb(70, 120, 134); margin-top: 0px; margin-bottom: 0px;"=
+><u>MLRR
+ website</u></a></span><span style=3D"font-family: Aptos, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);"> or the
+</span><span style=3D"font-family: Aptos, sans-serif; font-size: 11pt; colo=
+r: rgb(70, 120, 134);"><a href=3D"https://www.oregon.gov/dogami/mlrr/Pages/=
+deps.aspx" title=3D"https://www.oregon.gov/dogami/mlrr/Pages/deps.aspx" sty=
+le=3D"color: rgb(70, 120, 134); margin-top: 0px; margin-bottom: 0px;"><u>DE=
+PS
+ webpage</u></a></span><span style=3D"font-family: Aptos, sans-serif; font-=
+size: 11pt; color: rgb(0, 0, 0);">.</span></p>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+background-color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helve=
+tica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Robert Samuel White &=
+lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Tuesday, October 27, 2026 12:39 PM<br>
+<b>To:</b> DOGAMI-INFO &lt;dogami-info@dogami.oregon.gov&gt;; DGMI_DL_publi=
+crecordsrequest &lt;DGMI_DL_publicrecordsrequest@dogami.oregon.gov&gt;<br>
+<b>Subject:</b> Public Records Request</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"background:revert!important; border:revert!important; b=
+ottom:revert!important; color:revert!important; direction:revert!important;=
+ display:revert!important; font-size:revert!important; height:revert!import=
+ant; letter-spacing:revert!important; line-height:revert!important; margin:=
+revert!important; opacity:revert!important; order:revert!important; outline=
+:revert!important; overflow:revert!important; padding:revert!important; pos=
+ition:revert!important; tab-size:revert!important; table-layout:revert!impo=
+rtant; text-align:revert!important; text-indent:revert!important; text-orie=
+ntation:revert!important; text-overflow:revert!important; text-transform:re=
+vert!important; top:revert!important; vertical-align:revert!important; visi=
+bility:visible!important; white-space:revert!important; width:revert!import=
+ant; word-break:revert!important; word-spacing:revert!important; writing-mo=
+de:revert!important; zoom:revert!important; border:0!important; display:tab=
+le!important; width:100%!important; table-layout:fixed!important; border-co=
+llapse:seperate!important; float:none!important; border-spacing:0px 0px!imp=
+ortant">
+<tbody style=3D"background:revert!important; border:revert!important; botto=
+m:revert!important; color:revert!important; direction:revert!important; dis=
+play:revert!important; font-size:revert!important; height:revert!important;=
+ letter-spacing:revert!important; line-height:revert!important; margin:reve=
+rt!important; opacity:revert!important; order:revert!important; outline:rev=
+ert!important; overflow:revert!important; padding:revert!important; positio=
+n:revert!important; tab-size:revert!important; table-layout:revert!importan=
+t; text-align:revert!important; text-indent:revert!important; text-orientat=
+ion:revert!important; text-overflow:revert!important; text-transform:revert=
+!important; top:revert!important; vertical-align:revert!important; visibili=
+ty:visible!important; white-space:revert!important; width:revert!important;=
+ word-break:revert!important; word-spacing:revert!important; writing-mode:r=
+evert!important; zoom:revert!important; display:block!important">
+<tr style=3D"background:revert!important; border:revert!important; bottom:r=
+evert!important; color:revert!important; direction:revert!important; displa=
+y:revert!important; font-size:revert!important; height:revert!important; le=
+tter-spacing:revert!important; line-height:revert!important; margin:revert!=
+important; opacity:revert!important; order:revert!important; outline:revert=
+!important; overflow:revert!important; padding:revert!important; position:r=
+evert!important; tab-size:revert!important; table-layout:revert!important; =
+text-align:revert!important; text-indent:revert!important; text-orientation=
+:revert!important; text-overflow:revert!important; text-transform:revert!im=
+portant; top:revert!important; vertical-align:revert!important; visibility:=
+visible!important; white-space:revert!important; width:revert!important; wo=
+rd-break:revert!important; word-spacing:revert!important; writing-mode:reve=
+rt!important; zoom:revert!important">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D"background:revert!important; border:revert!important;=
+ bottom:revert!important; color:revert!important; direction:revert!importan=
+t; display:revert!important; font-size:revert!important; height:revert!impo=
+rtant; letter-spacing:revert!important; line-height:revert!important; margi=
+n:revert!important; opacity:revert!important; order:revert!important; outli=
+ne:revert!important; overflow:revert!important; padding:revert!important; p=
+osition:revert!important; tab-size:revert!important; table-layout:revert!im=
+portant; text-align:revert!important; text-indent:revert!important; text-or=
+ientation:revert!important; text-overflow:revert!important; text-transform:=
+revert!important; top:revert!important; vertical-align:revert!important; vi=
+sibility:visible!important; white-space:revert!important; width:revert!impo=
+rtant; word-break:revert!important; word-spacing:revert!important; writing-=
+mode:revert!important; zoom:revert!important; padding:7px 2px 7px 2px!impor=
+tant; background-color:#A6A6A6!important; width:0px!important">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D"background:revert!important; bord=
+er:revert!important; bottom:revert!important; color:revert!important; direc=
+tion:revert!important; display:revert!important; font-size:revert!important=
+; height:revert!important; letter-spacing:revert!important; line-height:rev=
+ert!important; margin:revert!important; opacity:revert!important; order:rev=
+ert!important; outline:revert!important; overflow:revert!important; padding=
+:revert!important; position:revert!important; tab-size:revert!important; ta=
+ble-layout:revert!important; text-align:revert!important; text-indent:rever=
+t!important; text-orientation:revert!important; text-overflow:revert!import=
+ant; text-transform:revert!important; top:revert!important; vertical-align:=
+revert!important; visibility:visible!important; white-space:revert!importan=
+t; width:revert!important; word-break:revert!important; word-spacing:revert=
+!important; writing-mode:revert!important; zoom:revert!important; width:100=
+%!important; background-color:#EAEAEA!important; padding:7px 5px 7px 15px!i=
+mportant; font-family:wf_segoe-ui_normal,Segoe UI,Segoe WP,Tahoma,Arial,san=
+s-serif!important; font-size:12px!important; font-weight:normal!important; =
+color:#212121!important; text-align:left!important; word-wrap:break-word!im=
+portant">
+<div style=3D"background:revert!important; border:revert!important; bottom:=
+revert!important; color:revert!important; direction:revert!important; displ=
+ay:revert!important; font-size:revert!important; height:revert!important; l=
+etter-spacing:revert!important; line-height:revert!important; margin:revert=
+!important; opacity:revert!important; order:revert!important; outline:rever=
+t!important; overflow:revert!important; padding:revert!important; position:=
+revert!important; tab-size:revert!important; table-layout:revert!important;=
+ text-align:revert!important; text-indent:revert!important; text-orientatio=
+n:revert!important; text-overflow:revert!important; text-transform:revert!i=
+mportant; top:revert!important; vertical-align:revert!important; visibility=
+:visible!important; white-space:revert!important; width:revert!important; w=
+ord-break:revert!important; word-spacing:revert!important; writing-mode:rev=
+ert!important; zoom:revert!important">
+Some people who received this message don't often get email from rsw@rswfir=
+e.com.
+<a href=3D"https://aka.ms/LearnAboutSenderIdentification" style=3D"backgrou=
+nd:revert!important; color:revert!important; direction:revert!important; di=
+splay:revert!important; font-size:revert!important; opacity:revert!importan=
+t; visibility:revert!important">
+Learn why this is important</a> </div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D"background:revert!i=
+mportant; border:revert!important; bottom:revert!important; color:revert!im=
+portant; direction:revert!important; display:revert!important; font-size:re=
+vert!important; height:revert!important; letter-spacing:revert!important; l=
+ine-height:revert!important; margin:revert!important; opacity:revert!import=
+ant; order:revert!important; outline:revert!important; overflow:revert!impo=
+rtant; padding:revert!important; position:revert!important; tab-size:revert=
+!important; table-layout:revert!important; text-align:revert!important; tex=
+t-indent:revert!important; text-orientation:revert!important; text-overflow=
+:revert!important; text-transform:revert!important; top:revert!important; v=
+ertical-align:revert!important; visibility:visible!important; white-space:r=
+evert!important; width:revert!important; word-break:revert!important; word-=
+spacing:revert!important; writing-mode:revert!important; zoom:revert!import=
+ant; width:75px!important; background-color:#EAEAEA!important; padding:7px =
+5px 7px 5px!important; font-family:wf_segoe-ui_normal,Segoe UI,Segoe WP,Tah=
+oma,Arial,sans-serif!important; font-size:12px!important; font-weight:norma=
+l!important; color:#212121!important; text-align:left!important; word-wrap:=
+break-word!important">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p>To Whom It Concerns:</p>
+<p>Please see my attached public records request.</p>
+<p>Background on this matter is available here:<br>
+<a href=3D"https://oprdvolunteerabuse.org/public-questions/" originalsrc=3D=
+"https://oprdvolunteerabuse.org/public-questions/" class=3D"x_moz-txt-link-=
+freetext">https://oprdvolunteerabuse.org/public-questions/</a></p>
+<p>Thank you for your service.</p>
+<p><span style=3D"color:black"><b>Robert Samuel White</b><br>
+</span><span style=3D"color:#C82613"><a href=3D"https://rswfire.com/" origi=
+nalsrc=3D"https://rswfire.com/" title=3D"https://rswfire.com"><span style=
+=3D"color:#C82613">rswfire.com</span></a></span><span style=3D"color:black"=
+><br>
+</span><span style=3D"color:#0C882A"><a href=3D"https://oprdvolunteerabuse.=
+org/" originalsrc=3D"https://oprdvolunteerabuse.org/" title=3D"https://oprd=
+volunteerabuse.org"><span style=3D"color:#0C882A">oprdvolunteerabuse.org</s=
+pan></a></span><span style=3D"color:black"><br>
+</span><span style=3D"color:#0C64C0"><a href=3D"https://autonomyrealms.com/=
+" originalsrc=3D"https://autonomyrealms.com/" title=3D"https://autonomyreal=
+ms.com"><span style=3D"color:#0C64C0">autonomyrealms.com</span></a></span><=
+/p>
+<p><br>
+</p>
+<p><br>
+</p>
+<p><br>
+</p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR09MB7152104792E0950995466195D6602SJ0PR09MB7152namp_--

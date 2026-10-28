@@ -1,0 +1,329 @@
+Return-Path: <Angel.PAIRAN@cjc.oregon.gov>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id Q33ZBVQh4Wqk6QwAjtW+MQ
+	(envelope-from <Angel.PAIRAN@cjc.oregon.gov>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 22:10:28 +0000
+Received: from BL0PR0901CU002.outbound.protection.outlook.com (mail-eastusazon11010012.outbound.protection.outlook.com [52.101.51.12])
+	by mail.rswfire.com (Postfix) with ESMTPS id 15CDC2511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 22:10:26 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=trv/tRKB5QRau0stf9nCbrRby+dbN3vy79/+AEjHOcl0ewzu9HC7RIQ1AJMCVRK2qOm4EUdBK6uLdHzb0vggxNLRRqDcOcBOXqfB/bN7KH5uraAHOQ2RAvgkkrAjOHmyAQiNYNuj4ydEkNg3874dIdGHXwtzgIv17IG8WH7cGeJH27bNQLM0EcsnAeWTs7ZEIjIRdB0x0CsTwFAhYj/1OLxTnTOfp6ToavsTFn6UuG3uz6n8lhvdQ/erJ0F1jB4v9Cq22xhwLa5rgcqYNh4Wm+Sq3+6VKed9c+EiuHNbo8ZFxNC8F+qXJJCugdp6aotHMkPoqRbVb+usUF+VuimVeQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=U1nH0o+iNml3O3x+6kmWRyo0k/swiC2NYU1PGdXMNyg=;
+ b=v3kAkGSZtK5uPvoqfS4XPa7ClDt7/lq4gznp4bz0wJXwoyAhQXHofshaCiuj1kiEGb5e0KLSEBGLWyc7Hz0lreElZFY71yAMR3JDNpckpJ71Fl7PVn7ySs9BgB16dlzR8V+Glhkjz4Dkvf+4u76obzPEj2QlVLT9H517CK8xFbsLDz7Q2ZybORBIzVWYLzI4QrJ1iar19AHzAHtP71K1zeWzOuV+7qOv62v6aWKvWVRfxSXO9+1niNsnO26nrS8wWhxsgCgnfgzF1uKNXO5slGhQtN4Lo68EGXr5fu27x/i/gmP+1Q8xqQo8DrPsPM8EjlHQHr+f8Wp6T6v6f267WQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cjc.oregon.gov; dmarc=pass action=none
+ header.from=cjc.oregon.gov; dkim=pass header.d=cjc.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cjc.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=U1nH0o+iNml3O3x+6kmWRyo0k/swiC2NYU1PGdXMNyg=;
+ b=gKKmH4b0PgjJMrBTuhrxoUBUj/s+o2EO6+RXHOD3wwSGS6F1FX6haDWRCAR026ER5q/l4qXr11wGsXt7+n7JT5FAxa3J9RyigcAXNDg5ffIE3IMH+yX4Zf9vgwRdhDYWeT5F2qajTfHTAFt0ZbpwWjzICUcxVBwp88GkhvqjyiNyVACCmlmIeNyiIJcY55fRfZipiY600UM1oLPGeks70TXs39L4PKo1wwNuSphVRE2ifTfzs4WzR+sahB78RO5UuiIlf1e1g0a+MJGB9jDUrfbHrZ/AntO+/vDmhErGsXXS9GtC5JPe/b9FZ8GE8cBiOJu0NXEK3FrPOaTPXuVVZA==
+Received: from CO6PR09MB7670.namprd09.prod.outlook.com (2603:10b6:303:c0::6)
+ by SA1PR09MB9838.namprd09.prod.outlook.com (2603:10b6:806:28e::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 22:10:21 +0000
+Received: from CO6PR09MB7670.namprd09.prod.outlook.com
+ ([fe80::3314:323f:2205:cc1b]) by CO6PR09MB7670.namprd09.prod.outlook.com
+ ([fe80::3314:323f:2205:cc1b%5]) with mapi id 15.21.0546.016; Tue, 27 Oct 2026
+ 22:10:20 +0000
+From: PAIRAN Angel * CJC <Angel.PAIRAN@cjc.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>, CONTACT Cjc * CJC
+	<Contact@CJC.oregon.gov>
+Subject: Re: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZkXJ5UqRnQcKqEmISnWCxMw1brcR8og7
+Date: Tue, 27 Oct 2026 22:10:20 +0000
+Message-ID:
+ <CO6PR09MB7670E486379A8832EFFC308BBA602@CO6PR09MB7670.namprd09.prod.outlook.com>
+References:
+ <355ed4e6.AWEAAKdkvXcAAAAAAAAABEP55xoAAYKKucoAAAAAADb2LABq4PQa@mailjet.com>
+In-Reply-To:
+ <355ed4e6.AWEAAKdkvXcAAAAAAAAABEP55xoAAYKKucoAAAAAADb2LABq4PQa@mailjet.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=cjc.oregon.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CO6PR09MB7670:EE_|SA1PR09MB9838:EE_
+x-ms-office365-filtering-correlation-id: f59f897d-9eb4-4475-39e2-08df3477176a
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|23010399003|366016|1800799024|261009223027099003|261022105027099003|261021121427099003|261021130227099003|261021123027099003|261022075727099003|261021133027099003|261022115727099003|261021135927099003|261022113327099003|260925022911599003|10067099003|260925021911599003|260925021311599003|56012099006|261026121527099003|8096899003|22082099003|18002099003|13003099007|261026135527099003|261026140227099003|261026130827099003|38070700021;
+x-microsoft-antispam-message-info:
+ R47rCmtETeUf7hnP3CuHgpfAjvzW2zsuAjr1E41sqsHWEhCXmQMGLE6m+6Su8nw1YcQZzTX74GLGVoAyWFVX7/4G/YIzQ7B8YfVcO2ZbvvKWu1djCk1hyqoHb7OEWzgnlqXi4JMHSSPkcVGGQZ5qz7yuNF0SkmHBgB2rtNIm0HOfAJqoWaDrGQP5qBoklHtV1FNFn5n4VYkeO2NNAwR6+QfpI8C0ctE7tbNLebb+fu/yw8/CexZKklKn/kRGUrBScjdN6GMpbTugILqMg5wLeAfwPCuUvfqVl0zwYyIveJzRY6lh/h0QRTua1+cA13fxnB58zo4WcIWifr5kQRW3k8/gvfPri8UWlxBf+K4CrcA62flkASI7dsEzV6fNFQngRL+SdzZOEye4u5gL64UQkx+rc1BOsQ/kHvWVoz91H32sjh5jK7UkyD7Cf9Xu8mKerZhpD1gOFC0l+kRdOQ8FBAKeVKf4U/2iik8qzOOqs5DN7M73v0xCDRSwWx2gGT2Tuh84lFIOJZ0oWHbZAe3lxKnYlqpoKPTcLGmfkckgtLA6/fx1tTs6zvpQh3bqYPcksdiUbcMcL7SaHHikY9WlC3oGj87tbfIW8ZXvhA89pXfdxmieZVH0cmL1DPBUH//33TLU4usVKeC8ACGFf6gE8QpOfsJzTLIegg70XaRAmb4=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CO6PR09MB7670.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(23010399003)(366016)(1800799024)(261009223027099003)(261022105027099003)(261021121427099003)(261021130227099003)(261021123027099003)(261022075727099003)(261021133027099003)(261022115727099003)(261021135927099003)(261022113327099003)(260925022911599003)(10067099003)(260925021911599003)(260925021311599003)(56012099006)(261026121527099003)(8096899003)(22082099003)(18002099003)(13003099007)(261026135527099003)(261026140227099003)(261026130827099003)(38070700021);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?TQLXmTZjUluM4cs5gzSIPjNB9hKKwwrfY9karkusj1ER81fm3ddjN9Dusq?=
+ =?iso-8859-1?Q?EmLeuDl1r/hRJt5FJzaz6CoG4cu2GshUmtMnEVlfoZsi0PHyl0E/sPHifn?=
+ =?iso-8859-1?Q?aCrgXWoDTJAWyE8BtRnV0W79lsB4mtMoNhiYNox+DPFimSH02Y9pVn0J6A?=
+ =?iso-8859-1?Q?F0Bvil8Bi/tNGy1AWX/dVo115XGYeuffPjBYZK13u3SUoOQ8Uh7VvtsHAk?=
+ =?iso-8859-1?Q?dPveJfecwsffS9QgP6+T9TBWw9CBp4Zu7+Z1AmBJ1TUJ6yM6nlyzu0BpAG?=
+ =?iso-8859-1?Q?jtZrRGu0FaTWZdVMgiaevE8iQj0iEzMTMpaoKaqdx3qR07rpGPUCcwopyf?=
+ =?iso-8859-1?Q?XJjmjo9BIjThTHbQn39Dw8qfUqwFRAt+e0KlmEj17xwx/SbPTGhIGsKo1e?=
+ =?iso-8859-1?Q?8Z9zn5N3KXTIGtBKkRymcem7PdrMGD6Y2zqjIOZctfVWEvslaULZ7gGu0A?=
+ =?iso-8859-1?Q?oDO/Qru/6a7+8JdkQcvTDR7vUY+ykhQ2v6OIyQcS0DQaywAXW4LDt5OXEX?=
+ =?iso-8859-1?Q?EATwSLtGGiFeQJQoYuXOZR+WM25IXd4yuhUokZvlyXV3zvnLtC7rXxn5NZ?=
+ =?iso-8859-1?Q?a2FJq3aTBsgU6Uvajm4XZVXphIMZ8gLjNI/3CQ7LVTzvTdlcLyYMsxJKTI?=
+ =?iso-8859-1?Q?HTGXQbl0TVriI8iVA3q+/m1tDqaNclmXqKGuA4x5ZbJ/2CEe7VkhlBwVnF?=
+ =?iso-8859-1?Q?g5GO5d9KaV3GawXF3sQ+9I55MHOoM1GolSv/3OVOv1ULjSwLu49aDVJkZv?=
+ =?iso-8859-1?Q?REaWlOycg2DQoI34LMFAJ0bvbEFaR6pu/o3PYUTLe5qK4oYHDOS2YlPT/V?=
+ =?iso-8859-1?Q?HibxTfgyK5xhH5Nqm78EIOlJMvwKdspO20njoe2u70NERHUcTpV3DjegcI?=
+ =?iso-8859-1?Q?nP+gIQHXRlTycB69ylDUv+kNxR6HCmOvVOP6/ubfDkkc5nF8f7Ov4WOcHN?=
+ =?iso-8859-1?Q?5xtuLA4YkqIPOBVniyvGA+lgD/mxtJegnm++zMsdBtPQM/xeinjRriktHK?=
+ =?iso-8859-1?Q?k09Zbk8QxCwJ5CEWQ/ObXXQJ5hPJ6/OYjvd7NBXwmRVnJ2v5n7/uJbNPyb?=
+ =?iso-8859-1?Q?r3odE0l/cWHXeDO64yeBic91EKA6EoV8GhDuyrjjvZ3cD/CDIrqmehAxWB?=
+ =?iso-8859-1?Q?FOP9qqHmzIB8g0F7X9oFxw+/+mIfSiTJV9m/EjiFMPtSoNRLvl+FFE81t0?=
+ =?iso-8859-1?Q?eQPhIC5rseOSNqBtjbq3umd/3MM8b+yiI5Z76JZrnHO6eFmaK6LP8s6x4s?=
+ =?iso-8859-1?Q?zhi5RMPRECN9Boby61PZwfj2MuKeAgXs/53l6WmTEwDLWTaj4lfgN8mWO8?=
+ =?iso-8859-1?Q?nOZ/JPhfZFMzPK77uOOXet4oyfdx40MZ8HXsU1zAiJmwx6mzAN7ANGa8YT?=
+ =?iso-8859-1?Q?oFLEn3z6+cczbIVL31wpxBP5OZR72d1S22W5L64/s1wrM/f67gR7nZTdWD?=
+ =?iso-8859-1?Q?v9S3frHFgvnHqSggrVABHsnc6qBCq9P/GOBdc7F/BuZixgB05rpJXUC0BP?=
+ =?iso-8859-1?Q?Wp4rEZY9t1jJA5vtQMJX520KAnw00q0UussScZj/LagPCBUHOKkB1JjqRD?=
+ =?iso-8859-1?Q?NgkA5ZDdamTIqiBb5rO2QSbuqJcLFD/QdGsrqFZLjQOuzKJEIUfyWu/Krg?=
+ =?iso-8859-1?Q?JnyjbDs1PgwENGMIHFXXkWAovX9qnswXSNXPDTioaVS9N0q6sO8pkPV/Mk?=
+ =?iso-8859-1?Q?yuNakuVzQmGtv1iQ8ishDSGnSzACx1vujwHhyC/DM3WOZqn3nG82uBdEvo?=
+ =?iso-8859-1?Q?qcqHciN3B+7gGaTmwPOBaCQNs/5f9mjsETC/PA3xz6P+G0Iasa9uZbSVWY?=
+ =?iso-8859-1?Q?633RNsWFfw=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_CO6PR09MB7670E486379A8832EFFC308BBA602CO6PR09MB7670namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: cjc.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CO6PR09MB7670.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: f59f897d-9eb4-4475-39e2-08df3477176a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 22:10:20.7805
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR09MB9838
+X-Spamd-Result: default: False [-1.00 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[cjc.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:52.100.0.0/15];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 URI_COUNT_ODD(1.00)[11];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_MATCH_ENVRCPT_SOME(0.00)[];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[cjc.oregon.gov:+];
+	 RCPT_COUNT_TWO(0.00)[2];
+	 DMARC_POLICY_ALLOW(-0.50)[cjc.oregon.gov,none];
+	 FROM_EQ_ENVFROM(0.00)[];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.101.51.12:from]
+X-Spam-Status: No, score=-1.00
+
+--_000_CO6PR09MB7670E486379A8832EFFC308BBA602CO6PR09MB7670namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Robert,
+
+The Criminal Justice Commission has received your request, but it does need=
+ to come from our public records request form for ID purposes. It is workin=
+g now, I tested it to make sure, and I know some sites were having issues e=
+arlier. When I receive the request, I will process it.
+
+Thank you,
+Angel
+
+
+Angel Pairan (she/her)
+
+Agency Liaison/STOP Coordinator
+CRIMINAL JUSTICE COMMISSION
+c:503-991-3290
+
+angel.pairan@cjc.oregon.gov<mailto:angel.pairan@cjc.oregon.gov>
+Join our mailing list<https://public.govdelivery.com/accounts/ORCJC/subscri=
+ber/new>
+
+Public Records Disclosure: This e-mail is a public record of the Criminal J=
+ustice Commission and is subject to public disclosure, unless exempt from d=
+isclosure under Oregon Public Records Law. Information contained is subject=
+ to the agency Retention Schedule.
+
+
+
+________________________________
+From: Robert Samuel White <rsw@rswfire.com>
+Sent: Tuesday, October 27, 2026 11:57 AM
+To: CONTACT Cjc * CJC <contact@cjc.oregon.gov>
+Subject: Public Records Request
+
+
+To Whom It Concerns:
+
+Please see my attached public records request.
+
+The form on this page is not working:
+https://www.oregon.gov/cjc/about/Pages/Public-Records-Request.aspx
+
+Thank you for your service.
+
+Robert Samuel White
+rswfire.com<https://rswfire.com/>
+oprdvolunteerabuse.org<https://oprdvolunteerabuse.org/>
+autonomyrealms.com<https://autonomyrealms.com/>
+
+
+--_000_CO6PR09MB7670E486379A8832EFFC308BBA602CO6PR09MB7670namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Hi Robert,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+The Criminal Justice Commission has received your request, but it does need=
+ to come from our public records request form for ID purposes. It is workin=
+g now, I tested it to make sure, and I know some sites were having issues e=
+arlier. When I receive the request,
+ I will process it.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Thank you,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Angel</div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<p class=3D"elementToProof" style=3D"background-color: white; margin: 0in; =
+font-family: Aptos, sans-serif; font-size: 12pt;">
+<span style=3D"font-family: &quot;Calibri Light&quot;, sans-serif; font-siz=
+e: 10pt; color: rgb(0, 36, 81);"><b>Angel Pairan (she/her)</b></span></p>
+<p class=3D"elementToProof" style=3D"background-color: white; margin: 0in; =
+font-family: Aptos, sans-serif; font-size: 12pt;">
+<span style=3D"font-family: &quot;Calibri Light&quot;, sans-serif; font-siz=
+e: 10pt; color: rgb(0, 36, 81);">Agency Liaison/STOP Coordinator<br>
+<b>CRIMINAL JUSTICE COMMISSION</b><br>
+c:503-991-3290</span></p>
+<p class=3D"elementToProof" style=3D"background-color: white; margin: 0in; =
+font-family: Aptos, sans-serif; font-size: 12pt;">
+<span style=3D"font-family: &quot;Calibri Light&quot;, sans-serif; font-siz=
+e: 10pt; color: rgb(0, 36, 81);"><a href=3D"mailto:angel.pairan@cjc.oregon.=
+gov" id=3D"OWA4e28e2ad-f069-bc25-9b3b-7bc6964fd75a" class=3D"OWAAutoLink" s=
+tyle=3D"color: rgb(0, 36, 81); margin-top: 0px; margin-bottom: 0px;"><u>ang=
+el.pairan@cjc.oregon.gov</u></a><u><br>
+</u></span><span class=3D"spanWithBackgroundColor" style=3D"font-family: Ap=
+tos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-seri=
+f; font-size: 16px; color: rgb(0, 36, 81); background-color: rgb(255, 255, =
+255);"><a href=3D"https://public.govdelivery.com/accounts/ORCJC/subscriber/=
+new" target=3D"_blank" id=3D"OWA4fb5f06a-749f-5591-d704-4020ccda0022" class=
+=3D"OWAAutoLink" title=3D"Original URL: https://public.govdelivery.com/acco=
+unts/ORCJC/subscriber/new. Click or tap if you trust this link." rel=3D"noo=
+pener noreferrer" originalsrc=3D"https://public.govdelivery.com/accounts/OR=
+CJC/subscriber/new" style=3D"color: rgb(0, 36, 81); margin: 0px; background=
+-color: rgb(255, 255, 255); text-align: left;">Join
+ our mailing list</a></span></p>
+<div class=3D"elementToProof" style=3D"background-color: white; margin: 0in=
+; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Hel=
+vetica, sans-serif; font-size: 16px; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: rgb(255,=
+ 255, 255);"><br>
+</span></div>
+<div class=3D"elementToProof" style=3D"background-color: white; margin: 0in=
+; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Hel=
+vetica, sans-serif; font-size: 16px; color: rgb(0, 0, 0);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: rgb(255,=
+ 255, 255);"><b>Public Records Disclosure:
+</b><i>This e-mail is a public record of the Criminal Justice Commission an=
+d is subject to public disclosure, unless exempt from disclosure under Oreg=
+on Public Records Law. Information contained is subject to the agency Reten=
+tion Schedule.</i></span></div>
+<p class=3D"elementToProof" style=3D"margin: 0in; font-family: Aptos, sans-=
+serif; font-size: 12pt;">
+<span style=3D"color: rgb(0, 36, 81);">&nbsp;</span></p>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+11pt; color: rgb(0, 0, 0);">
+<b>From:</b> Robert Samuel White &lt;rsw@rswfire.com&gt;<br>
+<b>Sent:</b> Tuesday, October 27, 2026 11:57 AM<br>
+<b>To:</b> CONTACT Cjc * CJC &lt;contact@cjc.oregon.gov&gt;<br>
+<b>Subject:</b> Public Records Request</div>
+<div style=3D"direction: ltr;">&nbsp;</div>
+</div>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">To Whom It Concerns:</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Please see my attached pu=
+blic records request.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">The form on this page is =
+not working:<br>
+<a href=3D"https://www.oregon.gov/cjc/about/Pages/Public-Records-Request.as=
+px" id=3D"OWAe7ec3b49-1cf9-2aac-bd99-4cfe3aa016c1" class=3D"x_moz-txt-link-=
+freetext OWAAutoLink" data-auth=3D"NotApplicable" style=3D"margin-top: 0px;=
+ margin-bottom: 0px;">https://www.oregon.gov/cjc/about/Pages/Public-Records=
+-Request.aspx</a></p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">Thank you for your servic=
+e.</p>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;"><span style=3D"color: bla=
+ck;"><b>Robert Samuel White</b><br>
+</span><span style=3D"color: rgb(200, 38, 19);"><a href=3D"https://rswfire.=
+com/" id=3D"OWAf99a92cd-65bf-9376-4831-7452647f1922" class=3D"OWAAutoLink" =
+title=3D"https://rswfire.com" originalsrc=3D"https://rswfire.com/" data-aut=
+h=3D"NotApplicable" style=3D"color: rgb(200, 38, 19); margin-top: 0px; marg=
+in-bottom: 0px;">rswfire.com</a></span><span style=3D"color: black;"><br>
+</span><span style=3D"color: rgb(12, 136, 42);"><a href=3D"https://oprdvolu=
+nteerabuse.org/" id=3D"OWA0fc6f250-6269-10d1-0aa6-84ac3b3e26fc" class=3D"OW=
+AAutoLink" title=3D"https://oprdvolunteerabuse.org" originalsrc=3D"https://=
+oprdvolunteerabuse.org/" data-auth=3D"NotApplicable" style=3D"color: rgb(12=
+, 136, 42); margin-top: 0px; margin-bottom: 0px;">oprdvolunteerabuse.org</a=
+></span><span style=3D"color: black;"><br>
+</span><span style=3D"color: rgb(12, 100, 192);"><a href=3D"https://autonom=
+yrealms.com/" id=3D"OWA6a841047-3499-69e9-1645-2f24207b3137" class=3D"OWAAu=
+toLink" title=3D"https://autonomyrealms.com" originalsrc=3D"https://autonom=
+yrealms.com/" data-auth=3D"NotApplicable" style=3D"color: rgb(12, 100, 192)=
+; margin-top: 0px; margin-bottom: 0px;">autonomyrealms.com</a></span></p>
+<div><br>
+</div>
+</body>
+</html>
+
+--_000_CO6PR09MB7670E486379A8832EFFC308BBA602CO6PR09MB7670namp_--

@@ -923,6 +923,21 @@ export const TIMELINE: TimelineSection[] = [
                     " for the number of requests it has taken to facilitated dispute resolution and the number it has handled informally: “You have written to me three times, and each time you have steered this matter informally. I would like to know whether that is how your office carries out its statutory duties.”",
                 ],
             },
+            {
+                d: "2026-10-27", date: "October 27, 2026", major: true,
+                title: "He opened it.",
+                body: [
+                    "Four days after I asked whether his office does its statutory duty, the Public Records Advocate ",
+                    { doc: "01M5ZTYWMR1EM9C7R3S815Z4FG", thread: "governor", t: "answers the request" },
+                    ". Every part of it, in order: eleven reports to the Public Records Advisory Council, an appendix, two spreadsheets, and for the parts he does not hold, the words that he does not hold them. Nothing withheld. No fee. I ",
+                    { doc: "01M5ZZT1FR0ZXTEK0Z9CBY1QPN", thread: "governor", t: "thank him" },
+                    ", the Governor copied: “I want to personally thank you for such a timely and substantive response to my public records request.” The spreadsheets and the appendix name every person who asked his office for help. I will not publish them. It is the first production in this archive I have withheld in any part. The records request is answered. The request for facilitated dispute resolution under ORS 192.464, made ",
+                    { doc: "01M4F73K98NTWTV9JZT5J5DB4Z", thread: "governor", t: "October 8" },
+                    " and again ",
+                    { doc: "01M4Y4FN8RB5FDFQ1KSDG1E7Z9", thread: "governor", t: "October 14" },
+                    ", is not. His office’s own tracking sheet has no entry for either.",
+                ],
+            },
         ],
     },
 ];

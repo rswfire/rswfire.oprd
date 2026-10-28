@@ -117,6 +117,9 @@ export const RECORDS_REQUESTS: AgencyRequests[] = [
             { d: "2026-10-08", date: "October 8, 2026", event: "Letter to the Attorney General's office: the October 1 order is not in the public records order collection; a copy of the 2014 order it cites requested" },
             { d: "2026-10-13", date: "October 13, 2026", event: "The Public Records Advocate replies: his office cannot compel the Governor's office; he can review the matter and share his thoughts, with the Governor's office \u201cif the situation calls for it\u201d; he asks for the request, the fee waiver argument, and the denial" },
             { d: "2026-10-14", date: "October 14, 2026", event: "Facilitated dispute resolution requested from the Public Records Advocate under ORS 192.464, with each of the four institutions" },
+            { d: "2026-10-23", date: "October 23, 2026", event: "Public records request to the Public Records Advocate: how many requests for assistance his office took to facilitated dispute resolution, handled informally, or declined since 2023, and the policies on the choice" },
+            { d: "2026-10-27", date: "October 27, 2026", event: "The Advocate answers: eleven reports to the Public Records Advisory Council and two spreadsheets naming every requester; no records of declining facilitated dispute resolution; no policy on the choice beyond ORS 192 and his administrative rule" },
+            { d: "2026-10-27", date: "October 27, 2026", event: "Thanks to the Advocate for “such a timely and substantive response,” the Governor copied" },
         ],
     },
     {

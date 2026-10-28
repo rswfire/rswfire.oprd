@@ -1,0 +1,123 @@
+Return-Path: <bounces+8387778-9cd5-rsw=rswfire.com@em9851.govqa.us>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id W7ViGs0W4WrEzwwAjtW+MQ
+	(envelope-from <bounces+8387778-9cd5-rsw=rswfire.com@em9851.govqa.us>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 21:25:33 +0000
+Received: from o2.sgmail.govqa.us (o2.sgmail.govqa.us [168.245.107.68])
+	by mail.rswfire.com (Postfix) with ESMTPS id 58BD52511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 21:25:32 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=govqa.us;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:cc:content-type:date:from:subject:to;
+	s=s1; t=1793136330;
+	bh=e3hXLVHVlPN6ZVdorpzSQBtJXq+peWry65uZ4vpxkQ8=;
+	b=qPgmv97Zf+slQU+PFy2iyqPXeWciak1+vY/QTHvMbISfHL/myZrEl1KZZ1VUy1o+a/LI
+	52jmPhKO00Mwm8GD9Hz7rIk5Acj+K4XVY5kpLX2um3ch2m4R4xbowjU4Cem9SzzlGIeSjc
+	ngVOy45yETVyODJr4aYZCAAOa/LZXP/p4cKruuPbgvhi25sb69nMwbWimP/65xmYuUwSSM
+	+MsB3EisabijChSehP+24faN4w+qar4/JOUM9R60MhD18yCWeVmMkBXa2GrCSgVs86OzPn
+	R9SpavExZaCvHGNUKSVBaTkSztyiAMv2sYSLNmDz9SQ71dW9pl8Nl9aiS8Y2zeNg==
+Received: by recvd-cf945f54c-xgmsl with SMTP id recvd-cf945f54c-xgmsl-1-6AE116CA-7B
+	2026-10-27 21:25:30.900964686 +0000 UTC m=+2435097.413473074
+Received: from ODM4Nzc3OA (unknown)
+	by geopod-ismtpd-33 (SG) with HTTP
+	id 2B3DDDveQISytkQgTfAEeg
+	Tue, 27 Oct 2026 21:25:30.873 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Tue, 27 Oct 2026 21:25:30 +0000 (UTC)
+From: ODOT Request Center <odot@govqa.us>
+Mime-Version: 1.0
+Message-ID: <2B3DDDveQISytkQgTfAEeg@geopod-ismtpd-33>
+Subject: Unrecognized Email :: U029531-102726
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EAEMEjZhCqVU8BPKvVGfTGSrFkTSa0gnTXZtEydEmENHOKGXAAkmPbQYa8?=
+ =?us-ascii?Q?SEUojDIDxJAcyWnlR0e9pZQEMRliF9x=2FJpxXrfq?=
+ =?us-ascii?Q?nxnd72LsfD9xq2FxMhgVqDbIMklDqyss=2FYIucIH?=
+ =?us-ascii?Q?FR0ap=2FV72ZQdIcqEzmgjTwXtng09mDYgsidfNFU?=
+ =?us-ascii?Q?aBc3yOOPR0TAlIgp0Ii7MXGUYZjGZ34XzExloRO?=
+ =?us-ascii?Q?K2QLCAp7aHjvSxmr9sIPlc=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAOrvJfireiuS7RI?=
+ =?us-ascii?Q?8CGQSIdctVoKQRb=2FLIt9y=2Fuy2cJO4oVi473J88M?=
+ =?us-ascii?Q?Q67L3qOTZ28NUqV=2FJgvyT+L1U1KnA1shoOFdDG=2F?=
+ =?us-ascii?Q?aiywPhWt0lzjR9j3DRMg1JAgcH9cfPQLjU6miZp?=
+ =?us-ascii?Q?0at0bdE=2FRARj+GH=2FuD?=
+To: "rsw@rswfire.com" <rsw@rswfire.com>
+X-Entity-ID: u001.tSsFxiT1yZJHTo9odGkD8Q==
+X-Spamd-Result: default: False [0.60 / 15.00];
+	 ARC_NA(0.00)[];
+	 R_DKIM_ALLOW(-0.20)[govqa.us:s=s1];
+	 FROM_HAS_DN(0.00)[];
+	 R_SPF_ALLOW(-0.20)[+ip4:168.245.107.68:c];
+	 MV_CASE(0.50)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 MID_RHS_NOT_FQDN(0.50)[];
+	 DKIM_TRACE(0.00)[govqa.us:+];
+	 DMARC_POLICY_ALLOW(-0.50)[govqa.us,none];
+	 MIME_HTML_ONLY(0.20)[];
+	 TO_DN_EQ_ADDR_ALL(0.00)[];
+	 FORGED_SENDER(0.30)[odot@govqa.us,bounces@em9851.govqa.us];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[168.245.107.68:from];
+	 MIME_TRACE(0.00)[0:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:11377, ipnet:168.245.96.0/19, country:US];
+	 TAGGED_FROM(0.00)[8387778-9cd5-rsw=rswfire.com];
+	 FROM_NEQ_ENVFROM(0.00)[odot@govqa.us,bounces@em9851.govqa.us];
+	 RCVD_COUNT_TWO(0.00)[2]
+X-Spam-Status: No, score=0.60
+
+<html><body><br><br><div style=3D"align: center; padding: 10px; border: 3px=
+ solid #808080; border-radius: 5px;">
+<div><strong><span style=3D"color: #000000;"><img alt=3D"" src=3D"https://u=
+ploads.govqa.us/ODOT/logocust.png" style=3D"top: 23px; width: 150px; height=
+: 150px;" /></span></strong></div>
+<div><hr />
+<div>
+<div><strong>You have sent an email to an unresponsive email account.</stro=
+ng><br />
+<br />
+Please be advised that if you wish to submit a public records request, upda=
+te an existing request, or check the status of an already submitted request=
+, you should visit the <a href=3D"https://u8387778.ct.sendgrid.net/ls/click=
+?upn=3Du001.VEsWrlMiJDg0mXafq1mEXQHACru8t-2F2sfgP-2BHW-2FEyKghuho0vMLSTnBJw=
+Cb51-2FQPkW-2Bmt-2F-2BHCkabcHVUoSppWg-3D-3DYe8h_wlXzD5uqFWDsXkrpcvabptj2v-2=
+Bi3pT1KSLgEiHC2uGS-2Fpj2OTIj-2B8irCUBY5NPnysZV4AhTxZYCG0K9lSqVi0AYs8GwSEYVI=
+HcnT03rn6Idxgwf-2F8MKCwxGWKLf58KWDJRtMH1yB6uK9mRxkX166IyN4DmcVs0Z-2B5PTwimi=
+QoPn2u29d44FgwsfRWWTsZL4izfxl8oiEl3vyetbuNuk5pb-2Bvi7BgiDWJA0byz-2BbYd5E5Vb=
+ECd5tNzfXFB5qvniHKVGs1HHAAH70Kp3d5fABOe5iujg5Rvihv8MBJXk3x9GPyiFFKAsNfKuKCc=
+9XoQBeASAJ09xEniFYV9v3rFVSvDBRdnhmeKqVsWsfw4PpVIkk-3D" target=3D"_blank">Pu=
+blic Records Center</a>.<br />
+<br />
+Thank you,<br />
+<br />
+</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div><hr />
+<span style=3D"font-size: 11px;"></span>
+<div><span style=3D"font-size: 10pt;"><strong>This is an auto-generated ema=
+il and has originated from an unmonitored email account. Please DO NOT REPL=
+Y,</strong></span></div>
+<center>
+</center>
+<div>&nbsp;</div>
+<div style=3D"text-align: center;"><img title=3D"GovQA logo" src=3D"https:/=
+/uploads.mycusthelp.com/WEBQASUPPORT/PoweredByGovQALogo.png" alt=3D"GovQA l=
+ogo" style=3D"width: 74px; height: 25px;" /></div>
+<div><span style=3D"font-size: 10pt;">&nbsp;</span></div>
+</div>
+</div><img src=3D"https://u8387778.ct.sendgrid.net/wf/open?upn=3Du001.h3EN9=
+jRrVtTuLI-2FpKregpaF3pb25dG7v2oXU5CnYhypiMEsK8XeakoY1bS3aoRN-2Fy88-2BEztYZK=
+BEz1ZGM-2FRqMJTNZaMgWiWESuou6u8tUrYfz9jY0XNc8hF8UYqFRT-2FSQ47vQ40l4ppTP-2BR=
+tcbk7V5mK2PBiny8fekBgbq5vt8UX5CVTFikDTuWHzGR-2FdnXhCkydtQOIjSwtivqjAujXAC9t=
+MXRRWHt-2B1EngsyzsFwBbBpTD7gsCHC9dsFwcBvA4MHV-2Bs8Kn7dj1qmlF6y9CiceRyj-2B2J=
+CdEq7hhr-2FEzMjo2LiVxAN9MY5SRF4hIIa6XNL3PFm4B3jhEwlT2x8f0jRQnC07vNUMSTkU7os=
+mY-2Bc4-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:=
+1px !important;width:1px !important;border-width:0 !important;margin-top:0 =
+!important;margin-bottom:0 !important;margin-right:0 !important;margin-left=
+:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-=
+right:0 !important;padding-left:0 !important;"/></body></html>

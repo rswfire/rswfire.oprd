@@ -1,0 +1,142 @@
+Return-Path: <>
+Delivered-To: rsw@rswfire.com
+Received: from mail.rswfire.com
+	by web.rswfire.com with LMTP
+	id G1N8LD7/4GqDowwAjtW+MQ
+	(envelope-from <>)
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:45:02 +0000
+Received: from CO1PR09CU001.outbound.protection.outlook.com (mail-westus2azhn15011011.outbound.protection.outlook.com [52.102.136.11])
+	by mail.rswfire.com (Postfix) with ESMTPS id 316082511B
+	for <rsw@rswfire.com>; Tue, 27 Oct 2026 19:45:01 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=ptMzm0tj8SCG6zHRfWlgNBt/bKcIz7tyq9VdjH4oJO6ccP2obMYtcTdUqFKlNFRSepI3Tz1fLmMp8HfNUOv++/gs3FzluWwl5ffz+Ms21mUVX6ob4F2FNcufq4if469aZl1Kxe2q4VsKgzwJ60qxzl34d7hNa9IDmBwDfBLboRCxfWMaZ2/ZKFp3VGNPwIf7HB/cNnJoJc789LddzY0yeHJTebe/Anqr5vxHZpuXASCWmgP7Xr8tiXhggp+Nzp6xdj5cdZhdWmhTVbtj8XKP4wqT3xvEVGwzCj6iNsEEWzRix+TB1ofZehJBznTF+2Gzw+BZ+FAv59WHl/t9Os3dtg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=OG21azTYQbTRm4387M0uthwWGWskcP95Lx0QAIQ25cM=;
+ b=hWr+7zndJPszLwLXEGB45J900C+Ete/TjVFVz0hY8pQwA+Nk5MHXGNsOBoKcen2Hj+B9bUBAyh+IIQOMvq0U1GkTG97DvLqxUTsc/Qw1yZNUkrolpl98kw41buAsNsnpLB6IN1dOL6K4RKYOLjxdgjFcUv0pLl4pLpCRWnw+bQobcVXkocghXst+VLkn2/d9yIHj9EzFVR2StoUQKQ98zpLt4HHEBOAKkqqakNXqLqWArsqB8AxKuk+lvwye2MAHl6d8hjmHPaQ0fRm+W/Dyy6J3bbTPlQxsYR9vH8hxWI0AAdVrGWcBoKE3Q1XWTyTZFrxvMfbnVk1NezpVK3KiPw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=dogami.oregon.gov; dkim=pass
+ header.d=dogami.oregon.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dogami.oregon.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=OG21azTYQbTRm4387M0uthwWGWskcP95Lx0QAIQ25cM=;
+ b=EnzwaZYi4GoewKgFyKwz0qfIscBXmyNkkSrNE257Sh2sOu2Wl4ldlsN8tzQ07uEpptV5Jbvzsul7JyCxVdjp0EERUOiRAwoA+QJcNIAZz6kioji0C9xqSzHNTQpj+2/ws0aZrUNa3IYRxSc8CRsDRGBADCvfzKuWky3vD6piNjvBQJddrThQfvytc4oqGtVegDpQThH3OiNxAi2Enx51Lvw6tXvVInLwsq+CZ/iRUx67DOmjTEixmBBD34x8n5XOKuYG+rPbbnVXRRtKoimP6uBEr79mSx0uZu/c60QZWtRCmQ/UYOisljfLzhTDZnCO+P6jR/vOOvMECcNtGe4D2w==
+Received: from PH0PR09MB11469.namprd09.prod.outlook.com (2603:10b6:510:2ab::8)
+ by SA1PR09MB11098.namprd09.prod.outlook.com (2603:10b6:806:36b::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 19:44:59 +0000
+Received: from PH0PR09MB11469.namprd09.prod.outlook.com ([::1]) by
+ PH0PR09MB11469.namprd09.prod.outlook.com ([fe80::947b:e010:b03c:e95b%7]) with
+ Microsoft SMTP Server id 15.21.0546.021; Tue, 27 Oct 2026 19:44:59 +0000
+From: DOGAMI-INFO <dogami-info@dogami.oregon.gov>
+To: Robert Samuel White <rsw@rswfire.com>
+Subject: Automatic reply: Public Records Request
+Thread-Topic: Public Records Request
+Thread-Index: AQHdZkul1uXlw3Nnq0eFgljHGLwtCbcRyrU0
+Date: Tue, 27 Oct 2026 19:44:59 +0000
+Message-ID:
+ <999c7eff965f4528980a60b46f960d03@PH0PR09MB11469.namprd09.prod.outlook.com>
+References:
+ <d8629500.AW8AAKn75rwAAAAAAAAABEP6DrwAAYKKucoAAAAAADb2LABq4P4A@mailjet.com>
+In-Reply-To:
+ <d8629500.AW8AAKn75rwAAAAAAAAABEP6DrwAAYKKucoAAAAAADb2LABq4P4A@mailjet.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: dogami-info@dogami.oregon.gov
+X-MS-TNEF-Correlator:
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=dogami.oregon.gov;
+x-ms-exchange-parent-message-id:
+ <d8629500.AW8AAKn75rwAAAAAAAAABEP6DrwAAYKKucoAAAAAADb2LABq4P4A@mailjet.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PH0PR09MB11469:EE_|SA1PR09MB11098:EE_
+x-ms-office365-filtering-correlation-id: a89dcdd4-4dcb-4567-a03e-08df3462c90f
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|366016|1800799024|10070799003|261022105027099003|261022075727099003|261022113327099003|10067099003|56012099006|261026121527099003|8096899003|12063799003|5133699003|22082099003|18002099003|261026140227099003|80100003;
+x-microsoft-antispam-message-info:
+ SW5ORUmYJmOenARTdC0vLvfmtWwvobIThsZNuaNuTFAwaSjHD3TbaqvJDProzGPvnqrA0j4MxEXeN369eNZKijmGTLdXuNEMxpCKzjAHVcE3fbEzas3qqMMpfQkmrepQPOGQrr9zKPOEcW6Ih+ePBs51o82MJpEz1dh2oQajL3b0sLpBjbEglTkhKYFBiNlLThvbRrtXE5SSOmmI3QAFgzlKK9oFa9TH4LKh4Q7Mdt38/D7vAJ6hZBv9pV8ZMbIQQqMknH2HCcD4lKoTDwpQCveyiH/lvijfbQ/TEnr1ZGZ/jnhm4tlbDOu02Yr778Vdx7GTiiXH0AGGACKimlwMfXgh/zzrHL07EQyPnYqCGveyOvMwyLcMiFL7Ocuw8VcpbtKuTXtbmRJEF+VlKl11zczegjnyXKkZVJmbhz2kRr+3LXBTc/2IsYK/w9AIm+lgyGdzOw75N7TcQVNtFIOUeKo42hU6zKM/lnaU22uokKCqorkywluNSM8nB7qjqLbJrUsFOkqw/fozaOIy3LxAYoSrgMXIMoKncaCqGlfnaYZDNxYvuaA5vBAQDL5/NN8qwO7fKPnZbAc8aEp++58+jxLRnfvRI4EHZebs2EXcHzqvUY7PSnLsqGCRIpyLiCcP9DGPh4MYLZCF7nJc6LOn+IMR4cRvC+cYFxqWH7aHHZQ=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PH0PR09MB11469.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(366016)(1800799024)(10070799003)(261022105027099003)(261022075727099003)(261022113327099003)(10067099003)(56012099006)(261026121527099003)(8096899003)(12063799003)(5133699003)(22082099003)(18002099003)(261026140227099003)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ ojWn0CWYkO75KZDaTavjkhor77gcmXAF1GRoi7bdDktnGWKERDYZ9TSd82SJfpZIuXuhSnUN3qins7KlhE+4yuoVmK2Y934X6OBQvm/wS5k7YbJd/CIjRIzZGpkR+18hzMGy9hrJS7IriMK2o5CA3HOcrQy5YzvDLFWgv/9Cfsesec3AMXuOcn2gSeuROMjKqJIQkXg5Ad826/IBAf20i9TKAM4az+PI+4sWA0nMIyw73RGuxZn+UTwINaAQjHnvbMXR1bEWPvhkMvthzulqNZavvyygrFFAzhdYV6oq+r6bFUJygldt9s7U37mh73J5D0+sRezFnx0y06OlfFtq5nVzCXEaS6wBD9pL+n6cruV8HxuokLHfW4sY+kdZr1p84HQr8tordskfT+kDI4X11/o/X04h4qCHg9TKDVRB/WsOsx8rspPgzk3fG77KSFcI
+Content-Type: multipart/alternative;
+	boundary="_000_999c7eff965f4528980a60b46f960d03PH0PR09MB11469namprd09p_"
+MIME-Version: 1.0
+X-OriginatorOrg: dogami.oregon.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PH0PR09MB11469.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a89dcdd4-4dcb-4567-a03e-08df3462c90f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Oct 2026 19:44:59.4011
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: aa3f6932-fa7c-47b4-a0ce-a598cad161cf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR09MB11098
+X-Spamd-Result: default: False [-1.80 / 15.00];
+	 R_DKIM_ALLOW(-0.20)[dogami.oregon.gov:s=selector1];
+	 FROM_HAS_DN(0.00)[];
+	 TO_MATCH_ENVRCPT_ALL(0.00)[];
+	 MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	 RCPT_COUNT_ONE(0.00)[1];
+	 RCVD_COUNT_THREE(0.00)[3];
+	 TO_DN_ALL(0.00)[];
+	 DKIM_TRACE(0.00)[dogami.oregon.gov:+];
+	 DMARC_POLICY_ALLOW(-0.50)[dogami.oregon.gov,none];
+	 R_SPF_NA(0.00)[no SPF record];
+	 RWL_MAILSPIKE_POSSIBLE(0.00)[52.102.136.11:from];
+	 MIME_TRACE(0.00)[0:+,1:+,2:~];
+	 RCVD_TLS_LAST(0.00)[];
+	 ASN(0.00)[asn:8075, ipnet:52.96.0.0/12, country:US];
+	 ARC_ALLOW(-1.00)[microsoft.com:s=arcselector10001:i=1]
+X-Spam-Status: No, score=-1.80
+
+--_000_999c7eff965f4528980a60b46f960d03PH0PR09MB11469namprd09p_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Thank you for emailing the Oregon Department of Geology and Mineral Industr=
+ies (DOGAMI). Due to limited staff capacity and the large volume of request=
+s, our response times are longer than usual. We appreciate your patience.
+
+--_000_999c7eff965f4528980a60b46f960d03PH0PR09MB11469namprd09p_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<p><span style=3D"color:rgb(4,13,28); font-family:Arial,Helvetica,sans-seri=
+f; font-size:16px; font-style:normal; font-variant-ligatures:normal; font-v=
+ariant-caps:normal; font-weight:400; letter-spacing:normal; orphans:2; text=
+-align:start; text-indent:0px; text-transform:none; widows:2; word-spacing:=
+0px; white-space:normal; background-color:rgb(255,255,255); text-decoration=
+-style:initial; text-decoration-color:initial; float:none; display:inline!i=
+mportant">Hello,&nbsp;</span></p>
+<p><span style=3D"color:rgb(4,13,28); font-family:Arial,Helvetica,sans-seri=
+f; font-size:16px; font-style:normal; font-variant-ligatures:normal; font-v=
+ariant-caps:normal; font-weight:400; letter-spacing:normal; orphans:2; text=
+-align:start; text-indent:0px; text-transform:none; widows:2; word-spacing:=
+0px; white-space:normal; background-color:rgb(255,255,255); text-decoration=
+-style:initial; text-decoration-color:initial; float:none; display:inline!i=
+mportant">Thank
+ you for emailing the Oregon Department of Geology and Mineral Industries (=
+DOGAMI).
+<span>Due to limited staff capacity and the large volume of requests, our r=
+esponse times are longer than usual. We appreciate your patience.</span></s=
+pan></p>
+</body>
+</html>
+
+--_000_999c7eff965f4528980a60b46f960d03PH0PR09MB11469namprd09p_--
