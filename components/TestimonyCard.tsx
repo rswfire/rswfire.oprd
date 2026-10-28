@@ -116,7 +116,7 @@ export default function TestimonyCard() {
                         </span>
                         <span className="min-w-0 flex-1">
                             <span className="block text-[14px] font-semibold text-gray-900">Public Questions.</span>
-                            <span className="block text-[12px] text-gray-600">One question at a time, put to the state.</span>
+                            <span className="block text-[12px] text-gray-600">One question at a time<span className="hidden sm:inline">, put to the state</span>.</span>
                         </span>
                         <ChevronRight aria-hidden size={18} className="shrink-0 text-sky-700 transition-transform group-hover:translate-x-0.5" />
                     </Link>
