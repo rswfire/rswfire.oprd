@@ -71,6 +71,23 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+
+            <div className="mt-10 text-center">
+                <div className="mb-1 flex items-center justify-center gap-2 leading-none">
+                    <Icon name="Flame" className="h-5 w-5 text-red-600" size={20} aria-hidden />
+                    <Icon name="TreeDeciduous" className="h-5 w-5 text-emerald-600" size={20} aria-hidden />
+                    <Icon name="Droplets" className="h-5 w-5 text-blue-900" size={20} aria-hidden />
+                </div>
+                <a
+                    href="https://autonomyrealms.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1 text-[10px] uppercase tracking-widest font-medium text-stone-400 hover:text-stone-700 transition leading-none"
+                >
+                    <Icon name="SquareStack" className="h-3 w-3 text-amber-500" size={12} aria-hidden />
+                    <span>Powered by Autonomy Realms</span>
+                </a>
+            </div>
         </footer>
     );
 }

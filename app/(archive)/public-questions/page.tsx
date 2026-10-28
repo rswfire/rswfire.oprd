@@ -28,7 +28,7 @@ export default function PublicQuestionsPage() {
             >
                 <div className="flex items-start gap-4">
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-sky-700 text-white">
-                        <Icon name="BookOpenCheck" size={28} strokeWidth={1.75} aria-hidden />
+                        <Icon name="LibraryBig" size={28} strokeWidth={1.75} aria-hidden />
                     </div>
                     <div className="min-w-0">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-sky-700">Now at its own address</div>
