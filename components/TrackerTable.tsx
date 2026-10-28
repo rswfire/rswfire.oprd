@@ -90,30 +90,29 @@ function Step({ step, brief }: { step?: TrackerStep; brief?: boolean }) {
     );
 }
 
-function Grid({ r, onOpen, brief }: { r: Row; onOpen: (r: Row) => void; brief?: boolean }) {
+
+// The phone card's dates, side by side: sent, acknowledged, productions.
+function Steps({ e }: { e: TrackerEntry }) {
     const label = "text-[10px] font-semibold uppercase tracking-wider text-gray-400";
     return (
-        <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+        <>
             <div>
                 <div className={label}>Sent</div>
-                <Step step={r.entry.sent} brief={brief} />
+                <Step step={e.sent} brief />
             </div>
-            <div className="flex items-center">
-                <Count r={r} onOpen={onOpen} />
-            </div>
-            {r.entry.acknowledged && (
-                <div className="col-start-1">
+            {e.acknowledged && (
+                <div>
                     <div className={label}>Acknowledged</div>
-                    <Step step={r.entry.acknowledged} brief={brief} />
+                    <Step step={e.acknowledged} brief />
                 </div>
             )}
-            {r.entry.production && (
-                <div className="col-start-2">
+            {e.production && (
+                <div>
                     <div className={label}>Productions</div>
-                    <Production e={r.entry} />
+                    <Production e={e} />
                 </div>
             )}
-        </div>
+        </>
     );
 }
 
@@ -368,7 +367,7 @@ export default function TrackerTable({ rows, register = { slug: "public-question
             type="button"
             onClick={() => setFilter(filter === key ? "sent" : key)}
             aria-pressed={filter === key}
-            className={`rounded-full px-3 py-1.5 text-sm font-semibold ring-1 ring-inset transition-colors ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-semibold ring-1 ring-inset transition-colors ${
                 filter === key ? "bg-emerald-700 text-white ring-emerald-700" : "bg-white text-gray-600 ring-gray-200 hover:bg-gray-50"
             }`}
         >
@@ -387,7 +386,7 @@ export default function TrackerTable({ rows, register = { slug: "public-question
                     aria-label="Search agencies"
                     className="w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600 sm:w-48 sm:shrink-0"
                 />
-                <div className="flex min-w-0 flex-wrap gap-2">
+                <div className="-mx-4 flex min-w-0 gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0 [scrollbar-width:none]">
                     {FILTERS.map((f) => chip(f.key, f.label, counts[f.key]))}
                 </div>
             </div>
@@ -426,17 +425,29 @@ export default function TrackerTable({ rows, register = { slug: "public-question
             {/* phones and narrow screens */}
             <ul className="lg:hidden divide-y divide-gray-100 rounded-xl border border-gray-200">
                 {shown.map((r) => (
-                    <li key={r.slug} className="px-4 py-3">
-                        <div className={`min-w-0 text-sm ${r.entry.status === "not-sent" ? "text-gray-500" : "font-semibold text-gray-900"}`}>
-                            <AgencyName r={r} /><span className="ml-2 inline-block align-[1px]"><Status e={r.entry} /></span>
+                    <li key={r.slug} className="px-4 py-4">
+                        <div className="flex items-start justify-between gap-3">
+                            <div className="min-w-0">
+                                <div className={`text-[15px] leading-snug ${r.entry.status === "not-sent" ? "text-gray-500" : "font-semibold text-gray-900"}`}>
+                                    <AgencyName r={r} />
+                                </div>
+                                <div className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+                                    <Status e={r.entry} />
+                                    {r.entry.ref && <span className="font-mono text-[11px] text-gray-500">{r.entry.ref}</span>}
+                                </div>
+                            </div>
+                            {r.entry.status !== "not-sent" && (
+                                <div className="shrink-0 pt-0.5">
+                                    <Count r={r} onOpen={setOpen} />
+                                </div>
+                            )}
                         </div>
-                        {r.entry.ref && <div className="mt-0.5 font-mono text-[11px] text-gray-500">{r.entry.ref}</div>}
                         {r.entry.status !== "not-sent" && (
-                            <div className="mt-2.5 text-xs">
-                                <Grid r={r} onOpen={setOpen} />
+                            <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-xs">
+                                <Steps e={r.entry} />
                             </div>
                         )}
-                        {r.entry.note && <div className="mt-1.5 text-xs text-gray-500">{r.entry.note}</div>}
+                        {r.entry.note && <div className="mt-2 text-xs text-gray-500">{r.entry.note}</div>}
                     </li>
                 ))}
             </ul>
