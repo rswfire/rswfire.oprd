@@ -14,7 +14,8 @@ import TestimonyPdfButton from "@/components/testimony/TestimonyPdfButton";
 import Cite from "@/components/Cite";
 import { APPARATUS, APPARATUS_SEATS } from "@/data/apparatus";
 import Icon from "@/components/Icon";
-import { DrawerLink, SEAT_LINK } from "@/components/system/DrawerHost";
+import { DrawerLink } from "@/components/system/DrawerHost";
+import { SEAT_LINK } from "@/lib/seatLink";
 import PersonLink from "@/components/PersonLink";
 
 const CHAPTERS = [

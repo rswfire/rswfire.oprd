@@ -34,7 +34,6 @@ export default function PublicQuestionsPage() {
             emblem="MailQuestionMark" tone="sky"
             title="PUBLIC QUESTIONS"
             subtitle="RECORDS REQUESTS"
-            previousPage={{ href: "/records-requests", label: "Records Requests" }}
         >
             <div className="mb-8 text-base">
                 A question is asked of the State of Oregon in public records requests, and every answer is published: the acknowledgment, the estimate, the denial, the production, or the silence. One register per question.

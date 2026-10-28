@@ -120,7 +120,7 @@ export default function DrawerHost({ children }: { children: ReactNode }) {
 }
 
 /** How a name that opens a drawer reads in running text. */
-export const SEAT_LINK = "text-inherit underline decoration-gray-300 underline-offset-2 hover:text-emerald-800 hover:decoration-emerald-500";
+export { SEAT_LINK } from "@/lib/seatLink";
 
 /** A link that opens a drawer where the reader is; a new tab gets the page it lives on. */
 export function DrawerLink({ to, className, children }: { to: string; className?: string; children: ReactNode }) {
