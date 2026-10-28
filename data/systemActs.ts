@@ -5649,7 +5649,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-21",
             "when": "October 21, 2026",
-            "text": "Todd Albert writes that the requests are with four state agencies, “Parks, State Police, DOJ, and the Governor’s office”: “As a two person agency with limited resources, I can only offer assistance with one request at a time. With whom would you like me to follow up with first?”",
+            "text": "A week after the request for facilitated dispute resolution with four institutions, Todd Albert offers it for one. He lists them, “Parks, State Police, DOJ, and the Governor’s office,” and writes: “As a two person agency with limited resources, I can only offer assistance with one request at a time. With whom would you like me to follow up with first?”",
             "src": {
                 "u": "01M5G1X2X8EEZJZ8R1ZNQRF8CX",
                 "t": "governor"
@@ -5665,6 +5665,62 @@ export const ACTS: Record<string, Act[]> = {
                 "t": "governor"
             },
             "title": "Conditions for an extension"
+        },
+        {
+            "d": "2026-10-23",
+            "when": "October 23, 2026",
+            "text": "Nine days after receiving the October 14 request, with its fifteen documents and 102 citations, Todd Albert writes that he does not have enough information: “I do not have enough information to determine if any of your four requests qualify for facilitated dispute resolution.” He reduces the statute’s facilitated dispute resolution to “merely mediation,” and makes his office’s help conditional: “one disputed public records request at a time,” and “answers to our questions and agreeable interactions that permit the free flow of information.” He ends it on refusal: “if you find these terms unacceptable, then we will not be able to work with you further.”",
+            "src": {
+                "u": "01M5MN2F3G7610PG7DJJGQR8KH",
+                "t": "governor"
+            },
+            "title": "Todd Albert, Public Records Advocate, Terms for Dispute Resolution"
+        },
+        {
+            "d": "2026-10-23",
+            "when": "October 23, 2026",
+            "text": "The volunteer answers the same morning, each term against the record: four institutions’ fees and withholding against “equitable access”; the October 14 request with its 102 citations against “not enough information”; the order of the four, given on October 21, against “with which request.” He names the terms for what they do: “so that when I do not accept them, your refusal is recorded as mine. That is a pretext.” “You can be the advocate your office is named for, or you can be the last door that closed.”",
+            "src": {
+                "u": "01M5MSH4H8PYRFGB4FJWFYDVQS",
+                "t": "governor"
+            },
+            "title": "Reply to the Public Records Advocate's terms"
+        },
+        {
+            "d": "2026-10-23",
+            "when": "October 23, 2026",
+            "text": "The volunteer files a public records request with his office: how many requests for assistance it took to facilitated dispute resolution under ORS 192.464, how many it handled as informal mediation, and how many it declined, since January 1, 2023, with its policies on the choice. “You have written to me three times, and each time you have steered this matter informally. I would like to know whether that is how your office carries out its statutory duties.”",
+            "src": {
+                "u": "01M5MY5KGGS0A14FDNM7PZBH5K",
+                "t": "governor"
+            },
+            "att": {
+                "label": "Public records request",
+                "href": "/records/governor/attachments/01m5my5kggs0a14fdnm7pzbh5k-2026-10-23-pra-records-request.pdf",
+                "page": 1,
+                "from": "Robert Samuel White"
+            },
+            "title": "Public records request to the Public Records Advocate"
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "Four days after the request, Todd Albert answers it: eleven reports to the Public Records Advisory Council from December 2021 to September 2026, an appendix, and two spreadsheets naming every person who asked the office for help. On instances in which the office declined, deferred, or ended facilitated dispute resolution: “The office is not in possession of any records responsive to your request.” On policies governing the choice between facilitated dispute resolution and informal mediation: “In addition to ORS Chapter 192, of which the office is not a custodian, please see the office’s Administrative Rule. The office possesses no other responsive records.” “No records have been withheld in full or in part as confidential. There are no fees associated with your request.” The 2026 tracking sheet runs to October 26 and has no entry for the volunteer’s requests of October 8 and October 14.",
+            "src": {
+                "u": "01M5ZTYWMR1EM9C7R3S815Z4FG",
+                "t": "governor"
+            },
+            "title": "Todd Albert, Public Records Advocate, Response to the records request"
+        },
+        {
+            "d": "2026-10-27",
+            "when": "October 27, 2026",
+            "text": "The volunteer thanks him, Governor Kotek copied: “I want to personally thank you for such a timely and substantive response to my public records request.” “Your office is the one place that sees that practice across all of them. Your reports to the Advisory Council are the first cross-agency picture of it I have found, and I will be reading them closely.”",
+            "src": {
+                "u": "01M5ZZT1FR0ZXTEK0Z9CBY1QPN",
+                "t": "governor"
+            },
+            "title": "Thanks to the Public Records Advocate"
         }
     ],
     "public-records-counsel": [
@@ -5889,7 +5945,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-09",
             "when": "October 9, 2026",
-            "text": "The Public Records Counsel told the volunteer where to find the 2014 order and wrote that the October 1 order would be published, explaining that orders are sent to the library in batches.",
+            "text": "The Public Records Counsel told the volunteer where to find the 2014 order and wrote that the October 1 order would be published, and that orders are sent to the library in batches.",
             "src": {
                 "u": "01M4GJ3SC0KRKXY18MBW7WXRTW",
                 "t": "governor"
