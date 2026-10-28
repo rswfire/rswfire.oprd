@@ -36,7 +36,7 @@ export default function PublicQuestionsPage() {
             subtitle="RECORDS REQUESTS"
         >
             <div className="mb-8 text-base">
-                A question is asked of the State of Oregon in public records requests, and every answer is published: the acknowledgment, the estimate, the denial, the production, or the silence. One register per question.
+                A question is asked of the State of Oregon in public records requests, and every answer is published: the acknowledgment, the estimate, the denial, the production, or the silence.
             </div>
 
             <ol className="not-prose space-y-5">
