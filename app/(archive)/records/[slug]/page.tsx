@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import RecordsThread from "@/components/RecordsThread";
 import { THREADS } from "@/data/threads";
-import Icon from "@/components/Icon";
+import RecordsProjectCard from "@/components/RecordsProjectCard";
 
 // Public Questions moved to the records project. Its registers are kept
 // there; this archive's copies stopped on October 28, 2026.
@@ -41,19 +41,9 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
             nextPage={next ? { href: `/records/${next.slug}`, label: next.title } : undefined}
         >
             {MOVED[slug] ? (
-                <a
-                    href={MOVED[slug]}
-                    className="not-prose group block rounded-2xl border border-sky-300 bg-gradient-to-br from-sky-50 to-white p-6 sm:p-8 shadow-sm transition-shadow hover:shadow-md"
-                >
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-sky-700">This register has moved</div>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-700">
-                        {thread.title} is kept at OpenRecordsOregon.org, where every answer is filed as it arrives.
-                    </p>
-                    <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-sky-800 group-hover:underline">
-                        Go to the {thread.title} register
-                        <Icon name="ChevronDown" size={16} className="-rotate-90" aria-hidden />
-                    </div>
-                </a>
+                <RecordsProjectCard href={MOVED[slug]} label="This register has moved" cta={`Go to the ${thread.title} register`}>
+                    {thread.title} is kept at OpenRecordsOregon.org, where every answer is filed as it arrives.
+                </RecordsProjectCard>
             ) : (
                 <RecordsThread thread={thread} />
             )}
