@@ -59,15 +59,17 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${openSans.variable} ${openSansCondensed.variable} ${dmMono.variable}`}>
         <head>
-            {/* Deploy-window recovery. A deploy replaces every content-hashed
-                chunk; a viewer holding cached HTML (browser or Pages edge)
-                then 404s on script load, hydration throws, and React blanks
-                the page. When any /_next/ script fails to load, force one
-                cache-busted reload; the sessionStorage guard prevents loops
-                when the failure is real (offline, adblock). */}
+            {/* Error reporting and deploy-window recovery. Every script error,
+                unhandled rejection, failed resource load, and page that is
+                still blank eight seconds after load is sent to Umami as an
+                event (js-error, js-rejection, load-error, blank-page) with
+                the URL and the failed resource, so a blank page on a phone
+                can be read in the dashboard. Then: when any /_next/ script
+                fails to load, force one reload; the sessionStorage guard
+                prevents loops when the failure is real (offline, adblock). */}
             <script
                 dangerouslySetInnerHTML={{
-                    __html: `window.addEventListener("error",function(e){var t=e.target;if(!t||t.tagName!=="SCRIPT"||!t.src||t.src.indexOf("/_next/")===-1)return;try{var k="chunk-reload-at",n=Date.now(),l=+sessionStorage.getItem(k)||0;if(n-l<3e4)return;sessionStorage.setItem(k,String(n))}catch(x){}location.reload()},true);`,
+                    __html: '(function(){var W="927ceff2-deef-49ad-8e3d-b33b999c2b92",U="https://rswfire.com/api/send";function c(v){return String(v==null?"":v).slice(0,400)}function s(n,d){try{fetch(U,{method:"POST",headers:{"Content-Type":"application/json"},keepalive:true,body:JSON.stringify({type:"event",payload:{website:W,hostname:location.hostname,screen:screen.width+"x"+screen.height,language:navigator.language,title:document.title,url:location.pathname+location.search,referrer:document.referrer,name:n,data:d}})})}catch(x){}}window.__report=s;window.addEventListener("error",function(e){var t=e.target;if(t&&t!==window&&(t.src||t.href)){s("load-error",{tag:t.tagName,src:c(t.src||t.href),url:c(location.href)});return}s("js-error",{message:c(e.message),source:c(e.filename)+":"+e.lineno+":"+e.colno,stack:c(e.error&&e.error.stack),url:c(location.href)})},true);window.addEventListener("unhandledrejection",function(e){var r=e.reason;s("js-rejection",{message:c(r&&(r.message||r)),stack:c(r&&r.stack),url:c(location.href)})});window.addEventListener("vite:preloadError",function(e){s("preload-error",{message:c(e.payload&&e.payload.message),url:c(location.href)})});setTimeout(function(){try{var b=document.body;if(!b||b.innerText.trim().length>0)return;var f=[];performance.getEntriesByType("resource").forEach(function(r){if(r.responseStatus&&r.responseStatus>=400)f.push(r.name+" "+r.responseStatus)});s("blank-page",{url:c(location.href),ready:document.readyState,failed:c(f.join(" | ")),nav:c((performance.getEntriesByType("navigation")[0]||{}).type)})}catch(x){}},8000);})();window.addEventListener("error",function(e){var t=e.target;if(!t||t.tagName!=="SCRIPT"||!t.src||t.src.indexOf("/_next/")===-1)return;try{var k="chunk-reload-at",n=Date.now(),l=+sessionStorage.getItem(k)||0;if(n-l<3e4)return;sessionStorage.setItem(k,String(n))}catch(x){}location.reload()},true);',
                 }}
             />
             {process.env.NODE_ENV === "production" && (
