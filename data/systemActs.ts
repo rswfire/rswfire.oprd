@@ -2594,7 +2594,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M211VD50GEMFA0115K4FSWF6",
                 "t": "oprd"
             },
-            "title": "ODOT Public Records, Confirmation with Lisa Sumption, R027904"
+            "title": "ODOT Public Records, “We confirmed with Lisa Sumption”, R027904"
         },
         {
             "d": "2026-09-08",
@@ -5506,7 +5506,7 @@ export const ACTS: Record<string, Act[]> = {
                 "u": "01M211VD50GEMFA0115K4FSWF6",
                 "t": "oprd"
             },
-            "title": "ODOT Public Records, Confirmation with Lisa Sumption, R027904"
+            "title": "ODOT Public Records, “We confirmed with Lisa Sumption”, R027904"
         }
     ],
     "gov-pr": [
@@ -5679,7 +5679,7 @@ export const ACTS: Record<string, Act[]> = {
         {
             "d": "2026-10-23",
             "when": "October 23, 2026",
-            "text": "The volunteer answers the same morning, each term against the record: four institutions’ fees and withholding against “equitable access”; the October 14 request with its 102 citations against “not enough information”; the order of the four, given on October 21, against “with which request.” He names the terms for what they do: “so that when I do not accept them, your refusal is recorded as mine. That is a pretext.” “You can be the advocate your office is named for, or you can be the last door that closed.”",
+            "text": "The volunteer answers the same morning, each term against the record: four institutions’ fees and withholding against “equitable access”; the October 14 request with its 102 citations against “I do not have enough information”; the order of the four, given on October 21, against “with which request.” He names the terms for what they do: “so that when I do not accept them, your refusal is recorded as mine. That is a pretext.” “You can be the advocate your office is named for, or you can be the last door that closed.”",
             "src": {
                 "u": "01M5MSH4H8PYRFGB4FJWFYDVQS",
                 "t": "governor"
