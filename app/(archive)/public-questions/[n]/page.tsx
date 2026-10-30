@@ -4,6 +4,7 @@
 // Questions. Its old address here says so and links to it there.
 
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import RecordsProjectCard from "@/components/RecordsProjectCard";
 
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ n: string }> }): Promise<Metadata> {
     const { n } = await params;
-    return { title: `Public Question ${n}`, description: `Public Question ${n} is kept at OpenRecordsOregon.org.` };
+    return withShare({ title: `Public Question ${n}`, description: `Public Question ${n} is kept at OpenRecordsOregon.org.` });
 }
 
 export default async function MovedQuestionPage({ params }: { params: Promise<{ n: string }> }) {

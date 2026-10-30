@@ -1,13 +1,14 @@
 // app/(archive)/fund/page.tsx
 
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import { EXPENDITURES, GOAL, MATCH_CAP, RAISED, matched, total, usd, spent } from "@/lib/fund";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Legal Fund, Accounted For",
     description: "Every dollar into and out of the legal fund, stated publicly.",
-};
+});
 
 function Tile({ label, value }: { label: string; value: string }) {
     return (

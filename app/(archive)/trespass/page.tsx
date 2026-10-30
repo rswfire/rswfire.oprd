@@ -1,14 +1,15 @@
 // app/(archive)/trespass/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
 import Moment from "@/components/player/Moment";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Trespass",
     description: "What an epistemic violation is, and the person they wrote.",
-};
+});
 
 const PICNIC = "01JNK2TKG01JTERAMB7J6AKPK1";
 const CALL = "01JQ59R3S0SHQ18E23BC0BM696";

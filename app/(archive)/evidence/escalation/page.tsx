@@ -1,5 +1,6 @@
 // app/(archive)/evidence/escalation/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import PersonLink from "@/components/PersonLink";
@@ -7,10 +8,10 @@ import EvidenceTabs from "@/components/EvidenceTabs";
 import AccountabilityRecord, { byUlids } from "@/components/AccountabilityRecord";
 import { ESCALATION_EXPLOITATION } from "@/data/exploitation";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Compliance",
     description: "The February 12, 2025 demonstration of institutional conformity that proved their targeting was never about legitimate supervision.",
-};
+});
 
 export default function CompliancePage() {
     return (

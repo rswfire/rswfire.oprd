@@ -1,5 +1,6 @@
 // app/(archive)/soliloquy/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
@@ -11,10 +12,10 @@ import PageToc from "@/components/PageToc";
 const PICNIC = "01JNK2TKG01JTERAMB7J6AKPK1";
 const CALL = "01JQ59R3S0SHQ18E23BC0BM696";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Stormchaser's Soliloquy",
     description: "A poem in three parts: Cape Blanco, Siltcoos, Tahkenitch.",
-};
+});
 
 const movements: { number: string; date: string; place: string; stanzas: string[][] }[] = [
     {

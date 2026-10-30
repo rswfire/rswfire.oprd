@@ -9,6 +9,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import EmlDownload from "@/components/EmlDownload";
@@ -73,7 +74,7 @@ export async function generateMetadata({
         filing.summary ??
         `${KIND_LABEL[filing.kind]}, ${filing.date}${who ? `, ${who.toLowerCase()}` : ""}. ` +
             `From the ${thread.title} correspondence record.`;
-    return {
+    return withShare({
         title: `${filing.title} — ${filing.date}`,
         description,
         alternates: { canonical: `/record/${slug}/${ulid}/` },
@@ -83,7 +84,7 @@ export async function generateMetadata({
             description,
             url: `/record/${slug}/${ulid}/`,
         },
-    };
+    });
 }
 
 export default async function DocumentPage({

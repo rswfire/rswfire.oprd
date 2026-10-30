@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -9,10 +10,10 @@ import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecor
 import { EXPULSION_EXPLOITATION } from "@/data/exploitation";
 import { EXPULSION_TRANSMISSION } from "@/data/20250325";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Expulsion",
     description: "March 25-26, 2025 - Permanent dismissal from all Oregon State Parks volunteer programs for speaking publicly about documented abuse.",
-};
+});
 
 export default function ExpulsionPage() {
     return (

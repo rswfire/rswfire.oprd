@@ -1,15 +1,16 @@
 // app/(archive)/faq/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import PersonLink from "@/components/PersonLink";
 import { FAQ_QUESTIONS } from "@/data/faq";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Frequently Asked Questions",
     description: "Common questions about the documentation, decisions, and institutional responses.",
-};
+});
 
 export default function FAQPage() {
     return (

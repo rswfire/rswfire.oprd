@@ -1,15 +1,16 @@
 // app/(archive)/timeline/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import TimelineBody from "@/components/TimelineBody";
 import Icon from "@/components/Icon";
 import { TIMELINE } from "@/data/timeline";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Timeline",
     description: "The record in date order, February 2025 — ongoing, with each event linked to its document.",
-};
+});
 
 export default function TimelinePage() {
     return (

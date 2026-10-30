@@ -1,15 +1,16 @@
 // app/(archive)/evidence/origin/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
 import EvidenceTabs from "@/components/EvidenceTabs";
 import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { ORIGIN_EXPLOITATION } from "@/data/exploitation";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Confrontation",
     description: "The February 9, 2025 email exchange with the park supervisor that triggered systematic retaliation.",
-};
+});
 
 export default function ConfrontationPage() {
     return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import RecordsThread from "@/components/RecordsThread";
 import { THREADS } from "@/data/threads";
@@ -19,10 +20,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const { slug } = await params;
     const thread = THREADS.find((t) => t.slug === slug);
     if (!thread) return {};
-    return {
+    return withShare({
         title: thread.title,
         description: thread.summary[0],
-    };
+    });
 }
 
 export default async function ThreadPage({ params }: { params: Promise<{ slug: string }> }) {

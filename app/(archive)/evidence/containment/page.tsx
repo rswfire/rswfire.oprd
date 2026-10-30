@@ -1,5 +1,6 @@
 // app/(archive)/evidence/containment/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -8,10 +9,10 @@ import EvidenceTabs from "@/components/EvidenceTabs";
 import AccountabilityRecord, { byUlids } from "@/components/AccountabilityRecord";
 import { CONTAINMENT_EXPLOITATION } from "@/data/exploitation";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Containment",
     description: "August 2025–February 2026 - Every institutional response to accountability has been an attempt to contain, not correct.",
-};
+});
 
 export default function ContainmentPage() {
     return (

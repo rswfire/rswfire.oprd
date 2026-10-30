@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["oprdvolunteerabuse.local", "192.168.1.149"],
   output: "export",
   reactCompiler: true,
+  // Four build workers, not one per core: thirty-one froze the workstation (2026-10-30).
+  experimental: { cpus: 4 },
   images: {
     unoptimized: true,
   },

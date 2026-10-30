@@ -1,12 +1,13 @@
 // app/(archive)/ethics/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import Cite from "@/components/Cite";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "A Note About Ethics",
     description: "On maintaining ethical clarity in the face of institutional dysfunction.",
-};
+});
 
 export default function EthicsPage() {
     return (

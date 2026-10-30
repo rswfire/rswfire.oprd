@@ -1,5 +1,6 @@
 // app/(archive)/evidence/surveillance/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import Email from "@/components/archive/Email";
@@ -10,10 +11,10 @@ import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecor
 import { SURVEILLANCE_EXPLOITATION } from "@/data/exploitation";
 import { SURVEILLANCE_TRANSMISSION } from "@/data/20250318";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Surveillance",
     description: "Documented covert assessment by unidentified unidentified man at Honeyman State Park, March 18, 2025.",
-};
+});
 
 export default function SurveillancePage() {
     return (

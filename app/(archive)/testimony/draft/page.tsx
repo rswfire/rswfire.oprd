@@ -5,13 +5,14 @@
 // draft over the published body. Not indexed, and marked on the page, so a
 // reader who arrives at it cannot mistake it for the record.
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import TestimonyDraft from "@/components/testimony/TestimonyDraft";
 import { CURRENT_VERSION } from "@/data/testimonyVersions";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Testimony — draft",
     robots: { index: false, follow: false },
-};
+});
 
 export default function Page() {
     return (

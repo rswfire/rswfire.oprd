@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import { THREADS } from "@/data/threads";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Records",
     description:
         "The public records requests, agency responses, and petitions to the Oregon Attorney General this matter has produced, tracked by agency.",
-};
+});
 
 export default function RecordsPage() {
     return (

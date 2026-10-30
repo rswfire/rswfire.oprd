@@ -1,13 +1,14 @@
 // app/(archive)/evidence/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { Landmark, Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Evidence",
     description: "Documented proof of systematic abuse, institutional retaliation, and betrayal of supervisory trust.",
-};
+});
 
 export default function EvidencePage() {
     return (

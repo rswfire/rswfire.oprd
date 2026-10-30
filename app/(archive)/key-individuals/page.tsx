@@ -4,16 +4,17 @@
 // volunteer, each with its implied role and its real one, and what passed
 // between them.
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import SectionPage from "@/components/SectionPage";
 import SystemDiagram from "@/components/system/SystemDiagram";
 import KeyIndividualsToc from "@/components/system/KeyIndividualsToc";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Key Individuals",
     description: "The seats of the State of Oregon in this record, each with its implied role and its real one, and what passed between them. From its own documents.",
-};
+});
 
 export default function Page() {
     return (

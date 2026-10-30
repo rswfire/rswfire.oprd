@@ -9,6 +9,7 @@
 // unproduced sources is shared with the records tracker — one source
 // of truth.
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -27,11 +28,11 @@ function anchorFor(heading: string): string {
         .replace(/^-+|-+$/g, "");
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "sunlight: their words, next to the record",
     description:
         "The Timeline of Events, answered entry by entry against the permanent record, with a link for every fact.",
-};
+});
 
 // Minimal inline-markdown renderer for the generated content: [text](url)
 // links, **bold** and *italic*. Everything else passes through as written.

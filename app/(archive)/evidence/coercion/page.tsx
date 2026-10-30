@@ -1,5 +1,6 @@
 // app/(archive)/evidence/coercion/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { Map } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
@@ -10,10 +11,10 @@ import { COERCION_EXPLOITATION } from "@/data/exploitation";
 import Link from "next/link";
 import { COERCION_TRANSMISSION } from "@/data/20250305";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Coercion",
     description: "March 5, 2025 - Over an hour of recorded psychological pressure by the park manager and the park supervisor.",
-};
+});
 
 export default function CoercionPage() {
     return (

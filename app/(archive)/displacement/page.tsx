@@ -1,12 +1,13 @@
 // app/(archive)/displacement/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Displacement Framework",
     description: "Displacement is not a single act. It is a sequence — applied in stages, escalating in force, designed to remove a person from the ground they stand on before they can build a record that holds.",
-};
+});
 
 const stages = [
     { id: "origin", number: "1", title: "The Origin Event" },

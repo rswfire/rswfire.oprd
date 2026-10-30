@@ -1,5 +1,6 @@
 // app/(archive)/for-volunteers/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import VolunteersHero from "@/components/VolunteersHero";
@@ -7,10 +8,10 @@ import IfThisIsHappening from "@/components/IfThisIsHappening";
 import VolunteersIntro from "@/components/VolunteersIntro";
 import RetaliationMap from "@/components/RetaliationMap";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "For Volunteers",
     description: "If you found this page, something probably happened to you. What happened to you has a name.",
-};
+});
 
 const stages = [
     {

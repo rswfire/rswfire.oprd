@@ -1,5 +1,6 @@
 // app/(archive)/evidence/trust/page.tsx
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { Map } from "lucide-react";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
@@ -8,10 +9,10 @@ import EvidenceTabs from "@/components/EvidenceTabs";
 import AccountabilityRecord, { byTitles } from "@/components/AccountabilityRecord";
 import { TRUST_EXPLOITATION } from "@/data/exploitation";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Betrayal",
     description: "Documentation of supervisory betrayal and weaponization of vulnerability by the volunteer services lead.",
-};
+});
 
 export default function TrustRecruitmentPage() {
     return (

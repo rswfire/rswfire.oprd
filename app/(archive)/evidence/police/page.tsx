@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import IdentityTracker from "@/components/IdentityTracker";
@@ -9,10 +10,10 @@ import AccountabilityRecord, { flaggedIn } from "@/components/AccountabilityReco
 import { POLICE_EXPLOITATION } from "@/data/exploitation";
 import { POLICE_INTIMIDATION_TRANSMISSION } from "@/data/20260324";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Police Intimidation",
     description: "March 24, 2026 — One year to the day after dismissal, police arrived behind a locked federal gate.",
-};
+});
 
 export default function PoliceIntimidationPage() {
     return (

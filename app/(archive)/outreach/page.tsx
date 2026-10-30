@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import OutreachDispatchLedger from "@/components/OutreachDispatchLedger";
 import OutreachNavigation from "@/components/OutreachNavigation";
@@ -10,10 +11,10 @@ import {
     type OutreachTrackingField,
 } from "@/data/outreach";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Institutions and Correspondence Tracker",
     description: "A working contact and response log for making the archive available to institutions with distinct public responsibilities.",
-};
+});
 
 function ExternalLink({ href, label }: { href: string; label: string }) {
     // External sites and document files leave the page in a new tab; only

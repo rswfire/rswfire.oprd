@@ -5,13 +5,14 @@
 // documents are cited throughout the archive by their ULIDs.
 
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import RecordsProjectCard, { SiteName } from "@/components/RecordsProjectCard";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Public Questions",
     description: "Questions put to the State of Oregon in public records requests, every answer published. Now at OpenRecordsOregon.org.",
-};
+});
 
 const SITE = "https://openrecordsoregon.org";
 

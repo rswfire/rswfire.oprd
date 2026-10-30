@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import PrimaryTransmission from "@/components/PrimaryTransmission";
 import EvidenceTabs from "@/components/EvidenceTabs";
@@ -6,10 +7,10 @@ import AccountabilityRecord, { byUlids } from "@/components/AccountabilityRecord
 import { DISMISSAL_EXPLOITATION } from "@/data/exploitation";
 import { DISMISSAL_TRANSMISSION } from "@/data/20250324";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Dismissal",
     description: "March 24, 2025 - Dismissed without paperwork or cause, six days before scheduled completion.",
-};
+});
 
 export default function DismissalPage() {
     return (

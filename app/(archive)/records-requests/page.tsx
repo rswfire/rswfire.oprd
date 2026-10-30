@@ -6,16 +6,17 @@
 // The registers hold the documents; this page is the scoreboard across them.
 
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
 import AgencyRequestCard from "@/components/AgencyRequestCard";
 import { RECORDS_REQUESTS, ANSWERED_AGENCIES } from "@/data/recordsRequests";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Records Requests",
     description:
         "What each agency was asked for, what it claims it holds, what it produced, what it is withholding and on what basis, and the process it took to get the records.",
-};
+});
 
 export default function RecordsRequestsPage() {
     return (

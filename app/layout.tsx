@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {Open_Sans, DM_Mono, DM_Serif_Display} from 'next/font/google'
 
 import "./globals.css";
+import { SHARE_IMAGE } from "@/lib/share";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PlayerProvider from "@/components/player/PlayerProvider";
@@ -49,6 +50,15 @@ export const metadata: Metadata = {
     },
     description:
         "Permanent public record of volunteer abuse and institutional response inside the Oregon Parks & Recreation Department.",
+    icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }, { url: "/favicon.ico" }], apple: "/apple-touch-icon.png" },
+    openGraph: {
+        type: "website",
+        siteName: "oprdvolunteerabuse.org",
+        title: "OPRD Volunteer Abuse | oprdvolunteerabuse.org",
+        description: "Permanent public record of volunteer abuse and institutional response inside the Oregon Parks & Recreation Department.",
+        images: [SHARE_IMAGE],
+    },
+    twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({

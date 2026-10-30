@@ -7,6 +7,7 @@
 // version renders its frozen body from the registry. When the current version
 // is not the most recent, TestimonyBody flags it in the table of contents.
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import { notFound } from "next/navigation";
 import TestimonyBody from "@/components/testimony/TestimonyBody";
 import { FROZEN_BODIES } from "@/components/testimony/versions";
@@ -16,11 +17,11 @@ export function generateStaticParams() {
     return TESTIMONY_VERSIONS.map((v) => ({ version: `v${v.version}` }));
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Testimony",
     description:
         "He sold everything, crossed the country, and chose the Oregon coast. This is what he did here, in his own record, and what one agency did about it.",
-};
+});
 
 export default async function Page({
     params,

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import IfThisIsHappening from "@/components/IfThisIsHappening";
 import ContactForm from "@/components/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "Contact",
     description:
         "Write to Robert Samuel White directly. There is no cost, and nothing you send is published without your word.",
-};
+});
 
 export default function ContactPage() {
     return (

@@ -1,15 +1,16 @@
 // app/(archive)/synthesis/page.tsx
 
 import type { Metadata } from "next";
+import { withShare } from "@/lib/share";
 import SectionPage from "@/components/SectionPage";
 import ClusterRecord from "@/components/ClusterRecord";
 import { fetchCluster, type ClusterRecord as ClusterData } from "@/lib/qp";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withShare({
     title: "The Synthesis",
     description:
         "The fourteen primary signals of this archive, clustered on Autonomy Realms and read together across six analytical lenses.",
-};
+});
 
 const CLUSTER_ULID = "01M186Q44NQ0N2M4X50BAHJ18Z";
 
