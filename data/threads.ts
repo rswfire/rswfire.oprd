@@ -7272,7 +7272,6 @@ export const OSP_THREAD: RecordsThreadData = {
                 { label: "Advocate’s Assistance and Training Report", href: "/records/governor/attachments/01m5ztywmr1em9c7r3s815z4fg-Advocate-s-Assistance-Training-Report.pdf" },
                 { label: "Report, September 2, 2026", href: "/records/governor/attachments/01m5ztywmr1em9c7r3s815z4fg-9-2-26-PRA-RFA-training-report.pdf" },
             ],
-            eml: "/records/governor/eml/2026-10-27_1626_advocate-response-to-the-records-request.eml",
         },
         {
             id: "thanks-to-the-advocate",
