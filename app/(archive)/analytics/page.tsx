@@ -8,6 +8,9 @@
 
 import { useEffect, useState } from "react";
 
+// The layout's error reporter sends one named event, whatever the flag says.
+const report = (name: string) => (window as unknown as { __report?: (n: string, d: object) => void }).__report?.(name, {});
+
 export default function SelfPage() {
     const [off, setOff] = useState<boolean | null>(null);
 
@@ -24,7 +27,10 @@ export default function SelfPage() {
             if (off) {
                 localStorage.removeItem("umami.disabled");
                 setOff(false);
+                report("analytics-on");
             } else {
+                // One event marks that the switch was used; nothing is sent after it.
+                report("analytics-off");
                 localStorage.setItem("umami.disabled", "1");
                 setOff(true);
             }
