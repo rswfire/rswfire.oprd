@@ -4,6 +4,7 @@ import {Open_Sans, DM_Mono, DM_Serif_Display} from 'next/font/google'
 
 import "./globals.css";
 import { SHARE_IMAGE } from "@/lib/share";
+import { ERROR_PANEL } from "@/lib/errorPanel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PlayerProvider from "@/components/player/PlayerProvider";
@@ -69,6 +70,8 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${openSans.variable} ${openSansCondensed.variable} ${dmMono.variable}`}>
         <head>
+            {/* Errors on the page itself, in a red box, before anything else runs. */}
+            <script dangerouslySetInnerHTML={{ __html: ERROR_PANEL }} />
             {/* Error reporting and deploy-window recovery. Every script error,
                 unhandled rejection, failed resource load, and page that is
                 still blank eight seconds after load is sent to Umami as an
