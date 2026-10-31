@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ n: string
 
 export default async function MovedQuestionPage({ params }: { params: Promise<{ n: string }> }) {
     const { n } = await params;
-    const href = `https://openrecordsoregon.org/pq/${n}`;
+    const href = `https://openrecordsoregon.org/records/r${Number(n) + 1}/`;
     return (
         <SectionPage emblem="MailQuestionMark" tone="sky" title={`PUBLIC QUESTION ${n}`}>
             <RecordsProjectCard href={href} label="This question has moved" cta={`Go to Public Question ${n}`}>
