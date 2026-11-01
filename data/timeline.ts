@@ -938,6 +938,15 @@ export const TIMELINE: TimelineSection[] = [
                     ".",
                 ],
             },
+            {
+                d: "2026-11-01", date: "November 1, 2026", major: true,
+                title: "The root of everything in this record.",
+                body: [
+                    "I launch ",
+                    { t: "OpenRecordsOregon.org", href: "https://openrecordsoregon.org/", external: true },
+                    ". Oregon’s agencies expect their practice of the public records law to shield them from the public. That expectation is the root of everything in this archive: what OPRD did at the park, and everything it has not answered for since. An agency that expects to be shielded from the public can exploit volunteer labor and mistreat citizens and no one answers for it. I built infrastructure to address that problem. It audits how Oregon’s agencies practice the public records law, in public, agency against agency. The first audit is already underway across 125 state agencies. Every agency in Oregon will put its practice in writing and be measured against the law. Oregon’s public records officers will answer for the difference together, as a class.",
+                ],
+            },
         ],
     },
 ];
