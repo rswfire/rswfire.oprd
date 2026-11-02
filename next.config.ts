@@ -4,10 +4,8 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["oprdvolunteerabuse.local", "192.168.1.149"],
   output: "export",
   reactCompiler: true,
-  // Four build workers, not one per core: thirty-one froze the workstation (2026-10-30). The stylesheets are
-  // written into each page: a stylesheet fetched on its own holds the whole page back until it arrives, and
-  // one that stalls leaves the reader a white page with nothing on it.
-  experimental: { cpus: 4, inlineCss: true },
+  // Four build workers, not one per core: thirty-one froze the workstation (2026-10-30).
+  experimental: { cpus: 4 },
   images: {
     unoptimized: true,
   },

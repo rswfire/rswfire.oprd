@@ -7,6 +7,8 @@ import { useEffect } from "react";
 // Umami as render-error.
 export default function ErrorPage({ error }: { error: Error & { digest?: string } }) {
     useEffect(() => {
+        // The page's data cut short ("Connection closed"): fetched fresh and loaded again (lib/wholePage).
+        (window as unknown as { __pageCut?: (m: string) => void }).__pageCut?.(String(error.message));
         (window as unknown as { __report?: (n: string, d: Record<string, string>) => void }).__report?.("render-error", {
             message: String(error.message).slice(0, 400),
             stack: String(error.stack ?? "").slice(0, 400),

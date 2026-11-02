@@ -5,6 +5,7 @@ import {Open_Sans, DM_Mono, DM_Serif_Display} from 'next/font/google'
 import "./globals.css";
 import { SHARE_IMAGE } from "@/lib/share";
 import { ERROR_PANEL } from "@/lib/errorPanel";
+import { WHOLE_PAGE } from "@/lib/wholePage";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PlayerProvider from "@/components/player/PlayerProvider";
@@ -70,6 +71,8 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${openSans.variable} ${openSansCondensed.variable} ${dmMono.variable}`}>
         <head>
+            {/* A page that arrived only in part is fetched fresh and loaded again (lib/wholePage). */}
+            <script dangerouslySetInnerHTML={{ __html: WHOLE_PAGE }} />
             {/* Errors on the page itself, in a red box, before anything else runs. */}
             <script dangerouslySetInnerHTML={{ __html: ERROR_PANEL }} />
             {/* Error reporting and deploy-window recovery. Every script error,
@@ -82,7 +85,7 @@ export default function RootLayout({
                 prevents loops when the failure is real (offline, adblock). */}
             <script
                 dangerouslySetInnerHTML={{
-                    __html: '(function(){var W="927ceff2-deef-49ad-8e3d-b33b999c2b92",U="https://rswfire.com/api/send";function c(v){return String(v==null?"":v).slice(0,400)}function s(n,d){try{fetch(U,{method:"POST",headers:{"Content-Type":"application/json"},keepalive:true,body:JSON.stringify({type:"event",payload:{website:W,hostname:location.hostname,screen:screen.width+"x"+screen.height,language:navigator.language,title:document.title,url:location.pathname+location.search,referrer:document.referrer,name:n,data:d}})})}catch(x){}}window.__report=s;window.addEventListener("error",function(e){var t=e.target;if(t&&t!==window&&(t.src||t.href)){s("load-error",{tag:t.tagName,src:c(t.src||t.href),url:c(location.href)});return}s("js-error",{message:c(e.message),source:c(e.filename)+":"+e.lineno+":"+e.colno,stack:c(e.error&&e.error.stack),url:c(location.href)})},true);window.addEventListener("unhandledrejection",function(e){var r=e.reason;s("js-rejection",{message:c(r&&(r.message||r)),stack:c(r&&r.stack),url:c(location.href)})});window.addEventListener("vite:preloadError",function(e){s("preload-error",{message:c(e.payload&&e.payload.message),url:c(location.href)})});setTimeout(function(){try{var b=document.body;if(!b||b.innerText.trim().length>0)return;var f=[];performance.getEntriesByType("resource").forEach(function(r){if(r.responseStatus&&r.responseStatus>=400)f.push(r.name+" "+r.responseStatus)});s("blank-page",{url:c(location.href),ready:document.readyState,failed:c(f.join(" | ")),nav:c((performance.getEntriesByType("navigation")[0]||{}).type)})}catch(x){}},8000);})();window.addEventListener("error",function(e){var t=e.target;if(!t||t.tagName!=="SCRIPT"||!t.src||t.src.indexOf("/_next/")===-1)return;try{var k="chunk-reload-at",n=Date.now(),l=+sessionStorage.getItem(k)||0;if(n-l<3e4)return;sessionStorage.setItem(k,String(n))}catch(x){}location.reload()},true);',
+                    __html: '(function(){var W="927ceff2-deef-49ad-8e3d-b33b999c2b92",U="https://rswfire.com/api/send";function c(v){return String(v==null?"":v).slice(0,400)}function s(n,d){try{fetch(U,{method:"POST",headers:{"Content-Type":"application/json"},keepalive:true,body:JSON.stringify({type:"event",payload:{website:W,hostname:location.hostname,screen:screen.width+"x"+screen.height,language:navigator.language,title:document.title,url:location.pathname+location.search,referrer:document.referrer,name:n,data:d}})}).catch(function(){})}catch(x){}}window.__report=s;window.addEventListener("error",function(e){var t=e.target;if(t&&t!==window&&(t.src||t.href)){s("load-error",{tag:t.tagName,src:c(t.src||t.href),url:c(location.href)});return}s("js-error",{message:c(e.message),source:c(e.filename)+":"+e.lineno+":"+e.colno,stack:c(e.error&&e.error.stack),url:c(location.href)})},true);window.addEventListener("unhandledrejection",function(e){var r=e.reason;s("js-rejection",{message:c(r&&(r.message||r)),stack:c(r&&r.stack),url:c(location.href)})});window.addEventListener("vite:preloadError",function(e){s("preload-error",{message:c(e.payload&&e.payload.message),url:c(location.href)})});setTimeout(function(){try{var b=document.body;if(!b||b.innerText.trim().length>0)return;var f=[];performance.getEntriesByType("resource").forEach(function(r){if(r.responseStatus&&r.responseStatus>=400)f.push(r.name+" "+r.responseStatus)});s("blank-page",{url:c(location.href),ready:document.readyState,failed:c(f.join(" | ")),nav:c((performance.getEntriesByType("navigation")[0]||{}).type)})}catch(x){}},8000);})();window.addEventListener("error",function(e){var t=e.target;if(!t||t.tagName!=="SCRIPT"||!t.src||t.src.indexOf("/_next/")===-1)return;try{var k="chunk-reload-at",n=Date.now(),l=+sessionStorage.getItem(k)||0;if(n-l<3e4)return;sessionStorage.setItem(k,String(n))}catch(x){}location.reload()},true);',
                 }}
             />
             {process.env.NODE_ENV === "production" && (
@@ -117,6 +120,8 @@ export default function RootLayout({
                 </SunlightProvider>
             </DocViewerProvider>
         </PlayerProvider>
+        {/* The page's last element: a page without it arrived only in part (lib/wholePage). */}
+        <div id="__end" hidden />
         </body>
         </html>
     );
