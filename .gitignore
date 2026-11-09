@@ -9,6 +9,8 @@
 /docs/
 /node_modules/
 /out/
+# Made at build from the current version (scripts/current-testimony.mjs).
+/public/testimony-of-robert-samuel-white.pdf
 
 !.yarn/patches
 !.yarn/plugins
