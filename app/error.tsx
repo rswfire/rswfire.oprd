@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 // Catches an error thrown while rendering a page, so the page shows the
 // error instead of nothing. The reporter in app/layout.tsx sends it to
-// Umami as render-error.
+// Matomo as render-error.
 export default function ErrorPage({ error }: { error: Error & { digest?: string } }) {
     useEffect(() => {
         // The page's data cut short ("Connection closed"): fetched fresh and loaded again (lib/wholePage).

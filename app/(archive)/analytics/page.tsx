@@ -1,37 +1,34 @@
 // app/(archive)/analytics/page.tsx
 //
 // Linked from the sidebar foot. Shows whether this browser on this
-// device is counted by analytics, and toggles the flag the Umami
-// tracker honors (localStorage umami.disabled).
+// device is counted by analytics, and toggles the flag lib/analytics
+// honors before it sends anything to Matomo.
 
 "use client";
 
 import { useEffect, useState } from "react";
+import { analyticsOff, setAnalyticsOff } from "@/lib/analytics";
 
 // The layout's error reporter sends one named event, whatever the flag says.
-const report = (name: string) => (window as unknown as { __report?: (n: string, d: object) => void }).__report?.(name, {});
+const report = (name: string) => (window as unknown as { __report?: (n: string, d: object, k: string) => void }).__report?.(name, {}, "analytics");
 
 export default function SelfPage() {
     const [off, setOff] = useState<boolean | null>(null);
 
     useEffect(() => {
-        try {
-            setOff(localStorage.getItem("umami.disabled") === "1");
-        } catch {
-            setOff(false);
-        }
+        setOff(analyticsOff());
     }, []);
 
     const toggle = () => {
         try {
             if (off) {
-                localStorage.removeItem("umami.disabled");
+                setAnalyticsOff(false);
                 setOff(false);
                 report("analytics-on");
             } else {
                 // One event marks that the switch was used; nothing is sent after it.
                 report("analytics-off");
-                localStorage.setItem("umami.disabled", "1");
+                setAnalyticsOff(true);
                 setOff(true);
             }
         } catch { /* leave state as is */ }

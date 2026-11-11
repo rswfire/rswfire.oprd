@@ -7,6 +7,7 @@
 
 import { useEffect, useState } from "react";
 import { ChartCandlestick } from "lucide-react";
+import { FLAG_EVENT, analyticsOff } from "@/lib/analytics";
 
 // lucide dropped its brand marks in 1.x, so the GitHub logo is inline here,
 // the same way the X logo is inline in the header.
@@ -21,7 +22,14 @@ function GithubMark({ className }: { className?: string }) {
 export default function HostedOnGithub() {
     const [off, setOff] = useState(false);
     useEffect(() => {
-        try { setOff(localStorage.getItem("umami.disabled") === "1"); } catch { /* counted */ }
+        const read = () => setOff(analyticsOff());
+        read();
+        window.addEventListener(FLAG_EVENT, read);
+        window.addEventListener("storage", read);
+        return () => {
+            window.removeEventListener(FLAG_EVENT, read);
+            window.removeEventListener("storage", read);
+        };
     }, []);
 
     return (
