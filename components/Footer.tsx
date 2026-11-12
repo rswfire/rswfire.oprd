@@ -58,7 +58,7 @@ export default function Footer() {
                 <div className="mt-8 text-center text-xs text-gray-400 leading-relaxed">
                     <div>
                         &copy;&nbsp;
-                        <a href="https://rswfire.com/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">Robert Samuel White</a>
+                        <a href="https://rswfire.com/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">RSWFIRE INC</a>
                         , 2025-2026.
                     </div>
                     <div>This website is an independent public-interest documentation project.</div>
